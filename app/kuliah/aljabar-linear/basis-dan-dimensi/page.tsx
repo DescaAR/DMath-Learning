@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { RichMath } from "@/components/RichMath";
+import { BasisDimensionEnglish } from "@/components/BasisDimensionEnglish";
 
 export const metadata: Metadata = {
   title: "Basis dan Dimensi",
@@ -72,6 +73,7 @@ function Theorem({
 export default function BasisDimensionPage() {
   return (
     <>
+      <div className="lang-id-only">
       <section className="chapter-hero premium-chapter-hero">
         <div className="container narrow">
           <div className="breadcrumb">
@@ -630,6 +632,8 @@ export default function BasisDimensionPage() {
           </article>
         </div>
       </section>
+      </div>
+      <div className="lang-en-only"><BasisDimensionEnglish /></div>
     </>
   );
 }

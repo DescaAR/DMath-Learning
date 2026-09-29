@@ -940,3 +940,11 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   line-height:1.02;
   letter-spacing:-.052em;
 }
+
+
+/* Language-specific full-content views */
+.lang-en-only{display:none}
+:root[data-language="en"] .lang-id-only{display:none!important}
+:root[data-language="en"] .lang-en-only{display:block}
+:root[data-language="id"] .lang-id-only{display:block}
+:root[data-language="id"] .lang-en-only{display:none!important}
