@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
-import { basisDimensionProblems } from "@/data/basis-dimension-problems";
+import { SolutionsIndexClient } from "@/components/SolutionsIndexClient";
 
 export const metadata: Metadata = {
   title: "Pembahasan",
@@ -18,20 +17,7 @@ export default function PembahasanPage() {
       />
       <section className="section">
         <div className="container">
-          <div className="solution-index solution-index-rich">
-            {basisDimensionProblems.map((problem) => (
-              <Link
-                href={"/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + problem.id.toLowerCase()}
-                className="solution-row"
-                key={problem.id}
-              >
-                <span className="problem-id">{problem.id}</span>
-                <strong>{problem.title}</strong>
-                <span>{problem.subchapter} · {problem.difficulty} · {problem.type}</span>
-                <span>→</span>
-              </Link>
-            ))}
-          </div>
+          <SolutionsIndexClient />
         </div>
       </section>
     </>
