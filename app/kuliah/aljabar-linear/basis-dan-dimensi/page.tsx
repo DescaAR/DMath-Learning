@@ -49,21 +49,21 @@ function Theorem({
       <div className="theorem-box">
         <div className="box-kicker">Teorema {number}</div>
         <strong>{title}</strong>
-        <P>{statement}</P>
+        <P>{String.raw`{statement}`}</P>
       </div>
       <div className="proof-box proof-detailed">
         <div className="box-kicker">Bukti</div>
         {proof.map((step, index) => (
           <div className="proof-step" key={step}>
             <span>{index + 1}</span>
-            <P>{step}</P>
+            <P>{String.raw`{step}`}</P>
           </div>
         ))}
         <p className="proof-end">■</p>
       </div>
       <div className="why-box">
         <strong>Mengapa teorema ini penting?</strong>
-        <P>{importance}</P>
+        <P>{String.raw`{importance}`}</P>
       </div>
     </div>
   );
@@ -115,16 +115,12 @@ export default function BasisDimensionPage() {
             <section id="overview">
               <span className="eyebrow">Overview</span>
               <h2>Basis adalah sistem koordinat bagi ruang vektor.</h2>
-              <P>
-                Dalam $\mathbb R^2$, kita terbiasa memakai $e_1=(1,0)$ dan $e_2=(0,1)$.
+              <P>{String.raw`Dalam $\mathbb R^2$, kita terbiasa memakai $e_1=(1,0)$ dan $e_2=(0,1)$.
                 Namun pasangan lain seperti $v_1=(1,1)$ dan $v_2=(1,-1)$ juga dapat dipakai untuk
-                mendeskripsikan setiap vektor di $\mathbb R^2$ secara unik. Pasangan semacam ini disebut basis.
-              </P>
-              <P>
-                Gagasan basis menggabungkan dua ide: himpunan tersebut harus cukup besar untuk merentang ruang,
+                mendeskripsikan setiap vektor di $\mathbb R^2$ secara unik. Pasangan semacam ini disebut basis.`}</P>
+              <P>{String.raw`Gagasan basis menggabungkan dua ide: himpunan tersebut harus cukup besar untuk merentang ruang,
                 tetapi tidak boleh memiliki vektor yang redundan.
-                Dimensi kemudian mengukur banyaknya vektor yang diperlukan dalam sebuah basis.
-              </P>
+                Dimensi kemudian mengukur banyaknya vektor yang diperlukan dalam sebuah basis.`}</P>
               <MathVisualization kind="basis" />
 
               <div className="content-box prerequisite-box">
@@ -170,19 +166,15 @@ export default function BasisDimensionPage() {
             <section id="review">
               <span className="eyebrow">01 · Review Ruang Vektor</span>
               <h2>Objek yang akan kita bangun.</h2>
-              <P>
-                Sebuah ruang vektor $V$ atas lapangan $\mathbb F$ adalah himpunan yang dilengkapi
+              <P>{String.raw`Sebuah ruang vektor $V$ atas lapangan $\mathbb F$ adalah himpunan yang dilengkapi
                 penjumlahan vektor dan perkalian skalar, serta memenuhi aksioma linearitas.
                 Contoh utama adalah $\mathbb R^n$, ruang polinom $\mathcal P_n$, ruang matriks
-                $M_{m\times n}(\mathbb F)$, dan ruang fungsi.
-              </P>
+                $M_{m\times n}(\mathbb F)$, dan ruang fungsi.`}</P>
               <div className="definition-box numbered-box">
                 <div className="box-kicker">Definisi</div>
                 <strong>Subruang</strong>
-                <P>
-                  Himpunan $W\subseteq V$ disebut subruang apabila $0\in W$ dan untuk setiap
-                  $u,v\in W$ serta $\alpha,\beta\in\mathbb F$, berlaku $\alpha u+\beta v\in W$.
-                </P>
+                <P>{String.raw`Himpunan $W\subseteq V$ disebut subruang apabila $0\in W$ dan untuk setiap
+                  $u,v\in W$ serta $\alpha,\beta\in\mathbb F$, berlaku $\alpha u+\beta v\in W$.`}</P>
               </div>
 
               <Theorem
@@ -205,27 +197,21 @@ export default function BasisDimensionPage() {
               <div className="definition-box numbered-box">
                 <div className="box-kicker">Definisi</div>
                 <strong>Kombinasi Linear</strong>
-                <P>
-                  Diambil $v_1,\ldots,v_k\in V$. Vektor $v\in V$ disebut kombinasi linear dari
+                <P>{String.raw`Diambil $v_1,\ldots,v_k\in V$. Vektor $v\in V$ disebut kombinasi linear dari
                   $v_1,\ldots,v_k$ apabila terdapat skalar $a_1,\ldots,a_k\in\mathbb F$ sehingga
-                  $$v=a_1v_1+\cdots+a_kv_k.$$
-                </P>
+                  $$v=a_1v_1+\cdots+a_kv_k.$$`}</P>
               </div>
               <div className="example-suite">
                 <div className="example-box">
                   <div className="box-kicker">Contoh Dasar</div>
                   <strong>Apakah $(5,1)$ kombinasi linear dari $(1,1)$ dan $(2,-1)$?</strong>
-                  <P>
-                    Cari $a,b$ sehingga $a(1,1)+b(2,-1)=(5,1)$.
-                  </P>
+                  <P>{String.raw`Cari $a,b$ sehingga $a(1,1)+b(2,-1)=(5,1)$.`}</P>
                 </div>
                 <div className="solution-box content-box">
                   <strong>Pembahasan</strong>
-                  <P>
-                    Sistemnya adalah $a+2b=5$ dan $a-b=1$. Dari persamaan kedua,
+                  <P>{String.raw`Sistemnya adalah $a+2b=5$ dan $a-b=1$. Dari persamaan kedua,
                     $a=1+b$. Substitusi memberi $1+3b=5$, jadi $b=\frac43$ dan
-                    $a=\frac73$. Dengan demikian $(5,1)$ memang kombinasi linear.
-                  </P>
+                    $a=\frac73$. Dengan demikian $(5,1)$ memang kombinasi linear.`}</P>
                 </div>
               </div>
             </section>
@@ -235,10 +221,8 @@ export default function BasisDimensionPage() {
               <h2>Semua vektor yang dapat dibangun.</h2>
               <div className="definition-box">
                 <strong>Definisi Span</strong>
-                <P>
-                  Untuk $S=\{v_1,\ldots,v_k\}\subseteq V$,
-                  $$\operatorname{span}(S)=\left\{a_1v_1+\cdots+a_kv_k:a_i\in\mathbb F\right\}.$$
-                </P>
+                <P>{String.raw`Untuk $S=\{v_1,\ldots,v_k\}\subseteq V$,
+                  $$\operatorname{span}(S)=\left\{a_1v_1+\cdots+a_kv_k:a_i\in\mathbb F\right\}.$$`}</P>
               </div>
 
               <Theorem
@@ -257,11 +241,9 @@ export default function BasisDimensionPage() {
 
               <div className="counterexample-box content-box">
                 <strong>Counterexample penting</strong>
-                <P>
-                  Di $\mathbb R^3$, himpunan $\{(1,0,0),(0,1,0)\}$ tidak merentang
+                <P>{String.raw`Di $\mathbb R^3$, himpunan $\{(1,0,0),(0,1,0)\}$ tidak merentang
                   $\mathbb R^3$ karena setiap kombinasinya berbentuk $(a,b,0)$.
-                  Jadi vektor $(0,0,1)$ tidak dapat dihasilkan.
-                </P>
+                  Jadi vektor $(0,0,1)$ tidak dapat dihasilkan.`}</P>
               </div>
             </section>
 
@@ -270,11 +252,9 @@ export default function BasisDimensionPage() {
               <h2>Mendeteksi redundansi.</h2>
               <div className="definition-box">
                 <strong>Definisi Bebas Linear</strong>
-                <P>
-                  Himpunan $S=\{v_1,\ldots,v_k\}$ disebut bebas linear apabila
+                <P>{String.raw`Himpunan $S=\{v_1,\ldots,v_k\}$ disebut bebas linear apabila
                   $$a_1v_1+\cdots+a_kv_k=0$$
-                  hanya mempunyai solusi trivial $a_1=\cdots=a_k=0$.
-                </P>
+                  hanya mempunyai solusi trivial $a_1=\cdots=a_k=0$.`}</P>
               </div>
 
               <Theorem
@@ -295,12 +275,12 @@ export default function BasisDimensionPage() {
                 <div className="comparison-col">
                   <span className="eyebrow">Bebas linear</span>
                   <strong>Tidak ada redundansi</strong>
-                  <P>$a_1v_1+\cdots+a_kv_k=0$ hanya punya solusi trivial.</P>
+                  <P>{String.raw`$a_1v_1+\cdots+a_kv_k=0$ hanya punya solusi trivial.`}</P>
                 </div>
                 <div className="comparison-col">
                   <span className="eyebrow">Bergantung linear</span>
                   <strong>Ada informasi berlebih</strong>
-                  <P>Sedikitnya satu vektor dapat dibangun dari vektor lain.</P>
+                  <P>{String.raw`Sedikitnya satu vektor dapat dibangun dari vektor lain.`}</P>
                 </div>
               </div>
             </section>
@@ -310,10 +290,8 @@ export default function BasisDimensionPage() {
               <h2>Cukup untuk merentang, minimum tanpa redundansi.</h2>
               <div className="definition-box">
                 <strong>Definisi Basis</strong>
-                <P>
-                  Himpunan $B=\{v_1,\ldots,v_n\}$ adalah basis $V$ apabila $B$ bebas linear dan
-                  $\operatorname{span}(B)=V$.
-                </P>
+                <P>{String.raw`Himpunan $B=\{v_1,\ldots,v_n\}$ adalah basis $V$ apabila $B$ bebas linear dan
+                  $\operatorname{span}(B)=V$.`}</P>
               </div>
 
               <Theorem
@@ -334,16 +312,12 @@ export default function BasisDimensionPage() {
                 <div className="example-box">
                   <div className="box-kicker">Worked Example</div>
                   <strong>Basis nonstandar di $\mathbb R^2$</strong>
-                  <P>
-                    Ambil $B=((1,1),(1,-1))$. Tentukan koordinat $(4,2)$ relatif terhadap $B$.
-                  </P>
+                  <P>{String.raw`Ambil $B=((1,1),(1,-1))$. Tentukan koordinat $(4,2)$ relatif terhadap $B$.`}</P>
                 </div>
                 <div className="solution-box content-box">
-                  <P>
-                    Cari $a,b$ dengan $a(1,1)+b(1,-1)=(4,2)$. Sistem
+                  <P>{String.raw`Cari $a,b$ dengan $a(1,1)+b(1,-1)=(4,2)$. Sistem
                     $a+b=4$ dan $a-b=2$ memberi $a=3$ dan $b=1$.
-                    Jadi $[(4,2)]_B=(3,1)$.
-                  </P>
+                    Jadi $[(4,2)]_B=(3,1)$.`}</P>
                 </div>
               </div>
             </section>
@@ -351,11 +325,9 @@ export default function BasisDimensionPage() {
             <section id="koordinat">
               <span className="eyebrow">06 · Koordinat</span>
               <h2>Vektor abstrak menjadi daftar skalar.</h2>
-              <P>
-                Untuk basis berurutan $B=(v_1,\ldots,v_n)$, koordinat vektor
+              <P>{String.raw`Untuk basis berurutan $B=(v_1,\ldots,v_n)$, koordinat vektor
                 $v=a_1v_1+\cdots+a_nv_n$ didefinisikan sebagai
-                $$[v]_B=\begin{pmatrix}a_1\\\vdots\\a_n\end{pmatrix}.$$
-              </P>
+                $$[v]_B=\begin{pmatrix}a_1\\\vdots\\a_n\end{pmatrix}.$$`}</P>
 
               <Theorem
                 number="5"
@@ -376,10 +348,8 @@ export default function BasisDimensionPage() {
               <h2>Banyaknya arah bebas yang diperlukan.</h2>
               <div className="definition-box">
                 <strong>Definisi Dimensi</strong>
-                <P>
-                  Jika $V$ mempunyai basis berhingga dengan $n$ anggota, didefinisikan
-                  $\dim V=n$. Untuk ruang nol, $\dim\{0\}=0$.
-                </P>
+                <P>{String.raw`Jika $V$ mempunyai basis berhingga dengan $n$ anggota, didefinisikan
+                  $\dim V=n$. Untuk ruang nol, $\dim\{0\}=0$.`}</P>
               </div>
 
               <Theorem
@@ -435,17 +405,13 @@ export default function BasisDimensionPage() {
               <div className="example-suite">
                 <div className="example-box">
                   <strong>Basis bidang di $\mathbb R^3$</strong>
-                  <P>
-                    Tentukan basis $W=\{(x,y,z)\in\mathbb R^3:x+y+z=0\}$.
-                  </P>
+                  <P>{String.raw`Tentukan basis $W=\{(x,y,z)\in\mathbb R^3:x+y+z=0\}$.`}</P>
                 </div>
                 <div className="solution-box content-box">
-                  <P>
-                    Dari $z=-x-y$,
+                  <P>{String.raw`Dari $z=-x-y$,
                     $$(x,y,z)=x(1,0,-1)+y(0,1,-1).$$
                     Kedua vektor bebas linear, jadi salah satu basis adalah
-                    $\{(1,0,-1),(0,1,-1)\}$ dan $\dim W=2$.
-                  </P>
+                    $\{(1,0,-1),(0,1,-1)\}$ dan $\dim W=2$.`}</P>
                 </div>
               </div>
             </section>
@@ -487,34 +453,26 @@ export default function BasisDimensionPage() {
             <section id="baris-kolom">
               <span className="eyebrow">10 · Ruang Baris & Kolom</span>
               <h2>Basis dari sebuah matriks.</h2>
-              <P>
-                Untuk matriks $A\in\mathbb F^{m\times n}$, ruang baris adalah span semua baris $A$,
-                sedangkan ruang kolom adalah span semua kolom $A$.
-              </P>
+              <P>{String.raw`Untuk matriks $A\in\mathbb F^{m\times n}$, ruang baris adalah span semua baris $A$,
+                sedangkan ruang kolom adalah span semua kolom $A$.`}</P>
               <div className="definition-box">
                 <strong>Aturan komputasi penting</strong>
-                <P>
-                  Baris tak nol pada bentuk eselon baris dapat dipakai sebagai basis row space.
+                <P>{String.raw`Baris tak nol pada bentuk eselon baris dapat dipakai sebagai basis row space.
                   Untuk column space, gunakan kolom-kolom matriks asal yang posisinya bersesuaian
-                  dengan kolom pivot pada bentuk eselon.
-                </P>
+                  dengan kolom pivot pada bentuk eselon.`}</P>
               </div>
 
               <div className="example-suite">
                 <div className="example-box">
                   <strong>Menentukan basis column space</strong>
-                  <P>
-                    Ambil
-                    $$A=\begin{pmatrix}1&2&3\\0&1&1\\1&3&4\end{pmatrix}.$$
-                  </P>
+                  <P>{String.raw`Ambil
+                    $$A=\begin{pmatrix}1&2&3\\0&1&1\\1&3&4\end{pmatrix}.$$`}</P>
                 </div>
                 <div className="solution-box content-box">
-                  <P>
-                    Kolom ketiga memenuhi $c_3=c_1+c_2$. Kolom pertama dan kedua bebas linear.
+                  <P>{String.raw`Kolom ketiga memenuhi $c_3=c_1+c_2$. Kolom pertama dan kedua bebas linear.
                     Jadi basis column space dapat dipilih
                     $$\left\{\begin{pmatrix}1\\0\\1\end{pmatrix},
-                    \begin{pmatrix}2\\1\\3\end{pmatrix}\right\}.$$
-                  </P>
+                    \begin{pmatrix}2\\1\\3\end{pmatrix}\right\}.$$`}</P>
                 </div>
               </div>
             </section>
@@ -524,11 +482,9 @@ export default function BasisDimensionPage() {
               <h2>Dimensi domain terbagi menjadi dua bagian.</h2>
               <div className="definition-box">
                 <strong>Rank dan Nullity</strong>
-                <P>
-                  Untuk $T:V\to W$, didefinisikan
+                <P>{String.raw`Untuk $T:V\to W$, didefinisikan
                   $\operatorname{rank}(T)=\dim(\operatorname{im}T)$ dan
-                  $\operatorname{nullity}(T)=\dim(\ker T)$.
-                </P>
+                  $\operatorname{nullity}(T)=\dim(\ker T)$.`}</P>
               </div>
 
               <Theorem
@@ -548,12 +504,10 @@ export default function BasisDimensionPage() {
 
               <div className="content-box insight-box">
                 <strong>Konsekuensi penting</strong>
-                <P>
-                  Untuk operator $T:V\to V$ pada ruang berdimensi hingga,
+                <P>{String.raw`Untuk operator $T:V\to V$ pada ruang berdimensi hingga,
                   $T$ injektif jika dan hanya jika $T$ surjektif.
                   Injektif berarti $\operatorname{nullity}(T)=0$; rank–nullity lalu memberi
-                  $\operatorname{rank}(T)=\dim V$, yang ekuivalen dengan surjektif.
-                </P>
+                  $\operatorname{rank}(T)=\dim V$, yang ekuivalen dengan surjektif.`}</P>
               </div>
             </section>
 
@@ -566,16 +520,12 @@ export default function BasisDimensionPage() {
                   <div className="example-box">
                     <div className="box-kicker">Dasar</div>
                     <strong>Dimensi sebuah span</strong>
-                    <P>
-                      Tentukan $\dim\operatorname{span}\{(1,0,1),(0,1,1),(1,1,2)\}$.
-                    </P>
+                    <P>{String.raw`Tentukan $\dim\operatorname{span}\{(1,0,1),(0,1,1),(1,1,2)\}$.`}</P>
                   </div>
                   <div className="solution-box content-box">
-                    <P>
-                      Vektor ketiga adalah jumlah dua vektor pertama. Dua vektor pertama tidak saling
+                    <P>{String.raw`Vektor ketiga adalah jumlah dua vektor pertama. Dua vektor pertama tidak saling
                       kelipatan dan bebas linear. Jadi basis span adalah
-                      $\{(1,0,1),(0,1,1)\}$ dan dimensinya $2$.
-                    </P>
+                      $\{(1,0,1),(0,1,1)\}$ dan dimensinya $2$.`}</P>
                   </div>
                 </div>
 
@@ -583,18 +533,14 @@ export default function BasisDimensionPage() {
                   <div className="example-box">
                     <div className="box-kicker">Menengah</div>
                     <strong>Basis ruang solusi</strong>
-                    <P>
-                      Tentukan basis solusi
-                      $$x+y+z+w=0,\qquad x-z=0.$$
-                    </P>
+                    <P>{String.raw`Tentukan basis solusi
+                      $$x+y+z+w=0,\qquad x-z=0.$$`}</P>
                   </div>
                   <div className="solution-box content-box">
-                    <P>
-                      Dari $x-z=0$ diperoleh $z=x$. Persamaan pertama memberi
+                    <P>{String.raw`Dari $x-z=0$ diperoleh $z=x$. Persamaan pertama memberi
                       $y=-2x-w$. Jadi
                       $$(x,y,z,w)=x(1,-2,1,0)+w(0,-1,0,1).$$
-                      Kedua vektor bebas linear, jadi dimensi ruang solusi adalah $2$.
-                    </P>
+                      Kedua vektor bebas linear, jadi dimensi ruang solusi adalah $2$.`}</P>
                   </div>
                 </div>
 
@@ -602,28 +548,20 @@ export default function BasisDimensionPage() {
                   <div className="example-box">
                     <div className="box-kicker">Lanjut</div>
                     <strong>Dimensi jumlah dua subruang</strong>
-                    <P>
-                      Buktikan
-                      $$\dim(U+W)=\dim U+\dim W-\dim(U\cap W).$$
-                    </P>
+                    <P>{String.raw`Buktikan
+                      $$\dim(U+W)=\dim U+\dim W-\dim(U\cap W).$$`}</P>
                   </div>
                   <div className="solution-box content-box">
-                    <P>
-                      Ambil basis $\{z_1,\ldots,z_r\}$ untuk $U\cap W$. Perluas menjadi basis
+                    <P>{String.raw`Ambil basis $\{z_1,\ldots,z_r\}$ untuk $U\cap W$. Perluas menjadi basis
                       $\{z_1,\ldots,z_r,u_1,\ldots,u_p\}$ untuk $U$ dan
-                      $\{z_1,\ldots,z_r,w_1,\ldots,w_q\}$ untuk $W$.
-                    </P>
-                    <P>
-                      Himpunan gabungan
+                      $\{z_1,\ldots,z_r,w_1,\ldots,w_q\}$ untuk $W$.`}</P>
+                    <P>{String.raw`Himpunan gabungan
                       $\{z_i,u_j,w_k\}$ merentang $U+W$. Untuk kebebasan linear, sebuah relasi nol
                       dapat dipindahkan sehingga kombinasi $u_j$ dan $z_i$ sama dengan negatif
                       kombinasi $w_k$. Vektor tersebut berada di $U\cap W$, dan karena perluasan basis
-                      masing-masing bebas linear, seluruh koefisien $u_j$ dan $w_k$ nol, lalu koefisien $z_i$ juga nol.
-                    </P>
-                    <P>
-                      Jadi gabungan tersebut basis $U+W$ dan memiliki $r+p+q$ anggota. Karena
-                      $\dim U=r+p$ dan $\dim W=r+q$, rumus dimensi diperoleh.
-                    </P>
+                      masing-masing bebas linear, seluruh koefisien $u_j$ dan $w_k$ nol, lalu koefisien $z_i$ juga nol.`}</P>
+                    <P>{String.raw`Jadi gabungan tersebut basis $U+W$ dan memiliki $r+p+q$ anggota. Karena
+                      $\dim U=r+p$ dan $\dim W=r+q$, rumus dimensi diperoleh.`}</P>
                   </div>
                 </div>
               </div>
@@ -656,7 +594,7 @@ export default function BasisDimensionPage() {
                 ].map(([title, body]) => (
                   <div className="summary-card" key={title}>
                     <strong>{title}</strong>
-                    <P>{body}</P>
+                    <P>{String.raw`{body}`}</P>
                   </div>
                 ))}
               </div>
