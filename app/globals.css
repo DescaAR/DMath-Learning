@@ -934,3 +934,9 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
     font-size:clamp(2.55rem,11.5vw,4rem);
   }
 }
+
+:root[data-language="en"] .page-hero h1{
+  font-size:clamp(2.7rem,5.1vw,4.65rem);
+  line-height:1.02;
+  letter-spacing:-.052em;
+}
