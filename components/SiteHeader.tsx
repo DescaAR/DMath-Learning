@@ -30,7 +30,7 @@ export function SiteHeader() {
   }
 
   return (
-    <header className="site-header">
+    <header className="site-header" data-no-translate>
       <div className="container nav">
         <Link href="/" className="brand" aria-label={language === "en" ? "DMath Learning — Home" : "DMath Learning — Beranda"}>
           <Image src="/brand/logo-symbol.webp" alt="" width={42} height={42} priority className="brand-logo" />
