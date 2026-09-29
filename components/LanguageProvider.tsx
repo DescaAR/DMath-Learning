@@ -114,7 +114,7 @@ function applyLanguage(root: ParentNode, language: Language) {
     NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT
   );
 
-  let current = walker.currentNode;
+  let current: Node | null = walker.currentNode;
   while (current) {
     if (current.nodeType === Node.TEXT_NODE) {
       translateTextNode(current as Text, language);
