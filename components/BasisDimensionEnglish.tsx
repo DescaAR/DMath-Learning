@@ -163,8 +163,8 @@ export function BasisDimensionEnglish() {
         <article className="article deep-article basis-article">
           <section id="en-overview">
             <span className="eyebrow">Overview</span><h2>A basis is a coordinate system for a vector space.</h2>
-            <P>In $\\mathbb R^2$, the standard vectors $e_1=(1,0)$ and $e_2=(0,1)$ are familiar. Another pair such as $v_1=(1,1)$ and $v_2=(1,-1)$ can also represent every vector uniquely. Such a pair is a basis.</P>
-            <P>A basis must be large enough to span the entire space while containing no redundant direction. Dimension measures the number of vectors required in any basis.</P>
+            <P>{String.raw`In $\\mathbb R^2$, the standard vectors $e_1=(1,0)$ and $e_2=(0,1)$ are familiar. Another pair such as $v_1=(1,1)$ and $v_2=(1,-1)$ can also represent every vector uniquely. Such a pair is a basis.`}</P>
+            <P>{String.raw`A basis must be large enough to span the entire space while containing no redundant direction. Dimension measures the number of vectors required in any basis.`}</P>
             <MathVisualization kind="basis" />
             <div className="content-box prerequisite-box"><strong>Prerequisites</strong><ul><li>Vector and scalar operations.</li><li>Vector spaces and subspaces.</li><li>Linear systems and Gaussian elimination.</li></ul></div>
             <div className="learning-objectives"><span className="eyebrow">Learning Objectives</span><div className="objective-grid">{[
@@ -174,68 +174,68 @@ export function BasisDimensionEnglish() {
           </section>
 
           <section id="en-review"><span className="eyebrow">01 · Vector Space Review</span><h2>The ambient structure.</h2>
-            <P>A vector space $V$ over a field $\\mathbb F$ supports vector addition and scalar multiplication satisfying the standard linearity axioms. Key examples are $\\mathbb R^n$, polynomial spaces $\\mathcal P_n$, matrix spaces $M_{m\\times n}(\\mathbb F)$, and function spaces.</P>
-            <div className="definition-box"><strong>Subspace</strong><P>A subset $W\\subseteq V$ is a subspace if it contains $0$ and is closed under all linear combinations $\\alpha u+\\beta v$.</P></div>
+            <P>{String.raw`A vector space $V$ over a field $\\mathbb F$ supports vector addition and scalar multiplication satisfying the standard linearity axioms. Key examples are $\\mathbb R^n$, polynomial spaces $\\mathcal P_n$, matrix spaces $M_{m\\times n}(\\mathbb F)$, and function spaces.`}</P>
+            <div className="definition-box"><strong>Subspace</strong><P>{String.raw`A subset $W\\subseteq V$ is a subspace if it contains $0$ and is closed under all linear combinations $\\alpha u+\\beta v$.`}</P></div>
             <TheoremCard item={theorem("1")} />
           </section>
 
           <section id="en-combinations"><span className="eyebrow">02 · Linear Combinations</span><h2>Building vectors from other vectors.</h2>
-            <div className="definition-box"><strong>Linear Combination</strong><P>A vector $v$ is a linear combination of $v_1,\\ldots,v_k$ if $v=a_1v_1+\\cdots+a_kv_k$ for some scalars $a_i$.</P></div>
-            <div className="example-suite"><div className="example-box"><div className="box-kicker">Basic Example</div><strong>Is $(5,1)$ a linear combination of $(1,1)$ and $(2,-1)$?</strong></div><div className="solution-box content-box"><P>Solving $a(1,1)+b(2,-1)=(5,1)$ gives $a+2b=5$ and $a-b=1$, hence $b=4/3$ and $a=7/3$. Therefore the answer is yes.</P></div></div>
+            <div className="definition-box"><strong>Linear Combination</strong><P>{String.raw`A vector $v$ is a linear combination of $v_1,\\ldots,v_k$ if $v=a_1v_1+\\cdots+a_kv_k$ for some scalars $a_i$.`}</P></div>
+            <div className="example-suite"><div className="example-box"><div className="box-kicker">Basic Example</div><strong>Is $(5,1)$ a linear combination of $(1,1)$ and $(2,-1)$?</strong></div><div className="solution-box content-box"><P>{String.raw`Solving $a(1,1)+b(2,-1)=(5,1)$ gives $a+2b=5$ and $a-b=1$, hence $b=4/3$ and $a=7/3$. Therefore the answer is yes.`}</P></div></div>
           </section>
 
           <section id="en-span"><span className="eyebrow">03 · Span</span><h2>All vectors that can be generated.</h2>
-            <div className="definition-box"><strong>Span</strong><P>$\\operatorname{span}\\{v_1,\\ldots,v_k\\}$ is the set of all linear combinations $a_1v_1+\\cdots+a_kv_k$.</P></div>
+            <div className="definition-box"><strong>Span</strong><P>{String.raw`$\\operatorname{span}\\{v_1,\\ldots,v_k\\}$ is the set of all linear combinations $a_1v_1+\\cdots+a_kv_k$.`}</P></div>
             <TheoremCard item={theorem("2")} />
-            <div className="counterexample-box content-box"><strong>Important counterexample</strong><P>In $\\mathbb R^3$, the set $\\{(1,0,0),(0,1,0)\\}$ does not span the whole space because every combination has third coordinate zero.</P></div>
+            <div className="counterexample-box content-box"><strong>Important counterexample</strong><P>{String.raw`In $\\mathbb R^3$, the set $\\{(1,0,0),(0,1,0)\\}$ does not span the whole space because every combination has third coordinate zero.`}</P></div>
           </section>
 
           <section id="en-independence"><span className="eyebrow">04 · Linear Independence</span><h2>Detecting redundancy.</h2>
-            <div className="definition-box"><strong>Linear Independence</strong><P>The vectors $v_1,\\ldots,v_k$ are linearly independent if $a_1v_1+\\cdots+a_kv_k=0$ implies $a_1=\\cdots=a_k=0$.</P></div>
+            <div className="definition-box"><strong>Linear Independence</strong><P>{String.raw`The vectors $v_1,\\ldots,v_k$ are linearly independent if $a_1v_1+\\cdots+a_kv_k=0$ implies $a_1=\\cdots=a_k=0$.`}</P></div>
             <TheoremCard item={theorem("3")} />
             <div className="comparison-table"><div className="comparison-col"><span className="eyebrow">Independent</span><strong>No redundancy</strong><p>Only the trivial relation gives zero.</p></div><div className="comparison-col"><span className="eyebrow">Dependent</span><strong>Redundant information</strong><p>At least one vector lies in the span of the others.</p></div></div>
           </section>
 
           <section id="en-basis"><span className="eyebrow">05 · Basis</span><h2>Enough to span, minimal without redundancy.</h2>
-            <div className="definition-box"><strong>Basis</strong><P>A set $B$ is a basis of $V$ when it is linearly independent and $\\operatorname{span}(B)=V$.</P></div>
+            <div className="definition-box"><strong>Basis</strong><P>{String.raw`A set $B$ is a basis of $V$ when it is linearly independent and $\\operatorname{span}(B)=V$.`}</P></div>
             <TheoremCard item={theorem("4")} />
-            <div className="example-suite"><div className="example-box"><strong>A nonstandard basis of $\\mathbb R^2$</strong><P>For $B=((1,1),(1,-1))$, find $[(4,2)]_B$.</P></div><div className="solution-box content-box"><P>Solving $a(1,1)+b(1,-1)=(4,2)$ gives $a=3$, $b=1$. Hence $[(4,2)]_B=(3,1)$.</P></div></div>
+            <div className="example-suite"><div className="example-box"><strong>A nonstandard basis of $\\mathbb R^2$</strong><P>{String.raw`For $B=((1,1),(1,-1))$, find $[(4,2)]_B$.`}</P></div><div className="solution-box content-box"><P>{String.raw`Solving $a(1,1)+b(1,-1)=(4,2)$ gives $a=3$, $b=1$. Hence $[(4,2)]_B=(3,1)$.`}</P></div></div>
           </section>
 
           <section id="en-coordinates"><span className="eyebrow">06 · Coordinates</span><h2>Turning abstract vectors into scalar lists.</h2>
-            <P>If $B=(v_1,\\ldots,v_n)$ is ordered and $v=a_1v_1+\\cdots+a_nv_n$, then $[v]_B=(a_1,\\ldots,a_n)^T$.</P>
+            <P>{String.raw`If $B=(v_1,\\ldots,v_n)$ is ordered and $v=a_1v_1+\\cdots+a_nv_n$, then $[v]_B=(a_1,\\ldots,a_n)^T$.`}</P>
             <TheoremCard item={theorem("5")} />
           </section>
 
           <section id="en-dimension"><span className="eyebrow">07 · Dimension</span><h2>The number of independent directions required.</h2>
-            <div className="definition-box"><strong>Dimension</strong><P>If $V$ has a finite basis with $n$ elements, define $\\dim V=n$. Also $\\dim\\{0\\}=0$.</P></div>
+            <div className="definition-box"><strong>Dimension</strong><P>{String.raw`If $V$ has a finite basis with $n$ elements, define $\\dim V=n$. Also $\\dim\\{0\\}=0$.`}</P></div>
             <TheoremCard item={theorem("6")} /><TheoremCard item={theorem("7")} />
-            <div className="dimension-facts"><div><strong><RichMath>$\\dim\\mathbb R^n=n$</RichMath></strong><span>the standard basis has n vectors</span></div><div><strong><RichMath>$\\dim\\mathcal P_n=n+1$</RichMath></strong><span>basis 1, x, ..., x^n</span></div><div><strong><RichMath>$\\dim M_{m\\times n}=mn$</RichMath></strong><span>one matrix unit per entry</span></div></div>
+            <div className="dimension-facts"><div><strong><RichMath>{String.raw`$\\dim\\mathbb R^n=n$`}</RichMath></strong><span>the standard basis has n vectors</span></div><div><strong><RichMath>{String.raw`$\\dim\\mathcal P_n=n+1$`}</RichMath></strong><span>basis 1, x, ..., x^n</span></div><div><strong><RichMath>{String.raw`$\\dim M_{m\\times n}=mn$`}</RichMath></strong><span>one matrix unit per entry</span></div></div>
           </section>
 
           <section id="en-subspaces"><span className="eyebrow">08 · Subspace Bases</span><h2>A subspace cannot exceed its ambient dimension.</h2>
             <TheoremCard item={theorem("8")} />
-            <div className="example-suite"><div className="example-box"><strong>A plane in $\\mathbb R^3$</strong><P>Find a basis of $W=\\{(x,y,z):x+y+z=0\\}$.</P></div><div className="solution-box content-box"><P>Since $z=-x-y$, $(x,y,z)=x(1,0,-1)+y(0,1,-1)$. The two generators are independent, so they form a basis and $\\dim W=2$.</P></div></div>
+            <div className="example-suite"><div className="example-box"><strong>A plane in $\\mathbb R^3$</strong><P>{String.raw`Find a basis of $W=\\{(x,y,z):x+y+z=0\\}$.`}</P></div><div className="solution-box content-box"><P>{String.raw`Since $z=-x-y$, $(x,y,z)=x(1,0,-1)+y(0,1,-1)$. The two generators are independent, so they form a basis and $\\dim W=2$.`}</P></div></div>
           </section>
 
           <section id="en-extension"><span className="eyebrow">09 · Basis Extension</span><h2>From an independent set to a complete basis.</h2><TheoremCard item={theorem("9")} /><TheoremCard item={theorem("10")} /></section>
 
           <section id="en-row-column"><span className="eyebrow">10 · Row & Column Spaces</span><h2>Reading bases from a matrix.</h2>
-            <P>For $A\\in\\mathbb F^{m\\times n}$, the row space is the span of the rows and the column space is the span of the columns.</P>
+            <P>{String.raw`For $A\\in\\mathbb F^{m\\times n}$, the row space is the span of the rows and the column space is the span of the columns.`}</P>
             <div className="definition-box"><strong>Important computational rule</strong><p>Nonzero rows of an echelon form form a basis of the row space. For the column space, use the pivot positions found by row reduction but select the corresponding columns from the original matrix.</p></div>
           </section>
 
           <section id="en-rank-nullity"><span className="eyebrow">11 · Rank–Nullity</span><h2>The domain dimension splits into kernel and image dimensions.</h2>
-            <div className="definition-box"><strong>Rank and Nullity</strong><P>For $T:V\\to W$, $\\operatorname{rank}(T)=\\dim(\\operatorname{im}T)$ and $\\operatorname{nullity}(T)=\\dim(\\ker T)$.</P></div>
+            <div className="definition-box"><strong>Rank and Nullity</strong><P>{String.raw`For $T:V\\to W$, $\\operatorname{rank}(T)=\\dim(\\operatorname{im}T)$ and $\\operatorname{nullity}(T)=\\dim(\\ker T)$.`}</P></div>
             <TheoremCard item={theorem("11")} />
-            <div className="content-box insight-box"><strong>Important consequence</strong><P>For $T:V\\to V$ on a finite-dimensional space, injectivity is equivalent to surjectivity. Injectivity gives nullity zero; Rank–Nullity then gives full rank, hence surjectivity.</P></div>
+            <div className="content-box insight-box"><strong>Important consequence</strong><P>{String.raw`For $T:V\\to V$ on a finite-dimensional space, injectivity is equivalent to surjectivity. Injectivity gives nullity zero; Rank–Nullity then gives full rank, hence surjectivity.`}</P></div>
           </section>
 
           <section id="en-examples"><span className="eyebrow">12 · Worked Examples</span><h2>From basic calculations to structural proofs.</h2>
             <div className="example-stack">
-              <div className="example-suite"><div className="example-box"><div className="box-kicker">Basic</div><strong>Dimension of a span</strong><P>Find $\\dim\\operatorname{span}\\{(1,0,1),(0,1,1),(1,1,2)\\}$.</P></div><div className="solution-box content-box"><p>The third vector is the sum of the first two. The first two are independent, so the dimension is 2.</p></div></div>
-              <div className="example-suite"><div className="example-box"><div className="box-kicker">Intermediate</div><strong>Basis of a solution space</strong><P>Solve $x+y+z+w=0$ and $x-z=0$.</P></div><div className="solution-box content-box"><P>We obtain $z=x$ and $y=-2x-w$, so every solution equals $x(1,-2,1,0)+w(0,-1,0,1)$. The two vectors form a basis.</P></div></div>
-              <div className="example-suite"><div className="example-box"><div className="box-kicker">Advanced</div><strong>Dimension formula for two subspaces</strong><P>Prove $\\dim(U+W)=\\dim U+\\dim W-\\dim(U\\cap W)$.</P></div><div className="solution-box content-box"><p>Start with a basis of the intersection, extend it separately to bases of U and W, then show that the combined nonduplicated list is a basis of U+W. Counting basis vectors gives the formula.</p></div></div>
+              <div className="example-suite"><div className="example-box"><div className="box-kicker">Basic</div><strong>Dimension of a span</strong><P>{String.raw`Find $\\dim\\operatorname{span}\\{(1,0,1),(0,1,1),(1,1,2)\\}$.`}</P></div><div className="solution-box content-box"><p>The third vector is the sum of the first two. The first two are independent, so the dimension is 2.</p></div></div>
+              <div className="example-suite"><div className="example-box"><div className="box-kicker">Intermediate</div><strong>Basis of a solution space</strong><P>{String.raw`Solve $x+y+z+w=0$ and $x-z=0$.`}</P></div><div className="solution-box content-box"><P>{String.raw`We obtain $z=x$ and $y=-2x-w$, so every solution equals $x(1,-2,1,0)+w(0,-1,0,1)$. The two vectors form a basis.`}</P></div></div>
+              <div className="example-suite"><div className="example-box"><div className="box-kicker">Advanced</div><strong>Dimension formula for two subspaces</strong><P>{String.raw`Prove $\\dim(U+W)=\\dim U+\\dim W-\\dim(U\\cap W)$.`}</P></div><div className="solution-box content-box"><p>Start with a basis of the intersection, extend it separately to bases of U and W, then show that the combined nonduplicated list is a basis of U+W. Counting basis vectors gives the formula.</p></div></div>
             </div>
           </section>
 
