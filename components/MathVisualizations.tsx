@@ -1,3 +1,5 @@
+"use client";
+
 import type { ReactNode } from "react";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
