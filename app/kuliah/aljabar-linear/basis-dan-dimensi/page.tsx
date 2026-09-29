@@ -1,220 +1,684 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MathBlock } from "@/components/MathBlock";
+import { MathVisualization } from "@/components/MathVisualizations";
+import { RichMath } from "@/components/RichMath";
 
 export const metadata: Metadata = {
   title: "Basis dan Dimensi",
-  description: "Materi Aljabar Linear tentang kombinasi linear, span, bebas linear, basis, koordinat, dan dimensi.",
+  description: "Bab lengkap Aljabar Linear tentang kombinasi linear, span, bebas linear, basis, koordinat, dimensi, basis subruang, ekstensi basis, ruang baris-kolom, dan rank-nullity.",
+  alternates: { canonical: "/kuliah/aljabar-linear/basis-dan-dimensi" },
 };
 
-const subchapters = [
-  "Review Ruang Vektor",
-  "Kombinasi Linear",
-  "Span",
-  "Bebas Linear",
-  "Definisi Basis",
-  "Koordinat terhadap Basis",
-  "Dimensi",
-  "Basis Subruang",
-  "Ekstensi Basis",
-  "Rank dan Dimensi",
-];
+const sections = [
+  ["overview", "Overview"],
+  ["review", "Review Ruang Vektor"],
+  ["kombinasi", "Kombinasi Linear"],
+  ["span", "Span"],
+  ["bebas", "Bebas Linear"],
+  ["basis", "Basis"],
+  ["koordinat", "Koordinat"],
+  ["dimensi", "Dimensi"],
+  ["subruang", "Basis Subruang"],
+  ["ekstensi", "Ekstensi Basis"],
+  ["baris-kolom", "Ruang Baris & Kolom"],
+  ["rank-nullity", "Rank–Nullity"],
+  ["contoh", "Worked Examples"],
+  ["ringkasan", "Ringkasan"],
+  ["referensi", "Referensi"],
+] as const;
+
+function P({ children }: { children: string }) {
+  return <p><RichMath>{children}</RichMath></p>;
+}
+
+function Theorem({
+  number,
+  title,
+  statement,
+  proof,
+  importance,
+}: {
+  number: string;
+  title: string;
+  statement: string;
+  proof: string[];
+  importance: string;
+}) {
+  return (
+    <div className="theorem-suite">
+      <div className="theorem-box">
+        <div className="box-kicker">Teorema {number}</div>
+        <strong>{title}</strong>
+        <P>{statement}</P>
+      </div>
+      <div className="proof-box proof-detailed">
+        <div className="box-kicker">Bukti</div>
+        {proof.map((step, index) => (
+          <div className="proof-step" key={step}>
+            <span>{index + 1}</span>
+            <P>{step}</P>
+          </div>
+        ))}
+        <p className="proof-end">■</p>
+      </div>
+      <div className="why-box">
+        <strong>Mengapa teorema ini penting?</strong>
+        <P>{importance}</P>
+      </div>
+    </div>
+  );
+}
 
 export default function BasisDimensionPage() {
   return (
     <>
-      <section className="chapter-hero">
+      <section className="chapter-hero premium-chapter-hero">
         <div className="container narrow">
           <div className="breadcrumb">
-            <Link href="/materi">Kuliah</Link>
+            <Link href="/materi">Materi</Link>
+            <span>/</span>
+            <span>Kuliah</span>
             <span>/</span>
             <span>Aljabar Linear</span>
             <span>/</span>
             <strong>Basis dan Dimensi</strong>
           </div>
-          <span className="eyebrow">Gold standard chapter</span>
+          <span className="eyebrow">Gold Standard Chapter · Aljabar Linear</span>
           <h1>Basis dan Dimensi</h1>
           <p>
-            Bab ini membangun gagasan basis dari kombinasi linear, span, dan kebebasan linear,
-            lalu menghubungkannya dengan koordinat dan dimensi ruang vektor.
+            Bab ini dibangun sebagai buku digital: mulai dari intuisi, definisi formal, teorema dan pembuktian,
+            visualisasi, contoh bertahap, latihan, hingga bank soal.
           </p>
           <div className="chapter-meta">
             <span>Kuliah</span>
-            <span>Aljabar Linear</span>
-            <span>Menengah</span>
-            <span>± 45 menit baca</span>
+            <span>Formal + Intuitif</span>
+            <span>± 90–120 menit</span>
+            <span>100 bank soal</span>
           </div>
           <div className="actions">
             <Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Mulai Latihan</Link>
-            <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Bank Soal</Link>
+            <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka 100 Bank Soal</Link>
           </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="container article-layout">
-          <aside className="toc">
+        <div className="container article-layout wide-article-layout">
+          <aside className="toc material-toc">
             <strong>Isi Bab</strong>
-            {subchapters.map((item, index) => (
-              <a href={"#s" + (index + 1)} key={item}>{index + 1}. {item}</a>
+            {sections.map(([id, label], index) => (
+              <a href={"#" + id} key={id}>{String(index + 1).padStart(2, "0")}. {label}</a>
             ))}
           </aside>
 
-          <article className="article">
-            <section id="s1">
+          <article className="article deep-article basis-article">
+            <section id="overview">
               <span className="eyebrow">Overview</span>
-              <h2>Mengapa basis penting?</h2>
-              <p>
-                Basis memberi sistem koordinat pada ruang vektor. Setelah basis dipilih, setiap vektor dapat
-                direpresentasikan secara unik melalui sejumlah skalar. Dimensi kemudian mengukur banyaknya
-                arah bebas yang diperlukan untuk membangun ruang tersebut.
-              </p>
+              <h2>Basis adalah sistem koordinat bagi ruang vektor.</h2>
+              <P>
+                Dalam $\mathbb R^2$, kita terbiasa memakai $e_1=(1,0)$ dan $e_2=(0,1)$.
+                Namun pasangan lain seperti $v_1=(1,1)$ dan $v_2=(1,-1)$ juga dapat dipakai untuk
+                mendeskripsikan setiap vektor di $\mathbb R^2$ secara unik. Pasangan semacam ini disebut basis.
+              </P>
+              <P>
+                Gagasan basis menggabungkan dua ide: himpunan tersebut harus cukup besar untuk merentang ruang,
+                tetapi tidak boleh memiliki vektor yang redundan.
+                Dimensi kemudian mengukur banyaknya vektor yang diperlukan dalam sebuah basis.
+              </P>
+              <MathVisualization kind="basis" />
+
+              <div className="content-box prerequisite-box">
+                <strong>Prasyarat</strong>
+                <ul>
+                  <li>Operasi pada vektor dan skalar.</li>
+                  <li>Ruang vektor dan subruang.</li>
+                  <li>Sistem persamaan linear dan eliminasi Gauss.</li>
+                </ul>
+              </div>
+
+              <div className="learning-objectives">
+                <span className="eyebrow">Tujuan Pembelajaran</span>
+                <div className="objective-grid">
+                  {[
+                    "Menguji apakah suatu vektor merupakan kombinasi linear.",
+                    "Menentukan span dan membangun basis dari spanning set.",
+                    "Menguji kebebasan linear secara konseptual maupun komputasional.",
+                    "Menentukan koordinat relatif terhadap basis.",
+                    "Menggunakan dimensi untuk membatasi ukuran himpunan bebas linear.",
+                    "Membangun basis subruang, row space, dan column space.",
+                    "Membuktikan basis extension dan rank–nullity.",
+                  ].map((x, i) => (
+                    <div className="objective-card" key={x}>
+                      <span>{i + 1}</span>
+                      <p>{x}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="concept-map concept-map-wide">
+                {["Ruang Vektor","Kombinasi Linear","Span","Bebas Linear","Basis","Koordinat","Dimensi","Rank–Nullity"].map((item, index, array) => (
+                  <div className="concept-node" key={item}>
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <strong>{item}</strong>
+                    {index < array.length - 1 && <i aria-hidden="true">→</i>}
+                  </div>
+                ))}
+              </div>
             </section>
 
-            <section className="content-box">
-              <strong>Prasyarat</strong>
-              <p>Ruang vektor, subruang, operasi vektor, dan sistem persamaan linear.</p>
+            <section id="review">
+              <span className="eyebrow">01 · Review Ruang Vektor</span>
+              <h2>Objek yang akan kita bangun.</h2>
+              <P>
+                Sebuah ruang vektor $V$ atas lapangan $\mathbb F$ adalah himpunan yang dilengkapi
+                penjumlahan vektor dan perkalian skalar, serta memenuhi aksioma linearitas.
+                Contoh utama adalah $\mathbb R^n$, ruang polinom $\mathcal P_n$, ruang matriks
+                $M_{m\times n}(\mathbb F)$, dan ruang fungsi.
+              </P>
+              <div className="definition-box numbered-box">
+                <div className="box-kicker">Definisi</div>
+                <strong>Subruang</strong>
+                <P>
+                  Himpunan $W\subseteq V$ disebut subruang apabila $0\in W$ dan untuk setiap
+                  $u,v\in W$ serta $\alpha,\beta\in\mathbb F$, berlaku $\alpha u+\beta v\in W$.
+                </P>
+              </div>
+
+              <Theorem
+                number="1"
+                title="Kriteria Subruang"
+                statement="Himpunan tak kosong $W\subseteq V$ adalah subruang jika dan hanya jika untuk setiap $u,v\in W$ dan $\alpha,\beta\in\mathbb F$, berlaku $\alpha u+\beta v\in W$."
+                proof={[
+                  "Jika $W$ subruang, sifat tertutup terhadap kombinasi linear langsung mengikuti aksioma subruang.",
+                  "Sebaliknya, karena $W$ tak kosong, diambil $w\\in W$. Dengan memilih $\\alpha=0$ dan $\\beta=0$, diperoleh $0\\in W$.",
+                  "Pilih $\\alpha=1,\\beta=1$ untuk mendapatkan $u+v\\in W$, dan pilih $\\beta=0$ untuk mendapatkan $\\alpha u\\in W$.",
+                  "Operasi pada $W$ diwarisi dari $V$, jadi seluruh aksioma lain otomatis berlaku. Dengan demikian $W$ subruang."
+                ]}
+                importance="Kriteria ini mempercepat verifikasi subruang karena semua syarat tertutup dapat digabung dalam satu pernyataan."
+              />
             </section>
 
-            <section>
-              <h2>Tujuan Pembelajaran</h2>
-              <ul>
-                <li>Menentukan apakah suatu vektor merupakan kombinasi linear dari himpunan tertentu.</li>
-                <li>Menentukan span dan memeriksa kebebasan linear.</li>
-                <li>Memverifikasi apakah suatu himpunan merupakan basis.</li>
-                <li>Menentukan koordinat vektor terhadap suatu basis.</li>
-                <li>Menggunakan dimensi untuk menganalisis subruang dan transformasi linear.</li>
-              </ul>
+            <section id="kombinasi">
+              <span className="eyebrow">02 · Kombinasi Linear</span>
+              <h2>Membangun vektor dari vektor lain.</h2>
+              <div className="definition-box numbered-box">
+                <div className="box-kicker">Definisi</div>
+                <strong>Kombinasi Linear</strong>
+                <P>
+                  Diambil $v_1,\ldots,v_k\in V$. Vektor $v\in V$ disebut kombinasi linear dari
+                  $v_1,\ldots,v_k$ apabila terdapat skalar $a_1,\ldots,a_k\in\mathbb F$ sehingga
+                  $$v=a_1v_1+\cdots+a_kv_k.$$
+                </P>
+              </div>
+              <div className="example-suite">
+                <div className="example-box">
+                  <div className="box-kicker">Contoh Dasar</div>
+                  <strong>Apakah $(5,1)$ kombinasi linear dari $(1,1)$ dan $(2,-1)$?</strong>
+                  <P>
+                    Cari $a,b$ sehingga $a(1,1)+b(2,-1)=(5,1)$.
+                  </P>
+                </div>
+                <div className="solution-box content-box">
+                  <strong>Pembahasan</strong>
+                  <P>
+                    Sistemnya adalah $a+2b=5$ dan $a-b=1$. Dari persamaan kedua,
+                    $a=1+b$. Substitusi memberi $1+3b=5$, jadi $b=\frac43$ dan
+                    $a=\frac73$. Dengan demikian $(5,1)$ memang kombinasi linear.
+                  </P>
+                </div>
+              </div>
             </section>
 
-            <section id="s2">
-              <span className="eyebrow">Kombinasi Linear</span>
-              <h2>Dari pembangun menuju ruang.</h2>
+            <section id="span">
+              <span className="eyebrow">03 · Span</span>
+              <h2>Semua vektor yang dapat dibangun.</h2>
               <div className="definition-box">
-                <strong>Definisi</strong>
-                <p>
-                  Vektor v disebut kombinasi linear dari v₁,…,vₖ apabila terdapat skalar
-                  a₁,…,aₖ dengan v=a₁v₁+⋯+aₖvₖ.
-                </p>
+                <strong>Definisi Span</strong>
+                <P>
+                  Untuk $S=\{v_1,\ldots,v_k\}\subseteq V$,
+                  $$\operatorname{span}(S)=\left\{a_1v_1+\cdots+a_kv_k:a_i\in\mathbb F\right\}.$$
+                </P>
               </div>
-              <MathBlock tex={"v=a_1v_1+a_2v_2+\\cdots+a_kv_k"} />
-            </section>
 
-            <section id="s3">
-              <span className="eyebrow">Span</span>
-              <h2>Semua kombinasi linear yang mungkin.</h2>
-              <p>
-                Span suatu himpunan vektor adalah himpunan seluruh kombinasi linear dari vektor-vektor tersebut.
-                Jika span S=V, S disebut merentang V.
-              </p>
-              <MathBlock tex={"\\operatorname{span}(S)=\\left\\{\\sum_{i=1}^{k}a_iv_i:a_i\\in\\mathbb{F}\\right\\}"} />
-            </section>
+              <Theorem
+                number="2"
+                title="Span adalah Subruang Terkecil yang Memuat S"
+                statement="Untuk setiap $S\subseteq V$, $\operatorname{span}(S)$ adalah subruang $V$. Selain itu, jika $W$ adalah subruang yang memuat $S$, maka $\operatorname{span}(S)\subseteq W$."
+                proof={[
+                  "Vektor nol berada di $\\operatorname{span}(S)$ dengan memilih semua koefisien sama dengan nol.",
+                  "Diambil $x=\\sum a_iv_i$ dan $y=\\sum b_iv_i$ di $\\operatorname{span}(S)$ serta $\\alpha,\\beta\\in\\mathbb F$.",
+                  "Diperoleh $\\alpha x+\\beta y=\\sum(\\alpha a_i+\\beta b_i)v_i$, yang kembali merupakan kombinasi linear anggota $S$. Jadi $\\operatorname{span}(S)$ subruang.",
+                  "Jika $W$ subruang dan $S\\subseteq W$, tertutupnya $W$ terhadap kombinasi linear mengakibatkan setiap anggota $\\operatorname{span}(S)$ berada di $W$.",
+                  "Dengan demikian $\\operatorname{span}(S)$ adalah subruang terkecil yang memuat $S$."
+                ]}
+                importance="Hasil ini memberi makna struktural span: bukan sekadar daftar kombinasi linear, tetapi subruang minimal yang dibangun oleh suatu himpunan."
+              />
 
-            <section id="s4">
-              <span className="eyebrow">Bebas Linear</span>
-              <h2>Tidak ada vektor yang redundan.</h2>
-              <p>
-                Suatu himpunan vektor bebas linear apabila persamaan a₁v₁+⋯+aₖvₖ=0 hanya memiliki
-                solusi trivial a₁=⋯=aₖ=0.
-              </p>
-              <div className="example-box">
-                <strong>Contoh</strong>
-                <p>Pasangan (1,0),(0,1) bebas linear di R², sedangkan (1,2),(2,4) bergantung linear.</p>
+              <div className="counterexample-box content-box">
+                <strong>Counterexample penting</strong>
+                <P>
+                  Di $\mathbb R^3$, himpunan $\{(1,0,0),(0,1,0)\}$ tidak merentang
+                  $\mathbb R^3$ karena setiap kombinasinya berbentuk $(a,b,0)$.
+                  Jadi vektor $(0,0,1)$ tidak dapat dihasilkan.
+                </P>
               </div>
             </section>
 
-            <section id="s5">
-              <span className="eyebrow">Basis</span>
-              <h2>Dua syarat sekaligus.</h2>
-              <div className="theorem-box">
+            <section id="bebas">
+              <span className="eyebrow">04 · Bebas Linear</span>
+              <h2>Mendeteksi redundansi.</h2>
+              <div className="definition-box">
+                <strong>Definisi Bebas Linear</strong>
+                <P>
+                  Himpunan $S=\{v_1,\ldots,v_k\}$ disebut bebas linear apabila
+                  $$a_1v_1+\cdots+a_kv_k=0$$
+                  hanya mempunyai solusi trivial $a_1=\cdots=a_k=0$.
+                </P>
+              </div>
+
+              <Theorem
+                number="3"
+                title="Kriteria Redundansi"
+                statement="Himpunan $v_1,\ldots,v_k$ dengan $k\ge2$ bergantung linear jika dan hanya jika salah satu vektor merupakan kombinasi linear dari vektor-vektor lainnya."
+                proof={[
+                  "Andaikan himpunan bergantung linear. Terdapat skalar tidak semuanya nol dengan $\\sum a_iv_i=0$.",
+                  "Pilih indeks $j$ dengan $a_j\\neq0$. Susun ulang persamaan untuk memperoleh $v_j=-\\sum_{i\\neq j}(a_i/a_j)v_i$.",
+                  "Jadi $v_j$ adalah kombinasi linear vektor lainnya.",
+                  "Sebaliknya, jika $v_j=\\sum_{i\\neq j}c_iv_i$, pindahkan semua suku ke satu ruas. Diperoleh kombinasi linear nol dengan koefisien $v_j$ sama dengan $1$, jadi relasi tersebut nontrivial.",
+                  "Dengan demikian himpunan bergantung linear."
+                ]}
+                importance="Teorema ini menjelaskan arti intuitif ketergantungan linear: ada vektor yang sebenarnya tidak menambah arah baru."
+              />
+
+              <div className="comparison-table">
+                <div className="comparison-col">
+                  <span className="eyebrow">Bebas linear</span>
+                  <strong>Tidak ada redundansi</strong>
+                  <P>$a_1v_1+\cdots+a_kv_k=0$ hanya punya solusi trivial.</P>
+                </div>
+                <div className="comparison-col">
+                  <span className="eyebrow">Bergantung linear</span>
+                  <strong>Ada informasi berlebih</strong>
+                  <P>Sedikitnya satu vektor dapat dibangun dari vektor lain.</P>
+                </div>
+              </div>
+            </section>
+
+            <section id="basis">
+              <span className="eyebrow">05 · Basis</span>
+              <h2>Cukup untuk merentang, minimum tanpa redundansi.</h2>
+              <div className="definition-box">
                 <strong>Definisi Basis</strong>
-                <p>Himpunan B merupakan basis V jika B bebas linear dan span(B)=V.</p>
+                <P>
+                  Himpunan $B=\{v_1,\ldots,v_n\}$ adalah basis $V$ apabila $B$ bebas linear dan
+                  $\operatorname{span}(B)=V$.
+                </P>
               </div>
-              <p>
-                Basis bersifat minimal sebagai spanning set dan maksimal sebagai himpunan bebas linear.
-                Dua sudut pandang ini menjadi alat penting dalam banyak pembuktian.
-              </p>
+
+              <Theorem
+                number="4"
+                title="Keunikan Representasi terhadap Basis"
+                statement="Jika $B=(v_1,\ldots,v_n)$ adalah basis $V$, maka setiap $v\in V$ dapat ditulis secara unik sebagai $v=a_1v_1+\cdots+a_nv_n$."
+                proof={[
+                  "Karena $B$ merentang $V$, representasi tersebut ada.",
+                  "Untuk keunikan, andaikan $v=\\sum a_iv_i=\\sum b_iv_i$.",
+                  "Kurangkan kedua representasi dan diperoleh $\\sum(a_i-b_i)v_i=0$.",
+                  "Karena $B$ bebas linear, $a_i-b_i=0$ untuk setiap $i$.",
+                  "Jadi $a_i=b_i$ untuk setiap $i$. Dengan demikian representasi relatif terhadap basis unik."
+                ]}
+                importance="Keunikan inilah yang memungkinkan konsep koordinat. Tanpa kebebasan linear, satu vektor dapat memiliki banyak representasi."
+              />
+
+              <div className="example-suite">
+                <div className="example-box">
+                  <div className="box-kicker">Worked Example</div>
+                  <strong>Basis nonstandar di $\mathbb R^2$</strong>
+                  <P>
+                    Ambil $B=((1,1),(1,-1))$. Tentukan koordinat $(4,2)$ relatif terhadap $B$.
+                  </P>
+                </div>
+                <div className="solution-box content-box">
+                  <P>
+                    Cari $a,b$ dengan $a(1,1)+b(1,-1)=(4,2)$. Sistem
+                    $a+b=4$ dan $a-b=2$ memberi $a=3$ dan $b=1$.
+                    Jadi $[(4,2)]_B=(3,1)$.
+                  </P>
+                </div>
+              </div>
             </section>
 
-            <section id="s6">
-              <span className="eyebrow">Koordinat</span>
-              <h2>Representasi unik terhadap basis.</h2>
-              <p>
-                Jika B adalah basis V, setiap v∈V mempunyai representasi unik v=a₁v₁+⋯+aₙvₙ.
-                Vektor skalar (a₁,…,aₙ) disebut koordinat v terhadap B.
-              </p>
+            <section id="koordinat">
+              <span className="eyebrow">06 · Koordinat</span>
+              <h2>Vektor abstrak menjadi daftar skalar.</h2>
+              <P>
+                Untuk basis berurutan $B=(v_1,\ldots,v_n)$, koordinat vektor
+                $v=a_1v_1+\cdots+a_nv_n$ didefinisikan sebagai
+                $$[v]_B=\begin{pmatrix}a_1\\\vdots\\a_n\end{pmatrix}.$$
+              </P>
+
+              <Theorem
+                number="5"
+                title="Pemetaan Koordinat adalah Isomorfisme"
+                statement="Jika $B=(v_1,\ldots,v_n)$ basis $V$, maka pemetaan $\Phi_B:V\to\mathbb F^n$ yang didefinisikan oleh $\Phi_B(v)=[v]_B$ adalah isomorfisme."
+                proof={[
+                  "Linearitas: jika $[u]_B=(a_i)$ dan $[v]_B=(b_i)$, maka $[\\alpha u+\\beta v]_B=(\\alpha a_i+\\beta b_i)=\\alpha[u]_B+\\beta[v]_B$.",
+                  "Injektivitas: jika $[u]_B=[v]_B$, keunikan representasi basis memberi $u=v$.",
+                  "Surjektivitas: untuk setiap $(c_1,\\ldots,c_n)\\in\\mathbb F^n$, vektor $c_1v_1+\\cdots+c_nv_n$ memiliki koordinat tersebut.",
+                  "Jadi $\\Phi_B$ linear, injektif, dan surjektif."
+                ]}
+                importance="Teorema ini menjelaskan mengapa ruang vektor berdimensi $n$ secara aljabar setara dengan $\mathbb F^n$ setelah sebuah basis dipilih."
+              />
             </section>
 
-            <section id="s7">
-              <span className="eyebrow">Dimensi</span>
-              <h2>Banyaknya arah bebas.</h2>
+            <section id="dimensi">
+              <span className="eyebrow">07 · Dimensi</span>
+              <h2>Banyaknya arah bebas yang diperlukan.</h2>
               <div className="definition-box">
-                <strong>Definisi</strong>
-                <p>Untuk ruang vektor berdimensi hingga, dim V adalah banyak anggota pada suatu basis V.</p>
+                <strong>Definisi Dimensi</strong>
+                <P>
+                  Jika $V$ mempunyai basis berhingga dengan $n$ anggota, didefinisikan
+                  $\dim V=n$. Untuk ruang nol, $\dim\{0\}=0$.
+                </P>
               </div>
-              <MathBlock tex={"\\dim V=n"} />
-              <div className="proof-box">
-                <strong>Teorema — Keunikan Banyak Anggota Basis</strong>
-                <p>Setiap dua basis hingga dari ruang vektor yang sama mempunyai banyak anggota yang sama.</p>
-                <p>
-                  <strong>Bukti.</strong> Diambil basis B dengan m anggota dan basis C dengan n anggota.
-                  Karena B bebas linear dan C merentang V, Teorema Pertukaran Steinitz memberikan m≤n.
-                  Dengan menukar peran B dan C diperoleh n≤m. Oleh karena itu m=n.
-                  Dengan demikian, banyak anggota basis tidak bergantung pada pilihan basis.
-                </p>
+
+              <Theorem
+                number="6"
+                title="Lemma Pertukaran"
+                statement="Jika $v_1,\ldots,v_m$ bebas linear dan $w_1,\ldots,w_n$ merentang $V$, maka $m\le n$."
+                proof={[
+                  "Karena $w_1,\\ldots,w_n$ merentang $V$, vektor $v_1$ dapat dinyatakan sebagai kombinasi linear para $w_j$. Sedikitnya satu koefisien tidak nol.",
+                  "Pilih $w_j$ dengan koefisien tidak nol dan selesaikan persamaan untuk $w_j$. Dengan demikian $v_1$ dapat menggantikan $w_j$ tanpa mengubah span.",
+                  "Ulangi proses untuk $v_2,\\ldots,v_m$. Kebebasan linear menjamin pada setiap tahap terdapat vektor lama yang masih dapat diganti.",
+                  "Setelah $m$ langkah, telah dilakukan $m$ penggantian pada daftar awal yang hanya memiliki $n$ vektor. Oleh karena itu $m\\le n$."
+                ]}
+                importance="Lemma pertukaran adalah mesin utama di balik keunikan dimensi dan banyak hasil tentang ukuran basis."
+              />
+
+              <Theorem
+                number="7"
+                title="Semua Basis Hingga Memiliki Banyak Anggota yang Sama"
+                statement="Jika $B$ dan $C$ adalah basis hingga ruang vektor $V$, maka $|B|=|C|$."
+                proof={[
+                  "Misalkan $|B|=m$ dan $|C|=n$.",
+                  "Karena $B$ bebas linear dan $C$ merentang $V$, Lemma Pertukaran memberi $m\\le n$.",
+                  "Karena $C$ bebas linear dan $B$ merentang $V$, Lemma Pertukaran memberi $n\\le m$.",
+                  "Jadi $m=n$. Dengan demikian definisi dimensi tidak bergantung pada basis yang dipilih."
+                ]}
+                importance="Tanpa hasil ini, istilah 'dimensi ruang vektor' tidak akan terdefinisi dengan baik."
+              />
+
+              <div className="dimension-facts">
+                <div><strong>$\dim\mathbb R^n=n$</strong><span>basis standar memiliki $n$ vektor</span></div>
+                <div><strong>$\dim\mathcal P_n=n+1$</strong><span>basis $1,x,\ldots,x^n$</span></div>
+                <div><strong>$\dim M_{m\times n}=mn$</strong><span>satu basis elementer per entri</span></div>
               </div>
             </section>
 
-            <section id="s8">
-              <span className="eyebrow">Basis Subruang</span>
-              <h2>Mencari parameter bebas.</h2>
-              <p>
-                Untuk subruang yang diberikan melalui persamaan homogen, basis dapat dicari dengan
-                memparametrisasi ruang solusi. Banyak parameter bebas sama dengan dimensi subruang tersebut.
-              </p>
+            <section id="subruang">
+              <span className="eyebrow">08 · Basis Subruang</span>
+              <h2>Dimensi tidak dapat melebihi ruang induk.</h2>
+
+              <Theorem
+                number="8"
+                title="Dimensi Subruang"
+                statement="Jika $W$ subruang dari ruang berdimensi hingga $V$, maka $\dim W\le\dim V$. Kesetaraan terjadi jika dan hanya jika $W=V$."
+                proof={[
+                  "Ambil basis $w_1,\\ldots,w_k$ dari $W$. Karena $W\\subseteq V$, himpunan ini juga bebas linear di $V$.",
+                  "Setiap himpunan bebas linear di $V$ memiliki paling banyak $\\dim V$ anggota, jadi $k\\le\\dim V$.",
+                  "Jika $k=\\dim V$, maka basis $W$ memiliki tepat sebanyak dimensi $V$. Himpunan tersebut bebas linear di $V$, jadi otomatis basis $V$. Akibatnya $W=V$.",
+                  "Sebaliknya, jika $W=V$, jelas dimensinya sama."
+                ]}
+                importance="Hasil ini sangat berguna untuk membuktikan kesamaan subruang: cukup buktikan inklusi dan kesamaan dimensi."
+              />
+
+              <div className="example-suite">
+                <div className="example-box">
+                  <strong>Basis bidang di $\mathbb R^3$</strong>
+                  <P>
+                    Tentukan basis $W=\{(x,y,z)\in\mathbb R^3:x+y+z=0\}$.
+                  </P>
+                </div>
+                <div className="solution-box content-box">
+                  <P>
+                    Dari $z=-x-y$,
+                    $$(x,y,z)=x(1,0,-1)+y(0,1,-1).$$
+                    Kedua vektor bebas linear, jadi salah satu basis adalah
+                    $\{(1,0,-1),(0,1,-1)\}$ dan $\dim W=2$.
+                  </P>
+                </div>
+              </div>
             </section>
 
-            <section id="s9">
-              <span className="eyebrow">Ekstensi Basis</span>
-              <h2>Dari himpunan bebas linear menuju basis.</h2>
-              <p>
-                Setiap himpunan bebas linear pada ruang vektor berdimensi hingga dapat diperluas menjadi basis
-                dengan menambahkan vektor yang berada di luar span himpunan saat ini.
-              </p>
+            <section id="ekstensi">
+              <span className="eyebrow">09 · Ekstensi Basis</span>
+              <h2>Dari himpunan bebas linear menuju basis penuh.</h2>
+
+              <Theorem
+                number="9"
+                title="Teorema Ekstensi Basis"
+                statement="Setiap himpunan bebas linear hingga dalam ruang vektor berdimensi hingga dapat diperluas menjadi basis ruang tersebut."
+                proof={[
+                  "Diambil himpunan bebas linear $S=\\{v_1,\\ldots,v_k\\}$.",
+                  "Jika $\\operatorname{span}(S)=V$, maka $S$ sudah merupakan basis.",
+                  "Jika belum, pilih $v_{k+1}\\in V\\setminus\\operatorname{span}(S)$. Himpunan baru tetap bebas linear; jika tidak, $v_{k+1}$ dapat ditulis sebagai kombinasi linear anggota $S$, bertentangan dengan pilihan.",
+                  "Ulangi proses selama span belum sama dengan $V$.",
+                  "Karena setiap penambahan menaikkan ukuran himpunan bebas linear dan ukuran tersebut tidak dapat melebihi $\\dim V$, proses berhenti setelah berhingga langkah.",
+                  "Himpunan akhir bebas linear dan merentang $V$, jadi merupakan basis."
+                ]}
+                importance="Teorema ini menjamin bahwa setiap informasi linear yang belum redundan dapat dilengkapi menjadi sistem koordinat penuh."
+              />
+
+              <Theorem
+                number="10"
+                title="Reduksi Spanning Set menjadi Basis"
+                statement="Setiap spanning set hingga dari ruang vektor dapat direduksi menjadi basis dengan menghapus vektor-vektor redundan."
+                proof={[
+                  "Jika spanning set bebas linear, himpunan tersebut sudah merupakan basis.",
+                  "Jika bergantung linear, Kriteria Redundansi memberi satu vektor yang merupakan kombinasi linear vektor lain.",
+                  "Hapus vektor tersebut. Span tidak berubah.",
+                  "Ulangi proses. Karena himpunan awal hingga, proses berhenti.",
+                  "Himpunan akhir tetap merentang dan tidak lagi bergantung linear, jadi merupakan basis."
+                ]}
+                importance="Hasil ini adalah dasar algoritmik untuk mencari basis dari sekumpulan generator."
+              />
             </section>
 
-            <section id="s10">
-              <span className="eyebrow">Rank dan Dimensi</span>
-              <h2>Hubungan dengan transformasi linear.</h2>
-              <MathBlock tex={"\\dim V=\\operatorname{rank}(T)+\\operatorname{nullity}(T)"} />
-              <p>
-                Teorema rank-nullity menghubungkan dimensi domain dengan dimensi image dan kernel transformasi linear.
-              </p>
+            <section id="baris-kolom">
+              <span className="eyebrow">10 · Ruang Baris & Kolom</span>
+              <h2>Basis dari sebuah matriks.</h2>
+              <P>
+                Untuk matriks $A\in\mathbb F^{m\times n}$, ruang baris adalah span semua baris $A$,
+                sedangkan ruang kolom adalah span semua kolom $A$.
+              </P>
+              <div className="definition-box">
+                <strong>Aturan komputasi penting</strong>
+                <P>
+                  Baris tak nol pada bentuk eselon baris dapat dipakai sebagai basis row space.
+                  Untuk column space, gunakan kolom-kolom matriks asal yang posisinya bersesuaian
+                  dengan kolom pivot pada bentuk eselon.
+                </P>
+              </div>
+
+              <div className="example-suite">
+                <div className="example-box">
+                  <strong>Menentukan basis column space</strong>
+                  <P>
+                    Ambil
+                    $$A=\begin{pmatrix}1&2&3\\0&1&1\\1&3&4\end{pmatrix}.$$
+                  </P>
+                </div>
+                <div className="solution-box content-box">
+                  <P>
+                    Kolom ketiga memenuhi $c_3=c_1+c_2$. Kolom pertama dan kedua bebas linear.
+                    Jadi basis column space dapat dipilih
+                    $$\left\{\begin{pmatrix}1\\0\\1\end{pmatrix},
+                    \begin{pmatrix}2\\1\\3\end{pmatrix}\right\}.$$
+                  </P>
+                </div>
+              </div>
+            </section>
+
+            <section id="rank-nullity">
+              <span className="eyebrow">11 · Rank–Nullity</span>
+              <h2>Dimensi domain terbagi menjadi dua bagian.</h2>
+              <div className="definition-box">
+                <strong>Rank dan Nullity</strong>
+                <P>
+                  Untuk $T:V\to W$, didefinisikan
+                  $\operatorname{rank}(T)=\dim(\operatorname{im}T)$ dan
+                  $\operatorname{nullity}(T)=\dim(\ker T)$.
+                </P>
+              </div>
+
+              <Theorem
+                number="11"
+                title="Teorema Rank–Nullity"
+                statement="Jika $V$ berdimensi hingga dan $T:V\to W$ linear, maka $\dim V=\operatorname{nullity}(T)+\operatorname{rank}(T)$."
+                proof={[
+                  "Ambil basis $u_1,\\ldots,u_k$ dari $\\ker T$.",
+                  "Gunakan Teorema Ekstensi Basis untuk memperluasnya menjadi basis $u_1,\\ldots,u_k,v_1,\\ldots,v_r$ dari $V$.",
+                  "Tunjukkan $Tv_1,\\ldots,Tv_r$ merentang $\\operatorname{im}T$: setiap $x\\in V$ dapat ditulis sebagai kombinasi basis tersebut, dan bagian kernel hilang setelah diterapkan $T$.",
+                  "Tunjukkan $Tv_1,\\ldots,Tv_r$ bebas linear. Jika $\\sum a_iTv_i=0$, maka $\\sum a_iv_i\\in\\ker T$. Tetapi ekspansi basis menunjukkan vektor itu juga hanya memakai komponen $v_i$, jadi semua $a_i=0$.",
+                  "Jadi $Tv_1,\\ldots,Tv_r$ adalah basis image, sehingga $\\operatorname{rank}(T)=r$ dan $\\operatorname{nullity}(T)=k$.",
+                  "Karena basis $V$ memiliki $k+r$ anggota, diperoleh $\\dim V=k+r=\\operatorname{nullity}(T)+\\operatorname{rank}(T)$."
+                ]}
+                importance="Rank–nullity menghubungkan geometri kernel dengan keluaran transformasi. Teorema ini menjadi salah satu alat paling sering dipakai dalam Aljabar Linear."
+              />
+
+              <div className="content-box insight-box">
+                <strong>Konsekuensi penting</strong>
+                <P>
+                  Untuk operator $T:V\to V$ pada ruang berdimensi hingga,
+                  $T$ injektif jika dan hanya jika $T$ surjektif.
+                  Injektif berarti $\operatorname{nullity}(T)=0$; rank–nullity lalu memberi
+                  $\operatorname{rank}(T)=\dim V$, yang ekuivalen dengan surjektif.
+                </P>
+              </div>
+            </section>
+
+            <section id="contoh">
+              <span className="eyebrow">12 · Worked Examples</span>
+              <h2>Tiga tingkat penyelesaian.</h2>
+
+              <div className="example-stack">
+                <div className="example-suite">
+                  <div className="example-box">
+                    <div className="box-kicker">Dasar</div>
+                    <strong>Dimensi sebuah span</strong>
+                    <P>
+                      Tentukan $\dim\operatorname{span}\{(1,0,1),(0,1,1),(1,1,2)\}$.
+                    </P>
+                  </div>
+                  <div className="solution-box content-box">
+                    <P>
+                      Vektor ketiga adalah jumlah dua vektor pertama. Dua vektor pertama tidak saling
+                      kelipatan dan bebas linear. Jadi basis span adalah
+                      $\{(1,0,1),(0,1,1)\}$ dan dimensinya $2$.
+                    </P>
+                  </div>
+                </div>
+
+                <div className="example-suite">
+                  <div className="example-box">
+                    <div className="box-kicker">Menengah</div>
+                    <strong>Basis ruang solusi</strong>
+                    <P>
+                      Tentukan basis solusi
+                      $$x+y+z+w=0,\qquad x-z=0.$$
+                    </P>
+                  </div>
+                  <div className="solution-box content-box">
+                    <P>
+                      Dari $x-z=0$ diperoleh $z=x$. Persamaan pertama memberi
+                      $y=-2x-w$. Jadi
+                      $$(x,y,z,w)=x(1,-2,1,0)+w(0,-1,0,1).$$
+                      Kedua vektor bebas linear, jadi dimensi ruang solusi adalah $2$.
+                    </P>
+                  </div>
+                </div>
+
+                <div className="example-suite">
+                  <div className="example-box">
+                    <div className="box-kicker">Lanjut</div>
+                    <strong>Dimensi jumlah dua subruang</strong>
+                    <P>
+                      Buktikan
+                      $$\dim(U+W)=\dim U+\dim W-\dim(U\cap W).$$
+                    </P>
+                  </div>
+                  <div className="solution-box content-box">
+                    <P>
+                      Ambil basis $\{z_1,\ldots,z_r\}$ untuk $U\cap W$. Perluas menjadi basis
+                      $\{z_1,\ldots,z_r,u_1,\ldots,u_p\}$ untuk $U$ dan
+                      $\{z_1,\ldots,z_r,w_1,\ldots,w_q\}$ untuk $W$.
+                    </P>
+                    <P>
+                      Himpunan gabungan
+                      $\{z_i,u_j,w_k\}$ merentang $U+W$. Untuk kebebasan linear, sebuah relasi nol
+                      dapat dipindahkan sehingga kombinasi $u_j$ dan $z_i$ sama dengan negatif
+                      kombinasi $w_k$. Vektor tersebut berada di $U\cap W$, dan karena perluasan basis
+                      masing-masing bebas linear, seluruh koefisien $u_j$ dan $w_k$ nol, lalu koefisien $z_i$ juga nol.
+                    </P>
+                    <P>
+                      Jadi gabungan tersebut basis $U+W$ dan memiliki $r+p+q$ anggota. Karena
+                      $\dim U=r+p$ dan $\dim W=r+q$, rumus dimensi diperoleh.
+                    </P>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <section className="content-box warning-box">
               <strong>Kesalahan Umum</strong>
               <ul>
-                <li>Hanya memeriksa bebas linear tetapi lupa memeriksa spanning.</li>
-                <li>Menganggap jumlah vektor selalu sama dengan dimensi tanpa memeriksa sifat himpunannya.</li>
-                <li>Mengambil kolom hasil eliminasi sebagai basis ruang kolom, bukan kolom pivot dari matriks asal.</li>
+                <li><RichMath>Menyimpulkan himpunan adalah basis hanya karena jumlah vektornya sama dengan $\dim V$.</RichMath></li>
+                <li><RichMath>Menganggap spanning otomatis berarti bebas linear.</RichMath></li>
+                <li><RichMath>Menggunakan kolom hasil OBE sebagai basis column space, padahal kolom pivot harus diambil dari matriks asal.</RichMath></li>
+                <li><RichMath>Menulis $\dim(U+W)=\dim U+\dim W$ tanpa mengurangi $\dim(U\cap W)$.</RichMath></li>
+                <li><RichMath>Menggunakan rank–nullity tanpa menyebut bahwa domain berdimensi hingga.</RichMath></li>
               </ul>
             </section>
 
-            <section>
-              <h2>Lanjutkan belajar</h2>
-              <div className="next-grid">
-                <Link href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan" className="card">
-                  <span className="eyebrow">Practice</span>
-                  <h3>25 Latihan Terkurasi</h3>
-                  <p>Satu soal per tampilan dengan hint dan pembahasan.</p>
+            <section id="ringkasan">
+              <span className="eyebrow">13 · Ringkasan</span>
+              <h2>Peta hasil utama</h2>
+              <div className="summary-grid">
+                {[
+                  ["Span", "$\\operatorname{span}(S)$ adalah subruang terkecil yang memuat $S$."],
+                  ["Bebas Linear", "Tidak ada vektor yang dapat dibangun dari vektor lainnya."],
+                  ["Basis", "Bebas linear + merentang."],
+                  ["Koordinat", "Representasi relatif terhadap basis bersifat unik."],
+                  ["Dimensi", "Semua basis hingga mempunyai jumlah anggota yang sama."],
+                  ["Ekstensi Basis", "Himpunan bebas linear dapat diperluas menjadi basis."],
+                  ["Subruang", "$W\\subseteq V\\Rightarrow \\dim W\\le\\dim V$."],
+                  ["Rank–Nullity", "$\\dim V=\\operatorname{rank}T+\\operatorname{nullity}T$."],
+                ].map(([title, body]) => (
+                  <div className="summary-card" key={title}>
+                    <strong>{title}</strong>
+                    <P>{body}</P>
+                  </div>
+                ))}
+              </div>
+
+              <div className="actions">
+                <Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">
+                  Kerjakan Latihan Terkurasi
                 </Link>
-                <Link href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi" className="card">
-                  <span className="eyebrow">Problem bank</span>
-                  <h3>Bank Soal</h3>
-                  <p>Filter soal berdasarkan kesulitan dan tipe.</p>
+                <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">
+                  Buka 100 Bank Soal
                 </Link>
               </div>
+            </section>
+
+            <section id="referensi">
+              <span className="eyebrow">14 · Referensi</span>
+              <h2>Bacaan utama</h2>
+              <ol className="reference-list">
+                <li>Sheldon Axler, <em>Linear Algebra Done Right</em>, 4th ed., Springer, 2024.</li>
+                <li>Gilbert Strang, <em>Introduction to Linear Algebra</em>, 6th ed., 2023.</li>
+                <li>Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence, <em>Linear Algebra</em>, 5th ed., Pearson, 2022.</li>
+              </ol>
             </section>
           </article>
         </div>

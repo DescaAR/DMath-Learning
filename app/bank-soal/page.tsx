@@ -2,24 +2,48 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 
-export const metadata: Metadata = { title: "Bank Soal" };
+export const metadata: Metadata = {
+  title: "Bank Soal",
+  description: "Bank soal matematika DMath Learning dengan filter, tingkat kesulitan, dan pembahasan terstruktur.",
+};
 
 export default function BankSoalPage() {
   return (
     <>
-      <PageHero eyebrow="Bank soal" title="Banyak soal, tetap fokus pada satu materi." description="Bank Soal berbeda dari Latihan. Halaman ini berfungsi sebagai katalog besar soal per bab; pembahasan dibuka setelah pengguna memilih soal." />
+      <PageHero
+        eyebrow="Bank soal"
+        title="Banyak soal, tetap terstruktur dan bermakna."
+        description="Bank Soal berbeda dari Latihan. Bank Soal adalah katalog besar per bab; pengguna memilih soal lalu membuka hint dan pembahasan lengkap pada halaman detail."
+      />
+
       <section className="section">
         <div className="container">
-          <div className="feature-card light-feature">
-            <span className="eyebrow">Published bank</span>
-            <h2>Basis dan Dimensi</h2>
-            <p>25 soal nyata sudah tersedia dari target 100 soal. Soal mencakup konsep, hitungan, pembuktian, counterexample, dan construction.</p>
-            <Link className="btn primary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka Bank Soal</Link>
+          <div className="feature-card light-feature bank-hero-card">
+            <span className="eyebrow">Published · Kuliah · Aljabar Linear</span>
+            <h2>Basis dan Dimensi — 100 Soal</h2>
+            <p>
+              Bank soal lengkap dengan 20 soal Dasar, 30 Menengah, 30 Sulit,
+              15 Sangat Sulit, dan 5 Challenge. Tipe soal mencakup konsep,
+              hitungan, pembuktian, true/false, counterexample, dan construction.
+            </p>
+            <div className="bank-distribution">
+              <span><strong>20</strong> Dasar</span>
+              <span><strong>30</strong> Menengah</span>
+              <span><strong>30</strong> Sulit</span>
+              <span><strong>15</strong> Sangat Sulit</span>
+              <span><strong>5</strong> Challenge</span>
+            </div>
+            <div className="actions">
+              <Link className="btn primary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka 100 Soal</Link>
+              <Link className="btn secondary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Latihan Terkurasi</Link>
+            </div>
           </div>
+
           <div className="roadmap-panel">
-            <h2>Struktur filter yang disiapkan</h2>
+            <span className="eyebrow">UX Bank Soal</span>
+            <h2>Filter, cari, pilih, baru buka pembahasan.</h2>
             <div className="subjects">
-              {["Jenjang","Track","Bidang","Bab","Subbab","Kesulitan","Tipe soal","Search","Sorting","Pagination"].map((item)=><span key={item}>{item}</span>)}
+              {["Search","Subbab","Kesulitan","Tipe soal","Random problem","Pagination","Detail soal","Hint bertahap","Pembahasan lengkap"].map((item)=><span key={item}>{item}</span>)}
             </div>
           </div>
         </div>

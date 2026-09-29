@@ -1,3 +1,5 @@
+import { deepMaterials } from "@/data/deep-materials";
+
 export type ContentStatus = "published" | "draft" | "planned";
 
 export const learningTracks = [
@@ -19,19 +21,26 @@ export const subjects = [
 ];
 
 export const materials = [
-  { title: "Pecahan", level: "SD", subject: "Aritmetika", status: "planned" as ContentStatus, summary: "Konsep pecahan, pecahan senilai, perbandingan, dan operasi." },
-  { title: "Persamaan Linear", level: "SMP", subject: "Aljabar", status: "planned" as ContentStatus, summary: "Persamaan linear satu variabel hingga sistem sederhana." },
-  { title: "Fungsi", level: "SMA", subject: "Aljabar", status: "planned" as ContentStatus, summary: "Definisi fungsi, domain, range, komposisi, invers, dan grafik." },
-  { title: "Trigonometri", level: "SMA", subject: "Trigonometri", status: "planned" as ContentStatus, summary: "Rasio, identitas, persamaan, grafik, aturan sinus dan cosinus." },
-  { title: "Basis dan Dimensi", level: "Kuliah", subject: "Aljabar Linear", status: "published" as ContentStatus, summary: "Kombinasi linear, span, bebas linear, basis, koordinat, dan dimensi.", href: "/kuliah/aljabar-linear/basis-dan-dimensi" },
-  { title: "Integral Riemann", level: "Kuliah", subject: "Analisis Real", status: "draft" as ContentStatus, summary: "Partisi, jumlah Riemann, integrabilitas, dan hubungan dengan integral Darboux." },
-  { title: "Prinsip Pigeonhole", level: "Kuliah", subject: "Kombinatorika", status: "draft" as ContentStatus, summary: "Prinsip dasar, bentuk umum, dan aplikasi kombinatorial." },
-  { title: "Spektrum Graf", level: "Kuliah", subject: "Teori Graf", status: "planned" as ContentStatus, summary: "Matriks graf, nilai eigen, dan pengantar spektrum graf." },
-  { title: "Teori Bilangan Olimpiade SMP", level: "Olimpiade SMP", subject: "Teori Bilangan", status: "planned" as ContentStatus, summary: "Keterbagian, prima, gcd/lcm, modulo, dan masalah digit." },
-  { title: "Kombinatorika Olimpiade SMA", level: "Olimpiade SMA", subject: "Kombinatorika", status: "planned" as ContentStatus, summary: "Counting, bijeksi, pigeonhole, inklusi-eksklusi, dan invarian." },
-  { title: "Aljabar Linear ON-MIPA", level: "ON-MIPA", subject: "Aljabar Linear", status: "planned" as ContentStatus, summary: "Ruang vektor, transformasi linear, rank-nullity, nilai eigen, dan ruang invarian." },
-  { title: "Analisis Real ON-MIPA", level: "ON-MIPA", subject: "Analisis Real", status: "planned" as ContentStatus, summary: "Kelengkapan, barisan, kekontinuan, integral, dan konvergensi seragam." },
-];
+  ...deepMaterials.map((material) => ({
+    title: material.title,
+    level: material.level,
+    subject: material.subject,
+    status: "published" as ContentStatus,
+    summary: material.summary,
+    href: "/materi/" + material.slug,
+  })),
+  {
+    title: "Basis dan Dimensi",
+    level: "Kuliah",
+    subject: "Aljabar Linear",
+    status: "published" as ContentStatus,
+    summary: "Bab gold standard: kombinasi linear, span, bebas linear, basis, koordinat, dimensi, basis subruang, ekstensi basis, ruang baris-kolom, dan rank-nullity.",
+    href: "/kuliah/aljabar-linear/basis-dan-dimensi",
+  },
+].sort((a, b) => {
+  const order = ["SD", "SMP", "SMA", "Kuliah", "Olimpiade SMP", "Olimpiade SMA", "Olimpiade Mahasiswa / ON-MIPA"];
+  return order.indexOf(a.level) - order.indexOf(b.level);
+});
 
 export const researchFields = [
   "Graph Theory", "Graph Labeling", "Spectral Graph Theory", "Graph Topology",
@@ -44,7 +53,7 @@ export const searchIndex = [
     title: item.title,
     description: item.summary,
     meta: item.level + " · " + item.subject,
-    href: item.href ?? "/materi",
+    href: item.href,
   })),
   { type: "Halaman", title: "Jalur Belajar", description: "Pilih jalur berdasarkan jenjang, kompetisi, atau bidang.", meta: "Navigasi", href: "/belajar" },
   { type: "Halaman", title: "Bank Soal", description: "Kumpulan soal per bab dengan filter dan halaman detail.", meta: "Latihan", href: "/bank-soal" },
