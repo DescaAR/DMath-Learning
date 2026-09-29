@@ -1,75 +1,115 @@
-const tracks = [
-  ["Matematika SD","Fondasi numerasi, geometri, data, dan pemecahan masalah."],
-  ["Matematika SMP","Aljabar, geometri, peluang, statistika, dan penalaran."],
-  ["Matematika SMA","Fungsi, trigonometri, kalkulus, matriks, dan kombinatorika."],
-  ["Matematika Kuliah","Kalkulus, aljabar linear, analisis, graf, topologi, dan lainnya."],
-  ["Olimpiade SD","Aritmetika kreatif, pola, logika, dan strategi problem solving."],
-  ["Olimpiade SMP","Aljabar, teori bilangan, kombinatorika, dan geometri."],
-  ["Olimpiade SMA","Persiapan kompetisi dengan soal nonrutin dan strategi mendalam."],
-  ["ON-MIPA","Analisis Real, Analisis Kompleks, Aljabar, dan Kombinatorika."]
-];
-
-const subjects = ["Aritmetika","Aljabar","Teori Bilangan","Kombinatorika","Geometri","Trigonometri","Kalkulus","Aljabar Linear","Analisis Real","Analisis Kompleks","Struktur Aljabar","Statistika","Peluang","Matematika Diskrit","Teori Graf","Topologi","Persamaan Diferensial","Optimisasi"];
+import Link from "next/link";
+import { learningTracks, materials, subjects } from "@/data/site-data";
+import { StatusBadge } from "@/components/StatusBadge";
 
 export default function Home() {
+  const featured = materials.filter((item) => item.status !== "planned").slice(0, 4);
+
   return (
     <>
       <section className="hero">
         <div className="container hero-inner">
-          <div className="eyebrow">Think Deeper, Solve Better.</div>
-          <h1>Bangun Pemahaman.<br/>Asah Cara Berpikir.</h1>
-          <p>Pelajari matematika dari konsep dasar hingga teori tingkat lanjut melalui materi lengkap, latihan bertahap, bank soal, dan pembahasan mendalam.</p>
+          <span className="eyebrow">DMath Learning · Think Deeper, Solve Better.</span>
+          <h1>Bangun Pemahaman.<br />Asah Cara Berpikir.</h1>
+          <p>
+            Pelajari matematika dari konsep dasar hingga teori tingkat lanjut melalui materi lengkap,
+            latihan bertahap, bank soal, dan pembahasan mendalam.
+          </p>
           <div className="actions">
-            <a className="btn primary" href="#belajar">Mulai Belajar</a>
-            <a className="btn secondary" href="#bank-soal">Jelajahi Bank Soal</a>
+            <Link className="btn primary" href="/belajar">Mulai Belajar</Link>
+            <Link className="btn secondary" href="/bank-soal">Jelajahi Bank Soal</Link>
+            <Link className="text-link" href="/olimpiade">Lihat Jalur Olimpiade →</Link>
+          </div>
+          <div className="hero-note">
+            <strong>Concept → Intuition → Formalization → Example → Practice → Problem Solving → Mastery</strong>
+            <span>Struktur belajar DMath dirancang agar pengguna tidak berhenti pada definisi.</span>
           </div>
         </div>
       </section>
 
-      <section id="belajar" className="section">
+      <section className="section" id="jalur">
         <div className="container">
           <div className="section-head">
-            <div><span className="eyebrow">Pilih jalur belajar</span><h2>Dari sekolah hingga matematika tingkat lanjut</h2></div>
-            <p>Struktur belajar dipisahkan berdasarkan jenjang dan tujuan agar navigasi tetap jelas saat konten terus berkembang.</p>
+            <div><span className="eyebrow">Pilih jalur belajar</span><h2>Dari fondasi hingga kompetisi mahasiswa.</h2></div>
+            <p>Jalur reguler dan kompetisi dipisahkan agar tujuan belajar, kedalaman formalitas, dan tipe soal tetap jelas.</p>
           </div>
-          <div className="grid">{tracks.map(([title,desc])=><article className="card" key={title}><span className="card-index">→</span><h3>{title}</h3><p>{desc}</p><span className="link">Lihat kurikulum</span></article>)}</div>
+          <div className="grid tracks-grid">
+            {learningTracks.map((track, index) => (
+              <Link className="card track-card" href={track.href} key={track.title}>
+                <span className="card-index">{String(index + 1).padStart(2, "0")}</span>
+                <h3>{track.title}</h3>
+                <p>{track.description}</p>
+                <span className="link">Lihat kurikulum →</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section id="materi" className="section soft">
+      <section className="section soft">
         <div className="container">
-          <div className="section-head"><div><span className="eyebrow">Topik utama</span><h2>Matematika sebagai ekosistem belajar</h2></div></div>
-          <div className="subjects">{subjects.map(s=><span key={s}>{s}</span>)}</div>
+          <div className="section-head">
+            <div><span className="eyebrow">Topik utama</span><h2>Satu ekosistem matematika yang saling terhubung.</h2></div>
+          </div>
+          <div className="subjects">{subjects.map((subject) => <span key={subject}>{subject}</span>)}</div>
         </div>
       </section>
 
-      <section id="bank-soal" className="section">
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div><span className="eyebrow">Konten awal</span><h2>Dibangun bertahap, statusnya transparan.</h2></div>
+            <Link href="/materi" className="text-link">Lihat seluruh roadmap →</Link>
+          </div>
+          <div className="grid material-grid">
+            {featured.map((item) => (
+              <article className="card material-card" key={item.title}>
+                <div className="card-top"><span>{item.level} · {item.subject}</span><StatusBadge status={item.status} /></div>
+                <h3>{item.title}</h3>
+                <p>{item.summary}</p>
+                {item.href ? <Link className="link" href={item.href}>Pelajari →</Link> : <span className="muted-link">Sedang disusun</span>}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section soft">
         <div className="container split">
           <div>
-            <span className="eyebrow">Bank soal</span>
-            <h2>Latihan terstruktur, bukan kumpulan soal acak.</h2>
-            <p>DMath Learning dirancang untuk memiliki latihan per soal dengan hint dan pembahasan, serta bank soal besar per materi yang dapat difilter berdasarkan tingkat kesulitan dan tipe soal.</p>
+            <span className="eyebrow">Gold standard</span>
+            <h2>Basis dan Dimensi sebagai contoh bab lengkap.</h2>
+            <p>
+              Bab ini menjadi prototipe struktur materi universitas: prasyarat, tujuan, definisi,
+              teorema, pembuktian, contoh, latihan satu per satu, bank soal, dan keterhubungan antarkonsep.
+            </p>
+            <div className="actions">
+              <Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi">Buka Bab</Link>
+              <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">25 Soal Published</Link>
+            </div>
           </div>
           <div className="feature-card">
-            <strong>Gold Standard awal</strong>
-            <h3>Basis dan Dimensi</h3>
-            <p>Materi universitas dengan definisi formal, teorema, contoh, latihan bertahap, dan bank soal yang dikembangkan menuju 100 soal berkualitas.</p>
-            <span className="status">Sedang dikembangkan</span>
+            <span className="eyebrow cyan">Aljabar Linear · Kuliah</span>
+            <h3>Basis & Dimensi</h3>
+            <ul className="clean-list">
+              <li>Kombinasi linear dan span</li>
+              <li>Bebas linear dan basis</li>
+              <li>Koordinat dan dimensi</li>
+              <li>Basis subruang dan ekstensi basis</li>
+              <li>Hubungan rank dan dimensi</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section id="olimpiade" className="section soft">
-        <div className="container split">
-          <div><span className="eyebrow">Olimpiade</span><h2>Persiapan dari SD hingga ON-MIPA.</h2></div>
-          <p>Jalur kompetisi dipisahkan dari kurikulum reguler dan berfokus pada problem solving nonrutin, strategi, hint bertahap, dan pembahasan formal.</p>
-        </div>
-      </section>
-
-      <section id="bimbingan" className="section">
+      <section className="section">
         <div className="container callout">
-          <div><span className="eyebrow">Bimbingan DMath</span><h2>Ingin belajar lebih terarah?</h2><p>Pendampingan matematika yang berfokus pada pemahaman konsep, penalaran, dan problem solving.</p></div>
-          <a className="btn primary" href="mailto:hello@dmathlearning.id">Hubungi DMath</a>
+          <div>
+            <span className="eyebrow">Bimbingan</span>
+            <h2>Ingin belajar lebih terarah?</h2>
+            <p>Pendampingan berfokus pada pemahaman konsep, penalaran, pembuktian, dan problem solving.</p>
+          </div>
+          <Link className="btn primary" href="/bimbingan">Lihat Program Bimbingan</Link>
         </div>
       </section>
     </>

@@ -1,40 +1,35 @@
 import type { Metadata } from "next";
+import "katex/dist/katex.min.css";
 import "./globals.css";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "DMath Learning — Think Deeper, Solve Better.",
-  description: "Platform pembelajaran matematika terstruktur dari tingkat sekolah hingga universitas dan olimpiade.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.name + " — " + siteConfig.tagline,
+    template: "%s | " + siteConfig.name,
+  },
+  description: siteConfig.description,
+  icons: { icon: "/brand/logo-symbol.webp" },
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    locale: "id_ID",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="id">
+    <html lang="id" suppressHydrationWarning>
       <body>
-        <header className="site-header">
-          <div className="container nav">
-            <a href="/" className="brand" aria-label="DMath Learning">
-              <span className="brand-mark">D</span>
-              <span>DMath Learning</span>
-            </a>
-            <nav aria-label="Navigasi utama">
-              <a href="#belajar">Belajar</a>
-              <a href="#materi">Materi</a>
-              <a href="#bank-soal">Bank Soal</a>
-              <a href="#olimpiade">Olimpiade</a>
-              <a href="#bimbingan">Bimbingan</a>
-            </nav>
-          </div>
-        </header>
+        <SiteHeader />
         <main>{children}</main>
-        <footer>
-          <div className="container footer-grid">
-            <div>
-              <div className="brand footer-brand"><span className="brand-mark">D</span><span>DMath Learning</span></div>
-              <p>Platform pembelajaran matematika untuk memahami konsep, membangun penalaran, dan mengasah problem solving.</p>
-            </div>
-            <div><strong>Think Deeper, Solve Better.</strong><p>© {new Date().getFullYear()} DMath Learning.</p></div>
-          </div>
-        </footer>
+        <SiteFooter />
       </body>
     </html>
   );
