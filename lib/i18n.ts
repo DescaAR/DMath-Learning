@@ -245,7 +245,22 @@ const WORDS: Record<string, string> = {
   "invers":"inverse","citra":"image","sedikitnya":"at least","kontinuitas":"continuity","teori":"theory","polinomial":"polynomial",
   "suatu":"a","genap":"even","berbentuk":"has the form","kesamaan":"equality","menit":"minutes","sulit":"advanced",
   "mengapa":"why","mencari":"find","menyusun":"arrange","memilih":"choose","terlihat":"observe","periksa":"check","mulai":"start",
-  "selesai":"finished","diperluas":"extended","mempunyai":"has","berisi":"contains","menyebabkan":"causes","sebarang":"arbitrary"
+  "selesai":"finished","diperluas":"extended","mempunyai":"has","berisi":"contains","menyebabkan":"causes","sebarang":"arbitrary",
+  "ada":"there is","evaluasi":"evaluation","inklusi":"inclusion","senilai":"equivalent","bersama":"common",
+  "konsisten":"consistent","konstruksi":"construction","restriksi":"restriction","ukuran":"size","tambahkan":"add",
+  "konstruksikan":"construct","isomorfisme":"isomorphism","batas":"bound","melebihi":"exceeds","menjumlahkan":"add",
+  "menambahkan":"adding","ketiganya":"all three","keempat":"fourth","gabungkan":"combine","idempoten":"idempotent",
+  "blok":"block","termuat":"contained","ketaksamaan":"inequality","muncul":"appears","misalnya":"for example",
+  "pertidaksamaan":"inequality","homogen":"homogeneous","parametrisasi":"parametrization","coba":"try","tambahan":"additional",
+  "relatif":"relative","komponen":"component","positif":"positive","posisi":"position","kardinalitas":"cardinality",
+  "kanan":"right","eksistensi":"existence","memahami":"understand","utuh":"whole","mekanis":"mechanical",
+  "berapa":"how many","dikalikan":"multiplied","pernyataan":"statement","kesetaraan":"equality","menerapkan":"apply",
+  "nyatakan":"express","ketergantungan":"dependence","susun":"rearrange","ulang":"again","itu":"that","tulis":"write",
+  "daftar":"list","direntang":"spanned","mengurangi":"subtract","perluasan":"extension","uji":"test","sebanyak":"as many as",
+  "bangun":"construct","elementer":"elementary","mengirim":"maps","jumlahnya":"the number","linearitas":"linearity",
+  "jelas":"clearly","asumsi":"assumption","bernilai":"has value","berikan":"give","mengikuti":"follows","sesuai":"according to",
+  "menjamin":"guarantees","kuat":"strong","nilpoten":"nilpotent","kiri":"left","terakhir":"last","pertukaran":"exchange",
+  "terdefinisi":"defined","memperoleh":"obtain","membawa":"maps","dipenuhi":"satisfied","dipertahankan":"preserved"
 };
 
 function escapeRegExp(value: string) {
