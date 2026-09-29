@@ -1,32 +1,40 @@
+"use client";
+
 import Link from "next/link";
-import { DeepMaterial } from "@/data/deep-materials";
+import type { DeepMaterial } from "@/data/deep-materials";
+import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { RichMath } from "@/components/RichMath";
+import { useLanguage } from "@/components/LanguageProvider";
 
 function RichParagraph({ text }: { text: string }) {
   return <p><RichMath>{text}</RichMath></p>;
 }
 
 export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
+  const { language } = useLanguage();
+  const m = language === "en" ? (deepMaterialEnMap[material.slug] ?? material) : material;
+  const ui = (id: string, en: string) => language === "en" ? en : id;
+
   return (
-    <>
+    <div data-no-translate>
       <section className="chapter-hero">
         <div className="container narrow">
           <div className="breadcrumb">
-            <Link href="/materi">Materi</Link>
+            <Link href="/materi">{ui("Materi", "Materials")}</Link>
             <span>/</span>
-            <span>{material.level}</span>
+            <span>{m.level}</span>
             <span>/</span>
-            <strong>{material.title}</strong>
+            <strong>{m.title}</strong>
           </div>
-          <span className="eyebrow">{material.track} · {material.subject}</span>
-          <h1>{material.title}</h1>
-          <p>{material.summary}</p>
+          <span className="eyebrow">{m.track} · {m.subject}</span>
+          <h1>{m.title}</h1>
+          <p>{m.summary}</p>
           <div className="chapter-meta">
-            <span>{material.level}</span>
-            <span>{material.subject}</span>
-            <span>{material.difficulty}</span>
-            <span>{material.readingTime}</span>
+            <span>{m.level}</span>
+            <span>{m.subject}</span>
+            <span>{m.difficulty}</span>
+            <span>{m.readingTime}</span>
           </div>
         </div>
       </section>
@@ -34,66 +42,62 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
       <section className="section">
         <div className="container article-layout">
           <aside className="toc material-toc">
-            <strong>Isi Materi</strong>
+            <strong>{ui("Isi Materi", "Contents")}</strong>
             <a href="#overview">Overview</a>
-            <a href="#prasyarat">Prasyarat</a>
-            <a href="#tujuan">Tujuan Pembelajaran</a>
-            <a href="#peta">Peta Konsep</a>
-            <a href="#motivasi">Motivasi & Intuisi</a>
-            <a href="#notasi">Notasi</a>
-            <a href="#definisi">Definisi Formal</a>
-            <a href="#teorema">Teorema & Bukti</a>
+            <a href="#prasyarat">{ui("Prasyarat", "Prerequisites")}</a>
+            <a href="#tujuan">{ui("Tujuan Pembelajaran", "Learning Objectives")}</a>
+            <a href="#peta">{ui("Peta Konsep", "Concept Map")}</a>
+            <a href="#motivasi">{ui("Motivasi & Intuisi", "Motivation & Intuition")}</a>
+            <a href="#notasi">{ui("Notasi", "Notation")}</a>
+            <a href="#definisi">{ui("Definisi Formal", "Formal Definitions")}</a>
+            <a href="#teorema">{ui("Teorema & Bukti", "Theorems & Proofs")}</a>
             <a href="#contoh">Worked Examples</a>
-            <a href="#kesalahan">Kesalahan Umum</a>
-            <a href="#koneksi">Koneksi</a>
-            <a href="#referensi">Referensi</a>
+            <a href="#kesalahan">{ui("Kesalahan Umum", "Common Mistakes")}</a>
+            <a href="#koneksi">{ui("Koneksi", "Connections")}</a>
+            <a href="#referensi">{ui("Referensi", "References")}</a>
           </aside>
 
           <article className="article deep-article">
             <section id="overview">
               <span className="eyebrow">Overview</span>
-              <h2>Gambaran besar materi</h2>
-              <RichParagraph text={material.summary} />
-              <MathVisualization kind={material.visualization} />
+              <h2>{ui("Gambaran besar materi", "Big Picture")}</h2>
+              <RichParagraph text={m.summary} />
+              <MathVisualization kind={m.visualization} />
             </section>
 
             <section id="prasyarat" className="content-box prerequisite-box">
-              <strong>Prasyarat</strong>
-              <ul>
-                {material.prerequisites.map((item) => <li key={item}>{item}</li>)}
-              </ul>
+              <strong>{ui("Prasyarat", "Prerequisites")}</strong>
+              <ul>{m.prerequisites.map((item) => <li key={item}>{item}</li>)}</ul>
             </section>
 
             <section id="tujuan">
-              <span className="eyebrow">Tujuan Pembelajaran</span>
-              <h2>Setelah mempelajari bab ini</h2>
-              <ul className="check-list">
-                {material.objectives.map((item) => <li key={item}>{item}</li>)}
-              </ul>
+              <span className="eyebrow">{ui("Tujuan Pembelajaran", "Learning Objectives")}</span>
+              <h2>{ui("Setelah mempelajari bab ini", "After Studying This Chapter")}</h2>
+              <ul className="check-list">{m.objectives.map((item) => <li key={item}>{item}</li>)}</ul>
             </section>
 
             <section id="peta">
-              <span className="eyebrow">Peta Konsep</span>
-              <h2>Alur konsep</h2>
+              <span className="eyebrow">{ui("Peta Konsep", "Concept Map")}</span>
+              <h2>{ui("Alur konsep", "Concept Flow")}</h2>
               <div className="concept-map">
-                {material.conceptMap.map((item, index) => (
+                {m.conceptMap.map((item, index) => (
                   <div className="concept-node" key={item}>
                     <span>{String(index + 1).padStart(2, "0")}</span>
                     <strong>{item}</strong>
-                    {index < material.conceptMap.length - 1 && <i aria-hidden="true">→</i>}
+                    {index < m.conceptMap.length - 1 && <i aria-hidden="true">→</i>}
                   </div>
                 ))}
               </div>
             </section>
 
             <section id="motivasi">
-              <span className="eyebrow">Motivasi & Intuisi</span>
-              <h2>Mengapa konsep ini dibutuhkan?</h2>
-              {material.motivation.map((p) => <RichParagraph key={p} text={p} />)}
+              <span className="eyebrow">{ui("Motivasi & Intuisi", "Motivation & Intuition")}</span>
+              <h2>{ui("Mengapa konsep ini dibutuhkan?", "Why Is This Concept Needed?")}</h2>
+              {m.motivation.map((p) => <RichParagraph key={p} text={p} />)}
               <div className="intuition-grid">
-                {material.intuition.map((p, index) => (
+                {m.intuition.map((p, index) => (
                   <div className="intuition-card" key={p}>
-                    <span className="card-index">Intuisi {index + 1}</span>
+                    <span className="card-index">{ui("Intuisi", "Intuition")} {index + 1}</span>
                     <RichParagraph text={p} />
                   </div>
                 ))}
@@ -101,10 +105,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             </section>
 
             <section id="notasi">
-              <span className="eyebrow">Notasi</span>
-              <h2>Simbol yang digunakan</h2>
+              <span className="eyebrow">{ui("Notasi", "Notation")}</span>
+              <h2>{ui("Simbol yang digunakan", "Symbols Used")}</h2>
               <div className="notation-table">
-                {material.notation.map((item) => (
+                {m.notation.map((item) => (
                   <div className="notation-row" key={item.symbol}>
                     <div className="notation-symbol"><RichMath>{item.symbol}</RichMath></div>
                     <div className="notation-meaning"><RichMath>{item.meaning}</RichMath></div>
@@ -114,12 +118,12 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             </section>
 
             <section id="definisi">
-              <span className="eyebrow">Definisi Formal</span>
-              <h2>Bahasa matematis yang presisi</h2>
+              <span className="eyebrow">{ui("Definisi Formal", "Formal Definitions")}</span>
+              <h2>{ui("Bahasa matematis yang presisi", "Precise Mathematical Language")}</h2>
               <div className="stacked-boxes">
-                {material.definitions.map((definition, index) => (
+                {m.definitions.map((definition, index) => (
                   <div className="definition-box numbered-box" key={definition.title}>
-                    <div className="box-kicker">Definisi {index + 1}</div>
+                    <div className="box-kicker">{ui("Definisi", "Definition")} {index + 1}</div>
                     <strong>{definition.title}</strong>
                     <RichParagraph text={definition.body} />
                   </div>
@@ -128,18 +132,18 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             </section>
 
             <section id="teorema">
-              <span className="eyebrow">Teorema & Bukti</span>
-              <h2>Hasil utama, lengkap dengan pembuktian</h2>
+              <span className="eyebrow">{ui("Teorema & Bukti", "Theorems & Proofs")}</span>
+              <h2>{ui("Hasil utama, lengkap dengan pembuktian", "Main Results, with Complete Proofs")}</h2>
               <div className="theorem-stack">
-                {material.theorems.map((theorem, index) => (
+                {m.theorems.map((theorem, index) => (
                   <div className="theorem-suite" key={theorem.title}>
                     <div className="theorem-box">
-                      <div className="box-kicker">Teorema {index + 1}</div>
+                      <div className="box-kicker">{ui("Teorema", "Theorem")} {index + 1}</div>
                       <strong>{theorem.title}</strong>
                       <RichParagraph text={theorem.statement} />
                     </div>
                     <div className="proof-box proof-detailed">
-                      <div className="box-kicker">Bukti</div>
+                      <div className="box-kicker">{ui("Bukti", "Proof")}</div>
                       {theorem.proof.map((step, stepIndex) => (
                         <div className="proof-step" key={step}>
                           <span>{stepIndex + 1}</span>
@@ -149,7 +153,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                       <p className="proof-end">■</p>
                     </div>
                     <div className="why-box">
-                      <strong>Mengapa teorema ini penting?</strong>
+                      <strong>{ui("Mengapa teorema ini penting?", "Why Is This Theorem Important?")}</strong>
                       <RichParagraph text={theorem.why} />
                     </div>
                   </div>
@@ -159,17 +163,17 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
 
             <section id="contoh">
               <span className="eyebrow">Worked Examples</span>
-              <h2>Dari konsep menuju penyelesaian</h2>
+              <h2>{ui("Dari konsep menuju penyelesaian", "From Concept to Solution")}</h2>
               <div className="example-stack">
-                {material.examples.map((example, index) => (
+                {m.examples.map((example, index) => (
                   <div className="example-suite" key={example.title}>
                     <div className="example-box">
-                      <div className="box-kicker">Contoh {index + 1}</div>
+                      <div className="box-kicker">{ui("Contoh", "Example")} {index + 1}</div>
                       <strong>{example.title}</strong>
                       <RichParagraph text={example.problem} />
                     </div>
                     <div className="solution-box content-box">
-                      <strong>Pembahasan</strong>
+                      <strong>{ui("Pembahasan", "Solution")}</strong>
                       {example.solution.map((step, stepIndex) => (
                         <div className="solution-step" key={step}>
                           <span>{stepIndex + 1}</span>
@@ -183,42 +187,39 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             </section>
 
             <section id="kesalahan" className="content-box warning-box">
-              <strong>Kesalahan Umum</strong>
-              <ul>
-                {material.mistakes.map((item) => <li key={item}><RichMath>{item}</RichMath></li>)}
-              </ul>
+              <strong>{ui("Kesalahan Umum", "Common Mistakes")}</strong>
+              <ul>{m.mistakes.map((item) => <li key={item}><RichMath>{item}</RichMath></li>)}</ul>
             </section>
 
             <section id="koneksi">
-              <span className="eyebrow">Keterhubungan Konsep</span>
-              <h2>Materi terkait</h2>
-              <div className="subjects">
-                {material.related.map((item) => <span key={item}>{item}</span>)}
-              </div>
+              <span className="eyebrow">{ui("Keterhubungan Konsep", "Concept Connections")}</span>
+              <h2>{ui("Materi terkait", "Related Topics")}</h2>
+              <div className="subjects">{m.related.map((item) => <span key={item}>{item}</span>)}</div>
             </section>
 
             <section id="referensi">
-              <span className="eyebrow">Referensi</span>
-              <h2>Bacaan lanjutan</h2>
-              <ol className="reference-list">
-                {material.references.map((reference) => <li key={reference}>{reference}</li>)}
-              </ol>
+              <span className="eyebrow">{ui("Referensi", "References")}</span>
+              <h2>{ui("Bacaan lanjutan", "Further Reading")}</h2>
+              <ol className="reference-list">{m.references.map((reference) => <li key={reference}>{reference}</li>)}</ol>
             </section>
 
             <section className="next-learning-block">
               <div>
-                <span className="eyebrow">Lanjutkan</span>
-                <h2>Uji pemahaman, jangan berhenti di membaca.</h2>
-                <p>Latihan dan bank soal untuk materi ini akan terus ditambah secara terkurasi. Bab yang sudah memiliki bank soal lengkap ditautkan langsung dari halaman Bank Soal.</p>
+                <span className="eyebrow">{ui("Lanjutkan", "Continue")}</span>
+                <h2>{ui("Uji pemahaman, jangan berhenti di membaca.", "Test Your Understanding—Do Not Stop at Reading.")}</h2>
+                <p>{ui(
+                  "Latihan dan bank soal untuk materi ini akan terus ditambah secara terkurasi. Bab yang sudah memiliki bank soal lengkap ditautkan langsung dari halaman Bank Soal.",
+                  "Curated practice and problem banks for this topic will continue to grow. Chapters with complete problem banks are linked directly from the Problem Bank page."
+                )}</p>
               </div>
               <div className="actions">
-                <Link href="/bank-soal" className="btn primary">Buka Bank Soal</Link>
-                <Link href="/materi" className="btn secondary">Materi Lain</Link>
+                <Link href="/bank-soal" className="btn primary">{ui("Buka Bank Soal", "Open Problem Bank")}</Link>
+                <Link href="/materi" className="btn secondary">{ui("Materi Lain", "Other Materials")}</Link>
               </div>
             </section>
           </article>
         </div>
       </section>
-    </>
+    </div>
   );
 }
