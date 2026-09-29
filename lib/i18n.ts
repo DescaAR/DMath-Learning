@@ -154,7 +154,6 @@ const EXACT_TRANSLATIONS: Record<string, string> = {
   "Bank Soal berbeda dari Latihan. Bank Soal adalah katalog besar per bab; pengguna memilih soal lalu membuka hint dan pembahasan lengkap pada halaman detail.": "The Problem Bank is different from Practice. It is a large chapter-based catalog where learners choose a problem and then open progressive hints and a complete solution on its detail page.",
   "Basis dan Dimensi — 100 Soal": "Basis and Dimension — 100 Problems",
   "Bank soal lengkap dengan 20 soal Dasar, 30 Menengah, 30 Sulit, 15 Sangat Sulit, dan 5 Challenge. Tipe soal mencakup konsep, hitungan, pembuktian, true/false, counterexample, dan construction.": "A complete problem bank with 20 Basic, 30 Intermediate, 30 Advanced, 15 Very Advanced, and 5 Challenge problems. Types include conceptual, computational, proof, true/false, counterexample, and construction problems.",
-  "Latihan Terkurasi": "Curated Practice",
   "Filter, cari, pilih, baru buka pembahasan.": "Filter, Search, Choose, Then Open the Solution.",
   "Random problem": "Random Problem",
   "Bimbingan matematika": "Mathematics Tutoring",
@@ -365,7 +364,14 @@ const EXACT_TRANSLATIONS: Record<string, string> = {
   "Kumpulan soal per bab dengan filter dan halaman detail.": "Chapter-based problem collections with filters and dedicated problem pages.",
   "Jalur kompetisi dari SD hingga ON-MIPA.": "Competition pathways from elementary level through ON-MIPA.",
   "Pendampingan matematika terstruktur untuk berbagai jenjang.": "Structured mathematics tutoring for multiple levels.",
-  "Eksplorasi dan proyek matematika.": "Mathematical explorations and projects."
+  "Eksplorasi dan proyek matematika.": "Mathematical explorations and projects.",
+  "Kuliah · Aljabar Linear": "University · Linear Algebra",
+  "Bank Soal Basis dan Dimensi": "Basis and Dimension Problem Bank",
+  "Katalog soal untuk satu bab. Gunakan pencarian dan filter untuk memilih tipe latihan yang dibutuhkan.": "A chapter-specific problem catalog. Use search and filters to choose the type of practice you need.",
+  "Latihan Terkurasi": "Curated Practice",
+  "Practice · 30 soal terpilih": "Practice · 30 Curated Problems",
+  "Belajar satu soal pada satu waktu.": "Learn One Problem at a Time.",
+  "Urutan dipilih dari konsep dasar menuju pembuktian dan challenge. Coba sendiri, gunakan hint bila perlu, lalu buka pembahasan lengkap.": "The sequence progresses from basic concepts to proofs and challenge problems. Try each problem yourself, use hints when needed, then open the complete solution."
 };
 
 const PHRASES: Array<[string, string]> = [
