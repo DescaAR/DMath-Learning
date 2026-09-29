@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { RichMath } from "@/components/RichMath";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export type VisualizationKind =
   | "basis"
@@ -24,11 +25,12 @@ function FigureShell({
   caption: string;
   children: ReactNode;
 }) {
+  const { language, t } = useLanguage();
   return (
     <figure className="math-figure">
       <div className="figure-heading">
-        <span className="figure-label">Visualisasi</span>
-        <strong>{title}</strong>
+        <span className="figure-label">{language === "en" ? "Visualization" : "Visualisasi"}</span>
+        <strong>{t(title)}</strong>
       </div>
       <div className="figure-canvas">{children}</div>
       <figcaption><RichMath>{caption}</RichMath></figcaption>
