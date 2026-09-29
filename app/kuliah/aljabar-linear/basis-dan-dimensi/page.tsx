@@ -204,7 +204,7 @@ export default function BasisDimensionPage() {
               <div className="example-suite">
                 <div className="example-box">
                   <div className="box-kicker">Contoh Dasar</div>
-                  <strong>Apakah $(5,1)$ kombinasi linear dari $(1,1)$ dan $(2,-1)$?</strong>
+                  <strong><RichMath>{String.raw`Apakah $(5,1)$ kombinasi linear dari $(1,1)$ dan $(2,-1)$?`}</RichMath></strong>
                   <P>{String.raw`Cari $a,b$ sehingga $a(1,1)+b(2,-1)=(5,1)$.`}</P>
                 </div>
                 <div className="solution-box content-box">
