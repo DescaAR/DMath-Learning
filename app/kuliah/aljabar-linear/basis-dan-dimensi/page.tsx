@@ -49,21 +49,21 @@ function Theorem({
       <div className="theorem-box">
         <div className="box-kicker">Teorema {number}</div>
         <strong>{title}</strong>
-        <P>{String.raw`{statement}`}</P>
+        <P>{statement}</P>
       </div>
       <div className="proof-box proof-detailed">
         <div className="box-kicker">Bukti</div>
         {proof.map((step, index) => (
           <div className="proof-step" key={step}>
             <span>{index + 1}</span>
-            <P>{String.raw`{step}`}</P>
+            <P>{step}</P>
           </div>
         ))}
         <p className="proof-end">■</p>
       </div>
       <div className="why-box">
         <strong>Mengapa teorema ini penting?</strong>
-        <P>{String.raw`{importance}`}</P>
+        <P>{importance}</P>
       </div>
     </div>
   );
@@ -594,7 +594,7 @@ export default function BasisDimensionPage() {
                 ].map(([title, body]) => (
                   <div className="summary-card" key={title}>
                     <strong>{title}</strong>
-                    <P>{String.raw`{body}`}</P>
+                    <P>{body}</P>
                   </div>
                 ))}
               </div>
