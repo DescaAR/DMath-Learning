@@ -920,3 +920,17 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .filter-chips{gap:6px}
   .filter-chip{min-height:35px;padding:0 10px;font-size:.72rem}
 }
+
+
+/* v0.4.1 — hero scale refinement */
+.home-hero-v3 h1{
+  max-width:900px;
+  font-size:clamp(2.75rem,5vw,4.95rem);
+  line-height:1.02;
+  letter-spacing:-.055em;
+}
+@media(max-width:760px){
+  .home-hero-v3 h1{
+    font-size:clamp(2.55rem,11.5vw,4rem);
+  }
+}
