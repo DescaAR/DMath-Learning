@@ -3,53 +3,21 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { basisDimensionProblems } from "@/data/basis-dimension-problems";
+import { localizeProblem } from "@/data/problem-translations-en";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
-import { translatePlainText } from "@/lib/i18n";
 
 const PAGE_SIZE = 20;
 
-function FilterChips({
-  label,
-  values,
-  value,
-  onChange,
-  translate = false,
-}: {
-  label: string;
-  values: string[];
-  value: string;
-  onChange: (value: string) => void;
-  translate?: boolean;
-}) {
-  const { language, t } = useLanguage();
-
-  return (
-    <div className="filter-chip-group bank-chip-group">
-      <span className="filter-chip-label">{t(label)}</span>
-      <div className="filter-chips bank-filter-chips">
-        {values.map((item) => (
-          <button
-            key={item}
-            type="button"
-            className={"filter-chip" + (item === value ? " active" : "")}
-            aria-pressed={item === value}
-            onClick={() => onChange(item)}
-          >
-            {item === "Semua"
-              ? t("Semua")
-              : translate
-                ? translatePlainText(item, language)
-                : item}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
+const difficultyEn: Record<string,string> = {
+  "Dasar":"Basic","Menengah":"Intermediate","Sulit":"Advanced","Sangat Sulit":"Very Advanced","Challenge":"Challenge",
+};
+const typeEn: Record<string,string> = {
+  "Konsep":"Concept","Hitungan":"Computation","Pembuktian":"Proof","True/False":"True/False","Counterexample":"Counterexample","Construction":"Construction",
+};
 
 export function ProblemBank() {
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
   const [query, setQuery] = useState("");
   const [difficulty, setDifficulty] = useState("Semua");
   const [type, setType] = useState("Semua");
@@ -61,192 +29,123 @@ export function ProblemBank() {
     []
   );
 
+  function displaySubchapter(value:string) {
+    if (value === "Semua") return language === "en" ? "All" : "Semua";
+    if (language === "id") return value;
+    const source = basisDimensionProblems.find((p) => p.subchapter === value);
+    return source ? localizeProblem(source, "en").subchapter : value;
+  }
+  function displayDifficulty(value:string) {
+    if (value === "Semua") return language === "en" ? "All" : "Semua";
+    return language === "en" ? (difficultyEn[value] ?? value) : value;
+  }
+  function displayType(value:string) {
+    if (value === "Semua") return language === "en" ? "All" : "Semua";
+    return language === "en" ? (typeEn[value] ?? value) : value;
+  }
+
   const filtered = useMemo(() => {
-    const q = query.toLowerCase().trim();
-
-    return basisDimensionProblems.filter((problem) => {
-      const originalText = (
-        problem.id + " " +
-        problem.title + " " +
-        problem.problem + " " +
-        problem.concepts.join(" ") + " " +
-        problem.subchapter
-      ).toLowerCase();
-
-      const englishText = (
-        translatePlainText(problem.title, "en") + " " +
-        translatePlainText(problem.subchapter, "en") + " " +
-        problem.concepts.map((item) => translatePlainText(item, "en")).join(" ")
-      ).toLowerCase();
-
-      const matchesQuery = !q || originalText.includes(q) || englishText.includes(q);
-
-      return matchesQuery
-        && (difficulty === "Semua" || problem.difficulty === difficulty)
-        && (type === "Semua" || problem.type === type)
-        && (subchapter === "Semua" || problem.subchapter === subchapter);
+    const q = query.toLocaleLowerCase(language === "en" ? "en-US" : "id-ID").trim();
+    return basisDimensionProblems.filter((raw) => {
+      const localized = localizeProblem(raw, language);
+      const haystack = [
+        raw.id, raw.title, raw.problem, raw.subchapter, ...raw.concepts,
+        localized.title, localized.problem, localized.subchapter, ...localized.concepts
+      ].join(" ").toLowerCase();
+      return (!q || haystack.includes(q))
+        && (difficulty === "Semua" || raw.difficulty === difficulty)
+        && (type === "Semua" || raw.type === type)
+        && (subchapter === "Semua" || raw.subchapter === subchapter);
     });
-  }, [query, difficulty, type, subchapter]);
+  }, [query, difficulty, type, subchapter, language]);
 
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const safePage = Math.min(page, pageCount);
   const visible = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
 
-  function resetPage() {
-    setPage(1);
-  }
-
   function clearFilters() {
-    setQuery("");
-    setDifficulty("Semua");
-    setType("Semua");
-    setSubchapter("Semua");
-    setPage(1);
+    setQuery(""); setDifficulty("Semua"); setType("Semua"); setSubchapter("Semua"); setPage(1);
   }
 
   function randomProblem() {
     const pool = filtered.length ? filtered : basisDimensionProblems;
     const selected = pool[Math.floor(Math.random() * pool.length)];
-    window.location.href =
-      "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" +
-      selected.id.toLowerCase();
+    window.location.href = "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + selected.id.toLowerCase();
   }
+
+  const ChipRow = ({label, values, value, setValue, display}:{label:string;values:string[];value:string;setValue:(x:string)=>void;display:(x:string)=>string}) => (
+    <div className="filter-chip-group bank-chip-group">
+      <span className="filter-chip-label">{label}</span>
+      <div className="filter-chips bank-filter-chips">
+        {values.map((item) => (
+          <button key={item} type="button" className={"filter-chip"+(item===value?" active":"")} aria-pressed={item===value}
+            onClick={()=>{setValue(item);setPage(1);}}>
+            {display(item)}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <div className="problem-bank-component" data-no-translate>
       <div className="bank-summary">
         <div>
-          <span className="eyebrow">
-            {language === "en" ? "Complete Problem Bank" : "Bank Soal Lengkap"}
-          </span>
-          <h2>{language === "en" ? "100 Basis and Dimension Problems" : "100 soal Basis dan Dimensi"}</h2>
-          <p>
-            {language === "en"
-              ? "Distribution: 20 Basic · 30 Intermediate · 30 Advanced · 15 Very Advanced · 5 Challenge. Every problem includes hints, a complete solution, common mistakes, and insight."
-              : "Distribusi: 20 Dasar · 30 Menengah · 30 Sulit · 15 Sangat Sulit · 5 Challenge. Setiap soal memiliki hint, pembahasan lengkap, kesalahan umum, dan insight."}
-          </p>
+          <span className="eyebrow">{language==="en"?"Complete Problem Bank":"Bank Soal Lengkap"}</span>
+          <h2>{language==="en"?"100 Basis and Dimension Problems":"100 soal Basis dan Dimensi"}</h2>
+          <p>{language==="en"
+            ?"Distribution: 20 Basic · 30 Intermediate · 30 Advanced · 15 Very Advanced · 5 Challenge. Every problem has curated English wording, hints, a complete solution, common mistakes, and insight."
+            :"Distribusi: 20 Dasar · 30 Menengah · 30 Sulit · 15 Sangat Sulit · 5 Challenge. Setiap soal memiliki hint, pembahasan lengkap, kesalahan umum, dan insight."}</p>
         </div>
-        <button className="btn secondary" type="button" onClick={randomProblem}>
-          {t("Acak Soal")}
-        </button>
+        <button className="btn secondary" type="button" onClick={randomProblem}>{language==="en"?"Random Problem":"Acak Soal"}</button>
       </div>
 
       <div className="filter-panel chip-filter-panel">
         <label className="bank-search-field">
-          <span>{t("Cari")}</span>
+          <span>{language==="en"?"Search":"Cari"}</span>
           <div className="search-input-wrap">
             <span aria-hidden="true">⌕</span>
-            <input
-              value={query}
-              onChange={(event) => {
-                setQuery(event.target.value);
-                resetPage();
-              }}
-              placeholder={
-                language === "en"
-                  ? "Search ID, title, concept, or problem text..."
-                  : "Cari ID, judul, konsep, atau isi soal..."
-              }
-            />
-            {query && (
-              <button type="button" onClick={() => { setQuery(""); resetPage(); }} aria-label={language === "en" ? "Clear search" : "Hapus pencarian"}>
-                ×
-              </button>
-            )}
+            <input value={query} onChange={(e)=>{setQuery(e.target.value);setPage(1);}}
+              placeholder={language==="en"?"Search ID, title, concept, or problem text...":"Cari ID, judul, konsep, atau isi soal..."} />
+            {query && <button type="button" onClick={()=>{setQuery("");setPage(1);}} aria-label={language==="en"?"Clear search":"Hapus pencarian"}>×</button>}
           </div>
         </label>
 
-        <FilterChips
-          label="Subbab"
-          values={["Semua", ...subchapters]}
-          value={subchapter}
-          onChange={(next) => { setSubchapter(next); resetPage(); }}
-          translate
-        />
-
-        <FilterChips
-          label="Kesulitan"
-          values={["Semua", "Dasar", "Menengah", "Sulit", "Sangat Sulit", "Challenge"]}
-          value={difficulty}
-          onChange={(next) => { setDifficulty(next); resetPage(); }}
-          translate
-        />
-
-        <FilterChips
-          label="Tipe"
-          values={["Semua", "Konsep", "Hitungan", "Pembuktian", "True/False", "Counterexample", "Construction"]}
-          value={type}
-          onChange={(next) => { setType(next); resetPage(); }}
-          translate
-        />
+        <ChipRow label={language==="en"?"Subchapter":"Subbab"} values={["Semua",...subchapters]} value={subchapter} setValue={setSubchapter} display={displaySubchapter}/>
+        <ChipRow label={language==="en"?"Difficulty":"Kesulitan"} values={["Semua","Dasar","Menengah","Sulit","Sangat Sulit","Challenge"]} value={difficulty} setValue={setDifficulty} display={displayDifficulty}/>
+        <ChipRow label={language==="en"?"Type":"Tipe"} values={["Semua","Konsep","Hitungan","Pembuktian","True/False","Counterexample","Construction"]} value={type} setValue={setType} display={displayType}/>
 
         <div className="filter-footer">
-          <span>
-            {filtered.length} {language === "en" ? "of" : "dari"} {basisDimensionProblems.length} {language === "en" ? "problems" : "soal"}
-          </span>
-          <button type="button" onClick={clearFilters}>{t("Hapus semua filter")}</button>
+          <span>{filtered.length} {language==="en"?"of":"dari"} {basisDimensionProblems.length} {language==="en"?"problems":"soal"}</span>
+          <button type="button" onClick={clearFilters}>{language==="en"?"Clear All Filters":"Hapus semua filter"}</button>
         </div>
       </div>
 
       <div className="problem-list problem-bank-grid">
-        {visible.map((problem) => (
-          <article className="problem-card premium-problem-card" key={problem.id}>
+        {visible.map((raw) => {
+          const problem=localizeProblem(raw,language);
+          return <article className="problem-card premium-problem-card" key={problem.id}>
             <div className="problem-meta">
-              <span className="problem-id">{problem.id}</span>
-              <span>{translatePlainText(problem.difficulty, language)}</span>
-              <span>{translatePlainText(problem.type, language)}</span>
+              <span className="problem-id">{problem.id}</span><span>{problem.difficulty}</span><span>{problem.type}</span>
             </div>
-
-            <span className="problem-subchapter">
-              {translatePlainText(problem.subchapter, language)}
-            </span>
-            <h2>{translatePlainText(problem.title, language)}</h2>
-            <div className="problem-preview">
-              <RichMath>{problem.problem}</RichMath>
-            </div>
-
-            <div className="concept-pills compact-pills">
-              {problem.concepts.slice(0, 3).map((concept) => (
-                <span key={concept}>{translatePlainText(concept, language)}</span>
-              ))}
-            </div>
-
+            <span className="problem-subchapter">{problem.subchapter}</span>
+            <h2>{problem.title}</h2>
+            <div className="problem-preview"><RichMath>{problem.problem}</RichMath></div>
+            <div className="concept-pills compact-pills">{problem.concepts.slice(0,3).map(c=><span key={c}>{c}</span>)}</div>
             <div className="problem-footer">
               <span>± {problem.estimatedTime}</span>
-              <Link href={"/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + problem.id.toLowerCase()}>
-                {language === "en" ? "Open Problem →" : "Buka Soal →"}
-              </Link>
+              <Link href={"/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/"+problem.id.toLowerCase()}>{language==="en"?"Open Problem →":"Buka Soal →"}</Link>
             </div>
-          </article>
-        ))}
+          </article>;
+        })}
       </div>
 
-      {visible.length === 0 && (
-        <div className="empty-state">
-          <h2>{language === "en" ? "No matching problems." : "Tidak ada soal yang cocok."}</h2>
-          <p>{language === "en" ? "Try another keyword or clear some filters." : "Coba ubah kata pencarian atau hapus beberapa filter."}</p>
-        </div>
-      )}
+      {visible.length===0 && <div className="empty-state"><h2>{language==="en"?"No Matching Problems":"Tidak Ada Soal yang Cocok"}</h2><p>{language==="en"?"Try another keyword or clear some filters.":"Coba ubah kata pencarian atau hapus beberapa filter."}</p></div>}
 
-      <nav className="pagination" aria-label={language === "en" ? "Problem bank pagination" : "Pagination bank soal"}>
-        <button disabled={safePage === 1} onClick={() => setPage((value) => Math.max(1, value - 1))}>
-          ← {t("Sebelumnya")}
-        </button>
-        <div>
-          {Array.from({ length: pageCount }, (_, index) => index + 1).map((item) => (
-            <button
-              className={item === safePage ? "active" : ""}
-              onClick={() => setPage(item)}
-              key={item}
-              aria-current={item === safePage ? "page" : undefined}
-            >
-              {item}
-            </button>
-          ))}
-        </div>
-        <button disabled={safePage === pageCount} onClick={() => setPage((value) => Math.min(pageCount, value + 1))}>
-          {t("Berikutnya")} →
-        </button>
+      <nav className="pagination" aria-label={language==="en"?"Problem bank pagination":"Pagination bank soal"}>
+        <button disabled={safePage===1} onClick={()=>setPage(v=>Math.max(1,v-1))}>← {language==="en"?"Previous":"Sebelumnya"}</button>
+        <div>{Array.from({length:pageCount},(_,i)=>i+1).map(n=><button className={n===safePage?"active":""} onClick={()=>setPage(n)} key={n} aria-current={n===safePage?"page":undefined}>{n}</button>)}</div>
+        <button disabled={safePage===pageCount} onClick={()=>setPage(v=>Math.min(pageCount,v+1))}>{language==="en"?"Next":"Berikutnya"} →</button>
       </nav>
     </div>
   );
