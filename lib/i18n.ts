@@ -176,7 +176,70 @@ const EXACT_TRANSLATIONS: Record<string, string> = {
   "Random problem": "Random Problem",
   "Detail soal": "Problem Detail",
   "Hint bertahap": "Progressive Hints",
-  "Pembahasan lengkap": "Complete Solution"
+  "Pembahasan lengkap": "Complete Solution",
+  "Bimbingan matematika": "Mathematics Tutoring",
+  "Pendampingan yang menekankan cara berpikir.": "Tutoring That Develops Mathematical Thinking.",
+  "Program bimbingan tidak menampilkan harga pada versi awal. Fokus halaman ini adalah metode belajar, target, format pertemuan, dan cakupan materi.": "This initial version does not display pricing. The page focuses on learning methods, goals, meeting formats, and subject coverage.",
+  "Bimbingan Matematika SD": "Elementary Mathematics Tutoring",
+  "Bimbingan Matematika SMP": "Junior High Mathematics Tutoring",
+  "Bimbingan Matematika SMA": "Senior High Mathematics Tutoring",
+  "Bimbingan Olimpiade SD": "Elementary Olympiad Tutoring",
+  "Bimbingan Olimpiade SMP": "Junior High Olympiad Tutoring",
+  "Bimbingan Olimpiade SMA": "Senior High Olympiad Tutoring",
+  "Bimbingan Matematika Kuliah": "University Mathematics Tutoring",
+  "Bimbingan Olimpiade Mahasiswa / ON-MIPA": "University Olympiad / ON-MIPA Tutoring",
+  "Fokus pada konsep, penalaran, latihan bertahap, identifikasi kesalahan, dan problem solving yang sesuai tingkat peserta.": "Focus on concepts, reasoning, progressive practice, error analysis, and problem solving appropriate to each learner's level.",
+  "Online / menyesuaikan": "Online / Flexible",
+  "Materi terstruktur": "Structured Materials",
+  "Kontak": "Contact",
+  "Tertarik berdiskusi tentang program?": "Interested in Discussing a Program?",
+  "CTA WhatsApp akan diaktifkan setelah nomor kontak resmi DMath Learning ditetapkan di konfigurasi website.": "The WhatsApp contact button will be enabled after DMath Learning's official contact number is configured.",
+  "WhatsApp segera tersedia": "WhatsApp Coming Soon",
+  "Riset & eksplorasi": "Research & Exploration",
+  "Catatan akademik tanpa publikasi fiktif.": "Academic Notes Without Fictitious Publications.",
+  "Bagian riset disiapkan untuk proyek, catatan eksplorasi, preprint, dan publikasi. Item baru hanya akan diberi status publikasi setelah sumbernya benar-benar tersedia.": "The research section is prepared for projects, exploratory notes, preprints, and publications. An item is marked as published only when a real source is available.",
+  "Struktur sudah siap, daftar proyek akan ditambahkan setelah metadata divalidasi.": "The structure is ready; project entries will be added after their metadata is validated.",
+  "Setiap project card akan memiliki title, field, summary, keywords, status, year, publication, dan link.": "Each project card will include a title, field, summary, keywords, status, year, publication, and link.",
+  "Tentang DMath Learning": "About DMath Learning",
+  "Matematika dipelajari sebagai struktur, bukan kumpulan rumus.": "Mathematics as Structure, Not a Collection of Formulas.",
+  "DMath Learning merupakan platform pembelajaran matematika yang berfokus pada pemahaman konsep, pengembangan penalaran, dan kemampuan problem solving.": "DMath Learning is a mathematics learning platform focused on conceptual understanding, mathematical reasoning, and problem-solving ability.",
+  "Identitas": "Identity",
+  "Huruf D merepresentasikan identitas personal pendiri, sedangkan Math Learning menunjukkan fokus utama platform pada pembelajaran matematika.": "The letter D represents the founder's personal identity, while Math Learning reflects the platform's core focus on mathematics education.",
+  "Karakter brand diarahkan agar akademik, modern, intelektual, profesional, matang, minimal, dan terpercaya.": "The brand is designed to feel academic, modern, intellectual, professional, mature, minimal, and trustworthy.",
+  "Tentang Pengelola": "About the Founder",
+  "Profil, academic interests, research, teaching, competition, dan kontak disiapkan sebagai konfigurasi yang mudah diperbarui. Detail publik belum diisi pada versi ini untuk menghindari data placeholder yang dianggap final.": "The profile, academic interests, research, teaching, competition experience, and contact details are structured for easy updates. Public details are intentionally omitted until they are ready to be published.",
+  "Halaman belum tersedia.": "This Page Is Not Available Yet.",
+  "Konten ini mungkin masih berada dalam roadmap DMath Learning.": "This content may still be on the DMath Learning roadmap.",
+  "Kembali ke Beranda": "Back to Home",
+  "Lihat Materi": "View Materials",
+  "Platform pembelajaran matematika yang berfokus pada pemahaman konsep, pengembangan penalaran, dan kemampuan problem solving.": "A mathematics learning platform focused on conceptual understanding, reasoning, and problem-solving ability.",
+  "Jelajahi": "Explore",
+  "Isi Materi": "Contents",
+  "Gambaran besar materi": "Big Picture",
+  "Setelah mempelajari bab ini": "After Studying This Chapter",
+  "Alur konsep": "Concept Flow",
+  "Mengapa konsep ini dibutuhkan?": "Why Is This Concept Needed?",
+  "Intuisi": "Intuition",
+  "Simbol yang digunakan": "Symbols Used",
+  "Bahasa matematis yang presisi": "Precise Mathematical Language",
+  "Hasil utama, lengkap dengan pembuktian": "Main Results, with Complete Proofs",
+  "Dari konsep menuju penyelesaian": "From Concept to Solution",
+  "Koneksi": "Connections",
+  "Uji pemahaman, jangan berhenti di membaca.": "Test Your Understanding—Do Not Stop at Reading.",
+  "Latihan dan bank soal untuk materi ini akan terus ditambah secara terkurasi. Bab yang sudah memiliki bank soal lengkap ditautkan langsung dari halaman Bank Soal.": "Curated practice and problem banks for this topic will continue to grow. Chapters with complete problem banks are linked directly from the Problem Bank page.",
+  "Isi Bab": "Chapter Contents",
+  "Formal + Intuitif": "Formal + Intuitive",
+  "100 bank soal": "100 problems",
+  "Gold Standard Chapter · Aljabar Linear": "Gold Standard Chapter · Linear Algebra",
+  "Bab ini dibangun sebagai buku digital: mulai dari intuisi, definisi formal, teorema dan pembuktian, visualisasi, contoh bertahap, latihan, hingga bank soal.": "This chapter is designed as a digital textbook: from intuition and formal definitions to theorems, proofs, visualizations, worked examples, practice, and a full problem bank.",
+  "Latihan terkurasi": "Curated Practice",
+  "Sembunyikan Hint 1": "Hide Hint 1",
+  "Sembunyikan Hint 2": "Hide Hint 2",
+  "Tutup Pembahasan": "Hide Solution",
+  "Lihat Pembahasan Lengkap": "Show Complete Solution",
+  "Soal sebelumnya": "Previous problem",
+  "Soal berikutnya": "Next problem",
+  "100 soal": "100 problems"
 };
 
 const PHRASES: Array<[string, string]> = [
@@ -369,25 +432,9 @@ export function translatePlainText(input: string, language: Language = "en"): st
   const exact = UI_TRANSLATIONS[core];
   if (exact) return leading + exact + trailing;
 
-  const phrases = PHRASES.slice().sort((a, b) => b[0].length - a[0].length);
-  for (const pair of phrases) {
-    const regex = new RegExp(escapeRegExp(pair[0]), "gi");
-    core = core.replace(regex, (match) => preserveCase(match, pair[1]));
-  }
-
-  core = core.replace(/[A-Za-zÀ-ÿ]+/g, (word) => {
-    const translated = WORDS[word.toLocaleLowerCase("id-ID")];
-    return translated ? preserveCase(word, translated) : word;
-  });
-
-  core = core
-    .replace(/\bis is\b/gi, "is")
-    .replace(/\bfor for\b/gi, "for")
-    .replace(/\bwith with\b/gi, "with")
-    .replace(/\bthat that\b/gi, "that")
-    .replace(/\s{2,}/g, " ");
-
-  return leading + core + trailing;
+  // Curated translations only. If a sentence has no vetted English version,
+  // keep the original instead of producing mixed Indonesian-English text.
+  return input;
 }
 
 export function translateRichText(input: string, language: Language): string {
