@@ -24,7 +24,7 @@ export function RichMath({ children, className = "" }: { children: string; class
   const pieces = localized.split(tokenRegex);
 
   return (
-    <span className={className}>
+    <span className={className} data-no-translate>
       {pieces.map((piece, index): ReactNode => {
         if (piece.startsWith("$$") && piece.endsWith("$$")) return <DisplayMath key={index} tex={piece.slice(2, -2).trim()} />;
         if (piece.startsWith("$") && piece.endsWith("$")) return <InlineMath key={index} tex={piece.slice(1, -1).trim()} />;
