@@ -3,6 +3,7 @@ import "katex/dist/katex.min.css";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { LanguageProvider } from "@/components/LanguageProvider";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -27,9 +28,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="id" suppressHydrationWarning>
       <body>
-        <SiteHeader />
-        <main>{children}</main>
-        <SiteFooter />
+        <LanguageProvider>
+          <SiteHeader />
+          <main>{children}</main>
+          <SiteFooter />
+        </LanguageProvider>
       </body>
     </html>
   );

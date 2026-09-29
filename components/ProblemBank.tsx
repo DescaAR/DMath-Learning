@@ -4,10 +4,52 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { basisDimensionProblems } from "@/data/basis-dimension-problems";
 import { RichMath } from "@/components/RichMath";
+import { useLanguage } from "@/components/LanguageProvider";
+import { translatePlainText } from "@/lib/i18n";
 
 const PAGE_SIZE = 20;
 
+function FilterChips({
+  label,
+  values,
+  value,
+  onChange,
+  translate = false,
+}: {
+  label: string;
+  values: string[];
+  value: string;
+  onChange: (value: string) => void;
+  translate?: boolean;
+}) {
+  const { language, t } = useLanguage();
+
+  return (
+    <div className="filter-chip-group bank-chip-group">
+      <span className="filter-chip-label">{t(label)}</span>
+      <div className="filter-chips bank-filter-chips">
+        {values.map((item) => (
+          <button
+            key={item}
+            type="button"
+            className={"filter-chip" + (item === value ? " active" : "")}
+            aria-pressed={item === value}
+            onClick={() => onChange(item)}
+          >
+            {item === "Semua"
+              ? t("Semua")
+              : translate
+                ? translatePlainText(item, language)
+                : item}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function ProblemBank() {
+  const { language, t } = useLanguage();
   const [query, setQuery] = useState("");
   const [difficulty, setDifficulty] = useState("Semua");
   const [type, setType] = useState("Semua");
@@ -21,13 +63,25 @@ export function ProblemBank() {
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
+
     return basisDimensionProblems.filter((problem) => {
-      const text = (
-        problem.id + " " + problem.title + " " + problem.problem + " " +
-        problem.concepts.join(" ") + " " + problem.subchapter
+      const originalText = (
+        problem.id + " " +
+        problem.title + " " +
+        problem.problem + " " +
+        problem.concepts.join(" ") + " " +
+        problem.subchapter
       ).toLowerCase();
 
-      return (!q || text.includes(q))
+      const englishText = (
+        translatePlainText(problem.title, "en") + " " +
+        translatePlainText(problem.subchapter, "en") + " " +
+        problem.concepts.map((item) => translatePlainText(item, "en")).join(" ")
+      ).toLowerCase();
+
+      const matchesQuery = !q || originalText.includes(q) || englishText.includes(q);
+
+      return matchesQuery
         && (difficulty === "Semua" || problem.difficulty === difficulty)
         && (type === "Semua" || problem.type === type)
         && (subchapter === "Semua" || problem.subchapter === subchapter);
@@ -53,71 +107,84 @@ export function ProblemBank() {
   function randomProblem() {
     const pool = filtered.length ? filtered : basisDimensionProblems;
     const selected = pool[Math.floor(Math.random() * pool.length)];
-    window.location.href = "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + selected.id.toLowerCase();
+    window.location.href =
+      "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" +
+      selected.id.toLowerCase();
   }
 
   return (
     <>
       <div className="bank-summary">
         <div>
-          <span className="eyebrow">Bank Soal Lengkap</span>
-          <h2>100 soal Basis dan Dimensi</h2>
+          <span className="eyebrow">
+            {language === "en" ? "Complete Problem Bank" : "Bank Soal Lengkap"}
+          </span>
+          <h2>{language === "en" ? "100 Basis and Dimension Problems" : "100 soal Basis dan Dimensi"}</h2>
           <p>
-            Distribusi: 20 Dasar · 30 Menengah · 30 Sulit · 15 Sangat Sulit · 5 Challenge.
-            Setiap soal memiliki hint, pembahasan lengkap, kesalahan umum, dan insight.
+            {language === "en"
+              ? "Distribution: 20 Basic · 30 Intermediate · 30 Advanced · 15 Very Advanced · 5 Challenge. Every problem includes hints, a complete solution, common mistakes, and insight."
+              : "Distribusi: 20 Dasar · 30 Menengah · 30 Sulit · 15 Sangat Sulit · 5 Challenge. Setiap soal memiliki hint, pembahasan lengkap, kesalahan umum, dan insight."}
           </p>
         </div>
-        <button className="btn secondary" type="button" onClick={randomProblem}>Acak Soal</button>
+        <button className="btn secondary" type="button" onClick={randomProblem}>
+          {t("Acak Soal")}
+        </button>
       </div>
 
-      <div className="filter-panel">
-        <div className="filter-bar bank-filter-bar">
-          <label className="filter-search">
-            <span>Search</span>
+      <div className="filter-panel chip-filter-panel">
+        <label className="bank-search-field">
+          <span>{t("Cari")}</span>
+          <div className="search-input-wrap">
+            <span aria-hidden="true">⌕</span>
             <input
               value={query}
-              onChange={(event) => { setQuery(event.target.value); resetPage(); }}
-              placeholder="Cari ID, judul, konsep, atau isi soal..."
+              onChange={(event) => {
+                setQuery(event.target.value);
+                resetPage();
+              }}
+              placeholder={
+                language === "en"
+                  ? "Search ID, title, concept, or problem text..."
+                  : "Cari ID, judul, konsep, atau isi soal..."
+              }
             />
-          </label>
+            {query && (
+              <button type="button" onClick={() => { setQuery(""); resetPage(); }} aria-label={language === "en" ? "Clear search" : "Hapus pencarian"}>
+                ×
+              </button>
+            )}
+          </div>
+        </label>
 
-          <label>
-            <span>Subbab</span>
-            <select value={subchapter} onChange={(event) => { setSubchapter(event.target.value); resetPage(); }}>
-              <option>Semua</option>
-              {subchapters.map((item) => <option key={item}>{item}</option>)}
-            </select>
-          </label>
+        <FilterChips
+          label="Subbab"
+          values={["Semua", ...subchapters]}
+          value={subchapter}
+          onChange={(next) => { setSubchapter(next); resetPage(); }}
+          translate
+        />
 
-          <label>
-            <span>Kesulitan</span>
-            <select value={difficulty} onChange={(event) => { setDifficulty(event.target.value); resetPage(); }}>
-              <option>Semua</option>
-              <option>Dasar</option>
-              <option>Menengah</option>
-              <option>Sulit</option>
-              <option>Sangat Sulit</option>
-              <option>Challenge</option>
-            </select>
-          </label>
+        <FilterChips
+          label="Kesulitan"
+          values={["Semua", "Dasar", "Menengah", "Sulit", "Sangat Sulit", "Challenge"]}
+          value={difficulty}
+          onChange={(next) => { setDifficulty(next); resetPage(); }}
+          translate
+        />
 
-          <label>
-            <span>Tipe</span>
-            <select value={type} onChange={(event) => { setType(event.target.value); resetPage(); }}>
-              <option>Semua</option>
-              <option>Konsep</option>
-              <option>Hitungan</option>
-              <option>Pembuktian</option>
-              <option>True/False</option>
-              <option>Counterexample</option>
-              <option>Construction</option>
-            </select>
-          </label>
-        </div>
+        <FilterChips
+          label="Tipe"
+          values={["Semua", "Konsep", "Hitungan", "Pembuktian", "True/False", "Counterexample", "Construction"]}
+          value={type}
+          onChange={(next) => { setType(next); resetPage(); }}
+          translate
+        />
 
         <div className="filter-footer">
-          <span>{filtered.length} dari {basisDimensionProblems.length} soal</span>
-          <button type="button" onClick={clearFilters}>Clear filter</button>
+          <span>
+            {filtered.length} {language === "en" ? "of" : "dari"} {basisDimensionProblems.length} {language === "en" ? "problems" : "soal"}
+          </span>
+          <button type="button" onClick={clearFilters}>{t("Hapus semua filter")}</button>
         </div>
       </div>
 
@@ -126,24 +193,28 @@ export function ProblemBank() {
           <article className="problem-card premium-problem-card" key={problem.id}>
             <div className="problem-meta">
               <span className="problem-id">{problem.id}</span>
-              <span>{problem.difficulty}</span>
-              <span>{problem.type}</span>
+              <span>{translatePlainText(problem.difficulty, language)}</span>
+              <span>{translatePlainText(problem.type, language)}</span>
             </div>
 
-            <span className="problem-subchapter">{problem.subchapter}</span>
-            <h2>{problem.title}</h2>
+            <span className="problem-subchapter">
+              {translatePlainText(problem.subchapter, language)}
+            </span>
+            <h2>{translatePlainText(problem.title, language)}</h2>
             <div className="problem-preview">
               <RichMath>{problem.problem}</RichMath>
             </div>
 
             <div className="concept-pills compact-pills">
-              {problem.concepts.slice(0, 3).map((concept) => <span key={concept}>{concept}</span>)}
+              {problem.concepts.slice(0, 3).map((concept) => (
+                <span key={concept}>{translatePlainText(concept, language)}</span>
+              ))}
             </div>
 
             <div className="problem-footer">
               <span>± {problem.estimatedTime}</span>
               <Link href={"/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + problem.id.toLowerCase()}>
-                Buka Soal →
+                {language === "en" ? "Open Problem →" : "Buka Soal →"}
               </Link>
             </div>
           </article>
@@ -152,13 +223,15 @@ export function ProblemBank() {
 
       {visible.length === 0 && (
         <div className="empty-state">
-          <h2>Tidak ada soal yang cocok.</h2>
-          <p>Coba ubah kata pencarian atau hapus beberapa filter.</p>
+          <h2>{language === "en" ? "No matching problems." : "Tidak ada soal yang cocok."}</h2>
+          <p>{language === "en" ? "Try another keyword or clear some filters." : "Coba ubah kata pencarian atau hapus beberapa filter."}</p>
         </div>
       )}
 
-      <nav className="pagination" aria-label="Pagination bank soal">
-        <button disabled={safePage === 1} onClick={() => setPage((value) => Math.max(1, value - 1))}>← Sebelumnya</button>
+      <nav className="pagination" aria-label={language === "en" ? "Problem bank pagination" : "Pagination bank soal"}>
+        <button disabled={safePage === 1} onClick={() => setPage((value) => Math.max(1, value - 1))}>
+          ← {t("Sebelumnya")}
+        </button>
         <div>
           {Array.from({ length: pageCount }, (_, index) => index + 1).map((item) => (
             <button
@@ -171,7 +244,9 @@ export function ProblemBank() {
             </button>
           ))}
         </div>
-        <button disabled={safePage === pageCount} onClick={() => setPage((value) => Math.min(pageCount, value + 1))}>Berikutnya →</button>
+        <button disabled={safePage === pageCount} onClick={() => setPage((value) => Math.min(pageCount, value + 1))}>
+          {t("Berikutnya")} →
+        </button>
       </nav>
     </>
   );
