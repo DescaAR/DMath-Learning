@@ -10,7 +10,6 @@ import {
   type SearchTrack,
 } from "@/data/search-index";
 import { useLanguage } from "@/components/LanguageProvider";
-import { translatePlainText, translateRichText } from "@/lib/i18n";
 import { RichMath } from "@/components/RichMath";
 
 type LevelFilter = "Semua" | Exclude<SearchLevel, "Umum">;
@@ -56,15 +55,15 @@ function fuzzyScore(query: string, entry: SearchEntry, language: "id" | "en") {
   const q = normalize(query);
   if (!q) return 1;
 
-  const localizedTitle = translatePlainText(entry.title, language);
-  const localizedDescription = translateRichText(entry.description, language);
-  const localizedMeta = translatePlainText(entry.meta, language);
-  const localizedKeywords = translateRichText(entry.keywords, language);
+  const localizedTitle = language === "en" ? entry.titleEn : entry.title;
+  const localizedDescription = language === "en" ? entry.descriptionEn : entry.description;
+  const localizedMeta = language === "en" ? entry.metaEn : entry.meta;
+  const localizedKeywords = language === "en" ? entry.keywordsEn : entry.keywords;
 
-  const title = normalize(entry.title + " " + localizedTitle);
-  const description = normalize(entry.description + " " + localizedDescription);
-  const meta = normalize(entry.meta + " " + localizedMeta);
-  const keywords = normalize(entry.keywords + " " + localizedKeywords);
+  const title = normalize(entry.title + " " + entry.titleEn + " " + localizedTitle);
+  const description = normalize(entry.description + " " + entry.descriptionEn + " " + localizedDescription);
+  const meta = normalize(entry.meta + " " + entry.metaEn + " " + localizedMeta);
+  const keywords = normalize(entry.keywords + " " + entry.keywordsEn + " " + localizedKeywords);
   const haystack = [title, description, meta, keywords].join(" ");
 
   if (title === q) return 1;
@@ -151,13 +150,8 @@ export function SearchClient() {
     if (!q) return ranked.length;
     return ranked.filter(({ item }) => {
       const localized = normalize(
-        item.title +
-          " " +
-          item.description +
-          " " +
-          translatePlainText(item.title, language) +
-          " " +
-          translateRichText(item.description, language)
+        (language === "en" ? item.titleEn : item.title) + " " +
+        (language === "en" ? item.descriptionEn : item.description)
       );
       return localized.includes(q);
     }).length;
@@ -181,8 +175,13 @@ export function SearchClient() {
   }
 
   function displayLevel(value: LevelFilter) {
-    if (value === "Semua") return t("Semua Jenjang");
-    if (value === "Kuliah") return t("Kuliah");
+    if (value === "Semua") return language === "en" ? "All Levels" : "Semua Jenjang";
+    if (language === "en") {
+      if (value === "SD") return "Elementary";
+      if (value === "SMP") return "Junior High";
+      if (value === "SMA") return "Senior High";
+      if (value === "Kuliah") return "University";
+    }
     return value;
   }
 
@@ -268,9 +267,9 @@ export function SearchClient() {
               </span>
             </div>
             <div>
-              <h2>{translatePlainText(item.title, language)}</h2>
-              <p><RichMath>{item.description}</RichMath></p>
-              <small>{translatePlainText(item.meta, language)}</small>
+              <h2>{language === "en" ? item.titleEn : item.title}</h2>
+              <p><RichMath>{language === "en" ? item.descriptionEn : item.description}</RichMath></p>
+              <small>{language === "en" ? item.metaEn : item.meta}</small>
             </div>
             <div className="result-score" aria-label="Similarity">
               {query ? Math.round(score * 100) + "%" : "→"}
