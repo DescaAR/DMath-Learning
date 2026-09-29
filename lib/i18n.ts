@@ -355,7 +355,17 @@ const EXACT_TRANSLATIONS: Record<string, string> = {
   "Dua vektor sebelum dan sesudah transformasi linear": "Two vectors before and after a linear transformation",
   "Barisan satu per n mendekati nol dengan pita epsilon": "The sequence one over n approaching zero inside an epsilon band",
   "Dua vektor basis dan sebuah vektor hasil kombinasi linear": "Two basis vectors and a vector obtained as a linear combination",
-  "Barisan $a_n=1/n$ mendekati $0$. Untuk setiap $\\varepsilon>0$, semua suku setelah indeks tertentu berada di dalam pita $(-\\varepsilon,\\varepsilon)$.": "The sequence $a_n=1/n$ approaches $0$. For every $\\varepsilon>0$, all terms after a sufficiently large index lie inside the band $(-\\varepsilon,\\varepsilon)$."
+  "Barisan $a_n=1/n$ mendekati $0$. Untuk setiap $\\varepsilon>0$, semua suku setelah indeks tertentu berada di dalam pita $(-\\varepsilon,\\varepsilon)$.": "The sequence $a_n=1/n$ approaches $0$. For every $\\varepsilon>0$, all terms after a sufficiently large index lie inside the band $(-\\varepsilon,\\varepsilon)$.",
+  "Jalur belajar": "Learning Tracks",
+  "Jalur Belajar": "Learning Tracks",
+  "Latihan": "Practice",
+  "Navigasi": "Navigation",
+  "Akademik": "Academic",
+  "Pilih jalur berdasarkan jenjang, kompetisi, atau bidang.": "Choose a learning track by level, competition pathway, or mathematical field.",
+  "Kumpulan soal per bab dengan filter dan halaman detail.": "Chapter-based problem collections with filters and dedicated problem pages.",
+  "Jalur kompetisi dari SD hingga ON-MIPA.": "Competition pathways from elementary level through ON-MIPA.",
+  "Pendampingan matematika terstruktur untuk berbagai jenjang.": "Structured mathematics tutoring for multiple levels.",
+  "Eksplorasi dan proyek matematika.": "Mathematical explorations and projects."
 };
 
 const PHRASES: Array<[string, string]> = [
