@@ -187,7 +187,7 @@ export function SearchClient() {
   }
 
   return (
-    <div className="search-shell search-shell-v2">
+    <div className="search-shell search-shell-v2" data-no-translate>
       <div className="search-query-box">
         <label htmlFor="global-search">{t("Cari")}</label>
         <div className="search-input-wrap">
