@@ -341,7 +341,21 @@ const EXACT_TRANSLATIONS: Record<string, string> = {
   "Transformasi linear mempertahankan kombinasi linear: $T(au+bv)=aT(u)+bT(v)$. Struktur ini menjadi pusat banyak soal ON-MIPA.": "A linear transformation preserves linear combinations: $T(au+bv)=aT(u)+bT(v)$. This structure is central to many ON-MIPA problems.",
   "Konvergensi barisan": "Sequence Convergence",
   "Basis sebagai koordinat": "Basis as a Coordinate System",
-  "Dua vektor bebas linear $v_1$ dan $v_2$ di $\\mathbb{R}^2$ merentang bidang. Setiap $x$ dapat ditulis unik sebagai $x=a_1v_1+a_2v_2$.": "Two linearly independent vectors $v_1$ and $v_2$ in $\\mathbb R^2$ span the plane. Every $x$ has a unique representation $x=a_1v_1+a_2v_2$."
+  "Dua vektor bebas linear $v_1$ dan $v_2$ di $\\mathbb{R}^2$ merentang bidang. Setiap $x$ dapat ditulis unik sebagai $x=a_1v_1+a_2v_2$.": "Two linearly independent vectors $v_1$ and $v_2$ in $\\mathbb R^2$ span the plane. Every $x$ has a unique representation $x=a_1v_1+a_2v_2$.",
+  "uji garis vertikal": "vertical line test",
+  "Visualisasi pecahan tiga per lima": "Visualization of the fraction three fifths",
+  "Dua garis berpotongan di titik dua koma tiga": "Two lines intersecting at the point (2,3)",
+  "Graf fungsi pada bidang koordinat": "Function graph on the coordinate plane",
+  "Lingkaran satuan dengan sudut theta": "Unit circle with angle theta",
+  "Persegi panjang Riemann di bawah kurva x kuadrat": "Riemann rectangles under the curve x squared",
+  "Delapan titik yang dimasukkan ke tiga kotak": "Eight points distributed among three boxes",
+  "Graf enam simpul untuk ilustrasi spektrum": "Six-vertex graph illustrating a spectrum",
+  "Jam modulo tujuh": "Clock arithmetic modulo seven",
+  "Pohon keputusan tiga tingkat": "Three-level decision tree",
+  "Dua vektor sebelum dan sesudah transformasi linear": "Two vectors before and after a linear transformation",
+  "Barisan satu per n mendekati nol dengan pita epsilon": "The sequence one over n approaching zero inside an epsilon band",
+  "Dua vektor basis dan sebuah vektor hasil kombinasi linear": "Two basis vectors and a vector obtained as a linear combination",
+  "Barisan $a_n=1/n$ mendekati $0$. Untuk setiap $\\varepsilon>0$, semua suku setelah indeks tertentu berada di dalam pita $(-\\varepsilon,\\varepsilon)$.": "The sequence $a_n=1/n$ approaches $0$. For every $\\varepsilon>0$, all terms after a sufficiently large index lie inside the band $(-\\varepsilon,\\varepsilon)$."
 };
 
 const PHRASES: Array<[string, string]> = [
