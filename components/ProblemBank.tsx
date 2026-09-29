@@ -113,7 +113,7 @@ export function ProblemBank() {
   }
 
   return (
-    <>
+    <div className="problem-bank-component" data-no-translate>
       <div className="bank-summary">
         <div>
           <span className="eyebrow">
@@ -248,6 +248,6 @@ export function ProblemBank() {
           {t("Berikutnya")} →
         </button>
       </nav>
-    </>
+    </div>
   );
 }
