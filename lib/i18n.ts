@@ -232,7 +232,20 @@ const WORDS: Record<string, string> = {
   "kekontinuan":"continuity","konvergensi":"convergence","barisan":"sequence","deret":"series","integral":"integral",
   "turunan":"derivative","limit":"limit","kontinu":"continuous","terbatas":"bounded","terbuka":"open","tertutup":"closed",
   "simpul":"vertex","sisi":"edge","lintasan":"path","siklus":"cycle","jarak":"distance","spektrum":"spectrum",
-  "pewarnaan":"coloring","keterhubungan":"connectivity","kotak":"box","objek":"object"
+  "pewarnaan":"coloring","keterhubungan":"connectivity","kotak":"box","objek":"object",
+  "sama":"same","tidak":"not","gunakan":"use","dapat":"can","sebagai":"as","kedua":"second","tersebut":"the","ambil":"take",
+  "bahwa":"that","bukan":"not","fungsional":"functional","rumus":"formula","tetapi":"but","menganggap":"assume","domain":"domain",
+  "entri":"entry","pertama":"first","berbeda":"different","seragam":"uniform","keduanya":"both","prinsip":"principle",
+  "komposisi":"composition","menghitung":"compute","apakah":"whether","ruas":"side","secara":"directly","definisikan":"define",
+  "sangat":"very","juga":"also","kodomain":"codomain","bawah":"lower","memuat":"contains","representasi":"representation",
+  "kebebasan":"independence","ekstensi":"extension","atas":"over","keunikan":"uniqueness","partisi":"partition",
+  "dimensinya":"its dimension","independensi":"independence","nonnol":"nonzero","kriteria":"criterion","memeriksa":"check",
+  "bergantung":"dependent","tuliskan":"write","analisis":"analysis","perluas":"extend","kondisi":"condition","membagi":"divide",
+  "ditulis":"written","memaksa":"forces","sebuah":"a","bandingkan":"compare","berarti":"means","dibagi":"divided",
+  "invers":"inverse","citra":"image","sedikitnya":"at least","kontinuitas":"continuity","teori":"theory","polinomial":"polynomial",
+  "suatu":"a","genap":"even","berbentuk":"has the form","kesamaan":"equality","menit":"minutes","sulit":"advanced",
+  "mengapa":"why","mencari":"find","menyusun":"arrange","memilih":"choose","terlihat":"observe","periksa":"check","mulai":"start",
+  "selesai":"finished","diperluas":"extended","mempunyai":"has","berisi":"contains","menyebabkan":"causes","sebarang":"arbitrary"
 };
 
 function escapeRegExp(value: string) {
