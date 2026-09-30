@@ -47,17 +47,17 @@ export function ConceptIndex({ material }: { material: DeepMaterial }) {
     })),
     ...(formal?.blocks.map((item) => ({
       type: item.kind as FormalBlockKind,
-      title: item.title.id,
-      description: item.statement.id,
+      title: en ? item.title.en : item.title.id,
+      description: en ? item.statement.en : item.statement.id,
       href: "#struktur-formal",
     })) ?? []),
     ...(formal?.examples.map((item) => ({
       type: "example" as const,
-      title: item.title.id,
-      description: item.problem.id,
+      title: en ? item.title.en : item.title.id,
+      description: en ? item.problem.en : item.problem.id,
       href: "#contoh-detail",
     })) ?? []),
-  ], [material, formal]);
+  ], [material, formal, en]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
