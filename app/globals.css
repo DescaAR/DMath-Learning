@@ -2718,3 +2718,252 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .olympiad-challenge-head{align-items:flex-start;flex-direction:column}
   .olympiad-hub-summary{grid-template-columns:repeat(2,1fr)}
 }
+
+
+/* ===== Formal mathematics blocks ===== */
+.formal-structure-section,
+.detailed-example-section{scroll-margin-top:122px}
+.formal-section-intro{
+  max-width:820px;
+  color:var(--muted)!important;
+  margin-bottom:26px!important
+}
+.formal-block-stack{
+  display:grid;
+  gap:20px
+}
+.formal-math-block{
+  --formal-accent:var(--blue);
+  --formal-soft:rgba(21,101,216,.045);
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-left:5px solid var(--formal-accent);
+  border-radius:18px;
+  background:var(--surface);
+  box-shadow:0 16px 42px rgba(6,27,62,.045)
+}
+.formal-definition{--formal-accent:#1565d8;--formal-soft:rgba(21,101,216,.05)}
+.formal-lemma{--formal-accent:#0891b2;--formal-soft:rgba(8,145,178,.05)}
+.formal-proposition{--formal-accent:#7c3aed;--formal-soft:rgba(124,58,237,.05)}
+.formal-theorem{--formal-accent:#0f766e;--formal-soft:rgba(15,118,110,.05)}
+.formal-corollary{--formal-accent:#b45309;--formal-soft:rgba(180,83,9,.05)}
+.formal-block-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  padding:20px 22px 16px;
+  background:linear-gradient(135deg,var(--formal-soft),transparent)
+}
+.formal-kind{
+  display:block;
+  margin-bottom:6px;
+  color:var(--formal-accent);
+  font-size:.67rem;
+  font-weight:900;
+  letter-spacing:.13em;
+  text-transform:uppercase
+}
+.formal-block-header h3{
+  margin:0;
+  color:var(--deep);
+  font-size:1.25rem;
+  line-height:1.3;
+  letter-spacing:-.02em
+}
+:root[data-theme="dark"] .formal-block-header h3{color:#fff}
+.formal-symbol{
+  width:36px;height:36px;
+  flex:0 0 36px;
+  display:grid;
+  place-items:center;
+  border:1px solid color-mix(in srgb,var(--formal-accent) 26%,transparent);
+  border-radius:10px;
+  background:var(--surface);
+  color:var(--formal-accent);
+  font-family:Georgia,serif;
+  font-weight:900
+}
+.formal-statement{
+  padding:18px 22px;
+  border-top:1px solid var(--border);
+  color:var(--text);
+  font-size:1rem;
+  line-height:1.8
+}
+.formal-statement .katex-display{margin:.7em 0}
+.formal-intuition,
+.formal-note{
+  margin:0 22px 18px;
+  padding:14px 15px;
+  border-radius:11px;
+  background:var(--surface-2);
+  border:1px solid var(--border)
+}
+.formal-intuition strong,
+.formal-note strong{
+  display:block;
+  margin-bottom:5px;
+  color:var(--formal-accent);
+  font-size:.7rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+.formal-intuition p,
+.formal-note p{margin:0;color:var(--muted);line-height:1.65}
+.formal-proof{
+  margin:0 22px 18px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-2);
+  overflow:hidden
+}
+.formal-proof>summary{
+  list-style:none;
+  cursor:pointer;
+  padding:13px 15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  color:var(--deep);
+  font-weight:850;
+  font-size:.8rem
+}
+:root[data-theme="dark"] .formal-proof>summary{color:#fff}
+.formal-proof>summary::-webkit-details-marker{display:none}
+.formal-proof>summary small{color:var(--muted);font-weight:650;font-size:.64rem}
+.formal-proof>summary:after{
+  content:"+";
+  width:24px;height:24px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:var(--formal-soft);
+  color:var(--formal-accent);
+  font-size:1rem
+}
+.formal-proof[open]>summary:after{content:"−"}
+.formal-proof-body{
+  border-top:1px solid var(--border);
+  padding:14px 15px 16px
+}
+.formal-proof-step{
+  display:grid;
+  grid-template-columns:30px minmax(0,1fr);
+  gap:11px;
+  align-items:flex-start;
+  padding:9px 0
+}
+.formal-proof-step>span{
+  width:27px;height:27px;
+  display:grid;place-items:center;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--formal-accent,var(--blue));
+  font-size:.68rem;
+  font-weight:900
+}
+.formal-proof-step p{margin:0;color:var(--text);line-height:1.72}
+.formal-proof-qed{
+  margin-top:6px;
+  text-align:right;
+  color:var(--formal-accent);
+  font-size:.9rem
+}
+
+/* detailed worked examples */
+.detailed-example-stack{display:grid;gap:22px}
+.detailed-example-card{
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:var(--surface);
+  box-shadow:0 15px 40px rgba(6,27,62,.04)
+}
+.detailed-example-head{
+  padding:20px 22px 15px;
+  background:linear-gradient(135deg,rgba(21,101,216,.055),rgba(0,194,255,.025));
+  border-bottom:1px solid var(--border)
+}
+.detailed-example-head>span{
+  display:block;
+  color:var(--blue);
+  font-size:.67rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.12em
+}
+.detailed-example-head h3{
+  margin:6px 0 0;
+  color:var(--deep);
+  font-size:1.28rem;
+  line-height:1.32
+}
+:root[data-theme="dark"] .detailed-example-head h3{color:#fff}
+.detailed-example-problem,
+.detailed-example-strategy,
+.detailed-example-conclusion{
+  padding:16px 22px
+}
+.detailed-example-problem{
+  border-bottom:1px solid var(--border)
+}
+.detailed-example-problem strong,
+.detailed-example-strategy strong,
+.detailed-example-conclusion strong{
+  display:block;
+  margin-bottom:6px;
+  color:var(--blue);
+  font-size:.7rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+.detailed-example-problem p,
+.detailed-example-strategy p,
+.detailed-example-conclusion p{
+  margin:0;
+  color:var(--text);
+  line-height:1.75
+}
+.detailed-example-strategy{
+  background:rgba(245,158,11,.045);
+  border-bottom:1px solid var(--border)
+}
+.detailed-example-strategy strong{color:#b45309}
+.detailed-example-solution{
+  margin:16px 22px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-2);
+  overflow:hidden
+}
+.detailed-example-solution>summary{
+  cursor:pointer;
+  padding:13px 15px;
+  color:var(--blue);
+  font-size:.78rem;
+  font-weight:850
+}
+.detailed-example-solution>div{
+  padding:5px 15px 13px;
+  border-top:1px solid var(--border)
+}
+.detailed-example-conclusion{
+  border-top:1px solid var(--border);
+  background:rgba(16,185,129,.045)
+}
+.detailed-example-conclusion strong{color:var(--success)}
+
+@media(max-width:680px){
+  .formal-block-header,
+  .formal-statement{padding-left:17px;padding-right:17px}
+  .formal-intuition,.formal-note,.formal-proof,
+  .detailed-example-solution{margin-left:17px;margin-right:17px}
+  .detailed-example-head,
+  .detailed-example-problem,
+  .detailed-example-strategy,
+  .detailed-example-conclusion{padding-left:17px;padding-right:17px}
+}
