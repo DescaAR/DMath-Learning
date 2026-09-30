@@ -42,10 +42,6 @@ export const materials = [
   return order.indexOf(a.level) - order.indexOf(b.level);
 });
 
-export const researchFields = [
-  "Graph Theory", "Graph Labeling", "Spectral Graph Theory", "Graph Topology",
-  "Applied Graph Theory", "Network Science", "Combinatorics", "Mathematical Analysis",
-];
 
 export const searchIndex = [
   ...materials.map((item) => ({
@@ -59,5 +55,4 @@ export const searchIndex = [
   { type: "Halaman", title: "Bank Soal", description: "Kumpulan soal per bab dengan filter dan halaman detail.", meta: "Latihan", href: "/bank-soal" },
   { type: "Halaman", title: "Olimpiade", description: "Jalur kompetisi dari SD hingga ON-MIPA.", meta: "Kompetisi", href: "/olimpiade" },
   { type: "Halaman", title: "Bimbingan", description: "Pendampingan matematika terstruktur untuk berbagai jenjang.", meta: "Program", href: "/bimbingan" },
-  { type: "Halaman", title: "Riset", description: "Eksplorasi dan proyek matematika.", meta: "Akademik", href: "/riset" },
 ];

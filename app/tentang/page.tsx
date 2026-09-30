@@ -24,7 +24,7 @@ export default function TentangPage() {
             <p>Karakter brand diarahkan agar akademik, modern, intelektual, profesional, matang, minimal, dan terpercaya.</p>
             <div className="content-box">
               <strong>Tentang Pengelola</strong>
-              <p>Profil, academic interests, research, teaching, competition, dan kontak disiapkan sebagai konfigurasi yang mudah diperbarui. Detail publik belum diisi pada versi ini untuk menghindari data placeholder yang dianggap final.</p>
+              <p>Profil, minat akademik, pengalaman mengajar, kompetisi, dan kontak disiapkan sebagai konfigurasi yang mudah diperbarui. Detail publik belum diisi pada versi ini untuk menghindari data placeholder yang dianggap final.</p>
             </div>
           </div>
         </div>

@@ -948,3 +948,37 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 :root[data-language="en"] .lang-en-only{display:block}
 :root[data-language="id"] .lang-id-only{display:block}
 :root[data-language="id"] .lang-en-only{display:none!important}
+
+
+/* Material catalog filters */
+.material-catalog-shell{margin-top:26px}
+.material-search-box{margin-bottom:16px}
+.material-filter-board{margin-bottom:18px}
+.material-filter-summary{
+  display:flex;
+  align-items:baseline;
+  gap:7px;
+  margin:18px 0;
+  color:var(--muted);
+  font-size:.82rem
+}
+.material-filter-summary strong{
+  color:var(--text);
+  font-size:1.05rem
+}
+.filtered-material-list{margin-top:0}
+.material-card-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:13px
+}
+.material-card-tags span{
+  padding:5px 9px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:var(--surface-2);
+  color:var(--muted);
+  font-size:.67rem;
+  font-weight:800
+}

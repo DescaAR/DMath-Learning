@@ -12,7 +12,6 @@ export const siteConfig = {
     { label: "Olimpiade", href: "/olimpiade" },
     { label: "Pembahasan", href: "/pembahasan" },
     { label: "Bimbingan", href: "/bimbingan" },
-    { label: "Riset", href: "/riset" },
     { label: "Tentang", href: "/tentang" },
   ],
 } as const;

@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export function SiteFooter() {
+  const { language, t } = useLanguage();
+
   return (
-    <footer className="site-footer">
+    <footer className="site-footer" data-no-translate>
       <div className="container footer-grid">
         <div className="footer-branding">
           <div className="brand footer-brand">
@@ -15,26 +20,26 @@ export function SiteFooter() {
             </span>
           </div>
           <p>
-            Platform pembelajaran matematika yang berfokus pada pemahaman konsep,
-            pengembangan penalaran, dan kemampuan problem solving.
+            {language === "en"
+              ? "A mathematics learning platform focused on conceptual understanding, reasoning, and problem-solving ability."
+              : "Platform pembelajaran matematika yang berfokus pada pemahaman konsep, pengembangan penalaran, dan kemampuan problem solving."}
           </p>
         </div>
         <div>
-          <h3>Jelajahi</h3>
+          <h3>{language === "en" ? "Explore" : "Jelajahi"}</h3>
           <div className="footer-links">
-            <Link href="/belajar">Belajar</Link>
-            <Link href="/materi">Materi</Link>
-            <Link href="/bank-soal">Bank Soal</Link>
-            <Link href="/olimpiade">Olimpiade</Link>
+            <Link href="/belajar">{t("Belajar")}</Link>
+            <Link href="/materi">{t("Materi")}</Link>
+            <Link href="/bank-soal">{t("Bank Soal")}</Link>
+            <Link href="/olimpiade">{t("Olimpiade")}</Link>
           </div>
         </div>
         <div>
           <h3>DMath Learning</h3>
           <div className="footer-links">
-            <Link href="/bimbingan">Bimbingan</Link>
-            <Link href="/riset">Riset</Link>
-            <Link href="/tentang">Tentang</Link>
-            <Link href="/search">Search</Link>
+            <Link href="/bimbingan">{t("Bimbingan")}</Link>
+            <Link href="/tentang">{t("Tentang")}</Link>
+            <Link href="/search">{language === "en" ? "Search" : "Cari"}</Link>
           </div>
         </div>
       </div>

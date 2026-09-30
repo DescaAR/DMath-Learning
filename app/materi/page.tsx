@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
-import { StatusBadge } from "@/components/StatusBadge";
-import { materials } from "@/data/site-data";
+import { MaterialCatalogClient } from "@/components/MaterialCatalogClient";
 
 export const metadata: Metadata = {
   title: "Materi",
-  description: "Perpustakaan materi matematika DMath Learning dari SD hingga universitas dan olimpiade.",
+  description: "Perpustakaan materi matematika DMath Learning dengan filter jenjang, jalur, bidang, dan tingkat kesulitan.",
 };
 
 export default function MateriPage() {
@@ -15,7 +13,7 @@ export default function MateriPage() {
       <PageHero
         eyebrow="Perpustakaan materi"
         title="Bukan ringkasan satu halaman. Belajar sampai paham."
-        description="Dua belas materi awal sudah published. Setiap bab utama dirancang dengan motivasi, intuisi, definisi formal, notasi, teorema, pembuktian, worked examples, visualisasi, kesalahan umum, dan referensi."
+        description="Cari dan filter materi berdasarkan jenjang, jalur, bidang matematika, dan tingkat kesulitan. Setiap bab utama dirancang dengan motivasi, intuisi, definisi formal, notasi, teorema, pembuktian, worked examples, visualisasi, kesalahan umum, dan referensi."
       />
 
       <section className="section">
@@ -29,26 +27,14 @@ export default function MateriPage() {
               ["Contoh", "Langkah penyelesaian"],
               ["Practice", "Latihan dan problem bank"],
             ].map(([title, text]) => (
-              <div key={title}><strong>{title}</strong><span>{text}</span></div>
+              <div key={title}>
+                <strong>{title}</strong>
+                <span>{text}</span>
+              </div>
             ))}
           </div>
 
-          <div className="material-list rich-material-list">
-            {materials.map((item, index) => (
-              <article className="material-row" key={item.title}>
-                <div className="material-index">{String(index + 1).padStart(2, "0")}</div>
-                <div className="material-main">
-                  <span className="meta-line">{item.level} · {item.subject}</span>
-                  <h2>{item.title}</h2>
-                  <p>{item.summary}</p>
-                </div>
-                <div className="material-row-actions">
-                  <StatusBadge status={item.status} />
-                  <Link href={item.href} className="btn secondary">Pelajari</Link>
-                </div>
-              </article>
-            ))}
-          </div>
+          <MaterialCatalogClient />
         </div>
       </section>
     </>
