@@ -6,6 +6,7 @@ import { materialPractice } from "@/data/material-practice";
 import { materialPracticeExtra } from "@/data/material-practice-extra";
 import { materialExtensions } from "@/data/material-extensions";
 import { materialExplorations } from "@/data/material-explorations";
+import { learningTrackPages } from "@/data/learning-track-pages";
 
 export type SearchLevel = "SD" | "SMP" | "SMA" | "Kuliah" | "Umum";
 export type SearchTrack = "Reguler" | "Olimpiade" | "Umum";
@@ -215,6 +216,37 @@ const explorationEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
   }));
 });
 
+
+const learningTrackEntries: SearchEntry[] = learningTrackPages.map((item) => {
+  const level: SearchLevel =
+    item.slug === "sd" || item.slug === "olimpiade-sd" ? "SD" :
+    item.slug === "smp" || item.slug === "olimpiade-smp" ? "SMP" :
+    item.slug === "sma" || item.slug === "olimpiade-sma" ? "SMA" :
+    item.slug === "kuliah" || item.slug === "onmipa" ? "Kuliah" : "Umum";
+  const track: SearchTrack = item.category === "olimpiade" ? "Olimpiade" : "Reguler";
+  const subjectId = item.subjects.map((subject) => subject.name.id).join(", ");
+  const subjectEn = item.subjects.map((subject) => subject.name.en).join(", ");
+
+  return {
+    id: "learning-track-" + item.slug,
+    kind: "Halaman",
+    level,
+    track,
+    subject: "Umum",
+    subjectEn: "General",
+    difficulty: "Umum",
+    title: item.title.id,
+    description: item.intro.id,
+    meta: "Jalur Belajar · " + item.eyebrow.id,
+    href: "/belajar/" + item.slug,
+    keywords: [item.audience.id,item.goal.id,item.philosophy.id,subjectId,...item.skills.map((skill)=>skill.id)].join(" "),
+    titleEn: item.title.en,
+    descriptionEn: item.intro.en,
+    metaEn: "Learning Track · " + item.eyebrow.en,
+    keywordsEn: [item.audience.en,item.goal.en,item.philosophy.en,subjectEn,...item.skills.map((skill)=>skill.en)].join(" ")
+  };
+});
+
 const basisMaterial:SearchEntry={
   id:"material-basis-dimensi",kind:"Materi",level:"Kuliah",track:"Reguler",
   subject:"Aljabar Linear",subjectEn:"Linear Algebra",difficulty:"Menengah",
@@ -249,4 +281,4 @@ const pages:SearchEntry[]=[
   {id:"page-tutoring",kind:"Halaman",level:"Umum",track:"Umum",subject:"Umum",subjectEn:"General",difficulty:"Umum",title:"Bimbingan",description:"Program pendampingan matematika dan problem solving.",meta:"Program",href:"/bimbingan",keywords:"bimbingan belajar program",titleEn:"Tutoring",descriptionEn:"Mathematics tutoring and problem-solving programs.",metaEn:"Program",keywordsEn:"tutoring learning program"}
 ];
 
-export const fullSearchIndex:SearchEntry[]=[...materialEntries,...extensionEntries,...explorationEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
+export const fullSearchIndex:SearchEntry[]=[...learningTrackEntries,...materialEntries,...extensionEntries,...explorationEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
