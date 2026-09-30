@@ -5,6 +5,7 @@ import { localizeProblem } from "@/data/problem-translations-en";
 import { materialPractice } from "@/data/material-practice";
 import { materialPracticeExtra } from "@/data/material-practice-extra";
 import { materialExtensions } from "@/data/material-extensions";
+import { materialExplorations } from "@/data/material-explorations";
 
 export type SearchLevel = "SD" | "SMP" | "SMA" | "Kuliah" | "Umum";
 export type SearchTrack = "Reguler" | "Olimpiade" | "Umum";
@@ -186,6 +187,34 @@ const extensionEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
   });
 });
 
+
+const explorationEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
+  const projects = materialExplorations[material.slug] ?? [];
+  const enMaterial = deepMaterialEnMap[material.slug] ?? material;
+  const level = normalizeLevel(material.level);
+  const track = normalizeTrack(material.track, material.level, material.slug);
+  const difficulty = normalizeDifficulty(material.difficulty);
+
+  return projects.map((project, projectIndex) => ({
+    id: "exploration-" + material.slug + "-" + projectIndex,
+    kind: "Materi" as const,
+    level,
+    track,
+    subject: material.subject,
+    subjectEn: enMaterial.subject,
+    difficulty,
+    title: project.title.id,
+    description: project.goal.id,
+    meta: "Proyek Eksplorasi · " + material.title,
+    href: "/materi/" + material.slug + "#eksplorasi",
+    keywords: [project.goal.id, ...project.tasks.map((item) => item.id), project.expected.id, project.extension.id].join(" "),
+    titleEn: project.title.en,
+    descriptionEn: project.goal.en,
+    metaEn: "Exploration Project · " + enMaterial.title,
+    keywordsEn: [project.goal.en, ...project.tasks.map((item) => item.en), project.expected.en, project.extension.en].join(" ")
+  }));
+});
+
 const basisMaterial:SearchEntry={
   id:"material-basis-dimensi",kind:"Materi",level:"Kuliah",track:"Reguler",
   subject:"Aljabar Linear",subjectEn:"Linear Algebra",difficulty:"Menengah",
@@ -220,4 +249,4 @@ const pages:SearchEntry[]=[
   {id:"page-tutoring",kind:"Halaman",level:"Umum",track:"Umum",subject:"Umum",subjectEn:"General",difficulty:"Umum",title:"Bimbingan",description:"Program pendampingan matematika dan problem solving.",meta:"Program",href:"/bimbingan",keywords:"bimbingan belajar program",titleEn:"Tutoring",descriptionEn:"Mathematics tutoring and problem-solving programs.",metaEn:"Program",keywordsEn:"tutoring learning program"}
 ];
 
-export const fullSearchIndex:SearchEntry[]=[...materialEntries,...extensionEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
+export const fullSearchIndex:SearchEntry[]=[...materialEntries,...extensionEntries,...explorationEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
