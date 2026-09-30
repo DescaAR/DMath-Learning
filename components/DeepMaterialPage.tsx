@@ -6,6 +6,7 @@ import { deepMaterials, type DeepMaterial } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { materialSupplements, type BilingualText } from "@/data/material-supplements";
 import { materialPractice } from "@/data/material-practice";
+import { materialPracticeExtra } from "@/data/material-practice-extra";
 import { materialExtensions } from "@/data/material-extensions";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
@@ -24,6 +25,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const m = language === "en" ? (deepMaterialEnMap[material.slug] ?? material) : material;
   const supplement = materialSupplements[material.slug];
   const extensions = materialExtensions[material.slug] ?? [];
+  const practiceProblems = [...(materialPractice[material.slug] ?? []), ...(materialPracticeExtra[material.slug] ?? [])];
   const en = language === "en";
   const ui = (id: string, english: string) => en ? english : id;
   const pick = (text: BilingualText) => en ? text.en : text.id;
@@ -119,7 +121,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             <div><strong>{m.definitions.length}</strong><span>{ui("definisi formal", "formal definitions")}</span></div>
             <div><strong>{m.theorems.length}</strong><span>{ui("teorema + bukti", "theorems + proofs")}</span></div>
             <div><strong>{m.examples.length}</strong><span>{ui("contoh terbahas", "worked examples")}</span></div>
-            <div><strong>{supplement?.deepDive.length ?? 0}</strong><span>{ui("bagian pendalaman", "deep-dive sections")}</span></div>
+            <div><strong>{practiceProblems.length}</strong><span>{ui("latihan bertingkat", "guided problems")}</span></div>
           </div>
 
           <div className="actions">
@@ -417,8 +419,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
               </div>
             </section>
 
-            {materialPractice[material.slug] && (
-              <MaterialPractice problems={materialPractice[material.slug]} storageKey={material.slug} />
+            {practiceProblems.length > 0 && (
+              <MaterialPractice problems={practiceProblems} storageKey={material.slug} />
             )}
 
             {supplement && <MaterialCheckpoint quiz={supplement.quiz} />}
