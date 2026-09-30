@@ -14,6 +14,7 @@ export function MaterialPractice({ problems, storageKey }: { problems: MaterialP
   const [openHint,setOpenHint]=useState<Record<string,boolean>>({});
   const [openAnswer,setOpenAnswer]=useState<Record<string,boolean>>({});
   const [done,setDone]=useState<Record<string,boolean>>({});
+  const [hydrated,setHydrated]=useState(false);
   const persistenceKey = storageKey ? "dmath:practice:" + storageKey : "";
 
   useEffect(() => {
@@ -22,14 +23,15 @@ export function MaterialPractice({ problems, storageKey }: { problems: MaterialP
       const saved = window.localStorage.getItem(persistenceKey);
       if (saved) setDone(JSON.parse(saved));
     } catch {}
+    setHydrated(true);
   }, [persistenceKey]);
 
   useEffect(() => {
-    if (!persistenceKey) return;
+    if (!persistenceKey || !hydrated) return;
     try {
       window.localStorage.setItem(persistenceKey, JSON.stringify(done));
     } catch {}
-  }, [done, persistenceKey]);
+  }, [done, persistenceKey, hydrated]);
 
   const filtered=useMemo(()=>filter==="Semua"?problems:problems.filter(p=>p.difficulty===filter),[filter,problems]);
   const solved=Object.values(done).filter(Boolean).length;
