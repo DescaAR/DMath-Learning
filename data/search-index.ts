@@ -7,6 +7,7 @@ import { materialPracticeExtra } from "@/data/material-practice-extra";
 import { materialExtensions } from "@/data/material-extensions";
 import { materialExplorations } from "@/data/material-explorations";
 import { learningTrackPages } from "@/data/learning-track-pages";
+import { olympiadHubs } from "@/data/olympiad-hubs";
 
 export type SearchLevel = "SD" | "SMP" | "SMA" | "Kuliah" | "Umum";
 export type SearchTrack = "Reguler" | "Olimpiade" | "Umum";
@@ -247,6 +248,29 @@ const learningTrackEntries: SearchEntry[] = learningTrackPages.map((item) => {
   };
 });
 
+
+const olympiadHubEntries: SearchEntry[] = olympiadHubs.map((hub) => {
+  const level: SearchLevel = hub.slug === "sd" ? "SD" : hub.slug === "smp" ? "SMP" : hub.slug === "sma" ? "SMA" : "Kuliah";
+  return {
+    id: "olympiad-hub-" + hub.slug,
+    kind: "Halaman",
+    level,
+    track: "Olimpiade",
+    subject: "Umum",
+    subjectEn: "General",
+    difficulty: "Umum",
+    title: hub.title.id,
+    description: hub.subtitle.id,
+    meta: "Olimpiade · Syllabus · Roadmap · Soal · Challenge",
+    href: "/olimpiade/" + hub.slug,
+    keywords: [hub.subtitle.id, ...hub.fields.map((field)=>field.id), ...hub.syllabus.map((unit)=>unit.title.id)].join(" "),
+    titleEn: hub.title.en,
+    descriptionEn: hub.subtitle.en,
+    metaEn: "Olympiad · Syllabus · Roadmap · Problems · Challenge",
+    keywordsEn: [hub.subtitle.en, ...hub.fields.map((field)=>field.en), ...hub.syllabus.map((unit)=>unit.title.en)].join(" ")
+  };
+});
+
 const basisMaterial:SearchEntry={
   id:"material-basis-dimensi",kind:"Materi",level:"Kuliah",track:"Reguler",
   subject:"Aljabar Linear",subjectEn:"Linear Algebra",difficulty:"Menengah",
@@ -281,4 +305,4 @@ const pages:SearchEntry[]=[
   {id:"page-tutoring",kind:"Halaman",level:"Umum",track:"Umum",subject:"Umum",subjectEn:"General",difficulty:"Umum",title:"Bimbingan",description:"Program pendampingan matematika dan problem solving.",meta:"Program",href:"/bimbingan",keywords:"bimbingan belajar program",titleEn:"Tutoring",descriptionEn:"Mathematics tutoring and problem-solving programs.",metaEn:"Program",keywordsEn:"tutoring learning program"}
 ];
 
-export const fullSearchIndex:SearchEntry[]=[...learningTrackEntries,...materialEntries,...extensionEntries,...explorationEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
+export const fullSearchIndex:SearchEntry[]=[...learningTrackEntries,...olympiadHubEntries,...materialEntries,...extensionEntries,...explorationEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
