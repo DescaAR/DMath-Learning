@@ -3,14 +3,14 @@ import { deepMaterials } from "@/data/deep-materials";
 export type ContentStatus = "published" | "draft" | "planned";
 
 export const learningTracks = [
-  { title: "Matematika SD", description: "Fondasi bilangan, operasi, geometri, pengukuran, data, peluang, dan pemecahan masalah.", href: "/belajar#sd" },
-  { title: "Matematika SMP", description: "Bilangan, aljabar, fungsi, geometri, statistika, peluang, dan diskrit awal.", href: "/belajar#smp" },
-  { title: "Matematika SMA", description: "Fungsi, trigonometri, matriks, kalkulus, peluang, statistika, dan kombinatorika.", href: "/belajar#sma" },
-  { title: "Matematika Kuliah", description: "Kalkulus, aljabar linear, analisis, struktur aljabar, graf, topologi, dan bidang lanjut.", href: "/belajar#kuliah" },
-  { title: "Olimpiade SD", description: "Aritmetika kreatif, pola, geometri, logika, dan strategi pemecahan masalah.", href: "/olimpiade#sd" },
-  { title: "Olimpiade SMP", description: "Aljabar, teori bilangan, kombinatorika, geometri, dan strategi problem solving.", href: "/olimpiade#smp" },
-  { title: "Olimpiade SMA", description: "Empat bidang utama olimpiade dengan problem solving nonrutin dan pembahasan bertahap.", href: "/olimpiade#sma" },
-  { title: "ON-MIPA Matematika", description: "Analisis Real, Analisis Kompleks, Aljabar Linear, Struktur Aljabar, dan Kombinatorika.", href: "/olimpiade#onmipa" },
+  { title: "Matematika SD", description: "Fondasi bilangan, operasi, geometri, pengukuran, data, peluang, dan pemecahan masalah.", href: "/belajar/sd" },
+  { title: "Matematika SMP", description: "Bilangan, aljabar, fungsi, geometri, statistika, peluang, dan diskrit awal.", href: "/belajar/smp" },
+  { title: "Matematika SMA", description: "Fungsi, trigonometri, matriks, kalkulus, peluang, statistika, dan kombinatorika.", href: "/belajar/sma" },
+  { title: "Matematika Kuliah", description: "Kalkulus, aljabar linear, analisis, struktur aljabar, graf, topologi, dan bidang lanjut.", href: "/belajar/kuliah" },
+  { title: "Olimpiade SD", description: "Aritmetika kreatif, pola, geometri, logika, dan strategi pemecahan masalah.", href: "/belajar/olimpiade-sd" },
+  { title: "Olimpiade SMP", description: "Aljabar, teori bilangan, kombinatorika, geometri, dan strategi problem solving.", href: "/belajar/olimpiade-smp" },
+  { title: "Olimpiade SMA", description: "Empat bidang utama olimpiade dengan problem solving nonrutin dan pembahasan bertahap.", href: "/belajar/olimpiade-sma" },
+  { title: "ON-MIPA Matematika", description: "Analisis Real, Analisis Kompleks, Aljabar Linear, Struktur Aljabar, dan Kombinatorika.", href: "/belajar/onmipa" },
 ];
 
 export const subjects = [
