@@ -4,7 +4,7 @@ import { SearchClient } from "@/components/SearchClient";
 
 export const metadata: Metadata = {
   title: "Search",
-  description: "Pencarian seluruh konten DMath Learning dengan filter jenjang, jalur, jenis konten, dan pencocokan kata serupa.",
+  description: "Pencarian seluruh konten DMath Learning dengan filter jenjang, jalur, bidang/materi, tingkat kesulitan, jenis konten, dan pencocokan kata serupa.",
 };
 
 export default function SearchPage() {
@@ -13,7 +13,7 @@ export default function SearchPage() {
       <PageHero
         eyebrow="Global Search"
         title="Cari seluruh isi DMath Learning."
-        description="Cari materi, definisi, teorema, contoh, dan soal dalam satu tempat. Pilih kotak filter SD, SMP, SMA, Kuliah, Materi Reguler, atau Olimpiade; pencarian tetap menampilkan hasil yang cukup mirip ketika kata yang diketik tidak persis sama."
+        description="Cari materi, definisi, teorema, contoh, dan soal dalam satu tempat. Gunakan filter berbentuk kotak untuk memilih jenjang, jalur, bidang/materi, tingkat kesulitan, dan jenis konten. Pencarian tetap menampilkan hasil yang cukup mirip ketika kata yang diketik tidak persis sama."
       />
       <section className="section">
         <div className="container">
