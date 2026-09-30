@@ -294,9 +294,9 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                           <RichParagraph key={pick(paragraph)} text={pick(paragraph)} />
                         ))}
 
-                        {unit.formulas.length > 0 && (
+                        {(unit.formulas?.length ?? 0) > 0 && (
                           <div className="extended-formula-grid">
-                            {unit.formulas.map((formula) => (
+                            {unit.formulas?.map((formula) => (
                               <div className="extended-formula" key={formula}><RichMath>{formula}</RichMath></div>
                             ))}
                           </div>
