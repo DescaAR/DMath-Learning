@@ -12,7 +12,7 @@ export default function BelajarPage() {
         <div className="container">
           <div className="grid tracks-grid">
             {learningTracks.map((track) => (
-              <a className="card track-card" href={track.href} id={track.href.split("#")[1]} key={track.title}>
+              <a className="card track-card" href={track.href} key={track.title}>
                 <span className="card-index">{track.title.includes("Olimpiade") || track.title.includes("ON-MIPA") ? "Kompetisi" : "Reguler"}</span>
                 <h2>{track.title}</h2>
                 <p>{track.description}</p>
