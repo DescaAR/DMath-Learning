@@ -8,11 +8,13 @@ import { materialSupplements, type BilingualText } from "@/data/material-supplem
 import { materialPractice } from "@/data/material-practice";
 import { materialPracticeExtra } from "@/data/material-practice-extra";
 import { materialExtensions } from "@/data/material-extensions";
+import { materialExplorations } from "@/data/material-explorations";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { MaterialCheckpoint } from "@/components/MaterialCheckpoint";
 import { MaterialPractice } from "@/components/MaterialPractice";
 import { ConceptIndex } from "@/components/ConceptIndex";
+import { MaterialExplorationLab } from "@/components/MaterialExplorationLab";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -26,13 +28,14 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const supplement = materialSupplements[material.slug];
   const extensions = materialExtensions[material.slug] ?? [];
   const practiceProblems = [...(materialPractice[material.slug] ?? []), ...(materialPracticeExtra[material.slug] ?? [])];
+  const explorations = materialExplorations[material.slug] ?? [];
   const en = language === "en";
   const ui = (id: string, english: string) => en ? english : id;
   const pick = (text: BilingualText) => en ? text.en : text.id;
 
   const sectionIds = useMemo(() => [
     "overview", "prasyarat", "tujuan", "peta", "indeks-konsep", "motivasi", "notasi", "definisi",
-    "pendalaman", "subbab-lanjutan", "lab-interaktif", "teorema", "contoh", "latihan-bertingkat", "checkpoint", "kesalahan",
+    "pendalaman", "subbab-lanjutan", "lab-interaktif", "teorema", "contoh", "eksplorasi", "latihan-bertingkat", "checkpoint", "kesalahan",
     "ringkasan", "koneksi", "referensi"
   ], []);
 
@@ -78,6 +81,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ["lab-interaktif", "Lab Interaktif", "Interactive Lab"],
     ["teorema", "Teorema & Bukti", "Theorems & Proofs"],
     ["contoh", "Worked Examples", "Worked Examples"],
+    ["eksplorasi", "Proyek Eksplorasi", "Exploration Project"],
     ["latihan-bertingkat", "Latihan Bertingkat", "Guided Practice"],
     ["checkpoint", "Cek Pemahaman", "Knowledge Check"],
     ["kesalahan", "Kesalahan Umum", "Common Mistakes"],
@@ -418,6 +422,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                 ))}
               </div>
             </section>
+
+            {explorations.length > 0 && (
+              <MaterialExplorationLab explorations={explorations} storageKey={material.slug} />
+            )}
 
             {practiceProblems.length > 0 && (
               <MaterialPractice problems={practiceProblems} storageKey={material.slug} />
