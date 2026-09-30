@@ -533,7 +533,7 @@ export const materialSupplements: Record<string, MaterialSupplement> = {
         ],
         formula: "$$m_T(T)=0,\\qquad m_T\\mid p\\text{ whenever }p(T)=0.$$",
         takeaways: [
-          { id: "Nilai eigen adalah akar polinomial minimal.", en: "Eigenvalues are roots of the minimal polynomial." },
+          { id: "Setiap nilai eigen merupakan akar polinomial minimal.", en: "Every eigenvalue is a root of the minimal polynomial." },
           { id: "Basis yang disesuaikan dapat mengungkap struktur blok.", en: "An adapted basis can reveal block structure." }
         ]
       },
