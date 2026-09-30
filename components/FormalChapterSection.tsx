@@ -1,3 +1,4 @@
+// Formal chapter deployment sync
 "use client";
 
 import type { FormalChapterContent, FormalBlockKind, Bilingual } from "@/data/formal-chapter-content";
