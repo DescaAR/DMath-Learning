@@ -559,23 +559,41 @@ export function translatePlainText(input: string, language: Language = "en"): st
 
   const leading = input.match(/^\s*/)?.[0] ?? "";
   const trailing = input.match(/\s*$/)?.[0] ?? "";
-  let core = input.slice(leading.length, input.length - trailing.length);
+  const core = input.slice(leading.length, input.length - trailing.length);
 
-  const exact = UI_TRANSLATIONS[core];
+  // Most page copy lives in EXACT_TRANSLATIONS; short reusable UI labels live
+  // in UI_TRANSLATIONS. Check both maps before doing anything else.
+  const exact = UI_TRANSLATIONS[core] ?? EXACT_TRANSLATIONS[core];
   if (exact) return leading + exact + trailing;
 
-  // Curated translations only. If a sentence has no vetted English version,
-  // keep the original instead of producing mixed Indonesian-English text.
+  // JSX formatting can leave line breaks / repeated spaces inside a text node.
+  // Match a normalized version against the curated dictionaries as well.
+  const normalizedCore = core.replace(/\s+/g, " ").trim();
+  if (normalizedCore && normalizedCore !== core) {
+    const normalizedExact =
+      UI_TRANSLATIONS[normalizedCore] ?? EXACT_TRANSLATIONS[normalizedCore];
+    if (normalizedExact) return leading + normalizedExact + trailing;
+  }
+
+  // Curated translations only. Never assemble English word-by-word because
+  // that was the source of mixed, ungrammatical Indonesian-English sentences.
   return input;
 }
 
 export function translateRichText(input: string, language: Language): string {
-  if (language === "id") return input;
+  if (language === "id" || !input.trim()) return input;
+
+  // A number of vetted translations intentionally contain LaTeX. Prefer the
+  // complete sentence translation first so the surrounding prose is not split
+  // into fragments that can no longer match the curated dictionary.
+  const whole = translatePlainText(input, language);
+  if (whole !== input) return whole;
+
   const tokenRegex = /(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g;
   return input
     .split(tokenRegex)
     .map((piece) => {
-      if ((piece.startsWith("$$") && piece.endsWith("$$")) || (piece.startsWith("$") && piece.endsWith("$"))) {
+      if ((piece.startsWith("$") && piece.endsWith("$")) || (piece.startsWith("$") && piece.endsWith("$"))) {
         return piece;
       }
       return translatePlainText(piece, language);
