@@ -15,7 +15,7 @@ export type ExtensionUnit = {
   title: BiText;
   intro: BiText;
   paragraphs: BiText[];
-  formulas: string[];
+  formulas?: string[];
   theorem?: ExtensionTheorem;
   example?: ExtensionExample;
   notes: BiText[];
