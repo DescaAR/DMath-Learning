@@ -9,12 +9,14 @@ import { materialPractice } from "@/data/material-practice";
 import { materialPracticeExtra } from "@/data/material-practice-extra";
 import { materialExtensions } from "@/data/material-extensions";
 import { materialExplorations } from "@/data/material-explorations";
+import { formalChapterContent } from "@/data/formal-chapter-content";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { MaterialCheckpoint } from "@/components/MaterialCheckpoint";
 import { MaterialPractice } from "@/components/MaterialPractice";
 import { ConceptIndex } from "@/components/ConceptIndex";
 import { MaterialExplorationLab } from "@/components/MaterialExplorationLab";
+import { FormalChapterSection } from "@/components/FormalChapterSection";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -29,13 +31,14 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const extensions = materialExtensions[material.slug] ?? [];
   const practiceProblems = [...(materialPractice[material.slug] ?? []), ...(materialPracticeExtra[material.slug] ?? [])];
   const explorations = materialExplorations[material.slug] ?? [];
+  const formalContent = formalChapterContent[material.slug];
   const en = language === "en";
   const ui = (id: string, english: string) => en ? english : id;
   const pick = (text: BilingualText) => en ? text.en : text.id;
 
   const sectionIds = useMemo(() => [
     "overview", "prasyarat", "tujuan", "peta", "indeks-konsep", "motivasi", "notasi", "definisi",
-    "pendalaman", "subbab-lanjutan", "lab-interaktif", "teorema", "contoh", "eksplorasi", "latihan-bertingkat", "checkpoint", "kesalahan",
+    "struktur-formal", "contoh-detail", "pendalaman", "subbab-lanjutan", "lab-interaktif", "teorema", "contoh", "eksplorasi", "latihan-bertingkat", "checkpoint", "kesalahan",
     "ringkasan", "koneksi", "referensi"
   ], []);
 
@@ -76,6 +79,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ["motivasi", "Motivasi & Intuisi", "Motivation & Intuition"],
     ["notasi", "Notasi", "Notation"],
     ["definisi", "Definisi Formal", "Formal Definitions"],
+    ["struktur-formal", "Struktur Formal", "Formal Structure"],
+    ["contoh-detail", "Contoh Detail", "Detailed Examples"],
     ["pendalaman", "Pendalaman Konsep", "Deep Dive"],
     ["subbab-lanjutan", "Subbab Lanjutan", "Extended Topics"],
     ["lab-interaktif", "Lab Interaktif", "Interactive Lab"],
@@ -122,9 +127,9 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           </div>
 
           <div className="chapter-stat-grid">
-            <div><strong>{m.definitions.length}</strong><span>{ui("definisi formal", "formal definitions")}</span></div>
-            <div><strong>{m.theorems.length}</strong><span>{ui("teorema + bukti", "theorems + proofs")}</span></div>
-            <div><strong>{m.examples.length}</strong><span>{ui("contoh terbahas", "worked examples")}</span></div>
+            <div><strong>{m.definitions.length + (formalContent?.blocks.filter((item) => item.kind === "definition").length ?? 0)}</strong><span>{ui("definisi formal", "formal definitions")}</span></div>
+            <div><strong>{m.theorems.length + (formalContent?.blocks.filter((item) => item.proof?.length).length ?? 0)}</strong><span>{ui("hasil + bukti", "results + proofs")}</span></div>
+            <div><strong>{m.examples.length + (formalContent?.examples.length ?? 0)}</strong><span>{ui("contoh terbahas", "worked examples")}</span></div>
             <div><strong>{practiceProblems.length}</strong><span>{ui("latihan bertingkat", "guided problems")}</span></div>
           </div>
 
@@ -248,6 +253,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                 ))}
               </div>
             </section>
+
+            {formalContent && <FormalChapterSection content={formalContent} />}
 
             {supplement && (
               <section id="pendalaman" className="book-section">
