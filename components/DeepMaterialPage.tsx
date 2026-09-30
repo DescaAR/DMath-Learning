@@ -5,9 +5,11 @@ import { useEffect, useMemo, useState } from "react";
 import type { DeepMaterial } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { materialSupplements, type BilingualText } from "@/data/material-supplements";
+import { materialPractice } from "@/data/material-practice";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { MaterialCheckpoint } from "@/components/MaterialCheckpoint";
+import { MaterialPractice } from "@/components/MaterialPractice";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -25,7 +27,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
 
   const sectionIds = useMemo(() => [
     "overview", "prasyarat", "tujuan", "peta", "motivasi", "notasi", "definisi",
-    "pendalaman", "lab-interaktif", "teorema", "contoh", "checkpoint", "kesalahan",
+    "pendalaman", "lab-interaktif", "teorema", "contoh", "latihan-bertingkat", "checkpoint", "kesalahan",
     "ringkasan", "koneksi", "referensi"
   ], []);
 
@@ -66,6 +68,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ["lab-interaktif", "Lab Interaktif", "Interactive Lab"],
     ["teorema", "Teorema & Bukti", "Theorems & Proofs"],
     ["contoh", "Worked Examples", "Worked Examples"],
+    ["latihan-bertingkat", "Latihan Bertingkat", "Guided Practice"],
     ["checkpoint", "Cek Pemahaman", "Knowledge Check"],
     ["kesalahan", "Kesalahan Umum", "Common Mistakes"],
     ["ringkasan", "Ringkasan Bab", "Chapter Summary"],
@@ -320,6 +323,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                 ))}
               </div>
             </section>
+
+            {materialPractice[material.slug] && (
+              <MaterialPractice problems={materialPractice[material.slug]} />
+            )}
 
             {supplement && <MaterialCheckpoint quiz={supplement.quiz} />}
 
