@@ -6,6 +6,7 @@ import { deepMaterials, type DeepMaterial } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { materialSupplements, type BilingualText } from "@/data/material-supplements";
 import { materialPractice } from "@/data/material-practice";
+import { materialExtensions } from "@/data/material-extensions";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { MaterialCheckpoint } from "@/components/MaterialCheckpoint";
@@ -22,13 +23,14 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const { language } = useLanguage();
   const m = language === "en" ? (deepMaterialEnMap[material.slug] ?? material) : material;
   const supplement = materialSupplements[material.slug];
+  const extensions = materialExtensions[material.slug] ?? [];
   const en = language === "en";
   const ui = (id: string, english: string) => en ? english : id;
   const pick = (text: BilingualText) => en ? text.en : text.id;
 
   const sectionIds = useMemo(() => [
     "overview", "prasyarat", "tujuan", "peta", "indeks-konsep", "motivasi", "notasi", "definisi",
-    "pendalaman", "lab-interaktif", "teorema", "contoh", "latihan-bertingkat", "checkpoint", "kesalahan",
+    "pendalaman", "subbab-lanjutan", "lab-interaktif", "teorema", "contoh", "latihan-bertingkat", "checkpoint", "kesalahan",
     "ringkasan", "koneksi", "referensi"
   ], []);
 
@@ -70,6 +72,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ["notasi", "Notasi", "Notation"],
     ["definisi", "Definisi Formal", "Formal Definitions"],
     ["pendalaman", "Pendalaman Konsep", "Deep Dive"],
+    ["subbab-lanjutan", "Subbab Lanjutan", "Extended Topics"],
     ["lab-interaktif", "Lab Interaktif", "Interactive Lab"],
     ["teorema", "Teorema & Bukti", "Theorems & Proofs"],
     ["contoh", "Worked Examples", "Worked Examples"],
@@ -256,6 +259,89 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                       <div className="takeaway-list">
                         <strong>{ui("Yang perlu diingat", "Key Takeaways")}</strong>
                         <ul>{part.takeaways.map((item) => <li key={pick(item)}><RichMath>{pick(item)}</RichMath></li>)}</ul>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {extensions.length > 0 && (
+              <section id="subbab-lanjutan" className="book-section extended-topics-section">
+                <div className="section-number">09</div>
+                <span className="eyebrow">{ui("Subbab Lanjutan", "Extended Topics")}</span>
+                <h2>{ui("Perluas pemahaman dari konsep inti ke struktur yang lebih dalam.", "Extend the Core Ideas into Deeper Structure.")}</h2>
+                <p>{ui(
+                  "Bagian ini dirancang seperti subbab buku: ada penjelasan konseptual, rumus utama, hasil penting, pembuktian, contoh, dan catatan yang perlu diingat.",
+                  "These sections are written like textbook subsections, with conceptual explanations, key formulas, important results, proofs, examples, and study notes."
+                )}</p>
+
+                <div className="extended-topic-stack">
+                  {extensions.map((unit, unitIndex) => (
+                    <article className="extended-topic-card" key={pick(unit.title)}>
+                      <div className="extended-topic-head">
+                        <span>{String(unitIndex + 1).padStart(2, "0")}</span>
+                        <div>
+                          <h3>{pick(unit.title)}</h3>
+                          <p><RichMath>{pick(unit.intro)}</RichMath></p>
+                        </div>
+                      </div>
+
+                      <div className="extended-topic-body">
+                        {unit.paragraphs.map((paragraph) => (
+                          <RichParagraph key={pick(paragraph)} text={pick(paragraph)} />
+                        ))}
+
+                        {unit.formulas.length > 0 && (
+                          <div className="extended-formula-grid">
+                            {unit.formulas.map((formula) => (
+                              <div className="extended-formula" key={formula}><RichMath>{formula}</RichMath></div>
+                            ))}
+                          </div>
+                        )}
+
+                        {unit.theorem && (
+                          <div className="extension-theorem">
+                            <div className="box-kicker">{ui("Hasil Penting", "Key Result")}</div>
+                            <strong>{pick(unit.theorem.name)}</strong>
+                            <p><RichMath>{pick(unit.theorem.statement)}</RichMath></p>
+                            <details>
+                              <summary>{ui("Buka pembuktian", "Open Proof")}</summary>
+                              <div>
+                                {unit.theorem.proof.map((step, index) => (
+                                  <div className="proof-step" key={pick(step)}>
+                                    <span>{index + 1}</span>
+                                    <RichParagraph text={pick(step)} />
+                                  </div>
+                                ))}
+                                <p className="proof-end">■</p>
+                              </div>
+                            </details>
+                          </div>
+                        )}
+
+                        {unit.example && (
+                          <div className="extension-example">
+                            <div className="box-kicker">{ui("Contoh Terbahas", "Worked Example")}</div>
+                            <p className="extension-question"><RichMath>{pick(unit.example.question)}</RichMath></p>
+                            <details>
+                              <summary>{ui("Lihat penyelesaian", "Reveal Solution")}</summary>
+                              <div>
+                                {unit.example.solution.map((step, index) => (
+                                  <div className="solution-step" key={pick(step)}>
+                                    <span>{index + 1}</span>
+                                    <RichParagraph text={pick(step)} />
+                                  </div>
+                                ))}
+                              </div>
+                            </details>
+                          </div>
+                        )}
+
+                        <div className="extension-notes">
+                          <strong>{ui("Catatan penting", "Important Notes")}</strong>
+                          <ul>{unit.notes.map((note) => <li key={pick(note)}><RichMath>{pick(note)}</RichMath></li>)}</ul>
+                        </div>
                       </div>
                     </article>
                   ))}
