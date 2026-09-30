@@ -8,6 +8,7 @@ import { materialExtensions } from "@/data/material-extensions";
 import { materialExplorations } from "@/data/material-explorations";
 import { learningTrackPages } from "@/data/learning-track-pages";
 import { olympiadHubs } from "@/data/olympiad-hubs";
+import { formalChapterContent } from "@/data/formal-chapter-content";
 
 export type SearchLevel = "SD" | "SMP" | "SMA" | "Kuliah" | "Umum";
 export type SearchTrack = "Reguler" | "Olimpiade" | "Umum";
@@ -271,6 +272,70 @@ const olympiadHubEntries: SearchEntry[] = olympiadHubs.map((hub) => {
   };
 });
 
+
+const formalChapterEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
+  const formal = formalChapterContent[material.slug];
+  if (!formal) return [];
+  const enMaterial = deepMaterialEnMap[material.slug] ?? material;
+  const level = normalizeLevel(material.level);
+  const track = normalizeTrack(material.track, material.level, material.slug);
+  const difficulty = normalizeDifficulty(material.difficulty);
+
+  const blockEntries: SearchEntry[] = formal.blocks.map((item, index) => ({
+    id: "formal-" + material.slug + "-" + item.kind + "-" + index,
+    kind: item.kind === "theorem" ? "Teorema" : "Materi",
+    level,
+    track,
+    subject: material.subject,
+    subjectEn: enMaterial.subject,
+    difficulty,
+    title: item.title.id,
+    description: item.statement.id,
+    meta: (item.kind === "definition" ? "Definisi" :
+      item.kind === "lemma" ? "Lemma" :
+      item.kind === "proposition" ? "Proposisi" :
+      item.kind === "theorem" ? "Teorema" : "Akibat") + " · " + material.title,
+    href: "/materi/" + material.slug + "#struktur-formal",
+    keywords: [
+      item.intuition?.id ?? "",
+      item.note?.id ?? "",
+      ...(item.proof?.map((step) => step.id) ?? [])
+    ].join(" "),
+    titleEn: item.title.en,
+    descriptionEn: item.statement.en,
+    metaEn: (item.kind === "definition" ? "Definition" :
+      item.kind === "lemma" ? "Lemma" :
+      item.kind === "proposition" ? "Proposition" :
+      item.kind === "theorem" ? "Theorem" : "Corollary") + " · " + enMaterial.title,
+    keywordsEn: [
+      item.intuition?.en ?? "",
+      item.note?.en ?? "",
+      ...(item.proof?.map((step) => step.en) ?? [])
+    ].join(" ")
+  }));
+
+  const exampleEntries: SearchEntry[] = formal.examples.map((item, index) => ({
+    id: "formal-example-" + material.slug + "-" + index,
+    kind: "Contoh",
+    level,
+    track,
+    subject: material.subject,
+    subjectEn: enMaterial.subject,
+    difficulty,
+    title: item.title.id,
+    description: item.problem.id,
+    meta: "Contoh Detail · " + material.title,
+    href: "/materi/" + material.slug + "#contoh-detail",
+    keywords: [item.strategy.id,item.conclusion.id,...item.solution.map((step)=>step.id)].join(" "),
+    titleEn: item.title.en,
+    descriptionEn: item.problem.en,
+    metaEn: "Detailed Example · " + enMaterial.title,
+    keywordsEn: [item.strategy.en,item.conclusion.en,...item.solution.map((step)=>step.en)].join(" ")
+  }));
+
+  return [...blockEntries, ...exampleEntries];
+});
+
 const basisMaterial:SearchEntry={
   id:"material-basis-dimensi",kind:"Materi",level:"Kuliah",track:"Reguler",
   subject:"Aljabar Linear",subjectEn:"Linear Algebra",difficulty:"Menengah",
@@ -305,4 +370,4 @@ const pages:SearchEntry[]=[
   {id:"page-tutoring",kind:"Halaman",level:"Umum",track:"Umum",subject:"Umum",subjectEn:"General",difficulty:"Umum",title:"Bimbingan",description:"Program pendampingan matematika dan problem solving.",meta:"Program",href:"/bimbingan",keywords:"bimbingan belajar program",titleEn:"Tutoring",descriptionEn:"Mathematics tutoring and problem-solving programs.",metaEn:"Program",keywordsEn:"tutoring learning program"}
 ];
 
-export const fullSearchIndex:SearchEntry[]=[...learningTrackEntries,...olympiadHubEntries,...materialEntries,...extensionEntries,...explorationEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
+export const fullSearchIndex:SearchEntry[]=[...learningTrackEntries,...olympiadHubEntries,...materialEntries,...formalChapterEntries,...extensionEntries,...explorationEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
