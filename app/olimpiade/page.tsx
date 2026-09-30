@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
+import { olympiadHubs } from "@/data/olympiad-hubs";
 
 export const metadata: Metadata = { title: "Olimpiade" };
-
-const tracks = [
-  { id: "sd", title: "Olimpiade SD", fields: "Aritmetika · Teori Bilangan Dasar · Kombinatorika Dasar · Geometri · Logika" },
-  { id: "smp", title: "Olimpiade SMP", fields: "Aljabar · Teori Bilangan · Kombinatorika · Geometri · Strategi Problem Solving" },
-  { id: "sma", title: "Olimpiade SMA", fields: "Aljabar · Number Theory · Combinatorics · Geometry · Problem Solving Methods" },
-  { id: "onmipa", title: "Olimpiade Mahasiswa / ON-MIPA", fields: "Analisis Real · Analisis Kompleks · Aljabar Linear · Struktur Aljabar · Kombinatorika" },
-];
 
 export default function OlimpiadePage() {
   return (
@@ -16,25 +11,52 @@ export default function OlimpiadePage() {
       <PageHero
         eyebrow="Matematika kompetisi"
         title="Jalur olimpiade yang terpisah dari kurikulum reguler."
-        description="Fokus pada problem solving nonrutin, strategi, hint bertahap, dan pembahasan yang menjelaskan alasan di balik solusi."
+        description="Fokus pada problem solving nonrutin, strategi, hint bertahap, pembahasan lengkap, roadmap, dan latihan yang dibangun khusus untuk kompetisi."
       />
+
       <section className="section">
         <div className="container">
-          <div className="grid two-col-grid">
-            {tracks.map((track) => (
-              <article className="card olympiad-card" id={track.id} key={track.id}>
-                <span className="card-index">Roadmap</span>
-                <h2>{track.title}</h2>
-                <p>{track.fields}</p>
-                <div className="mini-roadmap">
-                  <span>Syllabus</span>
-                  <span>Roadmap</span>
-                  <span>Curated Problems</span>
-                  <span>Bank Soal</span>
-                  <span>Pembahasan</span>
-                  <span>Challenge</span>
+          <div className="section-head">
+            <div>
+              <span className="eyebrow">Pilih jalur kompetisi</span>
+              <h2>Setiap jenjang sekarang punya syllabus, roadmap, soal, dan challenge sendiri.</h2>
+            </div>
+            <p>
+              Klik salah satu jalur untuk membuka halaman khusus. Tombol di dalam kartu juga langsung
+              menuju bagian yang kamu butuhkan.
+            </p>
+          </div>
+
+          <div className="grid two-col-grid olympiad-overview-grid">
+            {olympiadHubs.map((hub) => (
+              <article className="card olympiad-card olympiad-filled-card" key={hub.slug}>
+                <div className="olympiad-card-topline">
+                  <span className="card-index">Roadmap</span>
+                  <span className="olympiad-ready-badge">Ready</span>
                 </div>
-                <span className="muted-link">Konten dikembangkan bertahap</span>
+
+                <h2>{hub.title.id}</h2>
+                <p>{hub.fields.map((field) => field.id).join(" · ")}</p>
+
+                <div className="olympiad-card-stats">
+                  <div><strong>{hub.syllabus.length}</strong><span>bidang</span></div>
+                  <div><strong>{hub.curated.length}</strong><span>soal terkurasi</span></div>
+                  <div><strong>3</strong><span>fase roadmap</span></div>
+                  <div><strong>1</strong><span>challenge</span></div>
+                </div>
+
+                <div className="mini-roadmap olympiad-action-roadmap">
+                  <Link href={"/olimpiade/" + hub.slug + "#syllabus"}>Syllabus</Link>
+                  <Link href={"/olimpiade/" + hub.slug + "#roadmap"}>Roadmap</Link>
+                  <Link href={"/olimpiade/" + hub.slug + "#problems"}>Curated Problems</Link>
+                  <Link href={"/olimpiade/" + hub.slug + "#bank-soal"}>Problem Bank</Link>
+                  <Link href={"/olimpiade/" + hub.slug + "#problems"}>Pembahasan</Link>
+                  <Link href={"/olimpiade/" + hub.slug + "#challenge"}>Challenge</Link>
+                </div>
+
+                <Link className="olympiad-open-track" href={"/olimpiade/" + hub.slug}>
+                  Buka jalur lengkap →
+                </Link>
               </article>
             ))}
           </div>
