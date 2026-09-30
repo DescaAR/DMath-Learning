@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import type { DeepMaterial } from "@/data/deep-materials";
+import { deepMaterials, type DeepMaterial } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { materialSupplements, type BilingualText } from "@/data/material-supplements";
 import { materialPractice } from "@/data/material-practice";
@@ -10,6 +10,7 @@ import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { MaterialCheckpoint } from "@/components/MaterialCheckpoint";
 import { MaterialPractice } from "@/components/MaterialPractice";
+import { ConceptIndex } from "@/components/ConceptIndex";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -26,13 +27,16 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const pick = (text: BilingualText) => en ? text.en : text.id;
 
   const sectionIds = useMemo(() => [
-    "overview", "prasyarat", "tujuan", "peta", "motivasi", "notasi", "definisi",
+    "overview", "prasyarat", "tujuan", "peta", "indeks-konsep", "motivasi", "notasi", "definisi",
     "pendalaman", "lab-interaktif", "teorema", "contoh", "latihan-bertingkat", "checkpoint", "kesalahan",
     "ringkasan", "koneksi", "referensi"
   ], []);
 
   const [activeSection, setActiveSection] = useState("overview");
   const [progress, setProgress] = useState(0);
+  const chapterIndex = deepMaterials.findIndex((item) => item.slug === material.slug);
+  const previousChapter = chapterIndex > 0 ? deepMaterials[chapterIndex - 1] : null;
+  const nextChapter = chapterIndex >= 0 && chapterIndex < deepMaterials.length - 1 ? deepMaterials[chapterIndex + 1] : null;
 
   useEffect(() => {
     function updateReadingState() {
@@ -61,6 +65,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ["prasyarat", "Prasyarat", "Prerequisites"],
     ["tujuan", "Tujuan Pembelajaran", "Learning Objectives"],
     ["peta", "Peta Konsep", "Concept Map"],
+    ["indeks-konsep", "Indeks Konsep", "Concept Index"],
     ["motivasi", "Motivasi & Intuisi", "Motivation & Intuition"],
     ["notasi", "Notasi", "Notation"],
     ["definisi", "Definisi Formal", "Formal Definitions"],
@@ -188,6 +193,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                 ))}
               </div>
             </section>
+
+            <ConceptIndex material={m} />
 
             <section id="motivasi" className="book-section">
               <div className="section-number">05</div>
@@ -325,7 +332,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             </section>
 
             {materialPractice[material.slug] && (
-              <MaterialPractice problems={materialPractice[material.slug]} />
+              <MaterialPractice problems={materialPractice[material.slug]} storageKey={material.slug} />
             )}
 
             {supplement && <MaterialCheckpoint quiz={supplement.quiz} />}
@@ -364,6 +371,21 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
               <span className="eyebrow">{ui("Referensi", "References")}</span>
               <h2>{ui("Bacaan lanjutan", "Further Reading")}</h2>
               <ol className="reference-list">{m.references.map((reference) => <li key={reference}>{reference}</li>)}</ol>
+            </section>
+
+            <section className="chapter-neighbor-nav" aria-label={ui("Navigasi antar bab", "Chapter navigation")}>
+              {previousChapter ? (
+                <Link href={"/materi/" + previousChapter.slug} className="chapter-neighbor-card previous">
+                  <span>← {ui("Bab sebelumnya", "Previous Chapter")}</span>
+                  <strong>{en ? (deepMaterialEnMap[previousChapter.slug]?.title ?? previousChapter.title) : previousChapter.title}</strong>
+                </Link>
+              ) : <div />}
+              {nextChapter ? (
+                <Link href={"/materi/" + nextChapter.slug} className="chapter-neighbor-card next">
+                  <span>{ui("Bab berikutnya", "Next Chapter")} →</span>
+                  <strong>{en ? (deepMaterialEnMap[nextChapter.slug]?.title ?? nextChapter.title) : nextChapter.title}</strong>
+                </Link>
+              ) : <div />}
             </section>
 
             <section className="next-learning-block textbook-next">
