@@ -371,7 +371,9 @@ const EXACT_TRANSLATIONS: Record<string, string> = {
   "Latihan Terkurasi": "Curated Practice",
   "Practice · 30 soal terpilih": "Practice · 30 Curated Problems",
   "Belajar satu soal pada satu waktu.": "Learn One Problem at a Time.",
-  "Urutan dipilih dari konsep dasar menuju pembuktian dan challenge. Coba sendiri, gunakan hint bila perlu, lalu buka pembahasan lengkap.": "The sequence progresses from basic concepts to proofs and challenge problems. Try each problem yourself, use hints when needed, then open the complete solution."
+  "Urutan dipilih dari konsep dasar menuju pembuktian dan challenge. Coba sendiri, gunakan hint bila perlu, lalu buka pembahasan lengkap.": "The sequence progresses from basic concepts to proofs and challenge problems. Try each problem yourself, use hints when needed, then open the complete solution.",
+  "Cari dan filter materi berdasarkan jenjang, jalur, bidang matematika, dan tingkat kesulitan. Setiap bab utama dirancang dengan motivasi, intuisi, definisi formal, notasi, teorema, pembuktian, worked examples, visualisasi, kesalahan umum, dan referensi.": "Search and filter materials by level, track, mathematical field, and difficulty. Each main chapter is designed with motivation, intuition, formal definitions, notation, theorems, proofs, worked examples, visualizations, common mistakes, and references.",
+  "Profil, minat akademik, pengalaman mengajar, kompetisi, dan kontak disiapkan sebagai konfigurasi yang mudah diperbarui. Detail publik belum diisi pada versi ini untuk menghindari data placeholder yang dianggap final.": "The founder profile, academic interests, teaching experience, competition experience, and contact information are structured for easy updates. Public details are intentionally omitted until they are ready to be published."
 };
 
 const PHRASES: Array<[string, string]> = [
