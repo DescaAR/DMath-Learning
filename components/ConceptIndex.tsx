@@ -2,11 +2,12 @@
 
 import { useMemo, useState } from "react";
 import type { DeepMaterial } from "@/data/deep-materials";
+import { formalChapterContent, type FormalBlockKind } from "@/data/formal-chapter-content";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 
 type Entry = {
-  type: "notation" | "definition" | "theorem" | "example";
+  type: "notation" | "definition" | "lemma" | "proposition" | "theorem" | "corollary" | "example";
   title: string;
   description: string;
   href: string;
@@ -18,6 +19,7 @@ export function ConceptIndex({ material }: { material: DeepMaterial }) {
   const [query, setQuery] = useState("");
   const [type, setType] = useState<"all" | Entry["type"]>("all");
 
+  const formal = formalChapterContent[material.slug];
   const entries: Entry[] = useMemo(() => [
     ...material.notation.map((item) => ({
       type: "notation" as const,
@@ -43,7 +45,19 @@ export function ConceptIndex({ material }: { material: DeepMaterial }) {
       description: item.problem,
       href: "#contoh",
     })),
-  ], [material]);
+    ...(formal?.blocks.map((item) => ({
+      type: item.kind as FormalBlockKind,
+      title: item.title.id,
+      description: item.statement.id,
+      href: "#struktur-formal",
+    })) ?? []),
+    ...(formal?.examples.map((item) => ({
+      type: "example" as const,
+      title: item.title.id,
+      description: item.problem.id,
+      href: "#contoh-detail",
+    })) ?? []),
+  ], [material, formal]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -57,7 +71,10 @@ export function ConceptIndex({ material }: { material: DeepMaterial }) {
   const labels: Record<Entry["type"], string> = {
     notation: en ? "Notation" : "Notasi",
     definition: en ? "Definition" : "Definisi",
+    lemma: en ? "Lemma" : "Lemma",
+    proposition: en ? "Proposition" : "Proposisi",
     theorem: en ? "Theorem" : "Teorema",
+    corollary: en ? "Corollary" : "Akibat",
     example: en ? "Example" : "Contoh",
   };
 
@@ -87,7 +104,7 @@ export function ConceptIndex({ material }: { material: DeepMaterial }) {
         </div>
 
         <div className="concept-index-chips">
-          {(["all","notation","definition","theorem","example"] as const).map((item) => (
+          {(["all","notation","definition","lemma","proposition","theorem","corollary","example"] as const).map((item) => (
             <button
               type="button"
               key={item}
