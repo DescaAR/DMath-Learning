@@ -1,19 +1,35 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 import type { MaterialPracticeProblem } from "@/data/material-practice";
 
 type Filter="Semua"|"Dasar"|"Menengah"|"Menantang";
 
-export function MaterialPractice({ problems }: { problems: MaterialPracticeProblem[] }) {
+export function MaterialPractice({ problems, storageKey }: { problems: MaterialPracticeProblem[]; storageKey?: string }) {
   const { language } = useLanguage();
   const en=language==="en";
   const [filter,setFilter]=useState<Filter>("Semua");
   const [openHint,setOpenHint]=useState<Record<string,boolean>>({});
   const [openAnswer,setOpenAnswer]=useState<Record<string,boolean>>({});
   const [done,setDone]=useState<Record<string,boolean>>({});
+  const persistenceKey = storageKey ? "dmath:practice:" + storageKey : "";
+
+  useEffect(() => {
+    if (!persistenceKey) return;
+    try {
+      const saved = window.localStorage.getItem(persistenceKey);
+      if (saved) setDone(JSON.parse(saved));
+    } catch {}
+  }, [persistenceKey]);
+
+  useEffect(() => {
+    if (!persistenceKey) return;
+    try {
+      window.localStorage.setItem(persistenceKey, JSON.stringify(done));
+    } catch {}
+  }, [done, persistenceKey]);
 
   const filtered=useMemo(()=>filter==="Semua"?problems:problems.filter(p=>p.difficulty===filter),[filter,problems]);
   const solved=Object.values(done).filter(Boolean).length;
