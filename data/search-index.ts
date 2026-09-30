@@ -4,6 +4,7 @@ import { basisDimensionProblems } from "@/data/basis-dimension-problems";
 import { localizeProblem } from "@/data/problem-translations-en";
 import { materialPractice } from "@/data/material-practice";
 import { materialPracticeExtra } from "@/data/material-practice-extra";
+import { materialExtensions } from "@/data/material-extensions";
 
 export type SearchLevel = "SD" | "SMP" | "SMA" | "Kuliah" | "Umum";
 export type SearchTrack = "Reguler" | "Olimpiade" | "Umum";
@@ -114,6 +115,77 @@ const guidedPracticeEntries: SearchEntry[] = deepMaterials.flatMap((material) =>
   }));
 });
 
+
+const extensionEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
+  const units = materialExtensions[material.slug] ?? [];
+  const enMaterial = deepMaterialEnMap[material.slug] ?? material;
+  const level = normalizeLevel(material.level);
+  const track = normalizeTrack(material.track, material.level, material.slug);
+  const difficulty = normalizeDifficulty(material.difficulty);
+
+  return units.flatMap((unit, unitIndex) => {
+    const baseHref = "/materi/" + material.slug + "#subbab-lanjutan";
+    const main: SearchEntry = {
+      id: "extension-" + material.slug + "-" + unitIndex,
+      kind: "Materi",
+      level,
+      track,
+      subject: material.subject,
+      subjectEn: enMaterial.subject,
+      difficulty,
+      title: unit.title.id,
+      description: unit.intro.id,
+      meta: "Subbab Lanjutan · " + material.title,
+      href: baseHref,
+      keywords: [unit.intro.id, ...unit.paragraphs.map((p) => p.id), ...unit.notes.map((p) => p.id)].join(" "),
+      titleEn: unit.title.en,
+      descriptionEn: unit.intro.en,
+      metaEn: "Extended Topic · " + enMaterial.title,
+      keywordsEn: [unit.intro.en, ...unit.paragraphs.map((p) => p.en), ...unit.notes.map((p) => p.en)].join(" ")
+    };
+
+    const theorem: SearchEntry[] = unit.theorem ? [{
+      id: "extension-theorem-" + material.slug + "-" + unitIndex,
+      kind: "Teorema",
+      level,
+      track,
+      subject: material.subject,
+      subjectEn: enMaterial.subject,
+      difficulty,
+      title: unit.theorem.name.id,
+      description: unit.theorem.statement.id,
+      meta: "Teorema · Subbab Lanjutan · " + material.title,
+      href: baseHref,
+      keywords: unit.theorem.proof.map((p) => p.id).join(" "),
+      titleEn: unit.theorem.name.en,
+      descriptionEn: unit.theorem.statement.en,
+      metaEn: "Theorem · Extended Topic · " + enMaterial.title,
+      keywordsEn: unit.theorem.proof.map((p) => p.en).join(" ")
+    }] : [];
+
+    const example: SearchEntry[] = unit.example ? [{
+      id: "extension-example-" + material.slug + "-" + unitIndex,
+      kind: "Contoh",
+      level,
+      track,
+      subject: material.subject,
+      subjectEn: enMaterial.subject,
+      difficulty,
+      title: unit.title.id + " · Contoh",
+      description: unit.example.question.id,
+      meta: "Contoh · Subbab Lanjutan · " + material.title,
+      href: baseHref,
+      keywords: unit.example.solution.map((p) => p.id).join(" "),
+      titleEn: unit.title.en + " · Example",
+      descriptionEn: unit.example.question.en,
+      metaEn: "Example · Extended Topic · " + enMaterial.title,
+      keywordsEn: unit.example.solution.map((p) => p.en).join(" ")
+    }] : [];
+
+    return [main, ...theorem, ...example];
+  });
+});
+
 const basisMaterial:SearchEntry={
   id:"material-basis-dimensi",kind:"Materi",level:"Kuliah",track:"Reguler",
   subject:"Aljabar Linear",subjectEn:"Linear Algebra",difficulty:"Menengah",
@@ -148,4 +220,4 @@ const pages:SearchEntry[]=[
   {id:"page-tutoring",kind:"Halaman",level:"Umum",track:"Umum",subject:"Umum",subjectEn:"General",difficulty:"Umum",title:"Bimbingan",description:"Program pendampingan matematika dan problem solving.",meta:"Program",href:"/bimbingan",keywords:"bimbingan belajar program",titleEn:"Tutoring",descriptionEn:"Mathematics tutoring and problem-solving programs.",metaEn:"Program",keywordsEn:"tutoring learning program"}
 ];
 
-export const fullSearchIndex:SearchEntry[]=[...materialEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
+export const fullSearchIndex:SearchEntry[]=[...materialEntries,...extensionEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
