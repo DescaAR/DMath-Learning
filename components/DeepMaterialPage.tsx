@@ -74,7 +74,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   ];
 
   return (
-    <div className="textbook-page" data-no-translate>
+    <div className="textbook-page" data-textbook="v2" data-no-translate>
       <div className="reading-progress" aria-hidden="true">
         <span style={{ width: progress + "%" }} />
       </div>
