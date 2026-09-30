@@ -2,6 +2,7 @@ import { deepMaterials } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { basisDimensionProblems } from "@/data/basis-dimension-problems";
 import { localizeProblem } from "@/data/problem-translations-en";
+import { materialPractice } from "@/data/material-practice";
 
 export type SearchLevel = "SD" | "SMP" | "SMA" | "Kuliah" | "Umum";
 export type SearchTrack = "Reguler" | "Olimpiade" | "Umum";
@@ -43,7 +44,7 @@ function normalizeTrack(track: string, level: string, slug: string): SearchTrack
 
 function normalizeDifficulty(value: string): SearchDifficulty {
   const v=value.toLowerCase();
-  if (v.includes("challenge")) return "Challenge";
+  if (v.includes("challenge") || v.includes("menantang")) return "Challenge";
   if (v.includes("sangat sulit") || v.includes("very advanced")) return "Sangat Sulit";
   if (v.includes("lanjut") || v.includes("advanced") || v.includes("sulit")) return "Sulit";
   if (v.includes("menengah") || v.includes("intermediate")) return "Menengah";
@@ -84,6 +85,34 @@ const materialEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
   return [main,...definitions,...theorems,...examples];
 });
 
+const guidedPracticeEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
+  const items = materialPractice[material.slug] ?? [];
+  const enMaterial = deepMaterialEnMap[material.slug] ?? material;
+  const level = normalizeLevel(material.level);
+  const track = normalizeTrack(material.track, material.level, material.slug);
+
+  return items.map((problem) => ({
+    id: "guided-"+material.slug+"-"+problem.id,
+    kind: "Soal" as const,
+    level,
+    track,
+    subject: material.subject,
+    subjectEn: enMaterial.subject,
+    difficulty: normalizeDifficulty(problem.difficulty),
+    title: problem.id+" · "+problem.title.id,
+    description: problem.prompt.id,
+    meta: "Latihan Bertingkat · "+material.title+" · "+problem.difficulty,
+    href: "/materi/"+material.slug+"#latihan-bertingkat",
+    keywords: [material.title,material.subject,problem.difficulty,problem.hint.id,problem.answer.id].join(" "),
+    titleEn: problem.id+" · "+problem.title.en,
+    descriptionEn: problem.prompt.en,
+    metaEn: "Guided Practice · "+enMaterial.title+" · "+(
+      problem.difficulty==="Dasar"?"Basic":problem.difficulty==="Menengah"?"Intermediate":"Challenge"
+    ),
+    keywordsEn: [enMaterial.title,enMaterial.subject,problem.hint.en,problem.answer.en].join(" ")
+  }));
+});
+
 const basisMaterial:SearchEntry={
   id:"material-basis-dimensi",kind:"Materi",level:"Kuliah",track:"Reguler",
   subject:"Aljabar Linear",subjectEn:"Linear Algebra",difficulty:"Menengah",
@@ -118,4 +147,4 @@ const pages:SearchEntry[]=[
   {id:"page-tutoring",kind:"Halaman",level:"Umum",track:"Umum",subject:"Umum",subjectEn:"General",difficulty:"Umum",title:"Bimbingan",description:"Program pendampingan matematika dan problem solving.",meta:"Program",href:"/bimbingan",keywords:"bimbingan belajar program",titleEn:"Tutoring",descriptionEn:"Mathematics tutoring and problem-solving programs.",metaEn:"Program",keywordsEn:"tutoring learning program"}
 ];
 
-export const fullSearchIndex:SearchEntry[]=[...materialEntries,basisMaterial,...problemEntries,...pages];
+export const fullSearchIndex:SearchEntry[]=[...materialEntries,...guidedPracticeEntries,basisMaterial,...problemEntries,...pages];
