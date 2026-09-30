@@ -8,6 +8,7 @@ import {
   type SearchKind,
   type SearchLevel,
   type SearchTrack,
+  type SearchDifficulty,
 } from "@/data/search-index";
 import { useLanguage } from "@/components/LanguageProvider";
 import { RichMath } from "@/components/RichMath";
@@ -15,10 +16,23 @@ import { RichMath } from "@/components/RichMath";
 type LevelFilter = "Semua" | Exclude<SearchLevel, "Umum">;
 type TrackFilter = "Semua" | "Reguler" | "Olimpiade";
 type KindFilter = "Semua" | SearchKind;
+type SubjectFilter = "Semua" | string;
+type DifficultyFilter = "Semua" | Exclude<SearchDifficulty, "Umum">;
 
 const LEVELS: LevelFilter[] = ["Semua", "SD", "SMP", "SMA", "Kuliah"];
 const TRACKS: TrackFilter[] = ["Semua", "Reguler", "Olimpiade"];
 const KINDS: KindFilter[] = ["Semua", "Materi", "Soal", "Teorema", "Definisi", "Contoh", "Halaman"];
+const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Sulit", "Sangat Sulit", "Challenge"];
+const SUBJECTS: SubjectFilter[] = [
+  "Semua",
+  ...Array.from(
+    new Set(
+      fullSearchIndex
+        .map((item) => item.subject)
+        .filter((subject) => subject && subject !== "Umum")
+    )
+  ).sort((a, b) => a.localeCompare(b, "id-ID")),
+];
 
 function normalize(value: string) {
   return value
@@ -126,6 +140,8 @@ export function SearchClient() {
   const [level, setLevel] = useState<LevelFilter>("Semua");
   const [track, setTrack] = useState<TrackFilter>("Semua");
   const [kind, setKind] = useState<KindFilter>("Semua");
+  const [subject, setSubject] = useState<SubjectFilter>("Semua");
+  const [difficulty, setDifficulty] = useState<DifficultyFilter>("Semua");
 
   const ranked = useMemo(() => {
     const q = query.trim();
@@ -134,6 +150,8 @@ export function SearchClient() {
       .filter((item) => level === "Semua" || item.level === level || item.level === "Umum")
       .filter((item) => track === "Semua" || item.track === track || item.track === "Umum")
       .filter((item) => kind === "Semua" || item.kind === kind)
+      .filter((item) => subject === "Semua" || item.subject === subject || item.subject === "Umum")
+      .filter((item) => difficulty === "Semua" || item.difficulty === difficulty || item.difficulty === "Umum")
       .map((item) => ({ item, score: fuzzyScore(q, item, language) }))
       .filter(({ score }) => {
         if (!q) return true;
@@ -143,7 +161,7 @@ export function SearchClient() {
       })
       .sort((a, b) => b.score - a.score || a.item.title.localeCompare(b.item.title))
       .slice(0, 80);
-  }, [query, level, track, kind, language]);
+  }, [query, level, track, kind, subject, difficulty, language]);
 
   const exactCount = useMemo(() => {
     const q = normalize(query);
@@ -161,6 +179,8 @@ export function SearchClient() {
     setLevel("Semua");
     setTrack("Semua");
     setKind("Semua");
+    setSubject("Semua");
+    setDifficulty("Semua");
   }
 
   function displayTrack(value: TrackFilter) {
@@ -182,6 +202,23 @@ export function SearchClient() {
       if (value === "SMA") return "Senior High";
       if (value === "Kuliah") return "University";
     }
+    return value;
+  }
+
+  function displaySubject(value: SubjectFilter) {
+    if (value === "Semua") return language === "en" ? "All Subjects" : "Semua Materi";
+    if (language === "id") return value;
+    const match = fullSearchIndex.find((item) => item.subject === value && item.subjectEn);
+    return match?.subjectEn ?? value;
+  }
+
+  function displayDifficulty(value: DifficultyFilter) {
+    if (value === "Semua") return language === "en" ? "All Difficulties" : "Semua Tingkat";
+    if (language === "id") return value;
+    if (value === "Dasar") return "Basic";
+    if (value === "Menengah") return "Intermediate";
+    if (value === "Sulit") return "Advanced";
+    if (value === "Sangat Sulit") return "Very Advanced";
     return value;
   }
 
@@ -226,6 +263,20 @@ export function SearchClient() {
           renderLabel={displayTrack}
         />
         <ChipGroup
+          label={language === "en" ? "Subject / Material" : "Bidang / Materi"}
+          values={SUBJECTS}
+          value={subject}
+          onChange={setSubject}
+          renderLabel={displaySubject}
+        />
+        <ChipGroup
+          label={language === "en" ? "Difficulty" : "Tingkat Kesulitan"}
+          values={DIFFICULTIES}
+          value={difficulty}
+          onChange={setDifficulty}
+          renderLabel={displayDifficulty}
+        />
+        <ChipGroup
           label={t("Jenis Konten")}
           values={KINDS}
           value={kind}
@@ -233,7 +284,7 @@ export function SearchClient() {
           renderLabel={displayKind}
         />
 
-        {(level !== "Semua" || track !== "Semua" || kind !== "Semua") && (
+        {(level !== "Semua" || track !== "Semua" || subject !== "Semua" || difficulty !== "Semua" || kind !== "Semua") && (
           <button className="clear-chip-filters" type="button" onClick={clearFilters}>
             {t("Hapus semua filter")}
           </button>
@@ -252,6 +303,8 @@ export function SearchClient() {
         <span>
           {level !== "Semua" ? displayLevel(level) + " · " : ""}
           {track !== "Semua" ? displayTrack(track) + " · " : ""}
+          {subject !== "Semua" ? displaySubject(subject) + " · " : ""}
+          {difficulty !== "Semua" ? displayDifficulty(difficulty) + " · " : ""}
           {kind !== "Semua" ? displayKind(kind) : ""}
         </span>
       </div>
