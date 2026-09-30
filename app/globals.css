@@ -2107,3 +2107,272 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .exploration-tasks{padding:15px}
   .exploration-reveal,.exploration-extension{margin-left:15px;margin-right:15px}
 }
+
+
+/* Dedicated learning-track pages */
+.track-detail-hero{
+  padding:64px 0 54px;
+  border-bottom:1px solid var(--border);
+  background:
+    radial-gradient(circle at 85% 20%,rgba(0,194,255,.08),transparent 28%),
+    linear-gradient(180deg,rgba(21,101,216,.025),transparent 72%)
+}
+.track-detail-breadcrumb{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+  margin-bottom:26px;
+  color:var(--muted);
+  font-size:.74rem;
+  font-weight:700
+}
+.track-detail-breadcrumb a{color:var(--blue)}
+.track-detail-hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);
+  gap:52px;
+  align-items:start
+}
+.track-detail-hero h1{
+  margin:10px 0 18px;
+  max-width:900px;
+  color:var(--deep);
+  font-size:clamp(3rem,6vw,5.8rem);
+  line-height:.98;
+  letter-spacing:-.06em
+}
+:root[data-theme="dark"] .track-detail-hero h1{color:#fff}
+.track-detail-intro{
+  max-width:790px;
+  margin:0;
+  color:var(--muted);
+  font-size:1.12rem;
+  line-height:1.8
+}
+.track-detail-summary{
+  border:1px solid var(--border);
+  border-radius:20px;
+  overflow:hidden;
+  background:var(--surface);
+  box-shadow:0 18px 50px rgba(6,27,62,.05)
+}
+.track-detail-summary>div{
+  padding:18px 20px;
+  border-bottom:1px solid var(--border)
+}
+.track-detail-summary>div:last-child{border-bottom:0}
+.track-detail-summary span{
+  display:block;
+  margin-bottom:6px;
+  color:var(--blue);
+  font-size:.67rem;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase
+}
+.track-detail-summary p{
+  margin:0;
+  color:var(--muted);
+  font-size:.86rem;
+  line-height:1.65
+}
+.track-subject-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px
+}
+.track-subject-card{
+  min-height:250px;
+  padding:24px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:var(--surface);
+  box-shadow:0 12px 36px rgba(6,27,62,.035)
+}
+.track-subject-index{
+  display:block;
+  margin-bottom:24px;
+  color:var(--blue);
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.14em
+}
+.track-subject-card h3{
+  margin:0 0 9px;
+  color:var(--deep);
+  font-size:1.32rem;
+  line-height:1.3
+}
+:root[data-theme="dark"] .track-subject-card h3{color:#fff}
+.track-subject-card p{
+  margin:0 0 18px;
+  color:var(--muted);
+  line-height:1.7
+}
+.track-topic-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px
+}
+.track-topic-chips span{
+  padding:6px 9px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:var(--surface-2);
+  color:var(--muted);
+  font-size:.69rem;
+  font-weight:750
+}
+.track-roadmap{
+  position:relative;
+  display:grid;
+  gap:14px;
+  max-width:980px
+}
+.track-roadmap:before{
+  content:"";
+  position:absolute;
+  left:25px;
+  top:30px;
+  bottom:30px;
+  width:1px;
+  background:linear-gradient(var(--blue),var(--cyan))
+}
+.track-roadmap-step{
+  position:relative;
+  display:grid;
+  grid-template-columns:52px minmax(0,1fr);
+  gap:20px;
+  align-items:start
+}
+.track-roadmap-marker{
+  position:relative;
+  z-index:1;
+  width:52px;
+  height:52px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(21,101,216,.28);
+  border-radius:50%;
+  background:var(--surface);
+  box-shadow:0 0 0 7px var(--surface-2)
+}
+.track-roadmap-marker span{
+  color:var(--blue);
+  font-size:.69rem;
+  font-weight:900
+}
+.track-roadmap-step>div:last-child{
+  padding:20px 22px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:var(--surface)
+}
+.track-roadmap-step h3{
+  margin:6px 0 8px;
+  color:var(--deep);
+  font-size:1.28rem
+}
+:root[data-theme="dark"] .track-roadmap-step h3{color:#fff}
+.track-roadmap-step p{
+  margin:0 0 14px;
+  color:var(--muted);
+  line-height:1.65
+}
+.track-skills-layout{
+  display:grid;
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:46px;
+  align-items:start
+}
+.track-skills-layout h2{
+  margin:8px 0 13px;
+  color:var(--deep);
+  font-size:clamp(2rem,4vw,3.4rem);
+  line-height:1.07;
+  letter-spacing:-.04em
+}
+:root[data-theme="dark"] .track-skills-layout h2{color:#fff}
+.track-skills-layout p{color:var(--muted);line-height:1.75}
+.track-skill-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px
+}
+.track-skill-list>div{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-height:72px;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:var(--surface)
+}
+.track-skill-list span{
+  color:var(--blue);
+  font-size:.67rem;
+  font-weight:900;
+  letter-spacing:.1em
+}
+.track-skill-list strong{
+  color:var(--text);
+  font-size:.9rem;
+  line-height:1.35
+}
+.track-published-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.track-empty-published{
+  max-width:760px;
+  padding:28px;
+  border:1px dashed rgba(21,101,216,.3);
+  border-radius:18px;
+  background:linear-gradient(135deg,rgba(21,101,216,.045),rgba(0,194,255,.025))
+}
+.track-empty-published h3{
+  margin:8px 0 10px;
+  color:var(--deep);
+  font-size:1.4rem
+}
+:root[data-theme="dark"] .track-empty-published h3{color:#fff}
+.track-empty-published p{margin:0;color:var(--muted);line-height:1.7}
+.track-detail-cta{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:36px;
+  padding:30px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:
+    linear-gradient(135deg,rgba(21,101,216,.055),rgba(0,194,255,.025)),
+    var(--surface)
+}
+.track-detail-cta>div:first-child{max-width:760px}
+.track-detail-cta h2{
+  margin:7px 0 11px;
+  color:var(--deep);
+  font-size:clamp(1.8rem,3vw,2.7rem);
+  line-height:1.12;
+  letter-spacing:-.035em
+}
+:root[data-theme="dark"] .track-detail-cta h2{color:#fff}
+.track-detail-cta p{margin:0;color:var(--muted);line-height:1.7}
+
+@media(max-width:980px){
+  .track-detail-hero-grid,
+  .track-skills-layout{grid-template-columns:1fr}
+  .track-subject-grid{grid-template-columns:1fr}
+  .track-published-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .track-detail-cta{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:680px){
+  .track-detail-hero{padding-top:42px}
+  .track-detail-hero h1{font-size:clamp(2.65rem,14vw,4rem)}
+  .track-skill-list,
+  .track-published-grid{grid-template-columns:1fr}
+  .track-roadmap-step{grid-template-columns:42px minmax(0,1fr);gap:13px}
+  .track-roadmap-marker{width:42px;height:42px}
+  .track-roadmap:before{left:20px}
+  .track-subject-card{min-height:0;padding:20px}
+}
