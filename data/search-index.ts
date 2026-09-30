@@ -3,6 +3,7 @@ import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { basisDimensionProblems } from "@/data/basis-dimension-problems";
 import { localizeProblem } from "@/data/problem-translations-en";
 import { materialPractice } from "@/data/material-practice";
+import { materialPracticeExtra } from "@/data/material-practice-extra";
 
 export type SearchLevel = "SD" | "SMP" | "SMA" | "Kuliah" | "Umum";
 export type SearchTrack = "Reguler" | "Olimpiade" | "Umum";
@@ -86,7 +87,7 @@ const materialEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
 });
 
 const guidedPracticeEntries: SearchEntry[] = deepMaterials.flatMap((material) => {
-  const items = materialPractice[material.slug] ?? [];
+  const items = [...(materialPractice[material.slug] ?? []), ...(materialPracticeExtra[material.slug] ?? [])];
   const enMaterial = deepMaterialEnMap[material.slug] ?? material;
   const level = normalizeLevel(material.level);
   const track = normalizeTrack(material.track, material.level, material.slug);
