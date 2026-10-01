@@ -10,6 +10,7 @@ export const UI_TRANSLATIONS: Record<string, string> = {
   "Bimbingan": "Tutoring",
   "Riset": "Research",
   "Tentang": "About",
+  "Sumber Belajar Lain": "Other Learning Resources",
   "Cari": "Search",
   "Semua": "All",
   "Semua Konten": "All Content",
