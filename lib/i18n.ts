@@ -5,6 +5,7 @@ export const UI_TRANSLATIONS: Record<string, string> = {
   "Belajar": "Learn",
   "Materi": "Materials",
   "Bank Soal": "Problem Bank",
+  "Latihan Soal": "Practice Problems",
   "Olimpiade": "Olympiad",
   "Pembahasan": "Solutions",
   "Bimbingan": "Tutoring",
