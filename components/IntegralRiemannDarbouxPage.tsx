@@ -152,6 +152,70 @@ function InteractiveRiemannDarboux() {
   );
 }
 
+
+function PartitionLabelVisual() {
+  const xs=[0,0.18,0.42,0.68,1];
+  const labels=[0.09,0.31,0.55,0.86];
+  return (
+    <figure className="ird-figure">
+      <div className="ird-figure-title"><span>Visualisasi</span><strong>Partisi dan titik label</strong></div>
+      <svg viewBox="0 0 620 225" role="img" aria-label="Partisi interval dengan titik label pada setiap subinterval">
+        <line x1="70" y1="112" x2="550" y2="112" className="ird-axis"/>
+        {xs.map((p,i)=><g key={"x"+i}><line x1={70+p*480} y1="78" x2={70+p*480} y2="145" className="ird-tick-strong"/><text x={70+p*480} y="172" textAnchor="middle" className="ird-svg-label">x{i}</text></g>)}
+        {labels.map((p,i)=><g key={"t"+i}><circle cx={70+p*480} cy="112" r="7" className="ird-ex-tag-point"/><text x={70+p*480} y="82" textAnchor="middle" className="ird-svg-label">t{i+1}</text></g>)}
+      </svg>
+      <figcaption>Setiap titik label <RichMath>{"$t_i$"}</RichMath> berada pada subinterval <RichMath>{"$[x_{i-1},x_i]$"}</RichMath>. Norma partisi ditentukan oleh subinterval terpanjang.</figcaption>
+    </figure>
+  );
+}
+
+function DarbouxIntegralVisual() {
+  const [n,setN]=useState(6);
+  const lower=((n-1)*(2*n-1))/(6*n*n);
+  const upper=((n+1)*(2*n+1))/(6*n*n);
+  return (
+    <section className="ird-exercise-lab">
+      <div className="ird-visual-copy">
+        <span className="eyebrow">Visualisasi</span>
+        <h3>Integral Darboux bawah dan integral Darboux atas</h3>
+        <p>Untuk <RichMath>{"$f(x)=x^2$ pada $[0,1]$"}</RichMath>, jumlah Darboux bawah meningkat dan jumlah Darboux atas menurun menuju nilai yang sama.</p>
+        <label className="ird-slider"><span>Jumlah subinterval <strong>{n}</strong></span><input type="range" min="2" max="40" value={n} onChange={e=>setN(Number(e.target.value))}/></label>
+        <div className="ird-metric-grid">
+          <div><span>L(f,Pₙ)</span><strong>{lower.toFixed(6)}</strong></div>
+          <div><span>Integral Darboux bawah</span><strong>{(1/3).toFixed(6)}</strong></div>
+          <div><span>U(f,Pₙ)</span><strong>{upper.toFixed(6)}</strong></div>
+          <div><span>Integral Darboux atas</span><strong>{(1/3).toFixed(6)}</strong></div>
+        </div>
+      </div>
+      <div className="ird-darboux-integral-panel">
+        <div className="ird-bound-row"><span>Jumlah bawah</span><div><i style={{width:(lower/(1/3)*100)+"%"}}/></div><strong>{lower.toFixed(4)}</strong></div>
+        <div className="ird-bound-row exact"><span>Nilai bersama</span><div><i style={{width:"100%"}}/></div><strong>1/3</strong></div>
+        <div className="ird-bound-row"><span>Jumlah atas</span><div><i style={{width:((1/3)/upper*100)+"%"}}/></div><strong>{upper.toFixed(4)}</strong></div>
+        <div className="ird-definition-pair">
+          <RichMath>{"$\\underline{\\int_0^1}x^2\\,d x=\\sup_P L(f,P)=\\frac{1}{3}$"}</RichMath>
+          <RichMath>{"$\\overline{\\int_0^1}x^2\\,d x=\\inf_P U(f,P)=\\frac{1}{3}$"}</RichMath>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function EquivalenceVisual() {
+  return (
+    <figure className="ird-figure">
+      <div className="ird-figure-title"><span>Visualisasi</span><strong>Hubungan jumlah Riemann dan jumlah Darboux</strong></div>
+      <div className="ird-equivalence-flow">
+        <div><strong>Jumlah Darboux bawah</strong><RichMath>{"$L(f,P)$"}</RichMath></div>
+        <span>≤</span>
+        <div><strong>Jumlah Riemann</strong><RichMath>{"$S(f,\\dot P)$"}</RichMath></div>
+        <span>≤</span>
+        <div><strong>Jumlah Darboux atas</strong><RichMath>{"$U(f,P)$"}</RichMath></div>
+      </div>
+      <figcaption>Ketika selisih <RichMath>{"$U(f,P)-L(f,P)$"}</RichMath> menuju nol, jumlah Riemann terjepit menuju nilai integral yang sama.</figcaption>
+    </figure>
+  );
+}
+
 function RefinementVisual() {
   const ticksA=[0,0.35,0.72,1];
   const ticksB=[0,0.18,0.35,0.52,0.72,0.86,1];
