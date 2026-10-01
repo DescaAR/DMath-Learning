@@ -51,7 +51,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
           className="book-section ird-source-section"
         >
           <div className="section-number">{String(chapterIndex+1).padStart(2,"0")}</div>
-          <span className="eyebrow">Bab {chapter.number} · {chapter.sourceTitle}</span>
+          <span className="eyebrow">Bab {chapter.number} · DMath Learning</span>
           <h2>{chapter.title}</h2>
           <p className="ird-paragraph">
             Bab ini terdiri atas {chapter.sections.length} submateri. Setiap submateri dibuka pada halaman tersendiri agar pembahasan tidak terlalu padat dan urutan belajar tetap jelas.
@@ -86,9 +86,9 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
 
       <section className="next-learning-block textbook-next">
         <div>
-          <span className="eyebrow">Referensi Utama</span>
-          <h2>Struktur kurikulum mengikuti alur buku rujukan, tetapi materi ditulis ulang untuk DMath Learning.</h2>
-          <p>{subject.source} ({subject.sourceYear}). Isi halaman dikembangkan sebagai materi pembelajaran mandiri dengan notasi, pembuktian, contoh, dan latihan tersendiri.</p>
+          <span className="eyebrow">Referensi dan Bacaan Lanjut</span>
+          <h2>Materi DMath Learning disusun sebagai pengalaman belajar mandiri.</h2>
+          <p>{subject.source} ({subject.sourceYear}) digunakan sebagai salah satu rujukan bidang untuk memeriksa cakupan dan terminologi. Penjelasan, urutan pembelajaran, contoh, pembuktian, latihan, dan visualisasi DMath Learning dikembangkan sebagai konten website.</p>
         </div>
         {first&&<div className="actions"><Link className="btn primary" href={"/materi/"+subject.slug+"/"+first.slug}>Mulai Belajar</Link></div>}
       </section>
