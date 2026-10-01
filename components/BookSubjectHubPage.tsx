@@ -19,7 +19,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
         {label:"Materi",href:"/materi"},
         {label:subject.title},
       ]}
-      eyebrow={subject.level+" · Buku Digital Lengkap"}
+      eyebrow={subject.level+" · Buku Digital"}
       title={subject.title}
       lead={subject.subtitle}
       meta={[
@@ -35,7 +35,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
         {value:"1 pola",label:"struktur Integral Riemann"},
       ]}
       actions={[
-        ...(first?[{label:"Mulai dari Awal",href:"/materi/"+subject.slug+"/"+first.slug,kind:"primary" as const}]:[]),
+        ...(first?[{label:"Mulai Materi",href:"/materi/"+subject.slug+"/"+first.slug,kind:"primary" as const}]:[]),
         {label:"Lihat Kurikulum",href:"#book-chapter-"+subject.chapters[0]?.number.replaceAll(".","-"),kind:"secondary" as const},
       ]}
       overviewEyebrow="Peta Buku"

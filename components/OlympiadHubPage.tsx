@@ -17,7 +17,7 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
     {id:"olympiad-roadmap",label:"Roadmap"},
     {id:"olympiad-problems",label:en?"Curated Problems":"Soal Terkurasi"},
     {id:"olympiad-bank",label:en?"Problem Bank":"Bank Soal"},
-    {id:"olympiad-challenge",label:"Challenge"},
+    {id:"olympiad-challenge",label:en?"Challenge Problem":"Soal Tantangan"},
   ];
 
   return (
@@ -27,7 +27,7 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
         {label:en?"Olympiad":"Olimpiade",href:"/olimpiade"},
         {label:pick(hub.title)},
       ]}
-      eyebrow={en?"Competition Mathematics · Complete Track":"Matematika Kompetisi · Jalur Lengkap"}
+      eyebrow={en?"Competition Mathematics":"Matematika Kompetisi"}
       title={pick(hub.title)}
       lead={pick(hub.subtitle)}
       meta={hub.fields.map((field)=>pick(field))}
@@ -122,10 +122,10 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
 
       <section id="olympiad-challenge" className="book-section ird-practice-section">
         <div className="section-number">05</div>
-        <span className="eyebrow">Challenge · {pick(hub.challenge.field)}</span>
+        <span className="eyebrow">{en?"Challenge Problem":"Soal Tantangan"} · {pick(hub.challenge.field)}</span>
         <h2>{pick(hub.challenge.title)}</h2>
         <article className="ird-worked-card">
-          <div className="ird-worked-head"><div className="ird-problem-number">C</div><div><span className="eyebrow">{hub.challenge.difficulty}</span><h3>Challenge</h3></div></div>
+          <div className="ird-worked-head"><div className="ird-problem-number">C</div><div><span className="eyebrow">{hub.challenge.difficulty}</span><h3>{en?"Challenge Problem":"Soal Tantangan"}</h3></div></div>
           <div className="ird-worked-prompt"><RichMath>{pick(hub.challenge.problem)}</RichMath></div>
           <details className="ird-proof"><summary>{en?"Open Hint":"Buka Petunjuk"}</summary><div className="ird-proof-body"><RichMath>{pick(hub.challenge.hint)}</RichMath></div></details>
           <details className="ird-worked-solution">

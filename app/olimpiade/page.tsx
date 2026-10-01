@@ -6,7 +6,7 @@ import { RiemannHubShell } from "@/components/RiemannHubShell";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Olimpiade Matematika dan ON-MIPA",
-  description: "Jalur olimpiade matematika dan ON-MIPA dengan syllabus, roadmap, soal terkurasi, challenge, serta pembahasan untuk SD, SMP, SMA, dan mahasiswa.",
+  description: "Jalur olimpiade matematika dan ON-MIPA dengan syllabus, roadmap, soal terkurasi, soal tantangan, serta pembahasan untuk SD, SMP, SMA, dan mahasiswa.",
   path: "/olimpiade",
   keywords: ["olimpiade matematika", "ON-MIPA matematika", "soal olimpiade matematika"],
 });
