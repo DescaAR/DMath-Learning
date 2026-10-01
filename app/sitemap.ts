@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/materi",
     "/bank-soal",
     "/olimpiade",
-    "/pembahasan",
+    "/latihan-soal",
     "/sumber-belajar-lain",
     "/tentang",
     "/kuliah/aljabar-linear/basis-dan-dimensi",
