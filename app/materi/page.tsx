@@ -22,7 +22,7 @@ export default function MateriPage() {
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Materi"}]}
       eyebrow="Perpustakaan Materi · Buku Digital"
-      title="Bukan ringkasan satu halaman. Belajar sampai paham."
+      title="Materi Matematika"
       lead="Materi disusun per jenjang dan bidang. Buku digital DMath mencakup analisis, aljabar, kalkulus, diskrit, graf, teori bilangan, persamaan diferensial, analisis numerik, statistika, probabilitas, kalkulus stokastik, dan riset operasi; setiap bidang dibagi menjadi unit dan submateri agar dapat dipelajari berurutan dan mendalam."
       meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
@@ -35,9 +35,9 @@ export default function MateriPage() {
         {label:"Buka Buku Digital",href:"#materi-buku",kind:"primary"},
         {label:"Jelajahi Semua Materi",href:"#materi-katalog",kind:"secondary"},
       ]}
-      overviewTitle="Bidang → unit → submateri → teori → latihan → materi berikutnya."
-      overviewText="Setiap submateri mempunyai halaman sendiri dengan tujuan, intuisi, visualisasi, notasi, definisi, teorema atau hasil formal, pembuktian, contoh terbahas, latihan, kesalahan umum, koneksi, ringkasan, dan navigasi sebelumnya/berikutnya."
-      roadmap={["Pilih Bidang","Pilih Unit","Baca Submateri","Pahami Bukti","Kerjakan Latihan","Lanjut Materi Berikutnya"]}
+      overviewTitle="Struktur Materi"
+      overviewText="Setiap submateri mempunyai halaman sendiri dengan pengantar, tujuan, notasi, definisi dan contoh, hasil formal dan pembuktian, contoh terbahas, visualisasi, latihan, ringkasan, referensi, serta navigasi sebelumnya/berikutnya."
+      roadmap={["Bidang","Unit","Pengantar","Definisi & Contoh","Hasil Formal & Bukti","Visualisasi","Latihan","Referensi"]}
       sections={[
         {id:"materi-buku",label:"Buku Digital"},
         {id:"materi-struktur",label:"Struktur Submateri"},
@@ -47,7 +47,7 @@ export default function MateriPage() {
       <section id="materi-buku" className="book-section ird-practice-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Buku Digital Lengkap</span>
-        <h2>Masuk ke bidang, lalu pilih materi yang ingin dipelajari.</h2>
+        <h2>Daftar Buku Digital</h2>
         <p className="ird-paragraph">Setiap bidang besar menggunakan struktur multi-halaman. Daftar isi bidang menjadi peta belajar; setiap submateri dibuka sebagai bab digital mandiri dengan teori, pembuktian atau hasil formal, contoh, latihan, dan visualisasi.</p>
         <div className="ird-worked-grid">
           {bookSubjects.map((subject,index)=>{
@@ -75,16 +75,16 @@ export default function MateriPage() {
       <section id="materi-struktur" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">Struktur Submateri</span>
-        <h2>Setiap halaman dibaca sebagai satu submateri lengkap.</h2>
+        <h2>Struktur Submateri</h2>
         <div className="ird-roadmap">
-          {["Tujuan & prasyarat","Motivasi, intuisi & visualisasi","Definisi & notasi","Teorema & pembuktian","Contoh terbahas","Latihan & solusi","Kesalahan & koneksi","Ringkasan & referensi"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
+          {["Pengantar","Prasyarat & tujuan","Notasi & konsep","Definisi & contoh","Hasil formal & pembuktian","Contoh terbahas","Visualisasi","Latihan & solusi","Ringkasan & referensi"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
         </div>
       </section>
 
       <section id="materi-katalog" className="book-section ird-practice-section">
         <div className="section-number">03</div>
         <span className="eyebrow">Katalog Materi Lain</span>
-        <h2>SD, SMP, SMA, kuliah, olimpiade, dan ON-MIPA.</h2>
+        <h2>Katalog Materi</h2>
         <p>Gunakan pencarian dan filter untuk menemukan materi lain berdasarkan jenjang, jalur, bidang, atau tingkat kesulitan.</p>
         <MaterialCatalogClient />
       </section>

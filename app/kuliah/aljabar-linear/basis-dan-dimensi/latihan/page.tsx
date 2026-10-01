@@ -31,25 +31,13 @@ export default function BasisDimensionPracticePage() {
         </div>
       </section>
 
-      <section className="section ird-overview">
-        <div className="container narrow">
-          <span className="eyebrow">Alur Latihan</span>
-          <h2>Dari pemahaman konsep menuju pembuktian.</h2>
-          <div className="ird-roadmap">
-            {["Kombinasi linear","Span","Bebas linear","Basis","Koordinat","Dimensi","Subruang","Rank–Nullity"].map((item,index)=>(
-              <div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="latihan-basis" className="section textbook-section-shell">
         <div className="container narrow">
           <article className="article deep-article textbook-article ird-article">
             <section className="book-section ird-practice-section">
               <div className="section-number">01</div>
               <span className="eyebrow">Latihan Soal dan Solusi</span>
-              <h2>Belajar satu soal pada satu waktu.</h2>
+              <h2>Latihan Basis dan Dimensi</h2>
               <ProblemPractice />
             </section>
           </article>

@@ -51,8 +51,8 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
         {label:en?"Open Curriculum":"Buka Kurikulum",href:"#track-kurikulum",kind:"primary"},
         {label:en?"Open Materials":"Buka Materi",href:"#track-materials",kind:"secondary"},
       ]}
-      overviewEyebrow={en?"Big Picture":"Gambaran Besar"}
-      overviewTitle={en?"One track, one clear learning sequence.":"Satu jalur, satu urutan belajar yang jelas."}
+      overviewEyebrow={en?"Track Structure":"Struktur Jalur"}
+      overviewTitle={en?"Learning sequence":"Urutan Pembelajaran"}
       overviewText={pick(track.philosophy)}
       roadmap={track.roadmap.map((stage)=>pick(stage.title))}
       sections={sections}
@@ -60,7 +60,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
       <section id="track-kurikulum" className="book-section ird-source-section">
         <div className="section-number">01</div>
         <span className="eyebrow">{en?"Part 1":"Bagian 1"}</span>
-        <h2>{en?"Curriculum map":"Peta kurikulum"}</h2>
+        <h2>{en?"Curriculum":"Kurikulum"}</h2>
         <p>{en
           ?"The curriculum is grouped by mathematical field so the structure is visible before opening individual chapters."
           :"Kurikulum dikelompokkan berdasarkan bidang agar struktur belajar terlihat sebelum masuk ke bab per bab."}</p>
@@ -81,7 +81,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
       <section id="track-roadmap" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">{en?"Part 2":"Bagian 2"}</span>
-        <h2>{en?"Learning roadmap":"Roadmap belajar"}</h2>
+        <h2>{en?"Learning Roadmap":"Roadmap Pembelajaran"}</h2>
         <div className="ird-worked-grid">
           {track.roadmap.map((stage,index)=>(
             <article className="ird-worked-card" key={pick(stage.title)}>
@@ -99,7 +99,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
       <section id="track-skills" className="book-section ird-source-section">
         <div className="section-number">03</div>
         <span className="eyebrow">{en?"Part 3":"Bagian 3"}</span>
-        <h2>{en?"Skills built through this track":"Kemampuan yang dibangun"}</h2>
+        <h2>{en?"Learning Outcomes":"Capaian Pembelajaran"}</h2>
         <p>{pick(track.goal)}</p>
         <div className="ird-roadmap">
           {track.skills.map((skill,index)=>(
@@ -111,7 +111,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
       <section id="track-materials" className="book-section ird-practice-section">
         <div className="section-number">04</div>
         <span className="eyebrow">{en?"Available Now":"Materi yang Sudah Tersedia"}</span>
-        <h2>{en?"Start with published chapters.":"Mulai dari bab yang sudah dipublikasikan."}</h2>
+        <h2>{en?"Available Materials":"Materi Tersedia"}</h2>
         {published.length>0 || digitalBooks.length>0?(
           <div className="ird-worked-grid">
             {digitalBooks.map((book,index)=>(
@@ -149,7 +149,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
       <section className="next-learning-block textbook-next">
         <div>
           <span className="eyebrow">{en?"Continue":"Lanjutkan"}</span>
-          <h2>{en?"Choose a chapter, practice, then return to the roadmap.":"Pilih bab, latihan, lalu kembali ke roadmap."}</h2>
+          <h2>{en?"Materials and Practice":"Materi dan Latihan"}</h2>
           <p>{en?"Use this page as the map for the whole track.":"Gunakan halaman ini sebagai peta untuk seluruh jalur belajar."}</p>
         </div>
         <div className="actions">

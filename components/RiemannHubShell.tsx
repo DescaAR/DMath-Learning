@@ -16,7 +16,7 @@ export function RiemannHubShell({
   meta=[],
   stats=[],
   actions=[],
-  overviewEyebrow="Gambaran Besar",
+  overviewEyebrow="Struktur Halaman",
   overviewId="ird-overview",
   tocTitle="Isi Materi",
   progressLabel="Progres membaca",

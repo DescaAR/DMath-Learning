@@ -181,7 +181,7 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
       {kind:"theorem",title:"Max-Flow Min-Cut",statement:"Nilai maksimum aliran dari sumber ke tujuan sama dengan kapasitas minimum di antara seluruh cut yang memisahkan sumber dan tujuan."}
     ],
     "or-dp-principle":[
-      {kind:"definition",title:"Prinsip Optimalitas Bellman",statement:"Bagian sisa dari kebijakan optimal, setelah keputusan awal dan state baru ditentukan, harus optimal untuk submasalah yang dimulai dari state tersebut."}
+      {kind:"note",title:"Prinsip Optimalitas Bellman",statement:"Bagian sisa dari kebijakan optimal, setelah keputusan awal dan state baru ditentukan, harus optimal untuk submasalah yang dimulai dari state tersebut."}
     ],
     "or-mm1":[
       {kind:"proposition",title:"Little's Law",statement:"Pada sistem stabil dalam keadaan tunak, jumlah rata-rata pelanggan $L$, laju kedatangan efektif $\\lambda$, dan waktu rata-rata dalam sistem $W$ memenuhi $L=\\lambda W$."}
@@ -194,7 +194,7 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
       {kind:"proposition",title:"Aturan Probabilitas Total",statement:"Jika $B_1,\\ldots,B_k$ membentuk partisi ruang sampel dan $P(B_i)>0$, maka $P(A)=\\sum_i P(A\\mid B_i)P(B_i)$."}
     ],
     "sta-anova-oneway":[
-      {kind:"definition",title:"Dekomposisi Variabilitas ANOVA",statement:"Pada ANOVA satu arah, total sum of squares diuraikan menjadi variasi antarperlakuan dan variasi dalam perlakuan: $SS_T=SS_{Tr}+SS_E$."},
+      {kind:"proposition",title:"Dekomposisi Variabilitas ANOVA",statement:"Pada ANOVA satu arah, total sum of squares dapat diuraikan menjadi variasi antarperlakuan dan variasi dalam perlakuan: $SS_T=SS_{Tr}+SS_E$.",proof:["Untuk observasi $y_{ij}$ pada kelompok $i$, dituliskan $y_{ij}-\\bar y_{..}=(\\bar y_{i.}-\\bar y_{..})+(y_{ij}-\\bar y_{i.})$.","Kedua ruas dikuadratkan dan dijumlahkan terhadap seluruh $i$ dan $j$.","Suku silang bernilai nol karena untuk setiap kelompok berlaku $\\sum_j(y_{ij}-\\bar y_{i.})=0$.","Sisa dua jumlah kuadrat masing-masing adalah sum of squares antarperlakuan dan sum of squares error. Dengan demikian $SS_T=SS_{Tr}+SS_E$."]},
       {kind:"note",title:"Makna Uji F",statement:"Statistik F membandingkan skala variasi yang dijelaskan oleh perbedaan mean kelompok dengan variasi residual di dalam kelompok."}
     ],
     "sta-simple-regression":[
@@ -202,7 +202,7 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
       {kind:"proposition",title:"Normal Equations",statement:"Estimator least squares meminimalkan jumlah kuadrat residual dan memenuhi persamaan normal yang diperoleh dari turunan fungsi objektif terhadap parameter."}
     ],
     "stm-prob-axioms":[
-      {kind:"definition",title:"Aksioma Kolmogorov",statement:"Probabilitas $P$ memenuhi $P(A)\\ge0$, $P(\\Omega)=1$, dan countable additivity pada kejadian-kejadian saling lepas."}
+      {kind:"definition",title:"Ukuran Probabilitas",statement:"Pada ruang terukur $(\\Omega,\\mathcal F)$, fungsi $P:\\mathcal F\\to[0,1]$ disebut ukuran probabilitas apabila $P(\\Omega)=1$ dan untuk setiap barisan kejadian saling lepas $A_1,A_2,\\ldots\\in\\mathcal F$ berlaku $P(\\bigcup_{i=1}^{\\infty}A_i)=\\sum_{i=1}^{\\infty}P(A_i)$. Nonnegativitas tercakup oleh kodomain $[0,1]$."}
     ],
     "stm-clt":[
       {kind:"theorem",title:"Central Limit Theorem IID",statement:"Untuk variabel acak iid dengan mean $\\mu$ dan varians hingga positif $\\sigma^2$, jumlah yang dinormalisasi $(S_n-n\\mu)/(\\sigma\\sqrt n)$ konvergen dalam distribusi ke $N(0,1)$."}
@@ -278,9 +278,9 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
   };
 
   return special[slug]??[
-    {kind:"definition",title,statement:summary},
-    {kind:"note",title:"Struktur Konsep",statement:"Konsep utama yang perlu dihubungkan pada bagian ini adalah "+keyIdeas.join(", ")+". Definisi, asumsi, dan objek matematisnya harus dibedakan sebelum perhitungan dilakukan."},
-    {kind:"note",title:"Standar Pembuktian atau Verifikasi",statement:"Setiap kesimpulan pada submateri ini harus dilacak kembali ke definisi atau hasil yang digunakan, dengan semua hipotesis dinyatakan secara eksplisit."}
+    {kind:"note",title:"Pengantar Konsep",statement:summary},
+    {kind:"note",title:"Struktur Konsep",statement:"Konsep utama yang perlu dihubungkan pada bagian ini adalah "+keyIdeas.join(", ")+". Istilah yang benar-benar mempunyai definisi formal diperkenalkan pada submateri yang relevan; uraian deskriptif tidak diberi label definisi."},
+    {kind:"note",title:"Standar Pembuktian atau Verifikasi",statement:"Setiap kesimpulan harus dilacak kembali ke definisi atau hasil yang digunakan, dengan seluruh hipotesis dinyatakan secara eksplisit."}
   ];
 }
 
@@ -340,15 +340,104 @@ function examplesFor(subject:string,title:string,keyIdeas:string[]):BookExample[
 function exercisesFor(title:string,keyIdeas:string[]){
   const a=keyIdeas[0]??title;
   const b=keyIdeas[1]??"konsep kedua";
+  const answer=(steps:string[])=>steps.join("\n");
   return[
-    {prompt:"Tuliskan definisi formal objek utama pada "+title+" dan jelaskan setiap komponennya.",hint:"Mulai dari domain, parameter, dan syarat yang menyertai definisi.",answer:"Jawaban harus menyebut objek, asumsi, notasi, dan kondisi yang membuat definisi berlaku.",provenance:"dmath-original" as const},
-    {prompt:"Buat contoh paling sederhana yang memenuhi definisi "+title+", lalu buat satu noncontoh.",hint:"Gunakan struktur sekecil mungkin agar perbedaannya terlihat jelas.",answer:"Contoh harus memenuhi seluruh syarat; noncontoh harus gagal pada sedikitnya satu syarat yang disebutkan secara eksplisit.",provenance:"dmath-original" as const},
-    {prompt:"Jelaskan hubungan antara "+a+" dan "+b+" dalam konteks "+title+".",hint:"Tentukan apakah hubungannya definisional, implikasi, ekuivalensi, atau hanya korelasi struktural.",answer:"Hubungan harus dijelaskan bersama arah implikasi dan syarat yang diperlukan.",provenance:"dmath-original" as const},
-    {prompt:"Identifikasi asumsi yang paling mudah terlupakan ketika menerapkan hasil utama pada "+title+".",hint:"Periksa domain, regularitas, independensi, feasibility, atau kondisi batas sesuai bidang.",answer:"Asumsi disebutkan dan dijelaskan mengapa pelanggarannya dapat menggagalkan kesimpulan.",provenance:"dmath-original" as const},
-    {prompt:"Susun satu perhitungan atau konstruksi kecil yang menggunakan "+a+".",hint:"Gunakan angka atau struktur sederhana dan tulis setiap langkah.",answer:"Solusi harus memperlihatkan data awal, transformasi/perhitungan, dan verifikasi hasil.",provenance:"dmath-original" as const},
-    {prompt:"Berikan argumen singkat yang membuktikan salah satu sifat dasar pada "+title+".",hint:"Mulai dari definisi dan hindari menggunakan kesimpulan yang sedang dibuktikan.",answer:"Pembuktian harus menyatakan objek sebarang, hipotesis, langkah inferensi, dan kesimpulan eksplisit.",provenance:"dmath-original" as const},
-    {prompt:"Temukan sebuah kasus batas atau contoh tandingan yang menunjukkan mengapa salah satu hipotesis pada "+title+" diperlukan.",hint:"Coba hilangkan satu asumsi saja.",answer:"Contoh tandingan harus memenuhi asumsi lain tetapi gagal pada kesimpulan karena asumsi terpilih dihapus.",provenance:"dmath-original" as const},
-    {prompt:"Rancang masalah sintesis yang menghubungkan "+title+" dengan satu submateri sebelumnya, kemudian jelaskan strategi penyelesaiannya.",hint:"Gunakan satu konsep lama sebagai alat dan konsep baru sebagai target.",answer:"Strategi yang baik menjelaskan hubungan antarkonsep, urutan langkah, serta cara memverifikasi hasil.",provenance:"dmath-original" as const}
+    {
+      prompt:"Tuliskan definisi formal objek utama pada "+title+" dan jelaskan setiap komponennya.",
+      hint:"Mulai dari domain, objek, parameter, dan seluruh syarat yang menyertai definisi.",
+      answer:answer([
+        "Diketahui konteks submateri "+title+" dan konsep utama "+a+".",
+        "Objek matematis terlebih dahulu ditentukan beserta domain atau ruang tempat objek tersebut berada.",
+        "Setiap syarat pada definisi dituliskan secara terpisah dan dijelaskan perannya; syarat tidak boleh diganti oleh contoh atau intuisi.",
+        "Setelah seluruh syarat dinyatakan, diberikan satu objek yang memenuhi semuanya sebagai verifikasi.",
+        "Dengan demikian definisi dapat digunakan secara operasional untuk membedakan contoh dan noncontoh."
+      ]),
+      provenance:"dmath-original" as const
+    },
+    {
+      prompt:"Buat contoh paling sederhana yang memenuhi definisi pada "+title+", lalu buat satu noncontoh.",
+      hint:"Gunakan struktur sekecil mungkin agar satu syarat yang gagal pada noncontoh mudah diidentifikasi.",
+      answer:answer([
+        "Dipilih objek sederhana yang berada pada domain definisi.",
+        "Seluruh syarat definisi diperiksa satu per satu pada objek tersebut.",
+        "Untuk noncontoh, diubah tepat satu sifat penting sambil mempertahankan konteks yang sama.",
+        "Ditunjukkan syarat mana yang gagal dan mengapa kegagalan itu cukup untuk menolak objek sebagai contoh.",
+        "Perbandingan ini menegaskan batas antara memenuhi definisi dan hanya tampak serupa."
+      ]),
+      provenance:"dmath-original" as const
+    },
+    {
+      prompt:"Jelaskan hubungan antara "+a+" dan "+b+" dalam konteks "+title+".",
+      hint:"Tentukan apakah hubungannya definisional, implikasi satu arah, ekuivalensi, atau hanya keterkaitan konseptual.",
+      answer:answer([
+        "Kedua konsep dituliskan dengan definisi atau sifat formalnya masing-masing.",
+        "Arah hubungan dari "+a+" menuju "+b+" diperiksa dengan menggunakan definisi atau teorema yang relevan.",
+        "Arah sebaliknya diperiksa secara terpisah; jika tidak berlaku, disiapkan contoh tandingan.",
+        "Syarat tambahan yang diperlukan dicatat agar pernyataan tidak terlalu umum.",
+        "Kesimpulan menyatakan secara eksplisit jenis hubungan yang benar beserta syaratnya."
+      ]),
+      provenance:"dmath-original" as const
+    },
+    {
+      prompt:"Identifikasi asumsi yang paling penting ketika menerapkan hasil utama pada "+title+".",
+      hint:"Periksa domain, regularitas, independensi, feasibility, kondisi batas, atau asumsi struktur sesuai bidang.",
+      answer:answer([
+        "Pernyataan hasil formal dibaca kembali dan semua hipotesisnya didaftarkan.",
+        "Setiap hipotesis dicocokkan dengan informasi pada masalah.",
+        "Asumsi yang tidak otomatis dipenuhi dipisahkan sebagai hal yang harus diverifikasi.",
+        "Dijelaskan konsekuensi matematis jika asumsi tersebut dihapus atau dilanggar.",
+        "Penerapan hasil dinyatakan sah hanya setelah seluruh hipotesis yang diperlukan terpenuhi."
+      ]),
+      provenance:"dmath-original" as const
+    },
+    {
+      prompt:"Susun satu perhitungan atau konstruksi kecil yang menggunakan "+a+".",
+      hint:"Gunakan data sederhana dan tulis setiap transformasi secara eksplisit.",
+      answer:answer([
+        "Ditetapkan data awal dan target perhitungan atau konstruksi.",
+        "Dipilih definisi atau rumus yang secara langsung melibatkan "+a+".",
+        "Substitusi atau konstruksi dilakukan langkah demi langkah tanpa melewati syarat domain.",
+        "Hasil sementara diperiksa melalui identitas, substitusi balik, atau representasi kedua yang relevan.",
+        "Hasil akhir dinyatakan bersama interpretasinya dalam konteks "+title+"."
+      ]),
+      provenance:"dmath-original" as const
+    },
+    {
+      prompt:"Berikan pembuktian singkat untuk salah satu sifat dasar pada "+title+".",
+      hint:"Mulai dari definisi, ambil objek sebarang, lalu tulis inferensi yang digunakan pada setiap langkah.",
+      answer:answer([
+        "Diambil sebarang objek yang memenuhi hipotesis pernyataan.",
+        "Definisi yang relevan dituliskan dan diterapkan pada objek tersebut.",
+        "Setiap transformasi dijustifikasi oleh definisi, aksioma, atau hasil yang telah diketahui.",
+        "Target pembuktian diperoleh tanpa menggunakan pernyataan yang sedang dibuktikan sebagai asumsi.",
+        "Dengan demikian sifat yang diminta terbukti untuk setiap objek yang memenuhi hipotesis."
+      ]),
+      provenance:"dmath-original" as const
+    },
+    {
+      prompt:"Temukan kasus batas atau contoh tandingan yang menunjukkan mengapa salah satu hipotesis pada "+title+" diperlukan.",
+      hint:"Hilangkan satu hipotesis, tetapi pertahankan hipotesis lain sebanyak mungkin.",
+      answer:answer([
+        "Dipilih satu hipotesis yang akan diuji kebutuhannya.",
+        "Dibangun objek yang masih memenuhi hipotesis lainnya tetapi tidak memenuhi hipotesis terpilih.",
+        "Kesimpulan teorema atau sifat kemudian diperiksa pada objek tersebut.",
+        "Ditunjukkan secara eksplisit bagian kesimpulan yang gagal.",
+        "Oleh karena itu hipotesis yang dihapus memang mempunyai peran pada validitas pernyataan."
+      ]),
+      provenance:"dmath-original" as const
+    },
+    {
+      prompt:"Rancang masalah sintesis yang menghubungkan "+title+" dengan satu submateri sebelumnya, kemudian jelaskan strategi penyelesaiannya.",
+      hint:"Gunakan satu konsep lama sebagai alat dan konsep baru sebagai target.",
+      answer:answer([
+        "Dipilih satu konsep prasyarat yang benar-benar digunakan pada "+title+".",
+        "Ditetapkan masalah yang memerlukan konsep lama pada tahap awal dan "+a+" pada tahap utama.",
+        "Strategi dibagi menjadi identifikasi data, penerapan konsep prasyarat, penerapan konsep baru, dan verifikasi.",
+        "Diperiksa bahwa setiap tahap menghasilkan informasi yang diperlukan tahap berikutnya.",
+        "Kesimpulan akhir menjelaskan hubungan struktural antara kedua submateri, bukan sekadar hasil numerik."
+      ]),
+      provenance:"dmath-original" as const
+    }
   ];
 }
 

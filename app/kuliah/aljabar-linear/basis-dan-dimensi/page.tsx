@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { MathVisualization } from "@/components/MathVisualizations";
+import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
 import { BasisDimensionEnglish } from "@/components/BasisDimensionEnglish";
 
@@ -14,7 +15,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 const sections = [
-  ["overview", "Overview"],
+  ["overview", "Pengantar"],
   ["review", "Review Ruang Vektor"],
   ["kombinasi", "Kombinasi Linear"],
   ["span", "Span"],
@@ -26,7 +27,7 @@ const sections = [
   ["ekstensi", "Ekstensi Basis"],
   ["baris-kolom", "Ruang Baris & Kolom"],
   ["rank-nullity", "Rank–Nullity"],
-  ["contoh", "Worked Examples"],
+  ["contoh", "Contoh Terbahas"],
   ["ringkasan", "Ringkasan"],
   ["referensi", "Referensi"],
 ] as const;
@@ -88,15 +89,14 @@ export default function BasisDimensionPage() {
             <span>/</span>
             <strong>Basis dan Dimensi</strong>
           </div>
-          <span className="eyebrow">Gold Standard Chapter · Aljabar Linear</span>
+          <span className="eyebrow">Aljabar Linear · Materi Kuliah</span>
           <h1>Basis dan Dimensi</h1>
           <p>
-            Bab ini dibangun sebagai buku digital: mulai dari intuisi, definisi formal, teorema dan pembuktian,
-            visualisasi, contoh bertahap, latihan, hingga bank soal.
+            Materi ini membahas kombinasi linear, span, kebebasan linear, basis, koordinat, dimensi, basis subruang, ruang baris dan kolom, serta Teorema Rank–Nullity.
           </p>
           <div className="chapter-meta">
             <span>Kuliah</span>
-            <span>Formal + Intuitif</span>
+            <span>Definisi · Teorema · Bukti</span>
             <span>± 90–120 menit</span>
             <span>100 bank soal</span>
           </div>
@@ -118,8 +118,8 @@ export default function BasisDimensionPage() {
 
           <article className="article deep-article textbook-article ird-article basis-article">
             <section className="book-section ird-source-section" id="overview">
-              <span className="eyebrow">Overview</span>
-              <h2>Basis adalah sistem koordinat bagi ruang vektor.</h2>
+              <span className="eyebrow">Pengantar</span>
+              <h2>Pengantar Basis dan Dimensi</h2>
               <P>{String.raw`Dalam $\mathbb R^2$, kita terbiasa memakai $e_1=(1,0)$ dan $e_2=(0,1)$.
                 Namun pasangan lain seperti $v_1=(1,1)$ dan $v_2=(1,-1)$ juga dapat dipakai untuk
                 mendeskripsikan setiap vektor di $\mathbb R^2$ secara unik. Pasangan semacam ini disebut basis.`}</P>
@@ -127,6 +127,7 @@ export default function BasisDimensionPage() {
                 tetapi tidak boleh memiliki vektor yang redundan.
                 Dimensi kemudian mengukur banyaknya vektor yang diperlukan dalam sebuah basis.`}</P>
               <MathVisualization kind="basis" />
+              <div style={{marginTop:24}}><InteractiveMathLab kind="basis" /></div>
 
               <div className="content-box prerequisite-box">
                 <strong>Prasyarat</strong>
@@ -170,7 +171,7 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="review">
               <span className="eyebrow">01 · Review Ruang Vektor</span>
-              <h2>Objek yang akan kita bangun.</h2>
+              <h2>Ruang Vektor dan Subruang</h2>
               <P>{String.raw`Sebuah ruang vektor $V$ atas lapangan $\mathbb F$ adalah himpunan yang dilengkapi
                 penjumlahan vektor dan perkalian skalar, serta memenuhi aksioma linearitas.
                 Contoh utama adalah $\mathbb R^n$, ruang polinom $\mathcal P_n$, ruang matriks
@@ -181,6 +182,7 @@ export default function BasisDimensionPage() {
                 <P>{String.raw`Himpunan $W\subseteq V$ disebut subruang apabila $0\in W$ dan untuk setiap
                   $u,v\in W$ serta $\alpha,\beta\in\mathbb F$, berlaku $\alpha u+\beta v\in W$.`}</P>
               </div>
+              <div className="example-box content-box"><div className="box-kicker">Contoh</div><P>{"Himpunan W={(x,y,0): x,y∈ℝ} di ℝ³ merupakan subruang karena memuat vektor nol dan tertutup terhadap kombinasi linear."}</P></div>
 
               <Theorem
                 number="1"
@@ -198,7 +200,7 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="kombinasi">
               <span className="eyebrow">02 · Kombinasi Linear</span>
-              <h2>Membangun vektor dari vektor lain.</h2>
+              <h2>Kombinasi Linear</h2>
               <div className="definition-box numbered-box">
                 <div className="box-kicker">Definisi</div>
                 <strong>Kombinasi Linear</strong>
@@ -223,12 +225,13 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="span">
               <span className="eyebrow">03 · Span</span>
-              <h2>Semua vektor yang dapat dibangun.</h2>
+              <h2>Span</h2>
               <div className="definition-box">
                 <strong>Definisi Span</strong>
                 <P>{String.raw`Untuk $S=\{v_1,\ldots,v_k\}\subseteq V$,
                   $$\operatorname{span}(S)=\left\{a_1v_1+\cdots+a_kv_k:a_i\in\mathbb F\right\}.$$`}</P>
               </div>
+              <div className="example-box content-box"><div className="box-kicker">Contoh</div><P>{"Di ℝ³, span{(1,0,0),(0,1,0)} adalah bidang z=0, yaitu semua vektor berbentuk (a,b,0)."}</P></div>
 
               <Theorem
                 number="2"
@@ -254,13 +257,14 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="bebas">
               <span className="eyebrow">04 · Bebas Linear</span>
-              <h2>Mendeteksi redundansi.</h2>
+              <h2>Bebas Linear</h2>
               <div className="definition-box">
                 <strong>Definisi Bebas Linear</strong>
                 <P>{String.raw`Himpunan $S=\{v_1,\ldots,v_k\}$ disebut bebas linear apabila
                   $$a_1v_1+\cdots+a_kv_k=0$$
                   hanya mempunyai solusi trivial $a_1=\cdots=a_k=0$.`}</P>
               </div>
+              <div className="example-box content-box"><div className="box-kicker">Contoh</div><P>{"Vektor (1,0) dan (0,1) bebas linear, sedangkan (1,0) dan (2,0) bergantung linear karena vektor kedua merupakan dua kali vektor pertama."}</P></div>
 
               <Theorem
                 number="3"
@@ -292,12 +296,13 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="basis">
               <span className="eyebrow">05 · Basis</span>
-              <h2>Cukup untuk merentang, minimum tanpa redundansi.</h2>
+              <h2>Basis</h2>
               <div className="definition-box">
                 <strong>Definisi Basis</strong>
                 <P>{String.raw`Himpunan $B=\{v_1,\ldots,v_n\}$ adalah basis $V$ apabila $B$ bebas linear dan
                   $\operatorname{span}(B)=V$.`}</P>
               </div>
+              <div className="example-box content-box"><div className="box-kicker">Contoh</div><P>{"Himpunan {(1,0),(0,1)} merupakan basis ℝ² karena bebas linear dan merentang seluruh ℝ²."}</P></div>
 
               <Theorem
                 number="4"
@@ -329,10 +334,12 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="koordinat">
               <span className="eyebrow">06 · Koordinat</span>
-              <h2>Vektor abstrak menjadi daftar skalar.</h2>
+              <h2>Koordinat terhadap Basis</h2>
               <P>{String.raw`Untuk basis berurutan $B=(v_1,\ldots,v_n)$, koordinat vektor
                 $v=a_1v_1+\cdots+a_nv_n$ didefinisikan sebagai
                 $$[v]_B=\begin{pmatrix}a_1\\\vdots\\a_n\end{pmatrix}.$$`}</P>
+
+              <div className="example-box content-box"><div className="box-kicker">Contoh</div><P>{"Untuk basis standar E=((1,0),(0,1)), vektor (3,-2) mempunyai koordinat (3,-2)ᵀ terhadap E."}</P></div>
 
               <Theorem
                 number="5"
@@ -350,12 +357,13 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="dimensi">
               <span className="eyebrow">07 · Dimensi</span>
-              <h2>Banyaknya arah bebas yang diperlukan.</h2>
+              <h2>Dimensi</h2>
               <div className="definition-box">
                 <strong>Definisi Dimensi</strong>
                 <P>{String.raw`Jika $V$ mempunyai basis berhingga dengan $n$ anggota, didefinisikan
                   $\dim V=n$. Untuk ruang nol, $\dim\{0\}=0$.`}</P>
               </div>
+              <div className="example-box content-box"><div className="box-kicker">Contoh</div><P>{"Ruang polinom P₂ mempunyai basis {1,x,x²}. Oleh karena itu, dim P₂=3."}</P></div>
 
               <Theorem
                 number="6"
@@ -401,7 +409,7 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="subruang">
               <span className="eyebrow">08 · Basis Subruang</span>
-              <h2>Dimensi tidak dapat melebihi ruang induk.</h2>
+              <h2>Basis dan Dimensi Subruang</h2>
 
               <Theorem
                 number="8"
@@ -432,7 +440,7 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="ekstensi">
               <span className="eyebrow">09 · Ekstensi Basis</span>
-              <h2>Dari himpunan bebas linear menuju basis penuh.</h2>
+              <h2>Ekstensi Basis</h2>
 
               <Theorem
                 number="9"
@@ -466,11 +474,11 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="baris-kolom">
               <span className="eyebrow">10 · Ruang Baris & Kolom</span>
-              <h2>Basis dari sebuah matriks.</h2>
+              <h2>Ruang Baris dan Ruang Kolom</h2>
               <P>{String.raw`Untuk matriks $A\in\mathbb F^{m\times n}$, ruang baris adalah span semua baris $A$,
                 sedangkan ruang kolom adalah span semua kolom $A$.`}</P>
-              <div className="definition-box">
-                <strong>Aturan komputasi penting</strong>
+              <div className="content-box idea-box">
+                <strong>Aturan Komputasi</strong>
                 <P>{String.raw`Baris tak nol pada bentuk eselon baris dapat dipakai sebagai basis row space.
                   Untuk column space, gunakan kolom-kolom matriks asal yang posisinya bersesuaian
                   dengan kolom pivot pada bentuk eselon.`}</P>
@@ -493,13 +501,14 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="rank-nullity">
               <span className="eyebrow">11 · Rank–Nullity</span>
-              <h2>Dimensi domain terbagi menjadi dua bagian.</h2>
+              <h2>Teorema Rank–Nullity</h2>
               <div className="definition-box">
                 <strong>Rank dan Nullity</strong>
                 <P>{String.raw`Untuk $T:V\to W$, didefinisikan
                   $\operatorname{rank}(T)=\dim(\operatorname{im}T)$ dan
                   $\operatorname{nullity}(T)=\dim(\ker T)$.`}</P>
               </div>
+              <div className="example-box content-box"><div className="box-kicker">Contoh</div><P>{"Untuk T:ℝ³→ℝ² dengan T(x,y,z)=(x,y), kernel dibangun oleh (0,0,1) dan image sama dengan ℝ². Dengan demikian nullity T=1 dan rank T=2."}</P></div>
 
               <Theorem
                 number="11"
@@ -526,8 +535,8 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="contoh">
-              <span className="eyebrow">12 · Worked Examples</span>
-              <h2>Tiga tingkat penyelesaian.</h2>
+              <span className="eyebrow">12 · Contoh Terbahas</span>
+              <h2>Contoh Terbahas</h2>
 
               <div className="example-stack">
                 <div className="example-suite">
@@ -581,20 +590,9 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section className="content-box warning-box">
-              <strong>Kesalahan Umum</strong>
-              <ul>
-                <li><RichMath>Menyimpulkan himpunan adalah basis hanya karena jumlah vektornya sama dengan $\dim V$.</RichMath></li>
-                <li><RichMath>Menganggap spanning otomatis berarti bebas linear.</RichMath></li>
-                <li><RichMath>Menggunakan kolom hasil OBE sebagai basis column space, padahal kolom pivot harus diambil dari matriks asal.</RichMath></li>
-                <li><RichMath>Menulis $\dim(U+W)=\dim U+\dim W$ tanpa mengurangi $\dim(U\cap W)$.</RichMath></li>
-                <li><RichMath>Menggunakan rank–nullity tanpa menyebut bahwa domain berdimensi hingga.</RichMath></li>
-              </ul>
-            </section>
-
             <section className="book-section ird-source-section" id="ringkasan">
               <span className="eyebrow">13 · Ringkasan</span>
-              <h2>Peta hasil utama</h2>
+              <h2>Ringkasan Hasil Utama</h2>
               <div className="summary-grid">
                 {[
                   ["Span", "$\\operatorname{span}(S)$ adalah subruang terkecil yang memuat $S$."],
@@ -625,7 +623,7 @@ export default function BasisDimensionPage() {
 
             <section className="book-section ird-source-section" id="referensi">
               <span className="eyebrow">14 · Referensi</span>
-              <h2>Bacaan utama</h2>
+              <h2>Referensi</h2>
               <ol className="reference-list">
                 <li>Sheldon Axler, <em>Linear Algebra Done Right</em>, 4th ed., Springer, 2024.</li>
                 <li>Gilbert Strang, <em>Introduction to Linear Algebra</em>, 6th ed., 2023.</li>

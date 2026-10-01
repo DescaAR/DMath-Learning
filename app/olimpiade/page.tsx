@@ -16,7 +16,7 @@ export default function OlimpiadePage() {
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Olimpiade & ON-MIPA"}]}
       eyebrow="Matematika Kompetisi · Peta Utama"
-      title="Jalur kompetisi yang terpisah dari kurikulum reguler."
+      title="Olimpiade Matematika dan ON-MIPA"
       lead="Fokus pada problem solving nonrutin, strategi, petunjuk bertahap, solusi lengkap, roadmap, dan latihan yang dibangun khusus untuk kompetisi."
       meta={["Olimpiade SD","Olimpiade SMP","Olimpiade SMA","ON-MIPA"]}
       stats={[
@@ -29,7 +29,7 @@ export default function OlimpiadePage() {
         {label:"Pilih Jalur",href:"#olimpiade-jalur",kind:"primary"},
         {label:"Bank Soal",href:"/bank-soal",kind:"secondary"},
       ]}
-      overviewTitle="Syllabus → roadmap → soal terkurasi → bank soal → challenge."
+      overviewTitle="Struktur Jalur Kompetisi"
       overviewText="Setiap jenjang memiliki struktur kompetisi yang sama agar pengguna tidak perlu mempelajari ulang pola navigasi."
       roadmap={olympiadHubs.map((hub)=>hub.title.id)}
       sections={[{id:"olimpiade-jalur",label:"Jalur Kompetisi"}]}
@@ -37,7 +37,7 @@ export default function OlimpiadePage() {
       <section id="olimpiade-jalur" className="book-section ird-practice-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Jalur Kompetisi</span>
-        <h2>Pilih jenjang kompetisi.</h2>
+        <h2>Daftar Jalur Kompetisi</h2>
         <div className="ird-worked-grid">
           {olympiadHubs.map((hub,index)=>(
             <article className="ird-worked-card" key={hub.slug}>

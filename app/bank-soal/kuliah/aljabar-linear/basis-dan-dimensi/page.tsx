@@ -36,7 +36,7 @@ export default function BasisDimensionBankPage() {
       <section className="section ird-overview">
         <div className="container narrow">
           <span className="eyebrow">Cakupan Bank Soal</span>
-          <h2>Satu alur konsep, seratus variasi masalah.</h2>
+          <h2>Topik Bank Soal</h2>
           <div className="ird-roadmap">
             {["Kombinasi linear","Span","Bebas linear","Basis","Koordinat","Dimensi","Subruang","Rank–Nullity"].map((item,index)=>(
               <div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>
@@ -51,7 +51,7 @@ export default function BasisDimensionBankPage() {
             <section className="book-section ird-practice-section">
               <div className="section-number">01</div>
               <span className="eyebrow">Bank Soal</span>
-              <h2>Pilih soal berdasarkan topik dan tingkat kesulitan.</h2>
+              <h2>Daftar Soal</h2>
               <ProblemBank />
             </section>
           </article>

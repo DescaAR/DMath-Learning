@@ -15,7 +15,7 @@ export default function BankSoalPage() {
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Bank Soal"}]}
       eyebrow="Bank Soal · Latihan Terstruktur"
-      title="Banyak soal, tetap terstruktur dan bermakna."
+      title="Bank Soal Matematika"
       lead="Bank Soal adalah katalog besar per bab. Pilih soal, coba mandiri, buka petunjuk bila diperlukan, lalu buka solusi lengkap pada halaman detail."
       meta={["Filter","Kesulitan bertahap","Petunjuk","Solusi lengkap"]}
       stats={[
@@ -28,9 +28,9 @@ export default function BankSoalPage() {
         {label:"Buka Bank Soal",href:"#bank-tersedia",kind:"primary"},
         {label:"Indeks Pembahasan",href:"/pembahasan",kind:"secondary"},
       ]}
-      overviewTitle="Kerjakan → buka petunjuk → buka solusi → audit kesalahan."
-      overviewText="Struktur halaman soal dibuat sama seperti bab Integral Riemann: metadata, gambaran konsep, soal, petunjuk, solusi bertahap, jawaban akhir, kesalahan umum, dan insight."
-      roadmap={["Pilih Bab","Filter Soal","Kerjakan","Petunjuk","Buka Solusi","Evaluasi"]}
+      overviewTitle="Struktur Bank Soal"
+      overviewText="Setiap halaman soal memuat pernyataan soal, petunjuk, Diketahui, Dicari atau Dibuktikan, Ide Utama, pembahasan langkah demi langkah, dan kesimpulan."
+      roadmap={["Pilih Bab","Filter Soal","Kerjakan","Petunjuk","Pembahasan","Kesimpulan"]}
       sections={[
         {id:"bank-tersedia",label:"Bank Soal Tersedia"},
         {id:"bank-alur",label:"Alur Penggunaan"},
@@ -39,7 +39,7 @@ export default function BankSoalPage() {
       <section id="bank-tersedia" className="book-section ird-practice-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Bank Soal Tersedia</span>
-        <h2>Basis dan Dimensi — 100 Soal.</h2>
+        <h2>Basis dan Dimensi</h2>
         <article className="ird-worked-card">
           <div className="ird-worked-head"><div className="ird-problem-number">100</div><div><span className="eyebrow">Kuliah · Aljabar Linear</span><h3>Basis dan Dimensi</h3></div></div>
           <div className="ird-worked-prompt"><p>20 Dasar, 30 Menengah, 30 Sulit, 15 Sangat Sulit, dan 5 Challenge. Tipe soal mencakup konsep, hitungan, pembuktian, true/false, counterexample, dan construction.</p></div>
@@ -53,7 +53,7 @@ export default function BankSoalPage() {
       <section id="bank-alur" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">Alur Penggunaan</span>
-        <h2>Filter, cari, pilih, baru buka solusi.</h2>
+        <h2>Penggunaan Bank Soal</h2>
         <div className="ird-roadmap">{["Search","Subbab","Kesulitan","Tipe soal","Random problem","Detail soal","Petunjuk","Solusi lengkap"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}</div>
       </section>
     </RiemannHubShell>

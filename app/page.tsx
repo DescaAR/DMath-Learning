@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     path: "/",
     keywords: ["platform belajar matematika Indonesia", "belajar matematika online"],
   }),
-  title: { absolute: "DMath Learning — Belajar Matematika Lebih Dalam" },
+  title: { absolute: "DMath Learning | Materi dan Latihan Matematika" },
 };
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <RiemannHubShell
       eyebrow="DMath Learning · Think Deeper, Solve Better."
-      title="Bangun Pemahaman. Asah Cara Berpikir."
+      title="DMath Learning"
       lead="Belajar matematika sebagai struktur yang utuh: intuisi, definisi formal, teorema, pembuktian, visualisasi, contoh terbahas, latihan bertahap, dan bank soal."
       meta={["SD–SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
@@ -33,9 +33,9 @@ export default function Home() {
         {label:"Mulai dari Materi",href:"/materi",kind:"primary"},
         {label:"Jelajahi Bank Soal",href:"/bank-soal",kind:"secondary"},
       ]}
-      overviewTitle="Concept → Intuition → Formalization → Example → Practice → Problem Solving → Mastery."
-      overviewText="Setiap bagian DMath Learning dibuat untuk benar-benar dipelajari, bukan sekadar dibaca."
-      roadmap={["Pilih Jalur","Pelajari Materi","Pahami Bukti","Kerjakan Latihan","Gunakan Bank Soal","Evaluasi Solusi"]}
+      overviewTitle="Struktur Pembelajaran"
+      overviewText="Materi disusun dari pengantar dan konsep menuju definisi, pembuktian, contoh, visualisasi, latihan, dan bank soal."
+      roadmap={["Jalur Belajar","Materi","Definisi & Bukti","Contoh & Visualisasi","Latihan","Bank Soal"]}
       sections={[
         {id:"home-jalur",label:"Jalur Belajar"},
         {id:"home-materi",label:"Materi Tersedia"},
@@ -47,7 +47,7 @@ export default function Home() {
       <section id="home-jalur" className="book-section ird-source-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Jalur Belajar</span>
-        <h2>Dari fondasi sekolah hingga kompetisi mahasiswa.</h2>
+        <h2>Jalur Belajar</h2>
         <div className="ird-worked-grid">
           {learningTracks.map((track,index)=>(
             <article className="ird-worked-card" key={track.title}>
@@ -62,7 +62,7 @@ export default function Home() {
       <section id="home-materi" className="book-section ird-practice-section">
         <div className="section-number">02</div>
         <span className="eyebrow">Materi Published</span>
-        <h2>Bab digital dengan teori, bukti, contoh, dan visualisasi.</h2>
+        <h2>Materi Tersedia</h2>
         <div className="ird-worked-grid">
           {featured.map((item,index)=>(
             <article className="ird-worked-card" key={item.title}>
@@ -78,7 +78,7 @@ export default function Home() {
       <section id="home-unggulan" className="book-section ird-source-section">
         <div className="section-number">03</div>
         <span className="eyebrow">Bab Unggulan</span>
-        <h2>Integral Riemann menjadi acuan struktur seluruh website.</h2>
+        <h2>Struktur Acuan Materi</h2>
         <p>Struktur hero, roadmap, sidebar progres, bagian bernomor, blok formal, latihan, solusi, dan navigasi lanjut kini digunakan sebagai bahasa desain utama DMath Learning.</p>
         <div className="actions">
           <Link className="btn primary" href="/materi/integral-riemann">Buka Integral Riemann</Link>
@@ -89,14 +89,14 @@ export default function Home() {
       <section id="home-bidang" className="book-section ird-source-section">
         <div className="section-number">04</div>
         <span className="eyebrow">Bidang Matematika</span>
-        <h2>Hubungan antarkonsep tetap terlihat.</h2>
+        <h2>Bidang Matematika</h2>
         <div className="ird-roadmap">{subjects.map((subject,index)=><div key={subject}><span>{String(index+1).padStart(2,"0")}</span><strong>{subject}</strong></div>)}</div>
       </section>
 
       <section id="home-lanjut" className="book-section ird-source-section">
         <div className="section-number">05</div>
         <span className="eyebrow">Lanjut Belajar</span>
-        <h2>Materi untuk memahami, soal untuk menguji.</h2>
+        <h2>Latihan dan Bank Soal</h2>
         <p>Setelah membaca materi, lanjutkan ke latihan terkurasi atau bank soal agar konsep berubah menjadi kemampuan problem solving.</p>
         <div className="actions"><Link className="btn primary" href="/materi">Buka Materi</Link><Link className="btn secondary" href="/bank-soal">Bank Soal</Link></div>
       </section>

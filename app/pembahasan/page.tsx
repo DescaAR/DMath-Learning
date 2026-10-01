@@ -15,8 +15,8 @@ export default function PembahasanPage() {
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Pembahasan"}]}
       eyebrow="Indeks Pembahasan · Solusi Lengkap"
-      title="Seratus pembahasan, masing-masing punya halaman sendiri."
-      lead="Setiap halaman detail mengikuti struktur yang sama: soal, petunjuk, Diketahui, Dibuktikan/Dicari, Ide Utama, solusi bertahap, jawaban akhir, kesalahan umum, dan insight."
+      title="Pembahasan Soal Matematika"
+      lead="Setiap halaman detail memuat soal, petunjuk, Diketahui, Dicari atau Dibuktikan, Ide Utama, pembahasan bertahap, dan kesimpulan."
       meta={["Basis & Dimensi","100 soal","Solusi bertahap","Insight"]}
       stats={[
         {value:100,label:"pembahasan"},
@@ -25,15 +25,15 @@ export default function PembahasanPage() {
         {value:"1/soal",label:"halaman detail"},
       ]}
       actions={[{label:"Jelajahi Pembahasan",href:"#pembahasan-indeks",kind:"primary"},{label:"Bank Soal",href:"/bank-soal",kind:"secondary"}]}
-      overviewTitle="Soal → petunjuk → ide utama → solusi → evaluasi."
+      overviewTitle="Struktur Pembahasan"
       overviewText="Gunakan pembahasan setelah mencoba soal agar proses belajar tetap aktif."
-      roadmap={["Soal","Petunjuk","Diketahui","Target","Ide Utama","Solusi","Jawaban Akhir","Insight"]}
+      roadmap={["Soal","Petunjuk","Diketahui","Dicari / Dibuktikan","Ide Utama","Pembahasan","Kesimpulan"]}
       sections={[{id:"pembahasan-indeks",label:"Indeks Pembahasan"}]}
     >
       <section id="pembahasan-indeks" className="book-section ird-practice-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Indeks Pembahasan</span>
-        <h2>Pilih soal yang ingin dipelajari.</h2>
+        <h2>Indeks Pembahasan</h2>
         <SolutionsIndexClient />
       </section>
     </RiemannHubShell>
