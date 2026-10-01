@@ -476,11 +476,17 @@ function WorkedExerciseVisual({ exercise }: { exercise: IntegralWorkedExercise }
   return null;
 }
 
-function SectionVisual({ index }: { index: number }) {
-  if (index === 1) return <RefinementVisual />;
-  if (index === 3) return <InteractiveRiemannDarboux />;
-  if (index === 6) return <DiscontinuityVisual />;
-  if (index === 8) return <OscillationVisual />;
+function SubsectionVisual({ sectionIndex, subIndex }: { sectionIndex:number; subIndex:number }) {
+  if (sectionIndex===1 && subIndex===0) return <PartitionLabelVisual/>;
+  if (sectionIndex===3 && subIndex===0) return <InteractiveRiemannDarboux/>;
+  if (sectionIndex===3 && subIndex===1) return <RefinementVisual/>;
+  if (sectionIndex===5 && subIndex===0) return <EquivalenceVisual/>;
+  if (sectionIndex===6 && subIndex===3) return <DiscontinuityVisual/>;
+  return null;
+}
+function DirectSectionVisual({ sectionIndex }: { sectionIndex:number }) {
+  if (sectionIndex===4) return <DarbouxIntegralVisual/>;
+  if (sectionIndex===8) return <OscillationVisual/>;
   return null;
 }
 
@@ -581,13 +587,14 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                 <span className="eyebrow">Bagian {sectionIndex+1}</span>
                 <h2>{section.title}</h2>
                 {section.blocks.map((block,index)=><FormalBlock key={section.title+"-b-"+index} block={block} index={index} />)}
+                <DirectSectionVisual sectionIndex={sectionIndex} />
                 {section.subsections.map((sub,subIndex)=>(
                   <div className="ird-subsection" key={sub.title}>
                     <h3>{sub.title}</h3>
                     {sub.blocks.map((block,index)=><FormalBlock key={sub.title+"-"+index} block={block} index={index} />)}
+                    <SubsectionVisual sectionIndex={sectionIndex} subIndex={subIndex} />
                   </div>
                 ))}
-                <SectionVisual index={sectionIndex} />
               </section>
             ))}
 
@@ -595,7 +602,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               <div className="section-number">10</div>
               <span className="eyebrow">Latihan Soal dan Solusi</span>
               <h2>13 latihan soal Integral Riemann dan Darboux</h2>
-              <p>Soal ditulis dengan kalimat perintah aktif. Buka pembahasan setelah mencoba menyelesaikan soal secara mandiri. Visualisasi disediakan pada soal yang paling terbantu oleh interpretasi geometris.</p>
+              <p>Soal ditulis dengan kalimat perintah aktif. Buka solusi setelah mencoba menyelesaikan soal secara mandiri. Visualisasi disediakan pada soal yang paling terbantu oleh interpretasi geometris.</p>
               <div className="ird-worked-grid">
                 {integralRiemannWorkedExercises.map((exercise,index)=>(
                   <div className="ird-worked-wrap" key={index}>
