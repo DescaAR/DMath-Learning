@@ -24,6 +24,7 @@ export type BookSubject = {
   level:string;
   source:string;
   sourceYear:string;
+  curriculumVersion?:string;
   chapters:BookChapter[];
 };
 
@@ -176,7 +177,160 @@ export const complexAnalysisBook:BookSubject={
   ]
 };
 
-export const bookSubjects=[realAnalysisBook,complexAnalysisBook,...additionalBookSubjects,...expandedBookSubjects] as const;
+type CurriculumUnit={
+  title:string;
+  from:string[];
+};
+
+const dmathCurriculumBlueprints:Record<BookSubject["slug"],CurriculumUnit[]>={
+  "analisis-real":[
+    {title:"Fondasi Analisis dan Sistem Bilangan Real",from:["1","2"]},
+    {title:"Barisan, Kelengkapan, dan Deret Dasar",from:["3"]},
+    {title:"Limit dan Kontinuitas",from:["4","5"]},
+    {title:"Diferensiasi dan Aproksimasi Lokal",from:["6"]},
+    {title:"Integrasi Riemann dan Darboux",from:["7"]},
+    {title:"Konvergensi Fungsi dan Deret",from:["8","9"]},
+    {title:"Integrasi Lanjut",from:["10"]},
+    {title:"Topologi Real dan Ruang Metrik",from:["11"]},
+  ],
+  "analisis-kompleks":[
+    {title:"Bilangan Kompleks dan Geometri Bidang",from:["1"]},
+    {title:"Fungsi Kompleks, Limit, dan Transformasi",from:["2"]},
+    {title:"Analitik, Cauchy–Riemann, dan Harmonik",from:["3"]},
+    {title:"Fungsi Elementer, Cabang, dan Multinilai",from:["4"]},
+    {title:"Integral Kontur dan Teori Cauchy",from:["5"]},
+    {title:"Deret, Singularitas, dan Residu",from:["6"]},
+    {title:"Pemetaan Konformal dan Masalah Batas",from:["7"]},
+  ],
+  "kombinatorika":[
+    {title:"Fondasi Pencacahan dan Struktur Diskret",from:["1","2"]},
+    {title:"Pigeonhole, Koefisien Binomial, dan Inklusi–Eksklusi",from:["3","5","6"]},
+    {title:"Konstruksi Kombinatorial dan Barisan Pencacahan",from:["4","8"]},
+    {title:"Rekurensi dan Fungsi Pembangkit",from:["7"]},
+    {title:"Sistem Wakil, Matching, dan Pemilihan",from:["9"]},
+    {title:"Desain, Simetri, dan Pencacahan Orbit",from:["10","14"]},
+    {title:"Graf sebagai Struktur Kombinatorial",from:["11","12"]},
+    {title:"Digraf, Jaringan, dan Optimasi Diskret",from:["13"]},
+  ],
+  "aljabar-linear":[
+    {title:"Sistem Linear, Matriks, dan Determinan",from:["1","2"]},
+    {title:"Ruang Vektor, Basis, dan Koordinat",from:["3","4"]},
+    {title:"Transformasi Linear dan Representasi Matriks",from:["8"]},
+    {title:"Nilai Eigen, Diagonalisasi, dan Bentuk Kuadratik",from:["5","7"]},
+    {title:"Ortogonalitas dan Ruang Hasil Kali Dalam",from:["6"]},
+    {title:"Komputasi dan Metode Numerik",from:["9"]},
+    {title:"Model dan Aplikasi Aljabar Linear",from:["10"]},
+  ],
+  "struktur-aljabar":[
+    {title:"Bahasa Struktur: Relasi, Fungsi, dan Aritmetika Modular",from:["1","2"]},
+    {title:"Grup, Subgrup, Koset, dan Homomorfisma",from:["3","4"]},
+    {title:"Struktur Grup Hingga dan Aksi Simetri",from:["5","6","7"]},
+    {title:"Ring, Ideal, dan Ring Faktor",from:["8","9"]},
+    {title:"Domain, Faktorisasi, dan Polinom",from:["10","11"]},
+    {title:"Ruang Vektor dan Perluasan Field",from:["12"]},
+    {title:"Aljabar untuk Kriptografi",from:["13"]},
+    {title:"Aljabar dan Konstruksi Geometri",from:["14"]},
+  ],
+  "olimpiade-matematika-sma":[
+    {title:"Fondasi Aritmetika dan Manipulasi Aljabar",from:["2"]},
+    {title:"Strategi Pemecahan Masalah dan Teknik Pembuktian",from:["1","3"]},
+    {title:"Barisan, Deret, dan Rekurensi",from:["5","7"]},
+    {title:"Pertidaksamaan Olimpiade",from:["8"]},
+    {title:"Data, Pola, dan Penalaran Diskret",from:["4"]},
+    {title:"Masalah Campuran dan Sintesis Strategi",from:["6"]},
+  ],
+  "kalkulus":[
+    {title:"Fondasi, Fungsi, dan Model",from:["A","1"]},
+    {title:"Limit, Kontinuitas, dan Turunan",from:["2","3"]},
+    {title:"Aplikasi Turunan dan Optimasi",from:["4"]},
+    {title:"Integral Tentu dan Akumulasi",from:["5","6"]},
+    {title:"Fungsi Transenden dan Teknik Integrasi",from:["7","8"]},
+    {title:"Barisan, Deret, dan Aproksimasi Tak Hingga",from:["10"]},
+    {title:"Kurva Parametrik, Polar, dan Geometri Vektor",from:["11","12","13"]},
+    {title:"Kalkulus Diferensial Multivariabel",from:["14"]},
+    {title:"Integral Lipat dan Kalkulus Vektor",from:["15","16"]},
+    {title:"Persamaan Diferensial dalam Kalkulus",from:["9","17"]},
+  ],
+  "teori-graf":[
+    {title:"Model Graf, Keterhubungan, Lintasan, dan Siklus",from:["1","2"]},
+    {title:"Pohon, Struktur Minimum, dan Algoritma",from:["3","8"]},
+    {title:"Planaritas, Dualitas, dan Pewarnaan",from:["4","5"]},
+    {title:"Matching, Konektivitas, dan Aliran Jaringan",from:["6"]},
+    {title:"Matroid dan Independensi Kombinatorial",from:["7"]},
+  ],
+  "teori-bilangan-olimpiade":[
+    {title:"Keterbagian dan Aritmetika Modular",from:["1","2"]},
+    {title:"Fungsi Aritmetika, Faktorisasi, dan Valuasi",from:["3","6"]},
+    {title:"Persamaan Diophantine dan Konstruksi Integer",from:["4","9"]},
+    {title:"Orde, Akar Primitif, dan Kongruensi Lanjut",from:["5"]},
+    {title:"Polinom Integer dan Teknik Aljabar",from:["7"]},
+    {title:"Residu Kuadrat dan Struktur Modulo Prima",from:["8"]},
+  ],
+  "persamaan-diferensial":[
+    {title:"Pemodelan ODE dan Persamaan Orde Satu",from:["1","2"]},
+    {title:"Persamaan Linear Orde Dua",from:["3"]},
+    {title:"Dinamika Kualitatif dan Sistem Nonlinear",from:["4","11"]},
+    {title:"Deret Pangkat dan Fungsi Khusus",from:["5","8"]},
+    {title:"Fourier, PDE, dan Masalah Nilai Batas",from:["6","7"]},
+    {title:"Transformasi Laplace dan Sistem ODE",from:["9","10"]},
+    {title:"Kalkulus Variasi, Eksistensi, dan Keunikan",from:["12","13"]},
+    {title:"Metode Numerik untuk Persamaan Diferensial",from:["14"]},
+  ],
+};
+
+function buildDMathCurriculum(subject:BookSubject):BookSubject{
+  const blueprint=dmathCurriculumBlueprints[subject.slug];
+  const byChapter=new Map(subject.chapters.map((chapter)=>[chapter.number,chapter]));
+  const used=new Set<string>();
+
+  const chapters:BookChapter[]=blueprint.map((unit,chapterIndex)=>{
+    const sections=unit.from.flatMap((number)=>byChapter.get(number)?.sections??[]);
+    sections.forEach((section)=>used.add(section.slug));
+    return{
+      number:String(chapterIndex+1),
+      title:unit.title,
+      sourceTitle:"DMath Learning Curriculum",
+      sections:sections.map((section,sectionIndex)=>({
+        ...section,
+        number:String(chapterIndex+1)+"."+(sectionIndex+1),
+        sourceTitle:"DMath Learning",
+      })),
+    };
+  });
+
+  const leftovers=subject.chapters
+    .flatMap((chapter)=>chapter.sections)
+    .filter((section)=>!used.has(section.slug));
+
+  if(leftovers.length>0){
+    chapters.push({
+      number:String(chapters.length+1),
+      title:"Topik Lanjutan dan Koneksi",
+      sourceTitle:"DMath Learning Curriculum",
+      sections:leftovers.map((section,index)=>({
+        ...section,
+        number:String(chapters.length+1)+"."+(index+1),
+        sourceTitle:"DMath Learning",
+      })),
+    });
+  }
+
+  return{
+    ...subject,
+    curriculumVersion:"DMath Curriculum v1",
+    subtitle:subject.subtitle+" Disusun ulang dalam jalur belajar DMath Learning yang independen dari urutan satu buku tertentu.",
+    chapters,
+  };
+}
+
+const referenceSubjects:BookSubject[]=[
+  realAnalysisBook,
+  complexAnalysisBook,
+  ...additionalBookSubjects,
+  ...expandedBookSubjects,
+];
+
+export const bookSubjects=referenceSubjects.map(buildDMathCurriculum);
 export const bookSubjectMap=Object.fromEntries(bookSubjects.map((subject)=>[subject.slug,subject])) as Record<string,BookSubject>;
 export const allBookSections=bookSubjects.flatMap((subject)=>subject.chapters.flatMap((chapter)=>chapter.sections.map((section)=>({subject,chapter,section}))));
 export function getBookSection(subjectSlug:string,sectionSlug:string){
