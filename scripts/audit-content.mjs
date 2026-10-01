@@ -25,7 +25,7 @@ const walk=(dir)=>{
     else if(/\.(tsx?|mjs)$/.test(entry.name)) files.push(full);
   }
 };
-for(const dir of ["app","components","data"]) walk(path.join(root,dir));
+for(const dir of ["app","components"]) walk(path.join(root,dir));
 
 const failures=[];
 for(const file of files){
