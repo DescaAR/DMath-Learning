@@ -1,3 +1,4 @@
+import type { ContentProvenance } from "@/data/book-content-types";
 export type PracticeText={id:string;en:string};
 export type MaterialPracticeProblem={
   id:string;
@@ -6,6 +7,8 @@ export type MaterialPracticeProblem={
   prompt:PracticeText;
   hint:PracticeText;
   answer:PracticeText;
+  provenance?:ContentProvenance;
+  sourceNote?:string;
 };
 
 export const materialPractice:Record<string,MaterialPracticeProblem[]>={
