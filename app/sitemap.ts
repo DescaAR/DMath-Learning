@@ -12,8 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/materi",
     "/bank-soal",
     "/olimpiade",
-    "/pembahasan",    "/tentang",
-    "/search",
+    "/pembahasan",
+    "/tentang",
     "/kuliah/aljabar-linear/basis-dan-dimensi",
     "/kuliah/aljabar-linear/basis-dan-dimensi/latihan",
     "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi",
@@ -26,9 +26,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     (problem) => "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + problem.id.toLowerCase()
   );
 
-  return [...staticRoutes, ...trackRoutes, ...olympiadRoutes, ...materialRoutes, ...problemRoutes].map((route) => ({
+  const routes = [...staticRoutes, ...trackRoutes, ...olympiadRoutes, ...materialRoutes, ...problemRoutes];
+
+  return routes.map((route) => ({
     url: siteConfig.url + route,
-    lastModified: new Date(),
-    priority: route === "" ? 1 : route.includes("/bank-soal/kuliah/") ? 0.75 : 0.7,
+    changeFrequency: route === "" ? "weekly" : route.startsWith("/materi/") ? "monthly" : "monthly",
+    priority:
+      route === ""
+        ? 1
+        : route === "/materi" || route === "/bank-soal" || route === "/olimpiade"
+          ? 0.9
+          : route.startsWith("/materi/")
+            ? 0.85
+            : route.includes("/bank-soal/kuliah/")
+              ? 0.75
+              : 0.7,
   }));
 }
