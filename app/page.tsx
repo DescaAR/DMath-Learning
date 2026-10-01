@@ -39,7 +39,6 @@ export default function Home() {
       sections={[
         {id:"home-jalur",label:"Jalur Belajar"},
         {id:"home-materi",label:"Materi Tersedia"},
-        {id:"home-unggulan",label:"Bab Unggulan"},
         {id:"home-bidang",label:"Bidang Matematika"},
         {id:"home-lanjut",label:"Lanjut Belajar"},
       ]}
@@ -75,26 +74,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="home-unggulan" className="book-section ird-source-section">
-        <div className="section-number">03</div>
-        <span className="eyebrow">Bab Unggulan</span>
-        <h2>Struktur Materi</h2>
-        <p>Halaman materi menggunakan struktur yang konsisten untuk pengantar, definisi, hasil formal, contoh, visualisasi, latihan, pembahasan, dan navigasi.</p>
-        <div className="actions">
-          <Link className="btn primary" href="/materi/integral-riemann">Buka Integral Riemann</Link>
-          <Link className="btn secondary" href="/kuliah/aljabar-linear/basis-dan-dimensi">Buka Basis & Dimensi</Link>
-        </div>
-      </section>
-
       <section id="home-bidang" className="book-section ird-source-section">
-        <div className="section-number">04</div>
+        <div className="section-number">03</div>
         <span className="eyebrow">Bidang Matematika</span>
         <h2>Bidang Matematika</h2>
         <div className="ird-roadmap">{subjects.map((subject,index)=><div key={subject}><span>{String(index+1).padStart(2,"0")}</span><strong>{subject}</strong></div>)}</div>
       </section>
 
       <section id="home-lanjut" className="book-section ird-source-section">
-        <div className="section-number">05</div>
+        <div className="section-number">04</div>
         <span className="eyebrow">Lanjut Belajar</span>
         <h2>Latihan dan Bank Soal</h2>
         <p>Setelah membaca materi, lanjutkan ke latihan terkurasi atau bank soal agar konsep berubah menjadi kemampuan problem solving.</p>
