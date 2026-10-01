@@ -24,7 +24,11 @@ export type VisualizationKind =
   | "graph-theory"
   | "number-theory"
   | "differential-equations"
-  | "numerical-analysis";
+  | "numerical-analysis"
+  | "operations-research"
+  | "statistics"
+  | "stochastic-process"
+  | "measure-probability";
 
 function FigureShell({
   title,
@@ -410,6 +414,84 @@ export function MathVisualization({ kind }: { kind: VisualizationKind }) {
           <path d="M260 43 A92 92 0 0 1 347 106" className="svg-arrow" />
           <line x1={pts[1][0]} y1={pts[1][1]} x2={pts[5][0]} y2={pts[5][1]} className="svg-line-accent"/>
           <text x="350" y="58" className="svg-label">mod m</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+
+  if (kind === "operations-research") {
+    return (
+      <FigureShell
+        title="Daerah feasible dan arah optimisasi"
+        caption="Model optimisasi memisahkan himpunan keputusan yang feasible dari fungsi tujuan. Titik ekstrem dan garis objektif membantu melihat struktur solusi program linear."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Feasible region and optimization direction" : "Daerah feasible dan arah optimisasi"}>
+          <Axis x={55} y={235} width={420} height={185} />
+          <polygon points="75,220 75,135 170,80 330,105 400,180 340,220" className="svg-region"/>
+          <line x1="115" y1="205" x2="350" y2="95" className="svg-line-accent"/>
+          <line x1="145" y1="225" x2="380" y2="115" className="svg-dash"/>
+          <circle cx="330" cy="105" r="6" className="svg-point"/>
+          <text x="338" y="96" className="svg-label">optimal</text>
+          <text x="190" y="165" className="svg-label">feasible region</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "statistics") {
+    return (
+      <FigureShell
+        title="Data, model, dan ketidakpastian"
+        caption="Statistika menghubungkan variasi pada data dengan pola model. Visualisasi membantu memisahkan signal, noise, residual, dan ketidakpastian inferensi."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Scatter data with fitted trend" : "Data sebar dengan garis kecenderungan"}>
+          <Axis x={55} y={235} width={420} height={185} />
+          {[[85,205],[120,190],[150,198],[180,165],[215,172],[250,145],[285,150],[320,120],[355,128],[395,92],[430,104]].map((p,i)=><circle key={i} cx={p[0]} cy={p[1]} r="5" className="svg-point"/>)}
+          <line x1="75" y1="212" x2="445" y2="88" className="svg-line-accent"/>
+          <line x1="320" y1="120" x2="320" y2="130" className="svg-dash"/>
+          <text x="329" y="129" className="svg-label">residual</text>
+          <text x="360" y="81" className="svg-label">model</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "stochastic-process") {
+    const path1=[[55,170],[90,150],[120,180],[150,130],[185,145],[220,105],[255,135],[290,92],[325,112],[360,75],[400,102],[450,70]];
+    const path2=[[55,170],[90,188],[120,158],[150,195],[185,165],[220,182],[255,150],[290,172],[325,142],[360,160],[400,130],[450,145]];
+    return (
+      <FigureShell
+        title="Lintasan acak dan evolusi informasi"
+        caption="Proses stokastik dipelajari sebagai keluarga variabel acak yang berkembang terhadap waktu. Lintasan berbeda dapat berasal dari model probabilistik yang sama."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Two stochastic sample paths" : "Dua contoh lintasan proses stokastik"}>
+          <Axis x={55} y={235} width={420} height={185} />
+          <polyline points={path1.map(p=>p.join(",")).join(" ")} className="svg-curve"/>
+          <polyline points={path2.map(p=>p.join(",")).join(" ")} className="svg-line-accent"/>
+          <line x1="255" y1="55" x2="255" y2="235" className="svg-dash"/>
+          <text x="263" y="70" className="svg-label">information at t</text>
+          <text x="390" y="64" className="svg-label">sample path</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "measure-probability") {
+    return (
+      <FigureShell
+        title="Himpunan terukur, ukuran, dan integrasi"
+        caption="Teori ukuran membangun probabilitas dari sigma-algebra dan measure. Integral kemudian mengakumulasi nilai fungsi berdasarkan ukuran, bukan hanya panjang interval."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Measurable sets and weighted regions" : "Himpunan terukur dan daerah berbobot"}>
+          <rect x="60" y="48" width="390" height="185" rx="18" className="svg-region"/>
+          <ellipse cx="195" cy="140" rx="95" ry="62" className="svg-curve"/>
+          <ellipse cx="325" cy="140" rx="90" ry="68" className="svg-line-accent"/>
+          <circle cx="260" cy="140" r="7" className="svg-point"/>
+          <text x="112" y="78" className="svg-label">A</text>
+          <text x="392" y="80" className="svg-label">B</text>
+          <text x="238" y="132" className="svg-label">A ∩ B</text>
+          <text x="72" y="250" className="svg-label">μ assigns size to measurable sets</text>
         </svg>
       </FigureShell>
     );

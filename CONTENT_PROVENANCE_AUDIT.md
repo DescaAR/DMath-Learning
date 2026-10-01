@@ -123,3 +123,16 @@ For monetization-readiness:
 3. References remain “References and Further Reading”.
 4. The public DMath Curriculum must remain independent from the table of contents of any single source.
 5. If a source prohibits commercial use, DMath must use only the underlying mathematical ideas and independently develop the expression, examples, exercises, proofs, visuals, and curriculum structure.
+
+
+### Six new academic fields
+
+Added on 2026-10-01 as independent DMath Curriculum subjects:
+- Operations Research
+- Applied Statistics & Data Analysis
+- Mathematical Statistics
+- Discrete Mathematics
+- Stochastic Calculus
+- Measure Theory & Probability
+
+The uploaded books are used as coverage and terminology references only. Their exercise sets, case studies, figures, tables, screenshots, distinctive examples, and source chapter numbering are not copied into DMath Learning. Newly generated DMath examples and exercises for these subjects use dmath-original provenance.

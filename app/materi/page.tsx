@@ -23,7 +23,7 @@ export default function MateriPage() {
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Materi"}]}
       eyebrow="Perpustakaan Materi · Buku Digital"
       title="Bukan ringkasan satu halaman. Belajar sampai paham."
-      lead="Materi disusun per jenjang dan bidang. Buku digital besar—dari Analisis Real, Kalkulus, Aljabar, Teori Graf, Teori Bilangan Olimpiade, Persamaan Diferensial, sampai Analisis Numerik—dibagi menjadi unit dan submateri agar dapat dipelajari berurutan dan mendalam."
+      lead="Materi disusun per jenjang dan bidang. Buku digital DMath mencakup analisis, aljabar, kalkulus, diskrit, graf, teori bilangan, persamaan diferensial, analisis numerik, statistika, probabilitas, kalkulus stokastik, dan riset operasi; setiap bidang dibagi menjadi unit dan submateri agar dapat dipelajari berurutan dan mendalam."
       meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
         {value:bookSubjects.length,label:"buku digital"},

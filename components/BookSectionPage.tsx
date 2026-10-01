@@ -33,6 +33,12 @@ function visualizationForSubject(slug:BookSubject["slug"]):VisualizationKind{
     "teori-bilangan-olimpiade":"number-theory",
     "persamaan-diferensial":"differential-equations",
     "analisis-numerik":"numerical-analysis",
+    "riset-operasi":"operations-research",
+    "statistika-terapan":"statistics",
+    "statistika-matematika":"statistics",
+    "matematika-diskrit":"combinatorics",
+    "kalkulus-stokastik":"stochastic-process",
+    "teori-ukuran-probabilitas":"measure-probability",
   };
   return map[slug];
 }

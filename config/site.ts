@@ -23,6 +23,13 @@ export const siteConfig = {
     "aljabar linear",
     "analisis kompleks",
     "analisis numerik",
+    "probabilitas",
+    "teori ukuran",
+    "kalkulus stokastik",
+    "riset operasi",
+    "statistika terapan",
+    "statistika matematika",
+    "matematika diskrit",
   ],
   nav: [
     { label: "Beranda", href: "/" },

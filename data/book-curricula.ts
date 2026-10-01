@@ -1,6 +1,7 @@
 import { additionalBookSubjects } from "@/data/additional-book-curricula";
 import { expandedBookSubjects } from "@/data/expanded-book-curricula";
 import { numericalAnalysisBook } from "@/data/numerical-analysis-curricula";
+import { newAcademicSubjects } from "@/data/new-academic-curricula";
 
 export type BookSection = {
   number:string;
@@ -19,7 +20,7 @@ export type BookChapter = {
 };
 
 export type BookSubject = {
-  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar"|"olimpiade-matematika-sma"|"kalkulus"|"teori-graf"|"teori-bilangan-olimpiade"|"persamaan-diferensial"|"analisis-numerik";
+  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar"|"olimpiade-matematika-sma"|"kalkulus"|"teori-graf"|"teori-bilangan-olimpiade"|"persamaan-diferensial"|"analisis-numerik"|"riset-operasi"|"statistika-terapan"|"statistika-matematika"|"matematika-diskrit"|"kalkulus-stokastik"|"teori-ukuran-probabilitas";
   title:string;
   subtitle:string;
   level:string;
@@ -183,7 +184,7 @@ type CurriculumUnit={
   from:string[];
 };
 
-const dmathCurriculumBlueprints:Record<BookSubject["slug"],CurriculumUnit[]>={
+const dmathCurriculumBlueprints:Partial<Record<BookSubject["slug"],CurriculumUnit[]>>={
   "analisis-real":[
     {title:"Fondasi Analisis dan Sistem Bilangan Real",from:["1","2"]},
     {title:"Barisan, Kelengkapan, dan Deret Dasar",from:["3"]},
@@ -282,7 +283,7 @@ const dmathCurriculumBlueprints:Record<BookSubject["slug"],CurriculumUnit[]>={
 
 function buildDMathCurriculum(subject:BookSubject):BookSubject{
   if(subject.curriculumVersion==="DMath Curriculum v1")return subject;
-  const blueprint=dmathCurriculumBlueprints[subject.slug];
+  const blueprint=dmathCurriculumBlueprints[subject.slug]??[];
   const byChapter=new Map(subject.chapters.map((chapter)=>[chapter.number,chapter]));
   const used=new Set<string>();
 
@@ -332,6 +333,7 @@ const referenceSubjects:BookSubject[]=[
   ...additionalBookSubjects,
   ...expandedBookSubjects,
   numericalAnalysisBook,
+  ...newAcademicSubjects,
 ];
 
 export const bookSubjects=referenceSubjects.map(buildDMathCurriculum);
