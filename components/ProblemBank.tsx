@@ -94,8 +94,8 @@ export function ProblemBank() {
           <span className="eyebrow">{language==="en"?"Complete Problem Bank":"Bank Soal Lengkap"}</span>
           <h2>{language==="en"?"100 Basis and Dimension Problems":"100 soal Basis dan Dimensi"}</h2>
           <p>{language==="en"
-            ?"Distribution: 20 Basic · 30 Intermediate · 30 Advanced · 15 Very Advanced · 5 Challenge. Every problem has curated English wording, hints, a complete solution, common mistakes, and insight."
-            :"Distribusi: 20 Dasar · 30 Menengah · 30 Sulit · 15 Sangat Sulit · 5 Challenge. Setiap soal memiliki hint, pembahasan lengkap, kesalahan umum, dan insight."}</p>
+            ?"Distribution: 20 Basic · 30 Intermediate · 30 Advanced · 15 Very Advanced · 5 Challenge. Every problem has hints and a complete structured solution."
+            :"Distribusi: 20 Dasar · 30 Menengah · 30 Sulit · 15 Sangat Sulit · 5 Challenge. Setiap soal memiliki petunjuk dan pembahasan lengkap yang terstruktur."}</p>
         </div>
         <button className="btn secondary" type="button" onClick={randomProblem}>{language==="en"?"Random Problem":"Acak Soal"}</button>
       </div>

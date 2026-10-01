@@ -321,56 +321,130 @@ function directDefinitionExamples(slug:string):BookExample[]{
 }
 
 function examplesFor(subject:string,title:string,keyIdeas:string[]):BookExample[]{
-  const a=keyIdeas[0]??title;
-  const b=keyIdeas[1]??"struktur";
-  const c=keyIdeas[2]??"verifikasi";
-  const generic=[
-    {
-      title:"Contoh 1 · Mengenali Struktur",
-      problem:"Diberikan sebuah situasi kecil yang memuat "+a+" dan "+b+". Tentukan objek matematis utama, parameter yang diketahui, serta apa yang harus dicari.",
-      solution:[
-        "Diidentifikasi terlebih dahulu himpunan objek dan informasi yang diketahui.",
-        "Dibedakan antara parameter, variabel, asumsi, dan besaran yang akan ditentukan.",
-        "Situasi ditulis ulang menggunakan notasi pada submateri "+title+".",
-        "Hasil akhir diperiksa terhadap definisi sebelum diinterpretasikan."
-      ],
-      conclusion:"Langkah pemodelan yang benar dimulai dari struktur, bukan dari substitusi rumus."
-    },
-    {
-      title:"Contoh 2 · Memeriksa Asumsi",
-      problem:"Sebuah metode pada "+title+" akan diterapkan. Bagaimana menentukan apakah asumsi yang melibatkan "+b+" telah terpenuhi?",
-      solution:[
-        "Dituliskan hipotesis yang diperlukan oleh definisi atau teorema.",
-        "Setiap hipotesis dibandingkan dengan informasi masalah.",
-        "Jika ada asumsi yang tidak dapat diverifikasi, kesimpulan diberi batasan yang sesuai.",
-        "Dipilih alternatif metode apabila pelanggaran asumsi mengubah validitas hasil."
-      ],
-      conclusion:"Validitas metode ditentukan oleh hipotesisnya, bukan hanya oleh keberhasilan komputasi."
-    },
-    {
-      title:"Contoh 3 · Membandingkan Dua Pendekatan",
-      problem:"Bandingkan pendekatan langsung dan pendekatan berbasis "+c+" untuk persoalan pada "+title+".",
-      solution:[
-        "Ditetapkan tujuan yang sama untuk kedua pendekatan.",
-        "Dibandingkan informasi yang dibutuhkan, langkah utama, dan keluaran masing-masing.",
-        "Diperiksa keunggulan serta keterbatasannya pada kasus sederhana dan kasus ekstrem.",
-        "Dipilih pendekatan berdasarkan tujuan pembuktian, inferensi, atau komputasi."
-      ],
-      conclusion:"Pemilihan metode merupakan bagian dari penalaran matematis."
-    },
-    {
-      title:"Contoh 4 · Verifikasi Hasil",
-      problem:"Setelah memperoleh suatu jawaban pada "+title+", susun prosedur verifikasi yang tidak hanya mengulang perhitungan awal.",
-      solution:[
-        "Diperiksa kembali domain, feasibility, atau syarat definisional.",
-        "Digunakan identitas, bound, residual, kasus batas, atau representasi kedua yang relevan.",
-        "Hasil diuji pada contoh kecil yang dapat dihitung secara independen.",
-        "Interpretasi dibandingkan dengan skala dan asumsi masalah."
-      ],
-      conclusion:"Verifikasi independen membantu membedakan hasil yang benar dari hasil yang hanya tampak masuk akal."
+  const has=(pattern:RegExp)=>pattern.test((title+" "+keyIdeas.join(" ")).toLowerCase());
+  const ex=(name:string,problem:string,solution:string[],conclusion:string):BookExample=>({title:name,problem,solution,conclusion});
+
+  if(subject==="riset-operasi"){
+    if(has(/linear|simplex|dual|sensitiv|transport|assignment|flow|jalur|spanning|cpm|pert|integer|goal|nonlinear|kkt|quadratic/)){
+      return[
+        ex("Contoh 1 · Formulasi dan feasibility","Sebuah unit produksi membuat $x$ dan $y$. Keuntungan per unit masing-masing 4 dan 3. Sumber daya memberi kendala $2x+y\\le8$ dan $x+2y\\le8$, dengan $x,y\\ge0$. Tentukan apakah $(2,2)$ feasible dan hitung nilai objektifnya.",["Diperiksa kendala pertama: $2(2)+2=6\\le8$.","Diperiksa kendala kedua: $2+2(2)=6\\le8$.","Nonnegativitas juga dipenuhi.","Nilai objektif adalah $z=4(2)+3(2)=14$."],"Titik $(2,2)$ feasible dengan nilai objektif 14."),
+        ex("Contoh 2 · Membandingkan solusi feasible","Gunakan model yang sama. Bandingkan titik $(3,1)$ dan $(1,3)$.",["Kedua titik diperiksa terhadap seluruh kendala sebelum nilai objektif dibandingkan.","Untuk $(3,1)$ diperoleh $z=15$; untuk $(1,3)$ diperoleh $z=13$.","Perbandingan nilai objektif hanya sah karena kedua titik feasible."],"Di antara dua kandidat tersebut, $(3,1)$ memberi nilai objektif lebih besar.")
+      ];
     }
-  ];
-  return generic;
+    if(has(/markov|queue|antrean|poisson|inventory|newsvendor|forecast|simulation|monte carlo/)){
+      return[
+        ex("Contoh 1 · Model keadaan sederhana","Suatu sistem memiliki dua keadaan, 0 dan 1, dengan matriks transisi $P=\\begin{pmatrix}0.8&0.2\\\\0.3&0.7\\end{pmatrix}$. Jika sistem mulai pada keadaan 0, tentukan peluang berada pada keadaan 1 setelah satu langkah.",["Distribusi awal adalah $(1,0)$.","Setelah satu langkah, distribusi menjadi $(1,0)P=(0.8,0.2)$.","Komponen kedua menyatakan peluang keadaan 1."],"Peluang berada pada keadaan 1 setelah satu langkah adalah 0,2."),
+        ex("Contoh 2 · Interpretasi parameter","Pada antrean dengan laju kedatangan $\\lambda=4$ pelanggan/jam dan laju pelayanan $\\mu=6$ pelanggan/jam, hitung utilisasi server.",["Untuk model satu server dasar digunakan $\\rho=\\lambda/\\mu$.","Diperoleh $\\rho=4/6=2/3$.","Karena $\\rho<1$, kondisi kestabilan dasar terpenuhi."],"Utilisasi server adalah $2/3$.")
+      ];
+    }
+    return[
+      ex("Contoh 1 · Variabel keputusan dan tujuan","Sebuah keputusan mempunyai dua alternatif kuantitatif $x_1$ dan $x_2$. Tuliskan cara memisahkan variabel keputusan, parameter, fungsi tujuan, dan kendala.",["$x_1,x_2$ dinyatakan sebagai besaran yang dapat dipilih.","Koefisien biaya atau manfaat diperlakukan sebagai parameter yang diketahui.","Fungsi tujuan menyatakan ukuran kinerja yang dioptimalkan.","Kendala menyatakan batas keputusan yang diperbolehkan."],"Struktur model dipisahkan sebelum algoritma penyelesaian dipilih."),
+      ex("Contoh 2 · Pemeriksaan solusi","Sebuah algoritma menghasilkan kandidat $x^*$. Apa yang harus diperiksa sebelum menyebutnya optimal?",["Feasibility diperiksa terhadap seluruh kendala.","Nilai objektif dihitung dengan definisi yang benar.","Kondisi optimalitas atau bound yang sesuai metode diperiksa.","Jika model memakai aproksimasi atau heuristik, status solusi dinyatakan secara tepat."],"Solusi optimal harus didukung oleh feasibility dan alasan optimalitas.")
+    ];
+  }
+
+  if(subject==="statistika-terapan"){
+    if(has(/regresi|korelasi|linear model|logistik/)){
+      return[
+        ex("Contoh 1 · Garis regresi","Untuk pasangan data $(1,2),(2,3),(3,5)$, sebuah garis hasil fitting adalah $\\widehat y=0.33+1.50x$. Tentukan prediksi pada $x=4$.",["Substitusikan $x=4$ ke persamaan fitted.","Diperoleh $\\widehat y=0.33+1.50(4)=6.33$.","Nilai tersebut merupakan prediksi model, bukan observasi yang pasti."],"Prediksi respons pada $x=4$ adalah sekitar 6,33."),
+        ex("Contoh 2 · Residual","Jika observasi aktual pada $x=3$ adalah 5 dan model memberi prediksi 4,83, tentukan residual.",["Residual didefinisikan sebagai $e=y-\\widehat y$.","Diperoleh $e=5-4.83=0.17$."],"Residual positif menunjukkan observasi berada sedikit di atas prediksi.")
+      ];
+    }
+    if(has(/anova|treatment|block|latin|ancova|repeated|crossover|mixed|random effects/)){
+      return[
+        ex("Contoh 1 · Struktur variasi","Tiga perlakuan mempunyai mean sampel 8, 10, dan 12. Jelaskan dua sumber variasi yang dibandingkan pada ANOVA satu arah.",["Variasi antarperlakuan mengukur perbedaan mean kelompok terhadap mean keseluruhan.","Variasi dalam perlakuan mengukur penyebaran observasi di sekitar mean kelompoknya.","Statistik $F$ membandingkan dua skala variasi tersebut."],"ANOVA memisahkan variasi antar kelompok dari variasi residual."),
+        ex("Contoh 2 · Unit eksperimen","Dalam eksperimen pupuk, 24 pot diacak ke tiga perlakuan pupuk. Tentukan unit eksperimen dan faktor perlakuan.",["Objek yang menerima perlakuan secara independen adalah pot.","Faktor adalah jenis pupuk.","Level faktor adalah tiga perlakuan yang dibandingkan."],"Identifikasi unit eksperimen diperlukan sebelum model ANOVA ditentukan.")
+      ];
+    }
+    return[
+      ex("Contoh 1 · Ringkasan sampel","Untuk data $2,4,4,6,9$, tentukan mean dan median.",["Mean adalah $(2+4+4+6+9)/5=5$.","Data sudah berurutan dan nilai tengahnya 4."],"Mean sampel 5 dan median 4; keduanya mengukur pusat dengan cara berbeda."),
+      ex("Contoh 2 · Proporsi sampel","Dari 80 responden, 52 menjawab ya. Tentukan proporsi sampel.",["Proporsi sampel adalah $\\widehat p=x/n$.","Diperoleh $\\widehat p=52/80=0.65$."],"Proporsi sampel adalah 0,65.")
+    ];
+  }
+
+  if(subject==="statistika-matematika"){
+    if(has(/likelihood|maximum likelihood|fisher|cram|sufficient|completeness|estimator/)){
+      return[
+        ex("Contoh 1 · Likelihood Bernoulli","Untuk sampel Bernoulli $x=(1,0,1)$ dengan parameter $p$, tuliskan likelihood.",["Karena observasi independen, likelihood adalah hasil kali $p^{x_i}(1-p)^{1-x_i}$.","Untuk data tersebut diperoleh $L(p)=p^2(1-p)$."],"Likelihood merangkum dukungan data terhadap nilai parameter $p$."),
+        ex("Contoh 2 · Estimator rata-rata","Untuk sampel $x_1,\\ldots,x_n$ dari populasi bermmean $\\mu$, pertimbangkan $\\bar X$. Jelaskan mengapa estimator ini tak bias.",["Digunakan linearitas ekspektasi.","$E[\\bar X]=\\frac1n\\sum_iE[X_i]=\\frac1n(n\\mu)=\\mu$."],"Rata-rata sampel merupakan estimator tak bias untuk mean populasi.")
+      ];
+    }
+    if(has(/convergence|central limit|delta|asymptotic|mgf/)){
+      return[
+        ex("Contoh 1 · Normalisasi jumlah","Jika $X_i$ iid dengan mean 10 dan varians 4, tuliskan bentuk jumlah ternormalisasi untuk $S_n=\\sum X_i$.",["Mean $S_n$ adalah $10n$ dan simpangan bakunya $2\\sqrt n$.","Bentuk ternormalisasi adalah $(S_n-10n)/(2\\sqrt n)$."],"Normalisasi memusatkan jumlah pada 0 dan menskalakan varians menjadi 1."),
+        ex("Contoh 2 · Konvergensi estimator","Jika $\\operatorname{Var}(\\bar X)=\\sigma^2/n$, jelaskan perilakunya ketika $n$ membesar.",["Varians mengecil menuju 0.","Chebyshev memberi $P(|\\bar X-\\mu|\\ge\\varepsilon)\\le\\sigma^2/(n\\varepsilon^2)$.","Batas kanan menuju 0."],"Rata-rata sampel konvergen dalam probabilitas ke $\\mu$.")
+      ];
+    }
+    return[
+      ex("Contoh 1 · Variabel acak diskret","Sebuah variabel acak $X$ bernilai 0, 1, 2 dengan probabilitas $0.2,0.5,0.3$. Hitung $E[X]$.",["Digunakan $E[X]=\\sum_x xP(X=x)$.","Diperoleh $E[X]=0(0.2)+1(0.5)+2(0.3)=1.1$."],"Ekspektasi $X$ adalah 1,1."),
+      ex("Contoh 2 · Transformasi sederhana","Jika $Y=2X+1$, tentukan $E[Y]$ dari contoh sebelumnya.",["Linearitas ekspektasi memberi $E[Y]=2E[X]+1$.","Diperoleh $E[Y]=2(1.1)+1=3.2$."],"Ekspektasi $Y$ adalah 3,2.")
+    ];
+  }
+
+  if(subject==="matematika-diskrit"){
+    if(has(/logika|propos|kuantor|inferensi|bukti/)){
+      return[
+        ex("Contoh 1 · Negasi kuantor","Negasikan pernyataan: untuk setiap bilangan real $x$, berlaku $x^2\\ge0$.",["Negasi dari $\\forall x\\,P(x)$ adalah $\\exists x\\,\\neg P(x)$.","Diperoleh: terdapat bilangan real $x$ dengan $x^2<0$."],"Negasi mengubah kuantor universal menjadi eksistensial dan menegasikan predikat."),
+        ex("Contoh 2 · Modus ponens","Dari $P\\to Q$ dan $P$, simpulkan pernyataan yang sah.",["Aturan modus ponens menyatakan dari implikasi dan antesedennya dapat disimpulkan konsekuennya.","Kesimpulan yang sah adalah $Q$."],"Argumen tersebut valid.")
+      ];
+    }
+    if(has(/graf|tree|pohon|spanning|path|color|euler|hamilton/)){
+      return[
+        ex("Contoh 1 · Derajat graf","Graf sederhana memiliki sisi $\\{12,13,23,34\\}$. Tentukan derajat setiap simpul.",["Simpul 1 incident dengan dua sisi, jadi derajatnya 2.","Simpul 2 juga berderajat 2.","Simpul 3 incident dengan tiga sisi, jadi berderajat 3.","Simpul 4 berderajat 1."],"Jumlah derajat adalah 8, sama dengan dua kali banyak sisi."),
+        ex("Contoh 2 · Keterhubungan","Pada graf yang sama, tunjukkan adanya lintasan dari 1 ke 4.",["Sisi 13 menghubungkan 1 ke 3.","Sisi 34 menghubungkan 3 ke 4.","Urutan $1,3,4$ membentuk lintasan."],"Simpul 1 dan 4 berada pada komponen terhubung yang sama.")
+      ];
+    }
+    if(has(/count|kombin|permut|pigeon|inclusion|binomial/)){
+      return[
+        ex("Contoh 1 · Aturan perkalian","Sebuah kode terdiri dari 2 huruf diikuti 3 digit. Jika pengulangan diperbolehkan, berapa banyak kode?",["Setiap posisi huruf mempunyai 26 pilihan dan setiap posisi digit mempunyai 10 pilihan.","Aturan perkalian memberi $26^2\\cdot10^3=676000$."],"Terdapat 676000 kode."),
+        ex("Contoh 2 · Kombinasi","Dari 8 orang dipilih 3 orang tanpa memperhatikan urutan.",["Pemilihan tanpa urutan menggunakan kombinasi.","Diperoleh $\\binom83=56$."],"Terdapat 56 pilihan.")
+      ];
+    }
+    return[
+      ex("Contoh 1 · Relasi pada himpunan kecil","Pada $A=\\{1,2,3\\}$, definisikan $aRb$ jika $a\\le b$. Periksa refleksivitas.",["Untuk setiap $a\\in A$, selalu berlaku $a\\le a$.","Dengan demikian $(a,a)\\in R$ untuk setiap $a$."],"Relasi tersebut refleksif."),
+      ex("Contoh 2 · Rekurensi sederhana","Diberikan $a_1=2$ dan $a_n=a_{n-1}+3$. Tentukan empat suku pertama.",["$a_1=2$.","$a_2=5$, $a_3=8$, dan $a_4=11$."],"Empat suku pertama adalah 2, 5, 8, 11.")
+    ];
+  }
+
+  if(subject==="kalkulus-stokastik"){
+    if(has(/brownian|quadratic|ito|diffusion|sde/)){
+      return[
+        ex("Contoh 1 · Increment Brownian","Untuk Brownian motion standar, tentukan distribusi $W_5-W_2$.",["Panjang interval adalah 3.","Increment Brownian berdistribusi normal dengan mean 0 dan varians panjang interval."],"Diperoleh $W_5-W_2\\sim N(0,3)$."),
+        ex("Contoh 2 · Ekspektasi integral Itô","Untuk integrand deterministik square-integrable $H$, tentukan mean $\\int_0^tH_s\\,dW_s$.",["Integral Itô dari integrand square-integrable merupakan martingale yang berawal dari nol.","Ekspektasinya bernilai nol."],"Mean integral tersebut adalah 0.")
+      ];
+    }
+    if(has(/poisson|jump|levy/)){
+      return[
+        ex("Contoh 1 · Proses Poisson","Jika $N_t$ adalah proses Poisson berlaju 2 per jam, tentukan $E[N_3]$.",["Untuk proses Poisson berlaju $\\lambda$, berlaku $E[N_t]=\\lambda t$.","Diperoleh $E[N_3]=2\\cdot3=6$."],"Jumlah kejadian yang diharapkan selama tiga jam adalah 6."),
+        ex("Contoh 2 · Probabilitas tidak ada lompatan","Dengan laju yang sama, tentukan $P(N_1=0)$.",["$N_1\\sim\\operatorname{Poisson}(2)$.","$P(N_1=0)=e^{-2}$."],"Probabilitas tidak ada kejadian selama satu jam adalah $e^{-2}$.")
+      ];
+    }
+    return[
+      ex("Contoh 1 · Martingale jumlah parsial","Jika $X_1,X_2,\\ldots$ independen dan $E[X_n]=0$, definisikan $S_n=\\sum_{k=1}^nX_k$. Periksa kondisi satu langkah martingale.",["$S_n$ measurable terhadap informasi hingga waktu $n$.","$E[S_{n+1}\\mid\\mathcal F_n]=S_n+E[X_{n+1}\\mid\\mathcal F_n]$.","Independensi dan mean nol memberi suku kedua 0."],"Diperoleh $E[S_{n+1}\\mid\\mathcal F_n]=S_n$."),
+      ex("Contoh 2 · Tower property","Jika $\\mathcal H\\subseteq\\mathcal G$, jelaskan cara mereduksi $E[E[X\\mid\\mathcal G]\\mid\\mathcal H]$.",["Digunakan tower property untuk nested sigma-algebras.","Conditioning bertingkat dapat direduksi ke sigma-algebra yang lebih kecil."],"Diperoleh $E[X\\mid\\mathcal H]$.")
+    ];
+  }
+
+  if(subject==="teori-ukuran-probabilitas"){
+    if(has(/measure|ukuran|sigma|measurable|lebesgue|integral|fubini|tonelli/)){
+      return[
+        ex("Contoh 1 · Counting measure","Pada $X=\\{a,b,c\\}$, gunakan counting measure $\\mu(A)=|A|$. Hitung $\\mu(\\{a,c\\})$.",["Himpunan $\\{a,c\\}$ memiliki dua anggota.","Counting measure memberi ukuran sama dengan banyak anggota."],"Diperoleh $\\mu(\\{a,c\\})=2$."),
+        ex("Contoh 2 · Integral fungsi sederhana","Pada ruang yang sama, $f(a)=1,f(b)=2,f(c)=4$. Hitung $\\int f\\,d\\mu$ terhadap counting measure.",["Integral terhadap counting measure pada himpunan hingga sama dengan jumlah nilai fungsi.","Diperoleh $1+2+4=7$."],"Nilai integral adalah 7.")
+      ];
+    }
+    if(has(/convergence|limit|clt|law|weak|characteristic/)){
+      return[
+        ex("Contoh 1 · Konvergensi hampir pasti","Jika $X_n(\\omega)=1/n$ untuk setiap $\\omega$, tentukan limitnya.",["Untuk setiap $\\omega$, barisan numerik $1/n$ menuju 0.","Karena konvergensi terjadi untuk seluruh $\\omega$, khususnya terjadi hampir pasti."],"Diperoleh $X_n\\to0$ hampir pasti."),
+        ex("Contoh 2 · Konvergensi dalam probabilitas","Untuk contoh yang sama dan $\\varepsilon>0$, periksa $P(|X_n|>\\varepsilon)$.",["Jika $n>1/\\varepsilon$, maka $1/n<\\varepsilon$.","Untuk indeks tersebut kejadian $|X_n|>\\varepsilon$ kosong."],"Probabilitasnya akhirnya 0, jadi $X_n\\to0$ dalam probabilitas.")
+      ];
+    }
+    return[
+      ex("Contoh 1 · Ruang probabilitas hingga","Ambil $\\Omega=\\{1,2,3,4\\}$ dengan semua titik sama mungkin. Hitung probabilitas kejadian $A=\\{2,4\\}$.",["Setiap titik mempunyai probabilitas $1/4$.","Kejadian $A$ memiliki dua titik.","Diperoleh $P(A)=2/4=1/2$."],"Probabilitas $A$ adalah $1/2$."),
+      ex("Contoh 2 · Independensi sederhana","Dua koin fair dilempar. Misalkan $A$ adalah kejadian koin pertama kepala dan $B$ kejadian koin kedua kepala. Periksa independensi.",["$P(A)=P(B)=1/2$.","$P(A\\cap B)=1/4$.","Karena $P(A\\cap B)=P(A)P(B)$, kedua kejadian independen."],"A dan B independen.")
+    ];
+  }
+
+  return[];
 }
 
 function exercisesFor(title:string,keyIdeas:string[]){

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { RichMath } from "@/components/RichMath";
+import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
 import type { MaterialPracticeProblem } from "@/data/material-practice";
 
@@ -46,8 +47,8 @@ export function MaterialPractice({ problems, storageKey }: { problems: MaterialP
       <div className="practice-head">
         <div>
           <span className="eyebrow">{en?"Guided Practice":"Latihan Bertingkat"}</span>
-          <h2>{en?"Practice from fundamentals to proof-level problems.":"Latihan dari konsep dasar sampai soal pembuktian."}</h2>
-          <p>{en?"Use a hint only when necessary, reveal the solution afterward, and mark a problem complete when you can reproduce the argument independently.":"Gunakan hint hanya jika diperlukan, buka jawaban setelah mencoba, lalu tandai selesai ketika kamu sudah dapat mengulang argumennya secara mandiri."}</p>
+          <h2>{en?"Practice Problems":"Latihan Soal"}</h2>
+          <p>{en?"Attempt each problem first, then use the hint and complete solution when needed.":"Kerjakan setiap soal terlebih dahulu, kemudian gunakan petunjuk dan pembahasan lengkap bila diperlukan."}</p>
         </div>
         <div className="practice-progress"><strong>{solved}/{problems.length}</strong><span>{en?"completed":"selesai"}</span></div>
       </div>
@@ -93,12 +94,19 @@ export function MaterialPractice({ problems, storageKey }: { problems: MaterialP
               </div>
             )}
 
-            {openAnswer[problem.id]&&(
-              <div className="practice-reveal answer">
-                <strong>{en?"Solution":"Pembahasan"}</strong>
-                <p><RichMath>{en?problem.answer.en:problem.answer.id}</RichMath></p>
-              </div>
-            )}
+            {openAnswer[problem.id]&&(()=>{
+              const answer=en?problem.answer.en:problem.answer.id;
+              const steps=splitAcademicSolution(answer);
+              return(
+                <div className="practice-reveal answer">
+                  <AcademicSolution
+                    target={en?problem.prompt.en:problem.prompt.id}
+                    idea={en?problem.hint.en:problem.hint.id}
+                    steps={steps}
+                  />
+                </div>
+              );
+            })()}
           </article>
         ))}
       </div>

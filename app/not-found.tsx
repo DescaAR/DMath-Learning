@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <RiemannHubShell
       eyebrow="404 · Halaman Tidak Ditemukan"
-      title="Halaman yang dicari tidak tersedia."
+      title="Halaman Tidak Ditemukan"
       lead="Gunakan jalur utama DMath Learning untuk kembali ke materi, bank soal, atau jalur belajar yang tersedia."
       meta={["DMath Learning","Navigasi"]}
       stats={[
@@ -18,14 +18,14 @@ export default function NotFound() {
         {label:"Kembali ke Beranda",href:"/",kind:"primary"},
         {label:"Buka Materi",href:"/materi",kind:"secondary"},
       ]}
-      overviewTitle="Kembali ke jalur belajar yang tersedia."
+      overviewTitle="Navigasi DMath Learning"
       roadmap={["Beranda","Jalur Belajar","Materi","Bank Soal","Olimpiade"]}
       sections={[{id:"not-found-navigation",label:"Navigasi"}]}
     >
       <section id="not-found-navigation" className="book-section ird-source-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Navigasi</span>
-        <h2>Pilih tujuan berikutnya.</h2>
+        <h2>Navigasi</h2>
         <div className="actions">
           <Link className="btn primary" href="/belajar">Jalur Belajar</Link>
           <Link className="btn secondary" href="/materi">Materi</Link>

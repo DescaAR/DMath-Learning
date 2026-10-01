@@ -3232,3 +3232,17 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   font-size:.9rem;
   line-height:1.3;
 }
+
+
+/* DMath curriculum audit: formal examples and visualization stack */
+.ird-visual-stack{display:grid;gap:28px;margin-top:24px}
+.definition-example-pair{display:grid;gap:14px;margin:24px 0 34px}
+.definition-example-pair>.ird-formal,
+.definition-example-pair>.formal-math-block,
+.definition-example-pair>.ird-worked-card,
+.definition-example-pair>.detailed-example-card{margin:0}
+.definition-direct-example{border-left:4px solid var(--success)}
+@media(min-width:980px){
+  .ird-visual-stack>.math-figure,
+  .ird-visual-stack>.interactive-lab{margin-top:0}
+}

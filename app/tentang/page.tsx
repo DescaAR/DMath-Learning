@@ -16,7 +16,7 @@ export default function TentangPage() {
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Tentang"}]}
       eyebrow="Tentang DMath Learning"
-      title="Matematika dipelajari sebagai struktur, bukan kumpulan rumus."
+      title="Tentang DMath Learning"
       lead="DMath Learning merupakan platform pembelajaran matematika yang berfokus pada pemahaman konsep, pengembangan penalaran, dan kemampuan problem solving."
       meta={["Konsep","Pembuktian","Visualisasi","Latihan"]}
       stats={[
@@ -26,7 +26,7 @@ export default function TentangPage() {
         {value:"ON-MIPA",label:"mahasiswa"},
       ]}
       actions={[{label:"Jelajahi Materi",href:"/materi",kind:"primary"},{label:"Jalur Belajar",href:"/belajar",kind:"secondary"}]}
-      overviewTitle="Memahami alasan matematis di balik setiap langkah."
+      overviewTitle="Struktur Pembelajaran"
       overviewText="Konten mencakup matematika sekolah, universitas, olimpiade, dan ON-MIPA dalam satu sistem belajar yang konsisten."
       roadmap={["Intuisi","Definisi","Teorema","Pembuktian","Visualisasi","Contoh","Latihan","Problem Solving"]}
       sections={[
@@ -37,7 +37,7 @@ export default function TentangPage() {
       <section id="tentang-identitas" className="book-section ird-source-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Identitas</span>
-        <h2>DMath Learning.</h2>
+        <h2>DMath Learning</h2>
         <div className="container split about-split">
           <div className="logo-panel"><Image src="/brand/logo-symbol.webp" alt="Logo DMath Learning" width={260} height={260}/></div>
           <div>
@@ -50,7 +50,7 @@ export default function TentangPage() {
       <section id="tentang-ruang" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">Ruang Belajar</span>
-        <h2>Satu ekosistem untuk memahami, berlatih, dan memecahkan masalah.</h2>
+        <h2>Ruang Belajar DMath Learning</h2>
         <div className="ird-worked-grid">
           <article className="ird-worked-card"><div className="ird-worked-head"><div className="ird-problem-number">01</div><div><h3>Materi</h3></div></div><div className="ird-worked-prompt"><p>Bab digital dengan konsep, definisi, teorema, pembuktian, visualisasi, contoh, dan latihan.</p></div><div className="actions"><Link className="btn primary" href="/materi">Jelajahi Materi</Link></div></article>
           <article className="ird-worked-card"><div className="ird-worked-head"><div className="ird-problem-number">02</div><div><h3>Bank Soal</h3></div></div><div className="ird-worked-prompt"><p>Kumpulan soal terstruktur berdasarkan materi dan tingkat kesulitan untuk latihan mandiri.</p></div><div className="actions"><Link className="btn primary" href="/bank-soal">Buka Bank Soal</Link></div></article>

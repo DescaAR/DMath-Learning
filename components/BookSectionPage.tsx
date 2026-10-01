@@ -223,8 +223,7 @@ export function BookSectionPage({
         <p className="ird-paragraph">Pernyataan formal dibaca bersama hipotesisnya. Setiap lemma, proposisi, teorema, atau akibat yang ditampilkan pada bagian ini disertai pembuktian.</p>
 
         {provenResults.length?provenResults.map((item,index)=>{
-          const explanation=content.connections[index%Math.max(1,content.connections.length)]
-            ??("Hasil ini memperjelas struktur "+section.title+" dan digunakan bersama konsep "+section.keyIdeas.slice(0,2).join(" serta ")+".");
+          const explanation="Hasil ini dibaca bersama seluruh hipotesisnya. Pada submateri "+section.title+", pernyataan tersebut digunakan hanya setelah syarat formalnya diverifikasi.";
           return(
             <article className={"ird-formal ird-"+item.kind} key={item.title+index}>
               <div className="ird-formal-head">
@@ -298,7 +297,10 @@ export function BookSectionPage({
         <span className="eyebrow">Bagian 7</span>
         <h2>Visualisasi dan eksplorasi</h2>
         <p className="ird-paragraph">Representasi visual digunakan untuk memeriksa struktur konsep, sedangkan panel interaktif memungkinkan parameter diubah dan akibatnya diamati langsung.</p>
-        <InteractiveMathLab kind={visualKind}/>
+        <div className="ird-visual-stack">
+          <MathVisualization kind={visualKind}/>
+          <InteractiveMathLab kind={visualKind}/>
+        </div>
       </section>
 
       <section id="book-lesson-8" className="book-section ird-source-section">
@@ -345,7 +347,7 @@ export function BookSectionPage({
                 <details className="ird-worked-solution">
                   <summary>Buka Solusi</summary>
                   <div className="ird-worked-solution-body">
-                    <AcademicSolution idea={exercise.hint} steps={steps} conclusion={conclusion}/>
+                    <AcademicSolution target={exercise.prompt} idea={exercise.hint} steps={steps} conclusion={conclusion}/>
                   </div>
                 </details>
               </article>

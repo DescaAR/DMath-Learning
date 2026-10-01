@@ -304,7 +304,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           "Visualisasi dipakai untuk melihat struktur konsep, sedangkan panel interaktif memungkinkan parameter diubah dan hasilnya dibandingkan.",
           "Visualization reveals the structure of the concept, while the interactive panel lets parameters change and outcomes be compared."
         )}</p>
-        <InteractiveMathLab kind={m.visualization} />
+        <div className="ird-visual-stack">
+          <MathVisualization kind={m.visualization} />
+          <InteractiveMathLab kind={m.visualization} />
+        </div>
       </section>
 
       <section id="gm-section-8" className="book-section ird-source-section">
@@ -354,7 +357,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                 <details className="ird-worked-solution">
                   <summary>{ui("Buka Solusi","Open Solution")}</summary>
                   <div className="ird-worked-solution-body">
-                    <AcademicSolution idea={pick(problem.hint)} steps={steps} conclusion={conclusion}/>
+                    <AcademicSolution target={pick(problem.prompt)} idea={pick(problem.hint)} steps={steps} conclusion={conclusion}/>
                   </div>
                 </details>
               </article>

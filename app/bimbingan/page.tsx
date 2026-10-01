@@ -20,7 +20,7 @@ export default function BimbinganPage() {
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Bimbingan"}]}
       eyebrow="Bimbingan Matematika"
-      title="Pendampingan yang menekankan cara berpikir."
+      title="Bimbingan Matematika"
       lead="Program bimbingan menekankan konsep, penalaran, latihan bertahap, identifikasi kesalahan, dan problem solving sesuai tingkat peserta."
       meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
@@ -30,7 +30,7 @@ export default function BimbinganPage() {
         {value:"aktif",label:"problem solving"},
       ]}
       actions={[{label:"Lihat Program",href:"#bimbingan-program",kind:"primary"}]}
-      overviewTitle="Konsep → penalaran → latihan → evaluasi."
+      overviewTitle="Struktur Bimbingan"
       overviewText="Halaman ini tetap noindex dan belum ditampilkan di navigasi publik, tetapi strukturnya sudah mengikuti sistem visual yang sama."
       roadmap={["Konsep","Penalaran","Latihan Bertahap","Identifikasi Kesalahan","Problem Solving"]}
       sections={[
@@ -41,7 +41,7 @@ export default function BimbinganPage() {
       <section id="bimbingan-program" className="book-section ird-source-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Program</span>
-        <h2>Pilihan program bimbingan.</h2>
+        <h2>Program Bimbingan</h2>
         <div className="ird-worked-grid">
           {programs.map((program,index)=>(
             <article className="ird-worked-card" key={program}>
@@ -54,7 +54,7 @@ export default function BimbinganPage() {
       <section id="bimbingan-kontak" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">Kontak</span>
-        <h2>Informasi kontak belum ditampilkan.</h2>
+        <h2>Informasi Kontak</h2>
         <p>CTA WhatsApp dapat diaktifkan setelah nomor kontak resmi DMath Learning ditetapkan di konfigurasi website.</p>
       </section>
     </RiemannHubShell>

@@ -15,7 +15,7 @@ export default function SearchPage() {
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Pencarian"}]}
       eyebrow="Global Search · Seluruh Konten"
-      title="Cari seluruh isi DMath Learning."
+      title="Pencarian DMath Learning"
       lead="Cari materi, definisi, teorema, contoh, dan soal dalam satu tempat dengan filter jenjang, jalur, bidang, tingkat kesulitan, dan jenis konten."
       meta={["Materi","Definisi","Teorema","Contoh","Soal"]}
       stats={[
@@ -25,7 +25,7 @@ export default function SearchPage() {
         {value:"all",label:"jenis konten"},
       ]}
       actions={[{label:"Mulai Mencari",href:"#search-main",kind:"primary"},{label:"Lihat Materi",href:"/materi",kind:"secondary"}]}
-      overviewTitle="Satu pencarian untuk seluruh ekosistem."
+      overviewTitle="Pencarian Konten"
       overviewText="Pencarian tetap menampilkan hasil yang cukup mirip ketika kata yang diketik tidak persis sama."
       roadmap={["Ketik kata kunci","Pilih jenjang","Pilih jalur","Pilih bidang","Pilih kesulitan","Buka hasil"]}
       sections={[{id:"search-main",label:"Pencarian"}]}
@@ -33,7 +33,7 @@ export default function SearchPage() {
       <section id="search-main" className="book-section ird-source-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Pencarian</span>
-        <h2>Temukan materi atau soal yang dibutuhkan.</h2>
+        <h2>Pencarian Materi dan Soal</h2>
         <SearchClient />
       </section>
     </RiemannHubShell>
