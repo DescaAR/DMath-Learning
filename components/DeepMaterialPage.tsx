@@ -30,7 +30,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const formalDefinitions = formal?.blocks.filter((block) => block.kind === "definition") ?? [];
   const formalResults = formal?.blocks.filter((block) => block.kind !== "definition") ?? [];
   const definitionCount = m.definitions.length + formalDefinitions.length;
-  const resultCount = m.theorems.length + formalResults.filter((block)=>block.kind!=="note").length;
+  const resultCount = m.theorems.length + formalResults.length;
   const exampleCount = m.examples.length + (formal?.examples.length ?? 0);
 
   const sections = [
@@ -174,9 +174,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
               ? ui("Proposisi","Proposition")
               : block.kind === "corollary"
                 ? ui("Akibat","Corollary")
-                : block.kind === "note"
-                  ? ui("Catatan","Note")
-                  : ui("Teorema","Theorem");
+                : ui("Teorema","Theorem");
           return (
             <article className={"ird-formal ird-" + block.kind} key={pick(block.title) + index}>
               <div className="ird-formal-head"><span>{label}</span><strong>{pick(block.title)}</strong></div>
