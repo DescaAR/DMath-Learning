@@ -34,16 +34,21 @@ export function BookSectionPage({
   previous:BookSection|null;
   next:BookSection|null;
 }){
-  const proofCount=content.formal.filter((item)=>item.proof?.length).length;
+  const definitions=content.formal.filter((item)=>item.kind==="definition");
+  const results=content.formal.filter((item)=>item.kind!=="definition");
+  const proofCount=results.filter((item)=>item.proof?.length).length;
+  const resultCount=results.filter((item)=>["lemma","proposition","theorem","corollary"].includes(item.kind)).length;
+
   const sections=[
-    {id:"book-lesson-1",label:"Tujuan & Prasyarat"},
+    {id:"book-lesson-1",label:"Prasyarat & Tujuan"},
     {id:"book-lesson-2",label:"Motivasi & Intuisi"},
-    ...(content.notation?.length?[{id:"book-lesson-3",label:"Notasi"}]:[]),
-    {id:"book-lesson-4",label:"Definisi & Teori"},
-    {id:"book-lesson-5",label:"Contoh Terbahas"},
-    {id:"book-lesson-6",label:"Latihan"},
+    {id:"book-lesson-3",label:"Notasi"},
+    {id:"book-lesson-4",label:"Definisi Formal"},
+    {id:"book-lesson-5",label:"Teorema & Pembuktian"},
+    {id:"book-lesson-6",label:"Contoh Terbahas"},
     {id:"book-lesson-7",label:"Kesalahan & Koneksi"},
     {id:"book-lesson-8",label:"Ringkasan & Referensi"},
+    {id:"book-latihan-soal",label:"Latihan Soal"},
   ];
 
   return(
@@ -55,61 +60,44 @@ export function BookSectionPage({
         {label:"Bab "+chapter.number+" · "+chapter.title,href:"/materi/"+subject.slug+"#book-chapter-"+chapter.number.replaceAll(".","-")},
         {label:section.title},
       ]}
-      eyebrow={subject.title+" · "+section.number+" · Bab Digital"}
+      eyebrow={subject.title+" · "+section.number+" · Bab Digital Lengkap"}
       title={section.title}
       lead={section.summary}
       meta={[
+        "9 bagian materi + latihan",
+        subject.title,
         subject.level,
-        "Bab "+chapter.number,
-        section.sourceTitle,
-        "Satu submateri per halaman",
+        "Formal & bertahap",
       ]}
       stats={[
-        {value:content.formal.length,label:"hasil formal"},
-        {value:proofCount,label:"pembuktian"},
+        {value:definitions.length,label:"definisi"},
+        {value:resultCount,label:"hasil formal"},
         {value:content.examples.length,label:"contoh terbahas"},
-        {value:content.exercises.length,label:"latihan"},
+        {value:content.exercises.length,label:"latihan dengan solusi"},
       ]}
       actions={[
-        {label:"Mulai Membaca",href:"#book-lesson-1",kind:"primary"},
-        {label:"Ke Latihan",href:"#book-lesson-6",kind:"secondary"},
+        {label:"Mulai Bab",href:"#ird-overview",kind:"primary"},
+        {label:"Buka Latihan Soal",href:"#book-latihan-soal",kind:"secondary"},
       ]}
+      overviewId="ird-overview"
+      tocTitle="Isi Materi"
       overviewEyebrow="Gambaran Besar"
-      overviewTitle={"Apa yang dipelajari pada "+section.number+"?"}
+      overviewTitle={"Alur konsep "+section.number+" · "+section.title}
       overviewText={section.summary}
       roadmap={section.keyIdeas}
       sections={sections}
     >
-      <section className="book-section ird-source-section">
-        <div className="section-number">00</div>
-        <span className="eyebrow">Posisi dalam Bab {chapter.number}</span>
-        <h2>{chapter.title}</h2>
-        <p className="ird-paragraph">Submateri ini adalah bagian dari rangkaian Bab {chapter.number}. Gunakan daftar berikut untuk berpindah antarbagian tanpa kembali ke indeks utama.</p>
-        <div className="ird-roadmap">
-          {chapter.sections.map((item,index)=>(
-            <Link
-              key={item.slug}
-              href={"/materi/"+subject.slug+"/"+item.slug}
-              className={item.slug===section.slug?"active":""}
-            >
-              <span>{item.number}</span>
-              <strong>{item.title}</strong>
-            </Link>
-          ))}
-        </div>
-      </section>
-
       <section id="book-lesson-1" className="book-section ird-source-section">
         <div className="section-number">01</div>
-        <span className="eyebrow">Prasyarat & Tujuan</span>
-        <h2>Posisi submateri dalam alur belajar.</h2>
+        <span className="eyebrow">Bagian 1</span>
+        <h2>Prasyarat dan tujuan pembelajaran</h2>
         <div className="solution-overview-grid">
           <div className="content-box">
             <strong>Prasyarat</strong>
             <p>
               {previous
-                ?"Sebaiknya telah memahami submateri sebelumnya, “"+previous.title+"”, beserta definisi dan hasil formal yang digunakan di sana."
-                :"Tidak ada submateri sebelumnya pada buku digital ini. Gunakan halaman ini sebagai titik awal fondasi."}
+                ?"Sebaiknya telah memahami submateri sebelumnya, “"+previous.number+" · "+previous.title+"”, termasuk definisi dan hasil formal yang digunakan di sana."
+                :"Submateri ini merupakan titik awal buku digital "+subject.title+". Gunakan bagian ini untuk membangun fondasi sebelum melanjutkan ke submateri berikutnya."}
             </p>
             {previous&&<Link className="text-link" href={"/materi/"+subject.slug+"/"+previous.slug}>← Buka {previous.title}</Link>}
           </div>
@@ -117,7 +105,7 @@ export function BookSectionPage({
             <strong>Tujuan Pembelajaran</strong>
             <ul>
               {section.keyIdeas.map((idea)=><li key={idea}>Memahami dan menggunakan konsep <strong>{idea}</strong> secara tepat.</li>)}
-              <li>Mampu membaca definisi dan pembuktian formal, lalu menerapkannya pada contoh dan latihan.</li>
+              <li>Mampu membaca definisi formal, mengikuti pembuktian, dan menggunakan hasilnya pada contoh maupun latihan.</li>
             </ul>
           </div>
         </div>
@@ -125,19 +113,19 @@ export function BookSectionPage({
 
       <section id="book-lesson-2" className="book-section ird-source-section">
         <div className="section-number">02</div>
-        <span className="eyebrow">Motivasi & Intuisi</span>
-        <h2>Mengapa bagian ini diperlukan?</h2>
+        <span className="eyebrow">Bagian 2</span>
+        <h2>Motivasi dan intuisi</h2>
         {content.intro.map((paragraph,index)=><div className="ird-paragraph" key={index}><Text>{paragraph}</Text></div>)}
         <div className="ird-roadmap">
           {section.keyIdeas.map((idea,index)=><div key={idea}><span>{String(index+1).padStart(2,"0")}</span><strong>{idea}</strong></div>)}
         </div>
       </section>
 
-      {content.notation?.length?(
-        <section id="book-lesson-3" className="book-section ird-source-section">
-          <div className="section-number">03</div>
-          <span className="eyebrow">Notasi</span>
-          <h2>Notasi yang digunakan.</h2>
+      <section id="book-lesson-3" className="book-section ird-source-section">
+        <div className="section-number">03</div>
+        <span className="eyebrow">Bagian 3</span>
+        <h2>Notasi yang digunakan</h2>
+        {content.notation?.length?(
           <div className="notation-table">
             {content.notation.map((item)=>(
               <div className="notation-row" key={item.symbol}>
@@ -146,16 +134,38 @@ export function BookSectionPage({
               </div>
             ))}
           </div>
-        </section>
-      ):null}
+        ):(
+          <article className="ird-formal ird-note">
+            <div className="ird-formal-head"><span>Catatan</span><strong>Notasi</strong></div>
+            <div className="ird-formal-body">Tidak ada notasi baru yang perlu diperkenalkan pada submateri ini. Notasi mengikuti bagian-bagian sebelumnya.</div>
+          </article>
+        )}
+      </section>
 
       <section id="book-lesson-4" className="book-section ird-source-section">
-        <div className="section-number">{content.notation?.length?"04":"03"}</div>
-        <span className="eyebrow">Definisi, Teorema, dan Pembuktian</span>
-        <h2>Teori formal.</h2>
-        <p className="ird-paragraph">Setiap hasil formal ditempatkan terpisah. Pembuktian dapat dibuka setelah pernyataan dibaca dan dipahami.</p>
+        <div className="section-number">04</div>
+        <span className="eyebrow">Bagian 4</span>
+        <h2>Definisi formal</h2>
+        <p className="ird-paragraph">Definisi dibaca terlebih dahulu sebelum hasil formal berikutnya. Perhatikan setiap syarat, domain, dan urutan kuantor yang muncul.</p>
+        {definitions.length?definitions.map((item,index)=>(
+          <article className="ird-formal ird-definition" key={item.title+index}>
+            <div className="ird-formal-head"><span>Definisi</span><strong>{item.title}</strong></div>
+            <div className="ird-formal-body"><Text>{item.statement}</Text></div>
+          </article>
+        )):(
+          <article className="ird-formal ird-note">
+            <div className="ird-formal-head"><span>Catatan</span><strong>Tidak ada definisi baru</strong></div>
+            <div className="ird-formal-body">Submateri ini menggunakan definisi yang telah diperkenalkan sebelumnya dan berfokus pada konsekuensi atau penerapannya.</div>
+          </article>
+        )}
+      </section>
 
-        {content.formal.map((item,index)=>(
+      <section id="book-lesson-5" className="book-section ird-source-section">
+        <div className="section-number">05</div>
+        <span className="eyebrow">Bagian 5</span>
+        <h2>Teorema, lemma, proposisi, akibat, dan pembuktian</h2>
+        <p className="ird-paragraph">Setiap hasil formal ditempatkan pada kartu tersendiri. Pembuktian dibuka setelah pernyataan dan seluruh hipotesisnya dipahami.</p>
+        {results.map((item,index)=>(
           <article className={"ird-formal ird-"+item.kind} key={item.title+index}>
             <div className="ird-formal-head">
               <span>{kindLabel[item.kind]}</span>
@@ -180,13 +190,14 @@ export function BookSectionPage({
         ))}
       </section>
 
-      <section id="book-lesson-5" className="book-section ird-source-section">
-        <div className="section-number">{content.notation?.length?"05":"04"}</div>
-        <span className="eyebrow">Contoh Terbahas</span>
-        <h2>Dari teori menuju penggunaan.</h2>
+      <section id="book-lesson-6" className="book-section ird-source-section">
+        <div className="section-number">06</div>
+        <span className="eyebrow">Bagian 6</span>
+        <h2>Contoh terbahas</h2>
+        <p className="ird-paragraph">Contoh disusun untuk memperlihatkan bagaimana definisi dan teorema digunakan. Solusi dapat dibuka setelah soal dicoba secara mandiri.</p>
         <div className="ird-worked-grid">
           {content.examples.map((example,index)=>(
-            <article className="ird-worked-card" key={example.title}>
+            <article className="ird-worked-card" key={example.title+index}>
               <div className="ird-worked-head">
                 <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
                 <div><span className="eyebrow">Contoh</span><h3>{example.title}</h3></div>
@@ -201,7 +212,12 @@ export function BookSectionPage({
                       <Text>{step}</Text>
                     </div>
                   ))}
-                  {example.conclusion&&<div className="content-box answer-box"><strong>Kesimpulan</strong><div><Text>{example.conclusion}</Text></div></div>}
+                  {example.conclusion&&(
+                    <div className="content-box answer-box">
+                      <strong>Kesimpulan</strong>
+                      <div><Text>{example.conclusion}</Text></div>
+                    </div>
+                  )}
                 </div>
               </details>
             </article>
@@ -209,17 +225,53 @@ export function BookSectionPage({
         </div>
       </section>
 
-      <section id="book-lesson-6" className="book-section ird-practice-section">
-        <div className="section-number">{content.notation?.length?"06":"05"}</div>
-        <span className="eyebrow">Latihan Soal</span>
-        <h2>Uji pemahaman sebelum melanjutkan.</h2>
-        <p className="ird-paragraph">Kerjakan setiap soal terlebih dahulu. Petunjuk dan solusi disembunyikan agar proses berpikir tetap aktif.</p>
+      <section id="book-lesson-7" className="book-section ird-source-section">
+        <div className="section-number">07</div>
+        <span className="eyebrow">Bagian 7</span>
+        <h2>Kesalahan umum dan koneksi materi</h2>
+        <div className="solution-overview-grid">
+          <div className="content-box warning-box">
+            <strong>Kesalahan Umum</strong>
+            <ul>{content.mistakes.map((item)=><li key={item}><Text>{item}</Text></li>)}</ul>
+          </div>
+          <div className="content-box insight-box">
+            <strong>Koneksi Materi</strong>
+            <ul>{content.connections.map((item)=><li key={item}><Text>{item}</Text></li>)}</ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="book-lesson-8" className="book-section ird-source-section">
+        <div className="section-number">08</div>
+        <span className="eyebrow">Bagian 8</span>
+        <h2>Ringkasan dan referensi</h2>
+        <div className="summary-grid">
+          {section.keyIdeas.map((idea,index)=>(
+            <div className="summary-card" key={idea}>
+              <span className="eyebrow">{String(index+1).padStart(2,"0")}</span>
+              <p><strong>{idea}</strong> merupakan konsep inti pada submateri ini dan akan digunakan pada bagian selanjutnya.</p>
+            </div>
+          ))}
+        </div>
+        <article className="ird-formal ird-note" style={{marginTop:24}}>
+          <div className="ird-formal-head"><span>Referensi</span><strong>{section.sourceTitle}</strong></div>
+          <div className="ird-formal-body">
+            {subject.source} ({subject.sourceYear}), khususnya bagian {section.number} “{section.sourceTitle}”. Materi DMath Learning ditulis ulang dan dikembangkan sebagai materi pembelajaran mandiri; susunan topik mengikuti alur referensi utama, sedangkan penjelasan, contoh, pembuktian, dan latihan disusun untuk DMath Learning.
+          </div>
+        </article>
+      </section>
+
+      <section id="book-latihan-soal" className="book-section ird-practice-section">
+        <div className="section-number">09</div>
+        <span className="eyebrow">Latihan Soal dan Solusi</span>
+        <h2>{content.exercises.length} latihan soal · {section.title}</h2>
+        <p className="ird-paragraph">Kerjakan setiap soal terlebih dahulu. Buka petunjuk bila diperlukan dan buka solusi setelah mencoba menyelesaikannya secara mandiri.</p>
         <div className="ird-worked-grid">
           {content.exercises.map((exercise,index)=>(
             <article className="ird-worked-card" key={index}>
               <div className="ird-worked-head">
                 <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
-                <div><span className="eyebrow">Latihan</span><h3>Soal {index+1}</h3></div>
+                <div><span className="eyebrow">Latihan Soal</span><h3>Soal {index+1}</h3></div>
               </div>
               <div className="ird-worked-prompt"><Text>{exercise.prompt}</Text></div>
               <details className="ird-proof">
@@ -235,45 +287,11 @@ export function BookSectionPage({
         </div>
       </section>
 
-      <section id="book-lesson-7" className="book-section ird-source-section">
-        <div className="section-number">{content.notation?.length?"07":"06"}</div>
-        <span className="eyebrow">Audit Pemahaman</span>
-        <h2>Kesalahan umum dan koneksi materi.</h2>
-        <div className="solution-overview-grid">
-          <div className="content-box warning-box">
-            <strong>Kesalahan Umum</strong>
-            <ul>{content.mistakes.map((item)=><li key={item}><Text>{item}</Text></li>)}</ul>
-          </div>
-          <div className="content-box insight-box">
-            <strong>Koneksi</strong>
-            <ul>{content.connections.map((item)=><li key={item}><Text>{item}</Text></li>)}</ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="book-lesson-8" className="book-section ird-source-section">
-        <div className="section-number">{content.notation?.length?"08":"07"}</div>
-        <span className="eyebrow">Ringkasan & Referensi</span>
-        <h2>Yang perlu dibawa ke submateri berikutnya.</h2>
-        <div className="summary-grid">
-          {section.keyIdeas.map((idea,index)=>(
-            <div className="summary-card" key={idea}>
-              <span className="eyebrow">{String(index+1).padStart(2,"0")}</span>
-              <p><strong>{idea}</strong> merupakan konsep inti pada submateri ini dan akan digunakan pada bagian selanjutnya.</p>
-            </div>
-          ))}
-        </div>
-        <div className="content-box" style={{marginTop:24}}>
-          <strong>Referensi struktur dan pengembangan materi</strong>
-          <p>{subject.source} ({subject.sourceYear}), khususnya bagian {section.number} “{section.sourceTitle}”. Materi DMath Learning ditulis ulang dan dikembangkan sebagai penjelasan mandiri; susunan topik mengikuti alur referensi utama, sedangkan penjelasan, contoh, pembuktian, dan latihan disusun untuk pengalaman belajar DMath Learning.</p>
-        </div>
-      </section>
-
       <section className="next-learning-block textbook-next">
         <div>
           <span className="eyebrow">{next?"Materi Berikutnya":"Akhir Buku Digital"}</span>
           <h2>{next?next.number+" · "+next.title:"Kamu telah sampai pada submateri terakhir "+subject.title+"."}</h2>
-          <p>{next?"Lanjutkan setelah definisi, hasil formal, dan latihan pada halaman ini sudah dipahami.":"Kembali ke indeks untuk meninjau ulang bab atau memilih jalur belajar lain."}</p>
+          <p>{next?"Lanjutkan setelah definisi, hasil formal, contoh, dan latihan pada halaman ini sudah dipahami.":"Kembali ke daftar isi untuk meninjau bab atau memilih jalur belajar lain."}</p>
         </div>
         <div className="actions">
           {previous&&<Link className="btn secondary" href={"/materi/"+subject.slug+"/"+previous.slug}>← {previous.title}</Link>}
