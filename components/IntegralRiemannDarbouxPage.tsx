@@ -63,7 +63,7 @@ function FormalBlock({ block, index }: { block: IntegralSourceBlock; index: numb
   const isExample = block.kind === "example";
   const isExercise = block.kind === "exercise";
   const title = block.title || label + " " + (index + 1);
-  const body = isExercise ? imperativeProblemText(block.body ?? "") : (block.body ?? "");
+  const body = (isExercise || isExample) ? imperativeProblemText(block.body ?? "") : (block.body ?? "");
   const detail = isExample || isExercise ? block.solution : block.proof;
 
   return (
@@ -104,8 +104,8 @@ function InteractiveRiemannDarboux() {
   return (
     <section className="ird-visual-lab" aria-label="Visualisasi interaktif jumlah Riemann dan Darboux">
       <div className="ird-visual-copy">
-        <span className="eyebrow">Visualisasi Interaktif</span>
-        <h2>Jumlah bawah, jumlah atas, dan limit luas</h2>
+        <span className="eyebrow">Visualisasi</span>
+        <h2>Jumlah Darboux bawah, jumlah Darboux atas, dan nilai integral</h2>
         <p>
           Untuk <RichMath>{"$f(x)=x^2$ pada $[0,1]$"}</RichMath>, partisi seragam dibuat semakin halus.
           Persegi panjang bawah memakai infimum tiap subinterval, sedangkan persegi panjang atas memakai supremum.
@@ -115,9 +115,9 @@ function InteractiveRiemannDarboux() {
           <input type="range" min="2" max="16" value={n} onChange={(e)=>setN(Number(e.target.value))} />
         </label>
         <div className="ird-metric-grid">
-          <div><span>Lower sum</span><strong>{lower.toFixed(5)}</strong></div>
+          <div><span>Jumlah Darboux bawah</span><strong>{lower.toFixed(5)}</strong></div>
           <div><span>Integral</span><strong>{(1/3).toFixed(5)}</strong></div>
-          <div><span>Upper sum</span><strong>{upper.toFixed(5)}</strong></div>
+          <div><span>Jumlah Darboux atas</span><strong>{upper.toFixed(5)}</strong></div>
           <div><span>Celah U − L</span><strong>{(1/n).toFixed(5)}</strong></div>
         </div>
       </div>
@@ -143,8 +143,8 @@ function InteractiveRiemannDarboux() {
           <text x={x0+plotW-3} y={y0+26} className="ird-svg-label">1</text>
         </svg>
         <div className="ird-legend">
-          <span><i className="ird-legend-low" /> lower rectangles</span>
-          <span><i className="ird-legend-up" /> upper rectangles</span>
+          <span><i className="ird-legend-low" /> persegi panjang bawah</span>
+          <span><i className="ird-legend-up" /> persegi panjang atas</span>
           <span><i className="ird-legend-curve" /> grafik fungsi</span>
         </div>
       </div>
@@ -168,7 +168,7 @@ function RefinementVisual() {
         <path d="M 225 96 C 265 115, 320 115, 350 96" className="ird-arrow" />
         <text x="286" y="119" textAnchor="middle" className="ird-svg-label">titik baru</text>
       </svg>
-      <figcaption>Refinement mempertahankan semua titik partisi lama dan menambah titik baru. Akibatnya <RichMath>{"$L(f,P)\\le L(f,Q)\\le U(f,Q)\\le U(f,P)$"}</RichMath>.</figcaption>
+      <figcaption>Penghalusan partisi mempertahankan semua titik partisi lama dan menambah titik baru. Akibatnya <RichMath>{"$L(f,P)\\le L(f,Q)\\le U(f,Q)\\le U(f,P)$"}</RichMath>.</figcaption>
     </figure>
   );
 }
@@ -232,6 +232,36 @@ function OscillationVisual() {
 }
 
 
+function splitLetteredSolution(text: string) {
+  const matches=[...text.matchAll(/(?:^|\n)\(([a-z])\)\s*/g)];
+  if(!matches.length) return {prefix:text.trim(),parts:{} as Record<string,string>};
+  const prefix=text.slice(0,matches[0].index ?? 0).trim();
+  const parts:Record<string,string>={};
+  matches.forEach((m,index)=>{
+    const start=(m.index ?? 0)+m[0].length;
+    const end=index+1<matches.length ? (matches[index+1].index ?? text.length) : text.length;
+    parts[m[1]]=text.slice(start,end).trim();
+  });
+  return {prefix,parts};
+}
+
+function WorkedSolution({ exercise }: { exercise: IntegralWorkedExercise }) {
+  const goals=exercise.solutionGoals ?? [];
+  if(!goals.length) return <SourceText text={exercise.solution}/>;
+  const split=splitLetteredSolution(exercise.solution);
+  return (
+    <>
+      {split.prefix && <div className="ird-solution-prefix"><SourceText text={split.prefix}/></div>}
+      {goals.map((goal)=>(
+        <section className="ird-solution-part" key={goal.label}>
+          <div className="ird-solution-goal"><strong><SourceText text={"("+goal.label+") "+goal.text}/></strong></div>
+          <SourceText text={split.parts[goal.label] ?? ""}/>
+        </section>
+      ))}
+    </>
+  );
+}
+
 function TaggedPartitionExerciseVisual() {
   const xs=[-5,-4,-2,0,2,5], tags=[-4.5,-3,-1,1,3.5];
   const cx=310, cy=178, sx=48, sy=28;
@@ -239,15 +269,15 @@ function TaggedPartitionExerciseVisual() {
   const curve=Array.from({length:121},(_,i)=>{const x=-5+10*i/120;return [cx+x*sx,cy-f(x)*sy]});
   return (
     <figure className="ird-exercise-visual">
-      <div className="ird-figure-title"><span>Visualisasi Soal 1</span><strong>Tagged partition tidak seragam</strong></div>
-      <svg viewBox="0 0 620 330" role="img" aria-label="Tagged partition tidak seragam pada grafik nilai mutlak">
+      <div className="ird-figure-title"><span>Visualisasi Soal 1</span><strong>Partisi berlabel tidak seragam</strong></div>
+      <svg viewBox="0 0 620 330" role="img" aria-label="Partisi berlabel tidak seragam pada grafik nilai mutlak">
         <line x1="45" y1={cy} x2="575" y2={cy} className="ird-axis"/>
         <line x1={cx} y1="35" x2={cx} y2="285" className="ird-axis"/>
         {xs.map((x,i)=><g key={x}><line x1={cx+x*sx} y1="45" x2={cx+x*sx} y2="275" className="ird-ex-partition-line"/><text x={cx+x*sx} y="302" textAnchor="middle" className="ird-svg-label">{x}</text>{i<xs.length-1&&<text x={cx+(x+xs[i+1])*sx/2} y="322" textAnchor="middle" className="ird-svg-label">Δ={xs[i+1]-x}</text>}</g>)}
         <polyline points={curve.map(p=>p.join(",")).join(" ")} className="ird-curve"/>
-        {tags.map((t,i)=><g key={t}><circle cx={cx+t*sx} cy={cy-f(t)*sy} r="6" className="ird-ex-tag-point"/><text x={cx+t*sx} y={cy-f(t)*sy-12} textAnchor="middle" className="ird-svg-label">T{i+1}</text></g>)}
+        {tags.map((t,i)=><g key={t}><circle cx={cx+t*sx} cy={cy-f(t)*sy} r="6" className="ird-ex-label-point"/><text x={cx+t*sx} y={cy-f(t)*sy-12} textAnchor="middle" className="ird-svg-label">t{i+1}</text></g>)}
       </svg>
-      <figcaption>Panjang subinterval adalah 1, 2, 2, 2, dan 3. Norma partisi ditentukan oleh panjang terbesar, yaitu <RichMath>{"$\\lVert P\\rVert=3$"}</RichMath>. Titik biru menunjukkan tag yang dipakai pada jumlah Riemann.</figcaption>
+      <figcaption>Panjang subinterval adalah 1, 2, 2, 2, dan 3. Norma partisi ditentukan oleh panjang terbesar, yaitu <RichMath>{"$\\lVert P\\rVert=3$"}</RichMath>. Titik biru menunjukkan label yang dipakai pada jumlah Riemann.</figcaption>
     </figure>
   );
 }
@@ -272,7 +302,7 @@ function ParabolaDarbouxExerciseVisual() {
       <div className="ird-visual-copy">
         <span className="eyebrow">Visualisasi Soal 4</span>
         <h3>Jumlah Darboux untuk <RichMath>{"$f(x)=6x-x^2$"}</RichMath></h3>
-        <p>Ubah banyak subinterval seragam. Lower sum naik dan upper sum turun menuju nilai integral yang sama.</p>
+        <p>Ubah banyak subinterval seragam. Jumlah Darboux bawah naik dan jumlah atas turun menuju nilai integral yang sama.</p>
         <label className="ird-slider"><span>Jumlah subinterval <strong>{n}</strong></span><input type="range" min="7" max="24" value={n} onChange={e=>setN(Number(e.target.value))}/></label>
         <div className="ird-metric-grid">
           <div><span>L(f,Pₙ)</span><strong>{lower.toFixed(4)}</strong></div>
@@ -301,13 +331,13 @@ function StepDarbouxExerciseVisual() {
     <section className="ird-exercise-lab">
       <div className="ird-visual-copy">
         <span className="eyebrow">Visualisasi Soal 6</span>
-        <h3>Fungsi step dan satu titik lompatan</h3>
-        <p>Partisi dipadatkan di sekitar <RichMath>{"$x=1$"}</RichMath>. Hanya subinterval kecil di sekitar titik lompatan yang menghasilkan selisih upper–lower sum.</p>
+        <h3>Fungsi tangga dan satu titik lompatan</h3>
+        <p>Partisi dipadatkan di sekitar <RichMath>{"$x=1$"}</RichMath>. Hanya subinterval kecil di sekitar titik lompatan yang menghasilkan selisih upper–jumlah bawah.</p>
         <label className="ird-slider"><span>Nilai δ <strong>{delta.toFixed(2)}</strong></span><input type="range" min="0.05" max="0.60" step="0.05" value={delta} onChange={e=>setDelta(Number(e.target.value))}/></label>
         <div className="ird-metric-grid"><div><span>Celah U − L</span><strong>{delta.toFixed(2)}</strong></div><div><span>Nilai integral</span><strong>3</strong></div></div>
       </div>
       <div className="ird-svg-card">
-        <svg viewBox="0 0 590 290" role="img" aria-label="Fungsi step dengan partisi di sekitar titik diskontinuitas">
+        <svg viewBox="0 0 590 290" role="img" aria-label="Fungsi tangga dengan partisi di sekitar titik diskontinuitas">
           <line x1={x0} y1={y0} x2={x0+pw+12} y2={y0} className="ird-axis"/><line x1={x0} y1={y0} x2={x0} y2="45" className="ird-axis"/>
           <line x1={xp(0)} y1="78" x2={xp(1)} y2="78" className="ird-step-high"/><circle cx={xp(1)} cy="78" r="6" className="ird-open-point"/>
           <line x1={xp(1)} y1="150" x2={xp(2)} y2="150" className="ird-step-low"/><circle cx={xp(1)} cy="150" r="6" className="ird-filled-point"/>
@@ -391,7 +421,11 @@ function SectionVisual({ index }: { index: number }) {
 }
 
 export function IntegralRiemannDarbouxPage({ material }: { material: DeepMaterial }) {
-  const sectionIds = useMemo(()=>integralRiemannDarbouxSections.map((_,i)=>"ird-section-"+(i+1)),[]);
+  const sectionIds = useMemo(()=>[
+    ...integralRiemannDarbouxSections.map((_,i)=>"ird-section-"+(i+1)),
+    "ird-latihan-soal",
+    "ird-latihan30",
+  ],[]);
   const [active,setActive]=useState("ird-section-1");
   const [progress,setProgress]=useState(0);
 
@@ -405,20 +439,19 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
   },[]);
 
   useEffect(()=>{
-    const update=()=>{
+    const updateProgress=()=>{
       const max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
       setProgress(Math.min(100,Math.max(0,(window.scrollY/max)*100)));
-      let current=sectionIds[0] ?? "";
-      for (const id of sectionIds) {
-        const el=document.getElementById(id);
-        if (el && el.getBoundingClientRect().top<=160) current=id;
-      }
-      setActive(current);
     };
-    update();
-    window.addEventListener("scroll",update,{passive:true});
-    window.addEventListener("resize",update);
-    return ()=>{window.removeEventListener("scroll",update);window.removeEventListener("resize",update);};
+    updateProgress();
+    window.addEventListener("scroll",updateProgress,{passive:true});
+    window.addEventListener("resize",updateProgress);
+    const observer=new IntersectionObserver((entries)=>{
+      const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>Math.abs(a.boundingClientRect.top-120)-Math.abs(b.boundingClientRect.top-120));
+      if(visible[0]) setActive(visible[0].target.id);
+    },{rootMargin:"-110px 0px -62% 0px",threshold:[0,0.01,0.2]});
+    sectionIds.forEach(id=>{const el=document.getElementById(id);if(el)observer.observe(el);});
+    return()=>{observer.disconnect();window.removeEventListener("scroll",updateProgress);window.removeEventListener("resize",updateProgress);};
   },[sectionIds]);
 
   return (
@@ -432,12 +465,12 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
           </div>
           <div className="chapter-label-row">
             <span className="eyebrow">Analisis Real · Bab Digital Lengkap</span>
-            <span className="chapter-edition">Sumber materi terstruktur dari naskah LaTeX</span>
+
           </div>
           <h1>Integral Riemann dan Integral Darboux</h1>
           <p className="chapter-lead"><RichMath>{material.summary}</RichMath></p>
           <div className="chapter-meta textbook-meta">
-            <span>10 bagian utama</span><span>Riemann + Darboux</span><span>Menengah–Lanjut</span><span>Visual & formal</span>
+            <span>9 bab materi + latihan</span><span>Riemann + Darboux</span><span>Menengah–Lanjut</span><span>Visual & formal</span>
           </div>
           <div className="chapter-stat-grid">
             <div><strong>{stats.definition}</strong><span>definisi</span></div>
@@ -473,8 +506,8 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               const id="ird-section-"+(index+1);
               return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(index+1).padStart(2,"0")}</span>{section.title}</a>;
             })}
-            <a href="#ird-latihan-soal"><span>11</span>Latihan Soal</a>
-            <a href="#ird-latihan30"><span>12</span>30 Latihan Tambahan</a>
+            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>10</span>Latihan Soal</a>
+            <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>11</span>30 Latihan Tambahan</a>
           </aside>
 
           <article className="article deep-article textbook-article ird-article">
@@ -486,7 +519,6 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                 {section.blocks.map((block,index)=><FormalBlock key={section.title+"-b-"+index} block={block} index={index} />)}
                 {section.subsections.map((sub,subIndex)=>(
                   <div className="ird-subsection" key={sub.title}>
-                    <div className="ird-subsection-kicker">{sectionIndex+1}.{subIndex+1}</div>
                     <h3>{sub.title}</h3>
                     {sub.blocks.map((block,index)=><FormalBlock key={sub.title+"-"+index} block={block} index={index} />)}
                   </div>
@@ -496,8 +528,8 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             ))}
 
             <section id="ird-latihan-soal" className="book-section ird-practice-section">
-              <div className="section-number">11</div>
-              <span className="eyebrow">Latihan Soal + Pembahasan</span>
+              <div className="section-number">10</div>
+              <span className="eyebrow">Latihan Soal dan Solusi</span>
               <h2>13 latihan soal Integral Riemann dan Darboux</h2>
               <p>Soal ditulis dengan kalimat perintah aktif. Buka pembahasan setelah mencoba menyelesaikan soal secara mandiri. Visualisasi disediakan pada soal yang paling terbantu oleh interpretasi geometris.</p>
               <div className="ird-worked-grid">
@@ -510,8 +542,8 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                       </div>
                       <div className="ird-worked-prompt"><SourceText text={imperativeProblemText(exercise.prompt)} /></div>
                       <details className="ird-worked-solution">
-                        <summary>Buka pembahasan Soal {index+1}</summary>
-                        <div className="ird-worked-solution-body"><SourceText text={exercise.solution} /></div>
+                        <summary>Buka Solusi</summary>
+                        <div className="ird-worked-solution-body"><WorkedSolution exercise={exercise} /></div>
                       </details>
                     </article>
                     <WorkedExerciseVisual exercise={exercise} />
@@ -521,7 +553,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             </section>
 
             <section id="ird-latihan30" className="book-section ird-practice-section">
-              <div className="section-number">12</div>
+              <div className="section-number">11</div>
               <span className="eyebrow">Latihan Tambahan Menengah–Menantang</span>
               <h2>30 soal tambahan Integral Riemann dan Darboux</h2>
               <p>Bagian ini memuat seluruh soal dari lembar latihan yang diberikan. Soal disajikan satu per satu agar dapat dipakai sebagai latihan mandiri.</p>
