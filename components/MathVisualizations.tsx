@@ -16,7 +16,14 @@ export type VisualizationKind =
   | "modclock"
   | "combinatorics"
   | "onmipa-linear"
-  | "real-analysis";
+  | "real-analysis"
+  | "complex-analysis"
+  | "abstract-algebra"
+  | "olympiad"
+  | "calculus"
+  | "graph-theory"
+  | "number-theory"
+  | "differential-equations";
 
 function FigureShell({
   title,
@@ -271,6 +278,165 @@ export function MathVisualization({ kind }: { kind: VisualizationKind }) {
           {pts.map((p,i)=><circle key={i} cx={p[0]} cy={p[1]} r="4" className="svg-point" />)}
           <text x="390" y="175" className="svg-label">+ε</text>
           <text x="390" y="246" className="svg-label">−ε</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+
+  if (kind === "complex-analysis") {
+    const cx=260,cy=135,r=82;
+    return (
+      <FigureShell
+        title="Bidang kompleks: modulus, argumen, dan pemetaan"
+        caption="Titik $z=x+iy$ dapat dibaca sebagai vektor dari origin. Modulus adalah panjang vektor, sedangkan argumen menyatakan sudut terhadap sumbu real."
+      >
+        <svg viewBox="0 0 520 280" role="img" aria-label={en ? "Complex plane with a complex number and its polar representation" : "Bidang kompleks dengan representasi polar"}>
+          <line x1="55" y1={cy} x2="470" y2={cy} className="svg-axis" />
+          <line x1={cx} y1="35" x2={cx} y2="240" className="svg-axis" />
+          <circle cx={cx} cy={cy} r={r} className="svg-circle" />
+          <line x1={cx} y1={cy} x2="335" y2="83" className="svg-line-primary" />
+          <line x1="335" y1="83" x2="335" y2={cy} className="svg-dash" />
+          <line x1="335" y1="83" x2={cx} y2="83" className="svg-dash" />
+          <circle cx="335" cy="83" r="7" className="svg-point" />
+          <path d="M 298 135 A 38 38 0 0 0 291 113" className="svg-curve-thin" />
+          <text x="305" y="116" className="svg-label">arg z</text>
+          <text x="342" y="75" className="svg-label">z</text>
+          <text x="446" y="126" className="svg-label">Re</text>
+          <text x="270" y="48" className="svg-label">Im</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "abstract-algebra") {
+    const nodes=[[260,48],[385,120],[338,222],[182,222],[135,120]];
+    return (
+      <FigureShell
+        title="Operasi dan simetri dalam struktur aljabar"
+        caption="Struktur aljabar dipahami melalui operasi yang tertutup dan aturan yang dipertahankan. Diagram simetri membantu melihat komposisi, invers, orbit, dan generator."
+      >
+        <svg viewBox="0 0 520 280" role="img" aria-label={en ? "Pentagonal symmetry graph representing algebraic operations" : "Graf simetri pentagon untuk struktur aljabar"}>
+          <polygon points={nodes.map(p=>p.join(",")).join(" ")} className="svg-circle" />
+          {nodes.map((p,i)=><g key={i}><circle cx={p[0]} cy={p[1]} r="15" className="svg-node"/><text x={p[0]} y={p[1]+5} textAnchor="middle" className="svg-node-label">{i}</text></g>)}
+          <path d="M260 48 C330 42 392 76 385 120" className="svg-arrow"/>
+          <path d="M385 120 C410 170 378 212 338 222" className="svg-arrow"/>
+          <line x1="260" y1="48" x2="338" y2="222" className="svg-line-accent"/>
+          <line x1="385" y1="120" x2="182" y2="222" className="svg-line-accent"/>
+          <text x="275" y="32" className="svg-label">operasi</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "olympiad") {
+    return (
+      <FigureShell
+        title="Peta strategi pemecahan masalah"
+        caption="Soal olimpiade jarang selesai dengan satu rumus. Diagram menunjukkan alur: pahami struktur, eksperimen, pilih invariant atau transformasi, lalu buktikan."
+      >
+        <svg viewBox="0 0 520 290" role="img" aria-label={en ? "Olympiad problem solving strategy tree" : "Pohon strategi pemecahan masalah olimpiade"}>
+          <rect x="188" y="30" width="145" height="42" rx="12" className="svg-box"/><text x="260" y="56" textAnchor="middle" className="svg-label">Masalah</text>
+          <line x1="260" y1="72" x2="260" y2="105" className="svg-edge"/>
+          <rect x="185" y="105" width="150" height="42" rx="12" className="svg-box"/><text x="260" y="131" textAnchor="middle" className="svg-label">Struktur & pola</text>
+          <line x1="225" y1="147" x2="125" y2="190" className="svg-edge"/><line x1="260" y1="147" x2="260" y2="190" className="svg-edge"/><line x1="295" y1="147" x2="395" y2="190" className="svg-edge"/>
+          <rect x="65" y="190" width="120" height="42" rx="12" className="svg-box"/><text x="125" y="216" textAnchor="middle" className="svg-label">Invariant</text>
+          <rect x="200" y="190" width="120" height="42" rx="12" className="svg-box"/><text x="260" y="216" textAnchor="middle" className="svg-label">Konstruksi</text>
+          <rect x="335" y="190" width="120" height="42" rx="12" className="svg-box"/><text x="395" y="216" textAnchor="middle" className="svg-label">Ekstrem</text>
+          <line x1="125" y1="232" x2="260" y2="260" className="svg-edge"/><line x1="260" y1="232" x2="260" y2="260" className="svg-edge"/><line x1="395" y1="232" x2="260" y2="260" className="svg-edge"/>
+          <circle cx="260" cy="262" r="13" className="svg-accent-fill"/>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "calculus") {
+    const curve=Array.from({length:61},(_,i)=>{
+      const t=i/60;
+      const x=65+t*390;
+      const y=220-125*(0.15+0.85*t*t);
+      return [x,y];
+    });
+    return (
+      <FigureShell
+        title="Perubahan lokal dan akumulasi"
+        caption="Kalkulus menghubungkan kemiringan lokal dengan akumulasi global. Garis singgung mewakili turunan, sedangkan daerah di bawah kurva mewakili integral."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Calculus curve with tangent line and accumulated area" : "Kurva kalkulus dengan garis singgung dan daerah integral"}>
+          <Axis x={45} y={220} width={425} height={170} />
+          <polygon points={"65,220 "+curve.slice(0,43).map(p=>p.join(",")).join(" ")+" "+curve[42][0]+",220"} className="svg-riemann-bar"/>
+          <polyline points={curve.map(p=>p.join(",")).join(" ")} className="svg-curve" />
+          <line x1="230" y1="205" x2="375" y2="88" className="svg-line-accent"/>
+          <circle cx="310" cy="140" r="7" className="svg-point"/>
+          <text x="376" y="84" className="svg-label">f′(a)</text>
+          <text x="150" y="205" className="svg-label">∫ f</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "graph-theory") {
+    const nodes=[[105,145],[195,70],[205,215],[310,75],[325,210],[420,145]];
+    const edges=[[0,1],[0,2],[1,2],[1,3],[2,4],[3,4],[3,5],[4,5],[1,4]];
+    return (
+      <FigureShell
+        title="Simpul, sisi, lintasan, dan struktur global"
+        caption="Teori graf mengubah relasi menjadi simpul dan sisi. Dari diagram yang sama dapat dipelajari derajat, lintasan, siklus, keterhubungan, pewarnaan, matching, dan aliran."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Graph with vertices edges and a highlighted cycle" : "Graf dengan simpul sisi dan siklus yang ditandai"}>
+          {edges.map(([a,b],i)=><line key={i} x1={nodes[a][0]} y1={nodes[a][1]} x2={nodes[b][0]} y2={nodes[b][1]} className={i===2||i===8||i===5?"svg-line-accent":"svg-edge"} />)}
+          {nodes.map((p,i)=><g key={i}><circle cx={p[0]} cy={p[1]} r="16" className="svg-node"/><text x={p[0]} y={p[1]+5} textAnchor="middle" className="svg-node-label">v{i+1}</text></g>)}
+          <text x="348" y="42" className="svg-label">G=(V,E)</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "number-theory") {
+    const cx=260,cy=135,r=92;
+    const pts=Array.from({length:12},(_,i)=>{
+      const a=-Math.PI/2+i*2*Math.PI/12;
+      return [cx+r*Math.cos(a),cy+r*Math.sin(a)];
+    });
+    return (
+      <FigureShell
+        title="Residu, periodisitas, dan struktur modulo"
+        caption="Aritmetika modulo mengubah bilangan bulat menjadi kelas residu yang berulang. Pola ini mendasari kongruensi, invers modular, orde, residu kuadrat, dan banyak teknik olimpiade."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Clock diagram modulo twelve" : "Diagram jam modulo dua belas"}>
+          <circle cx={cx} cy={cy} r={r} className="svg-circle" />
+          {pts.map((p,i)=><g key={i}><circle cx={p[0]} cy={p[1]} r="12" className="svg-node"/><text x={p[0]} y={p[1]+4} textAnchor="middle" className="svg-node-label">{i}</text></g>)}
+          <path d="M260 43 A92 92 0 0 1 347 106" className="svg-arrow" />
+          <line x1={pts[1][0]} y1={pts[1][1]} x2={pts[5][0]} y2={pts[5][1]} className="svg-line-accent"/>
+          <text x="350" y="58" className="svg-label">mod m</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "differential-equations") {
+    const field=[];
+    for(let i=0;i<9;i++){
+      for(let j=0;j<6;j++){
+        const x=65+i*48,y=55+j*32;
+        const slope=(j-2.5)*0.22-(i-4)*0.07;
+        const dx=14,dy=dx*slope;
+        field.push([x-dx,y+dy,x+dx,y-dy]);
+      }
+    }
+    const curve1=Array.from({length:50},(_,i)=>{const t=i/49;return [65+t*390,205-105*Math.exp(-2.1*t)]});
+    const curve2=Array.from({length:50},(_,i)=>{const t=i/49;return [65+t*390,150-55*Math.exp(-1.7*t)]});
+    return (
+      <FigureShell
+        title="Medan kemiringan dan keluarga solusi"
+        caption="Persamaan diferensial menentukan laju perubahan. Medan kemiringan memperlihatkan arah lokal, sedangkan kurva solusi mengikuti arah tersebut dan dipilih oleh kondisi awal."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Slope field with solution curves" : "Medan kemiringan dengan kurva solusi"}>
+          <Axis x={45} y={235} width={425} height={185} />
+          {field.map((e,i)=><line key={i} x1={e[0]} y1={e[1]} x2={e[2]} y2={e[3]} className="svg-dash"/>)}
+          <polyline points={curve1.map(p=>p.join(",")).join(" ")} className="svg-curve"/>
+          <polyline points={curve2.map(p=>p.join(",")).join(" ")} className="svg-line-accent"/>
+          <text x="360" y="88" className="svg-label">y′=f(x,y)</text>
         </svg>
       </FigureShell>
     );
