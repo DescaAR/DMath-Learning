@@ -38,6 +38,7 @@ export const siteConfig = {
     { label: "Bank Soal", href: "/bank-soal" },
     { label: "Olimpiade", href: "/olimpiade" },
     { label: "Pembahasan", href: "/pembahasan" },
+    { label: "Sumber Belajar Lain", href: "/sumber-belajar-lain" },
     { label: "Tentang", href: "/tentang" },
   ],
 } as const;
