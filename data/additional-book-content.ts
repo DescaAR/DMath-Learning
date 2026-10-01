@@ -5,22 +5,62 @@ function genericContent(subjectTitle:string,chapterTitle:string,sectionTitle:str
   const ideas=keyIdeas.join(", ");
   const first=keyIdeas[0] ?? sectionTitle;
   const second=keyIdeas[1] ?? "konsep terkait";
+  const third=keyIdeas[2] ?? "struktur pendukung";
+  const notation =
+    subjectTitle==="Aljabar Linear" ? [
+      {symbol:"$V,W$",meaning:"ruang vektor"},
+      {symbol:"$\operatorname{span}(S)$",meaning:"span himpunan vektor $S$"},
+      {symbol:"$\ker T$",meaning:"kernel transformasi linear $T$"},
+      {symbol:"$\operatorname{im}T$",meaning:"image transformasi linear $T$"},
+      {symbol:"$\lambda$",meaning:"skalar atau nilai eigen sesuai konteks"},
+    ] : subjectTitle==="Struktur Aljabar" ? [
+      {symbol:"$(G,*)$",meaning:"grup dengan operasi biner $*$"},
+      {symbol:"$H\le G$",meaning:"$H$ subgrup dari $G$"},
+      {symbol:"$G/N$",meaning:"grup faktor oleh subgrup normal $N$"},
+      {symbol:"$R/I$",meaning:"ring faktor oleh ideal $I$"},
+      {symbol:"$\varphi$",meaning:"homomorfisma sesuai konteks"},
+    ] : subjectTitle==="Kombinatorika" ? [
+      {symbol:"$\binom nk$",meaning:"banyak cara memilih $k$ objek dari $n$ objek"},
+      {symbol:"$|A|$",meaning:"kardinalitas himpunan $A$"},
+      {symbol:"G=(V,E)",meaning:"graf dengan simpul $V$ dan sisi $E$"},
+      {symbol:"$a_n$",meaning:"suku ke-$n$ suatu barisan"},
+      {symbol:"$[x^n]F(x)$",meaning:"koefisien $x^n$ pada fungsi pembangkit $F$"},
+    ] : [
+      {symbol:"$n,k\in\mathbb Z$",meaning:"parameter integer yang digunakan pada konteks diskret"},
+      {symbol:"$S$",meaning:"himpunan atau ruang objek yang sedang dipelajari"},
+      {symbol:"$|S|$",meaning:"banyak elemen pada $S$"},
+      {symbol:"$P$",meaning:"pernyataan, pola, atau struktur sesuai submateri"},
+    ];
+
   return {
     intro:[
       summary,
-      "Submateri ini berada pada Bab “"+chapterTitle+"” dalam buku digital "+subjectTitle+". Pembahasan diarahkan dari intuisi menuju formulasi formal, lalu diakhiri dengan contoh dan latihan agar hubungan antar-konsep tidak dipelajari sebagai daftar istilah yang terpisah.",
-      "Konsep inti yang menjadi peta pembahasan adalah "+ideas+". Saat membaca, perhatikan syarat pada setiap definisi dan kapan suatu hasil dapat digunakan."
+      "Submateri ini berada pada Bab “"+chapterTitle+"” dalam buku digital "+subjectTitle+". Alurnya dimulai dari motivasi dan contoh kecil, dilanjutkan dengan bahasa formal, lalu digunakan pada pembuktian dan penyelesaian masalah.",
+      "Konsep inti yang membentuk peta pembahasan adalah "+ideas+". Setiap konsep dibedakan berdasarkan definisi, syarat, contoh, noncontoh, dan hubungan logisnya dengan konsep lain.",
+      "Pembahasan tidak berhenti pada pengenalan istilah. Setiap halaman diarahkan untuk menjawab mengapa konsep diperlukan, bagaimana objek direpresentasikan, hasil apa yang dapat dibuktikan, dan kapan teknik tertentu lebih efisien daripada teknik lain.",
+      "Visualisasi digunakan untuk membangun intuisi, sedangkan validitas matematis tetap ditentukan oleh definisi dan pembuktian. Setelah memahami bagian formal, contoh terbahas dan latihan digunakan untuk menguji kemampuan menerapkan konsep pada situasi baru."
     ],
+    notation,
     formal:[
       {
         kind:"note",
         title:"Kerangka Konseptual",
-        statement:"Istilah utama yang perlu dibedakan secara cermat pada submateri ini adalah "+ideas+". Gunakan contoh dan noncontoh untuk menguji batas setiap konsep."
+        statement:"Istilah utama yang perlu dibedakan secara cermat adalah "+ideas+". Untuk setiap istilah, periksa objek yang dibicarakan, syarat yang wajib dipenuhi, dan konsekuensi yang benar-benar mengikuti definisi."
       },
       {
         kind:"note",
         title:"Arah Penalaran",
-        statement:"Pembahasan formal pada bagian ini berpusat pada hubungan antara "+first+" dan "+second+". Perhatikan hipotesis, kesimpulan, serta apakah implikasi yang digunakan berlaku satu arah atau dua arah."
+        statement:"Hubungan antara "+first+", "+second+", dan "+third+" tidak boleh diasumsikan sebagai ekuivalensi. Setiap arah implikasi harus didukung definisi, teorema, atau konstruksi yang sah."
+      },
+      {
+        kind:"note",
+        title:"Strategi Pembuktian",
+        statement:"Pembuktian pada submateri ini dapat melibatkan argumen langsung, kontraposisi, kontradiksi, induksi, konstruksi, double counting, invariant, atau reduksi ke hasil sebelumnya sesuai sifat objek."
+      },
+      {
+        kind:"note",
+        title:"Pemeriksaan Hasil",
+        statement:"Jawaban akhir perlu diperiksa kembali melalui definisi, contoh ekstrem, representasi alternatif, atau substitusi balik agar kesalahan notasi dan asumsi tersembunyi dapat terdeteksi."
       }
     ],
     examples:[
@@ -28,56 +68,102 @@ function genericContent(subjectTitle:string,chapterTitle:string,sectionTitle:str
         title:"Membaca Struktur Konsep",
         problem:"Identifikasi peran "+first+" dan "+second+" pada satu situasi sederhana yang relevan dengan "+sectionTitle+". Jelaskan objek yang diketahui, kondisi yang harus diperiksa, dan kesimpulan yang ingin diperoleh.",
         solution:[
-          "Ditentukan terlebih dahulu objek matematika yang sedang dibahas dan semesta tempat objek tersebut berada.",
-          "Diperiksa definisi "+first+" serta "+second+" yang relevan dengan situasi tersebut.",
+          "Ditentukan terlebih dahulu objek matematika dan semesta tempat objek tersebut berada.",
+          "Diperiksa definisi "+first+" serta "+second+" yang relevan.",
           "Dihubungkan syarat yang diketahui dengan definisi atau hasil formal yang tersedia.",
-          "Dituliskan kesimpulan beserta alasan matematisnya, bukan hanya hasil akhirnya."
+          "Dituliskan kesimpulan beserta alasan matematisnya, bukan hanya hasil akhir."
         ],
-        conclusion:"Contoh ini menekankan bahwa struktur argumen harus dimulai dari definisi dan hipotesis."
+        conclusion:"Struktur argumen dimulai dari definisi dan hipotesis."
       },
       {
         title:"Contoh dan Noncontoh",
         problem:"Berikan satu contoh yang memenuhi konsep "+first+" dan satu noncontoh yang gagal memenuhi sedikitnya satu syarat penting.",
         solution:[
           "Dipilih objek paling sederhana yang memenuhi seluruh syarat definisi.",
-          "Untuk noncontoh, diubah tepat satu syarat agar alasan kegagalannya dapat terlihat jelas.",
-          "Dibandingkan kedua objek untuk menentukan syarat mana yang benar-benar esensial."
+          "Untuk noncontoh, diubah tepat satu syarat agar alasan kegagalannya terlihat jelas.",
+          "Dibandingkan kedua objek untuk menentukan syarat yang benar-benar esensial."
         ],
-        conclusion:"Contoh dan noncontoh membantu memisahkan syarat inti dari ciri yang hanya kebetulan."
+        conclusion:"Contoh dan noncontoh memisahkan syarat inti dari ciri yang hanya kebetulan."
+      },
+      {
+        title:"Dua Representasi",
+        problem:"Representasikan konsep "+sectionTitle+" dengan dua cara berbeda, misalnya simbolik dan visual, atau aljabar dan kombinatorial.",
+        solution:[
+          "Dipilih representasi pertama yang paling langsung dari definisi.",
+          "Dibangun representasi kedua yang menonjolkan struktur berbeda.",
+          "Dijelaskan informasi apa yang mudah terlihat pada masing-masing representasi.",
+          "Diperiksa bahwa kedua representasi menggambarkan objek yang sama."
+        ],
+        conclusion:"Pergantian representasi sering membuka strategi yang lebih singkat."
+      },
+      {
+        title:"Menyusun Argumen",
+        problem:"Susun garis besar pembuktian yang menggunakan sedikitnya dua konsep dari "+ideas+".",
+        solution:[
+          "Tujuan akhir ditulis dalam bentuk matematis yang jelas.",
+          "Dipilih dua konsep yang paling dekat dengan hipotesis.",
+          "Dibangun rantai implikasi tanpa melompati syarat.",
+          "Kesimpulan akhir dinyatakan kembali sesuai pernyataan yang harus dibuktikan."
+        ],
+        conclusion:"Kejelasan hubungan antar-konsep lebih penting daripada banyaknya langkah."
       }
     ],
     exercises:[
       {
         prompt:"Tuliskan kembali definisi atau karakterisasi utama yang berkaitan dengan "+first+" menggunakan bahasamu sendiri, lalu nyatakan semua syaratnya secara eksplisit.",
         hint:"Pisahkan objek, hipotesis, dan kesimpulan.",
-        answer:"Jawaban yang baik harus memuat seluruh syarat definisi tanpa menambah asumsi yang tidak diperlukan."
+        answer:"Jawaban yang baik memuat seluruh syarat definisi tanpa menambah asumsi yang tidak diperlukan."
       },
       {
-        prompt:"Jelaskan hubungan antara "+first+" dan "+second+". Apakah salah satu selalu mengakibatkan yang lain? Jika tidak, cari arah implikasi yang benar atau berikan noncontoh.",
-        hint:"Uji kedua arah implikasi secara terpisah.",
-        answer:"Hubungan harus dinilai dari definisi atau teorema yang sah. Jika ekuivalensi tidak tersedia, jangan menyimpulkan dua arah."
+        prompt:"Jelaskan hubungan antara "+first+" dan "+second+". Uji kedua arah implikasi secara terpisah.",
+        hint:"Bedakan implikasi, ekuivalensi, dan keterkaitan biasa.",
+        answer:"Hubungan harus dinilai dari definisi atau teorema yang sah; jangan menyimpulkan dua arah tanpa dasar."
       },
       {
         prompt:"Bangun satu contoh baru yang memenuhi konsep-konsep utama pada submateri ini dan verifikasi setiap syarat secara berurutan.",
-        hint:"Mulai dari contoh berukuran kecil atau struktur paling sederhana.",
-        answer:"Verifikasi harus merujuk langsung pada syarat definisi, bukan pada kemiripan bentuk."
+        hint:"Mulai dari objek berukuran kecil atau struktur paling sederhana.",
+        answer:"Verifikasi harus merujuk langsung pada syarat definisi."
+      },
+      {
+        prompt:"Bangun satu noncontoh dan tunjukkan tepat di bagian mana definisi gagal.",
+        hint:"Ubah satu syarat dari contoh yang valid.",
+        answer:"Noncontoh yang baik memperlihatkan mengapa sebuah hipotesis memang diperlukan."
       },
       {
         prompt:"Tuliskan satu kesalahan penalaran yang mungkin terjadi ketika menggunakan "+sectionTitle+" dan jelaskan cara memperbaikinya.",
         hint:"Periksa syarat yang sering diabaikan.",
-        answer:"Perbaikan harus menunjukkan syarat yang hilang dan bagaimana syarat tersebut digunakan dalam argumen."
+        answer:"Perbaikan harus menunjukkan syarat yang hilang dan bagaimana syarat tersebut digunakan."
+      },
+      {
+        prompt:"Hubungkan "+sectionTitle+" dengan submateri sebelumnya dan berikutnya dalam satu diagram konsep.",
+        hint:"Gunakan "+first+", "+second+", dan "+third+" sebagai simpul awal.",
+        answer:"Diagram harus menunjukkan arah ketergantungan konsep, bukan hanya daftar istilah."
+      },
+      {
+        prompt:"Selesaikan satu kasus kecil menggunakan dua metode berbeda dan bandingkan efisiensinya.",
+        hint:"Coba pendekatan definisional lalu pendekatan teorema atau representasi alternatif.",
+        answer:"Kedua metode harus memberi hasil konsisten dan perbandingan harus menyebut kelebihan masing-masing."
+      },
+      {
+        prompt:"Rancang satu soal menantang yang menggabungkan sedikitnya dua ide dari submateri ini, lalu tuliskan garis besar solusinya.",
+        hint:"Gunakan dua ide dari: "+ideas+".",
+        answer:"Soal dan garis besar solusi harus dapat diselesaikan dengan materi pada halaman tanpa asumsi tambahan yang tidak dijelaskan."
       }
     ],
     mistakes:[
       "Menghafal nama hasil tanpa memeriksa seluruh hipotesis yang diperlukan.",
-      "Menganggap contoh khusus sebagai bukti pernyataan umum.",
+      "Menganggap contoh khusus atau gambar sebagai bukti pernyataan umum.",
       "Menggunakan implikasi secara terbalik tanpa teorema yang menjamin ekuivalensi.",
-      "Melompati verifikasi definisi ketika membuktikan suatu objek mempunyai sifat tertentu."
+      "Melompati verifikasi definisi ketika membuktikan suatu objek mempunyai sifat tertentu.",
+      "Mencampur notasi atau semesta objek sehingga operasi yang digunakan sebenarnya tidak terdefinisi.",
+      "Tidak melakukan pemeriksaan akhir melalui contoh, substitusi balik, atau representasi alternatif."
     ],
     connections:[
       "Konsep pada bagian ini digunakan kembali pada submateri berikutnya dalam Bab "+chapterTitle+".",
-      "Hubungkan setiap definisi dengan contoh konkret dan representasi alternatifnya.",
-      "Saat tersedia, bandingkan pendekatan konstruktif, aljabar, kombinatorial, geometris, atau algoritmik."
+      "Hubungkan setiap definisi dengan contoh konkret, noncontoh, dan representasi visual.",
+      "Bandingkan pendekatan konstruktif, aljabar, kombinatorial, geometris, atau algoritmik ketika lebih dari satu pendekatan tersedia.",
+      "Hasil formal pada halaman ini dapat berfungsi sebagai lemma untuk soal atau teorema yang lebih lanjut.",
+      "Latihan sintesis dirancang agar pembaca menggabungkan sedikitnya dua konsep, bukan hanya menjalankan prosedur rutin."
     ]
   };
 }
