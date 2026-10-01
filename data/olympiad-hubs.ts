@@ -1,3 +1,4 @@
+import type { ContentProvenance } from "@/data/book-content-types";
 export type OText = { id: string; en: string };
 
 export type OlympiadUnit = {
@@ -20,6 +21,8 @@ export type OlympiadProblem = {
   problem: OText;
   hint: OText;
   solution: OText[];
+  provenance?: ContentProvenance;
+  sourceNote?: string;
 };
 
 export type OlympiadHub = {
