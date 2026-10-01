@@ -1,3 +1,5 @@
+import { additionalBookSubjects } from "@/data/additional-book-curricula";
+
 export type BookSection = {
   number:string;
   slug:string;
@@ -15,7 +17,7 @@ export type BookChapter = {
 };
 
 export type BookSubject = {
-  slug:"analisis-real"|"analisis-kompleks";
+  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar";
   title:string;
   subtitle:string;
   level:string;
@@ -173,7 +175,7 @@ export const complexAnalysisBook:BookSubject={
   ]
 };
 
-export const bookSubjects=[realAnalysisBook,complexAnalysisBook] as const;
+export const bookSubjects=[realAnalysisBook,complexAnalysisBook,...additionalBookSubjects] as const;
 export const bookSubjectMap=Object.fromEntries(bookSubjects.map((subject)=>[subject.slug,subject])) as Record<string,BookSubject>;
 export const allBookSections=bookSubjects.flatMap((subject)=>subject.chapters.flatMap((chapter)=>chapter.sections.map((section)=>({subject,chapter,section}))));
 export function getBookSection(subjectSlug:string,sectionSlug:string){
