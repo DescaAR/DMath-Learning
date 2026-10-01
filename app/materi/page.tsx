@@ -63,7 +63,6 @@ export default function MateriPage() {
                   <div><strong>{subject.chapters.length}</strong><span>unit belajar</span></div>
                   <div><strong>{sectionCount}</strong><span>submateri</span></div>
                   <div><strong>1</strong><span>submateri / halaman</span></div>
-                  <div><strong>Prev/Next</strong><span>navigasi</span></div>
                 </div>
                 <div className="actions"><Link className="btn primary" href={"/materi/"+subject.slug}>Buka {subject.title}</Link></div>
               </article>
