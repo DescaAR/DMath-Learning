@@ -3,6 +3,7 @@ import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { learningTracks, materials, subjects } from "@/data/site-data";
 import { StatusBadge } from "@/components/StatusBadge";
+import { RiemannHubShell } from "@/components/RiemannHubShell";
 
 export const metadata: Metadata = {
   ...createPageMetadata({
@@ -15,147 +16,90 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const featured = materials.slice(0, 8);
-
+  const featured=materials.slice(0,8);
   return (
-    <>
-      <section className="hero home-hero-v3">
-        <div className="container hero-inner">
-          <span className="eyebrow">DMath Learning · Think Deeper, Solve Better.</span>
-          <h1>Bangun Pemahaman.<br />Asah Cara Berpikir.</h1>
-          <p>
-            Belajar matematika sebagai struktur yang utuh: intuisi, definisi formal, teorema,
-            pembuktian, visualisasi, worked examples, latihan bertahap, dan bank soal.
-          </p>
-          <div className="actions">
-            <Link className="btn primary" href="/materi">Mulai dari Materi</Link>
-            <Link className="btn secondary" href="/bank-soal">Jelajahi Bank Soal</Link>
-            <Link className="text-link" href="/olimpiade">Jalur Olimpiade →</Link>
-          </div>
-
-          <div className="home-proof-strip">
-            <div><strong>13</strong><span>materi awal published</span></div>
-            <div><strong>100</strong><span>soal Basis & Dimensi</span></div>
-            <div><strong>30</strong><span>latihan terkurasi</span></div>
-            <div><strong>KaTeX</strong><span>rumus terformat profesional</span></div>
-          </div>
-
-          <div className="hero-note">
-            <strong>Concept → Intuition → Formalization → Example → Practice → Problem Solving → Mastery</strong>
-            <span>Setiap materi dibangun untuk benar-benar dipelajari, bukan sekadar dibaca.</span>
-          </div>
+    <RiemannHubShell
+      eyebrow="DMath Learning · Think Deeper, Solve Better."
+      title="Bangun Pemahaman. Asah Cara Berpikir."
+      lead="Belajar matematika sebagai struktur yang utuh: intuisi, definisi formal, teorema, pembuktian, visualisasi, contoh terbahas, latihan bertahap, dan bank soal."
+      meta={["SD–SMA","Kuliah","Olimpiade","ON-MIPA"]}
+      stats={[
+        {value:materials.length,label:"materi tersedia"},
+        {value:learningTracks.length,label:"jalur belajar"},
+        {value:100,label:"soal Basis & Dimensi"},
+        {value:30,label:"latihan terkurasi"},
+      ]}
+      actions={[
+        {label:"Mulai dari Materi",href:"/materi",kind:"primary"},
+        {label:"Jelajahi Bank Soal",href:"/bank-soal",kind:"secondary"},
+      ]}
+      overviewTitle="Concept → Intuition → Formalization → Example → Practice → Problem Solving → Mastery."
+      overviewText="Setiap bagian DMath Learning dibuat untuk benar-benar dipelajari, bukan sekadar dibaca."
+      roadmap={["Pilih Jalur","Pelajari Materi","Pahami Bukti","Kerjakan Latihan","Gunakan Bank Soal","Evaluasi Solusi"]}
+      sections={[
+        {id:"home-jalur",label:"Jalur Belajar"},
+        {id:"home-materi",label:"Materi Tersedia"},
+        {id:"home-unggulan",label:"Bab Unggulan"},
+        {id:"home-bidang",label:"Bidang Matematika"},
+        {id:"home-lanjut",label:"Lanjut Belajar"},
+      ]}
+    >
+      <section id="home-jalur" className="book-section ird-source-section">
+        <div className="section-number">01</div>
+        <span className="eyebrow">Jalur Belajar</span>
+        <h2>Dari fondasi sekolah hingga kompetisi mahasiswa.</h2>
+        <div className="ird-worked-grid">
+          {learningTracks.map((track,index)=>(
+            <article className="ird-worked-card" key={track.title}>
+              <div className="ird-worked-head"><div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div><div><span className="eyebrow">Jalur</span><h3>{track.title}</h3></div></div>
+              <div className="ird-worked-prompt"><p>{track.description}</p></div>
+              <div className="actions"><Link className="btn primary" href={track.href}>Buka Jalur</Link></div>
+            </article>
+          ))}
         </div>
       </section>
 
-      <section className="section" id="jalur">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <span className="eyebrow">Pilih jalur belajar</span>
-              <h2>Dari fondasi sekolah hingga matematika kompetisi mahasiswa.</h2>
-            </div>
-            <p>
-              Jalur reguler dan kompetisi dipisahkan agar kedalaman teori, formalitas pembuktian,
-              dan gaya problem solving sesuai dengan tujuan pengguna.
-            </p>
-          </div>
-          <div className="grid tracks-grid">
-            {learningTracks.map((track, index) => (
-              <Link className="card track-card" href={track.href} key={track.title}>
-                <span className="card-index">{String(index + 1).padStart(2, "0")}</span>
-                <h3>{track.title}</h3>
-                <p>{track.description}</p>
-                <span className="link">Lihat jalur →</span>
-              </Link>
-            ))}
-          </div>
+      <section id="home-materi" className="book-section ird-practice-section">
+        <div className="section-number">02</div>
+        <span className="eyebrow">Materi Published</span>
+        <h2>Bab digital dengan teori, bukti, contoh, dan visualisasi.</h2>
+        <div className="ird-worked-grid">
+          {featured.map((item,index)=>(
+            <article className="ird-worked-card" key={item.title}>
+              <div className="ird-worked-head"><div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div><div><span className="eyebrow">{item.level} · {item.subject}</span><h3>{item.title}</h3></div></div>
+              <div className="ird-worked-prompt"><p>{item.summary}</p></div>
+              <div className="card-top"><StatusBadge status={item.status}/></div>
+              <div className="actions"><Link className="btn primary" href={item.href}>Pelajari Materi</Link></div>
+            </article>
+          ))}
         </div>
       </section>
 
-      <section className="section soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <span className="eyebrow">Materi published</span>
-              <h2>Bab digital yang berisi teori, bukti, contoh, dan visualisasi.</h2>
-            </div>
-            <Link href="/materi" className="text-link">Lihat semua 13 materi →</Link>
-          </div>
-
-          <div className="grid material-grid home-material-grid">
-            {featured.map((item) => (
-              <article className="card material-card" key={item.title}>
-                <div className="card-top">
-                  <span>{item.level} · {item.subject}</span>
-                  <StatusBadge status={item.status} />
-                </div>
-                <h3>{item.title}</h3>
-                <p>{item.summary}</p>
-                <Link className="link" href={item.href}>Pelajari materi →</Link>
-              </article>
-            ))}
-          </div>
+      <section id="home-unggulan" className="book-section ird-source-section">
+        <div className="section-number">03</div>
+        <span className="eyebrow">Bab Unggulan</span>
+        <h2>Integral Riemann menjadi acuan struktur seluruh website.</h2>
+        <p>Struktur hero, roadmap, sidebar progres, bagian bernomor, blok formal, latihan, solusi, dan navigasi lanjut kini digunakan sebagai bahasa desain utama DMath Learning.</p>
+        <div className="actions">
+          <Link className="btn primary" href="/materi/integral-riemann">Buka Integral Riemann</Link>
+          <Link className="btn secondary" href="/kuliah/aljabar-linear/basis-dan-dimensi">Buka Basis & Dimensi</Link>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container split">
-          <div>
-            <span className="eyebrow">Gold standard chapter</span>
-            <h2>Basis dan Dimensi dibuat seperti bab buku digital serius.</h2>
-            <p>
-              Materi mencakup motivasi, peta konsep, kombinasi linear, span, bebas linear,
-              basis, koordinat, dimensi, basis subruang, ekstensi basis, ruang baris-kolom,
-              rank–nullity, sebelas teorema dengan pembuktian, worked examples, dan ringkasan.
-            </p>
-            <div className="actions">
-              <Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi">Buka Materi Lengkap</Link>
-              <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka 100 Soal</Link>
-            </div>
-          </div>
-          <div className="feature-card gold-standard-card">
-            <span className="eyebrow cyan">Aljabar Linear · Kuliah</span>
-            <h3>Basis & Dimensi</h3>
-            <ul className="clean-list">
-              <li>11 hasil utama + pembuktian bertahap</li>
-              <li>Visualisasi basis pada bidang koordinat</li>
-              <li>Worked examples dasar–lanjut</li>
-              <li>30 latihan terkurasi satu-per-satu</li>
-              <li>100 bank soal dengan 5 tingkat kesulitan</li>
-              <li>Detail pembahasan per soal</li>
-            </ul>
-          </div>
-        </div>
+      <section id="home-bidang" className="book-section ird-source-section">
+        <div className="section-number">04</div>
+        <span className="eyebrow">Bidang Matematika</span>
+        <h2>Hubungan antarkonsep tetap terlihat.</h2>
+        <div className="ird-roadmap">{subjects.map((subject,index)=><div key={subject}><span>{String(index+1).padStart(2,"0")}</span><strong>{subject}</strong></div>)}</div>
       </section>
 
-      <section className="section soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <span className="eyebrow">Bidang matematika</span>
-              <h2>Struktur konten siap berkembang tanpa menjadi kumpulan artikel acak.</h2>
-            </div>
-          </div>
-          <div className="subjects">{subjects.map((subject) => <span key={subject}>{subject}</span>)}</div>
-        </div>
+      <section id="home-lanjut" className="book-section ird-source-section">
+        <div className="section-number">05</div>
+        <span className="eyebrow">Lanjut Belajar</span>
+        <h2>Materi untuk memahami, soal untuk menguji.</h2>
+        <p>Setelah membaca materi, lanjutkan ke latihan terkurasi atau bank soal agar konsep berubah menjadi kemampuan problem solving.</p>
+        <div className="actions"><Link className="btn primary" href="/materi">Buka Materi</Link><Link className="btn secondary" href="/bank-soal">Bank Soal</Link></div>
       </section>
-
-      <section className="section">
-        <div className="container callout">
-          <div>
-            <span className="eyebrow">Belajar lebih terarah</span>
-            <h2>Materi untuk memahami, soal untuk menguji.</h2>
-            <p>
-              Setelah membaca materi, lanjutkan ke latihan terkurasi atau bank soal agar konsep
-              benar-benar menjadi kemampuan problem solving.
-            </p>
-          </div>
-          <div className="actions callout-actions">
-            <Link className="btn primary" href="/materi">Buka Materi</Link>
-            <Link className="btn secondary" href="/bank-soal">Bank Soal</Link>
-          </div>
-        </div>
-      </section>
-    </>
+    </RiemannHubShell>
   );
 }
