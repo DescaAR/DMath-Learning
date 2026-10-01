@@ -71,7 +71,7 @@ export function FormalChapterSection({
                       <small>{en ? "show / hide" : "buka / tutup"}</small>
                     </summary>
                     <div className="formal-proof-body">
-                      {block.proof.map((step, stepIndex) => (
+                      {(block.proof??[]).map((step, stepIndex) => (
                         <div className="formal-proof-step" key={stepIndex}>
                           <span>{stepIndex + 1}</span>
                           <div><RichMath>{pick(step)}</RichMath></div>
