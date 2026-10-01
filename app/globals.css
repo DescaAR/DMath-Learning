@@ -3105,3 +3105,29 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .ird-area-fill{fill:rgba(0,194,255,.16);stroke:none}.ird-current-x{stroke:#f59e0b;stroke-width:2;stroke-dasharray:5 4}
 @media(max-width:980px){.ird-exercise-lab{grid-template-columns:1fr}}
 @media(max-width:640px){.ird-worked-card{padding:16px}.ird-worked-head{align-items:flex-start}}
+
+
+/* Integral Riemann — full audit layout */
+.ird-toc a{padding:7px 8px;border-radius:9px;transition:background .15s ease,color .15s ease}
+.ird-toc a.active{background:var(--soft);color:var(--primary);font-weight:850}
+.ird-solution-prefix{margin-bottom:18px}
+.ird-solution-part{margin:22px 0 0;padding-top:18px;border-top:1px solid var(--border)}
+.ird-solution-goal{padding:13px 15px;border-radius:13px;background:var(--surface-2);border-left:4px solid var(--blue);margin-bottom:14px;line-height:1.65}
+.ird-solution-goal strong{color:var(--text)}
+.ird-darboux-integral-panel{border:1px solid var(--border);border-radius:18px;background:var(--surface);padding:22px}
+.ird-bound-row{display:grid;grid-template-columns:150px 1fr 72px;gap:12px;align-items:center;margin:14px 0}
+.ird-bound-row>span{font-size:.82rem;color:var(--muted)}
+.ird-bound-row>div{height:12px;background:var(--light);border-radius:999px;overflow:hidden}
+.ird-bound-row>div>i{display:block;height:100%;background:var(--blue);border-radius:inherit}
+.ird-bound-row.exact>div>i{background:var(--success)}
+.ird-bound-row>strong{text-align:right;font-variant-numeric:tabular-nums}
+.ird-definition-pair{display:grid;gap:10px;margin-top:20px;padding-top:18px;border-top:1px solid var(--border)}
+.ird-equivalence-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center;padding:16px}
+.ird-equivalence-flow>div{padding:16px;border:1px solid var(--border);border-radius:14px;text-align:center;background:var(--surface-2);display:grid;gap:6px}
+.ird-equivalence-flow>span{font-size:1.5rem;font-weight:850;color:var(--primary)}
+@media(max-width:700px){
+  .ird-bound-row{grid-template-columns:1fr}
+  .ird-bound-row>strong{text-align:left}
+  .ird-equivalence-flow{grid-template-columns:1fr}
+  .ird-equivalence-flow>span{transform:rotate(90deg);text-align:center}
+}
