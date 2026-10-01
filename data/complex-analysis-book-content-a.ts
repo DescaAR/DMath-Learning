@@ -451,7 +451,7 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
   {prompt:"Cari zeros $\\sin z$.",hint:"$e^{2iz}=1$.",answer:"$z=n\\pi$, $n\\in\\mathbb Z$."},
   {prompt:"Apakah $|\\sin z|\\le1$ untuk complex z?",hint:"Ambil z=iy.",answer:"Tidak; $|\\sin(iy)|=|\\sinh y|$ tak terbatas."}
  ],
- mistakes:["Mentransfer boundedness trig real ke complex.","Salah tanda pada hubungan sin(iy) dan sinh.","Menganggap identities hanya real; banyak identitas entire berlaku kompleks."]
+ mistakes:["Mentransfer boundedness trig real ke complex.","Salah tanda pada hubungan sin(iy) dan sinh.","Menganggap identities hanya real; banyak identitas entire berlaku kompleks."],
  connections:["Euler formula.","Zeros/poles fungsi trig.","Residue calculations sering memakai trig/hyperbolic."]
 },
 
@@ -490,7 +490,7 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
   {prompt:"Apa modulus $e^{(1+2i)t}$?",hint:"Bagian real exponent.",answer:"$e^t$."},
   {prompt:"Apa period phase $e^{i\\omega t}$?",hint:"$\\omega T=2\\pi$.",answer:"$T=2\\pi/|\\omega|$ untuk $\\omega\\ne0$."}
  ],
- mistakes:["Menganggap complex signal itu sendiri selalu quantity fisik.","Mencampur growth rate dan frequency.","Lupa branch ketika aplikasi memakai logarithm/power."]
+ mistakes:["Menganggap complex signal itu sendiri selalu quantity fisik.","Mencampur growth rate dan frequency.","Lupa branch ketika aplikasi memakai logarithm/power."],
  connections:["Fourier analysis.","Linear ODE systems.","Potential and wave equations."]
 }
 };
