@@ -23,13 +23,13 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       title={subject.title}
       lead={subject.subtitle}
       meta={[
-        subject.chapters.length+" bab",
+        subject.curriculumVersion??"DMath Curriculum",
+        subject.chapters.length+" unit belajar",
         sectionCount+" submateri",
-        "Satu submateri per halaman",
         "Teori · Bukti · Contoh · Latihan",
       ]}
       stats={[
-        {value:subject.chapters.length,label:"bab utama"},
+        {value:subject.chapters.length,label:"unit belajar"},
         {value:sectionCount,label:"submateri"},
         {value:sectionCount,label:"halaman submateri"},
         {value:"1 pola",label:"struktur Integral Riemann"},
@@ -39,7 +39,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
         {label:"Lihat Kurikulum",href:"#book-chapter-"+subject.chapters[0]?.number.replaceAll(".","-"),kind:"secondary" as const},
       ]}
       overviewEyebrow="Peta Buku"
-      overviewTitle="Pilih bab, lalu pelajari satu submateri sampai selesai."
+      overviewTitle="Pilih unit belajar, lalu pelajari satu submateri sampai selesai."
       overviewText="Setiap halaman submateri mempunyai struktur yang konsisten: tujuan, intuisi, notasi, definisi, teorema, pembuktian, contoh terbahas, latihan dengan petunjuk dan solusi, kesalahan umum, koneksi, ringkasan, serta navigasi ke materi berikutnya."
       roadmap={subject.chapters.map((chapter)=>"Bab "+chapter.number+" · "+chapter.title)}
       sections={sections}
@@ -51,10 +51,10 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
           className="book-section ird-source-section"
         >
           <div className="section-number">{String(chapterIndex+1).padStart(2,"0")}</div>
-          <span className="eyebrow">Bab {chapter.number} · DMath Learning</span>
+          <span className="eyebrow">Unit {chapter.number} · DMath Learning</span>
           <h2>{chapter.title}</h2>
           <p className="ird-paragraph">
-            Bab ini terdiri atas {chapter.sections.length} submateri. Setiap submateri dibuka pada halaman tersendiri agar pembahasan tidak terlalu padat dan urutan belajar tetap jelas.
+            Unit ini terdiri atas {chapter.sections.length} submateri. Setiap submateri dibuka pada halaman tersendiri agar pembahasan tidak terlalu padat dan urutan belajar tetap jelas.
           </p>
 
           <div className="ird-worked-grid">
