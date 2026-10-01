@@ -15,7 +15,7 @@ export default function BelajarPage() {
   return (
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Jalur Belajar"}]}
-      eyebrow="Jalur Belajar · Peta Utama"
+      eyebrow="Jalur Belajar"
       title="Jalur Belajar Matematika"
       lead="Pilih jenjang, jalur kompetisi, atau bidang matematika. Setiap jalur memiliki kurikulum, roadmap, materi yang tersedia, dan arah belajar berikutnya."
       meta={["SD–SMA","Kuliah","Olimpiade","ON-MIPA"]}
@@ -30,7 +30,7 @@ export default function BelajarPage() {
         {label:"Lihat Materi",href:"/materi",kind:"secondary"},
       ]}
       overviewTitle="Struktur Jalur Belajar"
-      overviewText="Jalur reguler dan kompetisi dipisahkan agar kedalaman teori, formalitas pembuktian, dan gaya problem solving sesuai dengan tujuan belajar."
+      overviewText="Jalur reguler dan kompetisi disusun terpisah berdasarkan tujuan, tingkat materi, dan bentuk latihan."
       roadmap={learningTracks.map((track)=>track.title)}
       sections={[
         {id:"belajar-jalur",label:"Jalur Belajar"},

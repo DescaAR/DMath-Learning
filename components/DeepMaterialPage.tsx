@@ -17,6 +17,19 @@ function Text({ children }: { children: string }) {
   return <RichMath className="ird-rich-text">{children}</RichMath>;
 }
 
+function isAcademicDefinition(statement:string){
+  const normalized=statement.trim().toLowerCase();
+  if(!normalized)return false;
+  return !["mempelajari ","membahas ","pembahasan ","submateri ini ","halaman ini ","fokus pada "]
+    .some((prefix)=>normalized.startsWith(prefix))
+    && !normalized.includes("secara konseptual dan formal");
+}
+
+function hasSubstantiveProof(proof?:unknown[]){
+  if(!proof||proof.length<2)return false;
+  return proof.map(String).join(" ").replace(/\s+/g," ").trim().length>=100;
+}
+
 type LocalExample={
   title:string;
   problem:string;
@@ -37,10 +50,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const chapterIndex = deepMaterials.findIndex((item) => item.slug === material.slug);
   const nextChapter = chapterIndex >= 0 && chapterIndex < deepMaterials.length - 1 ? deepMaterials[chapterIndex + 1] : null;
 
-  const formalDefinitions = formal?.blocks.filter((block) => block.kind === "definition") ?? [];
+  const formalDefinitions = formal?.blocks.filter((block) => block.kind === "definition"&&isAcademicDefinition(pick(block.statement))) ?? [];
   const formalResults = formal?.blocks.filter((block) => block.kind !== "definition") ?? [];
-  const provenFormalResults=formalResults.filter((block)=>block.proof&&block.proof.length>0);
-  const explanatoryFormalResults=formalResults.filter((block)=>!block.proof||block.proof.length===0);
+  const provenFormalResults=formalResults.filter((block)=>hasSubstantiveProof(block.proof));
+  const explanatoryFormalResults=formalResults.filter((block)=>!hasSubstantiveProof(block.proof));
 
   const localizedFormalExamples:LocalExample[]=(formal?.examples??[]).map((example)=>({
     title:pick(example.title),
@@ -55,7 +68,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   ];
 
   const definitions=[
-    ...m.definitions.map((definition)=>({title:definition.title,statement:definition.body,intuition:""})),
+    ...m.definitions.filter((definition)=>isAcademicDefinition(definition.body)).map((definition)=>({title:definition.title,statement:definition.body,intuition:""})),
     ...formalDefinitions.map((block)=>({title:pick(block.title),statement:pick(block.statement),intuition:block.intuition?pick(block.intuition):""})),
   ];
 
@@ -69,7 +82,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     {id:"gm-section-5",label:ui("Hasil Formal & Bukti","Formal Results & Proofs")},
     {id:"gm-section-6",label:ui("Contoh Terbahas","Worked Examples")},
     {id:"gm-section-7",label:ui("Visualisasi","Visualization")},
-    {id:"gm-section-8",label:ui("Ringkasan & Referensi","Summary & References")},
+    {id:"gm-section-8",label:ui("Referensi","References")},
     {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},
   ];
 
@@ -117,7 +130,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         ui("Hasil formal & bukti","Formal results & proofs"),
         ui("Contoh terbahas","Worked examples"),
         ui("Visualisasi","Visualization"),
-        ui("Ringkasan","Summary"),
+        ui("Referensi","References"),
         ui("Latihan","Practice"),
       ]}
       sections={sections}
@@ -313,15 +326,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
       <section id="gm-section-8" className="book-section ird-source-section">
         <div className="section-number">08</div>
         <span className="eyebrow">{ui("Bagian 8","Part 8")}</span>
-        <h2>{ui("Ringkasan dan referensi","Summary and references")}</h2>
-        <div className="summary-grid">
-          {m.conceptMap.map((item,index)=>(
-            <div className="summary-card" key={item}>
-              <span className="eyebrow">{String(index+1).padStart(2,"0")}</span>
-              <p><strong>{item}</strong></p>
-            </div>
-          ))}
-        </div>
+        <h2>{ui("Referensi","References")}</h2>
         <article className="ird-formal ird-note" style={{marginTop:24}}>
           <div className="ird-formal-head"><span>{ui("Referensi","References")}</span><strong>{ui("Bacaan lanjut","Further reading")}</strong></div>
           <div className="ird-formal-body">

@@ -453,14 +453,14 @@ function exercisesFor(title:string,keyIdeas:string[]){
   const answer=(steps:string[])=>steps.join("\n");
   return[
     {
-      prompt:"Tuliskan definisi formal objek utama pada "+title+" dan jelaskan setiap komponennya.",
-      hint:"Mulai dari domain, objek, parameter, dan seluruh syarat yang menyertai definisi.",
+      prompt:"Jelaskan objek utama pada "+title+" serta syarat atau struktur matematis yang relevan.",
+      hint:"Mulai dari domain atau ruang yang digunakan, lalu pisahkan objek, parameter, asumsi, dan syarat yang relevan.",
       answer:answer([
         "Diketahui konteks submateri "+title+" dan konsep utama "+a+".",
-        "Objek matematis terlebih dahulu ditentukan beserta domain atau ruang tempat objek tersebut berada.",
-        "Setiap syarat pada definisi dituliskan secara terpisah dan dijelaskan perannya; syarat tidak boleh diganti oleh contoh atau intuisi.",
-        "Setelah seluruh syarat dinyatakan, diberikan satu objek yang memenuhi semuanya sebagai verifikasi.",
-        "Dengan demikian definisi dapat digunakan secara operasional untuk membedakan contoh dan noncontoh."
+        "Objek matematis ditentukan beserta domain atau ruang tempat objek tersebut berada.",
+        "Parameter, asumsi, dan syarat yang benar-benar digunakan dipisahkan secara eksplisit.",
+        "Jika terdapat definisi formal pada submateri ini, setiap komponennya diperiksa pada contoh konkret; jika tidak ada, uraian tetap diperlakukan sebagai penjelasan konsep.",
+        "Kesimpulan menyatakan struktur yang benar tanpa memberi label definisi kepada kalimat deskriptif."
       ]),
       provenance:"dmath-original" as const
     },
@@ -557,10 +557,9 @@ function build(subjectSlug:string,title:string,summary:string,keyIdeas:string[])
     intro:[
       summary,
       profile.perspective,
-      "Pembahasan dimulai dari persoalan yang memotivasi konsep, kemudian bergerak menuju notasi, definisi formal, hasil utama, pembuktian atau justifikasi, contoh terbahas, visualisasi, dan latihan.",
-      "Konsep inti halaman ini adalah "+keyIdeas.join(", ")+". Hubungan antaristilah tersebut perlu dipahami sebelum menggunakan rumus atau algoritma.",
-      "Setiap hasil disertai perhatian terhadap asumsi. Pada topik komputasional, analisis juga memeriksa correctness, stabilitas, kompleksitas, atau sensitivitas sesuai konteks.",
-      "Contoh dan latihan pada halaman ini disusun khusus untuk DMath Learning. Referensi buku digunakan untuk verifikasi cakupan dan terminology, bukan untuk menyalin contoh, soal, ilustrasi, atau urutan sumber."
+      "Konsep utama pada submateri ini adalah "+keyIdeas.join(", ")+".",
+      "Pembahasan menekankan objek matematika, asumsi, definisi yang benar-benar diperlukan, hasil formal yang dapat dipertanggungjawabkan, contoh, dan penerapan.",
+      "Pada topik komputasional, hasil diperiksa melalui feasibility, correctness, stabilitas, kompleksitas, atau sensitivitas sesuai konteks."
     ],
     notation:profile.notation,
     formal:formalFor(subjectSlug,"",title,summary,keyIdeas),

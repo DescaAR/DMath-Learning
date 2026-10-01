@@ -41,8 +41,8 @@ export default function TentangPage() {
         <div className="container split about-split">
           <div className="logo-panel"><Image src="/brand/logo-symbol.webp" alt="Logo DMath Learning" width={260} height={260}/></div>
           <div>
-            <p>DMath Learning adalah platform pembelajaran matematika berbahasa Indonesia yang menyusun materi sebagai struktur belajar: intuisi, definisi formal, teorema, pembuktian, visualisasi, contoh, latihan, dan problem solving.</p>
-            <p>Tujuannya bukan hanya menyediakan jawaban, tetapi membantu pembaca memahami alasan matematis di balik setiap langkah.</p>
+            <p>DMath Learning adalah platform pembelajaran matematika berbahasa Indonesia dengan materi terstruktur, pembuktian, visualisasi, contoh, latihan, dan bank soal.</p>
+            <p>Materi disusun untuk mendukung pemahaman konsep dan penalaran matematis.</p>
           </div>
         </div>
       </section>

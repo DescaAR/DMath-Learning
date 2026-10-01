@@ -14,9 +14,9 @@ export default function PembahasanPage() {
   return (
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Pembahasan"}]}
-      eyebrow="Indeks Pembahasan · Solusi Lengkap"
+      eyebrow="Pembahasan Soal"
       title="Pembahasan Soal Matematika"
-      lead="Setiap halaman detail memuat soal, petunjuk, Diketahui, Dicari atau Dibuktikan, Ide Utama, pembahasan bertahap, dan kesimpulan."
+      lead="Pembahasan disusun dengan Diketahui, Dicari atau Dibuktikan, ide penyelesaian, langkah matematis, dan kesimpulan."
       meta={["Basis & Dimensi","100 soal","Solusi bertahap","Pembuktian"]}
       stats={[
         {value:100,label:"pembahasan"},

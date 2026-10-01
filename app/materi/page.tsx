@@ -21,9 +21,9 @@ export default function MateriPage() {
   return (
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Materi"}]}
-      eyebrow="Perpustakaan Materi · Buku Digital"
+      eyebrow="Materi Matematika"
       title="Materi Matematika"
-      lead="Materi disusun per jenjang dan bidang. Buku digital DMath mencakup analisis, aljabar, kalkulus, diskrit, graf, teori bilangan, persamaan diferensial, analisis numerik, statistika, probabilitas, kalkulus stokastik, dan riset operasi; setiap bidang dibagi menjadi unit dan submateri agar dapat dipelajari berurutan dan mendalam."
+      lead="Materi disusun berdasarkan jenjang dan bidang, kemudian dibagi menjadi unit dan submateri dengan pembahasan teori, contoh, visualisasi, dan latihan."
       meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
         {value:bookSubjects.length,label:"buku digital"},

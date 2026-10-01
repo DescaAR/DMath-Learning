@@ -14,9 +14,9 @@ export default function BankSoalPage() {
   return (
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Bank Soal"}]}
-      eyebrow="Bank Soal · Latihan Terstruktur"
+      eyebrow="Bank Soal"
       title="Bank Soal Matematika"
-      lead="Bank Soal adalah katalog besar per bab. Pilih soal, coba mandiri, buka petunjuk bila diperlukan, lalu buka solusi lengkap pada halaman detail."
+      lead="Kumpulan soal berdasarkan materi dan tingkat kesulitan, dilengkapi petunjuk serta pembahasan langkah demi langkah."
       meta={["Filter","Kesulitan bertahap","Petunjuk","Solusi lengkap"]}
       stats={[
         {value:100,label:"soal Basis & Dimensi"},

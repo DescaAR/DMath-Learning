@@ -37,17 +37,17 @@ export function AcademicSolution({
 
       {idea&&(
         <div className="content-box idea-box">
-          <span className="box-kicker">{ui("Arah Penyelesaian","Solution Approach")}</span>
+          <span className="box-kicker">{ui("Ide Penyelesaian","Solution Idea")}</span>
           <div><Text>{idea}</Text></div>
         </div>
       )}
 
       <div className="content-box solution-box">
-        <span className="box-kicker">{title??ui("Penyelesaian","Solution")}</span>
+        <span className="box-kicker">{title??ui("Pembahasan","Solution")}</span>
         <div className="solution-steps">
           {steps.map((step,index)=>(
             <div className="solution-step" key={index}>
-              <span>{index+1}</span>
+              <span>{String(index+1).padStart(2,"0")}</span>
               <div><Text>{step}</Text></div>
             </div>
           ))}

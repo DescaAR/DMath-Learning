@@ -21,7 +21,7 @@ export default function Home() {
     <RiemannHubShell
       eyebrow="DMath Learning · Think Deeper, Solve Better."
       title="DMath Learning"
-      lead="Belajar matematika sebagai struktur yang utuh: intuisi, definisi formal, teorema, pembuktian, visualisasi, contoh terbahas, latihan bertahap, dan bank soal."
+      lead="Materi matematika terstruktur untuk jenjang sekolah, universitas, olimpiade, dan ON-MIPA, dilengkapi definisi, pembuktian, contoh, visualisasi, latihan, dan bank soal."
       meta={["SD–SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
         {value:materials.length,label:"materi tersedia"},
@@ -78,8 +78,8 @@ export default function Home() {
       <section id="home-unggulan" className="book-section ird-source-section">
         <div className="section-number">03</div>
         <span className="eyebrow">Bab Unggulan</span>
-        <h2>Struktur Acuan Materi</h2>
-        <p>Struktur hero, roadmap, sidebar progres, bagian bernomor, blok formal, latihan, solusi, dan navigasi lanjut kini digunakan sebagai bahasa desain utama DMath Learning.</p>
+        <h2>Struktur Materi</h2>
+        <p>Halaman materi menggunakan struktur yang konsisten untuk pengantar, definisi, hasil formal, contoh, visualisasi, latihan, pembahasan, dan navigasi.</p>
         <div className="actions">
           <Link className="btn primary" href="/materi/integral-riemann">Buka Integral Riemann</Link>
           <Link className="btn secondary" href="/kuliah/aljabar-linear/basis-dan-dimensi">Buka Basis & Dimensi</Link>
