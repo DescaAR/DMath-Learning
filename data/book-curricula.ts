@@ -17,7 +17,7 @@ export type BookChapter = {
 };
 
 export type BookSubject = {
-  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar";
+  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar"|"olimpiade-matematika-sma";
   title:string;
   subtitle:string;
   level:string;
