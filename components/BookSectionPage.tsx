@@ -32,6 +32,7 @@ function visualizationForSubject(slug:BookSubject["slug"]):VisualizationKind{
     "teori-graf":"graph-theory",
     "teori-bilangan-olimpiade":"number-theory",
     "persamaan-diferensial":"differential-equations",
+    "analisis-numerik":"numerical-analysis",
   };
   return map[slug];
 }
@@ -310,7 +311,7 @@ export function BookSectionPage({
         <div>
           <span className="eyebrow">{next?"Materi Berikutnya":"Akhir Buku Digital"}</span>
           <h2>{next?next.number+" · "+next.title:"Kamu telah sampai pada submateri terakhir "+subject.title+"."}</h2>
-          <p>{next?"Lanjutkan setelah definisi, hasil formal, contoh, dan latihan pada halaman ini sudah dipahami.":"Kembali ke daftar isi untuk meninjau bab atau memilih jalur belajar lain."}</p>
+          <p>{next?"Lanjutkan setelah definisi, hasil formal, contoh, dan latihan pada halaman ini sudah dipahami.":"Kembali ke daftar isi untuk meninjau unit atau memilih jalur belajar lain."}</p>
         </div>
         <div className="actions">
           {previous&&<Link className="btn secondary" href={"/materi/"+subject.slug+"/"+previous.slug}>← {previous.title}</Link>}
