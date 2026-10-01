@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { RichMath } from "@/components/RichMath";
+import { MathVisualization, type VisualizationKind } from "@/components/MathVisualizations";
 import type { BookChapter, BookSection, BookSubject } from "@/data/book-curricula";
 import type { BookLessonContent, BookFormalKind } from "@/data/book-content-types";
 
@@ -17,6 +18,22 @@ const kindLabel:Record<BookFormalKind,string>={
 
 function Text({children}:{children:string}){
   return <RichMath className="ird-rich-text">{children}</RichMath>;
+}
+
+function visualizationForSubject(slug:BookSubject["slug"]):VisualizationKind{
+  const map:Record<BookSubject["slug"],VisualizationKind>={
+    "analisis-real":"real-analysis",
+    "analisis-kompleks":"complex-analysis",
+    "kombinatorika":"combinatorics",
+    "aljabar-linear":"onmipa-linear",
+    "struktur-aljabar":"abstract-algebra",
+    "olimpiade-matematika-sma":"olympiad",
+    "kalkulus":"calculus",
+    "teori-graf":"graph-theory",
+    "teori-bilangan-olimpiade":"number-theory",
+    "persamaan-diferensial":"differential-equations",
+  };
+  return map[slug];
 }
 
 export function BookSectionPage({
@@ -117,6 +134,9 @@ export function BookSectionPage({
         {content.intro.map((paragraph,index)=><div className="ird-paragraph" key={index}><Text>{paragraph}</Text></div>)}
         <div className="ird-roadmap">
           {section.keyIdeas.map((idea,index)=><div key={idea}><span>{String(index+1).padStart(2,"0")}</span><strong>{idea}</strong></div>)}
+        </div>
+        <div style={{marginTop:28}}>
+          <MathVisualization kind={visualizationForSubject(subject.slug)} />
         </div>
       </section>
 
