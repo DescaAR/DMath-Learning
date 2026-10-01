@@ -5,7 +5,6 @@ import type { OlympiadHub, OText } from "@/data/olympiad-hubs";
 import { useLanguage } from "@/components/LanguageProvider";
 import { RichMath } from "@/components/RichMath";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
-import { AcademicSolution } from "@/components/AcademicSolution";
 
 export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
   const { language } = useLanguage();
@@ -42,7 +41,7 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
         {label:en?"Try Problems":"Coba Soal",href:"#olympiad-problems",kind:"secondary"},
       ]}
       overviewEyebrow={en?"Competition Map":"Peta Kompetisi"}
-      overviewTitle={en?"Competition Structure":"Struktur Kompetisi"}
+      overviewTitle={en?"Theory, strategy, problems, then challenge.":"Teori, strategi, soal, lalu challenge."}
       overviewText={en
         ?"Each field is organized as a competition-learning sequence rather than a list of isolated topics."
         :"Setiap bidang disusun sebagai urutan belajar kompetisi, bukan daftar topik yang berdiri sendiri."}
@@ -52,7 +51,7 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
       <section id="olympiad-syllabus" className="book-section ird-source-section">
         <div className="section-number">01</div>
         <span className="eyebrow">{en?"Part 1":"Bagian 1"}</span>
-        <h2>{en?"Competition Syllabus":"Silabus Kompetisi"}</h2>
+        <h2>{en?"Structured competition syllabus":"Syllabus kompetisi terstruktur"}</h2>
         <div className="ird-worked-grid">
           {hub.syllabus.map((unit,index)=>(
             <article className="ird-worked-card" key={pick(unit.title)}>
@@ -67,7 +66,7 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
       <section id="olympiad-roadmap" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">{en?"Part 2":"Bagian 2"}</span>
-        <h2>{en?"Competition Roadmap":"Roadmap Kompetisi"}</h2>
+        <h2>{en?"Roadmap from foundation to competition":"Roadmap dari fondasi sampai kompetisi"}</h2>
         <div className="ird-worked-grid">
           {hub.roadmap.map((phase,index)=>(
             <article className="ird-worked-card" key={pick(phase.title)}>
@@ -82,7 +81,7 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
       <section id="olympiad-problems" className="book-section ird-practice-section">
         <div className="section-number">03</div>
         <span className="eyebrow">{en?"Curated Problems and Solutions":"Soal Terkurasi dan Solusi"}</span>
-        <h2>{en?"Curated Problems":"Soal Terkurasi"}</h2>
+        <h2>{en?"Solve first, then open hints and solutions.":"Kerjakan dulu, lalu buka petunjuk dan solusi."}</h2>
         <div className="ird-worked-grid">
           {hub.curated.map((problem,index)=>(
             <article className="ird-worked-card" key={problem.id}>
@@ -95,10 +94,7 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
               <details className="ird-worked-solution">
                 <summary>{en?"Open Solution":"Buka Solusi"}</summary>
                 <div className="ird-worked-solution-body">
-                  <AcademicSolution
-                    idea={pick(problem.hint)}
-                    steps={problem.solution.map((step)=>pick(step))}
-                  />
+                  {problem.solution.map((step,stepIndex)=><div className="solution-step" key={pick(step)}><span>{stepIndex+1}</span><p><RichMath>{pick(step)}</RichMath></p></div>)}
                 </div>
               </details>
             </article>
@@ -109,7 +105,7 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
       <section id="olympiad-bank" className="book-section ird-source-section">
         <div className="section-number">04</div>
         <span className="eyebrow">{en?"Problem Bank":"Bank Soal"}</span>
-        <h2>{en?"Problem Bank":"Bank Soal"}</h2>
+        <h2>{en?"Continue with larger problem collections.":"Lanjutkan ke kumpulan soal yang lebih banyak."}</h2>
         <p>{en
           ?"Use the problem bank for volume practice, then return to this roadmap to review strategy."
           :"Gunakan bank soal untuk latihan volume besar, lalu kembali ke roadmap ini untuk mengaudit strategi."}</p>
@@ -131,17 +127,14 @@ export function OlympiadHubPage({ hub }: { hub: OlympiadHub }) {
           <details className="ird-worked-solution">
             <summary>{en?"Open Complete Solution":"Buka Solusi"}</summary>
             <div className="ird-worked-solution-body">
-              <AcademicSolution
-                idea={pick(hub.challenge.hint)}
-                steps={hub.challenge.solution.map((step)=>pick(step))}
-              />
+              {hub.challenge.solution.map((step,index)=><div className="solution-step" key={pick(step)}><span>{index+1}</span><p><RichMath>{pick(step)}</RichMath></p></div>)}
             </div>
           </details>
         </article>
       </section>
 
       <section className="next-learning-block textbook-next">
-        <div><span className="eyebrow">{en?"Navigation":"Navigasi"}</span><h2>{en?"Practice and Challenge":"Latihan dan Challenge"}</h2></div>
+        <div><span className="eyebrow">{en?"Continue":"Lanjutkan"}</span><h2>{en?"Theory, curated problems, problem bank, then challenge.":"Teori, soal terkurasi, bank soal, lalu challenge."}</h2></div>
         <div className="actions"><a className="btn primary" href="#olympiad-problems">{en?"Practice Now":"Kerjakan Soal"}</a><a className="btn secondary" href="#olympiad-challenge">Challenge</a></div>
       </section>
     </RiemannHubShell>

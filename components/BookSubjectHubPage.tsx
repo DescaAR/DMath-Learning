@@ -39,8 +39,8 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
         {label:"Lihat Kurikulum",href:"#book-chapter-"+subject.chapters[0]?.number.replaceAll(".","-"),kind:"secondary" as const},
       ]}
       overviewEyebrow="Peta Buku"
-      overviewTitle="Daftar Unit"
-      overviewText="Setiap halaman submateri memuat pengantar, tujuan, notasi, definisi dan contoh, hasil formal dan pembuktian, contoh terbahas, visualisasi, latihan dengan solusi, ringkasan, referensi, serta navigasi ke materi berikutnya."
+      overviewTitle="Pilih unit belajar, lalu pelajari satu submateri sampai selesai."
+      overviewText="Setiap halaman submateri mempunyai struktur yang konsisten: tujuan, intuisi, notasi, definisi, teorema, pembuktian, contoh terbahas, latihan dengan petunjuk dan solusi, kesalahan umum, koneksi, ringkasan, serta navigasi ke materi berikutnya."
       roadmap={subject.chapters.map((chapter)=>"Unit "+chapter.number+" · "+chapter.title)}
       sections={sections}
     >
@@ -87,7 +87,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       <section className="next-learning-block textbook-next">
         <div>
           <span className="eyebrow">Referensi dan Bacaan Lanjut</span>
-          <h2>Referensi Bidang</h2>
+          <h2>Materi DMath Learning disusun sebagai pengalaman belajar mandiri.</h2>
           <p>{subject.source} ({subject.sourceYear}) digunakan sebagai salah satu rujukan bidang untuk memeriksa cakupan dan terminologi. Penjelasan, urutan pembelajaran, contoh, pembuktian, latihan, dan visualisasi DMath Learning dikembangkan sebagai konten website.</p>
         </div>
         {first&&<div className="actions"><Link className="btn primary" href={"/materi/"+subject.slug+"/"+first.slug}>Mulai Belajar</Link></div>}
