@@ -189,7 +189,7 @@ function DarbouxIntegralVisual() {
       </div>
       <div className="ird-darboux-integral-panel">
         <div className="ird-bound-row"><span>Jumlah bawah</span><div><i style={{width:(lower/(1/3)*100)+"%"}}/></div><strong>{lower.toFixed(4)}</strong></div>
-        <div className="ird-bound-row exact"><span>Nilai bersama</span><div><i style={{width:"100%"}}/></div><strong>1/3</strong></div>
+        <div className="ird-bound-row exact"><span>Nilai bersama</span><div><i style={{width:"100%"}}/></div><strong><RichMath>{"$\\frac{1}{3}$"}</RichMath></strong></div>
         <div className="ird-bound-row"><span>Jumlah atas</span><div><i style={{width:((1/3)/upper*100)+"%"}}/></div><strong>{upper.toFixed(4)}</strong></div>
         <div className="ird-definition-pair">
           <RichMath>{"$\\underline{\\int_0^1}x^2\\,d x=\\sup_P L(f,P)=\\frac{1}{3}$"}</RichMath>
@@ -430,9 +430,9 @@ function PiecewisePartitionExerciseVisual() {
         <rect x={xp(1.5)} y={yp(4)} width={xp(2.5)-xp(1.5)} height={yp(1.5)-yp(4)} className="ird-highlight-interval"/>
         <polyline points={left.map(p=>p.join(",")).join(" ")} className="ird-piece-left"/><polyline points={right.map(p=>p.join(",")).join(" ")} className="ird-piece-right"/>
         <circle cx={xp(2)} cy={yp(4)} r="6" className="ird-filled-point"/><circle cx={xp(2)} cy={yp(2)} r="6" className="ird-open-point"/>
-        <text x={xp(2)+10} y={yp(4)-10} className="ird-svg-label">f(2)=4</text><text x={xp(2.5)+8} y={yp(1.5)} className="ird-svg-label">m=3/2</text>
+        <text x={xp(2)+10} y={yp(4)-10} className="ird-svg-label">f(2)=4</text><text x={xp(2.5)+8} y={yp(1.5)} className="ird-svg-label">m₃</text>
       </svg>
-      <figcaption>Subinterval <RichMath>{"$[3/2,5/2]$"}</RichMath> melintasi titik perubahan rumus. Di sini supremum adalah 4, sedangkan infimum adalah <RichMath>{"$3/2$"}</RichMath>; interval ini paling penting ketika menyusun <RichMath>{"$U(f,P)$"}</RichMath> dan <RichMath>{"$L(f,P)$"}</RichMath>.</figcaption>
+      <figcaption>Subinterval <RichMath>{"$[\\frac{3}{2},\\frac{5}{2}]$"}</RichMath> melintasi titik perubahan rumus. Di sini supremum adalah 4, sedangkan infimum adalah <RichMath>{"$\\frac{3}{2}$"}</RichMath>; interval ini paling penting ketika menyusun <RichMath>{"$U(f,P)$"}</RichMath> dan <RichMath>{"$L(f,P)$"}</RichMath>.</figcaption>
     </figure>
   );
 }
