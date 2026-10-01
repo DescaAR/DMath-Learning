@@ -17,13 +17,6 @@ export default function SearchPage() {
       eyebrow="Global Search · Seluruh Konten"
       title="Pencarian DMath Learning"
       lead="Cari materi, definisi, teorema, contoh, dan soal dalam satu tempat dengan filter jenjang, jalur, bidang, tingkat kesulitan, dan jenis konten."
-      meta={["Materi","Definisi","Teorema","Contoh","Soal"]}
-      stats={[
-        {value:"1",label:"pencarian global"},
-        {value:"multi",label:"filter"},
-        {value:"fuzzy",label:"pencocokan"},
-        {value:"all",label:"jenis konten"},
-      ]}
       actions={[{label:"Mulai Mencari",href:"#search-main",kind:"primary"},{label:"Lihat Materi",href:"/materi",kind:"secondary"}]}
       overviewTitle="Pencarian Konten"
       overviewText="Pencarian tetap menampilkan hasil yang cukup mirip ketika kata yang diketik tidak persis sama."
