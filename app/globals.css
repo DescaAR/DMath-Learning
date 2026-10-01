@@ -2967,3 +2967,94 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .detailed-example-strategy,
   .detailed-example-conclusion{padding-left:17px;padding-right:17px}
 }
+
+
+/* ================================================================
+   Integral Riemann & Darboux — source-faithful digital chapter
+   ================================================================ */
+.ird-page .chapter-lead{max-width:820px}
+.ird-hero{overflow:hidden}
+.ird-overview .narrow{display:grid;gap:24px}
+.ird-roadmap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.ird-roadmap>div{border:1px solid var(--border);background:var(--surface);border-radius:16px;padding:14px;display:grid;gap:7px;min-height:92px}
+.ird-roadmap span,.ird-subsection-kicker,.ird-problem-number{font-size:.72rem;letter-spacing:.1em;font-weight:800;color:var(--primary)}
+.ird-roadmap strong{font-size:.9rem;line-height:1.3}
+.ird-rich-text{white-space:pre-line}
+.ird-paragraph{font-size:1.01rem;line-height:1.82;margin:0 0 20px;color:var(--text)}
+.ird-source-section{scroll-margin-top:110px}
+.ird-subsection{margin-top:38px;padding-top:8px;border-top:1px solid var(--border)}
+.ird-subsection h3{font-size:1.45rem;margin:.35rem 0 1.15rem}
+.ird-formal{border:1px solid var(--border);border-radius:18px;padding:18px 20px;margin:16px 0;background:var(--surface);box-shadow:0 10px 30px rgba(15,23,42,.04)}
+.ird-formal-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px}
+.ird-formal-head>span{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;padding:5px 9px;border-radius:999px;background:var(--soft);color:var(--primary);white-space:nowrap}
+.ird-formal-head>strong{font-size:1.05rem;line-height:1.45}
+.ird-formal-body{line-height:1.78}
+.ird-definition{border-left:4px solid #10b981}
+.ird-lemma{border-left:4px solid #06b6d4}
+.ird-proposition{border-left:4px solid #f59e0b}
+.ird-theorem{border-left:4px solid #1565d8}
+.ird-corollary{border-left:4px solid #8b5cf6}
+.ird-note{border-left:4px solid #64748b;background:color-mix(in srgb,var(--surface) 92%,#64748b 8%)}
+.ird-example{border-left:4px solid #0ea5a4}
+.ird-exercise{border-left:4px solid #0b2d6b}
+.ird-proof{margin-top:14px;border-top:1px dashed var(--border);padding-top:12px}
+.ird-proof summary{cursor:pointer;font-weight:750;color:var(--primary)}
+.ird-proof-body{padding:14px 0 2px;line-height:1.8}
+.ird-qed{text-align:right;font-size:1.05rem;margin-top:8px}
+.ird-visual-lab{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);gap:28px;align-items:center;border:1px solid var(--border);border-radius:24px;padding:24px;background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--surface) 88%,#00c2ff 12%));margin:24px 0 10px}
+.ird-visual-copy h2{margin:.3rem 0 .7rem}
+.ird-visual-copy p{line-height:1.7}
+.ird-slider{display:grid;gap:8px;margin:20px 0}
+.ird-slider>span{display:flex;justify-content:space-between;font-size:.9rem}
+.ird-slider input{width:100%;accent-color:#1565d8}
+.ird-metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.ird-metric-grid>div{border:1px solid var(--border);border-radius:14px;padding:10px 12px;background:var(--surface)}
+.ird-metric-grid span{display:block;font-size:.75rem;color:var(--muted)}
+.ird-metric-grid strong{font-variant-numeric:tabular-nums}
+.ird-svg-card,.ird-figure{border:1px solid var(--border);border-radius:20px;background:var(--surface);padding:14px}
+.ird-svg-card svg,.ird-figure svg{display:block;width:100%;height:auto}
+.ird-axis,.ird-tick,.ird-tick-strong,.ird-bracket{stroke:currentColor;stroke-width:1.5;fill:none;opacity:.55}
+.ird-tick-strong{stroke-width:3;opacity:.8}
+.ird-upper-rect{fill:rgba(21,101,216,.10);stroke:rgba(21,101,216,.5);stroke-width:1}
+.ird-lower-rect{fill:rgba(0,194,255,.25);stroke:rgba(0,194,255,.75);stroke-width:1}
+.ird-curve{fill:none;stroke:#0b2d6b;stroke-width:3}
+.ird-svg-label{font-size:13px;fill:currentColor;opacity:.78}
+.ird-legend{display:flex;flex-wrap:wrap;gap:12px;font-size:.76rem;color:var(--muted);padding:4px 8px 2px}
+.ird-legend span{display:flex;align-items:center;gap:6px}
+.ird-legend i{width:16px;height:8px;border-radius:3px;display:inline-block}
+.ird-legend-low{background:rgba(0,194,255,.35);border:1px solid rgba(0,194,255,.8)}
+.ird-legend-up{background:rgba(21,101,216,.12);border:1px solid rgba(21,101,216,.6)}
+.ird-legend-curve{height:3px!important;background:#0b2d6b}
+.ird-figure{margin:24px 0}
+.ird-figure.compact{margin:0}
+.ird-figure-title{display:flex;align-items:center;gap:10px;margin:2px 4px 10px}
+.ird-figure-title span{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);font-weight:800}
+.ird-figure-title strong{font-size:1rem}
+.ird-figure figcaption{font-size:.86rem;line-height:1.6;color:var(--muted);padding:6px 5px 2px}
+.ird-arrow{fill:none;stroke:#1565d8;stroke-width:2;stroke-dasharray:5 4}
+.ird-visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.ird-dirichlet-one{fill:#1565d8}
+.ird-dirichlet-zero{fill:#00a3cc}
+.ird-thomae-point{fill:#1565d8;opacity:.85}
+.ird-neighborhood{fill:rgba(0,194,255,.08);stroke:rgba(0,194,255,.3);stroke-width:1}
+.ird-dashed{stroke:#64748b;stroke-width:1.4;stroke-dasharray:5 5}
+.ird-bracket{stroke:#ef4444;stroke-width:2}
+.ird-practice-section{scroll-margin-top:110px}
+.ird-problem-grid{display:grid;gap:14px}
+.ird-problem-card{display:grid;grid-template-columns:48px 1fr;gap:14px;border:1px solid var(--border);border-radius:18px;padding:17px 18px;background:var(--surface)}
+.ird-problem-number{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--soft)}
+.ird-problem-card strong{display:block;margin-bottom:5px}
+.ird-problem-card .ird-rich-text{line-height:1.75}
+.ird-toc a{line-height:1.25}
+@media (max-width:980px){
+  .ird-roadmap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ird-visual-lab{grid-template-columns:1fr}
+  .ird-visual-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .ird-roadmap{grid-template-columns:1fr}
+  .ird-formal{padding:16px}
+  .ird-formal-head{display:grid}
+  .ird-metric-grid{grid-template-columns:1fr 1fr}
+  .ird-problem-card{grid-template-columns:40px 1fr;padding:14px}
+}

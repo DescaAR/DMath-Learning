@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DeepMaterialPage } from "@/components/DeepMaterialPage";
+import { IntegralRiemannDarbouxPage } from "@/components/IntegralRiemannDarbouxPage";
 import { deepMaterialMap, deepMaterials } from "@/data/deep-materials";
 
 export function generateStaticParams() {
@@ -37,6 +38,8 @@ export default async function MaterialDetailPage({
   const material = deepMaterialMap[slug];
 
   if (!material) notFound();
+
+  if (material.slug === "integral-riemann") return <IntegralRiemannDarbouxPage material={material} />;
 
   return <DeepMaterialPage material={material} />;
 }
