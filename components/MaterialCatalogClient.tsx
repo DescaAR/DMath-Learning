@@ -72,7 +72,7 @@ for (const subject of bookSubjects) {
   const sectionCount = subject.chapters.reduce((sum, chapter) => sum + chapter.sections.length, 0);
   baseItems.unshift({
     id: "book-" + subject.slug,
-    title: subject.title + " — Buku Digital Lengkap",
+    title: subject.title,
     titleEn: subject.title + " — Complete Digital Book",
     level: subject.level,
     levelEn: "University · ON-MIPA",
