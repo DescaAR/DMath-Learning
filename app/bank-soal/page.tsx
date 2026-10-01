@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
-import { PageHero } from "@/components/PageHero";
+import { RiemannHubShell } from "@/components/RiemannHubShell";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Bank Soal Matematika",
@@ -12,45 +12,50 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function BankSoalPage() {
   return (
-    <>
-      <PageHero
-        eyebrow="Bank soal"
-        title="Banyak soal, tetap terstruktur dan bermakna."
-        description="Bank Soal berbeda dari Latihan. Bank Soal adalah katalog besar per bab; pengguna memilih soal lalu membuka hint dan pembahasan lengkap pada halaman detail."
-      />
-
-      <section className="section">
-        <div className="container">
-          <div className="feature-card light-feature bank-hero-card">
-            <span className="eyebrow">Published · Kuliah · Aljabar Linear</span>
-            <h2>Basis dan Dimensi — 100 Soal</h2>
-            <p>
-              Bank soal lengkap dengan 20 soal Dasar, 30 Menengah, 30 Sulit,
-              15 Sangat Sulit, dan 5 Challenge. Tipe soal mencakup konsep,
-              hitungan, pembuktian, true/false, counterexample, dan construction.
-            </p>
-            <div className="bank-distribution">
-              <span><strong>20</strong> Dasar</span>
-              <span><strong>30</strong> Menengah</span>
-              <span><strong>30</strong> Sulit</span>
-              <span><strong>15</strong> Sangat Sulit</span>
-              <span><strong>5</strong> Challenge</span>
-            </div>
-            <div className="actions">
-              <Link className="btn primary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka 100 Soal</Link>
-              <Link className="btn secondary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Latihan Terkurasi</Link>
-            </div>
+    <RiemannHubShell
+      breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Bank Soal"}]}
+      eyebrow="Bank Soal · Latihan Terstruktur"
+      title="Banyak soal, tetap terstruktur dan bermakna."
+      lead="Bank Soal adalah katalog besar per bab. Pilih soal, coba mandiri, buka petunjuk bila diperlukan, lalu buka solusi lengkap pada halaman detail."
+      meta={["Filter","Kesulitan bertahap","Petunjuk","Solusi lengkap"]}
+      stats={[
+        {value:100,label:"soal Basis & Dimensi"},
+        {value:5,label:"tingkat kesulitan"},
+        {value:6,label:"tipe soal"},
+        {value:"1/soal",label:"halaman solusi"},
+      ]}
+      actions={[
+        {label:"Buka Bank Soal",href:"#bank-tersedia",kind:"primary"},
+        {label:"Indeks Pembahasan",href:"/pembahasan",kind:"secondary"},
+      ]}
+      overviewTitle="Kerjakan → buka petunjuk → buka solusi → audit kesalahan."
+      overviewText="Struktur halaman soal dibuat sama seperti bab Integral Riemann: metadata, gambaran konsep, soal, petunjuk, solusi bertahap, jawaban akhir, kesalahan umum, dan insight."
+      roadmap={["Pilih Bab","Filter Soal","Kerjakan","Petunjuk","Buka Solusi","Evaluasi"]}
+      sections={[
+        {id:"bank-tersedia",label:"Bank Soal Tersedia"},
+        {id:"bank-alur",label:"Alur Penggunaan"},
+      ]}
+    >
+      <section id="bank-tersedia" className="book-section ird-practice-section">
+        <div className="section-number">01</div>
+        <span className="eyebrow">Bank Soal Tersedia</span>
+        <h2>Basis dan Dimensi — 100 Soal.</h2>
+        <article className="ird-worked-card">
+          <div className="ird-worked-head"><div className="ird-problem-number">100</div><div><span className="eyebrow">Kuliah · Aljabar Linear</span><h3>Basis dan Dimensi</h3></div></div>
+          <div className="ird-worked-prompt"><p>20 Dasar, 30 Menengah, 30 Sulit, 15 Sangat Sulit, dan 5 Challenge. Tipe soal mencakup konsep, hitungan, pembuktian, true/false, counterexample, dan construction.</p></div>
+          <div className="actions">
+            <Link className="btn primary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka 100 Soal</Link>
+            <Link className="btn secondary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Latihan Terkurasi</Link>
           </div>
-
-          <div className="roadmap-panel">
-            <span className="eyebrow">UX Bank Soal</span>
-            <h2>Filter, cari, pilih, baru buka pembahasan.</h2>
-            <div className="subjects">
-              {["Search","Subbab","Kesulitan","Tipe soal","Random problem","Pagination","Detail soal","Hint bertahap","Pembahasan lengkap"].map((item)=><span key={item}>{item}</span>)}
-            </div>
-          </div>
-        </div>
+        </article>
       </section>
-    </>
+
+      <section id="bank-alur" className="book-section ird-source-section">
+        <div className="section-number">02</div>
+        <span className="eyebrow">Alur Penggunaan</span>
+        <h2>Filter, cari, pilih, baru buka solusi.</h2>
+        <div className="ird-roadmap">{["Search","Subbab","Kesulitan","Tipe soal","Random problem","Detail soal","Petunjuk","Solusi lengkap"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}</div>
+      </section>
+    </RiemannHubShell>
   );
 }
