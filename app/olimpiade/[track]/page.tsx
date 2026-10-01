@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { OlympiadHubPage } from "@/components/OlympiadHubPage";
 import { olympiadHubMap, olympiadHubs } from "@/data/olympiad-hubs";
@@ -16,16 +17,12 @@ export async function generateMetadata({
   const hub = olympiadHubMap[track];
   if (!hub) return {};
 
-  return {
+  return createPageMetadata({
     title: hub.title.id,
     description: hub.subtitle.id,
-    alternates: { canonical: "/olimpiade/" + hub.slug },
-    openGraph: {
-      title: hub.title.id + " | DMath Learning",
-      description: hub.subtitle.id,
-      type: "website",
-    },
-  };
+    path: "/olimpiade/" + hub.slug,
+    keywords: [hub.title.id, "olimpiade matematika", "soal olimpiade matematika"],
+  });
 }
 
 export default async function OlympiadTrackPage({

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { LearningTrackPage } from "@/components/LearningTrackPage";
 import { learningTrackPageMap, learningTrackPages } from "@/data/learning-track-pages";
@@ -16,16 +17,12 @@ export async function generateMetadata({
   const data = learningTrackPageMap[track];
   if (!data) return {};
 
-  return {
+  return createPageMetadata({
     title: data.title.id,
     description: data.intro.id,
-    alternates: { canonical: "/belajar/" + data.slug },
-    openGraph: {
-      title: data.title.id + " | DMath Learning",
-      description: data.intro.id,
-      type: "website",
-    },
-  };
+    path: "/belajar/" + data.slug,
+    keywords: [data.title.id, "jalur belajar matematika"],
+  });
 }
 
 export default async function TrackDetailPage({
