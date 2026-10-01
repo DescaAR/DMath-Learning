@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { curatedBasisProblems } from "@/data/basis-dimension-problems";
 import { localizeProblem } from "@/data/problem-translations-en";
 import { RichMath } from "@/components/RichMath";
+import { AcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export function ProblemPractice() {
@@ -47,48 +48,30 @@ export function ProblemPractice() {
 
         <h1>{problem.title}</h1>
         <div className="problem-text rich-problem-text"><RichMath>{problem.problem}</RichMath></div>
-        <div className="concept-pills">{problem.concepts.map((concept)=><span key={concept}>{concept}</span>)}</div>
 
         <div className="practice-actions">
           <button className="btn secondary" onClick={()=>setShowHint1(v=>!v)}>
-            {showHint1 ? ui("Sembunyikan Hint 1","Hide Hint 1") : "Hint 1"}
+            {showHint1 ? ui("Tutup Petunjuk 1","Hide Hint 1") : ui("Petunjuk 1","Hint 1")}
           </button>
           <button className="btn secondary" onClick={()=>setShowHint2(v=>!v)}>
-            {showHint2 ? ui("Sembunyikan Hint 2","Hide Hint 2") : "Hint 2"}
+            {showHint2 ? ui("Tutup Petunjuk 2","Hide Hint 2") : ui("Petunjuk 2","Hint 2")}
           </button>
           <button className="btn primary" onClick={()=>setShowSolution(v=>!v)}>
-            {showSolution ? ui("Tutup Pembahasan","Hide Solution") : ui("Lihat Pembahasan","Show Solution")}
+            {showSolution ? ui("Tutup Pembahasan","Hide Solution") : ui("Buka Solusi","Open Solution")}
           </button>
         </div>
 
-        {showHint1 && <div className="content-box hint-box"><strong>Hint 1</strong><p><RichMath>{problem.hint1}</RichMath></p></div>}
-        {showHint2 && <div className="content-box hint-box"><strong>Hint 2</strong><p><RichMath>{problem.hint2}</RichMath></p></div>}
+        {showHint1 && <div className="content-box hint-box"><strong>{ui("Petunjuk 1","Hint 1")}</strong><p><RichMath>{problem.hint1}</RichMath></p></div>}
+        {showHint2 && <div className="content-box hint-box"><strong>{ui("Petunjuk 2","Hint 2")}</strong><p><RichMath>{problem.hint2}</RichMath></p></div>}
 
         {showSolution && (
-          <div className="solution-stack full-solution">
-            <div className="solution-overview-grid">
-              <div className="content-box"><span className="box-kicker">{ui("Diketahui","Given")}</span><p><RichMath>{problem.known}</RichMath></p></div>
-              <div className="content-box"><span className="box-kicker">{ui("Dibuktikan / Dicari","To Prove / Find")}</span><p><RichMath>{problem.target}</RichMath></p></div>
-            </div>
-
-            <div className="content-box idea-box"><span className="box-kicker">{ui("Ide Utama","Main Idea")}</span><p><RichMath>{problem.idea}</RichMath></p></div>
-
-            <div className="content-box solution-box">
-              <span className="box-kicker">{ui("Pembahasan Langkah demi Langkah","Step-by-Step Solution")}</span>
-              <div className="solution-steps">
-                {problem.solution.map((step,stepIndex)=><div className="solution-step" key={step}><span>{stepIndex+1}</span><p><RichMath>{step}</RichMath></p></div>)}
-              </div>
-            </div>
-
-            <div className="content-box answer-box"><span className="box-kicker">{ui("Jawaban Akhir","Final Answer")}</span><p><RichMath>{problem.answer}</RichMath></p></div>
-
-            {problem.alternative && <div className="content-box alternative-box"><span className="box-kicker">{ui("Metode Alternatif","Alternative Method")}</span><p><RichMath>{problem.alternative}</RichMath></p></div>}
-
-            <div className="solution-overview-grid">
-              <div className="content-box warning-box"><span className="box-kicker">{ui("Kesalahan Umum","Common Mistakes")}</span><p><RichMath>{problem.mistake}</RichMath></p></div>
-              <div className="content-box insight-box"><span className="box-kicker">{ui("Insight / Generalisasi","Insight / Generalization")}</span><p><RichMath>{problem.insight}</RichMath></p></div>
-            </div>
-          </div>
+          <AcademicSolution
+            known={problem.known}
+            target={problem.target}
+            idea={problem.idea}
+            steps={problem.solution}
+            conclusion={problem.answer}
+          />
         )}
       </article>
 

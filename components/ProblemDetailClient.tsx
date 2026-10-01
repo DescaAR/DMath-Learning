@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Problem } from "@/data/problem-types";
 import { localizeProblem } from "@/data/problem-translations-en";
 import { RichMath } from "@/components/RichMath";
+import { AcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
 
 function Text({ children }: { children: string }) {
@@ -31,8 +32,7 @@ export function ProblemDetailClient({
   const sections = useMemo(() => [
     ["problem-section-1", ui("Soal", "Problem")],
     ["problem-section-2", ui("Petunjuk", "Hints")],
-    ["problem-section-3", ui("Solusi", "Solution")],
-    ["problem-section-4", ui("Evaluasi", "Review")],
+    ["problem-section-3", ui("Pembahasan", "Solution")],
   ] as const, [language]);
 
   useEffect(() => {
@@ -69,22 +69,12 @@ export function ProblemDetailClient({
           <div className="chapter-stat-grid">
             <div><strong>{problem.concepts.length}</strong><span>{ui("konsep", "concepts")}</span></div>
             <div><strong>2</strong><span>{ui("petunjuk", "hints")}</span></div>
-            <div><strong>{problem.solution.length}</strong><span>{ui("langkah solusi", "solution steps")}</span></div>
-            <div><strong>1</strong><span>{ui("insight", "insight")}</span></div>
+            <div><strong>{problem.solution.length}</strong><span>{ui("langkah pembahasan", "solution steps")}</span></div>
+            <div><strong>1</strong><span>{ui("jawaban akhir", "final answer")}</span></div>
           </div>
           <div className="actions">
-            <a className="btn primary" href="#problem-section-1">{ui("Mulai Soal", "Start Problem")}</a>
-            <a className="btn secondary" href="#problem-section-3">{ui("Buka Bagian Solusi", "Open Solution Section")}</a>
-          </div>
-        </div>
-      </section>
-
-      <section className="section ird-overview">
-        <div className="container narrow">
-          <span className="eyebrow">{ui("Gambaran Soal", "Problem Overview")}</span>
-          <h2>{ui("Konsep yang digunakan", "Concepts used")}</h2>
-          <div className="ird-roadmap">
-            {problem.concepts.map((concept, index) => <div key={concept}><span>{String(index + 1).padStart(2, "0")}</span><strong>{concept}</strong></div>)}
+            <a className="btn primary" href="#problem-section-1">{ui("Baca Soal", "Read Problem")}</a>
+            <a className="btn secondary" href="#problem-section-3">{ui("Pembahasan", "Solution")}</a>
           </div>
         </div>
       </section>
@@ -103,7 +93,10 @@ export function ProblemDetailClient({
               <span className="eyebrow">{ui("Soal", "Problem")}</span>
               <h2>{problem.title}</h2>
               <article className="ird-worked-card">
-                <div className="ird-worked-head"><div className="ird-problem-number">{problem.id}</div><div><span className="eyebrow">{problem.difficulty}</span><h3>{problem.subchapter}</h3></div></div>
+                <div className="ird-worked-head">
+                  <div className="ird-problem-number">{problem.id}</div>
+                  <div><span className="eyebrow">{problem.difficulty}</span><h3>{problem.subchapter}</h3></div>
+                </div>
                 <div className="ird-worked-prompt"><Text>{problem.problem}</Text></div>
               </article>
             </section>
@@ -111,44 +104,36 @@ export function ProblemDetailClient({
             <section id="problem-section-2" className="book-section ird-source-section">
               <div className="section-number">02</div>
               <span className="eyebrow">{ui("Petunjuk", "Hints")}</span>
-              <h2>{ui("Buka hanya jika diperlukan", "Open only when needed")}</h2>
+              <h2>{ui("Petunjuk penyelesaian", "Solution hints")}</h2>
               <details className="ird-proof"><summary>{ui("Buka Petunjuk 1", "Open Hint 1")}</summary><div className="ird-proof-body"><Text>{problem.hint1}</Text></div></details>
               <details className="ird-proof"><summary>{ui("Buka Petunjuk 2", "Open Hint 2")}</summary><div className="ird-proof-body"><Text>{problem.hint2}</Text></div></details>
             </section>
 
             <section id="problem-section-3" className="book-section ird-practice-section">
               <div className="section-number">03</div>
-              <span className="eyebrow">{ui("Solusi", "Solution")}</span>
+              <span className="eyebrow">{ui("Pembahasan", "Solution")}</span>
               <h2>{ui("Pembahasan lengkap", "Complete solution")}</h2>
-              <div className="solution-overview-grid">
-                <div className="content-box"><span className="box-kicker">{ui("Diketahui", "Given")}</span><p><Text>{problem.known}</Text></p></div>
-                <div className="content-box"><span className="box-kicker">{ui("Dibuktikan / Dicari", "To Prove / Find")}</span><p><Text>{problem.target}</Text></p></div>
-              </div>
-              <div className="content-box idea-box"><span className="box-kicker">{ui("Ide Utama", "Main Idea")}</span><p><Text>{problem.idea}</Text></p></div>
-              <details className="ird-worked-solution">
+              <details className="ird-worked-solution" open>
                 <summary>{ui("Buka Solusi", "Open Solution")}</summary>
                 <div className="ird-worked-solution-body">
-                  {problem.solution.map((step, index) => <div className="solution-step" key={step}><span>{index + 1}</span><p><Text>{step}</Text></p></div>)}
-                  <div className="content-box answer-box"><span className="box-kicker">{ui("Jawaban Akhir", "Final Answer")}</span><p><Text>{problem.answer}</Text></p></div>
+                  <AcademicSolution
+                    known={problem.known}
+                    target={problem.target}
+                    idea={problem.idea}
+                    steps={problem.solution}
+                    conclusion={problem.answer}
+                  />
                 </div>
               </details>
             </section>
 
-            <section id="problem-section-4" className="book-section ird-source-section">
-              <div className="section-number">04</div>
-              <span className="eyebrow">{ui("Evaluasi", "Review")}</span>
-              <h2>{ui("Kesalahan, alternatif, dan generalisasi", "Mistakes, alternatives, and generalization")}</h2>
-              {problem.alternative && <div className="content-box alternative-box"><span className="box-kicker">{ui("Metode Alternatif", "Alternative Method")}</span><p><Text>{problem.alternative}</Text></p></div>}
-              <div className="solution-overview-grid">
-                <div className="content-box warning-box"><span className="box-kicker">{ui("Kesalahan Umum", "Common Mistakes")}</span><p><Text>{problem.mistake}</Text></p></div>
-                <div className="content-box insight-box"><span className="box-kicker">{ui("Insight / Generalisasi", "Insight / Generalization")}</span><p><Text>{problem.insight}</Text></p></div>
-              </div>
-            </section>
-
             <section className="next-learning-block textbook-next">
-              <div><span className="eyebrow">{ui("Lanjutkan", "Continue")}</span><h2>{ui("Coba soal berikutnya tanpa membuka petunjuk.", "Try the next problem without opening the hints.")}</h2></div>
+              <div>
+                <span className="eyebrow">{ui("Soal Berikutnya", "Next Problem")}</span>
+                <h2>{next?next.title:ui("Kembali ke Bank Soal", "Back to Problem Bank")}</h2>
+              </div>
               <div className="actions">
-                <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">{ui("Kembali ke 100 Soal", "Back to 100 Problems")}</Link>
+                <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">{ui("Daftar 100 Soal", "100 Problems")}</Link>
                 {next && <Link className="btn primary" href={"/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + next.id.toLowerCase()}>{ui("Soal Berikutnya", "Next Problem")}</Link>}
               </div>
             </section>
