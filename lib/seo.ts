@@ -78,6 +78,7 @@ export function organizationJsonLd() {
     url: siteConfig.url,
     logo: absoluteUrl("/brand/logo-symbol.webp"),
     description: siteConfig.description,
+    sameAs: [siteConfig.social.youtube],
   };
 }
 
