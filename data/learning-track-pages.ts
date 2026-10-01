@@ -162,7 +162,7 @@ export const learningTrackPages: LearningTrackPageData[] = [
       {name:t("Kalkulus & Analisis","Calculus & Analysis"),description:t("Kalkulus multivariabel, analisis real, analisis kompleks, integral, konvergensi, dan topologi dasar.","Multivariable calculus, real analysis, complex analysis, integration, convergence, and foundational topology."),topics:[t("Analisis Real","Real Analysis"),t("Analisis Kompleks","Complex Analysis"),t("Kalkulus lanjut","Advanced Calculus")]},
       {name:t("Aljabar Linear & Struktur Aljabar","Linear & Abstract Algebra"),description:t("Ruang vektor, transformasi linear, eigenvalue, grup, ring, field, dan struktur aljabar.","Vector spaces, linear transformations, eigenvalues, groups, rings, fields, and algebraic structure."),topics:[t("Aljabar Linear","Linear Algebra"),t("Grup","Groups"),t("Ring & field","Rings & fields")]},
       {name:t("Diskrit, Kombinatorika & Graf","Discrete Mathematics, Combinatorics & Graphs"),description:t("Counting, relasi, graf, spektrum graf, rekuren, algoritma, dan struktur diskrit.","Counting, relations, graphs, graph spectra, recurrences, algorithms, and discrete structure."),topics:[t("Kombinatorika","Combinatorics"),t("Teori Graf","Graph Theory"),t("Matematika Diskrit","Discrete Mathematics")]},
-      {name:t("Peluang, Statistika & Terapan","Probability, Statistics & Applied Mathematics"),description:t("Probabilitas, statistika matematis, persamaan diferensial, numerik, optimisasi, dan pemodelan.","Probability, mathematical statistics, differential equations, numerical methods, optimization, and modeling."),topics:[t("Peluang","Probability"),t("Statistika","Statistics"),t("PDB","ODEs"),t("Numerik","Numerical Methods")]}
+      {name:t("Peluang, Statistika & Terapan","Probability, Statistics & Applied Mathematics"),description:t("Probabilitas, statistika matematis, persamaan diferensial, analisis numerik, optimisasi, dan pemodelan.","Probability, mathematical statistics, differential equations, numerical analysis, optimization, and modeling."),topics:[t("Peluang","Probability"),t("Statistika","Statistics"),t("PDB","ODEs"),t("Analisis Numerik","Numerical Analysis")]}
     ],
     roadmap:[
       {label:t("Fondasi","Foundations"),title:t("Bahasa pembuktian & struktur","Proof Language & Structure"),description:t("Perkuat logika, himpunan, fungsi, relasi, dan teknik pembuktian.","Strengthen logic, sets, functions, relations, and proof techniques."),topics:[t("Logika","Logic"),t("Teknik pembuktian","Proof techniques"),t("Himpunan & fungsi","Sets & functions")]},
@@ -170,7 +170,7 @@ export const learningTrackPages: LearningTrackPageData[] = [
       {label:t("Pengembangan","Development"),title:t("Abstraksi & bidang lanjut","Abstraction & Advanced Fields"),description:t("Masuk ke algebra abstrak, graf, topologi, kompleks, dan bidang terapan.","Move into abstract algebra, graph theory, topology, complex analysis, and applied fields."),topics:[t("Struktur Aljabar","Abstract Algebra"),t("Teori Graf","Graph Theory"),t("Topologi","Topology"),t("Analisis Kompleks","Complex Analysis")]}
     ],
     skills:[t("Pembuktian formal","Formal proof"),t("Abstraksi","Abstraction"),t("Struktur linear","Linear structure"),t("Analisis limit","Limit analysis"),t("Koneksi antarbidang","Cross-field connections")],
-    publishedMaterials:["integral-riemann","prinsip-pigeonhole","spektrum-graf"]
+    publishedMaterials:["integral-riemann","prinsip-pigeonhole","spektrum-graf","analisis-numerik"]
   },
 
   {
