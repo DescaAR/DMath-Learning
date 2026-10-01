@@ -67,7 +67,7 @@ export default function Home() {
         <span className="eyebrow">Lanjut Belajar</span>
         <h2>Latihan dan Bank Soal</h2>
         <p>Setelah membaca materi, lanjutkan ke latihan terkurasi atau bank soal agar konsep berubah menjadi kemampuan problem solving.</p>
-        <div className="actions"><Link className="btn primary" href="/materi">Buka Materi</Link><Link className="btn secondary" href="/bank-soal">Bank Soal</Link></div>
+        <div className="actions"><Link className="btn primary" href="/latihan-soal">Latihan Soal</Link><Link className="btn secondary" href="/bank-soal">Bank Soal</Link></div>
       </section>
     </RiemannHubShell>
   );
