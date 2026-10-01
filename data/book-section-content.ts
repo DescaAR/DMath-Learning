@@ -3,12 +3,14 @@ import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
 import { realAnalysisContentB } from "@/data/real-analysis-book-content-b";
 import { complexAnalysisContentA } from "@/data/complex-analysis-book-content-a";
 import { complexAnalysisContentB } from "@/data/complex-analysis-book-content-b";
+import { additionalBookContent } from "@/data/additional-book-content";
 
 export const bookSectionContent:Record<string,BookLessonContent>={
   ...realAnalysisContentA,
   ...realAnalysisContentB,
   ...complexAnalysisContentA,
   ...complexAnalysisContentB,
+  ...additionalBookContent,
 };
 
 export function getBookSectionContent(sectionSlug:string){
