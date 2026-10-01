@@ -12,27 +12,49 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function BasisDimensionPracticePage() {
   return (
-    <>
-      <section className="page-hero practice-page-hero">
+    <div className="textbook-page ird-page">
+      <section className="chapter-hero textbook-hero ird-hero">
         <div className="container narrow">
           <div className="breadcrumb">
-            <Link href="/kuliah/aljabar-linear/basis-dan-dimensi">Basis dan Dimensi</Link>
-            <span>/</span>
-            <strong>Latihan Terkurasi</strong>
+            <Link href="/kuliah/aljabar-linear/basis-dan-dimensi">Basis dan Dimensi</Link><span>/</span><strong>Latihan Terkurasi</strong>
           </div>
-          <span className="eyebrow">Practice · 30 soal terpilih</span>
-          <h1>Belajar satu soal pada satu waktu.</h1>
-          <p>
-            Urutan dipilih dari konsep dasar menuju pembuktian dan challenge. Coba sendiri,
-            gunakan hint bila perlu, lalu buka pembahasan lengkap.
-          </p>
+          <div className="chapter-label-row"><span className="eyebrow">Aljabar Linear · Latihan Terstruktur</span></div>
+          <h1>30 Latihan Basis dan Dimensi</h1>
+          <p className="chapter-lead">Latihan disusun dari konsep dasar menuju pembuktian dan challenge. Kerjakan soal terlebih dahulu, buka petunjuk bila diperlukan, lalu periksa pembahasan lengkap.</p>
+          <div className="chapter-meta textbook-meta">
+            <span>30 soal</span><span>Dasar–Menantang</span><span>Hint + solusi</span><span>Basis & Dimensi</span>
+          </div>
+          <div className="actions">
+            <a className="btn primary" href="#latihan-basis">Mulai Latihan</a>
+            <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka 100 Bank Soal</Link>
+          </div>
         </div>
       </section>
-      <section className="section">
+
+      <section className="section ird-overview">
         <div className="container narrow">
-          <ProblemPractice />
+          <span className="eyebrow">Alur Latihan</span>
+          <h2>Dari pemahaman konsep menuju pembuktian.</h2>
+          <div className="ird-roadmap">
+            {["Kombinasi linear","Span","Bebas linear","Basis","Koordinat","Dimensi","Subruang","Rank–Nullity"].map((item,index)=>(
+              <div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>
+            ))}
+          </div>
         </div>
       </section>
-    </>
+
+      <section id="latihan-basis" className="section textbook-section-shell">
+        <div className="container narrow">
+          <article className="article deep-article textbook-article ird-article">
+            <section className="book-section ird-practice-section">
+              <div className="section-number">01</div>
+              <span className="eyebrow">Latihan Soal dan Solusi</span>
+              <h2>Belajar satu soal pada satu waktu.</h2>
+              <ProblemPractice />
+            </section>
+          </article>
+        </div>
+      </section>
+    </div>
   );
 }
