@@ -36,7 +36,7 @@ export const siteConfig = {
     { label: "Materi", href: "/materi" },
     { label: "Bank Soal", href: "/bank-soal" },
     { label: "Olimpiade", href: "/olimpiade" },
-    { label: "Pembahasan", href: "/pembahasan" },
+    { label: "Latihan Soal", href: "/latihan-soal" },
     { label: "Sumber Belajar Lain", href: "/sumber-belajar-lain" },
     { label: "Tentang", href: "/tentang" },
   ],
