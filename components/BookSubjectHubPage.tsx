@@ -9,7 +9,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
   const first=subject.chapters[0]?.sections[0];
   const sections=subject.chapters.map((chapter)=>({
     id:"book-chapter-"+chapter.number.replaceAll(".","-"),
-    label:"Bab "+chapter.number+" · "+chapter.title,
+    label:"Unit "+chapter.number+" · "+chapter.title,
   }));
 
   return(
@@ -41,14 +41,14 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       overviewEyebrow="Peta Buku"
       overviewTitle="Pilih unit belajar, lalu pelajari satu submateri sampai selesai."
       overviewText="Setiap halaman submateri mempunyai struktur yang konsisten: tujuan, intuisi, notasi, definisi, teorema, pembuktian, contoh terbahas, latihan dengan petunjuk dan solusi, kesalahan umum, koneksi, ringkasan, serta navigasi ke materi berikutnya."
-      roadmap={subject.chapters.map((chapter)=>"Bab "+chapter.number+" · "+chapter.title)}
+      roadmap={subject.chapters.map((chapter)=>"Unit "+chapter.number+" · "+chapter.title)}
       sections={sections}
     >
       {subject.chapters.map((chapter,chapterIndex)=>(
         <section
           key={chapter.number}
           id={"book-chapter-"+chapter.number.replaceAll(".","-")}
-          className="book-section ird-source-section"
+          className="book-section ird-curriculum-section"
         >
           <div className="section-number">{String(chapterIndex+1).padStart(2,"0")}</div>
           <span className="eyebrow">Unit {chapter.number} · DMath Learning</span>
