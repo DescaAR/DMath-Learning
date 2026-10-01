@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
+import { allBookSections, bookSubjects } from "@/data/book-curricula";
 import { deepMaterials } from "@/data/deep-materials";
 import { basisDimensionProblems } from "@/data/basis-dimension-problems";
 import { learningTrackPages } from "@/data/learning-track-pages";
@@ -22,11 +23,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const trackRoutes = learningTrackPages.map((track) => "/belajar/" + track.slug);
   const olympiadRoutes = olympiadHubs.map((hub) => "/olimpiade/" + hub.slug);
   const materialRoutes = deepMaterials.map((material) => "/materi/" + material.slug);
+  const bookSubjectRoutes = bookSubjects.map((subject) => "/materi/" + subject.slug);
+  const bookSectionRoutes = allBookSections.map(
+    ({subject,section}) => "/materi/" + subject.slug + "/" + section.slug
+  );
   const problemRoutes = basisDimensionProblems.map(
     (problem) => "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + problem.id.toLowerCase()
   );
 
-  const routes = [...staticRoutes, ...trackRoutes, ...olympiadRoutes, ...materialRoutes, ...problemRoutes];
+  const routes = Array.from(new Set([
+    ...staticRoutes,
+    ...trackRoutes,
+    ...olympiadRoutes,
+    ...materialRoutes,
+    ...bookSubjectRoutes,
+    ...bookSectionRoutes,
+    ...problemRoutes,
+  ]));
 
   return routes.map((route) => ({
     url: siteConfig.url + route,
@@ -36,10 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? 1
         : route === "/materi" || route === "/bank-soal" || route === "/olimpiade"
           ? 0.9
-          : route.startsWith("/materi/")
-            ? 0.85
-            : route.includes("/bank-soal/kuliah/")
-              ? 0.75
-              : 0.7,
+          : bookSubjectRoutes.includes(route)
+            ? 0.9
+            : route.startsWith("/materi/")
+              ? 0.85
+              : route.includes("/bank-soal/kuliah/")
+                ? 0.75
+                : 0.7,
   }));
 }
