@@ -80,6 +80,25 @@ export function BookSectionPage({
       roadmap={section.keyIdeas}
       sections={sections}
     >
+      <section className="book-section ird-source-section">
+        <div className="section-number">00</div>
+        <span className="eyebrow">Posisi dalam Bab {chapter.number}</span>
+        <h2>{chapter.title}</h2>
+        <p className="ird-paragraph">Submateri ini adalah bagian dari rangkaian Bab {chapter.number}. Gunakan daftar berikut untuk berpindah antarbagian tanpa kembali ke indeks utama.</p>
+        <div className="ird-roadmap">
+          {chapter.sections.map((item,index)=>(
+            <Link
+              key={item.slug}
+              href={"/materi/"+subject.slug+"/"+item.slug}
+              className={item.slug===section.slug?"active":""}
+            >
+              <span>{item.number}</span>
+              <strong>{item.title}</strong>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section id="book-lesson-1" className="book-section ird-source-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Prasyarat & Tujuan</span>
@@ -246,7 +265,7 @@ export function BookSectionPage({
         </div>
         <div className="content-box" style={{marginTop:24}}>
           <strong>Referensi struktur dan pengembangan materi</strong>
-          <p>{subject.source} ({subject.sourceYear}). Materi DMath Learning ditulis ulang dan dikembangkan sebagai penjelasan mandiri; susunan topik mengikuti alur referensi utama.</p>
+          <p>{subject.source} ({subject.sourceYear}), khususnya bagian {section.number} “{section.sourceTitle}”. Materi DMath Learning ditulis ulang dan dikembangkan sebagai penjelasan mandiri; susunan topik mengikuti alur referensi utama, sedangkan penjelasan, contoh, pembuktian, dan latihan disusun untuk pengalaman belajar DMath Learning.</p>
         </div>
       </section>
 
