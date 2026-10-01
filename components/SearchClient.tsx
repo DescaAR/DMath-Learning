@@ -13,6 +13,7 @@ import {
 import { useLanguage } from "@/components/LanguageProvider";
 import { RichMath } from "@/components/RichMath";
 import { allBookSections, bookSubjects } from "@/data/book-curricula";
+import { bookSectionContent } from "@/data/book-section-content";
 
 type LevelFilter = "Semua" | Exclude<SearchLevel, "Umum">;
 type TrackFilter = "Semua" | "Reguler" | "Olimpiade";
@@ -24,6 +25,41 @@ const LEVELS: LevelFilter[] = ["Semua", "SD", "SMP", "SMA", "Kuliah"];
 const TRACKS: TrackFilter[] = ["Semua", "Reguler", "Olimpiade"];
 const KINDS: KindFilter[] = ["Semua", "Materi", "Soal", "Teorema", "Definisi", "Contoh", "Halaman"];
 const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Sulit", "Sangat Sulit", "Challenge"];
+function lessonSearchText(sectionSlug: string) {
+  const content = bookSectionContent[sectionSlug];
+  if (!content) return "";
+
+  return [
+    ...content.intro,
+    ...(content.notation ?? []).flatMap((item) => [item.symbol, item.meaning]),
+    ...content.formal.flatMap((item) => [
+      item.kind,
+      item.kind === "lemma" ? "lemma lema" : "",
+      item.kind === "theorem" ? "theorem teorema" : "",
+      item.kind === "proposition" ? "proposition proposisi" : "",
+      item.kind === "corollary" ? "corollary akibat" : "",
+      item.kind === "definition" ? "definition definisi" : "",
+      item.title,
+      item.statement,
+      ...(item.proof ?? []),
+    ]),
+    ...content.examples.flatMap((item) => [
+      item.title,
+      item.problem,
+      ...item.solution,
+      item.conclusion ?? "",
+    ]),
+    ...content.exercises.flatMap((item) => [
+      item.prompt,
+      item.hint,
+      item.answer,
+      item.sourceNote ?? "",
+    ]),
+    ...content.mistakes,
+    ...content.connections,
+  ].join(" ");
+}
+
 const DIGITAL_BOOK_SEARCH_INDEX: SearchEntry[] = [
   ...bookSubjects.map((book):SearchEntry=>({
     id:"digital-book-"+book.slug,
@@ -55,12 +91,52 @@ const DIGITAL_BOOK_SEARCH_INDEX: SearchEntry[] = [
     description:section.summary,
     meta:book.title+" · Unit "+chapter.number+" · "+chapter.title,
     href:"/materi/"+book.slug+"/"+section.slug,
-    keywords:[book.title,chapter.title,section.title,section.summary,...section.keyIdeas].join(" "),
+    keywords:[book.title,chapter.title,section.title,section.summary,...section.keyIdeas,lessonSearchText(section.slug)].join(" "),
     titleEn:section.title,
     descriptionEn:section.summary,
     metaEn:book.title+" · Unit "+chapter.number+" · "+chapter.title,
-    keywordsEn:[book.title,chapter.title,section.title,section.summary,...section.keyIdeas].join(" "),
+    keywordsEn:[book.title,chapter.title,section.title,section.summary,...section.keyIdeas,lessonSearchText(section.slug)].join(" "),
   })),
+  ...allBookSections.flatMap(({subject:book,chapter,section})=>{
+    const content=bookSectionContent[section.slug];
+    if(!content)return [];
+    return content.formal.map((formal,index):SearchEntry=>({
+      id:"digital-book-formal-"+book.slug+"-"+section.slug+"-"+index,
+      kind:formal.kind==="definition"?"Definisi":formal.kind==="note"?"Materi":"Teorema",
+      level:"Kuliah",
+      track:book.level.toLowerCase().includes("on-mipa")?"Olimpiade":"Reguler",
+      subject:book.title,
+      subjectEn:book.title,
+      difficulty:"Umum",
+      title:formal.title,
+      description:formal.statement,
+      meta:(
+        formal.kind==="definition"?"Definisi":
+        formal.kind==="lemma"?"Lemma":
+        formal.kind==="proposition"?"Proposisi":
+        formal.kind==="theorem"?"Teorema":
+        formal.kind==="corollary"?"Akibat":"Catatan"
+      )+" · "+book.title+" · "+section.title,
+      href:"/materi/"+book.slug+"/"+section.slug+(formal.kind==="definition"?"#book-lesson-4":"#book-lesson-5"),
+      keywords:[
+        book.title,chapter.title,section.title,section.summary,...section.keyIdeas,
+        formal.kind,formal.title,formal.statement,...(formal.proof??[])
+      ].join(" "),
+      titleEn:formal.title,
+      descriptionEn:formal.statement,
+      metaEn:(
+        formal.kind==="definition"?"Definition":
+        formal.kind==="lemma"?"Lemma":
+        formal.kind==="proposition"?"Proposition":
+        formal.kind==="theorem"?"Theorem":
+        formal.kind==="corollary"?"Corollary":"Note"
+      )+" · "+book.title+" · "+section.title,
+      keywordsEn:[
+        book.title,chapter.title,section.title,section.summary,...section.keyIdeas,
+        formal.kind,formal.title,formal.statement,...(formal.proof??[])
+      ].join(" "),
+    }));
+  }),
 ];
 
 const COMBINED_SEARCH_INDEX: SearchEntry[] = [...DIGITAL_BOOK_SEARCH_INDEX,...fullSearchIndex];
@@ -85,6 +161,45 @@ function normalize(value: string) {
     .replace(/[^a-z0-9\s-]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+const SEARCH_ALIASES: Record<string, string[]> = {
+  lema: ["lemma"],
+  lemma: ["lema"],
+  teorema: ["theorem"],
+  theorem: ["teorema"],
+  definisi: ["definition"],
+  definition: ["definisi"],
+  proposisi: ["proposition"],
+  proposition: ["proposisi"],
+  akibat: ["corollary"],
+  corollary: ["akibat"],
+  rumus: ["formula"],
+  formula: ["rumus"],
+  stokastik: ["stochastic"],
+  stochastic: ["stokastik"],
+  turunan: ["derivative", "diferensial", "differential"],
+  derivative: ["turunan", "diferensial", "differential"],
+  diferensial: ["differential", "derivative", "turunan"],
+  integral: ["integrasi", "integration"],
+  integrasi: ["integral", "integration"],
+  peluang: ["probabilitas", "probability"],
+  probabilitas: ["peluang", "probability"],
+  matriks: ["matrix"],
+  matrix: ["matriks"],
+  graf: ["graph"],
+  graph: ["graf"],
+};
+
+const STRUCTURAL_QUERY_TOKENS = new Set([
+  "lemma","lema","teorema","theorem","definisi","definition",
+  "proposisi","proposition","akibat","corollary","materi","bab",
+  "subbab","topik","konsep",
+]);
+
+function tokenMatches(token: string, haystack: string) {
+  if (haystack.includes(token)) return true;
+  return (SEARCH_ALIASES[token] ?? []).some((alias) => haystack.includes(alias));
 }
 
 function trigrams(value: string) {
@@ -128,8 +243,10 @@ function fuzzyScore(query: string, entry: SearchEntry, language: "id" | "en") {
   if (haystack.includes(q)) return 0.84;
 
   const tokens = q.split(" ").filter(Boolean);
-  const matchedTokens = tokens.filter((token) => haystack.includes(token)).length;
-  const tokenCoverage = tokens.length ? matchedTokens / tokens.length : 0;
+  const contentTokens = tokens.filter((token) => !STRUCTURAL_QUERY_TOKENS.has(token));
+  const effectiveTokens = contentTokens.length ? contentTokens : tokens;
+  const matchedTokens = effectiveTokens.filter((token) => tokenMatches(token, haystack)).length;
+  const tokenCoverage = effectiveTokens.length ? matchedTokens / effectiveTokens.length : 0;
 
   const titleSimilarity = dice(q, title);
   const descriptionSimilarity = dice(q, description);
