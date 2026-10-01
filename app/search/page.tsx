@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
-import { PageHero } from "@/components/PageHero";
 import { SearchClient } from "@/components/SearchClient";
+import { RiemannHubShell } from "@/components/RiemannHubShell";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Pencarian DMath Learning",
@@ -12,17 +12,30 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function SearchPage() {
   return (
-    <>
-      <PageHero
-        eyebrow="Global Search"
-        title="Cari seluruh isi DMath Learning."
-        description="Cari materi, definisi, teorema, contoh, dan soal dalam satu tempat. Gunakan filter berbentuk kotak untuk memilih jenjang, jalur, bidang/materi, tingkat kesulitan, dan jenis konten. Pencarian tetap menampilkan hasil yang cukup mirip ketika kata yang diketik tidak persis sama."
-      />
-      <section className="section">
-        <div className="container">
-          <SearchClient />
-        </div>
+    <RiemannHubShell
+      breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Pencarian"}]}
+      eyebrow="Global Search · Seluruh Konten"
+      title="Cari seluruh isi DMath Learning."
+      lead="Cari materi, definisi, teorema, contoh, dan soal dalam satu tempat dengan filter jenjang, jalur, bidang, tingkat kesulitan, dan jenis konten."
+      meta={["Materi","Definisi","Teorema","Contoh","Soal"]}
+      stats={[
+        {value:"1",label:"pencarian global"},
+        {value:"multi",label:"filter"},
+        {value:"fuzzy",label:"pencocokan"},
+        {value:"all",label:"jenis konten"},
+      ]}
+      actions={[{label:"Mulai Mencari",href:"#search-main",kind:"primary"},{label:"Lihat Materi",href:"/materi",kind:"secondary"}]}
+      overviewTitle="Satu pencarian untuk seluruh ekosistem."
+      overviewText="Pencarian tetap menampilkan hasil yang cukup mirip ketika kata yang diketik tidak persis sama."
+      roadmap={["Ketik kata kunci","Pilih jenjang","Pilih jalur","Pilih bidang","Pilih kesulitan","Buka hasil"]}
+      sections={[{id:"search-main",label:"Pencarian"}]}
+    >
+      <section id="search-main" className="book-section ird-source-section">
+        <div className="section-number">01</div>
+        <span className="eyebrow">Pencarian</span>
+        <h2>Temukan materi atau soal yang dibutuhkan.</h2>
+        <SearchClient />
       </section>
-    </>
+    </RiemannHubShell>
   );
 }
