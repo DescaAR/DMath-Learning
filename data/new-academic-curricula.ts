@@ -19,7 +19,7 @@ const s=(unit:number,index:number,seed:SectionSeed):BookSection=>{
     slug,
     title,
     sourceTitle:"DMath Learning",
-    summary:"Mempelajari "+title+" secara konseptual dan formal, dengan fokus pada "+keyIdeas.join(", ")+".",
+    summary:"Submateri "+title+" mencakup "+keyIdeas.join(", ")+".",
     keyIdeas,
   };
 };
