@@ -28,7 +28,8 @@ function imperativeProblemText(text: string) {
     .replace(/\bDijelaskan\b/g, "Jelaskan")
     .replace(/\bDiperiksa\b/g, "Periksa")
     .replace(/\bDiselidiki\b/g, "Selidiki")
-    .replace(/\bDibentuk\b/g, "Bentuk");
+    .replace(/\bDibentuk\b/g, "Bentuk")
+    .replace(/\bDitetapkan\b/g, "Tetapkan");
 }
 
 const kindNames: Record<string, string> = {
