@@ -9,7 +9,6 @@ import { olympiadHubs } from "@/data/olympiad-hubs";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
-    "/belajar",
     "/materi",
     "/bank-soal",
     "/olimpiade",
