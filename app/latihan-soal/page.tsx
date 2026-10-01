@@ -39,10 +39,10 @@ const structuredPractice = bookSubjects
   })
   .filter((item) => item.count > 0);
 
-const structuredSlugs = new Set(bookSubjects.map((subject) => subject.slug));
+const structuredSlugs = new Set<string>(bookSubjects.map((subject) => subject.slug));
 
 const regularPractice = deepMaterials
-  .filter((material) => !structuredSlugs.has(material.slug as never))
+  .filter((material) => !structuredSlugs.has(material.slug))
   .map((material) => {
     const count =
       (materialPractice[material.slug]?.length ?? 0) +
