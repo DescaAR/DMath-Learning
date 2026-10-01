@@ -33,7 +33,6 @@ export const siteConfig = {
   ],
   nav: [
     { label: "Beranda", href: "/" },
-    { label: "Belajar", href: "/belajar" },
     { label: "Materi", href: "/materi" },
     { label: "Bank Soal", href: "/bank-soal" },
     { label: "Olimpiade", href: "/olimpiade" },
