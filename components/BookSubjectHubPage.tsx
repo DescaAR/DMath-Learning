@@ -31,8 +31,8 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       stats={[
         {value:subject.chapters.length,label:"bab utama"},
         {value:sectionCount,label:"submateri"},
-        {value:"89+",label:"blok teori & latihan"},
-        {value:"∞",label:"ruang pengembangan"},
+        {value:sectionCount,label:"halaman submateri"},
+        {value:"1 pola",label:"struktur Integral Riemann"},
       ]}
       actions={[
         ...(first?[{label:"Mulai dari Awal",href:"/materi/"+subject.slug+"/"+first.slug,kind:"primary" as const}]:[]),
