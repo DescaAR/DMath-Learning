@@ -4,505 +4,334 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { deepMaterials, type DeepMaterial } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
-import { materialSupplements, type BilingualText } from "@/data/material-supplements";
 import { materialPractice } from "@/data/material-practice";
 import { materialPracticeExtra } from "@/data/material-practice-extra";
-import { materialExtensions } from "@/data/material-extensions";
-import { materialExplorations } from "@/data/material-explorations";
 import { formalChapterContent } from "@/data/formal-chapter-content";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
-import { MaterialCheckpoint } from "@/components/MaterialCheckpoint";
-import { MaterialPractice } from "@/components/MaterialPractice";
-import { ConceptIndex } from "@/components/ConceptIndex";
-import { MaterialExplorationLab } from "@/components/MaterialExplorationLab";
-import { FormalChapterSection } from "@/components/FormalChapterSection";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 
-function RichParagraph({ text }: { text: string }) {
-  return <p><RichMath>{text}</RichMath></p>;
+function Text({ children }: { children: string }) {
+  return <RichMath className="ird-rich-text">{children}</RichMath>;
 }
 
 export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const { language } = useLanguage();
-  const m = language === "en" ? (deepMaterialEnMap[material.slug] ?? material) : material;
-  const supplement = materialSupplements[material.slug];
-  const extensions = materialExtensions[material.slug] ?? [];
-  const practiceProblems = [...(materialPractice[material.slug] ?? []), ...(materialPracticeExtra[material.slug] ?? [])];
-  const explorations = materialExplorations[material.slug] ?? [];
-  const formalContent = formalChapterContent[material.slug];
   const en = language === "en";
+  const m = en ? (deepMaterialEnMap[material.slug] ?? material) : material;
+  const formal = formalChapterContent[material.slug];
+  const practice = [...(materialPractice[material.slug] ?? []), ...(materialPracticeExtra[material.slug] ?? [])];
   const ui = (id: string, english: string) => en ? english : id;
-  const pick = (text: BilingualText) => en ? text.en : text.id;
+  const pick = (value: { id: string; en: string }) => en ? value.en : value.id;
 
-  const sectionIds = useMemo(() => [
-    "overview", "prasyarat", "tujuan", "peta", "indeks-konsep", "motivasi", "notasi", "definisi",
-    "struktur-formal", "contoh-detail", "pendalaman", "subbab-lanjutan", "lab-interaktif", "teorema", "contoh", "eksplorasi", "latihan-bertingkat", "checkpoint", "kesalahan",
-    "ringkasan", "koneksi", "referensi"
-  ], []);
+  const sections = useMemo(() => [
+    ["gm-section-1", ui("Prasyarat & Tujuan", "Prerequisites & Objectives")],
+    ["gm-section-2", ui("Motivasi & Intuisi", "Motivation & Intuition")],
+    ["gm-section-3", ui("Notasi", "Notation")],
+    ["gm-section-4", ui("Definisi Formal", "Formal Definitions")],
+    ["gm-section-5", ui("Teorema & Bukti", "Theorems & Proofs")],
+    ["gm-section-6", ui("Contoh Terbahas", "Worked Examples")],
+    ["gm-section-7", ui("Visualisasi", "Visualization")],
+    ["gm-section-8", ui("Kesalahan & Koneksi", "Mistakes & Connections")],
+    ["gm-latihan", ui("Latihan Soal", "Practice Problems")],
+    ["gm-referensi", ui("Referensi", "References")],
+  ] as const, [en]);
 
-  const [activeSection, setActiveSection] = useState("overview");
+  const [active, setActive] = useState("gm-section-1");
   const [progress, setProgress] = useState(0);
-  const chapterIndex = deepMaterials.findIndex((item) => item.slug === material.slug);
-  const previousChapter = chapterIndex > 0 ? deepMaterials[chapterIndex - 1] : null;
-  const nextChapter = chapterIndex >= 0 && chapterIndex < deepMaterials.length - 1 ? deepMaterials[chapterIndex + 1] : null;
 
   useEffect(() => {
-    function updateReadingState() {
+    const ids = sections.map(([id]) => id);
+    const updateProgress = () => {
       const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       setProgress(Math.min(100, Math.max(0, window.scrollY / max * 100)));
-
-      let current = "overview";
-      for (const id of sectionIds) {
-        const element = document.getElementById(id);
-        if (element && element.getBoundingClientRect().top <= 150) current = id;
-      }
-      setActiveSection(current);
-    }
-
-    updateReadingState();
-    window.addEventListener("scroll", updateReadingState, { passive: true });
-    window.addEventListener("resize", updateReadingState);
-    return () => {
-      window.removeEventListener("scroll", updateReadingState);
-      window.removeEventListener("resize", updateReadingState);
     };
-  }, [sectionIds]);
+    updateProgress();
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    window.addEventListener("resize", updateProgress);
 
-  const toc = [
-    ["overview", "Overview", "Overview"],
-    ["prasyarat", "Prasyarat", "Prerequisites"],
-    ["tujuan", "Tujuan Pembelajaran", "Learning Objectives"],
-    ["peta", "Peta Konsep", "Concept Map"],
-    ["indeks-konsep", "Indeks Konsep", "Concept Index"],
-    ["motivasi", "Motivasi & Intuisi", "Motivation & Intuition"],
-    ["notasi", "Notasi", "Notation"],
-    ["definisi", "Definisi Formal", "Formal Definitions"],
-    ["struktur-formal", "Struktur Formal", "Formal Structure"],
-    ["contoh-detail", "Contoh Detail", "Detailed Examples"],
-    ["pendalaman", "Pendalaman Konsep", "Deep Dive"],
-    ["subbab-lanjutan", "Subbab Lanjutan", "Extended Topics"],
-    ["lab-interaktif", "Lab Interaktif", "Interactive Lab"],
-    ["teorema", "Teorema & Bukti", "Theorems & Proofs"],
-    ["contoh", "Worked Examples", "Worked Examples"],
-    ["eksplorasi", "Proyek Eksplorasi", "Exploration Project"],
-    ["latihan-bertingkat", "Latihan Bertingkat", "Guided Practice"],
-    ["checkpoint", "Cek Pemahaman", "Knowledge Check"],
-    ["kesalahan", "Kesalahan Umum", "Common Mistakes"],
-    ["ringkasan", "Ringkasan Bab", "Chapter Summary"],
-    ["koneksi", "Koneksi", "Connections"],
-    ["referensi", "Referensi", "References"],
-  ];
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => Math.abs(a.boundingClientRect.top - 120) - Math.abs(b.boundingClientRect.top - 120));
+      if (visible[0]) setActive(visible[0].target.id);
+    }, { rootMargin: "-110px 0px -62% 0px", threshold: [0, 0.01, 0.2] });
+
+    ids.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", updateProgress);
+      window.removeEventListener("resize", updateProgress);
+    };
+  }, [sections]);
+
+  const chapterIndex = deepMaterials.findIndex((item) => item.slug === material.slug);
+  const nextChapter = chapterIndex >= 0 && chapterIndex < deepMaterials.length - 1 ? deepMaterials[chapterIndex + 1] : null;
+  const formalDefinitions = formal?.blocks.filter((block) => block.kind === "definition") ?? [];
+  const formalResults = formal?.blocks.filter((block) => block.kind !== "definition") ?? [];
+  const resultCount = m.theorems.length + formalResults.length;
+  const exampleCount = m.examples.length + (formal?.examples.length ?? 0);
 
   return (
-    <div className="textbook-page" data-textbook="v2" data-no-translate>
-      <div className="reading-progress" aria-hidden="true">
-        <span style={{ width: progress + "%" }} />
-      </div>
+    <div className="textbook-page ird-page" data-no-translate>
+      <div className="reading-progress" aria-hidden="true"><span style={{ width: progress + "%" }} /></div>
 
-      <section className="chapter-hero textbook-hero">
+      <section className="chapter-hero textbook-hero ird-hero">
         <div className="container narrow">
           <div className="breadcrumb">
-            <Link href="/materi">{ui("Materi", "Materials")}</Link>
-            <span>/</span>
-            <span>{m.level}</span>
-            <span>/</span>
-            <strong>{m.title}</strong>
+            <Link href="/materi">{ui("Materi", "Materials")}</Link><span>/</span><span>{m.level}</span><span>/</span><strong>{m.title}</strong>
           </div>
-
           <div className="chapter-label-row">
-            <span className="eyebrow">{m.track} · {m.subject}</span>
-            <span className="chapter-edition">{ui("Bab Digital Lengkap", "Complete Digital Chapter")}</span>
+            <span className="eyebrow">{m.subject} · {ui("Bab Digital Lengkap", "Complete Digital Chapter")}</span>
           </div>
-
           <h1>{m.title}</h1>
-          <p className="chapter-lead"><RichMath>{m.summary}</RichMath></p>
-
+          <p className="chapter-lead"><Text>{m.summary}</Text></p>
           <div className="chapter-meta textbook-meta">
-            <span>{m.level}</span>
-            <span>{m.subject}</span>
-            <span>{m.difficulty}</span>
-            <span>{m.readingTime}</span>
+            <span>{m.level}</span><span>{m.track}</span><span>{m.difficulty}</span><span>{m.readingTime}</span>
           </div>
-
           <div className="chapter-stat-grid">
-            <div><strong>{m.definitions.length + (formalContent?.blocks.filter((item) => item.kind === "definition").length ?? 0)}</strong><span>{ui("definisi formal", "formal definitions")}</span></div>
-            <div><strong>{m.theorems.length + (formalContent?.blocks.filter((item) => item.proof?.length).length ?? 0)}</strong><span>{ui("hasil + bukti", "results + proofs")}</span></div>
-            <div><strong>{m.examples.length + (formalContent?.examples.length ?? 0)}</strong><span>{ui("contoh terbahas", "worked examples")}</span></div>
-            <div><strong>{practiceProblems.length}</strong><span>{ui("latihan bertingkat", "guided problems")}</span></div>
+            <div><strong>{m.definitions.length + formalDefinitions.length}</strong><span>{ui("definisi", "definitions")}</span></div>
+            <div><strong>{resultCount}</strong><span>{ui("hasil formal", "formal results")}</span></div>
+            <div><strong>{exampleCount}</strong><span>{ui("contoh terbahas", "worked examples")}</span></div>
+            <div><strong>{practice.length}</strong><span>{ui("latihan dengan solusi", "problems with solutions")}</span></div>
           </div>
-
           <div className="actions">
-            <a className="btn primary" href="#overview">{ui("Mulai Bab", "Start Chapter")}</a>
-            <a className="btn secondary" href="#lab-interaktif">{ui("Buka Lab Interaktif", "Open Interactive Lab")}</a>
+            <a className="btn primary" href="#gm-section-1">{ui("Mulai Bab", "Start Chapter")}</a>
+            <a className="btn secondary" href="#gm-latihan">{ui("Buka Latihan Soal", "Open Practice")}</a>
           </div>
+        </div>
+      </section>
+
+      <section className="section ird-overview">
+        <div className="container narrow">
+          <span className="eyebrow">{ui("Gambaran Besar", "Big Picture")}</span>
+          <h2>{ui("Alur konsep yang akan dipelajari.", "Concept flow for this chapter.")}</h2>
+          <p><Text>{m.summary}</Text></p>
+          <div className="ird-roadmap">
+            {m.conceptMap.map((item, index) => (
+              <div key={item}><span>{String(index + 1).padStart(2, "0")}</span><strong>{item}</strong></div>
+            ))}
+          </div>
+          <MathVisualization kind={m.visualization} />
         </div>
       </section>
 
       <section className="section textbook-section-shell">
         <div className="container article-layout textbook-layout">
-          <aside className="toc material-toc textbook-toc">
-            <div className="toc-progress-mini">
-              <span>{ui("Progres membaca", "Reading progress")}</span>
-              <strong>{Math.round(progress)}%</strong>
-            </div>
+          <aside className="toc material-toc textbook-toc ird-toc">
+            <div className="toc-progress-mini"><span>{ui("Progres membaca", "Reading progress")}</span><strong>{Math.round(progress)}%</strong></div>
             <strong>{ui("Isi Materi", "Contents")}</strong>
-            {toc.map(([id, idLabel, enLabel], index) => (
-              <a
-                href={"#" + id}
-                className={activeSection === id ? "active" : ""}
-                key={id}
-              >
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                {en ? enLabel : idLabel}
+            {sections.map(([id, label], index) => (
+              <a href={"#" + id} className={active === id ? "active" : ""} key={id}>
+                <span>{String(index + 1).padStart(2, "0")}</span>{label}
               </a>
             ))}
           </aside>
 
-          <article className="article deep-article textbook-article">
-            <section id="overview" className="book-section">
+          <article className="article deep-article textbook-article ird-article">
+            <section id="gm-section-1" className="book-section ird-source-section">
               <div className="section-number">01</div>
-              <span className="eyebrow">Overview</span>
-              <h2>{ui("Gambaran besar materi", "Big Picture")}</h2>
-              <RichParagraph text={m.summary} />
-              <MathVisualization kind={m.visualization} />
-
-              <div className="book-callout">
-                <div>
-                  <span>{ui("Cara belajar bab ini", "How to Study This Chapter")}</span>
-                  <strong>{ui("Pahami → uji → visualisasikan → buktikan → latihan.", "Understand → test → visualize → prove → practice.")}</strong>
+              <span className="eyebrow">{ui("Bagian 1", "Part 1")}</span>
+              <h2>{ui("Prasyarat dan tujuan pembelajaran", "Prerequisites and learning objectives")}</h2>
+              <div className="solution-overview-grid">
+                <div className="content-box">
+                  <strong>{ui("Prasyarat", "Prerequisites")}</strong>
+                  <ul>{m.prerequisites.map((item) => <li key={item}><Text>{item}</Text></li>)}</ul>
                 </div>
-                <p>{ui(
-                  "Jangan hanya membaca rumus. Gunakan visualisasi, ubah parameter di lab, tutup pembahasan contoh, lalu coba menurunkan kembali hasil utama dengan bahasamu sendiri.",
-                  "Do not merely read formulas. Use the visualizations, change parameters in the lab, hide worked solutions, and try to reconstruct the main results in your own words."
-                )}</p>
+                <div className="content-box">
+                  <strong>{ui("Tujuan Pembelajaran", "Learning Objectives")}</strong>
+                  <ul>{m.objectives.map((item) => <li key={item}><Text>{item}</Text></li>)}</ul>
+                </div>
               </div>
             </section>
 
-            <section id="prasyarat" className="content-box prerequisite-box book-section">
+            <section id="gm-section-2" className="book-section ird-source-section">
               <div className="section-number">02</div>
-              <strong>{ui("Prasyarat", "Prerequisites")}</strong>
-              <ul>{m.prerequisites.map((item) => <li key={item}><RichMath>{item}</RichMath></li>)}</ul>
+              <span className="eyebrow">{ui("Bagian 2", "Part 2")}</span>
+              <h2>{ui("Motivasi dan intuisi", "Motivation and intuition")}</h2>
+              {m.motivation.map((item) => <div className="ird-paragraph" key={item}><Text>{item}</Text></div>)}
+              <div className="ird-worked-grid">
+                {m.intuition.map((item, index) => (
+                  <article className="ird-worked-card" key={item}>
+                    <div className="ird-worked-head">
+                      <div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div>
+                      <div><span className="eyebrow">{ui("Intuisi", "Intuition")}</span><h3>{ui("Cara memandang konsep", "How to view the concept")}</h3></div>
+                    </div>
+                    <div className="ird-worked-prompt"><Text>{item}</Text></div>
+                  </article>
+                ))}
+              </div>
             </section>
 
-            <section id="tujuan" className="book-section">
+            <section id="gm-section-3" className="book-section ird-source-section">
               <div className="section-number">03</div>
-              <span className="eyebrow">{ui("Tujuan Pembelajaran", "Learning Objectives")}</span>
-              <h2>{ui("Setelah mempelajari bab ini", "After Studying This Chapter")}</h2>
-              <ul className="check-list">{m.objectives.map((item) => <li key={item}><RichMath>{item}</RichMath></li>)}</ul>
-            </section>
-
-            <section id="peta" className="book-section">
-              <div className="section-number">04</div>
-              <span className="eyebrow">{ui("Peta Konsep", "Concept Map")}</span>
-              <h2>{ui("Alur konsep", "Concept Flow")}</h2>
-              <div className="concept-map concept-map-wide">
-                {m.conceptMap.map((item, index) => (
-                  <div className="concept-node" key={item}>
-                    <span>{String(index + 1).padStart(2, "0")}</span>
-                    <strong>{item}</strong>
-                    {index < m.conceptMap.length - 1 && <i aria-hidden="true">→</i>}
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <ConceptIndex material={m} />
-
-            <section id="motivasi" className="book-section">
-              <div className="section-number">05</div>
-              <span className="eyebrow">{ui("Motivasi & Intuisi", "Motivation & Intuition")}</span>
-              <h2>{ui("Mengapa konsep ini dibutuhkan?", "Why Is This Concept Needed?")}</h2>
-              {m.motivation.map((p) => <RichParagraph key={p} text={p} />)}
-              <div className="intuition-grid">
-                {m.intuition.map((p, index) => (
-                  <div className="intuition-card" key={p}>
-                    <span className="card-index">{ui("Intuisi", "Intuition")} {index + 1}</span>
-                    <RichParagraph text={p} />
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section id="notasi" className="book-section">
-              <div className="section-number">06</div>
-              <span className="eyebrow">{ui("Notasi", "Notation")}</span>
-              <h2>{ui("Simbol yang digunakan", "Symbols Used")}</h2>
+              <span className="eyebrow">{ui("Bagian 3", "Part 3")}</span>
+              <h2>{ui("Notasi yang digunakan", "Notation used")}</h2>
               <div className="notation-table">
                 {m.notation.map((item) => (
                   <div className="notation-row" key={item.symbol}>
-                    <div className="notation-symbol"><RichMath>{item.symbol}</RichMath></div>
-                    <div className="notation-meaning"><RichMath>{item.meaning}</RichMath></div>
+                    <div className="notation-symbol"><Text>{item.symbol}</Text></div>
+                    <div className="notation-meaning"><Text>{item.meaning}</Text></div>
                   </div>
                 ))}
               </div>
             </section>
 
-            <section id="definisi" className="book-section">
-              <div className="section-number">07</div>
-              <span className="eyebrow">{ui("Definisi Formal", "Formal Definitions")}</span>
-              <h2>{ui("Bahasa matematis yang presisi", "Precise Mathematical Language")}</h2>
-              <div className="stacked-boxes">
-                {m.definitions.map((definition, index) => (
-                  <div className="definition-box numbered-box premium-definition" key={definition.title}>
-                    <div className="box-kicker">{ui("Definisi", "Definition")} {index + 1}</div>
-                    <strong>{definition.title}</strong>
-                    <RichParagraph text={definition.body} />
-                  </div>
-                ))}
-              </div>
+            <section id="gm-section-4" className="book-section ird-source-section">
+              <div className="section-number">04</div>
+              <span className="eyebrow">{ui("Bagian 4", "Part 4")}</span>
+              <h2>{ui("Definisi formal", "Formal definitions")}</h2>
+              {m.definitions.map((definition, index) => (
+                <article className="ird-formal ird-definition" key={definition.title}>
+                  <div className="ird-formal-head"><span>{ui("Definisi", "Definition")}</span><strong>{definition.title}</strong></div>
+                  <div className="ird-formal-body"><Text>{definition.body}</Text></div>
+                </article>
+              ))}
+              {formalDefinitions.map((block, index) => (
+                <article className="ird-formal ird-definition" key={pick(block.title) + index}>
+                  <div className="ird-formal-head"><span>{ui("Definisi", "Definition")}</span><strong>{pick(block.title)}</strong></div>
+                  <div className="ird-formal-body"><Text>{pick(block.statement)}</Text></div>
+                  {block.intuition && <div className="ird-paragraph"><strong>{ui("Intuisi. ", "Intuition. ")}</strong><Text>{pick(block.intuition)}</Text></div>}
+                </article>
+              ))}
             </section>
 
-            {formalContent && <FormalChapterSection content={formalContent} />}
-
-            {supplement && (
-              <section id="pendalaman" className="book-section">
-                <div className="section-number">08</div>
-                <span className="eyebrow">{ui("Pendalaman Konsep", "Deep Dive")}</span>
-                <h2>{ui("Dari definisi menuju pemahaman struktural.", "From definitions to structural understanding.")}</h2>
-                <div className="deep-dive-stack">
-                  {supplement.deepDive.map((part, index) => (
-                    <article className="deep-dive-card" key={pick(part.title)}>
-                      <div className="deep-dive-index">{String(index + 1).padStart(2, "0")}</div>
-                      <h3>{pick(part.title)}</h3>
-                      <p className="deep-dive-lead"><RichMath>{pick(part.lead)}</RichMath></p>
-                      {part.paragraphs.map((p) => <RichParagraph key={pick(p)} text={pick(p)} />)}
-                      {part.formula && <div className="deep-dive-formula"><RichMath>{part.formula}</RichMath></div>}
-                      <div className="takeaway-list">
-                        <strong>{ui("Yang perlu diingat", "Key Takeaways")}</strong>
-                        <ul>{part.takeaways.map((item) => <li key={pick(item)}><RichMath>{pick(item)}</RichMath></li>)}</ul>
-                      </div>
-                    </article>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {extensions.length > 0 && (
-              <section id="subbab-lanjutan" className="book-section extended-topics-section">
-                <div className="section-number">09</div>
-                <span className="eyebrow">{ui("Subbab Lanjutan", "Extended Topics")}</span>
-                <h2>{ui("Perluas pemahaman dari konsep inti ke struktur yang lebih dalam.", "Extend the Core Ideas into Deeper Structure.")}</h2>
-                <p>{ui(
-                  "Bagian ini dirancang seperti subbab buku: ada penjelasan konseptual, rumus utama, hasil penting, pembuktian, contoh, dan catatan yang perlu diingat.",
-                  "These sections are written like textbook subsections, with conceptual explanations, key formulas, important results, proofs, examples, and study notes."
-                )}</p>
-
-                <div className="extended-topic-stack">
-                  {extensions.map((unit, unitIndex) => (
-                    <article className="extended-topic-card" key={pick(unit.title)}>
-                      <div className="extended-topic-head">
-                        <span>{String(unitIndex + 1).padStart(2, "0")}</span>
-                        <div>
-                          <h3>{pick(unit.title)}</h3>
-                          <p><RichMath>{pick(unit.intro)}</RichMath></p>
-                        </div>
-                      </div>
-
-                      <div className="extended-topic-body">
-                        {unit.paragraphs.map((paragraph) => (
-                          <RichParagraph key={pick(paragraph)} text={pick(paragraph)} />
-                        ))}
-
-                        {(unit.formulas?.length ?? 0) > 0 && (
-                          <div className="extended-formula-grid">
-                            {unit.formulas?.map((formula) => (
-                              <div className="extended-formula" key={formula}><RichMath>{formula}</RichMath></div>
-                            ))}
-                          </div>
-                        )}
-
-                        {unit.theorem && (
-                          <div className="extension-theorem">
-                            <div className="box-kicker">{ui("Hasil Penting", "Key Result")}</div>
-                            <strong>{pick(unit.theorem.name)}</strong>
-                            <p><RichMath>{pick(unit.theorem.statement)}</RichMath></p>
-                            <details>
-                              <summary>{ui("Buka pembuktian", "Open Proof")}</summary>
-                              <div>
-                                {unit.theorem.proof.map((step, index) => (
-                                  <div className="proof-step" key={pick(step)}>
-                                    <span>{index + 1}</span>
-                                    <RichParagraph text={pick(step)} />
-                                  </div>
-                                ))}
-                                <p className="proof-end">■</p>
-                              </div>
-                            </details>
-                          </div>
-                        )}
-
-                        {unit.example && (
-                          <div className="extension-example">
-                            <div className="box-kicker">{ui("Contoh Terbahas", "Worked Example")}</div>
-                            <p className="extension-question"><RichMath>{pick(unit.example.question)}</RichMath></p>
-                            <details>
-                              <summary>{ui("Lihat penyelesaian", "Reveal Solution")}</summary>
-                              <div>
-                                {unit.example.solution.map((step, index) => (
-                                  <div className="solution-step" key={pick(step)}>
-                                    <span>{index + 1}</span>
-                                    <RichParagraph text={pick(step)} />
-                                  </div>
-                                ))}
-                              </div>
-                            </details>
-                          </div>
-                        )}
-
-                        <div className="extension-notes">
-                          <strong>{ui("Catatan penting", "Important Notes")}</strong>
-                          <ul>{unit.notes.map((note) => <li key={pick(note)}><RichMath>{pick(note)}</RichMath></li>)}</ul>
-                        </div>
-                      </div>
-                    </article>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            <InteractiveMathLab kind={m.visualization} />
-
-            <section id="teorema" className="book-section">
-              <div className="section-number">10</div>
-              <span className="eyebrow">{ui("Teorema & Bukti", "Theorems & Proofs")}</span>
-              <h2>{ui("Hasil utama, lengkap dengan pembuktian", "Main Results, with Complete Proofs")}</h2>
-              <div className="theorem-stack">
-                {m.theorems.map((theorem, index) => (
-                  <div className="theorem-suite premium-theorem" key={theorem.title}>
-                    <div className="theorem-box">
-                      <div className="box-kicker">{ui("Teorema", "Theorem")} {index + 1}</div>
-                      <strong>{theorem.title}</strong>
-                      <RichParagraph text={theorem.statement} />
+            <section id="gm-section-5" className="book-section ird-source-section">
+              <div className="section-number">05</div>
+              <span className="eyebrow">{ui("Bagian 5", "Part 5")}</span>
+              <h2>{ui("Teorema, proposisi, lemma, dan pembuktian", "Theorems, propositions, lemmas, and proofs")}</h2>
+              {m.theorems.map((theorem, index) => (
+                <article className="ird-formal ird-theorem" key={theorem.title}>
+                  <div className="ird-formal-head"><span>{ui("Teorema", "Theorem")}</span><strong>{theorem.title}</strong></div>
+                  <div className="ird-formal-body"><Text>{theorem.statement}</Text></div>
+                  <details className="ird-proof">
+                    <summary>{ui("Buka pembuktian", "Open proof")}</summary>
+                    <div className="ird-proof-body">
+                      {theorem.proof.map((step, stepIndex) => <div className="proof-step" key={step}><span>{stepIndex + 1}</span><Text>{step}</Text></div>)}
+                      <div className="ird-qed">■</div>
                     </div>
-
-                    <details className="proof-box proof-detailed proof-collapsible" open={index === 0}>
-                      <summary>
-                        <span>{ui("Bukti lengkap", "Complete Proof")}</span>
-                        <small>{ui("Klik untuk buka/tutup", "Click to expand/collapse")}</small>
-                      </summary>
-                      <div className="proof-inside">
-                        {theorem.proof.map((step, stepIndex) => (
-                          <div className="proof-step" key={step}>
-                            <span>{stepIndex + 1}</span>
-                            <RichParagraph text={step} />
-                          </div>
-                        ))}
-                        <p className="proof-end">■</p>
+                  </details>
+                  <div className="ird-paragraph"><strong>{ui("Makna hasil. ", "Why it matters. ")}</strong><Text>{theorem.why}</Text></div>
+                </article>
+              ))}
+              {formalResults.map((block, index) => (
+                <article className={"ird-formal ird-" + block.kind} key={pick(block.title) + index}>
+                  <div className="ird-formal-head"><span>{block.kind === "lemma" ? "Lemma" : block.kind === "proposition" ? ui("Proposisi", "Proposition") : block.kind === "corollary" ? ui("Akibat", "Corollary") : ui("Teorema", "Theorem")}</span><strong>{pick(block.title)}</strong></div>
+                  <div className="ird-formal-body"><Text>{pick(block.statement)}</Text></div>
+                  {block.proof && (
+                    <details className="ird-proof">
+                      <summary>{ui("Buka pembuktian", "Open proof")}</summary>
+                      <div className="ird-proof-body">
+                        {block.proof.map((step, stepIndex) => <div className="proof-step" key={pick(step)}><span>{stepIndex + 1}</span><Text>{pick(step)}</Text></div>)}
+                        <div className="ird-qed">■</div>
                       </div>
                     </details>
-
-                    <div className="why-box">
-                      <strong>{ui("Mengapa teorema ini penting?", "Why Is This Theorem Important?")}</strong>
-                      <RichParagraph text={theorem.why} />
-                    </div>
-                  </div>
-                ))}
-              </div>
+                  )}
+                  {block.note && <div className="ird-paragraph"><strong>{ui("Catatan. ", "Note. ")}</strong><Text>{pick(block.note)}</Text></div>}
+                </article>
+              ))}
             </section>
 
-            <section id="contoh" className="book-section">
-              <div className="section-number">11</div>
-              <span className="eyebrow">Worked Examples</span>
-              <h2>{ui("Coba dulu sebelum membuka pembahasan.", "Try first, then reveal the solution.")}</h2>
-              <div className="example-stack">
+            <section id="gm-section-6" className="book-section ird-source-section">
+              <div className="section-number">06</div>
+              <span className="eyebrow">{ui("Bagian 6", "Part 6")}</span>
+              <h2>{ui("Contoh terbahas", "Worked examples")}</h2>
+              <div className="ird-worked-grid">
                 {m.examples.map((example, index) => (
-                  <div className="example-suite premium-example" key={example.title}>
-                    <div className="example-box">
-                      <div className="box-kicker">{ui("Contoh", "Example")} {index + 1}</div>
-                      <strong>{example.title}</strong>
-                      <RichParagraph text={example.problem} />
-                    </div>
-                    <details className="solution-box content-box solution-collapsible">
-                      <summary>{ui("Buka pembahasan langkah demi langkah", "Reveal Step-by-Step Solution")}</summary>
-                      <div className="solution-inside">
-                        {example.solution.map((step, stepIndex) => (
-                          <div className="solution-step" key={step}>
-                            <span>{stepIndex + 1}</span>
-                            <RichParagraph text={step} />
-                          </div>
-                        ))}
+                  <article className="ird-worked-card" key={example.title}>
+                    <div className="ird-worked-head"><div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div><div><span className="eyebrow">{ui("Contoh", "Example")}</span><h3>{example.title}</h3></div></div>
+                    <div className="ird-worked-prompt"><Text>{example.problem}</Text></div>
+                    <details className="ird-worked-solution">
+                      <summary>{ui("Buka Solusi", "Open Solution")}</summary>
+                      <div className="ird-worked-solution-body">
+                        {example.solution.map((step, stepIndex) => <div className="solution-step" key={step}><span>{stepIndex + 1}</span><Text>{step}</Text></div>)}
                       </div>
                     </details>
-                  </div>
+                  </article>
+                ))}
+                {formal?.examples.map((example, index) => (
+                  <article className="ird-worked-card" key={pick(example.title)}>
+                    <div className="ird-worked-head"><div className="ird-problem-number">{String(m.examples.length + index + 1).padStart(2, "0")}</div><div><span className="eyebrow">{ui("Contoh", "Example")}</span><h3>{pick(example.title)}</h3></div></div>
+                    <div className="ird-worked-prompt"><Text>{pick(example.problem)}</Text></div>
+                    <details className="ird-worked-solution">
+                      <summary>{ui("Buka Solusi", "Open Solution")}</summary>
+                      <div className="ird-worked-solution-body">
+                        <div className="ird-paragraph"><strong>{ui("Strategi. ", "Strategy. ")}</strong><Text>{pick(example.strategy)}</Text></div>
+                        {example.solution.map((step, stepIndex) => <div className="solution-step" key={pick(step)}><span>{stepIndex + 1}</span><Text>{pick(step)}</Text></div>)}
+                        <div className="ird-paragraph"><strong>{ui("Kesimpulan. ", "Conclusion. ")}</strong><Text>{pick(example.conclusion)}</Text></div>
+                      </div>
+                    </details>
+                  </article>
                 ))}
               </div>
             </section>
 
-            {explorations.length > 0 && (
-              <MaterialExplorationLab explorations={explorations} storageKey={material.slug} />
-            )}
-
-            {practiceProblems.length > 0 && (
-              <MaterialPractice problems={practiceProblems} storageKey={material.slug} />
-            )}
-
-            {supplement && <MaterialCheckpoint quiz={supplement.quiz} />}
-
-            <section id="kesalahan" className="content-box warning-box book-section">
-              <div className="section-number">13</div>
-              <strong>{ui("Kesalahan Umum", "Common Mistakes")}</strong>
-              <ul>{m.mistakes.map((item) => <li key={item}><RichMath>{item}</RichMath></li>)}</ul>
+            <section id="gm-section-7" className="book-section ird-source-section">
+              <div className="section-number">07</div>
+              <span className="eyebrow">{ui("Bagian 7", "Part 7")}</span>
+              <h2>{ui("Visualisasi dan eksplorasi interaktif", "Visualization and interactive exploration")}</h2>
+              <p>{ui("Visualisasi digunakan untuk menghubungkan definisi formal dengan representasi geometris atau komputasionalnya.", "The visualization connects formal definitions with their geometric or computational representations.")}</p>
+              <MathVisualization kind={m.visualization} />
+              <InteractiveMathLab kind={m.visualization} />
             </section>
 
-            {supplement && (
-              <section id="ringkasan" className="book-section chapter-summary-section">
-                <div className="section-number">14</div>
-                <span className="eyebrow">{ui("Ringkasan Bab", "Chapter Summary")}</span>
-                <h2>{ui("Peta akhir yang harus kamu bawa.", "The final map to take away.")}</h2>
-                <div className="chapter-summary-grid">
-                  {supplement.summary.map((item, index) => (
-                    <div className="chapter-summary-card" key={pick(item)}>
-                      <span>{String(index + 1).padStart(2, "0")}</span>
-                      <p><RichMath>{pick(item)}</RichMath></p>
-                    </div>
-                  ))}
+            <section id="gm-section-8" className="book-section ird-source-section">
+              <div className="section-number">08</div>
+              <span className="eyebrow">{ui("Bagian 8", "Part 8")}</span>
+              <h2>{ui("Kesalahan umum dan koneksi materi", "Common mistakes and connections")}</h2>
+              <div className="solution-overview-grid">
+                <div className="content-box warning-box">
+                  <strong>{ui("Kesalahan Umum", "Common Mistakes")}</strong>
+                  <ul>{m.mistakes.map((item) => <li key={item}><Text>{item}</Text></li>)}</ul>
                 </div>
-              </section>
-            )}
-
-            <section id="koneksi" className="book-section">
-              <div className="section-number">15</div>
-              <span className="eyebrow">{ui("Keterhubungan Konsep", "Concept Connections")}</span>
-              <h2>{ui("Materi terkait", "Related Topics")}</h2>
-              <div className="subjects">{m.related.map((item) => <span key={item}>{item}</span>)}</div>
+                <div className="content-box insight-box">
+                  <strong>{ui("Koneksi", "Connections")}</strong>
+                  <ul>{m.related.map((item) => <li key={item}><Text>{item}</Text></li>)}</ul>
+                </div>
+              </div>
             </section>
 
-            <section id="referensi" className="book-section">
-              <div className="section-number">16</div>
+            <section id="gm-latihan" className="book-section ird-practice-section">
+              <div className="section-number">09</div>
+              <span className="eyebrow">{ui("Latihan Soal dan Solusi", "Practice Problems and Solutions")}</span>
+              <h2>{practice.length} {ui("latihan untuk menguji pemahaman", "problems to test understanding")}</h2>
+              <p>{ui("Kerjakan soal terlebih dahulu. Petunjuk dan solusi dapat dibuka setelah mencoba secara mandiri.", "Try each problem first. Open the hint and solution only after attempting it independently.")}</p>
+              <div className="ird-worked-grid">
+                {practice.map((problem, index) => (
+                  <article className="ird-worked-card" key={problem.id}>
+                    <div className="ird-worked-head">
+                      <div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div>
+                      <div><span className="eyebrow">{problem.difficulty}</span><h3>{pick(problem.title)}</h3></div>
+                    </div>
+                    <div className="ird-worked-prompt"><Text>{pick(problem.prompt)}</Text></div>
+                    <details className="ird-proof"><summary>{ui("Buka Petunjuk", "Open Hint")}</summary><div className="ird-proof-body"><Text>{pick(problem.hint)}</Text></div></details>
+                    <details className="ird-worked-solution"><summary>{ui("Buka Solusi", "Open Solution")}</summary><div className="ird-worked-solution-body"><Text>{pick(problem.answer)}</Text></div></details>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section id="gm-referensi" className="book-section ird-source-section">
+              <div className="section-number">10</div>
               <span className="eyebrow">{ui("Referensi", "References")}</span>
-              <h2>{ui("Bacaan lanjutan", "Further Reading")}</h2>
-              <ol className="reference-list">{m.references.map((reference) => <li key={reference}>{reference}</li>)}</ol>
-            </section>
-
-            <section className="chapter-neighbor-nav" aria-label={ui("Navigasi antar bab", "Chapter navigation")}>
-              {previousChapter ? (
-                <Link href={"/materi/" + previousChapter.slug} className="chapter-neighbor-card previous">
-                  <span>← {ui("Bab sebelumnya", "Previous Chapter")}</span>
-                  <strong>{en ? (deepMaterialEnMap[previousChapter.slug]?.title ?? previousChapter.title) : previousChapter.title}</strong>
-                </Link>
-              ) : <div />}
-              {nextChapter ? (
-                <Link href={"/materi/" + nextChapter.slug} className="chapter-neighbor-card next">
-                  <span>{ui("Bab berikutnya", "Next Chapter")} →</span>
-                  <strong>{en ? (deepMaterialEnMap[nextChapter.slug]?.title ?? nextChapter.title) : nextChapter.title}</strong>
-                </Link>
-              ) : <div />}
+              <h2>{ui("Sumber bacaan", "Further reading")}</h2>
+              <ol>{m.references.map((reference) => <li key={reference}><Text>{reference}</Text></li>)}</ol>
             </section>
 
             <section className="next-learning-block textbook-next">
               <div>
                 <span className="eyebrow">{ui("Lanjutkan", "Continue")}</span>
-                <h2>{ui("Uji pemahaman, jangan berhenti di membaca.", "Test Your Understanding—Do Not Stop at Reading.")}</h2>
-                <p>{ui(
-                  "Setelah bab selesai, lanjutkan ke bank soal. Materi matematika akan terasa benar-benar dikuasai ketika definisi dapat digunakan, teorema dapat dijelaskan, dan soal baru dapat diselesaikan tanpa meniru contoh.",
-                  "After finishing the chapter, continue to the problem bank. Mathematical understanding becomes durable when definitions can be used, theorems can be explained, and unfamiliar problems can be solved without copying examples."
-                )}</p>
+                <h2>{ui("Uji definisi melalui soal, bukan hanya membaca.", "Test definitions through problems, not only reading.")}</h2>
+                <p>{ui("Setelah memahami bagian formal, kerjakan latihan dan coba jelaskan kembali ide utama tanpa melihat pembahasan.", "After studying the formal material, solve the exercises and reconstruct the main ideas without looking at the solutions.")}</p>
               </div>
               <div className="actions">
-                <Link href="/bank-soal" className="btn primary">{ui("Buka Bank Soal", "Open Problem Bank")}</Link>
-                <Link href="/materi" className="btn secondary">{ui("Materi Lain", "Other Materials")}</Link>
+                <a className="btn primary" href="#gm-latihan">{ui("Kerjakan Latihan", "Practice Now")}</a>
+                {nextChapter ? <Link className="btn secondary" href={"/materi/" + nextChapter.slug}>{ui("Materi Berikutnya", "Next Material")}</Link> : <Link className="btn secondary" href="/materi">{ui("Materi Lain", "Other Materials")}</Link>}
               </div>
             </section>
           </article>
