@@ -44,10 +44,10 @@ function trackGroup(track: string, level: string): CatalogItem["trackGroup"] {
     : "Reguler";
 }
 
-const bookSubjectSlugs = new Set(bookSubjects.map((subject) => subject.slug));
+const bookSubjectSlugs = new Set<string>(bookSubjects.map((subject) => subject.slug));
 
 const baseItems: CatalogItem[] = deepMaterials
-  .filter((material) => !bookSubjectSlugs.has(material.slug as "analisis-real" | "analisis-kompleks"))
+  .filter((material) => !bookSubjectSlugs.has(material.slug))
   .map((material) => {
   const en = deepMaterialEnMap[material.slug] ?? material;
   return {
