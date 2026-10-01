@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DeepMaterialPage } from "@/components/DeepMaterialPage";
+import { StructuredData } from "@/components/StructuredData";
 import { IntegralRiemannDarbouxPage } from "@/components/IntegralRiemannDarbouxPage";
 import { ComplexAnalysisPage } from "@/components/ComplexAnalysisPage";
 import { deepMaterialMap, deepMaterials } from "@/data/deep-materials";
+import { breadcrumbJsonLd, createPageMetadata, learningResourceJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return deepMaterials.map((material) => ({ slug: material.slug }));
@@ -18,16 +20,13 @@ export async function generateMetadata({
   const material = deepMaterialMap[slug];
   if (!material) return {};
 
-  return {
+  return createPageMetadata({
     title: material.title,
     description: material.summary,
-    alternates: { canonical: "/materi/" + material.slug },
-    openGraph: {
-      title: material.title + " | DMath Learning",
-      description: material.summary,
-      type: "article",
-    },
-  };
+    path: "/materi/" + material.slug,
+    type: "article",
+    keywords: [material.title, material.subject, material.level + " matematika"],
+  });
 }
 
 export default async function MaterialDetailPage({
@@ -40,8 +39,28 @@ export default async function MaterialDetailPage({
 
   if (!material) notFound();
 
-  if (material.slug === "integral-riemann") return <IntegralRiemannDarbouxPage material={material} />;
-  if (material.slug === "analisis-kompleks") return <ComplexAnalysisPage material={material} />;
+  const content =
+    material.slug === "integral-riemann" ? (
+      <IntegralRiemannDarbouxPage material={material} />
+    ) : material.slug === "analisis-kompleks" ? (
+      <ComplexAnalysisPage material={material} />
+    ) : (
+      <DeepMaterialPage material={material} />
+    );
 
-  return <DeepMaterialPage material={material} />;
+  return (
+    <>
+      <StructuredData
+        data={[
+          breadcrumbJsonLd([
+            { name: "Beranda", path: "/" },
+            { name: "Materi", path: "/materi" },
+            { name: material.title, path: "/materi/" + material.slug },
+          ]),
+          learningResourceJsonLd(material),
+        ]}
+      />
+      {content}
+    </>
+  );
 }
