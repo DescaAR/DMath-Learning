@@ -234,9 +234,9 @@ export function ComplexAnalysisPage({ material }: { material: DeepMaterial }) {
     update();window.addEventListener("scroll",update,{passive:true});window.addEventListener("resize",update);return()=>{window.removeEventListener("scroll",update);window.removeEventListener("resize",update)};
   },[ids]);
   return (
-    <div className="textbook-page ca-page" data-no-translate>
+    <div className="textbook-page ird-page ca-page" data-no-translate>
       <div className="reading-progress" aria-hidden="true"><span style={{width:progress+"%"}}/></div>
-      <section className="chapter-hero textbook-hero ca-hero"><div className="container narrow">
+      <section className="chapter-hero textbook-hero ird-hero ca-hero"><div className="container narrow">
         <div className="breadcrumb"><Link href="/materi">Materi</Link><span>/</span><span>Kuliah</span><span>/</span><strong>Analisis Kompleks</strong></div>
         <div className="chapter-label-row"><span className="eyebrow">Analisis Kompleks · Bab Digital Lengkap</span><span className="chapter-edition">Teori formal + visualisasi interaktif</span></div>
         <h1>Analisis Kompleks</h1><p className="chapter-lead"><RichMath>{material.summary}</RichMath></p>
@@ -244,25 +244,25 @@ export function ComplexAnalysisPage({ material }: { material: DeepMaterial }) {
         <div className="chapter-stat-grid"><div><strong>{stats.definition}</strong><span>definisi</span></div><div><strong>{stats.theorem+stats.lemma+stats.proposition+stats.corollary}</strong><span>hasil formal</span></div><div><strong>{stats.example}</strong><span>contoh</span></div><div><strong>{stats.exercise+complexAnalysisExercises.length}</strong><span>latihan</span></div></div>
         <div className="actions"><a className="btn primary" href="#ca-overview">Mulai Bab</a><a className="btn secondary" href="#ca-latihan30">30 Soal Tambahan</a></div>
       </div></section>
-      <section id="ca-overview" className="section ca-overview"><div className="container narrow">
+      <section id="ca-overview" className="section ird-overview ca-overview"><div className="container narrow">
         <span className="eyebrow">Peta Materi</span><h2>Dari geometri bidang kompleks menuju holomorfisitas.</h2>
         <p>Bab ini menghubungkan representasi geometris bilangan kompleks dengan topologi, limit dua dimensi, turunan kompleks, persamaan Cauchy–Riemann, fungsi holomorfik, fungsi elementer kompleks, dan fungsi harmonik.</p>
         <div className="ca-roadmap">{["Bilangan kompleks","Polar & akar","Topologi","Fungsi kompleks","Limit & kontinu","Turunan kompleks","Cauchy–Riemann","Latihan"].map((x,i)=><div key={x}><span>{String(i+1).padStart(2,"0")}</span><strong>{x}</strong></div>)}</div>
         <ComplexPlaneLab/>
       </div></section>
       <section className="section textbook-section-shell"><div className="container article-layout textbook-layout">
-        <aside className="toc material-toc textbook-toc ca-toc"><div className="toc-progress-mini"><span>Progres membaca</span><strong>{Math.round(progress)}%</strong></div><strong>Isi Materi</strong>
+        <aside className="toc material-toc textbook-toc ird-toc ca-toc"><div className="toc-progress-mini"><span>Progres membaca</span><strong>{Math.round(progress)}%</strong></div><strong>Isi Materi</strong>
           {complexAnalysisSections.map((s,i)=>{const id="ca-section-"+(i+1);return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(i+1).padStart(2,"0")}</span>{s.title}</a>})}
           <a href="#ca-latihan30"><span>09</span>30 Latihan Tambahan</a>
         </aside>
-        <article className="article deep-article textbook-article ca-article">
-          {complexAnalysisSections.map((section,si)=><section id={"ca-section-"+(si+1)} className="book-section ca-source-section" key={section.title}>
+        <article className="article deep-article textbook-article ird-article ca-article">
+          {complexAnalysisSections.map((section,si)=><section id={"ca-section-"+(si+1)} className="book-section ird-source-section ca-source-section" key={section.title}>
             <div className="section-number">{String(si+1).padStart(2,"0")}</div><span className="eyebrow">Bagian {si+1}</span><h2>{section.title}</h2>
             {section.blocks.map((b,i)=><FormalBlock key={section.title+"b"+i} block={b} index={i}/>)}
             {section.subsections.map((sub,sj)=><div className="ca-subsection" key={sub.title}><div className="ca-subsection-kicker">{si+1}.{sj+1}</div><h3>{sub.title}</h3>{sub.blocks.map((b,i)=><FormalBlock key={sub.title+i} block={b} index={i}/>)}</div>)}
             {si>0 && <SectionVisual index={si}/>}
           </section>)}
-          <section id="ca-latihan30" className="book-section ca-practice-section"><div className="section-number">09</div><span className="eyebrow">Latihan Menengah–Menantang</span><h2>30 soal Analisis Kompleks</h2>
+          <section id="ca-latihan30" className="book-section ird-practice-section ca-practice-section"><div className="section-number">09</div><span className="eyebrow">Latihan Menengah–Menantang</span><h2>30 soal Analisis Kompleks</h2>
             <p>Seluruh soal dari lembar latihan tambahan disajikan satu per satu untuk latihan mandiri, dari operasi kompleks hingga fungsi harmonik dan Cauchy–Riemann.</p>
             <div className="ca-problem-grid">{complexAnalysisExercises.map((p,i)=><article className="ca-problem-card" key={i}><div className="ca-problem-number">{String(i+1).padStart(2,"0")}</div><div><strong>Soal {i+1}</strong><SourceText text={p}/></div></article>)}</div>
           </section>
