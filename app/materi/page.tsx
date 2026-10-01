@@ -23,7 +23,7 @@ export default function MateriPage() {
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Materi"}]}
       eyebrow="Perpustakaan Materi · Buku Digital"
       title="Bukan ringkasan satu halaman. Belajar sampai paham."
-      lead="Materi disusun per jenjang dan bidang. Untuk bidang besar seperti Analisis Real dan Analisis Kompleks, satu bidang dibagi menjadi bab dan submateri tersendiri agar dapat dipelajari berurutan seperti buku."
+      lead="Materi disusun per jenjang dan bidang. Buku digital besar—dari Analisis Real, Kalkulus, Teori Graf, Aljabar, Teori Bilangan Olimpiade, sampai Persamaan Diferensial—dibagi menjadi bab dan submateri tersendiri agar dapat dipelajari berurutan dan mendalam."
       meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
         {value:bookSubjects.length,label:"buku digital"},
@@ -36,7 +36,7 @@ export default function MateriPage() {
         {label:"Jelajahi Semua Materi",href:"#materi-katalog",kind:"secondary"},
       ]}
       overviewTitle="Bidang → bab → submateri → teori → latihan → materi berikutnya."
-      overviewText="Setiap submateri mempunyai halaman sendiri dengan tujuan, intuisi, notasi, definisi, teorema, pembuktian, contoh terbahas, latihan, kesalahan umum, koneksi, ringkasan, dan navigasi sebelumnya/berikutnya."
+      overviewText="Setiap submateri mempunyai halaman sendiri dengan tujuan, intuisi, visualisasi, notasi, definisi, teorema atau hasil formal, pembuktian, contoh terbahas, latihan, kesalahan umum, koneksi, ringkasan, dan navigasi sebelumnya/berikutnya."
       roadmap={["Pilih Bidang","Pilih Bab","Baca Submateri","Pahami Bukti","Kerjakan Latihan","Lanjut Materi Berikutnya"]}
       sections={[
         {id:"materi-buku",label:"Buku Digital"},
@@ -48,7 +48,7 @@ export default function MateriPage() {
         <div className="section-number">01</div>
         <span className="eyebrow">Buku Digital Lengkap</span>
         <h2>Masuk ke bidang, lalu pilih materi yang ingin dipelajari.</h2>
-        <p className="ird-paragraph">Analisis Real dan Analisis Kompleks sekarang menggunakan struktur multi-halaman. Daftar isi bidang menjadi peta belajar; setiap submateri dibuka sebagai bab digital mandiri.</p>
+        <p className="ird-paragraph">Setiap bidang besar menggunakan struktur multi-halaman. Daftar isi bidang menjadi peta belajar; setiap submateri dibuka sebagai bab digital mandiri dengan teori, pembuktian atau hasil formal, contoh, latihan, dan visualisasi.</p>
         <div className="ird-worked-grid">
           {bookSubjects.map((subject,index)=>{
             const sectionCount=subject.chapters.reduce((sum,chapter)=>sum+chapter.sections.length,0);
@@ -77,7 +77,7 @@ export default function MateriPage() {
         <span className="eyebrow">Struktur Submateri</span>
         <h2>Setiap halaman dibaca seperti satu bagian buku.</h2>
         <div className="ird-roadmap">
-          {["Tujuan & prasyarat","Motivasi & intuisi","Definisi & notasi","Teorema & pembuktian","Contoh terbahas","Latihan & solusi","Kesalahan & koneksi","Ringkasan & referensi"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
+          {["Tujuan & prasyarat","Motivasi, intuisi & visualisasi","Definisi & notasi","Teorema & pembuktian","Contoh terbahas","Latihan & solusi","Kesalahan & koneksi","Ringkasan & referensi"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
         </div>
       </section>
 
