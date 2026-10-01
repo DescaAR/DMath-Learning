@@ -1,5 +1,6 @@
 import { additionalBookSubjects } from "@/data/additional-book-curricula";
 import { expandedBookSubjects } from "@/data/expanded-book-curricula";
+import { numericalAnalysisBook } from "@/data/numerical-analysis-curricula";
 
 export type BookSection = {
   number:string;
@@ -18,7 +19,7 @@ export type BookChapter = {
 };
 
 export type BookSubject = {
-  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar"|"olimpiade-matematika-sma"|"kalkulus"|"teori-graf"|"teori-bilangan-olimpiade"|"persamaan-diferensial";
+  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar"|"olimpiade-matematika-sma"|"kalkulus"|"teori-graf"|"teori-bilangan-olimpiade"|"persamaan-diferensial"|"analisis-numerik";
   title:string;
   subtitle:string;
   level:string;
@@ -266,6 +267,7 @@ const dmathCurriculumBlueprints:Record<BookSubject["slug"],CurriculumUnit[]>={
     {title:"Polinom Integer dan Teknik Aljabar",from:["7"]},
     {title:"Residu Kuadrat dan Struktur Modulo Prima",from:["8"]},
   ],
+  "analisis-numerik":[],
   "persamaan-diferensial":[
     {title:"Pemodelan ODE dan Persamaan Orde Satu",from:["1","2"]},
     {title:"Persamaan Linear Orde Dua",from:["3"]},
@@ -279,6 +281,7 @@ const dmathCurriculumBlueprints:Record<BookSubject["slug"],CurriculumUnit[]>={
 };
 
 function buildDMathCurriculum(subject:BookSubject):BookSubject{
+  if(subject.curriculumVersion==="DMath Curriculum v1")return subject;
   const blueprint=dmathCurriculumBlueprints[subject.slug];
   const byChapter=new Map(subject.chapters.map((chapter)=>[chapter.number,chapter]));
   const used=new Set<string>();
@@ -328,6 +331,7 @@ const referenceSubjects:BookSubject[]=[
   complexAnalysisBook,
   ...additionalBookSubjects,
   ...expandedBookSubjects,
+  numericalAnalysisBook,
 ];
 
 export const bookSubjects=referenceSubjects.map(buildDMathCurriculum);
