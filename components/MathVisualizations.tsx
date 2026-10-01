@@ -23,7 +23,8 @@ export type VisualizationKind =
   | "calculus"
   | "graph-theory"
   | "number-theory"
-  | "differential-equations";
+  | "differential-equations"
+  | "numerical-analysis";
 
 function FigureShell({
   title,
@@ -409,6 +410,38 @@ export function MathVisualization({ kind }: { kind: VisualizationKind }) {
           <path d="M260 43 A92 92 0 0 1 347 106" className="svg-arrow" />
           <line x1={pts[1][0]} y1={pts[1][1]} x2={pts[5][0]} y2={pts[5][1]} className="svg-line-accent"/>
           <text x="350" y="58" className="svg-label">mod m</text>
+        </svg>
+      </FigureShell>
+    );
+  }
+
+  if (kind === "numerical-analysis") {
+    const exact=Array.from({length:61},(_,i)=>{
+      const t=i/60;
+      const x=55+t*410;
+      const y=215-115*Math.exp(-2.2*t);
+      return [x,y];
+    });
+    const approx=Array.from({length:8},(_,i)=>{
+      const t=i/7;
+      const x=55+t*410;
+      const y=215-115*(1-0.31*t+0.045*t*t);
+      return [x,y];
+    });
+    return (
+      <FigureShell
+        title="Solusi eksak, aproksimasi, dan galat"
+        caption="Analisis numerik membandingkan objek eksak dengan aproksimasi diskret. Jarak antara keduanya menggambarkan galat, sedangkan refinement digunakan untuk mempelajari konvergensi."
+      >
+        <svg viewBox="0 0 520 285" role="img" aria-label={en ? "Exact curve, discrete numerical approximation, and error" : "Kurva eksak, aproksimasi numerik diskret, dan galat"}>
+          <Axis x={45} y={235} width={425} height={185} />
+          <polyline points={exact.map(p=>p.join(",")).join(" ")} className="svg-curve"/>
+          <polyline points={approx.map(p=>p.join(",")).join(" ")} className="svg-line-accent"/>
+          {approx.map((p,i)=><circle key={i} cx={p[0]} cy={p[1]} r="5" className="svg-point"/>)}
+          <line x1="348" y1="128" x2="348" y2="151" className="svg-dash"/>
+          <text x="356" y="142" className="svg-label">error</text>
+          <text x="382" y="86" className="svg-label">exact</text>
+          <text x="392" y="171" className="svg-label">numerical</text>
         </svg>
       </FigureShell>
     );
