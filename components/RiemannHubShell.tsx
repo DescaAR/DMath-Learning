@@ -17,6 +17,8 @@ export function RiemannHubShell({
   stats=[],
   actions=[],
   overviewEyebrow="Gambaran Besar",
+  overviewId="ird-overview",
+  tocTitle="Isi Materi",
   overviewTitle,
   overviewText,
   roadmap=[],
@@ -32,6 +34,8 @@ export function RiemannHubShell({
   stats?:Stat[];
   actions?:Action[];
   overviewEyebrow?:string;
+  overviewId?:string;
+  tocTitle?:string;
   overviewTitle:string;
   overviewText?:string;
   roadmap?:string[];
@@ -108,7 +112,7 @@ export function RiemannHubShell({
         </div>
       </section>
 
-      <section className="section ird-overview">
+      <section id={overviewId} className="section ird-overview">
         <div className="container narrow">
           <span className="eyebrow">{overviewEyebrow}</span>
           <h2>{overviewTitle}</h2>
@@ -125,7 +129,7 @@ export function RiemannHubShell({
         <div className="container article-layout textbook-layout">
           <aside className="toc material-toc textbook-toc ird-toc">
             <div className="toc-progress-mini"><span>Progres membaca</span><strong>{Math.round(progress)}%</strong></div>
-            <strong>Isi Halaman</strong>
+            <strong>{tocTitle}</strong>
             {sections.map((section,index)=>(
               <a href={"#"+section.id} className={active===section.id?"active":""} key={section.id}>
                 <span>{String(index+1).padStart(2,"0")}</span>{section.label}
