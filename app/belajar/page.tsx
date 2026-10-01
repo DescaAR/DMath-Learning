@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
-import { PageHero } from "@/components/PageHero";
+import Link from "next/link";
 import { learningTracks, subjects } from "@/data/site-data";
+import { RiemannHubShell } from "@/components/RiemannHubShell";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Jalur Belajar Matematika",
@@ -12,28 +13,60 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function BelajarPage() {
   return (
-    <>
-      <PageHero eyebrow="Jalur belajar" title="Mulai dari tujuanmu, bukan dari artikel acak." description="Pilih jenjang, jalur kompetisi, atau bidang matematika. Struktur konten dirancang agar setiap bab memiliki prasyarat dan arah belajar berikutnya." />
-      <section className="section">
-        <div className="container">
-          <div className="grid tracks-grid">
-            {learningTracks.map((track) => (
-              <a className="card track-card" href={track.href} key={track.title}>
-                <span className="card-index">{track.title.includes("Olimpiade") || track.title.includes("ON-MIPA") ? "Kompetisi" : "Reguler"}</span>
-                <h2>{track.title}</h2>
-                <p>{track.description}</p>
-                <span className="link">Buka jalur →</span>
-              </a>
-            ))}
-          </div>
+    <RiemannHubShell
+      breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Jalur Belajar"}]}
+      eyebrow="Jalur Belajar · Peta Utama"
+      title="Mulai dari tujuanmu, bukan dari artikel acak."
+      lead="Pilih jenjang, jalur kompetisi, atau bidang matematika. Setiap jalur memiliki kurikulum, roadmap, materi yang tersedia, dan arah belajar berikutnya."
+      meta={["SD–SMA","Kuliah","Olimpiade","ON-MIPA"]}
+      stats={[
+        {value:learningTracks.length,label:"jalur belajar"},
+        {value:subjects.length,label:"bidang matematika"},
+        {value:4,label:"jenjang reguler"},
+        {value:4,label:"jalur kompetisi"},
+      ]}
+      actions={[
+        {label:"Pilih Jalur",href:"#belajar-jalur",kind:"primary"},
+        {label:"Lihat Materi",href:"/materi",kind:"secondary"},
+      ]}
+      overviewTitle="Satu ekosistem dari fondasi sekolah sampai kompetisi mahasiswa."
+      overviewText="Jalur reguler dan kompetisi dipisahkan agar kedalaman teori, formalitas pembuktian, dan gaya problem solving sesuai dengan tujuan belajar."
+      roadmap={learningTracks.map((track)=>track.title)}
+      sections={[
+        {id:"belajar-jalur",label:"Jalur Belajar"},
+        {id:"belajar-bidang",label:"Bidang Matematika"},
+      ]}
+    >
+      <section id="belajar-jalur" className="book-section ird-source-section">
+        <div className="section-number">01</div>
+        <span className="eyebrow">Bagian 1</span>
+        <h2>Pilih jalur belajar.</h2>
+        <div className="ird-worked-grid">
+          {learningTracks.map((track,index)=>(
+            <article className="ird-worked-card" key={track.title}>
+              <div className="ird-worked-head">
+                <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
+                <div><span className="eyebrow">{track.title.includes("Olimpiade")||track.title.includes("ON-MIPA")?"Kompetisi":"Reguler"}</span><h3>{track.title}</h3></div>
+              </div>
+              <div className="ird-worked-prompt"><p>{track.description}</p></div>
+              <div className="actions"><Link className="btn primary" href={track.href}>Buka Jalur</Link></div>
+            </article>
+          ))}
         </div>
       </section>
-      <section className="section soft">
-        <div className="container">
-          <div className="section-head"><div><span className="eyebrow">Berdasarkan bidang</span><h2>Jelajahi hubungan antarkonsep.</h2></div></div>
-          <div className="subjects">{subjects.map((subject) => <span key={subject}>{subject}</span>)}</div>
-        </div>
+
+      <section id="belajar-bidang" className="book-section ird-source-section">
+        <div className="section-number">02</div>
+        <span className="eyebrow">Bagian 2</span>
+        <h2>Bidang matematika yang terhubung.</h2>
+        <p>Gunakan bidang sebagai peta hubungan antarkonsep, lalu masuk ke jalur belajar atau materi yang sesuai.</p>
+        <div className="ird-roadmap">{subjects.map((subject,index)=><div key={subject}><span>{String(index+1).padStart(2,"0")}</span><strong>{subject}</strong></div>)}</div>
       </section>
-    </>
+
+      <section className="next-learning-block textbook-next">
+        <div><span className="eyebrow">Lanjutkan</span><h2>Pilih jalur, lalu masuk ke materi dan latihan.</h2></div>
+        <div className="actions"><Link className="btn primary" href="/materi">Buka Materi</Link><Link className="btn secondary" href="/bank-soal">Bank Soal</Link></div>
+      </section>
+    </RiemannHubShell>
   );
 }
