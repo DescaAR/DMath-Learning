@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 
-export const metadata: Metadata = {
-  title: "Bank Soal",
-  description: "Bank soal matematika DMath Learning dengan filter, tingkat kesulitan, dan pembahasan terstruktur.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Bank Soal Matematika",
+  description: "Bank soal matematika terstruktur berdasarkan materi dan tingkat kesulitan, dilengkapi hint serta pembahasan untuk latihan mandiri dan persiapan kompetisi.",
+  path: "/bank-soal",
+  keywords: ["bank soal matematika", "latihan soal matematika"],
+});
 
 export default function BankSoalPage() {
   return (

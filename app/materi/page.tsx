@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/PageHero";
 import { MaterialCatalogClient } from "@/components/MaterialCatalogClient";
 
-export const metadata: Metadata = {
-  title: "Materi",
-  description: "Perpustakaan materi matematika DMath Learning dengan filter jenjang, jalur, bidang, dan tingkat kesulitan.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Materi Matematika",
+  description: "Perpustakaan materi matematika DMath Learning untuk SD, SMP, SMA, kuliah, olimpiade, dan ON-MIPA dengan definisi, teorema, pembuktian, visualisasi, contoh, dan latihan.",
+  path: "/materi",
+  keywords: ["materi matematika lengkap", "materi matematika kuliah"],
+});
 
 export default function MateriPage() {
   return (

@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/PageHero";
 import { learningTracks, subjects } from "@/data/site-data";
 
-export const metadata: Metadata = { title: "Belajar" };
+export const metadata: Metadata = createPageMetadata({
+  title: "Jalur Belajar Matematika",
+  description: "Pilih jalur belajar matematika berdasarkan jenjang, bidang, atau kompetisi. DMath Learning menyusun materi dari prasyarat, konsep, latihan, hingga problem solving.",
+  path: "/belajar",
+  keywords: ["jalur belajar matematika", "roadmap belajar matematika"],
+});
 
 export default function BelajarPage() {
   return (

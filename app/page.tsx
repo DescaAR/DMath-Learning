@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { learningTracks, materials, subjects } from "@/data/site-data";
 import { StatusBadge } from "@/components/StatusBadge";
+
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "DMath Learning",
+    description: "Belajar matematika dari konsep hingga problem solving: materi lengkap, pembuktian, visualisasi, bank soal, olimpiade, ON-MIPA, dan matematika kuliah.",
+    path: "/",
+    keywords: ["platform belajar matematika Indonesia", "belajar matematika online"],
+  }),
+  title: { absolute: "DMath Learning — Belajar Matematika Lebih Dalam" },
+};
 
 export default function Home() {
   const featured = materials.slice(0, 8);
