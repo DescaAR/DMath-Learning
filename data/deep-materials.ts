@@ -359,7 +359,7 @@ export const deepMaterials: DeepMaterial[] = [
     level: "Kuliah",
     subject: "Analisis Real",
     track: "Universitas",
-    summary: "Pembahasan lengkap Integral Riemann dan Darboux: fungsi terbatas, partisi, tagged partition, jumlah Riemann, lower-upper Darboux sum, kriteria integrabilitas, ekuivalensi Riemann–Darboux, kelas fungsi integrabel, sifat integral, osilasi, Kriteria Lebesgue, serta latihan soal dengan pembahasan dan visualisasi.",
+    summary: "Pembahasan lengkap Integral Riemann dan Darboux: fungsi terbatas, partisi, partisi berlabel, jumlah Riemann, jumlah Darboux bawah dan atas, integral Darboux bawah dan atas, kriteria keterintegralan, ekuivalensi Riemann–Darboux, kelas fungsi terintegralkan Riemann, sifat integral, osilasi, Kriteria Lebesgue, serta latihan soal dengan solusi dan visualisasi.",
     readingTime: "240–300 menit",
     difficulty: "Menengah–Lanjut",
     visualization: "riemann",

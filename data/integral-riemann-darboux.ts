@@ -366,7 +366,7 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
           },
           {
             "kind": "paragraph",
-            "text": "Gambar hasil sebelumnya menggambarkan bahwa celah $U(f,P)-L(f,P)$ dapat dibuat sebarang kecil ketika partisi dipilih secara sesuai."
+            "text": "Secara geometris, celah $U(f,P)-L(f,P)$ dapat dibuat sebarang kecil ketika partisi dipilih secara sesuai."
           }
         ]
       },
@@ -496,7 +496,7 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
           },
           {
             "kind": "paragraph",
-            "text": "Gambar hasil sebelumnya menekankan bahwa bilangan rasional dan irasional sama-sama rapat, sehingga setiap subinterval memiliki infimum $0$ dan supremum $1$."
+            "text": "Interpretasi geometris menunjukkan bahwa bilangan rasional dan irasional sama-sama rapat, sehingga setiap subinterval memiliki infimum $0$ dan supremum $1$."
           },
           {
             "kind": "example",
