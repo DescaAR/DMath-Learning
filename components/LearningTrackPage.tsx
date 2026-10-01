@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { LearningTrackPageData, LocalText } from "@/data/learning-track-pages";
 import { deepMaterials } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
+import { bookSubjects } from "@/data/book-curricula";
 import { useLanguage } from "@/components/LanguageProvider";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 
@@ -15,6 +16,8 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
   const published = track.publishedMaterials
     .map((slug) => deepMaterials.find((item) => item.slug === slug))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
+
+  const digitalBooks = (track.slug === "kuliah" || track.slug === "onmipa") ? bookSubjects : [];
 
   const sections=[
     {id:"track-kurikulum",label:en?"Curriculum":"Kurikulum"},
@@ -42,7 +45,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
         {value:track.subjects.length,label:en?"core fields":"bidang inti"},
         {value:track.roadmap.length,label:en?"roadmap stages":"tahap roadmap"},
         {value:track.skills.length,label:en?"skills":"kemampuan"},
-        {value:published.length,label:en?"published chapters":"materi tersedia"},
+        {value:published.length + digitalBooks.length,label:en?"published chapters":"materi tersedia"},
       ]}
       actions={[
         {label:en?"Open Curriculum":"Buka Kurikulum",href:"#track-kurikulum",kind:"primary"},
@@ -65,7 +68,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
           {track.subjects.map((subject,index)=>(
             <article className="ird-worked-card" key={pick(subject.name)}>
               <div className="ird-worked-head">
-                <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
+                <div className="ird-problem-number">{String(index+digitalBooks.length+1).padStart(2,"0")}</div>
                 <div><span className="eyebrow">{en?"Field":"Bidang"}</span><h3>{pick(subject.name)}</h3></div>
               </div>
               <div className="ird-worked-prompt"><p>{pick(subject.description)}</p></div>
@@ -109,8 +112,18 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
         <div className="section-number">04</div>
         <span className="eyebrow">{en?"Available Now":"Materi yang Sudah Tersedia"}</span>
         <h2>{en?"Start with published chapters.":"Mulai dari bab yang sudah dipublikasikan."}</h2>
-        {published.length>0?(
+        {published.length>0 || digitalBooks.length>0?(
           <div className="ird-worked-grid">
+            {digitalBooks.map((book,index)=>(
+              <article className="ird-worked-card" key={book.slug}>
+                <div className="ird-worked-head">
+                  <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
+                  <div><span className="eyebrow">{book.level} · {en?"Digital Book":"Buku Digital"}</span><h3>{book.title}</h3></div>
+                </div>
+                <div className="ird-worked-prompt"><p>{book.subtitle}</p></div>
+                <div className="actions"><Link className="btn primary" href={"/materi/"+book.slug}>{en?"Open Book":"Buka Buku Digital"}</Link></div>
+              </article>
+            ))}
             {published.map((material,index)=>{
               const localized=en?(deepMaterialEnMap[material.slug]??material):material;
               return(
