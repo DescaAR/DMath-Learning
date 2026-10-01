@@ -996,6 +996,49 @@ export const deepMaterials: DeepMaterial[] = [
     related: ["Integral Riemann", "Metric Spaces", "Analisis Kompleks", "Functional Analysis dasar"],
     references: ["Stephen Abbott, Understanding Analysis, 2nd ed., Springer, 2015."]
   }
+
+  {
+    slug: "analisis-kompleks",
+    title: "Analisis Kompleks",
+    level: "Kuliah",
+    subject: "Analisis Kompleks",
+    track: "Universitas",
+    summary: "Bab lengkap Analisis Kompleks: bilangan kompleks, bentuk polar dan akar, topologi bidang kompleks, fungsi kompleks, limit dan kontinuitas, turunan kompleks, persamaan Cauchy–Riemann, holomorfisitas, fungsi elementer kompleks, dan fungsi harmonik.",
+    readingTime: "180–240 menit",
+    difficulty: "Menengah–Lanjut",
+    visualization: "real-analysis",
+    prerequisites: ["Kalkulus diferensial", "Limit dan kontinuitas", "Trigonometri", "Eksponensial dan logaritma", "Aljabar dasar"],
+    objectives: ["Menggunakan representasi Cartesius dan polar bilangan kompleks.","Menganalisis topologi dasar pada bidang kompleks.","Menguji limit dan kontinuitas fungsi kompleks.","Menentukan keberadaan turunan kompleks dan menggunakan persamaan Cauchy–Riemann.","Mengenali fungsi holomorfik, entire, fungsi elementer kompleks, dan fungsi harmonik."],
+    conceptMap: ["Bilangan kompleks","Polar dan akar","Topologi","Fungsi kompleks","Limit","Turunan","Cauchy–Riemann","Holomorfik","Harmonik"],
+    motivation: ["Analisis kompleks memperluas kalkulus ke bidang dua dimensi, tetapi syarat diferensiabilitasnya jauh lebih ketat karena limit harus konsisten terhadap semua arah pendekatan.","Kekuatan teori muncul ketika struktur aljabar, geometri, topologi, dan kalkulus bertemu dalam satu kerangka."],
+    intuition: ["Bilangan kompleks dapat dibaca sekaligus sebagai pasangan koordinat, vektor, panjang, dan sudut.","Turunan kompleks ada hanya ketika perubahan fungsi tampak seperti rotasi dan dilatasi yang sama dari semua arah lokal."],
+    notation: [
+      { symbol: "$z=x+iy$", meaning: "bentuk Cartesius bilangan kompleks" },
+      { symbol: "$\\bar z=x-iy$", meaning: "konjugat kompleks" },
+      { symbol: "$|z|=\\sqrt{x^2+y^2}$", meaning: "modulus bilangan kompleks" },
+      { symbol: "$z=re^{i\\theta}$", meaning: "bentuk polar atau eksponensial" },
+      { symbol: "$f(z)=u(x,y)+iv(x,y)$", meaning: "dekomposisi bagian real dan imajiner" }
+    ],
+    definitions: [
+      { title: "Bilangan Kompleks", body: "Bilangan kompleks berbentuk $z=x+iy$ dengan $x,y\\in\\mathbb R$ dan $i^2=-1$." },
+      { title: "Limit Fungsi Kompleks", body: "Nilai $L$ adalah limit $f(z)$ ketika $z\\to z_0$ jika untuk setiap $\\varepsilon>0$ terdapat $\\delta>0$ sehingga $0<|z-z_0|<\\delta$ mengakibatkan $|f(z)-L|<\\varepsilon$." },
+      { title: "Turunan Kompleks", body: "Turunan kompleks di $z_0$ adalah $f'(z_0)=\\lim_{h\\to0}\\frac{f(z_0+h)-f(z_0)}{h}$ jika limit tersebut ada." },
+      { title: "Holomorfik", body: "Fungsi holomorfik pada himpunan terbuka apabila terdiferensial kompleks di setiap titik himpunan tersebut." }
+    ],
+    theorems: [
+      { title: "Ketaksamaan Segitiga", statement: "$|z+w|\\le |z|+|w|$.", proof: ["Gunakan identitas modulus dan pembatasan bagian real pada hasil kali dengan konjugat."], why: "Alat estimasi utama untuk limit kompleks." },
+      { title: "Syarat Cauchy–Riemann", statement: "Jika $f=u+iv$ terdiferensial kompleks, maka $u_x=v_y$ dan $u_y=-v_x$.", proof: ["Bandingkan kuosien beda sepanjang arah real dan imajiner."], why: "Turunan kompleks harus sama dari semua arah." },
+      { title: "Teorema Cukup Cauchy–Riemann", statement: "Jika turunan parsial pertama kontinu di sekitar titik dan persamaan Cauchy–Riemann berlaku, maka $f=u+iv$ terdiferensial kompleks.", proof: ["Gunakan pendekatan linear dua variabel dan persamaan Cauchy–Riemann."], why: "Kriteria praktis untuk membuktikan holomorfisitas." }
+    ],
+    examples: [
+      { title: "Konjugasi", problem: "Tentukan konjugat dan modulus $z=3-4i$.", solution: ["$\\bar z=3+4i$ dan $|z|=5$."] },
+      { title: "Akar Kesatuan", problem: "Tentukan akar-akar $z^4=1$.", solution: ["Akar-akarnya $1,i,-1,-i$."] },
+      { title: "Cauchy–Riemann", problem: "Uji $f(z)=z^2$.", solution: ["$u=x^2-y^2$, $v=2xy$, dan persamaan Cauchy–Riemann terpenuhi di seluruh bidang."] }
+    ],
+    mistakes: ["Menganggap limit cukup diperiksa melalui satu lintasan.","Menganggap Cauchy–Riemann di satu titik selalu cukup tanpa syarat tambahan.","Menyamakan $\\arg z$ dengan argumen utama $\\operatorname{Arg}z$.","Menggunakan aturan turunan real tanpa memeriksa diferensiabilitas kompleks."],
+    related: ["Analisis Real","Topologi","Persamaan Diferensial","Transformasi Konformal","Teori Fungsi Kompleks"],
+    references: ["Naskah Analisis Kompleks yang diberikan untuk DMath Learning."]
+  },
 ];
 
 export const deepMaterialMap = Object.fromEntries(

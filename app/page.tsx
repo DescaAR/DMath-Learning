@@ -22,7 +22,7 @@ export default function Home() {
           </div>
 
           <div className="home-proof-strip">
-            <div><strong>12</strong><span>materi awal published</span></div>
+            <div><strong>13</strong><span>materi awal published</span></div>
             <div><strong>100</strong><span>soal Basis & Dimensi</span></div>
             <div><strong>30</strong><span>latihan terkurasi</span></div>
             <div><strong>KaTeX</strong><span>rumus terformat profesional</span></div>
@@ -67,7 +67,7 @@ export default function Home() {
               <span className="eyebrow">Materi published</span>
               <h2>Bab digital yang berisi teori, bukti, contoh, dan visualisasi.</h2>
             </div>
-            <Link href="/materi" className="text-link">Lihat semua 12 materi →</Link>
+            <Link href="/materi" className="text-link">Lihat semua 13 materi →</Link>
           </div>
 
           <div className="grid material-grid home-material-grid">
