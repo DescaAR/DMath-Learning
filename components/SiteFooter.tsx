@@ -38,6 +38,7 @@ export function SiteFooter() {
           <h3>DMath Learning</h3>
           <div className="footer-links">
             <Link href="/tentang">{t("Tentang")}</Link>
+            <Link href="/sumber-belajar-lain">{t("Sumber Belajar Lain")}</Link>
             <Link href="/search">{language === "en" ? "Search" : "Cari"}</Link>
             <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer">
               YouTube
