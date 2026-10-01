@@ -28,7 +28,6 @@ export function SiteFooter() {
         <div>
           <h3>{language === "en" ? "Explore" : "Jelajahi"}</h3>
           <div className="footer-links">
-            <Link href="/belajar">{t("Belajar")}</Link>
             <Link href="/materi">{t("Materi")}</Link>
             <Link href="/bank-soal">{t("Bank Soal")}</Link>
             <Link href="/olimpiade">{t("Olimpiade")}</Link>
