@@ -35,7 +35,7 @@ function genericContent(subjectTitle:string,chapterTitle:string,sectionTitle:str
   return {
     intro:[
       summary,
-      "Submateri ini berada pada Bab “"+chapterTitle+"” dalam buku digital "+subjectTitle+". Alurnya dimulai dari motivasi dan contoh kecil, dilanjutkan dengan bahasa formal, lalu digunakan pada pembuktian dan penyelesaian masalah.",
+      "Submateri ini merupakan bagian dari jalur belajar "+subjectTitle+" pada DMath Curriculum. Alurnya dimulai dari motivasi dan contoh kecil, dilanjutkan dengan bahasa formal, lalu digunakan pada pembuktian dan penyelesaian masalah.",
       "Konsep inti yang membentuk peta pembahasan adalah "+ideas+". Setiap konsep dibedakan berdasarkan definisi, syarat, contoh, noncontoh, dan hubungan logisnya dengan konsep lain.",
       "Pembahasan tidak berhenti pada pengenalan istilah. Setiap halaman diarahkan untuk menjawab mengapa konsep diperlukan, bagaimana objek direpresentasikan, hasil apa yang dapat dibuktikan, dan kapan teknik tertentu lebih efisien daripada teknik lain.",
       "Visualisasi digunakan untuk membangun intuisi, sedangkan validitas matematis tetap ditentukan oleh definisi dan pembuktian. Setelah memahami bagian formal, contoh terbahas dan latihan digunakan untuk menguji kemampuan menerapkan konsep pada situasi baru."
@@ -159,7 +159,7 @@ function genericContent(subjectTitle:string,chapterTitle:string,sectionTitle:str
       "Tidak melakukan pemeriksaan akhir melalui contoh, substitusi balik, atau representasi alternatif."
     ],
     connections:[
-      "Konsep pada bagian ini digunakan kembali pada submateri berikutnya dalam Bab "+chapterTitle+".",
+      "Konsep pada bagian ini digunakan kembali pada submateri berikutnya dalam jalur belajar DMath Learning.",
       "Hubungkan setiap definisi dengan contoh konkret, noncontoh, dan representasi visual.",
       "Bandingkan pendekatan konstruktif, aljabar, kombinatorial, geometris, atau algoritmik ketika lebih dari satu pendekatan tersedia.",
       "Hasil formal pada halaman ini dapat berfungsi sebagai lemma untuk soal atau teorema yang lebih lanjut.",
