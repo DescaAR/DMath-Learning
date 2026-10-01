@@ -290,7 +290,7 @@ function buildContent(unit:string,title:string,summary:string,keyIdeas:string[])
       {prompt:"Bandingkan dua strategi yang dapat digunakan untuk masalah pada "+title+" dan sebutkan trade-off akurasi, robustness, dan biaya komputasi.",hint:"Bandingkan metode sederhana yang robust dengan metode berorde lebih tinggi bila tersedia.",answer:"Perbandingan harus menyebut informasi yang diperlukan, biaya per langkah, kecepatan konvergensi, dan risiko kegagalan."},
       {prompt:"Jelaskan eksperimen numerik untuk menguji orde konvergensi yang diklaim oleh suatu metode pada "+title+".",hint:"Gunakan beberapa ukuran langkah atau iterasi dan bandingkan rasio error.",answer:"Hitung solusi pada refinement berurutan, ukur error atau surrogate error, lalu periksa apakah rasio konsisten dengan faktor orde teoritis."},
       {prompt:"Susun satu soal sintesis yang menggabungkan "+(keyIdeas.slice(0,2).join(" dan ")||"dua konsep utama")+" serta sertakan garis besar verifikasi hasilnya.",hint:"Tambahkan satu syarat yang memaksa pemeriksaan kestabilan atau galat.",answer:"Soal yang baik menghasilkan aproksimasi sekaligus meminta alasan bahwa hasil tersebut dapat dipercaya."}
-    ],
+    ].map((exercise)=>({...exercise,provenance:"dmath-original" as const})),
     mistakes:[
       "Melaporkan banyak digit tanpa menilai apakah digit tersebut benar-benar signifikan.",
       "Menganggap residual kecil selalu berarti error solusi kecil tanpa mempertimbangkan conditioning.",
