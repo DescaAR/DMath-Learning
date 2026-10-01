@@ -211,8 +211,6 @@ function coreFormal(slug:string,title:string,summary:string,unit:string):BookFor
 }
 
 function examplesFor(unit:string,title:string,keyIdeas:string[]):BookExample[]{
-  const a=keyIdeas[0]??title;
-  const b=keyIdeas[1]??"galat";
   if(unit==="1")return[
     {title:"Membandingkan Galat",problem:"Nilai acuan adalah $p=\\sqrt2$ dan digunakan aproksimasi $p^*=1.414$. Tentukan galat absolut dan relatif.",solution:["Dihitung $E_{abs}=|\\sqrt2-1.414|$.","Galat relatif diperoleh dengan membagi $E_{abs}$ oleh $|\\sqrt2|$.","Kedua ukuran dilaporkan bersama agar besar kesalahan dan skala masalah terlihat."],conclusion:"Galat absolut dan relatif menjawab dua pertanyaan yang berbeda tentang kualitas aproksimasi."},
     {title:"Cancellation",problem:"Jelaskan mengapa menghitung $\\sqrt{x+1}-\\sqrt{x}$ secara langsung untuk $x$ sangat besar dapat kehilangan digit signifikan.",solution:["Kedua akar mempunyai nilai sangat berdekatan.","Pengurangan dua bilangan berdekatan membuang digit awal yang sama.","Rasionalisasi menghasilkan $1/(\\sqrt{x+1}+\\sqrt{x})$, bentuk yang lebih stabil secara numerik."]},
@@ -281,9 +279,7 @@ function buildContent(unit:string,title:string,summary:string,keyIdeas:string[])
       "Visualisasi pada halaman digunakan untuk menunjukkan hubungan antara objek kontinu, titik/grid diskret, iterasi, dan galat. Bukti atau argumentasi formal tetap dipakai untuk menjelaskan mengapa metode bekerja dan kapan metode dapat gagal."
     ],
     notation:notationByUnit[unit]??notationByUnit["1"],
-    formal:[
-      ...coreFormal(keyIdeas.includes("placeholder")?"":""+arguments[0],title,summary,unit),
-    ],
+    formal:[],
     examples:examplesFor(unit,title,keyIdeas),
     exercises:[
       {prompt:"Jelaskan dengan bahasamu sendiri tujuan utama "+title+" dan bedakan objek eksak dari aproksimasi numeriknya.",hint:"Identifikasi input, output eksak, output komputasi, serta sumber galat.",answer:"Jawaban yang baik memisahkan model matematika, metode diskret, implementasi floating-point, dan ukuran kualitas hasil."},
