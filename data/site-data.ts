@@ -6,7 +6,7 @@ export const learningTracks = [
   { title: "Matematika SD", description: "Fondasi bilangan, operasi, geometri, pengukuran, data, peluang, dan pemecahan masalah.", href: "/belajar/sd" },
   { title: "Matematika SMP", description: "Bilangan, aljabar, fungsi, geometri, statistika, peluang, dan diskrit awal.", href: "/belajar/smp" },
   { title: "Matematika SMA", description: "Fungsi, trigonometri, matriks, kalkulus, peluang, statistika, dan kombinatorika.", href: "/belajar/sma" },
-  { title: "Matematika Kuliah", description: "Kalkulus, aljabar linear, analisis, struktur aljabar, graf, topologi, dan bidang lanjut.", href: "/belajar/kuliah" },
+  { title: "Matematika Kuliah", description: "Kalkulus, aljabar linear, analisis real dan kompleks, struktur aljabar, teori graf, analisis numerik, persamaan diferensial, topologi, dan bidang lanjut.", href: "/belajar/kuliah" },
   { title: "Olimpiade SD", description: "Aritmetika kreatif, pola, geometri, logika, dan strategi pemecahan masalah.", href: "/belajar/olimpiade-sd" },
   { title: "Olimpiade SMP", description: "Aljabar, teori bilangan, kombinatorika, geometri, dan strategi problem solving.", href: "/belajar/olimpiade-smp" },
   { title: "Olimpiade SMA", description: "Empat bidang utama olimpiade dengan problem solving nonrutin dan pembahasan bertahap.", href: "/belajar/olimpiade-sma" },
@@ -17,7 +17,7 @@ export const subjects = [
   "Aritmetika", "Aljabar", "Teori Bilangan", "Kombinatorika", "Geometri",
   "Trigonometri", "Kalkulus", "Aljabar Linear", "Analisis Real", "Analisis Kompleks",
   "Struktur Aljabar", "Statistika", "Peluang", "Matematika Diskrit", "Teori Graf",
-  "Topologi", "Persamaan Diferensial", "Metode Numerik", "Optimisasi", "Pemodelan Matematika",
+  "Topologi", "Persamaan Diferensial", "Analisis Numerik", "Metode Numerik", "Optimisasi", "Pemodelan Matematika",
 ];
 
 export const materials = [
