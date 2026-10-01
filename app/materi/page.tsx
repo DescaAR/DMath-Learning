@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { createPageMetadata } from "@/lib/seo";
 import { MaterialCatalogClient } from "@/components/MaterialCatalogClient";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
+import { bookSubjects } from "@/data/book-curricula";
 import { deepMaterials } from "@/data/deep-materials";
 
 export const metadata: Metadata = createPageMetadata({
@@ -14,46 +16,76 @@ export const metadata: Metadata = createPageMetadata({
 export default function MateriPage() {
   const levels=Array.from(new Set(deepMaterials.map((item)=>item.level)));
   const subjects=Array.from(new Set(deepMaterials.map((item)=>item.subject)));
+  const bookSectionCount=bookSubjects.reduce((sum,subject)=>sum+subject.chapters.reduce((n,chapter)=>n+chapter.sections.length,0),0);
 
   return (
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Materi"}]}
-      eyebrow="Perpustakaan Materi · Bab Digital"
+      eyebrow="Perpustakaan Materi · Buku Digital"
       title="Bukan ringkasan satu halaman. Belajar sampai paham."
-      lead="Cari dan filter materi berdasarkan jenjang, jalur, bidang matematika, dan tingkat kesulitan. Struktur tiap bab mengikuti pola yang sama seperti Integral Riemann."
+      lead="Materi disusun per jenjang dan bidang. Untuk bidang besar seperti Analisis Real dan Analisis Kompleks, satu bidang dibagi menjadi bab dan submateri tersendiri agar dapat dipelajari berurutan seperti buku."
       meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
-        {value:deepMaterials.length,label:"materi tersedia"},
-        {value:levels.length,label:"jenjang"},
-        {value:subjects.length,label:"bidang"},
-        {value:"1 pola",label:"struktur bab"},
+        {value:bookSubjects.length,label:"buku digital"},
+        {value:bookSectionCount,label:"submateri buku"},
+        {value:deepMaterials.length,label:"materi lain"},
+        {value:"1 pola",label:"struktur belajar"},
       ]}
       actions={[
-        {label:"Jelajahi Materi",href:"#materi-katalog",kind:"primary"},
-        {label:"Jalur Belajar",href:"/belajar",kind:"secondary"},
+        {label:"Buka Buku Digital",href:"#materi-buku",kind:"primary"},
+        {label:"Jelajahi Semua Materi",href:"#materi-katalog",kind:"secondary"},
       ]}
-      overviewTitle="Semua bab memakai alur belajar yang konsisten."
-      overviewText="Gambaran besar, roadmap, definisi formal, hasil dan pembuktian, contoh terbahas, visualisasi, latihan dengan solusi, kesalahan umum, koneksi, dan referensi."
-      roadmap={["Gambaran Besar","Definisi Formal","Teorema & Bukti","Contoh","Visualisasi","Latihan & Solusi","Referensi"]}
+      overviewTitle="Bidang → bab → submateri → teori → latihan → materi berikutnya."
+      overviewText="Setiap submateri mempunyai halaman sendiri dengan tujuan, intuisi, notasi, definisi, teorema, pembuktian, contoh terbahas, latihan, kesalahan umum, koneksi, ringkasan, dan navigasi sebelumnya/berikutnya."
+      roadmap={["Pilih Bidang","Pilih Bab","Baca Submateri","Pahami Bukti","Kerjakan Latihan","Lanjut Materi Berikutnya"]}
       sections={[
-        {id:"materi-struktur",label:"Struktur Materi"},
-        {id:"materi-katalog",label:"Katalog Materi"},
+        {id:"materi-buku",label:"Buku Digital"},
+        {id:"materi-struktur",label:"Struktur Submateri"},
+        {id:"materi-katalog",label:"Katalog Lain"},
       ]}
     >
-      <section id="materi-struktur" className="book-section ird-source-section">
+      <section id="materi-buku" className="book-section ird-practice-section">
         <div className="section-number">01</div>
-        <span className="eyebrow">Bagian 1</span>
-        <h2>Struktur setiap bab.</h2>
+        <span className="eyebrow">Buku Digital Lengkap</span>
+        <h2>Masuk ke bidang, lalu pilih materi yang ingin dipelajari.</h2>
+        <p className="ird-paragraph">Analisis Real dan Analisis Kompleks sekarang menggunakan struktur multi-halaman. Daftar isi bidang menjadi peta belajar; setiap submateri dibuka sebagai bab digital mandiri.</p>
+        <div className="ird-worked-grid">
+          {bookSubjects.map((subject,index)=>{
+            const sectionCount=subject.chapters.reduce((sum,chapter)=>sum+chapter.sections.length,0);
+            return(
+              <article className="ird-worked-card" key={subject.slug}>
+                <div className="ird-worked-head">
+                  <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
+                  <div><span className="eyebrow">{subject.level}</span><h3>{subject.title}</h3></div>
+                </div>
+                <div className="ird-worked-prompt"><p>{subject.subtitle}</p></div>
+                <div className="chapter-stat-grid">
+                  <div><strong>{subject.chapters.length}</strong><span>bab utama</span></div>
+                  <div><strong>{sectionCount}</strong><span>submateri</span></div>
+                  <div><strong>1</strong><span>submateri / halaman</span></div>
+                  <div><strong>Prev/Next</strong><span>navigasi</span></div>
+                </div>
+                <div className="actions"><Link className="btn primary" href={"/materi/"+subject.slug}>Buka {subject.title}</Link></div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
+      <section id="materi-struktur" className="book-section ird-source-section">
+        <div className="section-number">02</div>
+        <span className="eyebrow">Struktur Submateri</span>
+        <h2>Setiap halaman dibaca seperti satu bagian buku.</h2>
         <div className="ird-roadmap">
-          {["Intuisi & motivasi","Definisi & notasi","Teorema/hasil formal","Pembuktian","Contoh terbahas","Visualisasi","Latihan & solusi","Koneksi & referensi"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
+          {["Tujuan & prasyarat","Motivasi & intuisi","Definisi & notasi","Teorema & pembuktian","Contoh terbahas","Latihan & solusi","Kesalahan & koneksi","Ringkasan & referensi"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
         </div>
       </section>
 
       <section id="materi-katalog" className="book-section ird-practice-section">
-        <div className="section-number">02</div>
-        <span className="eyebrow">Bagian 2</span>
-        <h2>Katalog materi.</h2>
-        <p>Gunakan pencarian dan filter untuk menemukan bab yang sesuai dengan jenjang, bidang, atau tingkat kesulitan.</p>
+        <div className="section-number">03</div>
+        <span className="eyebrow">Katalog Materi Lain</span>
+        <h2>SD, SMP, SMA, kuliah, olimpiade, dan ON-MIPA.</h2>
+        <p>Gunakan pencarian dan filter untuk menemukan materi lain berdasarkan jenjang, jalur, bidang, atau tingkat kesulitan.</p>
         <MaterialCatalogClient />
       </section>
     </RiemannHubShell>
