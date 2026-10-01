@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { RichMath } from "@/components/RichMath";
 import { BasisDimensionEnglish } from "@/components/BasisDimensionEnglish";
 
-export const metadata: Metadata = {
-  title: "Basis dan Dimensi",
-  description: "Bab lengkap Aljabar Linear tentang kombinasi linear, span, bebas linear, basis, koordinat, dimensi, basis subruang, ekstensi basis, ruang baris-kolom, dan rank-nullity.",
-  alternates: { canonical: "/kuliah/aljabar-linear/basis-dan-dimensi" },
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Basis dan Dimensi — Aljabar Linear",
+  description: "Materi lengkap Basis dan Dimensi Aljabar Linear: kombinasi linear, span, bebas linear, basis, koordinat, dimensi, basis subruang, ruang baris-kolom, dan rank-nullity.",
+  path: "/kuliah/aljabar-linear/basis-dan-dimensi",
+  type: "article",
+  keywords: ["basis dan dimensi", "aljabar linear basis", "rank nullity"],
+});
 
 const sections = [
   ["overview", "Overview"],

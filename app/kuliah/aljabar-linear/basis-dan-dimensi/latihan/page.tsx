@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { ProblemPractice } from "@/components/ProblemPractice";
 
-export const metadata: Metadata = {
-  title: "Latihan Basis dan Dimensi",
-  description: "30 latihan terkurasi Basis dan Dimensi, satu soal per tampilan dengan hint dan pembahasan lengkap.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "30 Latihan Basis dan Dimensi",
+  description: "30 latihan terkurasi Basis dan Dimensi Aljabar Linear dengan hint dan pembahasan lengkap, dari konsep dasar hingga pembuktian dan challenge.",
+  path: "/kuliah/aljabar-linear/basis-dan-dimensi/latihan",
+  keywords: ["latihan basis dan dimensi", "soal aljabar linear"],
+});
 
 export default function BasisDimensionPracticePage() {
   return (
