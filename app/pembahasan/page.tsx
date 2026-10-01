@@ -1,41 +1,5 @@
-import type { Metadata } from "next";
-import { createPageMetadata } from "@/lib/seo";
-import { SolutionsIndexClient } from "@/components/SolutionsIndexClient";
-import { RiemannHubShell } from "@/components/RiemannHubShell";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Pembahasan Soal Matematika",
-  description: "Indeks pembahasan soal matematika DMath Learning dengan langkah penyelesaian, pembuktian, dan kesimpulan.",
-  path: "/pembahasan",
-  keywords: ["pembahasan soal matematika", "solusi soal matematika"],
-});
-
-export default function PembahasanPage() {
-  return (
-    <RiemannHubShell
-      breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Pembahasan"}]}
-      eyebrow="Pembahasan Soal"
-      title="Pembahasan Soal Matematika"
-      lead="Pembahasan disusun dengan Diketahui, Dicari atau Dibuktikan, ide penyelesaian, langkah matematis, dan kesimpulan."
-      meta={["Basis & Dimensi","100 soal","Solusi bertahap","Pembuktian"]}
-      stats={[
-        {value:100,label:"pembahasan"},
-        {value:2,label:"petunjuk per soal"},
-        {value:"step-by-step",label:"format solusi"},
-        {value:"1/soal",label:"halaman detail"},
-      ]}
-      actions={[{label:"Jelajahi Pembahasan",href:"#pembahasan-indeks",kind:"primary"},{label:"Bank Soal",href:"/bank-soal",kind:"secondary"}]}
-      overviewTitle="Struktur Pembahasan"
-      overviewText="Gunakan pembahasan setelah mencoba soal agar proses belajar tetap aktif."
-      roadmap={["Soal","Petunjuk","Diketahui","Dicari / Dibuktikan","Penyelesaian","Kesimpulan"]}
-      sections={[{id:"pembahasan-indeks",label:"Indeks Pembahasan"}]}
-    >
-      <section id="pembahasan-indeks" className="book-section ird-practice-section">
-        <div className="section-number">01</div>
-        <span className="eyebrow">Indeks Pembahasan</span>
-        <h2>Indeks Pembahasan</h2>
-        <SolutionsIndexClient />
-      </section>
-    </RiemannHubShell>
-  );
+export default function PembahasanRedirectPage() {
+  redirect("/latihan-soal");
 }
