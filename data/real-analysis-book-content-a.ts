@@ -200,6 +200,14 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  formal:[
   D("Barisan Real","Barisan real adalah fungsi $a:\\mathbb N\\to\\mathbb R$; nilai $a(n)$ ditulis $a_n$."),
   D("Konvergensi Barisan","$(a_n)$ konvergen ke $L$ jika untuk setiap $\\varepsilon>0$ terdapat $N\\in\\mathbb N$ sehingga $n\\ge N$ mengakibatkan $|a_n-L|<\\varepsilon$."),
+  D("Sifat Eventually","Suatu sifat $P(n)$ berlaku akhirnya (eventually) apabila terdapat $N\\in\\mathbb N$ sehingga $P(n)$ benar untuk setiap $n\\ge N$. Definisi limit barisan seluruhnya berbicara tentang perilaku eventually, bukan beberapa suku awal."),
+  D("Barisan Terbatas","Barisan $(a_n)$ disebut terbatas apabila terdapat $M>0$ sehingga $|a_n|\\le M$ untuk setiap $n\\in\\mathbb N$. Secara ekuivalen, range barisan merupakan subset terbatas dari $\\mathbb R$."),
+  P("Mengubah Hingga Banyak Suku Tidak Mengubah Limit","Jika dua barisan $(a_n)$ dan $(b_n)$ sama untuk semua $n$ yang cukup besar, maka salah satunya konvergen ke $L$ jika dan hanya jika yang lain juga konvergen ke $L$.",[
+    "Diambil indeks $N_0$ sehingga $a_n=b_n$ untuk setiap $n\\ge N_0$.",
+    "Jika $a_n\\to L$, untuk setiap $\\varepsilon>0$ terdapat $N_1$ sehingga $|a_n-L|<\\varepsilon$ untuk $n\\ge N_1$.",
+    "Untuk $n\\ge\\max\\{N_0,N_1\\}$, berlaku $b_n=a_n$, sehingga $|b_n-L|<\\varepsilon$.",
+    "Argumen sebaliknya identik. Dengan demikian, perubahan hingga banyak suku awal tidak memengaruhi limit."
+  ]),
   T("Keunikan Limit","Jika $a_n\\to L$ dan $a_n\\to M$, maka $L=M$.",[
     "Diandaikan $L\\ne M$ dan dipilih $\\varepsilon=|L-M|/3>0$.",
     "Untuk $n$ cukup besar, berlaku $|a_n-L|<\\varepsilon$ dan $|a_n-M|<\\varepsilon$.",
@@ -211,6 +219,10 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Suku ekor memenuhi $|a_n|\\le|L|+1$.",
     "Hanya tersisa hingga banyak suku awal $a_1,\\ldots,a_{N-1}$. Dipilih batas maksimum dari nilai mutlak suku awal dan $|L|+1$."
   ]),
+  P("Kriteria Selisih Nol","$a_n\\to L$ jika dan hanya jika $a_n-L\\to0$.",[
+    "Definisi $a_n\\to L$ menyatakan bahwa untuk setiap $\\varepsilon>0$, akhirnya $|a_n-L|<\\varepsilon$.",
+    "Pernyataan tersebut tepat sama dengan definisi barisan $(a_n-L)$ konvergen ke $0$."
+  ]),
   P("Limit Nilai Mutlak","Jika $a_n\\to L$, maka $|a_n|\\to|L|$.",[
     "Ketaksamaan segitiga terbalik memberi $\\bigl||a_n|-|L|\\bigr|\\le|a_n-L|$.",
     "Ruas kanan menuju nol, sehingga ruas kiri juga menuju nol."
@@ -218,13 +230,17 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  ],
  examples:[
   {title:"Pembuktian ε-N untuk Barisan Rasional",problem:"Buktikan $a_n=\\frac{2n+1}{n+3}\\to2$.",solution:["Dihitung $\\left|\\frac{2n+1}{n+3}-2\\right|=\\frac5{n+3}$.","Diberikan $\\varepsilon>0$. Cukup dipilih $N>5/\\varepsilon$.","Untuk $n\\ge N$, diperoleh $\\frac5{n+3}\\le\\frac5n\\le\\frac5N<\\varepsilon$."],conclusion:"Dengan demikian, $a_n\\to2$."},
-  {title:"Barisan Konstan",problem:"Tentukan limit $a_n=c$.",solution:["Untuk setiap $\\varepsilon>0$ dan setiap $n$, $|a_n-c|=0<\\varepsilon$.","Tidak diperlukan syarat khusus pada $N$; dapat dipilih $N=1$."],conclusion:"$a_n\\to c$."}
+  {title:"Barisan Konstan",problem:"Tentukan limit $a_n=c$.",solution:["Untuk setiap $\\varepsilon>0$ dan setiap $n$, $|a_n-c|=0<\\varepsilon$.","Tidak diperlukan syarat khusus pada $N$; dapat dipilih $N=1$."],conclusion:"$a_n\\to c$."},
+  {title:"Memilih Indeks Ambang",problem:"Buktikan $a_n=\\frac{1}{\\sqrt n}\\to0$.",solution:["Diberikan $\\varepsilon>0$. Syarat $|a_n|<\\varepsilon$ ekuivalen dengan $1/\\sqrt n<\\varepsilon$.","Inequality tersebut ekuivalen dengan $n>1/\\varepsilon^2$.","Dipilih $N\\in\\mathbb N$ dengan $N>1/\\varepsilon^2$. Untuk setiap $n\\ge N$, diperoleh $1/\\sqrt n\\le1/\\sqrt N<\\varepsilon$."],conclusion:"Dengan demikian, $1/\\sqrt n\\to0$."},
+  {title:"Suku Awal Tidak Menentukan Konvergensi",problem:"Misalkan $a_1=10^6$ dan $a_n=1/n$ untuk $n\\ge2$. Tentukan limitnya.",solution:["Nilai $a_1$ hanya satu suku awal dan tidak memengaruhi perilaku ekor.","Untuk $n\\ge2$, barisan sama dengan $1/n$, yang konvergen ke $0$."],conclusion:"$a_n\\to0$ walaupun suku pertama sangat besar."}
  ],
  exercises:[
   {prompt:"Buktikan $1/n\\to0$ dengan definisi.",hint:"Pilih $N>1/\\varepsilon$.",answer:"Untuk $n\\ge N$, $|1/n|\\le1/N<\\varepsilon$."},
   {prompt:"Buktikan $(3n-2)/(n+4)\\to3$.",hint:"Sederhanakan selisih dengan $3$.",answer:"Selisih bernilai $14/(n+4)$; pilih $N>14/\\varepsilon$."},
   {prompt:"Apakah $(-1)^n$ konvergen?",hint:"Bandingkan subsekuens genap dan ganjil.",answer:"Tidak; suku genap bernilai $1$, suku ganjil bernilai $-1$."},
-  {prompt:"Jika $a_n\\to L$ dan $a_n\\ge0$ untuk semua $n$, apa yang dapat dikatakan tentang $L$?",hint:"Gunakan teorema urutan atau kontradiksi.",answer:"$L\\ge0$."}
+  {prompt:"Jika $a_n\\to L$ dan $a_n\\ge0$ untuk semua $n$, apa yang dapat dikatakan tentang $L$?",hint:"Gunakan teorema urutan atau kontradiksi.",answer:"$L\\ge0$."},
+  {prompt:"Buktikan bahwa jika $a_n=0$ untuk semua $n$ yang cukup besar, maka $a_n\\to0$.",hint:"Gunakan definisi eventually.",answer:"Ambil $N$ setelah semua suku menjadi nol. Untuk setiap $n\\ge N$, $|a_n-0|=0<\\varepsilon$ untuk sebarang $\\varepsilon>0$."},
+  {prompt:"Berikan contoh barisan terbatas yang tidak konvergen.",hint:"Gunakan dua nilai yang terus berganti.",answer:"$a_n=(-1)^n$ terbatas oleh $1$ tetapi tidak konvergen karena subsekuens genap dan ganjil mempunyai limit berbeda."}
  ],
  mistakes:["Mengganti “untuk setiap $\\varepsilon$” dengan satu nilai ε saja.","Membiarkan $N$ bergantung pada $n$; $N$ hanya boleh bergantung pada ε.","Menganggap beberapa suku awal yang jauh dari limit merusak konvergensi."],
  connections:["Definisi limit fungsi dapat dinyatakan melalui barisan.","Kontinuitas dapat diuji dengan barisan.","Barisan Cauchy memberi karakterisasi kelengkapan $\\mathbb R$."]
