@@ -26,29 +26,29 @@ export default function MateriPage() {
       lead="Materi disusun berdasarkan jenjang dan bidang, kemudian dibagi menjadi unit dan submateri dengan pembahasan teori, contoh, visualisasi, dan latihan."
       meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
-        {value:bookSubjects.length,label:"buku digital"},
+        {value:bookSubjects.length,label:"bidang utama"},
         {value:bookSectionCount,label:"submateri buku"},
         {value:deepMaterials.length,label:"materi lain"},
         {value:"1 pola",label:"struktur belajar"},
       ]}
       actions={[
-        {label:"Buka Buku Digital",href:"#materi-buku",kind:"primary"},
+        {label:"Lihat Materi",href:"#materi-buku",kind:"primary"},
         {label:"Jelajahi Semua Materi",href:"#materi-katalog",kind:"secondary"},
       ]}
       overviewTitle="Struktur Materi"
       overviewText="Setiap submateri mempunyai halaman sendiri dengan pengantar, tujuan, notasi, definisi dan contoh, hasil formal dan pembuktian, contoh terbahas, visualisasi, latihan, ringkasan, referensi, serta navigasi sebelumnya/berikutnya."
       roadmap={["Bidang","Unit","Pengantar","Definisi & Contoh","Hasil Formal & Bukti","Visualisasi","Latihan","Referensi"]}
       sections={[
-        {id:"materi-buku",label:"Buku Digital"},
+        {id:"materi-buku",label:"Materi Terstruktur"},
         {id:"materi-struktur",label:"Struktur Submateri"},
         {id:"materi-katalog",label:"Katalog Lain"},
       ]}
     >
       <section id="materi-buku" className="book-section ird-practice-section">
         <div className="section-number">01</div>
-        <span className="eyebrow">Buku Digital Lengkap</span>
-        <h2>Daftar Buku Digital</h2>
-        <p className="ird-paragraph">Setiap bidang besar menggunakan struktur multi-halaman. Daftar isi bidang menjadi peta belajar; setiap submateri dibuka sebagai bab digital mandiri dengan teori, pembuktian atau hasil formal, contoh, latihan, dan visualisasi.</p>
+        <span className="eyebrow">Materi Lengkap</span>
+        <h2>Daftar Materi</h2>
+        <p className="ird-paragraph">Setiap bidang besar menggunakan struktur multi-halaman. Daftar isi bidang menjadi peta belajar; setiap submateri dibuka sebagai halaman materi mandiri dengan teori, pembuktian atau hasil formal, contoh, latihan, dan visualisasi.</p>
         <div className="ird-worked-grid">
           {bookSubjects.map((subject,index)=>{
             const sectionCount=subject.chapters.reduce((sum,chapter)=>sum+chapter.sections.length,0);

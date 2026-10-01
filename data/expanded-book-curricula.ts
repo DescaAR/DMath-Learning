@@ -16,7 +16,7 @@ const s=(
 export const calculusBook:BookSubject={
   slug:"kalkulus",
   title:"Kalkulus",
-  subtitle:"Buku digital kalkulus satu variabel, multivariabel, kalkulus vektor, deret, koordinat parametrik-polar, dan pengantar persamaan diferensial.",
+  subtitle:"Materi kalkulus satu variabel, multivariabel, kalkulus vektor, deret, koordinat parametrik-polar, dan pengantar persamaan diferensial.",
   level:"SMA Lanjut · Kuliah",
   source:"Maurice D. Weir, Joel Hass, & George B. Thomas Jr., Thomas’ Calculus: Early Transcendentals, 13th ed.",
   sourceYear:"2014",
@@ -193,7 +193,7 @@ export const calculusBook:BookSubject={
 export const graphTheoryBook:BookSubject={
   slug:"teori-graf",
   title:"Teori Graf",
-  subtitle:"Buku digital teori graf dari definisi dan contoh sampai lintasan, pohon, planaritas, pewarnaan, matching, aliran jaringan, dan matroid.",
+  subtitle:"Materi teori graf dari definisi dan contoh sampai lintasan, pohon, planaritas, pewarnaan, matching, aliran jaringan, dan matroid.",
   level:"Kuliah · Olimpiade · Riset Dasar",
   source:"Robin J. Wilson, Introduction to Graph Theory, 5th ed.",
   sourceYear:"2010",
@@ -247,7 +247,7 @@ export const graphTheoryBook:BookSubject={
 export const olympiadNumberTheoryBook:BookSubject={
   slug:"teori-bilangan-olimpiade",
   title:"Teori Bilangan Olimpiade",
-  subtitle:"Buku digital teori bilangan olimpiade dari divisibility dan aritmetika modular sampai LTE, polinom integer, residu kuadrat, CRT, Pell, dan konstruksi.",
+  subtitle:"Materi teori bilangan olimpiade dari divisibility dan aritmetika modular sampai LTE, polinom integer, residu kuadrat, CRT, Pell, dan konstruksi.",
   level:"Olimpiade SMA · ON-MIPA",
   source:"Aditya Khurmi, Modern Olympiad Number Theory",
   sourceYear:"2020",
@@ -361,7 +361,7 @@ export const olympiadNumberTheoryBook:BookSubject={
 export const differentialEquationsBook:BookSubject={
   slug:"persamaan-diferensial",
   title:"Persamaan Diferensial",
-  subtitle:"Buku digital persamaan diferensial lengkap: ODE orde satu dan dua, solusi kualitatif, deret pangkat, Fourier, PDE, fungsi khusus, Laplace, sistem, nonlinear, kalkulus variasi, eksistensi, dan numerik.",
+  subtitle:"Materi persamaan diferensial: ODE orde satu dan dua, solusi kualitatif, deret pangkat, Fourier, PDE, fungsi khusus, Laplace, sistem, nonlinear, kalkulus variasi, eksistensi, dan numerik.",
   level:"Kuliah · Matematika Terapan",
   source:"George F. Simmons, Differential Equations with Applications and Historical Notes, 3rd ed.",
   sourceYear:"2017",

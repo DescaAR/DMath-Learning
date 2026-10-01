@@ -35,7 +35,7 @@ const r=(number:string,slug:string,title:string,sourceTitle:string,summary:strin
 export const realAnalysisBook:BookSubject={
   slug:"analisis-real",
   title:"Analisis Real",
-  subtitle:"Buku digital bertahap dari fondasi bilangan real sampai topologi dan integrasi.",
+  subtitle:"Materi bertahap dari fondasi bilangan real sampai topologi dan integrasi.",
   level:"Kuliah · ON-MIPA",
   source:"Robert G. Bartle & Donald R. Sherbert, Introduction to Real Analysis, 4th ed.",
   sourceYear:"2011",
@@ -117,7 +117,7 @@ export const realAnalysisBook:BookSubject={
 export const complexAnalysisBook:BookSubject={
   slug:"analisis-kompleks",
   title:"Analisis Kompleks",
-  subtitle:"Buku digital dari bilangan kompleks sampai residu dan pemetaan konformal.",
+  subtitle:"Materi dari bilangan kompleks sampai residu dan pemetaan konformal.",
   level:"Kuliah · ON-MIPA",
   source:"Dennis G. Zill & Patrick D. Shanahan, A First Course in Complex Analysis with Applications",
   sourceYear:"2003",

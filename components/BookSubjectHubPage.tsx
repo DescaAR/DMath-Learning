@@ -19,7 +19,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
         {label:"Materi",href:"/materi"},
         {label:subject.title},
       ]}
-      eyebrow={subject.level+" · Buku Digital"}
+      eyebrow={subject.level}
       title={subject.title}
       lead={subject.subtitle}
       meta={[

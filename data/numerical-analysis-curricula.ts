@@ -12,7 +12,7 @@ const n=(number:string,slug:string,title:string,summary:string,keyIdeas:string[]
 export const numericalAnalysisBook:BookSubject={
   slug:"analisis-numerik",
   title:"Analisis Numerik",
-  subtitle:"Buku digital tentang aproksimasi, galat, kestabilan, algoritma numerik, dan scientific computing dari akar persamaan sampai PDE.",
+  subtitle:"Materi tentang aproksimasi, galat, kestabilan, algoritma numerik, dan scientific computing dari akar persamaan sampai PDE.",
   level:"Kuliah · Scientific Computing",
   source:"Richard L. Burden & J. Douglas Faires, Numerical Analysis, 9th ed.",
   sourceYear:"2011",

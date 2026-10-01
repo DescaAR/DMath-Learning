@@ -368,7 +368,7 @@ export function BookSectionPage({
 
       <section className="next-learning-block textbook-next">
         <div>
-          <span className="eyebrow">{next?"Materi Berikutnya":"Akhir Buku Digital"}</span>
+          <span className="eyebrow">{next?"Materi Berikutnya":"Akhir Materi"}</span>
           <h2>{next?next.number+" · "+next.title:subject.title}</h2>
           <p>{next?"Lanjutkan setelah definisi, pembuktian, contoh, visualisasi, dan latihan pada halaman ini dipahami.":"Kembali ke daftar isi untuk meninjau unit lain."}</p>
         </div>

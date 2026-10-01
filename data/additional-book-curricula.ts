@@ -19,7 +19,7 @@ const s=(
 export const combinatoricsBook:BookSubject={
   slug:"kombinatorika",
   title:"Kombinatorika",
-  subtitle:"Buku digital dari prinsip pencacahan dasar sampai teori graf, jaringan, Burnside, dan Pólya.",
+  subtitle:"Materi dari prinsip pencacahan dasar sampai teori graf, jaringan, Burnside, dan Pólya.",
   level:"Kuliah · Olimpiade · ON-MIPA",
   source:"Richard A. Brualdi, Introductory Combinatorics, 5th ed.",
   sourceYear:"2010",
@@ -128,7 +128,7 @@ export const combinatoricsBook:BookSubject={
 export const linearAlgebraBook:BookSubject={
   slug:"aljabar-linear",
   title:"Aljabar Linear",
-  subtitle:"Buku digital lengkap dari sistem persamaan linear dan matriks sampai ruang hasil kali dalam, transformasi linear, SVD, dan aplikasi.",
+  subtitle:"Materi dari sistem persamaan linear dan matriks sampai ruang hasil kali dalam, transformasi linear, SVD, dan aplikasi.",
   level:"Kuliah · ON-MIPA",
   source:"Howard Anton & Chris Rorres, Elementary Linear Algebra: Applications Version, 11th ed.",
   sourceYear:"2014",
@@ -234,7 +234,7 @@ export const linearAlgebraBook:BookSubject={
 export const abstractAlgebraBook:BookSubject={
   slug:"struktur-aljabar",
   title:"Struktur Aljabar",
-  subtitle:"Buku digital dari relasi dan aritmetika modular sampai grup, ring, ideal, field extension, RSA, dan konstruksi geometri.",
+  subtitle:"Materi dari relasi dan aritmetika modular sampai grup, ring, ideal, field extension, RSA, dan konstruksi geometri.",
   level:"Kuliah · ON-MIPA",
   source:"Gregory T. Lee, Abstract Algebra: An Introductory Course",
   sourceYear:"2018",
@@ -337,7 +337,7 @@ export const abstractAlgebraBook:BookSubject={
 export const olympiadMathSmaBook:BookSubject={
   slug:"olimpiade-matematika-sma",
   title:"Olimpiade Matematika SMA/MA",
-  subtitle:"Buku digital problem solving olimpiade SMA/MA: pencacahan, pembuktian, strategi, barisan–deret, rekurensi, Fibonacci, dan pertidaksamaan.",
+  subtitle:"Materi pemecahan masalah olimpiade SMA/MA: pencacahan, pembuktian, strategi, barisan–deret, rekurensi, Fibonacci, dan pertidaksamaan.",
   level:"SMA · Olimpiade",
   source:"Jonathan Hoseana, Top Sukses Olimpiade Matematika SMA/MA",
   sourceYear:"2016",
