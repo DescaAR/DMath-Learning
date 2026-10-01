@@ -29,7 +29,13 @@ function imperativeProblemText(text: string) {
     .replace(/\bDiperiksa\b/g, "Periksa")
     .replace(/\bDiselidiki\b/g, "Selidiki")
     .replace(/\bDibentuk\b/g, "Bentuk")
-    .replace(/\bDitetapkan\b/g, "Tetapkan");
+    .replace(/\bDitetapkan\b/g, "Tetapkan")
+    .replace(/\bDiberikan dua pernyataan berikut\b/g, "Perhatikan dua pernyataan berikut")
+    .replace(/\bDiberikan\b/g, "Misalkan")
+    .replace(/\bDidefinisikan\b/g, "Definisikan")
+    .replace(/\bDipilih\b/g, "Pilih")
+    .replace(/\bDiambil\b/g, "Ambil")
+    .replace(/\bDigunakan\b/g, "Gunakan");
 }
 
 const kindNames: Record<string, string> = {
