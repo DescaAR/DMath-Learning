@@ -10,8 +10,6 @@ export const siteConfig = {
     { label: "Materi", href: "/materi" },
     { label: "Bank Soal", href: "/bank-soal" },
     { label: "Olimpiade", href: "/olimpiade" },
-    { label: "Pembahasan", href: "/pembahasan" },
-    { label: "Bimbingan", href: "/bimbingan" },
-    { label: "Tentang", href: "/tentang" },
+    { label: "Pembahasan", href: "/pembahasan" },    { label: "Tentang", href: "/tentang" },
   ],
 } as const;

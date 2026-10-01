@@ -53,6 +53,4 @@ export const searchIndex = [
   })),
   { type: "Halaman", title: "Jalur Belajar", description: "Pilih jalur berdasarkan jenjang, kompetisi, atau bidang.", meta: "Navigasi", href: "/belajar" },
   { type: "Halaman", title: "Bank Soal", description: "Kumpulan soal per bab dengan filter dan halaman detail.", meta: "Latihan", href: "/bank-soal" },
-  { type: "Halaman", title: "Olimpiade", description: "Jalur kompetisi dari SD hingga ON-MIPA.", meta: "Kompetisi", href: "/olimpiade" },
-  { type: "Halaman", title: "Bimbingan", description: "Pendampingan matematika terstruktur untuk berbagai jenjang.", meta: "Program", href: "/bimbingan" },
-];
+  { type: "Halaman", title: "Olimpiade", description: "Jalur kompetisi dari SD hingga ON-MIPA.", meta: "Kompetisi", href: "/olimpiade" },];

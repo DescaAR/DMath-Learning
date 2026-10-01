@@ -36,9 +36,7 @@ export function SiteFooter() {
         </div>
         <div>
           <h3>DMath Learning</h3>
-          <div className="footer-links">
-            <Link href="/bimbingan">{t("Bimbingan")}</Link>
-            <Link href="/tentang">{t("Tentang")}</Link>
+          <div className="footer-links">            <Link href="/tentang">{t("Tentang")}</Link>
             <Link href="/search">{language === "en" ? "Search" : "Cari"}</Link>
           </div>
         </div>
