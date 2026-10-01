@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import type { DeepMaterial } from "@/data/deep-materials";
 import {
   integralRiemannDarbouxExercises,
@@ -486,7 +486,7 @@ function SubsectionVisual({ sectionIndex, subIndex }: { sectionIndex:number; sub
 }
 function DirectSectionVisual({ sectionIndex }: { sectionIndex:number }) {
   if (sectionIndex===4) return <DarbouxIntegralVisual/>;
-  if (sectionIndex===8) return <OscillationVisual/>;
+
   return null;
 }
 
@@ -563,7 +563,6 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
           <div className="ird-roadmap">
             {["Fungsi terbatas","Partisi","Jumlah Riemann","Jumlah Darboux","Kriteria Darboux","Ekuivalensi","Kelas integrabel","Sifat integral","Osilasi","Kriteria Lebesgue"].map((x,i)=><div key={x}><span>{String(i+1).padStart(2,"0")}</span><strong>{x}</strong></div>)}
           </div>
-          <InteractiveRiemannDarboux />
         </div>
       </section>
 
@@ -586,7 +585,12 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                 <div className="section-number">{String(sectionIndex+1).padStart(2,"0")}</div>
                 <span className="eyebrow">Bagian {sectionIndex+1}</span>
                 <h2>{section.title}</h2>
-                {section.blocks.map((block,index)=><FormalBlock key={section.title+"-b-"+index} block={block} index={index} />)}
+                {section.blocks.map((block,index)=>(
+                  <Fragment key={section.title+"-b-"+index}>
+                    <FormalBlock block={block} index={index} />
+                    {sectionIndex===8 && index===7 && <OscillationVisual />}
+                  </Fragment>
+                ))}
                 <DirectSectionVisual sectionIndex={sectionIndex} />
                 {section.subsections.map((sub,subIndex)=>(
                   <div className="ird-subsection" key={sub.title}>
