@@ -76,8 +76,8 @@ function Theorem({
 export default function BasisDimensionPage() {
   return (
     <>
-      <div className="lang-id-only">
-      <section className="chapter-hero premium-chapter-hero">
+      <div className="textbook-page ird-page lang-id-only">
+      <section className="chapter-hero textbook-hero ird-hero premium-chapter-hero">
         <div className="container narrow">
           <div className="breadcrumb">
             <Link href="/materi">Materi</Link>
@@ -108,16 +108,16 @@ export default function BasisDimensionPage() {
       </section>
 
       <section className="section">
-        <div className="container article-layout wide-article-layout">
-          <aside className="toc material-toc">
+        <div className="container article-layout textbook-layout wide-article-layout">
+          <aside className="toc material-toc textbook-toc ird-toc">
             <strong>Isi Bab</strong>
             {sections.map(([id, label], index) => (
               <a href={"#" + id} key={id}>{String(index + 1).padStart(2, "0")}. {label}</a>
             ))}
           </aside>
 
-          <article className="article deep-article basis-article">
-            <section id="overview">
+          <article className="article deep-article textbook-article ird-article basis-article">
+            <section className="book-section ird-source-section" id="overview">
               <span className="eyebrow">Overview</span>
               <h2>Basis adalah sistem koordinat bagi ruang vektor.</h2>
               <P>{String.raw`Dalam $\mathbb R^2$, kita terbiasa memakai $e_1=(1,0)$ dan $e_2=(0,1)$.
@@ -168,7 +168,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="review">
+            <section className="book-section ird-source-section" id="review">
               <span className="eyebrow">01 · Review Ruang Vektor</span>
               <h2>Objek yang akan kita bangun.</h2>
               <P>{String.raw`Sebuah ruang vektor $V$ atas lapangan $\mathbb F$ adalah himpunan yang dilengkapi
@@ -196,7 +196,7 @@ export default function BasisDimensionPage() {
               />
             </section>
 
-            <section id="kombinasi">
+            <section className="book-section ird-source-section" id="kombinasi">
               <span className="eyebrow">02 · Kombinasi Linear</span>
               <h2>Membangun vektor dari vektor lain.</h2>
               <div className="definition-box numbered-box">
@@ -221,7 +221,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="span">
+            <section className="book-section ird-source-section" id="span">
               <span className="eyebrow">03 · Span</span>
               <h2>Semua vektor yang dapat dibangun.</h2>
               <div className="definition-box">
@@ -252,7 +252,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="bebas">
+            <section className="book-section ird-source-section" id="bebas">
               <span className="eyebrow">04 · Bebas Linear</span>
               <h2>Mendeteksi redundansi.</h2>
               <div className="definition-box">
@@ -290,7 +290,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="basis">
+            <section className="book-section ird-source-section" id="basis">
               <span className="eyebrow">05 · Basis</span>
               <h2>Cukup untuk merentang, minimum tanpa redundansi.</h2>
               <div className="definition-box">
@@ -327,7 +327,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="koordinat">
+            <section className="book-section ird-source-section" id="koordinat">
               <span className="eyebrow">06 · Koordinat</span>
               <h2>Vektor abstrak menjadi daftar skalar.</h2>
               <P>{String.raw`Untuk basis berurutan $B=(v_1,\ldots,v_n)$, koordinat vektor
@@ -348,7 +348,7 @@ export default function BasisDimensionPage() {
               />
             </section>
 
-            <section id="dimensi">
+            <section className="book-section ird-source-section" id="dimensi">
               <span className="eyebrow">07 · Dimensi</span>
               <h2>Banyaknya arah bebas yang diperlukan.</h2>
               <div className="definition-box">
@@ -399,7 +399,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="subruang">
+            <section className="book-section ird-source-section" id="subruang">
               <span className="eyebrow">08 · Basis Subruang</span>
               <h2>Dimensi tidak dapat melebihi ruang induk.</h2>
 
@@ -430,7 +430,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="ekstensi">
+            <section className="book-section ird-source-section" id="ekstensi">
               <span className="eyebrow">09 · Ekstensi Basis</span>
               <h2>Dari himpunan bebas linear menuju basis penuh.</h2>
 
@@ -464,7 +464,7 @@ export default function BasisDimensionPage() {
               />
             </section>
 
-            <section id="baris-kolom">
+            <section className="book-section ird-source-section" id="baris-kolom">
               <span className="eyebrow">10 · Ruang Baris & Kolom</span>
               <h2>Basis dari sebuah matriks.</h2>
               <P>{String.raw`Untuk matriks $A\in\mathbb F^{m\times n}$, ruang baris adalah span semua baris $A$,
@@ -491,7 +491,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="rank-nullity">
+            <section className="book-section ird-source-section" id="rank-nullity">
               <span className="eyebrow">11 · Rank–Nullity</span>
               <h2>Dimensi domain terbagi menjadi dua bagian.</h2>
               <div className="definition-box">
@@ -525,7 +525,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="contoh">
+            <section className="book-section ird-source-section" id="contoh">
               <span className="eyebrow">12 · Worked Examples</span>
               <h2>Tiga tingkat penyelesaian.</h2>
 
@@ -592,7 +592,7 @@ export default function BasisDimensionPage() {
               </ul>
             </section>
 
-            <section id="ringkasan">
+            <section className="book-section ird-source-section" id="ringkasan">
               <span className="eyebrow">13 · Ringkasan</span>
               <h2>Peta hasil utama</h2>
               <div className="summary-grid">
@@ -623,7 +623,7 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
-            <section id="referensi">
+            <section className="book-section ird-source-section" id="referensi">
               <span className="eyebrow">14 · Referensi</span>
               <h2>Bacaan utama</h2>
               <ol className="reference-list">
