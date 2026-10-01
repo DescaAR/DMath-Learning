@@ -28,7 +28,7 @@ export async function generateMetadata({
     const sectionCount=subject.chapters.reduce((sum,chapter)=>sum+chapter.sections.length,0);
     return createPageMetadata({
       title:subject.title+" — Buku Digital",
-      description:subject.subtitle+" Tersusun dalam "+subject.chapters.length+" bab dan "+sectionCount+" submateri dengan teori, pembuktian, contoh, latihan, dan navigasi berurutan.",
+      description:subject.subtitle+" Tersusun dalam "+subject.chapters.length+" unit belajar dan "+sectionCount+" submateri dengan teori, pembuktian, contoh, latihan, dan navigasi berurutan.",
       path:"/materi/"+subject.slug,
       keywords:[subject.title,"buku digital matematika",subject.level,"materi lengkap"],
     });
