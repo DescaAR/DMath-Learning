@@ -102,7 +102,7 @@ function InteractiveRiemannDarboux() {
   });
 
   return (
-    <section className="ird-visual-lab" aria-label="Visualisasi interaktif jumlah Riemann dan Darboux">
+    <section className="ird-visual-lab" aria-label="Visualisasi jumlah Riemann dan Darboux">
       <div className="ird-visual-copy">
         <span className="eyebrow">Visualisasi</span>
         <h2>Jumlah Darboux bawah, jumlah Darboux atas, dan nilai integral</h2>
