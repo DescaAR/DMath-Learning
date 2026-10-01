@@ -995,7 +995,7 @@ export const deepMaterials: DeepMaterial[] = [
     ],
     related: ["Integral Riemann", "Metric Spaces", "Analisis Kompleks", "Functional Analysis dasar"],
     references: ["Stephen Abbott, Understanding Analysis, 2nd ed., Springer, 2015."]
-  }
+  },
 
   {
     slug: "analisis-kompleks",
