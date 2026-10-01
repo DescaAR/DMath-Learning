@@ -23,7 +23,7 @@ export default function MateriPage() {
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Materi"}]}
       eyebrow="Perpustakaan Materi · Buku Digital"
       title="Bukan ringkasan satu halaman. Belajar sampai paham."
-      lead="Materi disusun per jenjang dan bidang. Buku digital besar—dari Analisis Real, Kalkulus, Teori Graf, Aljabar, Teori Bilangan Olimpiade, sampai Persamaan Diferensial—dibagi menjadi bab dan submateri tersendiri agar dapat dipelajari berurutan dan mendalam."
+      lead="Materi disusun per jenjang dan bidang. Buku digital besar—dari Analisis Real, Kalkulus, Aljabar, Teori Graf, Teori Bilangan Olimpiade, Persamaan Diferensial, sampai Analisis Numerik—dibagi menjadi unit dan submateri agar dapat dipelajari berurutan dan mendalam."
       meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
       stats={[
         {value:bookSubjects.length,label:"buku digital"},
@@ -35,9 +35,9 @@ export default function MateriPage() {
         {label:"Buka Buku Digital",href:"#materi-buku",kind:"primary"},
         {label:"Jelajahi Semua Materi",href:"#materi-katalog",kind:"secondary"},
       ]}
-      overviewTitle="Bidang → bab → submateri → teori → latihan → materi berikutnya."
+      overviewTitle="Bidang → unit → submateri → teori → latihan → materi berikutnya."
       overviewText="Setiap submateri mempunyai halaman sendiri dengan tujuan, intuisi, visualisasi, notasi, definisi, teorema atau hasil formal, pembuktian, contoh terbahas, latihan, kesalahan umum, koneksi, ringkasan, dan navigasi sebelumnya/berikutnya."
-      roadmap={["Pilih Bidang","Pilih Bab","Baca Submateri","Pahami Bukti","Kerjakan Latihan","Lanjut Materi Berikutnya"]}
+      roadmap={["Pilih Bidang","Pilih Unit","Baca Submateri","Pahami Bukti","Kerjakan Latihan","Lanjut Materi Berikutnya"]}
       sections={[
         {id:"materi-buku",label:"Buku Digital"},
         {id:"materi-struktur",label:"Struktur Submateri"},
@@ -60,7 +60,7 @@ export default function MateriPage() {
                 </div>
                 <div className="ird-worked-prompt"><p>{subject.subtitle}</p></div>
                 <div className="chapter-stat-grid">
-                  <div><strong>{subject.chapters.length}</strong><span>bab utama</span></div>
+                  <div><strong>{subject.chapters.length}</strong><span>unit belajar</span></div>
                   <div><strong>{sectionCount}</strong><span>submateri</span></div>
                   <div><strong>1</strong><span>submateri / halaman</span></div>
                   <div><strong>Prev/Next</strong><span>navigasi</span></div>
@@ -75,7 +75,7 @@ export default function MateriPage() {
       <section id="materi-struktur" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">Struktur Submateri</span>
-        <h2>Setiap halaman dibaca seperti satu bagian buku.</h2>
+        <h2>Setiap halaman dibaca sebagai satu submateri lengkap.</h2>
         <div className="ird-roadmap">
           {["Tujuan & prasyarat","Motivasi, intuisi & visualisasi","Definisi & notasi","Teorema & pembuktian","Contoh terbahas","Latihan & solusi","Kesalahan & koneksi","Ringkasan & referensi"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
         </div>
