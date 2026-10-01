@@ -36,7 +36,6 @@ export function BookSectionPage({
 }){
   const definitions=content.formal.filter((item)=>item.kind==="definition");
   const results=content.formal.filter((item)=>item.kind!=="definition");
-  const proofCount=results.filter((item)=>item.proof?.length).length;
   const resultCount=results.filter((item)=>["lemma","proposition","theorem","corollary"].includes(item.kind)).length;
 
   const sections=[
