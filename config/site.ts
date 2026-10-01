@@ -8,6 +8,9 @@ export const siteConfig = {
   locale: "id_ID",
   language: "id-ID",
   ogImage: "/opengraph-image",
+  social: {
+    youtube: "https://www.youtube.com/@DMathLearning",
+  },
   keywords: [
     "DMath Learning",
     "belajar matematika",
