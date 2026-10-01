@@ -1,10 +1,16 @@
 // Vercel deployment sync
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 import { olympiadHubs } from "@/data/olympiad-hubs";
 
-export const metadata: Metadata = { title: "Olimpiade" };
+export const metadata: Metadata = createPageMetadata({
+  title: "Olimpiade Matematika dan ON-MIPA",
+  description: "Jalur olimpiade matematika dan ON-MIPA dengan syllabus, roadmap, soal terkurasi, challenge, serta pembahasan untuk SD, SMP, SMA, dan mahasiswa.",
+  path: "/olimpiade",
+  keywords: ["olimpiade matematika", "ON-MIPA matematika", "soal olimpiade matematika"],
+});
 
 export default function OlimpiadePage() {
   return (

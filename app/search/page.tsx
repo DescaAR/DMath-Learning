@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/PageHero";
 import { SearchClient } from "@/components/SearchClient";
 
-export const metadata: Metadata = {
-  title: "Search",
-  description: "Pencarian seluruh konten DMath Learning dengan filter jenjang, jalur, bidang/materi, tingkat kesulitan, jenis konten, dan pencocokan kata serupa.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Pencarian DMath Learning",
+  description: "Cari materi, definisi, teorema, contoh, dan soal di seluruh DMath Learning.",
+  path: "/search",
+  noIndex: true,
+});
 
 export default function SearchPage() {
   return (

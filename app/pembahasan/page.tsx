@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/PageHero";
 import { SolutionsIndexClient } from "@/components/SolutionsIndexClient";
 
-export const metadata: Metadata = {
-  title: "Pembahasan",
-  description: "Indeks pembahasan 100 soal Basis dan Dimensi DMath Learning.",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Pembahasan Soal Matematika",
+  description: "Indeks pembahasan soal matematika DMath Learning dengan ide utama, langkah penyelesaian, pembuktian, jawaban akhir, dan kesalahan umum.",
+  path: "/pembahasan",
+  keywords: ["pembahasan soal matematika", "solusi soal matematika"],
+});
 
 export default function PembahasanPage() {
   return (

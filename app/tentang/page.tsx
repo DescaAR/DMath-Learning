@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 
-export const metadata: Metadata = { title: "Tentang" };
+export const metadata: Metadata = createPageMetadata({
+  title: "Tentang DMath Learning",
+  description: "Mengenal DMath Learning, platform pembelajaran matematika yang menekankan pemahaman konsep, pembuktian, visualisasi, latihan, dan problem solving.",
+  path: "/tentang",
+  keywords: ["tentang DMath Learning"],
+});
 
 export default function TentangPage() {
   return (

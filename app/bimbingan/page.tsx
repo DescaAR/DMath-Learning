@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/PageHero";
 
-export const metadata: Metadata = { title: "Bimbingan" };
+export const metadata: Metadata = createPageMetadata({
+  title: "Bimbingan Matematika",
+  description: "Informasi program bimbingan matematika DMath Learning.",
+  path: "/bimbingan",
+  noIndex: true,
+});
 
 const programs = [
   "Bimbingan Matematika SD",
