@@ -22,6 +22,7 @@ export const siteConfig = {
     "analisis real",
     "aljabar linear",
     "analisis kompleks",
+    "analisis numerik",
   ],
   nav: [
     { label: "Beranda", href: "/" },
