@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { deepMaterials } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
+import { bookSubjects } from "@/data/book-curricula";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -43,7 +44,11 @@ function trackGroup(track: string, level: string): CatalogItem["trackGroup"] {
     : "Reguler";
 }
 
-const baseItems: CatalogItem[] = deepMaterials.map((material) => {
+const bookSubjectSlugs = new Set(bookSubjects.map((subject) => subject.slug));
+
+const baseItems: CatalogItem[] = deepMaterials
+  .filter((material) => !bookSubjectSlugs.has(material.slug as "analisis-real" | "analisis-kompleks"))
+  .map((material) => {
   const en = deepMaterialEnMap[material.slug] ?? material;
   return {
     id: material.slug,
@@ -62,6 +67,26 @@ const baseItems: CatalogItem[] = deepMaterials.map((material) => {
     href: "/materi/" + material.slug,
   };
 });
+
+for (const subject of bookSubjects) {
+  const sectionCount = subject.chapters.reduce((sum, chapter) => sum + chapter.sections.length, 0);
+  baseItems.unshift({
+    id: "book-" + subject.slug,
+    title: subject.title + " — Buku Digital Lengkap",
+    titleEn: subject.title + " — Complete Digital Book",
+    level: subject.level,
+    levelEn: "University · ON-MIPA",
+    levelGroup: "Kuliah",
+    subject: subject.title,
+    subjectEn: subject.title,
+    trackGroup: "Olimpiade",
+    difficulty: "Menengah–Lanjut",
+    difficultyEn: "Intermediate–Advanced",
+    summary: subject.subtitle + " Terdiri atas " + subject.chapters.length + " bab dan " + sectionCount + " submateri, satu submateri per halaman dengan teori, pembuktian, contoh, latihan, dan navigasi berurutan.",
+    summaryEn: subject.subtitle + " Organized into " + subject.chapters.length + " chapters and " + sectionCount + " section pages with theory, proofs, examples, exercises, and sequential navigation.",
+    href: "/materi/" + subject.slug,
+  });
+}
 
 baseItems.push({
   id: "basis-dan-dimensi",
