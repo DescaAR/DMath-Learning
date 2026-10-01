@@ -477,7 +477,7 @@ function WorkedExerciseVisual({ exercise }: { exercise: IntegralWorkedExercise }
 }
 
 function SubsectionVisual({ sectionIndex, subIndex }: { sectionIndex:number; subIndex:number }) {
-  if (sectionIndex===1 && subIndex===0) return <PartitionLabelVisual/>;
+  if (sectionIndex===1 && subIndex===1) return <PartitionLabelVisual/>;
   if (sectionIndex===3 && subIndex===0) return <InteractiveRiemannDarboux/>;
   if (sectionIndex===3 && subIndex===1) return <RefinementVisual/>;
   if (sectionIndex===5 && subIndex===0) return <EquivalenceVisual/>;
