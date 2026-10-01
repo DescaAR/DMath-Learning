@@ -73,10 +73,10 @@ export function BookSectionPage({
       breadcrumbs={[
         {label:"Materi",href:"/materi"},
         {label:subject.title,href:"/materi/"+subject.slug},
-        {label:"Bab "+chapter.number+" · "+chapter.title,href:"/materi/"+subject.slug+"#book-chapter-"+chapter.number.replaceAll(".","-")},
+        {label:"Unit "+chapter.number+" · "+chapter.title,href:"/materi/"+subject.slug+"#book-chapter-"+chapter.number.replaceAll(".","-")},
         {label:section.title},
       ]}
-      eyebrow={subject.title+" · "+section.number+" · Bab Digital Lengkap"}
+      eyebrow={subject.title+" · "+section.number+" · DMath Curriculum"}
       title={section.title}
       lead={section.summary}
       meta={[
@@ -92,7 +92,7 @@ export function BookSectionPage({
         {value:content.exercises.length,label:"latihan dengan solusi"},
       ]}
       actions={[
-        {label:"Mulai Bab",href:"#ird-overview",kind:"primary"},
+        {label:"Mulai Materi",href:"#ird-overview",kind:"primary"},
         {label:"Buka Latihan Soal",href:"#book-latihan-soal",kind:"secondary"},
       ]}
       overviewId="ird-overview"
