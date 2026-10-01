@@ -68,7 +68,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
           {track.subjects.map((subject,index)=>(
             <article className="ird-worked-card" key={pick(subject.name)}>
               <div className="ird-worked-head">
-                <div className="ird-problem-number">{String(index+digitalBooks.length+1).padStart(2,"0")}</div>
+                <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
                 <div><span className="eyebrow">{en?"Field":"Bidang"}</span><h3>{pick(subject.name)}</h3></div>
               </div>
               <div className="ird-worked-prompt"><p>{pick(subject.description)}</p></div>
@@ -129,7 +129,7 @@ export function LearningTrackPage({ track }: { track: LearningTrackPageData }) {
               return(
                 <article className="ird-worked-card" key={material.slug}>
                   <div className="ird-worked-head">
-                    <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
+                    <div className="ird-problem-number">{String(index+digitalBooks.length+1).padStart(2,"0")}</div>
                     <div><span className="eyebrow">{localized.level} · {localized.subject}</span><h3>{localized.title}</h3></div>
                   </div>
                   <div className="ird-worked-prompt"><p>{localized.summary}</p></div>
