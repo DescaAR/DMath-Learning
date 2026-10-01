@@ -1,3 +1,4 @@
+export type ContentProvenance="dmath-original"|"user-provided-adapted"|"public-domain"|"licensed"|"competition-reference"|"review-required";
 export type BookFormalKind="definition"|"lemma"|"proposition"|"theorem"|"corollary"|"note";
 export type BookFormalItem={
   kind:BookFormalKind;
@@ -15,6 +16,8 @@ export type BookExercise={
   prompt:string;
   hint:string;
   answer:string;
+  provenance?:ContentProvenance;
+  sourceNote?:string;
 };
 export type BookLessonContent={
   intro:string[];
