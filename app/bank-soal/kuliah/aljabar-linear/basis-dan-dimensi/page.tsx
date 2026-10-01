@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
-import { PageHero } from "@/components/PageHero";
 import { ProblemBank } from "@/components/ProblemBank";
 
 export const metadata: Metadata = createPageMetadata({
@@ -13,24 +12,51 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function BasisDimensionBankPage() {
   return (
-    <>
-      <PageHero
-        eyebrow="Kuliah · Aljabar Linear"
-        title="Bank Soal Basis dan Dimensi"
-        description="Katalog soal untuk satu bab. Gunakan pencarian dan filter untuk memilih tipe latihan yang dibutuhkan."
-      />
-      <section className="section">
-        <div className="container">
+    <div className="textbook-page ird-page">
+      <section className="chapter-hero textbook-hero ird-hero">
+        <div className="container narrow">
           <div className="breadcrumb">
-            <Link href="/materi">Materi</Link>
-            <span>/</span>
-            <Link href="/kuliah/aljabar-linear/basis-dan-dimensi">Basis dan Dimensi</Link>
-            <span>/</span>
+            <Link href="/materi">Materi</Link><span>/</span>
+            <Link href="/kuliah/aljabar-linear/basis-dan-dimensi">Basis dan Dimensi</Link><span>/</span>
             <strong>Bank Soal</strong>
           </div>
-          <ProblemBank />
+          <div className="chapter-label-row"><span className="eyebrow">Aljabar Linear · Bank Soal Lengkap</span></div>
+          <h1>100 Soal Basis dan Dimensi</h1>
+          <p className="chapter-lead">Katalog soal satu bab dengan tingkat kesulitan bertahap, dari pemahaman konsep hingga pembuktian, counterexample, dan construction.</p>
+          <div className="chapter-meta textbook-meta">
+            <span>100 soal</span><span>5 tingkat kesulitan</span><span>Filter + pencarian</span><span>Halaman solusi per soal</span>
+          </div>
+          <div className="actions">
+            <a className="btn primary" href="#bank-basis">Jelajahi Soal</a>
+            <Link className="btn secondary" href="/kuliah/aljabar-linear/basis-dan-dimensi">Kembali ke Materi</Link>
+          </div>
         </div>
       </section>
-    </>
+
+      <section className="section ird-overview">
+        <div className="container narrow">
+          <span className="eyebrow">Cakupan Bank Soal</span>
+          <h2>Satu alur konsep, seratus variasi masalah.</h2>
+          <div className="ird-roadmap">
+            {["Kombinasi linear","Span","Bebas linear","Basis","Koordinat","Dimensi","Subruang","Rank–Nullity"].map((item,index)=>(
+              <div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="bank-basis" className="section textbook-section-shell">
+        <div className="container">
+          <article className="article deep-article textbook-article ird-article">
+            <section className="book-section ird-practice-section">
+              <div className="section-number">01</div>
+              <span className="eyebrow">Bank Soal</span>
+              <h2>Pilih soal berdasarkan topik dan tingkat kesulitan.</h2>
+              <ProblemBank />
+            </section>
+          </article>
+        </div>
+      </section>
+    </div>
   );
 }
