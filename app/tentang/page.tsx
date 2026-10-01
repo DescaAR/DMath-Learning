@@ -29,10 +29,6 @@ export default function TentangPage() {
             <h2>DMath Learning</h2>
             <p>DMath Learning adalah platform pembelajaran matematika berbahasa Indonesia yang menyusun materi sebagai struktur belajar: intuisi, definisi formal, teorema, pembuktian, visualisasi, contoh, latihan, dan problem solving.</p>
             <p>Konten mencakup matematika sekolah, matematika universitas, olimpiade, dan ON-MIPA. Tujuannya bukan hanya menyediakan jawaban, tetapi membantu pembaca memahami alasan matematis di balik setiap langkah.</p>
-            <div className="content-box">
-              <strong>Standar Konten</strong>
-              <p>Setiap bab utama diarahkan untuk memiliki notasi yang konsisten, definisi yang presisi, pembuktian yang dapat ditelusuri, visualisasi yang relevan, serta latihan yang bertahap dari pemahaman konsep menuju penyelesaian masalah.</p>
-            </div>
           </div>
         </div>
       </section>
