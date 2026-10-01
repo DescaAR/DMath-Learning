@@ -273,9 +273,9 @@ export function BookSectionPage({
           ))}
         </div>
         <article className="ird-formal ird-note" style={{marginTop:24}}>
-          <div className="ird-formal-head"><span>Referensi</span><strong>{section.sourceTitle}</strong></div>
+          <div className="ird-formal-head"><span>Referensi</span><strong>Referensi dan bacaan lanjut</strong></div>
           <div className="ird-formal-body">
-            {subject.source} ({subject.sourceYear}), khususnya bagian {section.number} “{section.sourceTitle}”. Materi DMath Learning ditulis ulang dan dikembangkan sebagai materi pembelajaran mandiri; susunan topik mengikuti alur referensi utama, sedangkan penjelasan, contoh, pembuktian, dan latihan disusun untuk DMath Learning.
+            {subject.source} ({subject.sourceYear}) digunakan sebagai salah satu rujukan bidang untuk terminologi dan pemeriksaan cakupan konsep. Penjelasan, contoh, pembuktian, latihan, serta visualisasi pada halaman ini dikembangkan untuk DMath Learning.
           </div>
         </article>
       </section>
