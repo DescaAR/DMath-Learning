@@ -12,6 +12,7 @@ import {
 } from "@/data/search-index";
 import { useLanguage } from "@/components/LanguageProvider";
 import { RichMath } from "@/components/RichMath";
+import { allBookSections, bookSubjects } from "@/data/book-curricula";
 
 type LevelFilter = "Semua" | Exclude<SearchLevel, "Umum">;
 type TrackFilter = "Semua" | "Reguler" | "Olimpiade";
@@ -23,11 +24,52 @@ const LEVELS: LevelFilter[] = ["Semua", "SD", "SMP", "SMA", "Kuliah"];
 const TRACKS: TrackFilter[] = ["Semua", "Reguler", "Olimpiade"];
 const KINDS: KindFilter[] = ["Semua", "Materi", "Soal", "Teorema", "Definisi", "Contoh", "Halaman"];
 const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Sulit", "Sangat Sulit", "Challenge"];
+const DIGITAL_BOOK_SEARCH_INDEX: SearchEntry[] = [
+  ...bookSubjects.map((book):SearchEntry=>({
+    id:"digital-book-"+book.slug,
+    kind:"Materi",
+    level:"Kuliah",
+    track:book.level.toLowerCase().includes("on-mipa")?"Olimpiade":"Reguler",
+    subject:book.title,
+    subjectEn:book.title,
+    difficulty:"Umum",
+    title:book.title,
+    description:book.subtitle,
+    meta:(book.curriculumVersion??"DMath Curriculum")+" · "+book.chapters.length+" unit belajar",
+    href:"/materi/"+book.slug,
+    keywords:[book.title,book.subtitle,book.level,...book.chapters.map((unit)=>unit.title)].join(" "),
+    titleEn:book.title,
+    descriptionEn:book.subtitle,
+    metaEn:(book.curriculumVersion??"DMath Curriculum")+" · "+book.chapters.length+" learning units",
+    keywordsEn:[book.title,book.subtitle,book.level,...book.chapters.map((unit)=>unit.title)].join(" "),
+  })),
+  ...allBookSections.map(({subject:book,chapter,section}):SearchEntry=>({
+    id:"digital-book-section-"+book.slug+"-"+section.slug,
+    kind:"Materi",
+    level:"Kuliah",
+    track:book.level.toLowerCase().includes("on-mipa")?"Olimpiade":"Reguler",
+    subject:book.title,
+    subjectEn:book.title,
+    difficulty:"Umum",
+    title:section.title,
+    description:section.summary,
+    meta:book.title+" · Unit "+chapter.number+" · "+chapter.title,
+    href:"/materi/"+book.slug+"/"+section.slug,
+    keywords:[book.title,chapter.title,section.title,section.summary,...section.keyIdeas].join(" "),
+    titleEn:section.title,
+    descriptionEn:section.summary,
+    metaEn:book.title+" · Unit "+chapter.number+" · "+chapter.title,
+    keywordsEn:[book.title,chapter.title,section.title,section.summary,...section.keyIdeas].join(" "),
+  })),
+];
+
+const COMBINED_SEARCH_INDEX: SearchEntry[] = [...DIGITAL_BOOK_SEARCH_INDEX,...fullSearchIndex];
+
 const SUBJECTS: SubjectFilter[] = [
   "Semua",
   ...Array.from(
     new Set(
-      fullSearchIndex
+      COMBINED_SEARCH_INDEX
         .map((item) => item.subject)
         .filter((subject) => subject && subject !== "Umum")
     )
@@ -146,7 +188,7 @@ export function SearchClient() {
   const ranked = useMemo(() => {
     const q = query.trim();
 
-    return fullSearchIndex
+    return COMBINED_SEARCH_INDEX
       .filter((item) => level === "Semua" || item.level === level || item.level === "Umum")
       .filter((item) => track === "Semua" || item.track === track || item.track === "Umum")
       .filter((item) => kind === "Semua" || item.kind === kind)
