@@ -157,16 +157,6 @@ export default function BasisDimensionPage() {
                   ))}
                 </div>
               </div>
-
-              <div className="concept-map concept-map-wide">
-                {["Ruang Vektor","Kombinasi Linear","Span","Bebas Linear","Basis","Koordinat","Dimensi","Rank–Nullity"].map((item, index, array) => (
-                  <div className="concept-node" key={item}>
-                    <span>{String(index + 1).padStart(2, "0")}</span>
-                    <strong>{item}</strong>
-                    {index < array.length - 1 && <i aria-hidden="true">→</i>}
-                  </div>
-                ))}
-              </div>
             </section>
 
             <section className="book-section ird-source-section" id="review">

@@ -98,7 +98,6 @@ export function ProblemDetailClient({
                   <div><span className="eyebrow">{problem.difficulty}</span><h3>{problem.subchapter}</h3></div>
                 </div>
                 <div className="ird-worked-prompt"><Text>{problem.problem}</Text></div>
-                <div className="track-topic-chips">{problem.concepts.map((concept)=><span key={concept}>{concept}</span>)}</div>
               </article>
             </section>
 

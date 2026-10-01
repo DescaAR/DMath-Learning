@@ -143,6 +143,7 @@ export function BookSectionPage({
         <span className="eyebrow">Bagian 1</span>
         <h2>Pengantar</h2>
         {content.intro.map((paragraph,index)=><div className="ird-paragraph" key={index}><Text>{paragraph}</Text></div>)}
+        <div style={{marginTop:28}}><MathVisualization kind={visualKind}/></div>
       </section>
 
       <section id="book-lesson-2" className="book-section ird-source-section">
@@ -297,8 +298,7 @@ export function BookSectionPage({
         <span className="eyebrow">Bagian 7</span>
         <h2>Visualisasi dan eksplorasi</h2>
         <p className="ird-paragraph">Representasi visual digunakan untuk memeriksa struktur konsep, sedangkan panel interaktif memungkinkan parameter diubah dan akibatnya diamati langsung.</p>
-        <MathVisualization kind={visualKind}/>
-        <div style={{marginTop:24}}><InteractiveMathLab kind={visualKind}/></div>
+        <InteractiveMathLab kind={visualKind}/>
       </section>
 
       <section id="book-lesson-8" className="book-section ird-source-section">

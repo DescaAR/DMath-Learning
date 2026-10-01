@@ -133,6 +133,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             <Text>{item}</Text>
           </div>
         ))}
+        <div style={{marginTop:28}}><MathVisualization kind={m.visualization} /></div>
       </section>
 
       <section id="gm-section-2" className="book-section ird-source-section">
@@ -303,8 +304,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           "Visualisasi dipakai untuk melihat struktur konsep, sedangkan panel interaktif memungkinkan parameter diubah dan hasilnya dibandingkan.",
           "Visualization reveals the structure of the concept, while the interactive panel lets parameters change and outcomes be compared."
         )}</p>
-        <MathVisualization kind={m.visualization} />
-        <div style={{marginTop:24}}><InteractiveMathLab kind={m.visualization} /></div>
+        <InteractiveMathLab kind={m.visualization} />
       </section>
 
       <section id="gm-section-8" className="book-section ird-source-section">

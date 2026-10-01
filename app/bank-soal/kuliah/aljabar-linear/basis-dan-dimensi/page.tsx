@@ -33,18 +33,6 @@ export default function BasisDimensionBankPage() {
         </div>
       </section>
 
-      <section className="section ird-overview">
-        <div className="container narrow">
-          <span className="eyebrow">Cakupan Bank Soal</span>
-          <h2>Topik Bank Soal</h2>
-          <div className="ird-roadmap">
-            {["Kombinasi linear","Span","Bebas linear","Basis","Koordinat","Dimensi","Subruang","Rank–Nullity"].map((item,index)=>(
-              <div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="bank-basis" className="section textbook-section-shell">
         <div className="container">
           <article className="article deep-article textbook-article ird-article">

@@ -17,6 +17,7 @@ export function RiemannHubShell({
   stats=[],
   actions=[],
   overviewEyebrow="Struktur Halaman",
+  showOverview=false,
   overviewId="ird-overview",
   tocTitle="Isi Materi",
   progressLabel="Progres membaca",
@@ -35,6 +36,7 @@ export function RiemannHubShell({
   stats?:Stat[];
   actions?:Action[];
   overviewEyebrow?:string;
+  showOverview?:boolean;
   overviewId?:string;
   tocTitle?:string;
   progressLabel?:string;
@@ -114,18 +116,20 @@ export function RiemannHubShell({
         </div>
       </section>
 
-      <section id={overviewId} className="section ird-overview">
-        <div className="container narrow">
-          <span className="eyebrow">{overviewEyebrow}</span>
-          <h2>{overviewTitle}</h2>
-          {overviewText&&<p>{overviewText}</p>}
-          {roadmap.length>0&&(
-            <div className="ird-roadmap">
-              {roadmap.map((item,index)=><div key={item+index}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
-            </div>
-          )}
-        </div>
-      </section>
+      {showOverview&&(
+        <section id={overviewId} className="section ird-overview">
+          <div className="container narrow">
+            <span className="eyebrow">{overviewEyebrow}</span>
+            <h2>{overviewTitle}</h2>
+            {overviewText&&<p>{overviewText}</p>}
+            {roadmap.length>0&&(
+              <div className="ird-roadmap">
+                {roadmap.map((item,index)=><div key={item+index}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       <section className="section textbook-section-shell">
         <div className="container article-layout textbook-layout">

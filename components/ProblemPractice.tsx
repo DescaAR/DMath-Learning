@@ -48,7 +48,6 @@ export function ProblemPractice() {
 
         <h1>{problem.title}</h1>
         <div className="problem-text rich-problem-text"><RichMath>{problem.problem}</RichMath></div>
-        <div className="concept-pills">{problem.concepts.map((concept)=><span key={concept}>{concept}</span>)}</div>
 
         <div className="practice-actions">
           <button className="btn secondary" onClick={()=>setShowHint1(v=>!v)}>

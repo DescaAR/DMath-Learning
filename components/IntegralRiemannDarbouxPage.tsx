@@ -549,19 +549,8 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             <div><strong>{integralRiemannWorkedExercises.length}</strong><span>latihan dengan pembahasan</span></div>
           </div>
           <div className="actions">
-            <a className="btn primary" href="#ird-overview">Mulai Bab</a>
+            <a className="btn primary" href="#ird-section-1">Mulai Bab</a>
             <a className="btn secondary" href="#ird-latihan-soal">Buka Latihan Soal</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="ird-overview" className="section ird-overview">
-        <div className="container narrow">
-          <span className="eyebrow">Gambaran Besar</span>
-          <h2>Dua jalan menuju konsep integral yang sama.</h2>
-          <p>Riemann membangun integral dari titik sampel pada partisi bertanda, sedangkan Darboux membangun batas bawah dan batas atas melalui infimum serta supremum lokal. Bab ini mengembangkan kedua pendekatan secara formal sampai ekuivalensi, kelas fungsi integrabel, sifat-sifat integral, osilasi, dan Kriteria Lebesgue.</p>
-          <div className="ird-roadmap">
-            {["Fungsi terbatas","Partisi","Jumlah Riemann","Jumlah Darboux","Kriteria Darboux","Ekuivalensi","Kelas integrabel","Sifat integral","Osilasi","Kriteria Lebesgue"].map((x,i)=><div key={x}><span>{String(i+1).padStart(2,"0")}</span><strong>{x}</strong></div>)}
           </div>
         </div>
       </section>
@@ -645,7 +634,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             <section className="next-learning-block textbook-next">
               <div>
                 <span className="eyebrow">Lanjutkan</span>
-                <h2>Gunakan definisi untuk membuktikan, bukan hanya menghitung.</h2>
+                <h2>Latihan Lanjutan Integral Riemann dan Darboux</h2>
                 <p>Setelah memahami jumlah Riemann dan Darboux, uji kemampuan pada fungsi diskontinu, fungsi monoton, fungsi Thomae, sifat aljabar integral, serta kriteria osilasi.</p>
               </div>
               <div className="actions">

@@ -174,24 +174,24 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
       {kind:"proposition",title:"Optimalitas pada Titik Ekstrem",statement:"Jika program linear memiliki solusi optimal hingga dan daerah feasible mempunyai titik ekstrem, terdapat sedikitnya satu solusi optimal pada titik ekstrem daerah feasible.",proof:["Daerah feasible program linear merupakan himpunan cembung polihedral.","Jika solusi optimal bukan titik ekstrem, solusi tersebut dapat dinyatakan sebagai kombinasi cembung titik-titik feasible.","Linearitas fungsi tujuan membuat nilai pada kombinasi cembung menjadi kombinasi nilai objektif.","Sedikitnya satu titik ekstrem penyusun memiliki nilai tidak lebih buruk daripada solusi semula."]},
     ],
     "or-dualitas":[
-      {kind:"theorem",title:"Dualitas Lemah",statement:"Untuk pasangan primal–dual dalam orientasi yang konsisten, setiap solusi feasible dual memberikan bound terhadap setiap solusi feasible primal."},
-      {kind:"theorem",title:"Dualitas Kuat",statement:"Jika salah satu program linear primal atau dual mempunyai solusi optimal hingga, pasangan lainnya juga mempunyai solusi optimal dan kedua nilai objektif optimal sama."}
+      {kind:"theorem",title:"Dualitas Lemah",statement:"Untuk primal maksimum $\max\{c^Tx:Ax\le b,\ x\ge0\}$ dan dual minimum $\min\{b^Ty:A^Ty\ge c,\ y\ge0\}$, setiap pasangan solusi feasible memenuhi $c^Tx\le b^Ty$.",proof:["Diambil solusi feasible primal $x$ dan dual $y$.","Dari $A^Ty\ge c$ dan $x\ge0$ diperoleh $x^TA^Ty\ge c^Tx$.","Karena $Ax\le b$ dan $y\ge0$, diperoleh $y^TAx\le y^Tb$.","Dengan $x^TA^Ty=y^TAx$, diperoleh $c^Tx\le b^Ty$. Dengan demikian dualitas lemah terbukti."]},
+      {kind:"note",title:"Dualitas Kuat",statement:"Teorema dualitas kuat menyatakan bahwa, di bawah kondisi kelayakan standar program linear, nilai optimal primal dan dual sama. Pembuktian lengkap ditempatkan pada submateri khusus dualitas agar tidak diringkas secara tidak memadai."}
     ],
     "or-max-flow":[
-      {kind:"theorem",title:"Max-Flow Min-Cut",statement:"Nilai maksimum aliran dari sumber ke tujuan sama dengan kapasitas minimum di antara seluruh cut yang memisahkan sumber dan tujuan."}
+      {kind:"note",title:"Teorema Max-Flow Min-Cut",statement:"Teorema max-flow min-cut menghubungkan nilai aliran maksimum dengan kapasitas cut minimum. Pembuktian lengkap memerlukan konstruksi residual network dan augmenting path, sehingga tidak ditampilkan sebagai teorema tanpa bukti pada halaman pengantar ini."}
     ],
     "or-dp-principle":[
       {kind:"note",title:"Prinsip Optimalitas Bellman",statement:"Bagian sisa dari kebijakan optimal, setelah keputusan awal dan state baru ditentukan, harus optimal untuk submasalah yang dimulai dari state tersebut."}
     ],
     "or-mm1":[
-      {kind:"proposition",title:"Little's Law",statement:"Pada sistem stabil dalam keadaan tunak, jumlah rata-rata pelanggan $L$, laju kedatangan efektif $\\lambda$, dan waktu rata-rata dalam sistem $W$ memenuhi $L=\\lambda W$."}
+      {kind:"note",title:"Little\'s Law",statement:"Pada sistem stabil dalam keadaan tunak, hubungan $L=\\lambda W$ mengaitkan jumlah rata-rata pelanggan, laju kedatangan efektif, dan waktu rata-rata dalam sistem. Hasil ini digunakan setelah kondisi kestabilan dan definisi rata-rata jangka panjang dibahas."}
     ],
     "or-kkt":[
-      {kind:"theorem",title:"Kondisi KKT",statement:"Di bawah constraint qualification yang sesuai, solusi lokal masalah optimisasi terdiferensial dengan kendala pertidaksamaan memenuhi primal feasibility, dual feasibility, complementary slackness, dan stationarity."}
+      {kind:"note",title:"Kondisi Karush–Kuhn–Tucker",statement:"Kondisi KKT terdiri atas primal feasibility, dual feasibility, complementary slackness, dan stationarity. Pernyataan teorema lengkap memerlukan bentuk masalah serta constraint qualification yang eksplisit, sehingga halaman pengantar ini tidak menampilkannya sebagai teorema tanpa bukti."}
     ],
     "sta-probability-laws":[
       {kind:"definition",title:"Probabilitas Bersyarat",statement:"Jika $P(B)>0$, probabilitas $A$ dengan syarat $B$ didefinisikan oleh $P(A\\mid B)=P(A\\cap B)/P(B)$."},
-      {kind:"proposition",title:"Aturan Probabilitas Total",statement:"Jika $B_1,\\ldots,B_k$ membentuk partisi ruang sampel dan $P(B_i)>0$, maka $P(A)=\\sum_i P(A\\mid B_i)P(B_i)$."}
+      {kind:"proposition",title:"Aturan Probabilitas Total",statement:"Jika $B_1,\\ldots,B_k$ membentuk partisi ruang sampel dan $P(B_i)>0$, maka $P(A)=\\sum_i P(A\\mid B_i)P(B_i)$.",proof:["Karena $B_1,\\ldots,B_k$ membentuk partisi, kejadian $A$ dapat ditulis sebagai gabungan saling lepas $A=\\bigcup_i(A\\cap B_i)$.","Aditivitas probabilitas memberi $P(A)=\\sum_iP(A\\cap B_i)$.","Dari definisi probabilitas bersyarat, $P(A\\cap B_i)=P(A\\mid B_i)P(B_i)$.","Substitusi ke jumlah sebelumnya menghasilkan rumus probabilitas total. Dengan demikian proposisi terbukti."]}
     ],
     "sta-anova-oneway":[
       {kind:"proposition",title:"Dekomposisi Variabilitas ANOVA",statement:"Pada ANOVA satu arah, total sum of squares dapat diuraikan menjadi variasi antarperlakuan dan variasi dalam perlakuan: $SS_T=SS_{Tr}+SS_E$.",proof:["Untuk observasi $y_{ij}$ pada kelompok $i$, dituliskan $y_{ij}-\\bar y_{..}=(\\bar y_{i.}-\\bar y_{..})+(y_{ij}-\\bar y_{i.})$.","Kedua ruas dikuadratkan dan dijumlahkan terhadap seluruh $i$ dan $j$.","Suku silang bernilai nol karena untuk setiap kelompok berlaku $\\sum_j(y_{ij}-\\bar y_{i.})=0$.","Sisa dua jumlah kuadrat masing-masing adalah sum of squares antarperlakuan dan sum of squares error. Dengan demikian $SS_T=SS_{Tr}+SS_E$."]},
@@ -199,39 +199,39 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
     ],
     "sta-simple-regression":[
       {kind:"definition",title:"Model Regresi Linear Sederhana",statement:"Model ditulis $Y_i=\\beta_0+\\beta_1x_i+\\varepsilon_i$, dengan asumsi terhadap error ditentukan sesuai tujuan inferensi."},
-      {kind:"proposition",title:"Normal Equations",statement:"Estimator least squares meminimalkan jumlah kuadrat residual dan memenuhi persamaan normal yang diperoleh dari turunan fungsi objektif terhadap parameter."}
+      {kind:"proposition",title:"Normal Equations",statement:"Pada regresi linear sederhana, minimizer jumlah kuadrat residual $S(\\beta_0,\\beta_1)=\\sum_i(y_i-\\beta_0-\\beta_1x_i)^2$ memenuhi $\\sum_i(y_i-\\widehat\\beta_0-\\widehat\\beta_1x_i)=0$ dan $\\sum_ix_i(y_i-\\widehat\\beta_0-\\widehat\\beta_1x_i)=0$.",proof:["Fungsi $S$ merupakan fungsi kuadrat terdiferensial terhadap $\\beta_0$ dan $\\beta_1$.","Turunan parsial terhadap $\\beta_0$ adalah $-2\\sum_i(y_i-\\beta_0-\\beta_1x_i)$, sedangkan turunan parsial terhadap $\\beta_1$ adalah $-2\\sum_ix_i(y_i-\\beta_0-\\beta_1x_i)$.","Pada minimizer interior, kedua turunan parsial bernilai nol.","Dengan mengganti parameter oleh estimasinya diperoleh kedua persamaan normal."]}
     ],
     "stm-prob-axioms":[
       {kind:"definition",title:"Ukuran Probabilitas",statement:"Pada ruang terukur $(\\Omega,\\mathcal F)$, fungsi $P:\\mathcal F\\to[0,1]$ disebut ukuran probabilitas apabila $P(\\Omega)=1$ dan untuk setiap barisan kejadian saling lepas $A_1,A_2,\\ldots\\in\\mathcal F$ berlaku $P(\\bigcup_{i=1}^{\\infty}A_i)=\\sum_{i=1}^{\\infty}P(A_i)$. Nonnegativitas tercakup oleh kodomain $[0,1]$."}
     ],
     "stm-clt":[
-      {kind:"theorem",title:"Central Limit Theorem IID",statement:"Untuk variabel acak iid dengan mean $\\mu$ dan varians hingga positif $\\sigma^2$, jumlah yang dinormalisasi $(S_n-n\\mu)/(\\sigma\\sqrt n)$ konvergen dalam distribusi ke $N(0,1)$."}
+      {kind:"note",title:"Central Limit Theorem IID",statement:"Central Limit Theorem menyatakan konvergensi distribusi jumlah ternormalisasi ke distribusi normal di bawah asumsi yang sesuai. Pembuktian lengkap memerlukan perangkat teori konvergensi dan fungsi karakteristik, sehingga tidak ditampilkan sebagai teorema tanpa bukti pada halaman ringkas ini."}
     ],
     "stm-cramer-rao":[
-      {kind:"theorem",title:"Batas Bawah Cramér–Rao",statement:"Di bawah syarat regularitas yang sesuai, varians estimator tak bias suatu fungsi parameter dibatasi dari bawah oleh kuantitas yang ditentukan oleh Fisher information."}
+      {kind:"note",title:"Batas Bawah Cramér–Rao",statement:"Batas Cramér–Rao memberikan batas bawah varians estimator tak bias melalui Fisher information. Pernyataan dan pembuktiannya memerlukan syarat regularitas yang dinyatakan secara eksplisit."}
     ],
     "stm-factorization":[
-      {kind:"theorem",title:"Teorema Faktorisasi Neyman–Fisher",statement:"Dalam model terdominasi, statistik $T$ cukup untuk parameter jika likelihood dapat difaktorkan menjadi fungsi yang bergantung pada data hanya melalui $T$ dikalikan fungsi yang tidak bergantung pada parameter."}
+      {kind:"note",title:"Teorema Faktorisasi Neyman–Fisher",statement:"Kriteria faktorisasi mengkarakterisasi sufficiency dalam model terdominasi melalui faktorisasi likelihood. Pembuktian lengkap memerlukan definisi sufficiency berbasis distribusi kondisional dan asumsi dominasi."}
     ],
     "stm-neyman-pearson":[
-      {kind:"theorem",title:"Lemma Neyman–Pearson",statement:"Untuk menguji hipotesis sederhana melawan hipotesis sederhana pada taraf tertentu, uji berbasis likelihood ratio menghasilkan uji most powerful pada kondisi lemma."}
+      {kind:"theorem",title:"Lemma Neyman–Pearson",statement:"Untuk menguji $H_0:f=f_0$ melawan $H_1:f=f_1$, uji likelihood-ratio dengan daerah kritis yang dipilih pada taraf $\\alpha$ adalah most powerful di antara uji bertaraf tidak melebihi $\\alpha$.",proof:["Misalkan $\\phi$ adalah uji likelihood-ratio dan $\\psi$ sembarang uji lain dengan ukuran tidak melebihi $\\alpha$.","Daerah tempat $\\phi>\\psi$ dipilih ketika $f_1-kf_0$ tidak negatif, sedangkan daerah tempat $\\phi<\\psi$ berada ketika kuantitas tersebut tidak positif.","Akibatnya integral $(\\phi-\\psi)(f_1-kf_0)$ tidak negatif.","Karena $E_0\\phi=\\alpha$ dan $E_0\\psi\\le\\alpha$, diperoleh $E_1\\phi-E_1\\psi\\ge k(E_0\\phi-E_0\\psi)\\ge0$.","Dengan demikian power $\\phi$ di bawah $H_1$ tidak lebih kecil daripada power setiap $\\psi$ bertaraf sama atau lebih kecil."]}
     ],
     "md-ekuivalensi-logika":[
       {kind:"definition",title:"Ekuivalensi Logika",statement:"Proposisi $P$ dan $Q$ ekuivalen secara logis apabila $P\\leftrightarrow Q$ merupakan tautologi."},
-      {kind:"proposition",title:"Hukum De Morgan",statement:"Negasi konjungsi ekuivalen dengan disjungsi negasi, dan negasi disjungsi ekuivalen dengan konjungsi negasi."}
+      {kind:"proposition",title:"Hukum De Morgan",statement:"Berlaku $\\neg(P\\land Q)\\equiv(\\neg P\\lor\\neg Q)$ dan $\\neg(P\\lor Q)\\equiv(\\neg P\\land\\neg Q)$.",proof:["Dibuat tabel kebenaran untuk seluruh pasangan nilai $P$ dan $Q$.","Pada setiap baris, nilai $\\neg(P\\land Q)$ sama dengan nilai $\\neg P\\lor\\neg Q$.","Pada setiap baris pula, nilai $\\neg(P\\lor Q)$ sama dengan nilai $\\neg P\\land\\neg Q$.","Karena kedua pasangan mempunyai nilai kebenaran yang sama untuk seluruh kemungkinan, kedua ekuivalensi logika terbukti."]}
     ],
     "md-induksi":[
-      {kind:"theorem",title:"Prinsip Induksi Matematika",statement:"Jika pernyataan benar pada basis dan kebenaran pada $n$ selalu mengimplikasikan kebenaran pada $n+1$, pernyataan benar untuk seluruh bilangan bulat mulai dari basis tersebut."}
+      {kind:"note",title:"Prinsip Induksi Matematika",statement:"Prinsip induksi digunakan sebagai prinsip dasar pembuktian pada bilangan asli: basis diverifikasi, kemudian langkah induksi membuktikan propagasi kebenaran dari $n$ ke $n+1$."}
     ],
     "md-pigeonhole":[
-      {kind:"theorem",title:"Prinsip Pigeonhole",statement:"Jika lebih dari $n$ objek ditempatkan ke dalam $n$ kotak, sedikitnya satu kotak berisi paling sedikit dua objek."}
+      {kind:"theorem",title:"Prinsip Pigeonhole",statement:"Jika lebih dari $n$ objek ditempatkan ke dalam $n$ kotak, sedikitnya satu kotak berisi paling sedikit dua objek.",proof:["Diandaikan sebaliknya bahwa setiap kotak berisi paling banyak satu objek.","Dengan $n$ kotak, jumlah objek keseluruhan paling banyak $n$.","Hal ini bertentangan dengan hipotesis bahwa jumlah objek lebih dari $n$.","Dengan demikian sedikitnya satu kotak berisi paling sedikit dua objek."]}
     ],
     "md-mst":[
-      {kind:"proposition",title:"Cut Property",statement:"Untuk suatu cut pada graf berbobot, sisi berbobot minimum yang melintasi cut dapat dipilih sebagai bagian dari minimum spanning tree pada kondisi tie yang sesuai."}
+      {kind:"proposition",title:"Cut Property",statement:"Jika $e$ adalah sisi berbobot minimum yang melintasi suatu cut pada graf berbobot terhubung, terdapat minimum spanning tree yang memuat $e$.",proof:["Ambil minimum spanning tree $T$. Jika $e\\in T$, pernyataan selesai.","Jika $e\\notin T$, penambahan $e$ ke $T$ membentuk tepat satu siklus.","Siklus tersebut memuat sisi lain $f$ yang juga melintasi cut. Karena $e$ minimum pada cut, $w(e)\\le w(f)$.","Ganti $f$ dengan $e$. Graf yang diperoleh tetap spanning tree dan bobot totalnya tidak lebih besar daripada bobot $T$.","Karena $T$ sudah minimum, tree baru juga minimum dan memuat $e$."]}
     ],
     "ks-conditional-expectation":[
       {kind:"definition",title:"Ekspektasi Bersyarat",statement:"Untuk sub-$\\sigma$-algebra $\\mathcal G$, $E[X\\mid\\mathcal G]$ adalah variabel acak $\\mathcal G$-measurable yang mempunyai integral sama dengan $X$ pada setiap kejadian di $\\mathcal G$."},
-      {kind:"proposition",title:"Tower Property",statement:"Jika $\\mathcal H\\subseteq\\mathcal G$, maka $E[E[X\\mid\\mathcal G]\\mid\\mathcal H]=E[X\\mid\\mathcal H]$."}
+      {kind:"proposition",title:"Tower Property",statement:"Jika $\\mathcal H\\subseteq\\mathcal G$, maka $E[E[X\\mid\\mathcal G]\\mid\\mathcal H]=E[X\\mid\\mathcal H]$.",proof:["Variabel $E[E[X\\mid\\mathcal G]\\mid\\mathcal H]$ bersifat $\\mathcal H$-measurable.","Untuk setiap $A\\in\\mathcal H$, karena $A\\in\\mathcal G$, definisi ekspektasi bersyarat memberi $E[1_AE[X\\mid\\mathcal G]]=E[1_AX]$.","Dengan definisi conditioning terhadap $\\mathcal H$, $E[1_AE[E[X\\mid\\mathcal G]\\mid\\mathcal H]]=E[1_AE[X\\mid\\mathcal G]]=E[1_AX]$.","Keunikan ekspektasi bersyarat hingga hampir pasti memberi identitas tower property."]}
     ],
     "ks-martingale":[
       {kind:"definition",title:"Martingale",statement:"Proses adapted integrabel $(M_n)$ adalah martingale jika $E[M_{n+1}\\mid\\mathcal F_n]=M_n$ untuk setiap $n$."}
@@ -240,37 +240,37 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
       {kind:"definition",title:"Brownian Motion Standar",statement:"Proses $(W_t)_{t\\ge0}$ adalah Brownian motion standar jika $W_0=0$, memiliki increment independen dan stasioner Gaussian dengan varians panjang interval, serta memiliki lintasan kontinu hampir pasti."}
     ],
     "ks-ito-isometry":[
-      {kind:"theorem",title:"Isometri Itô",statement:"Untuk integrand square-integrable yang sesuai, $E[(\\int_0^t H_s\\,dW_s)^2]=E[\\int_0^t H_s^2\\,ds]$."}
+      {kind:"note",title:"Isometri Itô",statement:"Isometri Itô menghubungkan momen kedua integral stokastik dengan integral kuadrat integrand. Pembuktian rigor dimulai dari proses sederhana lalu diperluas melalui kelengkapan $L^2$."}
     ],
     "ks-ito-formula":[
-      {kind:"theorem",title:"Formula Itô",statement:"Untuk fungsi cukup halus $f(t,x)$ dan proses Itô $dX_t=b_tdt+\\sigma_tdW_t$, diferensial $f(t,X_t)$ memuat suku tambahan setengah turunan kedua yang berasal dari quadratic variation."}
+      {kind:"note",title:"Formula Itô",statement:"Formula Itô adalah aturan rantai untuk proses semimartingale dan memuat koreksi turunan kedua yang berasal dari quadratic variation. Pernyataan lengkap diberikan setelah integral Itô dan quadratic variation didefinisikan."}
     ],
     "ks-girsanov":[
-      {kind:"theorem",title:"Teorema Girsanov",statement:"Di bawah kondisi integrabilitas yang sesuai, perubahan ukuran melalui exponential martingale mengubah drift Brownian motion sambil mempertahankan struktur Brownian di bawah ukuran probabilitas baru."}
+      {kind:"note",title:"Teorema Girsanov",statement:"Teorema Girsanov menjelaskan perubahan drift di bawah perubahan ukuran probabilitas yang sesuai. Karena syarat integrabilitas dan konstruksi density process penting, hasil ini tidak ditampilkan sebagai teorema tanpa pembuktian lengkap."}
     ],
     "tup-measures":[
       {kind:"definition",title:"Ukuran",statement:"Ukuran pada $(X,\\mathcal A)$ adalah fungsi $\\mu:\\mathcal A\\to[0,\\infty]$ dengan $\\mu(\\varnothing)=0$ dan countable additivity pada keluarga himpunan saling lepas."}
     ],
     "tup-extension":[
-      {kind:"theorem",title:"Teorema Perluasan Carathéodory",statement:"Premeasure pada kelas awal yang sesuai dapat diperluas menjadi measure pada sigma-algebra yang dihasilkannya; dengan kondisi sigma-finite, perluasan memiliki sifat keunikan yang kuat."}
+      {kind:"note",title:"Teorema Perluasan Carathéodory",statement:"Teorema perluasan Carathéodory membangun measure dari premeasure melalui outer measure dan measurable sets. Pernyataan lengkap beserta pembuktiannya memerlukan konstruksi bertahap tersebut."}
     ],
     "tup-mct":[
-      {kind:"theorem",title:"Monotone Convergence Theorem",statement:"Jika $0\\le f_n\\uparrow f$ hampir di mana-mana, maka $\\int f_n\\,d\\mu\\uparrow\\int f\\,d\\mu$."}
+      {kind:"note",title:"Monotone Convergence Theorem",statement:"Untuk barisan fungsi measurable nonnegatif yang naik menuju $f$, integralnya naik menuju integral $f$. Pembuktian lengkap ditempatkan setelah konstruksi integral Lebesgue dari fungsi sederhana."}
     ],
     "tup-fatou":[
-      {kind:"theorem",title:"Lemma Fatou",statement:"Untuk fungsi measurable nonnegatif, $\\int\\liminf f_n\\,d\\mu\\le\\liminf\\int f_n\\,d\\mu$."}
+      {kind:"note",title:"Lemma Fatou",statement:"Lemma Fatou memberikan ketaksamaan antara integral liminf dan liminf integral untuk fungsi measurable nonnegatif. Pembuktian standar menggunakan Monotone Convergence Theorem."}
     ],
     "tup-dct":[
-      {kind:"theorem",title:"Dominated Convergence Theorem",statement:"Jika $f_n\\to f$ hampir di mana-mana dan $|f_n|\\le g$ untuk suatu $g\\in L^1$, maka $f\\in L^1$ dan $\\int f_n\\to\\int f$."}
+      {kind:"note",title:"Dominated Convergence Theorem",statement:"Dominated Convergence Theorem mengizinkan pertukaran limit dan integral ketika terdapat dominator integrabel. Pembuktiannya menggunakan Fatou pada fungsi nonnegatif yang dibangun dari $g\\pm f_n$."}
     ],
     "tup-fubini":[
-      {kind:"theorem",title:"Teorema Fubini",statement:"Untuk fungsi integrabel pada ruang produk, integral produk dapat dihitung sebagai integral berulang dalam kedua urutan, dengan syarat standar teorema dipenuhi."}
+      {kind:"note",title:"Teorema Fubini",statement:"Teorema Fubini mengizinkan integral pada ruang produk dihitung sebagai integral berulang untuk fungsi integrabel. Pernyataan lengkap memerlukan hipotesis measurability dan integrability yang eksplisit."}
     ],
     "tup-radon-nikodym":[
-      {kind:"theorem",title:"Teorema Radon–Nikodym",statement:"Jika ukuran $\\nu$ sigma-finite absolut kontinu terhadap $\\mu$ dalam kerangka teorema, terdapat fungsi measurable $f$ sehingga $\\nu(A)=\\int_A f\\,d\\mu$."}
+      {kind:"note",title:"Teorema Radon–Nikodym",statement:"Teorema Radon–Nikodym merepresentasikan ukuran yang absolut kontinu sebagai integral terhadap density. Karena pembuktiannya bergantung pada teori ukuran yang telah dibangun sebelumnya, hasil ini tidak dilabeli teorema tanpa bukti lengkap pada halaman pengantar."}
     ],
     "tup-slln":[
-      {kind:"theorem",title:"Strong Law of Large Numbers",statement:"Dalam kondisi klasik iid dengan ekspektasi hingga, rata-rata sampel konvergen hampir pasti ke mean populasi."}
+      {kind:"note",title:"Strong Law of Large Numbers",statement:"Strong Law of Large Numbers menyatakan konvergensi hampir pasti rata-rata sampel ke mean pada kondisi yang sesuai. Pembuktian lengkap memerlukan hasil probabilitas lanjut dan tidak diringkas sebagai teorema tanpa bukti."}
     ],
     "tup-martingale":[
       {kind:"definition",title:"Martingale",statement:"Proses integrabel adapted $(M_n)$ terhadap filtrasi $(\\mathcal F_n)$ adalah martingale jika $E[M_{n+1}\\mid\\mathcal F_n]=M_n$."}
@@ -282,6 +282,42 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
     {kind:"note",title:"Struktur Konsep",statement:"Konsep utama yang perlu dihubungkan pada bagian ini adalah "+keyIdeas.join(", ")+". Istilah yang benar-benar mempunyai definisi formal diperkenalkan pada submateri yang relevan; uraian deskriptif tidak diberi label definisi."},
     {kind:"note",title:"Standar Pembuktian atau Verifikasi",statement:"Setiap kesimpulan harus dilacak kembali ke definisi atau hasil yang digunakan, dengan seluruh hipotesis dinyatakan secara eksplisit."}
   ];
+}
+
+function directDefinitionExamples(slug:string):BookExample[]{
+  const map:Record<string,BookExample[]>={
+    "or-lp-formulasi":[
+      {title:"Contoh Program Linear",problem:"Sebuah bengkel membuat produk A dan B. Keuntungan per unit masing-masing 3 dan 2. Setiap A memakai 2 jam mesin, setiap B memakai 1 jam, tersedia 8 jam. Total produksi paling banyak 6 unit. Formulasikan model program linearnya.",solution:["Didefinisikan $x$ sebagai banyak produk A dan $y$ sebagai banyak produk B.","Fungsi tujuan adalah memaksimumkan $z=3x+2y$.","Kendala mesin adalah $2x+y\\le8$, kendala jumlah produksi adalah $x+y\\le6$, dengan $x,y\\ge0$."],conclusion:"Model tersebut mempunyai fungsi tujuan dan kendala yang seluruhnya linear."}
+    ],
+    "sta-probability-laws":[
+      {title:"Contoh Probabilitas Bersyarat",problem:"Diketahui $P(A\\cap B)=0.18$ dan $P(B)=0.30$. Tentukan $P(A\\mid B)$.",solution:["Digunakan definisi $P(A\\mid B)=P(A\\cap B)/P(B)$ karena $P(B)>0$.","Diperoleh $P(A\\mid B)=0.18/0.30=0.60$."],conclusion:"Probabilitas A setelah diketahui B terjadi adalah 0,60."}
+    ],
+    "sta-simple-regression":[
+      {title:"Contoh Model Regresi Linear",problem:"Tuliskan bentuk model untuk respons $Y$ yang diperkirakan berubah linear terhadap prediktor $x$.",solution:["Parameter intercept dinotasikan $\\beta_0$ dan slope $\\beta_1$.","Variasi yang tidak dijelaskan garis dimodelkan oleh error $\\varepsilon$.","Model ditulis $Y=\\beta_0+\\beta_1x+\\varepsilon$."],conclusion:"Koefisien $\\beta_1$ menyatakan perubahan mean respons per satu unit perubahan $x$."}
+    ],
+    "stm-prob-axioms":[
+      {title:"Contoh Ukuran Probabilitas pada Ruang Hingga",problem:"Pada $\\Omega=\\{1,2,3,4\\}$, setiap titik diberi probabilitas $1/4$. Periksa bahwa $P(A)=|A|/4$ merupakan ukuran probabilitas.",solution:["Untuk setiap $A\\subseteq\\Omega$, berlaku $P(A)\\ge0$.","Diperoleh $P(\\Omega)=4/4=1$.","Untuk kejadian saling lepas, banyak anggota gabungan sama dengan jumlah banyak anggota, jadi probabilitasnya aditif."],conclusion:"Ketiga aksioma probabilitas terpenuhi."}
+    ],
+    "md-ekuivalensi-logika":[
+      {title:"Contoh Ekuivalensi Logika",problem:"Periksa apakah $P\\to Q$ ekuivalen dengan $\\neg P\\lor Q$.",solution:["Dituliskan tabel kebenaran untuk empat pasangan nilai $P$ dan $Q$.","Kolom $P\\to Q$ hanya salah ketika $P$ benar dan $Q$ salah.","Kolom $\\neg P\\lor Q$ mempunyai pola nilai yang sama."],conclusion:"Kedua proposisi ekuivalen secara logis."}
+    ],
+    "ks-conditional-expectation":[
+      {title:"Contoh Ekspektasi Bersyarat Diskret",problem:"Misalkan $X$ bernilai 0 atau 2 dengan probabilitas sama. Jika $\\mathcal G$ tidak memuat informasi selain $\\varnothing$ dan $\\Omega$, tentukan $E[X\\mid\\mathcal G]$.",solution:["Karena $\\mathcal G$ trivial, variabel $\\mathcal G$-measurable harus konstan hampir pasti.","Konstanta tersebut harus memiliki ekspektasi sama dengan $X$.","Diperoleh $E[X]=(0+2)/2=1$, jadi $E[X\\mid\\mathcal G]=1$."],conclusion:"Tanpa informasi tambahan, ekspektasi bersyarat sama dengan ekspektasi biasa."}
+    ],
+    "ks-martingale":[
+      {title:"Contoh Martingale Random Walk",problem:"Misalkan $X_1,X_2,\\ldots$ independen dengan $E[X_n]=0$ dan $S_n=\\sum_{k=1}^nX_k$. Tunjukkan relasi martingale satu langkah.",solution:["$S_n$ terukur terhadap informasi hingga waktu $n$.","Dituliskan $S_{n+1}=S_n+X_{n+1}$.","Karena $X_{n+1}$ independen dari $\\mathcal F_n$ dan bermean nol, $E[X_{n+1}\\mid\\mathcal F_n]=0$.","Akibatnya $E[S_{n+1}\\mid\\mathcal F_n]=S_n$."],conclusion:"$(S_n)$ merupakan martingale."}
+    ],
+    "ks-brownian-definition":[
+      {title:"Contoh Increment Brownian Motion",problem:"Untuk Brownian motion standar, tentukan distribusi $W_3-W_1$.",solution:["Panjang interval adalah $3-1=2$.","Increment Brownian pada interval sepanjang 2 berdistribusi normal dengan mean 0 dan varians 2.","Dengan demikian $W_3-W_1\\sim N(0,2)$."],conclusion:"Distribusi increment hanya bergantung pada panjang interval."}
+    ],
+    "tup-measures":[
+      {title:"Contoh Ukuran Pencacahan",problem:"Pada himpunan $X$, definisikan $\\mu(A)=|A|$ untuk $A$ hingga dan $\\mu(A)=\\infty$ untuk $A$ tak hingga. Jelaskan mengapa ini merupakan ukuran pada power set $X$.",solution:["Jelas $\\mu(\\varnothing)=0$.","Untuk keluarga himpunan saling lepas, banyak anggota gabungan sama dengan jumlah banyak anggota jika jumlahnya hingga.","Jika jumlah anggota tak hingga, kedua sisi countable additivity bernilai $\\infty$ dalam pengertian extended real."],conclusion:"Fungsi tersebut adalah counting measure."}
+    ],
+    "tup-martingale":[
+      {title:"Contoh Martingale dari Jumlah Parsial",problem:"Jika $X_n$ independen, integrabel, dan $E[X_n]=0$, tunjukkan bahwa $M_n=X_1+\\cdots+X_n$ memenuhi syarat martingale.",solution:["$M_n$ bersifat $\\mathcal F_n$-measurable dan integrabel.","Dituliskan $M_{n+1}=M_n+X_{n+1}$.","Independensi memberi $E[X_{n+1}\\mid\\mathcal F_n]=E[X_{n+1}]=0$.","Dengan demikian $E[M_{n+1}\\mid\\mathcal F_n]=M_n$."],conclusion:"Jumlah parsial increment bermean nol membentuk martingale."}
+    ]
+  };
+  return map[slug]??[];
 }
 
 function examplesFor(subject:string,title:string,keyIdeas:string[]):BookExample[]{
@@ -467,6 +503,7 @@ for(const subject of newAcademicSubjects){
     for(const section of chapter.sections){
       const lesson=build(subject.slug,section.title,section.summary,section.keyIdeas);
       lesson.formal=formalFor(subject.slug,section.slug,section.title,section.summary,section.keyIdeas);
+      lesson.examples=[...directDefinitionExamples(section.slug),...lesson.examples];
       generated[section.slug]=lesson;
     }
   }

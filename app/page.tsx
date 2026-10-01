@@ -61,7 +61,7 @@ export default function Home() {
 
       <section id="home-materi" className="book-section ird-practice-section">
         <div className="section-number">02</div>
-        <span className="eyebrow">Materi Published</span>
+        <span className="eyebrow">Materi Tersedia</span>
         <h2>Materi Tersedia</h2>
         <div className="ird-worked-grid">
           {featured.map((item,index)=>(
