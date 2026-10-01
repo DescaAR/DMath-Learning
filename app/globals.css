@@ -511,8 +511,11 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .theorem-suite,.example-suite{display:grid;gap:10px;margin:25px 0 42px}
 .theorem-box{background:linear-gradient(180deg,rgba(21,101,216,.055),var(--surface));border-left:4px solid var(--blue)}
 .proof-detailed{background:var(--surface);border-left:4px solid var(--navy);box-shadow:0 10px 30px rgba(6,27,62,.035)}
-.proof-step,.solution-step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:11px;align-items:start;margin:12px 0}
-.proof-step>span,.solution-step>span{width:28px;height:28px;border-radius:8px;background:var(--light);display:grid;place-items:center;color:var(--blue);font-size:.72rem;font-weight:900;margin-top:2px}
+.proof-step,.solution-step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:11px;align-items:start;margin:12px 0;min-width:0}
+.proof-step>span:first-child,.solution-step>span:first-child{width:28px;height:28px;border-radius:8px;background:var(--light);display:grid;place-items:center;color:var(--blue);font-size:.72rem;font-weight:900;margin-top:2px}
+.proof-step>.ird-rich-text,.solution-step>.ird-rich-text,
+.proof-step>.ca-rich-text,.solution-step>.ca-rich-text{width:auto;height:auto;min-width:0;display:block;place-items:initial;background:transparent;color:inherit;font-size:inherit;font-weight:inherit;margin:0;overflow-wrap:anywhere}
+.proof-step .math-block,.solution-step .math-block{min-width:0;max-width:100%}
 .proof-step p,.solution-step p{margin:0}
 .proof-end{text-align:right!important;color:var(--navy)!important;font-size:1.1rem;line-height:1;margin:8px 0 0!important}
 .why-box{padding:16px 19px;border-radius:13px;background:rgba(0,194,255,.06);border:1px solid rgba(0,194,255,.18)}
