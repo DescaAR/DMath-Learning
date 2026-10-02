@@ -264,7 +264,7 @@ img{max-width:100%}
 .material-row h2{margin:5px 0;font-size:1.5rem}
 .material-row p{margin:0;color:var(--muted);max-width:750px}
 .meta-line{color:var(--blue);font-size:.76rem;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
-.material-row-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.material-row-actions{display:flex;align-items:center;justify-content:flex-start;gap:10px;flex-shrink:0;margin-top:18px}
 
 .breadcrumb{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.82rem;margin-bottom:20px}
 .breadcrumb a{color:var(--blue)}
@@ -585,7 +585,7 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .details-box>p{padding:0 18px 18px;margin:0;color:var(--muted)}.solution-details{margin-top:12px}.solution-details>summary{background:var(--deep);color:#fff!important;padding:18px 20px}.detail-solution{padding:18px}
 .problem-detail-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;margin-top:18px}.problem-detail-nav>a:not(.all-problems-link){display:flex;flex-direction:column;padding:14px;border:1px solid var(--border);border-radius:13px;background:var(--surface)}
 .problem-detail-nav>a:last-child{text-align:right;align-items:flex-end}.problem-detail-nav span{font-size:.7rem;color:var(--muted)}.all-problems-link{color:var(--blue);font-weight:850;font-size:.78rem}
-.material-row{transition:.18s ease}.material-row:hover{padding-left:10px;padding-right:10px;background:var(--surface-2)}.material-row h2{letter-spacing:-.03em}.material-row-actions{min-width:175px;justify-content:flex-end}
+.material-row{transition:.18s ease}.material-row:hover{padding-left:10px;padding-right:10px;background:var(--surface-2)}.material-row h2{letter-spacing:-.03em}.material-row-actions{min-width:0;justify-content:flex-start}
 @media(max-width:1040px){.wide-article-layout{grid-template-columns:1fr}.filter-panel{position:relative;top:auto}.bank-filter-bar{grid-template-columns:1fr 1fr}.filter-search{grid-column:1/-1}}
 @media(max-width:760px){.objective-grid,.intuition-grid,.comparison-table,.dimension-facts,.summary-grid,.solution-overview-grid,.problem-detail-hints{grid-template-columns:1fr}.problem-bank-grid{grid-template-columns:1fr}.notation-row{grid-template-columns:1fr}.notation-symbol{border-bottom:1px solid var(--border)}.bank-summary{align-items:flex-start;flex-direction:column}.pagination{grid-template-columns:1fr}.pagination>button{width:100%}.problem-detail-nav{grid-template-columns:1fr}.problem-detail-nav>a:last-child{text-align:left;align-items:flex-start}.all-problems-link{text-align:center}}
 @media(max-width:540px){.bank-filter-bar{grid-template-columns:1fr}.filter-search{grid-column:auto}.concept-node i{display:none}.premium-chapter-hero .chapter-meta{gap:6px}.math-block{font-size:.9rem}}
@@ -636,7 +636,7 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .content-standard-strip strong{font-size:.83rem;color:var(--navy)}
 :root[data-theme="dark"] .content-standard-strip strong{color:#fff}
 .content-standard-strip span{font-size:.7rem;color:var(--muted);line-height:1.45}
-.rich-material-list .material-row{display:grid;grid-template-columns:55px minmax(0,1fr) auto;align-items:center}
+.rich-material-list .material-row{display:grid;grid-template-columns:55px minmax(0,1fr);align-items:start}
 .material-index{font-size:.76rem;font-weight:900;color:var(--blue);letter-spacing:.08em}
 .material-main{min-width:0}
 .bank-hero-card{max-width:none}
@@ -664,7 +664,6 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 }
 @media(max-width:760px){
   .rich-material-list .material-row{grid-template-columns:38px minmax(0,1fr)}
-  .rich-material-list .material-row-actions{grid-column:2;justify-content:flex-start}
   .callout-actions{margin-top:18px}
 }
 @media(max-width:540px){
@@ -3368,4 +3367,12 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .subject-card-stats{
     grid-template-columns:1fr;
   }
+}
+
+
+/* Catalog action placement */
+.rich-material-list .material-row-actions .btn,
+.bank-catalog-list .material-row-actions .btn{
+  width:max-content;
+  min-width:130px;
 }
