@@ -11,7 +11,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
     id:"book-chapter-"+chapter.number.replaceAll(".","-"),
     label:"Unit "+chapter.number+" · "+chapter.title,
   }));
-  const summaryText=subject.subtitle+" Terdiri atas "+subject.chapters.length+" bab dan "+sectionCount+" submateri.";
+  const summaryText=subject.subtitle;
 
   return(
     <RiemannHubShell
@@ -25,15 +25,11 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       lead=""
       meta={[
         subject.curriculumVersion??"DMath Curriculum",
-        subject.chapters.length+" unit belajar",
-        sectionCount+" submateri",
         "Teori · Bukti · Contoh · Latihan",
       ]}
       stats={[
-        {value:subject.chapters.length,label:"unit belajar"},
+        {value:subject.chapters.length,label:"bab"},
         {value:sectionCount,label:"submateri"},
-        {value:sectionCount,label:"halaman submateri"},
-        {value:"1 pola",label:"struktur Integral Riemann"},
       ]}
       actions={[
         ...(first?[{label:"Mulai Materi",href:"/materi/"+subject.slug+"/"+first.slug,kind:"primary" as const}]:[]),
@@ -71,9 +67,12 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
           <div className="section-number">{String(chapterIndex+1).padStart(2,"0")}</div>
           <span className="eyebrow">Unit {chapter.number} · DMath Learning</span>
           <h2>{chapter.title}</h2>
-          <p className="ird-paragraph">
-            Unit ini terdiri atas {chapter.sections.length} submateri.
-          </p>
+          <div className="chapter-stat-grid chapter-section-count">
+            <div>
+              <strong>{chapter.sections.length}</strong>
+              <span>submateri</span>
+            </div>
+          </div>
 
           <div className="ird-worked-grid">
             {chapter.sections.map((section,index)=>(
