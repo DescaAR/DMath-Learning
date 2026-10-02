@@ -11,7 +11,6 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
     id:"book-chapter-"+chapter.number.replaceAll(".","-"),
     label:"Unit "+chapter.number+" · "+chapter.title,
   }));
-  const summaryText="Terdiri atas "+subject.chapters.length+" bab dan "+sectionCount+" submateri.";
 
   return(
     <RiemannHubShell
