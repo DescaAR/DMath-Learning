@@ -154,12 +154,15 @@ function ChipGroup<T extends string>({
   );
 }
 
-function matchesDifficulty(raw: string, filter: DifficultyFilter) {
-  if (filter === "Semua") return true;
+function difficultyGroup(raw: string): Exclude<DifficultyFilter, "Semua"> {
   const value = raw.toLowerCase();
-  if (filter === "Dasar") return value.includes("dasar") || value.includes("basic");
-  if (filter === "Menengah") return value.includes("menengah") || value.includes("intermediate");
-  return value.includes("lanjut") || value.includes("advanced") || value.includes("sulit") || value.includes("challenge");
+  if (value.includes("lanjut") || value.includes("advanced") || value.includes("sulit") || value.includes("challenge")) return "Lanjut";
+  if (value.includes("menengah") || value.includes("intermediate")) return "Menengah";
+  return "Dasar";
+}
+
+function matchesDifficulty(raw: string, filter: DifficultyFilter) {
+  return filter === "Semua" || difficultyGroup(raw) === filter;
 }
 
 export function MaterialCatalogClient() {
@@ -232,10 +235,11 @@ export function MaterialCatalogClient() {
   }
 
   function difficultyCategory(raw: string) {
-    const value = raw.toLowerCase();
-    if (value.includes("dasar") || value.includes("basic")) return language === "en" ? "Basic" : "Dasar";
-    if (value.includes("lanjut") || value.includes("advanced") || value.includes("sulit") || value.includes("challenge")) return language === "en" ? "Advanced" : "Lanjut";
-    return language === "en" ? "Intermediate" : "Menengah";
+    const group = difficultyGroup(raw);
+    if (language === "id") return group;
+    if (group === "Dasar") return "Basic";
+    if (group === "Menengah") return "Intermediate";
+    return "Advanced";
   }
 
   function levelCategory(item: CatalogItem) {
@@ -289,8 +293,6 @@ export function MaterialCatalogClient() {
         {filtered.map((item, index) => {
           const title = language === "en" ? item.titleEn : item.title;
           const summary = language === "en" ? item.summaryEn : item.summary;
-          const levelLabel = language === "en" ? item.levelEn : item.level;
-          const subjectLabel = language === "en" ? item.subjectEn : item.subject;
           const difficultyLabel = difficultyCategory(language === "en" ? item.difficultyEn : item.difficulty);
           const levelCategoryLabel = levelCategory(item);
 
