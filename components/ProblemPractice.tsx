@@ -7,6 +7,19 @@ import { RichMath } from "@/components/RichMath";
 import { AcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
 
+function difficultyLabel(raw:string, language:"id"|"en") {
+  const value = raw.toLowerCase();
+  const group = value.includes("dasar") || value.includes("basic")
+    ? "Dasar"
+    : value.includes("menengah") || value.includes("intermediate")
+      ? "Menengah"
+      : "Lanjut";
+  if (language === "id") return group;
+  if (group === "Dasar") return "Basic";
+  if (group === "Menengah") return "Intermediate";
+  return "Advanced";
+}
+
 export function ProblemPractice() {
   const { language } = useLanguage();
   const [index, setIndex] = useState(0);
@@ -41,7 +54,7 @@ export function ProblemPractice() {
         <div className="problem-meta">
           <span className="problem-id">{problem.id}</span>
           <span>{problem.subchapter}</span>
-          <span>{problem.difficulty}</span>
+          <span>{difficultyLabel(rawProblems[index].difficulty, language)}</span>
           <span>{problem.type}</span>
           <span>{problem.estimatedTime}</span>
         </div>
