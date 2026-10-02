@@ -66,7 +66,7 @@ export default function MateriPage() {
                   </ol>
                 </div>
                 <div className="chapter-stat-grid">
-                  <div><strong>{subject.chapters.length}</strong><span>unit belajar</span></div>
+                  <div><strong>{subject.chapters.length}</strong><span>bab</span></div>
                   <div><strong>{sectionCount}</strong><span>submateri</span></div>
                   <div><strong>1</strong><span>submateri / halaman</span></div>
                 </div>
