@@ -24,12 +24,12 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       lead=""
       meta={[
         subject.curriculumVersion??"DMath Curriculum",
-        subject.chapters.length+" unit belajar",
+        subject.chapters.length+" bab",
         sectionCount+" submateri",
         "Teori · Bukti · Contoh · Latihan",
       ]}
       stats={[
-        {value:subject.chapters.length,label:"unit belajar"},
+        {value:subject.chapters.length,label:"bab"},
         {value:sectionCount,label:"submateri"},
         {value:sectionCount,label:"halaman submateri"},
         {value:"1 pola",label:"struktur Integral Riemann"},
@@ -47,7 +47,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       <section className="subject-summary-card">
         <span className="eyebrow">Ringkasan Materi</span>
         <div className="chapter-stat-grid subject-summary-stats">
-          <div><strong>{subject.chapters.length}</strong><span>Unit Belajar</span></div>
+          <div><strong>{subject.chapters.length}</strong><span>Bab</span></div>
           <div><strong>{sectionCount}</strong><span>Submateri</span></div>
           <div><strong>1</strong><span>Submateri / Halaman</span></div>
         </div>
