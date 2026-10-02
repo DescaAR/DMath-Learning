@@ -98,7 +98,7 @@ export function RiemannHubShell({
 
           <div className="chapter-label-row"><span className="eyebrow">{eyebrow}</span></div>
           <h1>{title}</h1>
-          <p className="chapter-lead">{lead}</p>
+          {lead&&<p className="chapter-lead">{lead}</p>}
 
           {meta.length>0&&<div className="chapter-meta textbook-meta">{meta.map((item)=><span key={item}>{item}</span>)}</div>}
 
