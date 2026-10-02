@@ -5,7 +5,7 @@ import { ProblemBank } from "@/components/ProblemBank";
 
 export const metadata: Metadata = createPageMetadata({
   title: "100 Soal Basis dan Dimensi",
-  description: "100 soal Basis dan Dimensi Aljabar Linear dari tingkat dasar hingga challenge, mencakup konsep, hitungan, pembuktian, counterexample, dan construction.",
+  description: "100 soal Basis dan Dimensi Aljabar Linear dari tingkat dasar hingga lanjut, mencakup konsep, hitungan, pembuktian, counterexample, dan construction.",
   path: "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi",
   keywords: ["soal basis dan dimensi", "bank soal aljabar linear"],
 });
@@ -24,7 +24,7 @@ export default function BasisDimensionBankPage() {
           <h1>100 Soal Basis dan Dimensi</h1>
           <p className="chapter-lead">Katalog soal satu bab dengan tingkat kesulitan bertahap, dari pemahaman konsep hingga pembuktian, counterexample, dan construction.</p>
           <div className="chapter-meta textbook-meta">
-            <span>100 soal</span><span>5 tingkat kesulitan</span><span>Filter + pencarian</span><span>Halaman solusi per soal</span>
+            <span>100 soal</span><span>3 tingkat kesulitan</span><span>Filter + pencarian</span><span>Halaman solusi per soal</span>
           </div>
           <div className="actions">
             <a className="btn primary" href="#bank-basis">Jelajahi Soal</a>
