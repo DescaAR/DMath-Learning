@@ -10,8 +10,14 @@ import { useLanguage } from "@/components/LanguageProvider";
 const PAGE_SIZE = 20;
 
 const difficultyEn: Record<string,string> = {
-  "Dasar":"Basic","Menengah":"Intermediate","Sulit":"Advanced","Sangat Sulit":"Very Advanced","Challenge":"Challenge",
+  "Dasar":"Basic","Menengah":"Intermediate","Lanjut":"Advanced",
 };
+
+function difficultyGroup(value:string) {
+  if (value === "Dasar") return "Dasar";
+  if (value === "Menengah") return "Menengah";
+  return "Lanjut";
+}
 const typeEn: Record<string,string> = {
   "Konsep":"Concept","Hitungan":"Computation","Pembuktian":"Proof","True/False":"True/False","Counterexample":"Counterexample","Construction":"Construction",
 };
@@ -53,7 +59,7 @@ export function ProblemBank() {
         localized.title, localized.problem, localized.subchapter, ...localized.concepts
       ].join(" ").toLowerCase();
       return (!q || haystack.includes(q))
-        && (difficulty === "Semua" || raw.difficulty === difficulty)
+        && (difficulty === "Semua" || difficultyGroup(raw.difficulty) === difficulty)
         && (type === "Semua" || raw.type === type)
         && (subchapter === "Semua" || raw.subchapter === subchapter);
     });
@@ -94,8 +100,8 @@ export function ProblemBank() {
           <span className="eyebrow">{language==="en"?"Complete Problem Bank":"Bank Soal Lengkap"}</span>
           <h2>{language==="en"?"100 Basis and Dimension Problems":"100 soal Basis dan Dimensi"}</h2>
           <p>{language==="en"
-            ?"Distribution: 20 Basic · 30 Intermediate · 30 Advanced · 15 Very Advanced · 5 Challenge. Every problem has hints and a complete structured solution."
-            :"Distribusi: 20 Dasar · 30 Menengah · 30 Sulit · 15 Sangat Sulit · 5 Challenge. Setiap soal memiliki petunjuk dan pembahasan lengkap yang terstruktur."}</p>
+            ?"Distribution: 20 Basic · 30 Intermediate · 50 Advanced. Every problem has hints and a complete structured solution."
+            :"Distribusi: 20 Dasar · 30 Menengah · 50 Lanjut. Setiap soal memiliki petunjuk dan pembahasan lengkap yang terstruktur."}</p>
         </div>
         <button className="btn secondary" type="button" onClick={randomProblem}>{language==="en"?"Random Problem":"Acak Soal"}</button>
       </div>
@@ -112,7 +118,7 @@ export function ProblemBank() {
         </label>
 
         <ChipRow label={language==="en"?"Subchapter":"Subbab"} values={["Semua",...subchapters]} value={subchapter} setValue={setSubchapter} display={displaySubchapter}/>
-        <ChipRow label={language==="en"?"Difficulty":"Kesulitan"} values={["Semua","Dasar","Menengah","Sulit","Sangat Sulit","Challenge"]} value={difficulty} setValue={setDifficulty} display={displayDifficulty}/>
+        <ChipRow label={language==="en"?"Difficulty":"Kesulitan"} values={["Semua","Dasar","Menengah","Lanjut"]} value={difficulty} setValue={setDifficulty} display={displayDifficulty}/>
         <ChipRow label={language==="en"?"Type":"Tipe"} values={["Semua","Konsep","Hitungan","Pembuktian","True/False","Counterexample","Construction"]} value={type} setValue={setType} display={displayType}/>
 
         <div className="filter-footer">
@@ -126,7 +132,7 @@ export function ProblemBank() {
           const problem=localizeProblem(raw,language);
           return <article className="problem-card premium-problem-card" key={problem.id}>
             <div className="problem-meta">
-              <span className="problem-id">{problem.id}</span><span>{problem.difficulty}</span><span>{problem.type}</span>
+              <span className="problem-id">{problem.id}</span><span>{displayDifficulty(difficultyGroup(raw.difficulty))}</span><span>{problem.type}</span>
             </div>
             <span className="problem-subchapter">{problem.subchapter}</span>
             <h2>{problem.title}</h2>
