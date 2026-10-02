@@ -11,7 +11,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
     id:"book-chapter-"+chapter.number.replaceAll(".","-"),
     label:"Unit "+chapter.number+" · "+chapter.title,
   }));
-  const summaryText=subject.subtitle+" Terdiri atas "+subject.chapters.length+" bab dan "+sectionCount+" submateri.";
+  const summaryText="Terdiri atas "+subject.chapters.length+" bab dan "+sectionCount+" submateri.";
 
   return(
     <RiemannHubShell
@@ -47,7 +47,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
     >
       <section className="subject-summary-card">
         <span className="eyebrow">Ringkasan Materi</span>
-        <p>{summaryText}</p>
+        <div className="material-count-box">{summaryText}</div>
         <div className="subject-material-list">
           <strong>Daftar Materi</strong>
           <ol>
