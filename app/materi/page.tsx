@@ -58,17 +58,16 @@ export default function MateriPage() {
                   <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
                   <div><span className="eyebrow">{subject.level}</span><h3>{subject.title}</h3></div>
                 </div>
-                <div className="material-count-box">Terdiri atas {subject.chapters.length} bab dan {sectionCount} submateri.</div>
+                <div className="chapter-stat-grid">
+                  <div><strong>{subject.chapters.length}</strong><span>Unit Belajar</span></div>
+                  <div><strong>{sectionCount}</strong><span>Submateri</span></div>
+                  <div><strong>1</strong><span>Submateri / Halaman</span></div>
+                </div>
                 <div className="catalog-material-list">
                   <strong>Daftar Materi</strong>
                   <ol>
                     {subject.chapters.map((chapter)=><li key={chapter.number}>{chapter.title}</li>)}
                   </ol>
-                </div>
-                <div className="chapter-stat-grid">
-                  <div><strong>{subject.chapters.length}</strong><span>unit belajar</span></div>
-                  <div><strong>{sectionCount}</strong><span>submateri</span></div>
-                  <div><strong>1</strong><span>submateri / halaman</span></div>
                 </div>
                 <div className="actions"><Link className="btn primary" href={"/materi/"+subject.slug}>Buka {subject.title}</Link></div>
               </article>
