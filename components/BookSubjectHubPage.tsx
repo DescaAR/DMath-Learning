@@ -11,6 +11,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
     id:"book-chapter-"+chapter.number.replaceAll(".","-"),
     label:"Unit "+chapter.number+" · "+chapter.title,
   }));
+  const summaryText=subject.subtitle+" Terdiri atas "+subject.chapters.length+" bab dan "+sectionCount+" submateri.";
 
   return(
     <RiemannHubShell
@@ -21,7 +22,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       ]}
       eyebrow={subject.level}
       title={subject.title}
-      lead={subject.subtitle}
+      lead=""
       meta={[
         subject.curriculumVersion??"DMath Curriculum",
         subject.chapters.length+" unit belajar",
@@ -38,12 +39,29 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
         ...(first?[{label:"Mulai Materi",href:"/materi/"+subject.slug+"/"+first.slug,kind:"primary" as const}]:[]),
         {label:"Lihat Kurikulum",href:"#book-chapter-"+subject.chapters[0]?.number.replaceAll(".","-"),kind:"secondary" as const},
       ]}
-      overviewEyebrow="Peta Buku"
-      overviewTitle="Daftar Unit"
-      overviewText="Setiap halaman submateri memuat pengantar, tujuan, notasi, definisi dan contoh, hasil formal dan pembuktian, contoh terbahas, visualisasi, latihan dengan solusi, ringkasan, referensi, serta navigasi ke materi berikutnya."
+      overviewEyebrow="Peta Materi"
+      overviewTitle="Daftar Materi"
+      overviewText=""
       roadmap={subject.chapters.map((chapter)=>"Unit "+chapter.number+" · "+chapter.title)}
       sections={sections}
     >
+      <section className="subject-summary-card">
+        <span className="eyebrow">Ringkasan Materi</span>
+        <p>{summaryText}</p>
+        <div className="subject-material-list">
+          <strong>Daftar Materi</strong>
+          <ol>
+            {subject.chapters.map((chapter)=>(
+              <li key={chapter.number}>
+                <a href={"#book-chapter-"+chapter.number.replaceAll(".","-")}>
+                  {chapter.title}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {subject.chapters.map((chapter,chapterIndex)=>(
         <section
           key={chapter.number}
@@ -54,7 +72,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
           <span className="eyebrow">Unit {chapter.number} · DMath Learning</span>
           <h2>{chapter.title}</h2>
           <p className="ird-paragraph">
-            Unit ini terdiri atas {chapter.sections.length} submateri. Setiap submateri dibuka pada halaman tersendiri agar pembahasan tidak terlalu padat dan urutan belajar tetap jelas.
+            Unit ini terdiri atas {chapter.sections.length} submateri.
           </p>
 
           <div className="ird-worked-grid">
