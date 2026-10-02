@@ -47,7 +47,11 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
     >
       <section className="subject-summary-card">
         <span className="eyebrow">Ringkasan Materi</span>
-        <div className="material-count-box">{summaryText}</div>
+        <div className="chapter-stat-grid subject-summary-stats">
+          <div><strong>{subject.chapters.length}</strong><span>Unit Belajar</span></div>
+          <div><strong>{sectionCount}</strong><span>Submateri</span></div>
+          <div><strong>1</strong><span>Submateri / Halaman</span></div>
+        </div>
         <div className="subject-material-list">
           <strong>Daftar Materi</strong>
           <ol>
