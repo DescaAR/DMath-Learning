@@ -3354,3 +3354,18 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   font-weight:750;
   line-height:1.6
 }
+
+
+/* Three-count layout for material summaries */
+.catalog-count-stats,
+.subject-summary-stats,
+.subject-card-stats{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+@media(max-width:760px){
+  .catalog-count-stats,
+  .subject-summary-stats,
+  .subject-card-stats{
+    grid-template-columns:1fr;
+  }
+}
