@@ -27,6 +27,8 @@ type CatalogItem = {
   summary: string;
   summaryEn: string;
   topics?: string[];
+  chapterCount?: number;
+  sectionCount?: number;
   href: string;
 };
 
@@ -86,6 +88,8 @@ for (const subject of bookSubjects) {
     summary: "Terdiri atas " + subject.chapters.length + " bab dan " + sectionCount + " submateri.",
     summaryEn: "Consists of " + subject.chapters.length + " chapters and " + sectionCount + " subtopics.",
     topics: subject.chapters.map((chapter) => chapter.title),
+    chapterCount: subject.chapters.length,
+    sectionCount,
     href: "/materi/" + subject.slug,
   });
 }
@@ -297,7 +301,11 @@ export function MaterialCatalogClient() {
                 </span>
                 <h2>{title}</h2>
                 {item.topics && item.topics.length > 0 ? (
-                  <div className="material-count-box"><RichMath>{summary}</RichMath></div>
+                  <div className="chapter-stat-grid catalog-count-stats">
+                    <div><strong>{item.chapterCount}</strong><span>{language === "en" ? "Learning Units" : "Unit Belajar"}</span></div>
+                    <div><strong>{item.sectionCount}</strong><span>{language === "en" ? "Subtopics" : "Submateri"}</span></div>
+                    <div><strong>1</strong><span>{language === "en" ? "Subtopic / Page" : "Submateri / Halaman"}</span></div>
+                  </div>
                 ) : (
                   <p><RichMath>{summary}</RichMath></p>
                 )}
