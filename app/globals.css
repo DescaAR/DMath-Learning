@@ -594,7 +594,7 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 /* v0.3 homepage and catalog finishing */
 .home-proof-strip{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  grid-template-columns:repeat(4,1fr);
   gap:10px;
   margin-top:44px;
   max-width:900px
@@ -3343,10 +3343,4 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 }
 @media(max-width:700px){
   .catalog-material-list ol{columns:1}
-}
-
-
-.chapter-section-count{
-  grid-template-columns:minmax(170px,240px);
-  margin:18px 0 26px;
 }
