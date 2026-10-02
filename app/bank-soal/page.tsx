@@ -18,15 +18,9 @@ export default function BankSoalPage() {
       title="Bank Soal Matematika"
       lead="Kumpulan soal berdasarkan materi dan tingkat kesulitan, dilengkapi petunjuk serta pembahasan langkah demi langkah."
       meta={["Filter","Kesulitan bertahap","Petunjuk","Solusi lengkap"]}
-      stats={[
-        {value:100,label:"soal Basis & Dimensi"},
-        {value:5,label:"tingkat kesulitan"},
-        {value:6,label:"tipe soal"},
-        {value:"1/soal",label:"halaman solusi"},
-      ]}
       actions={[
         {label:"Buka Bank Soal",href:"#bank-tersedia",kind:"primary"},
-        {label:"Indeks Pembahasan",href:"/pembahasan",kind:"secondary"},
+        {label:"Latihan Soal",href:"/latihan-soal",kind:"secondary"},
       ]}
       overviewTitle="Struktur Bank Soal"
       overviewText="Setiap halaman soal memuat pernyataan soal, petunjuk, Diketahui, Dicari atau Dibuktikan, Ide Utama, pembahasan langkah demi langkah, dan kesimpulan."
