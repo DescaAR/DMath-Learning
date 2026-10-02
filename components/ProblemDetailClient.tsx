@@ -8,6 +8,19 @@ import { RichMath } from "@/components/RichMath";
 import { AcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
 
+function difficultyLabel(raw:string, language:"id"|"en") {
+  const value = raw.toLowerCase();
+  const group = value.includes("dasar") || value.includes("basic")
+    ? "Dasar"
+    : value.includes("menengah") || value.includes("intermediate")
+      ? "Menengah"
+      : "Lanjut";
+  if (language === "id") return group;
+  if (group === "Dasar") return "Basic";
+  if (group === "Menengah") return "Intermediate";
+  return "Advanced";
+}
+
 function Text({ children }: { children: string }) {
   return <RichMath className="ird-rich-text">{children}</RichMath>;
 }
@@ -64,7 +77,7 @@ export function ProblemDetailClient({
           <div className="chapter-label-row"><span className="eyebrow">{problem.subchapter} · {problem.type}</span></div>
           <h1>{problem.title}</h1>
           <div className="chapter-meta textbook-meta">
-            <span>{problem.id}</span><span>{problem.difficulty}</span><span>{problem.type}</span><span>{problem.estimatedTime}</span>
+            <span>{problem.id}</span><span>{difficultyLabel(rawProblem.difficulty, language)}</span><span>{problem.type}</span><span>{problem.estimatedTime}</span>
           </div>
           <div className="chapter-stat-grid">
             <div><strong>{problem.concepts.length}</strong><span>{ui("konsep", "concepts")}</span></div>
@@ -95,7 +108,7 @@ export function ProblemDetailClient({
               <article className="ird-worked-card">
                 <div className="ird-worked-head">
                   <div className="ird-problem-number">{problem.id}</div>
-                  <div><span className="eyebrow">{problem.difficulty}</span><h3>{problem.subchapter}</h3></div>
+                  <div><span className="eyebrow">{difficultyLabel(rawProblem.difficulty, language)}</span><h3>{problem.subchapter}</h3></div>
                 </div>
                 <div className="ird-worked-prompt"><Text>{problem.problem}</Text></div>
               </article>
