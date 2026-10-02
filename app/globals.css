@@ -3264,3 +3264,51 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .chapter-hero > div > p {
   text-transform:none;
 }
+
+
+/* Subject hub summary card */
+.subject-summary-card{
+  margin:0 0 42px;
+  padding:24px 26px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:var(--surface-2);
+  box-shadow:0 12px 32px rgba(15,23,42,.04)
+}
+.subject-summary-card>p{
+  margin:10px 0 22px;
+  color:var(--text);
+  font-size:1rem;
+  line-height:1.8
+}
+.subject-material-list{
+  border-top:1px solid var(--border);
+  padding-top:18px
+}
+.subject-material-list>strong{
+  display:block;
+  margin-bottom:10px;
+  color:var(--deep);
+  font-size:1rem
+}
+:root[data-theme="dark"] .subject-material-list>strong{color:#fff}
+.subject-material-list ol{
+  margin:0;
+  padding-left:22px;
+  columns:2;
+  column-gap:34px
+}
+.subject-material-list li{
+  break-inside:avoid;
+  margin:0 0 8px;
+  color:var(--muted)
+}
+.subject-material-list a{
+  color:var(--text);
+  font-weight:700
+}
+.subject-material-list a:hover{color:var(--blue)}
+@media(max-width:700px){
+  .subject-summary-card{padding:20px}
+  .subject-material-list ol{columns:1}
+}
