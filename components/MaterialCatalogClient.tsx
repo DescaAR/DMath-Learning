@@ -302,7 +302,7 @@ export function MaterialCatalogClient() {
                 <h2>{title}</h2>
                 {item.topics && item.topics.length > 0 ? (
                   <div className="chapter-stat-grid catalog-count-stats">
-                    <div><strong>{item.chapterCount}</strong><span>{language === "en" ? "Learning Units" : "Unit Belajar"}</span></div>
+                    <div><strong>{item.chapterCount}</strong><span>{language === "en" ? "Chapters" : "Bab"}</span></div>
                     <div><strong>{item.sectionCount}</strong><span>{language === "en" ? "Subtopics" : "Submateri"}</span></div>
                     <div><strong>1</strong><span>{language === "en" ? "Subtopic / Page" : "Submateri / Halaman"}</span></div>
                   </div>
