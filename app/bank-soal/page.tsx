@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
-import Link from "next/link";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
+import { BankCatalogClient } from "@/components/BankCatalogClient";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Bank Soal Matematika",
@@ -17,30 +17,24 @@ export default function BankSoalPage() {
       eyebrow="Bank Soal"
       title="Bank Soal Matematika"
       lead="Kumpulan soal berdasarkan materi dan tingkat kesulitan, dilengkapi petunjuk serta pembahasan langkah demi langkah."
-      meta={["Filter","Kesulitan bertahap","Petunjuk","Solusi lengkap"]}
+      meta={["SD","SMP","SMA","Kuliah","Olimpiade"]}
       actions={[
-        {label:"Buka Bank Soal",href:"#bank-tersedia",kind:"primary"},
+        {label:"Jelajahi Bank Soal",href:"#bank-katalog",kind:"primary"},
         {label:"Latihan Soal",href:"/latihan-soal",kind:"secondary"},
       ]}
-      overviewTitle="Struktur Bank Soal"
-      overviewText="Setiap halaman soal memuat pernyataan soal, petunjuk, Diketahui, Dicari atau Dibuktikan, Ide Utama, pembahasan langkah demi langkah, dan kesimpulan."
-      roadmap={["Pilih Bab","Filter Soal","Kerjakan","Petunjuk","Pembahasan","Kesimpulan"]}
+      overviewTitle="Katalog Bank Soal"
+      overviewText=""
+      roadmap={[]}
       sections={[
-        {id:"bank-tersedia",label:"Bank Soal Tersedia"},
+        {id:"bank-katalog",label:"Katalog Bank Soal"},
       ]}
     >
-      <section id="bank-tersedia" className="book-section ird-practice-section">
+      <section id="bank-katalog" className="book-section ird-practice-section">
         <div className="section-number">01</div>
-        <span className="eyebrow">Bank Soal Tersedia</span>
-        <h2>Basis dan Dimensi</h2>
-        <article className="ird-worked-card">
-          <div className="ird-worked-head"><div className="ird-problem-number">100</div><div><span className="eyebrow">Kuliah · Aljabar Linear</span><h3>Basis dan Dimensi</h3></div></div>
-          <div className="ird-worked-prompt"><p>20 Dasar, 30 Menengah, 30 Sulit, 15 Sangat Sulit, dan 5 Challenge. Tipe soal mencakup konsep, hitungan, pembuktian, true/false, counterexample, dan construction.</p></div>
-          <div className="actions">
-            <Link className="btn primary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka 100 Soal</Link>
-            <Link className="btn secondary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Latihan Terkurasi</Link>
-          </div>
-        </article>
+        <span className="eyebrow">Katalog Bank Soal</span>
+        <h2>Bank Soal Matematika</h2>
+        <p>Gunakan pencarian dan filter untuk menemukan bank soal berdasarkan jenjang, bidang, atau tingkat kesulitan.</p>
+        <BankCatalogClient />
       </section>
 
     </RiemannHubShell>
