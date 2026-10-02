@@ -58,7 +58,7 @@ export default function MateriPage() {
                   <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
                   <div><span className="eyebrow">{subject.level}</span><h3>{subject.title}</h3></div>
                 </div>
-                <div className="chapter-stat-grid">
+                <div className="chapter-stat-grid subject-card-stats">
                   <div><strong>{subject.chapters.length}</strong><span>Unit Belajar</span></div>
                   <div><strong>{sectionCount}</strong><span>Submateri</span></div>
                   <div><strong>1</strong><span>Submateri / Halaman</span></div>
