@@ -50,11 +50,6 @@ export default function SumberBelajarLainPage() {
       title="Sumber Belajar Lain"
       lead="Kumpulan situs matematika lain yang dapat digunakan sebagai pelengkap untuk belajar, berlatih, dan memperluas referensi di luar DMath Learning."
       meta={["Problem Solving", "Olimpiade", "Matematika Perkuliahan"]}
-      stats={[
-        { value: resources.length, label: "sumber pilihan" },
-        { value: "2", label: "bahasa utama" },
-        { value: "Eksternal", label: "jenis sumber" },
-      ]}
       actions={[
         { label: "Lihat Daftar Sumber", href: "#daftar-sumber", kind: "primary" },
       ]}
