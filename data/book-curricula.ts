@@ -322,7 +322,7 @@ function buildDMathCurriculum(subject:BookSubject):BookSubject{
   return{
     ...subject,
     curriculumVersion:"DMath Curriculum v1",
-    subtitle:subject.subtitle+" Disusun ulang dalam jalur belajar DMath Learning yang independen dari urutan satu buku tertentu.",
+    subtitle:subject.subtitle,
     chapters,
   };
 }
