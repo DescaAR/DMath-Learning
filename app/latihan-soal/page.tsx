@@ -94,7 +94,7 @@ export default function LatihanSoalPage() {
       <section id="latihan-daftar" className="book-section ird-practice-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Daftar Latihan</span>
-        <h2>Latihan berdasarkan materi</h2>
+        <h2>Latihan Berdasarkan Materi</h2>
 
         <div className="ird-worked-grid home-learning-grid">
           {practiceCatalog.map((item, index) => (
