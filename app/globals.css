@@ -1034,18 +1034,23 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   padding:14px 16px;
   display:flex;
   flex-direction:column;
-  gap:2px
+  align-items:flex-start;
+  text-align:left;
+  gap:6px
 }
 .chapter-stat-grid strong{
+  order:2;
   font-size:1.32rem;
   line-height:1.1;
   color:var(--deep)
 }
 :root[data-theme="dark"] .chapter-stat-grid strong{color:#fff}
 .chapter-stat-grid span{
+  order:1;
   font-size:.72rem;
   color:var(--muted);
-  font-weight:700
+  font-weight:700;
+  text-transform:capitalize
 }
 
 .textbook-section-shell{padding-top:46px}
@@ -3251,7 +3256,6 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 
 
 /* Natural capitalization only for explanatory copy and stat-box text */
-.chapter-stat-grid span,
 .chapter-stat-grid strong,
 .ird-worked-prompt,
 .ird-paragraph,
