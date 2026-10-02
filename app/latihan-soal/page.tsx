@@ -80,8 +80,6 @@ export default function LatihanSoalPage() {
       stats={[
         { value: practiceCatalog.length, label: "materi dengan latihan" },
         { value: totalExercises, label: "latihan tersedia" },
-        { value: "Hint", label: "petunjuk" },
-        { value: "Solusi", label: "pembahasan" },
       ]}
       actions={[
         { label: "Pilih Latihan", href: "#latihan-daftar", kind: "primary" },
@@ -111,7 +109,7 @@ export default function LatihanSoalPage() {
                 </div>
               </div>
 
-              <div className="chapter-stat-grid">
+              <div className="chapter-stat-grid practice-card-stats">
                 <div>
                   <strong>{item.count}</strong>
                   <span>latihan soal</span>
