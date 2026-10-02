@@ -41,7 +41,7 @@ export function SiteHeader() {
         </Link>
 
         <nav className="desktop-nav" aria-label={language === "en" ? "Main navigation" : "Navigasi utama"}>
-          {siteConfig.nav.slice(1).map((item) => (
+          {siteConfig.nav.map((item) => (
             <Link key={item.href} href={item.href}>{t(item.label)}</Link>
           ))}
           <Link href="/search" className="nav-search" aria-label={language === "en" ? "Search all content" : "Cari seluruh konten"}>
