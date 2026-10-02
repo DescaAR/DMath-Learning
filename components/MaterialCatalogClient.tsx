@@ -8,9 +8,9 @@ import { bookSubjects } from "@/data/book-curricula";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 
-type LevelFilter = "Semua" | "SD" | "SMP" | "SMA" | "Kuliah";
-type TrackFilter = "Semua" | "Reguler" | "Olimpiade";
-type DifficultyFilter = "Semua" | "Dasar" | "Menengah" | "Lanjut" | "Sulit";
+type LevelFilter = "Semua" | "SD" | "SMP" | "SMA" | "Kuliah" | "Olimpiade";
+type TrackGroup = "Reguler" | "Olimpiade";
+type DifficultyFilter = "Semua" | "Dasar" | "Menengah" | "Lanjut";
 
 type CatalogItem = {
   id: string;
@@ -21,7 +21,7 @@ type CatalogItem = {
   levelGroup: Exclude<LevelFilter, "Semua">;
   subject: string;
   subjectEn: string;
-  trackGroup: Exclude<TrackFilter, "Semua">;
+  trackGroup: TrackGroup;
   difficulty: string;
   difficultyEn: string;
   summary: string;
@@ -32,8 +32,9 @@ type CatalogItem = {
   href: string;
 };
 
-function levelGroup(level: string): CatalogItem["levelGroup"] {
-  const value = level.toLowerCase();
+function levelGroup(level: string, track = ""): CatalogItem["levelGroup"] {
+  const value = (level + " " + track).toLowerCase();
+  if (value.includes("olimpiade") || value.includes("on-mipa") || value.includes("onmipa")) return "Olimpiade";
   if (value.includes("sd")) return "SD";
   if (value.includes("smp")) return "SMP";
   if (value.includes("sma")) return "SMA";
@@ -59,7 +60,7 @@ const baseItems: CatalogItem[] = deepMaterials
     titleEn: en.title,
     level: material.level,
     levelEn: en.level,
-    levelGroup: levelGroup(material.level),
+    levelGroup: levelGroup(material.level, material.track),
     subject: material.subject,
     subjectEn: en.subject,
     trackGroup: trackGroup(material.track, material.level),
@@ -79,7 +80,7 @@ for (const subject of bookSubjects) {
     titleEn: subject.title,
     level: subject.level,
     levelEn: "University · ON-MIPA",
-    levelGroup: "Kuliah",
+    levelGroup: levelGroup(subject.level, subject.level),
     subject: subject.title,
     subjectEn: subject.title,
     trackGroup: "Olimpiade",
@@ -111,9 +112,8 @@ baseItems.push({
   href: "/kuliah/aljabar-linear/basis-dan-dimensi",
 });
 
-const LEVELS: LevelFilter[] = ["Semua", "SD", "SMP", "SMA", "Kuliah"];
-const TRACKS: TrackFilter[] = ["Semua", "Reguler", "Olimpiade"];
-const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Lanjut", "Sulit"];
+const LEVELS: LevelFilter[] = ["Semua", "SD", "SMP", "SMA", "Kuliah", "Olimpiade"];
+const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Lanjut"];
 const SUBJECTS = [
   "Semua",
   ...Array.from(new Set(baseItems.map((item) => item.subject))).sort((a, b) =>
@@ -159,15 +159,13 @@ function matchesDifficulty(raw: string, filter: DifficultyFilter) {
   const value = raw.toLowerCase();
   if (filter === "Dasar") return value.includes("dasar") || value.includes("basic");
   if (filter === "Menengah") return value.includes("menengah") || value.includes("intermediate");
-  if (filter === "Lanjut") return value.includes("lanjut") || value.includes("advanced");
-  return value.includes("sulit") || value.includes("advanced");
+  return value.includes("lanjut") || value.includes("advanced") || value.includes("sulit") || value.includes("challenge");
 }
 
 export function MaterialCatalogClient() {
   const { language } = useLanguage();
   const [query, setQuery] = useState("");
   const [level, setLevel] = useState<LevelFilter>("Semua");
-  const [track, setTrack] = useState<TrackFilter>("Semua");
   const [subject, setSubject] = useState("Semua");
   const [difficulty, setDifficulty] = useState<DifficultyFilter>("Semua");
 
@@ -195,18 +193,16 @@ export function MaterialCatalogClient() {
       return (
         (!q || haystack.includes(q) || localizedTitle.toLowerCase().includes(q) || localizedSummary.toLowerCase().includes(q)) &&
         (level === "Semua" || item.levelGroup === level) &&
-        (track === "Semua" || item.trackGroup === track) &&
         (subject === "Semua" || item.subject === subject) &&
         matchesDifficulty(item.difficulty + " " + item.difficultyEn, difficulty) &&
         Boolean(localizedSubject)
       );
     });
-  }, [query, level, track, subject, difficulty, language]);
+  }, [query, level, subject, difficulty, language]);
 
   function clearAll() {
     setQuery("");
     setLevel("Semua");
-    setTrack("Semua");
     setSubject("Semua");
     setDifficulty("Semua");
   }
@@ -217,13 +213,8 @@ export function MaterialCatalogClient() {
     if (value === "SD") return "Elementary";
     if (value === "SMP") return "Junior High";
     if (value === "SMA") return "Senior High";
+    if (value === "Olimpiade") return "Olympiad";
     return "University";
-  }
-
-  function displayTrack(value: TrackFilter) {
-    if (language === "id") return value === "Semua" ? "Semua Jalur" : value;
-    if (value === "Semua") return "All Tracks";
-    return value === "Reguler" ? "Regular" : "Olympiad / ON-MIPA";
   }
 
   function displaySubject(value: string) {
@@ -237,8 +228,19 @@ export function MaterialCatalogClient() {
     if (value === "Semua") return "All Difficulties";
     if (value === "Dasar") return "Basic";
     if (value === "Menengah") return "Intermediate";
-    if (value === "Lanjut") return "Advanced";
-    return "Difficult";
+    return "Advanced";
+  }
+
+  function difficultyCategory(raw: string) {
+    const value = raw.toLowerCase();
+    if (value.includes("dasar") || value.includes("basic")) return language === "en" ? "Basic" : "Dasar";
+    if (value.includes("lanjut") || value.includes("advanced") || value.includes("sulit") || value.includes("challenge")) return language === "en" ? "Advanced" : "Lanjut";
+    return language === "en" ? "Intermediate" : "Menengah";
+  }
+
+  function levelCategory(item: CatalogItem) {
+    if (language === "en") return displayLevel(item.levelGroup);
+    return item.levelGroup;
   }
 
   return (
@@ -268,11 +270,10 @@ export function MaterialCatalogClient() {
 
       <div className="search-filter-board material-filter-board">
         <ChipGroup label={language === "en" ? "Level" : "Jenjang"} values={LEVELS} value={level} onChange={setLevel} render={displayLevel} />
-        <ChipGroup label={language === "en" ? "Track" : "Jalur"} values={TRACKS} value={track} onChange={setTrack} render={displayTrack} />
         <ChipGroup label={language === "en" ? "Subject / Material" : "Bidang / Materi"} values={SUBJECTS} value={subject} onChange={setSubject} render={displaySubject} />
         <ChipGroup label={language === "en" ? "Difficulty" : "Tingkat Kesulitan"} values={DIFFICULTIES} value={difficulty} onChange={setDifficulty} render={displayDifficulty} />
 
-        {(query || level !== "Semua" || track !== "Semua" || subject !== "Semua" || difficulty !== "Semua") && (
+        {(query || level !== "Semua" || subject !== "Semua" || difficulty !== "Semua") && (
           <button className="clear-chip-filters" type="button" onClick={clearAll}>
             {language === "en" ? "Clear All Filters" : "Hapus semua filter"}
           </button>
@@ -290,14 +291,15 @@ export function MaterialCatalogClient() {
           const summary = language === "en" ? item.summaryEn : item.summary;
           const levelLabel = language === "en" ? item.levelEn : item.level;
           const subjectLabel = language === "en" ? item.subjectEn : item.subject;
-          const difficultyLabel = language === "en" ? item.difficultyEn : item.difficulty;
+          const difficultyLabel = difficultyCategory(language === "en" ? item.difficultyEn : item.difficulty);
+          const levelCategoryLabel = levelCategory(item);
 
           return (
             <article className="material-row" key={item.id}>
               <div className="material-index">{String(index + 1).padStart(2, "0")}</div>
               <div className="material-main">
                 <span className="meta-line">
-                  {levelLabel} · {subjectLabel} · {difficultyLabel}
+                  {levelCategoryLabel} · {difficultyLabel}
                 </span>
                 <h2>{title}</h2>
                 {item.topics && item.topics.length > 0 ? (
@@ -318,14 +320,14 @@ export function MaterialCatalogClient() {
                   </div>
                 )}
                 <div className="material-card-tags">
-                  <span>{item.trackGroup === "Olimpiade" ? (language === "en" ? "Olympiad / ON-MIPA" : "Olimpiade / ON-MIPA") : (language === "en" ? "Regular" : "Reguler")}</span>
+                  <span>{levelCategoryLabel}</span>
                   <span>{difficultyLabel}</span>
                 </div>
-              </div>
-              <div className="material-row-actions">
-                <Link href={item.href} className="btn secondary">
-                  {language === "en" ? "Study" : "Pelajari"}
-                </Link>
+                <div className="material-row-actions">
+                  <Link href={item.href} className="btn primary">
+                    {language === "en" ? "Study" : "Pelajari"}
+                  </Link>
+                </div>
               </div>
             </article>
           );
