@@ -64,7 +64,7 @@ export default function SumberBelajarLainPage() {
       <section id="daftar-sumber" className="book-section ird-practice-section">
         <div className="section-number">01</div>
         <span className="eyebrow">Referensi Pilihan</span>
-        <h2>Daftar sumber belajar</h2>
+        <h2>Daftar Sumber Belajar</h2>
 
         <div className="ird-worked-grid">
           {resources.map((resource, index) => (
