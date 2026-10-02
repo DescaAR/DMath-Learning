@@ -3295,8 +3295,7 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .subject-material-list ol{
   margin:0;
   padding-left:22px;
-  columns:2;
-  column-gap:34px
+  columns:1
 }
 .subject-material-list li{
   break-inside:avoid;
@@ -3332,8 +3331,7 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 .catalog-material-list ol{
   margin:0;
   padding-left:20px;
-  columns:2;
-  column-gap:28px
+  columns:1
 }
 .catalog-material-list li{
   break-inside:avoid;
@@ -3343,4 +3341,16 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 }
 @media(max-width:700px){
   .catalog-material-list ol{columns:1}
+}
+
+
+.material-count-box{
+  margin:16px 0 18px;
+  padding:14px 16px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:var(--surface-2);
+  color:var(--text);
+  font-weight:750;
+  line-height:1.6
 }
