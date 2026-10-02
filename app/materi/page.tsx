@@ -58,7 +58,7 @@ export default function MateriPage() {
                   <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
                   <div><span className="eyebrow">{subject.level}</span><h3>{subject.title}</h3></div>
                 </div>
-                <div className="ird-worked-prompt"><p>{subject.subtitle}</p></div>
+                <div className="material-count-box">Terdiri atas {subject.chapters.length} bab dan {sectionCount} submateri.</div>
                 <div className="catalog-material-list">
                   <strong>Daftar Materi</strong>
                   <ol>
