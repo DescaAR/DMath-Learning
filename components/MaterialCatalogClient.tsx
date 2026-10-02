@@ -26,6 +26,7 @@ type CatalogItem = {
   difficultyEn: string;
   summary: string;
   summaryEn: string;
+  topics?: string[];
   href: string;
 };
 
@@ -73,7 +74,7 @@ for (const subject of bookSubjects) {
   baseItems.unshift({
     id: "book-" + subject.slug,
     title: subject.title,
-    titleEn: subject.title + " — Complete Digital Book",
+    titleEn: subject.title,
     level: subject.level,
     levelEn: "University · ON-MIPA",
     levelGroup: "Kuliah",
@@ -82,8 +83,9 @@ for (const subject of bookSubjects) {
     trackGroup: "Olimpiade",
     difficulty: "Menengah–Lanjut",
     difficultyEn: "Intermediate–Advanced",
-    summary: subject.subtitle + " Terdiri atas " + subject.chapters.length + " bab dan " + sectionCount + " submateri, satu submateri per halaman dengan teori, pembuktian, contoh, latihan, dan navigasi berurutan.",
-    summaryEn: subject.subtitle + " Organized into " + subject.chapters.length + " chapters and " + sectionCount + " section pages with theory, proofs, examples, exercises, and sequential navigation.",
+    summary: subject.subtitle + " Terdiri atas " + subject.chapters.length + " bab dan " + sectionCount + " submateri.",
+    summaryEn: subject.subtitle + " Consists of " + subject.chapters.length + " chapters and " + sectionCount + " subtopics.",
+    topics: subject.chapters.map((chapter) => chapter.title),
     href: "/materi/" + subject.slug,
   });
 }
@@ -295,6 +297,14 @@ export function MaterialCatalogClient() {
                 </span>
                 <h2>{title}</h2>
                 <p><RichMath>{summary}</RichMath></p>
+                {item.topics && item.topics.length > 0 && (
+                  <div className="catalog-material-list">
+                    <strong>{language === "en" ? "Material List" : "Daftar Materi"}</strong>
+                    <ol>
+                      {item.topics.map((topic) => <li key={topic}>{topic}</li>)}
+                    </ol>
+                  </div>
+                )}
                 <div className="material-card-tags">
                   <span>{item.trackGroup === "Olimpiade" ? (language === "en" ? "Olympiad / ON-MIPA" : "Olimpiade / ON-MIPA") : (language === "en" ? "Regular" : "Reguler")}</span>
                   <span>{difficultyLabel}</span>
