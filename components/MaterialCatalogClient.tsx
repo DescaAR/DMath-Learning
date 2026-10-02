@@ -83,8 +83,8 @@ for (const subject of bookSubjects) {
     trackGroup: "Olimpiade",
     difficulty: "Menengah–Lanjut",
     difficultyEn: "Intermediate–Advanced",
-    summary: subject.subtitle + " Terdiri atas " + subject.chapters.length + " bab dan " + sectionCount + " submateri.",
-    summaryEn: subject.subtitle + " Consists of " + subject.chapters.length + " chapters and " + sectionCount + " subtopics.",
+    summary: "Terdiri atas " + subject.chapters.length + " bab dan " + sectionCount + " submateri.",
+    summaryEn: "Consists of " + subject.chapters.length + " chapters and " + sectionCount + " subtopics.",
     topics: subject.chapters.map((chapter) => chapter.title),
     href: "/materi/" + subject.slug,
   });
@@ -296,7 +296,11 @@ export function MaterialCatalogClient() {
                   {levelLabel} · {subjectLabel} · {difficultyLabel}
                 </span>
                 <h2>{title}</h2>
-                <p><RichMath>{summary}</RichMath></p>
+                {item.topics && item.topics.length > 0 ? (
+                  <div className="material-count-box"><RichMath>{summary}</RichMath></div>
+                ) : (
+                  <p><RichMath>{summary}</RichMath></p>
+                )}
                 {item.topics && item.topics.length > 0 && (
                   <div className="catalog-material-list">
                     <strong>{language === "en" ? "Material List" : "Daftar Materi"}</strong>
