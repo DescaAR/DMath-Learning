@@ -59,6 +59,12 @@ export default function MateriPage() {
                   <div><span className="eyebrow">{subject.level}</span><h3>{subject.title}</h3></div>
                 </div>
                 <div className="ird-worked-prompt"><p>{subject.subtitle}</p></div>
+                <div className="catalog-material-list">
+                  <strong>Daftar Materi</strong>
+                  <ol>
+                    {subject.chapters.map((chapter)=><li key={chapter.number}>{chapter.title}</li>)}
+                  </ol>
+                </div>
                 <div className="chapter-stat-grid">
                   <div><strong>{subject.chapters.length}</strong><span>unit belajar</span></div>
                   <div><strong>{sectionCount}</strong><span>submateri</span></div>
