@@ -27,7 +27,6 @@ export default function BankSoalPage() {
       roadmap={["Pilih Bab","Filter Soal","Kerjakan","Petunjuk","Pembahasan","Kesimpulan"]}
       sections={[
         {id:"bank-tersedia",label:"Bank Soal Tersedia"},
-        {id:"bank-alur",label:"Alur Penggunaan"},
       ]}
     >
       <section id="bank-tersedia" className="book-section ird-practice-section">
@@ -44,12 +43,6 @@ export default function BankSoalPage() {
         </article>
       </section>
 
-      <section id="bank-alur" className="book-section ird-source-section">
-        <div className="section-number">02</div>
-        <span className="eyebrow">Alur Penggunaan</span>
-        <h2>Penggunaan Bank Soal</h2>
-        <div className="ird-roadmap">{["Search","Subbab","Kesulitan","Tipe soal","Random problem","Detail soal","Petunjuk","Solusi lengkap"].map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}</div>
-      </section>
     </RiemannHubShell>
   );
 }
