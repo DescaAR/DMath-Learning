@@ -126,7 +126,7 @@ export function BookSectionPage({
       breadcrumbs={[
         {label:"Materi",href:"/materi"},
         {label:subject.title,href:"/materi/"+subject.slug},
-        {label:"Unit "+chapter.number+" · "+chapter.title,href:"/materi/"+subject.slug+"#book-chapter-"+chapter.number.replaceAll(".","-")},
+        {label:"Bab "+chapter.number+" · "+chapter.title,href:"/materi/"+subject.slug+"#book-chapter-"+chapter.number.replaceAll(".","-")},
         {label:section.title},
       ]}
       eyebrow={subject.title+" · "+section.number+" · DMath Curriculum"}
@@ -174,7 +174,7 @@ export function BookSectionPage({
             <p>
               {previous
                 ?"Sebaiknya telah memahami submateri sebelumnya, “"+previous.number+" · "+previous.title+"”, terutama definisi dan hasil formal yang digunakan kembali."
-                :"Submateri ini merupakan bagian awal pada "+subject.title+" dan digunakan untuk membangun konsep yang diperlukan pada unit berikutnya."}
+                :"Submateri ini merupakan bagian awal pada "+subject.title+" dan digunakan untuk membangun konsep yang diperlukan pada bab berikutnya."}
             </p>
             {previous&&<Link className="text-link" href={"/materi/"+subject.slug+"/"+previous.slug}>← {previous.title}</Link>}
           </div>
@@ -370,7 +370,7 @@ export function BookSectionPage({
         <div>
           <span className="eyebrow">{next?"Materi Berikutnya":"Akhir Materi"}</span>
           <h2>{next?next.number+" · "+next.title:subject.title}</h2>
-          <p>{next?"Lanjutkan setelah definisi, pembuktian, contoh, visualisasi, dan latihan pada halaman ini dipahami.":"Kembali ke daftar isi untuk meninjau unit lain."}</p>
+          <p>{next?"Lanjutkan setelah definisi, pembuktian, contoh, visualisasi, dan latihan pada halaman ini dipahami.":"Kembali ke daftar isi untuk meninjau bab lain."}</p>
         </div>
         <div className="actions">
           {previous&&<Link className="btn secondary" href={"/materi/"+subject.slug+"/"+previous.slug}>← {previous.title}</Link>}
