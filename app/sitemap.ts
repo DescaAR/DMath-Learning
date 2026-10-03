@@ -5,6 +5,7 @@ import { deepMaterials } from "@/data/deep-materials";
 import { basisDimensionProblems } from "@/data/basis-dimension-problems";
 import { learningTrackPages } from "@/data/learning-track-pages";
 import { olympiadHubs } from "@/data/olympiad-hubs";
+import { isPublicAcademicLevel, isPublicLearningTrackSlug, isPublicOlympiadHubSlug } from "@/lib/public-content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -20,9 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi",
   ];
 
-  const trackRoutes = learningTrackPages.map((track) => "/belajar/" + track.slug);
-  const olympiadRoutes = olympiadHubs.map((hub) => "/olimpiade/" + hub.slug);
-  const materialRoutes = deepMaterials.map((material) => "/materi/" + material.slug);
+  const trackRoutes = learningTrackPages.filter((track) => isPublicLearningTrackSlug(track.slug)).map((track) => "/belajar/" + track.slug);
+  const olympiadRoutes = olympiadHubs.filter((hub) => isPublicOlympiadHubSlug(hub.slug)).map((hub) => "/olimpiade/" + hub.slug);
+  const materialRoutes = deepMaterials.filter((material) => isPublicAcademicLevel(material.level, material.track)).map((material) => "/materi/" + material.slug);
   const bookSubjectRoutes = bookSubjects.map((subject) => "/materi/" + subject.slug);
   const bookSectionRoutes = allBookSections.map(
     ({subject,section}) => "/materi/" + subject.slug + "/" + section.slug
