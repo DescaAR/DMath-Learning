@@ -4712,9 +4712,9 @@ const seeds:SubjectSeed[]=[
   },
   {
     "slug": "teori-ukuran-probabilitas",
-    "title": "Teori Ukuran & Probabilitas",
-    "subtitle": "Fondasi rigor untuk ukuran, integral Lebesgue, ruang Lp, probabilitas modern, limit theorem, martingale, Markov process, dan proses stokastik.",
-    "level": "Kuliah Lanjut · Analisis & Probabilitas",
+    "title": "Teori Ukuran dan Peluang",
+    "subtitle": "Fondasi rigor untuk ukuran, integral Lebesgue, ruang Lp, teori peluang modern, teorema limit, martingale, proses Markov, dan proses stokastik.",
+    "level": "Kuliah Lanjut · Analisis & Peluang",
     "source": "Krishna B. Athreya & Soumendra N. Lahiri, Measure Theory and Probability Theory",
     "sourceYear": "2006",
     "units": [
