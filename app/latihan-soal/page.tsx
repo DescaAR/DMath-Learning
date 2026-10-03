@@ -7,6 +7,7 @@ import { bookSectionContent } from "@/data/book-section-content";
 import { deepMaterials } from "@/data/deep-materials";
 import { materialPractice } from "@/data/material-practice";
 import { materialPracticeExtra } from "@/data/material-practice-extra";
+import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicMaterialSlug } from "@/lib/public-content";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Latihan Soal Matematika",
@@ -17,6 +18,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 const structuredPractice = bookSubjects
+  .filter((subject) => isPublicBookSubjectSlug(subject.slug))
   .map((subject) => {
     const exerciseCount = subject.chapters.reduce(
       (chapterTotal, chapter) =>
@@ -39,10 +41,19 @@ const structuredPractice = bookSubjects
   })
   .filter((item) => item.count > 0);
 
-const structuredSlugs = new Set<string>(bookSubjects.map((subject) => subject.slug));
+const structuredSlugs = new Set<string>(
+  bookSubjects
+    .filter((subject) => isPublicBookSubjectSlug(subject.slug))
+    .map((subject) => subject.slug)
+);
 
 const regularPractice = deepMaterials
-  .filter((material) => !structuredSlugs.has(material.slug))
+  .filter(
+    (material) =>
+      !structuredSlugs.has(material.slug) &&
+      isPublicAcademicLevel(material.level, material.track) &&
+      isPublicMaterialSlug(material.slug)
+  )
   .map((material) => {
     const count =
       (materialPractice[material.slug]?.length ?? 0) +
@@ -76,7 +87,7 @@ export default function LatihanSoalPage() {
       eyebrow="Latihan Soal"
       title="Latihan Soal Matematika"
       lead="Pilih materi yang ingin dilatih. Latihan terhubung langsung dengan materi agar konsep dapat dipelajari terlebih dahulu sebelum mengerjakan soal."
-      meta={["SD", "SMP", "SMA", "Kuliah", "Olimpiade", "ON-MIPA"]}
+      meta={["Kuliah", "ON-MIPA", "Pembuktian", "Problem Solving"]}
       stats={[
         { value: practiceCatalog.length, label: "materi dengan latihan" },
         { value: totalExercises, label: "latihan tersedia" },
