@@ -683,7 +683,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             <section id="ird-latihan-soal" className="book-section ird-practice-section">
               <div className="section-number">{String(practiceSectionNumber).padStart(2,"0")}</div>
               <span className="eyebrow">Latihan Soal dan Solusi</span>
-              <h2>13 latihan soal Integral Riemann dan Darboux</h2>
+              <h2>{integralRiemannWorkedExercises.length} latihan soal Integral Riemann dan Darboux</h2>
               <p>Soal ditulis dengan kalimat perintah aktif. Buka solusi setelah mencoba menyelesaikan soal secara mandiri. Visualisasi disediakan pada soal yang paling terbantu oleh interpretasi geometris.</p>
               <div className="ird-worked-grid">
                 {integralRiemannWorkedExercises.map((exercise,index)=>(
