@@ -77,7 +77,7 @@ const DIGITAL_BOOK_SEARCH_INDEX: SearchEntry[] = [
     keywords:[book.title,book.subtitle,book.level,...book.chapters.map((unit)=>unit.title)].join(" "),
     titleEn:book.title,
     descriptionEn:book.subtitle,
-    metaEn:(book.curriculumVersion??"DMath Curriculum")+" · "+book.chapters.length+" learning units",
+    metaEn:(book.curriculumVersion??"DMath Curriculum")+" · "+book.chapters.length+" chapters",
     keywordsEn:[book.title,book.subtitle,book.level,...book.chapters.map((unit)=>unit.title)].join(" "),
   })),
   ...allBookSections.map(({subject:book,chapter,section}):SearchEntry=>({
