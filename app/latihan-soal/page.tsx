@@ -18,7 +18,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 const structuredPractice = bookSubjects
-  .filter((subject) => isPublicBookSubjectSlug(subject.slug))
+  .filter((subject) => isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level, subject.level))
   .map((subject) => {
     const exerciseCount = subject.chapters.reduce(
       (chapterTotal, chapter) =>
@@ -43,7 +43,7 @@ const structuredPractice = bookSubjects
 
 const structuredSlugs = new Set<string>(
   bookSubjects
-    .filter((subject) => isPublicBookSubjectSlug(subject.slug))
+    .filter((subject) => isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level, subject.level))
     .map((subject) => subject.slug)
 );
 
