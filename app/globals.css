@@ -1054,8 +1054,8 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 
 .textbook-section-shell{padding-top:46px}
 .textbook-layout{
-  grid-template-columns:250px minmax(0,1fr);
-  gap:48px;
+  grid-template-columns:minmax(280px,300px) minmax(0,1fr);
+  gap:42px;
   align-items:start
 }
 .textbook-toc{
@@ -1068,19 +1068,28 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 }
 .textbook-toc>a{
   display:grid;
-  grid-template-columns:27px 1fr;
-  gap:7px;
+  grid-template-columns:30px minmax(0,1fr);
+  gap:8px;
   align-items:start;
-  padding:8px 9px;
+  min-width:0;
+  padding:9px 10px;
   border-radius:8px;
-  font-size:.78rem;
-  line-height:1.35
+  font-size:.79rem;
+  line-height:1.4;
+  word-break:normal;
+  overflow-wrap:normal
 }
-.textbook-toc>a span{
+.textbook-toc>a span:first-child{
   font-size:.64rem;
   color:var(--muted);
   font-weight:850;
-  letter-spacing:.06em
+  letter-spacing:.06em;
+  white-space:nowrap
+}
+.textbook-toc>a span:last-child{
+  min-width:0;
+  word-break:normal;
+  overflow-wrap:normal
 }
 .textbook-toc>a.active{
   background:rgba(21,101,216,.08);
