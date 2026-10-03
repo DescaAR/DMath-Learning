@@ -21,6 +21,11 @@ function SourceText({ text }: { text: string }) {
 
 function imperativeProblemText(text: string) {
   return text
+    .replace(/^\s*Mengacu pada Capaian Pembelajaran Mata Kuliah \(CPMK\) ke-\d+\.?\s*/gim, "")
+    .replace(/^\s*Mahasiswa mampu[^\n.]*\.?\s*/gim, "")
+    .replace(/^\s*CPMK\s*ke-\d+\.?\s*/gim, "")
+    .replace(/^\s*Mahasiswa diharapkan mampu[^\n.]*\.?\s*/gim, "")
+    .replace(/^\s*\n+/g, "")
     .replace(/\bDibuktikan bahwa\b/g, "Buktikan bahwa")
     .replace(/\bDibuktikan\b/g, "Buktikan")
     .replace(/\bDitentukan\b/g, "Tentukan")
