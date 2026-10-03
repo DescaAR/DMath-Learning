@@ -16,6 +16,8 @@ export const metadata: Metadata = createPageMetadata({
 
 const sections = [
   ["overview", "Pengantar"],
+  ["prasyarat", "Prasyarat & Tujuan"],
+  ["notasi", "Notasi & Konsep"],
   ["review", "Review Ruang Vektor"],
   ["kombinasi", "Kombinasi Linear"],
   ["span", "Span"],
@@ -28,7 +30,9 @@ const sections = [
   ["baris-kolom", "Ruang Baris & Kolom"],
   ["rank-nullity", "Rank–Nullity"],
   ["contoh", "Contoh Terbahas"],
-  ["ringkasan", "Ringkasan"],
+  ["visualisasi", "Visualisasi & Eksplorasi"],
+  ["ringkasan", "Ringkasan Definisi & Teorema"],
+  ["latihan", "Latihan Soal"],
   ["referensi", "Referensi"],
 ] as const;
 
@@ -112,7 +116,7 @@ export default function BasisDimensionPage() {
           <aside className="toc material-toc textbook-toc ird-toc">
             <strong>Isi Bab</strong>
             {sections.map(([id, label], index) => (
-              <a href={"#" + id} key={id}>{String(index + 1).padStart(2, "0")}. {label}</a>
+              <a href={"#" + id} key={id}><span>{String(index + 1).padStart(2, "0")}</span><span>{label}</span></a>
             ))}
           </aside>
 
@@ -126,41 +130,65 @@ export default function BasisDimensionPage() {
               <P>{String.raw`Gagasan basis menggabungkan dua ide: himpunan tersebut harus cukup besar untuk merentang ruang,
                 tetapi tidak boleh memiliki vektor yang redundan.
                 Dimensi kemudian mengukur banyaknya vektor yang diperlukan dalam sebuah basis.`}</P>
-              <MathVisualization kind="basis" />
-              <div style={{marginTop:24}}><InteractiveMathLab kind="basis" /></div>
+            </section>
 
-              <div className="content-box prerequisite-box">
-                <strong>Prasyarat</strong>
-                <ul>
-                  <li>Operasi pada vektor dan skalar.</li>
-                  <li>Ruang vektor dan subruang.</li>
-                  <li>Sistem persamaan linear dan eliminasi Gauss.</li>
-                </ul>
-              </div>
-
-              <div className="learning-objectives">
-                <span className="eyebrow">Tujuan Pembelajaran</span>
-                <div className="objective-grid">
-                  {[
-                    "Menguji apakah suatu vektor merupakan kombinasi linear.",
-                    "Menentukan span dan membangun basis dari spanning set.",
-                    "Menguji kebebasan linear secara konseptual maupun komputasional.",
-                    "Menentukan koordinat relatif terhadap basis.",
-                    "Menggunakan dimensi untuk membatasi ukuran himpunan bebas linear.",
-                    "Membangun basis subruang, row space, dan column space.",
-                    "Membuktikan basis extension dan rank–nullity.",
-                  ].map((x, i) => (
-                    <div className="objective-card" key={x}>
-                      <span>{i + 1}</span>
-                      <p>{x}</p>
-                    </div>
-                  ))}
+            <section className="book-section ird-source-section" id="prasyarat">
+              <span className="eyebrow">02 · Prasyarat & Tujuan</span>
+              <h2>Prasyarat dan Tujuan Pembelajaran</h2>
+              <div className="solution-overview-grid">
+                <div className="content-box prerequisite-box">
+                  <strong>Prasyarat</strong>
+                  <ul>
+                    <li>Operasi pada vektor dan skalar.</li>
+                    <li>Ruang vektor dan subruang.</li>
+                    <li>Sistem persamaan linear dan eliminasi Gauss.</li>
+                  </ul>
+                </div>
+                <div className="content-box">
+                  <strong>Tujuan Pembelajaran</strong>
+                  <ul>
+                    <li>Menguji apakah suatu vektor merupakan kombinasi linear.</li>
+                    <li>Menentukan span dan membangun basis dari himpunan perentang.</li>
+                    <li>Menguji kebebasan linear secara konseptual maupun komputasional.</li>
+                    <li>Menentukan koordinat relatif terhadap suatu basis.</li>
+                    <li>Menggunakan dimensi untuk membatasi ukuran himpunan bebas linear.</li>
+                    <li>Membangun basis subruang, ruang baris, dan ruang kolom.</li>
+                    <li>Menggunakan Teorema Ekstensi Basis dan Teorema Rank–Nullity.</li>
+                  </ul>
                 </div>
               </div>
             </section>
 
+            <section className="book-section ird-source-section" id="notasi">
+              <span className="eyebrow">03 · Notasi & Konsep</span>
+              <h2>Notasi dan Konsep Utama</h2>
+              <div className="notation-table">
+                {[
+                  [String.raw`$V$`, "ruang vektor"],
+                  [String.raw`$\\mathbb F$`, "lapangan skalar"],
+                  [String.raw`$\\operatorname{span}(S)$`, "subruang yang direntang oleh himpunan $S$"],
+                  [String.raw`$[v]_B$`, "vektor koordinat $v$ relatif terhadap basis berurutan $B$"],
+                  [String.raw`$\\dim V$`, "dimensi ruang vektor $V$"],
+                  [String.raw`$\\ker T$`, "kernel transformasi linear $T$"],
+                  [String.raw`$\\operatorname{im}T$`, "citra transformasi linear $T$"],
+                  [String.raw`$\\operatorname{rank}(T)$`, "dimensi $\\operatorname{im}T$"],
+                  [String.raw`$\\operatorname{nullity}(T)$`, "dimensi $\\ker T$"],
+                ].map(([symbol,meaning])=>(
+                  <div className="notation-row" key={symbol}>
+                    <div className="notation-symbol"><RichMath>{symbol}</RichMath></div>
+                    <div className="notation-meaning"><RichMath>{meaning}</RichMath></div>
+                  </div>
+                ))}
+              </div>
+              <div className="ird-roadmap" style={{marginTop:28}}>
+                {["Kombinasi linear","Span","Bebas linear","Basis","Koordinat","Dimensi","Basis subruang","Rank–Nullity"].map((item,index)=>(
+                  <div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>
+                ))}
+              </div>
+            </section>
+
             <section className="book-section ird-source-section" id="review">
-              <span className="eyebrow">01 · Review Ruang Vektor</span>
+              <span className="eyebrow">04 · Review Ruang Vektor</span>
               <h2>Ruang Vektor dan Subruang</h2>
               <P>{String.raw`Sebuah ruang vektor $V$ atas lapangan $\mathbb F$ adalah himpunan yang dilengkapi
                 penjumlahan vektor dan perkalian skalar, serta memenuhi aksioma linearitas.
@@ -189,7 +217,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="kombinasi">
-              <span className="eyebrow">02 · Kombinasi Linear</span>
+              <span className="eyebrow">05 · Kombinasi Linear</span>
               <h2>Kombinasi Linear</h2>
               <div className="definition-box numbered-box">
                 <div className="box-kicker">Definisi</div>
@@ -214,7 +242,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="span">
-              <span className="eyebrow">03 · Span</span>
+              <span className="eyebrow">06 · Span</span>
               <h2>Span</h2>
               <div className="definition-box">
                 <strong>Definisi Span</strong>
@@ -246,7 +274,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="bebas">
-              <span className="eyebrow">04 · Bebas Linear</span>
+              <span className="eyebrow">07 · Bebas Linear</span>
               <h2>Bebas Linear</h2>
               <div className="definition-box">
                 <strong>Definisi Bebas Linear</strong>
@@ -285,7 +313,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="basis">
-              <span className="eyebrow">05 · Basis</span>
+              <span className="eyebrow">08 · Basis</span>
               <h2>Basis</h2>
               <div className="definition-box">
                 <strong>Definisi Basis</strong>
@@ -323,7 +351,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="koordinat">
-              <span className="eyebrow">06 · Koordinat</span>
+              <span className="eyebrow">09 · Koordinat</span>
               <h2>Koordinat terhadap Basis</h2>
               <P>{String.raw`Untuk basis berurutan $B=(v_1,\ldots,v_n)$, koordinat vektor
                 $v=a_1v_1+\cdots+a_nv_n$ didefinisikan sebagai
@@ -346,7 +374,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="dimensi">
-              <span className="eyebrow">07 · Dimensi</span>
+              <span className="eyebrow">10 · Dimensi</span>
               <h2>Dimensi</h2>
               <div className="definition-box">
                 <strong>Definisi Dimensi</strong>
@@ -398,7 +426,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="subruang">
-              <span className="eyebrow">08 · Basis Subruang</span>
+              <span className="eyebrow">11 · Basis Subruang</span>
               <h2>Basis dan Dimensi Subruang</h2>
 
               <Theorem
@@ -429,7 +457,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="ekstensi">
-              <span className="eyebrow">09 · Ekstensi Basis</span>
+              <span className="eyebrow">12 · Ekstensi Basis</span>
               <h2>Ekstensi Basis</h2>
 
               <Theorem
@@ -463,7 +491,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="baris-kolom">
-              <span className="eyebrow">10 · Ruang Baris & Kolom</span>
+              <span className="eyebrow">13 · Ruang Baris & Kolom</span>
               <h2>Ruang Baris dan Ruang Kolom</h2>
               <P>{String.raw`Untuk matriks $A\in\mathbb F^{m\times n}$, ruang baris adalah span semua baris $A$,
                 sedangkan ruang kolom adalah span semua kolom $A$.`}</P>
@@ -490,7 +518,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="rank-nullity">
-              <span className="eyebrow">11 · Rank–Nullity</span>
+              <span className="eyebrow">14 · Rank–Nullity</span>
               <h2>Teorema Rank–Nullity</h2>
               <div className="definition-box">
                 <strong>Rank dan Nullity</strong>
@@ -525,7 +553,7 @@ export default function BasisDimensionPage() {
             </section>
 
             <section className="book-section ird-source-section" id="contoh">
-              <span className="eyebrow">12 · Contoh Terbahas</span>
+              <span className="eyebrow">15 · Contoh Terbahas</span>
               <h2>Contoh Terbahas</h2>
 
               <div className="example-stack">
@@ -580,39 +608,77 @@ export default function BasisDimensionPage() {
               </div>
             </section>
 
+            <section className="book-section ird-source-section" id="visualisasi">
+              <span className="eyebrow">16 · Visualisasi & Eksplorasi</span>
+              <h2>Visualisasi dan Eksplorasi Interaktif</h2>
+              <p className="ird-paragraph">
+                Visualisasi digunakan untuk melihat perubahan basis, koordinat, span, dan hubungan antarruang secara geometris. Panel interaktif memungkinkan parameter diubah dan akibatnya diamati langsung.
+              </p>
+              <div className="ird-visual-stack">
+                <MathVisualization kind="basis" />
+                <InteractiveMathLab kind="basis" />
+              </div>
+            </section>
+
             <section className="book-section ird-source-section" id="ringkasan">
-              <span className="eyebrow">13 · Ringkasan</span>
-              <h2>Ringkasan Hasil Utama</h2>
-              <div className="summary-grid">
-                {[
-                  ["Span", "$\\operatorname{span}(S)$ adalah subruang terkecil yang memuat $S$."],
-                  ["Bebas Linear", "Tidak ada vektor yang dapat dibangun dari vektor lainnya."],
-                  ["Basis", "Bebas linear + merentang."],
-                  ["Koordinat", "Representasi relatif terhadap basis bersifat unik."],
-                  ["Dimensi", "Semua basis hingga mempunyai jumlah anggota yang sama."],
-                  ["Ekstensi Basis", "Himpunan bebas linear dapat diperluas menjadi basis."],
-                  ["Subruang", "$W\\subseteq V\\Rightarrow \\dim W\\le\\dim V$."],
-                  ["Rank–Nullity", "$\\dim V=\\operatorname{rank}T+\\operatorname{nullity}T$."],
-                ].map(([title, body]) => (
-                  <div className="summary-card" key={title}>
-                    <strong>{title}</strong>
-                    <P>{body}</P>
-                  </div>
-                ))}
+              <span className="eyebrow">17 · Ringkasan</span>
+              <h2>Ringkasan Definisi dan Teorema</h2>
+              <p className="ird-paragraph">Gunakan bagian ini sebagai tinjauan cepat sebelum mengerjakan latihan soal.</p>
+
+              <div className="ird-summary-group">
+                <div className="ird-summary-heading">
+                  <div><span className="eyebrow">Definisi</span><h3>Definisi penting</h3></div>
+                </div>
+                <div className="ird-summary-grid">
+                  {[
+                    ["Kombinasi Linear", String.raw`Vektor $v$ merupakan kombinasi linear dari $v_1,\\ldots,v_k$ jika $v=a_1v_1+\\cdots+a_kv_k$ untuk skalar yang sesuai.`],
+                    ["Span", String.raw`$\\operatorname{span}(S)$ adalah himpunan seluruh kombinasi linear hingga dari anggota $S$.`],
+                    ["Bebas Linear", String.raw`$v_1,\\ldots,v_k$ bebas linear jika $a_1v_1+\\cdots+a_kv_k=0$ hanya mempunyai solusi trivial.`],
+                    ["Basis", String.raw`Basis adalah himpunan yang bebas linear dan merentang seluruh ruang.`],
+                    ["Koordinat", String.raw`$[v]_B$ adalah daftar koefisien representasi unik $v$ relatif terhadap basis berurutan $B$.`],
+                    ["Dimensi", String.raw`$\\dim V$ adalah banyaknya anggota pada suatu basis hingga dari $V$.`],
+                  ].map(([title,body],index)=>(
+                    <details className="ird-summary-card ird-summary-definition" key={title}>
+                      <summary><span>Definisi {index+1}</span><strong>{title}</strong></summary>
+                      <div className="ird-summary-body"><RichMath>{body}</RichMath></div>
+                    </details>
+                  ))}
+                </div>
               </div>
 
+              <div className="ird-summary-group">
+                <div className="ird-summary-heading">
+                  <div><span className="eyebrow">Teorema</span><h3>{theorems.length} teorema penting</h3></div>
+                </div>
+                <div className="ird-summary-grid">
+                  {theorems.map((item,index)=>(
+                    <details className="ird-summary-card ird-summary-theorem" key={item.n}>
+                      <summary><span>Teorema {index+1}</span><strong>{item.title}</strong></summary>
+                      <div className="ird-summary-body"><RichMath>{item.statement}</RichMath></div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <section className="book-section ird-practice-section" id="latihan">
+              <span className="eyebrow">18 · Latihan Soal</span>
+              <h2>Latihan Soal</h2>
+              <p className="ird-paragraph">
+                Setelah meninjau definisi dan teorema, lanjutkan ke latihan terkurasi atau bank soal untuk menguji pemahaman konsep dan kemampuan pembuktian.
+              </p>
+              <div className="chapter-stat-grid practice-card-stats">
+                <div><strong>Latihan</strong><span>terkurasi</span></div>
+                <div><strong>100</strong><span>bank soal</span></div>
+              </div>
               <div className="actions">
-                <Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">
-                  Kerjakan Latihan Terkurasi
-                </Link>
-                <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">
-                  Buka 100 Bank Soal
-                </Link>
+                <Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Kerjakan Latihan Terkurasi</Link>
+                <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Buka 100 Bank Soal</Link>
               </div>
             </section>
 
             <section className="book-section ird-source-section" id="referensi">
-              <span className="eyebrow">14 · Referensi</span>
+              <span className="eyebrow">19 · Referensi</span>
               <h2>Referensi</h2>
               <ol className="reference-list">
                 <li>Sheldon Axler, <em>Linear Algebra Done Right</em>, 4th ed., Springer, 2024.</li>
