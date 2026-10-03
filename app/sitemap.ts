@@ -7,6 +7,8 @@ import { learningTrackPages } from "@/data/learning-track-pages";
 import { olympiadHubs } from "@/data/olympiad-hubs";
 import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicLearningTrackSlug, isPublicOlympiadHubSlug, isPublicMaterialSlug } from "@/lib/public-content";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",

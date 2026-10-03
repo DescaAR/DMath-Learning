@@ -150,7 +150,7 @@ const specs: Record<string, MeasureProbabilityLessonSpec> = {
     ],
     results:[
       {kind:"theorem",title:"Limit Titik Demi Titik Fungsi Terukur Tetap Terukur",statement:"Jika $f_n:X\\to\\overline{\\mathbb R}$ terukur dan $f_n(x)\\to f(x)$ untuk setiap $x$, maka $f$ terukur.",proof:[
-        "Untuk setiap $a\\in\\mathbb R$, identitas $\\{f>a\\}=\\bigcup_{r\\in\\mathbb Q,\,r>a}\\bigcup_{N=1}^\\infty\\bigcap_{n\\ge N}\\{f_n>r\\}$ dapat digunakan melalui karakterisasi limit.",
+        "Untuk setiap $a\\in\\mathbb R$, identitas $\\{f>a\\}=\\bigcup_{r\\in\\mathbb Q,\\,r>a}\\bigcup_{N=1}^\\infty\\bigcap_{n\\ge N}\\{f_n>r\\}$ dapat digunakan melalui karakterisasi limit.",
         "Setiap himpunan $\\{f_n>r\\}$ terukur, dan sigma-algebra tertutup terhadap gabungan serta irisan terhitung.",
         "Akibatnya $\\{f>a\\}$ terukur untuk setiap $a$. Karakterisasi level set memberi keterukuran $f$."
       ]}
@@ -205,7 +205,7 @@ const specs: Record<string, MeasureProbabilityLessonSpec> = {
     title:"Integral Lebesgue",
     focus:"Integral Lebesgue membangun integral fungsi nonnegatif melalui aproksimasi dari bawah oleh fungsi sederhana, lalu memperluasnya ke fungsi bertanda menggunakan bagian positif dan negatif.",
     definitions:[
-      {title:"Integral Fungsi Nonnegatif",statement:"Untuk fungsi terukur $f\\ge0$, didefinisikan $\\int f\\,d\\mu=\\sup\\{\\int s\\,d\\mu:0\\le s\\le f,\ s\\text{ sederhana}\\}$."},
+      {title:"Integral Fungsi Nonnegatif",statement:"Untuk fungsi terukur $f\\ge0$, didefinisikan $\\int f\\,d\\mu=\\sup\\{\\int s\\,d\\mu:0\\le s\\le f,\\ s\\text{ sederhana}\\}$."},
       {title:"Fungsi Terintegralkan Lebesgue",statement:"Untuk fungsi real terukur, tulis $f=f^+-f^-$ dengan $f^+=\\max(f,0)$ dan $f^-=\\max(-f,0)$. Fungsi disebut integrabel jika $\\int|f|d\\mu<\\infty$, lalu $\\int f=\\int f^+-\\int f^-$."}
     ],
     results:[
