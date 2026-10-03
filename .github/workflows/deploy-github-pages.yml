@@ -1,5 +1,7 @@
 name: Deploy DMath Learning to GitHub Pages
 
+# Public Pages deployment
+
 on:
   push:
     branches:
