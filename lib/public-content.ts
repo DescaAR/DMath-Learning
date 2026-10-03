@@ -1,12 +1,20 @@
 /**
  * Temporary public-visibility rules.
  *
- * School material remains in the repository and keeps its routes/data.
- * These helpers only control what is surfaced in public navigation,
- * catalogs, search, and the sitemap.
+ * School material remains in the repository, but its public routes are
+ * temporarily disabled. These helpers control public navigation, catalogs,
+ * search, sitemap entries, and route visibility.
  */
 export function isPublicAcademicLevel(level: string, track = "") {
   const value = (level + " " + track).toLowerCase();
+
+  if (
+    value.includes("sd") ||
+    value.includes("smp") ||
+    value.includes("sma")
+  ) {
+    return false;
+  }
 
   if (
     value.includes("on-mipa") ||
@@ -16,14 +24,6 @@ export function isPublicAcademicLevel(level: string, track = "") {
     value.includes("universitas")
   ) {
     return true;
-  }
-
-  if (
-    value.includes("sd") ||
-    value.includes("smp") ||
-    value.includes("sma")
-  ) {
-    return false;
   }
 
   if (value.includes("olimpiade")) return false;
