@@ -7,11 +7,12 @@ import { IntegralRiemannDarbouxPage } from "@/components/IntegralRiemannDarbouxP
 import { bookSubjectMap, bookSubjects } from "@/data/book-curricula";
 import { deepMaterialMap, deepMaterials } from "@/data/deep-materials";
 import { breadcrumbJsonLd, createPageMetadata, learningResourceJsonLd } from "@/lib/seo";
+import { isPublicBookSubjectSlug, isPublicMaterialSlug } from "@/lib/public-content";
 
 export function generateStaticParams() {
   const slugs=new Set([
-    ...deepMaterials.map((material)=>material.slug),
-    ...bookSubjects.map((subject)=>subject.slug),
+    ...deepMaterials.filter((material)=>isPublicMaterialSlug(material.slug)).map((material)=>material.slug),
+    ...bookSubjects.filter((subject)=>isPublicBookSubjectSlug(subject.slug)).map((subject)=>subject.slug),
   ]);
   return Array.from(slugs).map((slug)=>({slug}));
 }
@@ -24,6 +25,8 @@ export async function generateMetadata({
   const { slug } = await params;
   const subject=bookSubjectMap[slug];
 
+  if(subject && !isPublicBookSubjectSlug(subject.slug)) return {};
+
   if(subject){
     const sectionCount=subject.chapters.reduce((sum,chapter)=>sum+chapter.sections.length,0);
     return createPageMetadata({
@@ -35,7 +38,7 @@ export async function generateMetadata({
   }
 
   const material = deepMaterialMap[slug];
-  if (!material) return {};
+  if (!material || !isPublicMaterialSlug(material.slug)) return {};
 
   return createPageMetadata({
     title: material.title,
@@ -54,6 +57,8 @@ export default async function MaterialDetailPage({
   const { slug } = await params;
   const subject=bookSubjectMap[slug];
 
+  if(subject && !isPublicBookSubjectSlug(subject.slug)) notFound();
+
   if(subject){
     return(
       <>
@@ -70,7 +75,7 @@ export default async function MaterialDetailPage({
   }
 
   const material = deepMaterialMap[slug];
-  if (!material) notFound();
+  if (!material || !isPublicMaterialSlug(material.slug)) notFound();
 
   const content =
     material.slug === "integral-riemann" ? (
