@@ -4,7 +4,7 @@ import { MaterialCatalogClient } from "@/components/MaterialCatalogClient";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { bookSubjects } from "@/data/book-curricula";
 import { deepMaterials } from "@/data/deep-materials";
-import { isPublicAcademicLevel } from "@/lib/public-content";
+import { isPublicAcademicLevel, isPublicMaterialSlug } from "@/lib/public-content";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Materi Matematika",
@@ -15,7 +15,7 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function MateriPage() {
   const bookSectionCount=bookSubjects.reduce((sum,subject)=>sum+subject.chapters.reduce((n,chapter)=>n+chapter.sections.length,0),0);
-  const visibleDeepMaterials=deepMaterials.filter((material)=>isPublicAcademicLevel(material.level,material.track));
+  const visibleDeepMaterials=deepMaterials.filter((material)=>isPublicAcademicLevel(material.level,material.track) && isPublicMaterialSlug(material.slug));
 
   return (
     <RiemannHubShell
