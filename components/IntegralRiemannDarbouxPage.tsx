@@ -628,8 +628,8 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               const id="ird-section-"+(index+1);
               return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(index+1).padStart(2,"0")}</span>{section.title}</a>;
             })}
-            <a href="#ird-latihan-artikel" className={active==="ird-latihan-artikel"?"active":""}><span>{String(articlePracticeSectionNumber).padStart(2,"0")}</span>15 Latihan Artikel</a>
-            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span>Latihan DMath</a>
+            <a href="#ird-latihan-artikel" className={active==="ird-latihan-artikel"?"active":""}><span>{String(articlePracticeSectionNumber).padStart(2,"0")}</span>15 Latihan Tambahan</a>
+            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span>16 Latihan Soal</a>
             <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>{String(extraPracticeSectionNumber).padStart(2,"0")}</span>30 Latihan Tambahan</a>
           </aside>
 
@@ -657,16 +657,16 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
 
             <section id="ird-latihan-artikel" className="book-section ird-practice-section">
               <div className="section-number">{String(articlePracticeSectionNumber).padStart(2,"0")}</div>
-              <span className="eyebrow">Latihan Soal dan Solusi · Artikel</span>
-              <h2>{integralRiemannArticleExercises.length} latihan dari artikel Integral Riemann dan Darboux</h2>
-              <p>Latihan berikut berasal dari naskah yang diberikan dan dilengkapi solusi terstruktur. Notasi diseragamkan dengan materi DMath Learning.</p>
+              <span className="eyebrow">Latihan Soal dan Solusi</span>
+              <h2>{integralRiemannArticleExercises.length} latihan tambahan Integral Riemann dan Darboux</h2>
+              <p>Latihan berikut memperkuat pemahaman konsep, pembuktian, dan perhitungan Integral Riemann dan Darboux. Setiap soal dilengkapi solusi terstruktur.</p>
               <div className="ird-worked-grid">
                 {integralRiemannArticleExercises.map((exercise,index)=>(
                   <article className="ird-worked-card" key={exercise.title ?? index}>
                     <div className="ird-worked-head">
                       <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
                       <div>
-                        <span className="eyebrow">Latihan Artikel</span>
+                        <span className="eyebrow">Latihan Soal</span>
                         <h3>{exercise.title ?? "Soal "+(index+1)}</h3>
                       </div>
                     </div>
