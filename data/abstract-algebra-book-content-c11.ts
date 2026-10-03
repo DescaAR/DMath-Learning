@@ -133,7 +133,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Buktikan $x^4+5x^3+10x^2+15x+5$ tak tereduksi di $\\mathbb Q[x]$.",
         "hint": "Gunakan Eisenstein dengan $p=5$.",
-        "answer": "Semua koefisien selain utama habis dibagi 5, koefisien utama tidak, dan 25 tidak membagi konstanta 5. Jadi polinom tak tereduksi."
+        "answer": "Semua koefisien selain utama habis dibagi 5, koefisien utama tidak, dan 25 tidak membagi konstanta 5. Dengan demikian, polinom tak tereduksi."
       },
       {
         "prompt": "Gunakan substitusi untuk membuktikan $x^4+1$ tak tereduksi di $\\mathbb Q[x]$.",
