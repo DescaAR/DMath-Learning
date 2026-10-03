@@ -10,9 +10,8 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 const programs=[
-  "Bimbingan Matematika SD","Bimbingan Matematika SMP","Bimbingan Matematika SMA",
-  "Bimbingan Olimpiade SD","Bimbingan Olimpiade SMP","Bimbingan Olimpiade SMA",
-  "Bimbingan Matematika Kuliah","Bimbingan Olimpiade Mahasiswa / ON-MIPA",
+  "Bimbingan Matematika Kuliah",
+  "Bimbingan ON-MIPA",
 ];
 
 export default function BimbinganPage() {
@@ -22,7 +21,7 @@ export default function BimbinganPage() {
       eyebrow="Bimbingan Matematika"
       title="Bimbingan Matematika"
       lead="Program bimbingan menekankan konsep, penalaran, latihan bertahap, identifikasi kesalahan, dan problem solving sesuai tingkat peserta."
-      meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
+      meta={["Kuliah","ON-MIPA"]}
       stats={[
         {value:programs.length,label:"program"},
         {value:"online",label:"format"},
