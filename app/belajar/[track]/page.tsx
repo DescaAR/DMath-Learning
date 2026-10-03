@@ -3,9 +3,10 @@ import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { LearningTrackPage } from "@/components/LearningTrackPage";
 import { learningTrackPageMap, learningTrackPages } from "@/data/learning-track-pages";
+import { isPublicLearningTrackSlug } from "@/lib/public-content";
 
 export function generateStaticParams() {
-  return learningTrackPages.map((track) => ({ track: track.slug }));
+  return learningTrackPages.filter((track) => isPublicLearningTrackSlug(track.slug)).map((track) => ({ track: track.slug }));
 }
 
 export async function generateMetadata({
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { track } = await params;
   const data = learningTrackPageMap[track];
-  if (!data) return {};
+  if (!data || !isPublicLearningTrackSlug(track)) return {};
 
   return createPageMetadata({
     title: data.title.id,
@@ -32,7 +33,7 @@ export default async function TrackDetailPage({
 }) {
   const { track } = await params;
   const data = learningTrackPageMap[track];
-  if (!data) notFound();
+  if (!data || !isPublicLearningTrackSlug(track)) notFound();
 
   return <LearningTrackPage track={data} />;
 }
