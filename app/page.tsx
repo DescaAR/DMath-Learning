@@ -24,7 +24,6 @@ export default function Home() {
 
   return (
     <RiemannHubShell
-      className="home-page"
       eyebrow="DMath Learning · Think Deeper, Solve Better."
       title="DMath Learning"
       lead=""
