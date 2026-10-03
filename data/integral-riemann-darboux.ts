@@ -365,16 +365,16 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "proof": "Diketahui fungsi $f:[a,b]\\to\\mathbb{R}$ terbatas.\nDibuktikan bahwa fungsi $f$ terintegralkan Darboux jika dan hanya jika untuk setiap $\\varepsilon>0$ terdapat partisi $P$ yang memenuhi\n\\[\nU(f,P)-L(f,P)<\\varepsilon.\n\\]\nPembuktian dilakukan dalam dua arah.\n\\,\n($\\Rightarrow$)\nDiketahui fungsi $f$ terintegralkan Darboux.\nDibuktikan bahwa untuk setiap $\\varepsilon>0$ terdapat partisi $P$ dengan $U(f,P)-L(f,P)<\\varepsilon$.\nDituliskan\n\\[\nI=\\underline{\\int_a^b}f=\\overline{\\int_a^b}f.\n\\]\nDiambil sebarang $\\varepsilon>0$. Karena $I$ merupakan supremum dari seluruh jumlah bawah, terdapat partisi $P_1$ sehingga\n\\[\nI-\\frac{\\varepsilon}{2}<L(f,P_1)\\le I.\n\\]\nKarena $I$ merupakan infimum dari seluruh jumlah atas, terdapat partisi $P_2$ sehingga\n\\[\nI\\le U(f,P_2)<I+\\frac{\\varepsilon}{2}.\n\\]\nDibentuk partisi penghalus bersama\n\\[\nR=P_1\\cup P_2.\n\\]\nBerdasarkan lemma yang telah dibuktikan dan lemma yang telah dibuktikan, berlaku\n\\[\nL(f,P_1)\\le L(f,R),\n\\qquad\nU(f,R)\\le U(f,P_2).\n\\]\nDengan demikian,\n\\[\\begin{aligned}\n0\\le U(f,R)-L(f,R)\\\\\n&\\le U(f,P_2)-L(f,P_1)\\\\\n&<\\left(I+\\frac{\\varepsilon}{2}\\right)-\\left(I-\\frac{\\varepsilon}{2}\\right)\\\\\n&=\\varepsilon.\n\\end{aligned}\\]\nDengan demikian, terdapat partisi $R$ yang memenuhi $U(f,R)-L(f,R)<\\varepsilon$.\n\\,\n($\\Leftarrow$)\nDiketahui bahwa untuk setiap $\\varepsilon>0$ terdapat partisi $P$ dengan $U(f,P)-L(f,P)<\\varepsilon$.\nDibuktikan bahwa fungsi $f$ terintegralkan Darboux.\nDiambil sebarang $\\varepsilon>0$, kemudian dipilih partisi $P$ yang memenuhi\n\\[\nU(f,P)-L(f,P)<\\varepsilon.\n\\]\nBerdasarkan definisi integral Darboux bawah dan integral Darboux atas,\n\\[\nL(f,P)\\le \\underline{\\int_a^b}f\n\\le \\overline{\\int_a^b}f\\le U(f,P).\n\\]\nOleh karena itu,\n\\[\n0\\le\n\\overline{\\int_a^b}f-\\underline{\\int_a^b}f\n\\le U(f,P)-L(f,P)<\\varepsilon.\n\\]\nKarena $\\varepsilon>0$ dipilih sebarang, diperoleh\n\\[\n\\overline{\\int_a^b}f-\\underline{\\int_a^b}f=0.\n\\]\nDengan demikian, integral bawah sama dengan integral atas, sehingga $f$ terintegralkan Darboux.\nBerdasarkan pembuktian arah $(\\Rightarrow)$ dan arah $(\\Leftarrow)$, diperoleh ekuivalensi yang dinyatakan. Dengan demikian, teorema tersebut terbukti."
           },
           {
+            "kind": "example",
+            "title": "Penerapan Kriteria Darboux pada $f(x)=x$",
+            "body": "Diberikan $f(x)=x$ pada $[0,1]$. Gunakan Kriteria Darboux untuk membuktikan bahwa $f$ terintegralkan Darboux.",
+            "solution": "Diketahui $f(x)=x$ monoton naik pada $[0,1]$. Dipilih partisi seragam\n\\[\nP_n=\\left\\{0,\\frac{1}{n},\\frac{2}{n},\\ldots,1\\right\\}.\n\\]\nPada subinterval ke-$i$ berlaku\n\\[\nm_i=\\frac{i-1}{n},\\qquad M_i=\\frac{i}{n},\\qquad \\Delta x_i=\\frac{1}{n}.\n\\]\nDengan demikian,\n\\[\n\\begin{aligned}\nU(f,P_n)-L(f,P_n)\n&=\\sum_{i=1}^{n}(M_i-m_i)\\Delta x_i\\\\\n&=\\sum_{i=1}^{n}\\frac{1}{n}\\frac{1}{n}\\\\\n&=\\frac{1}{n}.\n\\end{aligned}\n\\]\nDiambil sebarang $\\varepsilon>0$. Dipilih $n\\in\\mathbb{N}$ sehingga $n>\\frac{1}{\\varepsilon}$. Diperoleh\n\\[\nU(f,P_n)-L(f,P_n)=\\frac{1}{n}<\\varepsilon.\n\\]\nBerdasarkan Teorema Kriteria Darboux, $f$ terintegralkan Darboux pada $[0,1]$."
+          },
+          {
             "kind": "paragraph",
             "text": "Secara geometris, celah $U(f,P)-L(f,P)$ dapat dibuat sebarang kecil ketika partisi dipilih secara sesuai."
           }
         ]
-      },
-      {
-        "kind": "example",
-        "title": "Penerapan Kriteria Darboux pada $f(x)=x$",
-        "body": "Diberikan $f(x)=x$ pada $[0,1]$. Gunakan Kriteria Darboux untuk membuktikan bahwa $f$ terintegralkan Darboux.",
-        "solution": "Diketahui $f(x)=x$ monoton naik pada $[0,1]$. Dipilih partisi seragam\n\\[\nP_n=\\left\\{0,\\frac{1}{n},\\frac{2}{n},\\ldots,1\\right\\}.\n\\]\nPada subinterval ke-$i$ berlaku\n\\[\nm_i=\\frac{i-1}{n},\\qquad M_i=\\frac{i}{n},\\qquad \\Delta x_i=\\frac{1}{n}.\n\\]\nDengan demikian,\n\\[\n\\begin{aligned}\nU(f,P_n)-L(f,P_n)\n&=\\sum_{i=1}^{n}(M_i-m_i)\\Delta x_i\\\\\n&=\\sum_{i=1}^{n}\\frac{1}{n}\\frac{1}{n}\\\\\n&=\\frac{1}{n}.\n\\end{aligned}\n\\]\nDiambil sebarang $\\varepsilon>0$. Dipilih $n\\in\\mathbb{N}$ sehingga $n>\\frac{1}{\\varepsilon}$. Diperoleh\n\\[\nU(f,P_n)-L(f,P_n)=\\frac{1}{n}<\\varepsilon.\n\\]\nBerdasarkan Teorema Kriteria Darboux, $f$ terintegralkan Darboux pada $[0,1]$."
       },
       {
         "title": "Interpretasi melalui osilasi lokal",
@@ -474,6 +474,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "body": "Fungsi $f:[a,b]\\to\\mathbb{R}$ disebut fungsi Lipschitz jika terdapat konstanta $K\\ge0$ sedemikian sehingga\n\\[\n|f(x)-f(y)|\\le K|x-y|\n\\]\nuntuk setiap $x,y\\in[a,b]$. Konstanta $K$ disebut konstanta Lipschitz."
           },
           {
+            "kind": "example",
+            "title": "Contoh fungsi Lipschitz",
+            "body": "Diberikan fungsi\n\\[\nf(x)=3x-2,\\qquad x\\in[-1,2].\n\\]\nDibuktikan bahwa $f$ merupakan fungsi Lipschitz dan ditentukan salah satu konstanta Lipschitznya.",
+            "solution": "Diketahui $f(x)=3x-2$ pada $[-1,2]$.\n\nDibuktikan bahwa terdapat $K\\ge0$ sehingga\n\\[\n|f(x)-f(y)|\\le K|x-y|\n\\]\nuntuk setiap $x,y\\in[-1,2]$.\n\nDiambil sebarang $x,y\\in[-1,2]$. Diperoleh\n\\[\n|f(x)-f(y)|\n=|(3x-2)-(3y-2)|\n=|3x-3y|\n=3|x-y|.\n\\]\nDengan demikian, ketaksamaan Lipschitz berlaku dengan $K=3$. Konstanta tersebut tidak harus unik; setiap $K\\ge3$ juga memenuhi definisi. Oleh karena itu, $f$ merupakan fungsi Lipschitz pada $[-1,2]$ dengan salah satu konstanta Lipschitz $K=3$."
+          },
+          {
             "kind": "theorem",
             "title": "Keterintegralan fungsi Lipschitz",
             "body": "Jika $f:[a,b]\\to\\mathbb{R}$ merupakan fungsi Lipschitz, maka $f$ terintegralkan Riemann pada $[a,b]$.",
@@ -488,18 +494,18 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         ]
       },
       {
-        "kind": "example",
-        "title": "Contoh fungsi Lipschitz",
-        "body": "Diberikan fungsi\n\\[\nf(x)=3x-2,\\qquad x\\in[-1,2].\n\\]\nDibuktikan bahwa $f$ merupakan fungsi Lipschitz dan ditentukan salah satu konstanta Lipschitznya.",
-        "solution": "Diketahui $f(x)=3x-2$ pada $[-1,2]$.\n\nDibuktikan bahwa terdapat $K\\ge0$ sehingga\n\\[\n|f(x)-f(y)|\\le K|x-y|\n\\]\nuntuk setiap $x,y\\in[-1,2]$.\n\nDiambil sebarang $x,y\\in[-1,2]$. Diperoleh\n\\[\n|f(x)-f(y)|\n=|(3x-2)-(3y-2)|\n=|3x-3y|\n=3|x-y|.\n\\]\nDengan demikian, ketaksamaan Lipschitz berlaku dengan $K=3$. Konstanta tersebut tidak harus unik; setiap $K\\ge3$ juga memenuhi definisi. Oleh karena itu, $f$ merupakan fungsi Lipschitz pada $[-1,2]$ dengan salah satu konstanta Lipschitz $K=3$."
-      },
-      {
         "title": "Fungsi monoton sepotong-sepotong",
         "blocks": [
           {
             "kind": "definition",
             "title": "Fungsi monoton sepotong-sepotong",
             "body": "Fungsi $f:[a,b]\\to\\mathbb{R}$ disebut monoton sepotong-sepotong jika terdapat partisi\n\\[\na=c_0<c_1<\\cdots<c_m=b\n\\]\nsedemikian sehingga restriksi $f$ pada setiap interval $[c_{j-1},c_j]$ monoton."
+          },
+          {
+            "kind": "example",
+            "title": "Contoh fungsi monoton sepotong-sepotong",
+            "body": "Diberikan fungsi\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|,\\qquad x\\in[0,1].\n\\]\nDibuktikan bahwa $f$ merupakan fungsi monoton sepotong-sepotong.",
+            "solution": "Diketahui\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|.\n\\]\nFungsi dapat ditulis sebagai\n\\[\nf(x)=\n\\begin{cases}\n\\frac{1}{2}-x,&0\\le x\\le\\frac{1}{2},\\\\\nx-\\frac{1}{2},&\\frac{1}{2}\\le x\\le1.\n\\end{cases}\n\\]\nPada interval $[0,\\frac{1}{2}]$, fungsi $\\frac{1}{2}-x$ monoton turun. Pada interval $[\\frac{1}{2},1]$, fungsi $x-\\frac{1}{2}$ monoton naik. Dipilih partisi\n\\[\n0<\\frac{1}{2}<1.\n\\]\nRestriksi $f$ pada setiap subinterval partisi tersebut monoton. Dengan demikian, $f$ merupakan fungsi monoton sepotong-sepotong pada $[0,1]$."
           },
           {
             "kind": "theorem",
@@ -514,12 +520,6 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "solution": "Pada $[0,\\frac{1}{2}]$, fungsi dapat ditulis sebagai\n\\[\nf(x)=\\frac{1}{2}-x,\n\\]\nyang monoton turun. Pada $[\\frac{1}{2},1]$, fungsi dapat ditulis sebagai\n\\[\nf(x)=x-\\frac{1}{2},\n\\]\nyang monoton naik. Dengan partisi\n\\[\n0<\\frac{1}{2}<1,\n\\]\nfungsi monoton pada setiap bagian. Dengan demikian, $f$ monoton sepotong-sepotong. Berdasarkan Teorema Keterintegralan fungsi monoton sepotong-sepotong, diperoleh\n\\[\n\\boxed{f\\text{ terintegralkan Riemann pada }[0,1].}\n\\]"
           }
         ]
-      },
-      {
-        "kind": "example",
-        "title": "Contoh fungsi monoton sepotong-sepotong",
-        "body": "Diberikan fungsi\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|,\\qquad x\\in[0,1].\n\\]\nDibuktikan bahwa $f$ merupakan fungsi monoton sepotong-sepotong.",
-        "solution": "Diketahui\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|.\n\\]\nFungsi dapat ditulis sebagai\n\\[\nf(x)=\n\\begin{cases}\n\\frac{1}{2}-x,&0\\le x\\le\\frac{1}{2},\\\\\nx-\\frac{1}{2},&\\frac{1}{2}\\le x\\le1.\n\\end{cases}\n\\]\nPada interval $[0,\\frac{1}{2}]$, fungsi $\\frac{1}{2}-x$ monoton turun. Pada interval $[\\frac{1}{2},1]$, fungsi $x-\\frac{1}{2}$ monoton naik. Dipilih partisi\n\\[\n0<\\frac{1}{2}<1.\n\\]\nRestriksi $f$ pada setiap subinterval partisi tersebut monoton. Dengan demikian, $f$ merupakan fungsi monoton sepotong-sepotong pada $[0,1]$."
       },
       {
         "title": "Fungsi bervariasi terbatas",
@@ -541,6 +541,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "body": "Fungsi $f:[a,b]\\to\\mathbb{R}$ disebut bervariasi terbatas pada $[a,b]$ jika\n\\[\nV_a^b(f)<\\infty.\n\\]"
           },
           {
+            "kind": "example",
+            "title": "Contoh fungsi bervariasi terbatas",
+            "body": "Diberikan fungsi\n\\[\nf(x)=x^2,\\qquad x\\in[0,1].\n\\]\nDibuktikan bahwa $f$ bervariasi terbatas dan ditentukan variasi totalnya.",
+            "solution": "Diketahui $f(x)=x^2$ pada $[0,1]$. Fungsi $f$ monoton naik. Diambil sebarang partisi\n\\[\nP=\\{0=x_0<x_1<\\cdots<x_n=1\\}.\n\\]\nKarena $f(x_i)\\ge f(x_{i-1})$, berlaku\n\\[\n|f(x_i)-f(x_{i-1})|=f(x_i)-f(x_{i-1}).\n\\]\nDengan demikian,\n\\[\n\\begin{aligned}\nV(f,P)\n&=\\sum_{i=1}^{n}[f(x_i)-f(x_{i-1})]\\\\\n&=f(1)-f(0)\\\\\n&=1.\n\\end{aligned}\n\\]\nNilai tersebut berlaku untuk setiap partisi $P$. Oleh karena itu,\n\\[\nV_0^1(f)=\\sup_PV(f,P)=1<\\infty.\n\\]\nDengan demikian, $f(x)=x^2$ bervariasi terbatas pada $[0,1]$."
+          },
+          {
             "kind": "theorem",
             "title": "Keterintegralan fungsi bervariasi terbatas",
             "body": "Jika $f:[a,b]\\to\\mathbb{R}$ bervariasi terbatas pada $[a,b]$, maka $f$ terintegralkan Riemann pada $[a,b]$.",
@@ -553,12 +559,6 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "solution": "Diketahui $f(x)=x^2$ monoton naik pada $[0,1]$. Untuk sebarang partisi $P=\\{0=x_0<\\cdots<x_n=1\\}$,\n\\[\n\\begin{aligned}\nV(f,P)\n&=\\sum_{i=1}^{n}|x_i^2-x_{i-1}^2|\\\\\n&=\\sum_{i=1}^{n}(x_i^2-x_{i-1}^2)\\\\\n&=1.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\nV_0^1(f)=1<\\infty,\n\\]\nsehingga $f$ bervariasi terbatas. Berdasarkan Teorema Keterintegralan fungsi bervariasi terbatas, diperoleh\n\\[\n\\boxed{x^2\\text{ terintegralkan Riemann pada }[0,1].}\n\\]"
           }
         ]
-      },
-      {
-        "kind": "example",
-        "title": "Contoh fungsi bervariasi terbatas",
-        "body": "Diberikan fungsi\n\\[\nf(x)=x^2,\\qquad x\\in[0,1].\n\\]\nDibuktikan bahwa $f$ bervariasi terbatas dan ditentukan variasi totalnya.",
-        "solution": "Diketahui $f(x)=x^2$ pada $[0,1]$. Fungsi $f$ monoton naik. Diambil sebarang partisi\n\\[\nP=\\{0=x_0<x_1<\\cdots<x_n=1\\}.\n\\]\nKarena $f(x_i)\\ge f(x_{i-1})$, berlaku\n\\[\n|f(x_i)-f(x_{i-1})|=f(x_i)-f(x_{i-1}).\n\\]\nDengan demikian,\n\\[\n\\begin{aligned}\nV(f,P)\n&=\\sum_{i=1}^{n}[f(x_i)-f(x_{i-1})]\\\\\n&=f(1)-f(0)\\\\\n&=1.\n\\end{aligned}\n\\]\nNilai tersebut berlaku untuk setiap partisi $P$. Oleh karena itu,\n\\[\nV_0^1(f)=\\sup_PV(f,P)=1<\\infty.\n\\]\nDengan demikian, $f(x)=x^2$ bervariasi terbatas pada $[0,1]$."
       },
       {
         "title": "Fungsi tangga dan diskontinuitas berhingga",
@@ -916,6 +916,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "proof": "Diketahui fungsi $f$ kontinu pada $[a,b]$ dengan $a<b$.\n\nDibuktikan bahwa terdapat $c\\in[a,b]$ sehingga\n\\[\n\\int_a^b f(x)\\,d x=f(c)(b-a).\n\\]\n\nKarena $f$ kontinu pada interval kompak $[a,b]$, Teorema Nilai Ekstrem memberikan titik $x_m,x_M\\in[a,b]$ sehingga\n\\[\nm=f(x_m)=\\min_{x\\in[a,b]}f(x)\n\\]\ndan\n\\[\nM=f(x_M)=\\max_{x\\in[a,b]}f(x).\n\\]\nBerdasarkan Teorema Batas Integral,\n\\[\nm(b-a)\n\\le\n\\int_a^b f(x)\\,d x\n\\le\nM(b-a).\n\\]\nKarena $b-a>0$,\n\\[\nm\n\\le\n\\frac{1}{b-a}\\int_a^b f(x)\\,d x\n\\le\nM.\n\\]\nFungsi $f$ kontinu dan mengambil nilai $m$ serta $M$. Berdasarkan Teorema Nilai Antara, terdapat $c\\in[a,b]$ sehingga\n\\[\nf(c)\n=\\frac{1}{b-a}\\int_a^b f(x)\\,d x.\n\\]\nDikalikan dengan $b-a$,\n\\[\n\\int_a^b f(x)\\,d x=f(c)(b-a).\n\\]\nDengan demikian, Teorema Nilai Rata-Rata untuk Integral terbukti."
           },
           {
+            "kind": "example",
+            "title": "Menentukan titik nilai rata-rata",
+            "body": "Diberikan $f(x)=x^2$ pada $[0,1]$. Tentukan salah satu $c\\in[0,1]$ yang memenuhi\n\\[\n\\int_0^1x^2\\,\\,d x=f(c)(1-0).\n\\]",
+            "solution": "Diketahui\n\\[\n\\int_0^1x^2\\,\\,d x=\\frac{1}{3}.\n\\]\nTeorema Teorema Nilai Rata-Rata untuk Integral menjamin adanya $c\\in[0,1]$ sehingga\n\\[\nf(c)=\\frac{1}{3}.\n\\]\nKarena $f(c)=c^2$, diperoleh\n\\[\nc^2=\\frac{1}{3}.\n\\]\nPada interval $[0,1]$, solusi yang sesuai adalah\n\\[\n\\boxed{c=\\frac{1}{\\sqrt{3}}}.\n\\]\nDengan demikian,\n\\[\n\\int_0^1x^2\\,\\,d x=f\\left(\\frac{1}{\\sqrt{3}}\\right).\n\\]"
+          },
+          {
             "kind": "theorem",
             "title": "Integral nol untuk fungsi nonnegatif kontinu",
             "body": "Diberikan fungsi $f$ kontinu pada $[a,b]$ dan $f(x)\\ge0$ untuk setiap $x\\in[a,b]$. Berlaku\n\\[\n\\int_a^b f(x)\\,d x=0\n\\quad\\Longleftrightarrow\\quad\nf(x)=0\\text{ untuk setiap }x\\in[a,b].\n\\]",
@@ -928,12 +934,6 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "solution": "Semua syarat Teorema Integral nol untuk fungsi nonnegatif kontinu terpenuhi: $f$ kontinu, nonnegatif, dan integralnya sama dengan nol. Berdasarkan teorema tersebut,\n\\[\nf(x)=0\n\\]\nuntuk setiap $x\\in[0,1]$. Khususnya,\n\\[\n\\boxed{f\\left(\\frac{1}{3}\\right)=0}.\n\\]\nKesimpulan ini tidak memerlukan bentuk eksplisit fungsi $f$."
           }
         ]
-      },
-      {
-        "kind": "example",
-        "title": "Menentukan titik nilai rata-rata",
-        "body": "Diberikan $f(x)=x^2$ pada $[0,1]$. Tentukan salah satu $c\\in[0,1]$ yang memenuhi\n\\[\n\\int_0^1x^2\\,\\,d x=f(c)(1-0).\n\\]",
-        "solution": "Diketahui\n\\[\n\\int_0^1x^2\\,\\,d x=\\frac{1}{3}.\n\\]\nTeorema Teorema Nilai Rata-Rata untuk Integral menjamin adanya $c\\in[0,1]$ sehingga\n\\[\nf(c)=\\frac{1}{3}.\n\\]\nKarena $f(c)=c^2$, diperoleh\n\\[\nc^2=\\frac{1}{3}.\n\\]\nPada interval $[0,1]$, solusi yang sesuai adalah\n\\[\n\\boxed{c=\\frac{1}{\\sqrt{3}}}.\n\\]\nDengan demikian,\n\\[\n\\int_0^1x^2\\,\\,d x=f\\left(\\frac{1}{\\sqrt{3}}\\right).\n\\]"
       },
       {
         "title": "Substitusi dan integrasi parsial",
