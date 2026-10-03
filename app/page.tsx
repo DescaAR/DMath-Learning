@@ -3,7 +3,7 @@ import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { learningTracks, materials, subjects } from "@/data/site-data";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
-import { isPublicAcademicLevel, isPublicContentHref } from "@/lib/public-content";
+import { isPublicAcademicLevel, isPublicContentHref, isPublicMaterialSlug } from "@/lib/public-content";
 
 export const metadata: Metadata = {
   ...createPageMetadata({
@@ -17,7 +17,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const visibleTracks = learningTracks.filter((track) => isPublicContentHref(track.href));
-  const visibleMaterials = materials.filter((material) => isPublicAcademicLevel(material.level));
+  const visibleMaterials = materials.filter((material) => {
+    const slug = material.href.startsWith("/materi/") ? material.href.slice("/materi/".length) : "";
+    return isPublicAcademicLevel(material.level) && (!slug || isPublicMaterialSlug(slug));
+  });
 
   return (
     <RiemannHubShell
