@@ -16,7 +16,7 @@ import { allBookSections, bookSubjects } from "@/data/book-curricula";
 import { bookSectionContent } from "@/data/book-section-content";
 import { isPublicAcademicLevel, isPublicContentHref } from "@/lib/public-content";
 
-type LevelFilter = "Semua" | Exclude<SearchLevel, "Umum">;
+type LevelFilter = "Semua" | "Kuliah";
 type TrackFilter = "Semua" | "Reguler" | "Olimpiade";
 type KindFilter = "Semua" | SearchKind;
 type SubjectFilter = "Semua" | string;
@@ -357,12 +357,7 @@ export function SearchClient() {
 
   function displayLevel(value: LevelFilter) {
     if (value === "Semua") return language === "en" ? "All Levels" : "Semua Jenjang";
-    if (language === "en") {
-      if (value === "SD") return "Elementary";
-      if (value === "SMP") return "Junior High";
-      if (value === "SMA") return "Senior High";
-      if (value === "Kuliah") return "University";
-    }
+    if (language === "en") return "University";
     return value;
   }
 
