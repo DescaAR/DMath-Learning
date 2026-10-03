@@ -25,10 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const olympiadRoutes = olympiadHubs.filter((hub) => isPublicOlympiadHubSlug(hub.slug)).map((hub) => "/olimpiade/" + hub.slug);
   const materialRoutes = deepMaterials.filter((material) => isPublicAcademicLevel(material.level, material.track) && isPublicMaterialSlug(material.slug)).map((material) => "/materi/" + material.slug);
   const bookSubjectRoutes = bookSubjects
-    .filter((subject) => isPublicBookSubjectSlug(subject.slug))
+    .filter((subject) => isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level, subject.level))
     .map((subject) => "/materi/" + subject.slug);
   const bookSectionRoutes = allBookSections
-    .filter(({subject}) => isPublicBookSubjectSlug(subject.slug))
+    .filter(({subject}) => isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level, subject.level))
     .map(({subject,section}) => "/materi/" + subject.slug + "/" + section.slug);
   const problemRoutes = basisDimensionProblems.map(
     (problem) => "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + problem.id.toLowerCase()
