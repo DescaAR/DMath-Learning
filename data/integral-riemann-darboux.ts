@@ -442,6 +442,59 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         ]
       },
       {
+        "title": "Fungsi Lipschitz",
+        "blocks": [
+          {
+            "kind": "definition",
+            "title": "Fungsi Lipschitz",
+            "body": "Fungsi $f:[a,b]\\to\\mathbb{R}$ disebut fungsi Lipschitz jika terdapat konstanta $K\\ge0$ sedemikian sehingga\n\\[\n|f(x)-f(y)|\\le K|x-y|\n\\]\nuntuk setiap $x,y\\in[a,b]$. Konstanta $K$ disebut konstanta Lipschitz."
+          },
+          {
+            "kind": "theorem",
+            "title": "Keterintegralan fungsi Lipschitz",
+            "body": "Jika $f:[a,b]\\to\\mathbb{R}$ merupakan fungsi Lipschitz, maka $f$ terintegralkan Riemann pada $[a,b]$.",
+            "proof": "Diketahui fungsi $f:[a,b]\\to\\mathbb{R}$ memenuhi\n\\[\n|f(x)-f(y)|\\le K|x-y|\n\\]\nuntuk setiap $x,y\\in[a,b]$, dengan $K\\ge0$.\n\nDibuktikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.\n\nJika $K=0$, fungsi $f$ konstan dan pernyataan langsung berlaku. Selanjutnya diandaikan $K>0$. Diambil sebarang $\\varepsilon>0$. Dipilih partisi $P$ dari $[a,b]$ yang memenuhi\n\\[\n\\lVert P\\rVert<\\frac{\\varepsilon}{K(b-a)}.\n\\]\nPada setiap subinterval $I_i=[x_{i-1},x_i]$, untuk sebarang $x,y\\in I_i$ berlaku\n\\[\n|f(x)-f(y)|\\le K|x-y|\\le K\\Delta x_i.\n\\]\nKarena fungsi Lipschitz kontinu, maksimum dan minimum pada $I_i$ dicapai. Oleh karena itu,\n\\[\nM_i-m_i\\le K\\Delta x_i.\n\\]\nDiperoleh\n\\[\n\\begin{aligned}\nU(f,P)-L(f,P)\n&=\\sum_{i=1}^{n}(M_i-m_i)\\Delta x_i\\\\\n&\\le K\\sum_{i=1}^{n}(\\Delta x_i)^2\\\\\n&\\le K\\lVert P\\rVert\\sum_{i=1}^{n}\\Delta x_i\\\\\n&=K(b-a)\\lVert P\\rVert\\\\\n&<\\varepsilon.\n\\end{aligned}\n\\]\nBerdasarkan Teorema Kriteria Darboux, fungsi $f$ terintegralkan Riemann pada $[a,b]$.\nDengan demikian, Teorema Keterintegralan Fungsi Lipschitz terbukti."
+          }
+        ]
+      },
+      {
+        "title": "Fungsi monoton sepotong-sepotong",
+        "blocks": [
+          {
+            "kind": "definition",
+            "title": "Fungsi monoton sepotong-sepotong",
+            "body": "Fungsi $f:[a,b]\\to\\mathbb{R}$ disebut monoton sepotong-sepotong jika terdapat partisi\n\\[\na=c_0<c_1<\\cdots<c_m=b\n\\]\nsedemikian sehingga restriksi $f$ pada setiap interval $[c_{j-1},c_j]$ monoton."
+          },
+          {
+            "kind": "theorem",
+            "title": "Keterintegralan fungsi monoton sepotong-sepotong",
+            "body": "Jika $f:[a,b]\\to\\mathbb{R}$ monoton sepotong-sepotong, maka $f$ terintegralkan Riemann pada $[a,b]$.",
+            "proof": "Diketahui fungsi $f:[a,b]\\to\\mathbb{R}$ monoton sepotong-sepotong. Dengan demikian, terdapat partisi\n\\[\na=c_0<c_1<\\cdots<c_m=b\n\\]\nsedemikian sehingga $f$ monoton pada setiap $[c_{j-1},c_j]$.\n\nDibuktikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.\n\nDiambil sebarang $\\varepsilon>0$. Untuk setiap $j=1,2,\\ldots,m$, Teorema Keterintegralan Fungsi Monoton memberikan partisi $P_j$ dari $[c_{j-1},c_j]$ yang memenuhi\n\\[\nU(f,P_j)-L(f,P_j)<\\frac{\\varepsilon}{m}.\n\\]\nDibentuk partisi $P$ dari $[a,b]$ dengan menggabungkan seluruh partisi $P_1,P_2,\\ldots,P_m$. Karena titik $c_0,c_1,\\ldots,c_m$ termuat dalam $P$, jumlah Darboux pada $[a,b]$ dapat dipisahkan menurut interval-interval tersebut. Diperoleh\n\\[\n\\begin{aligned}\nU(f,P)-L(f,P)\n&=\\sum_{j=1}^{m}\\bigl(U(f,P_j)-L(f,P_j)\\bigr)\\\\\n&<\\sum_{j=1}^{m}\\frac{\\varepsilon}{m}\\\\\n&=\\varepsilon.\n\\end{aligned}\n\\]\nBerdasarkan Teorema Kriteria Darboux, fungsi $f$ terintegralkan Riemann pada $[a,b]$.\nDengan demikian, Teorema Keterintegralan Fungsi Monoton Sepotong-sepotong terbukti."
+          }
+        ]
+      },
+      {
+        "title": "Fungsi bervariasi terbatas",
+        "blocks": [
+          {
+            "kind": "definition",
+            "title": "Variasi total",
+            "body": "Diberikan fungsi $f:[a,b]\\to\\mathbb{R}$ dan partisi\n\\[\nP=\\{a=x_0<x_1<\\cdots<x_n=b\\}.\n\\]\nVariasi $f$ terhadap partisi $P$ didefinisikan oleh\n\\[\nV(f,P)=\\sum_{i=1}^{n}|f(x_i)-f(x_{i-1})|.\n\\]\nVariasi total $f$ pada $[a,b]$ didefinisikan oleh\n\\[\nV_a^b(f)=\\sup_P V(f,P),\n\\]\ndengan supremum diambil terhadap seluruh partisi $P$ dari $[a,b]$."
+          },
+          {
+            "kind": "definition",
+            "title": "Fungsi bervariasi terbatas",
+            "body": "Fungsi $f:[a,b]\\to\\mathbb{R}$ disebut bervariasi terbatas pada $[a,b]$ jika\n\\[\nV_a^b(f)<\\infty.\n\\]"
+          },
+          {
+            "kind": "theorem",
+            "title": "Keterintegralan fungsi bervariasi terbatas",
+            "body": "Jika $f:[a,b]\\to\\mathbb{R}$ bervariasi terbatas pada $[a,b]$, maka $f$ terintegralkan Riemann pada $[a,b]$.",
+            "proof": "Diketahui fungsi $f:[a,b]\\to\\mathbb{R}$ bervariasi terbatas, yaitu\n\\[\nV_a^b(f)<\\infty.\n\\]\n\nDibuktikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.\n\nDidefinisikan fungsi variasi\n\\[\nv(x)=V_a^x(f),\n\\qquad x\\in[a,b],\n\\]\ndengan $v(a)=0$. Diambil $x,y\\in[a,b]$ dengan $x<y$. Setiap partisi dari $[a,x]$ dapat diperluas dengan menambahkan titik $y$. Berdasarkan definisi variasi total diperoleh\n\\[\nv(y)\\ge v(x)+|f(y)-f(x)|.\n\\]\nAkibatnya,\n\\[\nv(y)-v(x)\\ge |f(y)-f(x)|\\ge0,\n\\]\nsehingga $v$ monoton naik. Selanjutnya didefinisikan\n\\[\nw(x)=v(x)-f(x).\n\\]\nUntuk $x<y$ berlaku\n\\[\n\\begin{aligned}\nw(y)-w(x)\n&=v(y)-v(x)-\\bigl(f(y)-f(x)\\bigr)\\\\\n&\\ge |f(y)-f(x)|-\\bigl(f(y)-f(x)\\bigr)\\\\\n&\\ge0.\n\\end{aligned}\n\\]\nDengan demikian, $w$ juga monoton naik. Berdasarkan Teorema Keterintegralan Fungsi Monoton, fungsi $v$ dan $w$ terintegralkan Riemann. Karena\n\\[\nf=v-w,\n\\]\nTeorema Linearitas memberikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.\nDengan demikian, Teorema Keterintegralan Fungsi Bervariasi Terbatas terbukti."
+          }
+        ]
+      },
+      {
         "title": "Fungsi tangga dan diskontinuitas berhingga",
         "blocks": [
           {
