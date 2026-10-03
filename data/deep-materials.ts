@@ -923,7 +923,7 @@ export const deepMaterials: DeepMaterial[] = [
       "Banyak soal yang tampak komputasional sebenarnya selesai setelah menemukan teorema struktural yang tepat."
     ],
     intuition: [
-      "Konvergensi $a_n\\to L$ berarti ekor barisan akhirnya masuk ke setiap lingkungan $L$, sekecil apa pun.",
+      "Konvergensi $a_n\\to L$ berarti ekor barisan akhirnya masuk ke setiap persekitaran $L$, sekecil apa pun.",
       "Konvergensi seragam menuntut satu indeks $N$ bekerja untuk semua titik domain sekaligus."
     ],
     notation: [
