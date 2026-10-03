@@ -76,13 +76,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
 
   const sections = [
     {id:"gm-section-1",label:ui("Pengantar","Introduction")},
-    {id:"gm-section-2",label:ui("Prasyarat & Tujuan","Prerequisites & Objectives")},
-    {id:"gm-section-3",label:ui("Notasi & Konsep","Notation & Concepts")},
     {id:"gm-section-4",label:ui("Definisi & Contoh","Definitions & Examples")},
     {id:"gm-section-5",label:ui("Hasil Formal & Bukti","Formal Results & Proofs")},
     {id:"gm-section-6",label:ui("Contoh Terbahas","Worked Examples")},
     {id:"gm-section-7",label:ui("Visualisasi","Visualization")},
-    {id:"gm-section-8",label:ui("Referensi","References")},
     {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},
   ];
 
@@ -98,7 +95,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
       title={m.title}
       lead={m.summary}
       meta={[
-        ui("9 bagian","9 sections"),
+        ui("6 bagian","6 sections"),
         m.level,
         m.track,
         m.difficulty,
@@ -124,13 +121,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
       )}
       roadmap={[
         ui("Pengantar","Introduction"),
-        ui("Prasyarat","Prerequisites"),
-        ui("Notasi","Notation"),
         ui("Definisi & contoh","Definitions & examples"),
         ui("Hasil formal & bukti","Formal results & proofs"),
         ui("Contoh terbahas","Worked examples"),
         ui("Visualisasi","Visualization"),
-        ui("Referensi","References"),
         ui("Latihan","Practice"),
       ]}
       sections={sections}
@@ -149,42 +143,9 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         <div style={{marginTop:28}}><MathVisualization kind={m.visualization} /></div>
       </section>
 
-      <section id="gm-section-2" className="book-section ird-source-section">
+      <section id="gm-section-4" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">{ui("Bagian 2","Part 2")}</span>
-        <h2>{ui("Prasyarat dan tujuan pembelajaran","Prerequisites and learning objectives")}</h2>
-        <div className="solution-overview-grid">
-          <div className="content-box">
-            <strong>{ui("Prasyarat","Prerequisites")}</strong>
-            <ul>{m.prerequisites.map((item) => <li key={item}><Text>{item}</Text></li>)}</ul>
-          </div>
-          <div className="content-box">
-            <strong>{ui("Tujuan Pembelajaran","Learning Objectives")}</strong>
-            <ul>{m.objectives.map((item) => <li key={item}><Text>{item}</Text></li>)}</ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="gm-section-3" className="book-section ird-source-section">
-        <div className="section-number">03</div>
-        <span className="eyebrow">{ui("Bagian 3","Part 3")}</span>
-        <h2>{ui("Notasi dan konsep utama","Notation and core concepts")}</h2>
-        <div className="notation-table">
-          {m.notation.map((item) => (
-            <div className="notation-row" key={item.symbol}>
-              <div className="notation-symbol"><Text>{item.symbol}</Text></div>
-              <div className="notation-meaning"><Text>{item.meaning}</Text></div>
-            </div>
-          ))}
-        </div>
-        <div className="ird-roadmap" style={{marginTop:28}}>
-          {m.conceptMap.map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
-        </div>
-      </section>
-
-      <section id="gm-section-4" className="book-section ird-source-section">
-        <div className="section-number">04</div>
-        <span className="eyebrow">{ui("Bagian 4","Part 4")}</span>
         <h2>{ui("Definisi dan contoh","Definitions and examples")}</h2>
         <p className="ird-paragraph">{ui(
           "Setiap definisi diikuti contoh agar syarat formal dapat langsung diperiksa.",
@@ -221,8 +182,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
       </section>
 
       <section id="gm-section-5" className="book-section ird-source-section">
-        <div className="section-number">05</div>
-        <span className="eyebrow">{ui("Bagian 5","Part 5")}</span>
+        <div className="section-number">03</div>
+        <span className="eyebrow">{ui("Bagian 3","Part 3")}</span>
         <h2>{ui("Hasil formal dan pembuktian","Formal results and proofs")}</h2>
         <p className="ird-paragraph">{ui(
           "Setiap teorema, lemma, proposisi, dan akibat yang ditampilkan di sini disertai penjelasan dan pembuktian.",
@@ -287,8 +248,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
       </section>
 
       <section id="gm-section-6" className="book-section ird-source-section">
-        <div className="section-number">06</div>
-        <span className="eyebrow">{ui("Bagian 6","Part 6")}</span>
+        <div className="section-number">04</div>
+        <span className="eyebrow">{ui("Bagian 4","Part 4")}</span>
         <h2>{ui("Contoh terbahas","Worked examples")}</h2>
         <div className="ird-worked-grid">
           {localExamples.map((example, index) => (
@@ -310,8 +271,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
       </section>
 
       <section id="gm-section-7" className="book-section ird-source-section">
-        <div className="section-number">07</div>
-        <span className="eyebrow">{ui("Bagian 7","Part 7")}</span>
+        <div className="section-number">05</div>
+        <span className="eyebrow">{ui("Bagian 5","Part 5")}</span>
         <h2>{ui("Visualisasi dan eksplorasi interaktif","Visualization and interactive exploration")}</h2>
         <p className="ird-paragraph">{ui(
           "Visualisasi dipakai untuk melihat struktur konsep, sedangkan panel interaktif memungkinkan parameter diubah dan hasilnya dibandingkan.",
@@ -323,20 +284,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         </div>
       </section>
 
-      <section id="gm-section-8" className="book-section ird-source-section">
-        <div className="section-number">08</div>
-        <span className="eyebrow">{ui("Bagian 8","Part 8")}</span>
-        <h2>{ui("Referensi","References")}</h2>
-        <article className="ird-formal ird-note" style={{marginTop:24}}>
-          <div className="ird-formal-head"><span>{ui("Referensi","References")}</span><strong>{ui("Bacaan lanjut","Further reading")}</strong></div>
-          <div className="ird-formal-body">
-            <ol>{m.references.map((reference) => <li key={reference}><Text>{reference}</Text></li>)}</ol>
-          </div>
-        </article>
-      </section>
-
       <section id="gm-latihan" className="book-section ird-practice-section">
-        <div className="section-number">09</div>
+        <div className="section-number">06</div>
         <span className="eyebrow">{ui("Latihan Soal dan Solusi","Practice Problems and Solutions")}</span>
         <h2>{practice.length} {ui("latihan soal","practice problems")}</h2>
         <p className="ird-paragraph">{ui(
