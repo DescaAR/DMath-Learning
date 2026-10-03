@@ -48,7 +48,7 @@ export default function Image() {
             Belajar matematika dengan konsep, bukti, visualisasi, dan latihan.
           </div>
           <div style={{ fontSize: 25, lineHeight: 1.45, color: "#334155" }}>
-            SD · SMP · SMA · Kuliah · Olimpiade · ON-MIPA
+            Kuliah · ON-MIPA · Pembuktian · Problem Solving
           </div>
         </div>
 
