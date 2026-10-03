@@ -3492,3 +3492,90 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   width:max-content;
   min-width:130px;
 }
+
+/* Home page — section color system */
+.home-page .textbook-section-shell{
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb,var(--light) 76%,var(--surface) 24%) 0%,
+      color-mix(in srgb,var(--surface) 92%,var(--blue) 8%) 52%,
+      var(--surface) 100%
+    );
+  padding-bottom:88px
+}
+.home-page .textbook-article{
+  display:grid;
+  gap:30px
+}
+.home-page .textbook-article>.book-section{
+  margin-bottom:0;
+  padding:clamp(24px,4vw,42px);
+  border:1px solid color-mix(in srgb,var(--border) 86%,var(--blue) 14%);
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 18px 52px rgba(15,23,42,.055)
+}
+.home-page #home-jalur{
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb,var(--surface) 84%,var(--blue) 16%),
+      color-mix(in srgb,var(--surface) 92%,var(--cyan) 8%)
+    )
+}
+.home-page #home-jalur .ird-worked-card{
+  background:color-mix(in srgb,var(--surface) 96%,var(--blue) 4%);
+  border-color:color-mix(in srgb,var(--border) 82%,var(--blue) 18%)
+}
+.home-page #home-bidang{
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb,var(--surface) 94%,#8b5cf6 6%),
+      color-mix(in srgb,var(--surface) 91%,var(--blue) 9%)
+    )
+}
+.home-page #home-bidang .ird-roadmap>div{
+  background:color-mix(in srgb,var(--surface) 97%,var(--blue) 3%);
+  border-color:color-mix(in srgb,var(--border) 84%,var(--blue) 16%)
+}
+.home-page #home-lanjut{
+  background:linear-gradient(135deg,var(--deep),var(--navy));
+  border-color:color-mix(in srgb,var(--navy) 78%,var(--cyan) 22%);
+  box-shadow:0 22px 58px rgba(6,27,62,.16)
+}
+.home-page #home-lanjut h2,
+.home-page #home-lanjut .eyebrow{
+  color:#fff
+}
+.home-page #home-lanjut .section-number{
+  color:var(--cyan)
+}
+.home-page #home-lanjut .btn.secondary{
+  color:#fff;
+  border-color:rgba(255,255,255,.42);
+  background:rgba(255,255,255,.08)
+}
+.home-page #home-lanjut .btn.secondary:hover{
+  background:rgba(255,255,255,.14);
+  border-color:rgba(255,255,255,.62)
+}
+:root[data-theme="dark"] .home-page .textbook-section-shell{
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb,var(--surface) 82%,var(--blue) 18%) 0%,
+      var(--surface) 100%
+    )
+}
+:root[data-theme="dark"] .home-page #home-jalur,
+:root[data-theme="dark"] .home-page #home-bidang{
+  border-color:color-mix(in srgb,var(--border) 78%,var(--cyan) 22%)
+}
+@media(max-width:640px){
+  .home-page .textbook-article>.book-section{
+    padding:22px 18px;
+    border-radius:22px
+  }
+}
