@@ -160,7 +160,7 @@ export function BasisDimensionEnglish() {
 
     <section className="section">
       <div className="container article-layout wide-article-layout">
-        <aside className="toc material-toc"><strong>Chapter Contents</strong>{sections.map(([id,label],i)=><a href={"#"+id} key={id}>{String(i+1).padStart(2,"0")}. {label}</a>)}</aside>
+        <aside className="toc material-toc"><strong>Chapter Contents</strong>{sections.map(([id,label],i)=><a href={"#"+id} key={id}><span>{String(i+1).padStart(2,"0")}</span><span>{label}</span></a>)}</aside>
         <article className="article deep-article basis-article">
           <section id="en-overview">
             <span className="eyebrow">Introduction</span><h2>Basis and Dimension</h2>
