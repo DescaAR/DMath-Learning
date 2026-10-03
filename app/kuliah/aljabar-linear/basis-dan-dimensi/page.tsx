@@ -36,6 +36,64 @@ const sections = [
   ["referensi", "Referensi"],
 ] as const;
 
+const basisTheoremSummary = [
+  {
+    n:"1",
+    title:"Kriteria Subruang",
+    statement:String.raw`Himpunan tak kosong $W\subseteq V$ adalah subruang jika dan hanya jika untuk setiap $u,v\in W$ dan $\alpha,\beta\in\mathbb F$, berlaku $\alpha u+\beta v\in W$.`,
+  },
+  {
+    n:"2",
+    title:"Span adalah Subruang Terkecil yang Memuat S",
+    statement:String.raw`Untuk setiap $S\subseteq V$, $\operatorname{span}(S)$ adalah subruang $V$. Selain itu, jika $W$ adalah subruang yang memuat $S$, maka $\operatorname{span}(S)\subseteq W$.`,
+  },
+  {
+    n:"3",
+    title:"Kriteria Redundansi",
+    statement:String.raw`Himpunan $v_1,\ldots,v_k$ dengan $k\ge2$ bergantung linear jika dan hanya jika salah satu vektor merupakan kombinasi linear dari vektor-vektor lainnya.`,
+  },
+  {
+    n:"4",
+    title:"Keunikan Representasi terhadap Basis",
+    statement:String.raw`Jika $B=(v_1,\ldots,v_n)$ adalah basis $V$, setiap $v\in V$ dapat ditulis secara unik sebagai $v=a_1v_1+\cdots+a_nv_n$.`,
+  },
+  {
+    n:"5",
+    title:"Pemetaan Koordinat adalah Isomorfisme",
+    statement:String.raw`Jika $B=(v_1,\ldots,v_n)$ basis $V$, pemetaan $\Phi_B:V\to\mathbb F^n$ yang didefinisikan oleh $\Phi_B(v)=[v]_B$ adalah isomorfisme.`,
+  },
+  {
+    n:"6",
+    title:"Lemma Pertukaran",
+    statement:String.raw`Jika $v_1,\ldots,v_m$ bebas linear dan $w_1,\ldots,w_n$ merentang $V$, maka $m\le n$.`,
+  },
+  {
+    n:"7",
+    title:"Semua Basis Hingga Memiliki Banyak Anggota yang Sama",
+    statement:String.raw`Jika $B$ dan $C$ adalah basis hingga ruang vektor $V$, maka $|B|=|C|$.`,
+  },
+  {
+    n:"8",
+    title:"Dimensi Subruang",
+    statement:String.raw`Jika $W$ subruang dari ruang berdimensi hingga $V$, maka $\dim W\le\dim V$. Kesetaraan terjadi jika dan hanya jika $W=V$.`,
+  },
+  {
+    n:"9",
+    title:"Teorema Ekstensi Basis",
+    statement:String.raw`Setiap himpunan bebas linear hingga dalam ruang vektor berdimensi hingga dapat diperluas menjadi basis ruang tersebut.`,
+  },
+  {
+    n:"10",
+    title:"Reduksi Himpunan Perentang menjadi Basis",
+    statement:String.raw`Setiap himpunan perentang hingga dari ruang vektor dapat direduksi menjadi basis dengan menghapus vektor-vektor redundan.`,
+  },
+  {
+    n:"11",
+    title:"Teorema Rank–Nullity",
+    statement:String.raw`Jika $V$ berdimensi hingga dan $T:V\to W$ linear, maka $\dim V=\operatorname{nullity}(T)+\operatorname{rank}(T)$.`,
+  },
+] as const;
+
 function P({ children }: { children: string }) {
   return <p><RichMath>{children}</RichMath></p>;
 }
@@ -648,10 +706,10 @@ export default function BasisDimensionPage() {
 
               <div className="ird-summary-group">
                 <div className="ird-summary-heading">
-                  <div><span className="eyebrow">Teorema</span><h3>{theorems.length} teorema penting</h3></div>
+                  <div><span className="eyebrow">Teorema</span><h3>{basisTheoremSummary.length} teorema penting</h3></div>
                 </div>
                 <div className="ird-summary-grid">
-                  {theorems.map((item,index)=>(
+                  {basisTheoremSummary.map((item,index)=>(
                     <details className="ird-summary-card ird-summary-theorem" key={item.n}>
                       <summary><span>Teorema {index+1}</span><strong>{item.title}</strong></summary>
                       <div className="ird-summary-body"><RichMath>{item.statement}</RichMath></div>
