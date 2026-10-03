@@ -7,6 +7,14 @@ import { additionalBookContent } from "@/data/additional-book-content";
 import { expandedBookContent } from "@/data/expanded-book-content";
 import { numericalAnalysisContent } from "@/data/numerical-analysis-content";
 import { newAcademicContent } from "@/data/new-academic-content";
+import { abstractAlgebraContentA } from "@/data/abstract-algebra-book-content-a";
+import { abstractAlgebraContentB } from "@/data/abstract-algebra-book-content-b";
+import { abstractAlgebraContentC9 } from "@/data/abstract-algebra-book-content-c9";
+import { abstractAlgebraContentC10 } from "@/data/abstract-algebra-book-content-c10";
+import { abstractAlgebraContentC11 } from "@/data/abstract-algebra-book-content-c11";
+import { abstractAlgebraContentD12 } from "@/data/abstract-algebra-book-content-d12";
+import { abstractAlgebraContentD13 } from "@/data/abstract-algebra-book-content-d13";
+import { abstractAlgebraContentD14 } from "@/data/abstract-algebra-book-content-d14";
 
 export const bookSectionContent:Record<string,BookLessonContent>={
   ...realAnalysisContentA,
@@ -17,6 +25,14 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...expandedBookContent,
   ...numericalAnalysisContent,
   ...newAcademicContent,
+  ...abstractAlgebraContentA,
+  ...abstractAlgebraContentB,
+  ...abstractAlgebraContentC9,
+  ...abstractAlgebraContentC10,
+  ...abstractAlgebraContentC11,
+  ...abstractAlgebraContentD12,
+  ...abstractAlgebraContentD13,
+  ...abstractAlgebraContentD14,
 };
 
 export function getBookSectionContent(sectionSlug:string){
