@@ -33,7 +33,7 @@ export function SiteHeader() {
     <header className="site-header" data-no-translate>
       <div className="container nav">
         <Link href="/" className="brand" aria-label={language === "en" ? "DMath Learning — Home" : "DMath Learning — Beranda"}>
-          <Image src="/brand/logo-symbol.webp" alt="" width={42} height={42} priority className="brand-logo" />
+          <Image src={siteConfig.basePath + "/brand/logo-symbol.webp"} alt="" width={42} height={42} priority className="brand-logo" />
           <span className="brand-copy">
             <strong>{siteConfig.name}</strong>
             <small>{siteConfig.tagline}</small>

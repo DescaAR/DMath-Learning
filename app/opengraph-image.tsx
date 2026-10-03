@@ -56,7 +56,7 @@ export default function Image() {
 
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 20, color: "#64748B" }}>
           <span>Materi · Bank Soal · Pembahasan</span>
-          <span>dmath-learning.vercel.app</span>
+          <span>descaar.github.io/DMath-Learning</span>
         </div>
       </div>
     ),

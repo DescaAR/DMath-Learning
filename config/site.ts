@@ -1,10 +1,14 @@
+const githubPagesBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const publicSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dmath-learning.vercel.app";
+
 export const siteConfig = {
   name: "DMath Learning",
   shortName: "DMath",
   tagline: "Think Deeper, Solve Better.",
   description:
     "DMath Learning adalah platform pembelajaran matematika berbahasa Indonesia untuk memahami konsep, pembuktian, latihan, bank soal, ON-MIPA, dan matematika universitas.",
-  url: "https://dmath-learning.vercel.app",
+  url: publicSiteUrl,
+  basePath: githubPagesBasePath,
   locale: "id_ID",
   language: "id-ID",
   ogImage: "/opengraph-image",

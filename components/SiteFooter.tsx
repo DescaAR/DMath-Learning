@@ -13,7 +13,7 @@ export function SiteFooter() {
       <div className="container footer-grid">
         <div className="footer-branding">
           <div className="brand footer-brand">
-            <Image src="/brand/logo-symbol.webp" alt="" width={48} height={48} className="brand-logo" />
+            <Image src={siteConfig.basePath + "/brand/logo-symbol.webp"} alt="" width={48} height={48} className="brand-logo" />
             <span className="brand-copy">
               <strong>{siteConfig.name}</strong>
               <small>{siteConfig.tagline}</small>

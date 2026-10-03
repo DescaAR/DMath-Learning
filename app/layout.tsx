@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   keywords: [...siteConfig.keywords],
   category: "education",
   referrer: "origin-when-cross-origin",
-  manifest: "/manifest.webmanifest",
-  icons: { icon: "/brand/logo-symbol.webp" },
+  manifest: siteConfig.basePath + "/manifest.webmanifest",
+  icons: { icon: siteConfig.basePath + "/brand/logo-symbol.webp" },
   robots: {
     index: true,
     follow: true,
