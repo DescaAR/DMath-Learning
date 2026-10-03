@@ -392,7 +392,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
         "statement": "Untuk $a,b\\in\\mathbb Z$ tidak keduanya nol, terdapat $x,y\\in\\mathbb Z$ sehingga $\\gcd(a,b)=ax+by$.",
         "proof": [
           "Pertimbangkan himpunan $S=\\{ax+by>0:x,y\\in\\mathbb Z\\}$. Himpunan ini tak kosong, sehingga well-ordering memberi elemen terkecil $d=ax_0+by_0$.",
-          "Bagi $a$ dengan $d$: $a=qd+r$ dengan $0\\le r<d$. Karena $r=a-q(ax_0+by_0)$ juga kombinasi linear $a,b$, minimalitas $d$ memaksa $r=0$. Jadi $d\\mid a$. Argumen sama memberi $d\\mid b$.",
+          "Bagi $a$ dengan $d$: $a=qd+r$ dengan $0\\le r<d$. Karena $r=a-q(ax_0+by_0)$ juga kombinasi linear $a,b$, minimalitas $d$ memaksa $r=0$. Dengan demikian, $d\\mid a$. Argumen sama memberi $d\\mid b$.",
           "Setiap pembagi bersama $c$ dari $a,b$ membagi setiap kombinasi linear $ax+by$, khususnya $d$. Oleh karena itu $d$ adalah pembagi bersama terbesar positif, yaitu $\\gcd(a,b)$."
         ]
       },
@@ -432,7 +432,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Hitung $\\gcd(414,662)$ dengan algoritma Euclid.",
         "hint": "Lakukan pembagian berulang sampai sisa nol.",
-        "answer": "$662=1(414)+248$, $414=1(248)+166$, $248=1(166)+82$, $166=2(82)+2$, $82=41(2)$. Jadi FPB adalah $2$."
+        "answer": "$662=1(414)+248$, $414=1(248)+166$, $248=1(166)+82$, $166=2(82)+2$, $82=41(2)$. Dengan demikian, FPB adalah $2$."
       },
       {
         "prompt": "Buktikan jika $d=\\gcd(a,b)$, maka $\\gcd(a/d,b/d)=1$.",
@@ -1251,12 +1251,12 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Buktikan kernel setiap homomorfisma grup adalah subgrup normal.",
         "hint": "Gunakan $\\varphi(gng^{-1})=\\varphi(g)e\\varphi(g)^{-1}$.",
-        "answer": "Jika $n\\in\\ker\\varphi$, maka $\\varphi(gng^{-1})=\\varphi(g)\\varphi(n)\\varphi(g)^{-1}=e$. Jadi $gng^{-1}\\in\\ker\\varphi$ untuk semua $g$."
+        "answer": "Jika $n\\in\\ker\\varphi$, maka $\\varphi(gng^{-1})=\\varphi(g)\\varphi(n)\\varphi(g)^{-1}=e$. Dengan demikian, $gng^{-1}\\in\\ker\\varphi$ untuk semua $g$."
       },
       {
         "prompt": "Buktikan pusat $Z(G)$ normal di $G$.",
         "hint": "Konjugasi elemen pusat.",
-        "answer": "Jika $z\\in Z(G)$, maka $gzg^{-1}=zgg^{-1}=z$. Jadi setiap konjugat tetap di pusat."
+        "answer": "Jika $z\\in Z(G)$, maka $gzg^{-1}=zgg^{-1}=z$. Dengan demikian, setiap konjugat tetap di pusat."
       },
       {
         "prompt": "Jika $H$ satu-satunya subgrup berorde $m$ pada $G$, buktikan $H$ normal.",
@@ -1400,7 +1400,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Tentukan kernel homomorfisma $\\varphi:\\mathbb Z\\to\\mathbb Z_8$ dengan $\\varphi(k)=[3k]_8$.",
         "hint": "Cari $k$ dengan $8\\mid3k$.",
-        "answer": "Karena $\\gcd(3,8)=1$, syaratnya $8\\mid k$. Jadi kernel $=8\\mathbb Z$."
+        "answer": "Karena $\\gcd(3,8)=1$, syaratnya $8\\mid k$. Dengan demikian, kernel $=8\\mathbb Z$."
       },
       {
         "prompt": "Buktikan image homomorfisma selalu subgrup.",
@@ -1484,7 +1484,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Jelaskan mengapa grup berorde berbeda tidak dapat isomorfik.",
         "hint": "Isomorfisma adalah bijeksi.",
-        "answer": "Bijeksi antara himpunan hingga mempertahankan banyak elemen. Jadi orde grup harus sama."
+        "answer": "Bijeksi antara himpunan hingga mempertahankan banyak elemen. Dengan demikian, orde grup harus sama."
       }
     ]
   },
@@ -1557,7 +1557,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Gunakan Teorema Isomorfisma Pertama untuk menentukan $\\mathbb Z/\\ker\\varphi$ bagi $\\varphi(k)=[4k]_{12}$.",
         "hint": "Hitung kernel dan image.",
-        "answer": "$[4k]_{12}=0$ jika $3\\mid k$, sehingga kernel $3\\mathbb Z$. Image $=\\{[0],[4],[8]\\}\\cong\\mathbb Z_3$. Jadi $\\mathbb Z/3\\mathbb Z\\cong\\operatorname{im}\\varphi$."
+        "answer": "$[4k]_{12}=0$ jika $3\\mid k$, sehingga kernel $3\\mathbb Z$. Image $=\\{[0],[4],[8]\\}\\cong\\mathbb Z_3$. Dengan demikian, $\\mathbb Z/3\\mathbb Z\\cong\\operatorname{im}\\varphi$."
       },
       {
         "prompt": "Buktikan $HN/N$ merupakan subgrup dari $G/N$ ketika $H\\le G$ dan $N\\trianglelefteq G$.",
