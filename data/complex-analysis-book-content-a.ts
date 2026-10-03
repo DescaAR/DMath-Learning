@@ -243,7 +243,7 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
 },
 
 "fungsi-resiprok":{
- intro:["Pemetaan $w=1/z$ menggabungkan inversi radial dan refleksi sudut: modulus menjadi $1/|z|$ dan argumen berubah tanda.","Pemetaan ini menukar lingkungan nol dengan daerah jauh dan menjadi contoh penting transformasi extended complex plane."],
+ intro:["Pemetaan $w=1/z$ menggabungkan inversi radial dan refleksi sudut: modulus menjadi $1/|z|$ dan argumen berubah tanda.","Pemetaan ini menukar persekitaran nol dengan daerah jauh dan menjadi contoh penting transformasi extended complex plane."],
  formal:[
   P("Modulus dan Argumen Resiprok","Untuk $z\\ne0$, $|1/z|=1/|z|$ dan $\\arg(1/z)=-\\arg z$ modulo $2\\pi$."),
   P("Involusi","Menerapkan reciprocal dua kali mengembalikan titik awal: $1/(1/z)=z$."),
