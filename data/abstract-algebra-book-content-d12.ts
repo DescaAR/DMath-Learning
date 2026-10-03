@@ -180,7 +180,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
         "proof": [
           "Ambil basis $\\{u_1,\\ldots,u_m\\}$ untuk $E$ atas $K$ dan basis $\\{v_1,\\ldots,v_n\\}$ untuk $K$ atas $F$.",
           "Setiap $x\\in E$ ditulis $x=\\sum_i k_i u_i$ dengan $k_i\\in K$, lalu setiap $k_i=\\sum_j a_{ij}v_j$ dengan $a_{ij}\\in F$. Dengan demikian elemen $u_iv_j$ merentang $E$ atas $F$.",
-          "Jika $\\sum_{i,j}a_{ij}u_iv_j=0$, kelompokkan menurut $u_i$. Kebebasan $u_i$ atas $K$ memberi $\\sum_j a_{ij}v_j=0$ untuk setiap $i$, lalu kebebasan $v_j$ atas $F$ memaksa semua $a_{ij}=0$. Jadi $mn$ elemen tersebut basis."
+          "Jika $\\sum_{i,j}a_{ij}u_iv_j=0$, kelompokkan menurut $u_i$. Kebebasan $u_i$ atas $K$ memberi $\\sum_j a_{ij}v_j=0$ untuk setiap $i$, lalu kebebasan $v_j$ atas $F$ memaksa semua $a_{ij}=0$. Dengan demikian, $mn$ elemen tersebut basis."
         ]
       }
     ],
