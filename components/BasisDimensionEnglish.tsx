@@ -9,7 +9,7 @@ const sections = [
   ["en-span","Span"],["en-independence","Linear Independence"],["en-basis","Basis"],["en-coordinates","Coordinates"],
   ["en-dimension","Dimension"],["en-subspaces","Subspace Bases"],["en-extension","Basis Extension"],
   ["en-row-column","Row & Column Spaces"],["en-rank-nullity","Rank–Nullity"],["en-examples","Worked Examples"],
-  ["en-summary","Summary"],["en-references","References"]
+  ["en-summary","Summary"]
 ] as const;
 
 const theorems = [
@@ -168,14 +168,7 @@ export function BasisDimensionEnglish() {
             <P>{String.raw`A basis must be large enough to span the entire space while containing no redundant direction. Dimension measures the number of vectors required in any basis.`}</P>
             <MathVisualization kind="basis" />
             <div style={{marginTop:24}}><InteractiveMathLab kind="basis" /></div>
-            <div className="content-box prerequisite-box"><strong>Prerequisites</strong><ul><li>Vector and scalar operations.</li><li>Vector spaces and subspaces.</li><li>Linear systems and Gaussian elimination.</li></ul></div>
-            <div className="learning-objectives"><span className="eyebrow">Learning Objectives</span><div className="objective-grid">{[
-              "Test whether a vector is a linear combination of given vectors.","Compute spans and extract bases from spanning sets.","Test linear independence conceptually and computationally.","Find coordinates relative to a basis.","Use dimension to bound independent sets.","Construct subspace, row-space, and column-space bases.","Apply Basis Extension and Rank–Nullity."
-            ].map((x,i)=><div className="objective-card" key={x}><span>{i+1}</span><p>{x}</p></div>)}</div></div>
-            
-          </section>
-
-          <section id="en-review"><span className="eyebrow">01 · Vector Space Review</span><h2>Vector Spaces and Subspaces</h2>
+            <section id="en-review"><span className="eyebrow">01 · Vector Space Review</span><h2>Vector Spaces and Subspaces</h2>
             <P>{String.raw`A vector space $V$ over a field $\\mathbb F$ supports vector addition and scalar multiplication satisfying the standard linearity axioms. Key examples are $\\mathbb R^n$, polynomial spaces $\\mathcal P_n$, matrix spaces $M_{m\\times n}(\\mathbb F)$, and function spaces.`}</P>
             <div className="definition-box"><strong>Subspace</strong><P>{String.raw`A subset $W\\subseteq V$ is a subspace if it contains $0$ and is closed under all linear combinations $\\alpha u+\\beta v$.`}</P></div>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`$W=\{(x,y,0):x,y\in\mathbb R\}$ is a subspace of $\mathbb R^3$.`}</P></div>
@@ -254,8 +247,6 @@ export function BasisDimensionEnglish() {
             ].map(([t,b])=><div className="summary-card" key={t}><strong>{t}</strong><p>{b}</p></div>)}</div>
             <div className="actions"><Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Work Through Curated Practice</Link><Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Open 100 Problems</Link></div>
           </section>
-
-          <section id="en-references"><span className="eyebrow">14 · References</span><h2>References</h2><ol className="reference-list"><li>Sheldon Axler, <em>Linear Algebra Done Right</em>, 4th ed., Springer, 2024.</li><li>Gilbert Strang, <em>Introduction to Linear Algebra</em>, 6th ed., 2023.</li><li>Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence, <em>Linear Algebra</em>, 5th ed., Pearson, 2022.</li></ol></section>
         </article>
       </div>
     </section>
