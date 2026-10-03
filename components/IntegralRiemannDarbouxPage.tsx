@@ -346,7 +346,7 @@ function OscillationVisual() {
   return (
     <figure className="ird-figure">
       <div className="ird-figure-title"><span>Visualisasi</span><strong>Osilasi lokal</strong></div>
-      <svg viewBox="0 0 620 280" role="img" aria-label="Osilasi fungsi pada lingkungan sebuah titik">
+      <svg viewBox="0 0 620 280" role="img" aria-label="Osilasi fungsi pada persekitaran sebuah titik">
         <rect x="238" y="36" width="150" height="202" className="ird-neighborhood" />
         <line x1="45" y1="230" x2="580" y2="230" className="ird-axis" />
         <line x1="60" y1="245" x2="60" y2="32" className="ird-axis" />
@@ -358,7 +358,7 @@ function OscillationVisual() {
         <text x="452" y="123" className="ird-svg-label">ω</text>
         <text x="302" y="255" className="ird-svg-label">x₀</text>
       </svg>
-      <figcaption>Osilasi mengukur selisih supremum dan infimum pada lingkungan yang makin kecil di sekitar <RichMath>{"$x_0$"}</RichMath>.</figcaption>
+      <figcaption>Osilasi mengukur selisih supremum dan infimum pada persekitaran yang makin kecil di sekitar <RichMath>{"$x_0$"}</RichMath>.</figcaption>
     </figure>
   );
 }
