@@ -3424,6 +3424,26 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .catalog-material-list ol{columns:1}
 }
 
+.catalog-nested-materials{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border)
+}
+.catalog-nested-materials>strong{
+  display:block;
+  margin-bottom:8px;
+  color:var(--deep);
+  font-size:.88rem
+}
+:root[data-theme="dark"] .catalog-nested-materials>strong{color:#fff}
+.catalog-nested-materials a{
+  color:var(--text);
+  font-weight:750
+}
+.catalog-nested-materials a:hover{color:var(--blue)}
+
+
+
 
 .material-count-box{
   margin:16px 0 18px;
