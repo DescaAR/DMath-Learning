@@ -110,19 +110,19 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
 },
 
 "nilai-mutlak-dan-garis-real":{
- intro:["Nilai mutlak mengubah struktur urutan menjadi geometri jarak. Identitas $|x-a|<r$ berarti $x$ berada dalam lingkungan berjari-jari $r$ dari $a$.","Hampir seluruh definisi limit dan kontinuitas menggunakan bahasa jarak ini."],
- notation:[{symbol:"$|x|$",meaning:"Jarak titik $x$ dari $0$."},{symbol:"$V_r(a)$",meaning:"Lingkungan terbuka $\\{x:|x-a|<r\\}$."}],
+ intro:["Nilai mutlak mengubah struktur urutan menjadi geometri jarak. Identitas $|x-a|<r$ berarti $x$ berada dalam persekitaran berjari-jari $r$ dari $a$.","Hampir seluruh definisi limit dan kontinuitas menggunakan bahasa jarak ini."],
+ notation:[{symbol:"$|x|$",meaning:"Jarak titik $x$ dari $0$."},{symbol:"$V_r(a)$",meaning:"Persekitaran terbuka $\\{x:|x-a|<r\\}$."}],
  formal:[
   D("Nilai Mutlak","$|x|=x$ untuk $x\\ge0$ dan $|x|=-x$ untuk $x<0$."),
   T("Ketaksamaan Segitiga","Untuk $x,y\\in\\mathbb R$, $|x+y|\\le|x|+|y|$.",["Dari $-|x|\\le x\\le|x|$ dan $-|y|\\le y\\le|y|$, dijumlahkan kedua pertidaksamaan.","Diperoleh $-(|x|+|y|)\\le x+y\\le |x|+|y|$.","Definisi nilai mutlak memberi hasil yang diinginkan."]),
   C("Ketaksamaan Segitiga Terbalik","$\\bigl||x|-|y|\\bigr|\\le|x-y|$."),
-  P("Lingkungan dan Interval","$|x-a|<r$ ekuivalen dengan $a-r<x<a+r$.")
+  P("Persekitaran dan Interval","$|x-a|<r$ ekuivalen dengan $a-r<x<a+r$.")
  ],
  examples:[{title:"Mengubah Bentuk Nilai Mutlak",problem:"Selesaikan $|2x-3|<5$.",solution:["Ditulis $-5<2x-3<5$.","Ditambahkan $3$: $-2<2x<8$.","Dibagi $2$: $-1<x<4$."],conclusion:"Himpunan solusi $(-1,4)$."}],
  exercises:[
   {prompt:"Buktikan $|x|-|y|\\le|x-y|$.",hint:"Tulis $x=(x-y)+y$.",answer:"Ketaksamaan segitiga memberi $|x|\\le|x-y|+|y|$."},
   {prompt:"Selesaikan $|x+2|\\ge3$.",hint:"Pisahkan menjadi dua kasus.",answer:"$x\\le-5$ atau $x\\ge1$."},
-  {prompt:"Tentukan lingkungan $V_{0.2}(1.5)$.",hint:"Gunakan $(a-r,a+r)$.",answer:"$(1.3,1.7)$."}
+  {prompt:"Tentukan persekitaran $V_{0.2}(1.5)$.",hint:"Gunakan $(a-r,a+r)$.",answer:"$(1.3,1.7)$."}
  ],
  mistakes:["Menganggap $|x+y|=|x|+|y|$ selalu berlaku.","Salah membalik tanda saat menghilangkan nilai mutlak.","Tidak mengenali $|x-a|$ sebagai jarak."],
  connections:["Definisi limit barisan memakai $|a_n-L|<\\varepsilon$.","Definisi limit fungsi memakai $|x-a|<\\delta$.","Metrik standar di $\\mathbb R$ adalah $d(x,y)=|x-y|$."]
@@ -190,7 +190,7 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
 "barisan-dan-limit":{
  intro:[
   "Barisan real adalah fungsi dari $\\mathbb N$ ke $\\mathbb R$. Konvergensi tidak berarti suku akhirnya sama dengan limit; yang diperlukan adalah suku-suku akhirnya dapat dibuat sedekat apa pun dengan limit.",
-  "Bahasa formalnya adalah ε-N: untuk setiap toleransi $\\varepsilon>0$, terdapat indeks ambang $N$ setelah itu semua suku berada dalam lingkungan $\\varepsilon$ dari limit."
+  "Bahasa formalnya adalah ε-N: untuk setiap toleransi $\\varepsilon>0$, terdapat indeks ambang $N$ setelah itu semua suku berada dalam persekitaran $\\varepsilon$ dari limit."
  ],
  notation:[
   {symbol:"$(a_n)$",meaning:"Barisan dengan suku ke-$n$ adalah $a_n$."},
@@ -311,7 +311,7 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  ],
  exercises:[
   {prompt:"Cari subbarisan konvergen dari $a_n=\\sin(n\\pi/2)$.",hint:"Periksa kelas indeks modulo $4$.",answer:"Misalnya $a_{4k}=0$ merupakan subbarisan konstan yang konvergen ke $0$."},
-  {prompt:"Jika semua subbarisan konvergen mempunyai limit $L$, apakah barisan pasti konvergen ke $L$?",hint:"Tambahkan asumsi bounded lalu gunakan kontraposisi.",answer:"Untuk barisan bounded, ya: jika tidak konvergen ke $L$, dapat dipilih subbarisan yang tetap di luar suatu lingkungan $L$, lalu Bolzano–Weierstrass memberi subsubbarisan dengan limit berbeda."},
+  {prompt:"Jika semua subbarisan konvergen mempunyai limit $L$, apakah barisan pasti konvergen ke $L$?",hint:"Tambahkan asumsi bounded lalu gunakan kontraposisi.",answer:"Untuk barisan bounded, ya: jika tidak konvergen ke $L$, dapat dipilih subbarisan yang tetap di luar suatu persekitaran $L$, lalu Bolzano–Weierstrass memberi subsubbarisan dengan limit berbeda."},
   {prompt:"Mengapa $n_k\\ge k$ selalu berlaku?",hint:"Indeks subbarisan strictly increasing dan natural.",answer:"Induksi: $n_1\\ge1$ dan $n_{k+1}\\ge n_k+1\\ge k+1$."}
  ],
  mistakes:["Mengambil indeks yang tidak meningkat.","Menganggap subbarisan boleh mengulang suku dengan indeks sama.","Menggunakan Bolzano–Weierstrass tanpa boundedness."],
@@ -416,7 +416,7 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
 },
 
 "perluasan-konsep-limit":{
- intro:["Konsep limit diperluas ke pendekatan dari satu sisi, nilai tak hingga, dan titik tak hingga. Definisi tetap mempertahankan pola kuantor yang sama, hanya jenis lingkungan yang berubah.","Bahasa extended real line memudahkan notasi, tetapi $+\\infty$ dan $-\\infty$ bukan bilangan real biasa."],
+ intro:["Konsep limit diperluas ke pendekatan dari satu sisi, nilai tak hingga, dan titik tak hingga. Definisi tetap mempertahankan pola kuantor yang sama, hanya jenis persekitaran yang berubah.","Bahasa extended real line memudahkan notasi, tetapi $+\\infty$ dan $-\\infty$ bukan bilangan real biasa."],
  formal:[
   D("Limit Satu Sisi","$\\lim_{x\\to a^+}f(x)=L$ memakai $0<x-a<\\delta$; limit kiri memakai $0<a-x<\\delta$."),
   D("Limit Tak Hingga","$f(x)\\to+\\infty$ saat $x\\to a$ jika untuk setiap $M$ terdapat $\\delta>0$ sehingga $0<|x-a|<\\delta$ memberi $f(x)>M$."),
@@ -557,7 +557,7 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
   {prompt:"Apakah $|x|$ terdiferensial di $0$?",hint:"Bandingkan quotient dari kiri dan kanan.",answer:"Tidak; turunan kanan $1$, kiri $-1$."},
   {prompt:"Buktikan turunan fungsi konstan nol.",hint:"Pembilang difference quotient selalu nol.",answer:"Limit quotient adalah $0$."}
  ],
- mistakes:["Menganggap kontinu ⇒ diferensiabel.","Menghilangkan syarat limit dua sisi.","Menggunakan aturan turunan sebelum memastikan fungsi terdefinisi di lingkungan titik."],
+ mistakes:["Menganggap kontinu ⇒ diferensiabel.","Menghilangkan syarat limit dua sisi.","Menggunakan aturan turunan sebelum memastikan fungsi terdefinisi di persekitaran titik."],
  connections:["MVT menghubungkan turunan lokal dengan perubahan global.","Taylor memperluas aproksimasi linear menjadi polinomial.","Analisis kompleks memakai definisi turunan yang serupa tetapi jauh lebih ketat."]
 },
 
