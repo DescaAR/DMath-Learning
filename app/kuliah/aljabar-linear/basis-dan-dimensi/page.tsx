@@ -5,6 +5,7 @@ import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
 import { BasisDimensionEnglish } from "@/components/BasisDimensionEnglish";
+import { ScrollSpyToc } from "@/components/ScrollSpyToc";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Basis dan Dimensi — Aljabar Linear",
@@ -108,12 +109,10 @@ export default function BasisDimensionPage() {
 
       <section className="section">
         <div className="container article-layout textbook-layout wide-article-layout">
-          <aside className="toc material-toc textbook-toc ird-toc">
-            <strong>Isi Bab</strong>
-            {sections.map(([id, label], index) => (
-              <a href={"#" + id} key={id}>{String(index + 1).padStart(2, "0")}. {label}</a>
-            ))}
-          </aside>
+          <ScrollSpyToc
+            title="Isi Bab"
+            sections={sections.map(([id, label]) => ({ id, label }))}
+          />
 
           <article className="article deep-article textbook-article ird-article basis-article">
             <section className="book-section ird-source-section" id="overview">
