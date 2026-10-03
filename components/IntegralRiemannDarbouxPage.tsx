@@ -569,6 +569,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
     "ird-latihan-artikel",
     "ird-latihan-soal",
     "ird-latihan30",
+    "ird-referensi",
   ],[]);
   const [active,setActive]=useState("ird-section-1");
   const [progress,setProgress]=useState(0);
@@ -576,6 +577,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
   const articlePracticeSectionNumber=integralRiemannDarbouxSections.length+4;
   const practiceSectionNumber=integralRiemannDarbouxSections.length+5;
   const extraPracticeSectionNumber=integralRiemannDarbouxSections.length+6;
+  const referenceSectionNumber=integralRiemannDarbouxSections.length+7;
   const theorySectionNumber=(sectionIndex:number)=>sectionIndex===0?1:sectionIndex+3;
 
   const stats=useMemo(()=>{
@@ -660,10 +662,11 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               const id="ird-section-"+(sectionIndex+1);
               return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(theorySectionNumber(sectionIndex)).padStart(2,"0")}</span><span>{section.title}</span></a>;
             })}
-            <a href="#ird-ringkasan" className={active==="ird-ringkasan"?"active":""}><span>{String(summarySectionNumber).padStart(2,"0")}</span>Ringkasan Definisi & Teorema</a>
-            <a href="#ird-latihan-artikel" className={active==="ird-latihan-artikel"?"active":""}><span>{String(articlePracticeSectionNumber).padStart(2,"0")}</span>15 Latihan Tambahan</a>
-            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span>16 Latihan Soal</a>
-            <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>{String(extraPracticeSectionNumber).padStart(2,"0")}</span>30 Latihan Tambahan</a>
+            <a href="#ird-ringkasan" className={active==="ird-ringkasan"?"active":""}><span>{String(summarySectionNumber).padStart(2,"0")}</span><span>Ringkasan Definisi & Teorema</span></a>
+            <a href="#ird-latihan-artikel" className={active==="ird-latihan-artikel"?"active":""}><span>{String(articlePracticeSectionNumber).padStart(2,"0")}</span><span>15 Latihan Tambahan</span></a>
+            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span><span>16 Latihan Soal</span></a>
+            <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>{String(extraPracticeSectionNumber).padStart(2,"0")}</span><span>30 Latihan Tambahan</span></a>
+            <a href="#ird-referensi" className={active==="ird-referensi"?"active":""}><span>{String(referenceSectionNumber).padStart(2,"0")}</span><span>Referensi</span></a>
           </aside>
 
           <article className="article deep-article textbook-article ird-article">
@@ -860,6 +863,20 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                   </article>
                 ))}
               </div>
+            </section>
+
+            <section id="ird-referensi" className="book-section ird-source-section">
+              <div className="section-number">{String(referenceSectionNumber).padStart(2,"0")}</div>
+              <span className="eyebrow">Referensi</span>
+              <h2>Referensi</h2>
+              <article className="ird-formal ird-note" style={{marginTop:24}}>
+                <div className="ird-formal-head"><span>Referensi</span><strong>Bacaan Bidang</strong></div>
+                <div className="ird-formal-body">
+                  <ol>
+                    {material.references.map((reference)=><li key={reference}><SourceText text={reference}/></li>)}
+                  </ol>
+                </div>
+              </article>
             </section>
 
             <section className="next-learning-block textbook-next">
