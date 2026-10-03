@@ -3,14 +3,19 @@
 import Link from "next/link";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import type { BookSubject } from "@/data/book-curricula";
+import { subjectDeepMaterials } from "@/data/subject-deep-materials";
 
 export function BookSubjectHubPage({subject}:{subject:BookSubject}){
   const sectionCount=subject.chapters.reduce((sum,chapter)=>sum+chapter.sections.length,0);
   const first=subject.chapters[0]?.sections[0];
-  const sections=subject.chapters.map((chapter)=>({
-    id:"book-chapter-"+chapter.number.replaceAll(".","-"),
-    label:"Unit "+chapter.number+" · "+chapter.title,
-  }));
+  const deepMaterials=subjectDeepMaterials[subject.slug] ?? [];
+  const sections=[
+    ...(deepMaterials.length>0?[{id:"book-materi-mendalam",label:"Materi Mendalam"}]:[]),
+    ...subject.chapters.map((chapter)=>({
+      id:"book-chapter-"+chapter.number.replaceAll(".","-"),
+      label:"Unit "+chapter.number+" · "+chapter.title,
+    })),
+  ];
 
   return(
     <RiemannHubShell
@@ -64,6 +69,36 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
           </ol>
         </div>
       </section>
+
+      {deepMaterials.length>0&&(
+        <section id="book-materi-mendalam" className="book-section ird-curriculum-section">
+          <div className="section-number">00</div>
+          <span className="eyebrow">Materi Mendalam</span>
+          <h2>Materi Mendalam {subject.title}</h2>
+          <p className="ird-paragraph">
+            Materi berikut merupakan pembahasan khusus yang ditempatkan di dalam bidang {subject.title}. Isi halaman aslinya tetap dipertahankan.
+          </p>
+          <div className="ird-worked-grid">
+            {deepMaterials.map((material,index)=>(
+              <article className="ird-worked-card" key={material.href}>
+                <div className="ird-worked-head">
+                  <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
+                  <div>
+                    <span className="eyebrow">Kuliah · {material.difficulty}</span>
+                    <h3>{material.title}</h3>
+                  </div>
+                </div>
+                <div className="ird-worked-prompt">
+                  <p>{material.summary}</p>
+                </div>
+                <div className="actions">
+                  <Link className="btn primary" href={material.href}>Pelajari</Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       {subject.chapters.map((chapter,chapterIndex)=>(
         <section
