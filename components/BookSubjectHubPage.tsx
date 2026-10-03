@@ -66,13 +66,18 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
                 </a>
               </li>
             ))}
+            {deepMaterials.map((material)=>(
+              <li key={material.href}>
+                <Link href={material.href}>{material.title}</Link>
+              </li>
+            ))}
           </ol>
         </div>
       </section>
 
       {deepMaterials.length>0&&(
         <section id="book-materi-mendalam" className="book-section ird-curriculum-section">
-          <div className="section-number">00</div>
+          <div className="section-number">01</div>
           <span className="eyebrow">Materi Mendalam</span>
           <h2>Materi Mendalam {subject.title}</h2>
           <p className="ird-paragraph">
@@ -106,7 +111,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
           id={"book-chapter-"+chapter.number.replaceAll(".","-")}
           className="book-section ird-curriculum-section"
         >
-          <div className="section-number">{String(chapterIndex+1).padStart(2,"0")}</div>
+          <div className="section-number">{String(chapterIndex+1+(deepMaterials.length>0?1:0)).padStart(2,"0")}</div>
           <span className="eyebrow">Unit {chapter.number} · DMath Learning</span>
           <h2>{chapter.title}</h2>
           <p className="ird-paragraph">
