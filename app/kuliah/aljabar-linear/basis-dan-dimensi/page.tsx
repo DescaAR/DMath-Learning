@@ -29,7 +29,6 @@ const sections = [
   ["rank-nullity", "Rank–Nullity"],
   ["contoh", "Contoh Terbahas"],
   ["ringkasan", "Ringkasan"],
-  ["referensi", "Referensi"],
 ] as const;
 
 function P({ children }: { children: string }) {
@@ -128,36 +127,6 @@ export default function BasisDimensionPage() {
                 Dimensi kemudian mengukur banyaknya vektor yang diperlukan dalam sebuah basis.`}</P>
               <MathVisualization kind="basis" />
               <div style={{marginTop:24}}><InteractiveMathLab kind="basis" /></div>
-
-              <div className="content-box prerequisite-box">
-                <strong>Prasyarat</strong>
-                <ul>
-                  <li>Operasi pada vektor dan skalar.</li>
-                  <li>Ruang vektor dan subruang.</li>
-                  <li>Sistem persamaan linear dan eliminasi Gauss.</li>
-                </ul>
-              </div>
-
-              <div className="learning-objectives">
-                <span className="eyebrow">Tujuan Pembelajaran</span>
-                <div className="objective-grid">
-                  {[
-                    "Menguji apakah suatu vektor merupakan kombinasi linear.",
-                    "Menentukan span dan membangun basis dari spanning set.",
-                    "Menguji kebebasan linear secara konseptual maupun komputasional.",
-                    "Menentukan koordinat relatif terhadap basis.",
-                    "Menggunakan dimensi untuk membatasi ukuran himpunan bebas linear.",
-                    "Membangun basis subruang, row space, dan column space.",
-                    "Membuktikan basis extension dan rank–nullity.",
-                  ].map((x, i) => (
-                    <div className="objective-card" key={x}>
-                      <span>{i + 1}</span>
-                      <p>{x}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
 
             <section className="book-section ird-source-section" id="review">
               <span className="eyebrow">01 · Review Ruang Vektor</span>
@@ -609,16 +578,6 @@ export default function BasisDimensionPage() {
                   Buka 100 Bank Soal
                 </Link>
               </div>
-            </section>
-
-            <section className="book-section ird-source-section" id="referensi">
-              <span className="eyebrow">14 · Referensi</span>
-              <h2>Referensi</h2>
-              <ol className="reference-list">
-                <li>Sheldon Axler, <em>Linear Algebra Done Right</em>, 4th ed., Springer, 2024.</li>
-                <li>Gilbert Strang, <em>Introduction to Linear Algebra</em>, 6th ed., 2023.</li>
-                <li>Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence, <em>Linear Algebra</em>, 5th ed., Pearson, 2022.</li>
-              </ol>
             </section>
           </article>
         </div>
