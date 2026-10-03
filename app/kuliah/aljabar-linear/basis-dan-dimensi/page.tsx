@@ -128,6 +128,8 @@ export default function BasisDimensionPage() {
               <MathVisualization kind="basis" />
               <div style={{marginTop:24}}><InteractiveMathLab kind="basis" /></div>
 
+            </section>
+
             <section className="book-section ird-source-section" id="review">
               <span className="eyebrow">01 · Review Ruang Vektor</span>
               <h2>Ruang Vektor dan Subruang</h2>
