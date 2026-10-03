@@ -60,7 +60,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Hitung hasil bagi dan sisa pembagian $x^4+1$ oleh $x^2+1$ di $\\mathbb Q[x]$.",
         "hint": "Lakukan pembagian panjang.",
-        "answer": "$x^4+1=(x^2-1)(x^2+1)+2$. Jadi $q=x^2-1$ dan $r=2$."
+        "answer": "$x^4+1=(x^2-1)(x^2+1)+2$. Dengan demikian, $q=x^2-1$ dan $r=2$."
       },
       {
         "prompt": "Buktikan jika $R$ domain integral, maka $R[x]$ juga domain integral.",
@@ -138,7 +138,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Buktikan setiap domain Euclidean adalah PID.",
         "hint": "Pilih elemen ideal nonnol dengan nilai Euclidean minimal.",
-        "answer": "Untuk ideal nonnol $I$, pilih $d\\in I$ dengan nilai Euclidean minimum. Bagi setiap $a\\in I$ oleh $d$: $a=qd+r$. Sisa $r=a-qd\\in I$ dan minimalitas memaksa $r=0$. Jadi $I=(d)$."
+        "answer": "Untuk ideal nonnol $I$, pilih $d\\in I$ dengan nilai Euclidean minimum. Bagi setiap $a\\in I$ oleh $d$: $a=qd+r$. Sisa $r=a-qd\\in I$ dan minimalitas memaksa $r=0$. Dengan demikian, $I=(d)$."
       },
       {
         "prompt": "Jelaskan mengapa penurunan nilai Euclidean menjamin algoritma berhenti.",
@@ -206,7 +206,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Buktikan ideal maksimal nonnol pada PID dibangkitkan oleh elemen irreducible.",
         "hint": "Gunakan rantai $(p)\\subseteq(a)\\subseteq R$ jika $p=ab$.",
-        "answer": "Jika $(p)$ maksimal dan $p=ab$ dengan keduanya nonunit, maka $(p)\\subsetneq(a)\\subsetneq R$, kontradiksi. Jadi $p$ irreducible."
+        "answer": "Jika $(p)$ maksimal dan $p=ab$ dengan keduanya nonunit, maka $(p)\\subsetneq(a)\\subsetneq R$, kontradiksi. Dengan demikian, $p$ irreducible."
       },
       {
         "prompt": "Tentukan ideal $(12,30)$ di $\\mathbb Z$.",
