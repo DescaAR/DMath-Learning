@@ -687,7 +687,6 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                     <span className="eyebrow">Definisi</span>
                     <h3>{formalSummary.definitions.length} definisi penting</h3>
                   </div>
-                  <span className="ird-summary-count">{formalSummary.definitions.length}</span>
                 </div>
                 <div className="ird-summary-grid">
                   {formalSummary.definitions.map((block,index)=>(
@@ -708,7 +707,6 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                     <span className="eyebrow">Teorema</span>
                     <h3>{formalSummary.theorems.length} teorema penting</h3>
                   </div>
-                  <span className="ird-summary-count">{formalSummary.theorems.length}</span>
                 </div>
                 <div className="ird-summary-grid">
                   {formalSummary.theorems.map((block,index)=>(
