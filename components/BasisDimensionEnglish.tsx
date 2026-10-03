@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
+import { ScrollSpyToc } from "@/components/ScrollSpyToc";
 
 const sections = [
   ["en-overview","Overview"],["en-review","Vector Space Review"],["en-combinations","Linear Combinations"],
@@ -160,7 +161,10 @@ export function BasisDimensionEnglish() {
 
     <section className="section">
       <div className="container article-layout wide-article-layout">
-        <aside className="toc material-toc"><strong>Chapter Contents</strong>{sections.map(([id,label],i)=><a href={"#"+id} key={id}>{String(i+1).padStart(2,"0")}. {label}</a>)}</aside>
+        <ScrollSpyToc
+          title="Chapter Contents"
+          sections={sections.map(([id, label]) => ({ id, label }))}
+        />
         <article className="article deep-article basis-article">
           <section id="en-overview">
             <span className="eyebrow">Introduction</span><h2>Basis and Dimension</h2>
