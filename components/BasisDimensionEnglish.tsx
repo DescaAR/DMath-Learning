@@ -168,7 +168,9 @@ export function BasisDimensionEnglish() {
             <P>{String.raw`A basis must be large enough to span the entire space while containing no redundant direction. Dimension measures the number of vectors required in any basis.`}</P>
             <MathVisualization kind="basis" />
             <div style={{marginTop:24}}><InteractiveMathLab kind="basis" /></div>
-            <section id="en-review"><span className="eyebrow">01 · Vector Space Review</span><h2>Vector Spaces and Subspaces</h2>
+          </section>
+
+          <section id="en-review"><span className="eyebrow">01 · Vector Space Review</span><h2>Vector Spaces and Subspaces</h2>
             <P>{String.raw`A vector space $V$ over a field $\\mathbb F$ supports vector addition and scalar multiplication satisfying the standard linearity axioms. Key examples are $\\mathbb R^n$, polynomial spaces $\\mathcal P_n$, matrix spaces $M_{m\\times n}(\\mathbb F)$, and function spaces.`}</P>
             <div className="definition-box"><strong>Subspace</strong><P>{String.raw`A subset $W\\subseteq V$ is a subspace if it contains $0$ and is closed under all linear combinations $\\alpha u+\\beta v$.`}</P></div>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`$W=\{(x,y,0):x,y\in\mathbb R\}$ is a subspace of $\mathbb R^3$.`}</P></div>
