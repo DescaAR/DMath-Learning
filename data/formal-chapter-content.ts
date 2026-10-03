@@ -740,7 +740,7 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
       {
         kind:"definition", title:t("Konvergensi Barisan","Sequence Convergence"),
         statement:t("Barisan $(a_n)$ konvergen ke $L$ jika untuk setiap $\\varepsilon>0$ terdapat $N\\in\\mathbb N$ sehingga $n\\ge N$ mengakibatkan $|a_n-L|<\\varepsilon$.","A sequence $(a_n)$ converges to $L$ if for every $\\varepsilon>0$ there exists $N\\in\\mathbb N$ such that $n\\ge N$ implies $|a_n-L|<\\varepsilon$."),
-        intuition:t("Setelah indeks cukup besar, semua suku berada di dalam setiap lingkungan sekecil apa pun dari $L$.","After sufficiently large indices, all terms lie in every arbitrarily small neighborhood of $L$.")
+        intuition:t("Setelah indeks cukup besar, semua suku berada di dalam setiap persekitaran sekecil apa pun dari $L$.","After sufficiently large indices, all terms lie in every arbitrarily small neighborhood of $L$.")
       },
       {
         kind:"lemma", title:t("Lemma Keunikan Limit","Uniqueness of Limit Lemma"),
