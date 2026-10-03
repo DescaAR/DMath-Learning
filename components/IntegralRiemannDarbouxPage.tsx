@@ -274,6 +274,64 @@ function DiscontinuityVisual() {
   );
 }
 
+function FundamentalTheoremVisual() {
+  const [x,setX]=useState(1.4);
+  const f=(t:number)=>t*t;
+  const F=(t:number)=>t*t*t/3;
+  const x0=58,y0=238,pw=490,ph=185;
+  const xp=(t:number)=>x0+t/2*pw;
+  const yp=(v:number)=>y0-v/4*ph;
+  const curve=Array.from({length:121},(_,i)=>{const t=2*i/120;return [xp(t),yp(f(t))]});
+  const areaPts=Array.from({length:Math.max(2,Math.floor(x/2*120)+1)},(_,i)=>{
+    const n=Math.max(1,Math.floor(x/2*120));
+    const t=x*i/n;
+    return [xp(t),yp(f(t))];
+  });
+  const area=[[xp(0),y0],...areaPts,[xp(x),y0]].map(p=>p.join(",")).join(" ");
+  const h=0.001;
+  const numericalSlope=(F(x+h)-F(x-h))/(2*h);
+
+  return (
+    <section className="ird-exercise-lab">
+      <div className="ird-visual-copy">
+        <span className="eyebrow">Visualisasi Interaktif</span>
+        <h3>Teorema Fundamental Kalkulus I</h3>
+        <p>
+          Untuk <RichMath>{"$f(t)=t^2$"}</RichMath>, fungsi akumulasi
+          <RichMath>{" $F(x)=\\int_0^x t^2\\,d t=\\frac{x^3}{3}$ "}</RichMath>
+          mempunyai kemiringan <RichMath>{"$F'(x)=f(x)$"}</RichMath>.
+        </p>
+        <label className="ird-slider">
+          <span>Posisi <strong>x = {x.toFixed(2)}</strong></span>
+          <input type="range" min="0.10" max="2" step="0.05" value={x} onChange={e=>setX(Number(e.target.value))}/>
+        </label>
+        <div className="ird-metric-grid">
+          <div><span>f(x)</span><strong>{f(x).toFixed(4)}</strong></div>
+          <div><span>F(x)</span><strong>{F(x).toFixed(4)}</strong></div>
+          <div><span>F′(x) numerik</span><strong>{numericalSlope.toFixed(4)}</strong></div>
+          <div><span>Selisih |F′−f|</span><strong>{Math.abs(numericalSlope-f(x)).toExponential(1)}</strong></div>
+        </div>
+      </div>
+      <figure className="ird-svg-card">
+        <svg viewBox="0 0 610 300" role="img" aria-label="Luas akumulasi di bawah kurva t kuadrat sampai x">
+          <line x1={x0} y1={y0} x2={x0+pw+15} y2={y0} className="ird-axis"/>
+          <line x1={x0} y1={y0+8} x2={x0} y2="35" className="ird-axis"/>
+          <polygon points={area} className="ird-area-fill"/>
+          <polyline points={curve.map(p=>p.join(",")).join(" ")} className="ird-curve"/>
+          <line x1={xp(x)} y1="42" x2={xp(x)} y2={y0} className="ird-current-x"/>
+          <circle cx={xp(x)} cy={yp(f(x))} r="6" className="ird-ex-label-point"/>
+          <text x={xp(x)} y="263" textAnchor="middle" className="ird-svg-label">x</text>
+          <text x={xp(x)+10} y={yp(f(x))-10} className="ird-svg-label">f(x)</text>
+        </svg>
+        <figcaption>
+          Daerah yang diarsir menyatakan <RichMath>{"$F(x)=\\int_0^x f(t)\\,d t$"}</RichMath>.
+          Ketika batas kanan bergerak sedikit, perubahan luas per satuan perubahan $x$ mendekati tinggi kurva $f(x)$.
+        </figcaption>
+      </figure>
+    </section>
+  );
+}
+
 function OscillationVisual() {
   return (
     <figure className="ird-figure">
@@ -484,9 +542,10 @@ function SubsectionVisual({ sectionIndex, subIndex }: { sectionIndex:number; sub
   if (sectionIndex===6 && subIndex===3) return <DiscontinuityVisual/>;
   return null;
 }
-function DirectSectionVisual({ sectionIndex }: { sectionIndex:number }) {
+function DirectSectionVisual({ sectionIndex, sectionTitle }: { sectionIndex:number; sectionTitle:string }) {
   if (sectionIndex===4) return <DarbouxIntegralVisual/>;
-
+  if (sectionTitle==="Teorema Fundamental Kalkulus dan Konsekuensinya") return <FundamentalTheoremVisual/>;
+  if (sectionTitle==="Osilasi dan Kriteria Lebesgue") return <OscillationVisual/>;
   return null;
 }
 
@@ -498,6 +557,8 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
   ],[]);
   const [active,setActive]=useState("ird-section-1");
   const [progress,setProgress]=useState(0);
+  const practiceSectionNumber=integralRiemannDarbouxSections.length+1;
+  const extraPracticeSectionNumber=integralRiemannDarbouxSections.length+2;
 
   const stats=useMemo(()=>{
     const counts={definition:0,theorem:0,lemma:0,proposition:0,corollary:0,example:0,exercise:0};
@@ -540,7 +601,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
           <h1>Integral Riemann dan Integral Darboux</h1>
           <p className="chapter-lead"><RichMath>{material.summary}</RichMath></p>
           <div className="chapter-meta textbook-meta">
-            <span>9 bab materi + latihan</span><span>Riemann + Darboux</span><span>Menengah–Lanjut</span><span>Visual & formal</span>
+            <span>{integralRiemannDarbouxSections.length} bagian materi + latihan</span><span>Riemann + Darboux</span><span>Menengah–Lanjut</span><span>Visual & formal</span>
           </div>
           <div className="chapter-stat-grid">
             <div><strong>{stats.definition}</strong><span>definisi</span></div>
@@ -564,8 +625,8 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               const id="ird-section-"+(index+1);
               return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(index+1).padStart(2,"0")}</span>{section.title}</a>;
             })}
-            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>10</span>Latihan Soal</a>
-            <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>11</span>30 Latihan Tambahan</a>
+            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span>Latihan Soal</a>
+            <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>{String(extraPracticeSectionNumber).padStart(2,"0")}</span>30 Latihan Tambahan</a>
           </aside>
 
           <article className="article deep-article textbook-article ird-article">
@@ -577,10 +638,9 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                 {section.blocks.map((block,index)=>(
                   <Fragment key={section.title+"-b-"+index}>
                     <FormalBlock block={block} index={index} />
-                    {sectionIndex===8 && index===7 && <OscillationVisual />}
                   </Fragment>
                 ))}
-                <DirectSectionVisual sectionIndex={sectionIndex} />
+                <DirectSectionVisual sectionIndex={sectionIndex} sectionTitle={section.title} />
                 {section.subsections.map((sub,subIndex)=>(
                   <div className="ird-subsection" key={sub.title}>
                     <h3>{sub.title}</h3>
@@ -592,7 +652,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             ))}
 
             <section id="ird-latihan-soal" className="book-section ird-practice-section">
-              <div className="section-number">10</div>
+              <div className="section-number">{String(practiceSectionNumber).padStart(2,"0")}</div>
               <span className="eyebrow">Latihan Soal dan Solusi</span>
               <h2>13 latihan soal Integral Riemann dan Darboux</h2>
               <p>Soal ditulis dengan kalimat perintah aktif. Buka solusi setelah mencoba menyelesaikan soal secara mandiri. Visualisasi disediakan pada soal yang paling terbantu oleh interpretasi geometris.</p>
@@ -617,7 +677,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             </section>
 
             <section id="ird-latihan30" className="book-section ird-practice-section">
-              <div className="section-number">11</div>
+              <div className="section-number">{String(extraPracticeSectionNumber).padStart(2,"0")}</div>
               <span className="eyebrow">Latihan Tambahan Menengah–Menantang</span>
               <h2>30 soal tambahan Integral Riemann dan Darboux</h2>
               <p>Bagian ini memuat seluruh soal dari lembar latihan yang diberikan. Soal disajikan satu per satu agar dapat dipakai sebagai latihan mandiri.</p>
@@ -635,7 +695,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               <div>
                 <span className="eyebrow">Lanjutkan</span>
                 <h2>Latihan Lanjutan Integral Riemann dan Darboux</h2>
-                <p>Setelah memahami jumlah Riemann dan Darboux, uji kemampuan pada fungsi diskontinu, fungsi monoton, fungsi Thomae, sifat aljabar integral, serta kriteria osilasi.</p>
+                <p>Setelah memahami jumlah Riemann dan Darboux, Teorema Fundamental Kalkulus, fungsi diskontinu, fungsi monoton, fungsi Thomae, sifat aljabar integral, serta kriteria osilasi, uji kemampuan melalui latihan terstruktur.</p>
               </div>
               <div className="actions">
                 <a className="btn primary" href="#ird-latihan-soal">Kerjakan Latihan Soal</a>
