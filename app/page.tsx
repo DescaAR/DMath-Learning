@@ -3,11 +3,12 @@ import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { learningTracks, materials, subjects } from "@/data/site-data";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
+import { isPublicAcademicLevel, isPublicContentHref } from "@/lib/public-content";
 
 export const metadata: Metadata = {
   ...createPageMetadata({
     title: "DMath Learning",
-    description: "Belajar matematika dari konsep hingga problem solving: materi lengkap, pembuktian, visualisasi, bank soal, olimpiade, ON-MIPA, dan matematika kuliah.",
+    description: "Belajar matematika tingkat universitas dan ON-MIPA dari konsep hingga problem solving: materi lengkap, pembuktian, visualisasi, latihan, dan bank soal.",
     path: "/",
     keywords: ["platform belajar matematika Indonesia", "belajar matematika online"],
   }),
@@ -15,15 +16,18 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const visibleTracks = learningTracks.filter((track) => isPublicContentHref(track.href));
+  const visibleMaterials = materials.filter((material) => isPublicAcademicLevel(material.level));
+
   return (
     <RiemannHubShell
       eyebrow="DMath Learning · Think Deeper, Solve Better."
       title="DMath Learning"
-      lead="Materi matematika terstruktur untuk jenjang sekolah, universitas, olimpiade, dan ON-MIPA, dilengkapi definisi, pembuktian, contoh, visualisasi, latihan, dan bank soal."
-      meta={["SD–SMA","Kuliah","Olimpiade","ON-MIPA"]}
+      lead="Materi matematika terstruktur untuk tingkat universitas dan ON-MIPA, dilengkapi definisi, pembuktian, contoh, visualisasi, latihan, dan bank soal."
+      meta={["Kuliah","ON-MIPA","Pembuktian Formal","Problem Solving"]}
       stats={[
-        {value:materials.length,label:"materi tersedia"},
-        {value:learningTracks.length,label:"jalur belajar"},
+        {value:visibleMaterials.length,label:"materi tersedia"},
+        {value:visibleTracks.length,label:"jalur belajar"},
         {value:100,label:"soal Basis & Dimensi"},
         {value:30,label:"latihan terkurasi"},
       ]}
@@ -45,7 +49,7 @@ export default function Home() {
         <span className="eyebrow">Jalur Belajar</span>
         <h2>Jalur Belajar</h2>
         <div className="ird-worked-grid home-learning-grid">
-          {learningTracks.map((track,index)=>(
+          {visibleTracks.map((track,index)=>(
             <article className="ird-worked-card" key={track.title}>
               <div className="ird-worked-head"><div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div><div><span className="eyebrow">Jalur</span><h3>{track.title}</h3></div></div>
               <div className="ird-worked-prompt"><p>{track.description}</p></div>
