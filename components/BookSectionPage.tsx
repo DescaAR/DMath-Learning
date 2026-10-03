@@ -110,13 +110,10 @@ export function BookSectionPage({
 
   const sections=[
     {id:"book-lesson-1",label:"Pengantar"},
-    {id:"book-lesson-2",label:"Prasyarat & Tujuan"},
-    {id:"book-lesson-3",label:"Notasi & Konsep"},
     {id:"book-lesson-4",label:"Definisi & Contoh"},
     {id:"book-lesson-5",label:"Hasil Formal & Bukti"},
     {id:"book-lesson-6",label:"Contoh Terbahas"},
     {id:"book-lesson-7",label:"Visualisasi"},
-    {id:"book-lesson-8",label:"Referensi"},
     {id:"book-latihan-soal",label:"Latihan Soal"},
   ];
 
@@ -153,7 +150,7 @@ export function BookSectionPage({
       overviewEyebrow="Struktur Materi"
       overviewTitle="Urutan pembelajaran"
       overviewText="Materi dibaca dari pengantar dan definisi menuju hasil formal, contoh, visualisasi, lalu latihan soal."
-      roadmap={["Pengantar","Prasyarat","Notasi","Definisi & contoh","Hasil formal & bukti","Contoh terbahas","Visualisasi","Referensi","Latihan"]}
+      roadmap={["Pengantar","Definisi & contoh","Hasil formal & bukti","Contoh terbahas","Visualisasi","Latihan"]}
       sections={sections}
     >
       <section id="book-lesson-1" className="book-section ird-source-section">
@@ -164,54 +161,9 @@ export function BookSectionPage({
         <div style={{marginTop:28}}><MathVisualization kind={visualKind}/></div>
       </section>
 
-      <section id="book-lesson-2" className="book-section ird-source-section">
+      <section id="book-lesson-4" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">Bagian 2</span>
-        <h2>Prasyarat dan tujuan pembelajaran</h2>
-        <div className="solution-overview-grid">
-          <div className="content-box">
-            <strong>Prasyarat</strong>
-            <p>
-              {previous
-                ?"Sebaiknya telah memahami submateri sebelumnya, “"+previous.number+" · "+previous.title+"”, terutama definisi dan hasil formal yang digunakan kembali."
-                :"Submateri ini merupakan bagian awal pada "+subject.title+" dan digunakan untuk membangun konsep yang diperlukan pada bab berikutnya."}
-            </p>
-            {previous&&<Link className="text-link" href={"/materi/"+subject.slug+"/"+previous.slug}>← {previous.title}</Link>}
-          </div>
-          <div className="content-box">
-            <strong>Tujuan Pembelajaran</strong>
-            <ul>
-              {section.keyIdeas.map((idea)=><li key={idea}>Menjelaskan dan menggunakan <strong>{idea}</strong> secara tepat.</li>)}
-              <li>Menghubungkan definisi dengan contoh, hasil formal, pembuktian, dan penyelesaian soal.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="book-lesson-3" className="book-section ird-source-section">
-        <div className="section-number">03</div>
-        <span className="eyebrow">Bagian 3</span>
-        <h2>Notasi dan konsep utama</h2>
-        {content.notation?.length?(
-          <div className="notation-table">
-            {content.notation.map((item)=>(
-              <div className="notation-row" key={item.symbol}>
-                <div className="notation-symbol"><Text>{item.symbol}</Text></div>
-                <div className="notation-meaning"><Text>{item.meaning}</Text></div>
-              </div>
-            ))}
-          </div>
-        ):(
-          <p className="ird-paragraph">Submateri ini menggunakan notasi yang telah diperkenalkan pada bagian sebelumnya.</p>
-        )}
-        <div className="ird-roadmap" style={{marginTop:28}}>
-          {section.keyIdeas.map((idea,index)=><div key={idea}><span>{String(index+1).padStart(2,"0")}</span><strong>{idea}</strong></div>)}
-        </div>
-      </section>
-
-      <section id="book-lesson-4" className="book-section ird-source-section">
-        <div className="section-number">04</div>
-        <span className="eyebrow">Bagian 4</span>
         <h2>Definisi formal</h2>
         <p className="ird-paragraph">Definisi hanya digunakan untuk pernyataan yang menetapkan makna suatu objek atau istilah matematika. Setiap definisi langsung diikuti contoh.</p>
 
@@ -235,8 +187,8 @@ export function BookSectionPage({
       </section>
 
       <section id="book-lesson-5" className="book-section ird-source-section">
-        <div className="section-number">05</div>
-        <span className="eyebrow">Bagian 5</span>
+        <div className="section-number">03</div>
+        <span className="eyebrow">Bagian 3</span>
         <h2>Teorema, lemma, proposisi, akibat, dan pembuktian</h2>
         <p className="ird-paragraph">Setiap hasil formal dibaca bersama seluruh hipotesisnya. Pernyataan yang belum mempunyai pembuktian memadai tidak ditampilkan sebagai teorema, lemma, proposisi, atau akibat.</p>
 
@@ -283,8 +235,8 @@ export function BookSectionPage({
       </section>
 
       <section id="book-lesson-6" className="book-section ird-source-section">
-        <div className="section-number">06</div>
-        <span className="eyebrow">Bagian 6</span>
+        <div className="section-number">04</div>
+        <span className="eyebrow">Bagian 4</span>
         <h2>Contoh terbahas</h2>
         <p className="ird-paragraph">Contoh berikut memperlihatkan penggunaan definisi dan hasil formal pada penyelesaian masalah.</p>
         <div className="ird-worked-grid">
@@ -311,8 +263,8 @@ export function BookSectionPage({
       </section>
 
       <section id="book-lesson-7" className="book-section ird-source-section">
-        <div className="section-number">07</div>
-        <span className="eyebrow">Bagian 7</span>
+        <div className="section-number">05</div>
+        <span className="eyebrow">Bagian 5</span>
         <h2>Visualisasi dan eksplorasi</h2>
         <p className="ird-paragraph">Representasi visual digunakan untuk memeriksa struktur konsep, sedangkan panel interaktif memungkinkan parameter diubah dan akibatnya diamati langsung.</p>
         <div className="ird-visual-stack">
@@ -321,20 +273,8 @@ export function BookSectionPage({
         </div>
       </section>
 
-      <section id="book-lesson-8" className="book-section ird-source-section">
-        <div className="section-number">08</div>
-        <span className="eyebrow">Bagian 8</span>
-        <h2>Referensi</h2>
-        <article className="ird-formal ird-note" style={{marginTop:24}}>
-          <div className="ird-formal-head"><span>Referensi</span><strong>Bacaan bidang</strong></div>
-          <div className="ird-formal-body">
-            {subject.source} ({subject.sourceYear}) digunakan untuk memeriksa terminologi dan cakupan bidang. Urutan pembelajaran, penjelasan, contoh, pembuktian, latihan, dan visualisasi pada halaman ini disusun untuk DMath Learning.
-          </div>
-        </article>
-      </section>
-
       <section id="book-latihan-soal" className="book-section ird-practice-section">
-        <div className="section-number">09</div>
+        <div className="section-number">06</div>
         <span className="eyebrow">Latihan Soal dan Solusi</span>
         <h2>{content.exercises.length} latihan soal</h2>
         <p className="ird-paragraph">Kerjakan soal terlebih dahulu. Petunjuk dan solusi lengkap dapat dibuka setelah mencoba.</p>
