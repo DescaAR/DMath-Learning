@@ -14,7 +14,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function MateriPage() {
-  const visibleBookSubjects=bookSubjects.filter((subject)=>isPublicBookSubjectSlug(subject.slug));
+  const visibleBookSubjects=bookSubjects.filter((subject)=>isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level,subject.level));
   const bookSectionCount=visibleBookSubjects.reduce((sum,subject)=>sum+subject.chapters.reduce((n,chapter)=>n+chapter.sections.length,0),0);
   const visibleDeepMaterials=deepMaterials.filter((material)=>isPublicAcademicLevel(material.level,material.track) && isPublicMaterialSlug(material.slug));
 
