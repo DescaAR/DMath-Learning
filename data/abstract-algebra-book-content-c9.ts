@@ -66,7 +66,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Buktikan irisan dua ideal $I\\cap J$ adalah ideal.",
         "hint": "Gunakan uji ideal.",
-        "answer": "Irisan tidak kosong karena memuat 0. Selisih dua elemen irisan berada di kedua ideal, dan perkalian oleh elemen ring juga berada di kedua ideal. Jadi irisan ideal."
+        "answer": "Irisan tidak kosong karena memuat 0. Selisih dua elemen irisan berada di kedua ideal, dan perkalian oleh elemen ring juga berada di kedua ideal. Dengan demikian, irisan ideal."
       },
       {
         "prompt": "Buktikan jumlah $I+J=\\{i+j:i\\in I,j\\in J\\}$ adalah ideal.",
@@ -389,7 +389,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
         "title": "Kriteria Kuosien untuk Ideal Prima",
         "statement": "Ideal proper $P$ pada ring komutatif $R$ adalah prima jika dan hanya jika $R/P$ merupakan domain integral.",
         "proof": [
-          "Jika $P$ prima dan $(a+P)(b+P)=P$, maka $ab\\in P$. Keprimaan memberi $a\\in P$ atau $b\\in P$, sehingga salah satu koset nol. Jadi tidak ada pembagi nol nontrivial di kuosien.",
+          "Jika $P$ prima dan $(a+P)(b+P)=P$, maka $ab\\in P$. Keprimaan memberi $a\\in P$ atau $b\\in P$, sehingga salah satu koset nol. Dengan demikian, tidak ada pembagi nol nontrivial di kuosien.",
           "Sebaliknya, jika $R/P$ domain integral dan $ab\\in P$, maka $(a+P)(b+P)=P$. Tidak adanya pembagi nol memberi $a+P=P$ atau $b+P=P$.",
           "Kesamaan koset nol ekuivalen dengan keanggotaan di $P$. Dengan demikian $a\\in P$ atau $b\\in P$."
         ]
@@ -439,7 +439,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Tentukan apakah $(x^2+1)$ maksimal di $\\mathbb R[x]$.",
         "hint": "Periksa apakah polinom dapat difaktorkan di $\\mathbb R[x]$.",
-        "answer": "$x^2+1$ tidak mempunyai akar real dan irreducible derajat 2. Pada PID $\\mathbb R[x]$, ideal yang dibangkitkan irreducible maksimal. Jadi maksimal."
+        "answer": "$x^2+1$ tidak mempunyai akar real dan irreducible derajat 2. Pada PID $\\mathbb R[x]$, ideal yang dibangkitkan irreducible maksimal. Dengan demikian, maksimal."
       },
       {
         "prompt": "Tentukan apakah $(6)$ ideal prima di $\\mathbb Z$.",
