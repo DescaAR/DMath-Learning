@@ -7,7 +7,7 @@ import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { bookSubjects } from "@/data/book-curricula";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
-import { isPublicAcademicLevel } from "@/lib/public-content";
+import { isPublicAcademicLevel, isPublicMaterialSlug } from "@/lib/public-content";
 
 type LevelFilter = "Semua" | "SD" | "SMP" | "SMA" | "Kuliah" | "Olimpiade";
 type TrackGroup = "Reguler" | "Olimpiade";
@@ -35,6 +35,7 @@ type CatalogItem = {
 
 function levelGroup(level: string, track = ""): CatalogItem["levelGroup"] {
   const value = (level + " " + track).toLowerCase();
+  if (value.includes("kuliah") || value.includes("universitas")) return "Kuliah";
   if (value.includes("olimpiade") || value.includes("on-mipa") || value.includes("onmipa")) return "Olimpiade";
   if (value.includes("sd")) return "SD";
   if (value.includes("smp")) return "SMP";
@@ -52,7 +53,11 @@ function trackGroup(track: string, level: string): CatalogItem["trackGroup"] {
 const bookSubjectSlugs = new Set<string>(bookSubjects.map((subject) => subject.slug));
 
 const baseItems: CatalogItem[] = deepMaterials
-  .filter((material) => !bookSubjectSlugs.has(material.slug) && isPublicAcademicLevel(material.level, material.track))
+  .filter((material) =>
+    !bookSubjectSlugs.has(material.slug) &&
+    isPublicAcademicLevel(material.level, material.track) &&
+    isPublicMaterialSlug(material.slug)
+  )
   .map((material) => {
   const en = deepMaterialEnMap[material.slug] ?? material;
   return {
@@ -113,7 +118,7 @@ baseItems.push({
   href: "/kuliah/aljabar-linear/basis-dan-dimensi",
 });
 
-const LEVELS: LevelFilter[] = ["Semua", "Kuliah", "Olimpiade"];
+const LEVELS: LevelFilter[] = ["Semua", "Kuliah"];
 const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Lanjut"];
 const SUBJECTS = [
   "Semua",
