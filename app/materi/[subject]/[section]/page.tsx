@@ -5,11 +5,11 @@ import { StructuredData } from "@/components/StructuredData";
 import { allBookSections, getBookSection } from "@/data/book-curricula";
 import { getBookSectionContent } from "@/data/book-section-content";
 import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
-import { isPublicBookSubjectSlug } from "@/lib/public-content";
+import { isPublicAcademicLevel, isPublicBookSubjectSlug } from "@/lib/public-content";
 
 export function generateStaticParams(){
   return allBookSections
-    .filter(({subject})=>isPublicBookSubjectSlug(subject.slug))
+    .filter(({subject})=>isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level,subject.level))
     .map(({subject,section})=>({
       subject:subject.slug,
       section:section.slug,
@@ -23,7 +23,7 @@ export async function generateMetadata({
 }):Promise<Metadata>{
   const {subject:subjectSlug,section:sectionSlug}=await params;
   const result=getBookSection(subjectSlug,sectionSlug);
-  if(!result || !isPublicBookSubjectSlug(result.subject.slug))return {};
+  if(!result || !isPublicBookSubjectSlug(result.subject.slug) || !isPublicAcademicLevel(result.subject.level,result.subject.level))return {};
 
   const {subject,chapter,section}=result;
   return createPageMetadata({
@@ -42,7 +42,7 @@ export default async function BookSectionRoute({
 }){
   const {subject:subjectSlug,section:sectionSlug}=await params;
   const result=getBookSection(subjectSlug,sectionSlug);
-  if(!result || !isPublicBookSubjectSlug(result.subject.slug))notFound();
+  if(!result || !isPublicBookSubjectSlug(result.subject.slug) || !isPublicAcademicLevel(result.subject.level,result.subject.level))notFound();
 
   const {subject,chapter,section}=result;
   const content=getBookSectionContent(section.slug);
