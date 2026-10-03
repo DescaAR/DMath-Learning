@@ -1,4 +1,5 @@
 import type { BookSection, BookSubject } from "@/data/book-curricula";
+import { abstractAlgebraDepthNotes } from "@/data/abstract-algebra-depth-notes";
 
 const s=(
   number:string,
@@ -237,7 +238,7 @@ const sa=(number:string,slug:string,title:string,sourceTitle:string,keyIdeas:str
   title,
   sourceTitle,
   keyIdeas,
-  "Membahas "+title+" secara formal dengan fokus pada "+keyIdeas.join(", ")+". Materi dilengkapi definisi, hasil formal beserta pembuktian, contoh terbahas, eksplorasi, dan latihan soal."
+  abstractAlgebraDepthNotes[slug]?.overview[0] ?? ("Membahas "+title+" secara formal melalui definisi, hasil formal beserta pembuktian, contoh terbahas, eksplorasi, dan latihan soal.")
 );
 
 export const abstractAlgebraBook:BookSubject={
