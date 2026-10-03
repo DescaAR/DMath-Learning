@@ -583,6 +583,91 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
     "subsections": []
   },
   {
+    "title": "Teorema Fundamental Kalkulus dan Konsekuensinya",
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "Bagian ini menghubungkan integral Riemann dengan turunan. Hasil-hasil sebelumnya menjelaskan kapan suatu fungsi terintegralkan dan sifat-sifat nilai integralnya. Teorema Fundamental Kalkulus menunjukkan bahwa, untuk fungsi yang cukup regular, proses integrasi dan diferensiasi saling membalik."
+      }
+    ],
+    "subsections": [
+      {
+        "title": "Batas integral dan fungsi integral",
+        "blocks": [
+          {
+            "kind": "theorem",
+            "title": "Batas integral",
+            "body": "Diberikan fungsi $f$ terintegralkan Riemann pada $[a,b]$. Jika terdapat $m,M\\in\\mathbb{R}$ sehingga\n\\[\nm\\le f(x)\\le M\n\\]\nuntuk setiap $x\\in[a,b]$, berlaku\n\\[\nm(b-a)\n\\le\n\\int_a^b f(x)\\,d x\n\\le\nM(b-a).\n\\]",
+            "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan memenuhi\n\\[\nm\\le f(x)\\le M\n\\]\nuntuk setiap $x\\in[a,b]$.\n\nDibuktikan bahwa\n\\[\nm(b-a)\n\\le\n\\int_a^b f(x)\\,d x\n\\le\nM(b-a).\n\\]\n\nFungsi konstan $x\\mapsto m$ dan $x\\mapsto M$ terintegralkan Riemann. Berdasarkan Teorema Monotonisitas Integral,\n\\[\n\\int_a^b m\\,d x\n\\le\n\\int_a^b f(x)\\,d x\n\\le\n\\int_a^b M\\,d x.\n\\]\nIntegral fungsi konstan memberikan\n\\[\n\\int_a^b m\\,d x=m(b-a)\n\\]\ndan\n\\[\n\\int_a^b M\\,d x=M(b-a).\n\\]\nDengan demikian,\n\\[\nm(b-a)\n\\le\n\\int_a^b f(x)\\,d x\n\\le\nM(b-a).\n\\]\nDengan demikian, Teorema Batas Integral terbukti."
+          },
+          {
+            "kind": "theorem",
+            "title": "Kontinuitas fungsi integral",
+            "body": "Diberikan fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan didefinisikan\n\\[\nF(x)=\\int_a^x f(t)\\,d t,\n\\qquad x\\in[a,b].\n\\]\nJika $|f(x)|\\le M$ pada $[a,b]$, untuk setiap $x,y\\in[a,b]$ berlaku\n\\[\n|F(x)-F(y)|\\le M|x-y|.\n\\]\nKhususnya, $F$ kontinu pada $[a,b]$.",
+            "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$,\n\\[\nF(x)=\\int_a^x f(t)\\,d t,\n\\]\ndan $|f(x)|\\le M$ untuk setiap $x\\in[a,b]$.\n\nDibuktikan bahwa\n\\[\n|F(x)-F(y)|\\le M|x-y|\n\\]\nuntuk setiap $x,y\\in[a,b]$, serta $F$ kontinu pada $[a,b]$.\n\nDiambil sebarang $x,y\\in[a,b]$. Tanpa mengurangi keumuman, diandaikan $x<y$. Berdasarkan Teorema Aditivitas Interval,\n\\[\nF(y)-F(x)=\\int_x^y f(t)\\,d t.\n\\]\nBerdasarkan Teorema Nilai Mutlak,\n\\[\n\\begin{aligned}\n|F(y)-F(x)|\n&=\\left|\\int_x^y f(t)\\,d t\\right|\\\\\n&\\le \\int_x^y |f(t)|\\,d t\\\\\n&\\le \\int_x^y M\\,d t\\\\\n&=M(y-x).\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n|F(x)-F(y)|\\le M|x-y|.\n\\]\n\nDiambil sebarang $c\\in[a,b]$ dan $\\varepsilon>0$. Jika $M=0$, fungsi $F$ konstan. Jika $M>0$, dipilih\n\\[\n\\delta=\\frac{\\varepsilon}{M}.\n\\]\nUntuk $|x-c|<\\delta$ diperoleh\n\\[\n|F(x)-F(c)|\\le M|x-c|<M\\delta=\\varepsilon.\n\\]\nOleh karena itu, $F$ kontinu di setiap $c\\in[a,b]$. Dengan demikian, Teorema Kontinuitas Fungsi Integral terbukti."
+          }
+        ]
+      },
+      {
+        "title": "Teorema Fundamental Kalkulus",
+        "blocks": [
+          {
+            "kind": "theorem",
+            "title": "Teorema Fundamental Kalkulus I",
+            "body": "Diberikan fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan\n\\[\nF(x)=\\int_a^x f(t)\\,d t.\n\\]\nJika $f$ kontinu di $c\\in(a,b)$, fungsi $F$ terdiferensialkan di $c$ dan\n\\[\nF'(c)=f(c).\n\\]\nKhususnya, jika $f$ kontinu pada $[a,b]$, berlaku\n\\[\nF'(x)=f(x)\n\\]\nuntuk setiap $x\\in(a,b)$.",
+            "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$,\n\\[\nF(x)=\\int_a^x f(t)\\,d t,\n\\]\ndan $f$ kontinu di $c\\in(a,b)$.\n\nDibuktikan bahwa $F$ terdiferensialkan di $c$ dan\n\\[\nF'(c)=f(c).\n\\]\n\nDiambil $h\\ne0$ cukup kecil sehingga $c+h\\in[a,b]$. Berdasarkan Teorema Aditivitas Interval,\n\\[\nF(c+h)-F(c)=\\int_c^{c+h}f(t)\\,d t.\n\\]\nOleh karena itu,\n\\[\n\\begin{aligned}\n\\frac{F(c+h)-F(c)}{h}-f(c)\n&=\n\\frac{1}{h}\\int_c^{c+h}f(t)\\,d t\n-\\frac{1}{h}\\int_c^{c+h}f(c)\\,d t\\\\\n&=\n\\frac{1}{h}\\int_c^{c+h}\\bigl(f(t)-f(c)\\bigr)\\,d t.\n\\end{aligned}\n\\]\n\nDiambil sebarang $\\varepsilon>0$. Karena $f$ kontinu di $c$, terdapat $\\delta>0$ sehingga\n\\[\n|t-c|<\\delta\n\\quad\\Longrightarrow\\quad\n|f(t)-f(c)|<\\varepsilon.\n\\]\nUntuk $0<|h|<\\delta$, setiap $t$ yang terletak di antara $c$ dan $c+h$ memenuhi $|t-c|<\\delta$. Berdasarkan Teorema Nilai Mutlak,\n\\[\n\\begin{aligned}\n\\left|\n\\frac{F(c+h)-F(c)}{h}-f(c)\n\\right|\n&\\le\n\\frac{1}{|h|}\n\\int_{\\min\\{c,c+h\\}}^{\\max\\{c,c+h\\}}\n|f(t)-f(c)|\\,d t\\\\\n&<\n\\frac{1}{|h|}\\varepsilon |h|\\\\\n&=\\varepsilon.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n\\lim_{h\\to0}\n\\frac{F(c+h)-F(c)}{h}\n=f(c).\n\\]\nAkibatnya, $F'(c)=f(c)$. Dengan demikian, Teorema Fundamental Kalkulus I terbukti."
+          },
+          {
+            "kind": "theorem",
+            "title": "Teorema Fundamental Kalkulus II atau Newton–Leibniz",
+            "body": "Diberikan fungsi $f$ kontinu pada $[a,b]$. Jika $A$ merupakan antiturunan $f$, yaitu\n\\[\nA'(x)=f(x)\n\\]\nuntuk setiap $x\\in(a,b)$, berlaku\n\\[\n\\int_a^b f(x)\\,d x=A(b)-A(a).\n\\]",
+            "proof": "Diketahui fungsi $f$ kontinu pada $[a,b]$ dan fungsi $A$ memenuhi\n\\[\nA'(x)=f(x)\n\\]\nuntuk setiap $x\\in(a,b]$.\n\nDibuktikan bahwa\n\\[\n\\int_a^b f(x)\\,d x=A(b)-A(a).\n\\]\n\nDiambil sebarang partisi\n\\[\nP=\\{a=x_0<x_1<\\cdots<x_n=b\\}.\n\\]\nPada setiap subinterval $[x_{i-1},x_i]$, Teorema Nilai Rata-Rata diferensial memberikan suatu $\\xi_i\\in(x_{i-1},x_i)$ sehingga\n\\[\nA(x_i)-A(x_{i-1})\n=A'(\\xi_i)(x_i-x_{i-1}).\n\\]\nKarena $A'(\\xi_i)=f(\\xi_i)$,\n\\[\nA(x_i)-A(x_{i-1})\n=f(\\xi_i)\\Delta x_i.\n\\]\nDijumlahkan untuk $i=1,\\ldots,n$,\n\\[\n\\begin{aligned}\nA(b)-A(a)\n&=\\sum_{i=1}^n\\bigl(A(x_i)-A(x_{i-1})\\bigr)\\\\\n&=\\sum_{i=1}^n f(\\xi_i)\\Delta x_i\\\\\n&=S(f,\\dot P),\n\\end{aligned}\n\\]\ndengan $\\dot P$ partisi berlabel yang labelnya adalah $\\xi_i$.\n\nKarena $f$ kontinu pada $[a,b]$, fungsi $f$ terintegralkan Riemann. Ketika $\\lVert P\\rVert\\to0$, definisi integral Riemann memberikan\n\\[\nS(f,\\dot P)\\longrightarrow\\int_a^b f(x)\\,d x.\n\\]\nRuas kiri $A(b)-A(a)$ tidak bergantung pada partisi. Oleh karena itu,\n\\[\nA(b)-A(a)=\\int_a^b f(x)\\,d x.\n\\]\nDengan demikian, Teorema Fundamental Kalkulus II terbukti."
+          },
+          {
+            "kind": "corollary",
+            "title": "Diferensiasi integral dengan batas berubah",
+            "body": "Diberikan fungsi $f$ kontinu pada interval yang memuat range fungsi $\\alpha$ dan $\\beta$. Jika $\\alpha$ dan $\\beta$ terdiferensialkan, serta\n\\[\nH(x)=\\int_{\\alpha(x)}^{\\beta(x)}f(t)\\,d t,\n\\]\nberlaku\n\\[\nH'(x)\n=f(\\beta(x))\\beta'(x)\n-f(\\alpha(x))\\alpha'(x).\n\\]",
+            "proof": "Diketahui\n\\[\nH(x)=\\int_{\\alpha(x)}^{\\beta(x)}f(t)\\,d t\n\\]\ndengan $f$ kontinu, sedangkan $\\alpha$ dan $\\beta$ terdiferensialkan.\n\nDibuktikan bahwa\n\\[\nH'(x)\n=f(\\beta(x))\\beta'(x)\n-f(\\alpha(x))\\alpha'(x).\n\\]\n\nDipilih titik tetap $c$ pada domain $f$ dan didefinisikan\n\\[\nF(u)=\\int_c^u f(t)\\,d t.\n\\]\nBerdasarkan Teorema Fundamental Kalkulus I,\n\\[\nF'(u)=f(u).\n\\]\nBerdasarkan aditivitas interval,\n\\[\nH(x)=F(\\beta(x))-F(\\alpha(x)).\n\\]\nAturan rantai memberikan\n\\[\n\\begin{aligned}\nH'(x)\n&=F'(\\beta(x))\\beta'(x)-F'(\\alpha(x))\\alpha'(x)\\\\\n&=f(\\beta(x))\\beta'(x)-f(\\alpha(x))\\alpha'(x).\n\\end{aligned}\n\\]\nDengan demikian, Akibat Diferensiasi Integral dengan Batas Berubah terbukti."
+          }
+        ]
+      },
+      {
+        "title": "Teorema Nilai Rata-Rata untuk Integral",
+        "blocks": [
+          {
+            "kind": "theorem",
+            "title": "Teorema Nilai Rata-Rata untuk Integral",
+            "body": "Diberikan fungsi $f$ kontinu pada $[a,b]$ dengan $a<b$. Terdapat $c\\in[a,b]$ sehingga\n\\[\n\\int_a^b f(x)\\,d x=f(c)(b-a).\n\\]\nDengan kata lain, nilai rata-rata fungsi\n\\[\nf_{\\mathrm{rata}}\n=\\frac{1}{b-a}\\int_a^b f(x)\\,d x\n\\]\ndicapai oleh $f$ pada suatu titik $c\\in[a,b]$.",
+            "proof": "Diketahui fungsi $f$ kontinu pada $[a,b]$ dengan $a<b$.\n\nDibuktikan bahwa terdapat $c\\in[a,b]$ sehingga\n\\[\n\\int_a^b f(x)\\,d x=f(c)(b-a).\n\\]\n\nKarena $f$ kontinu pada interval kompak $[a,b]$, Teorema Nilai Ekstrem memberikan titik $x_m,x_M\\in[a,b]$ sehingga\n\\[\nm=f(x_m)=\\min_{x\\in[a,b]}f(x)\n\\]\ndan\n\\[\nM=f(x_M)=\\max_{x\\in[a,b]}f(x).\n\\]\nBerdasarkan Teorema Batas Integral,\n\\[\nm(b-a)\n\\le\n\\int_a^b f(x)\\,d x\n\\le\nM(b-a).\n\\]\nKarena $b-a>0$,\n\\[\nm\n\\le\n\\frac{1}{b-a}\\int_a^b f(x)\\,d x\n\\le\nM.\n\\]\nFungsi $f$ kontinu dan mengambil nilai $m$ serta $M$. Berdasarkan Teorema Nilai Antara, terdapat $c\\in[a,b]$ sehingga\n\\[\nf(c)\n=\\frac{1}{b-a}\\int_a^b f(x)\\,d x.\n\\]\nDikalikan dengan $b-a$,\n\\[\n\\int_a^b f(x)\\,d x=f(c)(b-a).\n\\]\nDengan demikian, Teorema Nilai Rata-Rata untuk Integral terbukti."
+          },
+          {
+            "kind": "theorem",
+            "title": "Integral nol untuk fungsi nonnegatif kontinu",
+            "body": "Diberikan fungsi $f$ kontinu pada $[a,b]$ dan $f(x)\\ge0$ untuk setiap $x\\in[a,b]$. Berlaku\n\\[\n\\int_a^b f(x)\\,d x=0\n\\quad\\Longleftrightarrow\\quad\nf(x)=0\\text{ untuk setiap }x\\in[a,b].\n\\]",
+            "proof": "Diketahui fungsi $f$ kontinu pada $[a,b]$ dan $f(x)\\ge0$ untuk setiap $x\\in[a,b]$.\n\nDibuktikan bahwa\n\\[\n\\int_a^b f(x)\\,d x=0\n\\quad\\Longleftrightarrow\\quad\nf\\equiv0.\n\\]\n\nPembuktian dilakukan dalam dua arah.\n\n(1) Diandaikan\n\\[\n\\int_a^b f(x)\\,d x=0.\n\\]\nDibuktikan bahwa $f(x)=0$ untuk setiap $x\\in[a,b]$. Diandaikan terdapat $c\\in[a,b]$ dengan $f(c)>0$. Dipilih\n\\[\n\\varepsilon_0=\\frac{f(c)}{2}>0.\n\\]\nBerdasarkan kontinuitas $f$ di $c$, terdapat $\\delta>0$ sehingga\n\\[\n|x-c|<\\delta\n\\quad\\Longrightarrow\\quad\n|f(x)-f(c)|<\\frac{f(c)}{2}.\n\\]\nAkibatnya,\n\\[\nf(x)>\\frac{f(c)}{2}\n\\]\npada suatu subinterval tak degenerat $J\\subseteq[a,b]$. Berdasarkan Teorema Batas Integral,\n\\[\n\\int_J f(x)\\,d x\n\\ge\n\\frac{f(c)}{2}|J|>0.\n\\]\nKarena $f\\ge0$ pada seluruh $[a,b]$, aditivitas interval memberikan\n\\[\n\\int_a^b f(x)\\,d x>0,\n\\]\nbertentangan dengan asumsi. Oleh karena itu, tidak terdapat $c$ dengan $f(c)>0$. Bersama dengan $f\\ge0$, diperoleh $f\\equiv0$.\n\n(2) Diandaikan $f(x)=0$ untuk setiap $x\\in[a,b]$. Integral fungsi nol adalah\n\\[\n\\int_a^b f(x)\\,d x=0.\n\\]\n\nBerdasarkan kedua arah tersebut, ekuivalensi terbukti. Dengan demikian, Teorema Integral Nol untuk Fungsi Nonnegatif Kontinu terbukti."
+          }
+        ]
+      },
+      {
+        "title": "Substitusi dan integrasi parsial",
+        "blocks": [
+          {
+            "kind": "theorem",
+            "title": "Substitusi pada integral Riemann",
+            "body": "Diberikan fungsi $\\varphi:[\\alpha,\\beta]\\to\\mathbb{R}$ yang mempunyai turunan kontinu dan fungsi $f$ kontinu pada suatu interval yang memuat $\\varphi([\\alpha,\\beta])$. Berlaku\n\\[\n\\int_{\\alpha}^{\\beta}\nf(\\varphi(x))\\varphi'(x)\\,d x\n=\n\\int_{\\varphi(\\alpha)}^{\\varphi(\\beta)}f(u)\\,d u.\n\\]",
+            "proof": "Diketahui $\\varphi$ mempunyai turunan kontinu pada $[\\alpha,\\beta]$ dan $f$ kontinu pada interval yang memuat $\\varphi([\\alpha,\\beta])$.\n\nDibuktikan bahwa\n\\[\n\\int_{\\alpha}^{\\beta}\nf(\\varphi(x))\\varphi'(x)\\,d x\n=\n\\int_{\\varphi(\\alpha)}^{\\varphi(\\beta)}f(u)\\,d u.\n\\]\n\nDipilih titik tetap $u_0$ pada domain $f$ dan didefinisikan\n\\[\nF(u)=\\int_{u_0}^{u}f(t)\\,d t.\n\\]\nBerdasarkan Teorema Fundamental Kalkulus I,\n\\[\nF'(u)=f(u).\n\\]\nAturan rantai memberikan\n\\[\n\\frac{d}{d x}F(\\varphi(x))\n=F'(\\varphi(x))\\varphi'(x)\n=f(\\varphi(x))\\varphi'(x).\n\\]\nBerdasarkan Teorema Fundamental Kalkulus II,\n\\[\n\\begin{aligned}\n\\int_{\\alpha}^{\\beta}f(\\varphi(x))\\varphi'(x)\\,d x\n&=F(\\varphi(\\beta))-F(\\varphi(\\alpha))\\\\\n&=\\int_{\\varphi(\\alpha)}^{\\varphi(\\beta)}f(u)\\,d u.\n\\end{aligned}\n\\]\nDengan demikian, Teorema Substitusi pada Integral Riemann terbukti."
+          },
+          {
+            "kind": "theorem",
+            "title": "Integrasi parsial",
+            "body": "Diberikan fungsi $u$ dan $v$ yang mempunyai turunan kontinu pada $[a,b]$. Berlaku\n\\[\n\\int_a^b u(x)v'(x)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b\n-\n\\int_a^b u'(x)v(x)\\,d x.\n\\]",
+            "proof": "Diketahui fungsi $u$ dan $v$ mempunyai turunan kontinu pada $[a,b]$.\n\nDibuktikan bahwa\n\\[\n\\int_a^b u(x)v'(x)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b\n-\n\\int_a^b u'(x)v(x)\\,d x.\n\\]\n\nAturan hasil kali memberikan\n\\[\n\\frac{d}{d x}\\bigl(u(x)v(x)\\bigr)\n=u'(x)v(x)+u(x)v'(x).\n\\]\nBerdasarkan Teorema Fundamental Kalkulus II,\n\\[\n\\int_a^b\n\\bigl(u'(x)v(x)+u(x)v'(x)\\bigr)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b.\n\\]\nBerdasarkan Teorema Linearitas,\n\\[\n\\int_a^b u'(x)v(x)\\,d x\n+\n\\int_a^b u(x)v'(x)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b.\n\\]\nDipindahkan suku pertama pada ruas kiri ke ruas kanan,\n\\[\n\\int_a^b u(x)v'(x)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b\n-\n\\int_a^b u'(x)v(x)\\,d x.\n\\]\nDengan demikian, Teorema Integrasi Parsial terbukti."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "title": "Osilasi dan Kriteria Lebesgue",
     "blocks": [
       {
