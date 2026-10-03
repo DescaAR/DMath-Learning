@@ -13,7 +13,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
     ...(deepMaterials.length>0?[{id:"book-materi-mendalam",label:"Materi Mendalam"}]:[]),
     ...subject.chapters.map((chapter)=>({
       id:"book-chapter-"+chapter.number.replaceAll(".","-"),
-      label:"Unit "+chapter.number+" · "+chapter.title,
+      label:"Bab "+chapter.number+" · "+chapter.title,
     })),
   ];
 
@@ -46,7 +46,7 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
       overviewEyebrow="Peta Materi"
       overviewTitle="Daftar Materi"
       overviewText=""
-      roadmap={subject.chapters.map((chapter)=>"Unit "+chapter.number+" · "+chapter.title)}
+      roadmap={subject.chapters.map((chapter)=>"Bab "+chapter.number+" · "+chapter.title)}
       sections={sections}
     >
       <section className="subject-summary-card">
@@ -112,10 +112,10 @@ export function BookSubjectHubPage({subject}:{subject:BookSubject}){
           className="book-section ird-curriculum-section"
         >
           <div className="section-number">{String(chapterIndex+1+(deepMaterials.length>0?1:0)).padStart(2,"0")}</div>
-          <span className="eyebrow">Unit {chapter.number} · DMath Learning</span>
+          <span className="eyebrow">Bab {chapter.number} · DMath Learning</span>
           <h2>{chapter.title}</h2>
           <p className="ird-paragraph">
-            Unit ini terdiri atas {chapter.sections.length} submateri.
+            Bab ini terdiri atas {chapter.sections.length} submateri.
           </p>
 
           <div className="ird-worked-grid">
