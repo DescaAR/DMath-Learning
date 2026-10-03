@@ -509,7 +509,7 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
           },
           {
             "kind": "example",
-            "title": "Penerapan teorema sepotong-sepotong monoton",
+            "title": "Penerapan teorema monoton sepotong-sepotong",
             "body": "Diberikan fungsi\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|,\\qquad x\\in[0,1].\n\\]\nTentukan keterintegralan Riemann fungsi tersebut menggunakan sifat monoton sepotong-sepotong.",
             "solution": "Pada $[0,\\frac{1}{2}]$, fungsi dapat ditulis sebagai\n\\[\nf(x)=\\frac{1}{2}-x,\n\\]\nyang monoton turun. Pada $[\\frac{1}{2},1]$, fungsi dapat ditulis sebagai\n\\[\nf(x)=x-\\frac{1}{2},\n\\]\nyang monoton naik. Dengan partisi\n\\[\n0<\\frac{1}{2}<1,\n\\]\nfungsi monoton pada setiap bagian. Dengan demikian, $f$ monoton sepotong-sepotong. Berdasarkan Teorema Keterintegralan fungsi monoton sepotong-sepotong, diperoleh\n\\[\n\\boxed{f\\text{ terintegralkan Riemann pada }[0,1].}\n\\]"
           }
@@ -517,7 +517,7 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
       },
       {
         "kind": "example",
-        "title": "Contoh fungsi sepotong-sepotong monoton",
+        "title": "Contoh fungsi monoton sepotong-sepotong",
         "body": "Diberikan fungsi\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|,\\qquad x\\in[0,1].\n\\]\nDibuktikan bahwa $f$ merupakan fungsi monoton sepotong-sepotong.",
         "solution": "Diketahui\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|.\n\\]\nFungsi dapat ditulis sebagai\n\\[\nf(x)=\n\\begin{cases}\n\\frac{1}{2}-x,&0\\le x\\le\\frac{1}{2},\\\\\nx-\\frac{1}{2},&\\frac{1}{2}\\le x\\le1.\n\\end{cases}\n\\]\nPada interval $[0,\\frac{1}{2}]$, fungsi $\\frac{1}{2}-x$ monoton turun. Pada interval $[\\frac{1}{2},1]$, fungsi $x-\\frac{1}{2}$ monoton naik. Dipilih partisi\n\\[\n0<\\frac{1}{2}<1.\n\\]\nRestriksi $f$ pada setiap subinterval partisi tersebut monoton. Dengan demikian, $f$ merupakan fungsi monoton sepotong-sepotong pada $[0,1]$."
       },
