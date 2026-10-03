@@ -14,7 +14,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { RichMath } from "@/components/RichMath";
 import { allBookSections, bookSubjects } from "@/data/book-curricula";
 import { bookSectionContent } from "@/data/book-section-content";
-import { isPublicAcademicLevel, isPublicContentHref } from "@/lib/public-content";
+import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicContentHref } from "@/lib/public-content";
 
 type LevelFilter = "Semua" | "Kuliah";
 type TrackFilter = "Semua" | "Reguler" | "Olimpiade";
@@ -61,8 +61,15 @@ function lessonSearchText(sectionSlug: string) {
   ].join(" ");
 }
 
+const visibleSearchBooks = bookSubjects.filter(
+  (book) => isPublicBookSubjectSlug(book.slug) && isPublicAcademicLevel(book.level, book.level)
+);
+const visibleSearchSections = allBookSections.filter(
+  ({subject}) => isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level, subject.level)
+);
+
 const DIGITAL_BOOK_SEARCH_INDEX: SearchEntry[] = [
-  ...bookSubjects.map((book):SearchEntry=>({
+  ...visibleSearchBooks.map((book):SearchEntry=>({
     id:"digital-book-"+book.slug,
     kind:"Materi",
     level:"Kuliah",
@@ -80,7 +87,7 @@ const DIGITAL_BOOK_SEARCH_INDEX: SearchEntry[] = [
     metaEn:(book.curriculumVersion??"DMath Curriculum")+" · "+book.chapters.length+" chapters",
     keywordsEn:[book.title,book.subtitle,book.level,...book.chapters.map((unit)=>unit.title)].join(" "),
   })),
-  ...allBookSections.map(({subject:book,chapter,section}):SearchEntry=>({
+  ...visibleSearchSections.map(({subject:book,chapter,section}):SearchEntry=>({
     id:"digital-book-section-"+book.slug+"-"+section.slug,
     kind:"Materi",
     level:"Kuliah",
@@ -98,7 +105,7 @@ const DIGITAL_BOOK_SEARCH_INDEX: SearchEntry[] = [
     metaEn:book.title+" · Bab "+chapter.number+" · "+chapter.title,
     keywordsEn:[book.title,chapter.title,section.title,section.summary,...section.keyIdeas,lessonSearchText(section.slug)].join(" "),
   })),
-  ...allBookSections.flatMap(({subject:book,chapter,section})=>{
+  ...visibleSearchSections.flatMap(({subject:book,chapter,section})=>{
     const content=bookSectionContent[section.slug];
     if(!content)return [];
     return content.formal.map((formal,index):SearchEntry=>({
