@@ -36,7 +36,7 @@ export default function MateriPage() {
       ]}
       overviewTitle="Struktur Materi"
       overviewText="Setiap submateri mempunyai halaman sendiri dengan pengantar, tujuan, notasi, definisi dan contoh, hasil formal dan pembuktian, contoh terbahas, visualisasi, latihan, ringkasan, referensi, serta navigasi sebelumnya/berikutnya."
-      roadmap={["Bidang","Unit","Pengantar","Definisi & Contoh","Hasil Formal & Bukti","Visualisasi","Latihan","Referensi"]}
+      roadmap={["Bidang","Bab","Pengantar","Definisi & Contoh","Hasil Formal & Bukti","Visualisasi","Latihan","Referensi"]}
       sections={[
         {id:"materi-katalog",label:"Katalog Materi"},
       ]}
