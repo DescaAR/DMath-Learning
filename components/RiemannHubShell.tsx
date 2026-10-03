@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { type ReactNode, useEffect, useMemo, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
+import { ScrollSpyToc } from "@/components/ScrollSpyToc";
 
 type Crumb={label:string;href?:string};
 type Stat={value:string|number;label:string};
@@ -47,8 +48,6 @@ export function RiemannHubShell({
   children:ReactNode;
   className?:string;
 }){
-  const ids=useMemo(()=>sections.map((section)=>section.id),[sections]);
-  const [active,setActive]=useState(ids[0] ?? "");
   const [progress,setProgress]=useState(0);
 
   useEffect(()=>{
@@ -59,25 +58,11 @@ export function RiemannHubShell({
     updateProgress();
     window.addEventListener("scroll",updateProgress,{passive:true});
     window.addEventListener("resize",updateProgress);
-
-    const observer=new IntersectionObserver((entries)=>{
-      const visible=entries
-        .filter((entry)=>entry.isIntersecting)
-        .sort((a,b)=>Math.abs(a.boundingClientRect.top-120)-Math.abs(b.boundingClientRect.top-120));
-      if(visible[0]) setActive(visible[0].target.id);
-    },{rootMargin:"-110px 0px -62% 0px",threshold:[0,0.01,0.2]});
-
-    ids.forEach((id)=>{
-      const element=document.getElementById(id);
-      if(element) observer.observe(element);
-    });
-
     return()=>{
-      observer.disconnect();
       window.removeEventListener("scroll",updateProgress);
       window.removeEventListener("resize",updateProgress);
     };
-  },[ids]);
+  },[]);
 
   return(
     <div className={"textbook-page ird-page "+className} data-no-translate>
@@ -133,15 +118,12 @@ export function RiemannHubShell({
 
       <section className="section textbook-section-shell">
         <div className="container article-layout textbook-layout">
-          <aside className="toc material-toc textbook-toc ird-toc">
-            <div className="toc-progress-mini"><span>{progressLabel}</span><strong>{Math.round(progress)}%</strong></div>
-            <strong>{tocTitle}</strong>
-            {sections.map((section,index)=>(
-              <a href={"#"+section.id} className={active===section.id?"active":""} key={section.id}>
-                <span>{String(index+1).padStart(2,"0")}</span>{section.label}
-              </a>
-            ))}
-          </aside>
+          <ScrollSpyToc
+            title={tocTitle}
+            progress={progress}
+            progressLabel={progressLabel}
+            sections={sections}
+          />
 
           <article className="article deep-article textbook-article ird-article">
             {children}
