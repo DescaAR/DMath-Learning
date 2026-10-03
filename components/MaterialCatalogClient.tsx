@@ -8,6 +8,7 @@ import { bookSubjects } from "@/data/book-curricula";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicMaterialSlug } from "@/lib/public-content";
+import { nestedDeepMaterialHrefs, subjectDeepMaterials, type SubjectDeepMaterial } from "@/data/subject-deep-materials";
 
 type LevelFilter = "Semua" | "SD" | "SMP" | "SMA" | "Kuliah" | "Olimpiade";
 type TrackGroup = "Reguler" | "Olimpiade";
@@ -28,6 +29,7 @@ type CatalogItem = {
   summary: string;
   summaryEn: string;
   topics?: string[];
+  nestedMaterials?: SubjectDeepMaterial[];
   chapterCount?: number;
   sectionCount?: number;
   href: string;
@@ -56,7 +58,8 @@ const baseItems: CatalogItem[] = deepMaterials
   .filter((material) =>
     !bookSubjectSlugs.has(material.slug) &&
     isPublicAcademicLevel(material.level, material.track) &&
-    isPublicMaterialSlug(material.slug)
+    isPublicMaterialSlug(material.slug) &&
+    !nestedDeepMaterialHrefs.has("/materi/" + material.slug)
   )
   .map((material) => {
   const en = deepMaterialEnMap[material.slug] ?? material;
@@ -95,28 +98,14 @@ for (const subject of bookSubjects.filter((subject) => isPublicBookSubjectSlug(s
     summary: "Terdiri atas " + subject.chapters.length + " bab dan " + sectionCount + " submateri.",
     summaryEn: "Consists of " + subject.chapters.length + " chapters and " + sectionCount + " subtopics.",
     topics: subject.chapters.map((chapter) => chapter.title),
+    nestedMaterials: subjectDeepMaterials[subject.slug] ?? [],
     chapterCount: subject.chapters.length,
     sectionCount,
     href: "/materi/" + subject.slug,
   });
 }
 
-baseItems.push({
-  id: "basis-dan-dimensi",
-  title: "Basis dan Dimensi",
-  titleEn: "Basis and Dimension",
-  level: "Kuliah",
-  levelEn: "University",
-  levelGroup: "Kuliah",
-  subject: "Aljabar Linear",
-  subjectEn: "Linear Algebra",
-  trackGroup: "Reguler",
-  difficulty: "Menengah–Lanjut",
-  difficultyEn: "Intermediate–Advanced",
-  summary: "Bab lengkap tentang kombinasi linear, span, bebas linear, basis, koordinat, dimensi, basis subruang, ekstensi basis, ruang baris-kolom, dan rank-nullity.",
-  summaryEn: "A complete chapter on linear combinations, span, linear independence, basis, coordinates, dimension, subspace bases, basis extension, row and column spaces, and rank-nullity.",
-  href: "/kuliah/aljabar-linear/basis-dan-dimensi",
-});
+
 
 const LEVELS: LevelFilter[] = ["Semua", "Kuliah"];
 const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Lanjut"];
@@ -329,6 +318,20 @@ export function MaterialCatalogClient() {
                     <ol>
                       {item.topics.map((topic) => <li key={topic}>{topic}</li>)}
                     </ol>
+                    {item.nestedMaterials && item.nestedMaterials.length > 0 && (
+                      <div className="catalog-nested-materials">
+                        <strong>{language === "en" ? "In-depth Materials" : "Materi Mendalam"}</strong>
+                        <ol>
+                          {item.nestedMaterials.map((material) => (
+                            <li key={material.href}>
+                              <Link href={material.href}>
+                                {language === "en" ? material.titleEn : material.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+                    )}
                   </div>
                 )}
                 <div className="material-card-tags">
