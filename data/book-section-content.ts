@@ -15,6 +15,10 @@ import { abstractAlgebraContentC11 } from "@/data/abstract-algebra-book-content-
 import { abstractAlgebraContentD12 } from "@/data/abstract-algebra-book-content-d12";
 import { abstractAlgebraContentD13 } from "@/data/abstract-algebra-book-content-d13";
 import { abstractAlgebraContentD14 } from "@/data/abstract-algebra-book-content-d14";
+import { measureProbabilityContentA } from "@/data/measure-probability-content-a";
+import { measureProbabilityContentB } from "@/data/measure-probability-content-b";
+import { measureProbabilityContentC } from "@/data/measure-probability-content-c";
+import { measureProbabilityContentD } from "@/data/measure-probability-content-d";
 
 export const bookSectionContent:Record<string,BookLessonContent>={
   ...realAnalysisContentA,
@@ -33,6 +37,10 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...abstractAlgebraContentD12,
   ...abstractAlgebraContentD13,
   ...abstractAlgebraContentD14,
+  ...measureProbabilityContentA,
+  ...measureProbabilityContentB,
+  ...measureProbabilityContentC,
+  ...measureProbabilityContentD,
 };
 
 export function getBookSectionContent(sectionSlug:string){
