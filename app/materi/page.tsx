@@ -4,28 +4,30 @@ import { MaterialCatalogClient } from "@/components/MaterialCatalogClient";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { bookSubjects } from "@/data/book-curricula";
 import { deepMaterials } from "@/data/deep-materials";
+import { isPublicAcademicLevel } from "@/lib/public-content";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Materi Matematika",
-  description: "Perpustakaan materi matematika DMath Learning untuk SD, SMP, SMA, kuliah, olimpiade, dan ON-MIPA dengan definisi, teorema, pembuktian, visualisasi, contoh, dan latihan.",
+  description: "Perpustakaan materi matematika DMath Learning untuk tingkat universitas dan ON-MIPA dengan definisi, teorema, pembuktian, visualisasi, contoh, dan latihan.",
   path: "/materi",
   keywords: ["materi matematika lengkap", "materi matematika kuliah"],
 });
 
 export default function MateriPage() {
   const bookSectionCount=bookSubjects.reduce((sum,subject)=>sum+subject.chapters.reduce((n,chapter)=>n+chapter.sections.length,0),0);
+  const visibleDeepMaterials=deepMaterials.filter((material)=>isPublicAcademicLevel(material.level,material.track));
 
   return (
     <RiemannHubShell
       breadcrumbs={[{label:"DMath Learning",href:"/"},{label:"Materi"}]}
       eyebrow="Materi Matematika"
       title="Materi Matematika"
-      lead="Materi disusun berdasarkan jenjang dan bidang, kemudian dibagi menjadi unit dan submateri dengan pembahasan teori, contoh, visualisasi, dan latihan."
-      meta={["SD","SMP","SMA","Kuliah","Olimpiade","ON-MIPA"]}
+      lead="Materi difokuskan pada matematika tingkat universitas dan ON-MIPA, kemudian dibagi menjadi bab dan submateri dengan pembahasan teori, contoh, visualisasi, dan latihan."
+      meta={["Kuliah","ON-MIPA","Teori & Pembuktian","Latihan"]}
       stats={[
         {value:bookSubjects.length,label:"bidang utama"},
         {value:bookSectionCount,label:"submateri buku"},
-        {value:deepMaterials.length,label:"materi lain"},
+        {value:visibleDeepMaterials.length,label:"materi lain"},
         {value:"1 pola",label:"struktur belajar"},
       ]}
       actions={[
