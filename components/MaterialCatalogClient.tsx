@@ -77,7 +77,7 @@ const baseItems: CatalogItem[] = deepMaterials
   };
 });
 
-for (const subject of bookSubjects.filter((subject) => isPublicBookSubjectSlug(subject.slug))) {
+for (const subject of bookSubjects.filter((subject) => isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level, subject.level))) {
   const sectionCount = subject.chapters.reduce((sum, chapter) => sum + chapter.sections.length, 0);
   baseItems.unshift({
     id: "book-" + subject.slug,
