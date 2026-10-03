@@ -20,14 +20,14 @@ export default function TentangPage() {
       lead="DMath Learning merupakan platform pembelajaran matematika yang berfokus pada pemahaman konsep, pengembangan penalaran, dan kemampuan problem solving."
       meta={["Konsep","Pembuktian","Visualisasi","Latihan"]}
       stats={[
-        {value:"SD–SMA",label:"matematika sekolah"},
         {value:"Kuliah",label:"matematika universitas"},
-        {value:"Olimpiade",label:"kompetisi"},
-        {value:"ON-MIPA",label:"mahasiswa"},
+        {value:"ON-MIPA",label:"kompetisi mahasiswa"},
+        {value:"Bukti",label:"pembuktian formal"},
+        {value:"Latihan",label:"problem solving"},
       ]}
-      actions={[{label:"Jelajahi Materi",href:"/materi",kind:"primary"},{label:"Jalur Belajar",href:"/belajar",kind:"secondary"}]}
+      actions={[{label:"Jelajahi Materi",href:"/materi",kind:"primary"},{label:"ON-MIPA",href:"/olimpiade",kind:"secondary"}]}
       overviewTitle="Struktur Pembelajaran"
-      overviewText="Konten mencakup matematika sekolah, universitas, olimpiade, dan ON-MIPA dalam satu sistem belajar yang konsisten."
+      overviewText="Konten difokuskan pada matematika universitas, pembuktian formal, latihan, dan ON-MIPA dalam satu sistem belajar yang konsisten."
       roadmap={["Intuisi","Definisi","Teorema","Pembuktian","Visualisasi","Contoh","Latihan","Problem Solving"]}
       sections={[
         {id:"tentang-identitas",label:"Identitas"},
@@ -54,7 +54,7 @@ export default function TentangPage() {
         <div className="ird-worked-grid">
           <article className="ird-worked-card"><div className="ird-worked-head"><div className="ird-problem-number">01</div><div><h3>Materi</h3></div></div><div className="ird-worked-prompt"><p>Bab digital dengan konsep, definisi, teorema, pembuktian, visualisasi, contoh, dan latihan.</p></div><div className="actions"><Link className="btn primary" href="/materi">Jelajahi Materi</Link></div></article>
           <article className="ird-worked-card"><div className="ird-worked-head"><div className="ird-problem-number">02</div><div><h3>Bank Soal</h3></div></div><div className="ird-worked-prompt"><p>Kumpulan soal terstruktur berdasarkan materi dan tingkat kesulitan untuk latihan mandiri.</p></div><div className="actions"><Link className="btn primary" href="/bank-soal">Buka Bank Soal</Link></div></article>
-          <article className="ird-worked-card"><div className="ird-worked-head"><div className="ird-problem-number">03</div><div><h3>Olimpiade & ON-MIPA</h3></div></div><div className="ird-worked-prompt"><p>Jalur kompetisi dengan roadmap, soal nonrutin, challenge, dan pembahasan matematis.</p></div><div className="actions"><Link className="btn primary" href="/olimpiade">Lihat Jalur</Link></div></article>
+          <article className="ird-worked-card"><div className="ird-worked-head"><div className="ird-problem-number">03</div><div><h3>ON-MIPA</h3></div></div><div className="ird-worked-prompt"><p>Jalur kompetisi tingkat mahasiswa dengan roadmap, soal nonrutin, challenge, dan pembahasan matematis.</p></div><div className="actions"><Link className="btn primary" href="/olimpiade">Lihat Jalur</Link></div></article>
         </div>
       </section>
     </RiemannHubShell>
