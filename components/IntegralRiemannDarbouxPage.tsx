@@ -36,7 +36,11 @@ function imperativeProblemText(text: string) {
     .replace(/\bDidefinisikan\b/g, "Definisikan")
     .replace(/\bDipilih\b/g, "Pilih")
     .replace(/\bDiambil\b/g, "Ambil")
-    .replace(/\bDigunakan\b/g, "Gunakan");
+    .replace(/\bDigunakan\b/g, "Gunakan")
+    .replace(/\bditentukan\b/g, "tentukan")
+    .replace(/\bdibuktikan\b/g, "buktikan")
+    .replace(/\bdijelaskan\b/g, "jelaskan")
+    .replace(/\bdihitung\b/g, "hitung");
 }
 
 const kindNames: Record<string, string> = {
@@ -662,20 +666,20 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               <p>Latihan berikut memperkuat pemahaman konsep, pembuktian, dan perhitungan Integral Riemann dan Darboux. Setiap soal dilengkapi solusi terstruktur.</p>
               <div className="ird-worked-grid">
                 {integralRiemannArticleExercises.map((exercise,index)=>(
-                  <article className="ird-worked-card" key={exercise.title ?? index}>
-                    <div className="ird-worked-head">
-                      <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
-                      <div>
-                        <span className="eyebrow">Latihan Soal</span>
-                        <h3>{exercise.title ?? "Soal "+(index+1)}</h3>
+                  <div className="ird-worked-wrap" key={exercise.title ?? index}>
+                    <article className="ird-worked-card">
+                      <div className="ird-worked-head">
+                        <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
+                        <div><span className="eyebrow">Latihan Soal</span><h3>Soal {index+1}</h3></div>
                       </div>
-                    </div>
-                    <div className="ird-worked-prompt"><SourceText text={imperativeProblemText(exercise.prompt)} /></div>
-                    <details className="ird-worked-solution">
-                      <summary>Buka Solusi</summary>
-                      <div className="ird-worked-solution-body"><WorkedSolution exercise={exercise} /></div>
-                    </details>
-                  </article>
+                      <div className="ird-worked-prompt"><SourceText text={imperativeProblemText(exercise.prompt)} /></div>
+                      <details className="ird-worked-solution">
+                        <summary>Buka Solusi</summary>
+                        <div className="ird-worked-solution-body"><WorkedSolution exercise={exercise} /></div>
+                      </details>
+                    </article>
+                    <WorkedExerciseVisual exercise={exercise} />
+                  </div>
                 ))}
               </div>
             </section>
