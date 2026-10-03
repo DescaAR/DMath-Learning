@@ -7,7 +7,7 @@ import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { bookSubjects } from "@/data/book-curricula";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
-import { isPublicAcademicLevel, isPublicMaterialSlug } from "@/lib/public-content";
+import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicMaterialSlug } from "@/lib/public-content";
 
 type LevelFilter = "Semua" | "SD" | "SMP" | "SMA" | "Kuliah" | "Olimpiade";
 type TrackGroup = "Reguler" | "Olimpiade";
@@ -78,7 +78,7 @@ const baseItems: CatalogItem[] = deepMaterials
   };
 });
 
-for (const subject of bookSubjects) {
+for (const subject of bookSubjects.filter((subject) => isPublicBookSubjectSlug(subject.slug))) {
   const sectionCount = subject.chapters.reduce((sum, chapter) => sum + chapter.sections.length, 0);
   baseItems.unshift({
     id: "book-" + subject.slug,
