@@ -371,6 +371,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         ]
       },
       {
+        "kind": "example",
+        "title": "Penerapan Kriteria Darboux pada $f(x)=x$",
+        "body": "Diberikan $f(x)=x$ pada $[0,1]$. Gunakan Kriteria Darboux untuk membuktikan bahwa $f$ terintegralkan Darboux.",
+        "solution": "Diketahui $f(x)=x$ monoton naik pada $[0,1]$. Dipilih partisi seragam\n\\[\nP_n=\\left\\{0,\\frac{1}{n},\\frac{2}{n},\\ldots,1\\right\\}.\n\\]\nPada subinterval ke-$i$ berlaku\n\\[\nm_i=\\frac{i-1}{n},\\qquad M_i=\\frac{i}{n},\\qquad \\Delta x_i=\\frac{1}{n}.\n\\]\nDengan demikian,\n\\[\n\\begin{aligned}\nU(f,P_n)-L(f,P_n)\n&=\\sum_{i=1}^{n}(M_i-m_i)\\Delta x_i\\\\\n&=\\sum_{i=1}^{n}\\frac{1}{n}\\frac{1}{n}\\\\\n&=\\frac{1}{n}.\n\\end{aligned}\n\\]\nDiambil sebarang $\\varepsilon>0$. Dipilih $n\\in\\mathbb{N}$ sehingga $n>\\frac{1}{\\varepsilon}$. Diperoleh\n\\[\nU(f,P_n)-L(f,P_n)=\\frac{1}{n}<\\varepsilon.\n\\]\nBerdasarkan Teorema Kriteria Darboux, $f$ terintegralkan Darboux pada $[0,1]$."
+      },
+      {
         "title": "Interpretasi melalui osilasi lokal",
         "blocks": [
           {
@@ -393,6 +399,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "title": "Ekuivalensi Riemann–Darboux",
             "body": "Untuk fungsi terbatas $f:[a,b]\\to\\mathbb{R}$, pernyataan berikut ekuivalen:\n(1) $f$ terintegralkan Riemann;\n(2) $f$ terintegralkan Darboux;\n(3) untuk setiap $\\varepsilon>0$ terdapat partisi $P$ sehingga $U(f,P)-L(f,P)<\\varepsilon$.\nJika kondisi-kondisi tersebut terpenuhi, nilai integral Riemann dan Darboux sama.",
             "proof": "Diketahui fungsi $f:[a,b]\\to\\mathbb{R}$ terbatas.\nDibuktikan bahwa integrabilitas Riemann, integrabilitas Darboux, dan Kriteria Darboux saling ekuivalen, serta nilai integral Riemann dan Darboux sama. Ekuivalensi antara integrabilitas Darboux dan Kriteria Darboux telah diperoleh pada teorema yang telah dibuktikan. Oleh karena itu, hubungan antara integral Darboux dan integral Riemann dibuktikan dalam dua arah.\n\\,\n($\\Rightarrow$) Darboux ke Riemann\nDiketahui fungsi $f$ terintegralkan Darboux dengan nilai integral $I$.\nDibuktikan bahwa fungsi $f$ terintegralkan Riemann dan nilai integral Riemannnya adalah $I$.\nKarena $f$ terbatas, terdapat $M\\ge0$ sehingga $|f(x)|\\le M$ untuk setiap $x\\in[a,b]$. Diambil sebarang $\\varepsilon>0$. Berdasarkan teorema yang telah dibuktikan, dipilih partisi tetap\n\\[\nP_0=\\{a=c_0<c_1<\\cdots<c_m=b\\}\n\\]\nyang memenuhi\n\\[\nU(f,P_0)-L(f,P_0)<\\frac{\\varepsilon}{2}.\n\\]\nJika $M=0$, maka $f$ identik nol dan pernyataan langsung berlaku. Selanjutnya diandaikan $M>0$. Jika $m=1$, tidak terdapat titik interior pada $P_0$; jika $m>1$, dipilih $\\delta>0$ sedemikian sehingga\n\\[\n2M(m-1)\\delta<\\frac{\\varepsilon}{2}.\n\\]\nDiambil sebarang partisi berlabel $\\dot Q$ dengan $\\lVert Q\\rVert<\\delta$. Subinterval-subinterval $Q$ dipisahkan menjadi subinterval yang tidak memuat titik interior $c_1,\\ldots,c_{m-1}$ dan subinterval yang memuat sedikitnya satu titik interior tersebut. Subinterval jenis kedua berjumlah paling banyak $m-1$ dan total panjangnya kurang dari $(m-1)\\delta$.\nPada subinterval jenis pertama, nilai $f(t_i)$ dijepit oleh infimum dan supremum dari subinterval $P_0$ yang memuatnya. Pada subinterval jenis kedua, karena $|f|\\le M$, galat maksimum terhadap penjepit Darboux dibatasi oleh dua kali $M$ dikalikan total panjang subinterval jenis kedua. Dengan demikian diperoleh\n\\[\nL(f,P_0)-2M(m-1)\\delta\n\\le S(f,\\dot Q)\n\\le U(f,P_0)+2M(m-1)\\delta.\n\\]\nKarena\n\\[\nL(f,P_0)\\le I\\le U(f,P_0),\n\\]\nberlaku\n\\[\n|S(f,\\dot Q)-I|\n\\le U(f,P_0)-L(f,P_0)+2M(m-1)\\delta\n<\\varepsilon.\n\\]\nKarena $\\dot Q$ dipilih sebarang selama $\\lVert Q\\rVert<\\delta$, definisi integral Riemann terpenuhi. Dengan demikian, $f$ terintegralkan Riemann dengan integral $I$.\n\\,\n($\\Leftarrow$) Riemann ke Darboux\nDiketahui fungsi $f$ terintegralkan Riemann dengan integral $I$.\nDibuktikan bahwa fungsi $f$ terintegralkan Darboux dan nilai integral Darbouxnya adalah $I$.\nDiambil sebarang $\\varepsilon>0$. Berdasarkan definisi integral Riemann, terdapat $\\delta>0$ sehingga untuk setiap partisi berlabel $\\dot P$ dengan $\\lVert P\\rVert<\\delta$ berlaku\n\\[\n|S(f,\\dot P)-I|<\\frac{\\varepsilon}{4}.\n\\]\nDipilih partisi $P=\\{x_0,\\ldots,x_n\\}$ dengan $\\lVert P\\rVert<\\delta$. Pada setiap subinterval $I_i=[x_{i-1},x_i]$, berdasarkan lemma yang telah dibuktikan, dipilih $s_i,r_i\\in I_i$ yang memenuhi\n\\[\nM_i-\\frac{\\varepsilon}{4(b-a)}<f(s_i)\\le M_i,\n\\qquad\nm_i\\le f(r_i)<m_i+\\frac{\\varepsilon}{4(b-a)}.\n\\]\nDibentuk dua jumlah Riemann\n\\[\nS_U=\\sum_{i=1}^n f(s_i)\\Delta x_i,\n\\qquad\nS_L=\\sum_{i=1}^n f(r_i)\\Delta x_i.\n\\]\nDari pemilihan $s_i$ diperoleh\n\\[\nS_U>U(f,P)-\\frac{\\varepsilon}{4},\n\\]\nAkibatnya,\n\\[\nU(f,P)<S_U+\\frac{\\varepsilon}{4}<I+\\frac{\\varepsilon}{2}.\n\\]\nDengan cara yang sama, dari pemilihan $r_i$ diperoleh\n\\[\nS_L<L(f,P)+\\frac{\\varepsilon}{4},\n\\]\nAkibatnya,\n\\[\nL(f,P)>S_L-\\frac{\\varepsilon}{4}>I-\\frac{\\varepsilon}{2}.\n\\]\nAkibatnya,\n\\[\nU(f,P)-L(f,P)<\\varepsilon.\n\\]\nBerdasarkan teorema yang telah dibuktikan, $f$ terintegralkan Darboux. Karena untuk setiap partisi berlaku\n\\[\nL(f,P)\\le I\\le U(f,P)\n\\]\ndalam limit yang dihasilkan, nilai integral Darboux sama dengan $I$.\nBerdasarkan pembuktian arah Darboux ke Riemann dan arah Riemann ke Darboux, serta teorema yang telah dibuktikan, ketiga pernyataan pada teorema saling ekuivalen. Dengan demikian, teorema tersebut terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Penerapan ekuivalensi Riemann–Darboux",
+            "body": "Diberikan fungsi $f(x)=x$ pada $[0,1]$. Diketahui dari perhitungan Darboux bahwa\n\\[\n\\underline{\\int_0^1}x\\,\\,d x\n=\\overline{\\int_0^1}x\\,\\,d x\n=\\frac{1}{2}.\n\\]\nTentukan kesimpulan mengenai integral Riemann fungsi $f$.",
+            "solution": "Diketahui integral Darboux bawah dan integral Darboux atas sama, yaitu\n\\[\n\\underline{\\int_0^1}x\\,\\,d x\n=\\overline{\\int_0^1}x\\,\\,d x\n=\\frac{1}{2}.\n\\]\nBerdasarkan definisi, kesamaan tersebut menunjukkan bahwa $f$ terintegralkan Darboux. Teorema Ekuivalensi Riemann–Darboux menyatakan bahwa keterintegralan Darboux ekuivalen dengan keterintegralan Riemann untuk fungsi terbatas. Oleh karena itu, $f$ juga terintegralkan Riemann dan nilai kedua integral sama. Diperoleh\n\\[\n\\boxed{\\int_0^1x\\,\\,d x=\\frac{1}{2}}.\n\\]\nDengan demikian, hasil Darboux dapat langsung dipindahkan menjadi hasil Riemann melalui teorema ekuivalensi."
           },
           {
             "kind": "paragraph",
@@ -421,6 +433,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "proof": "Diketahui fungsi $f$ kontinu pada interval tertutup $[a,b]$.\nDibuktikan bahwa fungsi $f$ terintegralkan Riemann pada $[a,b]$.\nKarena $[a,b]$ kompak dan $f$ kontinu, berdasarkan Teorema Heine--Cantor, $f$ kontinu seragam pada $[a,b]$. Diambil sebarang $\\varepsilon>0$. Dari kontinuitas seragam, terdapat $\\delta>0$ sehingga\n\\[\n|x-y|<\\delta\n\\quad\\Longrightarrow\\quad\n|f(x)-f(y)|<\\frac{\\varepsilon}{b-a}.\n\\]\nDipilih partisi $P$ dengan $\\lVert P\\rVert<\\delta$. Pada setiap subinterval $I_i=[x_{i-1},x_i]$, untuk sebarang $x,y\\in I_i$ berlaku\n\\[\n|x-y|\\le\\Delta x_i<\\delta.\n\\]\nDengan demikian,\n\\[\n|f(x)-f(y)|<\\frac{\\varepsilon}{b-a}.\n\\]\nKarena $f$ kontinu pada interval kompak $I_i$, maksimum dan minimum dicapai. Oleh karena itu,\n\\[\nM_i-m_i<\\frac{\\varepsilon}{b-a}.\n\\]\nSelanjutnya,\n\\[\\begin{aligned}\nU(f,P)-L(f,P)\\\\\n&=\\sum_{i=1}^n(M_i-m_i)\\Delta x_i\\\\\n&<\\frac{\\varepsilon}{b-a}\\sum_{i=1}^n\\Delta x_i\\\\\n&=\\frac{\\varepsilon}{b-a}(b-a)\\\\\n&=\\varepsilon.\n\\end{aligned}\\]\nBerdasarkan teorema yang telah dibuktikan, $f$ terintegralkan Riemann pada $[a,b]$.\nDengan demikian, teorema tersebut terbukti."
           },
           {
+            "kind": "example",
+            "title": "Fungsi kontinu langsung terintegralkan",
+            "body": "Diberikan fungsi\n\\[\nf(x)=\\sin x,\\qquad x\\in[0,\\pi].\n\\]\nTentukan apakah $f$ terintegralkan Riemann.",
+            "solution": "Diketahui fungsi sinus kontinu pada $\\mathbb{R}$. Dengan demikian, restriksi\n\\[\nf(x)=\\sin x\n\\]\nkontinu pada interval tertutup $[0,\\pi]$. Berdasarkan Teorema Keterintegralan fungsi kontinu, setiap fungsi kontinu pada interval tertutup terintegralkan Riemann. Oleh karena itu,\n\\[\n\\boxed{f(x)=\\sin x\\text{ terintegralkan Riemann pada }[0,\\pi].}\n\\]\nTidak diperlukan perhitungan langsung jumlah Riemann atau jumlah Darboux untuk menyimpulkan keterintegralannya."
+          },
+          {
             "kind": "paragraph",
             "text": "Secara geometris, kontinuitas seragam mengendalikan osilasi fungsi pada setiap subinterval yang cukup pendek."
           }
@@ -434,6 +452,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "title": "Keterintegralan fungsi monoton",
             "body": "Jika $f$ monoton pada $[a,b]$, maka $f$ terintegralkan Riemann.",
             "proof": "Diketahui fungsi $f$ monoton pada $[a,b]$.\nDibuktikan bahwa fungsi $f$ terintegralkan Riemann pada $[a,b]$.\nPembuktian dituliskan untuk kasus $f$ monoton naik. Kasus monoton turun diperoleh secara analog dengan menukar peran supremum dan infimum.\nDiambil partisi seragam\n\\[\nx_i=a+i\\frac{b-a}{n},\n\\qquad\n\\Delta x=\\frac{b-a}{n}.\n\\]\nKarena $f$ monoton naik, pada setiap subinterval $[x_{i-1},x_i]$ berlaku\n\\[\nm_i=f(x_{i-1}),\n\\qquad\nM_i=f(x_i).\n\\]\nOleh karena itu,\n\\[\\begin{aligned}\nU(f,P)-L(f,P)\\\\\n&=\\sum_{i=1}^n\\bigl(f(x_i)-f(x_{i-1})\\bigr)\\Delta x\\\\\n&=\\frac{b-a}{n}\\sum_{i=1}^n\\bigl(f(x_i)-f(x_{i-1})\\bigr).\n\\end{aligned}\\]\nJumlah pada ruas kanan bersifat teleskopik, sehingga\n\\[\n\\sum_{i=1}^n\\bigl(f(x_i)-f(x_{i-1})\\bigr)=f(b)-f(a).\n\\]\nDengan demikian,\n\\[\nU(f,P)-L(f,P)\n=\\frac{(b-a)(f(b)-f(a))}{n}.\n\\]\nDiambil sebarang $\\varepsilon>0$. Dipilih $n$ cukup besar sehingga\n\\[\n\\frac{(b-a)(f(b)-f(a))}{n}<\\varepsilon.\n\\]\nBerdasarkan teorema yang telah dibuktikan, $f$ terintegralkan Riemann.\nDengan demikian, teorema tersebut terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Fungsi monoton langsung terintegralkan",
+            "body": "Diberikan fungsi\n\\[\nf(x)=\\frac{1}{1+x},\\qquad x\\in[0,1].\n\\]\nTentukan apakah $f$ terintegralkan Riemann.",
+            "solution": "Diketahui\n\\[\nf'(x)=-\\frac{1}{(1+x)^2}<0\n\\]\nuntuk setiap $x\\in[0,1]$. Dengan demikian, $f$ monoton turun pada $[0,1]$. Berdasarkan Teorema Keterintegralan fungsi monoton, setiap fungsi monoton pada interval tertutup terintegralkan Riemann. Oleh karena itu,\n\\[\n\\boxed{\\frac{1}{1+x}\\text{ terintegralkan Riemann pada }[0,1].}\n\\]"
           },
           {
             "kind": "paragraph",
@@ -454,8 +478,20 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "title": "Keterintegralan fungsi Lipschitz",
             "body": "Jika $f:[a,b]\\to\\mathbb{R}$ merupakan fungsi Lipschitz, maka $f$ terintegralkan Riemann pada $[a,b]$.",
             "proof": "Diketahui fungsi $f:[a,b]\\to\\mathbb{R}$ memenuhi\n\\[\n|f(x)-f(y)|\\le K|x-y|\n\\]\nuntuk setiap $x,y\\in[a,b]$, dengan $K\\ge0$.\n\nDibuktikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.\n\nJika $K=0$, fungsi $f$ konstan dan pernyataan langsung berlaku. Selanjutnya diandaikan $K>0$. Diambil sebarang $\\varepsilon>0$. Dipilih partisi $P$ dari $[a,b]$ yang memenuhi\n\\[\n\\lVert P\\rVert<\\frac{\\varepsilon}{K(b-a)}.\n\\]\nPada setiap subinterval $I_i=[x_{i-1},x_i]$, untuk sebarang $x,y\\in I_i$ berlaku\n\\[\n|f(x)-f(y)|\\le K|x-y|\\le K\\Delta x_i.\n\\]\nKarena fungsi Lipschitz kontinu, maksimum dan minimum pada $I_i$ dicapai. Oleh karena itu,\n\\[\nM_i-m_i\\le K\\Delta x_i.\n\\]\nDiperoleh\n\\[\n\\begin{aligned}\nU(f,P)-L(f,P)\n&=\\sum_{i=1}^{n}(M_i-m_i)\\Delta x_i\\\\\n&\\le K\\sum_{i=1}^{n}(\\Delta x_i)^2\\\\\n&\\le K\\lVert P\\rVert\\sum_{i=1}^{n}\\Delta x_i\\\\\n&=K(b-a)\\lVert P\\rVert\\\\\n&<\\varepsilon.\n\\end{aligned}\n\\]\nBerdasarkan Teorema Kriteria Darboux, fungsi $f$ terintegralkan Riemann pada $[a,b]$.\nDengan demikian, Teorema Keterintegralan Fungsi Lipschitz terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Penerapan teorema Lipschitz",
+            "body": "Diberikan fungsi\n\\[\nf(x)=|x|,\\qquad x\\in[-1,1].\n\\]\nBuktikan secara singkat bahwa $f$ terintegralkan Riemann menggunakan sifat Lipschitz.",
+            "solution": "Diketahui ketaksamaan segitiga terbalik\n\\[\n\\bigl||x|-|y|\\bigr|\\le|x-y|\n\\]\nuntuk setiap $x,y\\in\\mathbb{R}$. Dengan demikian,\n\\[\n|f(x)-f(y)|\\le|x-y|,\n\\]\nsehingga $f$ merupakan fungsi Lipschitz dengan konstanta $K=1$. Berdasarkan Teorema Keterintegralan fungsi Lipschitz, fungsi Lipschitz pada interval tertutup terintegralkan Riemann. Oleh karena itu,\n\\[\n\\boxed{|x|\\text{ terintegralkan Riemann pada }[-1,1].}\n\\]"
           }
         ]
+      },
+      {
+        "kind": "example",
+        "title": "Contoh fungsi Lipschitz",
+        "body": "Diberikan fungsi\n\\[\nf(x)=3x-2,\\qquad x\\in[-1,2].\n\\]\nDibuktikan bahwa $f$ merupakan fungsi Lipschitz dan ditentukan salah satu konstanta Lipschitznya.",
+        "solution": "Diketahui $f(x)=3x-2$ pada $[-1,2]$.\n\nDibuktikan bahwa terdapat $K\\ge0$ sehingga\n\\[\n|f(x)-f(y)|\\le K|x-y|\n\\]\nuntuk setiap $x,y\\in[-1,2]$.\n\nDiambil sebarang $x,y\\in[-1,2]$. Diperoleh\n\\[\n|f(x)-f(y)|\n=|(3x-2)-(3y-2)|\n=|3x-3y|\n=3|x-y|.\n\\]\nDengan demikian, ketaksamaan Lipschitz berlaku dengan $K=3$. Konstanta tersebut tidak harus unik; setiap $K\\ge3$ juga memenuhi definisi. Oleh karena itu, $f$ merupakan fungsi Lipschitz pada $[-1,2]$ dengan salah satu konstanta Lipschitz $K=3$."
       },
       {
         "title": "Fungsi monoton sepotong-sepotong",
@@ -470,8 +506,20 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "title": "Keterintegralan fungsi monoton sepotong-sepotong",
             "body": "Jika $f:[a,b]\\to\\mathbb{R}$ monoton sepotong-sepotong, maka $f$ terintegralkan Riemann pada $[a,b]$.",
             "proof": "Diketahui fungsi $f:[a,b]\\to\\mathbb{R}$ monoton sepotong-sepotong. Dengan demikian, terdapat partisi\n\\[\na=c_0<c_1<\\cdots<c_m=b\n\\]\nsedemikian sehingga $f$ monoton pada setiap $[c_{j-1},c_j]$.\n\nDibuktikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.\n\nDiambil sebarang $\\varepsilon>0$. Untuk setiap $j=1,2,\\ldots,m$, Teorema Keterintegralan Fungsi Monoton memberikan partisi $P_j$ dari $[c_{j-1},c_j]$ yang memenuhi\n\\[\nU(f,P_j)-L(f,P_j)<\\frac{\\varepsilon}{m}.\n\\]\nDibentuk partisi $P$ dari $[a,b]$ dengan menggabungkan seluruh partisi $P_1,P_2,\\ldots,P_m$. Karena titik $c_0,c_1,\\ldots,c_m$ termuat dalam $P$, jumlah Darboux pada $[a,b]$ dapat dipisahkan menurut interval-interval tersebut. Diperoleh\n\\[\n\\begin{aligned}\nU(f,P)-L(f,P)\n&=\\sum_{j=1}^{m}\\bigl(U(f,P_j)-L(f,P_j)\\bigr)\\\\\n&<\\sum_{j=1}^{m}\\frac{\\varepsilon}{m}\\\\\n&=\\varepsilon.\n\\end{aligned}\n\\]\nBerdasarkan Teorema Kriteria Darboux, fungsi $f$ terintegralkan Riemann pada $[a,b]$.\nDengan demikian, Teorema Keterintegralan Fungsi Monoton Sepotong-sepotong terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Penerapan teorema sepotong-sepotong monoton",
+            "body": "Diberikan fungsi\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|,\\qquad x\\in[0,1].\n\\]\nTentukan keterintegralan Riemann fungsi tersebut menggunakan sifat monoton sepotong-sepotong.",
+            "solution": "Pada $[0,\\frac{1}{2}]$, fungsi dapat ditulis sebagai\n\\[\nf(x)=\\frac{1}{2}-x,\n\\]\nyang monoton turun. Pada $[\\frac{1}{2},1]$, fungsi dapat ditulis sebagai\n\\[\nf(x)=x-\\frac{1}{2},\n\\]\nyang monoton naik. Dengan partisi\n\\[\n0<\\frac{1}{2}<1,\n\\]\nfungsi monoton pada setiap bagian. Dengan demikian, $f$ monoton sepotong-sepotong. Berdasarkan Teorema Keterintegralan fungsi monoton sepotong-sepotong, diperoleh\n\\[\n\\boxed{f\\text{ terintegralkan Riemann pada }[0,1].}\n\\]"
           }
         ]
+      },
+      {
+        "kind": "example",
+        "title": "Contoh fungsi sepotong-sepotong monoton",
+        "body": "Diberikan fungsi\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|,\\qquad x\\in[0,1].\n\\]\nDibuktikan bahwa $f$ merupakan fungsi monoton sepotong-sepotong.",
+        "solution": "Diketahui\n\\[\nf(x)=\\left|x-\\frac{1}{2}\\right|.\n\\]\nFungsi dapat ditulis sebagai\n\\[\nf(x)=\n\\begin{cases}\n\\frac{1}{2}-x,&0\\le x\\le\\frac{1}{2},\\\\\nx-\\frac{1}{2},&\\frac{1}{2}\\le x\\le1.\n\\end{cases}\n\\]\nPada interval $[0,\\frac{1}{2}]$, fungsi $\\frac{1}{2}-x$ monoton turun. Pada interval $[\\frac{1}{2},1]$, fungsi $x-\\frac{1}{2}$ monoton naik. Dipilih partisi\n\\[\n0<\\frac{1}{2}<1.\n\\]\nRestriksi $f$ pada setiap subinterval partisi tersebut monoton. Dengan demikian, $f$ merupakan fungsi monoton sepotong-sepotong pada $[0,1]$."
       },
       {
         "title": "Fungsi bervariasi terbatas",
@@ -480,6 +528,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "kind": "definition",
             "title": "Variasi total",
             "body": "Diberikan fungsi $f:[a,b]\\to\\mathbb{R}$ dan partisi\n\\[\nP=\\{a=x_0<x_1<\\cdots<x_n=b\\}.\n\\]\nVariasi $f$ terhadap partisi $P$ didefinisikan oleh\n\\[\nV(f,P)=\\sum_{i=1}^{n}|f(x_i)-f(x_{i-1})|.\n\\]\nVariasi total $f$ pada $[a,b]$ didefinisikan oleh\n\\[\nV_a^b(f)=\\sup_P V(f,P),\n\\]\ndengan supremum diambil terhadap seluruh partisi $P$ dari $[a,b]$."
+          },
+          {
+            "kind": "example",
+            "title": "Menghitung variasi terhadap suatu partisi",
+            "body": "Diberikan fungsi $f(x)=x$ pada $[0,1]$ dan partisi\n\\[\nP=\\left\\{0,\\frac{1}{3},\\frac{3}{4},1\\right\\}.\n\\]\nDitentukan $V(f,P)$.",
+            "solution": "Diketahui $f(x)=x$ dan\n\\[\nP=\\left\\{0,\\frac{1}{3},\\frac{3}{4},1\\right\\}.\n\\]\nBerdasarkan definisi,\n\\[\nV(f,P)=\\sum_{i=1}^{3}|f(x_i)-f(x_{i-1})|.\n\\]\nDiperoleh\n\\[\n\\begin{aligned}\nV(f,P)\n&=\\left|\\frac{1}{3}-0\\right|\n+\\left|\\frac{3}{4}-\\frac{1}{3}\\right|\n+\\left|1-\\frac{3}{4}\\right|\\\\\n&=\\frac{1}{3}+\\frac{5}{12}+\\frac{1}{4}\\\\\n&=1.\n\\end{aligned}\n\\]\nDengan demikian, variasi $f$ terhadap partisi $P$ adalah\n\\[\n\\boxed{V(f,P)=1}.\n\\]"
           },
           {
             "kind": "definition",
@@ -491,8 +545,20 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "title": "Keterintegralan fungsi bervariasi terbatas",
             "body": "Jika $f:[a,b]\\to\\mathbb{R}$ bervariasi terbatas pada $[a,b]$, maka $f$ terintegralkan Riemann pada $[a,b]$.",
             "proof": "Diketahui fungsi $f:[a,b]\\to\\mathbb{R}$ bervariasi terbatas, yaitu\n\\[\nV_a^b(f)<\\infty.\n\\]\n\nDibuktikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.\n\nDidefinisikan fungsi variasi\n\\[\nv(x)=V_a^x(f),\n\\qquad x\\in[a,b],\n\\]\ndengan $v(a)=0$. Diambil $x,y\\in[a,b]$ dengan $x<y$. Setiap partisi dari $[a,x]$ dapat diperluas dengan menambahkan titik $y$. Berdasarkan definisi variasi total diperoleh\n\\[\nv(y)\\ge v(x)+|f(y)-f(x)|.\n\\]\nAkibatnya,\n\\[\nv(y)-v(x)\\ge |f(y)-f(x)|\\ge0,\n\\]\nsehingga $v$ monoton naik. Selanjutnya didefinisikan\n\\[\nw(x)=v(x)-f(x).\n\\]\nUntuk $x<y$ berlaku\n\\[\n\\begin{aligned}\nw(y)-w(x)\n&=v(y)-v(x)-\\bigl(f(y)-f(x)\\bigr)\\\\\n&\\ge |f(y)-f(x)|-\\bigl(f(y)-f(x)\\bigr)\\\\\n&\\ge0.\n\\end{aligned}\n\\]\nDengan demikian, $w$ juga monoton naik. Berdasarkan Teorema Keterintegralan Fungsi Monoton, fungsi $v$ dan $w$ terintegralkan Riemann. Karena\n\\[\nf=v-w,\n\\]\nTeorema Linearitas memberikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.\nDengan demikian, Teorema Keterintegralan Fungsi Bervariasi Terbatas terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Penerapan teorema variasi terbatas",
+            "body": "Diberikan fungsi $f(x)=x^2$ pada $[0,1]$. Gunakan variasi total untuk menyimpulkan keterintegralan Riemannnya.",
+            "solution": "Diketahui $f(x)=x^2$ monoton naik pada $[0,1]$. Untuk sebarang partisi $P=\\{0=x_0<\\cdots<x_n=1\\}$,\n\\[\n\\begin{aligned}\nV(f,P)\n&=\\sum_{i=1}^{n}|x_i^2-x_{i-1}^2|\\\\\n&=\\sum_{i=1}^{n}(x_i^2-x_{i-1}^2)\\\\\n&=1.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\nV_0^1(f)=1<\\infty,\n\\]\nsehingga $f$ bervariasi terbatas. Berdasarkan Teorema Keterintegralan fungsi bervariasi terbatas, diperoleh\n\\[\n\\boxed{x^2\\text{ terintegralkan Riemann pada }[0,1].}\n\\]"
           }
         ]
+      },
+      {
+        "kind": "example",
+        "title": "Contoh fungsi bervariasi terbatas",
+        "body": "Diberikan fungsi\n\\[\nf(x)=x^2,\\qquad x\\in[0,1].\n\\]\nDibuktikan bahwa $f$ bervariasi terbatas dan ditentukan variasi totalnya.",
+        "solution": "Diketahui $f(x)=x^2$ pada $[0,1]$. Fungsi $f$ monoton naik. Diambil sebarang partisi\n\\[\nP=\\{0=x_0<x_1<\\cdots<x_n=1\\}.\n\\]\nKarena $f(x_i)\\ge f(x_{i-1})$, berlaku\n\\[\n|f(x_i)-f(x_{i-1})|=f(x_i)-f(x_{i-1}).\n\\]\nDengan demikian,\n\\[\n\\begin{aligned}\nV(f,P)\n&=\\sum_{i=1}^{n}[f(x_i)-f(x_{i-1})]\\\\\n&=f(1)-f(0)\\\\\n&=1.\n\\end{aligned}\n\\]\nNilai tersebut berlaku untuk setiap partisi $P$. Oleh karena itu,\n\\[\nV_0^1(f)=\\sup_PV(f,P)=1<\\infty.\n\\]\nDengan demikian, $f(x)=x^2$ bervariasi terbatas pada $[0,1]$."
       },
       {
         "title": "Fungsi tangga dan diskontinuitas berhingga",
@@ -587,10 +653,22 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         "proof": "Diketahui fungsi $f$ dan $g$ terintegralkan Riemann pada $[a,b]$, serta $\\alpha,\\beta\\in\\mathbb{R}$.\nDibuktikan bahwa fungsi $\\alpha f+\\beta g$ terintegralkan Riemann dan\n\\[\n\\int_a^b(\\alpha f+\\beta g)\\,d x\n=\\alpha\\int_a^b f\\,d x+\\beta\\int_a^b g\\,d x.\n\\]\nDituliskan\n\\[\nI_f=\\int_a^b f(x)\\,d x,\n\\qquad\nI_g=\\int_a^b g(x)\\,d x.\n\\]\nUntuk setiap partisi berlabel $\\dot P$ berlaku\n\\[\\begin{aligned}\nS(\\alpha f+\\beta g,\\dot P)\\\\\n&=\\sum_{i=1}^n\\bigl(\\alpha f(t_i)+\\beta g(t_i)\\bigr)\\Delta x_i\\\\\n&=\\alpha S(f,\\dot P)+\\beta S(g,\\dot P).\n\\end{aligned}\\]\nDiambil sebarang $\\varepsilon>0$. Dituliskan\n\\[\nC=|\\alpha|+|\\beta|+1.\n\\]\nKarena $f$ dan $g$ terintegralkan Riemann, terdapat $\\delta_f,\\delta_g>0$ sehingga\n\\[\n\\lVert P\\rVert<\\delta_f\n\\Longrightarrow\n|S(f,\\dot P)-I_f|<\\frac{\\varepsilon}{2C},\n\\]\ndan\n\\[\n\\lVert P\\rVert<\\delta_g\n\\Longrightarrow\n|S(g,\\dot P)-I_g|<\\frac{\\varepsilon}{2C}.\n\\]\nDitetapkan $\\delta=\\min\\{\\delta_f,\\delta_g\\}$. Untuk setiap partisi berlabel $\\dot P$ dengan $\\lVert P\\rVert<\\delta$ diperoleh\n\\[\\begin{aligned}\n&\\left|S(\\alpha f+\\beta g,\\dot P)-(\\alpha I_f+\\beta I_g)\\right|\\\\\n&\\quad\\le |\\alpha|\\,|S(f,\\dot P)-I_f|+|\\beta|\\,|S(g,\\dot P)-I_g|\\\\\n&\\quad<\\frac{|\\alpha|+|\\beta|}{2C}\\varepsilon<\\varepsilon.\n\\end{aligned}\\]\nDengan demikian definisi integral Riemann terpenuhi dan nilai integralnya adalah $\\alpha I_f+\\beta I_g$.\nDengan demikian, teorema tersebut terbukti."
       },
       {
+        "kind": "example",
+        "title": "Penerapan linearitas integral",
+        "body": "Diketahui\n\\[\n\\int_0^1x^2\\,\\,d x=\\frac{1}{3},\n\\qquad\n\\int_0^1x\\,\\,d x=\\frac{1}{2}.\n\\]\nHitung\n\\[\n\\int_0^1(3x^2-2x)\\,\\,d x\n\\]\nmenggunakan linearitas.",
+        "solution": "Berdasarkan Teorema Linearitas,\n\\[\n\\begin{aligned}\n\\int_0^1(3x^2-2x)\\,\\,d x\n&=3\\int_0^1x^2\\,\\,d x-2\\int_0^1x\\,\\,d x\\\\\n&=3\\left(\\frac{1}{3}\\right)-2\\left(\\frac{1}{2}\\right)\\\\\n&=1-1\\\\\n&=0.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n\\boxed{\\int_0^1(3x^2-2x)\\,\\,d x=0}.\n\\]"
+      },
+      {
         "kind": "theorem",
         "title": "Monotonisitas integral",
         "body": "Jika $f,g$ terintegralkan Riemann pada $[a,b]$ dan $f(x)\\le g(x)$ untuk setiap $x\\in[a,b]$, maka\n\\[\n\\int_a^b f(x)\\,d x\\le\\int_a^b g(x)\\,d x.\n\\]",
         "proof": "Diketahui fungsi $f$ dan $g$ terintegralkan Riemann pada $[a,b]$ serta memenuhi $f(x)\\le g(x)$ untuk setiap $x\\in[a,b]$.\nDibuktikan bahwa\n\\[\n\\int_a^b f(x)\\,d x\\le\\int_a^b g(x)\\,d x.\n\\]\nDidefinisikan\n\\[\nh=g-f.\n\\]\nBerdasarkan teorema yang telah dibuktikan, fungsi $h$ terintegralkan Riemann. Dari asumsi $f(x)\\le g(x)$ diperoleh\n\\[\nh(x)=g(x)-f(x)\\ge0\n\\]\nuntuk setiap $x\\in[a,b]$.\nUntuk setiap partisi berlabel $\\dot P$ berlaku\n\\[\nS(h,\\dot P)=\\sum_{i=1}^n h(t_i)\\Delta x_i\\ge0,\n\\]\nkarena setiap $h(t_i)\\ge0$ dan setiap $\\Delta x_i>0$. Ketika norma partisi menuju nol, jumlah Riemann tersebut menuju $\\int_a^b h(x)\\,d x$. Oleh karena itu,\n\\[\n\\int_a^b h(x)\\,d x\\ge0.\n\\]\nBerdasarkan linearitas,\n\\[\n\\int_a^b g(x)\\,d x-\\int_a^b f(x)\\,d x\\ge0.\n\\]\nDengan demikian,\n\\[\n\\int_a^b f(x)\\,d x\\le\\int_a^b g(x)\\,d x.\n\\]\nDengan demikian, teorema tersebut terbukti."
+      },
+      {
+        "kind": "example",
+        "title": "Penerapan monotonisitas integral",
+        "body": "Gunakan Teorema Monotonisitas Integral untuk membandingkan\n\\[\n\\int_0^1x^2\\,\\,d x\n\\quad\\text{dan}\\quad\n\\int_0^1x\\,\\,d x.\n\\]",
+        "solution": "Untuk setiap $x\\in[0,1]$ berlaku\n\\[\n0\\le x^2\\le x.\n\\]\nFungsi $x^2$ dan $x$ kontinu, sehingga keduanya terintegralkan Riemann. Berdasarkan Teorema Monotonisitas integral,\n\\[\n\\int_0^1x^2\\,\\,d x\\le\\int_0^1x\\,\\,d x.\n\\]\nNilai kedua integral adalah\n\\[\n\\frac{1}{3}\\le\\frac{1}{2}.\n\\]\nDengan demikian, perbandingan integral konsisten dengan urutan titik demi titik $x^2\\le x$."
       },
       {
         "kind": "corollary",
@@ -603,6 +681,12 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         "title": "Nilai mutlak",
         "body": "Jika $f$ terintegralkan Riemann pada $[a,b]$, maka $|f|$ terintegralkan Riemann dan\n\\[\n\\left|\\int_a^b f(x)\\,d x\\right|\n\\le\n\\int_a^b|f(x)|\\,d x.\n\\]",
         "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$.\nDibuktikan bahwa fungsi $|f|$ terintegralkan Riemann dan\n\\[\n\\left|\\int_a^b f(x)\\,d x\\right|\n\\le\n\\int_a^b|f(x)|\\,d x.\n\\]\nUntuk sebarang $x,y\\in[a,b]$, ketaksamaan balik segitiga memberikan\n\\[\n\\bigl||f(x)|-|f(y)|\\bigr|\\le|f(x)-f(y)|.\n\\]\nDengan demikian, osilasi $|f|$ pada setiap subinterval tidak lebih besar daripada osilasi $f$ pada subinterval yang sama. Diambil sebarang $\\varepsilon>0$. Karena $f$ terintegralkan Riemann, berdasarkan teorema yang telah dibuktikan terdapat partisi $P$ sehingga\n\\[\nU(f,P)-L(f,P)<\\varepsilon.\n\\]\nUntuk partisi yang sama berlaku\n\\[\nU(|f|,P)-L(|f|,P)\n\\le U(f,P)-L(f,P)<\\varepsilon.\n\\]\nBerdasarkan teorema yang telah dibuktikan, fungsi $|f|$ terintegralkan Riemann.\nSelanjutnya, untuk setiap $x\\in[a,b]$ berlaku\n\\[\n-|f(x)|\\le f(x)\\le |f(x)|.\n\\]\nBerdasarkan teorema yang telah dibuktikan, diperoleh\n\\[\n-\\int_a^b|f(x)|\\,d x\n\\le\n\\int_a^b f(x)\\,d x\n\\le\n\\int_a^b|f(x)|\\,d x.\n\\]\nPernyataan tersebut ekuivalen dengan\n\\[\n\\left|\\int_a^b f(x)\\,d x\\right|\n\\le\n\\int_a^b|f(x)|\\,d x.\n\\]\nDengan demikian, teorema tersebut terbukti."
+      },
+      {
+        "kind": "example",
+        "title": "Penerapan ketaksamaan nilai mutlak",
+        "body": "Diberikan\n\\[\nf(x)=x-\\frac{1}{2},\\qquad x\\in[0,1].\n\\]\nVerifikasi ketaksamaan\n\\[\n\\left|\\int_0^1f(x)\\,\\,d x\\right|\n\\le\n\\int_0^1|f(x)|\\,\\,d x.\n\\]",
+        "solution": "Diperoleh\n\\[\n\\int_0^1\\left(x-\\frac{1}{2}\\right)\\,d x\n=\\left[\\frac{x^2}{2}-\\frac{x}{2}\\right]_0^1\n=0.\n\\]\nSelanjutnya,\n\\[\n\\begin{aligned}\n\\int_0^1\\left|x-\\frac{1}{2}\\right|\\,d x\n&=2\\int_0^{1/2}\\left(\\frac{1}{2}-x\\right)\\,d x\\\\\n&=2\\left[\\frac{x}{2}-\\frac{x^2}{2}\\right]_0^{1/2}\\\\\n&=\\frac{1}{4}.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n\\left|\\int_0^1f\\right|=0\\le\\frac{1}{4}=\\int_0^1|f|,\n\\]\nsesuai Teorema Nilai mutlak."
       },
       {
         "kind": "paragraph",
@@ -621,10 +705,22 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan $c\\in[a,b]$.\nDibuktikan bahwa fungsi $f$ terintegralkan Riemann pada $[a,c]$ dan $[c,b]$, serta\n\\[\n\\int_a^b f(x)\\,d x\n=\n\\int_a^c f(x)\\,d x+\n\\int_c^b f(x)\\,d x.\n\\]\nDiambil sebarang $\\varepsilon>0$. Karena $f$ terintegralkan Riemann pada $[a,b]$, berdasarkan teorema yang telah dibuktikan terdapat partisi $P$ dari $[a,b]$ sehingga\n\\[\nU(f,P)-L(f,P)<\\varepsilon.\n\\]\nDibentuk partisi penghalus\n\\[\nR=P\\cup\\{c\\}.\n\\]\nBerdasarkan sifat partisi penghalus,\n\\[\nU(f,R)-L(f,R)\\le U(f,P)-L(f,P)<\\varepsilon.\n\\]\nPartisi $R$ terpecah menjadi partisi $R_1$ pada $[a,c]$ dan partisi $R_2$ pada $[c,b]$. Karena selisih Darboux tidak negatif pada setiap bagian,\n\\[\nU(f,R_1)-L(f,R_1)\n\\le U(f,R)-L(f,R)<\\varepsilon,\n\\]\ndan\n\\[\nU(f,R_2)-L(f,R_2)\n\\le U(f,R)-L(f,R)<\\varepsilon.\n\\]\nBerdasarkan teorema yang telah dibuktikan, $f$ terintegralkan Riemann pada kedua subinterval tersebut.\nDituliskan\n\\[\nI=\\int_a^b f(x)\\,d x,\n\\qquad\nI_1=\\int_a^c f(x)\\,d x,\n\\qquad\nI_2=\\int_c^b f(x)\\,d x.\n\\]\nUntuk partisi berlabel pada $[a,b]$ yang memuat $c$, jumlah Riemann terurai menjadi\n\\[\nS(f,\\dot P)=S_1(f,P_1^*)+S_2(f,P_2^*).\n\\]\nKetika norma partisi menuju nol, ruas kiri menuju $I$, sedangkan dua suku pada ruas kanan masing-masing menuju $I_1$ dan $I_2$. Oleh karena itu,\n\\[\nI=I_1+I_2.\n\\]\nDengan demikian, teorema tersebut terbukti."
       },
       {
+        "kind": "example",
+        "title": "Memecah integral pada titik tengah",
+        "body": "Hitung\n\\[\n\\int_0^2x\\,\\,d x\n\\]\ndengan membagi interval pada $c=1$.",
+        "solution": "Berdasarkan Teorema Aditivitas interval,\n\\[\n\\int_0^2x\\,\\,d x\n=\n\\int_0^1x\\,\\,d x+\n\\int_1^2x\\,\\,d x.\n\\]\nDiperoleh\n\\[\n\\int_0^1x\\,\\,d x=\\frac{1}{2}\n\\]\ndan\n\\[\n\\int_1^2x\\,\\,d x\n=\\left[\\frac{x^2}{2}\\right]_1^2\n=2-\\frac{1}{2}\n=\\frac{3}{2}.\n\\]\nOleh karena itu,\n\\[\n\\boxed{\\int_0^2x\\,\\,d x=\\frac{1}{2}+\\frac{3}{2}=2}.\n\\]"
+      },
+      {
         "kind": "theorem",
         "title": "Integrabilitas hasil kali",
         "body": "Jika $f,g$ terintegralkan Riemann pada $[a,b]$, maka $fg$ terintegralkan Riemann.",
         "proof": "Diketahui fungsi $f$ dan $g$ terintegralkan Riemann pada $[a,b]$.\nDibuktikan bahwa hasil kali $fg$ terintegralkan Riemann pada $[a,b]$.\nKarena fungsi terintegralkan Riemann terbatas, terdapat $M,N\\ge0$ sehingga\n\\[\n|f(x)|\\le M,\n\\qquad\n|g(x)|\\le N\n\\]\nuntuk setiap $x\\in[a,b]$.\nUntuk sebarang $x,y$ yang berada pada subinterval yang sama,\n\\[\\begin{aligned}\n|f(x)g(x)-f(y)g(y)|\\\\\n&=|f(x)(g(x)-g(y))+g(y)(f(x)-f(y))|\\\\\n&\\le M|g(x)-g(y)|+N|f(x)-f(y)|.\n\\end{aligned}\\]\nDengan demikian, jika $\\omega_i(h)$ menyatakan osilasi fungsi $h$ pada subinterval ke-$i$, maka\n\\[\n\\omega_i(fg)\\le M\\omega_i(g)+N\\omega_i(f).\n\\]\nAkibatnya, untuk setiap partisi $P$,\n\\[\nU(fg,P)-L(fg,P)\n\\le M\\bigl(U(g,P)-L(g,P)\\bigr)\n+N\\bigl(U(f,P)-L(f,P)\\bigr).\n\\]\nDiambil sebarang $\\varepsilon>0$. Berdasarkan teorema yang telah dibuktikan, dipilih partisi $P_f$ dan $P_g$ sehingga\n\\[\nU(f,P_f)-L(f,P_f)<\\frac{\\varepsilon}{2(N+1)},\n\\]\ndan\n\\[\nU(g,P_g)-L(g,P_g)<\\frac{\\varepsilon}{2(M+1)}.\n\\]\nDibentuk partisi penghalus bersama $P=P_f\\cup P_g$. Karena penghalusan tidak memperbesar selisih jumlah atas dan jumlah bawah, kedua ketaksamaan tetap berlaku untuk $P$. Dengan demikian,\n\\[\\begin{aligned}\nU(fg,P)-L(fg,P)\\\\\n&<M\\frac{\\varepsilon}{2(M+1)}\\\\\n+N\\frac{\\varepsilon}{2(N+1)}\\\\\n&<\\varepsilon.\n\\end{aligned}\\]\nBerdasarkan teorema yang telah dibuktikan, $fg$ terintegralkan Riemann.\nDengan demikian, teorema tersebut terbukti."
+      },
+      {
+        "kind": "example",
+        "title": "Hasil kali dua fungsi terintegralkan",
+        "body": "Diberikan\n\\[\nf(x)=x,\n\\qquad\ng(x)=1-x,\n\\qquad x\\in[0,1].\n\\]\nTentukan keterintegralan fungsi $h(x)=f(x)g(x)$.",
+        "solution": "Fungsi $f(x)=x$ dan $g(x)=1-x$ kontinu pada $[0,1]$, sehingga keduanya terintegralkan Riemann. Berdasarkan Teorema keterintegralan hasil kali, hasil kali\n\\[\nh(x)=f(x)g(x)=x(1-x)\n\\]\njuga terintegralkan Riemann. Dengan demikian,\n\\[\n\\boxed{x(1-x)\\text{ terintegralkan Riemann pada }[0,1].}\n\\]\nTeorema ini memberikan kesimpulan keterintegralan tanpa perlu menghitung jumlah Riemann dari $h$ secara langsung."
       },
       {
         "kind": "theorem",
@@ -633,10 +729,22 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan $\\varphi$ kontinu pada interval kompak yang memuat citra $f$.\nDibuktikan bahwa komposisi $\\varphi\\circ f$ terintegralkan Riemann pada $[a,b]$.\nKarena $f$ terbatas, citra $f$ termuat dalam suatu interval kompak $K_0$. Karena $\\varphi$ kontinu pada $K_0$, fungsi $\\varphi$ kontinu seragam dan terbatas pada $K_0$. Oleh karena itu, terdapat $K\\ge0$ sehingga\n\\[\n|\\varphi(t)|\\le K\n\\]\nuntuk setiap $t\\in K_0$.\nJika $K=0$, komposisi $\\varphi\\circ f$ identik nol dan pernyataan langsung berlaku. Selanjutnya diandaikan $K>0$. Diambil sebarang $\\varepsilon>0$. Dari kontinuitas seragam $\\varphi$, terdapat $\\eta>0$ sehingga\n\\[\n|u-v|<\\eta\n\\quad\\Longrightarrow\\quad\n|\\varphi(u)-\\varphi(v)|<\\frac{\\varepsilon}{2(b-a)}.\n\\]\nKarena $f$ terintegralkan Riemann, berdasarkan teorema yang telah dibuktikan dipilih partisi $P$ sehingga\n\\[\nU(f,P)-L(f,P)\n=\\sum_i\\omega_i(f)\\Delta x_i\n<\\frac{\\eta\\varepsilon}{4K}.\n\\]\nIndeks subinterval dipisahkan menjadi\n\\[\nG=\\{i:\\omega_i(f)<\\eta\\},\n\\qquad\nB=\\{i:\\omega_i(f)\\ge\\eta\\}.\n\\]\nUntuk $i\\in G$, kontinuitas seragam memberikan\n\\[\n\\omega_i(\\varphi\\circ f)<\\frac{\\varepsilon}{2(b-a)}.\n\\]\nUntuk $i\\in B$, karena $|\\varphi|\\le K$, berlaku\n\\[\n\\omega_i(\\varphi\\circ f)\\le2K.\n\\]\nSelain itu,\n\\[\n\\eta\\sum_{i\\in B}\\Delta x_i\n\\le\\sum_{i\\in B}\\omega_i(f)\\Delta x_i\n<\\frac{\\eta\\varepsilon}{4K},\n\\]\nAkibatnya,\n\\[\n\\sum_{i\\in B}\\Delta x_i<\\frac{\\varepsilon}{4K}.\n\\]\nDengan demikian,\n\\[\\begin{aligned}\nU(\\varphi\\circ f,P)-L(\\varphi\\circ f,P)\\\\\n&\\le \\sum_{i\\in G}\\frac{\\varepsilon}{2(b-a)}\\Delta x_i\\\\\n+\\sum_{i\\in B}2K\\Delta x_i\\\\\n&<\\frac{\\varepsilon}{2}+\\frac{\\varepsilon}{2}\\\\\n&=\\varepsilon.\n\\end{aligned}\\]\nBerdasarkan teorema yang telah dibuktikan, $\\varphi\\circ f$ terintegralkan Riemann.\nDengan demikian, teorema tersebut terbukti."
       },
       {
+        "kind": "example",
+        "title": "Penerapan komposisi kontinu",
+        "body": "Diberikan $f(x)=x$ pada $[-1,1]$ dan\n\\[\n\\varphi(t)=|t|.\n\\]\nGunakan Teorema Komposisi untuk menentukan keterintegralan $\\varphi\\circ f$.",
+        "solution": "Fungsi $f(x)=x$ terintegralkan Riemann pada $[-1,1]$. Fungsi\n\\[\n\\varphi(t)=|t|\n\\]\nkontinu pada $[-1,1]$, yang memuat range $f$. Berdasarkan Teorema Komposisi dengan fungsi kontinu, fungsi\n\\[\n(\\varphi\\circ f)(x)=|x|\n\\]\nterintegralkan Riemann. Dengan demikian,\n\\[\n\\boxed{|x|\\text{ terintegralkan Riemann pada }[-1,1].}\n\\]"
+      },
+      {
         "kind": "theorem",
         "title": "Perubahan nilai pada sejumlah hingga titik",
         "body": "Diberikan fungsi $f:[a,b]\\to\\mathbb{R}$ yang terintegralkan Riemann dan fungsi $g:[a,b]\\to\\mathbb{R}$ yang memenuhi\n\\[\nf(x)=g(x)\n\\]\nuntuk setiap $x\\in[a,b]$, kecuali mungkin pada sejumlah hingga titik. Dalam kondisi tersebut, $g$ terintegralkan Riemann dan\n\\[\n\\int_a^b g(x)\\,\\,d x\n=\n\\int_a^b f(x)\\,\\,d x.\n\\]",
         "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan terdapat himpunan hingga\n\\[\nE=\\{c_1,c_2,\\ldots,c_m\\}\\subseteq[a,b]\n\\]\nsedemikian sehingga\n\\[\nf(x)=g(x)\n\\]\nuntuk setiap $x\\in[a,b]\\setminus E$.\n\nDibuktikan bahwa $g$ terintegralkan Riemann dan\n\\[\n\\int_a^b g(x)\\,\\,d x\n=\n\\int_a^b f(x)\\,\\,d x.\n\\]\nDidefinisikan\n\\[\nh=g-f.\n\\]\nFungsi $h$ bernilai nol pada $[a,b]\\setminus E$. Karena $E$ hingga dan setiap $h(c_j)$ merupakan bilangan real, terdapat $K\\ge0$ sehingga\n\\[\n|h(x)|\\le K\n\\]\nuntuk setiap $x\\in[a,b]$. Jika $K=0$, diperoleh $h\\equiv0$, sehingga $g=f$ dan pernyataan langsung berlaku. Selanjutnya diandaikan $K>0$.\n\nDiambil sebarang $\\varepsilon>0$. Untuk setiap $j=1,2,\\ldots,m$, dipilih interval terbuka $J_j$ yang memuat $c_j$ sedemikian sehingga\n\\[\n\\sum_{j=1}^{m}|J_j|\n<\n\\frac{\\varepsilon}{2K}.\n\\]\nDibentuk partisi $P$ yang memuat seluruh ujung interval $J_j$ dan seluruh titik $c_j$. Pada setiap subinterval partisi yang tidak beririsan dengan $E$, fungsi $h$ identik nol. Oleh karena itu, pada subinterval tersebut berlaku\n\\[\nm_i(h)=M_i(h)=0.\n\\]\nPada subinterval yang memuat titik dari $E$, osilasi $h$ paling besar $2K$. Dengan demikian,\n\\[\\begin{aligned}\nU(h,P)-L(h,P)\n&\\le\n2K\\sum_{j=1}^{m}|J_j|\\\\\n&<\\varepsilon.\n\\end{aligned}\\]\nBerdasarkan Teorema, fungsi $h$ terintegralkan Riemann.\n\nSelain itu, setiap subinterval tak degenerat yang memuat suatu titik $c_j$ juga memuat titik lain di luar $E$. Pada titik tersebut $h=0$. Akibatnya,\n\\[\nL(h,P)\\le0\\le U(h,P).\n\\]\nDengan pilihan interval $J_j$ seperti di atas, diperoleh\n\\[\n|L(h,P)|\\le K\\sum_{j=1}^{m}|J_j|\n<\\frac{\\varepsilon}{2}\n\\]\ndan\n\\[\n|U(h,P)|\\le K\\sum_{j=1}^{m}|J_j|\n<\\frac{\\varepsilon}{2}.\n\\]\nKarena $\\varepsilon>0$ dipilih sebarang, integral Darboux bawah dan atas dari $h$ sama dengan nol. Berdasarkan Teorema,\n\\[\n\\int_a^b h(x)\\,\\,d x=0.\n\\]\nBerdasarkan Teorema Linearitas dan identitas $g=f+h$,\n\\[\n\\int_a^b g(x)\\,\\,d x\n=\n\\int_a^b f(x)\\,\\,d x\n+\n\\int_a^b h(x)\\,\\,d x\n=\n\\int_a^b f(x)\\,\\,d x.\n\\]\nDengan demikian, Teorema Perubahan nilai pada sejumlah hingga titik terbukti."
+      },
+      {
+        "kind": "example",
+        "title": "Mengubah nilai fungsi pada satu titik",
+        "body": "Diberikan\n\\[\nf(x)=x,\n\\]\ndan\n\\[\ng(x)=\n\\begin{cases}\nx,&x\\ne\\frac{1}{2},\\\\\n10,&x=\\frac{1}{2},\n\\end{cases}\n\\qquad x\\in[0,1].\n\\]\nTentukan $\\int_0^1g(x)\\,\\,d x$.",
+        "solution": "Fungsi $f(x)=x$ terintegralkan Riemann dan\n\\[\n\\int_0^1f(x)\\,\\,d x=\\frac{1}{2}.\n\\]\nFungsi $f$ dan $g$ memenuhi\n\\[\nf(x)=g(x)\n\\]\nuntuk setiap $x\\in[0,1]$, kecuali mungkin pada satu titik, yaitu $x=\\frac{1}{2}$. Berdasarkan Teorema Perubahan nilai pada sejumlah hingga titik, perubahan nilai pada sejumlah hingga titik tidak mengubah nilai integral. Oleh karena itu,\n\\[\n\\boxed{\\int_0^1g(x)\\,\\,d x=\\frac{1}{2}}.\n\\]"
       },
       {
         "kind": "corollary",
@@ -663,16 +771,34 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         "proof": "Diketahui fungsi $f$ terdiferensialkan pada $[a,b]$ dan memenuhi $|f'(x)|\\le M$ untuk setiap $x\\in(a,b)$.\n\nDibuktikan bahwa untuk setiap partisi $P$ berlaku\n\\[\nU(f,P)-L(f,P)\n\\le\nM(b-a)\\lVert P\\rVert,\n\\]\nserta $f$ terintegralkan Riemann.\n\nDiambil sebarang subinterval\n\\[\nI_i=[x_{i-1},x_i]\n\\]\ndari partisi $P$. Untuk sebarang $x,y\\in I_i$, Teorema Nilai Rata-Rata diferensial memberikan suatu $\\xi$ di antara $x$ dan $y$ sehingga\n\\[\nf(x)-f(y)=f'(\\xi)(x-y).\n\\]\nOleh karena itu,\n\\[\n|f(x)-f(y)|\n\\le\nM|x-y|\n\\le\nM\\Delta x_i.\n\\]\nDengan mengambil supremum terhadap seluruh $x,y\\in I_i$, diperoleh\n\\[\nM_i-m_i\\le M\\Delta x_i.\n\\]\nDengan demikian,\n\\[\\begin{aligned}\nU(f,P)-L(f,P)\n&=\n\\sum_{i=1}^{n}(M_i-m_i)\\Delta x_i\\\\\n&\\le\nM\\sum_{i=1}^{n}(\\Delta x_i)^2.\n\\end{aligned}\\]\nKarena $\\Delta x_i\\le\\lVert P\\rVert$, berlaku\n\\[\n(\\Delta x_i)^2\n\\le\n\\lVert P\\rVert\\Delta x_i.\n\\]\nAkibatnya,\n\\[\\begin{aligned}\nU(f,P)-L(f,P)\n&\\le\nM\\lVert P\\rVert\\sum_{i=1}^{n}\\Delta x_i\\\\\n&=\nM(b-a)\\lVert P\\rVert.\n\\end{aligned}\\]\nDiambil sebarang $\\varepsilon>0$. Jika $M=0$, fungsi $f$ konstan dan terintegralkan. Jika $M>0$, dipilih partisi $P$ dengan\n\\[\n\\lVert P\\rVert\n<\n\\frac{\\varepsilon}{M(b-a)}.\n\\]\nDiperoleh\n\\[\nU(f,P)-L(f,P)<\\varepsilon.\n\\]\nBerdasarkan Teorema, fungsi $f$ terintegralkan Riemann.\nDengan demikian, Teorema Estimasi Darboux untuk fungsi dengan turunan terbatas terbukti."
       },
       {
+        "kind": "example",
+        "title": "Estimasi Darboux untuk $f(x)=x^2$",
+        "body": "Diberikan $f(x)=x^2$ pada $[0,1]$. Gunakan estimasi turunan terbatas untuk membuktikan keterintegralan Darboux.",
+        "solution": "Diperoleh\n\\[\nf'(x)=2x,\n\\]\nsehingga\n\\[\n|f'(x)|\\le2\n\\]\nuntuk setiap $x\\in[0,1]$. Teorema Estimasi Darboux untuk fungsi dengan turunan terbatas memberikan\n\\[\nU(f,P)-L(f,P)\n\\le2(1-0)\\|P\\|\n=2\\|P\\|.\n\\]\nDiambil sebarang $\\varepsilon>0$. Dipilih partisi $P$ dengan\n\\[\n\\|P\\|<\\frac{\\varepsilon}{2}.\n\\]\nDiperoleh\n\\[\nU(f,P)-L(f,P)<\\varepsilon.\n\\]\nBerdasarkan Kriteria Darboux, $f(x)=x^2$ terintegralkan Darboux pada $[0,1]$."
+      },
+      {
         "kind": "theorem",
         "title": "Superaditivitas jumlah Darboux bawah",
         "body": "Diberikan fungsi terbatas $f,g:[a,b]\\to\\mathbb{R}$ dan partisi $P$ dari $[a,b]$. Berlaku\n\\[\nL(f,P)+L(g,P)\n\\le\nL(f+g,P).\n\\]",
         "proof": "Diketahui fungsi terbatas $f$ dan $g$ serta partisi\n\\[\nP=\\{a=x_0<x_1<\\cdots<x_n=b\\}.\n\\]\nDibuktikan bahwa\n\\[\nL(f,P)+L(g,P)\n\\le\nL(f+g,P).\n\\]\nPada subinterval\n\\[\nI_i=[x_{i-1},x_i],\n\\]\nditulis\n\\[\nm_i(f)=\\inf_{x\\in I_i}f(x),\n\\qquad\nm_i(g)=\\inf_{x\\in I_i}g(x).\n\\]\nUntuk setiap $x\\in I_i$ berlaku\n\\[\nf(x)\\ge m_i(f)\n\\]\ndan\n\\[\ng(x)\\ge m_i(g).\n\\]\nDengan menjumlahkan kedua ketaksamaan tersebut,\n\\[\nf(x)+g(x)\n\\ge\nm_i(f)+m_i(g).\n\\]\nKarena berlaku untuk setiap $x\\in I_i$,\n\\[\nm_i(f+g)\n\\ge\nm_i(f)+m_i(g).\n\\]\nDikalikan dengan $\\Delta x_i>0$ dan dijumlahkan untuk $i=1,2,\\ldots,n$, diperoleh\n\\[\\begin{aligned}\nL(f+g,P)\n&=\n\\sum_{i=1}^{n}m_i(f+g)\\Delta x_i\\\\\n&\\ge\n\\sum_{i=1}^{n}\\bigl(m_i(f)+m_i(g)\\bigr)\\Delta x_i\\\\\n&=\nL(f,P)+L(g,P).\n\\end{aligned}\\]\nDengan demikian, Teorema Superaditivitas jumlah Darboux bawah terbukti."
       },
       {
+        "kind": "example",
+        "title": "Ketaksamaan jumlah bawah dapat bersifat ketat",
+        "body": "Diberikan $f(x)=x$ dan $g(x)=-x$ pada $[0,1]$ dengan partisi\n\\[\nP=\\{0,1\\}.\n\\]\nVerifikasi\n\\[\nL(f,P)+L(g,P)\\le L(f+g,P).\n\\]",
+        "solution": "Pada $[0,1]$ diperoleh\n\\[\n\\inf f=0,\n\\qquad\n\\inf g=-1.\n\\]\nKarena panjang interval sama dengan $1$,\n\\[\nL(f,P)=0,\n\\qquad\nL(g,P)=-1.\n\\]\nSementara itu,\n\\[\nf(x)+g(x)=0\n\\]\nuntuk setiap $x$, sehingga\n\\[\nL(f+g,P)=0.\n\\]\nDengan demikian,\n\\[\nL(f,P)+L(g,P)=-1\\le0=L(f+g,P).\n\\]\nContoh ini juga menunjukkan bahwa ketaksamaan dapat bersifat ketat."
+      },
+      {
         "kind": "theorem",
         "title": "Subaditivitas jumlah Darboux atas",
         "body": "Diberikan fungsi terbatas $f,g:[a,b]\\to\\mathbb{R}$ dan partisi $P$ dari $[a,b]$. Berlaku\n\\[\nU(f+g,P)\n\\le\nU(f,P)+U(g,P).\n\\]",
         "proof": "Diketahui fungsi terbatas $f$ dan $g$ serta partisi\n\\[\nP=\\{a=x_0<x_1<\\cdots<x_n=b\\}.\n\\]\nDibuktikan bahwa\n\\[\nU(f+g,P)\n\\le\nU(f,P)+U(g,P).\n\\]\nPada subinterval\n\\[\nI_i=[x_{i-1},x_i],\n\\]\nditulis\n\\[\nM_i(f)=\\sup_{x\\in I_i}f(x),\n\\qquad\nM_i(g)=\\sup_{x\\in I_i}g(x).\n\\]\nUntuk setiap $x\\in I_i$ berlaku\n\\[\nf(x)\\le M_i(f)\n\\]\ndan\n\\[\ng(x)\\le M_i(g).\n\\]\nDengan menjumlahkan kedua ketaksamaan tersebut,\n\\[\nf(x)+g(x)\n\\le\nM_i(f)+M_i(g).\n\\]\nKarena berlaku untuk setiap $x\\in I_i$,\n\\[\nM_i(f+g)\n\\le\nM_i(f)+M_i(g).\n\\]\nDikalikan dengan $\\Delta x_i>0$ dan dijumlahkan untuk $i=1,2,\\ldots,n$, diperoleh\n\\[\\begin{aligned}\nU(f+g,P)\n&=\n\\sum_{i=1}^{n}M_i(f+g)\\Delta x_i\\\\\n&\\le\n\\sum_{i=1}^{n}\\bigl(M_i(f)+M_i(g)\\bigr)\\Delta x_i\\\\\n&=\nU(f,P)+U(g,P).\n\\end{aligned}\\]\nDengan demikian, Teorema Subaditivitas jumlah Darboux atas terbukti."
+      },
+      {
+        "kind": "example",
+        "title": "Ketaksamaan jumlah atas dapat bersifat ketat",
+        "body": "Diberikan $f(x)=x$ dan $g(x)=-x$ pada $[0,1]$ dengan partisi $P=\\{0,1\\}$. Verifikasi\n\\[\nU(f+g,P)\\le U(f,P)+U(g,P).\n\\]",
+        "solution": "Pada $[0,1]$ berlaku\n\\[\n\\sup f=1,\n\\qquad\n\\sup g=0.\n\\]\nDengan demikian,\n\\[\nU(f,P)=1,\n\\qquad\nU(g,P)=0.\n\\]\nKarena $f+g=0$ identik,\n\\[\nU(f+g,P)=0.\n\\]\nOleh karena itu,\n\\[\n0=U(f+g,P)\\le1=U(f,P)+U(g,P).\n\\]\nDengan demikian, Teorema Subaditivitas jumlah Darboux atas terverifikasi pada contoh ini."
       },
       {
         "kind": "corollary",
@@ -687,10 +813,22 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         "proof": "Diketahui fungsi $f$ dan $g$ terintegralkan Riemann pada $[a,b]$.\n\nDibuktikan bahwa $\\max\\{f,g\\}$ dan $\\min\\{f,g\\}$ terintegralkan Riemann.\n\nBerdasarkan Teorema Linearitas, fungsi\n\\[\nf-g\n\\]\nterintegralkan Riemann. Berdasarkan Teorema Nilai mutlak, fungsi\n\\[\n|f-g|\n\\]\njuga terintegralkan Riemann. Digunakan identitas\n\\[\n\\max\\{f,g\\}\n=\n\\frac{f+g+|f-g|}{2}\n\\]\ndan\n\\[\n\\min\\{f,g\\}\n=\n\\frac{f+g-|f-g|}{2}.\n\\]\nRuas kanan kedua identitas tersebut merupakan kombinasi linear dari fungsi-fungsi yang terintegralkan Riemann. Berdasarkan Teorema Linearitas, kedua fungsi tersebut terintegralkan Riemann.\nDengan demikian, Teorema Maksimum dan minimum dua fungsi terintegralkan terbukti."
       },
       {
+        "kind": "example",
+        "title": "Maksimum dan minimum dua fungsi",
+        "body": "Diberikan\n\\[\nf(x)=x,\n\\qquad\ng(x)=1-x,\n\\qquad x\\in[0,1].\n\\]\nTentukan apakah $\\max\\{f,g\\}$ dan $\\min\\{f,g\\}$ terintegralkan Riemann.",
+        "solution": "Fungsi $f$ dan $g$ kontinu, sehingga keduanya terintegralkan Riemann. Berdasarkan Teorema Maksimum dan minimum dua fungsi terintegralkan, fungsi\n\\[\nh(x)=\\max\\{x,1-x\\}\n\\]\ndan\n\\[\nk(x)=\\min\\{x,1-x\\}\n\\]\nterintegralkan Riemann. Secara eksplisit,\n\\[\nh(x)=\n\\begin{cases}\n1-x,&0\\le x\\le\\frac{1}{2},\\\\\nx,&\\frac{1}{2}\\le x\\le1,\n\\end{cases}\n\\]\ndan\n\\[\nk(x)=\n\\begin{cases}\nx,&0\\le x\\le\\frac{1}{2},\\\\\n1-x,&\\frac{1}{2}\\le x\\le1.\n\\end{cases}\n\\]\nDengan demikian, kedua fungsi tersebut terintegralkan tanpa perlu menguji definisi Riemann secara langsung."
+      },
+      {
         "kind": "theorem",
         "title": "Resiprokal fungsi terintegralkan",
         "body": "Diberikan fungsi $f$ yang terintegralkan Riemann pada $[a,b]$. Jika terdapat $m>0$ sehingga\n\\[\n|f(x)|\\ge m\n\\]\nuntuk setiap $x\\in[a,b]$, maka fungsi\n\\[\n\\frac{1}{f}\n\\]\nterintegralkan Riemann pada $[a,b]$.",
         "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan terdapat $m>0$ dengan\n\\[\n|f(x)|\\ge m\n\\]\nuntuk setiap $x\\in[a,b]$.\n\nDibuktikan bahwa fungsi $\\frac{1}{f}$ terintegralkan Riemann pada $[a,b]$.\n\nKarena $f$ terintegralkan Riemann, fungsi $f$ terbatas. Terdapat $M\\ge m$ sehingga\n\\[\n|f(x)|\\le M\n\\]\nuntuk setiap $x\\in[a,b]$. Range fungsi $f$ termuat dalam himpunan kompak\n\\[\n[-M,-m]\\cup[m,M].\n\\]\nFungsi\n\\[\n\\varphi(t)=\\frac{1}{t}\n\\]\nkontinu pada himpunan tersebut. Berdasarkan Teorema Komposisi dengan fungsi kontinu, fungsi\n\\[\n\\varphi\\circ f\n=\n\\frac{1}{f}\n\\]\nterintegralkan Riemann pada $[a,b]$.\nDengan demikian, Teorema Resiprokal fungsi terintegralkan terbukti."
+      },
+      {
+        "kind": "example",
+        "title": "Penerapan teorema resiprokal",
+        "body": "Diberikan\n\\[\nf(x)=x+2,\\qquad x\\in[0,1].\n\\]\nBuktikan bahwa $1/f$ terintegralkan Riemann.",
+        "solution": "Fungsi $f(x)=x+2$ kontinu, sehingga terintegralkan Riemann. Selain itu,\n\\[\n2\\le x+2\\le3\n\\]\nuntuk setiap $x\\in[0,1]$. Dengan demikian,\n\\[\n|f(x)|\\ge2.\n\\]\nSyarat Teorema Resiprokal fungsi terintegralkan terpenuhi dengan $m=2$. Oleh karena itu,\n\\[\n\\boxed{\\frac{1}{x+2}\\text{ terintegralkan Riemann pada }[0,1].}\n\\]"
       }
     ],
     "subsections": []
@@ -714,10 +852,22 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan memenuhi\n\\[\nm\\le f(x)\\le M\n\\]\nuntuk setiap $x\\in[a,b]$.\n\nDibuktikan bahwa\n\\[\nm(b-a)\n\\le\n\\int_a^b f(x)\\,d x\n\\le\nM(b-a).\n\\]\n\nFungsi konstan $x\\mapsto m$ dan $x\\mapsto M$ terintegralkan Riemann. Berdasarkan Teorema Monotonisitas Integral,\n\\[\n\\int_a^b m\\,d x\n\\le\n\\int_a^b f(x)\\,d x\n\\le\n\\int_a^b M\\,d x.\n\\]\nIntegral fungsi konstan memberikan\n\\[\n\\int_a^b m\\,d x=m(b-a)\n\\]\ndan\n\\[\n\\int_a^b M\\,d x=M(b-a).\n\\]\nDengan demikian,\n\\[\nm(b-a)\n\\le\n\\int_a^b f(x)\\,d x\n\\le\nM(b-a).\n\\]\nDengan demikian, Teorema Batas Integral terbukti."
           },
           {
+            "kind": "example",
+            "title": "Membatasi nilai integral tanpa menghitung tepat",
+            "body": "Diberikan\n\\[\nf(x)=x+2,\n\\qquad x\\in[0,1].\n\\]\nGunakan Teorema Batas Integral untuk memperoleh batas nilai $\\int_0^1f(x)\\,\\,d x$.",
+            "solution": "Untuk setiap $x\\in[0,1]$ berlaku\n\\[\n2\\le x+2\\le3.\n\\]\nDengan $m=2$, $M=3$, $a=0$, dan $b=1$, Teorema Batas integral memberikan\n\\[\n2(1-0)\n\\le\n\\int_0^1(x+2)\\,\\,d x\n\\le\n3(1-0).\n\\]\nDengan demikian,\n\\[\n\\boxed{2\\le\\int_0^1(x+2)\\,\\,d x\\le3}.\n\\]\nSebagai pemeriksaan, nilai tepatnya adalah $\\frac{5}{2}$, yang memang berada di antara $2$ dan $3$."
+          },
+          {
             "kind": "theorem",
             "title": "Kontinuitas fungsi integral",
             "body": "Diberikan fungsi $f$ terintegralkan Riemann pada $[a,b]$ dan didefinisikan\n\\[\nF(x)=\\int_a^x f(t)\\,d t,\n\\qquad x\\in[a,b].\n\\]\nJika $|f(x)|\\le M$ pada $[a,b]$, untuk setiap $x,y\\in[a,b]$ berlaku\n\\[\n|F(x)-F(y)|\\le M|x-y|.\n\\]\nKhususnya, $F$ kontinu pada $[a,b]$.",
             "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$,\n\\[\nF(x)=\\int_a^x f(t)\\,d t,\n\\]\ndan $|f(x)|\\le M$ untuk setiap $x\\in[a,b]$.\n\nDibuktikan bahwa\n\\[\n|F(x)-F(y)|\\le M|x-y|\n\\]\nuntuk setiap $x,y\\in[a,b]$, serta $F$ kontinu pada $[a,b]$.\n\nDiambil sebarang $x,y\\in[a,b]$. Tanpa mengurangi keumuman, diandaikan $x<y$. Berdasarkan Teorema Aditivitas Interval,\n\\[\nF(y)-F(x)=\\int_x^y f(t)\\,d t.\n\\]\nBerdasarkan Teorema Nilai Mutlak,\n\\[\n\\begin{aligned}\n|F(y)-F(x)|\n&=\\left|\\int_x^y f(t)\\,d t\\right|\\\\\n&\\le \\int_x^y |f(t)|\\,d t\\\\\n&\\le \\int_x^y M\\,d t\\\\\n&=M(y-x).\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n|F(x)-F(y)|\\le M|x-y|.\n\\]\n\nDiambil sebarang $c\\in[a,b]$ dan $\\varepsilon>0$. Jika $M=0$, fungsi $F$ konstan. Jika $M>0$, dipilih\n\\[\n\\delta=\\frac{\\varepsilon}{M}.\n\\]\nUntuk $|x-c|<\\delta$ diperoleh\n\\[\n|F(x)-F(c)|\\le M|x-c|<M\\delta=\\varepsilon.\n\\]\nOleh karena itu, $F$ kontinu di setiap $c\\in[a,b]$. Dengan demikian, Teorema Kontinuitas Fungsi Integral terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Fungsi integral dari $f(t)=t$",
+            "body": "Diberikan\n\\[\nF(x)=\\int_0^x t\\,\\,d t,\n\\qquad x\\in[0,1].\n\\]\nGunakan Teorema Kontinuitas Fungsi Integral untuk menunjukkan bahwa $F$ kontinu.",
+            "solution": "Pada $[0,1]$ berlaku\n\\[\n|t|\\le1.\n\\]\nDengan demikian, dapat dipilih $M=1$. Teorema Kontinuitas fungsi integral memberikan untuk setiap $x,y\\in[0,1]$,\n\\[\n|F(x)-F(y)|\\le|x-y|.\n\\]\nKetaksamaan tersebut menunjukkan bahwa $F$ bahkan Lipschitz dengan konstanta $1$, sehingga kontinu pada $[0,1]$. Secara eksplisit,\n\\[\nF(x)=\\frac{x^2}{2},\n\\]\nyang konsisten dengan kesimpulan tersebut."
           }
         ]
       },
@@ -731,10 +881,22 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "proof": "Diketahui fungsi $f$ terintegralkan Riemann pada $[a,b]$,\n\\[\nF(x)=\\int_a^x f(t)\\,d t,\n\\]\ndan $f$ kontinu di $c\\in(a,b)$.\n\nDibuktikan bahwa $F$ terdiferensialkan di $c$ dan\n\\[\nF'(c)=f(c).\n\\]\n\nDiambil $h\\ne0$ cukup kecil sehingga $c+h\\in[a,b]$. Berdasarkan Teorema Aditivitas Interval,\n\\[\nF(c+h)-F(c)=\\int_c^{c+h}f(t)\\,d t.\n\\]\nOleh karena itu,\n\\[\n\\begin{aligned}\n\\frac{F(c+h)-F(c)}{h}-f(c)\n&=\n\\frac{1}{h}\\int_c^{c+h}f(t)\\,d t\n-\\frac{1}{h}\\int_c^{c+h}f(c)\\,d t\\\\\n&=\n\\frac{1}{h}\\int_c^{c+h}\\bigl(f(t)-f(c)\\bigr)\\,d t.\n\\end{aligned}\n\\]\n\nDiambil sebarang $\\varepsilon>0$. Karena $f$ kontinu di $c$, terdapat $\\delta>0$ sehingga\n\\[\n|t-c|<\\delta\n\\quad\\Longrightarrow\\quad\n|f(t)-f(c)|<\\varepsilon.\n\\]\nUntuk $0<|h|<\\delta$, setiap $t$ yang terletak di antara $c$ dan $c+h$ memenuhi $|t-c|<\\delta$. Berdasarkan Teorema Nilai Mutlak,\n\\[\n\\begin{aligned}\n\\left|\n\\frac{F(c+h)-F(c)}{h}-f(c)\n\\right|\n&\\le\n\\frac{1}{|h|}\n\\int_{\\min\\{c,c+h\\}}^{\\max\\{c,c+h\\}}\n|f(t)-f(c)|\\,d t\\\\\n&<\n\\frac{1}{|h|}\\varepsilon |h|\\\\\n&=\\varepsilon.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n\\lim_{h\\to0}\n\\frac{F(c+h)-F(c)}{h}\n=f(c).\n\\]\nAkibatnya, $F'(c)=f(c)$. Dengan demikian, Teorema Fundamental Kalkulus I terbukti."
           },
           {
+            "kind": "example",
+            "title": "Diferensiasi fungsi yang didefinisikan oleh integral",
+            "body": "Didefinisikan\n\\[\nF(x)=\\int_0^x t^2\\,\\,d t,\n\\qquad x\\in[0,1].\n\\]\nTentukan $F'(x)$ menggunakan Teorema Fundamental Kalkulus I.",
+            "solution": "Fungsi\n\\[\nf(t)=t^2\n\\]\nkontinu pada $[0,1]$. Berdasarkan Teorema Teorema Fundamental Kalkulus I, jika\n\\[\nF(x)=\\int_0^xf(t)\\,\\,d t,\n\\]\nmaka\n\\[\nF'(x)=f(x).\n\\]\nOleh karena itu,\n\\[\n\\boxed{F'(x)=x^2}.\n\\]\nHasil ini diperoleh tanpa terlebih dahulu menghitung bentuk eksplisit $F(x)=\\frac{x^3}{3}$."
+          },
+          {
             "kind": "theorem",
             "title": "Teorema Fundamental Kalkulus II atau Newton–Leibniz",
             "body": "Diberikan fungsi $f$ kontinu pada $[a,b]$. Jika $A$ merupakan antiturunan $f$, yaitu\n\\[\nA'(x)=f(x)\n\\]\nuntuk setiap $x\\in(a,b)$, berlaku\n\\[\n\\int_a^b f(x)\\,d x=A(b)-A(a).\n\\]",
             "proof": "Diketahui fungsi $f$ kontinu pada $[a,b]$ dan fungsi $A$ memenuhi\n\\[\nA'(x)=f(x)\n\\]\nuntuk setiap $x\\in(a,b)$.\n\nDibuktikan bahwa\n\\[\n\\int_a^b f(x)\\,d x=A(b)-A(a).\n\\]\n\nDiambil sebarang partisi\n\\[\nP=\\{a=x_0<x_1<\\cdots<x_n=b\\}.\n\\]\nPada setiap subinterval $[x_{i-1},x_i]$, Teorema Nilai Rata-Rata diferensial memberikan suatu $\\xi_i\\in(x_{i-1},x_i)$ sehingga\n\\[\nA(x_i)-A(x_{i-1})\n=A'(\\xi_i)(x_i-x_{i-1}).\n\\]\nKarena $A'(\\xi_i)=f(\\xi_i)$,\n\\[\nA(x_i)-A(x_{i-1})\n=f(\\xi_i)\\Delta x_i.\n\\]\nDijumlahkan untuk $i=1,\\ldots,n$,\n\\[\n\\begin{aligned}\nA(b)-A(a)\n&=\\sum_{i=1}^n\\bigl(A(x_i)-A(x_{i-1})\\bigr)\\\\\n&=\\sum_{i=1}^n f(\\xi_i)\\Delta x_i\\\\\n&=S(f,\\dot P),\n\\end{aligned}\n\\]\ndengan $\\dot P$ partisi berlabel yang labelnya adalah $\\xi_i$.\n\nKarena $f$ kontinu pada $[a,b]$, fungsi $f$ terintegralkan Riemann. Ketika $\\lVert P\\rVert\\to0$, definisi integral Riemann memberikan\n\\[\nS(f,\\dot P)\\longrightarrow\\int_a^b f(x)\\,d x.\n\\]\nRuas kiri $A(b)-A(a)$ tidak bergantung pada partisi. Oleh karena itu,\n\\[\nA(b)-A(a)=\\int_a^b f(x)\\,d x.\n\\]\nDengan demikian, Teorema Fundamental Kalkulus II terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Menghitung integral dengan antiturunan",
+            "body": "Hitung\n\\[\n\\int_0^1x^3\\,\\,d x\n\\]\nmenggunakan Teorema Fundamental Kalkulus II.",
+            "solution": "Fungsi $f(x)=x^3$ kontinu pada $[0,1]$. Salah satu antiturunannya adalah\n\\[\nA(x)=\\frac{x^4}{4},\n\\]\nkarena $A'(x)=x^3$. Berdasarkan Teorema Teorema Fundamental Kalkulus II atau Newton–Leibniz,\n\\[\n\\begin{aligned}\n\\int_0^1x^3\\,\\,d x\n&=A(1)-A(0)\\\\\n&=\\frac{1}{4}-0\\\\\n&=\\frac{1}{4}.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n\\boxed{\\int_0^1x^3\\,\\,d x=\\frac{1}{4}}.\n\\]"
           },
           {
             "kind": "corollary",
@@ -758,8 +920,20 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "title": "Integral nol untuk fungsi nonnegatif kontinu",
             "body": "Diberikan fungsi $f$ kontinu pada $[a,b]$ dan $f(x)\\ge0$ untuk setiap $x\\in[a,b]$. Berlaku\n\\[\n\\int_a^b f(x)\\,d x=0\n\\quad\\Longleftrightarrow\\quad\nf(x)=0\\text{ untuk setiap }x\\in[a,b].\n\\]",
             "proof": "Diketahui fungsi $f$ kontinu pada $[a,b]$ dan $f(x)\\ge0$ untuk setiap $x\\in[a,b]$.\n\nDibuktikan bahwa\n\\[\n\\int_a^b f(x)\\,d x=0\n\\quad\\Longleftrightarrow\\quad\nf\\equiv0.\n\\]\n\nPembuktian dilakukan dalam dua arah.\n\n(1) Diandaikan\n\\[\n\\int_a^b f(x)\\,d x=0.\n\\]\nDibuktikan bahwa $f(x)=0$ untuk setiap $x\\in[a,b]$. Diandaikan terdapat $c\\in[a,b]$ dengan $f(c)>0$. Dipilih\n\\[\n\\varepsilon_0=\\frac{f(c)}{2}>0.\n\\]\nBerdasarkan kontinuitas $f$ di $c$, terdapat $\\delta>0$ sehingga\n\\[\n|x-c|<\\delta\n\\quad\\Longrightarrow\\quad\n|f(x)-f(c)|<\\frac{f(c)}{2}.\n\\]\nAkibatnya,\n\\[\nf(x)>\\frac{f(c)}{2}\n\\]\npada suatu subinterval tak degenerat $J\\subseteq[a,b]$. Berdasarkan Teorema Batas Integral,\n\\[\n\\int_J f(x)\\,d x\n\\ge\n\\frac{f(c)}{2}|J|>0.\n\\]\nKarena $f\\ge0$ pada seluruh $[a,b]$, aditivitas interval memberikan\n\\[\n\\int_a^b f(x)\\,d x>0,\n\\]\nbertentangan dengan asumsi. Oleh karena itu, tidak terdapat $c$ dengan $f(c)>0$. Bersama dengan $f\\ge0$, diperoleh $f\\equiv0$.\n\n(2) Diandaikan $f(x)=0$ untuk setiap $x\\in[a,b]$. Integral fungsi nol adalah\n\\[\n\\int_a^b f(x)\\,d x=0.\n\\]\n\nBerdasarkan kedua arah tersebut, ekuivalensi terbukti. Dengan demikian, Teorema Integral Nol untuk Fungsi Nonnegatif Kontinu terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Konsekuensi integral nol",
+            "body": "Misalkan $f:[0,1]\\to\\mathbb{R}$ kontinu, $f(x)\\ge0$ untuk setiap $x$, dan\n\\[\n\\int_0^1f(x)\\,\\,d x=0.\n\\]\nTentukan $f(\\frac{1}{3})$.",
+            "solution": "Semua syarat Teorema Integral nol untuk fungsi nonnegatif kontinu terpenuhi: $f$ kontinu, nonnegatif, dan integralnya sama dengan nol. Berdasarkan teorema tersebut,\n\\[\nf(x)=0\n\\]\nuntuk setiap $x\\in[0,1]$. Khususnya,\n\\[\n\\boxed{f\\left(\\frac{1}{3}\\right)=0}.\n\\]\nKesimpulan ini tidak memerlukan bentuk eksplisit fungsi $f$."
           }
         ]
+      },
+      {
+        "kind": "example",
+        "title": "Menentukan titik nilai rata-rata",
+        "body": "Diberikan $f(x)=x^2$ pada $[0,1]$. Tentukan salah satu $c\\in[0,1]$ yang memenuhi\n\\[\n\\int_0^1x^2\\,\\,d x=f(c)(1-0).\n\\]",
+        "solution": "Diketahui\n\\[\n\\int_0^1x^2\\,\\,d x=\\frac{1}{3}.\n\\]\nTeorema Teorema Nilai Rata-Rata untuk Integral menjamin adanya $c\\in[0,1]$ sehingga\n\\[\nf(c)=\\frac{1}{3}.\n\\]\nKarena $f(c)=c^2$, diperoleh\n\\[\nc^2=\\frac{1}{3}.\n\\]\nPada interval $[0,1]$, solusi yang sesuai adalah\n\\[\n\\boxed{c=\\frac{1}{\\sqrt{3}}}.\n\\]\nDengan demikian,\n\\[\n\\int_0^1x^2\\,\\,d x=f\\left(\\frac{1}{\\sqrt{3}}\\right).\n\\]"
       },
       {
         "title": "Substitusi dan integrasi parsial",
@@ -771,10 +945,22 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
             "proof": "Diketahui $\\varphi$ mempunyai turunan kontinu pada $[\\alpha,\\beta]$ dan $f$ kontinu pada interval yang memuat $\\varphi([\\alpha,\\beta])$.\n\nDibuktikan bahwa\n\\[\n\\int_{\\alpha}^{\\beta}\nf(\\varphi(x))\\varphi'(x)\\,d x\n=\n\\int_{\\varphi(\\alpha)}^{\\varphi(\\beta)}f(u)\\,d u.\n\\]\n\nDipilih titik tetap $u_0$ pada domain $f$ dan didefinisikan\n\\[\nF(u)=\\int_{u_0}^{u}f(t)\\,d t.\n\\]\nBerdasarkan Teorema Fundamental Kalkulus I,\n\\[\nF'(u)=f(u).\n\\]\nAturan rantai memberikan\n\\[\n\\frac{d}{d x}F(\\varphi(x))\n=F'(\\varphi(x))\\varphi'(x)\n=f(\\varphi(x))\\varphi'(x).\n\\]\nBerdasarkan Teorema Fundamental Kalkulus II,\n\\[\n\\begin{aligned}\n\\int_{\\alpha}^{\\beta}f(\\varphi(x))\\varphi'(x)\\,d x\n&=F(\\varphi(\\beta))-F(\\varphi(\\alpha))\\\\\n&=\\int_{\\varphi(\\alpha)}^{\\varphi(\\beta)}f(u)\\,d u.\n\\end{aligned}\n\\]\nDengan demikian, Teorema Substitusi pada Integral Riemann terbukti."
           },
           {
+            "kind": "example",
+            "title": "Substitusi $u=x^2$",
+            "body": "Hitung\n\\[\n\\int_0^1 2x\\cos(x^2)\\,\\,d x\n\\]\nmenggunakan Teorema Substitusi.",
+            "solution": "Dipilih\n\\[\n\\varphi(x)=x^2,\n\\qquad\n\\varphi'(x)=2x,\n\\]\ndan $f(u)=\\cos u$. Batas baru adalah\n\\[\n\\varphi(0)=0,\n\\qquad\n\\varphi(1)=1.\n\\]\nBerdasarkan Teorema Substitusi pada integral Riemann,\n\\[\n\\begin{aligned}\n\\int_0^1 2x\\cos(x^2)\\,\\,d x\n&=\\int_0^1\\cos u\\,\\,d u\\\\\n&=[\\sin u]_0^1\\\\\n&=\\sin1.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n\\boxed{\\int_0^1 2x\\cos(x^2)\\,\\,d x=\\sin1}.\n\\]"
+          },
+          {
             "kind": "theorem",
             "title": "Integrasi parsial",
             "body": "Diberikan fungsi $u$ dan $v$ yang mempunyai turunan kontinu pada $[a,b]$. Berlaku\n\\[\n\\int_a^b u(x)v'(x)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b\n-\n\\int_a^b u'(x)v(x)\\,d x.\n\\]",
             "proof": "Diketahui fungsi $u$ dan $v$ mempunyai turunan kontinu pada $[a,b]$.\n\nDibuktikan bahwa\n\\[\n\\int_a^b u(x)v'(x)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b\n-\n\\int_a^b u'(x)v(x)\\,d x.\n\\]\n\nAturan hasil kali memberikan\n\\[\n\\frac{d}{d x}\\bigl(u(x)v(x)\\bigr)\n=u'(x)v(x)+u(x)v'(x).\n\\]\nBerdasarkan Teorema Fundamental Kalkulus II,\n\\[\n\\int_a^b\n\\bigl(u'(x)v(x)+u(x)v'(x)\\bigr)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b.\n\\]\nBerdasarkan Teorema Linearitas,\n\\[\n\\int_a^b u'(x)v(x)\\,d x\n+\n\\int_a^b u(x)v'(x)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b.\n\\]\nDipindahkan suku pertama pada ruas kiri ke ruas kanan,\n\\[\n\\int_a^b u(x)v'(x)\\,d x\n=\n\\bigl[u(x)v(x)\\bigr]_a^b\n-\n\\int_a^b u'(x)v(x)\\,d x.\n\\]\nDengan demikian, Teorema Integrasi Parsial terbukti."
+          },
+          {
+            "kind": "example",
+            "title": "Integrasi parsial pada $xe^x$",
+            "body": "Hitung\n\\[\n\\int_0^1xe^x\\,\\,d x\n\\]\nmenggunakan integrasi parsial.",
+            "solution": "Dipilih\n\\[\nu(x)=x,\n\\qquad\nv'(x)=e^x.\n\\]\nDiperoleh\n\\[\nu'(x)=1,\n\\qquad\nv(x)=e^x.\n\\]\nBerdasarkan Teorema Integrasi parsial,\n\\[\n\\begin{aligned}\n\\int_0^1xe^x\\,\\,d x\n&=[xe^x]_0^1-\\int_0^1e^x\\,\\,d x\\\\\n&=e-(e-1)\\\\\n&=1.\n\\end{aligned}\n\\]\nDengan demikian,\n\\[\n\\boxed{\\int_0^1xe^x\\,\\,d x=1}.\n\\]"
           }
         ]
       }
@@ -831,10 +1017,22 @@ export const integralRiemannDarbouxSections: IntegralSourceSection[] = [
         "body": "Himpunan $E\\subseteq\\mathbb{R}$ disebut mempunyai ukuran Lebesgue nol apabila untuk setiap $\\varepsilon>0$ terdapat interval terbuka $I_1,I_2,\\ldots$ yang menutupi $E$ dan memenuhi\n\\[\n\\sum_{k=1}^{\\infty}|I_k|<\\varepsilon.\n\\]"
       },
       {
+        "kind": "example",
+        "title": "Himpunan hingga mempunyai ukuran Lebesgue nol",
+        "body": "Diberikan himpunan\n\\[\nE=\\left\\{\\frac{1}{4},\\frac{1}{2},\\frac{3}{4}\\right\\}.\n\\]\nDibuktikan bahwa $E$ mempunyai ukuran Lebesgue nol.",
+        "solution": "Diketahui\n\\[\nE=\\left\\{\\frac{1}{4},\\frac{1}{2},\\frac{3}{4}\\right\\}.\n\\]\nDibuktikan bahwa untuk setiap $\\varepsilon>0$, himpunan $E$ dapat ditutupi oleh interval-interval terbuka yang jumlah panjangnya kurang dari $\\varepsilon$.\n\nDiambil sebarang $\\varepsilon>0$. Untuk setiap titik $c\\in E$, dipilih interval\n\\[\nJ_c=\\left(c-\\frac{\\varepsilon}{12},c+\\frac{\\varepsilon}{12}\\right).\n\\]\nSetiap interval mempunyai panjang $\\frac{\\varepsilon}{6}$. Ketiga interval tersebut menutupi $E$, dan jumlah panjangnya\n\\[\n3\\left(\\frac{\\varepsilon}{6}\\right)=\\frac{\\varepsilon}{2}<\\varepsilon.\n\\]\nDengan demikian, $E$ mempunyai ukuran Lebesgue nol."
+      },
+      {
         "kind": "theorem",
         "title": "Kriteria Lebesgue untuk integrabilitas Riemann",
         "body": "Diberikan $f:[a,b]\\to\\mathbb{R}$ terbatas. Fungsi $f$ terintegralkan Riemann jika dan hanya jika himpunan titik diskontinuitas $D_f$ mempunyai ukuran Lebesgue nol.",
         "proof": "Diketahui fungsi terbatas $f:[a,b]\\to\\mathbb{R}$ dan himpunan titik diskontinuitasnya $D_f$.\nDibuktikan bahwa $f$ terintegralkan Riemann jika dan hanya jika $D_f$ mempunyai ukuran Lebesgue nol.\n\n(1) Arah ke kanan. Diandaikan $f$ terintegralkan Riemann. Untuk setiap $m\\in\\mathbb{N}$ didefinisikan\n\\[\nE_m=\\left\\{x\\in[a,b]:\\omega_f(x)\\ge\\frac{1}{m}\\right\\}.\n\\]\nKarena $f$ diskontinu di $x$ tepat ketika $\\omega_f(x)>0$,\n\\[\nD_f=\\bigcup_{m=1}^{\\infty}E_m.\n\\]\nDiambil sebarang $\\varepsilon>0$. Berdasarkan Kriteria Darboux, dipilih partisi $P$ dengan\n\\[\nU(f,P)-L(f,P)<\\frac{\\varepsilon}{m}.\n\\]\nJika $\\omega_i=\\operatorname{osc}(f,[x_{i-1},x_i])$, setiap titik $E_m$ berada pada subinterval dengan $\\omega_i\\ge\\frac{1}{m}$. Oleh karena itu,\n\\[\n\\frac{1}{m}\\sum_{\\omega_i\\ge\\frac{1}{m}}\\Delta x_i\n\\le\\sum_{i=1}^{n}\\omega_i\\Delta x_i\n=U(f,P)-L(f,P)\n<\\frac{\\varepsilon}{m}.\n\\]\nAkibatnya, jumlah panjang subinterval yang menutupi $E_m$ kurang dari $\\varepsilon$. Dengan demikian, setiap $E_m$ berukuran Lebesgue nol. Gabungan terhitung himpunan berukuran nol tetap berukuran nol, sehingga $D_f$ berukuran Lebesgue nol.\n\n(2) Arah ke kiri. Diandaikan $D_f$ berukuran Lebesgue nol. Karena $f$ terbatas, terdapat $M\\ge0$ sehingga $|f(x)|\\le M$. Kasus $M=0$ langsung terpenuhi. Untuk $M>0$, diambil sebarang $\\varepsilon>0$ dan ditetapkan\n\\[\n\\eta=\\frac{\\varepsilon}{2(b-a)}.\n\\]\nHimpunan $E_\\eta=\\{x:\\omega_f(x)\\ge\\eta\\}$ tertutup, kompak, dan termuat dalam $D_f$. Pilih penutup berhingga oleh interval terbuka dengan jumlah panjang kurang dari $\\frac{\\varepsilon}{4M}$. Pada komplemennya, setiap titik mempunyai lingkungan dengan osilasi kurang dari $\\eta$. Dengan kekompakan, dapat dibentuk partisi $P$ yang setiap subintervalnya berada di dalam bagian penutup atau di dalam lingkungan berosilasi kurang dari $\\eta$. Kontribusi bagian penutup terhadap $U(f,P)-L(f,P)$ kurang dari\n\\[\n2M\\frac{\\varepsilon}{4M}=\\frac{\\varepsilon}{2},\n\\]\nsedangkan kontribusi bagian lainnya kurang dari\n\\[\n\\eta(b-a)=\\frac{\\varepsilon}{2}.\n\\]\nDengan demikian, $U(f,P)-L(f,P)<\\varepsilon$. Berdasarkan Kriteria Darboux, $f$ terintegralkan Riemann. Kedua arah telah dibuktikan. Dengan demikian, teorema tersebut terbukti."
+      },
+      {
+        "kind": "example",
+        "title": "Penerapan Kriteria Lebesgue pada perubahan satu titik",
+        "body": "Didefinisikan\n\\[\ng(x)=\n\\begin{cases}\nx,&x\\ne\\frac{1}{2},\\\\\n10,&x=\\frac{1}{2},\n\\end{cases}\n\\qquad x\\in[0,1].\n\\]\nGunakan Kriteria Lebesgue untuk menentukan keterintegralan Riemann $g$.",
+        "solution": "Fungsi $g$ terbatas pada $[0,1]$. Untuk setiap $x\\ne\\frac{1}{2}$, terdapat lingkungan kecil yang tidak memuat $\\frac{1}{2}$, dan pada lingkungan tersebut $g(x)=x$, sehingga $g$ kontinu. Pada $x=\\frac{1}{2}$,\n\\[\n\\lim_{x\\to1/2}g(x)=\\frac{1}{2}\\ne10=g\\left(\\frac{1}{2}\\right),\n\\]\nsehingga $g$ diskontinu tepat di $\\frac{1}{2}$. Dengan demikian,\n\\[\nD_g=\\left\\{\\frac{1}{2}\\right\\}.\n\\]\nHimpunan satu titik mempunyai ukuran Lebesgue nol. Berdasarkan Teorema Kriteria Lebesgue untuk keterintegralan Riemann,\n\\[\n\\boxed{g\\text{ terintegralkan Riemann pada }[0,1].}\n\\]"
       },
       {
         "kind": "note",
