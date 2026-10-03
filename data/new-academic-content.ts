@@ -131,7 +131,7 @@ const profiles:Record<string,Profile>={
       "Menafsirkan model finansial sebagai prediksi pasti terhadap pasar nyata."
     ],
     connections:[
-      "Teori Ukuran dan Probabilitas memberi definisi conditional expectation, filtration, dan integrasi.",
+      "Teori Ukuran dan Peluang memberi definisi conditional expectation, filtration, dan integrasi.",
       "Analisis Real memberi teori limit dan integrasi klasik sebagai pembanding.",
       "Persamaan Diferensial terhubung melalui stochastic differential equations.",
       "PDE muncul melalui generator, heat equation, Feynman–Kac, dan Black–Scholes.",
