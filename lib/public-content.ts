@@ -31,6 +31,21 @@ export function isPublicAcademicLevel(level: string, track = "") {
   return true;
 }
 
+const hiddenPublicMaterialSlugs = new Set([
+  "pecahan",
+  "persamaan-linear",
+  "fungsi",
+  "trigonometri",
+  "teori-bilangan-olimpiade-smp",
+  "kombinatorika-olimpiade-sma",
+  "aljabar-linear-onmipa",
+  "analisis-real-onmipa",
+]);
+
+export function isPublicMaterialSlug(slug: string) {
+  return !hiddenPublicMaterialSlugs.has(slug);
+}
+
 export function isPublicLearningTrackSlug(slug: string) {
   return slug === "kuliah" || slug === "onmipa";
 }
@@ -43,6 +58,14 @@ export function isPublicContentHref(href: string) {
   const value = href.toLowerCase();
 
   const hiddenPrefixes = [
+    "/materi/pecahan",
+    "/materi/persamaan-linear",
+    "/materi/fungsi",
+    "/materi/trigonometri",
+    "/materi/teori-bilangan-olimpiade-smp",
+    "/materi/kombinatorika-olimpiade-sma",
+    "/materi/aljabar-linear-onmipa",
+    "/materi/analisis-real-onmipa",
     "/belajar/sd",
     "/belajar/smp",
     "/belajar/sma",
