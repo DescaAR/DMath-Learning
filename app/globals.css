@@ -1076,17 +1076,31 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   font-size:.78rem;
   line-height:1.35
 }
-.textbook-toc>a span{
-  font-size:.64rem;
+.textbook-toc>a .toc-index,
+.textbook-toc>a>span:first-child{
+  font-size:.68rem;
   color:var(--muted);
   font-weight:850;
-  letter-spacing:.06em
+  letter-spacing:.06em;
+  line-height:1.35
+}
+.textbook-toc>a .toc-label{
+  min-width:0;
+  font-size:.82rem;
+  color:inherit;
+  font-weight:inherit;
+  letter-spacing:0;
+  line-height:1.35;
+  overflow-wrap:normal;
+  word-break:normal
 }
 .textbook-toc>a.active{
   background:rgba(21,101,216,.08);
-  color:var(--blue);
+  color:var(--text);
   font-weight:850
 }
+.textbook-toc>a.active .toc-index,
+.textbook-toc>a.active>span:first-child{color:var(--text)}
 .toc-progress-mini{
   display:flex;
   align-items:center;
@@ -3200,7 +3214,7 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 
 /* Integral Riemann — full audit layout */
 .ird-toc a{padding:7px 8px;border-radius:9px;transition:background .15s ease,color .15s ease}
-.ird-toc a.active{background:var(--soft);color:var(--primary);font-weight:850}
+.ird-toc a.active{background:var(--soft);color:var(--text);font-weight:850}
 .ird-solution-prefix{margin-bottom:18px}
 .ird-solution-part{margin:22px 0 0;padding-top:18px;border-top:1px solid var(--border)}
 .ird-solution-goal{padding:13px 15px;border-radius:13px;background:var(--surface-2);border-left:4px solid var(--blue);margin-bottom:14px;line-height:1.65}
