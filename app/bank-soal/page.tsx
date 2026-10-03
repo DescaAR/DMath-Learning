@@ -17,7 +17,7 @@ export default function BankSoalPage() {
       eyebrow="Bank Soal"
       title="Bank Soal Matematika"
       lead="Kumpulan soal berdasarkan materi dan tingkat kesulitan, dilengkapi petunjuk serta pembahasan langkah demi langkah."
-      meta={["SD","SMP","SMA","Kuliah","Olimpiade"]}
+      meta={["Kuliah","Pembuktian","Latihan","Problem Solving"]}
       actions={[
         {label:"Jelajahi Bank Soal",href:"#bank-katalog",kind:"primary"},
         {label:"Latihan Soal",href:"/latihan-soal",kind:"secondary"},
