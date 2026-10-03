@@ -14,6 +14,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { RichMath } from "@/components/RichMath";
 import { allBookSections, bookSubjects } from "@/data/book-curricula";
 import { bookSectionContent } from "@/data/book-section-content";
+import { isPublicAcademicLevel, isPublicContentHref } from "@/lib/public-content";
 
 type LevelFilter = "Semua" | Exclude<SearchLevel, "Umum">;
 type TrackFilter = "Semua" | "Reguler" | "Olimpiade";
@@ -21,7 +22,7 @@ type KindFilter = "Semua" | SearchKind;
 type SubjectFilter = "Semua" | string;
 type DifficultyFilter = "Semua" | Exclude<SearchDifficulty, "Umum">;
 
-const LEVELS: LevelFilter[] = ["Semua", "SD", "SMP", "SMA", "Kuliah"];
+const LEVELS: LevelFilter[] = ["Semua", "Kuliah"];
 const TRACKS: TrackFilter[] = ["Semua", "Reguler", "Olimpiade"];
 const KINDS: KindFilter[] = ["Semua", "Materi", "Soal", "Teorema", "Definisi", "Contoh", "Halaman"];
 const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Sulit", "Sangat Sulit", "Challenge"];
@@ -139,7 +140,8 @@ const DIGITAL_BOOK_SEARCH_INDEX: SearchEntry[] = [
   }),
 ];
 
-const COMBINED_SEARCH_INDEX: SearchEntry[] = [...DIGITAL_BOOK_SEARCH_INDEX,...fullSearchIndex];
+const COMBINED_SEARCH_INDEX: SearchEntry[] = [...DIGITAL_BOOK_SEARCH_INDEX,...fullSearchIndex]
+  .filter((item) => isPublicContentHref(item.href) && isPublicAcademicLevel(item.level, item.track));
 
 const SUBJECTS: SubjectFilter[] = [
   "Semua",
@@ -345,7 +347,7 @@ export function SearchClient() {
   function displayTrack(value: TrackFilter) {
     if (value === "Semua") return t("Semua Jalur");
     if (value === "Reguler") return t("Materi Reguler");
-    return t("Olimpiade");
+    return "ON-MIPA";
   }
 
   function displayKind(value: KindFilter) {
@@ -367,7 +369,7 @@ export function SearchClient() {
   function displaySubject(value: SubjectFilter) {
     if (value === "Semua") return language === "en" ? "All Subjects" : "Semua Materi";
     if (language === "id") return value;
-    const match = fullSearchIndex.find((item) => item.subject === value && item.subjectEn);
+    const match = COMBINED_SEARCH_INDEX.find((item) => item.subject === value && item.subjectEn);
     return match?.subjectEn ?? value;
   }
 
