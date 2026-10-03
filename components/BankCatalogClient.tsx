@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
 
-type Level = "Semua" | "SD" | "SMP" | "SMA" | "Kuliah" | "Olimpiade";
+type Level = "Semua" | "Kuliah";
 type Difficulty = "Semua" | "Dasar" | "Menengah" | "Lanjut";
 
 type BankItem = {
@@ -42,7 +42,7 @@ const BANKS: BankItem[] = [
   },
 ];
 
-const LEVELS: Level[] = ["Semua", "SD", "SMP", "SMA", "Kuliah", "Olimpiade"];
+const LEVELS: Level[] = ["Semua", "Kuliah"];
 const DIFFICULTIES: Difficulty[] = ["Semua", "Dasar", "Menengah", "Lanjut"];
 const SUBJECTS = ["Semua", ...Array.from(new Set(BANKS.map((item) => item.subject)))];
 
@@ -122,11 +122,8 @@ export function BankCatalogClient() {
   function displayLevel(value: Level) {
     if (language === "id") return value === "Semua" ? "Semua Jenjang" : value;
     if (value === "Semua") return "All Levels";
-    if (value === "SD") return "Elementary";
-    if (value === "SMP") return "Junior High";
-    if (value === "SMA") return "Senior High";
     if (value === "Kuliah") return "University";
-    return "Olympiad";
+    return value;
   }
 
   function displayDifficulty(value: Difficulty) {
