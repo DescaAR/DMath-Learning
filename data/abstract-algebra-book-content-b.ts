@@ -96,7 +96,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
         "statement": "Jika $G$ abelian hingga dan $|G|=\\prod_{i=1}^r p_i^{a_i}$, maka $G\\cong G_{p_1}\\times\\cdots\\times G_{p_r}$, dengan $|G_{p_i}|=p_i^{a_i}$.",
         "proof": [
           "Untuk setiap $p_i$, definisikan $G_{p_i}$ sebagai elemen yang ordonya pangkat $p_i$. Karena $G$ abelian, hasil kali dan invers dua elemen $p_i$-primer tetap $p_i$-primer, sehingga $G_{p_i}\\le G$.",
-          "Jika $i\\ne j$, elemen pada $G_{p_i}\\cap G_{p_j}$ mempunyai orde yang sekaligus pangkat $p_i$ dan pangkat $p_j$, sehingga ordonya 1. Jadi irisan faktor yang berbeda trivial.",
+          "Jika $i\\ne j$, elemen pada $G_{p_i}\\cap G_{p_j}$ mempunyai orde yang sekaligus pangkat $p_i$ dan pangkat $p_j$, sehingga ordonya 1. Dengan demikian, irisan faktor yang berbeda trivial.",
           "Untuk $g\\in G$, gunakan identitas Bézout pada faktor-faktor koprima dari $|G|$ untuk memisahkan $g$ menjadi hasil kali komponen $p_i$-primer. Seluruh faktor saling komutatif, sehingga peta produk komponen ke $G$ adalah isomorfisma."
         ]
       },
@@ -146,7 +146,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Tentukan apakah grup abelian berorde 30 selalu siklik.",
         "hint": "Gunakan bahwa 30 square-free.",
-        "answer": "Ya. Setiap komponen primer berorde prima, sehingga masing-masing siklik, dan produk grup siklik berorde saling koprima kembali siklik. Jadi grup abelian berorde 30 isomorfik dengan $\\mathbb Z_{30}$."
+        "answer": "Ya. Setiap komponen primer berorde prima, sehingga masing-masing siklik, dan produk grup siklik berorde saling koprima kembali siklik. Dengan demikian, grup abelian berorde 30 isomorfik dengan $\\mathbb Z_{30}$."
       }
     ]
   },
@@ -577,7 +577,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Buktikan $H\\le N_G(H)$ untuk setiap $H\\le G$.",
         "hint": "Konjugasi subgrup oleh elemennya sendiri.",
-        "answer": "Untuk $h\\in H$, $hHh^{-1}=H$ karena ketertutupan dan invers dalam $H$. Jadi setiap $h$ menormalkan $H$."
+        "answer": "Untuk $h\\in H$, $hHh^{-1}=H$ karena ketertutupan dan invers dalam $H$. Dengan demikian, setiap $h$ menormalkan $H$."
       }
     ]
   },
@@ -809,12 +809,12 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Buktikan setiap grup berorde 45 mempunyai subgrup normal nontrivial.",
         "hint": "Analisis $n_5$.",
-        "answer": "$n_5\\mid9$ dan $n_5\\equiv1\\pmod5$, sehingga satu-satunya kemungkinan adalah $n_5=1$ atau 6? Karena 6 tidak membagi 9, diperoleh $n_5=1$. Jadi Sylow 5 normal."
+        "answer": "$n_5\\mid9$ dan $n_5\\equiv1\\pmod5$, sehingga satu-satunya kemungkinan adalah $n_5=1$ atau 6? Karena 6 tidak membagi 9, diperoleh $n_5=1$. Dengan demikian, Sylow 5 normal."
       },
       {
         "prompt": "Jika $|G|=66$, buktikan subgrup Sylow 11 normal.",
         "hint": "Gunakan $n_{11}\\mid6$ dan kongruensi modulo 11.",
-        "answer": "Pembagi 6 hanya 1,2,3,6; yang kongruen 1 modulo 11 hanya 1. Jadi $n_{11}=1$."
+        "answer": "Pembagi 6 hanya 1,2,3,6; yang kongruen 1 modulo 11 hanya 1. Dengan demikian, $n_{11}=1$."
       },
       {
         "prompt": "Tentukan kemungkinan $n_2$ untuk grup berorde 24.",
@@ -1039,7 +1039,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Buktikan unit ring membentuk grup terhadap perkalian.",
         "hint": "Periksa identitas, ketertutupan, invers, dan asosiativitas.",
-        "answer": "Identitas ring adalah unit; hasil kali dua unit $u,v$ mempunyai invers $v^{-1}u^{-1}$; invers unit tetap unit; asosiativitas diwarisi dari ring. Jadi $R^\\times$ grup."
+        "answer": "Identitas ring adalah unit; hasil kali dua unit $u,v$ mempunyai invers $v^{-1}u^{-1}$; invers unit tetap unit; asosiativitas diwarisi dari ring. Dengan demikian, $R^\\times$ grup."
       }
     ]
   },
@@ -1259,7 +1259,7 @@ const specs: Record<string, AlgebraLessonSpec> = {
       {
         "prompt": "Jika ring beridentitas mempunyai 21 elemen, tentukan kemungkinan karakteristiknya.",
         "hint": "Karakteristik membagi 21.",
-        "answer": "Kemungkinan karakteristik positif adalah pembagi 21: 1,3,7,21, tetapi karakteristik 1 hanya untuk ring nol dengan $1=0$, yang tidak mungkin jika 21 elemen. Jadi kemungkinan 3,7,21; jika ring domain, hanya 3 atau 7."
+        "answer": "Kemungkinan karakteristik positif adalah pembagi 21: 1,3,7,21, tetapi karakteristik 1 hanya untuk ring nol dengan $1=0$, yang tidak mungkin jika 21 elemen. Dengan demikian, kemungkinan 3,7,21; jika ring domain, hanya 3 atau 7."
       }
     ]
   }
