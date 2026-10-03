@@ -115,10 +115,9 @@ export function BookSectionPage({
     {id:"book-lesson-4",label:"Definisi & Contoh"},
     {id:"book-lesson-5",label:"Hasil Formal & Bukti"},
     {id:"book-lesson-6",label:"Contoh Terbahas"},
-    {id:"book-lesson-7",label:"Visualisasi & Eksplorasi"},
-    {id:"book-lesson-8",label:"Ringkasan Definisi & Teorema"},
+    {id:"book-lesson-7",label:"Visualisasi"},
+    {id:"book-lesson-8",label:"Referensi"},
     {id:"book-latihan-soal",label:"Latihan Soal"},
-    {id:"book-lesson-10",label:"Referensi"},
   ];
 
   return(
@@ -154,7 +153,7 @@ export function BookSectionPage({
       overviewEyebrow="Struktur Materi"
       overviewTitle="Urutan pembelajaran"
       overviewText="Materi dibaca dari pengantar dan definisi menuju hasil formal, contoh, visualisasi, lalu latihan soal."
-      roadmap={["Pengantar","Prasyarat","Notasi","Definisi & contoh","Hasil formal & bukti","Contoh terbahas","Visualisasi","Ringkasan","Latihan","Referensi"]}
+      roadmap={["Pengantar","Prasyarat","Notasi","Definisi & contoh","Hasil formal & bukti","Contoh terbahas","Visualisasi","Referensi","Latihan"]}
       sections={sections}
     >
       <section id="book-lesson-1" className="book-section ird-source-section">
@@ -322,53 +321,16 @@ export function BookSectionPage({
         </div>
       </section>
 
-      <section id="book-lesson-8" className="book-section ird-summary-section">
+      <section id="book-lesson-8" className="book-section ird-source-section">
         <div className="section-number">08</div>
-        <span className="eyebrow">Ringkasan Materi</span>
-        <h2>Ringkasan Definisi dan Teorema</h2>
-        <p className="ird-paragraph">Gunakan ringkasan ini sebagai tinjauan cepat sebelum mengerjakan latihan soal. Pembuktian lengkap tetap tersedia pada bagian hasil formal.</p>
-
-        <div className="ird-summary-group">
-          <div className="ird-summary-heading">
-            <div><span className="eyebrow">Definisi</span><h3>{definitions.length} definisi penting</h3></div>
+        <span className="eyebrow">Bagian 8</span>
+        <h2>Referensi</h2>
+        <article className="ird-formal ird-note" style={{marginTop:24}}>
+          <div className="ird-formal-head"><span>Referensi</span><strong>Bacaan bidang</strong></div>
+          <div className="ird-formal-body">
+            {subject.source} ({subject.sourceYear}) digunakan untuk memeriksa terminologi dan cakupan bidang. Urutan pembelajaran, penjelasan, contoh, pembuktian, latihan, dan visualisasi pada halaman ini disusun untuk DMath Learning.
           </div>
-          {definitions.length?(
-            <div className="ird-summary-grid">
-              {definitions.map((item,index)=>(
-                <details className="ird-summary-card ird-summary-definition" key={"summary-def-"+item.title+index}>
-                  <summary><span>Definisi {index+1}</span><strong>{item.title}</strong></summary>
-                  <div className="ird-summary-body"><Text>{item.statement}</Text></div>
-                </details>
-              ))}
-            </div>
-          ):(
-            <article className="ird-formal ird-note">
-              <div className="ird-formal-head"><span>Ringkasan</span><strong>Tidak ada definisi baru</strong></div>
-              <div className="ird-formal-body">Submateri ini menggunakan definisi yang telah diperkenalkan pada bagian sebelumnya.</div>
-            </article>
-          )}
-        </div>
-
-        <div className="ird-summary-group">
-          <div className="ird-summary-heading">
-            <div><span className="eyebrow">Hasil Formal</span><h3>{provenResults.length} hasil formal penting</h3></div>
-          </div>
-          {provenResults.length?(
-            <div className="ird-summary-grid">
-              {provenResults.map((item,index)=>(
-                <details className="ird-summary-card ird-summary-theorem" key={"summary-result-"+item.title+index}>
-                  <summary><span>{kindLabel[item.kind]} {index+1}</span><strong>{item.title}</strong></summary>
-                  <div className="ird-summary-body"><Text>{item.statement}</Text></div>
-                </details>
-              ))}
-            </div>
-          ):(
-            <article className="ird-formal ird-note">
-              <div className="ird-formal-head"><span>Ringkasan</span><strong>Tidak ada hasil formal baru</strong></div>
-              <div className="ird-formal-body">Bagian ini berfokus pada konsep dan contoh, sehingga tidak ada teorema, lemma, proposisi, atau akibat baru yang perlu diringkas.</div>
-            </article>
-          )}
-        </div>
+        </article>
       </section>
 
       <section id="book-latihan-soal" className="book-section ird-practice-section">
@@ -402,18 +364,6 @@ export function BookSectionPage({
             );
           })}
         </div>
-      </section>
-
-      <section id="book-lesson-10" className="book-section ird-source-section">
-        <div className="section-number">10</div>
-        <span className="eyebrow">Bagian 10</span>
-        <h2>Referensi</h2>
-        <article className="ird-formal ird-note" style={{marginTop:24}}>
-          <div className="ird-formal-head"><span>Referensi</span><strong>Bacaan bidang</strong></div>
-          <div className="ird-formal-body">
-            {subject.source} ({subject.sourceYear}) digunakan untuk memeriksa terminologi dan cakupan bidang. Urutan pembelajaran, penjelasan, contoh, pembuktian, latihan, dan visualisasi pada halaman ini disusun untuk DMath Learning.
-          </div>
-        </article>
       </section>
 
       <section className="next-learning-block textbook-next">

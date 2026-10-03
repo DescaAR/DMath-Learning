@@ -138,7 +138,7 @@ export function RiemannHubShell({
             <strong>{tocTitle}</strong>
             {sections.map((section,index)=>(
               <a href={"#"+section.id} className={active===section.id?"active":""} key={section.id}>
-                <span>{String(index+1).padStart(2,"0")}</span><span>{section.label}</span>
+                <span>{String(index+1).padStart(2,"0")}</span>{section.label}
               </a>
             ))}
           </aside>

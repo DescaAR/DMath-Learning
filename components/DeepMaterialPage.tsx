@@ -81,10 +81,9 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     {id:"gm-section-4",label:ui("Definisi & Contoh","Definitions & Examples")},
     {id:"gm-section-5",label:ui("Hasil Formal & Bukti","Formal Results & Proofs")},
     {id:"gm-section-6",label:ui("Contoh Terbahas","Worked Examples")},
-    {id:"gm-section-7",label:ui("Visualisasi & Eksplorasi","Visualization & Exploration")},
-    {id:"gm-section-8",label:ui("Ringkasan Definisi & Teorema","Definition & Theorem Summary")},
+    {id:"gm-section-7",label:ui("Visualisasi","Visualization")},
+    {id:"gm-section-8",label:ui("Referensi","References")},
     {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},
-    {id:"gm-section-10",label:ui("Referensi","References")},
   ];
 
   return (
@@ -131,9 +130,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         ui("Hasil formal & bukti","Formal results & proofs"),
         ui("Contoh terbahas","Worked examples"),
         ui("Visualisasi","Visualization"),
-        ui("Ringkasan","Summary"),
-        ui("Latihan","Practice"),
         ui("Referensi","References"),
+        ui("Latihan","Practice"),
       ]}
       sections={sections}
     >
@@ -171,21 +169,14 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         <div className="section-number">03</div>
         <span className="eyebrow">{ui("Bagian 3","Part 3")}</span>
         <h2>{ui("Notasi dan konsep utama","Notation and core concepts")}</h2>
-        {m.notation.length?(
-          <div className="notation-table">
-            {m.notation.map((item) => (
-              <div className="notation-row" key={item.symbol}>
-                <div className="notation-symbol"><Text>{item.symbol}</Text></div>
-                <div className="notation-meaning"><Text>{item.meaning}</Text></div>
-              </div>
-            ))}
-          </div>
-        ):(
-          <article className="ird-formal ird-note">
-            <div className="ird-formal-head"><span>{ui("Notasi","Notation")}</span><strong>{ui("Tidak ada notasi baru","No new notation")}</strong></div>
-            <div className="ird-formal-body">{ui("Materi ini menggunakan notasi yang telah diperkenalkan sebelumnya.","This material uses notation introduced earlier.")}</div>
-          </article>
-        )}
+        <div className="notation-table">
+          {m.notation.map((item) => (
+            <div className="notation-row" key={item.symbol}>
+              <div className="notation-symbol"><Text>{item.symbol}</Text></div>
+              <div className="notation-meaning"><Text>{item.meaning}</Text></div>
+            </div>
+          ))}
+        </div>
         <div className="ird-roadmap" style={{marginTop:28}}>
           {m.conceptMap.map((item,index)=><div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
         </div>
@@ -200,7 +191,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           "Each definition is followed by an example so its formal conditions can be checked immediately."
         )}</p>
 
-        {definitions.length?definitions.map((definition,index)=>{
+        {definitions.map((definition,index)=>{
           const example=localExamples[index%Math.max(1,localExamples.length)];
           return(
             <div className="definition-example-pair" key={definition.title+index}>
@@ -226,12 +217,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
               )}
             </div>
           );
-        }):(
-          <article className="ird-formal ird-note">
-            <div className="ird-formal-head"><span>{ui("Konsep","Concept")}</span><strong>{ui("Tidak ada definisi baru","No new definitions")}</strong></div>
-            <div className="ird-formal-body">{ui("Materi ini menggunakan definisi yang telah diperkenalkan pada bagian sebelumnya.","This material uses definitions introduced earlier.")}</div>
-          </article>
-        )}
+        })}
       </section>
 
       <section id="gm-section-5" className="book-section ird-source-section">
@@ -337,62 +323,16 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         </div>
       </section>
 
-      <section id="gm-section-8" className="book-section ird-summary-section">
+      <section id="gm-section-8" className="book-section ird-source-section">
         <div className="section-number">08</div>
-        <span className="eyebrow">{ui("Ringkasan Materi","Material Summary")}</span>
-        <h2>{ui("Ringkasan Definisi dan Teorema","Definition and Theorem Summary")}</h2>
-        <p className="ird-paragraph">{ui(
-          "Gunakan bagian ini sebagai tinjauan cepat sebelum mengerjakan latihan soal. Pembuktian lengkap tetap tersedia pada bagian hasil formal.",
-          "Use this section as a quick review before attempting the exercises. Complete proofs remain available in the formal-results section."
-        )}</p>
-
-        <div className="ird-summary-group">
-          <div className="ird-summary-heading">
-            <div><span className="eyebrow">{ui("Definisi","Definitions")}</span><h3>{definitions.length} {ui("definisi penting","important definitions")}</h3></div>
+        <span className="eyebrow">{ui("Bagian 8","Part 8")}</span>
+        <h2>{ui("Referensi","References")}</h2>
+        <article className="ird-formal ird-note" style={{marginTop:24}}>
+          <div className="ird-formal-head"><span>{ui("Referensi","References")}</span><strong>{ui("Bacaan lanjut","Further reading")}</strong></div>
+          <div className="ird-formal-body">
+            <ol>{m.references.map((reference) => <li key={reference}><Text>{reference}</Text></li>)}</ol>
           </div>
-          {definitions.length?(
-            <div className="ird-summary-grid">
-              {definitions.map((definition,index)=>(
-                <details className="ird-summary-card ird-summary-definition" key={"deep-summary-def-"+definition.title+index}>
-                  <summary><span>{ui("Definisi","Definition")} {index+1}</span><strong>{definition.title}</strong></summary>
-                  <div className="ird-summary-body"><Text>{definition.statement}</Text></div>
-                </details>
-              ))}
-            </div>
-          ):(
-            <article className="ird-formal ird-note">
-              <div className="ird-formal-head"><span>{ui("Ringkasan","Summary")}</span><strong>{ui("Tidak ada definisi baru","No new definitions")}</strong></div>
-              <div className="ird-formal-body">{ui("Definisi yang diperlukan telah diperkenalkan sebelumnya.","The required definitions were introduced earlier.")}</div>
-            </article>
-          )}
-        </div>
-
-        <div className="ird-summary-group">
-          <div className="ird-summary-heading">
-            <div><span className="eyebrow">{ui("Hasil Formal","Formal Results")}</span><h3>{m.theorems.length+provenFormalResults.length} {ui("hasil formal penting","important formal results")}</h3></div>
-          </div>
-          {(m.theorems.length+provenFormalResults.length)>0?(
-            <div className="ird-summary-grid">
-              {m.theorems.map((theorem,index)=>(
-                <details className="ird-summary-card ird-summary-theorem" key={"deep-summary-thm-"+theorem.title+index}>
-                  <summary><span>{ui("Teorema","Theorem")} {index+1}</span><strong>{theorem.title}</strong></summary>
-                  <div className="ird-summary-body"><Text>{theorem.statement}</Text></div>
-                </details>
-              ))}
-              {provenFormalResults.map((block,index)=>(
-                <details className="ird-summary-card ird-summary-theorem" key={"deep-summary-result-"+pick(block.title)+index}>
-                  <summary><span>{ui("Hasil","Result")} {m.theorems.length+index+1}</span><strong>{pick(block.title)}</strong></summary>
-                  <div className="ird-summary-body"><Text>{pick(block.statement)}</Text></div>
-                </details>
-              ))}
-            </div>
-          ):(
-            <article className="ird-formal ird-note">
-              <div className="ird-formal-head"><span>{ui("Ringkasan","Summary")}</span><strong>{ui("Tidak ada hasil formal baru","No new formal results")}</strong></div>
-              <div className="ird-formal-body">{ui("Materi ini berfokus pada konsep, contoh, dan penerapan.","This material focuses on concepts, examples, and applications.")}</div>
-            </article>
-          )}
-        </div>
+        </article>
       </section>
 
       <section id="gm-latihan" className="book-section ird-practice-section">
@@ -403,51 +343,32 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           "Kerjakan setiap soal terlebih dahulu. Petunjuk dan pembahasan lengkap dapat dibuka setelah mencoba.",
           "Attempt each problem first. Hints and complete solutions can be opened afterward."
         )}</p>
-        {practice.length?(
-          <div className="ird-worked-grid">
-            {practice.map((problem, index) => {
-              const allSteps=splitAcademicSolution(pick(problem.answer));
-              const steps=allSteps.length>1?allSteps.slice(0,-1):allSteps;
-              const conclusion=allSteps.length>1?allSteps[allSteps.length-1]:undefined;
-              return(
-                <article className="ird-worked-card" key={problem.id}>
-                  <div className="ird-worked-head">
-                    <div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div>
-                    <div><span className="eyebrow">{problem.difficulty}</span><h3>{pick(problem.title)}</h3></div>
+        <div className="ird-worked-grid">
+          {practice.map((problem, index) => {
+            const allSteps=splitAcademicSolution(pick(problem.answer));
+            const steps=allSteps.length>1?allSteps.slice(0,-1):allSteps;
+            const conclusion=allSteps.length>1?allSteps[allSteps.length-1]:undefined;
+            return(
+              <article className="ird-worked-card" key={problem.id}>
+                <div className="ird-worked-head">
+                  <div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div>
+                  <div><span className="eyebrow">{problem.difficulty}</span><h3>{pick(problem.title)}</h3></div>
+                </div>
+                <div className="ird-worked-prompt"><Text>{pick(problem.prompt)}</Text></div>
+                <details className="ird-proof">
+                  <summary>{ui("Buka Petunjuk","Open Hint")}</summary>
+                  <div className="ird-proof-body"><Text>{pick(problem.hint)}</Text></div>
+                </details>
+                <details className="ird-worked-solution">
+                  <summary>{ui("Buka Solusi","Open Solution")}</summary>
+                  <div className="ird-worked-solution-body">
+                    <AcademicSolution target={pick(problem.prompt)} idea={pick(problem.hint)} steps={steps} conclusion={conclusion}/>
                   </div>
-                  <div className="ird-worked-prompt"><Text>{pick(problem.prompt)}</Text></div>
-                  <details className="ird-proof">
-                    <summary>{ui("Buka Petunjuk","Open Hint")}</summary>
-                    <div className="ird-proof-body"><Text>{pick(problem.hint)}</Text></div>
-                  </details>
-                  <details className="ird-worked-solution">
-                    <summary>{ui("Buka Solusi","Open Solution")}</summary>
-                    <div className="ird-worked-solution-body">
-                      <AcademicSolution target={pick(problem.prompt)} idea={pick(problem.hint)} steps={steps} conclusion={conclusion}/>
-                    </div>
-                  </details>
-                </article>
-              );
-            })}
-          </div>
-        ):(
-          <article className="ird-formal ird-note">
-            <div className="ird-formal-head"><span>{ui("Latihan","Practice")}</span><strong>{ui("Latihan sedang disiapkan","Exercises are being prepared")}</strong></div>
-            <div className="ird-formal-body">{ui("Struktur latihan tetap disediakan agar halaman materi konsisten.","The practice section is retained so the material structure remains consistent.")}</div>
-          </article>
-        )}
-      </section>
-
-      <section id="gm-section-10" className="book-section ird-source-section">
-        <div className="section-number">10</div>
-        <span className="eyebrow">{ui("Bagian 10","Part 10")}</span>
-        <h2>{ui("Referensi","References")}</h2>
-        <article className="ird-formal ird-note" style={{marginTop:24}}>
-          <div className="ird-formal-head"><span>{ui("Referensi","References")}</span><strong>{ui("Bacaan lanjut","Further reading")}</strong></div>
-          <div className="ird-formal-body">
-            <ol>{m.references.map((reference) => <li key={reference}><Text>{reference}</Text></li>)}</ol>
-          </div>
-        </article>
+                </details>
+              </article>
+            );
+          })}
+        </div>
       </section>
 
       <section className="next-learning-block textbook-next">

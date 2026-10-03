@@ -5,13 +5,11 @@ import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
 
 const sections = [
-  ["en-overview","Introduction"],["en-prerequisites","Prerequisites & Objectives"],["en-notation","Notation & Concepts"],
-  ["en-review","Vector Space Review"],["en-combinations","Linear Combinations"],["en-span","Span"],
-  ["en-independence","Linear Independence"],["en-basis","Basis"],["en-coordinates","Coordinates"],
+  ["en-overview","Overview"],["en-review","Vector Space Review"],["en-combinations","Linear Combinations"],
+  ["en-span","Span"],["en-independence","Linear Independence"],["en-basis","Basis"],["en-coordinates","Coordinates"],
   ["en-dimension","Dimension"],["en-subspaces","Subspace Bases"],["en-extension","Basis Extension"],
   ["en-row-column","Row & Column Spaces"],["en-rank-nullity","Rank–Nullity"],["en-examples","Worked Examples"],
-  ["en-visualization","Visualization & Exploration"],["en-summary","Definition & Theorem Summary"],
-  ["en-practice","Practice Problems"],["en-references","References"]
+  ["en-summary","Summary"],["en-references","References"]
 ] as const;
 
 const theorems = [
@@ -162,126 +160,87 @@ export function BasisDimensionEnglish() {
 
     <section className="section">
       <div className="container article-layout wide-article-layout">
-        <aside className="toc material-toc textbook-toc"><strong>Chapter Contents</strong>{sections.map(([id,label],i)=><a href={"#"+id} key={id}><span>{String(i+1).padStart(2,"0")}</span><span>{label}</span></a>)}</aside>
+        <aside className="toc material-toc"><strong>Chapter Contents</strong>{sections.map(([id,label],i)=><a href={"#"+id} key={id}>{String(i+1).padStart(2,"0")}. {label}</a>)}</aside>
         <article className="article deep-article basis-article">
           <section id="en-overview">
             <span className="eyebrow">Introduction</span><h2>Basis and Dimension</h2>
             <P>{String.raw`In $\\mathbb R^2$, the standard vectors $e_1=(1,0)$ and $e_2=(0,1)$ are familiar. Another pair such as $v_1=(1,1)$ and $v_2=(1,-1)$ can also represent every vector uniquely. Such a pair is a basis.`}</P>
             <P>{String.raw`A basis must be large enough to span the entire space while containing no redundant direction. Dimension measures the number of vectors required in any basis.`}</P>
+            <MathVisualization kind="basis" />
+            <div style={{marginTop:24}}><InteractiveMathLab kind="basis" /></div>
+            <div className="content-box prerequisite-box"><strong>Prerequisites</strong><ul><li>Vector and scalar operations.</li><li>Vector spaces and subspaces.</li><li>Linear systems and Gaussian elimination.</li></ul></div>
+            <div className="learning-objectives"><span className="eyebrow">Learning Objectives</span><div className="objective-grid">{[
+              "Test whether a vector is a linear combination of given vectors.","Compute spans and extract bases from spanning sets.","Test linear independence conceptually and computationally.","Find coordinates relative to a basis.","Use dimension to bound independent sets.","Construct subspace, row-space, and column-space bases.","Apply Basis Extension and Rank–Nullity."
+            ].map((x,i)=><div className="objective-card" key={x}><span>{i+1}</span><p>{x}</p></div>)}</div></div>
+            
           </section>
 
-          <section id="en-prerequisites">
-            <span className="eyebrow">02 · Prerequisites & Objectives</span>
-            <h2>Prerequisites and Learning Objectives</h2>
-            <div className="solution-overview-grid">
-              <div className="content-box prerequisite-box">
-                <strong>Prerequisites</strong>
-                <ul><li>Vector and scalar operations.</li><li>Vector spaces and subspaces.</li><li>Linear systems and Gaussian elimination.</li></ul>
-              </div>
-              <div className="content-box">
-                <strong>Learning Objectives</strong>
-                <ul>
-                  <li>Test whether a vector is a linear combination of given vectors.</li>
-                  <li>Compute spans and extract bases from spanning sets.</li>
-                  <li>Test linear independence conceptually and computationally.</li>
-                  <li>Find coordinates relative to a basis.</li>
-                  <li>Use dimension to bound independent sets.</li>
-                  <li>Construct subspace, row-space, and column-space bases.</li>
-                  <li>Apply Basis Extension and Rank–Nullity.</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section id="en-notation">
-            <span className="eyebrow">03 · Notation & Concepts</span>
-            <h2>Notation and Core Concepts</h2>
-            <div className="notation-table">
-              {[
-                [String.raw`$V$`,"vector space"],
-                [String.raw`$\\mathbb F$`,"scalar field"],
-                [String.raw`$\\operatorname{span}(S)$`,"subspace spanned by $S$"],
-                [String.raw`$[v]_B$`,"coordinate vector of $v$ relative to the ordered basis $B$"],
-                [String.raw`$\\dim V$`,"dimension of $V$"],
-                [String.raw`$\\ker T$`,"kernel of the linear map $T$"],
-                [String.raw`$\\operatorname{im}T$`,"image of the linear map $T$"],
-                [String.raw`$\\operatorname{rank}(T)$`,"dimension of $\\operatorname{im}T$"],
-                [String.raw`$\\operatorname{nullity}(T)$`,"dimension of $\\ker T$"],
-              ].map(([symbol,meaning])=>(
-                <div className="notation-row" key={symbol}>
-                  <div className="notation-symbol"><RichMath>{symbol}</RichMath></div>
-                  <div className="notation-meaning"><RichMath>{meaning}</RichMath></div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="en-review"><span className="eyebrow">04 · Vector Space Review</span><h2>Vector Spaces and Subspaces</h2>
+          <section id="en-review"><span className="eyebrow">01 · Vector Space Review</span><h2>Vector Spaces and Subspaces</h2>
             <P>{String.raw`A vector space $V$ over a field $\\mathbb F$ supports vector addition and scalar multiplication satisfying the standard linearity axioms. Key examples are $\\mathbb R^n$, polynomial spaces $\\mathcal P_n$, matrix spaces $M_{m\\times n}(\\mathbb F)$, and function spaces.`}</P>
             <div className="definition-box"><strong>Subspace</strong><P>{String.raw`A subset $W\\subseteq V$ is a subspace if it contains $0$ and is closed under all linear combinations $\\alpha u+\\beta v$.`}</P></div>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`$W=\{(x,y,0):x,y\in\mathbb R\}$ is a subspace of $\mathbb R^3$.`}</P></div>
             <TheoremCard item={theorem("1")} />
           </section>
 
-          <section id="en-combinations"><span className="eyebrow">05 · Linear Combinations</span><h2>Linear Combinations</h2>
+          <section id="en-combinations"><span className="eyebrow">02 · Linear Combinations</span><h2>Linear Combinations</h2>
             <div className="definition-box"><strong>Linear Combination</strong><P>{String.raw`A vector $v$ is a linear combination of $v_1,\\ldots,v_k$ if $v=a_1v_1+\\cdots+a_kv_k$ for some scalars $a_i$.`}</P></div>
             <div className="example-suite"><div className="example-box"><div className="box-kicker">Basic Example</div><strong>Is $(5,1)$ a linear combination of $(1,1)$ and $(2,-1)$?</strong></div><div className="solution-box content-box"><P>{String.raw`Solving $a(1,1)+b(2,-1)=(5,1)$ gives $a+2b=5$ and $a-b=1$, hence $b=4/3$ and $a=7/3$. Therefore the answer is yes.`}</P></div></div>
           </section>
 
-          <section id="en-span"><span className="eyebrow">06 · Span</span><h2>Span</h2>
+          <section id="en-span"><span className="eyebrow">03 · Span</span><h2>Span</h2>
             <div className="definition-box"><strong>Span</strong><P>{String.raw`$\\operatorname{span}\\{v_1,\\ldots,v_k\\}$ is the set of all linear combinations $a_1v_1+\\cdots+a_kv_k$.`}</P></div>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`The span of $(1,0,0)$ and $(0,1,0)$ is the plane $z=0$ in $\mathbb R^3$.`}</P></div>
             <TheoremCard item={theorem("2")} />
             <div className="counterexample-box content-box"><strong>Important counterexample</strong><P>{String.raw`In $\\mathbb R^3$, the set $\\{(1,0,0),(0,1,0)\\}$ does not span the whole space because every combination has third coordinate zero.`}</P></div>
           </section>
 
-          <section id="en-independence"><span className="eyebrow">07 · Linear Independence</span><h2>Linear Independence</h2>
+          <section id="en-independence"><span className="eyebrow">04 · Linear Independence</span><h2>Linear Independence</h2>
             <div className="definition-box"><strong>Linear Independence</strong><P>{String.raw`The vectors $v_1,\\ldots,v_k$ are linearly independent if $a_1v_1+\\cdots+a_kv_k=0$ implies $a_1=\\cdots=a_k=0$.`}</P></div>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`The vectors $(1,0)$ and $(0,1)$ are linearly independent, while $(1,0)$ and $(2,0)$ are linearly dependent.`}</P></div>
             <TheoremCard item={theorem("3")} />
             <div className="comparison-table"><div className="comparison-col"><span className="eyebrow">Independent</span><strong>No redundancy</strong><p>Only the trivial relation gives zero.</p></div><div className="comparison-col"><span className="eyebrow">Dependent</span><strong>Redundant information</strong><p>At least one vector lies in the span of the others.</p></div></div>
           </section>
 
-          <section id="en-basis"><span className="eyebrow">08 · Basis</span><h2>Basis</h2>
+          <section id="en-basis"><span className="eyebrow">05 · Basis</span><h2>Basis</h2>
             <div className="definition-box"><strong>Basis</strong><P>{String.raw`A set $B$ is a basis of $V$ when it is linearly independent and $\\operatorname{span}(B)=V$.`}</P></div>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`The standard vectors $(1,0)$ and $(0,1)$ form a basis of $\mathbb R^2$.`}</P></div>
             <TheoremCard item={theorem("4")} />
             <div className="example-suite"><div className="example-box"><strong>A nonstandard basis of $\\mathbb R^2$</strong><P>{String.raw`For $B=((1,1),(1,-1))$, find $[(4,2)]_B$.`}</P></div><div className="solution-box content-box"><P>{String.raw`Solving $a(1,1)+b(1,-1)=(4,2)$ gives $a=3$, $b=1$. Hence $[(4,2)]_B=(3,1)$.`}</P></div></div>
           </section>
 
-          <section id="en-coordinates"><span className="eyebrow">09 · Coordinates</span><h2>Coordinates Relative to a Basis</h2>
+          <section id="en-coordinates"><span className="eyebrow">06 · Coordinates</span><h2>Coordinates Relative to a Basis</h2>
             <P>{String.raw`If $B=(v_1,\\ldots,v_n)$ is ordered and $v=a_1v_1+\\cdots+a_nv_n$, then $[v]_B=(a_1,\\ldots,a_n)^T$.`}</P>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`Relative to the standard basis $E$, the vector $(3,-2)$ has coordinate vector $(3,-2)^T$.`}</P></div>
             <TheoremCard item={theorem("5")} />
           </section>
 
-          <section id="en-dimension"><span className="eyebrow">10 · Dimension</span><h2>Dimension</h2>
+          <section id="en-dimension"><span className="eyebrow">07 · Dimension</span><h2>Dimension</h2>
             <div className="definition-box"><strong>Dimension</strong><P>{String.raw`If $V$ has a finite basis with $n$ elements, define $\\dim V=n$. Also $\\dim\\{0\\}=0$.`}</P></div>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`The polynomial space $\mathcal P_2$ has basis $\{1,x,x^2\}$, hence $\dim\mathcal P_2=3$.`}</P></div>
             <TheoremCard item={theorem("6")} /><TheoremCard item={theorem("7")} />
             <div className="dimension-facts"><div><strong><RichMath>{String.raw`$\\dim\\mathbb R^n=n$`}</RichMath></strong><span>the standard basis has n vectors</span></div><div><strong><RichMath>{String.raw`$\\dim\\mathcal P_n=n+1$`}</RichMath></strong><span>basis 1, x, ..., x^n</span></div><div><strong><RichMath>{String.raw`$\\dim M_{m\\times n}=mn$`}</RichMath></strong><span>one matrix unit per entry</span></div></div>
           </section>
 
-          <section id="en-subspaces"><span className="eyebrow">11 · Subspace Bases</span><h2>Subspace Bases and Dimension</h2>
+          <section id="en-subspaces"><span className="eyebrow">08 · Subspace Bases</span><h2>Subspace Bases and Dimension</h2>
             <TheoremCard item={theorem("8")} />
             <div className="example-suite"><div className="example-box"><strong>A plane in $\\mathbb R^3$</strong><P>{String.raw`Find a basis of $W=\\{(x,y,z):x+y+z=0\\}$.`}</P></div><div className="solution-box content-box"><P>{String.raw`Since $z=-x-y$, $(x,y,z)=x(1,0,-1)+y(0,1,-1)$. The two generators are independent, so they form a basis and $\\dim W=2$.`}</P></div></div>
           </section>
 
-          <section id="en-extension"><span className="eyebrow">12 · Basis Extension</span><h2>Basis Extension</h2><TheoremCard item={theorem("9")} /><TheoremCard item={theorem("10")} /></section>
+          <section id="en-extension"><span className="eyebrow">09 · Basis Extension</span><h2>Basis Extension</h2><TheoremCard item={theorem("9")} /><TheoremCard item={theorem("10")} /></section>
 
-          <section id="en-row-column"><span className="eyebrow">13 · Row & Column Spaces</span><h2>Row and Column Spaces</h2>
+          <section id="en-row-column"><span className="eyebrow">10 · Row & Column Spaces</span><h2>Row and Column Spaces</h2>
             <P>{String.raw`For $A\\in\\mathbb F^{m\\times n}$, the row space is the span of the rows and the column space is the span of the columns.`}</P>
             <div className="content-box idea-box"><strong>Computational Rule</strong><p>Nonzero rows of an echelon form form a basis of the row space. For the column space, use the pivot positions found by row reduction but select the corresponding columns from the original matrix.</p></div>
           </section>
 
-          <section id="en-rank-nullity"><span className="eyebrow">14 · Rank–Nullity</span><h2>Rank–Nullity Theorem</h2>
+          <section id="en-rank-nullity"><span className="eyebrow">11 · Rank–Nullity</span><h2>Rank–Nullity Theorem</h2>
             <div className="definition-box"><strong>Rank and Nullity</strong><P>{String.raw`For $T:V\\to W$, $\\operatorname{rank}(T)=\\dim(\\operatorname{im}T)$ and $\\operatorname{nullity}(T)=\\dim(\\ker T)$.`}</P></div>
             <div className="example-box content-box"><div className="box-kicker">Example</div><P>{String.raw`For $T(x,y,z)=(x,y)$, $\operatorname{rank}T=2$ and $\operatorname{nullity}T=1$.`}</P></div>
             <TheoremCard item={theorem("11")} />
             <div className="content-box insight-box"><strong>Important consequence</strong><P>{String.raw`For $T:V\\to V$ on a finite-dimensional space, injectivity is equivalent to surjectivity. Injectivity gives nullity zero; Rank–Nullity then gives full rank, hence surjectivity.`}</P></div>
           </section>
 
-          <section id="en-examples"><span className="eyebrow">15 · Worked Examples</span><h2>Worked Examples</h2>
+          <section id="en-examples"><span className="eyebrow">12 · Worked Examples</span><h2>Worked Examples</h2>
             <div className="example-stack">
               <div className="example-suite"><div className="example-box"><div className="box-kicker">Basic</div><strong>Dimension of a span</strong><P>{String.raw`Find $\\dim\\operatorname{span}\\{(1,0,1),(0,1,1),(1,1,2)\\}$.`}</P></div><div className="solution-box content-box"><p>The third vector is the sum of the first two. The first two are independent, so the dimension is 2.</p></div></div>
               <div className="example-suite"><div className="example-box"><div className="box-kicker">Intermediate</div><strong>Basis of a solution space</strong><P>{String.raw`Solve $x+y+z+w=0$ and $x-z=0$.`}</P></div><div className="solution-box content-box"><P>{String.raw`We obtain $z=x$ and $y=-2x-w$, so every solution equals $x(1,-2,1,0)+w(0,-1,0,1)$. The two vectors form a basis.`}</P></div></div>
@@ -289,34 +248,14 @@ export function BasisDimensionEnglish() {
             </div>
           </section>
 
-                    <section id="en-visualization">
-            <span className="eyebrow">16 · Visualization & Exploration</span>
-            <h2>Visualization and Interactive Exploration</h2>
-            <p>Use the visual model to examine span, coordinates, and changes of basis geometrically, then vary parameters in the interactive panel.</p>
-            <div className="ird-visual-stack">
-              <MathVisualization kind="basis" />
-              <InteractiveMathLab kind="basis" />
-            </div>
-          </section>
-
-          <section id="en-summary"><span className="eyebrow">17 · Summary</span><h2>Definition and Theorem Summary</h2>
+          <section id="en-summary"><span className="eyebrow">13 · Summary</span><h2>Main Results</h2>
             <div className="summary-grid">{[
               ["Span","The smallest subspace containing the generators."],["Linear Independence","No redundant direction."],["Basis","Independent and spanning."],["Coordinates","Unique representation relative to a basis."],["Dimension","The common size of every finite basis."],["Basis Extension","Independent sets can be completed to bases."],["Subspaces","Subspace dimension cannot exceed ambient dimension."],["Rank–Nullity","Domain dimension = rank + nullity."]
             ].map(([t,b])=><div className="summary-card" key={t}><strong>{t}</strong><p>{b}</p></div>)}</div>
-
+            <div className="actions"><Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Work Through Curated Practice</Link><Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Open 100 Problems</Link></div>
           </section>
 
-                    <section id="en-practice">
-            <span className="eyebrow">18 · Practice Problems</span>
-            <h2>Practice Problems</h2>
-            <p>Review the definitions and theorems first, then continue with curated exercises or the larger problem bank.</p>
-            <div className="actions">
-              <Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Work Through Curated Practice</Link>
-              <Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Open 100 Problems</Link>
-            </div>
-          </section>
-
-          <section id="en-references"><span className="eyebrow">19 · References</span><h2>References</h2><ol className="reference-list"><li>Sheldon Axler, <em>Linear Algebra Done Right</em>, 4th ed., Springer, 2024.</li><li>Gilbert Strang, <em>Introduction to Linear Algebra</em>, 6th ed., 2023.</li><li>Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence, <em>Linear Algebra</em>, 5th ed., Pearson, 2022.</li></ol></section>
+          <section id="en-references"><span className="eyebrow">14 · References</span><h2>References</h2><ol className="reference-list"><li>Sheldon Axler, <em>Linear Algebra Done Right</em>, 4th ed., Springer, 2024.</li><li>Gilbert Strang, <em>Introduction to Linear Algebra</em>, 6th ed., 2023.</li><li>Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence, <em>Linear Algebra</em>, 5th ed., Pearson, 2022.</li></ol></section>
         </article>
       </div>
     </section>

@@ -561,24 +561,18 @@ function DirectSectionVisual({ sectionIndex, sectionTitle }: { sectionIndex:numb
 
 export function IntegralRiemannDarbouxPage({ material }: { material: DeepMaterial }) {
   const sectionIds = useMemo(()=>[
-    "ird-section-1",
-    "ird-prasyarat",
-    "ird-notasi",
-    ...integralRiemannDarbouxSections.slice(1).map((_,i)=>"ird-section-"+(i+2)),
+    ...integralRiemannDarbouxSections.map((_,i)=>"ird-section-"+(i+1)),
     "ird-ringkasan",
     "ird-latihan-artikel",
     "ird-latihan-soal",
     "ird-latihan30",
-    "ird-referensi",
   ],[]);
   const [active,setActive]=useState("ird-section-1");
   const [progress,setProgress]=useState(0);
-  const summarySectionNumber=integralRiemannDarbouxSections.length+3;
-  const articlePracticeSectionNumber=integralRiemannDarbouxSections.length+4;
-  const practiceSectionNumber=integralRiemannDarbouxSections.length+5;
-  const extraPracticeSectionNumber=integralRiemannDarbouxSections.length+6;
-  const referenceSectionNumber=integralRiemannDarbouxSections.length+7;
-  const theorySectionNumber=(sectionIndex:number)=>sectionIndex===0?1:sectionIndex+3;
+  const summarySectionNumber=integralRiemannDarbouxSections.length+1;
+  const articlePracticeSectionNumber=integralRiemannDarbouxSections.length+2;
+  const practiceSectionNumber=integralRiemannDarbouxSections.length+3;
+  const extraPracticeSectionNumber=integralRiemannDarbouxSections.length+4;
 
   const stats=useMemo(()=>{
     const counts={definition:0,theorem:0,lemma:0,proposition:0,corollary:0,example:0,exercise:0};
@@ -634,7 +628,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
           <h1>Integral Riemann dan Integral Darboux</h1>
           <p className="chapter-lead"><RichMath>{material.summary}</RichMath></p>
           <div className="chapter-meta textbook-meta">
-            <span>{integralRiemannDarbouxSections.length+2} bagian materi + latihan</span><span>Riemann + Darboux</span><span>Menengah–Lanjut</span><span>Visual & formal</span>
+            <span>{integralRiemannDarbouxSections.length} bagian materi + latihan</span><span>Riemann + Darboux</span><span>Menengah–Lanjut</span><span>Visual & formal</span>
           </div>
           <div className="chapter-stat-grid">
             <div><strong>{stats.definition}</strong><span>definisi</span></div>
@@ -643,7 +637,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             <div><strong>{integralRiemannArticleExercises.length + integralRiemannWorkedExercises.length}</strong><span>latihan dengan pembahasan</span></div>
           </div>
           <div className="actions">
-            <a className="btn primary" href="#ird-section-1">Mulai Materi</a>
+            <a className="btn primary" href="#ird-section-1">Mulai Bab</a>
             <a className="btn secondary" href="#ird-ringkasan">Ringkasan & Latihan</a>
           </div>
         </div>
@@ -654,104 +648,37 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
           <aside className="toc material-toc textbook-toc ird-toc">
             <div className="toc-progress-mini"><span>Progres membaca</span><strong>{Math.round(progress)}%</strong></div>
             <strong>Isi Materi</strong>
-            <a href="#ird-section-1" className={active==="ird-section-1"?"active":""}><span>01</span><span>{integralRiemannDarbouxSections[0].title}</span></a>
-            <a href="#ird-prasyarat" className={active==="ird-prasyarat"?"active":""}><span>02</span><span>Prasyarat & Tujuan</span></a>
-            <a href="#ird-notasi" className={active==="ird-notasi"?"active":""}><span>03</span><span>Notasi & Konsep</span></a>
-            {integralRiemannDarbouxSections.slice(1).map((section,index)=>{
-              const sectionIndex=index+1;
-              const id="ird-section-"+(sectionIndex+1);
-              return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(theorySectionNumber(sectionIndex)).padStart(2,"0")}</span><span>{section.title}</span></a>;
+            {integralRiemannDarbouxSections.map((section,index)=>{
+              const id="ird-section-"+(index+1);
+              return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(index+1).padStart(2,"0")}</span>{section.title}</a>;
             })}
-            <a href="#ird-ringkasan" className={active==="ird-ringkasan"?"active":""}><span>{String(summarySectionNumber).padStart(2,"0")}</span><span>Ringkasan Definisi & Teorema</span></a>
-            <a href="#ird-latihan-artikel" className={active==="ird-latihan-artikel"?"active":""}><span>{String(articlePracticeSectionNumber).padStart(2,"0")}</span><span>15 Latihan Tambahan</span></a>
-            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span><span>16 Latihan Soal</span></a>
-            <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>{String(extraPracticeSectionNumber).padStart(2,"0")}</span><span>30 Latihan Tambahan</span></a>
-            <a href="#ird-referensi" className={active==="ird-referensi"?"active":""}><span>{String(referenceSectionNumber).padStart(2,"0")}</span><span>Referensi</span></a>
+            <a href="#ird-ringkasan" className={active==="ird-ringkasan"?"active":""}><span>{String(summarySectionNumber).padStart(2,"0")}</span>Ringkasan Definisi & Teorema</a>
+            <a href="#ird-latihan-artikel" className={active==="ird-latihan-artikel"?"active":""}><span>{String(articlePracticeSectionNumber).padStart(2,"0")}</span>15 Latihan Tambahan</a>
+            <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span>16 Latihan Soal</a>
+            <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>{String(extraPracticeSectionNumber).padStart(2,"0")}</span>30 Latihan Tambahan</a>
           </aside>
 
           <article className="article deep-article textbook-article ird-article">
-            <section id="ird-section-1" className="book-section ird-source-section">
-              <div className="section-number">01</div>
-              <span className="eyebrow">Bagian 1</span>
-              <h2>{integralRiemannDarbouxSections[0].title}</h2>
-              {integralRiemannDarbouxSections[0].blocks.map((block,index)=>(
-                <Fragment key={integralRiemannDarbouxSections[0].title+"-b-"+index}>
-                  <FormalBlock block={block} index={index} />
-                </Fragment>
-              ))}
-              <DirectSectionVisual sectionIndex={0} sectionTitle={integralRiemannDarbouxSections[0].title} />
-              {integralRiemannDarbouxSections[0].subsections.map((sub,subIndex)=>(
-                <div className="ird-subsection" key={sub.title}>
-                  <h3>{sub.title}</h3>
-                  {sub.blocks.map((block,index)=><FormalBlock key={sub.title+"-"+index} block={block} index={index} />)}
-                  <SubsectionVisual sectionIndex={0} subIndex={subIndex} subTitle={sub.title} />
-                </div>
-              ))}
-            </section>
-
-            <section id="ird-prasyarat" className="book-section ird-source-section">
-              <div className="section-number">02</div>
-              <span className="eyebrow">Bagian 2</span>
-              <h2>Prasyarat dan Tujuan Pembelajaran</h2>
-              <div className="solution-overview-grid">
-                <div className="content-box prerequisite-box">
-                  <strong>Prasyarat</strong>
-                  <ul>
-                    {material.prerequisites.map((item)=><li key={item}><SourceText text={item}/></li>)}
-                  </ul>
-                </div>
-                <div className="content-box">
-                  <strong>Tujuan Pembelajaran</strong>
-                  <ul>
-                    {material.objectives.map((item)=><li key={item}><SourceText text={item}/></li>)}
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <section id="ird-notasi" className="book-section ird-source-section">
-              <div className="section-number">03</div>
-              <span className="eyebrow">Bagian 3</span>
-              <h2>Notasi dan Konsep Utama</h2>
-              <div className="notation-table">
-                {material.notation.map((item)=>(
-                  <div className="notation-row" key={item.symbol}>
-                    <div className="notation-symbol"><SourceText text={item.symbol}/></div>
-                    <div className="notation-meaning"><SourceText text={item.meaning}/></div>
+            {integralRiemannDarbouxSections.map((section,sectionIndex)=>(
+              <section id={"ird-section-"+(sectionIndex+1)} className="book-section ird-source-section" key={section.title}>
+                <div className="section-number">{String(sectionIndex+1).padStart(2,"0")}</div>
+                <span className="eyebrow">Bagian {sectionIndex+1}</span>
+                <h2>{section.title}</h2>
+                {section.blocks.map((block,index)=>(
+                  <Fragment key={section.title+"-b-"+index}>
+                    <FormalBlock block={block} index={index} />
+                  </Fragment>
+                ))}
+                <DirectSectionVisual sectionIndex={sectionIndex} sectionTitle={section.title} />
+                {section.subsections.map((sub,subIndex)=>(
+                  <div className="ird-subsection" key={sub.title}>
+                    <h3>{sub.title}</h3>
+                    {sub.blocks.map((block,index)=><FormalBlock key={sub.title+"-"+index} block={block} index={index} />)}
+                    <SubsectionVisual sectionIndex={sectionIndex} subIndex={subIndex} subTitle={sub.title} />
                   </div>
                 ))}
-              </div>
-              <div className="ird-roadmap" style={{marginTop:28}}>
-                {material.conceptMap.map((item,index)=>(
-                  <div key={item}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>
-                ))}
-              </div>
-            </section>
-
-            {integralRiemannDarbouxSections.slice(1).map((section,index)=>{
-              const sectionIndex=index+1;
-              const displayNumber=theorySectionNumber(sectionIndex);
-              return(
-                <section id={"ird-section-"+(sectionIndex+1)} className="book-section ird-source-section" key={section.title}>
-                  <div className="section-number">{String(displayNumber).padStart(2,"0")}</div>
-                  <span className="eyebrow">Bagian {displayNumber}</span>
-                  <h2>{section.title}</h2>
-                  {section.blocks.map((block,blockIndex)=>(
-                    <Fragment key={section.title+"-b-"+blockIndex}>
-                      <FormalBlock block={block} index={blockIndex} />
-                    </Fragment>
-                  ))}
-                  <DirectSectionVisual sectionIndex={sectionIndex} sectionTitle={section.title} />
-                  {section.subsections.map((sub,subIndex)=>(
-                    <div className="ird-subsection" key={sub.title}>
-                      <h3>{sub.title}</h3>
-                      {sub.blocks.map((block,blockIndex)=><FormalBlock key={sub.title+"-"+blockIndex} block={block} index={blockIndex} />)}
-                      <SubsectionVisual sectionIndex={sectionIndex} subIndex={subIndex} subTitle={sub.title} />
-                    </div>
-                  ))}
-                </section>
-              );
-            })}
+              </section>
+            ))}
 
             <section id="ird-ringkasan" className="book-section ird-summary-section">
               <div className="section-number">{String(summarySectionNumber).padStart(2,"0")}</div>
@@ -863,20 +790,6 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                   </article>
                 ))}
               </div>
-            </section>
-
-            <section id="ird-referensi" className="book-section ird-source-section">
-              <div className="section-number">{String(referenceSectionNumber).padStart(2,"0")}</div>
-              <span className="eyebrow">Referensi</span>
-              <h2>Referensi</h2>
-              <article className="ird-formal ird-note" style={{marginTop:24}}>
-                <div className="ird-formal-head"><span>Referensi</span><strong>Bacaan Bidang</strong></div>
-                <div className="ird-formal-body">
-                  <ol>
-                    {material.references.map((reference)=><li key={reference}><SourceText text={reference}/></li>)}
-                  </ol>
-                </div>
-              </article>
             </section>
 
             <section className="next-learning-block textbook-next">
