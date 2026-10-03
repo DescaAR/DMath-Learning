@@ -4,7 +4,7 @@ import { MaterialCatalogClient } from "@/components/MaterialCatalogClient";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { bookSubjects } from "@/data/book-curricula";
 import { deepMaterials } from "@/data/deep-materials";
-import { isPublicAcademicLevel, isPublicMaterialSlug } from "@/lib/public-content";
+import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicMaterialSlug } from "@/lib/public-content";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Materi Matematika",
@@ -14,7 +14,8 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function MateriPage() {
-  const bookSectionCount=bookSubjects.reduce((sum,subject)=>sum+subject.chapters.reduce((n,chapter)=>n+chapter.sections.length,0),0);
+  const visibleBookSubjects=bookSubjects.filter((subject)=>isPublicBookSubjectSlug(subject.slug));
+  const bookSectionCount=visibleBookSubjects.reduce((sum,subject)=>sum+subject.chapters.reduce((n,chapter)=>n+chapter.sections.length,0),0);
   const visibleDeepMaterials=deepMaterials.filter((material)=>isPublicAcademicLevel(material.level,material.track) && isPublicMaterialSlug(material.slug));
 
   return (
@@ -25,7 +26,7 @@ export default function MateriPage() {
       lead="Materi difokuskan pada matematika tingkat universitas dan ON-MIPA, kemudian dibagi menjadi bab dan submateri dengan pembahasan teori, contoh, visualisasi, dan latihan."
       meta={["Kuliah","ON-MIPA","Teori & Pembuktian","Latihan"]}
       stats={[
-        {value:bookSubjects.length,label:"bidang utama"},
+        {value:visibleBookSubjects.length,label:"bidang utama"},
         {value:bookSectionCount,label:"submateri buku"},
         {value:visibleDeepMaterials.length,label:"materi lain"},
         {value:"1 pola",label:"struktur belajar"},
