@@ -26,7 +26,7 @@ export default function Home() {
     <RiemannHubShell
       eyebrow="DMath Learning · Think Deeper, Solve Better."
       title="DMath Learning"
-      lead="Materi matematika terstruktur untuk tingkat universitas dan ON-MIPA, dilengkapi definisi, pembuktian, contoh, visualisasi, latihan, dan bank soal."
+      lead=""
       meta={["Kuliah","ON-MIPA","Pembuktian Formal","Problem Solving"]}
       stats={[
         {value:visibleMaterials.length,label:"materi tersedia"},
@@ -73,7 +73,6 @@ export default function Home() {
         <div className="section-number">03</div>
         <span className="eyebrow">Lanjut Belajar</span>
         <h2>Latihan dan Bank Soal</h2>
-        <p>Setelah membaca materi, lanjutkan ke latihan terkurasi atau bank soal agar konsep berubah menjadi kemampuan problem solving.</p>
         <div className="actions"><Link className="btn primary" href="/latihan-soal">Latihan Soal</Link><Link className="btn secondary" href="/bank-soal">Bank Soal</Link></div>
       </section>
     </RiemannHubShell>
