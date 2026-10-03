@@ -7,12 +7,12 @@ import { IntegralRiemannDarbouxPage } from "@/components/IntegralRiemannDarbouxP
 import { bookSubjectMap, bookSubjects } from "@/data/book-curricula";
 import { deepMaterialMap, deepMaterials } from "@/data/deep-materials";
 import { breadcrumbJsonLd, createPageMetadata, learningResourceJsonLd } from "@/lib/seo";
-import { isPublicBookSubjectSlug, isPublicMaterialSlug } from "@/lib/public-content";
+import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicMaterialSlug } from "@/lib/public-content";
 
 export function generateStaticParams() {
   const slugs=new Set([
-    ...deepMaterials.filter((material)=>isPublicMaterialSlug(material.slug)).map((material)=>material.slug),
-    ...bookSubjects.filter((subject)=>isPublicBookSubjectSlug(subject.slug)).map((subject)=>subject.slug),
+    ...deepMaterials.filter((material)=>isPublicMaterialSlug(material.slug) && isPublicAcademicLevel(material.level,material.track)).map((material)=>material.slug),
+    ...bookSubjects.filter((subject)=>isPublicBookSubjectSlug(subject.slug) && isPublicAcademicLevel(subject.level,subject.level)).map((subject)=>subject.slug),
   ]);
   return Array.from(slugs).map((slug)=>({slug}));
 }
@@ -25,7 +25,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const subject=bookSubjectMap[slug];
 
-  if(subject && !isPublicBookSubjectSlug(subject.slug)) return {};
+  if(subject && (!isPublicBookSubjectSlug(subject.slug) || !isPublicAcademicLevel(subject.level,subject.level))) return {};
 
   if(subject){
     const sectionCount=subject.chapters.reduce((sum,chapter)=>sum+chapter.sections.length,0);
@@ -38,7 +38,7 @@ export async function generateMetadata({
   }
 
   const material = deepMaterialMap[slug];
-  if (!material || !isPublicMaterialSlug(material.slug)) return {};
+  if (!material || !isPublicMaterialSlug(material.slug) || !isPublicAcademicLevel(material.level,material.track)) return {};
 
   return createPageMetadata({
     title: material.title,
@@ -57,7 +57,7 @@ export default async function MaterialDetailPage({
   const { slug } = await params;
   const subject=bookSubjectMap[slug];
 
-  if(subject && !isPublicBookSubjectSlug(subject.slug)) notFound();
+  if(subject && (!isPublicBookSubjectSlug(subject.slug) || !isPublicAcademicLevel(subject.level,subject.level))) notFound();
 
   if(subject){
     return(
@@ -75,7 +75,7 @@ export default async function MaterialDetailPage({
   }
 
   const material = deepMaterialMap[slug];
-  if (!material || !isPublicMaterialSlug(material.slug)) notFound();
+  if (!material || !isPublicMaterialSlug(material.slug) || !isPublicAcademicLevel(material.level,material.track)) notFound();
 
   const content =
     material.slug === "integral-riemann" ? (
