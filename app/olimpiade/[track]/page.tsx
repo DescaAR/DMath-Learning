@@ -3,9 +3,10 @@ import { createPageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { OlympiadHubPage } from "@/components/OlympiadHubPage";
 import { olympiadHubMap, olympiadHubs } from "@/data/olympiad-hubs";
+import { isPublicOlympiadHubSlug } from "@/lib/public-content";
 
 export function generateStaticParams() {
-  return olympiadHubs.map((hub) => ({ track: hub.slug }));
+  return olympiadHubs.filter((hub) => isPublicOlympiadHubSlug(hub.slug)).map((hub) => ({ track: hub.slug }));
 }
 
 export async function generateMetadata({
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { track } = await params;
   const hub = olympiadHubMap[track];
-  if (!hub) return {};
+  if (!hub || !isPublicOlympiadHubSlug(track)) return {};
 
   return createPageMetadata({
     title: hub.title.id,
@@ -32,7 +33,7 @@ export default async function OlympiadTrackPage({
 }) {
   const { track } = await params;
   const hub = olympiadHubMap[track];
-  if (!hub) notFound();
+  if (!hub || !isPublicOlympiadHubSlug(track)) notFound();
 
   return <OlympiadHubPage hub={hub} />;
 }
