@@ -115,7 +115,7 @@ function TopologyVisual() {
           <circle cx="190" cy="135" r="8" className="ca-point"/><circle cx="78" cy="166" r="8" className="ca-boundary-point"/><circle cx="190" cy="135" r="35" className="ca-neighborhood"/>
           <text x="204" y="128" className="ca-label">interior</text><text x="88" y="185" className="ca-label">batas</text>
         </svg>
-        <figcaption>Titik interior memiliki suatu disk kecil yang seluruhnya berada di dalam himpunan; lingkungan titik batas selalu bertemu himpunan dan komplemennya.</figcaption>
+        <figcaption>Titik interior memiliki suatu disk kecil yang seluruhnya berada di dalam himpunan; persekitaran titik batas selalu bertemu himpunan dan komplemennya.</figcaption>
       </figure>
     </div>
   );
