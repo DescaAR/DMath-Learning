@@ -7,6 +7,7 @@ import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { bookSubjects } from "@/data/book-curricula";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
+import { isPublicAcademicLevel } from "@/lib/public-content";
 
 type LevelFilter = "Semua" | "SD" | "SMP" | "SMA" | "Kuliah" | "Olimpiade";
 type TrackGroup = "Reguler" | "Olimpiade";
@@ -51,7 +52,7 @@ function trackGroup(track: string, level: string): CatalogItem["trackGroup"] {
 const bookSubjectSlugs = new Set<string>(bookSubjects.map((subject) => subject.slug));
 
 const baseItems: CatalogItem[] = deepMaterials
-  .filter((material) => !bookSubjectSlugs.has(material.slug))
+  .filter((material) => !bookSubjectSlugs.has(material.slug) && isPublicAcademicLevel(material.level, material.track))
   .map((material) => {
   const en = deepMaterialEnMap[material.slug] ?? material;
   return {
@@ -112,7 +113,7 @@ baseItems.push({
   href: "/kuliah/aljabar-linear/basis-dan-dimensi",
 });
 
-const LEVELS: LevelFilter[] = ["Semua", "SD", "SMP", "SMA", "Kuliah", "Olimpiade"];
+const LEVELS: LevelFilter[] = ["Semua", "Kuliah", "Olimpiade"];
 const DIFFICULTIES: DifficultyFilter[] = ["Semua", "Dasar", "Menengah", "Lanjut"];
 const SUBJECTS = [
   "Semua",
@@ -211,12 +212,16 @@ export function MaterialCatalogClient() {
   }
 
   function displayLevel(value: LevelFilter) {
-    if (language === "id") return value === "Semua" ? "Semua Jenjang" : value;
+    if (language === "id") {
+      if (value === "Semua") return "Semua Jenjang";
+      if (value === "Olimpiade") return "ON-MIPA";
+      return value;
+    }
     if (value === "Semua") return "All Levels";
     if (value === "SD") return "Elementary";
     if (value === "SMP") return "Junior High";
     if (value === "SMA") return "Senior High";
-    if (value === "Olimpiade") return "Olympiad";
+    if (value === "Olimpiade") return "ON-MIPA";
     return "University";
   }
 
