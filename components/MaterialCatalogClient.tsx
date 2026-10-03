@@ -10,7 +10,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicMaterialSlug } from "@/lib/public-content";
 import { nestedDeepMaterialHrefs, subjectDeepMaterials, type SubjectDeepMaterial } from "@/data/subject-deep-materials";
 
-type LevelFilter = "Semua" | "SD" | "SMP" | "SMA" | "Kuliah" | "Olimpiade";
+type LevelFilter = "Semua" | "Kuliah";
 type TrackGroup = "Reguler" | "Olimpiade";
 type DifficultyFilter = "Semua" | "Dasar" | "Menengah" | "Lanjut";
 
@@ -38,10 +38,6 @@ type CatalogItem = {
 function levelGroup(level: string, track = ""): CatalogItem["levelGroup"] {
   const value = (level + " " + track).toLowerCase();
   if (value.includes("kuliah") || value.includes("universitas")) return "Kuliah";
-  if (value.includes("olimpiade") || value.includes("on-mipa") || value.includes("onmipa")) return "Olimpiade";
-  if (value.includes("sd")) return "SD";
-  if (value.includes("smp")) return "SMP";
-  if (value.includes("sma")) return "SMA";
   return "Kuliah";
 }
 
@@ -208,14 +204,9 @@ export function MaterialCatalogClient() {
   function displayLevel(value: LevelFilter) {
     if (language === "id") {
       if (value === "Semua") return "Semua Jenjang";
-      if (value === "Olimpiade") return "ON-MIPA";
       return value;
     }
     if (value === "Semua") return "All Levels";
-    if (value === "SD") return "Elementary";
-    if (value === "SMP") return "Junior High";
-    if (value === "SMA") return "Senior High";
-    if (value === "Olimpiade") return "ON-MIPA";
     return "University";
   }
 
