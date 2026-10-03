@@ -40,10 +40,20 @@ const hiddenPublicMaterialSlugs = new Set([
   "kombinatorika-olimpiade-sma",
   "aljabar-linear-onmipa",
   "analisis-real-onmipa",
+  "spektrum-graf",
 ]);
 
 export function isPublicMaterialSlug(slug: string) {
   return !hiddenPublicMaterialSlugs.has(slug);
+}
+
+const hiddenPublicBookSubjectSlugs = new Set([
+  "olimpiade-matematika-sma",
+  "teori-bilangan-olimpiade",
+]);
+
+export function isPublicBookSubjectSlug(slug: string) {
+  return !hiddenPublicBookSubjectSlugs.has(slug);
 }
 
 export function isPublicLearningTrackSlug(slug: string) {
@@ -58,6 +68,9 @@ export function isPublicContentHref(href: string) {
   const value = href.toLowerCase();
 
   const hiddenPrefixes = [
+    "/materi/teori-bilangan-olimpiade",
+    "/materi/olimpiade-matematika-sma",
+    "/materi/spektrum-graf",
     "/materi/pecahan",
     "/materi/persamaan-linear",
     "/materi/fungsi",
