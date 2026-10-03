@@ -539,12 +539,12 @@ function WorkedExerciseVisual({ exercise }: { exercise: IntegralWorkedExercise }
   return null;
 }
 
-function SubsectionVisual({ sectionIndex, subIndex }: { sectionIndex:number; subIndex:number }) {
+function SubsectionVisual({ sectionIndex, subIndex, subTitle }: { sectionIndex:number; subIndex:number; subTitle:string }) {
   if (sectionIndex===1 && subIndex===1) return <PartitionLabelVisual/>;
   if (sectionIndex===3 && subIndex===0) return <InteractiveRiemannDarboux/>;
   if (sectionIndex===3 && subIndex===1) return <RefinementVisual/>;
   if (sectionIndex===5 && subIndex===0) return <EquivalenceVisual/>;
-  if (sectionIndex===6 && subIndex===3) return <DiscontinuityVisual/>;
+  if (subTitle==="Fungsi Dirichlet dan Thomae") return <DiscontinuityVisual/>;
   return null;
 }
 function DirectSectionVisual({ sectionIndex, sectionTitle }: { sectionIndex:number; sectionTitle:string }) {
@@ -557,15 +557,17 @@ function DirectSectionVisual({ sectionIndex, sectionTitle }: { sectionIndex:numb
 export function IntegralRiemannDarbouxPage({ material }: { material: DeepMaterial }) {
   const sectionIds = useMemo(()=>[
     ...integralRiemannDarbouxSections.map((_,i)=>"ird-section-"+(i+1)),
+    "ird-ringkasan",
     "ird-latihan-artikel",
     "ird-latihan-soal",
     "ird-latihan30",
   ],[]);
   const [active,setActive]=useState("ird-section-1");
   const [progress,setProgress]=useState(0);
-  const articlePracticeSectionNumber=integralRiemannDarbouxSections.length+1;
-  const practiceSectionNumber=integralRiemannDarbouxSections.length+2;
-  const extraPracticeSectionNumber=integralRiemannDarbouxSections.length+3;
+  const summarySectionNumber=integralRiemannDarbouxSections.length+1;
+  const articlePracticeSectionNumber=integralRiemannDarbouxSections.length+2;
+  const practiceSectionNumber=integralRiemannDarbouxSections.length+3;
+  const extraPracticeSectionNumber=integralRiemannDarbouxSections.length+4;
 
   const stats=useMemo(()=>{
     const counts={definition:0,theorem:0,lemma:0,proposition:0,corollary:0,example:0,exercise:0};
@@ -574,6 +576,19 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
       for (const block of blocks) if (block.kind in counts) counts[block.kind as keyof typeof counts]++;
     }
     return counts;
+  },[]);
+
+  const formalSummary=useMemo(()=>{
+    const definitions:IntegralSourceBlock[]=[];
+    const theorems:IntegralSourceBlock[]=[];
+    for (const section of integralRiemannDarbouxSections) {
+      const blocks=[...section.blocks,...section.subsections.flatMap((s)=>s.blocks)];
+      for (const block of blocks) {
+        if (block.kind==="definition") definitions.push(block);
+        if (block.kind==="theorem") theorems.push(block);
+      }
+    }
+    return {definitions,theorems};
   },[]);
 
   useEffect(()=>{
@@ -618,7 +633,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
           </div>
           <div className="actions">
             <a className="btn primary" href="#ird-section-1">Mulai Bab</a>
-            <a className="btn secondary" href="#ird-latihan-artikel">Buka Latihan Soal</a>
+            <a className="btn secondary" href="#ird-ringkasan">Ringkasan & Latihan</a>
           </div>
         </div>
       </section>
@@ -632,6 +647,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               const id="ird-section-"+(index+1);
               return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(index+1).padStart(2,"0")}</span>{section.title}</a>;
             })}
+            <a href="#ird-ringkasan" className={active==="ird-ringkasan"?"active":""}><span>{String(summarySectionNumber).padStart(2,"0")}</span>Ringkasan Definisi & Teorema</a>
             <a href="#ird-latihan-artikel" className={active==="ird-latihan-artikel"?"active":""}><span>{String(articlePracticeSectionNumber).padStart(2,"0")}</span>15 Latihan Tambahan</a>
             <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span>16 Latihan Soal</a>
             <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>{String(extraPracticeSectionNumber).padStart(2,"0")}</span>30 Latihan Tambahan</a>
@@ -653,11 +669,60 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                   <div className="ird-subsection" key={sub.title}>
                     <h3>{sub.title}</h3>
                     {sub.blocks.map((block,index)=><FormalBlock key={sub.title+"-"+index} block={block} index={index} />)}
-                    <SubsectionVisual sectionIndex={sectionIndex} subIndex={subIndex} />
+                    <SubsectionVisual sectionIndex={sectionIndex} subIndex={subIndex} subTitle={sub.title} />
                   </div>
                 ))}
               </section>
             ))}
+
+            <section id="ird-ringkasan" className="book-section ird-summary-section">
+              <div className="section-number">{String(summarySectionNumber).padStart(2,"0")}</div>
+              <span className="eyebrow">Ringkasan Materi</span>
+              <h2>Ringkasan Definisi dan Teorema</h2>
+              <p>Bagian ini merangkum seluruh definisi dan teorema pada materi Integral Riemann dan Darboux. Pernyataan ditampilkan tanpa pembuktian agar dapat digunakan sebagai tinjauan cepat sebelum mengerjakan latihan soal.</p>
+
+              <div className="ird-summary-group">
+                <div className="ird-summary-heading">
+                  <div>
+                    <span className="eyebrow">Definisi</span>
+                    <h3>{formalSummary.definitions.length} definisi penting</h3>
+                  </div>
+                  <span className="ird-summary-count">{formalSummary.definitions.length}</span>
+                </div>
+                <div className="ird-summary-grid">
+                  {formalSummary.definitions.map((block,index)=>(
+                    <details className="ird-summary-card ird-summary-definition" key={"def-"+index}>
+                      <summary>
+                        <span>Definisi {index+1}</span>
+                        <strong>{block.title || "Definisi"}</strong>
+                      </summary>
+                      <div className="ird-summary-body"><SourceText text={block.body ?? ""} /></div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+
+              <div className="ird-summary-group">
+                <div className="ird-summary-heading">
+                  <div>
+                    <span className="eyebrow">Teorema</span>
+                    <h3>{formalSummary.theorems.length} teorema penting</h3>
+                  </div>
+                  <span className="ird-summary-count">{formalSummary.theorems.length}</span>
+                </div>
+                <div className="ird-summary-grid">
+                  {formalSummary.theorems.map((block,index)=>(
+                    <details className="ird-summary-card ird-summary-theorem" key={"thm-"+index}>
+                      <summary>
+                        <span>Teorema {index+1}</span>
+                        <strong>{block.title || "Teorema"}</strong>
+                      </summary>
+                      <div className="ird-summary-body"><SourceText text={block.body ?? ""} /></div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            </section>
 
             <section id="ird-latihan-artikel" className="book-section ird-practice-section">
               <div className="section-number">{String(articlePracticeSectionNumber).padStart(2,"0")}</div>
@@ -731,7 +796,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                 <p>Setelah memahami jumlah Riemann dan Darboux, Teorema Fundamental Kalkulus, fungsi diskontinu, fungsi monoton, fungsi Thomae, sifat aljabar integral, serta kriteria osilasi, uji kemampuan melalui latihan terstruktur.</p>
               </div>
               <div className="actions">
-                <a className="btn primary" href="#ird-latihan-artikel">Kerjakan Latihan Soal</a>
+                <a className="btn primary" href="#ird-ringkasan">Tinjau Ringkasan</a>
                 <Link className="btn secondary" href="/materi">Materi Lain</Link>
               </div>
             </section>
