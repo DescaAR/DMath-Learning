@@ -17,7 +17,7 @@ export const calculusBook:BookSubject={
   slug:"kalkulus",
   title:"Kalkulus",
   subtitle:"Materi kalkulus satu variabel, multivariabel, kalkulus vektor, deret, koordinat parametrik-polar, dan pengantar persamaan diferensial.",
-  level:"SMA Lanjut · Kuliah",
+  level:"Kuliah",
   source:"Maurice D. Weir, Joel Hass, & George B. Thomas Jr., Thomas’ Calculus: Early Transcendentals, 13th ed.",
   sourceYear:"2014",
   chapters:[
