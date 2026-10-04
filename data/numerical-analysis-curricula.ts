@@ -16,7 +16,7 @@ export const numericalAnalysisBook:BookSubject={
   level:"Kuliah · Scientific Computing",
   source:"Richard L. Burden & J. Douglas Faires, Numerical Analysis, 9th ed.",
   sourceYear:"2011",
-  curriculumVersion:"DMath Curriculum v1",
+  curriculumVersion:"DMath Learning v1",
   chapters:[
     {
       number:"1",
