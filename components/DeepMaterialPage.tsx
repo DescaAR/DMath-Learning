@@ -12,14 +12,13 @@ import { RichMath } from "@/components/RichMath";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
-import { normalizeMathLabel } from "@/lib/math-typography";
 
 function Text({ children }: { children: string }) {
   return <RichMath className="ird-rich-text">{children}</RichMath>;
 }
 
 function TitleText({ children }: { children: string }) {
-  return <RichMath className="math-title-inline">{normalizeMathLabel(children)}</RichMath>;
+  return <RichMath className="math-title-inline">{children}</RichMath>;
 }
 
 function isAcademicDefinition(statement:string){
