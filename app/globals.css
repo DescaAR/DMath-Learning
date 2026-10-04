@@ -3492,3 +3492,11 @@ body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   width:max-content;
   min-width:130px;
 }
+
+
+/* Problem bank filter scroll fix — large filter board must not stay pinned */
+.problem-bank-component .chip-filter-panel{
+  position:relative;
+  top:auto;
+  z-index:auto;
+}
