@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { type ReactNode, useEffect, useState } from "react";
 import { ScrollSpyToc } from "@/components/ScrollSpyToc";
-import { RichMath } from "@/components/RichMath";
+import { RichMath } from "@/components/RichMath";\nimport { emphasizeMathLabel } from "@/lib/math-typography";
 
 type Crumb={label:string;href?:string};
 type Stat={value:string|number;label:string};
@@ -11,7 +11,7 @@ type Action={label:string;href:string;kind?:"primary"|"secondary"};
 type SectionNav={id:string;label:string};
 
 function LabelMath({children}:{children:string}){
-  return <RichMath className="math-title-inline">{children}</RichMath>;
+  return <RichMath className="math-title-inline">{emphasizeMathLabel(children)}</RichMath>;
 }
 
 export function RiemannHubShell({
