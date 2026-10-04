@@ -305,7 +305,7 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
  formal:[
   D("Gauge","Gauge $\\delta$ adalah fungsi positif pada interval."),
   D("$\\delta$-fine Tagged Partition","Partisi bertanda disebut $\\delta$-fine jika setiap subinterval berada dalam neighborhood yang ditentukan gauge pada tag-nya."),
-  D("Generalized Riemann Integral","$f$ integrabel dengan nilai $I$ jika untuk setiap ε ada gauge δ sehingga setiap $\delta$-fine tagged partition menghasilkan Riemann sum dalam ε dari $I$."),
+  D("Generalized Riemann Integral","$f$ integrabel dengan nilai $I$ jika untuk setiap ε ada gauge δ sehingga setiap $\\delta$-fine tagged partition menghasilkan Riemann sum dalam ε dari $I$."),
   T("Ekstensi Riemann","Setiap fungsi Riemann-integrable juga generalized-Riemann-integrable dengan nilai sama."),
   T("Linearitas","Generalized integral linear pada kelas fungsi yang integrabel.")
  ],
