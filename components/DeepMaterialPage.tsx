@@ -167,7 +167,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                 <article className="ird-worked-card">
                   <div className="ird-worked-head">
                     <div className="ird-problem-number">EX</div>
-                    <div><span className="eyebrow">{ui("Contoh setelah definisi","Example after definition")}</span><h3><TitleText>{example.title}</TitleText></h3></div>
+                    <div><span className="eyebrow">{ui("Contoh","Example")}</span><h3><TitleText>{example.title}</TitleText></h3></div>
                   </div>
                   <div className="ird-worked-prompt"><Text>{example.problem}</Text></div>
                   <details className="ird-worked-solution">
