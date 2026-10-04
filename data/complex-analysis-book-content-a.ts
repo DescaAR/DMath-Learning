@@ -176,7 +176,7 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
  ],
  exercises:[
   {prompt:"Pisahkan bagian real/imajiner $1/z$.",hint:"Kalikan konjugat.",answer:"$u=x/(x^2+y^2)$, $v=-y/(x^2+y^2)$ untuk $z\\ne0$."},
-  {prompt:"Tentukan domain principal $\\Log z$ jika branch cut negatif digunakan.",hint:"Nol dan negative real axis dikeluarkan.",answer:"Biasanya $\\mathbb C\\setminus(-\\infty,0]$."},
+  {prompt:"Tentukan domain principal $\\operatorname{Log} z$ jika branch cut negatif digunakan.",hint:"Nol dan negative real axis dikeluarkan.",answer:"Biasanya $\\mathbb C\\setminus(-\\infty,0]$."},
   {prompt:"Untuk $f(z)=\\bar z$, tentukan $u,v$.",hint:"$\\bar z=x-iy$.",answer:"$u=x$, $v=-y$."}
  ],
  mistakes:["Menganggap semua ekspresi kompleks single-valued.","Mengabaikan domain singularitas.","Menggunakan satu variabel real saat memeriksa limit kompleks."],
@@ -399,8 +399,8 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
   D("Eksponensial Kompleks","$e^{x+iy}=e^x(\\cos y+i\\sin y)$."),
   T("Periodisitas","$e^{z+2\\pi i}=e^z$."),
   D("Logaritma Multi-valued","Untuk $z\\ne0$, $\\log z=\\ln|z|+i(\\operatorname{Arg}z+2\\pi k)$, $k\\in\\mathbb Z$."),
-  D("Principal Log","$\\Log z=\\ln|z|+i\\operatorname{Arg}z$ pada domain dengan branch cut yang sesuai."),
-  T("Turunan","$\\frac{d}{dz}e^z=e^z$ dan pada branch analytic, $(\\Log z)'=1/z$.")
+  D("Principal Log","$\\operatorname{Log} z=\\ln|z|+i\\operatorname{Arg}z$ pada domain dengan branch cut yang sesuai."),
+  T("Turunan","$\\frac{d}{dz}e^z=e^z$ dan pada branch analytic, $(\\operatorname{Log} z)'=1/z$.")
  ],
  examples:[
   {title:"Solve $e^z=1$",problem:"Tentukan semua $z$ dengan $e^z=1$.",solution:["Jika $z=x+iy$, modulus memberi $e^x=1$, sehingga $x=0$.","Sudut harus $y=2\\pi k$."],conclusion:"$z=2\\pi ik$, $k\\in\\mathbb Z$."}
@@ -410,7 +410,7 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
   {prompt:"Hitung $|e^{x+iy}|$.",hint:"Modulus bagian trig =1.",answer:"$e^x$."},
   {prompt:"Mengapa tidak ada analytic logarithm pada seluruh $\\mathbb C\\setminus\\{0\\}$?",hint:"Domain tidak simply connected dan winding around zero.",answer:"Argumen tidak dapat dipilih kontinu global di sekitar loop yang mengelilingi nol."}
  ],
- mistakes:["Menganggap complex log single-valued global.","Lupa period $2\\pi i$ pada exponential.","Menulis $\\Log(z_1z_2)=\\Log z_1+\\Log z_2$ tanpa memperhitungkan branch."],
+ mistakes:["Menganggap complex log single-valued global.","Lupa period $2\\pi i$ pada exponential.","Menulis $\\operatorname{Log}(z_1z_2)=\\operatorname{Log} z_1+\\operatorname{Log} z_2$ tanpa memperhitungkan branch."],
  connections:["Complex powers didefinisikan melalui log.","Branch cuts dan Riemann surfaces.","Residue/integration dari 1/z terkait winding."]
 },
 
@@ -418,7 +418,7 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
  intro:["Complex powers didefinisikan melalui logarithm: $z^a=e^{a\\log z}$. Karena log multi-valued, power dapat multi-valued bahkan ketika eksponen bukan integer.","Principal power dipilih dengan principal Log, tetapi sifat aljabar familiar perlu diperiksa cabangnya."],
  formal:[
   D("Complex Power","Untuk $z\\ne0$ dan $a\\in\\mathbb C$, relation $z^a=\\exp(a\\log z)$ mencakup semua cabang log."),
-  D("Principal Power","$z^a_{\\text{principal}}=\\exp(a\\Log z)$ pada branch principal."),
+  D("Principal Power","$z^a_{\\text{principal}}=\\exp(a\\operatorname{Log} z)$ pada branch principal."),
   N("Kehilangan Hukum Pangkat","Identitas seperti $(zw)^a=z^aw^a$ dapat gagal untuk principal values karena jumps argumen."),
   P("Integer Exponent","Untuk $a=n\\in\\mathbb Z$, multi-valuedness hilang dan definisi konsisten dengan pangkat aljabar biasa.")
  ],
