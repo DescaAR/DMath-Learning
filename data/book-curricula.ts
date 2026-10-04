@@ -147,7 +147,7 @@ export const complexAnalysisBook:BookSubject={
     ]},
     {number:"4",title:"Fungsi Elementer",sourceTitle:"Elementary Functions",sections:[
       r("4.1","eksponensial-dan-logaritma-kompleks","Eksponensial dan Logaritma Kompleks","Exponential and Logarithmic Functions","Definisi $e^z$, periodisitas, log multi-valued, principal Log, branches, dan branch cuts.",["complex exponential","complex logarithm","branches","principal Log","branch cut"]),
-      r("4.2","pangkat-kompleks","Pangkat Kompleks","Complex Powers","Definisi $z^a=e^{a\log z}$, multi-valuedness, principal value, dan sifat cabang.",["complex powers","log branches","principal value","rational/irrational powers","multi-valued functions"]),
+      r("4.2","pangkat-kompleks","Pangkat Kompleks","Complex Powers","Definisi $z^a=e^{a\\log z}$, multi-valuedness, principal value, dan sifat cabang.",["complex powers","log branches","principal value","rational/irrational powers","multi-valued functions"]),
       r("4.3","fungsi-trigonometri-dan-hiperbolik","Fungsi Trigonometri dan Hiperbolik Kompleks","Trigonometric and Hyperbolic Functions","Definisi melalui eksponensial, identitas, turunan, nol, dan perilaku berbeda dari fungsi real.",["sin/cos complex","sinh/cosh","Euler formulas","zeros","derivatives"]),
       r("4.4","invers-trigonometri-dan-hiperbolik","Fungsi Invers Trigonometri dan Hiperbolik","Inverse Trigonometric and Hyperbolic Functions","Representasi logaritmik, multivaluedness, branches, dan principal values.",["inverse trig","inverse hyperbolic","log representation","branches","principal values"]),
       r("4.5","aplikasi-fungsi-elementer","Aplikasi Fungsi Elementer","Applications","Aplikasi fungsi elementer kompleks pada gelombang, potensial, dan transformasi.",["waves","potential","mapping","oscillation","applications"]),
@@ -170,7 +170,7 @@ export const complexAnalysisBook:BookSubject={
       r("6.7","aplikasi-residu","Aplikasi Residu","Applications","Teknik residu dalam transformasi, sistem fisis, dan evaluasi integral lanjutan.",["residue applications","transforms","improper integrals","oscillatory integrals","models"]),
     ]},
     {number:"7",title:"Pemetaan Konformal",sourceTitle:"Conformal Mappings",sections:[
-      r("7.1","pemetaan-konformal","Pemetaan Konformal","Conformal Mapping","Pelestarian sudut, syarat $f'(z_0)\ne0$, local scaling/rotation, dan contoh.",["angle preservation","nonzero derivative","local similarity","orientation","analytic maps"]),
+      r("7.1","pemetaan-konformal","Pemetaan Konformal","Conformal Mapping","Pelestarian sudut, syarat $f'(z_0)\\ne0$, local scaling/rotation, dan contoh.",["angle preservation","nonzero derivative","local similarity","orientation","analytic maps"]),
       r("7.2","transformasi-linear-fraksional","Transformasi Linear Fraksional","Linear Fractional Transformations","Transformasi Möbius, extended plane, inverse, cross ratio, dan circle-preserving property.",["Mobius transformation","extended plane","inverse","cross ratio","circles/lines"]),
       r("7.3","transformasi-schwarz-christoffel","Transformasi Schwarz–Christoffel","Schwarz-Christoffel Transformations","Pemetaan half-plane ke poligon dan hubungan eksponen dengan sudut interior.",["Schwarz-Christoffel","upper half-plane","polygons","interior angles","mapping"]),
       r("7.4","formula-integral-poisson","Formula Integral Poisson","Poisson Integral Formulas","Solusi harmonik pada disk/half-plane dan boundary data.",["Poisson kernel","harmonic extension","disk","half-plane","boundary values"]),
