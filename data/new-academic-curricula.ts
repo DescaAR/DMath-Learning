@@ -5741,11 +5741,11 @@ export const newAcademicSubjects:BookSubject[]=seeds.map((subject)=>({
   level:subject.level,
   source:subject.source,
   sourceYear:subject.sourceYear,
-  curriculumVersion:"DMath Curriculum v1",
+  curriculumVersion:"DMath Learning v1",
   chapters:subject.units.map(([title,sections],unitIndex)=>({
     number:String(unitIndex+1),
     title,
-    sourceTitle:"DMath Learning Curriculum",
+    sourceTitle:"DMath Learning",
     sections:sections.map((section,sectionIndex)=>s(unitIndex+1,sectionIndex+1,section)),
   })),
 }));
