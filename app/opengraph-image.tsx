@@ -147,24 +147,6 @@ export default function Image() {
             </div>
           </div>
         </div>
-
-        <div
-          style={{
-            position: "absolute",
-            left: 84,
-            bottom: 52,
-            display: "flex",
-            alignItems: "center",
-            gap: 12,
-            fontSize: 18,
-            fontWeight: 700,
-            letterSpacing: "0.12em",
-            textTransform: "uppercase",
-            color: "rgba(255,255,255,0.68)",
-          }}
-        >
-          Mathematics Learning Platform
-        </div>
       </div>
     ),
     size
