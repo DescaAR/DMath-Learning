@@ -3526,3 +3526,33 @@ h2 .math-inline,
 h3 .math-inline{
   color:inherit;
 }
+
+
+/* Stronger KaTeX weight for heading math */
+.math-title-inline .math-inline{
+  display:inline-block;
+  color:inherit;
+  vertical-align:-0.015em;
+}
+.math-title-inline .math-inline .katex{
+  color:inherit;
+  font-size:.99em;
+}
+.math-title-inline .math-inline .katex *,
+.eyebrow .math-inline .katex *,
+.ird-formal-head>strong .math-inline .katex *,
+.ird-worked-head h3 .math-inline .katex *,
+h1 .math-inline .katex *,
+h2 .math-inline .katex *,
+h3 .math-inline .katex *{
+  color:inherit;
+  -webkit-text-stroke:.28px currentColor;
+  text-shadow:
+    .18px 0 currentColor,
+    -.18px 0 currentColor,
+    0 .18px currentColor,
+    0 -.18px currentColor;
+}
+.eyebrow .math-inline .katex *{
+  -webkit-text-stroke:.34px currentColor;
+}
