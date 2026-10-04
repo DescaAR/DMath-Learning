@@ -177,7 +177,7 @@ export function BookSectionPage({
                 <div className="ird-formal-head"><span>Definisi</span><strong><TitleText>{item.title}</TitleText></strong></div>
                 <div className="ird-formal-body"><Text>{item.statement}</Text></div>
               </article>
-              {example&&<ExampleCard example={example} label={"Contoh · "+item.title}/>}
+              {example&&<ExampleCard example={example} label="Contoh"/>}
             </div>
           );
         }):(
