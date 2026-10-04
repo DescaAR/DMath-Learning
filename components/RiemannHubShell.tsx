@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { type ReactNode, useEffect, useState } from "react";
 import { ScrollSpyToc } from "@/components/ScrollSpyToc";
-import { RichMath } from "@/components/RichMath";\nimport { HeadingMath } from "@/components/HeadingMath";
+import { RichMath } from "@/components/RichMath";
+import { HeadingMath } from "@/components/HeadingMath";
 
 type Crumb={label:string;href?:string};
 type Stat={value:string|number;label:string};
