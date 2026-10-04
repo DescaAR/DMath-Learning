@@ -60,12 +60,12 @@ function visualizationForSubject(slug:BookSubject["slug"]):VisualizationKind{
   return map[slug];
 }
 
-function ExampleCard({example,label="Contoh"}:{example:BookExample;label?:string}){
+function ExampleCard({example}:{example:BookExample}){
   return(
     <article className="ird-worked-card">
       <div className="ird-worked-head">
         <div className="ird-problem-number">EX</div>
-        <div><span className="eyebrow"><TitleText>{label}</TitleText></span><h3><TitleText>{example.title}</TitleText></h3></div>
+        <div><span className="eyebrow">Contoh</span><h3><TitleText>{example.title}</TitleText></h3></div>
       </div>
       <div className="ird-worked-prompt"><Text>{example.problem}</Text></div>
       <details className="ird-worked-solution">
@@ -177,7 +177,7 @@ export function BookSectionPage({
                 <div className="ird-formal-head"><span>Definisi</span><strong><TitleText>{item.title}</TitleText></strong></div>
                 <div className="ird-formal-body"><Text>{item.statement}</Text></div>
               </article>
-              {example&&<ExampleCard example={example} label="Contoh"/>}
+              {example&&<ExampleCard example={example}/>}
             </div>
           );
         }):(
