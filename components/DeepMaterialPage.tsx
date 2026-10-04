@@ -17,7 +17,7 @@ function Text({ children }: { children: string }) {
   return <RichMath className="ird-rich-text">{children}</RichMath>;
 }
 
-function TitleText({ children }: { children: string }) {\n  return <HeadingMath>{children}</HeadingMath>;\n}
+function TitleText({ children }: { children: string }) {\n  return <RichMath className="math-title-inline">{children}</RichMath>;\n}
 
 function isAcademicDefinition(statement:string){
   const normalized=statement.trim().toLowerCase();
