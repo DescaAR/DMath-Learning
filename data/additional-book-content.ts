@@ -9,24 +9,24 @@ function genericContent(subjectTitle:string,chapterTitle:string,sectionTitle:str
   const notation =
     subjectTitle==="Aljabar Linear" ? [
       {symbol:"$V,W$",meaning:"ruang vektor"},
-      {symbol:"$\operatorname{span}(S)$",meaning:"span himpunan vektor $S$"},
-      {symbol:"$\ker T$",meaning:"kernel transformasi linear $T$"},
-      {symbol:"$\operatorname{im}T$",meaning:"image transformasi linear $T$"},
-      {symbol:"$\lambda$",meaning:"skalar atau nilai eigen sesuai konteks"},
+      {symbol:"$\\operatorname{span}(S)$",meaning:"span himpunan vektor $S$"},
+      {symbol:"$\\ker T$",meaning:"kernel transformasi linear $T$"},
+      {symbol:"$\\operatorname{im}T$",meaning:"image transformasi linear $T$"},
+      {symbol:"$\\lambda$",meaning:"skalar atau nilai eigen sesuai konteks"},
     ] : subjectTitle==="Struktur Aljabar" ? [
       {symbol:"$(G,*)$",meaning:"grup dengan operasi biner $*$"},
-      {symbol:"$H\le G$",meaning:"$H$ subgrup dari $G$"},
+      {symbol:"$H\\le G$",meaning:"$H$ subgrup dari $G$"},
       {symbol:"$G/N$",meaning:"grup faktor oleh subgrup normal $N$"},
       {symbol:"$R/I$",meaning:"ring faktor oleh ideal $I$"},
-      {symbol:"$\varphi$",meaning:"homomorfisma sesuai konteks"},
+      {symbol:"$\\varphi$",meaning:"homomorfisma sesuai konteks"},
     ] : subjectTitle==="Kombinatorika" ? [
-      {symbol:"$\binom nk$",meaning:"banyak cara memilih $k$ objek dari $n$ objek"},
+      {symbol:"$\\binom nk$",meaning:"banyak cara memilih $k$ objek dari $n$ objek"},
       {symbol:"$|A|$",meaning:"kardinalitas himpunan $A$"},
       {symbol:"G=(V,E)",meaning:"graf dengan simpul $V$ dan sisi $E$"},
       {symbol:"$a_n$",meaning:"suku ke-$n$ suatu barisan"},
       {symbol:"$[x^n]F(x)$",meaning:"koefisien $x^n$ pada fungsi pembangkit $F$"},
     ] : [
-      {symbol:"$n,k\in\mathbb Z$",meaning:"parameter integer yang digunakan pada konteks diskret"},
+      {symbol:"$n,k\\in\\mathbb Z$",meaning:"parameter integer yang digunakan pada konteks diskret"},
       {symbol:"$S$",meaning:"himpunan atau ruang objek yang sedang dipelajari"},
       {symbol:"$|S|$",meaning:"banyak elemen pada $S$"},
       {symbol:"$P$",meaning:"pernyataan, pola, atau struktur sesuai submateri"},
