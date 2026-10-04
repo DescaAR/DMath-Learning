@@ -8,7 +8,6 @@ import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import type { BookChapter, BookSection, BookSubject } from "@/data/book-curricula";
 import type { BookExample, BookFormalKind, BookLessonContent } from "@/data/book-content-types";
-import { normalizeMathLabel } from "@/lib/math-typography";
 
 const kindLabel:Record<BookFormalKind,string>={
   definition:"Definisi",
@@ -24,7 +23,7 @@ function Text({children}:{children:string}){
 }
 
 function TitleText({children}:{children:string}){
-  return <RichMath className="math-title-inline">{normalizeMathLabel(children)}</RichMath>;
+  return <RichMath className="math-title-inline">{children}</RichMath>;
 }
 
 function isAcademicDefinition(statement:string){
