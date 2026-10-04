@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
-import { RichMath } from "@/components/RichMath";
+import { RichMath } from "@/components/RichMath";\nimport { HeadingMath } from "@/components/HeadingMath";
 import { MathVisualization, type VisualizationKind } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
@@ -22,9 +22,7 @@ function Text({children}:{children:string}){
   return <RichMath className="ird-rich-text">{children}</RichMath>;
 }
 
-function TitleText({children}:{children:string}){
-  return <RichMath className="math-title-inline">{children}</RichMath>;
-}
+function TitleText({children}:{children:string}){\n  return <HeadingMath>{children}</HeadingMath>;\n}
 
 function isAcademicDefinition(statement:string){
   const normalized=statement.trim().toLowerCase();
