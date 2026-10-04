@@ -176,7 +176,7 @@ const specs: Record<string, MeasureProbabilityLessonSpec> = {
       ]}
     ],
     examples:[
-      {title:"Dua State",problem:"Untuk $P=\\begin{pmatrix}0.8&0.2\\0.3&0.7\\end{pmatrix}$ dan distribusi awal $(1,0)$, tentukan distribusi setelah satu langkah.",solution:["Kalikan distribusi baris awal dengan $P$."],conclusion:"Distribusinya $(0.8,0.2)$."}
+      {title:"Dua State",problem:"Untuk $P=\\begin{pmatrix}0.8&0.2\\\\0.3&0.7\\end{pmatrix}$ dan distribusi awal $(1,0)$, tentukan distribusi setelah satu langkah.",solution:["Kalikan distribusi baris awal dengan $P$."],conclusion:"Distribusinya $(0.8,0.2)$."}
     ],
     connections:"Matriks transisi menghubungkan probabilitas dengan aljabar linear. State classification dan stationary distribution menjadi tahap berikutnya."
   },
@@ -436,7 +436,7 @@ const specs: Record<string, MeasureProbabilityLessonSpec> = {
       ]}
     ],
     examples:[
-      {title:"Dua Tipe",problem:"Jika $E[Z_0]=(1,0)$ dan $M=\\begin{pmatrix}1&1\\0&1\\end{pmatrix}$, tentukan $E[Z_1]$.",solution:["Kalikan vektor awal dengan matriks mean."],conclusion:"$E[Z_1]=(1,1)$."}
+      {title:"Dua Tipe",problem:"Jika $E[Z_0]=(1,0)$ dan $M=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$, tentukan $E[Z_1]$.",solution:["Kalikan vektor awal dengan matriks mean."],conclusion:"$E[Z_1]=(1,1)$."}
     ],
     connections:"Perron–Frobenius memberi eigenvalue dominan yang mengontrol laju pertumbuhan rata-rata untuk matriks nonnegatif irreducible."
   },
