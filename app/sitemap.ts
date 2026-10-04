@@ -6,6 +6,7 @@ import { basisDimensionProblems } from "@/data/basis-dimension-problems";
 import { learningTrackPages } from "@/data/learning-track-pages";
 import { olympiadHubs } from "@/data/olympiad-hubs";
 import { isPublicAcademicLevel, isPublicBookSubjectSlug, isPublicLearningTrackSlug, isPublicOlympiadHubSlug, isPublicMaterialSlug } from "@/lib/public-content";
+import { subjectProblemBankSummaries } from "@/data/subject-problem-banks";
 
 export const dynamic = "force-static";
 
@@ -35,6 +36,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const problemRoutes = basisDimensionProblems.map(
     (problem) => "/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi/" + problem.id.toLowerCase()
   );
+  const subjectBankRoutes = subjectProblemBankSummaries.map(
+    (bank) => "/bank-soal/kuliah/" + bank.slug
+  );
 
   const routes = Array.from(new Set([
     ...staticRoutes,
@@ -44,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...bookSubjectRoutes,
     ...bookSectionRoutes,
     ...problemRoutes,
+    ...subjectBankRoutes,
   ]));
 
   return routes.map((route) => ({
