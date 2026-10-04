@@ -4,11 +4,16 @@ import Link from "next/link";
 import { type ReactNode, useEffect, useState } from "react";
 import { ScrollSpyToc } from "@/components/ScrollSpyToc";
 import { RichMath } from "@/components/RichMath";
+import { normalizeMathLabel } from "@/lib/math-typography";
 
 type Crumb={label:string;href?:string};
 type Stat={value:string|number;label:string};
 type Action={label:string;href:string;kind?:"primary"|"secondary"};
 type SectionNav={id:string;label:string};
+
+function LabelMath({children}:{children:string}){
+  return <RichMath className="math-title-inline">{normalizeMathLabel(children)}</RichMath>;
+}
 
 export function RiemannHubShell({
   breadcrumbs=[],
@@ -76,27 +81,27 @@ export function RiemannHubShell({
               {breadcrumbs.map((crumb,index)=>(
                 <span key={crumb.label+index} style={{display:"contents"}}>
                   {index>0&&<span>/</span>}
-                  {crumb.href?<Link href={crumb.href}><RichMath>{crumb.label}</RichMath></Link>:<strong><RichMath>{crumb.label}</RichMath></strong>}
+                  {crumb.href?<Link href={crumb.href}><LabelMath>{crumb.label}</LabelMath></Link>:<strong><LabelMath>{crumb.label}</LabelMath></strong>}
                 </span>
               ))}
             </div>
           )}
 
-          <div className="chapter-label-row"><span className="eyebrow"><RichMath>{eyebrow}</RichMath></span></div>
-          <h1><RichMath>{title}</RichMath></h1>
+          <div className="chapter-label-row"><span className="eyebrow"><LabelMath>{eyebrow}</LabelMath></span></div>
+          <h1><LabelMath>{title}</LabelMath></h1>
           {lead&&<p className="chapter-lead"><RichMath>{lead}</RichMath></p>}
 
-          {meta.length>0&&<div className="chapter-meta textbook-meta">{meta.map((item)=><span key={item}><RichMath>{item}</RichMath></span>)}</div>}
+          {meta.length>0&&<div className="chapter-meta textbook-meta">{meta.map((item)=><span key={item}><LabelMath>{item}</LabelMath></span>)}</div>}
 
           {stats.length>0&&(
             <div className="chapter-stat-grid">
-              {stats.map((stat)=><div key={stat.label}><strong>{stat.value}</strong><span><RichMath>{stat.label}</RichMath></span></div>)}
+              {stats.map((stat)=><div key={stat.label}><strong>{stat.value}</strong><span><LabelMath>{stat.label}</LabelMath></span></div>)}
             </div>
           )}
 
           {actions.length>0&&(
             <div className="actions">
-              {actions.map((action)=><Link key={action.label} className={"btn "+(action.kind??"secondary")} href={action.href}><RichMath>{action.label}</RichMath></Link>)}
+              {actions.map((action)=><Link key={action.label} className={"btn "+(action.kind??"secondary")} href={action.href}><LabelMath>{action.label}</LabelMath></Link>)}
             </div>
           )}
         </div>
@@ -105,12 +110,12 @@ export function RiemannHubShell({
       {showOverview&&(
         <section id={overviewId} className="section ird-overview">
           <div className="container narrow">
-            <span className="eyebrow"><RichMath>{overviewEyebrow}</RichMath></span>
-            <h2><RichMath>{overviewTitle}</RichMath></h2>
+            <span className="eyebrow"><LabelMath>{overviewEyebrow}</LabelMath></span>
+            <h2><LabelMath>{overviewTitle}</LabelMath></h2>
             {overviewText&&<p><RichMath>{overviewText}</RichMath></p>}
             {roadmap.length>0&&(
               <div className="ird-roadmap">
-                {roadmap.map((item,index)=><div key={item+index}><span>{String(index+1).padStart(2,"0")}</span><strong><RichMath>{item}</RichMath></strong></div>)}
+                {roadmap.map((item,index)=><div key={item+index}><span>{String(index+1).padStart(2,"0")}</span><strong><LabelMath>{item}</LabelMath></strong></div>)}
               </div>
             )}
           </div>
