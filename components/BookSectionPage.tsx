@@ -128,7 +128,7 @@ export function BookSectionPage({
         {label:"Bab "+chapter.number+" · "+chapter.title,href:"/materi/"+subject.slug+"#book-chapter-"+chapter.number.replaceAll(".","-")},
         {label:section.title},
       ]}
-      eyebrow={subject.title+" · "+section.number+" · DMath Curriculum"}
+      eyebrow={subject.title+" · "+section.number}
       title={section.title}
       lead={section.summary}
       meta={[
