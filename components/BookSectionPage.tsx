@@ -7,7 +7,7 @@ import { MathVisualization, type VisualizationKind } from "@/components/MathVisu
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import type { BookChapter, BookSection, BookSubject } from "@/data/book-curricula";
-import type { BookExample, BookFormalKind, BookLessonContent } from "@/data/book-content-types";
+import type { BookExample, BookFormalKind, BookLessonContent } from "@/data/book-content-types";\nimport { emphasizeMathLabel } from "@/lib/math-typography";
 
 const kindLabel:Record<BookFormalKind,string>={
   definition:"Definisi",
@@ -23,7 +23,7 @@ function Text({children}:{children:string}){
 }
 
 function TitleText({children}:{children:string}){
-  return <RichMath className="math-title-inline">{children}</RichMath>;
+  return <RichMath className="math-title-inline">{emphasizeMathLabel(children)}</RichMath>;
 }
 
 function isAcademicDefinition(statement:string){
