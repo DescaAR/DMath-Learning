@@ -16,7 +16,6 @@ const DIFFICULTY_ORDER: SubjectProblemDifficulty[] = ["Dasar", "Menengah", "Suli
 export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
   const [query, setQuery] = useState("");
   const [chapter, setChapter] = useState("Semua");
-  const [section, setSection] = useState("Semua");
   const [difficulty, setDifficulty] = useState<"Semua" | SubjectProblemDifficulty>("Semua");
   const [kind, setKind] = useState<"Semua" | SubjectProblemKind>("Semua");
   const [page, setPage] = useState(1);
@@ -33,21 +32,6 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
       ),
     [bank.problems]
   );
-
-  const sections = useMemo(() => {
-    const source =
-      chapter === "Semua"
-        ? bank.problems
-        : bank.problems.filter((problem) => problem.chapterNumber === chapter);
-    return Array.from(
-      new Map(
-        source.map((problem) => [
-          problem.sectionNumber,
-          problem.sectionNumber + " · " + problem.sectionTitle,
-        ])
-      ).entries()
-    );
-  }, [bank.problems, chapter]);
 
   const kinds = useMemo(
     () => Array.from(new Set(bank.problems.map((problem) => problem.kind))),
@@ -80,12 +64,11 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
       return (
         (!q || haystack.includes(q)) &&
         (chapter === "Semua" || problem.chapterNumber === chapter) &&
-        (section === "Semua" || problem.sectionNumber === section) &&
         (difficulty === "Semua" || problem.difficulty === difficulty) &&
         (kind === "Semua" || problem.kind === kind)
       );
     });
-  }, [bank.problems, query, chapter, section, difficulty, kind]);
+  }, [bank.problems, query, chapter, difficulty, kind]);
 
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const safePage = Math.min(page, pageCount);
@@ -97,7 +80,6 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
   function resetFilters() {
     setQuery("");
     setChapter("Semua");
-    setSection("Semua");
     setDifficulty("Semua");
     setKind("Semua");
     setPage(1);
@@ -113,8 +95,7 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
     if (!hasFilteredProblems) {
       setQuery("");
       setChapter("Semua");
-      setSection("Semua");
-      setDifficulty("Semua");
+        setDifficulty("Semua");
       setKind("Semua");
     }
 
@@ -236,8 +217,7 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
               className={"filter-chip" + (chapter === "Semua" ? " active" : "")}
               onClick={() => {
                 setChapter("Semua");
-                setSection("Semua");
-                setPage(1);
+                            setPage(1);
               }}
             >
               Semua Bab
@@ -249,37 +229,7 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
                 className={"filter-chip" + (chapter === value ? " active" : "")}
                 onClick={() => {
                   setChapter(value);
-                  setSection("Semua");
-                  setPage(1);
-                }}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="filter-chip-group bank-chip-group">
-          <span className="filter-chip-label">Submateri</span>
-          <div className="filter-chips bank-filter-chips">
-            <button
-              type="button"
-              className={"filter-chip" + (section === "Semua" ? " active" : "")}
-              onClick={() => {
-                setSection("Semua");
-                setPage(1);
-              }}
-            >
-              Semua Submateri
-            </button>
-            {sections.map(([value, label]) => (
-              <button
-                key={value}
-                type="button"
-                className={"filter-chip" + (section === value ? " active" : "")}
-                onClick={() => {
-                  setSection(value);
-                  setPage(1);
+                                setPage(1);
                 }}
               >
                 {label}
