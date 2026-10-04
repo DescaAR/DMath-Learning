@@ -282,7 +282,7 @@ const dmathCurriculumBlueprints:Partial<Record<BookSubject["slug"],CurriculumUni
 };
 
 function buildDMathCurriculum(subject:BookSubject):BookSubject{
-  if(subject.curriculumVersion==="DMath Curriculum v1")return subject;
+  if(subject.curriculumVersion==="DMath Learning v1")return subject;
   const blueprint=dmathCurriculumBlueprints[subject.slug]??[];
   const byChapter=new Map(subject.chapters.map((chapter)=>[chapter.number,chapter]));
   const used=new Set<string>();
@@ -321,7 +321,7 @@ function buildDMathCurriculum(subject:BookSubject):BookSubject{
 
   return{
     ...subject,
-    curriculumVersion:"DMath Curriculum v1",
+    curriculumVersion:"DMath Learning v1",
     subtitle:subject.subtitle,
     chapters,
   };
