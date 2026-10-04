@@ -8,7 +8,7 @@ import { materialPracticeExtra } from "@/data/material-practice-extra";
 import { formalChapterContent } from "@/data/formal-chapter-content";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
-import { RichMath } from "@/components/RichMath";
+import { RichMath } from "@/components/RichMath";\nimport { HeadingMath } from "@/components/HeadingMath";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -17,9 +17,7 @@ function Text({ children }: { children: string }) {
   return <RichMath className="ird-rich-text">{children}</RichMath>;
 }
 
-function TitleText({ children }: { children: string }) {
-  return <RichMath className="math-title-inline">{children}</RichMath>;
-}
+function TitleText({ children }: { children: string }) {\n  return <HeadingMath>{children}</HeadingMath>;\n}
 
 function isAcademicDefinition(statement:string){
   const normalized=statement.trim().toLowerCase();
