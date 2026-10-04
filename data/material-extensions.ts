@@ -420,7 +420,7 @@ export const materialExtensions: Record<string, ExtensionUnit[]> = {
         {id:"Barisan $(a_n)$ disebut Cauchy jika untuk setiap $\\varepsilon>0$ terdapat $N$ sehingga $|a_n-a_m|<\\varepsilon$ untuk semua $m,n\\ge N$.",en:"A sequence $(a_n)$ is Cauchy if for every $\\varepsilon>0$ there exists $N$ such that $|a_n-a_m|<\\varepsilon$ for all $m,n\\ge N$."},
         {id:"Di $\\mathbb R$, setiap barisan Cauchy konvergen. Pernyataan ini ekuivalen dengan kelengkapan bilangan real.",en:"In $\\mathbb R$, every Cauchy sequence converges. This statement is equivalent to completeness of the real numbers."}
       ],
-      formulas:["$$\\forall\\varepsilon>0\\;\\exists N\\;\\forall m,n\\ge N:\ |a_n-a_m|<\\varepsilon.$$"],
+      formulas:["$$\\forall\\varepsilon>0\\;\\exists N\\;\\forall m,n\\ge N:\\ |a_n-a_m|<\\varepsilon.$$"],
       theorem:{
         name:{id:"Barisan konvergen adalah Cauchy",en:"Every Convergent Sequence Is Cauchy"},
         statement:{id:"Jika $a_n\\to L$, maka $(a_n)$ adalah Cauchy.",en:"If $a_n\\to L$, then $(a_n)$ is Cauchy."},
