@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { type ReactNode, useEffect, useState } from "react";
 import { ScrollSpyToc } from "@/components/ScrollSpyToc";
+import { RichMath } from "@/components/RichMath";
 
 type Crumb={label:string;href?:string};
 type Stat={value:string|number;label:string};
@@ -75,27 +76,27 @@ export function RiemannHubShell({
               {breadcrumbs.map((crumb,index)=>(
                 <span key={crumb.label+index} style={{display:"contents"}}>
                   {index>0&&<span>/</span>}
-                  {crumb.href?<Link href={crumb.href}>{crumb.label}</Link>:<strong>{crumb.label}</strong>}
+                  {crumb.href?<Link href={crumb.href}><RichMath>{crumb.label}</RichMath></Link>:<strong><RichMath>{crumb.label}</RichMath></strong>}
                 </span>
               ))}
             </div>
           )}
 
-          <div className="chapter-label-row"><span className="eyebrow">{eyebrow}</span></div>
-          <h1>{title}</h1>
-          {lead&&<p className="chapter-lead">{lead}</p>}
+          <div className="chapter-label-row"><span className="eyebrow"><RichMath>{eyebrow}</RichMath></span></div>
+          <h1><RichMath>{title}</RichMath></h1>
+          {lead&&<p className="chapter-lead"><RichMath>{lead}</RichMath></p>}
 
-          {meta.length>0&&<div className="chapter-meta textbook-meta">{meta.map((item)=><span key={item}>{item}</span>)}</div>}
+          {meta.length>0&&<div className="chapter-meta textbook-meta">{meta.map((item)=><span key={item}><RichMath>{item}</RichMath></span>)}</div>}
 
           {stats.length>0&&(
             <div className="chapter-stat-grid">
-              {stats.map((stat)=><div key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}
+              {stats.map((stat)=><div key={stat.label}><strong>{stat.value}</strong><span><RichMath>{stat.label}</RichMath></span></div>)}
             </div>
           )}
 
           {actions.length>0&&(
             <div className="actions">
-              {actions.map((action)=><Link key={action.label} className={"btn "+(action.kind??"secondary")} href={action.href}>{action.label}</Link>)}
+              {actions.map((action)=><Link key={action.label} className={"btn "+(action.kind??"secondary")} href={action.href}><RichMath>{action.label}</RichMath></Link>)}
             </div>
           )}
         </div>
@@ -104,12 +105,12 @@ export function RiemannHubShell({
       {showOverview&&(
         <section id={overviewId} className="section ird-overview">
           <div className="container narrow">
-            <span className="eyebrow">{overviewEyebrow}</span>
-            <h2>{overviewTitle}</h2>
-            {overviewText&&<p>{overviewText}</p>}
+            <span className="eyebrow"><RichMath>{overviewEyebrow}</RichMath></span>
+            <h2><RichMath>{overviewTitle}</RichMath></h2>
+            {overviewText&&<p><RichMath>{overviewText}</RichMath></p>}
             {roadmap.length>0&&(
               <div className="ird-roadmap">
-                {roadmap.map((item,index)=><div key={item+index}><span>{String(index+1).padStart(2,"0")}</span><strong>{item}</strong></div>)}
+                {roadmap.map((item,index)=><div key={item+index}><span>{String(index+1).padStart(2,"0")}</span><strong><RichMath>{item}</RichMath></strong></div>)}
               </div>
             )}
           </div>
