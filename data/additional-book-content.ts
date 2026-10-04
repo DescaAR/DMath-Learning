@@ -86,8 +86,8 @@ function textbookFormal(subjectTitle:string,chapterTitle:string,sectionTitle:str
       return[
         {kind:"definition",title:"Matriks Invertibel",statement:"Matriks persegi $A$ disebut invertibel jika terdapat matriks $A^{-1}$ dengan $AA^{-1}=A^{-1}A=I$."},
         {kind:"proposition",title:"Keunikan Invers",statement:"Jika invers suatu matriks ada, invers tersebut tunggal.",proof:["Andaikan $B$ dan $C$ keduanya invers dari $A$.","Diperoleh $B=BI=B(AC)=(BA)C=IC=C$.","Dengan demikian invers $A$ tunggal."]},
-        {kind:"proposition",title:"Invers Hasil Kali",statement:"Jika $A$ dan $B$ invertibel, maka $AB$ invertibel dan $(AB)^{-1}=B^{-1}A^{-1}$.",proof:["Hitung $(AB)(B^{-1}A^{-1})=AIB^{-0+0}A^{-1}=I$ setelah menyederhanakan $BB^{-1}=I$.","Demikian pula $(B^{-1}A^{-1})(AB)=I$.","Karena matriks tersebut menjadi invers kiri dan kanan, formula terbukti."]}
-      ].map((item)=>item.title==="Invers Hasil Kali"?{...item,proof:["Dihitung $(AB)(B^{-1}A^{-1})=A(BB^{-1})A^{-1}=AA^{-1}=I$.","Dihitung pula $(B^{-1}A^{-1})(AB)=B^{-1}(A^{-1}A)B=B^{-1}B=I$.","Dengan demikian $B^{-1}A^{-1}$ adalah invers dari $AB$."]}:item);
+        {kind:"proposition",title:"Invers Hasil Kali",statement:"Jika $A$ dan $B$ invertibel, maka $AB$ invertibel dan $(AB)^{-1}=B^{-1}A^{-1}$.",proof:["Dihitung $(AB)(B^{-1}A^{-1})=A(BB^{-1})A^{-1}=AA^{-1}=I$.","Dihitung pula $(B^{-1}A^{-1})(AB)=B^{-1}(A^{-1}A)B=B^{-1}B=I$.","Dengan demikian $B^{-1}A^{-1}$ adalah invers dari $AB$."]}
+      ];
     }
     if(/determinant|determinan|cramer|cofactor/.test(text)){
       return[
