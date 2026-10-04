@@ -9,7 +9,6 @@ import { formalChapterContent } from "@/data/formal-chapter-content";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
-import { HeadingMath } from "@/components/HeadingMath";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
