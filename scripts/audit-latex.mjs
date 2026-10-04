@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import katex from "katex";
 
 const root=process.cwd();
 const files=[];
@@ -30,7 +31,22 @@ for(const file of files){
           path.relative(root,file)+":"+(index+1)+
           ": unescaped LaTeX backslash inside $...$."
         );
-        break;
+        continue;
+      }
+
+      const runtimeTex=match[1].replace(/\\\\/g,"\\");
+      try{
+        katex.renderToString(runtimeTex,{
+          throwOnError:true,
+          strict:"ignore",
+          trust:false,
+          output:"htmlAndMathml"
+        });
+      }catch(error){
+        failures.push(
+          path.relative(root,file)+":"+(index+1)+
+          ": invalid KaTeX: "+String(error?.message??error)
+        );
       }
     }
 
