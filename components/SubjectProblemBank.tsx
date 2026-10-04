@@ -4,14 +4,21 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { RichMath } from "@/components/RichMath";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
-import type { SubjectProblemBank as SubjectProblemBankData } from "@/data/subject-problem-banks";
+import type {
+  SubjectProblemBank as SubjectProblemBankData,
+  SubjectProblemDifficulty,
+  SubjectProblemKind,
+} from "@/data/subject-problem-banks";
 
 const PAGE_SIZE = 20;
+const DIFFICULTY_ORDER: SubjectProblemDifficulty[] = ["Dasar", "Menengah", "Sulit"];
 
 export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
   const [query, setQuery] = useState("");
   const [chapter, setChapter] = useState("Semua");
   const [section, setSection] = useState("Semua");
+  const [difficulty, setDifficulty] = useState<"Semua" | SubjectProblemDifficulty>("Semua");
+  const [kind, setKind] = useState<"Semua" | SubjectProblemKind>("Semua");
   const [page, setPage] = useState(1);
 
   const chapters = useMemo(
@@ -42,6 +49,19 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
     );
   }, [bank.problems, chapter]);
 
+  const kinds = useMemo(
+    () => Array.from(new Set(bank.problems.map((problem) => problem.kind))),
+    [bank.problems]
+  );
+
+  const difficulties = useMemo(
+    () =>
+      DIFFICULTY_ORDER.filter((value) =>
+        bank.problems.some((problem) => problem.difficulty === value)
+      ),
+    [bank.problems]
+  );
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return bank.problems.filter((problem) => {
@@ -49,6 +69,8 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
         problem.id,
         problem.chapterTitle,
         problem.sectionTitle,
+        problem.kind,
+        problem.difficulty,
         problem.prompt,
         ...problem.concepts,
       ]
@@ -58,10 +80,12 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
       return (
         (!q || haystack.includes(q)) &&
         (chapter === "Semua" || problem.chapterNumber === chapter) &&
-        (section === "Semua" || problem.sectionNumber === section)
+        (section === "Semua" || problem.sectionNumber === section) &&
+        (difficulty === "Semua" || problem.difficulty === difficulty) &&
+        (kind === "Semua" || problem.kind === kind)
       );
     });
-  }, [bank.problems, query, chapter, section]);
+  }, [bank.problems, query, chapter, section, difficulty, kind]);
 
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const safePage = Math.min(page, pageCount);
@@ -74,19 +98,26 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
     setQuery("");
     setChapter("Semua");
     setSection("Semua");
+    setDifficulty("Semua");
+    setKind("Semua");
     setPage(1);
   }
 
   function randomProblem() {
-    const pool = filtered.length ? filtered : bank.problems;
+    const hasFilteredProblems = filtered.length > 0;
+    const pool = hasFilteredProblems ? filtered : bank.problems;
     const picked = pool[Math.floor(Math.random() * pool.length)];
-    const target = document.getElementById("soal-" + picked.id.toLowerCase());
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-      return;
-    }
-    const pickedIndex = bank.problems.findIndex((problem) => problem.id === picked.id);
+    const pickedIndex = pool.findIndex((problem) => problem.id === picked.id);
     const nextPage = Math.floor(pickedIndex / PAGE_SIZE) + 1;
+
+    if (!hasFilteredProblems) {
+      setQuery("");
+      setChapter("Semua");
+      setSection("Semua");
+      setDifficulty("Semua");
+      setKind("Semua");
+    }
+
     setPage(nextPage);
     window.setTimeout(() => {
       document
@@ -102,8 +133,8 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
           <span className="eyebrow">Bank Soal Lengkap</span>
           <h2>{bank.problemCount} soal {bank.title}</h2>
           <p>
-            Soal dihimpun dari seluruh bab dan submateri {bank.title}. Gunakan
-            filter untuk berlatih per bab atau topik.
+            Soal dihimpun dari seluruh bab dan submateri {bank.title}, termasuk
+            latihan, pemahaman konsep, definisi, pembuktian, dan contoh.
           </p>
         </div>
         <button className="btn secondary" type="button" onClick={randomProblem}>
@@ -122,7 +153,7 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
                 setQuery(event.target.value);
                 setPage(1);
               }}
-              placeholder="Cari ID, topik, konsep, atau isi soal..."
+              placeholder="Cari ID, topik, konsep, tipe, atau isi soal..."
             />
             {query && (
               <button
@@ -138,6 +169,64 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
             )}
           </div>
         </label>
+
+        <div className="filter-chip-group bank-chip-group">
+          <span className="filter-chip-label">Tingkat</span>
+          <div className="filter-chips bank-filter-chips">
+            <button
+              type="button"
+              className={"filter-chip" + (difficulty === "Semua" ? " active" : "")}
+              onClick={() => {
+                setDifficulty("Semua");
+                setPage(1);
+              }}
+            >
+              Semua Tingkat
+            </button>
+            {difficulties.map((value) => (
+              <button
+                key={value}
+                type="button"
+                className={"filter-chip" + (difficulty === value ? " active" : "")}
+                onClick={() => {
+                  setDifficulty(value);
+                  setPage(1);
+                }}
+              >
+                {value}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="filter-chip-group bank-chip-group">
+          <span className="filter-chip-label">Tipe Soal</span>
+          <div className="filter-chips bank-filter-chips">
+            <button
+              type="button"
+              className={"filter-chip" + (kind === "Semua" ? " active" : "")}
+              onClick={() => {
+                setKind("Semua");
+                setPage(1);
+              }}
+            >
+              Semua Tipe
+            </button>
+            {kinds.map((value) => (
+              <button
+                key={value}
+                type="button"
+                className={"filter-chip" + (kind === value ? " active" : "")}
+                onClick={() => {
+                  setKind(value);
+                  setPage(1);
+                }}
+              >
+                {value}
+              </button>
+            ))}
+          </div>
+        </div>
 
         <div className="filter-chip-group bank-chip-group">
           <span className="filter-chip-label">Bab</span>
@@ -230,6 +319,11 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
                   </span>
                   <h3>{problem.sectionNumber} · {problem.sectionTitle}</h3>
                 </div>
+              </div>
+
+              <div className="concept-pills compact-pills">
+                <span>{problem.difficulty}</span>
+                <span>{problem.kind}</span>
               </div>
 
               <div className="ird-worked-prompt">
