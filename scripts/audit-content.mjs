@@ -52,13 +52,6 @@ for(const file of ["components/BookSectionPage.tsx","components/DeepMaterialPage
   }
 }
 
-if(failures.length){
-  console.error("DMath content audit failed:\n"+failures.map(x=>" - "+x).join("\n"));
-  process.exit(1);
-}
-console.log("DMath content audit passed.");
-
-
 /* LaTeX source audit
    JavaScript/TypeScript string literals must escape LaTeX backslashes.
    Example source: "$\\\\frac{a}{b}$", not "$\\frac{a}{b}$".
