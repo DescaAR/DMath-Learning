@@ -303,7 +303,7 @@ function buildContent(subjectSlug:string,subjectTitle:string,chapterNumber:strin
   const ideaText=keyIdeas.join(", ");
   const intro=[
     summary,
-    "Submateri ini merupakan bagian dari jalur belajar "+subjectTitle+" pada DMath Curriculum. Pembahasan dimulai dari persoalan yang memotivasi konsep, dilanjutkan dengan struktur formal, lalu dihubungkan dengan perhitungan, pembuktian, dan interpretasi.",
+    "Submateri ini merupakan bagian dari jalur belajar "+subjectTitle+". Pembahasan dimulai dari persoalan yang memotivasi konsep, dilanjutkan dengan struktur formal, lalu dihubungkan dengan perhitungan, pembuktian, dan interpretasi.",
     "Peta konsep halaman ini meliputi "+ideaText+". Setiap istilah dipelajari bersama syarat pemakaiannya, representasi visual, dan hubungan dengan materi sebelum maupun sesudahnya.",
     "Fokus belajar bukan sekadar memperoleh jawaban akhir. Setiap langkah perlu menjawab tiga pertanyaan: objek apa yang sedang dipelajari, sifat apa yang diketahui, dan hasil mana yang sah digunakan dari sifat tersebut.",
     "Pada bagian contoh, metode akan dibandingkan dengan interpretasi geometris, aljabar, kombinatorial, atau fisis sesuai karakter topik. Visualisasi digunakan sebagai alat memahami struktur, bukan pengganti pembuktian.",
@@ -339,7 +339,7 @@ function buildContent(subjectSlug:string,subjectTitle:string,chapterNumber:strin
       "Tidak memeriksa kembali hasil dengan definisi, substitusi, estimasi, atau interpretasi visual."
     ],
     connections:[
-      "Submateri ini terhubung dengan unit sebelum dan sesudahnya dalam DMath Curriculum.",
+      "Submateri ini terhubung dengan unit sebelum dan sesudahnya.",
       "Konsep "+(keyIdeas[0]??sectionTitle)+" akan digunakan kembali pada materi lanjutan dalam buku yang sama.",
       "Representasi simbolik perlu dibandingkan dengan representasi visual untuk memahami struktur.",
       "Contoh kecil berfungsi sebagai laboratorium untuk menemukan pola sebelum menyusun pembuktian umum.",
