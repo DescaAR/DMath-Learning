@@ -131,7 +131,7 @@ export const materialExplorations: Record<string, MaterialExploration[]> = {
       title:{id:"Eksplorasi operator idempoten",en:"Investigating Idempotent Operators"},
       goal:{id:"Menghubungkan persamaan operator dengan kernel, image, eigenvalue, dan diagonalizability.",en:"Connect an operator identity with kernel, image, eigenvalues, and diagonalizability."},
       tasks:[
-        {id:"Ambil matriks $P=\\begin{pmatrix}1&0\\0&0\\end{pmatrix}$ dan verifikasi $P^2=P$.",en:"Take $P=\\begin{pmatrix}1&0\\0&0\\end{pmatrix}$ and verify $P^2=P$."},
+        {id:"Ambil matriks $P=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}$ dan verifikasi $P^2=P$.",en:"Take $P=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}$ and verify $P^2=P$."},
         {id:"Tentukan kernel dan image $P$.",en:"Find the kernel and image of $P$."},
         {id:"Bandingkan basis kernel-image dengan eigenvektor untuk nilai eigen $0$ dan $1$.",en:"Compare kernel/image bases with eigenvectors for eigenvalues $0$ and $1$."}
       ],
