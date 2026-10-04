@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: siteConfig.name + " — " + siteConfig.tagline,
-    description: siteConfig.description,
+    title: siteConfig.name,
+    description: siteConfig.tagline,
     url: siteConfig.url,
     siteName: siteConfig.name,
     locale: siteConfig.locale,
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name + " — " + siteConfig.tagline,
-    description: siteConfig.description,
+    title: siteConfig.name,
+    description: siteConfig.tagline,
     images: [absoluteUrl(siteConfig.ogImage)],
   },
 };
