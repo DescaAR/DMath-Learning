@@ -167,6 +167,191 @@ const profiles:Record<string,Profile>={
   }
 };
 
+
+function textbookFormalFallback(subject:string,title:string,keyIdeas:string[]):BookFormalItem[]{
+  const text=(title+" "+keyIdeas.join(" ")).toLowerCase();
+
+  if(subject==="riset-operasi"){
+    if(/linear|simplex|feasible|objective|constraint/.test(text))return[
+      {kind:"definition",title:"Daerah Feasible",statement:"Daerah feasible adalah himpunan seluruh vektor keputusan yang memenuhi semua kendala model."},
+      {kind:"proposition",title:"Konveksitas Daerah Feasible Program Linear",statement:"Daerah feasible yang ditentukan oleh kendala linear merupakan himpunan konveks.",proof:["Diambil dua titik feasible $x$ dan $y$ serta $0\\le t\\le1$.","Untuk kendala $Ax\\le b$ dan $Ay\\le b$, diperoleh $A(tx+(1-t)y)=tAx+(1-t)Ay\\le tb+(1-t)b=b$.","Kendala persamaan dan nonnegativitas juga dipertahankan oleh kombinasi konveks.","Dengan demikian $tx+(1-t)y$ feasible."]},
+      {kind:"note",title:"Titik Ekstrem dan Simplex",statement:"Metode simplex memanfaatkan fakta bahwa jika program linear mempunyai optimum hingga, terdapat solusi optimal pada titik ekstrem daerah feasible."}
+    ];
+    if(/dual|shadow|sensitiv/.test(text))return[
+      {kind:"definition",title:"Masalah Dual",statement:"Masalah dual dibentuk dengan menukar peran kendala dan variabel serta menghubungkan koefisien melalui transpose matriks kendala."},
+      {kind:"theorem",title:"Dualitas Lemah",statement:"Untuk primal maksimum $\\max\\{c^Tx:Ax\\le b,x\\ge0\\}$ dan dual minimum $\\min\\{b^Ty:A^Ty\\ge c,y\\ge0\\}$, setiap pasangan feasible memenuhi $c^Tx\\le b^Ty$.",proof:["Dari $A^Ty\\ge c$ dan $x\\ge0$ diperoleh $x^TA^Ty\\ge c^Tx$.","Dari $Ax\\le b$ dan $y\\ge0$ diperoleh $y^TAx\\le y^Tb$.","Karena $x^TA^Ty=y^TAx$, diperoleh $c^Tx\\le b^Ty$."]},
+      {kind:"note",title:"Interpretasi Harga Bayangan",statement:"Pada rentang sensitivitas yang sah, variabel dual dapat ditafsirkan sebagai perubahan marginal nilai optimal terhadap perubahan ruas kanan kendala."}
+    ];
+    if(/transport|assignment|shortest|spanning|flow|network/.test(text))return[
+      {kind:"definition",title:"Model Jaringan",statement:"Model jaringan merepresentasikan keputusan melalui simpul dan busur yang dapat membawa biaya, kapasitas, jarak, atau aliran."},
+      {kind:"proposition",title:"Konservasi Aliran",statement:"Pada simpul transshipment, jumlah aliran masuk sama dengan jumlah aliran keluar.",proof:["Simpul transshipment tidak menciptakan atau menghilangkan komoditas.","Neraca massa pada simpul memberi jumlah masuk dikurangi jumlah keluar sama dengan nol.","Persamaan tersebut ekuivalen dengan konservasi aliran."]}
+    ];
+    if(/dynamic|bellman|stage|state/.test(text))return[
+      {kind:"definition",title:"State dan Stage",statement:"Dalam dynamic programming, stage menyatakan tahap keputusan, sedangkan state merangkum informasi yang diperlukan untuk menentukan keputusan optimal berikutnya."},
+      {kind:"proposition",title:"Prinsip Optimalitas Bellman",statement:"Bagian sisa dari kebijakan optimal harus optimal untuk submasalah yang dimulai dari state yang dicapai setelah keputusan awal.",proof:["Andaikan sisa kebijakan tidak optimal untuk state yang dicapai.","Ganti sisa tersebut dengan kebijakan yang lebih baik untuk submasalah itu.","Keputusan awal tetap sama, tetapi nilai keseluruhan membaik.","Hal ini bertentangan dengan optimalitas kebijakan semula."]}
+    ];
+    if(/queue|antrean|markov|poisson/.test(text))return[
+      {kind:"definition",title:"Intensitas Lalu Lintas",statement:"Pada antrean satu server dasar, utilisasi didefinisikan oleh $\\rho=\\lambda/\\mu$, dengan $\\lambda$ laju kedatangan dan $\\mu$ laju pelayanan."},
+      {kind:"proposition",title:"Kondisi Stabilitas Dasar M/M/1",statement:"Model M/M/1 mempunyai distribusi steady-state normalizable hanya jika $\\rho<1$.",proof:["Persamaan keseimbangan menghasilkan $p_n=\\rho^n p_0$.","Jumlah probabilitas adalah $p_0\\sum_{n\\ge0}\\rho^n$.","Deret geometri tersebut berhingga tepat ketika $|\\rho|<1$.","Karena laju nonnegatif, syaratnya menjadi $\\rho<1$."]}
+    ];
+    if(/inventory|newsvendor/.test(text))return[
+      {kind:"definition",title:"Biaya Persediaan",statement:"Model inventory menyeimbangkan biaya pemesanan, penyimpanan, kekurangan, dan pembelian sesuai struktur permintaan."},
+      {kind:"proposition",title:"EOQ Dasar",statement:"Untuk permintaan tahunan $D$, biaya pesan $K$, dan biaya simpan per unit per tahun $h$, kuantitas ekonomis adalah $Q^*=\\sqrt{2KD/h}$.",proof:["Biaya relevan per tahun adalah $C(Q)=KD/Q+hQ/2$.","Turunan pertama adalah $C'(Q)=-KD/Q^2+h/2$.","Persamaan $C'(Q)=0$ memberi $Q^2=2KD/h$.","Karena $C''(Q)=2KD/Q^3>0$, titik tersebut meminimumkan biaya."]}
+    ];
+    if(/nonlinear|kkt|quadratic|convex/.test(text))return[
+      {kind:"definition",title:"Fungsi Konveks",statement:"Fungsi $f$ konveks pada himpunan konveks jika $f(tx+(1-t)y)\\le tf(x)+(1-t)f(y)$ untuk $0\\le t\\le1$."},
+      {kind:"proposition",title:"Minimum Lokal Fungsi Konveks",statement:"Setiap minimum lokal fungsi konveks pada himpunan konveks adalah minimum global.",proof:["Andaikan $x^*$ minimum lokal tetapi terdapat $y$ dengan $f(y)<f(x^*)$.","Untuk $t>0$ kecil, titik $z=(1-t)x^*+ty$ berada sebarang dekat dengan $x^*$.","Konveksitas memberi $f(z)\\le(1-t)f(x^*)+tf(y)<f(x^*)$.","Ini bertentangan dengan minimum lokal."]}
+    ];
+  }
+
+  if(subject==="statistika-terapan"){
+    if(/sampling|survei|observational|experiment|randomi|design/.test(text))return[
+      {kind:"definition",title:"Unit Eksperimen dan Perlakuan",statement:"Unit eksperimen adalah objek terkecil yang menerima perlakuan secara independen, sedangkan perlakuan adalah kondisi yang sengaja diterapkan peneliti."},
+      {kind:"proposition",title:"Peran Randomisasi",statement:"Randomisasi mengubah penetapan perlakuan menjadi mekanisme probabilistik yang membantu memutus hubungan sistematis antara perlakuan dan faktor pengganggu sebelum perlakuan.",proof:["Sebelum randomisasi, karakteristik unit dapat berkorelasi dengan pilihan perlakuan.","Penetapan acak membuat peluang menerima perlakuan ditentukan oleh mekanisme randomisasi, bukan karakteristik unit.","Akibatnya bias sistematis dari aturan penetapan dapat dikendalikan dalam inferensi berbasis desain."]}
+    ];
+    if(/descriptive|mean|median|variance|boxplot|histogram/.test(text))return[
+      {kind:"definition",title:"Rata-rata dan Varians Sampel",statement:"Untuk data $x_1,\\ldots,x_n$, rata-rata sampel adalah $\\bar x=n^{-1}\\sum_i x_i$ dan varians sampel adalah $s^2=(n-1)^{-1}\\sum_i(x_i-\\bar x)^2$."},
+      {kind:"proposition",title:"Dekomposisi Jumlah Kuadrat",statement:"Untuk setiap konstanta $a$, berlaku $\\sum_i(x_i-a)^2=\\sum_i(x_i-\\bar x)^2+n(\\bar x-a)^2$.",proof:["Tuliskan $x_i-a=(x_i-\\bar x)+(\\bar x-a)$.","Kuadratkan dan jumlahkan terhadap $i$.","Suku silang lenyap karena $\\sum_i(x_i-\\bar x)=0$.","Tersisa dua suku pada identitas."]}
+    ];
+    if(/confidence|interval|estim|sample mean|proportion/.test(text))return[
+      {kind:"definition",title:"Interval Kepercayaan",statement:"Interval kepercayaan adalah prosedur berbasis sampel yang menghasilkan interval acak dengan tingkat cakupan tertentu terhadap parameter di bawah model dan metode sampling yang ditetapkan."},
+      {kind:"proposition",title:"Standard Error Rata-rata",statement:"Jika $X_1,\\ldots,X_n$ independen dengan varians $\\sigma^2$, maka $\\operatorname{Var}(\\bar X)=\\sigma^2/n$.",proof:["Gunakan linearitas varians untuk peubah acak independen.","$\\operatorname{Var}(\\bar X)=n^{-2}\\sum_i\\operatorname{Var}(X_i)=n^{-2}(n\\sigma^2)=\\sigma^2/n$."]}
+    ];
+    if(/hypothesis|uji|p-value|significance/.test(text))return[
+      {kind:"definition",title:"p-value",statement:"p-value adalah probabilitas, di bawah hipotesis nol dan model yang digunakan, memperoleh statistik uji yang setidaknya se-ekstrem nilai observasi menurut arah alternatif."},
+      {kind:"note",title:"Kesalahan Tipe I dan Tipe II",statement:"Kesalahan Tipe I terjadi ketika $H_0$ benar tetapi ditolak; kesalahan Tipe II terjadi ketika $H_0$ salah tetapi tidak ditolak."}
+    ];
+    if(/regression|regresi|correlation|korelasi/.test(text))return[
+      {kind:"definition",title:"Model Regresi Linear",statement:"Model regresi linear sederhana ditulis $Y_i=\\beta_0+\\beta_1x_i+\\varepsilon_i$, dengan asumsi terhadap error disesuaikan dengan tujuan inferensi."},
+      {kind:"proposition",title:"Persamaan Normal",statement:"Estimator least squares memenuhi $\\sum_i e_i=0$ dan $\\sum_i x_ie_i=0$.",proof:["Minimalkan $S(\\beta_0,\\beta_1)=\\sum_i(y_i-\\beta_0-\\beta_1x_i)^2$.","Turunan parsial terhadap kedua parameter disamakan dengan nol.","Dua persamaan hasil diferensiasi tepat menjadi persamaan normal yang dinyatakan."]}
+    ];
+    if(/anova|factorial|block|latin|ancova|repeated|mixed/.test(text))return[
+      {kind:"definition",title:"Faktor dan Level",statement:"Faktor adalah variabel perlakuan atau klasifikasi yang dipelajari, sedangkan level adalah nilai atau kategori faktor yang dibandingkan."},
+      {kind:"proposition",title:"Dekomposisi ANOVA Satu Arah",statement:"Dalam ANOVA satu arah, $SS_T=SS_{Tr}+SS_E$.",proof:["Tuliskan $y_{ij}-\\bar y_{..}=(\\bar y_{i.}-\\bar y_{..})+(y_{ij}-\\bar y_{i.})$.","Kuadratkan dan jumlahkan.","Suku silang hilang karena residual dalam setiap kelompok berjumlah nol.","Diperoleh jumlah kuadrat total sebagai jumlah antara-perlakuan dan error."]}
+    ];
+  }
+
+  if(subject==="statistika-matematika"){
+    if(/probability|probabilitas|axiom|conditional|independ/.test(text))return[
+      {kind:"definition",title:"Ukuran Probabilitas",statement:"Ukuran probabilitas $P$ pada $(\\Omega,\\mathcal F)$ memenuhi $P(\\Omega)=1$, $P(A)\\ge0$, dan countable additivity pada kejadian saling lepas."},
+      {kind:"proposition",title:"Aturan Bayes",statement:"Jika $B_1,\\ldots,B_k$ partisi dengan probabilitas positif, maka $P(B_j\\mid A)=\\frac{P(A\\mid B_j)P(B_j)}{\\sum_iP(A\\mid B_i)P(B_i)}$ untuk $P(A)>0$.",proof:["Gunakan definisi $P(B_j\\mid A)=P(A\\cap B_j)/P(A)$.","Pembilang sama dengan $P(A\\mid B_j)P(B_j)$.","Hukum probabilitas total memberi penyebut $P(A)=\\sum_iP(A\\mid B_i)P(B_i)$."]}
+    ];
+    if(/random variable|distribution|density|cdf|transform/.test(text))return[
+      {kind:"definition",title:"Fungsi Distribusi Kumulatif",statement:"CDF peubah acak $X$ adalah $F_X(x)=P(X\\le x)$."},
+      {kind:"proposition",title:"Sifat CDF",statement:"Setiap CDF monoton tak turun, kontinu dari kanan, serta mempunyai limit 0 di $-\\infty$ dan 1 di $+\\infty$.",proof:["Monotonisitas mengikuti inklusi kejadian $\\{X\\le x\\}\\subseteq\\{X\\le y\\}$ untuk $x<y$.","Kontinuitas dari kanan mengikuti continuity from above untuk kejadian $\\{X\\le x_n\\}$ dengan $x_n\\downarrow x$.","Dua limit ujung mengikuti continuity of probability pada kejadian yang meningkat ke $\\Omega$ atau menurun ke $\\varnothing$."]}
+    ];
+    if(/expectation|variance|moment|mgf/.test(text))return[
+      {kind:"definition",title:"Ekspektasi",statement:"Ekspektasi $E[X]$ adalah integral $\\int X\\,dP$ ketika terdefinisi; pada kasus diskret menjadi $\\sum_x xP(X=x)$."},
+      {kind:"proposition",title:"Linearitas Ekspektasi",statement:"Jika $X$ dan $Y$ integrabel, maka $E[aX+bY]=aE[X]+bE[Y]$.",proof:["Ekspektasi didefinisikan sebagai integral terhadap ukuran probabilitas.","Linearitas integral memberi hasil langsung."]}
+    ];
+    if(/sampling distribution|chi-square|student|order statistic/.test(text))return[
+      {kind:"definition",title:"Statistik",statement:"Statistik adalah fungsi dari sampel acak yang tidak bergantung pada parameter populasi yang tidak diketahui."},
+      {kind:"proposition",title:"Mean dan Varians Rata-rata Sampel",statement:"Untuk sampel iid dengan mean $\\mu$ dan varians $\\sigma^2$, berlaku $E[\\bar X]=\\mu$ dan $\\operatorname{Var}(\\bar X)=\\sigma^2/n$.",proof:["Linearitas ekspektasi memberi $E[\\bar X]=n^{-1}\\sum_i\\mu=\\mu$.","Independensi memberi $\\operatorname{Var}(\\bar X)=n^{-2}\\sum_i\\sigma^2=\\sigma^2/n$."]}
+    ];
+    if(/likelihood|maximum likelihood|mle|estimator|unbiased|cramer|fisher/.test(text))return[
+      {kind:"definition",title:"Likelihood",statement:"Untuk data teramati $x$, likelihood $L(\\theta;x)$ adalah fungsi parameter yang diperoleh dari joint density atau mass function sampel dengan $x$ dipandang tetap."},
+      {kind:"proposition",title:"Invariansi MLE",statement:"Jika $\\widehat\\theta$ memaksimumkan likelihood dan $\\eta=g(\\theta)$ dengan transformasi satu-satu pada ruang parameter, maka $g(\\widehat\\theta)$ adalah MLE untuk $\\eta$.",proof:["Menulis parameter baru tidak mengubah urutan nilai likelihood pada titik-titik parameter yang berkorespondensi.","Karena transformasi satu-satu, maksimum pada skala $\\theta$ berkorespondensi tepat dengan maksimum pada skala $\\eta$."]}
+    ];
+    if(/sufficien|factorization|complete statistic/.test(text))return[
+      {kind:"definition",title:"Statistik Cukup",statement:"Statistik $T(X)$ cukup untuk parameter $\\theta$ jika distribusi kondisional sampel diberikan $T(X)$ tidak bergantung pada $\\theta$."},
+      {kind:"note",title:"Kriteria Faktorisasi",statement:"Pada model terdominasi, sufficiency dapat diperiksa melalui faktorisasi joint density menjadi $g_\\theta(T(x))h(x)$."}
+    ];
+    if(/hypothesis|neyman|likelihood ratio|ump|test/.test(text))return[
+      {kind:"definition",title:"Power Uji",statement:"Power pada parameter $\\theta$ adalah probabilitas menolak $H_0$ ketika nilai parameter sebenarnya adalah $\\theta$."},
+      {kind:"note",title:"Prinsip Neyman–Pearson",statement:"Untuk hipotesis sederhana melawan sederhana, likelihood ratio menghasilkan uji most powerful pada taraf yang ditentukan."}
+    ];
+    if(/asymptotic|central limit|delta|convergence/.test(text))return[
+      {kind:"theorem",title:"Central Limit Theorem IID",statement:"Jika $X_i$ iid dengan mean $\\mu$ dan varians $0<\\sigma^2<\\infty$, maka $\\frac{\\sqrt n(\\bar X_n-\\mu)}{\\sigma}$ konvergen dalam distribusi ke $N(0,1)$."},
+      {kind:"note",title:"Peran CLT",statement:"CLT menjelaskan mengapa aproksimasi normal muncul pada banyak statistik yang dibentuk sebagai jumlah atau rata-rata."}
+    ];
+    if(/bayes|posterior|prior/.test(text))return[
+      {kind:"definition",title:"Distribusi Posterior",statement:"Dalam inferensi Bayesian, posterior memenuhi $\\pi(\\theta\\mid x)\\propto L(\\theta;x)\\pi(\\theta)$."},
+      {kind:"proposition",title:"Posterior sebagai Pembaruan",statement:"Rasio posterior dua nilai parameter sama dengan rasio prior dikalikan likelihood ratio.",proof:["Tuliskan formula Bayes untuk kedua nilai parameter.","Konstanta normalisasi yang sama saling menghilangkan ketika dibagi.","Tersisa hasil kali prior odds dan likelihood ratio."]}
+    ];
+  }
+
+  if(subject==="matematika-diskrit"){
+    if(/logic|logika|proposition|predikat|quantifier|inferensi/.test(text))return[
+      {kind:"definition",title:"Tautologi",statement:"Tautologi adalah proposisi majemuk yang bernilai benar untuk setiap penetapan nilai kebenaran variabel proposisionalnya."},
+      {kind:"proposition",title:"Kontraposisi",statement:"Implikasi $P\\to Q$ ekuivalen secara logis dengan kontraposisinya $\\neg Q\\to\\neg P$.",proof:["$P\\to Q$ ekuivalen dengan $\\neg P\\lor Q$.","$\\neg Q\\to\\neg P$ ekuivalen dengan $Q\\lor\\neg P$.","Kedua disjungsi sama oleh komutativitas."]}
+    ];
+    if(/proof|bukti|induction|induksi/.test(text))return[
+      {kind:"theorem",title:"Prinsip Induksi Matematika",statement:"Jika $P(1)$ benar dan $P(k)\\Rightarrow P(k+1)$ untuk setiap $k\\ge1$, maka $P(n)$ benar untuk seluruh $n\\ge1$.",proof:["Andaikan himpunan bilangan asli yang membuat $P$ salah tidak kosong.","Ambil elemen terkecil $m$ dari himpunan tersebut.","Karena basis benar, $m>1$, sehingga $P(m-1)$ benar.","Langkah induksi memberi $P(m)$ benar, kontradiksi."]}
+    ];
+    if(/set|himpunan|function|fungsi|sequence|sum/.test(text))return[
+      {kind:"definition",title:"Fungsi",statement:"Fungsi $f:A\\to B$ memasangkan setiap elemen domain $A$ dengan tepat satu elemen kodomain $B$."},
+      {kind:"proposition",title:"Komposisi Fungsi Injektif",statement:"Jika $f:A\\to B$ dan $g:B\\to C$ injektif, maka $g\\circ f$ injektif.",proof:["Andaikan $(g\\circ f)(x_1)=(g\\circ f)(x_2)$.","Injektivitas $g$ memberi $f(x_1)=f(x_2)$.","Injektivitas $f$ memberi $x_1=x_2$."]}
+    ];
+    if(/divisib|prime|gcd|congru|modular|number theory/.test(text))return[
+      {kind:"definition",title:"Kongruensi",statement:"Untuk $m\\ge1$, $a\\equiv b\\pmod m$ jika dan hanya jika $m\\mid(a-b)$."},
+      {kind:"proposition",title:"Kompatibilitas Kongruensi",statement:"Jika $a\\equiv b\\pmod m$ dan $c\\equiv d\\pmod m$, maka $a+c\\equiv b+d\\pmod m$ dan $ac\\equiv bd\\pmod m$.",proof:["Dari hipotesis, $m\\mid(a-b)$ dan $m\\mid(c-d)$.","Jumlah selisih memberi $m\\mid[(a+c)-(b+d)]$.","Untuk hasil kali, $ac-bd=c(a-b)+b(c-d)$, yang juga habis dibagi $m$."]}
+    ];
+    if(/recurr|rekur|algorithm|algoritma|complexity/.test(text))return[
+      {kind:"definition",title:"Relasi Rekurensi",statement:"Relasi rekurensi mendefinisikan suku barisan melalui suku-suku sebelumnya bersama kondisi awal."},
+      {kind:"note",title:"Kebenaran Algoritma",statement:"Analisis algoritma membedakan kebenaran, terminasi, dan kompleksitas. Loop invariant sering digunakan untuk membuktikan kebenaran iteratif."}
+    ];
+    if(/count|permut|kombin|pigeon|inclusion|binomial/.test(text))return[
+      {kind:"theorem",title:"Prinsip Pigeonhole Umum",statement:"Jika $N$ objek ditempatkan ke $k$ kotak, terdapat kotak yang memuat sedikitnya $\\lceil N/k\\rceil$ objek.",proof:["Jika semua kotak memuat paling banyak $\\lceil N/k\\rceil-1$, jumlah objek kurang dari $N$.","Kontradiksi memberi hasil yang dinyatakan."]},
+      {kind:"proposition",title:"Koefisien Binomial",statement:"Banyak $r$-subhimpunan dari himpunan beranggota $n$ adalah $\\binom nr=\\frac{n!}{r!(n-r)!}$.",proof:["Hitung ordered selections sebanyak $n!/(n-r)!$.","Setiap subset dihitung $r!$ kali oleh urutan unsur.","Bagi dengan $r!$."]}
+    ];
+    if(/relation|relasi|equivalence|partial order/.test(text))return[
+      {kind:"definition",title:"Relasi Ekuivalensi",statement:"Relasi pada himpunan disebut ekuivalensi jika refleksif, simetris, dan transitif."},
+      {kind:"theorem",title:"Relasi Ekuivalensi dan Partisi",statement:"Setiap relasi ekuivalensi menghasilkan partisi menjadi kelas ekuivalensi, dan setiap partisi menghasilkan relasi ekuivalensi.",proof:["Kelas ekuivalensi dua elemen yang beririsan harus sama oleh simetri dan transitivitas, sehingga kelas-kelas membentuk partisi.","Sebaliknya, definisikan $x\\sim y$ jika keduanya berada pada blok partisi yang sama.","Relasi tersebut langsung refleksif, simetris, dan transitif."]}
+    ];
+    if(/graph|graf|degree|path|cycle|tree|pohon|spanning|color/.test(text))return[
+      {kind:"definition",title:"Graf Sederhana",statement:"Graf sederhana $G=(V,E)$ mempunyai sisi berupa pasangan tak berurut dua simpul berbeda."},
+      {kind:"theorem",title:"Handshaking Theorem",statement:"Pada graf hingga, $\\sum_{v\\in V}\\deg(v)=2|E|$.",proof:["Hitung pasangan insidensi simpul–sisi.","Dari sisi simpul terdapat $\\sum_v\\deg(v)$ pasangan.","Setiap sisi mempunyai dua ujung, sehingga dari sisi sisi terdapat $2|E|$ pasangan."]}
+    ];
+    if(/boolean|automata|finite-state|turing/.test(text))return[
+      {kind:"definition",title:"Aljabar Boolean",statement:"Aljabar Boolean menggunakan operasi logika seperti AND, OR, dan komplemen pada elemen yang memenuhi hukum-hukum Boolean."},
+      {kind:"definition",title:"Finite-State Machine",statement:"Finite-state machine terdiri atas himpunan state hingga, alfabet input, fungsi transisi, state awal, dan bila relevan himpunan state penerima."}
+    ];
+  }
+
+  if(subject==="kalkulus-stokastik"){
+    if(/conditional expectation|ekspektasi bersyarat|filtration|filtrasi/.test(text))return[
+      {kind:"definition",title:"Ekspektasi Bersyarat",statement:"$E[X\\mid\\mathcal G]$ adalah peubah acak $\\mathcal G$-measurable yang mempunyai integral sama dengan $X$ pada setiap kejadian $A\\in\\mathcal G$."},
+      {kind:"proposition",title:"Tower Property",statement:"Jika $\\mathcal H\\subseteq\\mathcal G$, maka $E[E[X\\mid\\mathcal G]\\mid\\mathcal H]=E[X\\mid\\mathcal H]$.",proof:["Kedua sisi $\\mathcal H$-measurable.","Untuk setiap $A\\in\\mathcal H$, integral sisi kiri pada $A$ sama dengan integral $E[X\\mid\\mathcal G]$ pada $A$.","Karena $A\\in\\mathcal G$, integral tersebut sama dengan integral $X$ pada $A$.","Keunikan ekspektasi bersyarat memberi identitas."]}
+    ];
+    if(/martingale|optional|stopping/.test(text))return[
+      {kind:"definition",title:"Martingale",statement:"Proses adapted integrabel $(M_n)$ adalah martingale jika $E[M_{n+1}\\mid\\mathcal F_n]=M_n$."},
+      {kind:"proposition",title:"Martingale Memiliki Mean Konstan",statement:"Jika $(M_n)$ martingale integrabel, maka $E[M_n]=E[M_0]$ untuk seluruh $n$.",proof:["Ambil ekspektasi pada identitas martingale.","Tower property memberi $E[M_{n+1}]=E[E[M_{n+1}\\mid\\mathcal F_n]]=E[M_n]$.","Iterasi terhadap $n$ memberi mean konstan."]}
+    ];
+    if(/brownian|wiener/.test(text))return[
+      {kind:"definition",title:"Brownian Motion Standar",statement:"Proses $(W_t)_{t\\ge0}$ mempunyai $W_0=0$, increment independen dan stasioner, $W_t-W_s\\sim N(0,t-s)$ untuk $t>s$, serta lintasan kontinu hampir pasti."},
+      {kind:"proposition",title:"Momen Brownian Motion",statement:"Untuk Brownian motion standar, $E[W_t]=0$ dan $E[W_t^2]=t$.",proof:["Dari definisi increment dengan $s=0$, $W_t\\sim N(0,t)$.","Mean distribusi tersebut adalah 0 dan variansnya $t$.","Karena mean nol, momen kedua sama dengan varians."]}
+    ];
+    if(/quadratic variation|variasi kuadratik/.test(text))return[
+      {kind:"proposition",title:"Quadratic Variation Brownian Motion",statement:"Sepanjang partisi dengan mesh menuju nol, jumlah $\\sum_i(W_{t_{i+1}}-W_{t_i})^2$ konvergen ke $t$ dalam probabilitas pada interval $[0,t]$."},
+      {kind:"note",title:"Makna Koreksi Itô",statement:"Quadratic variation yang tidak nol menjelaskan munculnya suku turunan kedua pada formula Itô."}
+    ];
+    if(/ito integral|integral itô|ito isometry|isometri/.test(text))return[
+      {kind:"definition",title:"Integral Itô untuk Proses Sederhana",statement:"Untuk proses adapted sederhana $H_s=\\sum_iH_i1_{(t_i,t_{i+1}]}(s)$, didefinisikan $\\int_0^tH_s\\,dW_s=\\sum_iH_i(W_{t_{i+1}\\wedge t}-W_{t_i\\wedge t})$."},
+      {kind:"theorem",title:"Isometri Itô",statement:"Untuk integrand square-integrable adapted, $E[(\\int_0^tH_s\\,dW_s)^2]=E[\\int_0^tH_s^2\\,ds]$.",proof:["Buktikan dahulu untuk proses sederhana dengan mengekspansi kuadrat jumlah increment.","Suku silang mempunyai ekspektasi nol karena increment masa depan bermean kondisional nol dan independen dari informasi sebelumnya.","Suku diagonal memberi $E[H_i^2](t_{i+1}-t_i)$.","Jumlahnya adalah ekspektasi integral $H^2$; perluasan ke integrand umum mengikuti aproksimasi dalam $L^2$."]}
+    ];
+    if(/ito formula|formula itô|ito lemma/.test(text))return[
+      {kind:"theorem",title:"Formula Itô Satu Dimensi",statement:"Jika $X_t$ memenuhi $dX_t=b_tdt+\\sigma_tdW_t$ dan $f\\in C^{1,2}$, maka $df(t,X_t)=(f_t+b_tf_x+\\frac12\\sigma_t^2f_{xx})dt+\\sigma_tf_xdW_t$."},
+      {kind:"note",title:"Perbedaan dengan Chain Rule Biasa",statement:"Suku $\\frac12\\sigma_t^2f_{xx}$ muncul karena quadratic variation Brownian motion berorde $dt$, sedangkan suku orde lebih tinggi yang lain lenyap."}
+    ];
+    if(/sde|stochastic differential|diffusion|ornstein|geometric brownian/.test(text))return[
+      {kind:"definition",title:"Persamaan Diferensial Stokastik",statement:"SDE Itô berbentuk $dX_t=b(t,X_t)dt+\\sigma(t,X_t)dW_t$, dengan $b$ drift dan $\\sigma$ koefisien difusi."},
+      {kind:"proposition",title:"Solusi Geometric Brownian Motion",statement:"SDE $dX_t=\\mu X_tdt+\\sigma X_tdW_t$ dengan $X_0>0$ mempunyai solusi $X_t=X_0\\exp((\\mu-\\sigma^2/2)t+\\sigma W_t)$.",proof:["Terapkan formula Itô pada $f(x)=\\log x$.","Diperoleh $d\\log X_t=(\\mu-\\sigma^2/2)dt+\\sigma dW_t$.","Integrasikan dari 0 sampai $t$ lalu eksponensialkan kedua ruas."]}
+    ];
+    if(/girsanov|change of measure|perubahan ukuran/.test(text))return[
+      {kind:"note",title:"Teorema Girsanov",statement:"Perubahan ukuran probabilitas melalui density process eksponensial dapat mengubah drift Brownian motion sambil mempertahankan struktur Brownian di bawah ukuran baru, dengan syarat integrabilitas yang sesuai."}
+    ];
+    if(/poisson|jump|levy|lompatan/.test(text))return[
+      {kind:"definition",title:"Proses Poisson",statement:"Proses Poisson berlaju $\\lambda$ mempunyai increment independen dan stasioner dengan $N_t-N_s\\sim\\operatorname{Poisson}(\\lambda(t-s))$."},
+      {kind:"proposition",title:"Mean dan Varians Proses Poisson",statement:"Untuk proses Poisson berlaju $\\lambda$, $E[N_t]=\\operatorname{Var}(N_t)=\\lambda t$.",proof:["Dari definisi, $N_t\\sim\\operatorname{Poisson}(\\lambda t)$.","Distribusi Poisson dengan parameter $m$ mempunyai mean dan varians sama dengan $m$.","Ambil $m=\\lambda t$."]}
+    ];
+  }
+
+  return[
+    {kind:"note",title:"Pengantar Konsep",statement:"Pembahasan "+title+" mengikuti struktur dan urutan konsep pada referensi utama bidang ini, dengan istilah kunci "+keyIdeas.join(", ")+". Istilah formal dibedakan dari penjelasan intuitif."},
+    {kind:"note",title:"Hipotesis dan Validasi",statement:"Setiap rumus atau hasil harus digunakan setelah domain, asumsi, regularitas, atau syarat model yang relevan diperiksa."}
+  ];
+}
+
 function formalFor(subject:string,slug:string,title:string,summary:string,keyIdeas:string[]):BookFormalItem[]{
   const special:Record<string,BookFormalItem[]>={
     "or-lp-formulasi":[
@@ -277,11 +462,7 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
     ]
   };
 
-  return special[slug]??[
-    {kind:"note",title:"Pengantar Konsep",statement:summary},
-    {kind:"note",title:"Struktur Konsep",statement:"Konsep utama yang perlu dihubungkan pada bagian ini adalah "+keyIdeas.join(", ")+". Istilah yang benar-benar mempunyai definisi formal diperkenalkan pada submateri yang relevan; uraian deskriptif tidak diberi label definisi."},
-    {kind:"note",title:"Standar Pembuktian atau Verifikasi",statement:"Setiap kesimpulan harus dilacak kembali ke definisi atau hasil yang digunakan, dengan seluruh hipotesis dinyatakan secara eksplisit."}
-  ];
+  return special[slug]??textbookFormalFallback(subject,title,keyIdeas);
 }
 
 function directDefinitionExamples(slug:string):BookExample[]{
