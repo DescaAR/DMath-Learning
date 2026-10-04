@@ -119,7 +119,7 @@ function sectionFormal(subject:string,sectionTitle:string,keyIdeas:string[]):Boo
     ];
     if(/numerical integration|integrasi numerik|simpson|trapezoid/.test(text))return[
       {kind:"proposition",title:"Aturan Trapesium",statement:"Dengan $n$ subinterval sama panjang $h$, $T_n=\\frac h2[f(x_0)+2\\sum_{i=1}^{n-1}f(x_i)+f(x_n)]$."},
-      {kind:"proposition",title:"Aturan Simpson",statement:"Untuk $n$ genap, $S_n=\\frac h3[f(x_0)+4\\sum_{i\\text{ ganjil}}f(x_i)+2\\sum_{i\\text{ genap},\,i\\ne0,n}f(x_i)+f(x_n)]$."}
+      {kind:"proposition",title:"Aturan Simpson",statement:"Untuk $n$ genap, $S_n=\\frac h3[f(x_0)+4\\sum_{i\\text{ ganjil}}f(x_i)+2\\sum_{i\\text{ genap},\\,i\\ne0,n}f(x_i)+f(x_n)]$."}
     ];
     if(/improper|tak wajar/.test(text))return[
       {kind:"definition",title:"Integral Tak Wajar",statement:"Integral pada interval tak terbatas atau dengan integran tak terbatas didefinisikan melalui limit integral tentu."},
