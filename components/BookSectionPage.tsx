@@ -199,29 +199,31 @@ export function BookSectionPage({
         {provenResults.length?provenResults.map((item,index)=>{
           const explanation="Hasil ini dibaca bersama seluruh hipotesisnya. Pada submateri "+section.title+", pernyataan tersebut digunakan hanya setelah syarat formalnya diverifikasi.";
           return(
-            <article className={"ird-formal ird-"+item.kind} key={item.title+index}>
-              <div className="ird-formal-head">
-                <span>{kindLabel[item.kind]}</span>
-                <strong><TitleText>{item.title}</TitleText></strong>
-              </div>
-              <div className="ird-formal-body"><Text>{item.statement}</Text></div>
-              <div className="content-box idea-box" style={{marginTop:18}}>
+            <div className="formal-result-pair" key={item.title+index}>
+              <article className={"ird-formal ird-"+item.kind}>
+                <div className="ird-formal-head">
+                  <span>{kindLabel[item.kind]}</span>
+                  <strong><TitleText>{item.title}</TitleText></strong>
+                </div>
+                <div className="ird-formal-body"><Text>{item.statement}</Text></div>
+                <details className="ird-proof">
+                  <summary>Buka pembuktian</summary>
+                  <div className="ird-proof-body">
+                    {item.proof!.map((step,stepIndex)=>(
+                      <div className="proof-step" key={stepIndex}>
+                        <span>{stepIndex+1}</span>
+                        <Text>{step}</Text>
+                      </div>
+                    ))}
+                    <div className="ird-qed">■</div>
+                  </div>
+                </details>
+              </article>
+              <div className="ird-formal-explanation">
                 <strong>Penjelasan</strong>
                 <div><Text>{explanation}</Text></div>
               </div>
-              <details className="ird-proof">
-                <summary>Buka pembuktian</summary>
-                <div className="ird-proof-body">
-                  {item.proof!.map((step,stepIndex)=>(
-                    <div className="proof-step" key={stepIndex}>
-                      <span>{stepIndex+1}</span>
-                      <Text>{step}</Text>
-                    </div>
-                  ))}
-                  <div className="ird-qed">■</div>
-                </div>
-              </details>
-            </article>
+            </div>
           );
         }):(
           <article className="ird-formal ird-note">
