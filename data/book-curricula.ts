@@ -284,6 +284,17 @@ const dmathCurriculumBlueprints:Partial<Record<BookSubject["slug"],CurriculumUni
 function buildDMathCurriculum(subject:BookSubject):BookSubject{
   if(subject.curriculumVersion==="DMath Learning v1")return subject;
   const blueprint=dmathCurriculumBlueprints[subject.slug]??[];
+
+  // Subjects without a regrouping blueprint already have their own curated
+  // chapter structure. Preserve it instead of flattening every section into
+  // a synthetic "Topik Lanjutan dan Koneksi" chapter.
+  if(blueprint.length===0){
+    return{
+      ...subject,
+      curriculumVersion:"DMath Learning v1",
+    };
+  }
+
   const byChapter=new Map(subject.chapters.map((chapter)=>[chapter.number,chapter]));
   const used=new Set<string>();
 
@@ -293,7 +304,7 @@ function buildDMathCurriculum(subject:BookSubject):BookSubject{
     return{
       number:String(chapterIndex+1),
       title:unit.title,
-      sourceTitle:"DMath Learning Curriculum",
+      sourceTitle:"DMath Learning",
       sections:sections.map((section,sectionIndex)=>({
         ...section,
         number:String(chapterIndex+1)+"."+(sectionIndex+1),
@@ -302,22 +313,26 @@ function buildDMathCurriculum(subject:BookSubject):BookSubject{
     };
   });
 
-  const leftovers=subject.chapters
-    .flatMap((chapter)=>chapter.sections)
-    .filter((section)=>!used.has(section.slug));
+  const leftoverChapters=subject.chapters
+    .map((chapter)=>({
+      ...chapter,
+      sections:chapter.sections.filter((section)=>!used.has(section.slug)),
+    }))
+    .filter((chapter)=>chapter.sections.length>0);
 
-  if(leftovers.length>0){
+  leftoverChapters.forEach((chapter)=>{
+    const chapterNumber=String(chapters.length+1);
     chapters.push({
-      number:String(chapters.length+1),
-      title:"Topik Lanjutan dan Koneksi",
-      sourceTitle:"DMath Learning Curriculum",
-      sections:leftovers.map((section,index)=>({
+      ...chapter,
+      number:chapterNumber,
+      sourceTitle:"DMath Learning",
+      sections:chapter.sections.map((section,index)=>({
         ...section,
-        number:String(chapters.length+1)+"."+(index+1),
+        number:chapterNumber+"."+(index+1),
         sourceTitle:"DMath Learning",
       })),
     });
-  }
+  });
 
   return{
     ...subject,
