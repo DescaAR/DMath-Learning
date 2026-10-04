@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
-import { RichMath } from "@/components/RichMath";\nimport { HeadingMath } from "@/components/HeadingMath";
+import { RichMath } from "@/components/RichMath";
+import { HeadingMath } from "@/components/HeadingMath";
 import { MathVisualization, type VisualizationKind } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
