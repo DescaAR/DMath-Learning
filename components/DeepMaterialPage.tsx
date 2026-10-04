@@ -195,21 +195,23 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         )}</p>
 
         {m.theorems.map((theorem) => (
-          <article className="ird-formal ird-theorem" key={theorem.title}>
-            <div className="ird-formal-head"><span>{ui("Teorema","Theorem")}</span><strong><TitleText>{theorem.title}</TitleText></strong></div>
-            <div className="ird-formal-body"><Text>{theorem.statement}</Text></div>
-            <div className="content-box idea-box" style={{marginTop:18}}>
+          <div className="formal-result-pair" key={theorem.title}>
+            <article className="ird-formal ird-theorem">
+              <div className="ird-formal-head"><span>{ui("Teorema","Theorem")}</span><strong><TitleText>{theorem.title}</TitleText></strong></div>
+              <div className="ird-formal-body"><Text>{theorem.statement}</Text></div>
+              <details className="ird-proof">
+                <summary>{ui("Buka pembuktian","Open proof")}</summary>
+                <div className="ird-proof-body">
+                  {theorem.proof.map((step, stepIndex) => <div className="proof-step" key={stepIndex}><span>{stepIndex + 1}</span><Text>{step}</Text></div>)}
+                  <div className="ird-qed">■</div>
+                </div>
+              </details>
+            </article>
+            <div className="ird-formal-explanation">
               <strong>{ui("Penjelasan","Explanation")}</strong>
               <Text>{theorem.why}</Text>
             </div>
-            <details className="ird-proof">
-              <summary>{ui("Buka pembuktian","Open proof")}</summary>
-              <div className="ird-proof-body">
-                {theorem.proof.map((step, stepIndex) => <div className="proof-step" key={stepIndex}><span>{stepIndex + 1}</span><Text>{step}</Text></div>)}
-                <div className="ird-qed">■</div>
-              </div>
-            </details>
-          </article>
+          </div>
         ))}
 
         {provenFormalResults.map((block, index) => {
@@ -225,21 +227,23 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             "This result states a formal relationship used in the examples and exercises that follow."
           ));
           return (
-            <article className={"ird-formal ird-" + block.kind} key={pick(block.title) + index}>
-              <div className="ird-formal-head"><span><TitleText>{label}</TitleText></span><strong><TitleText>{pick(block.title)}</TitleText></strong></div>
-              <div className="ird-formal-body"><Text>{pick(block.statement)}</Text></div>
-              <div className="content-box idea-box" style={{marginTop:18}}>
+            <div className="formal-result-pair" key={pick(block.title) + index}>
+              <article className={"ird-formal ird-" + block.kind}>
+                <div className="ird-formal-head"><span><TitleText>{label}</TitleText></span><strong><TitleText>{pick(block.title)}</TitleText></strong></div>
+                <div className="ird-formal-body"><Text>{pick(block.statement)}</Text></div>
+                <details className="ird-proof">
+                  <summary>{ui("Buka pembuktian","Open proof")}</summary>
+                  <div className="ird-proof-body">
+                    {block.proof!.map((step, stepIndex) => <div className="proof-step" key={stepIndex}><span>{stepIndex + 1}</span><Text>{pick(step)}</Text></div>)}
+                    <div className="ird-qed">■</div>
+                  </div>
+                </details>
+              </article>
+              <div className="ird-formal-explanation">
                 <strong>{ui("Penjelasan","Explanation")}</strong>
                 <Text>{explanation}</Text>
               </div>
-              <details className="ird-proof">
-                <summary>{ui("Buka pembuktian","Open proof")}</summary>
-                <div className="ird-proof-body">
-                  {block.proof!.map((step, stepIndex) => <div className="proof-step" key={stepIndex}><span>{stepIndex + 1}</span><Text>{pick(step)}</Text></div>)}
-                  <div className="ird-qed">■</div>
-                </div>
-              </details>
-            </article>
+            </div>
           );
         })}
 
