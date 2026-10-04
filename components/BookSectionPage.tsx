@@ -63,7 +63,7 @@ function ExampleCard({example,label="Contoh"}:{example:BookExample;label?:string
     <article className="ird-worked-card">
       <div className="ird-worked-head">
         <div className="ird-problem-number">EX</div>
-        <div><span className="eyebrow">{label}</span><h3>{example.title}</h3></div>
+        <div><span className="eyebrow"><Text>{label}</Text></span><h3><Text>{example.title}</Text></h3></div>
       </div>
       <div className="ird-worked-prompt"><Text>{example.problem}</Text></div>
       <details className="ird-worked-solution">
@@ -172,7 +172,7 @@ export function BookSectionPage({
           return(
             <div className="definition-example-pair" key={item.title+index}>
               <article className="ird-formal ird-definition">
-                <div className="ird-formal-head"><span>Definisi</span><strong>{item.title}</strong></div>
+                <div className="ird-formal-head"><span>Definisi</span><strong><Text>{item.title}</Text></strong></div>
                 <div className="ird-formal-body"><Text>{item.statement}</Text></div>
               </article>
               {example&&<ExampleCard example={example} label={"Contoh · "+item.title}/>}
@@ -198,7 +198,7 @@ export function BookSectionPage({
             <article className={"ird-formal ird-"+item.kind} key={item.title+index}>
               <div className="ird-formal-head">
                 <span>{kindLabel[item.kind]}</span>
-                <strong>{item.title}</strong>
+                <strong><Text>{item.title}</Text></strong>
               </div>
               <div className="ird-formal-body"><Text>{item.statement}</Text></div>
               <div className="content-box idea-box" style={{marginTop:18}}>
@@ -228,7 +228,7 @@ export function BookSectionPage({
 
         {explanatoryNotes.map((item,index)=>(
           <article className="ird-formal ird-note" key={"note-"+item.title+index}>
-            <div className="ird-formal-head"><span>Catatan</span><strong>{item.title}</strong></div>
+            <div className="ird-formal-head"><span>Catatan</span><strong><Text>{item.title}</Text></strong></div>
             <div className="ird-formal-body"><Text>{item.statement}</Text></div>
           </article>
         ))}
@@ -244,7 +244,7 @@ export function BookSectionPage({
             <article className="ird-worked-card" key={example.title+index}>
               <div className="ird-worked-head">
                 <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
-                <div><span className="eyebrow">Contoh</span><h3>{example.title}</h3></div>
+                <div><span className="eyebrow">Contoh</span><h3><Text>{example.title}</Text></h3></div>
               </div>
               <div className="ird-worked-prompt"><Text>{example.problem}</Text></div>
               <details className="ird-worked-solution">
@@ -309,13 +309,13 @@ export function BookSectionPage({
       <section className="next-learning-block textbook-next">
         <div>
           <span className="eyebrow">{next?"Materi Berikutnya":"Akhir Materi"}</span>
-          <h2>{next?next.number+" · "+next.title:subject.title}</h2>
+          <h2><Text>{next?next.number+" · "+next.title:subject.title}</Text></h2>
           <p>{next?"Lanjutkan setelah definisi, pembuktian, contoh, visualisasi, dan latihan pada halaman ini dipahami.":"Kembali ke daftar isi untuk meninjau bab lain."}</p>
         </div>
         <div className="actions">
-          {previous&&<Link className="btn secondary" href={"/materi/"+subject.slug+"/"+previous.slug}>← {previous.title}</Link>}
+          {previous&&<Link className="btn secondary" href={"/materi/"+subject.slug+"/"+previous.slug}><Text>{"← "+previous.title}</Text></Link>}
           <Link className="btn secondary" href={"/materi/"+subject.slug}>Daftar Isi</Link>
-          {next&&<Link className="btn primary" href={"/materi/"+subject.slug+"/"+next.slug}>{next.title} →</Link>}
+          {next&&<Link className="btn primary" href={"/materi/"+subject.slug+"/"+next.slug}><Text>{next.title+" →"}</Text></Link>}
         </div>
       </section>
     </RiemannHubShell>
