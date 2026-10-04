@@ -2,6 +2,7 @@ name: Deploy DMath Learning to GitHub Pages
 
 # Public Pages deployment
 # Refresh deployment after example-label cleanup
+# Retry after syntax repair
 
 on:
   push:
