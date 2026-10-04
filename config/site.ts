@@ -11,7 +11,7 @@ export const siteConfig = {
   basePath: githubPagesBasePath,
   locale: "id_ID",
   language: "id-ID",
-  ogImage: "/opengraph-image",
+  ogImage: "/opengraph-image?v=20261004-3",
   social: {
     youtube: "https://www.youtube.com/@DMathLearning",
   },
