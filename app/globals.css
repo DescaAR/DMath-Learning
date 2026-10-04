@@ -3600,3 +3600,15 @@ h3 .heading-math-symbol{
   color:inherit;
   font-size:1em;
 }
+
+
+/* Formal title typography balance */
+.ird-formal-head>strong{
+  font-weight:700;
+}
+.ird-formal-head>strong .heading-math-symbol,
+.ird-formal-head>strong .math-inline .katex{
+  font-weight:400;
+  -webkit-text-stroke:0;
+  text-shadow:none;
+}
