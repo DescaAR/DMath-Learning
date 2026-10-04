@@ -1,10 +1,5 @@
 name: Deploy DMath Learning to GitHub Pages
 
-# Public Pages deployment
-# Refresh deployment after example-label cleanup
-# Retry after syntax repair
-# Retry after removing HeadingMath dependency
-
 on:
   push:
     branches:
@@ -18,7 +13,7 @@ permissions:
 
 concurrency:
   group: github-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -39,14 +34,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Build static site
         run: npm run build
 
       - name: Add no-Jekyll marker
         run: touch out/.nojekyll
-
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
@@ -60,7 +55,7 @@ jobs:
       pages: write
       id-token: write
     environment:
-      name: github-pages-static
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
