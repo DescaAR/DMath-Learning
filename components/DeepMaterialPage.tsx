@@ -157,7 +157,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           return(
             <div className="definition-example-pair" key={definition.title+index}>
               <article className="ird-formal ird-definition">
-                <div className="ird-formal-head"><span>{ui("Definisi","Definition")}</span><strong>{definition.title}</strong></div>
+                <div className="ird-formal-head"><span>{ui("Definisi","Definition")}</span><strong><Text>{definition.title}</Text></strong></div>
                 <div className="ird-formal-body"><Text>{definition.statement}</Text></div>
                 {definition.intuition&&<div className="ird-paragraph"><strong>{ui("Penjelasan. ","Explanation. ")}</strong><Text>{definition.intuition}</Text></div>}
               </article>
@@ -165,7 +165,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                 <article className="ird-worked-card">
                   <div className="ird-worked-head">
                     <div className="ird-problem-number">EX</div>
-                    <div><span className="eyebrow">{ui("Contoh setelah definisi","Example after definition")}</span><h3>{example.title}</h3></div>
+                    <div><span className="eyebrow">{ui("Contoh setelah definisi","Example after definition")}</span><h3><Text>{example.title}</Text></h3></div>
                   </div>
                   <div className="ird-worked-prompt"><Text>{example.problem}</Text></div>
                   <details className="ird-worked-solution">
@@ -192,7 +192,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
 
         {m.theorems.map((theorem) => (
           <article className="ird-formal ird-theorem" key={theorem.title}>
-            <div className="ird-formal-head"><span>{ui("Teorema","Theorem")}</span><strong>{theorem.title}</strong></div>
+            <div className="ird-formal-head"><span>{ui("Teorema","Theorem")}</span><strong><Text>{theorem.title}</Text></strong></div>
             <div className="ird-formal-body"><Text>{theorem.statement}</Text></div>
             <div className="content-box idea-box" style={{marginTop:18}}>
               <strong>{ui("Penjelasan","Explanation")}</strong>
@@ -222,7 +222,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           ));
           return (
             <article className={"ird-formal ird-" + block.kind} key={pick(block.title) + index}>
-              <div className="ird-formal-head"><span>{label}</span><strong>{pick(block.title)}</strong></div>
+              <div className="ird-formal-head"><span><Text>{label}</Text></span><strong><Text>{pick(block.title)}</Text></strong></div>
               <div className="ird-formal-body"><Text>{pick(block.statement)}</Text></div>
               <div className="content-box idea-box" style={{marginTop:18}}>
                 <strong>{ui("Penjelasan","Explanation")}</strong>
@@ -241,7 +241,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
 
         {explanatoryFormalResults.map((block,index)=>(
           <article className="ird-formal ird-note" key={"note-"+index}>
-            <div className="ird-formal-head"><span>{ui("Catatan","Note")}</span><strong>{pick(block.title)}</strong></div>
+            <div className="ird-formal-head"><span>{ui("Catatan","Note")}</span><strong><Text>{pick(block.title)}</Text></strong></div>
             <div className="ird-formal-body"><Text>{pick(block.statement)}</Text></div>
           </article>
         ))}
@@ -256,7 +256,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             <article className="ird-worked-card" key={example.title+index}>
               <div className="ird-worked-head">
                 <div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div>
-                <div><span className="eyebrow">{ui("Contoh","Example")}</span><h3>{example.title}</h3></div>
+                <div><span className="eyebrow">{ui("Contoh","Example")}</span><h3><Text>{example.title}</Text></h3></div>
               </div>
               <div className="ird-worked-prompt"><Text>{example.problem}</Text></div>
               <details className="ird-worked-solution">
@@ -301,7 +301,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
               <article className="ird-worked-card" key={problem.id}>
                 <div className="ird-worked-head">
                   <div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div>
-                  <div><span className="eyebrow">{problem.difficulty}</span><h3>{pick(problem.title)}</h3></div>
+                  <div><span className="eyebrow">{problem.difficulty}</span><h3><Text>{pick(problem.title)}</Text></h3></div>
                 </div>
                 <div className="ird-worked-prompt"><Text>{pick(problem.prompt)}</Text></div>
                 <details className="ird-proof">
