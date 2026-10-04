@@ -3556,3 +3556,47 @@ h3 .math-inline .katex *{
 .eyebrow .math-inline .katex *{
   -webkit-text-stroke:.34px currentColor;
 }
+
+
+/* Dedicated heading math glyphs */
+.heading-math{
+  color:inherit;
+  font:inherit;
+  letter-spacing:inherit;
+  text-transform:inherit;
+}
+.heading-math-symbol{
+  display:inline-block;
+  color:inherit;
+  line-height:1;
+  letter-spacing:0;
+  transform:translateY(.015em);
+  font-size:1em;
+  font-weight:700;
+  -webkit-font-smoothing:antialiased;
+}
+.heading-math-symbol-italic{
+  font-family:"KaTeX_Math","Times New Roman",serif;
+  font-style:italic;
+}
+.heading-math-symbol-upright{
+  font-family:"KaTeX_Main","Times New Roman",serif;
+  font-style:normal;
+}
+.eyebrow .heading-math-symbol{
+  font-weight:800;
+  -webkit-text-stroke:.18px currentColor;
+}
+.ird-formal-head>strong .heading-math-symbol,
+.ird-worked-head h3 .heading-math-symbol,
+h1 .heading-math-symbol,
+h2 .heading-math-symbol,
+h3 .heading-math-symbol{
+  -webkit-text-stroke:.14px currentColor;
+}
+.heading-math-complex,
+.heading-math-complex .math-inline,
+.heading-math-complex .katex{
+  color:inherit;
+  font-size:1em;
+}
