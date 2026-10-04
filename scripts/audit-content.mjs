@@ -57,3 +57,50 @@ if(failures.length){
   process.exit(1);
 }
 console.log("DMath content audit passed.");
+
+
+/* LaTeX source audit
+   JavaScript/TypeScript string literals must escape LaTeX backslashes.
+   Example source: "$\\\\frac{a}{b}$", not "$\\frac{a}{b}$".
+*/
+const mathDataFiles=[];
+const walkMathData=(dir)=>{
+  if(!fs.existsSync(dir)) return;
+  for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+    const full=path.join(dir,entry.name);
+    if(entry.isDirectory()) walkMathData(full);
+    else if(/\.(tsx?|mjs)$/.test(entry.name)) mathDataFiles.push(full);
+  }
+};
+walkMathData(path.join(root,"data"));
+
+for(const file of mathDataFiles){
+  const source=fs.readFileSync(file,"utf8");
+  const lines=source.split("\n");
+
+  lines.forEach((line,index)=>{
+    const mathSegments=[...line.matchAll(/\$(?!\$)(.*?)(?<!\\)\$/g)];
+    for(const match of mathSegments){
+      if(/(?<!\\)\\(?!\\)/.test(match[1])){
+        failures.push(
+          path.relative(root,file)+":"+(index+1)+
+          ": unescaped LaTeX backslash inside $...$."
+        );
+        break;
+      }
+    }
+
+    if(/(?<!\\)\\[()\[\]]/.test(line)){
+      failures.push(
+        path.relative(root,file)+":"+(index+1)+
+        ": TeX delimiter \\( \\) \\[ or \\] must be escaped in source."
+      );
+    }
+  });
+}
+
+if(failures.length){
+  console.error("DMath content audit failed:\\n"+failures.map(x=>" - "+x).join("\\n"));
+  process.exit(1);
+}
+console.log("DMath content audit passed.");
