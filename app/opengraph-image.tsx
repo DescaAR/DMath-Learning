@@ -6,8 +6,6 @@ export const alt = "DMath Learning — Think Deeper, Solve Better.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const logoUrl = "data:image/webp;base64,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";
-
 export default function Image() {
   const verticalLines = Array.from({ length: 21 }, (_, index) => 28 + index * 56);
   const horizontalLines = Array.from({ length: 12 }, (_, index) => 30 + index * 50);
@@ -161,16 +159,38 @@ export default function Image() {
               boxShadow: "0 14px 34px rgba(0, 20, 49, .28)",
             }}
           >
-            <img
-              src={logoUrl}
-              width="82"
-              height="82"
-              alt=""
-              style={{
-                objectFit: "contain",
-                borderRadius: 14,
-              }}
-            />
+            <svg
+              width="84"
+              height="84"
+              viewBox="0 0 256 256"
+              role="img"
+              aria-label="DMath Learning"
+            >
+              <defs>
+                <linearGradient id="dmathD" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#061A43" />
+                  <stop offset="48%" stopColor="#0048B8" />
+                  <stop offset="100%" stopColor="#03D7F4" />
+                </linearGradient>
+                <linearGradient id="dmathWing" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#07142F" />
+                  <stop offset="100%" stopColor="#006BD6" />
+                </linearGradient>
+              </defs>
+              <path d="M76 48H128C181 48 220 81 220 128C220 175 181 208 128 208H76Z" fill="url(#dmathD)" />
+              <path d="M45 48H111V128Z" fill="url(#dmathWing)" />
+              <path d="M45 208H111V128Z" fill="url(#dmathWing)" />
+              <path d="M105 80H128C160 80 183 99 183 128C183 157 160 176 128 176H105Z" fill="#FFFFFF" />
+              <rect x="105" y="80" width="14" height="96" rx="2" fill="#FFFFFF" />
+              <path d="M80 164C112 165 143 147 164 121C181 100 192 80 194 64" fill="none" stroke="#FFFFFF" strokeWidth="5" strokeLinecap="round" />
+              <path d="M80 164C112 165 143 147 164 121" fill="none" stroke="#00D7F2" strokeWidth="3" strokeLinecap="round" />
+              <circle cx="80" cy="164" r="11" fill="#FFFFFF" />
+              <circle cx="80" cy="164" r="7" fill="#02BEEA" />
+              <circle cx="139" cy="137" r="11" fill="#FFFFFF" />
+              <circle cx="139" cy="137" r="7" fill="#0069D8" />
+              <circle cx="194" cy="64" r="11" fill="#FFFFFF" />
+              <circle cx="194" cy="64" r="7" fill="#00D7F2" />
+            </svg>
           </div>
 
           <div
