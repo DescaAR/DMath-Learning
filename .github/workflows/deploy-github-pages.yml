@@ -3,6 +3,7 @@ name: Deploy DMath Learning to GitHub Pages
 # Public Pages deployment
 # Refresh deployment after example-label cleanup
 # Retry after syntax repair
+# Retry after removing HeadingMath dependency
 
 on:
   push:
