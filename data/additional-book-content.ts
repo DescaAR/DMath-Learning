@@ -35,7 +35,7 @@ function genericContent(subjectTitle:string,chapterTitle:string,sectionTitle:str
   return {
     intro:[
       summary,
-      "Submateri ini merupakan bagian dari jalur belajar "+subjectTitle+" pada DMath Curriculum. Alurnya dimulai dari motivasi dan contoh kecil, dilanjutkan dengan bahasa formal, lalu digunakan pada pembuktian dan penyelesaian masalah.",
+      "Submateri ini merupakan bagian dari jalur belajar "+subjectTitle+". Alurnya dimulai dari motivasi dan contoh kecil, dilanjutkan dengan bahasa formal, lalu digunakan pada pembuktian dan penyelesaian masalah.",
       "Konsep inti yang membentuk peta pembahasan adalah "+ideas+". Setiap konsep dibedakan berdasarkan definisi, syarat, contoh, noncontoh, dan hubungan logisnya dengan konsep lain.",
       "Pembahasan tidak berhenti pada pengenalan istilah. Setiap halaman diarahkan untuk menjawab mengapa konsep diperlukan, bagaimana objek direpresentasikan, hasil apa yang dapat dibuktikan, dan kapan teknik tertentu lebih efisien daripada teknik lain.",
       "Visualisasi digunakan untuk membangun intuisi, sedangkan validitas matematis tetap ditentukan oleh definisi dan pembuktian. Setelah memahami bagian formal, contoh terbahas dan latihan digunakan untuk menguji kemampuan menerapkan konsep pada situasi baru."
