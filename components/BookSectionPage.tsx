@@ -35,8 +35,20 @@ function isAcademicDefinition(statement:string){
 }
 
 function hasSubstantiveProof(proof?:string[]){
-  if(!proof||proof.length<2)return false;
-  return proof.join(" ").replace(/\s+/g," ").trim().length>=120;
+  return !!proof && proof.length>=2 && proof.every((step)=>step.trim().length>0);
+}
+
+function findDefinitionExample(definitionTitle:string,definitionsCount:number,examples:BookExample[]){
+  const normalized=definitionTitle.trim().toLocaleLowerCase("id-ID");
+  const explicitlyLinked=examples.find((example)=>
+    example.forDefinition?.trim().toLocaleLowerCase("id-ID")===normalized
+  );
+  if(explicitlyLinked)return explicitlyLinked;
+  const matchingTitle=examples.find((example)=>
+    example.title.trim().toLocaleLowerCase("id-ID")===normalized
+  );
+  if(matchingTitle)return matchingTitle;
+  return definitionsCount===1 && examples.length===1 ? examples[0] : null;
 }
 
 function visualizationForSubject(slug:BookSubject["slug"]):VisualizationKind{
@@ -109,8 +121,7 @@ export function BookSectionPage({
     ...invalidDefinitions.map((item)=>({...item,kind:"note" as const,title:"Konsep · "+item.title})),
   ];
   const visualKind=visualizationForSubject(subject.slug);
-  const workedExamples=content.examples.slice(Math.min(definitions.length,content.examples.length));
-  const examplesForSection=workedExamples.length?workedExamples:content.examples;
+  const examplesForSection=content.examples;
 
   const sections=[
     {id:"book-lesson-1",label:"Pengantar"},
@@ -118,6 +129,7 @@ export function BookSectionPage({
     {id:"book-lesson-5",label:"Hasil Formal & Bukti"},
     {id:"book-lesson-6",label:"Contoh Terbahas"},
     {id:"book-lesson-7",label:"Visualisasi"},
+    {id:"book-lesson-summary",label:"Ringkasan Definisi & Teorema"},
     {id:"book-latihan-soal",label:"Latihan Soal"},
   ];
 
@@ -153,8 +165,8 @@ export function BookSectionPage({
       tocTitle="Isi Materi"
       overviewEyebrow="Struktur Materi"
       overviewTitle="Urutan pembelajaran"
-      overviewText="Materi dibaca dari pengantar dan definisi menuju hasil formal, contoh, visualisasi, lalu latihan soal."
-      roadmap={["Pengantar","Definisi & contoh","Hasil formal & bukti","Contoh terbahas","Visualisasi","Latihan"]}
+      overviewText="Pelajari pengantar, definisi dan contoh yang sesuai, hasil formal beserta bukti, kemudian visualisasi, ringkasan, dan latihan."
+      roadmap={["Pengantar","Definisi & contoh","Hasil formal & bukti","Contoh terbahas","Visualisasi","Ringkasan","Latihan"]}
       sections={sections}
     >
       <section id="book-lesson-1" className="book-section ird-source-section">
@@ -168,11 +180,11 @@ export function BookSectionPage({
       <section id="book-lesson-4" className="book-section ird-source-section">
         <div className="section-number">02</div>
         <span className="eyebrow">Bagian 2</span>
-        <h2>Definisi formal</h2>
+        <h2>Definisi dan contoh</h2>
         <p className="ird-paragraph">Definisi hanya digunakan untuk pernyataan yang menetapkan makna suatu objek atau istilah matematika. Setiap definisi langsung diikuti contoh.</p>
 
         {definitions.length?definitions.map((item,index)=>{
-          const example=content.examples[index%Math.max(1,content.examples.length)];
+          const example=findDefinitionExample(item.title,definitions.length,content.examples);
           return(
             <div className="definition-example-pair" key={item.title+index}>
               <article className="ird-formal ird-definition">
@@ -197,7 +209,7 @@ export function BookSectionPage({
         <p className="ird-paragraph">Setiap hasil formal dibaca bersama seluruh hipotesisnya. Pernyataan yang belum mempunyai pembuktian memadai tidak ditampilkan sebagai teorema, lemma, proposisi, atau akibat.</p>
 
         {provenResults.length?provenResults.map((item,index)=>{
-          const explanation="Hasil ini dibaca bersama seluruh hipotesisnya. Pada submateri "+section.title+", pernyataan tersebut digunakan hanya setelah syarat formalnya diverifikasi.";
+          const explanation=item.explanation?.trim() || item.proof?.[0] || "";
           return(
             <div className="formal-result-pair" key={item.title+index}>
               <article className={"ird-formal ird-"+item.kind}>
@@ -219,10 +231,10 @@ export function BookSectionPage({
                   </div>
                 </details>
               </article>
-              <div className="ird-formal-explanation">
+              {explanation&&<div className="ird-formal-explanation">
                 <strong>Penjelasan</strong>
                 <div><Text>{explanation}</Text></div>
-              </div>
+              </div>}
             </div>
           );
         }):(
@@ -279,8 +291,29 @@ export function BookSectionPage({
         </div>
       </section>
 
-      <section id="book-latihan-soal" className="book-section ird-practice-section">
+      <section id="book-lesson-summary" className="book-section ird-summary-section">
         <div className="section-number">06</div>
+        <span className="eyebrow">Ringkasan Materi</span>
+        <h2>Ringkasan Definisi dan Teorema</h2>
+        <p className="ird-paragraph">Tinjau kembali pernyataan formal sebelum mencoba latihan. Pembuktian lengkap tetap berada di bagian hasil formal.</p>
+        <div className="ird-summary-grid">
+          {definitions.map((item,index)=>(
+            <details className="ird-summary-card ird-summary-definition" key={"summary-definition-"+index}>
+              <summary><span>Definisi {index+1}</span><strong><TitleText>{item.title}</TitleText></strong></summary>
+              <div className="ird-paragraph"><Text>{item.statement}</Text></div>
+            </details>
+          ))}
+          {provenResults.map((item,index)=>(
+            <details className="ird-summary-card ird-summary-theorem" key={"summary-result-"+index}>
+              <summary><span>{kindLabel[item.kind]} {index+1}</span><strong><TitleText>{item.title}</TitleText></strong></summary>
+              <div className="ird-paragraph"><Text>{item.statement}</Text></div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section id="book-latihan-soal" className="book-section ird-practice-section">
+        <div className="section-number">07</div>
         <span className="eyebrow">Latihan Soal dan Solusi</span>
         <h2>{content.exercises.length} latihan soal</h2>
         <p className="ird-paragraph">Kerjakan soal terlebih dahulu. Petunjuk dan solusi lengkap dapat dibuka setelah mencoba.</p>
