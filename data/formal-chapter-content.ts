@@ -13,6 +13,7 @@ export type FormalBlock = {
 
 export type DetailedExample = {
   title: Bilingual;
+  forDefinition?: Bilingual;
   problem: Bilingual;
   strategy: Bilingual;
   solution: Bilingual[];
