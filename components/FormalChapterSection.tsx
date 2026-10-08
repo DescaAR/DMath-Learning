@@ -4,6 +4,7 @@
 import type { FormalChapterContent, FormalBlockKind, Bilingual } from "@/data/formal-chapter-content";
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
+import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
 
 const kindLabels: Record<FormalBlockKind, { id: string; en: string }> = {
   definition: { id: "Definisi", en: "Definition" },
@@ -30,86 +31,47 @@ export function FormalChapterSection({
         <h2>{en ? "Formal definitions and results" : "Definisi dan hasil formal"}</h2>
         <p className="formal-section-intro"><RichMath>{pick(content.intro)}</RichMath></p>
 
-        <div className="formal-block-stack">
-          {content.blocks.map((block, index) => {
-            const label = kindLabels[block.kind];
-            const isResult=block.kind==="lemma"||block.kind==="proposition"||block.kind==="theorem"||block.kind==="corollary";
-            const hasProof=Boolean(block.proof&&block.proof.length>0);
-            const displayLabel=isResult&&!hasProof?{id:"Catatan",en:"Note"}:label;
-            const definitionExample=block.kind==="definition" ? content.examples[index] : undefined;
-            return (
-              <div className="definition-example-pair" key={block.kind + "-" + index}>
-              <article className={"formal-math-block formal-" + (isResult&&!hasProof?"note":block.kind)}>
-                <div className="formal-block-header">
-                  <div>
-                    <span className="formal-kind">{en ? displayLabel.en : displayLabel.id} {index + 1}</span>
-                    <h3>{pick(block.title)}</h3>
-                  </div>
-                  <span className="formal-symbol" aria-hidden="true">
-                    {block.kind === "definition" ? "D" :
-                     block.kind === "lemma" ? "L" :
-                     block.kind === "proposition" ? "P" :
-                     block.kind === "theorem" ? "T" : "A"}
-                  </span>
+        <div className="formal-block-stack thesis-formal-stack">
+          {content.blocks.map((block,index)=>{
+            const ordinal=content.blocks.slice(0,index).filter(previous=>previous.kind===block.kind).length+1;
+            const hasProof=!!block.proof?.length;
+            const kind=block.kind==="definition" || hasProof?block.kind:"note";
+            const title=pick(block.title);
+            const related=content.examples.find(example=>pick(example.title).trim().toLowerCase()===title.trim().toLowerCase());
+            const definitionsCount=content.blocks.filter(item=>item.kind==="definition").length;
+            const definitionExample=block.kind==="definition"
+              ?related??(definitionsCount===1&&content.examples.length===1?content.examples[0]:undefined)
+              :undefined;
+            return <div className="definition-example-pair" key={block.kind+"-"+index}>
+              <ThesisFormalBlock kind={kind} number={"1."+ordinal}
+                title={title} statement={pick(block.statement)}
+                proof={hasProof?block.proof?.map(pick):undefined} language={en?"en":"id"}/>
+              {block.intuition&&<div className="ird-formal-explanation">
+                <strong>{en?"Explanation":"Penjelasan"}</strong>
+                <RichMath>{pick(block.intuition)}</RichMath>
+              </div>}
+              {block.note&&<div className="ird-formal-explanation">
+                <strong>{en?"Note":"Catatan"}</strong>
+                <RichMath>{pick(block.note)}</RichMath>
+              </div>}
+              {definitionExample&&<article className="detailed-example-card definition-direct-example">
+                <div className="detailed-example-head">
+                  <span>{en?"Example":"Contoh"}</span>
+                  <h3><RichMath>{pick(definitionExample.title)}</RichMath></h3>
                 </div>
-
-                <div className="formal-statement">
-                  <RichMath>{pick(block.statement)}</RichMath>
+                <div className="detailed-example-problem">
+                  <p><RichMath>{pick(definitionExample.problem)}</RichMath></p>
                 </div>
-
-                {block.intuition && (
-                  <div className="formal-intuition">
-                    <strong>{en ? "Intuition" : "Intuisi"}</strong>
-                    <p><RichMath>{pick(block.intuition)}</RichMath></p>
-                  </div>
-                )}
-
-                {hasProof && (
-                  <details className="formal-proof" open={block.kind === "theorem"}>
-                    <summary>
-                      <span>{en ? "Complete proof" : "Pembuktian lengkap"}</span>
-                      <small>{en ? "show / hide" : "buka / tutup"}</small>
-                    </summary>
-                    <div className="formal-proof-body">
-                      {(block.proof??[]).map((step, stepIndex) => (
-                        <div className="formal-proof-step" key={stepIndex}>
-                          <span>{stepIndex + 1}</span>
-                          <div><RichMath>{pick(step)}</RichMath></div>
-                        </div>
-                      ))}
-                      <div className="formal-proof-qed">■</div>
+                <details className="detailed-example-solution">
+                  <summary>{en?"Open solution":"Buka Solusi"}</summary>
+                  <div>{definitionExample.solution.map((step,stepIndex)=>(
+                    <div className="formal-proof-step" key={stepIndex}>
+                      <span>{stepIndex+1}</span><div><RichMath>{pick(step)}</RichMath></div>
                     </div>
-                  </details>
-                )}
-
-                {block.note && (
-                  <div className="formal-note">
-                    <strong>{en ? "Remark" : "Catatan"}</strong>
-                    <p><RichMath>{pick(block.note)}</RichMath></p>
-                  </div>
-                )}
-              </article>
-              {definitionExample&&(
-                <article className="detailed-example-card definition-direct-example">
-                  <div className="detailed-example-head">
-                    <span>{en?"Example":"Contoh"}</span>
-                    <h3>{pick(definitionExample.title)}</h3>
-                  </div>
-                  <div className="detailed-example-problem">
-                    <p><RichMath>{pick(definitionExample.problem)}</RichMath></p>
-                  </div>
-                  <details className="detailed-example-solution">
-                    <summary>{en?"Open solution":"Buka Solusi"}</summary>
-                    <div>{definitionExample.solution.map((step,stepIndex)=>(
-                      <div className="formal-proof-step" key={stepIndex}>
-                        <span>{stepIndex+1}</span><div><RichMath>{pick(step)}</RichMath></div>
-                      </div>
-                    ))}</div>
-                  </details>
-                </article>
-              )}
-              </div>
-            );
+                  ))}</div>
+                </details>
+              </article>}
+            </div>;
           })}
         </div>
       </section>
