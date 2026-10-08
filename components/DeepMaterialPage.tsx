@@ -174,7 +174,6 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             <div className="definition-example-pair" key={definition.title+index}>
               <ThesisFormalBlock kind="definition" number={thesisChapter+"."+(index+1)}
                 title={definition.title} statement={definition.statement} language={en?"en":"id"}/>
-              {definition.intuition&&<div className="ird-formal-explanation"><strong>{ui("Penjelasan","Explanation")}</strong><Text>{definition.intuition}</Text></div>}
               {example&&(
                 <article className="ird-worked-card">
                   <div className="ird-worked-head">
@@ -190,6 +189,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                   </details>
                 </article>
               )}
+              {definition.intuition&&<div className="ird-formal-explanation"><strong>{ui("Penjelasan","Explanation")}</strong><Text>{definition.intuition}</Text></div>}
             </div>
           );
         })}
@@ -226,19 +226,16 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           const priorOfKind=provenFormalResults.slice(0,index).filter((previous)=>previous.kind===block.kind).length;
           const theoremOffset=block.kind==="theorem"?provenTheorems.length:0;
           const formalNumber=thesisChapter+"."+(theoremOffset+priorOfKind+1);
-          const explanation=block.intuition?pick(block.intuition):(block.note?pick(block.note):ui(
-            "Hasil ini merumuskan hubungan formal yang digunakan pada contoh dan latihan berikutnya.",
-            "This result states a formal relationship used in the examples and exercises that follow."
-          ));
+          const explanation=block.intuition?pick(block.intuition):(block.note?pick(block.note):"");
           return (
             <div className="formal-result-pair" key={pick(block.title) + index}>
               <ThesisFormalBlock kind={block.kind} number={formalNumber}
                 title={pick(block.title)} statement={pick(block.statement)}
                 proof={block.proof!.map(pick)} language={en?"en":"id"}/>
-              <div className="ird-formal-explanation">
+              {explanation&&<div className="ird-formal-explanation">
                 <strong>{ui("Penjelasan","Explanation")}</strong>
                 <Text>{explanation}</Text>
-              </div>
+              </div>}
             </div>
           );
         })}
