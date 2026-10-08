@@ -53,7 +53,7 @@ function cleanClosing(source:string){
 
 function ProofParagraphs({steps}:{steps:string[]}){
   return <div className="thesis-proof-paragraphs">
-    {steps.map((step,index)=>cleanClosing(step)).filter(Boolean).map((step,index)=>
+    {steps.map(cleanClosing).filter(Boolean).map((step,index)=>
       <div className="thesis-proof-paragraph" key={index}><Text>{normalizeProse(step)}</Text></div>
     )}
   </div>;
@@ -64,16 +64,16 @@ export function ThesisFormalBlock({
 }:Props){
   const en=language==="en";
   const name=names[kind][en?1:0];
-  const parsed=parseThesisProof(proof??[]);
+  // A reviewed, statement-specific structured proof supersedes the older narrative.
+  // Rendering both would repeat the same arguments and sometimes contradict their order.
+  const hasReviewedStructure=Boolean(directions?.length||targets?.length);
+  const parsed=parseThesisProof(hasReviewedStructure?[]:(proof??[]));
   const activeDirections=directions?.length?directions:parsed.directions;
   const activeTargets=targets?.length?targets:parsed.targets;
   const assumption=known??parsed.known;
   const objective=goal??parsed.goal;
   const showProof=kind!=="definition"&&kind!=="note"&&
     !!((proof??[]).some(p=>p.trim())||activeDirections.length||activeTargets.length);
-  const hasExplicitClosing=parsed.alreadyConcluded &&
-    ![...parsed.paragraphs,...parsed.directions.flatMap(d=>d.steps),...parsed.targets.flatMap(t=>t.steps)]
-      .some(item=>repeatedClosing.test(item));
 
   return <div className="thesis-formal-group">
     <article className={"ird-formal thesis-formal ird-"+kind}>
@@ -134,9 +134,9 @@ export function ThesisFormalBlock({
           </ol>
         </>}
         <p className="thesis-proof-conclusion">
-          {!hasExplicitClosing&&(en
+          {en
             ?"Thus, "+name+" "+number+" is proved."
-            :"Dengan demikian, "+name+" "+number+" terbukti.")}
+            :"Dengan demikian, "+name+" "+number+" terbukti."}
           <span aria-hidden="true" className="thesis-qed">■</span>
         </p>
       </div>
