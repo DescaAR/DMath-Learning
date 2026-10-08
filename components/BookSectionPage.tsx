@@ -315,16 +315,18 @@ export function BookSectionPage({
         <div className="ird-summary-grid">
           {definitions.map((item,index)=>(
             <details className="ird-summary-card ird-summary-definition" key={"summary-definition-"+index}>
-              <summary><span>Definisi {index+1}</span><strong><TitleText>{item.title}</TitleText></strong></summary>
+              <summary><span>Definisi {thesisNumbers.definition?.[index]??chapter.number+"."+(index+1)}</span><strong><TitleText>{item.title}</TitleText></strong></summary>
               <div className="ird-paragraph"><Text>{item.statement}</Text></div>
             </details>
           ))}
-          {provenResults.map((item,index)=>(
-            <details className="ird-summary-card ird-summary-theorem" key={"summary-result-"+index}>
-              <summary><span>{kindLabel[item.kind]} {index+1}</span><strong><TitleText>{item.title}</TitleText></strong></summary>
+          {provenResults.map((item,index)=>{
+            const ordinal=provenResults.slice(0,index).filter(previous=>previous.kind===item.kind).length;
+            const number=thesisNumbers[item.kind]?.[ordinal]??chapter.number+"."+(ordinal+1);
+            return <details className="ird-summary-card ird-summary-theorem" key={"summary-result-"+index}>
+              <summary><span>{kindLabel[item.kind]} {number}</span><strong><TitleText>{item.title}</TitleText></strong></summary>
               <div className="ird-paragraph"><Text>{item.statement}</Text></div>
-            </details>
-          ))}
+            </details>;
+          })}
         </div>
       </section>
 
