@@ -184,7 +184,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
                   <details className="ird-worked-solution">
                     <summary>{ui("Buka Solusi","Open Solution")}</summary>
                     <div className="ird-worked-solution-body">
-                      <AcademicSolution idea={example.strategy??example.solution[0]} steps={example.solution} conclusion={example.conclusion}/>
+                      <AcademicSolution idea={example.strategy} steps={example.solution} conclusion={example.conclusion}/>
                     </div>
                   </details>
                 </article>
@@ -270,7 +270,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
               <details className="ird-worked-solution">
                 <summary>{ui("Buka Solusi","Open Solution")}</summary>
                 <div className="ird-worked-solution-body">
-                  <AcademicSolution idea={example.strategy??example.solution[0]} steps={example.solution} conclusion={example.conclusion}/>
+                  <AcademicSolution idea={example.strategy} steps={example.solution} conclusion={example.conclusion}/>
                 </div>
               </details>
             </article>
