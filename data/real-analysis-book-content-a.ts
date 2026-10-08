@@ -96,7 +96,11 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  formal:[
   D("Ordered Field","Lapangan terurut adalah lapangan $F$ dengan relasi $<$ yang total dan kompatibel dengan penjumlahan serta perkalian bilangan positif."),
   P("Pembatalan Penjumlahan","Jika $a+c=b+c$, maka $a=b$.",["Ditambahkan invers aditif $-c$ pada kedua ruas.","Asosiativitas memberi $a+(c-c)=b+(c-c)$, sehingga $a=b$."]),
-  P("Perkalian Positif","Jika $a>0$ dan $b>0$, maka $ab>0$. Jika $a<b$ dan $c>0$, maka $ac<bc$."),
+  P("Perkalian Positif","Jika $a>0$ dan $b>0$, maka $ab>0$. Jika $a<b$ dan $c>0$, maka $ac<bc$.",[
+  "Sifat $a>0$ dan $b>0$ memberi $ab>0$ berdasarkan aksioma urutan pada bilangan real.",
+  "Dari $a<b$ diperoleh $b-a>0$. Karena $c>0$, perkalian bilangan positif memberi $(b-a)c>0$.",
+  "Distributivitas menghasilkan $bc-ac>0$, yaitu $ac<bc$."
+]),
   C("Kuadrat Tak Negatif","Untuk setiap $x\\in\\mathbb R$, berlaku $x^2\\ge0$.",["Jika $x\\ge0$, hasil kali dua bilangan tak negatif tidak negatif.","Jika $x<0$, maka $-x>0$ dan $x^2=(-x)^2>0$."])
  ],
  examples:[{title:"Pertidaksamaan Kuadrat",problem:"Buktikan $a^2+b^2\\ge2ab$ untuk $a,b\\in\\mathbb R$.",solution:["Dari sifat kuadrat, $(a-b)^2\\ge0$.","Ekspansi memberi $a^2-2ab+b^2\\ge0$.","Dipindahkan $2ab$ ke ruas kanan."],conclusion:"Diperoleh $a^2+b^2\\ge2ab$."}],
@@ -115,8 +119,16 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  formal:[
   D("Nilai Mutlak","$|x|=x$ untuk $x\\ge0$ dan $|x|=-x$ untuk $x<0$."),
   T("Ketaksamaan Segitiga","Untuk $x,y\\in\\mathbb R$, $|x+y|\\le|x|+|y|$.",["Dari $-|x|\\le x\\le|x|$ dan $-|y|\\le y\\le|y|$, dijumlahkan kedua pertidaksamaan.","Diperoleh $-(|x|+|y|)\\le x+y\\le |x|+|y|$.","Definisi nilai mutlak memberi hasil yang diinginkan."]),
-  C("Ketaksamaan Segitiga Terbalik","$\\bigl||x|-|y|\\bigr|\\le|x-y|$."),
-  P("Persekitaran dan Interval","$|x-a|<r$ ekuivalen dengan $a-r<x<a+r$.")
+  C("Ketaksamaan Segitiga Terbalik","$\\bigl||x|-|y|\\bigr|\\le|x-y|$.",[
+  "Ketaksamaan segitiga pada $x=(x-y)+y$ memberi $|x|\\le|x-y|+|y|$, sehingga $|x|-|y|\\le|x-y|$.",
+  "Dengan menukar peran $x$ dan $y$ diperoleh $|y|-|x|\\le|y-x|=|x-y|$.",
+  "Kedua pertidaksamaan setara dengan $-|x-y|\\le|x|-|y|\\le|x-y|$, yang memberi hasil."
+]),
+  P("Persekitaran dan Interval","Untuk $r>0$, berlaku $|x-a|<r$ jika dan hanya jika $a-r<x<a+r$.",[
+  "Menurut definisi nilai mutlak, $|x-a|<r$ setara dengan $-r<x-a<r$.",
+  "Menambahkan $a$ pada ketiga ruas menghasilkan $a-r<x<a+r$.",
+  "Seluruh transformasi ekuivalen, sehingga implikasi balik juga berlaku."
+])
  ],
  examples:[{title:"Mengubah Bentuk Nilai Mutlak",problem:"Selesaikan $|2x-3|<5$.",solution:["Ditulis $-5<2x-3<5$.","Ditambahkan $3$: $-2<2x<8$.","Dibagi $2$: $-1<x<4$."],conclusion:"Himpunan solusi $(-1,4)$."}],
  exercises:[
@@ -140,7 +152,12 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Kondisi tersebut menjadikan $u-\\varepsilon$ batas atas $S$.",
     "Hal itu bertentangan dengan minimalitas $u$ sebagai batas atas terkecil."
   ]),
-  C("Infimum melalui Supremum","Jika $S$ tak kosong dan terbatas di bawah, $\\inf S=-\\sup(-S)$.")
+  C("Infimum melalui Supremum","Jika $S$ tak kosong dan terbatas di bawah, $\\inf S=-\\sup(-S)$.",[
+  "Definisikan $-S=\\{-s:s\\in S\\}$. Karena $S$ terbatas di bawah, $-S$ terbatas di atas.",
+  "Tuliskan $u=\\sup(-S)$. Untuk setiap $s\\in S$ berlaku $-s\\le u$, sehingga $-u\\le s$; jadi $-u$ batas bawah $S$.",
+  "Jika $l$ batas bawah lain dari $S$, maka $-l$ batas atas $-S$, sehingga $u\\le-l$, ekuivalen dengan $l\\le-u$.",
+  "Dengan demikian $-u$ adalah batas bawah terbesar $S$."
+])
  ],
  examples:[{title:"Supremum Himpunan Terbuka",problem:"Tentukan supremum dan infimum $S=(0,1)$.",solution:["Setiap $s\\in S$ memenuhi $s<1$, jadi $1$ batas atas.","Untuk setiap $\\varepsilon>0$, bilangan $1-\\min(\\varepsilon/2,1/2)$ berada di $S$ dan lebih besar dari $1-\\varepsilon$.","Argumen serupa memberi infimum $0$."],conclusion:"$\\sup S=1$ dan $\\inf S=0$, walaupun keduanya tidak termasuk $S$."}],
  exercises:[
@@ -156,7 +173,11 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  intro:["Setelah sifat supremum tersedia, beberapa hasil mendasar dapat diturunkan: sifat Archimedean, keberadaan akar kuadrat positif, dan kerapatan $\\mathbb Q$ serta $\\mathbb R\\setminus\\mathbb Q$.","Hasil-hasil ini menjelaskan mengapa skala bilangan real dapat dipakai untuk aproksimasi sehalus yang dibutuhkan."],
  formal:[
   T("Sifat Archimedean","Untuk setiap $x\\in\\mathbb R$ terdapat $n\\in\\mathbb N$ dengan $n>x$.",["Diandaikan $\\mathbb N$ terbatas di atas dan ambil $u=\\sup\\mathbb N$.","Karakterisasi supremum memberi $n\\in\\mathbb N$ dengan $u-1<n\\le u$.","Diperoleh $n+1>u$ dan $n+1\\in\\mathbb N$, bertentangan dengan $u$ sebagai batas atas."]),
-  C("Bilangan Natural dengan $1/n<\\varepsilon$","Untuk setiap $\\varepsilon>0$ terdapat $n\\in\\mathbb N$ dengan $1/n<\\varepsilon$."),
+  C("Bilangan Natural dengan $1/n<\\varepsilon$","Untuk setiap $\\varepsilon>0$ terdapat $n\\in\\mathbb N$ dengan $1/n<\\varepsilon$.",[
+  "Karena $\\varepsilon>0$, berlaku $1/\\varepsilon>0$.",
+  "Sifat Archimedean menjamin adanya $n\\in\\mathbb N$ dengan $n>1/\\varepsilon$.",
+  "Membalik kedua bilangan positif tersebut memberikan $1/n<\\varepsilon$."
+]),
   T("Kerapatan Rasional","Jika $x<y$, terdapat $r\\in\\mathbb Q$ dengan $x<r<y$.",["Dipilih $n$ sehingga $n(y-x)>1$.","Dengan sifat Archimedean dipilih integer $m$ yang pertama melebihi $nx$.","Minimalitas $m$ memberi $nx<m\\le nx+1<ny$, sehingga $x<m/n<y$."]),
   T("Eksistensi Akar Kuadrat","Untuk setiap $a>0$ terdapat unik $x>0$ dengan $x^2=a$.")
  ],
@@ -175,7 +196,12 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  formal:[
   D("Interval","Himpunan $I\\subseteq\\mathbb R$ disebut interval jika $x,y\\in I$ dan $x<z<y$ mengakibatkan $z\\in I$."),
   T("Nested Interval Property","Jika $I_n=[a_n,b_n]$ tidak kosong dan $I_{n+1}\\subseteq I_n$ untuk semua $n$, maka $\\bigcap_{n=1}^\\infty I_n\\ne\\varnothing$.",["Himpunan $A=\\{a_n\\}$ terbatas di atas oleh setiap $b_n$.","Ambil $x=\\sup A$. Untuk setiap $n$, diperoleh $a_n\\le x\\le b_n$.","Dengan demikian, $x\\in I_n$ untuk seluruh $n$."]),
-  C("Nested Interval dengan Panjang Menuju Nol","Jika tambahan $b_n-a_n\\to0$, irisan nested intervals hanya memuat satu titik.")
+  C("Nested Interval dengan Panjang Menuju Nol","Jika $I_n=[a_n,b_n]$ merupakan interval tertutup tak kosong yang bersarang dan $b_n-a_n\\to0$, maka $\\bigcap_{n=1}^{\\infty}I_n$ memuat tepat satu titik.",[
+  "Nested Interval Property menjamin bahwa irisan semua $I_n$ tidak kosong.",
+  "Andaikan $x$ dan $y$ keduanya anggota irisan. Untuk setiap $n$, $a_n\\le x,y\\le b_n$.",
+  "Karena itu $|x-y|\\le b_n-a_n$ untuk semua $n$.",
+  "Dengan mengambil limit $n\\to\\infty$ diperoleh $|x-y|=0$, sehingga $x=y$."
+])
  ],
  examples:[{title:"Bisection sebagai Nested Intervals",problem:"Jelaskan mengapa metode bisection menghasilkan kandidat akar tunggal jika panjang interval terus dibagi dua.",solution:["Interval baru selalu subset interval lama.","Panjang interval ke-$n$ adalah panjang awal dibagi $2^n$, sehingga menuju nol.","Nested Interval Property memberi satu titik bersama."],conclusion:"Titik bersama menjadi limit endpoint dan kandidat lokasi akar."}],
  exercises:[
@@ -255,8 +281,18 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Untuk $n$ cukup besar, $a_n>a-\\varepsilon$ dan $b_n<b+\\varepsilon$.",
     "Karena $a-\\varepsilon>b+\\varepsilon$, diperoleh $a_n>b_n$, bertentangan dengan urutan akhirnya."
   ]),
-  T("Squeeze Theorem","Jika $a_n\\le b_n\\le c_n$ akhirnya dan $a_n,c_n\\to L$, maka $b_n\\to L$."),
-  C("Limit Pangkat","Jika $a_n\\to a$, maka $a_n^k\\to a^k$ untuk setiap $k\\in\\mathbb N$.")
+  T("Squeeze Theorem","Jika $a_n\\le b_n\\le c_n$ akhirnya dan $a_n,c_n\\to L$, maka $b_n\\to L$.",[
+  "Ambil sebarang $\\varepsilon>0$. Karena $a_n\\to L$ dan $c_n\\to L$, terdapat $N_1,N_2$ sehingga $L-\\varepsilon<a_n$ untuk $n\\ge N_1$ dan $c_n<L+\\varepsilon$ untuk $n\\ge N_2$.",
+  "Pilih $N$ tidak lebih kecil daripada $N_1,N_2$ dan indeks mulai berlakunya $a_n\\le b_n\\le c_n$.",
+  "Untuk setiap $n\\ge N$ diperoleh $L-\\varepsilon<a_n\\le b_n\\le c_n<L+\\varepsilon$, sehingga $|b_n-L|<\\varepsilon$.",
+  "Definisi limit barisan memberi $b_n\\to L$."
+]),
+  C("Limit Pangkat","Jika $a_n\\to a$, maka $a_n^k\\to a^k$ untuk setiap $k\\in\\mathbb N$.",[
+  "Untuk $k=1$, pernyataan merupakan hipotesis.",
+  "Andaikan $a_n^k\\to a^k$ untuk suatu bilangan asli $k$.",
+  "Hukum limit hasil kali memberi $a_n^{k+1}=a_n^ka_n\\to a^ka=a^{k+1}$.",
+  "Prinsip induksi matematika menyelesaikan pembuktian untuk semua $k\\in\\mathbb N$."
+])
  ],
  examples:[
   {title:"Limit Rasional",problem:"Tentukan $\\lim_{n\\to\\infty}\\frac{3n^2+n}{2n^2-5}$.",solution:["Dibagi pembilang dan penyebut dengan $n^2$.","Diperoleh $\\frac{3+1/n}{2-5/n^2}$.","Karena $1/n\\to0$ dan $1/n^2\\to0$, teorema hasil bagi memberi limit $3/2$."],conclusion:"Limitnya $3/2$."},
@@ -281,7 +317,11 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Monotonisitas memberi $a_N\\le a_n\\le L$ untuk $n\\ge N$.",
     "Dengan demikian, $0\\le L-a_n<\\varepsilon$ dan $a_n\\to L$."
   ]),
-  C("Barisan Monoton Tak Terbatas","Jika $(a_n)$ meningkat dan tidak terbatas di atas, maka $a_n\\to+\\infty$.")
+  C("Barisan Monoton Tak Terbatas","Jika $(a_n)$ meningkat dan tidak terbatas di atas, maka $a_n\\to+\\infty$.",[
+  "Ambil sebarang $M\\in\\mathbb R$. Karena barisan tidak terbatas di atas, ada $N$ dengan $a_N>M$.",
+  "Sifat meningkat memberi $a_n\\ge a_N>M$ untuk setiap $n\\ge N$.",
+  "Ini tepat definisi bahwa $a_n\\to+\\infty$."
+])
  ],
  examples:[
   {title:"Barisan Rekursif",problem:"Diberikan $a_1=1$ dan $a_{n+1}=\\sqrt{2+a_n}$. Tunjukkan konvergen dan tentukan limit.",solution:["Dibuktikan dengan induksi bahwa $1\\le a_n<2$.","Fungsi $x\\mapsto\\sqrt{2+x}$ meningkat; dari $a_2>a_1$ dan induksi diperoleh barisan meningkat.","MCT memberi konvergensi ke $L\\in[1,2]$.","Passing to the limit pada relasi rekursif memberi $L=\\sqrt{2+L}$, sehingga $L^2-L-2=0$. Karena $L>0$, diperoleh $L=2$."],conclusion:"Barisan konvergen ke $2$."}
@@ -304,7 +344,12 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Definisi konvergensi barisan asal langsung berlaku pada indeks $n_k$."
   ]),
   T("Bolzano–Weierstrass","Setiap barisan real yang terbatas memiliki subbarisan konvergen."),
-  C("Uji Divergensi melalui Subbarisan","Jika suatu barisan memiliki dua subbarisan yang konvergen ke limit berbeda, barisan asal divergen.")
+  C("Uji Divergensi melalui Subbarisan","Jika suatu barisan memiliki dua subbarisan yang konvergen ke limit berbeda, barisan asal divergen.",[
+  "Andaikan barisan asal $(a_n)$ konvergen ke $L$.",
+  "Setiap subbarisan dari barisan konvergen juga konvergen ke $L$ menurut definisi limit.",
+  "Dua subbarisan yang memiliki limit berbeda bertentangan dengan sifat ini dan keunikan limit.",
+  "Oleh karena itu barisan asal tidak konvergen."
+])
  ],
  examples:[
   {title:"Osilasi $(-1)^n$",problem:"Gunakan subbarisan untuk menunjukkan $(-1)^n$ divergen.",solution:["Subbarisan indeks genap $a_{2k}=1$ konvergen ke $1$.","Subbarisan indeks ganjil $a_{2k-1}=-1$ konvergen ke $-1$.","Jika barisan asal konvergen, semua subbarisan harus memiliki limit yang sama."],conclusion:"Karena dua limit berbeda, barisan asal divergen."}
@@ -348,7 +393,11 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
   D("Limit $+\\infty$","$a_n\\to+\\infty$ jika untuk setiap $M\\in\\mathbb R$ terdapat $N$ sehingga $n\\ge N$ mengakibatkan $a_n>M$."),
   D("Limit $-\\infty$","$a_n\\to-\\infty$ jika untuk setiap $M\\in\\mathbb R$ terdapat $N$ sehingga $n\\ge N$ mengakibatkan $a_n<M$."),
   P("Monoton Tak Terbatas","Barisan meningkat yang tak terbatas di atas menuju $+\\infty$; versi menurun analog menuju $-\\infty$."),
-  P("Resiprok","Jika $a_n>0$ akhirnya dan $a_n\\to+\\infty$, maka $1/a_n\\to0$.")
+  P("Resiprok","Jika $a_n>0$ akhirnya dan $a_n\\to+\\infty$, maka $1/a_n\\to0$.",[
+  "Ambil $\\varepsilon>0$. Dari $a_n\\to+\\infty$ terdapat $N_1$ sehingga $a_n>1/\\varepsilon$ untuk $n\\ge N_1$.",
+  "Pilih pula $N_2$ sehingga $a_n>0$ untuk $n\\ge N_2$, dan tetapkan $N=\\max\\{N_1,N_2\\}$.",
+  "Untuk $n\\ge N$, diperoleh $0<1/a_n<\\varepsilon$, yang memberi $|1/a_n-0|<\\varepsilon$."
+])
  ],
  examples:[{title:"Polinomial",problem:"Tunjukkan $n^2-3n\\to+\\infty$.",solution:["Ditulis $n^2-3n=n(n-3)$.","Untuk $n\\ge6$, berlaku $n-3\\ge n/2$, sehingga $n^2-3n\\ge n^2/2$.","Diberikan $M$, pilih $N>\\sqrt{2M}$ dan $N\\ge6$."],conclusion:"Untuk $n\\ge N$, nilai barisan melebihi $M$."}],
  exercises:[
@@ -366,8 +415,18 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  formal:[
   D("Konvergensi Deret","Deret $\\sum a_n$ konvergen ke $S$ jika barisan jumlah parsialnya $s_n$ konvergen ke $S$."),
   T("Uji Suku ke-$n$","Jika $\\sum a_n$ konvergen, maka $a_n\\to0$.",["Karena $a_n=s_n-s_{n-1}$ dan $s_n,s_{n-1}\\to S$, aljabar limit memberi $a_n\\to S-S=0$."]),
-  T("Deret Geometri","Untuk $|r|<1$, $\\sum_{n=0}^\\infty r^n=1/(1-r)$. Untuk $|r|\\ge1$, deret tidak konvergen."),
-  T("Kriteria Cauchy untuk Deret","$\\sum a_n$ konvergen jika dan hanya jika untuk setiap $\\varepsilon>0$ terdapat $N$ sehingga $m>n\\ge N$ memberi $|a_{n+1}+\\cdots+a_m|<\\varepsilon$.")
+  T("Deret Geometri","Untuk $|r|<1$, $\\sum_{n=0}^\\infty r^n=1/(1-r)$. Untuk $|r|\\ge1$, deret tidak konvergen.",[
+  "Untuk $r\\ne1$, jumlah parsial memenuhi $s_N=1+r+\\cdots+r^N=(1-r^{N+1})/(1-r)$, diperoleh dengan mengurangkan $rs_N$ dari $s_N$.",
+  "Jika $|r|<1$, maka $r^{N+1}\\to0$ sehingga $s_N\\to1/(1-r)$.",
+  "Jika $|r|\\ge1$, suku $r^n$ tidak menuju nol, termasuk ketika $r=1$ atau $r=-1$.",
+  "Syarat perlu konvergensi deret mengharuskan sukunya menuju nol. Dengan demikian deret divergen untuk $|r|\\ge1$."
+]),
+  T("Kriteria Cauchy untuk Deret","$\\sum a_n$ konvergen jika dan hanya jika untuk setiap $\\varepsilon>0$ terdapat $N$ sehingga $m>n\\ge N$ memberi $|a_{n+1}+\\cdots+a_m|<\\varepsilon$.",[
+  "Definisikan jumlah parsial $s_n=\\sum_{k=1}^n a_k$.",
+  "Untuk $m>n$, identitas $s_m-s_n=a_{n+1}+\\cdots+a_m$ berlaku.",
+  "Kriteria pada pernyataan tepat sama dengan syarat bahwa barisan $(s_n)$ Cauchy.",
+  "Karena $\\mathbb R$ lengkap, $(s_n)$ Cauchy jika dan hanya jika konvergen, yang setara dengan konvergensi deret."
+])
  ],
  examples:[{title:"Deret Teleskopik",problem:"Hitung $\\sum_{n=1}^\\infty \\frac1{n(n+1)}$.",solution:["Gunakan pecahan parsial $1/[n(n+1)]=1/n-1/(n+1)$.","Jumlah parsial $s_N=1-1/(N+1)$.","Ambil limit $N\\to\\infty$."],conclusion:"Jumlah deret adalah $1$."}],
  exercises:[
@@ -438,8 +497,18 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  formal:[
   D("Kontinu di Titik","$f$ kontinu di $a$ jika untuk setiap $\\varepsilon>0$ terdapat $\\delta>0$ sehingga $|x-a|<\\delta$ mengakibatkan $|f(x)-f(a)|<\\varepsilon$."),
   T("Kriteria Sekuensial Kontinuitas","$f$ kontinu di $a$ jika dan hanya jika setiap $x_n\\to a$ memberi $f(x_n)\\to f(a)$."),
-  P("Kontinuitas Polinomial","Setiap polinomial kontinu pada $\\mathbb R$."),
-  P("Kontinuitas Nilai Mutlak","Fungsi $x\\mapsto|x|$ kontinu pada $\\mathbb R$.")
+  P("Kontinuitas Polinomial","Setiap polinomial kontinu pada $\\mathbb R$.",[
+  "Fungsi konstan dan fungsi identitas $x\\mapsto x$ kontinu pada setiap bilangan real.",
+  "Hukum limit hasil kali menunjukkan $x\\mapsto x^k$ kontinu untuk setiap bilangan bulat tak negatif $k$.",
+  "Hukum limit jumlah dan perkalian skalar menjamin setiap kombinasi hingga $a_0+a_1x+\\cdots+a_nx^n$ kontinu.",
+  "Setiap polinomial merupakan kombinasi demikian."
+]),
+  P("Kontinuitas Nilai Mutlak","Fungsi $x\\mapsto|x|$ kontinu pada $\\mathbb R$.",[
+  "Untuk sebarang $a,x\\in\\mathbb R$, ketaksamaan segitiga terbalik memberi $\\bigl||x|-|a|\\bigr|\\le|x-a|$.",
+  "Ambil $\\varepsilon>0$ dan pilih $\\delta=\\varepsilon$.",
+  "Jika $|x-a|<\\delta$, maka $\\bigl||x|-|a|\\bigr|<\\varepsilon$.",
+  "Ini membuktikan kontinuitas fungsi nilai mutlak di setiap $a$."
+])
  ],
  examples:[{title:"Diskontinuitas Removable",problem:"Diberikan $f(x)=(x^2-1)/(x-1)$ untuk $x\\ne1$ dan $f(1)=0$. Apakah kontinu di $1$?",solution:["Untuk $x\\ne1$, $f(x)=x+1$.","Limit saat $x\\to1$ adalah $2$.","Nilai $f(1)=0$ tidak sama dengan limit."],conclusion:"Fungsi diskontinu di $1$; diskontinuitas dapat diperbaiki dengan menetapkan $f(1)=2$."}],
  exercises:[
@@ -492,7 +561,12 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
  formal:[
   D("Kontinuitas Seragam","$f:A\\to\\mathbb R$ kontinu seragam jika untuk setiap $\\varepsilon>0$ terdapat $\\delta>0$ sehingga untuk semua $x,y\\in A$, $|x-y|<\\delta$ mengakibatkan $|f(x)-f(y)|<\\varepsilon$."),
   T("Heine–Cantor","Setiap fungsi kontinu pada interval tertutup terbatas $[a,b]$ kontinu seragam."),
-  P("Lipschitz Mengakibatkan Kontinu Seragam","Jika $|f(x)-f(y)|\\le K|x-y|$, maka $f$ kontinu seragam."),
+  P("Lipschitz Mengakibatkan Kontinu Seragam","Jika $f$ memenuhi $|f(x)-f(y)|\\le K|x-y|$ untuk semua titik domain dan suatu konstanta $K\\ge0$, maka $f$ kontinu seragam.",[
+  "Ambil $\\varepsilon>0$. Jika $K=0$, fungsi konstan pada domain dan karena itu kontinu seragam.",
+  "Jika $K>0$, pilih $\\delta=\\varepsilon/K$ yang tidak bergantung pada titik domain.",
+  "Untuk $|x-y|<\\delta$ diperoleh $|f(x)-f(y)|\\le K|x-y|<K\\delta=\\varepsilon$.",
+  "Definisi kontinuitas seragam terpenuhi."
+]),
   P("Kontinu Seragam Mempertahankan Cauchy","Jika $x_n$ Cauchy dan $f$ kontinu seragam, maka $f(x_n)$ Cauchy.")
  ],
  examples:[{title:"$x^2$ pada Domain Berbeda",problem:"Bandingkan kontinuitas seragam $f(x)=x^2$ pada $[0,1]$ dan $\\mathbb R$.",solution:["Pada $[0,1]$, Heine–Cantor memberi kontinuitas seragam.","Pada $\\mathbb R$, ambil $x_n=n$ dan $y_n=n+1/n$. Jarak $|x_n-y_n|=1/n\\to0$.","Namun $|x_n^2-y_n^2|=2+1/n^2$ tidak menuju nol."],conclusion:"$x^2$ tidak kontinu seragam pada $\\mathbb R$."}],
@@ -564,8 +638,18 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
 "teorema-nilai-rata-rata":{
  intro:["Mean Value Theorem menjembatani turunan lokal dengan perubahan total fungsi pada interval. Banyak teorema monotonicity, uniqueness, dan estimasi dibuktikan darinya.","Rolle's theorem merupakan kasus khusus ketika nilai endpoint sama."],
  formal:[
-  T("Rolle","Jika $f$ kontinu pada $[a,b]$, terdiferensial pada $(a,b)$, dan $f(a)=f(b)$, terdapat $c\\in(a,b)$ dengan $f'(c)=0$."),
-  T("Mean Value Theorem","Jika $f$ kontinu pada $[a,b]$ dan terdiferensial pada $(a,b)$, terdapat $c\\in(a,b)$ sehingga $f'(c)=[f(b)-f(a)]/(b-a)$."),
+  T("Rolle","Jika $a<b$, $f$ kontinu pada $[a,b]$, terdiferensial pada $(a,b)$, dan $f(a)=f(b)$, maka terdapat $c\\in(a,b)$ dengan $f'(c)=0$.",[
+  "Teorema nilai ekstrem menjamin bahwa $f$ mencapai maksimum dan minimum absolut pada $[a,b]$.",
+  "Jika $f$ konstan, sebarang $c\\in(a,b)$ memenuhi $f'(c)=0$.",
+  "Jika $f$ tidak konstan, karena $f(a)=f(b)$, sekurang-kurangnya salah satu nilai ekstrem absolut dicapai di titik interior $c\\in(a,b)$.",
+  "Di ekstrem interior yang terdiferensial, syarat Fermat memberi $f'(c)=0$."
+]),
+  T("Mean Value Theorem","Jika $a<b$, $f$ kontinu pada $[a,b]$ dan terdiferensial pada $(a,b)$, terdapat $c\\in(a,b)$ sehingga $f'(c)=[f(b)-f(a)]/(b-a)$.",[
+  "Bentuk $g(x)=f(x)-\\frac{f(b)-f(a)}{b-a}(x-a)$.",
+  "Fungsi $g$ kontinu pada $[a,b]$, terdiferensial pada $(a,b)$, dan memenuhi $g(a)=f(a)=g(b)$.",
+  "Teorema Rolle menjamin suatu $c\\in(a,b)$ dengan $g'(c)=0$.",
+  "Karena $g'(c)=f'(c)-\\frac{f(b)-f(a)}{b-a}$, diperoleh kesimpulan."
+]),
   C("Turunan Nol","Jika $f'(x)=0$ pada interval, $f$ konstan pada interval tersebut.",["Untuk $x<y$, MVT memberi $f(y)-f(x)=f'(c)(y-x)=0$."]),
   C("Tanda Turunan dan Monotonisitas","Jika $f'(x)>0$ pada interval, $f$ strictly increasing.")
  ],
