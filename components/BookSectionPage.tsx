@@ -136,7 +136,11 @@ export function BookSectionPage({
     ...invalidDefinitions.map((item)=>({...item,kind:"note" as const,title:"Konsep · "+item.title})),
   ];
   const visualKind=visualizationForSection(subject,section);
-  const examplesForSection=content.examples;
+  const linkedExampleTitles=new Set(definitions.map(definition=>
+    getCuratedDefinitionExample(subject.slug,definition.title)
+      ??findDefinitionExample(definition.title,definitions.length,content.examples)
+  ).filter((example):example is BookExample=>Boolean(example)).map(example=>example.title));
+  const examplesForSection=content.examples.filter(example=>!linkedExampleTitles.has(example.title));
 
   const sections=[
     {id:"book-lesson-1",label:"Pengantar"},
