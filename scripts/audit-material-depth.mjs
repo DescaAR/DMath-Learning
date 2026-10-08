@@ -40,8 +40,10 @@ function loadSource(filename){
     }
     if(specifier.startsWith("./")||specifier.startsWith("../")){
       const fromFile=path.resolve(path.dirname(absolute),specifier);
-      const withExtension=resolveLocal(path.relative(root,fromFile));
-      return loadSource(withExtension);
+      const localFile=[fromFile,fromFile+".ts",fromFile+".tsx",path.join(fromFile,"index.ts")]
+        .find(candidate=>fs.existsSync(candidate)&&fs.statSync(candidate).isFile());
+      if(!localFile)throw new Error("Missing relative source: "+specifier+" imported by "+absolute);
+      return loadSource(localFile);
     }
     return nativeRequire(specifier);
   };
