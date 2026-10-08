@@ -14,6 +14,8 @@ import {
   type IntegralWorkedExercise,
 } from "@/data/integral-riemann-worked-exercises";
 import { RichMath } from "@/components/RichMath";
+import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
+import type { BookFormalKind } from "@/data/book-content-types";
 
 function SourceText({ text }: { text: string }) {
   return <RichMath className="ird-rich-text">{text}</RichMath>;
@@ -60,6 +62,17 @@ const kindNames: Record<string, string> = {
   proof: "Pembuktian",
 };
 
+const riemannFormalNumbers=new WeakMap<IntegralSourceBlock,string>();
+for(const [chapterIndex,section] of integralRiemannDarbouxSections.entries()){
+  const counter:Record<string,number>={};
+  const ordered=[...section.blocks,...section.subsections.flatMap((item)=>item.blocks)];
+  for(const block of ordered){
+    if(!["definition","lemma","proposition","theorem","corollary"].includes(block.kind))continue;
+    counter[block.kind]=(counter[block.kind]??0)+1;
+    riemannFormalNumbers.set(block,(chapterIndex+1)+"."+counter[block.kind]);
+  }
+}
+
 function FormalBlock({ block, index }: { block: IntegralSourceBlock; index: number }) {
   if (block.kind === "paragraph") {
     return (
@@ -67,6 +80,13 @@ function FormalBlock({ block, index }: { block: IntegralSourceBlock; index: numb
         <SourceText text={block.text ?? ""} />
       </div>
     );
+  }
+
+  if(["definition","lemma","proposition","theorem","corollary"].includes(block.kind)){
+    return <ThesisFormalBlock kind={block.kind as BookFormalKind}
+      number={riemannFormalNumbers.get(block)??"1."+(index+1)}
+      title={block.title} statement={block.body??""}
+      proof={block.proof?[block.proof]:undefined}/>;
   }
 
   const label = kindNames[block.kind] ?? block.kind;
