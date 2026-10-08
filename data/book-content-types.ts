@@ -6,6 +6,11 @@ export type BookFormalItem={
   statement:string;
   proof?:string[];
   explanation?:string;
+  citation?:string;
+  given?:string;
+  toProve?:string;
+  proofDirections?:Array<{direction:"forward"|"backward";known:string;target:string;steps:string[]}>;
+  proofTargets?:Array<{target:string;steps:string[]}>;
 };
 export type BookExample={
   title:string;
