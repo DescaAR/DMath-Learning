@@ -60,4 +60,37 @@ assert.match(thesis,/Dibuktikan/,"Thesis proof must support proof targets");
 assert.match(thesis,/thesis-proof-direction/,"Thesis proof must support two directions");
 assert.match(thesis,/thesis-proof-targets/,"Thesis proof must support enumerated claims");
 
-console.log("DMath thesis format audit passed: parser and all five material renderers.");
+// Audit genuine, author-linked examples rather than pairing unrelated cards by index.
+const additionalExamples=fs.readFileSync(path.join(root,"data/definition-examples-part3.ts"),"utf8");
+const authored=[...additionalExamples.matchAll(/^\s*"analisis-real:([^"]+)":\{/gm)].map(match=>match[1]);
+assert.equal(authored.length,23,"Expected 23 newly authored Real Analysis examples");
+assert.equal(new Set(authored).size,authored.length,"Duplicate definition-example key");
+const realSources=["data/real-analysis-book-content-a.ts","data/real-analysis-book-content-b.ts"]
+  .map(file=>fs.readFileSync(path.join(root,file),"utf8")).join("\n");
+for(const title of authored){
+  assert.ok(realSources.includes('D("'+title+'"'),"Example has no matching definition: "+title);
+  assert.ok(additionalExamples.includes('forDefinition:"'+title+'"'),
+    "Example must explicitly identify its source definition: "+title);
+}
+
+// Check authoring order: each definition's example precedes any explanation.
+const deep=fs.readFileSync(path.join(root,"components/DeepMaterialPage.tsx"),"utf8");
+const definitionPart=deep.slice(deep.indexOf("{definitions.map("),deep.indexOf("</section>",deep.indexOf("{definitions.map(")));
+assert.ok(definitionPart.indexOf("{example&&")<definitionPart.indexOf("{definition.intuition&&"),
+  "Definitions must be followed immediately by examples, before extra commentary");
+const formalChapter=fs.readFileSync(path.join(root,"components/FormalChapterSection.tsx"),"utf8");
+assert.ok(formalChapter.indexOf("{definitionExample&&")<formalChapter.indexOf("{block.intuition&&"),
+  "Formal Chapter examples must appear directly beneath definitions");
+assert.match(formalChapter,/number=\{chapterNumber\+"\."\+ordinal\}/,
+  "Formal chapter numbering must not be hard-coded to chapter one");
+
+// Reviewed proof directions replace old paragraphs and cannot appear twice.
+assert.match(thesis,/const hasReviewedStructure=Boolean\(directions\?\.length\|\|targets\?\.length\)/);
+assert.match(thesis,/parseThesisProof\(hasReviewedStructure\?\[\]:\(proof\?\?\[\]\)\)/);
+assert.doesNotMatch(deep,/Hasil ini merumuskan hubungan formal yang digunakan pada contoh/);
+const proofStructures=fs.readFileSync(path.join(root,"data/thesis-proof-structures.ts"),"utf8");
+assert.match(proofStructures,/"analisis-real:theorem:Kriteria Cauchy di ℝ"/);
+assert.match(proofStructures,/direction:"forward"/);
+assert.match(proofStructures,/direction:"backward"/);
+console.log("DMath thesis format audit passed: parser, five renderers, proof order, chapter numbering, and 23 linked definitions.");
+
