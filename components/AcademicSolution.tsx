@@ -9,7 +9,7 @@ function Text({children}:{children:string}){
 
 /** Keep author's mathematics intact; remove only duplicate headings and repeated content. */
 function comparable(value:string){
-  return value.trim().replace(/\\s+/g," ").replace(/[.!?]+$/g,"").toLocaleLowerCase();
+  return value.trim().replace(/\s+/g," ").replace(/[.!?]+$/g,"").toLocaleLowerCase();
 }
 function uniqueParagraphs(values:string[]){
   const used=new Set<string>();
@@ -21,7 +21,7 @@ function uniqueParagraphs(values:string[]){
   });
 }
 function leadingConnector(value:string){
-  return value.replace(/^(Jadi|Maka|Sehingga)(?=\\s|,)/,match=>
+  return value.replace(/^(Jadi|Maka|Sehingga)(?=\s|,)/,match=>
     match==="Jadi"?"Dengan demikian":match==="Maka"?"Oleh karena itu":"Dengan demikian");
 }
 
@@ -67,7 +67,7 @@ export function AcademicSolution({
 
 /** Keep authored paragraphs intact; never convert every sentence into a numbered step. */
 export function splitAcademicSolution(text:string){
-  const lines=text.replace(/\\r/g,"").split(/\\n\\s*\\n|\\n(?=\\s*\\([a-z]\\)\\s)/)
+  const lines=text.replace(/\r/g,"").split(/\n\s*\n|\n(?=\s*\([a-z]\)\s)/)
     .map(x=>x.trim()).filter(Boolean);
   return lines.length?lines:[text.trim()].filter(Boolean);
 }
