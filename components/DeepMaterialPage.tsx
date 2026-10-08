@@ -63,7 +63,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const nextChapter = chapterIndex >= 0 && chapterIndex < deepMaterials.length - 1 ? deepMaterials[chapterIndex + 1] : null;
 
   const formalDefinitions = formal?.blocks.filter((block) => block.kind === "definition"&&isAcademicDefinition(pick(block.statement))) ?? [];
-  const formalResults = formal?.blocks.filter((block) => block.kind !== "definition") ?? [];
+  const formalResults = formal?.blocks.filter((block) => ["lemma","proposition","theorem","corollary"].includes(block.kind)) ?? [];
   const provenFormalResults=formalResults.filter((block)=>hasSubstantiveProof(block.proof));
   const explanatoryFormalResults=formalResults.filter((block)=>!hasSubstantiveProof(block.proof));
 
@@ -303,22 +303,26 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         <div className="ird-summary-grid">
           {definitions.map((definition,index)=>(
             <details className="ird-summary-card ird-summary-definition" key={"def-"+index}>
-              <summary><span>{ui("Definisi","Definition")} {index+1}</span><strong><TitleText>{definition.title}</TitleText></strong></summary>
+              <summary><span>{ui("Definisi","Definition")} {thesisChapter+"."+(index+1)}</span><strong><TitleText>{definition.title}</TitleText></strong></summary>
               <div className="ird-paragraph"><Text>{definition.statement}</Text></div>
             </details>
           ))}
           {provenTheorems.map((theorem,index)=>(
             <details className="ird-summary-card ird-summary-theorem" key={"thm-"+index}>
-              <summary><span>{ui("Teorema","Theorem")} {index+1}</span><strong><TitleText>{theorem.title}</TitleText></strong></summary>
+              <summary><span>{ui("Teorema","Theorem")} {thesisChapter+"."+(index+1)}</span><strong><TitleText>{theorem.title}</TitleText></strong></summary>
               <div className="ird-paragraph"><Text>{theorem.statement}</Text></div>
             </details>
           ))}
-          {provenFormalResults.map((block,index)=>(
-            <details className="ird-summary-card ird-summary-theorem" key={"formal-"+index}>
-              <summary><span>{ui("Hasil Formal","Formal Result")} {index+1}</span><strong><TitleText>{pick(block.title)}</TitleText></strong></summary>
+          {provenFormalResults.map((block,index)=>{
+            const ordinal=provenFormalResults.slice(0,index).filter(previous=>previous.kind===block.kind).length;
+            const offset=block.kind==="theorem"?provenTheorems.length:0;
+            const number=thesisChapter+"."+(offset+ordinal+1);
+            const label=block.kind==="lemma"?"Lemma":block.kind==="proposition"?ui("Proposisi","Proposition"):block.kind==="corollary"?ui("Akibat","Corollary"):ui("Teorema","Theorem");
+            return <details className="ird-summary-card ird-summary-theorem" key={"formal-"+index}>
+              <summary><span>{label} {number}</span><strong><TitleText>{pick(block.title)}</TitleText></strong></summary>
               <div className="ird-paragraph"><Text>{pick(block.statement)}</Text></div>
-            </details>
-          ))}
+            </details>;
+          })}
         </div>
       </section>
 
