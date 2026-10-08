@@ -1,5 +1,6 @@
 import { bookSubjects } from "@/data/book-curricula";
-import { bookSectionContent } from "@/data/book-section-content";
+import { getBookSectionContent } from "@/data/book-section-content";
+import { getCuratedDefinitionExample } from "@/data/definition-examples";
 import type { BookFormalItem } from "@/data/book-content-types";
 import { isPublicAcademicLevel, isPublicBookSubjectSlug } from "@/lib/public-content";
 
@@ -154,7 +155,7 @@ function buildBank(subject: (typeof bookSubjects)[number]): SubjectProblemBank {
 
   for (const chapter of subject.chapters) {
     for (const section of chapter.sections) {
-      const exercises = bookSectionContent[section.slug]?.exercises ?? [];
+      const exercises = getBookSectionContent(section.slug)?.exercises ?? [];
       exercises.forEach((exercise, index) => {
         addProblem(chapter, section, {
           kind: "Latihan",
@@ -169,7 +170,7 @@ function buildBank(subject: (typeof bookSubjects)[number]): SubjectProblemBank {
 
   for (const chapter of subject.chapters) {
     for (const section of chapter.sections) {
-      const content = bookSectionContent[section.slug];
+      const content = getBookSectionContent(section.slug);
       if (!content) continue;
 
       addProblem(chapter, section, {
@@ -200,6 +201,19 @@ function buildBank(subject: (typeof bookSubjects)[number]): SubjectProblemBank {
           prompt: buildFormalPrompt(item),
           hint: buildFormalHint(item, section.keyIdeas),
           answer: buildFormalAnswer(item, section.summary),
+        });
+      }
+
+      const existingExampleProblems=new Set(content.examples.map((example)=>example.problem));
+      for (const definition of content.formal.filter((item)=>item.kind==="definition")) {
+        const example=getCuratedDefinitionExample(subject.slug,definition.title);
+        if(!example || existingExampleProblems.has(example.problem))continue;
+        addProblem(chapter,section,{
+          kind:"Contoh",
+          difficulty:"Menengah",
+          prompt:example.problem,
+          hint:example.solution[0]??"Periksa definisi dan hitung setiap langkah secara runtut.",
+          answer:[...example.solution,...(example.conclusion?[example.conclusion]:[])].join("\n\n"),
         });
       }
 
