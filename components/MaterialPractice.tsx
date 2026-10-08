@@ -83,7 +83,7 @@ export function MaterialPractice({ problems, storageKey }: { problems: MaterialP
                 {openHint[problem.id]?(en?"Hide Hint":"Tutup Hint"):(en?"Show Hint":"Lihat Hint")}
               </button>
               <button type="button" onClick={()=>setOpenAnswer(prev=>({...prev,[problem.id]:!prev[problem.id]}))}>
-                {openAnswer[problem.id]?(en?"Hide Solution":"Tutup Pembahasan"):(en?"Reveal Solution":"Buka Pembahasan")}
+                {openAnswer[problem.id]?(en?"Hide Solution":"Tutup Pembahasan"):(en?"Reveal Solution":"Buka Solusi")}
               </button>
             </div>
 
