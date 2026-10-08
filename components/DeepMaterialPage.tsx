@@ -84,6 +84,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ...formalDefinitions.map((block)=>({title:pick(block.title),statement:pick(block.statement),intuition:block.intuition?pick(block.intuition):""})),
   ];
 
+  const pairedExampleTitles=new Set(definitions.map(definition=>
+    findDefinitionExample(definition.title,definitions.length,localExamples)
+  ).filter((example):example is LocalExample=>Boolean(example)).map(example=>example.title));
+  const unpairedExamples=localExamples.filter(example=>!pairedExampleTitles.has(example.title));
   const provenTheorems=m.theorems.filter((theorem)=>hasSubstantiveProof(theorem.proof));
   const incompleteTheorems=m.theorems.filter((theorem)=>!hasSubstantiveProof(theorem.proof));
   const resultCount=provenTheorems.length+provenFormalResults.length;
@@ -260,7 +264,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         <span className="eyebrow">{ui("Bagian 4","Part 4")}</span>
         <h2>{ui("Contoh terbahas","Worked examples")}</h2>
         <div className="ird-worked-grid">
-          {localExamples.map((example, index) => (
+          {unpairedExamples.map((example, index) => (
             <article className="ird-worked-card" key={example.title+index}>
               <div className="ird-worked-head">
                 <div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div>
