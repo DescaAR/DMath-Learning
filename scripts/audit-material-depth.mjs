@@ -93,9 +93,8 @@ for(const subject of bookSubjects){
         const t=definition.title.trim().toLocaleLowerCase("id-ID");
         const explicit=content.examples.some(example=>example.forDefinition?.trim().toLocaleLowerCase("id-ID")===t
           || example.title.trim().toLocaleLowerCase("id-ID")===t);
-        const single=definitions.length===1&&content.examples.length===1;
         const curated=!!getCuratedDefinitionExample(subject.slug,definition.title);
-        if(explicit||single||curated)row.definitionsWithExample++;
+        if(explicit||curated)row.definitionsWithExample++;
         else concerns.push({subject:subject.title,section:section.slug,problem:"no verified example",title:definition.title});
       }
       for(const item of content.formal.filter(x=>["theorem","lemma","proposition","corollary"].includes(x.kind))){
