@@ -30,8 +30,14 @@ function isAcademicDefinition(statement:string){
 }
 
 function hasSubstantiveProof(proof?:unknown[]){
-  if(!proof||proof.length<2)return false;
-  return proof.map(String).join(" ").replace(/\s+/g," ").trim().length>=100;
+  return !!proof && proof.length>=2 &&
+    proof.every((step)=>typeof step==="object"&&step!==null ? true : String(step).trim().length>0);
+}
+
+function findDefinitionExample(title:string,definitionsCount:number,examples:LocalExample[]){
+  const normalized=title.trim().toLocaleLowerCase("id-ID");
+  const byTitle=examples.find((example)=>example.title.trim().toLocaleLowerCase("id-ID")===normalized);
+  return byTitle??(definitionsCount===1&&examples.length===1?examples[0]:null);
 }
 
 type LocalExample={
@@ -76,7 +82,9 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ...formalDefinitions.map((block)=>({title:pick(block.title),statement:pick(block.statement),intuition:block.intuition?pick(block.intuition):""})),
   ];
 
-  const resultCount=m.theorems.length+provenFormalResults.length;
+  const provenTheorems=m.theorems.filter((theorem)=>hasSubstantiveProof(theorem.proof));
+  const incompleteTheorems=m.theorems.filter((theorem)=>!hasSubstantiveProof(theorem.proof));
+  const resultCount=provenTheorems.length+provenFormalResults.length;
 
   const sections = [
     {id:"gm-section-1",label:ui("Pengantar","Introduction")},
@@ -84,6 +92,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     {id:"gm-section-5",label:ui("Hasil Formal & Bukti","Formal Results & Proofs")},
     {id:"gm-section-6",label:ui("Contoh Terbahas","Worked Examples")},
     {id:"gm-section-7",label:ui("Visualisasi","Visualization")},
+    {id:"gm-summary",label:ui("Ringkasan Definisi & Teorema","Definitions & Theorems Summary")},
     {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},
   ];
 
@@ -129,6 +138,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         ui("Hasil formal & bukti","Formal results & proofs"),
         ui("Contoh terbahas","Worked examples"),
         ui("Visualisasi","Visualization"),
+        ui("Ringkasan","Summary"),
         ui("Latihan","Practice"),
       ]}
       sections={sections}
@@ -157,7 +167,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         )}</p>
 
         {definitions.map((definition,index)=>{
-          const example=localExamples[index%Math.max(1,localExamples.length)];
+          const example=findDefinitionExample(definition.title,definitions.length,localExamples);
           return(
             <div className="definition-example-pair" key={definition.title+index}>
               <article className="ird-formal ird-definition">
@@ -194,7 +204,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           "Every theorem, lemma, proposition, and corollary shown here includes an explanation and proof."
         )}</p>
 
-        {m.theorems.map((theorem) => (
+        {provenTheorems.map((theorem) => (
           <div className="formal-result-pair" key={theorem.title}>
             <article className="ird-formal ird-theorem">
               <div className="ird-formal-head"><span>{ui("Teorema","Theorem")}</span><strong><TitleText>{theorem.title}</TitleText></strong></div>
@@ -247,6 +257,13 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           );
         })}
 
+        {incompleteTheorems.map((theorem,index)=>(
+          <article className="ird-formal ird-note" key={"incomplete-theorem-"+index}>
+            <div className="ird-formal-head"><span>{ui("Catatan","Note")}</span><strong><TitleText>{theorem.title}</TitleText></strong></div>
+            <div className="ird-formal-body"><Text>{theorem.statement}</Text></div>
+          </article>
+        ))}
+
         {explanatoryFormalResults.map((block,index)=>(
           <article className="ird-formal ird-note" key={"note-"+index}>
             <div className="ird-formal-head"><span>{ui("Catatan","Note")}</span><strong><TitleText>{pick(block.title)}</TitleText></strong></div>
@@ -292,8 +309,35 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         </div>
       </section>
 
-      <section id="gm-latihan" className="book-section ird-practice-section">
+      <section id="gm-summary" className="book-section ird-summary-section">
         <div className="section-number">06</div>
+        <span className="eyebrow">{ui("Ringkasan Materi","Material Summary")}</span>
+        <h2>{ui("Ringkasan Definisi dan Teorema","Definitions and Theorems Summary")}</h2>
+        <p className="ird-paragraph">{ui("Ringkasan ini memuat pernyataan penting tanpa mengulang pembuktian.", "This summary contains important statements without repeating their proofs.")}</p>
+        <div className="ird-summary-grid">
+          {definitions.map((definition,index)=>(
+            <details className="ird-summary-card ird-summary-definition" key={"def-"+index}>
+              <summary><span>{ui("Definisi","Definition")} {index+1}</span><strong><TitleText>{definition.title}</TitleText></strong></summary>
+              <div className="ird-paragraph"><Text>{definition.statement}</Text></div>
+            </details>
+          ))}
+          {provenTheorems.map((theorem,index)=>(
+            <details className="ird-summary-card ird-summary-theorem" key={"thm-"+index}>
+              <summary><span>{ui("Teorema","Theorem")} {index+1}</span><strong><TitleText>{theorem.title}</TitleText></strong></summary>
+              <div className="ird-paragraph"><Text>{theorem.statement}</Text></div>
+            </details>
+          ))}
+          {provenFormalResults.map((block,index)=>(
+            <details className="ird-summary-card ird-summary-theorem" key={"formal-"+index}>
+              <summary><span>{ui("Hasil Formal","Formal Result")} {index+1}</span><strong><TitleText>{pick(block.title)}</TitleText></strong></summary>
+              <div className="ird-paragraph"><Text>{pick(block.statement)}</Text></div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section id="gm-latihan" className="book-section ird-practice-section">
+        <div className="section-number">07</div>
         <span className="eyebrow">{ui("Latihan Soal dan Solusi","Practice Problems and Solutions")}</span>
         <h2>{practice.length} {ui("latihan soal","practice problems")}</h2>
         <p className="ird-paragraph">{ui(
