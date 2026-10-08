@@ -16,7 +16,7 @@ const parse=module.exports.parseThesisProof;
 assert.equal(typeof parse,"function","Proof parser must be exported");
 
 const twoWays=parse([
-  "Diketahui ruang topologi $(X,\\tau)$.\\nDibuktikan bahwa dua sifat ekuivalen.\\nPembuktian dilakukan dalam dua arah.\\n(⇒) Diketahui sifat $P$.\\nDibuktikan bahwa sifat $Q$.\\nDiambil sebarang $x\\in X$.\\n(⇐) Diketahui sifat $Q$.\\nDibuktikan bahwa sifat $P$.\\nDiambil sebarang $y\\in X$."
+  "Diketahui ruang topologi $(X,\\tau)$.\nDibuktikan bahwa dua sifat ekuivalen.\nPembuktian dilakukan dalam dua arah.\n(⇒) Diketahui sifat $P$.\nDibuktikan bahwa sifat $Q$.\nDiambil sebarang $x\\in X$.\n(⇐) Diketahui sifat $Q$.\nDibuktikan bahwa sifat $P$.\nDiambil sebarang $y\\in X$."
 ]);
 assert.equal(twoWays.directions.length,2,"Both implication directions must be kept");
 assert.equal(twoWays.directions[0].known,"sifat $P$.");
@@ -26,7 +26,7 @@ assert.equal(twoWays.directions[1].target,"sifat $P$.");
 assert.ok(twoWays.directions[0].steps[0].includes("Diambil"));
 
 const multipart=parse([
-  "(1) Aproksimasi supremum.\\nDiketahui $M=\\sup A$.\\nDibuktikan bahwa untuk setiap $\\eta>0$ terdapat titik yang mendekati $M$.\\nAmbil sebarang $\\eta>0$.\\n(2) Aproksimasi infimum.\\nDiketahui $m=\\inf A$.\\nDibuktikan bahwa untuk setiap $\\eta>0$ terdapat titik yang mendekati $m$.\\nAmbil sebarang $\\eta>0$."
+  "(1) Aproksimasi supremum.\nDiketahui $M=\\sup A$.\nDibuktikan bahwa untuk setiap $\\eta>0$ terdapat titik yang mendekati $M$.\nAmbil sebarang $\\eta>0$.\n(2) Aproksimasi infimum.\nDiketahui $m=\\inf A$.\nDibuktikan bahwa untuk setiap $\\eta>0$ terdapat titik yang mendekati $m$.\nAmbil sebarang $\\eta>0$."
 ]);
 assert.equal(multipart.targets.length,2,"Separate proof goals must be recognized");
 assert.ok(multipart.targets[0].target.startsWith("untuk setiap"));
