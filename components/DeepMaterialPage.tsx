@@ -223,13 +223,16 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
               : block.kind === "corollary"
                 ? ui("Akibat","Corollary")
                 : ui("Teorema","Theorem");
+          const priorOfKind=provenFormalResults.slice(0,index).filter((previous)=>previous.kind===block.kind).length;
+          const theoremOffset=block.kind==="theorem"?provenTheorems.length:0;
+          const formalNumber=thesisChapter+"."+(theoremOffset+priorOfKind+1);
           const explanation=block.intuition?pick(block.intuition):(block.note?pick(block.note):ui(
             "Hasil ini merumuskan hubungan formal yang digunakan pada contoh dan latihan berikutnya.",
             "This result states a formal relationship used in the examples and exercises that follow."
           ));
           return (
             <div className="formal-result-pair" key={pick(block.title) + index}>
-              <ThesisFormalBlock kind={block.kind} number={thesisChapter+"."+(index+1)}
+              <ThesisFormalBlock kind={block.kind} number={formalNumber}
                 title={pick(block.title)} statement={pick(block.statement)}
                 proof={block.proof!.map(pick)} language={en?"en":"id"}/>
               <div className="ird-formal-explanation">
