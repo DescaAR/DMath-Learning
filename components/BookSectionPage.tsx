@@ -101,8 +101,7 @@ function ExampleCard({example}:{example:BookExample}){
         <summary>Buka Solusi</summary>
         <div className="ird-worked-solution-body">
           <AcademicSolution
-            idea={example.solution[0]}
-            steps={example.solution}
+                        steps={example.solution}
             conclusion={example.conclusion}
           />
         </div>
@@ -285,8 +284,7 @@ export function BookSectionPage({
                 <summary>Buka Solusi</summary>
                 <div className="ird-worked-solution-body">
                   <AcademicSolution
-                    idea={example.solution[0]}
-                    steps={example.solution}
+                                        steps={example.solution}
                     conclusion={example.conclusion}
                   />
                 </div>
