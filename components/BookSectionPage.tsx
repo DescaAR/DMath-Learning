@@ -196,8 +196,8 @@ export function BookSectionPage({
         <p className="ird-paragraph">Definisi hanya digunakan untuk pernyataan yang menetapkan makna suatu objek atau istilah matematika. Setiap definisi langsung diikuti contoh.</p>
 
         {definitions.length?definitions.map((item,index)=>{
-          const example=findDefinitionExample(item.title,definitions.length,content.examples)
-            ??getCuratedDefinitionExample(subject.slug,item.title);
+          const example=getCuratedDefinitionExample(subject.slug,item.title)
+            ??findDefinitionExample(item.title,definitions.length,content.examples);
           return(
             <div className="definition-example-pair" key={item.title+index}>
               <article className="ird-formal ird-definition">
