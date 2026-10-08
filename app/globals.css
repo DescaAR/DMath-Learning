@@ -3712,6 +3712,7 @@ h3 .heading-math-symbol{
 .thesis-proof-paragraph{
   margin:0 0 12px;
   padding:0;
+  white-space:pre-line;
   font-size:1rem;
   line-height:1.86;
   text-align:justify;
