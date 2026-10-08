@@ -12,6 +12,7 @@ import { RichMath } from "@/components/RichMath";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import { useLanguage } from "@/components/LanguageProvider";
+import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
 
 function Text({ children }: { children: string }) {
   return <RichMath className="ird-rich-text">{children}</RichMath>;
@@ -58,6 +59,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
   const pick = (value: { id: string; en: string }) => en ? value.en : value.id;
 
   const chapterIndex = deepMaterials.findIndex((item) => item.slug === material.slug);
+  const thesisChapter=String(chapterIndex+1);
   const nextChapter = chapterIndex >= 0 && chapterIndex < deepMaterials.length - 1 ? deepMaterials[chapterIndex + 1] : null;
 
   const formalDefinitions = formal?.blocks.filter((block) => block.kind === "definition"&&isAcademicDefinition(pick(block.statement))) ?? [];
@@ -170,11 +172,9 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           const example=findDefinitionExample(definition.title,definitions.length,localExamples);
           return(
             <div className="definition-example-pair" key={definition.title+index}>
-              <article className="ird-formal ird-definition">
-                <div className="ird-formal-head"><span>{ui("Definisi","Definition")}</span><strong><TitleText>{definition.title}</TitleText></strong></div>
-                <div className="ird-formal-body"><Text>{definition.statement}</Text></div>
-                {definition.intuition&&<div className="ird-paragraph"><strong>{ui("Penjelasan. ","Explanation. ")}</strong><Text>{definition.intuition}</Text></div>}
-              </article>
+              <ThesisFormalBlock kind="definition" number={thesisChapter+"."+(index+1)}
+                title={definition.title} statement={definition.statement} language={en?"en":"id"}/>
+              {definition.intuition&&<div className="ird-formal-explanation"><strong>{ui("Penjelasan","Explanation")}</strong><Text>{definition.intuition}</Text></div>}
               {example&&(
                 <article className="ird-worked-card">
                   <div className="ird-worked-head">
@@ -204,19 +204,10 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           "Every theorem, lemma, proposition, and corollary shown here includes an explanation and proof."
         )}</p>
 
-        {provenTheorems.map((theorem) => (
+        {provenTheorems.map((theorem,index) => (
           <div className="formal-result-pair" key={theorem.title}>
-            <article className="ird-formal ird-theorem">
-              <div className="ird-formal-head"><span>{ui("Teorema","Theorem")}</span><strong><TitleText>{theorem.title}</TitleText></strong></div>
-              <div className="ird-formal-body"><Text>{theorem.statement}</Text></div>
-              <details className="ird-proof">
-                <summary>{ui("Buka pembuktian","Open proof")}</summary>
-                <div className="ird-proof-body">
-                  {theorem.proof.map((step, stepIndex) => <div className="proof-step" key={stepIndex}><span>{stepIndex + 1}</span><Text>{step}</Text></div>)}
-                  <div className="ird-qed">■</div>
-                </div>
-              </details>
-            </article>
+            <ThesisFormalBlock kind="theorem" number={thesisChapter+"."+(index+1)}
+              title={theorem.title} statement={theorem.statement} proof={theorem.proof} language={en?"en":"id"}/>
             <div className="ird-formal-explanation">
               <strong>{ui("Penjelasan","Explanation")}</strong>
               <Text>{theorem.why}</Text>
@@ -238,17 +229,9 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           ));
           return (
             <div className="formal-result-pair" key={pick(block.title) + index}>
-              <article className={"ird-formal ird-" + block.kind}>
-                <div className="ird-formal-head"><span><TitleText>{label}</TitleText></span><strong><TitleText>{pick(block.title)}</TitleText></strong></div>
-                <div className="ird-formal-body"><Text>{pick(block.statement)}</Text></div>
-                <details className="ird-proof">
-                  <summary>{ui("Buka pembuktian","Open proof")}</summary>
-                  <div className="ird-proof-body">
-                    {block.proof!.map((step, stepIndex) => <div className="proof-step" key={stepIndex}><span>{stepIndex + 1}</span><Text>{pick(step)}</Text></div>)}
-                    <div className="ird-qed">■</div>
-                  </div>
-                </details>
-              </article>
+              <ThesisFormalBlock kind={block.kind} number={thesisChapter+"."+(index+1)}
+                title={pick(block.title)} statement={pick(block.statement)}
+                proof={block.proof!.map(pick)} language={en?"en":"id"}/>
               <div className="ird-formal-explanation">
                 <strong>{ui("Penjelasan","Explanation")}</strong>
                 <Text>{explanation}</Text>
