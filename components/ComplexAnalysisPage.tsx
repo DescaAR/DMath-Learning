@@ -56,7 +56,7 @@ function FormalBlock({ block, index }: { block: ComplexSourceBlock; index: numbe
       <div className="ca-formal-body"><SourceText text={block.body ?? ""} /></div>
       {detail && (
         <details className="ca-proof">
-          <summary>{block.solution ? "Buka solusi" : "Buka pembuktian"}</summary>
+          <summary>{block.solution ? "Buka Solusi" : "Buka pembuktian"}</summary>
           <div className="ca-proof-body"><SourceText text={detail} />{block.proof && <div className="ca-qed">■</div>}</div>
         </details>
       )}
