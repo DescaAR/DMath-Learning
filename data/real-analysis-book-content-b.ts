@@ -53,10 +53,25 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
     "Selisih jumlah atas dan bawah dapat dibatasi oleh total panjang interval dikali batas osilasi.",
     "Kriteria Darboux kemudian memberi integrabilitas."
   ]),
-  T("Monoton Mengakibatkan Riemann-Integrable","Setiap fungsi monoton pada $[a,b]$ Riemann-integrable."),
+  T("Monoton Mengakibatkan Riemann-Integrable","Setiap fungsi monoton pada $[a,b]$ Riemann-integrable.",[
+   "Misalkan $a<b$ dan $f$ monoton naik. Untuk partisi seragam $x_i=a+i(b-a)/n$ dengan lebar $h=(b-a)/n$, infimum dan supremum $f$ pada subinterval berturut-turut adalah $f(x_{i-1})$ dan $f(x_i)$.",
+   "Selisih jumlah Darboux atas dan bawah adalah $U(f,P_n)-L(f,P_n)=h\\sum_{i=1}^n[f(x_i)-f(x_{i-1})]=h[f(b)-f(a)]$.",
+   "Karena $h\\to0$, selisih Darboux menuju nol. Kriteria Darboux memberi integrabilitas Riemann.",
+   "Jika $f$ monoton turun, tukar peran supremum dan infimum untuk memperoleh $U(f,P_n)-L(f,P_n)=h[f(a)-f(b)]\\to0$."
+ ]),
   T("Linearitas Integral","Jika $f,g$ integrabel dan $\\alpha,\\beta\\in\\mathbb R$, maka $\\alpha f+\\beta g$ integrabel dan $\\int(\\alpha f+\\beta g)=\\alpha\\int f+\\beta\\int g$."),
-  T("Order Integral","Jika $f\\le g$ pada $[a,b]$, maka $\\int_a^bf\\le\\int_a^bg$."),
-  C("Estimasi Integral","Jika $|f(x)|\\le M$, maka $|\\int_a^bf|\\le M(b-a)$.")
+  T("Order Integral","Jika $f,g$ Riemann integrabel pada $[a,b]$ dan $f\\le g$ pada interval tersebut, maka $\\int_a^bf\\le\\int_a^bg$.",[
+   "Pada setiap partisi berlabel, berlaku $f(t_i)\\le g(t_i)$ dan $\\Delta x_i\\ge0$.",
+   "Kalikan setiap pertidaksamaan dengan $\\Delta x_i$ lalu jumlahkan sehingga $\\sum_i f(t_i)\\Delta x_i\\le\\sum_i g(t_i)\\Delta x_i$.",
+   "Karena kedua fungsi Riemann integrabel, limit jumlah Riemann ketika norma partisi menuju nol mempertahankan ketaksamaan tersebut.",
+   "Dengan demikian $\\int_a^bf\\le\\int_a^bg$."
+ ]),
+  C("Estimasi Integral","Jika $f$ Riemann integrabel pada $[a,b]$, $a\\le b$, dan $|f(x)|\\le M$, maka $\\bigl|\\int_a^bf(x)\\,dx\\bigr|\\le M(b-a)$.",[
+   "Ketaksamaan $|f(x)|\\le M$ setara dengan $-M\\le f(x)\\le M$ pada seluruh interval.",
+   "Monotonisitas integral memberi $\\int_a^b(-M)\\,dx\\le\\int_a^bf(x)\\,dx\\le\\int_a^bM\\,dx$.",
+   "Integral fungsi konstan adalah panjang interval dikali konstanta, sehingga $-M(b-a)\\le\\int_a^bf\\le M(b-a)$.",
+   "Definisi nilai mutlak memberi hasil."
+ ])
  ],
  examples:[
   {title:"Fungsi Step",problem:"Jelaskan mengapa fungsi step dengan finitely many jumps pada $[a,b]$ Riemann-integrable.",solution:["Fungsi kontinu pada semua titik kecuali finitely many jumps.","Partisi dapat dipilih sehingga subinterval yang memuat jump memiliki total panjang arbitrarily kecil.","Pada subinterval lain fungsi stabil/konstan sehingga osilasi nol atau kecil."],conclusion:"Selisih upper-lower sums dapat dibuat arbitrarily kecil."}
@@ -78,8 +93,18 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
     "Dikurangi $f(x)$, diperoleh rata-rata integral dari $f(t)-f(x)$.",
     "Kontinuitas $f$ di $x$ membuat nilai mutlak rata-rata tersebut lebih kecil dari ε untuk $h$ cukup kecil."
   ]),
-  T("FTC II / Newton–Leibniz","Jika $f$ kontinu pada $[a,b]$ dan $G'$ sama dengan $f$, maka $\\int_a^bf(x)dx=G(b)-G(a)$."),
-  P("Substitusi","Di bawah hipotesis regularitas yang sesuai, perubahan variabel $u=\\phi(x)$ memberi $\\int_a^b f(\\phi(x))\\phi'(x)dx=\\int_{\\phi(a)}^{\\phi(b)}f(u)du$.")
+  T("FTC II / Newton–Leibniz","Jika $f$ kontinu pada $[a,b]$ dan $G'=f$ pada $(a,b)$ dengan $G$ kontinu pada $[a,b]$, maka $\\int_a^bf(x)\\,dx=G(b)-G(a)$.",[
+   "Definisikan $F(x)=\\int_a^x f(t)\\,dt$. Teorema Fundamental Kalkulus bagian pertama memberi $F'(x)=f(x)$ pada $(a,b)$.",
+   "Karena $G'(x)=f(x)$, maka $(G-F)'(x)=0$ pada $(a,b)$.",
+   "Mean Value Theorem menjamin bahwa $G-F$ konstan pada $[a,b]$.",
+   "Diperoleh $G(b)-G(a)=F(b)-F(a)=\\int_a^bf(x)\\,dx$ karena $F(a)=0$."
+ ]),
+  P("Substitusi","Jika $\\phi\\in C^1([a,b])$ dan $f$ kontinu pada interval yang memuat $\\phi([a,b])$, maka $\\int_a^bf(\\phi(x))\\phi'(x)\\,dx=\\int_{\\phi(a)}^{\\phi(b)}f(u)\\,du$.",[
+   "Pilih antiturunan $F$ dari fungsi kontinu $f$ pada interval yang relevan.",
+   "Aturan rantai memberi $\\frac{d}{dx}F(\\phi(x))=f(\\phi(x))\\phi'(x)$.",
+   "Teorema Fundamental Kalkulus bagian kedua memberikan $\\int_a^bf(\\phi(x))\\phi'(x)\\,dx=F(\\phi(b))-F(\\phi(a))$.",
+   "Menerapkan teorema yang sama terhadap integral dalam variabel $u$ menghasilkan ruas kanan identik."
+ ])
  ],
  examples:[
   {title:"Fungsi Akumulasi",problem:"Jika $F(x)=\\int_0^x(1+t^2)dt$, tentukan $F'(x)$ dan $F(x)$.",solution:["FTC I memberi $F'(x)=1+x^2$.","Antiturunan $1+t^2$ adalah $t+t^3/3$.","Evaluasi dari 0 ke $x$ memberi $F(x)=x+x^3/3$."],conclusion:"Diferensiasi mengembalikan integrand."}
@@ -103,7 +128,12 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
  ],
  formal:[
   D("Integral Darboux Bawah dan Atas","$\\underline{\\int_a^b}f=\\sup_P L(f,P)$ dan $\\overline{\\int_a^b}f=\\inf_P U(f,P)$."),
-  T("Monotonisitas terhadap Refinement","Jika $Q$ menghaluskan $P$, maka $L(f,P)\\le L(f,Q)\\le U(f,Q)\\le U(f,P)$."),
+  T("Monotonisitas terhadap Refinement","Jika $f$ terbatas pada $[a,b]$ dan partisi $Q$ merupakan penghalusan dari $P$, maka $L(f,P)\\le L(f,Q)\\le U(f,Q)\\le U(f,P)$.",[
+   "Cukup tinjau penyisipan satu titik pemisah $c$ ke subinterval $[x_{i-1},x_i]$ dalam $P$.",
+   "Infimum $f$ pada kedua potongan tidak lebih kecil daripada infimum pada subinterval semula, sehingga kontribusi Darboux bawah tidak menurun.",
+   "Supremum pada setiap potongan tidak lebih besar daripada supremum subinterval semula, sehingga kontribusi Darboux atas tidak meningkat.",
+   "Setiap jumlah Darboux bawah tidak melebihi jumlah Darboux atas. Ulangi argumen untuk semua titik baru pada $Q$."
+ ]),
   T("Kriteria Darboux","Fungsi bounded $f$ integrabel jika dan hanya jika untuk setiap $\\varepsilon>0$ terdapat partisi $P$ dengan $U(f,P)-L(f,P)<\\varepsilon$."),
   T("Ekuivalensi Riemann–Darboux","Untuk fungsi bounded pada interval tertutup, definisi integrabilitas Riemann dan Darboux ekuivalen dan menghasilkan nilai integral yang sama.")
  ],
@@ -144,7 +174,12 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
  formal:[
   D("Konvergensi Titik demi Titik","$f_n\\to f$ pointwise pada $A$ jika untuk setiap $x\\in A$ dan setiap ε terdapat $N=N(x,\\varepsilon)$ sehingga $n\\ge N$ memberi $|f_n(x)-f(x)|<\\varepsilon$."),
   D("Konvergensi Seragam","$f_n\\to f$ uniform pada $A$ jika untuk setiap ε terdapat $N=N(\\varepsilon)$ sehingga untuk semua $x\\in A$ dan $n\\ge N$, $|f_n(x)-f(x)|<\\varepsilon$."),
-  P("Sup Norm Criterion","Jika $A$ dan fungsi memungkinkan, uniform convergence ekuivalen dengan $\\sup_{x\\in A}|f_n(x)-f(x)|\\to0$."),
+  P("Sup Norm Criterion","Jika $A$ tak kosong dan $f_n,f$ terbatas pada $A$, maka $f_n\\to f$ seragam pada $A$ jika dan hanya jika $\\sup_{x\\in A}|f_n(x)-f(x)|\\to0$.",[
+   "Jika $f_n\\to f$ seragam, untuk setiap $\\varepsilon>0$ terdapat $N$ sehingga $|f_n(x)-f(x)|<\\varepsilon/2$ bagi semua $x\\in A$ dan $n\\ge N$.",
+   "Dengan mengambil supremum diperoleh $\\sup_{x\\in A}|f_n(x)-f(x)|\\le\\varepsilon/2<\\varepsilon$.",
+   "Sebaliknya, jika supremum tersebut menuju nol, untuk setiap $\\varepsilon>0$ terdapat $N$ sehingga supremumnya lebih kecil dari $\\varepsilon$.",
+   "Ketaksamaan $|f_n(x)-f(x)|\\le\\sup_{y\\in A}|f_n(y)-f(y)|$ berlaku bagi setiap $x\\in A$, sehingga konvergensinya seragam."
+ ]),
   T("Uniform Limit of Continuous Functions","Jika setiap $f_n$ kontinu dan $f_n\\to f$ uniform, maka $f$ kontinu.",[
     "Untuk titik $x_0$ dan ε, pilih $N$ dengan $|f_N-f|<\\varepsilon/3$ seragam.",
     "Kontinuitas $f_N$ memberi δ agar $|f_N(x)-f_N(x_0)|<\\varepsilon/3$.",
@@ -166,7 +201,12 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
 "pertukaran-limit":{
  intro:["Pertanyaan inti barisan fungsi adalah kapan operasi limit dapat dipertukarkan dengan operasi lain. Uniform convergence merupakan syarat kuat yang mengamankan banyak pertukaran.","Diferensiasi lebih sensitif daripada integrasi: uniform convergence fungsi saja tidak cukup untuk menukar limit dan turunan."],
  formal:[
-  T("Limit dan Kontinuitas","Uniform limit dari fungsi kontinu adalah kontinu."),
+  T("Limit dan Kontinuitas","Jika $f_n$ kontinu pada $A\\subseteq\\mathbb R$ dan $f_n\\to f$ seragam pada $A$, maka $f$ kontinu pada $A$.",[
+   "Tetapkan $a\\in A$ dan $\\varepsilon>0$. Dari konvergensi seragam pilih $N$ dengan $|f_N(x)-f(x)|<\\varepsilon/3$ untuk seluruh $x\\in A$.",
+   "Kontinuitas $f_N$ di $a$ menjamin adanya $\\delta>0$ sehingga jika $x\\in A$ dan $|x-a|<\\delta$, maka $|f_N(x)-f_N(a)|<\\varepsilon/3$.",
+   "Ketaksamaan segitiga memberi $|f(x)-f(a)|\\le|f(x)-f_N(x)|+|f_N(x)-f_N(a)|+|f_N(a)-f(a)|<\\varepsilon$.",
+   "Karena $a$ dan $\\varepsilon$ sebarang, $f$ kontinu pada $A$."
+ ]),
   T("Limit dan Integral Riemann","Jika $f_n$ Riemann-integrable pada $[a,b]$ dan $f_n\\to f$ uniform, maka $f$ integrable dan $\\int f_n\\to\\int f$.",[
     "Uniform convergence memberi $|f_n-f|<\\varepsilon/(b-a)$ untuk $n$ besar.",
     "Estimasi integral memberi $|\\int f_n-\\int f|\\le\\int|f_n-f|<\\varepsilon$."
@@ -248,10 +288,20 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
 "uji-konvergensi-absolut":{
  intro:["Tidak ada satu uji terbaik untuk semua deret. Pemilihan uji bergantung pada struktur suku: perbandingan untuk bentuk mirip, rasio untuk faktorial/eksponensial, akar untuk pangkat ke-$n$, dan integral untuk fungsi positif menurun.","Semua uji harus dibaca bersama syaratnya."],
  formal:[
-  T("Comparison Test","Jika $0\\le a_n\\le b_n$ akhirnya dan $\\sum b_n$ konvergen, maka $\\sum a_n$ konvergen."),
+  T("Comparison Test","Jika $0\\le a_n\\le b_n$ untuk semua $n$ yang cukup besar dan $\\sum b_n$ konvergen, maka $\\sum a_n$ konvergen.",[
+   "Hapus sejumlah hingga suku awal dan pilih $N$ dengan $0\\le a_n\\le b_n$ untuk setiap $n\\ge N$.",
+   "Jumlah parsial ekor $\\sum_{n=N}^m a_n$ monoton naik karena semua suku nonnegatif.",
+   "Untuk setiap $m\\ge N$, berlaku $0\\le\\sum_{n=N}^m a_n\\le\\sum_{n=N}^m b_n\\le\\sum_{n=N}^{\\infty}b_n$.",
+   "Barisan jumlah parsial yang meningkat dan terbatas konvergen. Menambahkan kembali suku awal tidak memengaruhi konvergensi deret."
+ ]),
   T("Limit Comparison","Untuk $a_n,b_n>0$, jika $a_n/b_n\\to L$ dengan $0<L<\\infty$, kedua deret mempunyai perilaku konvergensi sama."),
   T("Ratio Test","Jika $\\limsup|a_{n+1}/a_n|<1$, deret konvergen absolut; jika limit inferior >1, divergen."),
-  T("Root Test","Jika $\\limsup |a_n|^{1/n}<1$, deret konvergen absolut; jika >1, divergen."),
+  T("Root Test","Tuliskan $L=\\limsup_{n\\to\\infty}|a_n|^{1/n}$. Jika $L<1$, deret $\\sum a_n$ konvergen absolut; jika $L>1$, deret divergen.",[
+   "Jika $L<1$, pilih $r$ dengan $L<r<1$. Definisi limit superior menjamin $|a_n|^{1/n}\\le r$ untuk seluruh $n$ cukup besar.",
+   "Diperoleh $|a_n|\\le r^n$, dan deret geometri $\\sum r^n$ konvergen. Comparison Test memberi konvergensi absolut.",
+   "Jika $L>1$, pilih $r$ dengan $1<r<L$. Ada tak hingga banyak indeks $n$ dengan $|a_n|^{1/n}>r$.",
+   "Pada indeks tersebut $|a_n|>r^n\\ge1$, sehingga $a_n$ tidak menuju nol. Syarat perlu konvergensi deret gagal."
+ ]),
   T("Integral Test","Untuk fungsi positif menurun $f$ dengan $a_n=f(n)$, $\\sum a_n$ dan $\\int f$ mempunyai perilaku konvergensi yang sama.")
  ],
  examples:[{title:"Faktorial",problem:"Uji $\\sum n!/n^n$.",solution:["Gunakan ratio: $a_{n+1}/a_n=(n+1)!/(n+1)^{n+1}\\cdot n^n/n!$.","Sederhanakan menjadi $(n/(n+1))^n$.","Limitnya $e^{-1}<1$."],conclusion:"Deret konvergen absolut."}],
@@ -267,8 +317,17 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
 "uji-konvergensi-nonabsolut":{
  intro:["Beberapa deret konvergen karena cancellation tanda, bukan karena ukuran absolut sukunya kecil cukup cepat. Uji alternating, Dirichlet, dan Abel menangkap mekanisme cancellation tersebut.","Konvergensi semacam ini lebih rapuh daripada absolute convergence."],
  formal:[
-  T("Leibniz / Alternating Series Test","Jika $b_n\\downarrow0$, maka $\\sum(-1)^{n}b_n$ konvergen."),
-  C("Estimasi Remainder Alternating","Untuk alternating series yang memenuhi Leibniz, galat setelah $n$ suku tidak melebihi $b_{n+1}$."),
+  T("Leibniz / Alternating Series Test","Jika $b_n\\ge0$ monoton turun menuju nol, maka deret $\\sum_{n=1}^{\\infty}(-1)^{n}b_n$ konvergen.",[
+   "Tuliskan jumlah parsial $s_n=\\sum_{k=1}^n(-1)^kb_k$. Karena $b_n\\ge b_{n+1}\\ge0$, subbarisan jumlah parsial genap $(s_{2m})$ monoton menurun dan terbatas di bawah.",
+   "Subbarisan ganjil $(s_{2m+1})$ monoton naik dan terbatas di atas oleh jumlah parsial genap yang berdekatan.",
+   "Kedua subbarisan konvergen, dan selisihnya adalah $s_{2m}-s_{2m+1}=b_{2m+1}\\to0$.",
+   "Maka kedua limit sama, sehingga seluruh barisan jumlah parsial konvergen."
+ ]),
+  C("Estimasi Remainder Alternating","Jika $b_n\\ge0$ turun menuju nol dan $S=\\sum_{k=1}^{\\infty}(-1)^kb_k$, maka untuk jumlah parsial $s_n$ berlaku $|S-s_n|\\le b_{n+1}$.",[
+   "Ekor setelah suku ke-$n$ adalah deret berganti tanda yang dimulai dengan suku bermagnitudo $b_{n+1}$.",
+   "Dengan mengelompokkan pasangan suku berikutnya, jumlah ekor tersebut terletak di antara nol dan suku pertamanya, dengan arah ketaksamaan sesuai tanda.",
+   "Karena itu nilai mutlak sisa tidak melebihi magnitudo suku pertama ekor, yaitu $b_{n+1}$."
+ ]),
   T("Dirichlet Test","Jika partial sums $A_n=\\sum_{k=1}^na_k$ bounded dan $b_n$ monoton menuju 0, maka $\\sum a_nb_n$ konvergen."),
   N("Conditional Convergence","Jika uji cancellation memberi convergence tetapi absolute series divergen, deret disebut conditional.")
  ],
@@ -286,7 +345,12 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
  intro:["Deret fungsi $\\sum f_n(x)$ adalah barisan jumlah parsial fungsi. Pertanyaan pointwise/uniform muncul kembali, kini dengan struktur penjumlahan tak hingga.","Weierstrass M-test memberi alat praktis untuk uniform convergence melalui majorant numerik."],
  formal:[
   D("Deret Fungsi","$\\sum f_n$ konvergen pointwise/uniform jika barisan partial sums $S_N=\\sum_{n=1}^N f_n$ konvergen dengan jenis tersebut."),
-  T("Weierstrass M-test","Jika $|f_n(x)|\\le M_n$ untuk semua $x\\in A$ dan $\\sum M_n$ konvergen, maka $\\sum f_n$ konvergen uniform dan absolut."),
+  T("Weierstrass M-test","Jika $|f_n(x)|\\le M_n$ untuk seluruh $x\\in A$ dan bilangan $M_n\\ge0$ membentuk deret konvergen $\\sum M_n$, maka $\\sum f_n$ konvergen absolut pada setiap $x\\in A$ dan seragam pada $A$.",[
+   "Untuk setiap $x\\in A$, Comparison Test pada $|f_n(x)|\\le M_n$ memberi konvergensi absolut $\\sum f_n(x)$.",
+   "Untuk $m>n$ dan seluruh $x\\in A$, ketaksamaan segitiga menghasilkan $|\\sum_{k=n+1}^m f_k(x)|\\le\\sum_{k=n+1}^m M_k$.",
+   "Karena deret numerik $\\sum M_k$ Cauchy, untuk setiap $\\varepsilon>0$ terdapat $N$ sehingga ruas kanan kurang dari $\\varepsilon$ apabila $m>n\\ge N$.",
+   "Kriteria Cauchy seragam terpenuhi. Kelengkapan $\\mathbb R$ atau $\\mathbb C$ memberikan konvergensi seragam."
+ ]),
   T("Integrasi Termwise","Jika $f_n$ Riemann-integrable dan series konvergen uniform pada $[a,b]$, maka $\\int\\sum f_n=\\sum\\int f_n$."),
   N("Diferensiasi Termwise","Memerlukan hipotesis lebih kuat, biasanya uniform convergence derivative serta convergence pada satu titik.")
  ],
@@ -342,7 +406,12 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
  formal:[
   D("Improper Integral pada $[a,\\infty)$","$\\int_a^\\infty f=\\lim_{R\\to\\infty}\\int_a^R f$ jika limit hingga ada."),
   T("Comparison untuk Integral Positif","Jika $0\\le f\\le g$ akhirnya dan $\\int g$ konvergen, maka $\\int f$ konvergen."),
-  T("$p$-Integral","$\\int_1^\\infty x^{-p}dx$ konvergen jika dan hanya jika $p>1$."),
+  T("$p$-Integral","Untuk $p\\in\\mathbb R$, integral tak wajar $\\int_1^\\infty x^{-p}\\,dx$ konvergen jika dan hanya jika $p>1$.",[
+   "Jika $p\\ne1$, untuk $R>1$ diperoleh $\\int_1^R x^{-p}\\,dx=\\frac{R^{1-p}-1}{1-p}$.",
+   "Jika $p>1$, maka $1-p<0$ sehingga $R^{1-p}\\to0$ dan integral menuju $1/(p-1)$.",
+   "Jika $p<1$, maka $R^{1-p}\\to\\infty$ dan integral divergen ke tak hingga.",
+   "Jika $p=1$, berlaku $\\int_1^R dx/x=\\log R\\to\\infty$. Dengan demikian kondisi perlu dan cukup adalah $p>1$."
+ ]),
   N("Tail Criterion","Konvergensi berarti kontribusi ekor $\\int_R^S f$ dapat dibuat arbitrarily kecil untuk $R,S$ besar.")
  ],
  examples:[{title:"$p$-Integral",problem:"Evaluasi $\\int_1^\\infty1/x^2dx$.",solution:["$\\int_1^R x^{-2}dx=1-1/R$.","Ambil $R\\to\\infty$."],conclusion:"Integral bernilai $1$."}],
@@ -379,8 +448,19 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
   D("Himpunan Terbuka","$G\\subseteq\\mathbb R$ terbuka jika untuk setiap $x\\in G$ terdapat $r>0$ dengan $(x-r,x+r)\\subseteq G$."),
   D("Himpunan Tertutup","$F$ tertutup jika komplemennya terbuka."),
   D("Closure","$\\overline A$ adalah himpunan $A$ ditambah seluruh titik limitnya; ekuivalen dengan himpunan tertutup terkecil yang memuat $A$."),
-  T("Kriteria Sekuensial Closed","$F\\subseteq\\mathbb R$ tertutup jika dan hanya jika setiap barisan $(x_n)\\subseteq F$ yang konvergen di $\\mathbb R$ memiliki limit di $F$."),
-  P("Arbitrary Union / Finite Intersection","Gabungan sebarang open sets terbuka; irisan hingga open sets terbuka.")
+  T("Kriteria Sekuensial Closed","Himpunan $F\\subseteq\\mathbb R$ tertutup jika dan hanya jika setiap barisan $(x_n)\\subseteq F$ yang konvergen di $\\mathbb R$ memiliki limit di $F$.",[
+   "Jika $F$ tertutup dan $x_n\\in F$ menuju $x$, andaikan $x\\notin F$. Karena $\\mathbb R\\setminus F$ terbuka, ada persekitaran $x$ yang tidak memuat anggota $F$.",
+   "Konvergensi $x_n\\to x$ menjamin akhirnya $x_n$ berada dalam persekitaran itu, kontradiksi. Jadi $x\\in F$.",
+   "Sebaliknya, andaikan $F$ tidak tertutup. Terdapat $x\\in\\overline F\\setminus F$.",
+   "Karena $x$ berada dalam closure $F$, untuk setiap $n$ dapat dipilih $x_n\\in F$ dengan $|x_n-x|<1/n$.",
+   "Barisan $(x_n)$ menuju $x\\notin F$, sehingga sifat sekuensial gagal."
+ ]),
+  P("Arbitrary Union / Finite Intersection","Gabungan sebarang keluarga himpunan terbuka di $\\mathbb R$ adalah terbuka, dan irisan hingga himpunan terbuka di $\\mathbb R$ adalah terbuka.",[
+   "Jika $x$ berada dalam gabungan himpunan terbuka, ada satu anggotanya $U$ yang memuat $x$. Persekitaran terbuka $x$ di dalam $U$ juga berada dalam gabungan.",
+   "Jika $x$ berada dalam irisan $U_1\\cap\\cdots\\cap U_m$, untuk setiap $i$ pilih radius $r_i>0$ sehingga $(x-r_i,x+r_i)\\subseteq U_i$.",
+   "Radius $r=\\min_i r_i>0$ menjamin $(x-r,x+r)$ berada dalam semua $U_i$.",
+   "Definisi himpunan terbuka membuktikan kedua pernyataan."
+ ])
  ],
  examples:[{title:"Interval",problem:"Klasifikasikan $(0,1)$ dan $[0,1]$.",solution:["Setiap titik $(0,1)$ memiliki neighborhood kecil di dalam interval, jadi terbuka.","Komplemen $[0,1]$ adalah $(-\\infty,0)\\cup(1,\\infty)$ yang terbuka, jadi $[0,1]$ tertutup."],conclusion:"Satu himpunan dapat terbuka, tertutup, keduanya, atau tidak keduanya tergantung ruang ambient."}],
  exercises:[
@@ -399,7 +479,12 @@ export const realAnalysisContentB:Record<string,BookLessonContent>={
   D("Kompak","$K$ kompak jika setiap open cover mempunyai finite subcover."),
   T("Heine–Borel di ℝ","Subset $K\\subseteq\\mathbb R$ kompak jika dan hanya jika closed dan bounded."),
   T("Sequential Compactness","Di $\\mathbb R$, $K$ kompak jika dan hanya jika setiap barisan dalam $K$ memiliki subbarisan yang konvergen ke titik di $K$."),
-  T("Continuous Image of Compact","Jika $f$ kontinu dan $K$ kompak, maka $f(K)$ kompak.")
+  T("Continuous Image of Compact","Jika $f:K\\to\\mathbb R$ kontinu dan $K\\subseteq\\mathbb R$ kompak, maka $f(K)$ kompak.",[
+   "Ambil sebarang open cover $\\{V_\\alpha\\}_{\\alpha\\in I}$ dari $f(K)$.",
+   "Karena $f$ kontinu, keluarga pracitra $\\{f^{-1}(V_\\alpha)\\}_{\\alpha\\in I}$ merupakan open cover dari $K$ dalam topologi relatif.",
+   "Kekompakan $K$ memberikan subcover hingga $f^{-1}(V_{\\alpha_1}),\\ldots,f^{-1}(V_{\\alpha_m})$.",
+   "Menerapkan $f$ menunjukkan $f(K)\\subseteq V_{\\alpha_1}\\cup\\cdots\\cup V_{\\alpha_m}$, sehingga $f(K)$ kompak."
+ ])
  ],
  examples:[{title:"Mengapa $(0,1)$ Tidak Kompak",problem:"Berikan open cover tanpa finite subcover.",solution:["Gunakan $G_n=(1/n,1)$ ditambah modifikasi untuk menutup semua titik dekat 1, atau cover $U_n=(1/n,1)$ bersama interval yang mencakup bagian sesuai.","Cara lebih sederhana memakai sequence $1/n$ tanpa convergent subsequence di $(0,1)$; sequential compactness gagal karena limit 0 tidak berada di domain."],conclusion:"Ketertutupan endpoint penting."}],
  exercises:[
