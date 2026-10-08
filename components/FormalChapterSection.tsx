@@ -16,8 +16,10 @@ const kindLabels: Record<FormalBlockKind, { id: string; en: string }> = {
 
 export function FormalChapterSection({
   content,
+  chapterNumber="1",
 }: {
   content: FormalChapterContent;
+  chapterNumber?: string;
 }) {
   const { language } = useLanguage();
   const en = language === "en";
@@ -37,23 +39,16 @@ export function FormalChapterSection({
             const hasProof=!!block.proof?.length;
             const kind=block.kind==="definition" || hasProof?block.kind:"note";
             const title=pick(block.title);
-            const related=content.examples.find(example=>pick(example.title).trim().toLowerCase()===title.trim().toLowerCase());
+            const related=content.examples.find(example=>example.forDefinition&&pick(example.forDefinition).trim().toLowerCase()===title.trim().toLowerCase())
+              ??content.examples.find(example=>pick(example.title).trim().toLowerCase()===title.trim().toLowerCase());
             const definitionsCount=content.blocks.filter(item=>item.kind==="definition").length;
             const definitionExample=block.kind==="definition"
               ?related??(definitionsCount===1&&content.examples.length===1?content.examples[0]:undefined)
               :undefined;
             return <div className="definition-example-pair" key={block.kind+"-"+index}>
-              <ThesisFormalBlock kind={kind} number={"1."+ordinal}
+              <ThesisFormalBlock kind={kind} number={chapterNumber+"."+ordinal}
                 title={title} statement={pick(block.statement)}
                 proof={hasProof?block.proof?.map(pick):undefined} language={en?"en":"id"}/>
-              {block.intuition&&<div className="ird-formal-explanation">
-                <strong>{en?"Explanation":"Penjelasan"}</strong>
-                <RichMath>{pick(block.intuition)}</RichMath>
-              </div>}
-              {block.note&&<div className="ird-formal-explanation">
-                <strong>{en?"Note":"Catatan"}</strong>
-                <RichMath>{pick(block.note)}</RichMath>
-              </div>}
               {definitionExample&&<article className="detailed-example-card definition-direct-example">
                 <div className="detailed-example-head">
                   <span>{en?"Example":"Contoh"}</span>
@@ -71,6 +66,14 @@ export function FormalChapterSection({
                   ))}</div>
                 </details>
               </article>}
+              {block.intuition&&<div className="ird-formal-explanation">
+                <strong>{en?"Explanation":"Penjelasan"}</strong>
+                <RichMath>{pick(block.intuition)}</RichMath>
+              </div>}
+              {block.note&&<div className="ird-formal-explanation">
+                <strong>{en?"Note":"Catatan"}</strong>
+                <RichMath>{pick(block.note)}</RichMath>
+              </div>}
             </div>;
           })}
         </div>
