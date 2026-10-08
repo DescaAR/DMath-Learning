@@ -3755,3 +3755,52 @@ h3 .heading-math-symbol{
 .thesis-standalone-proof>strong{font-weight:800;display:inline-block;margin-bottom:10px}
 .thesis-standalone-proof .thesis-proof-paragraph{margin:0 0 7px;white-space:pre-line}
 .thesis-standalone-proof>.thesis-qed{display:block;text-align:right;font-weight:750}
+
+
+/* Thesis-style solution presentation shared by examples, practice and problem banks. */
+.academic-solution-prose{
+  font-size:1rem;
+  line-height:1.85;
+  color:var(--text);
+  min-width:0;
+}
+.academic-solution-prose .academic-solution-body,
+.academic-solution-prose .academic-solution-paragraph,
+.academic-solution-prose .academic-solution-conclusion{
+  min-width:0;
+  width:100%;
+}
+.academic-solution-prose .academic-solution-heading{
+  margin:0 0 10px;
+  font-size:inherit;
+  line-height:inherit;
+}
+.academic-solution-prose .academic-solution-context,
+.academic-solution-prose .academic-solution-idea,
+.academic-solution-prose .academic-solution-paragraph,
+.academic-solution-prose .academic-solution-conclusion{
+  margin:0 0 12px;
+}
+.academic-solution-prose .academic-solution-idea{
+  padding:0;
+  background:transparent;
+  border:0;
+}
+.academic-solution-prose .academic-solution-conclusion{
+  margin-bottom:0;
+}
+.academic-solution-prose .ird-rich-text{
+  display:inline;
+  font-weight:400;
+  font-size:inherit;
+  line-height:inherit;
+  overflow-wrap:normal;
+}
+.academic-solution-prose .math-block{
+  display:block;
+  overflow-x:auto;
+  max-width:100%;
+}
+@media(max-width:640px){
+  .academic-solution-prose{font-size:.96rem;line-height:1.8}
+}
