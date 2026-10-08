@@ -274,7 +274,7 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
  intro:["Limit kompleks harus sama untuk semua arah pendekatan dalam bidang. Karena ada tak hingga banyak path menuju titik, diferensiabilitas dan kontinuitas kompleks lebih ketat daripada satu-dimensional real calculus.","Dekomposisi ke $(x,y)$ menghubungkan limit kompleks dengan limit dua variabel real."],
  formal:[
   D("Limit Kompleks","$\\lim_{z\\to z_0}f(z)=L$ jika untuk setiap ε>0 ada δ>0 sehingga $0<|z-z_0|<δ$ memberi $|f(z)-L|<ε$."),
-  T("Keunikan Limit","Limit kompleks jika ada bersifat unik.",[
+  T("Keunikan Limit","Jika $z_0$ titik akumulasi domain $f$, limit $f(z)$ ketika $z\\to z_0$, jika ada, bersifat unik.",[
     "Andaikan $f(z)\\to L$ dan $f(z)\\to M$ ketika $z\\to z_0$. Ambil $\\varepsilon>0$.",
     "Dari definisi limit, terdapat $\\delta>0$ sehingga untuk $0<|z-z_0|<\\delta$ berlaku $|f(z)-L|<\\varepsilon/2$ dan $|f(z)-M|<\\varepsilon/2$.",
     "Ketaksamaan segitiga memberi $|L-M|\\le|L-f(z)|+|f(z)-M|<\\varepsilon$.",
