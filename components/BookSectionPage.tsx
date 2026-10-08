@@ -146,7 +146,7 @@ export function BookSectionPage({
     {id:"book-lesson-1",label:"Pengantar"},
     {id:"book-lesson-4",label:"Definisi & Contoh"},
     {id:"book-lesson-5",label:"Hasil Formal & Bukti"},
-    {id:"book-lesson-6",label:"Contoh Terbahas"},
+    ...(examplesForSection.length?[{id:"book-lesson-6",label:"Contoh Terbahas"},]:[]),
     {id:"book-lesson-7",label:"Visualisasi"},
     {id:"book-lesson-summary",label:"Ringkasan Definisi & Teorema"},
     {id:"book-latihan-soal",label:"Latihan Soal"},
@@ -271,7 +271,7 @@ export function BookSectionPage({
         ))}
       </section>
 
-      <section id="book-lesson-6" className="book-section ird-source-section">
+      {examplesForSection.length>0&&<section id="book-lesson-6" className="book-section ird-source-section">
         <div className="section-number">04</div>
         <span className="eyebrow">Bagian 4</span>
         <h2>Contoh terbahas</h2>
@@ -296,7 +296,7 @@ export function BookSectionPage({
             </article>
           ))}
         </div>
-      </section>
+      </section>}
 
       <section id="book-lesson-7" className="book-section ird-source-section">
         <div className="section-number">05</div>
