@@ -122,7 +122,7 @@ export const complexAnalysisContentB:Record<string,BookLessonContent>={
  formal:[
   T("Cauchy Integral Formula","Jika $f$ holomorfik pada dan di dalam simple closed contour $C$ dan $a$ berada di interior, maka $f(a)=\\frac1{2\\pi i}\\int_C\\frac{f(z)}{z-a}dz$."),
   T("Formula Turunan","$f^{(n)}(a)=\\frac{n!}{2\\pi i}\\int_C\\frac{f(z)}{(z-a)^{n+1}}dz$."),
-  T("Cauchy Estimates","Jika $|f(z)|\\le M$ pada circle radius R sekitar a, maka $|f^{(n)}(a)|\\le n!M/R^n$.",[
+  T("Cauchy Estimates","Jika $f$ holomorfik pada lingkungan cakram tertutup $|z-a|\\le R$ dan $|f(z)|\\le M$ pada lingkaran $|z-a|=R$, maka $|f^{(n)}(a)|\\le n!M/R^n$.",[
     "Dengan hipotesis holomorfisitas pada lingkungan cakram tertutup, rumus Cauchy untuk turunan memberi $f^{(n)}(a)=\\frac{n!}{2\\pi i}\\int_{|z-a|=R}\\frac{f(z)}{(z-a)^{n+1}}\\,dz$.",
     "Pada lingkaran tersebut, $|f(z)/(z-a)^{n+1}|\\le M/R^{n+1}$ dan panjang kontur adalah $2\\pi R$.",
     "Estimasi ML menghasilkan $|f^{(n)}(a)|\\le\\frac{n!}{2\\pi}\\frac{M}{R^{n+1}}(2\\pi R)=n!M/R^n$."
