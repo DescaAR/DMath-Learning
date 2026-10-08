@@ -30,11 +30,15 @@ const examples:Record<string,BookExample>={
     conclusion:"$f$ bijektif."
   },
   "teori-ukuran-probabilitas:Sigma-Algebra":{
-    title:"Sigma-Algebra Hingga",
-    forDefinition:"Sigma-Algebra",
-    problem:"Untuk $X=\\{1,2,3\\}$, periksa apakah $\\mathcal A=\\{\\varnothing,\\{1\\},\\{2,3\\},X\\}$ merupakan sigma-algebra.",
-    solution:["$X$ dan $\\varnothing$ berada dalam $\\mathcal A$.","Komplemen $\\{1\\}$ adalah $\\{2,3\\}$, dan sebaliknya; komplemen $X$ adalah $\\varnothing$.","Karena keluarga hingga ini berasal dari semua gabungan blok partisi $\\{\\{1\\},\\{2,3\\}\\}$, setiap gabungan terhitung anggotanya tetap dalam $\\mathcal A$."],
-    conclusion:"$\\mathcal A$ merupakan sigma-algebra."
+    "title": "Verifikasi Sigma-Algebra pada Himpunan Hingga",
+    "forDefinition": "Sigma-Algebra",
+    "problem": "Diberikan $X=\\{1,2,3\\}$ dan $\\mathcal A=\\{\\varnothing,\\{1\\},\\{2,3\\},X\\}$. Buktikan bahwa $\\mathcal A$ merupakan sigma-algebra pada $X$.",
+    "solution": [
+      "Diketahui $\\varnothing,X\\in\\mathcal A$. Dengan demikian, aksioma pertama sigma-algebra terpenuhi.",
+      "Untuk setiap $A\\in\\mathcal A$, komplemennya terhadap $X$ juga berada dalam $\\mathcal A$, sebab $X\\setminus\\varnothing=X$, $X\\setminus X=\\varnothing$, $X\\setminus\\{1\\}=\\{2,3\\}$, dan $X\\setminus\\{2,3\\}=\\{1\\}$. Oleh karena itu, $\\mathcal A$ tertutup terhadap operasi komplemen.",
+      "Ambil sebarang barisan $(A_n)_{n\\ge1}$ dengan $A_n\\in\\mathcal A$. Apabila tidak ada anggota tak kosong, gabungannya adalah $\\varnothing$. Apabila hanya blok $\\{1\\}$ atau hanya blok $\\{2,3\\}$ yang muncul sebagai anggota tak kosong, gabungannya sama dengan blok tersebut. Dalam kasus lain, apabila $X$ muncul atau kedua blok tak kosong muncul, gabungannya adalah $X$. Dengan demikian, $\\bigcup_{n=1}^{\\infty}A_n\\in\\mathcal A$."
+    ],
+    "conclusion": "Ketiga aksioma terpenuhi, sehingga $\\mathcal A$ merupakan sigma-algebra pada $X$."
   },
   "teori-ukuran-probabilitas:Sistem $\\pi$ dan Sistem $\\lambda$":{
     title:"Membedakan Sistem π dan λ",
