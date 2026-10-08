@@ -28,8 +28,16 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
     "Identitas hasil kali diperoleh dengan mengembangkan kedua ruas dan menggunakan $i^2=-1$.",
     "Konjugasi dua kali mengembalikan tanda bagian imajiner ke bentuk awal."
   ]),
-  P("Invers Perkalian","Jika $z\\ne0$, maka $z^{-1}=\\bar z/(z\\bar z)=\\bar z/|z|^2$."),
-  C("Bagian Real dan Imajiner","$\\operatorname{Re}z=(z+\\bar z)/2$ dan $\\operatorname{Im}z=(z-\\bar z)/(2i)$.")
+  P("Invers Perkalian","Jika $z\\ne0$, maka $z^{-1}=\\bar z/(z\\bar z)=\\bar z/|z|^2$.",[
+    "Tuliskan $z=x+iy$. Diperoleh $z\\bar z=(x+iy)(x-iy)=x^2+y^2=|z|^2$.",
+    "Karena $z\\ne0$, bilangan $|z|^2$ positif dan dapat dibagi.",
+    "Perkalian $z(\\bar z/|z|^2)=z\\bar z/|z|^2=1$. Jadi $\\bar z/|z|^2$ merupakan invers $z$."
+  ]),
+  C("Bagian Real dan Imajiner","$\\operatorname{Re}z=(z+\\bar z)/2$ dan $\\operatorname{Im}z=(z-\\bar z)/(2i)$.",[
+    "Tuliskan $z=x+iy$ dan $\\bar z=x-iy$.",
+    "Penjumlahan memberi $z+\\bar z=2x$, sehingga $(z+\\bar z)/2=x=\\operatorname{Re}z$.",
+    "Pengurangan memberi $z-\\bar z=2iy$, sehingga $(z-\\bar z)/(2i)=y=\\operatorname{Im}z$."
+  ])
  ],
  examples:[
   {title:"Pembagian Bilangan Kompleks",problem:"Tuliskan $(2-3i)/(4+6i)$ dalam bentuk $a+ib$.",solution:["Dikalikan pembilang dan penyebut dengan konjugat $4-6i$.","Penyebut menjadi $4^2+6^2=52$.","Pembilang $(2-3i)(4-6i)=-10-24i$.","Diperoleh $-5/26-(6/13)i$."],conclusion:"Konjugat mengubah penyebut menjadi bilangan real positif."}
@@ -266,7 +274,12 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
  intro:["Limit kompleks harus sama untuk semua arah pendekatan dalam bidang. Karena ada tak hingga banyak path menuju titik, diferensiabilitas dan kontinuitas kompleks lebih ketat daripada satu-dimensional real calculus.","Dekomposisi ke $(x,y)$ menghubungkan limit kompleks dengan limit dua variabel real."],
  formal:[
   D("Limit Kompleks","$\\lim_{z\\to z_0}f(z)=L$ jika untuk setiap ε>0 ada δ>0 sehingga $0<|z-z_0|<δ$ memberi $|f(z)-L|<ε$."),
-  T("Keunikan Limit","Limit kompleks jika ada bersifat unik."),
+  T("Keunikan Limit","Limit kompleks jika ada bersifat unik.",[
+    "Andaikan $f(z)\\to L$ dan $f(z)\\to M$ ketika $z\\to z_0$. Ambil $\\varepsilon>0$.",
+    "Dari definisi limit, terdapat $\\delta>0$ sehingga untuk $0<|z-z_0|<\\delta$ berlaku $|f(z)-L|<\\varepsilon/2$ dan $|f(z)-M|<\\varepsilon/2$.",
+    "Ketaksamaan segitiga memberi $|L-M|\\le|L-f(z)|+|f(z)-M|<\\varepsilon$.",
+    "Karena $\\varepsilon$ sebarang, $|L-M|=0$ dan $L=M$."
+  ]),
   P("Kriteria Jalur untuk Nonexistence","Jika terdapat dua path menuju $z_0$ yang menghasilkan limit berbeda, limit kompleks tidak ada."),
   D("Kontinuitas","$f$ kontinu di $z_0$ jika $\\lim_{z\\to z_0}f(z)=f(z_0)$."),
   T("Aljabar Kontinuitas","Sum/product/composition fungsi kontinu tetap kontinu; quotient memerlukan denominator nonzero.")
@@ -307,7 +320,12 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
  formal:[
   D("Turunan Kompleks","$f'(z_0)=\\lim_{h\\to0}[f(z_0+h)-f(z_0)]/h$ jika limit kompleks ada."),
   D("Holomorfik / Analitik","$f$ holomorfik pada domain jika complex differentiable di setiap titik domain."),
-  T("Diferensiabel Mengakibatkan Kontinu","Jika $f'(z_0)$ ada, $f$ kontinu di $z_0$."),
+  T("Diferensiabel Mengakibatkan Kontinu","Jika $f'(z_0)$ ada, $f$ kontinu di $z_0$.",[
+    "Dari definisi turunan kompleks, limit $\\lim_{z\\to z_0}(f(z)-f(z_0))/(z-z_0)=f'(z_0)$ ada dan berhingga.",
+    "Tulis $f(z)-f(z_0)=(z-z_0)\\frac{f(z)-f(z_0)}{z-z_0}$ untuk $z\\ne z_0$.",
+    "Ketika $z\\to z_0$, faktor pertama menuju nol dan faktor kedua menuju $f'(z_0)$.",
+    "Oleh karena itu $\\lim_{z\\to z_0}f(z)=f(z_0)$."
+  ]),
   T("Aturan Turunan","Sum/product/quotient/chain rules berlaku sebagaimana real calculus pada titik yang memenuhi syarat."),
   N("Kekakuan Kompleks","Existence derivative pada open set jauh lebih kuat daripada real differentiability di R².")
  ],
@@ -397,7 +415,11 @@ export const complexAnalysisContentA:Record<string,BookLessonContent>={
  intro:["Eksponensial kompleks $e^z=e^x(\\cos y+i\\sin y)$ menggabungkan pertumbuhan radial dan rotasi periodik. Karena periodisitas $2\\pi i$, fungsi ini tidak injective global.","Logaritma kompleks merupakan invers multi-valued: $\\log z=\\ln|z|+i(\\arg z)$."],
  formal:[
   D("Eksponensial Kompleks","$e^{x+iy}=e^x(\\cos y+i\\sin y)$."),
-  T("Periodisitas","$e^{z+2\\pi i}=e^z$."),
+  T("Periodisitas","$e^{z+2\\pi i}=e^z$.",[
+    "Sifat eksponensial kompleks memberi $e^{z+2\\pi i}=e^ze^{2\\pi i}$.",
+    "Rumus Euler memberi $e^{2\\pi i}=\\cos(2\\pi)+i\\sin(2\\pi)=1$.",
+    "Substitusi menghasilkan $e^{z+2\\pi i}=e^z$."
+  ]),
   D("Logaritma Multi-valued","Untuk $z\\ne0$, $\\log z=\\ln|z|+i(\\operatorname{Arg}z+2\\pi k)$, $k\\in\\mathbb Z$."),
   D("Principal Log","$\\operatorname{Log} z=\\ln|z|+i\\operatorname{Arg}z$ pada domain dengan branch cut yang sesuai."),
   T("Turunan","$\\frac{d}{dz}e^z=e^z$ dan pada branch analytic, $(\\operatorname{Log} z)'=1/z$.")
