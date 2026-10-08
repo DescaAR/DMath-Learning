@@ -31,8 +31,15 @@ for(const [sectionIndex,section] of complexAnalysisSections.entries()){
 
 function FormalBlock({ block, index }: { block: ComplexSourceBlock; index: number }) {
   if (block.kind === "paragraph") return <div className="ca-paragraph"><SourceText text={block.text ?? ""} /></div>;
-  if (block.kind === "proof" || block.kind === "solution") {
-    return <div className="ca-standalone-proof"><strong>{kindNames[block.kind]}</strong><SourceText text={block.body ?? ""} /></div>;
+  if (block.kind === "proof") {
+    return <div className="thesis-standalone-proof">
+      <strong>Bukti.</strong>
+      <div className="thesis-proof-paragraph"><SourceText text={(block.body??"").replace(/^Bukti\.\s*/i,"")} /></div>
+      <span className="thesis-qed" aria-label="Akhir bukti">■</span>
+    </div>;
+  }
+  if (block.kind === "solution") {
+    return <div className="ca-standalone-proof"><strong>Solusi.</strong><SourceText text={block.body ?? ""} /></div>;
   }
   if(["definition","lemma","proposition","theorem","corollary"].includes(block.kind)){
     return <ThesisFormalBlock kind={block.kind as BookFormalKind}
