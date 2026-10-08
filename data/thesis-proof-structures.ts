@@ -82,6 +82,38 @@ const reviewed:Record<string,ThesisProofFields>={
       }
     ]
   },
+  "analisis-real:theorem:Bolzano–Weierstrass":{
+    given:"Barisan real $(a_n)$ yang terbatas.",
+    toProve:"Terdapat subbarisan $(a_{n_k})$ yang konvergen ke suatu $L\in\mathbb R$."
+  },
+  "analisis-real:theorem:Kriteria Cauchy di ℝ":{
+    given:"Barisan real $(a_n)$.",
+    toProve:"Barisan $(a_n)$ konvergen jika dan hanya jika $(a_n)$ Cauchy.",
+    proofDirections:[
+      {
+        direction:"forward",
+        known:"Barisan $(a_n)$ konvergen ke $L\in\mathbb R$.",
+        target:"$(a_n)$ merupakan barisan Cauchy.",
+        steps:[
+          "Ambil sembarang $\varepsilon>0$. Berdasarkan konvergensi, terdapat $N$ sehingga $|a_n-L|<\varepsilon/2$ untuk semua $n\ge N$.",
+          "Untuk $m,n\ge N$, ketaksamaan segitiga memberi $|a_n-a_m|\le|a_n-L|+|a_m-L|<\varepsilon$.",
+          "Syarat Cauchy terpenuhi."
+        ]
+      },
+      {
+        direction:"backward",
+        known:"Barisan $(a_n)$ merupakan barisan Cauchy dalam $\mathbb R$.",
+        target:"$(a_n)$ konvergen ke suatu $L\in\mathbb R$.",
+        steps:[
+          "Barisan Cauchy terbatas. Berdasarkan Teorema Bolzano–Weierstrass, barisan ini memiliki subbarisan $(a_{n_k})$ yang konvergen ke suatu $L\in\mathbb R$.",
+          "Ambil sembarang $\varepsilon>0$. Dari syarat Cauchy diperoleh $N_1$ sehingga $m,n\ge N_1$ mengakibatkan $|a_n-a_m|<\varepsilon/2$.",
+          "Pilih $k$ cukup besar sehingga $n_k\ge N_1$ dan $|a_{n_k}-L|<\varepsilon/2$.",
+          "Untuk setiap $n\ge N_1$ berlaku $|a_n-L|\le|a_n-a_{n_k}|+|a_{n_k}-L|<\varepsilon$.",
+          "Dengan demikian, $(a_n)$ konvergen ke $L$."
+        ]
+      }
+    ]
+  },
   "teori-ukuran-probabilitas:proposition:Tower Property":{
     given:"Peubah acak integrabel $X$ dan sub-$\\sigma$-algebra $\\mathcal H\\subseteq\\mathcal G\\subseteq\\mathcal F$.",
     toProve:"$E[E[X\\mid\\mathcal G]\\mid\\mathcal H]=E[X\\mid\\mathcal H]$ hampir pasti."
