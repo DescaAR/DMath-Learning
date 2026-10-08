@@ -9,7 +9,7 @@
     "lint": "next lint",
     "audit:content": "node scripts/audit-content.mjs",
     "audit:latex": "node scripts/audit-latex.mjs",
-    "audit:depth": "node scripts/audit-material-depth.mjs",
+    "audit:depth": "node scripts/audit-material-depth.mjs --json",
     "audit:thesis": "node scripts/audit-thesis-format.mjs",
     "audit:solutions": "node scripts/audit-solution-format.mjs"
   },
