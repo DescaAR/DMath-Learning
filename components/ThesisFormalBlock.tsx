@@ -122,7 +122,13 @@ export function ThesisFormalBlock({
               {part.known&&<p className="thesis-proof-assumption">
                 <strong>{en?"Given":"Diketahui"}</strong> <Text>{normalizeProse(part.known)}</Text>
               </p>}
-              <p className="thesis-proof-target"><strong>{en?"To prove":"Dibuktikan bahwa"} <Text>{part.target}</Text></strong></p>
+              <p className="thesis-proof-target">
+                <strong>
+                  {part.title===part.target
+                    ?<Text>{part.target}</Text>
+                    :<>{en?"To prove":"Dibuktikan bahwa"} <Text>{part.target}</Text></>}
+                </strong>
+              </p>
               <ProofParagraphs steps={part.steps}/>
             </li>)}
           </ol>
