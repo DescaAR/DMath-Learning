@@ -5,12 +5,14 @@ export type BookFormalItem={
   title:string;
   statement:string;
   proof?:string[];
+  explanation?:string;
 };
 export type BookExample={
   title:string;
   problem:string;
   solution:string[];
   conclusion?:string;
+  forDefinition?:string;
 };
 export type BookExercise={
   prompt:string;
