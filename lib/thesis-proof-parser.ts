@@ -17,7 +17,8 @@ export type ParsedProof = {
 };
 
 function normalizeText(source:string){
-  return source.replace(/\r\n?/g,"\n").trim();
+  return source.replace(/\r\n?/g,"\n").trim()
+    .replace(/^(?:Bukti|Pembuktian|Proof)\.\s*/i,"").trim();
 }
 
 function readPrefixed(text:string,prefix:"Diketahui"|"Dibuktikan"){
