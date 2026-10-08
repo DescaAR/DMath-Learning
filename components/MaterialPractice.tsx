@@ -100,8 +100,6 @@ export function MaterialPractice({ problems, storageKey }: { problems: MaterialP
               return(
                 <div className="practice-reveal answer">
                   <AcademicSolution
-                    target={en?problem.prompt.en:problem.prompt.id}
-                    idea={en?problem.hint.en:problem.hint.id}
                     steps={steps}
                   />
                 </div>
