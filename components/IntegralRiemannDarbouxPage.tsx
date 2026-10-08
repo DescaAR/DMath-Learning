@@ -605,15 +605,15 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
 
   const formalSummary=useMemo(()=>{
     const definitions:IntegralSourceBlock[]=[];
-    const theorems:IntegralSourceBlock[]=[];
+    const results:IntegralSourceBlock[]=[];
     for (const section of integralRiemannDarbouxSections) {
       const blocks=[...section.blocks,...section.subsections.flatMap((s)=>s.blocks)];
       for (const block of blocks) {
         if (block.kind==="definition") definitions.push(block);
-        if (block.kind==="theorem") theorems.push(block);
+        if (["theorem","lemma","proposition","corollary"].includes(block.kind)) results.push(block);
       }
     }
-    return {definitions,theorems};
+    return {definitions,results};
   },[]);
 
   useEffect(()=>{
@@ -704,7 +704,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               <div className="section-number">{String(summarySectionNumber).padStart(2,"0")}</div>
               <span className="eyebrow">Ringkasan Materi</span>
               <h2>Ringkasan Definisi dan Teorema</h2>
-              <p>Bagian ini merangkum seluruh definisi dan teorema pada materi Integral Riemann dan Darboux. Pernyataan ditampilkan tanpa pembuktian agar dapat digunakan sebagai tinjauan cepat sebelum mengerjakan latihan soal.</p>
+              <p>Bagian ini merangkum seluruh definisi dan hasil formal pada materi Integral Riemann dan Darboux. Pernyataan ditampilkan tanpa pembuktian agar dapat digunakan sebagai tinjauan cepat sebelum mengerjakan latihan soal.</p>
 
               <div className="ird-summary-group">
                 <div className="ird-summary-heading">
@@ -717,7 +717,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                   {formalSummary.definitions.map((block,index)=>(
                     <details className="ird-summary-card ird-summary-definition" key={"def-"+index}>
                       <summary>
-                        <span>Definisi {index+1}</span>
+                        <span>Definisi {riemannFormalNumbers.get(block)??String(index+1)}</span>
                         <strong>{block.title || "Definisi"}</strong>
                       </summary>
                       <div className="ird-summary-body"><SourceText text={block.body ?? ""} /></div>
@@ -730,15 +730,15 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
                 <div className="ird-summary-heading">
                   <div>
                     <span className="eyebrow">Teorema</span>
-                    <h3>{formalSummary.theorems.length} teorema penting</h3>
+                    <h3>{formalSummary.results.length} hasil formal penting</h3>
                   </div>
                 </div>
                 <div className="ird-summary-grid">
-                  {formalSummary.theorems.map((block,index)=>(
+                  {formalSummary.results.map((block,index)=>(
                     <details className="ird-summary-card ird-summary-theorem" key={"thm-"+index}>
                       <summary>
-                        <span>Teorema {index+1}</span>
-                        <strong>{block.title || "Teorema"}</strong>
+                        <span>{kindNames[block.kind]??"Hasil Formal"} {riemannFormalNumbers.get(block)??String(index+1)}</span>
+                        <strong>{block.title || kindNames[block.kind] || "Hasil Formal"}</strong>
                       </summary>
                       <div className="ird-summary-body"><SourceText text={block.body ?? ""} /></div>
                     </details>
