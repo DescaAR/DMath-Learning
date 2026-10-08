@@ -75,6 +75,7 @@ const reviewed=read("data/definition-examples.ts");
 const sigmaStart=reviewed.indexOf('"teori-ukuran-probabilitas:Sigma-Algebra"');
 assert.ok(sigmaStart>=0);
 const sigma=reviewed.slice(sigmaStart,reviewed.indexOf('"teori-ukuran-probabilitas:Sistem',sigmaStart));
-assert.match(sigma,/gabungan terhitung/);
+assert.match(sigma,/barisan/);
+assert.match(sigma,/bigcup/);
 assert.match(sigma,/komplemen/);
 console.log("Audit solusi berhasil:",all.length,"TSX routes/components checked; duplicate ideas, fake conclusions and numbered proof badges absent.");
