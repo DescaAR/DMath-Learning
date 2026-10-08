@@ -11,6 +11,7 @@ import type { BookExample, BookFormalKind, BookLessonContent } from "@/data/book
 import { getCuratedDefinitionExample } from "@/data/definition-examples";
 import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
 import { getChapterFormalNumbers } from "@/data/thesis-formal-numbering";
+import { getReviewedThesisProof } from "@/data/thesis-proof-structures";
 
 const kindLabel:Record<BookFormalKind,string>={
   definition:"Definisi",
@@ -231,6 +232,7 @@ export function BookSectionPage({
           const explanation=item.explanation?.trim() || "";
           const ordinal=provenResults.slice(0,index).filter(previous=>previous.kind===item.kind).length;
           const thesisNumber=thesisNumbers[item.kind]?.[ordinal]??chapter.number+"."+(ordinal+1);
+          const reviewed=getReviewedThesisProof(subject.slug,item.kind,item.title);
           return(
             <div className="formal-result-pair" key={item.title+index}>
               <ThesisFormalBlock
@@ -240,10 +242,10 @@ export function BookSectionPage({
                 statement={item.statement}
                 citation={item.citation}
                 proof={item.proof}
-                known={item.given}
-                goal={item.toProve}
-                directions={item.proofDirections}
-                targets={item.proofTargets}
+                known={item.given??reviewed?.given}
+                goal={item.toProve??reviewed?.toProve}
+                directions={item.proofDirections??reviewed?.proofDirections}
+                targets={item.proofTargets??reviewed?.proofTargets}
               />
               {explanation&&<div className="ird-formal-explanation">
                 <strong>Penjelasan</strong>
