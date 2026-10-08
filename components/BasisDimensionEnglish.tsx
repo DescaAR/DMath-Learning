@@ -4,6 +4,7 @@ import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
 import { ScrollSpyToc } from "@/components/ScrollSpyToc";
+import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
 
 const sections = [
   ["en-overview","Overview"],["en-review","Vector Space Review"],["en-combinations","Linear Combinations"],
@@ -139,9 +140,9 @@ function P({children}:{children:string}) { return <p><RichMath>{children}</RichM
 
 function TheoremCard({item}:{item:(typeof theorems)[number]}) {
   return <div className="theorem-suite">
-    <div className="theorem-box"><div className="box-kicker">Theorem {item.n}</div><strong>{item.title}</strong><P>{item.statement}</P></div>
-    <div className="proof-box proof-detailed"><div className="box-kicker">Proof</div>{item.proof.map((step,i)=><div className="proof-step" key={step}><span>{i+1}</span><P>{step}</P></div>)}<p className="proof-end">■</p></div>
-    <div className="why-box"><strong>Why is this theorem important?</strong><P>{item.why}</P></div>
+    <ThesisFormalBlock kind="theorem" number={"1."+item.n} title={item.title}
+      statement={item.statement} proof={item.proof} language="en"/>
+    <div className="why-box"><strong>Explanation</strong><P>{item.why}</P></div>
   </div>;
 }
 
