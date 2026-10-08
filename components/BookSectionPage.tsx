@@ -75,6 +75,17 @@ function visualizationForSubject(slug:BookSubject["slug"]):VisualizationKind{
   return map[slug];
 }
 
+function visualizationForSection(subject:BookSubject,section:BookSection):VisualizationKind{
+  const topic=(section.title+" "+section.keyIdeas.join(" ")).toLocaleLowerCase("id-ID");
+  if(/jumlah riemann|integral riemann|darboux|riemann sum/.test(topic))return "riemann";
+  if(/pigeonhole|rumah merpati/.test(topic))return "pigeonhole";
+  if(/kongruensi|modulo|modular arithmetic|jam modular/.test(topic))return "modclock";
+  if(/spektrum|eigenvalue|nilai eigen|nilai singular/.test(topic))return "spectrum";
+  if(/basis dan dimensi|ruang vektor|linear independence|bebas linear/.test(topic))return "onmipa-linear";
+  if(/grafik fungsi|fungsi dan grafik|function graphs/.test(topic))return "function";
+  return visualizationForSubject(subject.slug);
+}
+
 function ExampleCard({example}:{example:BookExample}){
   return(
     <article className="ird-worked-card">
@@ -121,7 +132,7 @@ export function BookSectionPage({
     ...formalResults.filter((item)=>!hasSubstantiveProof(item.proof)),
     ...invalidDefinitions.map((item)=>({...item,kind:"note" as const,title:"Konsep · "+item.title})),
   ];
-  const visualKind=visualizationForSubject(subject.slug);
+  const visualKind=visualizationForSection(subject,section);
   const examplesForSection=content.examples;
 
   const sections=[
