@@ -1,4 +1,5 @@
 import type { BookLessonContent } from "@/data/book-content-types";
+import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
 import { realAnalysisContentB } from "@/data/real-analysis-book-content-b";
 import { complexAnalysisContentA } from "@/data/complex-analysis-book-content-a";
@@ -44,5 +45,12 @@ export const bookSectionContent:Record<string,BookLessonContent>={
 };
 
 export function getBookSectionContent(sectionSlug:string){
-  return bookSectionContent[sectionSlug] ?? null;
+  const content=bookSectionContent[sectionSlug];
+  if(!content)return null;
+  const curatedExercises=curatedSectionExercises[sectionSlug]??[];
+  if(curatedExercises.length===0)return content;
+  return {
+    ...content,
+    exercises:[...curatedExercises,...content.exercises],
+  };
 }
