@@ -5,6 +5,7 @@ import type { FormalChapterContent, FormalBlockKind, Bilingual } from "@/data/fo
 import { RichMath } from "@/components/RichMath";
 import { useLanguage } from "@/components/LanguageProvider";
 import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
+import { AcademicSolution } from "@/components/AcademicSolution";
 
 const kindLabels: Record<FormalBlockKind, { id: string; en: string }> = {
   definition: { id: "Definisi", en: "Definition" },
@@ -59,11 +60,7 @@ export function FormalChapterSection({
                 </div>
                 <details className="detailed-example-solution">
                   <summary>{en?"Open solution":"Buka Solusi"}</summary>
-                  <div>{definitionExample.solution.map((step,stepIndex)=>(
-                    <div className="formal-proof-step" key={stepIndex}>
-                      <span>{stepIndex+1}</span><div><RichMath>{pick(step)}</RichMath></div>
-                    </div>
-                  ))}</div>
+                  <AcademicSolution steps={definitionExample.solution.map(pick)} conclusion={pick(definitionExample.conclusion)}/>
                 </details>
               </article>}
               {block.intuition&&<div className="ird-formal-explanation">
@@ -97,27 +94,13 @@ export function FormalChapterSection({
                 <p><RichMath>{pick(example.problem)}</RichMath></p>
               </div>
 
-              <div className="detailed-example-strategy">
-                <strong>{en ? "Strategy" : "Strategi"}</strong>
-                <p><RichMath>{pick(example.strategy)}</RichMath></p>
-              </div>
 
               <details className="detailed-example-solution" open={index === 0}>
                 <summary>{en ? "Open complete solution" : "Buka penyelesaian lengkap"}</summary>
-                <div>
-                  {example.solution.map((step, stepIndex) => (
-                    <div className="formal-proof-step" key={stepIndex}>
-                      <span>{stepIndex + 1}</span>
-                      <div><RichMath>{pick(step)}</RichMath></div>
-                    </div>
-                  ))}
-                </div>
+                <AcademicSolution idea={pick(example.strategy)} steps={example.solution.map(pick)} conclusion={pick(example.conclusion)}/>
               </details>
 
-              <div className="detailed-example-conclusion">
-                <strong>{en ? "Conclusion" : "Kesimpulan"}</strong>
-                <p><RichMath>{pick(example.conclusion)}</RichMath></p>
-              </div>
+
             </article>
           ))}
         </div>
