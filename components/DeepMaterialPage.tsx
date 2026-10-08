@@ -37,12 +37,14 @@ function hasSubstantiveProof(proof?:unknown[]){
 
 function findDefinitionExample(title:string,definitionsCount:number,examples:LocalExample[]){
   const normalized=title.trim().toLocaleLowerCase("id-ID");
+  const explicitlyLinked=examples.find((example)=>example.forDefinition?.trim().toLocaleLowerCase("id-ID")===normalized);
   const byTitle=examples.find((example)=>example.title.trim().toLocaleLowerCase("id-ID")===normalized);
-  return byTitle??(definitionsCount===1&&examples.length===1?examples[0]:null);
+  return explicitlyLinked??byTitle??null;
 }
 
 type LocalExample={
   title:string;
+  forDefinition?:string;
   problem:string;
   strategy?:string;
   solution:string[];
@@ -69,6 +71,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
 
   const localizedFormalExamples:LocalExample[]=(formal?.examples??[]).map((example)=>({
     title:pick(example.title),
+    forDefinition:example.forDefinition?pick(example.forDefinition):undefined,
     problem:pick(example.problem),
     strategy:pick(example.strategy),
     solution:example.solution.map(pick),
