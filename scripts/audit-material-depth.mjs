@@ -86,6 +86,7 @@ for(const subject of bookSubjects){
       if(content.exercises.length>0)row.pagesWithExercises++;
       if(content.intro.some(s=>s.includes("Submateri ini membahas")||s.includes("Pembahasan menekankan objek matematika"))){
         row.pagesWithGenericIntro++;
+        concerns.push({subject:subject.title,section:section.slug,problem:"generic introduction"});
       }
       const definitions=content.formal.filter(isDefinition);
       row.definitions+=definitions.length;
@@ -99,8 +100,12 @@ for(const subject of bookSubjects){
       }
       for(const item of content.formal.filter(x=>["theorem","lemma","proposition","corollary"].includes(x.kind))){
         row.results++;
-        if(acceptedProof(item.proof))row.resultsWithProof++;
-        else concerns.push({subject:subject.title,section:section.slug,problem:"unproved formal result",title:item.title});
+        if(acceptedProof(item.proof)){
+          row.resultsWithProof++;
+          const text=item.proof.join(" ");
+          if(text.length<125 || /(?:argumen serupa|pembuktian mengikuti|bukti diserahkan|serupa dapat dibuktikan)/i.test(text))
+            concerns.push({subject:subject.title,section:section.slug,problem:"proof requires detailed mathematical review",title:item.title});
+        }else concerns.push({subject:subject.title,section:section.slug,problem:"unproved formal result",title:item.title});
       }
       if(content.examples.length===0)
         concerns.push({subject:subject.title,section:section.slug,problem:"no worked examples"});
@@ -126,7 +131,9 @@ console.table(report.map(row=>({
   "With proof":row.resultsWithProof,
   "Generic intros":row.pagesWithGenericIntro
 })));
-console.log(JSON.stringify({totals,unresolved:concerns.length},null,2));
+console.log(JSON.stringify({totals,unresolved:concerns.length,
+  byProblem:Object.entries(concerns.reduce((out,item)=>(out[item.problem]=(out[item.problem]??0)+1,out),{}))
+    .sort((a,b)=>b[1]-a[1])},null,2));
 
 if(process.argv.includes("--json")){
   const filename=path.join(root,"material-depth-report.json");
