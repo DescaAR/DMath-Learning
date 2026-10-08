@@ -79,14 +79,14 @@ for(const subject of bookSubjects){
       row.pages++;
       const content=getBookSectionContent(section.slug);
       if(!content){
-        concerns.push({subject:subject.title,section:section.slug,problem:"missing content"});
+        concerns.push({subject:subject.title,section:section.slug,page:"/materi/"+subject.slug+"/"+section.slug,problem:"missing content"});
         continue;
       }
       if(content.intro.length>=2)row.pagesWithIntro++;
       if(content.exercises.length>0)row.pagesWithExercises++;
       if(content.intro.some(s=>s.includes("Submateri ini membahas")||s.includes("Pembahasan menekankan objek matematika"))){
         row.pagesWithGenericIntro++;
-        concerns.push({subject:subject.title,section:section.slug,problem:"generic introduction"});
+        concerns.push({subject:subject.title,section:section.slug,page:"/materi/"+subject.slug+"/"+section.slug,problem:"generic introduction"});
       }
       const definitions=content.formal.filter(isDefinition);
       row.definitions+=definitions.length;
@@ -96,7 +96,7 @@ for(const subject of bookSubjects){
           || example.title.trim().toLocaleLowerCase("id-ID")===t);
         const curated=!!getCuratedDefinitionExample(subject.slug,definition.title);
         if(explicit||curated)row.definitionsWithExample++;
-        else concerns.push({subject:subject.title,section:section.slug,problem:"no verified example",title:definition.title});
+        else concerns.push({subject:subject.title,section:section.slug,page:"/materi/"+subject.slug+"/"+section.slug,problem:"no verified example",title:definition.title});
       }
       for(const item of content.formal.filter(x=>["theorem","lemma","proposition","corollary"].includes(x.kind))){
         row.results++;
@@ -104,13 +104,13 @@ for(const subject of bookSubjects){
           row.resultsWithProof++;
           const text=item.proof.join(" ");
           if(text.length<125 || /(?:argumen serupa|pembuktian mengikuti|bukti diserahkan|serupa dapat dibuktikan)/i.test(text))
-            concerns.push({subject:subject.title,section:section.slug,problem:"proof requires detailed mathematical review",title:item.title});
-        }else concerns.push({subject:subject.title,section:section.slug,problem:"unproved formal result",title:item.title});
+            concerns.push({subject:subject.title,section:section.slug,page:"/materi/"+subject.slug+"/"+section.slug,problem:"proof requires detailed mathematical review",title:item.title});
+        }else concerns.push({subject:subject.title,section:section.slug,page:"/materi/"+subject.slug+"/"+section.slug,problem:"unproved formal result",title:item.title});
       }
       if(content.examples.length===0)
-        concerns.push({subject:subject.title,section:section.slug,problem:"no worked examples"});
+        concerns.push({subject:subject.title,section:section.slug,page:"/materi/"+subject.slug+"/"+section.slug,problem:"no worked examples"});
       if(content.exercises.length===0)
-        concerns.push({subject:subject.title,section:section.slug,problem:"no practice"});
+        concerns.push({subject:subject.title,section:section.slug,page:"/materi/"+subject.slug+"/"+section.slug,problem:"no practice"});
     }
   }
   report.push(row);
