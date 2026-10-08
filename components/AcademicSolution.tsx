@@ -7,6 +7,24 @@ function Text({children}:{children:string}){
   return <RichMath className="ird-rich-text">{children}</RichMath>;
 }
 
+/** Keep author's mathematics intact; remove only duplicate headings and repeated content. */
+function comparable(value:string){
+  return value.trim().replace(/\\s+/g," ").replace(/[.!?]+$/g,"").toLocaleLowerCase();
+}
+function uniqueParagraphs(values:string[]){
+  const used=new Set<string>();
+  return values.map(x=>x.trim()).filter(x=>{
+    const key=comparable(x);
+    if(!key||used.has(key))return false;
+    used.add(key);
+    return true;
+  });
+}
+function leadingConnector(value:string){
+  return value.replace(/^(Jadi|Maka|Sehingga)(?=\\s|,)/,match=>
+    match==="Jadi"?"Dengan demikian":match==="Maka"?"Oleh karena itu":"Dengan demikian");
+}
+
 export function AcademicSolution({
   known,
   target,
@@ -24,59 +42,32 @@ export function AcademicSolution({
 }){
   const {language}=useLanguage();
   const en=language==="en";
-  const ui=(id:string,english:string)=>en?english:id;
-
-  return(
-    <div className="solution-stack full-solution">
-      {(known||target)&&(
-        <div className="solution-overview-grid">
-          {known&&<div className="content-box"><span className="box-kicker">{ui("Diketahui","Given")}</span><div><Text>{known}</Text></div></div>}
-          {target&&<div className="content-box"><span className="box-kicker">{ui("Dicari / Dibuktikan","Find / Prove")}</span><div><Text>{target}</Text></div></div>}
-        </div>
-      )}
-
-      {idea&&(
-        <div className="content-box idea-box">
-          <span className="box-kicker">{ui("Ide Penyelesaian","Solution Idea")}</span>
-          <div><Text>{idea}</Text></div>
-        </div>
-      )}
-
-      <div className="content-box solution-box">
-        <span className="box-kicker">{title??ui("Pembahasan","Solution")}</span>
-        <div className="solution-steps">
-          {steps.map((step,index)=>(
-            <div className="solution-step" key={index}>
-              <span>{String(index+1).padStart(2,"0")}</span>
-              <div><Text>{step}</Text></div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {conclusion&&(
-        <div className="content-box answer-box">
-          <span className="box-kicker">{ui("Kesimpulan","Conclusion")}</span>
-          <div><Text>{conclusion}</Text></div>
-        </div>
-      )}
-    </div>
+  const paragraphs=uniqueParagraphs(steps);
+  // Older data occasionally uses the first solution line as a synthetic 'idea'.
+  // Only show a genuine, independent strategy, never repeat a proof paragraph.
+  const showIdea=Boolean(idea?.trim())&&!paragraphs.some(
+    p=>comparable(p)===comparable(idea??"")||comparable(p).includes(comparable(idea??""))
   );
+  const showConclusion=Boolean(conclusion?.trim())&&
+    !paragraphs.some(p=>comparable(p)===comparable(conclusion??""));
+
+  return <div className="academic-solution-prose">
+    {known&&<p className="academic-solution-context"><strong>{en?"Given.":"Diketahui."}</strong> <Text>{known}</Text></p>}
+    {target&&<p className="academic-solution-context"><strong>{en?"To find or prove.":"Dibuktikan atau ditentukan."}</strong> <Text>{target}</Text></p>}
+    {showIdea&&<p className="academic-solution-idea"><strong>{en?"Approach.":"Gagasan."}</strong> <Text>{idea!.trim()}</Text></p>}
+    <div className="academic-solution-body">
+      <p className="academic-solution-heading"><strong>{title??(en?"Solution.":"Solusi.")}</strong></p>
+      {paragraphs.map((paragraph,index)=><div className="academic-solution-paragraph" key={index}>
+        <Text>{leadingConnector(paragraph)}</Text>
+      </div>)}
+      {showConclusion&&<div className="academic-solution-conclusion"><Text>{leadingConnector(conclusion!.trim())}</Text></div>}
+    </div>
+  </div>;
 }
 
+/** Keep authored paragraphs intact; never convert every sentence into a numbered step. */
 export function splitAcademicSolution(text:string){
-  const normalized=text
-    .replace(/\r/g,"")
-    .split(/\n+/)
-    .map((item)=>item.trim())
-    .filter(Boolean);
-
-  if(normalized.length>1)return normalized;
-
-  const sentences=text
-    .split(/(?<=[.!?])\s+(?=[A-ZÀ-ÖØ-Ý0-9$])/)
-    .map((item)=>item.trim())
-    .filter(Boolean);
-
-  return sentences.length?sentences:[text];
+  const lines=text.replace(/\\r/g,"").split(/\\n\\s*\\n|\\n(?=\\s*\\([a-z]\\)\\s)/)
+    .map(x=>x.trim()).filter(Boolean);
+  return lines.length?lines:[text.trim()].filter(Boolean);
 }
