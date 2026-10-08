@@ -99,7 +99,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     {id:"gm-section-1",label:ui("Pengantar","Introduction")},
     {id:"gm-section-4",label:ui("Definisi & Contoh","Definitions & Examples")},
     {id:"gm-section-5",label:ui("Hasil Formal & Bukti","Formal Results & Proofs")},
-    {id:"gm-section-6",label:ui("Contoh Terbahas","Worked Examples")},
+    ...(unpairedExamples.length?[{id:"gm-section-6",label:ui("Contoh Terbahas","Worked Examples")},]:[]),
     {id:"gm-section-7",label:ui("Visualisasi","Visualization")},
     {id:"gm-summary",label:ui("Ringkasan Definisi & Teorema","Definitions & Theorems Summary")},
     {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},
@@ -262,7 +262,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
         ))}
       </section>
 
-      <section id="gm-section-6" className="book-section ird-source-section">
+      {unpairedExamples.length>0&&<section id="gm-section-6" className="book-section ird-source-section">
         <div className="section-number">04</div>
         <span className="eyebrow">{ui("Bagian 4","Part 4")}</span>
         <h2>{ui("Contoh terbahas","Worked examples")}</h2>
@@ -283,7 +283,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
             </article>
           ))}
         </div>
-      </section>
+      </section>}
 
       <section id="gm-section-7" className="book-section ird-source-section">
         <div className="section-number">05</div>
