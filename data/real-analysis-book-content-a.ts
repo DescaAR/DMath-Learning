@@ -344,7 +344,7 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Definisi konvergensi barisan asal langsung berlaku pada indeks $n_k$."
   ]),
   T("Bolzano–Weierstrass","Setiap barisan real yang terbatas memiliki subbarisan konvergen.",[
-    "Diketahui barisan real $(a_n)$ yang terbatas. Pilih $M>0$ sehingga $a_n\in[-M,M]$ untuk semua $n$.",
+    "Misalkan $(a_n)$ barisan real yang terbatas. Pilih $M>0$ sehingga $a_n\in[-M,M]$ untuk semua $n$.",
     "Definisikan $I_0=[-M,M]$. Bagilah $I_0$ menjadi dua interval tertutup yang sama panjang. Salah satu interval memuat tak hingga banyak suku barisan, dihitung berdasarkan indeksnya. Pilih interval tersebut sebagai $I_1$.",
     "Ulangi proses pembagian dua pada $I_k$ untuk mendapatkan interval tertutup $I_{k+1}\subseteq I_k$ yang tetap memuat tak hingga banyak suku. Panjang $I_k$ adalah $2M/2^k$.",
     "Karena setiap $I_k$ memuat tak hingga banyak suku, dapat dipilih $n_1<n_2<\cdots$ dengan $a_{n_k}\in I_k$ untuk setiap $k$.",
