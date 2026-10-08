@@ -65,8 +65,11 @@ export function ThesisFormalBlock({
   const activeDirections=directions?.filter((item)=>item.steps.length)??[];
   const activeTargets=targets?.filter((item)=>item.steps.length)??[];
   const lastStep=text[text.length-1]?.trim()??"";
-  const redundantClose=/^(?:Dengan demikian|Oleh karena itu)[\s\S]{0,120}\bterbukti\.?$/i.test(lastStep);
-  const proofBody=redundantClose?text.slice(0,-1):text;
+  const conclusionPattern=/(?:Dengan demikian|Oleh karena itu),?[^.\n]{0,145}\bterbukti\.?\s*$/i;
+  const redundantClose=conclusionPattern.test(lastStep);
+  const proofBody=redundantClose
+    ?[...text.slice(0,-1),lastStep.replace(conclusionPattern,"").trim()].filter(Boolean)
+    :text;
 
   return <div className="thesis-formal-group">
     <article className={"ird-formal thesis-formal ird-"+kind}>
