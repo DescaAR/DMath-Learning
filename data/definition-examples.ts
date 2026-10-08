@@ -1,4 +1,5 @@
 import type { BookExample } from "@/data/book-content-types";
+import { moreDefinitionExamples } from "@/data/definition-examples-part2";
 
 /**
  * Explicitly authored examples keyed to a subject and a definition.
@@ -135,5 +136,5 @@ const examples:Record<string,BookExample>={
 };
 
 export function getCuratedDefinitionExample(subjectSlug:string,title:string):BookExample|null{
-  return examples[subjectSlug+":"+title]??null;
+  return examples[subjectSlug+":"+title]??moreDefinitionExamples[subjectSlug+":"+title]??null;
 }
