@@ -38,6 +38,8 @@ function partitionNarrative(raw:string[]){
       if(cut)flush();
       if(line.trim())buffer.push(line);
       else if(buffer.length)buffer.push("");
+      // A proof's known data and target must never absorb later reasoning.
+      if(/^(?:Diketahui|Dibuktikan)(?: bahwa)?\b/.test(line.trimStart()))flush();
     }
     flush();
   }
