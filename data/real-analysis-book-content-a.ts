@@ -344,11 +344,11 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Definisi konvergensi barisan asal langsung berlaku pada indeks $n_k$."
   ]),
   T("Bolzano–Weierstrass","Setiap barisan real yang terbatas memiliki subbarisan konvergen.",[
-    "Misalkan $(a_n)$ barisan real yang terbatas. Pilih $M>0$ sehingga $a_n\in[-M,M]$ untuk semua $n$.",
+    "Misalkan $(a_n)$ barisan real yang terbatas. Pilih $M>0$ sehingga $a_n\\in[-M,M]$ untuk semua $n$.",
     "Definisikan $I_0=[-M,M]$. Bagilah $I_0$ menjadi dua interval tertutup yang sama panjang. Salah satu interval memuat tak hingga banyak suku barisan, dihitung berdasarkan indeksnya. Pilih interval tersebut sebagai $I_1$.",
-    "Ulangi proses pembagian dua pada $I_k$ untuk mendapatkan interval tertutup $I_{k+1}\subseteq I_k$ yang tetap memuat tak hingga banyak suku. Panjang $I_k$ adalah $2M/2^k$.",
-    "Karena setiap $I_k$ memuat tak hingga banyak suku, dapat dipilih $n_1<n_2<\cdots$ dengan $a_{n_k}\in I_k$ untuk setiap $k$.",
-    "Menurut Nested Interval Property, terdapat $L\in\bigcap_{k=0}^{\infty}I_k$. Karena $a_{n_k}$ dan $L$ berada di $I_k$, berlaku $|a_{n_k}-L|\le 2M/2^k\to0$.",
+    "Ulangi proses pembagian dua pada $I_k$ untuk mendapatkan interval tertutup $I_{k+1}\\subseteq I_k$ yang tetap memuat tak hingga banyak suku. Panjang $I_k$ adalah $2M/2^k$.",
+    "Karena setiap $I_k$ memuat tak hingga banyak suku, dapat dipilih $n_1<n_2<\\cdots$ dengan $a_{n_k}\\in I_k$ untuk setiap $k$.",
+    "Menurut Nested Interval Property, terdapat $L\\in\\bigcap_{k=0}^{\\infty}I_k$. Karena $a_{n_k}$ dan $L$ berada di $I_k$, berlaku $|a_{n_k}-L|\\le 2M/2^k\\to0$.",
     "Dengan demikian, subbarisan $(a_{n_k})$ konvergen ke $L$."
   ]),
   C("Uji Divergensi melalui Subbarisan","Jika suatu barisan memiliki dua subbarisan yang konvergen ke limit berbeda, barisan asal divergen.",[
@@ -379,10 +379,10 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Untuk $m,n\\ge N$, ketaksamaan segitiga memberi $|a_n-a_m|\\le|a_n-L|+|a_m-L|<\\varepsilon$."
   ]),
   T("Kriteria Cauchy di ℝ","Barisan real konvergen jika dan hanya jika Cauchy.",[
-    "(⇒) Andaikan $(a_n)$ konvergen ke $L$. Untuk setiap $\varepsilon>0$, pilih $N$ sehingga $|a_n-L|<\varepsilon/2$ untuk semua $n\ge N$. Jika $m,n\ge N$, maka $|a_n-a_m|\le|a_n-L|+|a_m-L|<\varepsilon$.",
-    "(⇐) Andaikan $(a_n)$ Cauchy. Setiap barisan Cauchy terbatas. Berdasarkan Teorema Bolzano–Weierstrass, terdapat subbarisan $(a_{n_k})$ yang konvergen ke suatu $L\in\mathbb R$.",
-    "Ambil sembarang $\varepsilon>0$. Pilih $N_1$ sehingga $|a_n-a_m|<\varepsilon/2$ untuk semua $m,n\ge N_1$. Pilih $k$ cukup besar sehingga $n_k\ge N_1$ dan $|a_{n_k}-L|<\varepsilon/2$.",
-    "Untuk setiap $n\ge N_1$, diperoleh $|a_n-L|\le|a_n-a_{n_k}|+|a_{n_k}-L|<\varepsilon$. Oleh karena itu $a_n\to L$."
+    "(⇒) Andaikan $(a_n)$ konvergen ke $L$. Untuk setiap $\\varepsilon>0$, pilih $N$ sehingga $|a_n-L|<\\varepsilon/2$ untuk semua $n\\ge N$. Jika $m,n\\ge N$, maka $|a_n-a_m|\\le|a_n-L|+|a_m-L|<\\varepsilon$.",
+    "(⇐) Andaikan $(a_n)$ Cauchy. Setiap barisan Cauchy terbatas. Berdasarkan Teorema Bolzano–Weierstrass, terdapat subbarisan $(a_{n_k})$ yang konvergen ke suatu $L\\in\\mathbb R$.",
+    "Ambil sembarang $\\varepsilon>0$. Pilih $N_1$ sehingga $|a_n-a_m|<\\varepsilon/2$ untuk semua $m,n\\ge N_1$. Pilih $k$ cukup besar sehingga $n_k\\ge N_1$ dan $|a_{n_k}-L|<\\varepsilon/2$.",
+    "Untuk setiap $n\\ge N_1$, diperoleh $|a_n-L|\\le|a_n-a_{n_k}|+|a_{n_k}-L|<\\varepsilon$. Oleh karena itu $a_n\\to L$."
   ]),
   P("Barisan Cauchy Terbatas","Setiap barisan Cauchy terbatas.",[
     "Pilih $N$ sehingga $|a_n-a_N|<1$ untuk $n\\ge N$.",
