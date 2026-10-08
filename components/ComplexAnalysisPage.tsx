@@ -5,6 +5,8 @@ import { useEffect, useMemo, useState } from "react";
 import type { DeepMaterial } from "@/data/deep-materials";
 import { complexAnalysisExercises, complexAnalysisSections, type ComplexSourceBlock } from "@/data/complex-analysis";
 import { RichMath } from "@/components/RichMath";
+import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
+import type { BookFormalKind } from "@/data/book-content-types";
 
 function SourceText({ text }: { text: string }) {
   return <RichMath className="ca-rich-text">{text}</RichMath>;
@@ -16,17 +18,34 @@ const kindNames: Record<string,string> = {
   exercise:"Latihan", proof:"Pembuktian", solution:"Solusi",
 };
 
+const complexFormalNumbers=new WeakMap<ComplexSourceBlock,string>();
+for(const [sectionIndex,section] of complexAnalysisSections.entries()){
+  const counts:Record<string,number>={};
+  const blocks=[...section.blocks,...section.subsections.flatMap(sub=>sub.blocks)];
+  for(const block of blocks){
+    if(!["definition","lemma","proposition","theorem","corollary"].includes(block.kind))continue;
+    counts[block.kind]=(counts[block.kind]??0)+1;
+    complexFormalNumbers.set(block,(sectionIndex+1)+"."+counts[block.kind]);
+  }
+}
+
 function FormalBlock({ block, index }: { block: ComplexSourceBlock; index: number }) {
   if (block.kind === "paragraph") return <div className="ca-paragraph"><SourceText text={block.text ?? ""} /></div>;
   if (block.kind === "proof" || block.kind === "solution") {
     return <div className="ca-standalone-proof"><strong>{kindNames[block.kind]}</strong><SourceText text={block.body ?? ""} /></div>;
+  }
+  if(["definition","lemma","proposition","theorem","corollary"].includes(block.kind)){
+    return <ThesisFormalBlock kind={block.kind as BookFormalKind}
+      number={complexFormalNumbers.get(block)??"1."+(index+1)}
+      title={block.title} statement={block.body??""}
+      proof={block.proof?[block.proof]:undefined}/>;
   }
   const label=kindNames[block.kind] ?? block.kind;
   const title=block.title || label+" "+(index+1);
   const detail=block.solution ?? block.proof;
   return (
     <article className={"ca-formal ca-"+block.kind}>
-      <div className="ca-formal-head"><span>{label}</span><strong>{title}</strong></div>
+      <div className="ca-formal-head"><span>{label}</span><strong><SourceText text={title}/></strong></div>
       <div className="ca-formal-body"><SourceText text={block.body ?? ""} /></div>
       {detail && (
         <details className="ca-proof">
