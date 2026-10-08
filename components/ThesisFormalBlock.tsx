@@ -117,6 +117,11 @@ export function ThesisFormalBlock({
             <p className="thesis-proof-transition">{en?"The proof follows the parts below.":"Pembuktian dilakukan melalui bagian-bagian berikut."}</p>}
           <ol className="thesis-proof-targets">
             {activeTargets.map((part,index)=><li key={index}>
+              {part.title&&part.title!==part.target&&
+                <p className="thesis-part-title"><strong><Text>{part.title}</Text></strong></p>}
+              {part.known&&<p className="thesis-proof-assumption">
+                <strong>{en?"Given":"Diketahui"}</strong> <Text>{normalizeProse(part.known)}</Text>
+              </p>}
               <p className="thesis-proof-target"><strong>{en?"To prove":"Dibuktikan bahwa"} <Text>{part.target}</Text></strong></p>
               <ProofParagraphs steps={part.steps}/>
             </li>)}
