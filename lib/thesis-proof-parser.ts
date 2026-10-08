@@ -21,7 +21,7 @@ function normalizeText(source:string){
 }
 
 function readPrefixed(text:string,prefix:"Diketahui"|"Dibuktikan"){
-  const pattern=prefix==="Diketahui"?/^Diketahui(?: bahwa)?\s*(.*)$/is:/^Dibuktikan(?: bahwa)?\s*(.*)$/is;
+  const pattern=prefix==="Diketahui"?/^Diketahui(?: bahwa)?\s*([\s\S]*)$/i:/^Dibuktikan(?: bahwa)?\s*([\s\S]*)$/i;
   return text.match(pattern)?.[1]?.trim()??null;
 }
 
@@ -137,7 +137,8 @@ export function parseThesisProof(raw:string[]):ParsedProof{
     }
     targets.length=0;
   }
-  const allLast=[...paragraphs,...directions.flatMap(x=>x.steps),...targets.flatMap(x=>x.steps)].at(-1)??"";
+  const allLines=[...paragraphs,...directions.flatMap(x=>x.steps),...targets.flatMap(x=>x.steps)];
+  const allLast=allLines.length?allLines[allLines.length-1]:"";
   const alreadyConcluded=/(?:\bterbukti\.?\s*$|\bproved\.?\s*$|■\s*$)/i.test(allLast);
   return {known,goal,introduction,paragraphs,directions,targets,alreadyConcluded};
 }
