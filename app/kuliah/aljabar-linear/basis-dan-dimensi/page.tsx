@@ -6,6 +6,7 @@ import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
 import { BasisDimensionEnglish } from "@/components/BasisDimensionEnglish";
 import { ScrollSpyToc } from "@/components/ScrollSpyToc";
+import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Basis dan Dimensi — Aljabar Linear",
@@ -37,41 +38,22 @@ function P({ children }: { children: string }) {
 }
 
 function Theorem({
-  number,
-  title,
-  statement,
-  proof,
-  importance,
-}: {
-  number: string;
-  title: string;
-  statement: string;
-  proof: string[];
-  importance: string;
-}) {
-  return (
-    <div className="theorem-suite">
-      <div className="theorem-box">
-        <div className="box-kicker">Teorema {number}</div>
-        <strong>{title}</strong>
-        <P>{statement}</P>
-      </div>
-      <div className="proof-box proof-detailed">
-        <div className="box-kicker">Bukti</div>
-        {proof.map((step, index) => (
-          <div className="proof-step" key={step}>
-            <span>{index + 1}</span>
-            <P>{step}</P>
-          </div>
-        ))}
-        <p className="proof-end">■</p>
-      </div>
-      <div className="why-box">
-        <strong>Mengapa teorema ini penting?</strong>
-        <P>{importance}</P>
-      </div>
+  number,title,statement,proof,importance
+}:{
+  number:string;
+  title:string;
+  statement:string;
+  proof:string[];
+  importance:string;
+}){
+  return <div className="theorem-suite">
+    <ThesisFormalBlock kind="theorem" number={"1."+number}
+      title={title} statement={statement} proof={proof}/>
+    <div className="why-box">
+      <strong>Penjelasan</strong>
+      <P>{importance}</P>
     </div>
-  );
+  </div>;
 }
 
 export default function BasisDimensionPage() {
