@@ -335,9 +335,7 @@ export function BookSectionPage({
         <p className="ird-paragraph">Kerjakan soal terlebih dahulu. Petunjuk dan solusi lengkap dapat dibuka setelah mencoba.</p>
         <div className="ird-worked-grid">
           {content.exercises.map((exercise,index)=>{
-            const allSteps=splitAcademicSolution(exercise.answer);
-            const steps=allSteps.length>1?allSteps.slice(0,-1):allSteps;
-            const conclusion=allSteps.length>1?allSteps[allSteps.length-1]:undefined;
+            const steps=splitAcademicSolution(exercise.answer);
             return(
               <article className="ird-worked-card" key={index}>
                 <div className="ird-worked-head">
@@ -352,7 +350,7 @@ export function BookSectionPage({
                 <details className="ird-worked-solution">
                   <summary>Buka Solusi</summary>
                   <div className="ird-worked-solution-body">
-                    <AcademicSolution target={exercise.prompt} idea={exercise.hint} steps={steps} conclusion={conclusion}/>
+                    <AcademicSolution steps={steps}/>
                   </div>
                 </details>
               </article>
