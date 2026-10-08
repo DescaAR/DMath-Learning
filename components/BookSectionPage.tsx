@@ -9,6 +9,8 @@ import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSo
 import type { BookChapter, BookSection, BookSubject } from "@/data/book-curricula";
 import type { BookExample, BookFormalKind, BookLessonContent } from "@/data/book-content-types";
 import { getCuratedDefinitionExample } from "@/data/definition-examples";
+import { ThesisFormalBlock } from "@/components/ThesisFormalBlock";
+import { getChapterFormalNumbers } from "@/data/thesis-formal-numbering";
 
 const kindLabel:Record<BookFormalKind,string>={
   definition:"Definisi",
@@ -123,6 +125,7 @@ export function BookSectionPage({
   previous:BookSection|null;
   next:BookSection|null;
 }){
+  const thesisNumbers=getChapterFormalNumbers(chapter,section.slug);
   const definitions=content.formal.filter((item)=>item.kind==="definition"&&isAcademicDefinition(item.statement));
   const invalidDefinitions=content.formal.filter((item)=>item.kind==="definition"&&!isAcademicDefinition(item.statement));
   const formalResults=content.formal.filter((item)=>["lemma","proposition","theorem","corollary"].includes(item.kind));
@@ -200,10 +203,13 @@ export function BookSectionPage({
             ??findDefinitionExample(item.title,definitions.length,content.examples);
           return(
             <div className="definition-example-pair" key={item.title+index}>
-              <article className="ird-formal ird-definition">
-                <div className="ird-formal-head"><span>Definisi</span><strong><TitleText>{item.title}</TitleText></strong></div>
-                <div className="ird-formal-body"><Text>{item.statement}</Text></div>
-              </article>
+              <ThesisFormalBlock
+                kind="definition"
+                number={thesisNumbers.definition?.[index]??chapter.number+"."+(index+1)}
+                title={item.title}
+                statement={item.statement}
+                citation={item.citation}
+              />
               {example&&<ExampleCard example={example}/>}
             </div>
           );
@@ -222,28 +228,23 @@ export function BookSectionPage({
         <p className="ird-paragraph">Setiap hasil formal dibaca bersama seluruh hipotesisnya. Pernyataan yang belum mempunyai pembuktian memadai tidak ditampilkan sebagai teorema, lemma, proposisi, atau akibat.</p>
 
         {provenResults.length?provenResults.map((item,index)=>{
-          const explanation=item.explanation?.trim() || item.proof?.[0] || "";
+          const explanation=item.explanation?.trim() || "";
+          const ordinal=provenResults.slice(0,index).filter(previous=>previous.kind===item.kind).length;
+          const thesisNumber=thesisNumbers[item.kind]?.[ordinal]??chapter.number+"."+(ordinal+1);
           return(
             <div className="formal-result-pair" key={item.title+index}>
-              <article className={"ird-formal ird-"+item.kind}>
-                <div className="ird-formal-head">
-                  <span>{kindLabel[item.kind]}</span>
-                  <strong><TitleText>{item.title}</TitleText></strong>
-                </div>
-                <div className="ird-formal-body"><Text>{item.statement}</Text></div>
-                <details className="ird-proof">
-                  <summary>Buka pembuktian</summary>
-                  <div className="ird-proof-body">
-                    {item.proof!.map((step,stepIndex)=>(
-                      <div className="proof-step" key={stepIndex}>
-                        <span>{stepIndex+1}</span>
-                        <Text>{step}</Text>
-                      </div>
-                    ))}
-                    <div className="ird-qed">■</div>
-                  </div>
-                </details>
-              </article>
+              <ThesisFormalBlock
+                kind={item.kind}
+                number={thesisNumber}
+                title={item.title}
+                statement={item.statement}
+                citation={item.citation}
+                proof={item.proof}
+                known={item.given}
+                goal={item.toProve}
+                directions={item.proofDirections}
+                targets={item.proofTargets}
+              />
               {explanation&&<div className="ird-formal-explanation">
                 <strong>Penjelasan</strong>
                 <div><Text>{explanation}</Text></div>
