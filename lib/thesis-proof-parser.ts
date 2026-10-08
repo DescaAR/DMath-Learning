@@ -75,7 +75,13 @@ export function parseThesisProof(raw:string[]):ParsedProof{
       const entry:ThesisProofDirection={
         direction,known:match?.[1]?.trim()??"",target:match?.[2]?.trim()??"",steps:[]
       };
-      if(!match&&remaining)entry.steps.push(remaining);
+      if(!match&&remaining){
+        const partialKnown=readPrefixed(remaining,"Diketahui");
+        const partialGoal=readPrefixed(remaining,"Dibuktikan");
+        if(partialKnown!==null)entry.known=partialKnown;
+        else if(partialGoal!==null)entry.target=partialGoal;
+        else entry.steps.push(remaining);
+      }
       directions.push(entry);
       currentDirection=entry;
       currentTarget=null;
