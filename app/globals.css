@@ -3749,3 +3749,9 @@ h3 .heading-math-symbol{
   .thesis-proof-body{padding:10px 15px 16px}
   .thesis-proof-lead,.thesis-proof-paragraph,.thesis-proof-conclusion{font-size:.95rem}
 }
+
+/* Standalone proofs share the thesis prose style instead of legacy proof cards */
+.thesis-standalone-proof{margin:20px 0 28px;padding:0 8px 14px;line-height:1.85;color:var(--text);text-align:justify}
+.thesis-standalone-proof>strong{font-weight:800;display:inline-block;margin-bottom:10px}
+.thesis-standalone-proof .thesis-proof-paragraph{margin:0 0 7px;white-space:pre-line}
+.thesis-standalone-proof>.thesis-qed{display:block;text-align:right;font-weight:750}
