@@ -105,7 +105,7 @@ function FormalBlock({ block, index }: { block: IntegralSourceBlock; index: numb
       <div className="ird-formal-body"><SourceText text={body} /></div>
       {detail && (
         <details className="ird-proof">
-          <summary>{isExample || isExercise ? "Buka solusi" : "Buka pembuktian"}</summary>
+          <summary>{isExample || isExercise ? "Buka Solusi" : "Buka pembuktian"}</summary>
           <div className="ird-proof-body">
             <SourceText text={detail} />
             {!isExample && !isExercise && <div className="ird-qed">■</div>}
