@@ -4,7 +4,7 @@ export type ThesisProofDirection = {
   target:string;
   steps:string[];
 };
-export type ThesisProofTarget = {target:string;steps:string[]};
+export type ThesisProofTarget = {target:string;steps:string[];known?:string;title?:string};
 
 export type ParsedProof = {
   known?:string;
@@ -84,7 +84,7 @@ export function parseThesisProof(raw:string[]):ParsedProof{
     const targetMatch=piece.match(/^(?:\(([1-9]\d*)\)|([1-9]\d*)\.)\s*([\s\S]*)$/);
     if(targetMatch){
       const header=targetMatch[3].replace(/^(?:Dibuktikan|Ditunjukkan)(?: bahwa)?\s*/,"").trim();
-      const entry:ThesisProofTarget={target:header,steps:[]};
+      const entry:ThesisProofTarget={target:header,title:header,steps:[]};
       targets.push(entry);
       currentTarget=entry;
       currentDirection=null;
@@ -95,7 +95,7 @@ export function parseThesisProof(raw:string[]):ParsedProof{
       if(currentDirection){
         currentDirection.known=provided;
       }else if(currentTarget){
-        currentTarget.steps.push(piece);
+        currentTarget.known=provided;
       }else if(!known&&!seenBody){
         known=provided;
       }else append(piece);
@@ -106,7 +106,7 @@ export function parseThesisProof(raw:string[]):ParsedProof{
       if(currentDirection){
         currentDirection.target=requested;
       }else if(currentTarget){
-        currentTarget.steps.push(piece);
+        currentTarget.target=requested;
       }else if(!goal&&!seenBody){
         goal=requested;
       }else append(piece);
