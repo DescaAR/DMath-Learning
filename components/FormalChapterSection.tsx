@@ -25,6 +25,13 @@ export function FormalChapterSection({
   const { language } = useLanguage();
   const en = language === "en";
   const pick = (value: Bilingual) => en ? value.en : value.id;
+  const pairedExamples=new Set(content.blocks.filter(block=>block.kind==="definition").map(block=>{
+    const title=pick(block.title).trim().toLowerCase();
+    const match=content.examples.find(example=>example.forDefinition&&pick(example.forDefinition).trim().toLowerCase()===title)
+      ??content.examples.find(example=>pick(example.title).trim().toLowerCase()===title);
+    return match?.title.id??(content.blocks.filter(item=>item.kind==="definition").length===1&&content.examples.length===1?content.examples[0].title.id:undefined);
+  }).filter(Boolean));
+  const unpairedExamples=content.examples.filter(example=>!pairedExamples.has(example.title.id));
 
   return (
     <>
@@ -82,7 +89,7 @@ export function FormalChapterSection({
         <h2>{en ? "Worked examples" : "Contoh terbahas"}</h2>
 
         <div className="detailed-example-stack">
-          {content.examples.map((example, index) => (
+          {unpairedExamples.map((example, index) => (
             <article className="detailed-example-card" key={index}>
               <div className="detailed-example-head">
                 <span>{en ? "Example" : "Contoh"} {index + 1}</span>
