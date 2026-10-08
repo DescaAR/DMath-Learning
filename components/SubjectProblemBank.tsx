@@ -250,10 +250,7 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
 
       <div className="ird-worked-grid">
         {visible.map((problem) => {
-          const allSteps = splitAcademicSolution(problem.answer);
-          const steps = allSteps.length > 1 ? allSteps.slice(0, -1) : allSteps;
-          const conclusion =
-            allSteps.length > 1 ? allSteps[allSteps.length - 1] : undefined;
+          const steps = splitAcademicSolution(problem.answer);
 
           return (
             <article
@@ -297,10 +294,7 @@ export function SubjectProblemBank({ bank }: { bank: SubjectProblemBankData }) {
                 <summary>Buka Solusi</summary>
                 <div className="ird-worked-solution-body">
                   <AcademicSolution
-                    target={problem.prompt}
-                    idea={problem.hint}
                     steps={steps}
-                    conclusion={conclusion}
                   />
                 </div>
               </details>
