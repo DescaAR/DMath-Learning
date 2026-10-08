@@ -122,7 +122,11 @@ export const complexAnalysisContentB:Record<string,BookLessonContent>={
  formal:[
   T("Cauchy Integral Formula","Jika $f$ holomorfik pada dan di dalam simple closed contour $C$ dan $a$ berada di interior, maka $f(a)=\\frac1{2\\pi i}\\int_C\\frac{f(z)}{z-a}dz$."),
   T("Formula Turunan","$f^{(n)}(a)=\\frac{n!}{2\\pi i}\\int_C\\frac{f(z)}{(z-a)^{n+1}}dz$."),
-  T("Cauchy Estimates","Jika $|f(z)|\\le M$ pada circle radius R sekitar a, maka $|f^{(n)}(a)|\\le n!M/R^n$."),
+  T("Cauchy Estimates","Jika $|f(z)|\\le M$ pada circle radius R sekitar a, maka $|f^{(n)}(a)|\\le n!M/R^n$.",[
+    "Dengan hipotesis holomorfisitas pada lingkungan cakram tertutup, rumus Cauchy untuk turunan memberi $f^{(n)}(a)=\\frac{n!}{2\\pi i}\\int_{|z-a|=R}\\frac{f(z)}{(z-a)^{n+1}}\\,dz$.",
+    "Pada lingkaran tersebut, $|f(z)/(z-a)^{n+1}|\\le M/R^{n+1}$ dan panjang kontur adalah $2\\pi R$.",
+    "Estimasi ML menghasilkan $|f^{(n)}(a)|\\le\\frac{n!}{2\\pi}\\frac{M}{R^{n+1}}(2\\pi R)=n!M/R^n$."
+  ]),
   T("Liouville","Setiap entire function yang bounded adalah konstan.",[
     "Cauchy estimate untuk $n=1$ memberi $|f'(a)|\\le M/R$ pada circle radius R.",
     "Karena entire, R dapat dibuat arbitrarily besar.",
@@ -171,7 +175,12 @@ export const complexAnalysisContentB:Record<string,BookLessonContent>={
   D("Sequence Kompleks","$z_n\\to z$ jika $|z_n-z|\\to0$."),
   P("Komponen","$z_n=x_n+iy_n\\to x+iy$ jika dan hanya jika $x_n\\to x$ dan $y_n\\to y$."),
   D("Series Kompleks","$\\sum z_n$ konvergen jika partial sums-nya konvergen di C."),
-  T("Absolute Convergence","Jika $\\sum|z_n|$ konvergen, maka $\\sum z_n$ konvergen."),
+  T("Absolute Convergence","Jika $\\sum|z_n|$ konvergen, maka $\\sum z_n$ konvergen.",[
+    "Konvergensi deret real nonnegatif $\\sum|z_n|$ mengakibatkan ekornya memenuhi kriteria Cauchy.",
+    "Untuk setiap $\\varepsilon>0$ terdapat $N$ sehingga $\\sum_{n=p}^q|z_n|<\\varepsilon$ bagi setiap $q\\ge p\\ge N$.",
+    "Ketaksamaan segitiga memberikan $|\\sum_{n=p}^qz_n|\\le\\sum_{n=p}^q|z_n|<\\varepsilon$.",
+    "Jumlah parsial deret $\\sum z_n$ bersifat Cauchy. Kelengkapan $\\mathbb C$ menjamin bahwa deret tersebut konvergen."
+  ]),
   D("Power Series","$\\sum a_n(z-z_0)^n$ memiliki radius convergence R dengan convergence absolute untuk $|z-z_0|<R$ dan divergence untuk $|z-z_0|>R$.")
  ],
  examples:[
