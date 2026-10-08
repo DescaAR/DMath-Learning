@@ -29,7 +29,7 @@ export function FormalChapterSection({
     const title=pick(block.title).trim().toLowerCase();
     const match=content.examples.find(example=>example.forDefinition&&pick(example.forDefinition).trim().toLowerCase()===title)
       ??content.examples.find(example=>pick(example.title).trim().toLowerCase()===title);
-    return match?.title.id??(content.blocks.filter(item=>item.kind==="definition").length===1&&content.examples.length===1?content.examples[0].title.id:undefined);
+    return match?.title.id;
   }).filter(Boolean));
   const unpairedExamples=content.examples.filter(example=>!pairedExamples.has(example.title.id));
 
@@ -51,7 +51,7 @@ export function FormalChapterSection({
               ??content.examples.find(example=>pick(example.title).trim().toLowerCase()===title.trim().toLowerCase());
             const definitionsCount=content.blocks.filter(item=>item.kind==="definition").length;
             const definitionExample=block.kind==="definition"
-              ?related??(definitionsCount===1&&content.examples.length===1?content.examples[0]:undefined)
+              ?related
               :undefined;
             return <div className="definition-example-pair" key={block.kind+"-"+index}>
               <ThesisFormalBlock kind={kind} number={chapterNumber+"."+ordinal}
