@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run audit:latex && npm run audit:depth && next build",
+    "build": "npm run audit:latex && npm run audit:depth && npm run audit:thesis && next build",
     "start": "next start",
     "lint": "next lint",
     "audit:content": "node scripts/audit-content.mjs",
     "audit:latex": "node scripts/audit-latex.mjs",
-    "audit:depth": "node scripts/audit-material-depth.mjs"
+    "audit:depth": "node scripts/audit-material-depth.mjs",
+    "audit:thesis": "node scripts/audit-thesis-format.mjs"
   },
   "dependencies": {
     "next": "15.5.26",
