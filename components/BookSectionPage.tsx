@@ -52,7 +52,7 @@ function findDefinitionExample(definitionTitle:string,definitionsCount:number,ex
     example.title.trim().toLocaleLowerCase("id-ID")===normalized
   );
   if(matchingTitle)return matchingTitle;
-  return definitionsCount===1 && examples.length===1 ? examples[0] : null;
+  return null;
 }
 
 function visualizationForSubject(slug:BookSubject["slug"]):VisualizationKind{
