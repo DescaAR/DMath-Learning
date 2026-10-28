@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run audit:latex && npm run audit:depth && npm run audit:thesis && npm run audit:solutions && npm run audit:enrichment && npm run audit:videos && npm run audit:tilings && npm run audit:graph-definitions && next build",
+    "build": "npm run audit:latex && npm run audit:depth && npm run audit:thesis && npm run audit:solutions && npm run audit:enrichment && npm run audit:videos && npm run audit:tilings && npm run audit:graph-definitions && npm run audit:euclidean-division && next build",
     "start": "next start",
     "lint": "next lint",
     "audit:content": "node scripts/audit-content.mjs",
@@ -15,7 +15,8 @@
     "audit:enrichment": "node scripts/audit-enrichment.mjs",
     "audit:videos": "node scripts/audit-learning-videos.mjs",
     "audit:tilings": "node scripts/audit-domino-tilings.mjs",
-    "audit:graph-definitions": "node scripts/audit-graph-definitions.mjs"
+    "audit:graph-definitions": "node scripts/audit-graph-definitions.mjs",
+    "audit:euclidean-division": "node scripts/audit-euclidean-division.mjs"
   },
   "dependencies": {
     "next": "15.5.26",
