@@ -10,7 +10,8 @@ export const densityIntervals:IntervalPreset[]=[
 /** For finite inputs x<y, choose n(y-x)>1, then m=floor(nx)+1. */
 export function rationalWitness(x:number,y:number){
   if(!Number.isFinite(x)||!Number.isFinite(y)||!(x<y))throw new Error("Expected finite x<y");
-  const n=Math.floor(1/(y-x))+1;
+  // The extra margin prevents binary floating-point rounding at exact decimal gaps.
+  const n=Math.ceil(1/(y-x))+2;
   const m=Math.floor(n*x)+1;
   return {m,n,value:m/n};
 }
