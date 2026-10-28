@@ -3,6 +3,7 @@ import { graphDefinitionsContent } from "@/data/graph-definitions-content";
 import { euclideanDivisionContent } from "@/data/euclidean-division-content";
 import { supremumApplicationsContent } from "@/data/supremum-applications-content";
 import { preciseLimitContent } from "@/data/precise-limit-content";
+import { groupAxiomsContent } from "@/data/group-axioms-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -55,6 +56,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "aplikasi-supremum":supremumApplicationsContent,
   // A complete epsilon-delta calculus lesson replaces the short generic generated entry.
   "calc-precise-limit":preciseLimitContent,
+  // Dedicated, fully proved group-axiom lesson replaces the generated summary.
+  "alg-groups":groupAxiomsContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
