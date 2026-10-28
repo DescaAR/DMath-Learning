@@ -19,6 +19,7 @@ export function evaluateLimitFunction(mode:LimitMode,x:number):number|null{
 export function limitExperiment(mode:LimitMode,epsilon:number,scale:number):LimitExperiment{
   if(!Number.isFinite(epsilon)||epsilon<=0||epsilon>1.5)throw new Error("epsilon must be in (0,1.5]");
   if(!Number.isFinite(scale)||scale<=0||scale>3)throw new Error("scale must be in (0,3]");
+  if(mode==="jump"&&epsilon>=0.5)throw new Error("jump witness requires epsilon<0.5");
   const a=mode==="linear"||mode==="quadratic"?2:mode==="hole"?1:0;
   const L=mode==="linear"?7:mode==="quadratic"?4:mode==="hole"?2:0.5;
   const threshold=mode==="linear"?epsilon/3:
