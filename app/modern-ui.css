@@ -96,7 +96,7 @@ body{
   line-height:1.85;
 }
 .textbook-page .chapter-meta{gap:8px;flex-wrap:wrap}
-.textbook-page .chapter-meta span{
+.textbook-page .chapter-meta > span{
   border:1px solid var(--border);
   border-radius:999px;
   background:color-mix(in srgb,var(--surface) 70%,transparent);
