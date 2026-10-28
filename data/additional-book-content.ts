@@ -508,12 +508,12 @@ generated["komb-perfect-covers"]={
     },
     {
       title:"Luas Habis Dibagi, tetapi Penutupan Mustahil",
-      problem:"Apakah papan $10\\times14$ dapat ditutup oleh batang lurus $6$-omino?",
+      problem:"Apakah papan $9\\times10$ dapat ditutup oleh batang lurus $6$-omino?",
       solution:[
-        "Luas papan adalah $140$, yang tidak habis dibagi $6$. Karena itu sudah ada hambatan luas dan penutupan mustahil.",
-        "Untuk melihat hambatan yang lebih kuat, ambil papan $10\\times12$ yang luasnya $120$ habis dibagi $6$. Pada papan ini $6\\mid12$, sehingga justru penutupan ada dengan batang horizontal.",
-        "Contoh yang benar-benar membedakan syarat luas dan syarat dimensi adalah papan $9\\times10$ dengan batang $6$-omino: luasnya $90$ habis dibagi $6$, tetapi $6\\nmid9$ dan $6\\nmid10$.",
-        "Teorema kriteria menyatakan bahwa papan $9\\times10$ tidak dapat ditutup sempurna oleh batang $6$-omino meskipun syarat luas terpenuhi."
+        "Luas papan adalah $9\\cdot10=90$, dan $90/6=15$ bilangan bulat. Jadi luas papan memungkinkan tepat 15 batang, tetapi hal ini belum membuktikan bahwa batang dapat disusun.",
+        "Teorema kriteria batang $b$-omino mensyaratkan $6\\mid9$ atau $6\\mid10$. Kedua syarat tersebut salah.",
+        "Karena tidak ada dimensi yang habis dibagi 6, penutupan sempurna tidak mungkin ada, meskipun luasnya habis dibagi 6.",
+        "Sebagai pembanding, papan $6\\times15$ dengan luas sama dapat ditutup oleh 15 batang vertikal panjang 6: satu batang untuk setiap kolom."
       ]
     },
     {
