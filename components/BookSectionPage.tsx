@@ -6,6 +6,7 @@ import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { RichMath } from "@/components/RichMath";
 import { MathVisualization, type VisualizationKind } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
+import { DominoTilingLab } from "@/components/DominoTilingLab";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import type { BookChapter, BookSection, BookSubject } from "@/data/book-curricula";
 import type { BookExample, BookFormalKind, BookLessonContent } from "@/data/book-content-types";
@@ -195,7 +196,7 @@ export function BookSectionPage({
         <span className="eyebrow">Bagian 1</span>
         <h2>Pengantar</h2>
         {content.intro.map((paragraph,index)=><div className="ird-paragraph" key={index}><Text>{paragraph}</Text></div>)}
-        <div style={{marginTop:28}}><MathVisualization kind={visualKind}/></div>
+        <div style={{marginTop:28}}>{section.slug==="komb-perfect-covers"?<DominoTilingLab compact/>:<MathVisualization kind={visualKind}/>}</div>
       </section>
 
       <section id="book-lesson-4" className="book-section ird-source-section">
@@ -306,8 +307,10 @@ export function BookSectionPage({
         <h2>Visualisasi dan eksplorasi</h2>
         <p className="ird-paragraph">Representasi visual digunakan untuk memeriksa struktur konsep, sedangkan panel interaktif memungkinkan parameter diubah dan akibatnya diamati langsung.</p>
         <div className="ird-visual-stack">
-          <MathVisualization kind={visualKind}/>
-          <InteractiveMathLab kind={visualKind}/>
+          {section.slug==="komb-perfect-covers"?<DominoTilingLab/>:<>
+            <MathVisualization kind={visualKind}/>
+            <InteractiveMathLab kind={visualKind}/>
+          </>}
         </div>
       </section>
 
