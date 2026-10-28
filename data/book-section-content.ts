@@ -1,5 +1,6 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
+import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
 import { realAnalysisContentB } from "@/data/real-analysis-book-content-b";
 import { complexAnalysisContentA } from "@/data/complex-analysis-book-content-a";
@@ -44,13 +45,20 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentD,
 };
 
-export function getBookSectionContent(sectionSlug:string){
+export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
   const content=bookSectionContent[sectionSlug];
   if(!content)return null;
+  const enrichment=academicEnrichment[sectionSlug];
   const curatedExercises=curatedSectionExercises[sectionSlug]??[];
-  if(curatedExercises.length===0)return content;
+  if(!enrichment&&curatedExercises.length===0)return content;
+  // Preserve existing definitions and formal results. New, independently authored
+  // results are placed before explanatory notes, and are part of chapter numbering.
+  const substantive=content.formal.filter(item=>item.kind!=="note");
+  const notes=content.formal.filter(item=>item.kind==="note");
   return {
     ...content,
-    exercises:[...curatedExercises,...content.exercises],
+    intro:enrichment?[...content.intro.slice(0,1),...enrichment.intro,...content.intro.slice(1)]:content.intro,
+    formal:enrichment?[...substantive,...enrichment.formal,...notes]:content.formal,
+    exercises:[...curatedExercises,...(enrichment?.exercises??[]),...content.exercises],
   };
 }
