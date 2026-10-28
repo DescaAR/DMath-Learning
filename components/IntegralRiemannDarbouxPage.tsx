@@ -676,8 +676,8 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
             <a href="#ird-ringkasan" className={active==="ird-ringkasan"?"active":""}><span>{String(summarySectionNumber).padStart(2,"0")}</span>Ringkasan Definisi & Teorema</a>
             <a href="#ird-latihan-artikel" className={active==="ird-latihan-artikel"?"active":""}><span>{String(articlePracticeSectionNumber).padStart(2,"0")}</span>15 Latihan Tambahan</a>
             <a href="#ird-latihan-soal" className={active==="ird-latihan-soal"?"active":""}><span>{String(practiceSectionNumber).padStart(2,"0")}</span>16 Latihan Soal</a>
-            <a href="#ird-video"><span>▶</span>Video Pembelajaran</a>
              <a href="#ird-latihan30" className={active==="ird-latihan30"?"active":""}><span>{String(extraPracticeSectionNumber).padStart(2,"0")}</span>30 Latihan Tambahan</a>
+            <a href="#ird-video"><span>▶</span>Video Pembelajaran</a>
           </aside>
 
           <article className="article deep-article textbook-article ird-article">
@@ -814,7 +814,7 @@ export function IntegralRiemannDarbouxPage({ material }: { material: DeepMateria
               </div>
             </section>
 
-             <LearningVideoSection materialKey={material.slug} sectionId="ird-video"/>
+            <LearningVideoSection materialKey={material.slug} sectionId="ird-video"/>
             <section className="next-learning-block textbook-next">
               <div>
                 <span className="eyebrow">Lanjutkan</span>
