@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import { LearningVideoSection } from "@/components/LearningVideoSection";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
@@ -11,7 +12,7 @@ const sections = [
   ["en-span","Span"],["en-independence","Linear Independence"],["en-basis","Basis"],["en-coordinates","Coordinates"],
   ["en-dimension","Dimension"],["en-subspaces","Subspace Bases"],["en-extension","Basis Extension"],
   ["en-row-column","Row & Column Spaces"],["en-rank-nullity","Rank–Nullity"],["en-examples","Worked Examples"],
-  ["en-summary","Summary"]
+  ["en-summary","Summary"],["en-basis-video","Learning Videos"]
 ] as const;
 
 const theorems = [
@@ -254,6 +255,7 @@ export function BasisDimensionEnglish() {
             ].map(([t,b])=><div className="summary-card" key={t}><strong>{t}</strong><p>{b}</p></div>)}</div>
             <div className="actions"><Link className="btn primary" href="/kuliah/aljabar-linear/basis-dan-dimensi/latihan">Work Through Curated Practice</Link><Link className="btn secondary" href="/bank-soal/kuliah/aljabar-linear/basis-dan-dimensi">Open 100 Problems</Link></div>
           </section>
+          <LearningVideoSection materialKey="aljabar-linear/basis-dan-dimensi" sectionId="en-basis-video"/>
         </article>
       </div>
     </section>
