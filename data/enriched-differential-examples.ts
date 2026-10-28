@@ -20,7 +20,7 @@ export const enrichedDifferentialExamples:Record<string,BookExample>={
     "solution": [
       "Faktor integrasi adalah $\\mu(t)=e^{\\int2\\,dt}=e^{2t}$. Mengalikan persamaan memberi $(e^{2t}y)'=4e^{2t}$.",
       "Integrasi menghasilkan $e^{2t}y=2e^{2t}+C$, sehingga $y(t)=2+Ce^{-2t}$.",
-      "Dari $y(0)=1$, diperoleh $C=-1$."
+      "Syarat awal $y(0)=1$ menghasilkan persamaan $1=2+C$, sehingga diperoleh nilai konstanta integrasi $C=-1$."
     ],
     "conclusion": "Solusinya $y(t)=2-e^{-2t}$."
   },
