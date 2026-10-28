@@ -1,4 +1,5 @@
 import type { BookLessonContent } from "@/data/book-content-types";
+import { graphDefinitionsContent } from "@/data/graph-definitions-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -43,6 +44,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // This carefully authored lesson supersedes the generated graph overview.
+  "gt-definitions":graphDefinitionsContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
