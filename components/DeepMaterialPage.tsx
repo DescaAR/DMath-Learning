@@ -103,7 +103,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ...(unpairedExamples.length?[{id:"gm-section-6",label:ui("Contoh Terbahas","Worked Examples")},]:[]),
     {id:"gm-section-7",label:ui("Visualisasi","Visualization")},
     {id:"gm-summary",label:ui("Ringkasan Definisi & Teorema","Definitions & Theorems Summary")},
-    {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},    {id:"gm-video",label:ui("Video Pembelajaran","Learning Videos")},
+    {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},
+    {id:"gm-video",label:ui("Video Pembelajaran","Learning Videos")},
   ];
 
   return (
