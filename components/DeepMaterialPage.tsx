@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { LearningVideoSection } from "@/components/LearningVideoSection";
 import { deepMaterials, type DeepMaterial } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { materialPractice } from "@/data/material-practice";
@@ -102,7 +103,7 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
     ...(unpairedExamples.length?[{id:"gm-section-6",label:ui("Contoh Terbahas","Worked Examples")},]:[]),
     {id:"gm-section-7",label:ui("Visualisasi","Visualization")},
     {id:"gm-summary",label:ui("Ringkasan Definisi & Teorema","Definitions & Theorems Summary")},
-    {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},
+    {id:"gm-latihan",label:ui("Latihan Soal","Practice Problems")},    {id:"gm-video",label:ui("Video Pembelajaran","Learning Videos")},
   ];
 
   return (
@@ -363,6 +364,8 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           })}
         </div>
       </section>
+
+      <LearningVideoSection materialKey={material.slug} sectionId="gm-video"/>
 
       <section className="next-learning-block textbook-next">
         <div>
