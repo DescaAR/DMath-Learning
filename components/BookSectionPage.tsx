@@ -143,9 +143,13 @@ export function BookSectionPage({
     ...invalidDefinitions.map((item)=>({...item,kind:"note" as const,title:"Konsep · "+item.title})),
   ];
   const visualKind=visualizationForSection(subject,section);
+  // Explicit author-linked examples must take precedence over generic curated fallbacks.
+  const exampleForDefinition=(title:string)=>
+    content.examples.find(example=>example.forDefinition===title)
+      ??getCuratedDefinitionExample(subject.slug,title)
+      ??findDefinitionExample(title,definitions.length,content.examples);
   const linkedExampleTitles=new Set(definitions.map(definition=>
-    getCuratedDefinitionExample(subject.slug,definition.title)
-      ??findDefinitionExample(definition.title,definitions.length,content.examples)
+    exampleForDefinition(definition.title)
   ).filter((example):example is BookExample=>Boolean(example)).map(example=>example.title));
   const examplesForSection=content.examples.filter(example=>!linkedExampleTitles.has(example.title));
 
@@ -211,8 +215,7 @@ export function BookSectionPage({
         <p className="ird-paragraph">Definisi hanya digunakan untuk pernyataan yang menetapkan makna suatu objek atau istilah matematika. Setiap definisi langsung diikuti contoh.</p>
 
         {definitions.length?definitions.map((item,index)=>{
-          const example=getCuratedDefinitionExample(subject.slug,item.title)
-            ??findDefinitionExample(item.title,definitions.length,content.examples);
+          const example=exampleForDefinition(item.title);
           return(
             <div className="definition-example-pair" key={item.title+index}>
               <ThesisFormalBlock
