@@ -2,6 +2,20 @@
 
 Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages-static`, bukan menganggap seluruh bidang selesai setelah satu submateri. Jangan ubah branch `main`. Setiap sesi: periksa riwayat commit, pilih submateri berbeda yang masih dangkal/keliru, sempurnakan materi dan visualisasi, jalankan build, lalu perbarui catatan ini dengan bukti perubahan.
 
+## Catatan sesi 2026-10-29 — Kalkulus (definisi presisi limit)
+
+**Bidang disentuh:** 07 Kalkulus, submateri `calc-precise-limit`, URL: https://descaar.github.io/DMath-Learning/materi/kalkulus/calc-precise-limit/.
+
+**Masalah awal:** sumber `expanded-book-content.ts` untuk definisi presisi limit masih menggunakan satu definisi singkat, satu contoh linear, dan pembuktian yang belum menguraikan syarat titik akumulasi, fungsi dengan lubang, fungsi loncatan, kriteria sekuensial, ataupun pembatasan lokal. Visualisasi kalkulus umum tidak menunjukkan hubungan kuantor epsilon–delta dan pelanggarannya.
+
+**Perbaikan yang di-commit:** membuat `data/precise-limit-content.ts` berisi 6 definisi formal yang langsung dipasangkan dengan 6 contoh terbahas, 8 hasil formal dengan pembuktian lengkap (ketunggalan limit, independensi nilai pada titik, limit linear, limit kuadrat, keterbatasan lokal, kriteria sekuensial dua arah, kriteria limit satu sisi dua arah, dan teorema apit), 2 contoh aplikasi tambahan, serta 8 latihan bertingkat dengan solusi matematis mendalam. Pengantar membedakan limit dari nilai fungsi dan menjelaskan urutan kuantor. Rujukan Stewart (2016) dan Bartle–Sherbert (2011). Materi ini menggantikan konten generik pada registry, tanpa mengubah materi lain.
+
+**Visualisasi:** `components/PreciseLimitLab.tsx` menyediakan SVG responsif dengan pita epsilon horizontal dan pita delta vertikal, empat fungsi (linear, kuadrat, lubang yang dapat dihilangkan, dan loncatan), pemilih epsilon, pengali delta, indikator validitas, serta saksi numerik eksplisit untuk radius yang tidak sah. Fungsi matematika murni `lib/precise-limit-explorer.ts` menghitung radius sah terbesar dan saksi pelanggaran. SVG ditempatkan pada pengantar dan bagian visualisasi.
+
+**Pengujian:** `scripts/audit-precise-limit.mjs` diintegrasikan ke `npm run build` untuk memeriksa tautan definisi–contoh, pembuktian, latihan, hubungan katalog, aksesibilitas SVG, sampel numerik untuk radius sah, dan konstruksi saksi saat radius gagal. **Status publikasi:** jangan klaim berhasil sebelum GitHub Actions pada commit dokumentasi terakhir menunjukkan `success`.
+
+**Prioritas lanjutan:** 08 Aljabar Linear (pilih satu submateri publik dengan bukti/latihan dangkal) atau 11 Struktur Aljabar (misalnya aksioma grup dan subgrup). Pertimbangkan 02 Aljabar ketika rute publiknya dipastikan; jangan mengubah kebijakan visibilitas materi sekolah. Jangan mengulang `calc-precise-limit`, `aplikasi-supremum`, `nt-euclid-division`, `gt-definitions`, atau `komb-perfect-covers`.
+
 ## Catatan sesi 2026-10-29 — Analisis Real (aplikasi supremum)
 
 **Bidang disentuh:** 09 Analisis Real, submateri aplikasi-supremum, URL: https://descaar.github.io/DMath-Learning/materi/analisis-real/aplikasi-supremum/.
@@ -68,7 +82,7 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 | 04 | Kombinatorika | **1 submateri diperbaiki:** `komb-perfect-covers`; bidang belum selesai |
 | 05 | Geometri | Belum diaudit pada rangkaian ini |
 | 06 | Trigonometri | Belum diaudit pada rangkaian ini |
-| 07 | Kalkulus | Belum diaudit pada rangkaian ini |
+| 07 | Kalkulus | **1 submateri diperbaiki:** `calc-precise-limit`; bidang belum selesai |
 | 08 | Aljabar Linear | Belum diaudit pada rangkaian ini |
 | 09 | Analisis Real | **1 submateri diperbaiki:** aplikasi-supremum; bidang belum selesai |
 | 10 | Analisis Kompleks | Belum diaudit pada rangkaian ini |
@@ -91,8 +105,8 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 
 ## Antrian sesi berikutnya
 
-1. **02 Aljabar / 07 Kalkulus:** pilih submateri dengan rute publik dan kesalahan bukti atau latihan yang masih dangkal; prioritaskan pengayaan menyeluruh dengan visualisasi matematis khusus.
+1. **08 Aljabar Linear / 11 Struktur Aljabar:** pilih satu submateri dengan rute publik dan pembuktian atau latihan yang masih dangkal; prioritaskan pengayaan menyeluruh dengan visualisasi matematis khusus.
 2. **09 Analisis Real lanjutan:** pilih submateri berbeda, misalnya nilai-mutlak-dan-garis-real atau barisan-dan-limit, dan audit semua hipotesis sebelum menambah teorema.
 3. **01 Aritmetika:** submateri pecahan sudah ada dalam sumber, tetapi rute tingkat SD dan slug-nya sengaja disembunyikan oleh lib/public-content.ts. Jangan mengubah visibilitas tanpa arahan eksplisit; pilih dahulu bidang yang memiliki halaman publik.
 
-**Progres pekerjaan yang di-commit pada level submateri:** 4 submateri di 4 dari 26 bidang telah dikerjakan secara mendalam; 22 bidang belum disentuh dalam rangkaian ini. Tidak satu pun bidang dinyatakan selesai seluruhnya. Periksa GitHub Actions dan material-depth-report.json sebelum melaporkan status publikasi atau memilih pekerjaan berikutnya.
+**Progres pekerjaan yang di-commit pada level submateri:** 5 submateri di 5 dari 26 bidang telah dikerjakan secara mendalam; 21 bidang belum disentuh dalam rangkaian ini. Tidak satu pun bidang dinyatakan selesai seluruhnya. Periksa GitHub Actions dan material-depth-report.json sebelum melaporkan status publikasi atau memilih pekerjaan berikutnya.
