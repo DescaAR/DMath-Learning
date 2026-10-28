@@ -1,6 +1,7 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 import { graphDefinitionsContent } from "@/data/graph-definitions-content";
 import { euclideanDivisionContent } from "@/data/euclidean-division-content";
+import { supremumApplicationsContent } from "@/data/supremum-applications-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -49,6 +50,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "gt-definitions":graphDefinitionsContent,
   // Full proof of the division algorithm supersedes the generic number-theory page.
   "nt-euclid-division":euclideanDivisionContent,
+  // Replace an unproved square-root assertion and short density arguments with full proofs.
+  "aplikasi-supremum":supremumApplicationsContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
