@@ -2,6 +2,22 @@
 
 Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages-static`, bukan menganggap seluruh bidang selesai setelah satu submateri. Jangan ubah branch `main`. Setiap sesi: periksa riwayat commit, pilih submateri berbeda yang masih dangkal/keliru, sempurnakan materi dan visualisasi, jalankan build, lalu perbarui catatan ini dengan bukti perubahan.
 
+## Catatan sesi 2026-10-29 — Struktur Aljabar (aksioma grup)
+
+**Bidang disentuh:** 11 Struktur Aljabar, submateri 'alg-groups', URL: https://descaar.github.io/DMath-Learning/materi/struktur-aljabar/alg-groups/.
+
+**Audit awal dan perbaikan mendesak:** GitHub Actions untuk commit Kalkulus sebelumnya (run 40781394054) gagal karena tiga string epsilon yang tersimpan sebagai escape \u000b pada data/precise-limit-content.ts, ditambah dua penulisan delta yang tidak tepat. Semua diperbaiki pada commit 742e5dcdcccd; GitHub Actions run 40788164284 kemudian berhasil (build dan deployment success). Perbaikan ini menjaga publikasi materi Kalkulus sebelumnya.
+
+**Kekurangan materi awal:** submateri 'alg-groups' hanya berisi dua definisi, dua proposisi, dua contoh singkat, dan latihan generik; belum menguraikan operasi biner sebagai fungsi, bukti penyelesaian persamaan grup, penanganan grup nonabelian, serta perbedaan penjumlahan kelas sisa, perkalian seluruh kelas sisa, dan grup unit modulo $n$.
+
+**Pengayaan:** data/group-axioms-content.ts mengganti sumber generik pada registry, dengan 4 definisi formal dan 4 contoh yang ditautkan langsung (operasi biner, grup, grup abelian, kelas sisa/unit); 8 hasil formal dengan pembuktian bertahap (ketunggalan identitas, ketunggalan invers, pembatalan dua sisi, solusi persamaan dua sisi, invers hasil kali dan invers ganda, grup aditif kelas sisa, grup unit modulo $n$, serta kriteria grup abelian ketika semua unsur kuadratnya identitas); 4 contoh aplikasi tambahan; dan 8 latihan dengan solusi matematis lengkap. Referensi: Dummit–Foote (2004) dan Artin (2011). Materi lama pada submateri lain tetap utuh.
+
+**Visualisasi:** components/GroupAxiomsLab.tsx menyajikan tabel Cayley interaktif, pemilih modulus dan dua unsur, serta diagram SVG aksi unsur untuk tiga struktur: $(\mathbb Z_n,+)$, $(U(n),\cdot)$, dan $(\mathbb Z_n,\cdot)$. Menampilkan ketertutupan, asosiativitas, identitas, keberadaan invers, komutativitas, dan status grup. Fungsi murni lib/group-axioms-explorer.ts membangun tabel dan memeriksa aksioma dengan aritmetika bulat eksak.
+
+**Pengujian:** scripts/audit-group-axioms.mjs terintegrasi ke npm run build, memeriksa 4 definisi dan contoh terhubung, 8 bukti, 8 contoh, 8 solusi, koneksi katalog/komponen, dan semua sel tabel Cayley untuk modulus 2 sampai 12 pada tiga mode. **Status publikasi:** pastikan GitHub Actions pada commit terakhir 'success' sebelum menyatakan halaman terbit.
+
+**Prioritas lanjutan:** 08 Aljabar Linear, khususnya submateri publik yang masih memiliki bukti/latihan singkat; atau 16 Topologi dengan pembuktian aksioma dan visualisasi yang tepat. Jangan mengulang 'alg-groups' atau lima submateri sebelumnya.
+
 ## Catatan sesi 2026-10-29 — Kalkulus (definisi presisi limit)
 
 **Bidang disentuh:** 07 Kalkulus, submateri `calc-precise-limit`, URL: https://descaar.github.io/DMath-Learning/materi/kalkulus/calc-precise-limit/.
@@ -86,7 +102,7 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 | 08 | Aljabar Linear | Belum diaudit pada rangkaian ini |
 | 09 | Analisis Real | **1 submateri diperbaiki:** aplikasi-supremum; bidang belum selesai |
 | 10 | Analisis Kompleks | Belum diaudit pada rangkaian ini |
-| 11 | Struktur Aljabar | Belum diaudit pada rangkaian ini |
+| 11 | Struktur Aljabar | **1 submateri diperbaiki:** `alg-groups`; bidang belum selesai |
 | 12 | Statistika | Belum diaudit pada rangkaian ini |
 | 13 | Peluang | Belum diaudit pada rangkaian ini |
 | 14 | Matematika Diskrit | Belum diaudit pada rangkaian ini |
@@ -105,8 +121,8 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 
 ## Antrian sesi berikutnya
 
-1. **08 Aljabar Linear / 11 Struktur Aljabar:** pilih satu submateri dengan rute publik dan pembuktian atau latihan yang masih dangkal; prioritaskan pengayaan menyeluruh dengan visualisasi matematis khusus.
+1. **08 Aljabar Linear / 16 Topologi:** pilih satu submateri dengan rute publik dan pembuktian atau latihan yang masih dangkal; prioritaskan pengayaan menyeluruh dengan visualisasi matematis khusus.
 2. **09 Analisis Real lanjutan:** pilih submateri berbeda, misalnya nilai-mutlak-dan-garis-real atau barisan-dan-limit, dan audit semua hipotesis sebelum menambah teorema.
 3. **01 Aritmetika:** submateri pecahan sudah ada dalam sumber, tetapi rute tingkat SD dan slug-nya sengaja disembunyikan oleh lib/public-content.ts. Jangan mengubah visibilitas tanpa arahan eksplisit; pilih dahulu bidang yang memiliki halaman publik.
 
-**Progres pekerjaan yang di-commit pada level submateri:** 5 submateri di 5 dari 26 bidang telah dikerjakan secara mendalam; 21 bidang belum disentuh dalam rangkaian ini. Tidak satu pun bidang dinyatakan selesai seluruhnya. Periksa GitHub Actions dan material-depth-report.json sebelum melaporkan status publikasi atau memilih pekerjaan berikutnya.
+**Progres pekerjaan yang di-commit pada level submateri:** 6 submateri di 6 dari 26 bidang telah dikerjakan secara mendalam; 20 bidang belum disentuh dalam rangkaian ini. Tidak satu pun bidang dinyatakan selesai seluruhnya. Periksa GitHub Actions dan material-depth-report.json sebelum melaporkan status publikasi atau memilih pekerjaan berikutnya.
