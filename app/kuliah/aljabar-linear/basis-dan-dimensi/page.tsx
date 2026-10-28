@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
+import { LearningVideoSection } from "@/components/LearningVideoSection";
 import { MathVisualization } from "@/components/MathVisualizations";
 import { InteractiveMathLab } from "@/components/InteractiveMathLab";
 import { RichMath } from "@/components/RichMath";
@@ -31,6 +32,7 @@ const sections = [
   ["rank-nullity", "Rank–Nullity"],
   ["contoh", "Contoh Terbahas"],
   ["ringkasan", "Ringkasan"],
+  ["basis-video", "Video Pembelajaran"],
 ] as const;
 
 function P({ children }: { children: string }) {
@@ -562,6 +564,7 @@ export default function BasisDimensionPage() {
                 </Link>
               </div>
             </section>
+             <LearningVideoSection materialKey="aljabar-linear/basis-dan-dimensi" sectionId="basis-video"/>
           </article>
         </div>
       </section>
