@@ -82,7 +82,7 @@ export const preciseLimitContent: BookLessonContent = {
         "Sekarang ambil sembarang $x\\in\\mathbb R$ dengan $0<|x-a|<\\delta$. Dengan menggunakan distributivitas dan sifat nilai mutlak diperoleh $|f(x)-(ma+b)|=|mx+b-ma-b|=|m||x-a|<|m|\\delta=\\varepsilon$.",
         "Karena konstruksi $\\delta$ berlaku untuk setiap $\\varepsilon>0$ dan setiap $x$ yang memenuhi syarat, terbukti $\\lim_{x\\to a}(mx+b)=ma+b$."
       ],
-      "explanation": "Kasus kemiringan nol perlu ditangani terpisah agar rumus $\u000barepsilon/|m|$ tidak membagi dengan nol. Pembagian dengan nol tidak dibenarkan, sekalipun limit fungsi konstannya tetap ada."
+      "explanation": "Kasus kemiringan nol perlu ditangani terpisah agar rumus $\\varepsilon/|m|$ tidak membagi dengan nol. Pembagian dengan nol tidak dibenarkan, sekalipun limit fungsi konstannya tetap ada."
     },
     {
       "kind": "proposition",
@@ -94,7 +94,7 @@ export const preciseLimitContent: BookLessonContent = {
         "Karena kedua faktor taknegatif, kita memperoleh $|x^2-a^2|=|x-a||x+a|<(2|a|+1)|x-a|<(2|a|+1)\\delta\\le\\varepsilon$. Ketaksamaan ketat tetap berlaku meskipun $\\delta$ sama dengan salah satu batas dalam operasi minimum.",
         "Untuk setiap $\\varepsilon>0$ telah ditemukan $\\delta>0$ yang bekerja bagi semua $x$ di lingkungan berlubang. Dengan demikian, limit fungsi kuadrat di $a$ adalah $a^2$."
       ],
-      "explanation": "Langkah membatasi $|x+a|$ menjelaskan mengapa memilih $delta=\u000barepsilon$ tanpa memeriksa faktor lain tidak cukup untuk fungsi nonlinier."
+      "explanation": "Langkah membatasi $|x+a|$ menjelaskan mengapa memilih $\\delta=\\varepsilon$ tanpa memeriksa faktor lain tidak cukup untuk fungsi nonlinier."
     },
     {
       "kind": "lemma",
@@ -221,7 +221,7 @@ export const preciseLimitContent: BookLessonContent = {
         "Dari $|x-2|<1$ diperoleh $1<x<3$, maka $3<x+2<5$ dan khususnya $|x+2|<5$.",
         "Pilih $\\delta=\\min\\{1,\\varepsilon/5\\}$. Jika $0<|x-2|<\\delta$, maka $|x^2-4|=|x-2||x+2|<5\\delta\\le\\varepsilon$."
       ],
-      "conclusion": "Batas tambahan $deltale1$ memungkinkan kita mengontrol faktor kedua sebelum menggunakan $\u000barepsilon$."
+      "conclusion": "Batas tambahan $\\delta\\le1$ memungkinkan kita mengontrol faktor kedua sebelum menggunakan $\\varepsilon$."
     },
     {
       "title": "Teorema Apit untuk Osilasi",
