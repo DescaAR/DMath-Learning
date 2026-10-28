@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run audit:latex && npm run audit:depth && npm run audit:thesis && npm run audit:solutions && next build",
+    "build": "npm run audit:latex && npm run audit:depth && npm run audit:thesis && npm run audit:solutions && npm run audit:enrichment && next build",
     "start": "next start",
     "lint": "next lint",
     "audit:content": "node scripts/audit-content.mjs",
     "audit:latex": "node scripts/audit-latex.mjs",
     "audit:depth": "node scripts/audit-material-depth.mjs --json",
     "audit:thesis": "node scripts/audit-thesis-format.mjs",
-    "audit:solutions": "node scripts/audit-solution-format.mjs"
+    "audit:solutions": "node scripts/audit-solution-format.mjs",
+    "audit:enrichment": "node scripts/audit-enrichment.mjs"
   },
   "dependencies": {
     "next": "15.5.26",
