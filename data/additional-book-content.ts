@@ -390,82 +390,177 @@ for(const subject of additionalBookSubjects){
 
 generated["komb-perfect-covers"]={
   intro:[
-    "Masalah penutupan papan dengan domino merupakan contoh awal bagaimana kombinatorika mempelajari keberadaan suatu konfigurasi, bukan sekadar menghitung banyaknya konfigurasi.",
-    "Pada papan $8\\times8$, sebuah domino menutup dua petak yang bertetangga. Pewarnaan hitam–putih memberi invariant sederhana: setiap domino selalu menutup tepat satu petak hitam dan satu petak putih.",
-    "Gagasan pewarnaan dapat diperluas dari domino menjadi $b$-omino dengan $b$ warna. Teknik ini memperlihatkan kekuatan invariant dalam membuktikan bahwa suatu konfigurasi mustahil ada."
-  ],
-  notation:[
-    {symbol:"$m\\times n$",meaning:"papan dengan $m$ baris dan $n$ kolom"},
-    {symbol:"$b$-omino",meaning:"ubin yang menutup $b$ petak berurutan pada satu baris atau satu kolom"}
+    "Menutup papan dengan domino bukan semata-mata soal membagi luas papan dengan dua. Dua papan dengan luas sama dapat memiliki perilaku berbeda karena posisi petaknya menentukan apakah setiap petak dapat dipasangkan dengan tetangga yang tepat.",
+    "Pada papan catur, pewarnaan berselang-seling mengubah masalah geometri menjadi pernyataan aritmetika: setiap domino horizontal maupun vertikal menutup tepat satu petak hitam dan satu petak putih. Oleh karena itu, ketidakseimbangan jumlah warna dapat membuktikan ketidakmungkinan tanpa mencoba semua susunan.",
+    "Keseimbangan warna adalah syarat perlu, bukan syarat cukup. Untuk membuktikan keberadaan penutupan, kita tetap harus membangun susunan ubin atau menggunakan teorema keberadaan. Untuk membuktikan ketidakberadaan, satu invariant yang dilanggar sudah cukup.",
+    "Pada bagian akhir, pewarnaan dua warna diperluas menjadi bobot akar kesatuan untuk membuktikan kriteria tepat bagi penutupan persegi panjang oleh batang lurus sepanjang $b$ petak. Pendekatan ini sekaligus menjelaskan mengapa pemeriksaan luas saja tidak memadai. Bacaan pendamping: Richard A. Brualdi, Introductory Combinatorics, edisi ke-5 (2010), Bab 1."
   ],
   formal:[
     {
-      kind:"definition",
-      title:"Perfect Cover",
-      statement:"Suatu perfect cover dari papan adalah susunan ubin tanpa tumpang tindih yang menutup setiap petak papan tepat satu kali."
+      kind:"definition",title:"Papan Berpetak dan Domino",
+      statement:"Untuk $m,n\\in\\mathbb N$, papan $m\\times n$ adalah himpunan petak $R_{m,n}=\\{(i,j):1\\le i\\le m,\\ 1\\le j\\le n\\}$. Dua petak bertetangga sisi apabila $|i-i'|+|j-j'|=1$. Domino adalah ubin yang terdiri atas tepat dua petak bertetangga sisi."
     },
     {
-      kind:"proposition",
-      title:"Invariant Warna untuk Domino",
-      statement:"Jika papan berpola hitam–putih mempunyai perfect cover oleh domino, banyak petak hitam dan putih yang tersisa harus sama.",
-      proof:[
-        "Diambil sembarang domino pada penutupan. Karena dua petak yang bertetangga mempunyai warna berbeda, domino tersebut menutup satu petak hitam dan satu petak putih.",
-        "Setiap domino memberikan kontribusi satu petak untuk masing-masing warna.",
-        "Akibatnya, setelah seluruh papan tertutup, jumlah petak hitam yang tertutup sama dengan jumlah petak putih yang tertutup.",
-        "Dengan demikian, kesamaan banyak petak kedua warna merupakan syarat perlu untuk adanya perfect cover."
-      ]
+      kind:"definition",title:"Penutupan Sempurna (Perfect Cover)",
+      statement:"Misalkan $B$ himpunan hingga petak dan $\\mathcal T$ keluarga ubin yang diizinkan. Penutupan sempurna atas $B$ adalah keluarga hingga $T_1,\\ldots,T_k\\in\\mathcal T$ sedemikian sehingga $B=\\bigcup_{r=1}^kT_r$ dan $T_r\\cap T_s=\\varnothing$ untuk $r\\ne s$. Dengan demikian setiap petak ditutup tepat sekali, tanpa celah dan tanpa tumpang tindih."
     },
     {
-      kind:"theorem",
-      title:"Kriteria Penutupan oleh $b$-omino",
-      statement:"Papan $m\\times n$ mempunyai perfect cover oleh $b$-omino jika dan hanya jika $b$ membagi $m$ atau $b$ membagi $n$.",
+      kind:"definition",title:"Pewarnaan Papan Catur",
+      statement:"Untuk setiap petak $(i,j)$, definisikan $c(i,j)=(i+j)\\bmod 2$. Petak dengan $c(i,j)=0$ disebut hitam dan petak dengan $c(i,j)=1$ disebut putih. Dua petak yang bertetangga sisi selalu mempunyai warna berbeda."
+    },
+    {
+      kind:"proposition",title:"Invariant Keseimbangan Warna",
+      statement:"Misalkan $B\\subseteq\\mathbb Z^2$ merupakan himpunan hingga petak satuan dengan pewarnaan papan catur. Jika $B$ dapat ditutup sempurna oleh domino horizontal dan vertikal, maka banyak petak hitam di $B$ sama dengan banyak petak putih di $B$.",
       proof:[
-        "Jika $b\\mid m$, setiap kolom dapat dipartisi menjadi blok vertikal sepanjang $b$. Jika $b\\mid n$, argumen yang sama berlaku secara horizontal.",
-        "Untuk arah sebaliknya, andaikan perfect cover ada. Papan diwarnai periodik dengan $b$ warna sehingga setiap $b$-omino menutup satu petak dari setiap warna.",
-        "Dituliskan $m=pb+r$ dan $n=qb+s$ dengan $0\\le r,s<b$. Dengan menukar peran $m,n$ jika perlu, diandaikan $r\\le s$.",
-        "Bagian berukuran kelipatan $b$ menyumbang setiap warna dalam jumlah sama. Oleh karena itu bagian sisa $r\\times s$ juga harus memiliki jumlah yang sama untuk setiap warna.",
-        "Pola pewarnaan memberi tepat $r$ petak untuk setiap warna pada bagian sisa. Banyak petaknya sekaligus adalah $rs$ dan $rb$, sehingga $rs=rb$.",
-        "Jika $r\\ne0$, diperoleh $s=b$, bertentangan dengan $s<b$. Jadi $r=0$, sehingga $b\\mid m$."
-      ]
+        "Diketahui suatu penutupan sempurna $B=T_1\\cup\\cdots\\cup T_k$ oleh domino yang saling lepas. Dibuktikan bahwa jumlah petak dari kedua warna sama.",
+        "Untuk setiap $r$, dua petak dalam $T_r$ bertetangga sisi. Perubahan salah satu koordinat sebesar satu membalik paritas $i+j$, sehingga $T_r$ mengandung tepat satu petak hitam dan satu petak putih.",
+        "Karena $T_1,\\ldots,T_k$ saling lepas dan gabungannya $B$, penjumlahan kontribusi warna semua domino memberi $N_{\\mathrm{hitam}}(B)=\\sum_{r=1}^k1=k$ dan $N_{\\mathrm{putih}}(B)=\\sum_{r=1}^k1=k$.",
+        "Jadi $N_{\\mathrm{hitam}}(B)=N_{\\mathrm{putih}}(B)$. Perhatikan bahwa pembuktian ini hanya menghasilkan syarat perlu; kebalikannya belum dinyatakan."
+      ],
+      explanation:"Pada papan berlubang, bandingkan jumlah petak setiap warna sesudah lubang dihapus, bukan sebelum penghapusan. Setiap domino menyumbang pasangan warna $(1,1)$, sehingga selisih jumlah warna tidak dapat diubah oleh penempatan domino."
+    },
+    {
+      kind:"lemma",title:"Penutupan Domino dan Matching Sempurna",
+      statement:"Misalkan $B$ himpunan hingga petak dan $G_B=(V,E)$ graf dengan $V=B$ serta $\\{u,v\\}\\in E$ tepat ketika petak $u,v$ bertetangga sisi. Maka $B$ mempunyai penutupan sempurna oleh domino jika dan hanya jika $G_B$ mempunyai matching sempurna.",
+      proof:[
+        "(⇒) Diketahui $B$ ditutup oleh domino $T_1,\\ldots,T_k$. Setiap $T_r$ berisi sepasang petak bertetangga, sehingga menentukan sebuah sisi $e_r$ pada $G_B$.",
+        "Karena domino tidak tumpang tindih, sisi-sisi $e_r$ tidak berbagi simpul. Karena semua petak tertutup, setiap simpul merupakan ujung tepat satu sisi tersebut. Jadi $\\{e_1,\\ldots,e_k\\}$ adalah matching sempurna.",
+        "(⇐) Diketahui $M$ matching sempurna pada $G_B$. Setiap sisi $\\{u,v\\}\\in M$ menghubungkan dua petak bertetangga dan karenanya membentuk sebuah domino yang diizinkan.",
+        "Sisi-sisi dalam $M$ tidak berbagi simpul, sehingga domino yang diperoleh tidak bertumpang tindih. Setiap simpul tersaturasi oleh matching sempurna, sehingga setiap petak tertutup tepat satu kali. Domino-domino itu merupakan penutupan sempurna."
+      ],
+      explanation:"Korespondensi ini mempertahankan struktur masalah: memilih satu domino sama dengan memilih satu sisi pada graf ketetanggaan. Keseimbangan warna diperlukan karena grafnya bipartit, tetapi keberadaan matching sempurna menuntut syarat lebih kuat."
+    },
+    {
+      kind:"theorem",title:"Kriteria Persegi Panjang untuk Batang $b$-omino",
+      statement:"Misalkan $m,n\\in\\mathbb N$ dan $b\\in\\mathbb N$ dengan $b\\ge2$. Ubin yang diizinkan hanyalah batang lurus berukuran $1\\times b$ atau $b\\times1$, tanpa pemotongan. Papan $m\\times n$ dapat ditutup sempurna oleh ubin tersebut jika dan hanya jika $b\\mid m$ atau $b\\mid n$.",
+      proof:[
+        "Diketahui $m,n\\ge1$ dan $b\\ge2$. Dibuktikan dua arah ekuivalensi.",
+        "(⇐) Andaikan $b\\mid m$. Tulis $m=qb$ untuk suatu $q\\in\\mathbb N$. Pada masing-masing dari $n$ kolom, bagi $m$ petak menjadi $q$ blok vertikal berurutan, masing-masing sepanjang $b$. Blok-blok ini saling lepas dan menutup seluruh papan.",
+        "Jika yang diketahui adalah $b\\mid n$, pembagian yang sama dilakukan pada setiap baris menjadi blok horizontal sepanjang $b$. Dengan demikian, kedua kondisi pembagian masing-masing cukup untuk menghasilkan penutupan sempurna.",
+        "(⇒) Andaikan terdapat penutupan sempurna. Pilih $\\zeta=e^{2\\pi i/b}$. Karena $b\\ge2$, berlaku $\\zeta\\ne1$, $\\zeta^b=1$, dan $1+\\zeta+\\cdots+\\zeta^{b-1}=(1-\\zeta^b)/(1-\\zeta)=0$.",
+        "Berikan bobot $w(i,j)=\\zeta^{i+j}$ kepada petak $(i,j)$, dengan indeks $0\\le i<m$ dan $0\\le j<n$. Setiap batang horizontal sepanjang $b$ mempunyai jumlah bobot $\\zeta^{i+j_0}(1+\\zeta+\\cdots+\\zeta^{b-1})=0$. Batang vertikal juga mempunyai jumlah bobot nol.",
+        "Karena ubin-ubin saling lepas dan menutup seluruh papan, jumlah bobot semua petak harus nol. Di sisi lain, pemfaktoran jumlah hingga memberi $0=\\sum_{i=0}^{m-1}\\sum_{j=0}^{n-1}\\zeta^{i+j}=\\left(\\sum_{i=0}^{m-1}\\zeta^i\\right)\\left(\\sum_{j=0}^{n-1}\\zeta^j\\right)=\\frac{(1-\\zeta^m)(1-\\zeta^n)}{(1-\\zeta)^2}$.",
+        "Penyebut tidak nol dan bilangan kompleks tidak mempunyai pembagi nol. Karena itu $1-\\zeta^m=0$ atau $1-\\zeta^n=0$. Karena $\\zeta$ adalah akar kesatuan primitif berorde $b$, kesamaan $\\zeta^t=1$ berlaku tepat ketika $b\\mid t$.",
+        "Diperoleh $b\\mid m$ atau $b\\mid n$, sebagaimana dikehendaki. Kedua arah telah dibuktikan."
+      ],
+      explanation:"Pewarnaan hitam–putih merupakan kasus $b=2$ dengan $\\zeta=-1$. Untuk $b>2$, bobot kompleks mengodekan $b$ kelas residu sekaligus. Bukti ini tidak hanya menggunakan fakta $b\\mid mn$; misalnya $b=6$ membagi luas papan $10\\times12$, tetapi yang menentukan keberadaan penutupan adalah keterbagian salah satu dimensinya."
+    },
+    {
+      kind:"corollary",title:"Kriteria Penutupan Domino pada Persegi Panjang",
+      statement:"Untuk $m,n\\in\\mathbb N$, papan persegi panjang $m\\times n$ mempunyai penutupan sempurna oleh domino jika dan hanya jika $mn$ genap.",
+      proof:[
+        "Diketahui domino adalah batang $2$-omino. Berdasarkan teorema sebelumnya, penutupan ada tepat ketika $2\\mid m$ atau $2\\mid n$.",
+        "Untuk bilangan bulat $m,n$, hasil kali $mn$ genap jika dan hanya jika sedikitnya satu dari $m,n$ genap. Oleh karena itu kedua kondisi tersebut ekuivalen.",
+        "Jika $m$ genap, pasangan petak pada setiap kolom memberi konstruksi vertikal. Jika $n$ genap, pasangan petak pada setiap baris memberi konstruksi horizontal."
+      ],
+      explanation:"Pernyataan ini berlaku untuk persegi panjang utuh. Pada papan yang telah dihapus beberapa petaknya, luas genap tidak menjamin penutupan sempurna."
+    },
+    {
+      kind:"proposition",title:"Keseimbangan Warna Tidak Cukup",
+      statement:"Terdapat papan berlubang dengan banyak petak hitam dan putih sama tetapi tidak mempunyai penutupan sempurna oleh domino.",
+      proof:[
+        "Pertimbangkan papan $8\\times8$ dengan koordinat dimulai dari $(1,1)$. Hapus empat petak $(1,2)$, $(2,1)$, $(7,7)$, dan $(8,8)$.",
+        "Pada pewarnaan $c(i,j)=(i+j)\\bmod2$, dua petak pertama berwarna putih dan dua petak terakhir berwarna hitam. Semula terdapat 32 petak setiap warna; setelah penghapusan tersisa 30 petak hitam dan 30 petak putih.",
+        "Akan tetapi, petak $(1,1)$ tetap ada dan kedua tetangga sisinya di dalam papan, yaitu $(1,2)$ dan $(2,1)$, telah dihapus. Dengan demikian petak $(1,1)$ tidak memiliki petak tetangga yang tersedia.",
+        "Tidak ada domino yang dapat menutup petak $(1,1)$. Akibatnya penutupan sempurna mustahil, walaupun jumlah kedua warna seimbang."
+      ],
+      explanation:"Contoh ini memisahkan dua pertanyaan: apakah invariant melarang penutupan, dan apakah penutupan benar-benar dapat dikonstruksi. Untuk papan berlubang, kesetaraan jumlah warna saja tidak menjawab pertanyaan kedua."
     }
   ],
   examples:[
     {
-      title:"Papan Catur dengan Dua Sudut Dihapus",
-      problem:"Dari papan $8\\times8$ dihapus dua petak sudut yang berseberangan. Dapatkah 31 domino menutup papan yang tersisa?",
+      title:"Papan Berpetak dan Domino",forDefinition:"Papan Berpetak dan Domino",
+      problem:"Pada papan $3\\times4$, tentukan apakah petak $(2,2)$ dan $(2,3)$ membentuk domino, dan apakah $(1,1)$ serta $(2,2)$ membentuk domino.",
       solution:[
-        "Dua sudut berseberangan pada papan catur mempunyai warna yang sama.",
-        "Setelah keduanya dihapus, tersisa 30 petak dari satu warna dan 32 dari warna lainnya.",
-        "Setiap domino selalu menutup satu petak hitam dan satu petak putih.",
-        "Sebanyak 31 domino akan menutup 31 petak hitam dan 31 petak putih, bertentangan dengan komposisi warna papan yang tersisa."
-      ],
-      conclusion:"Perfect cover tidak ada."
+        "Untuk pasangan pertama, $|2-2|+|2-3|=1$. Keduanya bertetangga sisi sehingga membentuk domino horizontal.",
+        "Untuk pasangan kedua, $|1-2|+|1-2|=2$. Keduanya hanya bertemu di sudut, bukan di sisi.",
+        "Dengan demikian pasangan kedua bukan domino yang diizinkan."
+      ]
     },
     {
-      title:"Papan $10\\times15$ dengan 5-omino",
-      problem:"Tentukan apakah papan $10\\times15$ dapat ditutup sempurna oleh 5-omino.",
+      title:"Penutupan Sempurna (Perfect Cover)",forDefinition:"Penutupan Sempurna (Perfect Cover)",
+      problem:"Bangun penutupan sempurna papan $2\\times3$ oleh domino dan periksa syarat gabungan serta ketakberirisan.",
       solution:[
-        "Karena $5\\mid10$ dan juga $5\\mid15$, syarat kriteria terpenuhi.",
-        "Sebagai konstruksi, papan dapat dipartisi menjadi blok horizontal panjang 5 atau blok vertikal panjang 5."
-      ],
-      conclusion:"Perfect cover ada."
+        "Ambil $T_1=\\{(1,1),(2,1)\\}$, $T_2=\\{(1,2),(2,2)\\}$, dan $T_3=\\{(1,3),(2,3)\\}$.",
+        "Setiap $T_r$ terdiri atas dua petak yang bertetangga secara vertikal.",
+        "Ketiga ubin saling lepas karena berada pada kolom berbeda, dan gabungannya tepat seluruh enam petak papan.",
+        "Maka $T_1,T_2,T_3$ merupakan penutupan sempurna."
+      ]
+    },
+    {
+      title:"Pewarnaan Papan Catur",forDefinition:"Pewarnaan Papan Catur",
+      problem:"Tentukan warna petak $(1,1)$, $(1,2)$, dan $(8,8)$ serta jelaskan mengapa domino selalu mengambil satu petak dari tiap warna.",
+      solution:[
+        "Jumlah koordinatnya masing-masing adalah $2$, $3$, dan $16$. Karena $2$ dan $16$ genap, $(1,1)$ dan $(8,8)$ berwarna hitam; $(1,2)$ berwarna putih.",
+        "Dua petak domino berbeda tepat satu pada salah satu koordinat, sehingga jumlah koordinat berubah sebesar satu.",
+        "Paritas berubah dari genap ke ganjil atau sebaliknya. Karena itu domino selalu mengambil tepat satu petak hitam dan satu petak putih."
+      ]
+    },
+    {
+      title:"Dua Sudut Berseberangan Dihapus",
+      problem:"Dari papan catur $8\\times8$ dihapus $(1,1)$ dan $(8,8)$. Buktikan bahwa 31 domino tidak mungkin menutup seluruh petak yang tersisa.",
+      solution:[
+        "Papan utuh mempunyai 32 petak hitam dan 32 petak putih.",
+        "Petak $(1,1)$ dan $(8,8)$ sama-sama hitam karena jumlah koordinatnya genap. Setelah keduanya dihapus, terdapat 30 petak hitam dan 32 petak putih.",
+        "Jika 31 domino menutup papan, setiap domino menyumbang satu petak hitam dan satu petak putih. Karena itu harus terdapat tepat 31 petak masing-masing warna.",
+        "Hal tersebut bertentangan dengan jumlah petak yang tersisa. Jadi penutupan sempurna tidak ada."
+      ]
+    },
+    {
+      title:"Luas Habis Dibagi, tetapi Penutupan Mustahil",
+      problem:"Apakah papan $10\\times14$ dapat ditutup oleh batang lurus $6$-omino?",
+      solution:[
+        "Luas papan adalah $140$, yang tidak habis dibagi $6$. Karena itu sudah ada hambatan luas dan penutupan mustahil.",
+        "Untuk melihat hambatan yang lebih kuat, ambil papan $10\\times12$ yang luasnya $120$ habis dibagi $6$. Pada papan ini $6\\mid12$, sehingga justru penutupan ada dengan batang horizontal.",
+        "Contoh yang benar-benar membedakan syarat luas dan syarat dimensi adalah papan $9\\times10$ dengan batang $6$-omino: luasnya $90$ habis dibagi $6$, tetapi $6\\nmid9$ dan $6\\nmid10$.",
+        "Teorema kriteria menyatakan bahwa papan $9\\times10$ tidak dapat ditutup sempurna oleh batang $6$-omino meskipun syarat luas terpenuhi."
+      ]
+    },
+    {
+      title:"Keseimbangan Tanpa Matching",
+      problem:"Pada papan $8\\times8$, hapus $(1,2)$, $(2,1)$, $(7,7)$, dan $(8,8)$. Periksa keseimbangan warna dan tentukan apakah penutupan domino ada.",
+      solution:[
+        "Dua petak pertama putih, dua petak terakhir hitam. Jadi terdapat $32-2=30$ petak setiap warna.",
+        "Petak $(1,1)$ tidak dihapus, tetapi hanya mempunyai dua tetangga sisi pada papan, yaitu $(1,2)$ dan $(2,1)$.",
+        "Kedua tetangga tersebut telah dihapus, sehingga petak $(1,1)$ terisolasi pada graf ketetanggaan.",
+        "Matching sempurna tidak mungkin memuat simpul terisolasi. Dengan lemma penutupan–matching, penutupan domino tidak ada."
+      ]
     }
   ],
   exercises:[
-    {prompt:"Dapatkah papan $7\\times12$ ditutup sempurna oleh 3-omino?",hint:"Periksa apakah $3$ membagi salah satu dimensi.",answer:"Ya, karena $3\\mid12$."},
-    {prompt:"Dapatkah papan $10\\times14$ ditutup sempurna oleh 6-omino?",hint:"Gunakan kriteria pembagian.",answer:"Tidak, karena $6$ tidak membagi $10$ maupun $14$."},
-    {prompt:"Jelaskan mengapa keseimbangan banyak petak hitam dan putih hanyalah syarat perlu, bukan selalu syarat cukup, untuk papan yang telah dipangkas.",hint:"Cari konfigurasi dengan jumlah warna seimbang tetapi geometri menghalangi penutupan.",answer:"Kesamaan jumlah warna hanya menghilangkan satu obstruction. Bentuk dan keterhubungan papan masih dapat mencegah semua petak dipasangkan oleh domino."}
+    {
+      prompt:"Buktikan bahwa papan $7\\times12$ dapat ditutup oleh batang lurus $3$-omino, lalu hitung jumlah batang yang digunakan.",
+      hint:"Gunakan keterbagian dimensi kedua dan konstruksi per baris.",
+      answer:"Karena $3\\mid12$, setiap baris sepanjang 12 petak dapat dibagi menjadi empat blok horizontal yang masing-masing panjangnya 3.\nTerdapat 7 baris, sehingga susunan ini menggunakan $7\\cdot4=28$ batang.\nBlok-blok tidak tumpang tindih dan menutup semua $7\\cdot12=84$ petak, sesuai dengan $84/3=28$. Jadi penutupan sempurna ada."
+    },
+    {
+      prompt:"Tentukan apakah papan $9\\times10$ dapat ditutup oleh batang lurus $6$-omino. Jelaskan mengapa pemeriksaan luas saja tidak cukup.",
+      hint:"Luas 90 habis dibagi 6, tetapi periksa juga kedua dimensi.",
+      answer:"Luas papan $9\\cdot10=90$ memang habis dibagi 6, sehingga hambatan luas tidak berlaku.\nNamun $6\\nmid9$ dan $6\\nmid10$. Berdasarkan teorema kriteria batang $b$-omino, penutupan sempurna tidak ada.\nDengan demikian keterbagian luas oleh ukuran ubin hanyalah syarat perlu, bukan syarat cukup."
+    },
+    {
+      prompt:"Buktikan papan persegi panjang $m\\times n$ dengan $mn$ ganjil tidak dapat ditutup oleh domino, tanpa memakai teorema batang $b$-omino.",
+      hint:"Setiap domino menutup tepat dua petak yang berbeda.",
+      answer:"Andaikan penutupan sempurna menggunakan $k$ domino. Karena setiap domino menutup tepat dua petak dan tidak ada tumpang tindih, banyak petak seluruhnya adalah $mn=2k$.\nRuas kanan genap, bertentangan dengan asumsi bahwa $mn$ ganjil.\nOleh karena itu penutupan sempurna mustahil."
+    },
+    {
+      prompt:"Pada papan $8\\times8$, dua sudut yang bertetangga di baris pertama dihapus. Bangun penutupan domino secara eksplisit.",
+      hint:"Tutup enam petak tersisa pada baris pertama secara horizontal; lanjutkan pada tujuh baris berikutnya.",
+      answer:"Hapus petak $(1,1)$ dan $(1,2)$. Pada baris pertama, tempatkan domino horizontal pada kolom $(3,4)$, $(5,6)$, dan $(7,8)$.\nUntuk setiap baris $i=2,3,\\ldots,8$, tempatkan domino pada pasangan kolom $(1,2)$, $(3,4)$, $(5,6)$, dan $(7,8)$.\nTerdapat $3+7\\cdot4=31$ domino yang saling lepas dan menutup tepat semua 62 petak yang tersisa."
+    },
+    {
+      prompt:"Berikan contoh papan berlubang dengan jumlah petak hitam dan putih sama, tetapi tidak mempunyai penutupan domino. Buktikan kedua klaim tersebut.",
+      hint:"Sisakan sebuah petak sudut, lalu hapus semua tetangga sisinya; imbangi warna petak yang dihapus.",
+      answer:"Ambil papan $8\\times8$ dan hapus $(1,2)$, $(2,1)$, $(7,7)$, dan $(8,8)$.\nDua petak yang pertama putih dan dua yang terakhir hitam, sehingga tersisa 30 petak masing-masing warna.\nPetak $(1,1)$ masih ada tetapi kedua tetangganya telah dihapus. Tidak ada domino yang dapat menutup petak itu.\nJadi keseimbangan warna terpenuhi tetapi penutupan sempurna tidak ada."
+    },
+    {
+      prompt:"Buktikan secara langsung bahwa penutupan domino atas papan $B$ menghasilkan matching sempurna pada graf ketetanggaan $G_B$. Jelaskan juga mengapa arah sebaliknya benar.",
+      hint:"Pasangkan setiap domino dengan sisi yang menghubungkan kedua petaknya.",
+      answer:"Setiap domino berisi dua petak bertetangga dan karenanya menentukan satu sisi pada $G_B$.\nKarena penutupan tidak tumpang tindih, sisi-sisi itu tidak berbagi simpul. Karena semua petak tertutup, setiap simpul merupakan ujung tepat satu sisi; jadi terbentuk matching sempurna.\nSebaliknya, setiap sisi matching sempurna merupakan pasangan petak bertetangga yang dapat ditutup satu domino.\nKetakberirisan sisi dan kejenuhan semua simpul menjamin domino-domino tersebut menutup $B$ tepat sekali."
+    }
   ],
-  mistakes:[
-    "Menganggap jumlah petak genap otomatis menjamin adanya penutupan domino.",
-    "Menggunakan pewarnaan tanpa memeriksa berapa warna yang ditutup setiap ubin.",
-    "Menyimpulkan syarat perlu sebagai syarat cukup tanpa konstruksi atau teorema tambahan."
-  ],
-  connections:[
-    "Invariant pewarnaan merupakan teknik penting dalam problem solving olimpiade.",
-    "Masalah tiling berhubungan dengan matching pada graf bipartit.",
-    "Gagasan keberadaan konfigurasi muncul kembali pada Hall's theorem dan desain kombinatorial."
-  ]
+  mistakes:[],
+  connections:[]
 };
 
 generated["la-linear-systems"]={
