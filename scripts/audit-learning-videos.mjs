@@ -41,9 +41,17 @@ const registry=read("data/lesson-videos.ts");
 assert.doesNotMatch(registry,/"url":\s*"https:\/\/(www\.)?youtube/);
 const section=read("components/LearningVideoSection.tsx");
 for(const pattern of [
-  /www\.youtube\.com/,/localStorage/,/<iframe/,/allowFullScreen/,
-  /rel="noopener noreferrer"/,/video\.watchUrl/,/parseYouTubeVideo\(draft\)/
+  /lessonVideos\[materialKey\]/,/<iframe/,/allowFullScreen/,
+  /rel="noopener noreferrer"/,/video\.watchUrl/,/parseYouTubeVideo\(item\.url\)/
 ])assert.match(section,pattern);
+for(const pattern of [
+  /localStorage/,/sessionStorage/,/STORAGE_PREFIX/,/addVideo/,/removeLocal/,
+  /saveLocal/,/<input\b/,/<form\b/,/type="submit"/,
+  /learning-video-add-panel/,/learning-video-editor/,/learning-video-remove/,
+  /github\.com\/DescaAR\/DMath-Learning\/edit/
+])assert.doesNotMatch(section,pattern,"Visitors must not have any video editing controls");
+assert.match(section,/Video belum tersedia/);
+assert.match(registry,/export const lessonVideos: Record<string, LessonVideo\[\]>/);
 for(const [component,idKey] of [
   ["components/BookSectionPage.tsx",'subject.slug+"/"+section.slug'],
   ["components/DeepMaterialPage.tsx","material.slug"],
@@ -57,4 +65,4 @@ for(const [component,idKey] of [
   assert.ok(content.includes(idKey),component+" missing correct material key");
 }
 assert.match(read("app/layout.tsx"),/modern-ui\.css/);
-console.log("Video player audit passed: URL safety, six lesson layouts, site-wide styling, iframe and YouTube source link.");
+console.log("Video player audit passed: URL safety, GitHub-only read-only registry, six lesson layouts, and external YouTube link.");
