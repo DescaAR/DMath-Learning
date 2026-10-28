@@ -82,7 +82,7 @@ export const preciseLimitContent: BookLessonContent = {
         "Sekarang ambil sembarang $x\\in\\mathbb R$ dengan $0<|x-a|<\\delta$. Dengan menggunakan distributivitas dan sifat nilai mutlak diperoleh $|f(x)-(ma+b)|=|mx+b-ma-b|=|m||x-a|<|m|\\delta=\\varepsilon$.",
         "Karena konstruksi $\\delta$ berlaku untuk setiap $\\varepsilon>0$ dan setiap $x$ yang memenuhi syarat, terbukti $\\lim_{x\\to a}(mx+b)=ma+b$."
       ],
-      "explanation": "Kasus kemiringan nol perlu ditangani terpisah agar rumus $\u000barepsilon/|m|$ tidak membagi dengan nol."
+      "explanation": "Kasus kemiringan nol perlu ditangani terpisah agar rumus $\u000barepsilon/|m|$ tidak membagi dengan nol. Pembagian dengan nol tidak dibenarkan, sekalipun limit fungsi konstannya tetap ada."
     },
     {
       "kind": "proposition",
@@ -238,7 +238,7 @@ export const preciseLimitContent: BookLessonContent = {
     {
       "prompt": "Buktikan dengan definisi $\\varepsilon$–$\\delta$ bahwa $\\lim_{x\\to-3}(4x-5)=-17$. Jelaskan secara eksplisit kasus $\\varepsilon>0$ sebarang dan mengapa $\\delta$ tidak bergantung pada $x$.",
       "hint": "Faktorkan selisih keluaran menjadi konstanta kali $|x+3|$.",
-      "answer": "Ambil sebarang $\\varepsilon>0$ dan pilih $\\delta=\\varepsilon/4>0$. Jika $x\\in\\mathbb R$ memenuhi $0<|x-(-3)|=|x+3|<\\delta$, maka $|(4x-5)-(-17)|=|4x+12|=4|x+3|<4\\delta=\\varepsilon$. Pilihan $\\delta$ hanya bergantung pada toleransi $\\varepsilon$ dan kemiringan $4$, bukan pada nilai $x$ tertentu. Karena ketaksamaan terbukti untuk setiap $x$ dalam lingkungan berlubang tersebut, definisi limit menyatakan $\\lim_{x\\to-3}(4x-5)=-17$."
+      "answer": "Ambil sebarang $\\varepsilon>0$ dan pilih $\\delta=\\varepsilon/4>0$. Jika $x\\in\\mathbb R$ memenuhi $0<|x-(-3)|=|x+3|<\\delta$, maka $|(4x-5)-(-17)|=|4x+12|=4|x+3|<4\\delta=\\varepsilon$. Pilihan $\\delta$ hanya bergantung pada toleransi $\\varepsilon$ dan kemiringan $4$, bukan pada nilai $x$ tertentu. Karena ketaksamaan terbukti untuk setiap $x$ dalam lingkungan berlubang tersebut, definisi limit menyatakan $\\lim_{x\\to-3}(4x-5)=-17$. Ketaksamaan ketat muncul dari syarat masukan $|x+3|<\\delta$, bukan dari pemeriksaan beberapa contoh numerik saja."
     },
     {
       "prompt": "Buktikan bahwa $\\lim_{x\\to-1}x^2=1$ dengan memilih $\\delta=\\min\\{1,\\varepsilon/3\\}$. Uraikan mengapa batas $\\delta\\le1$ diperlukan untuk mengontrol faktor $|x-1|$.",
