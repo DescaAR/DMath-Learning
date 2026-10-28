@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { LearningVideoSection } from "@/components/LearningVideoSection";
 import { useEffect, useMemo, useState } from "react";
 import type { DeepMaterial } from "@/data/deep-materials";
 import { complexAnalysisExercises, complexAnalysisSections, type ComplexSourceBlock } from "@/data/complex-analysis";
@@ -280,6 +281,7 @@ export function ComplexAnalysisPage({ material }: { material: DeepMaterial }) {
         <aside className="toc material-toc textbook-toc ird-toc ca-toc"><div className="toc-progress-mini"><span>Progres membaca</span><strong>{Math.round(progress)}%</strong></div><strong>Isi Materi</strong>
           {complexAnalysisSections.map((s,i)=>{const id="ca-section-"+(i+1);return <a key={id} href={"#"+id} className={active===id?"active":""}><span>{String(i+1).padStart(2,"0")}</span>{s.title}</a>})}
           <a href="#ca-latihan30"><span>09</span>30 Latihan Tambahan</a>
+          <a href="#ca-video"><span>▶</span>Video Pembelajaran</a>
         </aside>
         <article className="article deep-article textbook-article ird-article ca-article">
           {complexAnalysisSections.map((section,si)=><section id={"ca-section-"+(si+1)} className="book-section ird-source-section ca-source-section" key={section.title}>
@@ -292,6 +294,7 @@ export function ComplexAnalysisPage({ material }: { material: DeepMaterial }) {
             <p>Seluruh soal dari lembar latihan tambahan disajikan satu per satu untuk latihan mandiri, dari operasi kompleks hingga fungsi harmonik dan Cauchy–Riemann.</p>
             <div className="ca-problem-grid">{complexAnalysisExercises.map((p,i)=><article className="ca-problem-card" key={i}><div className="ca-problem-number">{String(i+1).padStart(2,"0")}</div><div><strong>Soal {i+1}</strong><SourceText text={p}/></div></article>)}</div>
           </section>
+          <LearningVideoSection materialKey={material.slug} sectionId="ca-video"/>
           <section className="next-learning-block textbook-next"><div><span className="eyebrow">Lanjutkan</span><h2>Uji konsep dari banyak arah di bidang kompleks.</h2><p>Setelah membaca definisi dan pembuktian, gunakan latihan untuk menguji intuisi geometris sekaligus ketelitian formal.</p></div><div className="actions"><a className="btn primary" href="#ca-latihan30">Kerjakan Latihan</a><Link className="btn secondary" href="/materi">Materi Lain</Link></div></section>
         </article>
       </div></section>
