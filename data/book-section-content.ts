@@ -1,5 +1,6 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 import { graphDefinitionsContent } from "@/data/graph-definitions-content";
+import { euclideanDivisionContent } from "@/data/euclidean-division-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -46,6 +47,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentD,
   // This carefully authored lesson supersedes the generated graph overview.
   "gt-definitions":graphDefinitionsContent,
+  // Full proof of the division algorithm supersedes the generic number-theory page.
+  "nt-euclid-division":euclideanDivisionContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
