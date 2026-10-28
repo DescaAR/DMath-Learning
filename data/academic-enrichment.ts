@@ -173,7 +173,7 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
       {
         "prompt": "Jika $A$ dan $B$ independen dengan $P(A)=0.3$ dan $P(B)=0.4$, hitung $P(A^c\\cap B^c)$.",
         "hint": "Gunakan independensi komplemen.",
-        "answer": "Komplemen kedua kejadian juga independen. Karena $P(A^c)=0.7$ dan $P(B^c)=0.6$, maka $P(A^c\\cap B^c)=0.7(0.6)=0.42$.",
+        "answer": "Komplemen kedua kejadian juga independen. Karena $P(A^c)=1-0.3=0.7$ dan $P(B^c)=1-0.4=0.6$, maka $P(A^c\\cap B^c)=0.7(0.6)=0.42$. Sebagai pemeriksaan, $P(A\\cup B)=0.3+0.4-(0.3)(0.4)=0.58$, sehingga peluang komplemennya adalah $1-0.58=0.42$.",
         "provenance": "dmath-original"
       }
     ]
@@ -398,7 +398,7 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
       {
         "prompt": "Untuk node $x_0=0$ dan $x_1=2$, verifikasi $L_0(x)+L_1(x)=1$.",
         "hint": "Tuliskan kedua basis secara eksplisit.",
-        "answer": "Basisnya $L_0(x)=(2-x)/2$ dan $L_1(x)=x/2$. Penjumlahan memberi $L_0(x)+L_1(x)=(2-x+x)/2=1$ untuk semua $x$.",
+        "answer": "Untuk node $x_0=0$ dan $x_1=2$, basisnya adalah $L_0(x)=(2-x)/2$ dan $L_1(x)=x/2$. Penjumlahan menghasilkan $L_0(x)+L_1(x)=(2-x+x)/2=1$ pada setiap bilangan real $x$. Secara khusus, pada $x=1$ diperoleh $L_0(1)=L_1(1)=1/2$ sehingga jumlahnya tetap satu.",
         "provenance": "dmath-original"
       }
     ]
@@ -444,8 +444,8 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
         "statement": "Jika $M,N\\in C^1(D)$ dan $M=F_x$, $N=F_y$ untuk fungsi potensial $F$, maka $M_y=N_x$ di $D$.",
         "proof": [
           "Dari $M=F_x$ dan $N=F_y$, diperoleh $M_y=F_{xy}$ serta $N_x=F_{yx}$.",
-          "Karena $M,N\\in C^1(D)$, turunan campuran kedua tersebut kontinu dan Teorema Clairaut dapat diterapkan.",
-          "Diperoleh $F_{xy}=F_{yx}$, sehingga $M_y=N_x$."
+          "Karena $M,N$ mempunyai turunan parsial pertama yang kontinu di $D$, kedua turunan campuran $F_{xy}$ dan $F_{yx}$ ada serta kontinu. Dengan demikian, hipotesis Teorema Clairaut terpenuhi pada domain terbuka $D$.",
+          "Teorema kesamaan turunan parsial campuran memberikan $F_{xy}=F_{yx}$. Oleh karena itu, $M_y=F_{xy}=F_{yx}=N_x$ di seluruh domain yang dipertimbangkan."
         ]
       }
     ],
@@ -503,9 +503,9 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
         "title": "Identitas Faktor Integrasi",
         "statement": "Jika $P'=p$ dan $\\mu=e^P$, maka $(\\mu y)'=\\mu(y'+py)$ untuk setiap $y\\in C^1(I)$.",
         "proof": [
-          "Aturan rantai memberi $\\mu'=P'e^P=p\\mu$.",
-          "Dari aturan hasil kali, $(\\mu y)'=\\mu'y+\\mu y'$.",
-          "Substitusi $\\mu'=p\\mu$ menghasilkan $(\\mu y)'=\\mu(py+y')$."
+          "Diketahui $P'(t)=p(t)$ dan $mu(t)=e^{P(t)}$. Menurut aturan rantai, turunan faktor integrasi adalah $mu'(t)=P'(t)e^{P(t)}=p(t)mu(t)$.",
+          "Selanjutnya, untuk $y\\in C^1(I)$, aturan turunan hasil kali memberikan $(\\mu y)'=\\mu' y+\\mu y'$ untuk setiap titik di interval $I$.",
+          "Substitusi identitas $\\mu'=p\\mu$ ke ruas kanan memberi $(\\mu y)'=\\mu(py+y')=\\mu(y'+py)$, yaitu persamaan yang harus dibuktikan."
         ]
       }
     ],
@@ -543,7 +543,7 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
       {
         "prompt": "Populasi awal 200 tumbuh kontinu pada laju 5% per satuan waktu. Tentukan waktu penggandaan.",
         "hint": "Setarakan 200e^{0.05t} dengan 400.",
-        "answer": "Persamaan $400=200e^{0.05t}$ memberikan $e^{0.05t}=2$. Maka $t=\\ln2/0.05\\approx13.8629$ satuan waktu.",
+        "answer": "Dengan kondisi awal $y(0)=200$ dan laju $k=0.05$, model menghasilkan $y(t)=200e^{0.05t}$. Waktu penggandaan ditentukan dari $400=200e^{0.05t}$ atau $e^{0.05t}=2$. Dengan mengambil logaritma diperoleh $t=\\ln2/0.05\\approx13.8629$ satuan waktu. Substitusi kembali memberikan $y(t)=400$, sesuai syarat penggandaan.",
         "provenance": "dmath-original"
       }
     ]
@@ -573,7 +573,7 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
       {
         "prompt": "Periksa apakah $y=2\\cos t-3\\sin t$ menyelesaikan $y''+y=0$.",
         "hint": "Gunakan turunan kedua sinus dan kosinus.",
-        "answer": "Diperoleh $y''=-2\\cos t+3\\sin t=-y$. Jadi $y''+y=0$ untuk semua $t\\in\\mathbb R$.",
+        "answer": "Ambil $y(t)=2\\cos t-3\\sin t$, yang memiliki turunan kedua di seluruh $\\mathbb R$. Turunan pertamanya adalah $y'(t)=-2\\sin t-3\\cos t$, sedangkan turunan keduanya $y''(t)=-2\\cos t+3\\sin t=-y(t)$. Karena itu $y''(t)+y(t)=0$ untuk setiap $t$, sehingga fungsi tersebut benar-benar solusi persamaan homogen yang diberikan.",
         "provenance": "dmath-original"
       }
     ]
