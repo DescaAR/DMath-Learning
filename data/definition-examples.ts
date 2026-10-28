@@ -1,6 +1,8 @@
 import type { BookExample } from "@/data/book-content-types";
 import { moreDefinitionExamples } from "@/data/definition-examples-part2";
 import { realAnalysisDefinitionExamples } from "@/data/definition-examples-part3";
+import { enrichedMeasureExamples } from "@/data/enriched-measure-examples";
+import { enrichedAlgebraNumericalExamples } from "@/data/enriched-algebra-numerical-examples";
 
 /**
  * Explicitly authored examples keyed to a subject and a definition.
@@ -141,5 +143,6 @@ const examples:Record<string,BookExample>={
 };
 
 export function getCuratedDefinitionExample(subjectSlug:string,title:string):BookExample|null{
-  return examples[subjectSlug+":"+title]??moreDefinitionExamples[subjectSlug+":"+title]??realAnalysisDefinitionExamples[subjectSlug+":"+title]??null;
+  const key=subjectSlug+":"+title;
+  return enrichedMeasureExamples[key]??enrichedAlgebraNumericalExamples[key]??examples[key]??moreDefinitionExamples[key]??realAnalysisDefinitionExamples[key]??null;
 }
