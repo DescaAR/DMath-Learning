@@ -1,12 +1,11 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
 import { lessonVideos } from "@/data/lesson-videos";
 import { parseYouTubeVideo } from "@/lib/youtube-video";
 
-type VideoCard={id:string;watchUrl:string;embedUrl:string;title:string;isLocal:boolean};
-const STORAGE_PREFIX="dmath-learning-videos:v1:";
+type VideoCard = { id:string; watchUrl:string; embedUrl:string; title:string };
 
 function YoutubeMark(){
   return <svg className="learning-video-youtube-mark" viewBox="0 0 28 20" fill="none" aria-hidden="true">
@@ -16,9 +15,9 @@ function YoutubeMark(){
 }
 
 /**
- * The site's public library comes from data/lesson-videos.ts.
- * Pasting into this editor saves privately in this browser because GitHub
- * Pages has no write API or server-side database.
+ * Read-only player. Videos come exclusively from data/lesson-videos.ts at build time.
+ * Visitors cannot add, remove, or edit videos, and nothing is saved in the browser.
+ * Publishing a new video requires repository write access and a new deployment.
  */
 export function LearningVideoSection({
   materialKey,
@@ -31,74 +30,26 @@ export function LearningVideoSection({
 }){
   const {language}=useLanguage();
   const en=language==="en";
-  const [localUrls,setLocalUrls]=useState<string[]>([]);
-  const [ready,setReady]=useState(false);
-  const [draft,setDraft]=useState("");
-  const [editing,setEditing]=useState(false);
-  const [error,setError]=useState("");
   const [playing,setPlaying]=useState<Record<string,boolean>>({});
 
-  useEffect(()=>{
-    setReady(false);
-    setLocalUrls([]);
-    setPlaying({});
-    try{
-      const stored=JSON.parse(localStorage.getItem(STORAGE_PREFIX+materialKey)??"[]");
-      if(Array.isArray(stored))setLocalUrls(stored.filter((entry):entry is string=>
-        typeof entry==="string"&&!!parseYouTubeVideo(entry)).slice(0,30));
-    }catch{setLocalUrls([]);}
-    setReady(true);
-  },[materialKey]);
+  useEffect(()=>setPlaying({}),[materialKey]);
 
   const videos=useMemo(()=>{
     const collected:VideoCard[]=[];
     const ids=new Set<string>();
-    const add=(url:string,title:string|undefined,isLocal:boolean)=>{
-      const parsed=parseYouTubeVideo(url);
-      if(!parsed||ids.has(parsed.id))return;
+    for(const item of lessonVideos[materialKey]??[]){
+      const parsed=parseYouTubeVideo(item.url);
+      if(!parsed||ids.has(parsed.id))continue;
       ids.add(parsed.id);
-      collected.push({id:parsed.id,watchUrl:parsed.watchUrl,embedUrl:parsed.embedUrl,
-        title:title?.trim()||(en?"Learning video ":"Video Pembelajaran ")+(collected.length+1),
-        isLocal});
-    };
-    for(const item of lessonVideos[materialKey]??[])add(item.url,item.title,false);
-    for(const url of localUrls)add(url,undefined,true);
+      collected.push({
+        id:parsed.id,
+        watchUrl:parsed.watchUrl,
+        embedUrl:parsed.embedUrl,
+        title:item.title?.trim()||(en?"Learning video ":"Video Pembelajaran ")+(collected.length+1),
+      });
+    }
     return collected;
-  },[materialKey,localUrls,en]);
-
-  const saveLocal=(items:string[])=>{
-    try{
-      localStorage.setItem(STORAGE_PREFIX+materialKey,JSON.stringify(items));
-      setLocalUrls(items);
-      return true;
-    }catch{
-      setError(en?"Browser storage is unavailable. The link was not saved.":"Penyimpanan browser tidak tersedia. Link belum tersimpan.");
-      return false;
-    }
-  };
-  const addVideo=(event:FormEvent<HTMLFormElement>)=>{
-    event.preventDefault();
-    const parsed=parseYouTubeVideo(draft);
-    if(!parsed){
-      setError(en?"Enter a valid YouTube video link (watch, youtu.be, Shorts, or Live).":"Masukkan link video YouTube yang valid (watch, youtu.be, Shorts, atau Live).");
-      return;
-    }
-    if(videos.some(v=>v.id===parsed.id)){
-      setError(en?"That video is already in this lesson.":"Video tersebut sudah tersedia pada materi ini.");
-      return;
-    }
-    if(localUrls.length>=30){
-      setError(en?"Maximum of 30 personal videos per lesson.":"Maksimal 30 video pribadi untuk satu materi.");
-      return;
-    }
-    if(saveLocal([...localUrls,parsed.watchUrl])){
-      setDraft("");setError("");setEditing(false);
-    }
-  };
-  const removeLocal=(id:string)=>{
-    saveLocal(localUrls.filter(url=>parseYouTubeVideo(url)?.id!==id));
-    setPlaying(previous=>({...previous,[id]:false}));
-  };
+  },[materialKey,en]);
 
   return <section id={sectionId} className={"book-section learning-video-section "+className} aria-labelledby={sectionId+"-heading"}>
     <div className="learning-video-top">
@@ -106,13 +57,13 @@ export function LearningVideoSection({
         <span className="learning-video-eyebrow"><span className="learning-video-eyebrow-dot"/> {en?"WATCH & REVIEW":"TONTON & PERDALAM"}</span>
         <h2 id={sectionId+"-heading"}>{en?"Learning Videos":"Video Pembelajaran"}</h2>
         <p>{en
-          ?"Review the lesson through YouTube videos without leaving DMath Learning. Open the YouTube logo to watch the original."
-          :"Perdalam materi melalui video YouTube langsung di DMath Learning. Klik logo YouTube untuk membuka video aslinya."}</p>
+          ?"Review this lesson through curated YouTube videos within DMath Learning, or open the original on YouTube."
+          :"Pelajari kembali materi melalui video YouTube pilihan di DMath Learning, atau buka video aslinya di YouTube."}</p>
       </div>
-      <span className="learning-video-count">{videos.length} {en?"video(s)":"video"}</span>
+      {videos.length>0&&<span className="learning-video-count">{videos.length} {en?"video(s)":"video"}</span>}
     </div>
 
-    {ready&&videos.length>0
+    {videos.length>0
       ?<div className="learning-video-grid">
         {videos.map((video,index)=><article className="learning-video-card" key={video.id}>
           <div className="learning-video-media">
@@ -134,52 +85,25 @@ export function LearningVideoSection({
           </div>
           <div className="learning-video-card-footer">
             <div className="learning-video-card-meta">
-              <span>{en?"VIDEO ":"VIDEO "}{String(index+1).padStart(2,"0")}</span>
+              <span>VIDEO {String(index+1).padStart(2,"0")}</span>
               <h3>{video.title}</h3>
-              {video.isLocal&&<small>{en?"Saved on this device":"Tersimpan di perangkat ini"}</small>}
             </div>
-            <div className="learning-video-card-actions">
-              <a className="learning-video-youtube-link" href={video.watchUrl} target="_blank" rel="noopener noreferrer"
-                aria-label={(en?"Watch on YouTube: ":"Tonton di YouTube: ")+video.title}
-                title={en?"Open original on YouTube":"Buka video asli di YouTube"}>
-                <YoutubeMark/><span>YouTube ↗</span>
-              </a>
-              {video.isLocal&&<button className="learning-video-remove" type="button" onClick={()=>removeLocal(video.id)}
-                aria-label={(en?"Remove saved video: ":"Hapus video tersimpan: ")+video.title}
-                title={en?"Remove personal video":"Hapus video pribadi"}>×</button>}
-            </div>
+            <a className="learning-video-youtube-link" href={video.watchUrl} target="_blank" rel="noopener noreferrer"
+              aria-label={(en?"Watch on YouTube: ":"Tonton di YouTube: ")+video.title}
+              title={en?"Open original on YouTube":"Buka video asli di YouTube"}>
+              <YoutubeMark/><span>YouTube ↗</span>
+            </a>
           </div>
         </article>)}
       </div>
-      :<div className="learning-video-empty">
+      :<div className="learning-video-empty" role="status">
         <div className="learning-video-empty-icon"><YoutubeMark/></div>
-        <div><strong>{en?"No video has been added yet":"Belum ada video yang ditambahkan"}</strong>
-          <p>{en?"You can paste a YouTube link to watch it here.":"Tempelkan link YouTube untuk menontonnya di sini."}</p>
+        <div>
+          <strong>{en?"Video coming soon":"Video belum tersedia"}</strong>
+          <p>{en
+            ?"Curated videos for this lesson will appear here once published by DMath Learning."
+            :"Video untuk materi ini akan ditampilkan setelah ditambahkan oleh pengelola DMath Learning."}</p>
         </div>
       </div>}
-
-    <div className="learning-video-add-panel">
-      <button type="button" className="learning-video-add-toggle" onClick={()=>{setEditing(v=>!v);setError("");}} aria-expanded={editing}
-        aria-controls={sectionId+"-form"}>
-        <span aria-hidden="true">{editing?"−":"+"}</span>
-        {en?"Add a YouTube video":"Tambahkan video YouTube"}
-      </button>
-      {editing&&<div id={sectionId+"-form"} className="learning-video-editor">
-        <form onSubmit={addVideo}>
-          <label htmlFor={sectionId+"-input"}>{en?"YouTube video URL":"Link video YouTube"}</label>
-          <div className="learning-video-input-row">
-            <input id={sectionId+"-input"} type="url" value={draft} onChange={e=>{setDraft(e.target.value);setError("");}}
-              placeholder="https://www.youtube.com/watch?v=..." autoComplete="off" required/>
-            <button type="submit">{en?"Add video":"Tambahkan"}</button>
-          </div>
-          {error&&<p className="learning-video-error" role="alert">{error}</p>}
-        </form>
-        <p className="learning-video-notice">{en
-          ?"Links pasted here are saved in this browser only, not published to other visitors. For a permanent public video, add it to data/lesson-videos.ts in the GitHub repository."
-          :"Link yang dimasukkan di sini tersimpan hanya pada browser/perangkat ini, belum terlihat oleh pengunjung lain. Agar tampil untuk semua pengunjung, tambahkan link ke data/lesson-videos.ts di repository GitHub."}</p>
-        <a className="learning-video-public-link" href="https://github.com/DescaAR/DMath-Learning/edit/github-pages-static/data/lesson-videos.ts"
-          target="_blank" rel="noopener noreferrer">{en?"Edit public video list on GitHub ↗":"Kelola video publik di GitHub ↗"}</a>
-      </div>}
-    </div>
   </section>;
 }
