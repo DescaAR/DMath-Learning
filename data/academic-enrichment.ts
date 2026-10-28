@@ -427,5 +427,185 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
         "provenance": "dmath-original"
       }
     ]
+  },
+  "de-exact": {
+    "intro": [
+      "Persamaan eksak diselesaikan dengan membangun fungsi potensial. Kesamaan turunan silang merupakan syarat perlu keeksakan, sedangkan kecukupannya membutuhkan kondisi domain."
+    ],
+    "formal": [
+      {
+        "kind": "definition",
+        "title": "Persamaan Diferensial Eksak dan Fungsi Potensial",
+        "statement": "Bentuk $M(x,y)\\,dx+N(x,y)\\,dy$ disebut eksak jika terdapat $F\\in C^1(D)$ dengan $F_x=M$ dan $F_y=N$ pada domain $D$. Solusi implisit memenuhi $F(x,y)=C$."
+      },
+      {
+        "kind": "proposition",
+        "title": "Kesamaan Turunan Campuran pada Persamaan Eksak",
+        "statement": "Jika $M,N\\in C^1(D)$ dan $M=F_x$, $N=F_y$ untuk fungsi potensial $F$, maka $M_y=N_x$ di $D$.",
+        "proof": [
+          "Dari $M=F_x$ dan $N=F_y$, diperoleh $M_y=F_{xy}$ serta $N_x=F_{yx}$.",
+          "Karena $M,N\\in C^1(D)$, turunan campuran kedua tersebut kontinu dan Teorema Clairaut dapat diterapkan.",
+          "Diperoleh $F_{xy}=F_{yx}$, sehingga $M_y=N_x$."
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "prompt": "Tentukan solusi implisit $(3x^2+2y)\\,dx+(2x+4y)\\,dy=0$.",
+        "hint": "Bangun potensial F dengan mengintegralkan M terhadap x.",
+        "answer": "Diketahui $M_y=2=N_x$, sehingga pada $\\mathbb R^2$ terdapat potensial. Integrasi $F_x=3x^2+2y$ memberi $F=x^3+2xy+g(y)$. Dari $F_y=2x+g'(y)=2x+4y$ diperoleh $g=2y^2$ hingga konstanta. Solusi implisit adalah $x^3+2xy+2y^2=C$.",
+        "provenance": "dmath-original"
+      }
+    ]
+  },
+  "de-linear-first": {
+    "intro": [
+      "Faktor integrasi mengubah persamaan linear menjadi turunan dari hasil kali. Rumus solusi dapat diturunkan langsung dan sekaligus membuktikan keunikan masalah nilai awal."
+    ],
+    "formal": [
+      {
+        "kind": "definition",
+        "title": "Persamaan Linear Orde Satu",
+        "statement": "Persamaan $y'+p(t)y=q(t)$ dengan $p,q$ kontinu pada interval $I$ disebut persamaan diferensial linear orde satu."
+      },
+      {
+        "kind": "theorem",
+        "title": "Solusi Unik Persamaan Linear Orde Satu",
+        "statement": "Jika $p,q$ kontinu pada interval $I$ yang memuat $t_0$, masalah $y'+py=q$, $y(t_0)=y_0$, mempunyai solusi unik $y(t)=e^{-P(t)}[y_0+\\int_{t_0}^t e^{P(s)}q(s)\\,ds]$ dengan $P(t)=\\int_{t_0}^t p(u)\\,du$.",
+        "proof": [
+          "Karena $(e^P)'=pe^P$, aturan hasil kali memberi $(e^Py)'=e^P(y'+py)=e^Pq$.",
+          "Integrasi dari $t_0$ ke $t$ dan fakta $P(t_0)=0$ menghasilkan $e^{P(t)}y(t)=y_0+\\int_{t_0}^te^{P(s)}q(s)\\,ds$.",
+          "Rumus ini memverifikasi persamaan dan syarat awal. Jika $y_1,y_2$ dua solusi, selisih $z$ memenuhi $(e^Pz)'=0$ serta $z(t_0)=0$, sehingga $z=0$ pada $I$."
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "prompt": "Selesaikan $y'+y=t$ dengan $y(0)=0$.",
+        "hint": "Kalikan dengan e^t lalu integrasikan secara parsial.",
+        "answer": "Faktor integrasi $e^t$ memberi $(e^ty)'=te^t$. Integrasi dari nol ke $t$ menghasilkan $e^ty=(t-1)e^t+1$. Jadi $y(t)=t-1+e^{-t}$. Nilai awal dan persamaan dapat diperiksa melalui diferensiasi.",
+        "provenance": "dmath-original"
+      }
+    ]
+  },
+  "de-integrating-factors": {
+    "intro": [
+      "Faktor integrasi adalah pengali yang tidak nol yang mengubah persamaan menjadi bentuk dengan turunan hasil kali."
+    ],
+    "formal": [
+      {
+        "kind": "definition",
+        "title": "Faktor Integrasi Persamaan Linear",
+        "statement": "Untuk persamaan $y'+p(t)y=q(t)$ dengan $p$ kontinu, faktor integrasi dapat dipilih $\\mu(t)=e^{P(t)}$, $P'(t)=p(t)$."
+      },
+      {
+        "kind": "lemma",
+        "title": "Identitas Faktor Integrasi",
+        "statement": "Jika $P'=p$ dan $\\mu=e^P$, maka $(\\mu y)'=\\mu(y'+py)$ untuk setiap $y\\in C^1(I)$.",
+        "proof": [
+          "Aturan rantai memberi $\\mu'=P'e^P=p\\mu$.",
+          "Dari aturan hasil kali, $(\\mu y)'=\\mu'y+\\mu y'$.",
+          "Substitusi $\\mu'=p\\mu$ menghasilkan $(\\mu y)'=\\mu(py+y')$."
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "prompt": "Ubah $y'+(2/t)y=t^2$ dengan $t>0$ menjadi persamaan turunan hasil kali.",
+        "hint": "Tentukan antiturunan 2/t pada t positif.",
+        "answer": "Antiturunan $2/t$ adalah $2\\ln t$. Ambil $\\mu=e^{2\\ln t}=t^2$. Setelah dikalikan, diperoleh $t^2y'+2ty=t^4$, yaitu $(t^2y)'=t^4$.",
+        "provenance": "dmath-original"
+      }
+    ]
+  },
+  "de-growth-decay-mixing": {
+    "intro": [
+      "Pertumbuhan dan peluruhan eksponensial muncul ketika laju perubahan sebanding dengan nilai fungsi itu sendiri."
+    ],
+    "formal": [
+      {
+        "kind": "definition",
+        "title": "Model Pertumbuhan Eksponensial",
+        "statement": "Persamaan $y'=ky$ dengan $k\\in\\mathbb R$ mempunyai solusi bernilai awal $y(t_0)=y_0$ berbentuk $y(t)=y_0e^{k(t-t_0)}$."
+      },
+      {
+        "kind": "proposition",
+        "title": "Keunikan Solusi Model Eksponensial",
+        "statement": "Untuk $k,y_0,t_0\\in\\mathbb R$, masalah $y'=ky$, $y(t_0)=y_0$, mempunyai tepat satu solusi $C^1$ pada $\\mathbb R$.",
+        "proof": [
+          "Fungsi $y(t)=y_0e^{k(t-t_0)}$ memenuhi $y'=ky$ dan $y(t_0)=y_0$ melalui diferensiasi langsung.",
+          "Jika $z$ solusi lain, maka turunan $e^{-kt}z(t)$ sama dengan $e^{-kt}(z'-kz)=0$, sehingga hasil kali tersebut konstan.",
+          "Nilai awal memaksa $e^{-kt}z(t)=e^{-kt_0}y_0$, jadi $z(t)=y(t)$ untuk semua $t$."
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "prompt": "Populasi awal 200 tumbuh kontinu pada laju 5% per satuan waktu. Tentukan waktu penggandaan.",
+        "hint": "Setarakan 200e^{0.05t} dengan 400.",
+        "answer": "Persamaan $400=200e^{0.05t}$ memberikan $e^{0.05t}=2$. Maka $t=\\ln2/0.05\\approx13.8629$ satuan waktu.",
+        "provenance": "dmath-original"
+      }
+    ]
+  },
+  "de-second-intro": {
+    "intro": [
+      "Linearitas operator diferensial menghasilkan prinsip superposisi, yaitu kombinasi linear solusi homogen tetap merupakan solusi."
+    ],
+    "formal": [
+      {
+        "kind": "definition",
+        "title": "Persamaan Linear Homogen Orde Dua",
+        "statement": "Persamaan $y''+p(t)y'+q(t)y=0$ pada interval $I$, dengan $p,q$ kontinu, disebut persamaan linear homogen orde dua."
+      },
+      {
+        "kind": "proposition",
+        "title": "Prinsip Superposisi Solusi Homogen",
+        "statement": "Jika $y_1,y_2$ menyelesaikan $y''+py'+qy=0$, maka $c_1y_1+c_2y_2$ juga menyelesaikannya untuk setiap konstanta $c_1,c_2$.",
+        "proof": [
+          "Definisikan $L[y]=y''+py'+qy$. Operator $L$ bersifat linear karena diferensiasi dan perkalian oleh koefisien tetap linear.",
+          "Untuk $c_1,c_2$ berlaku $L[c_1y_1+c_2y_2]=c_1L[y_1]+c_2L[y_2]$.",
+          "Karena $L[y_1]=L[y_2]=0$, diperoleh $L[c_1y_1+c_2y_2]=0$."
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "prompt": "Periksa apakah $y=2\\cos t-3\\sin t$ menyelesaikan $y''+y=0$.",
+        "hint": "Gunakan turunan kedua sinus dan kosinus.",
+        "answer": "Diperoleh $y''=-2\\cos t+3\\sin t=-y$. Jadi $y''+y=0$ untuk semua $t\\in\\mathbb R$.",
+        "provenance": "dmath-original"
+      }
+    ]
+  },
+  "de-homogeneous-first": {
+    "intro": [
+      "Substitusi $y=xv$ mereduksi persamaan homogen orde satu menjadi persamaan untuk rasio $v=y/x$ pada interval yang tidak memuat nol."
+    ],
+    "formal": [
+      {
+        "kind": "definition",
+        "title": "Substitusi Homogen Orde Satu",
+        "statement": "Pada interval $x\\ne0$, persamaan $y'=F(y/x)$ dapat disubstitusi dengan $v=y/x$, sehingga $y=xv$ dan $xv'=F(v)-v$."
+      },
+      {
+        "kind": "lemma",
+        "title": "Ekuivalensi Reduksi Persamaan Homogen",
+        "statement": "Untuk $x\\ne0$, persamaan $y'=F(y/x)$ ekuivalen dengan $xv'=F(v)-v$ melalui substitusi $y=xv$.",
+        "proof": [
+          "Karena $y=xv$, aturan hasil kali memberi $y'=v+xv'$ dan $y/x=v$.",
+          "Substitusi ke persamaan semula memberikan $v+xv'=F(v)$, yakni $xv'=F(v)-v$.",
+          "Sebaliknya, dari solusi $v$ persamaan terakhir, fungsi $y=xv$ memenuhi $y'=v+xv'=F(v)=F(y/x)$."
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "prompt": "Selesaikan $y'=1+y/x$ pada $x>0$.",
+        "hint": "Gunakan y=xv sehingga xv'=1.",
+        "answer": "Dari $y=xv$ diperoleh $v+xv'=1+v$, sehingga $v'=1/x$. Integrasi memberi $v=\\ln x+C$ pada $x>0$. Karena itu solusi adalah $y=x(\\ln x+C)$.",
+        "provenance": "dmath-original"
+      }
+    ]
   }
 };
