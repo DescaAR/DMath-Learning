@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run audit:latex && npm run audit:depth && npm run audit:thesis && npm run audit:solutions && npm run audit:enrichment && npm run audit:videos && npm run audit:tilings && npm run audit:graph-definitions && npm run audit:euclidean-division && npm run audit:supremum-applications && npm run audit:precise-limit && next build",
+    "build": "npm run audit:latex && npm run audit:depth && npm run audit:thesis && npm run audit:solutions && npm run audit:enrichment && npm run audit:videos && npm run audit:tilings && npm run audit:graph-definitions && npm run audit:euclidean-division && npm run audit:supremum-applications && npm run audit:precise-limit && npm run audit:group-axioms && next build",
     "start": "next start",
     "lint": "next lint",
     "audit:content": "node scripts/audit-content.mjs",
@@ -18,7 +18,8 @@
     "audit:graph-definitions": "node scripts/audit-graph-definitions.mjs",
     "audit:euclidean-division": "node scripts/audit-euclidean-division.mjs",
     "audit:supremum-applications": "node scripts/audit-supremum-applications.mjs",
-    "audit:precise-limit": "node scripts/audit-precise-limit.mjs"
+    "audit:precise-limit": "node scripts/audit-precise-limit.mjs",
+    "audit:group-axioms": "node scripts/audit-group-axioms.mjs"
   },
   "dependencies": {
     "next": "15.5.26",
