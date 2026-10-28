@@ -2,6 +2,20 @@
 
 Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages-static`, bukan menganggap seluruh bidang selesai setelah satu submateri. Jangan ubah branch `main`. Setiap sesi: periksa riwayat commit, pilih submateri berbeda yang masih dangkal/keliru, sempurnakan materi dan visualisasi, jalankan build, lalu perbarui catatan ini dengan bukti perubahan.
 
+## Catatan sesi 2026-10-29 — Analisis Real (aplikasi supremum)
+
+**Bidang disentuh:** 09 Analisis Real, submateri aplikasi-supremum, URL: https://descaar.github.io/DMath-Learning/materi/analisis-real/aplikasi-supremum/.
+
+**Masalah awal:** materi lama memiliki klaim eksistensi akar kuadrat positif tanpa bukti; kerapatan rasional hanya diuraikan sangat singkat; definisi tidak mempunyai contoh langsung yang lengkap; jawaban latihan sebagian berupa satu kalimat. Materi publik Aritmetika (pecahan) saat ini dinonaktifkan oleh lib/public-content.ts, sehingga pengayaan diarahkan pada submateri Analisis Real yang benar-benar mempunyai rute publik. Jangan mengubah kebijakan publikasi tingkat SD/SMP/SMA tanpa permintaan pengguna.
+
+**Perbaikan:** membuat sumber khusus data/supremum-applications-content.ts dengan 5 definisi formal (sifat Archimedean, himpunan padat, fungsi lantai, akar kuadrat positif, irasional), masing-masing dengan contoh yang ditautkan eksplisit; 8 hasil formal yang semuanya memiliki pembuktian lengkap (Archimedean, pemilihan $1/n$, eksistensi/keunikan lantai, kerapatan rasional, eksistensi/keunikan akar kuadrat positif melalui supremum, irasionalitas akar dua, kerapatan irasional, dan batas galat metode pembagian dua); 8 contoh terbahas; serta 8 latihan bertingkat dengan solusi substantif. Pembuktian keberadaan akar menguraikan dua kasus kontradiksi $x^2<a$ dan $x^2>a$ secara terpisah. Rujukan Bartle–Sherbert (2011) dan Rudin (1976) dicantumkan.
+
+**Visualisasi:** components/SupremumApplicationsLab.tsx menyajikan tiga mode SVG interaktif: saksi Archimedean pada garis bilangan, pecahan rasional yang berada ketat di dalam interval dengan empat preset (termasuk interval negatif dan ujung irasional), serta pengurungan akar kuadrat melalui pembagian dua sampai 12 langkah. Fungsi matematika murni yang dapat diuji terpisah berada di lib/supremum-explorer.ts; visualisasi tampil pada pengantar dan bagian visualisasi.
+
+**Pengujian:** scripts/audit-supremum-applications.mjs diintegrasikan ke npm run build untuk memeriksa contoh-definisi, bukti, solusi, koneksi katalog, aksesibilitas SVG, konstruksi saksi rasional di 1.830 interval, dan pengurungan akar pada 143 kombinasi input/langkah. **Status publikasi:** hanya dinyatakan berhasil setelah GitHub Actions untuk commit final menunjukkan success.
+
+**Prioritas lanjutan:** 02 Aljabar atau 07 Kalkulus yang mempunyai halaman publik, atau 09 Analisis Real lain yang belum lengkap; rotasikan bidang agar semua 26 memperoleh pengayaan. Jangan mengulang aplikasi-supremum, nt-euclid-division, gt-definitions, atau komb-perfect-covers.
+
 ## Catatan sesi 2026-10-29 — Teori Bilangan (pembagian Euclid)
 
 **Bidang disentuh:** 03 Teori Bilangan, submateri `nt-euclid-division` (Lemma Pembagian Euclid), URL: https://descaar.github.io/DMath-Learning/materi/teori-bilangan-olimpiade/nt-euclid-division/.
@@ -56,7 +70,7 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 | 06 | Trigonometri | Belum diaudit pada rangkaian ini |
 | 07 | Kalkulus | Belum diaudit pada rangkaian ini |
 | 08 | Aljabar Linear | Belum diaudit pada rangkaian ini |
-| 09 | Analisis Real | Belum diaudit pada rangkaian ini |
+| 09 | Analisis Real | **1 submateri diperbaiki:** aplikasi-supremum; bidang belum selesai |
 | 10 | Analisis Kompleks | Belum diaudit pada rangkaian ini |
 | 11 | Struktur Aljabar | Belum diaudit pada rangkaian ini |
 | 12 | Statistika | Belum diaudit pada rangkaian ini |
@@ -77,8 +91,8 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 
 ## Antrian sesi berikutnya
 
-1. **Aritmetika**: pilih satu submateri (misalnya pecahan atau bilangan bulat) yang masih dangkal; tulis pembuktian lengkap dan visualisasi khusus. Jangan mengulang `nt-euclid-division`.
-2. **Analisis Real**: pilih submateri dengan definisi atau bukti yang masih terlalu ringkas; tambahkan contoh terhubung dan pembuktian valid.
-3. **Teori Graf lanjutan**, `gt-examples` atau `gt-connectivity`: pastikan graf bipartit, lintasan, siklus, dan keterhubungan mempunyai definisi presisi, pembuktian lengkap, serta ilustrasi khusus. Jangan mengulang `gt-definitions`.
+1. **02 Aljabar / 07 Kalkulus:** pilih submateri dengan rute publik dan kesalahan bukti atau latihan yang masih dangkal; prioritaskan pengayaan menyeluruh dengan visualisasi matematis khusus.
+2. **09 Analisis Real lanjutan:** pilih submateri berbeda, misalnya nilai-mutlak-dan-garis-real atau barisan-dan-limit, dan audit semua hipotesis sebelum menambah teorema.
+3. **01 Aritmetika:** submateri pecahan sudah ada dalam sumber, tetapi rute tingkat SD dan slug-nya sengaja disembunyikan oleh lib/public-content.ts. Jangan mengubah visibilitas tanpa arahan eksplisit; pilih dahulu bidang yang memiliki halaman publik.
 
-**Progres pekerjaan yang di-commit pada level submateri:** 3 submateri di 3 dari 26 bidang telah dikerjakan secara mendalam; 23 bidang belum disentuh dalam rangkaian ini. Status terbit untuk sesi terbaru hanya boleh dikonfirmasi setelah GitHub Actions berhasil. Ketiga bidang yang disentuh belum berarti seluruh isi bidang selesai. Pantau `material-depth-report.json` dan riwayat commit sebelum memilih pekerjaan baru.
+**Progres pekerjaan yang di-commit pada level submateri:** 4 submateri di 4 dari 26 bidang telah dikerjakan secara mendalam; 22 bidang belum disentuh dalam rangkaian ini. Tidak satu pun bidang dinyatakan selesai seluruhnya. Periksa GitHub Actions dan material-depth-report.json sebelum melaporkan status publikasi atau memilih pekerjaan berikutnya.
