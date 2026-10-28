@@ -135,8 +135,8 @@ export const enrichedAlgebraNumericalExamples:Record<string,BookExample>={
     ],
     "conclusion": "$\\langle[4]\\rangle=\\{[0],[2],[4],[6],[8]\\}$."
   },
-  "struktur-aljabar:Normal Subgrup": {
-    "forDefinition": "Normal Subgrup",
+  "struktur-aljabar:Subgrup Normal": {
+    "forDefinition": "Subgrup Normal",
     "title": "Normalitas pada Grup Abelian",
     "problem": "Buktikan bahwa $H=3\\mathbb Z$ normal dalam grup $(\\mathbb Z,+)$.",
     "solution": [
