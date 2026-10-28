@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { LearningVideoSection } from "@/components/LearningVideoSection";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { RichMath } from "@/components/RichMath";
 import { MathVisualization, type VisualizationKind } from "@/components/MathVisualizations";
@@ -149,7 +150,7 @@ export function BookSectionPage({
     ...(examplesForSection.length?[{id:"book-lesson-6",label:"Contoh Terbahas"},]:[]),
     {id:"book-lesson-7",label:"Visualisasi"},
     {id:"book-lesson-summary",label:"Ringkasan Definisi & Teorema"},
-    {id:"book-latihan-soal",label:"Latihan Soal"},
+    {id:"book-latihan-soal",label:"Latihan Soal"},    {id:"book-materi-video",label:"Video Pembelajaran"},
   ];
 
   return(
@@ -362,6 +363,8 @@ export function BookSectionPage({
           })}
         </div>
       </section>
+
+      <LearningVideoSection materialKey={subject.slug+"/"+section.slug} sectionId="book-materi-video"/>
 
       <section className="next-learning-block textbook-next">
         <div>
