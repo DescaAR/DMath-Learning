@@ -96,7 +96,7 @@ body{
   line-height:1.85;
 }
 .textbook-page .chapter-meta{gap:8px;flex-wrap:wrap}
-.textbook-page .chapter-meta > span{
+.textbook-page .chapter-meta > .chapter-meta-pill{
   border:1px solid var(--border);
   border-radius:999px;
   background:color-mix(in srgb,var(--surface) 70%,transparent);
@@ -195,6 +195,29 @@ body{
   background:linear-gradient(135deg,var(--surface-2),var(--surface));
   box-shadow:0 12px 38px rgba(8,36,83,.06);
 }
+
+/* Meta pills: ONE visual container only.
+   RichMath can emit nested spans for mathematical labels; those are text only. */
+.textbook-page .chapter-meta > .chapter-meta-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:34px;
+  white-space:nowrap;
+  box-shadow:none;
+}
+.textbook-page .chapter-meta > .chapter-meta-pill > .math-title-inline,
+.textbook-page .chapter-meta > .chapter-meta-pill > .math-title-inline > span:not(.math-inline){
+  display:inline;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  outline:0!important;
+  padding:0!important;
+  margin:0;
+}
+
 /* YouTube block */
 .learning-video-section{
   --lv-border:var(--border);
