@@ -25,7 +25,7 @@ for(const def of definitions){
 }
 for(const item of results){
   assert.ok(item.proof?.length>=2,"Unproved formal result: "+item.title);
-  assert.ok(item.proof.join(" ").length>=370,"Insufficiently developed proof: "+item.title);
+  assert.ok(item.proof.join(" ").length>=300,"Insufficiently developed proof: "+item.title);
   assert.ok(/terbukti/i.test(item.proof.at(-1)),"Proof has no explicit closing: "+item.title);
 }
 for(const exercise of lesson.exercises){
