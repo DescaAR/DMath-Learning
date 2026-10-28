@@ -309,21 +309,21 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
     ],
     "formal": [
       {
-        "kind": "lemma",
-        "title": "Irisan Dua Subgrup adalah Subgrup",
-        "statement": "Jika $H,K\\le G$, maka $H\\cap K$ merupakan subgrup dari $G$.",
+        "kind": "proposition",
+        "title": "Gabungan Dua Subgrup",
+        "statement": "Untuk subgrup $H,K\\le G$, gabungan $H\\cup K$ merupakan subgrup jika dan hanya jika $H\\subseteq K$ atau $K\\subseteq H$.",
         "proof": [
-          "Karena $H$ dan $K$ subgrup, identitas $e$ berada pada keduanya, sehingga $H\\cap K$ tidak kosong.",
-          "Ambil $a,b\\in H\\cap K$. Kedua subgrup tertutup terhadap $ab^{-1}$, sehingga $ab^{-1}\\in H$ dan $ab^{-1}\\in K$.",
-          "Dengan demikian, $ab^{-1}\\in H\\cap K$. Kriteria subgrup satu langkah menunjukkan $H\\cap K\\le G$."
+          "(⇒) Misalkan $H\\cup K$ subgrup dan andaikan $H\\nsubseteq K$ serta $K\\nsubseteq H$. Pilih $h\\in H\\setminus K$ dan $k\\in K\\setminus H$.",
+          "Karena $h,k\\in H\\cup K$, ketertutupan operasi memberikan $hk\\in H\\cup K$. Jika $hk\\in H$, maka $k=h^{-1}(hk)\\in H$, kontradiksi. Jika $hk\\in K$, maka $h=(hk)k^{-1}\\in K$, juga kontradiksi.",
+          "(⇐) Jika $H\\subseteq K$, maka $H\\cup K=K$ merupakan subgrup. Jika $K\\subseteq H$, gabungannya sama dengan $H$, yang juga subgrup. Dengan demikian kedua arah terbukti."
         ]
       }
     ],
     "exercises": [
       {
-        "prompt": "Tentukan $4\\mathbb Z\\cap6\\mathbb Z$ sebagai subgrup $\\mathbb Z$.",
-        "hint": "Cari bilangan bulat yang habis dibagi empat sekaligus enam.",
-        "answer": "Bilangan yang sekaligus kelipatan $4$ dan $6$ adalah kelipatan $\\operatorname{lcm}(4,6)=12$. Karena itu $4\\mathbb Z\\cap6\\mathbb Z=12\\mathbb Z$, yang memang subgrup penjumlahan.",
+        "prompt": "Apakah $2\\mathbb Z\\cup3\\mathbb Z$ merupakan subgrup $(\\mathbb Z,+)$? Buktikan.",
+        "hint": "Periksa apakah salah satu subgrup memuat yang lain, atau uji jumlah dua anggotanya.",
+        "answer": "Himpunan $2\\mathbb Z$ tidak termuat dalam $3\\mathbb Z$, karena $2$ bukan kelipatan $3$. Sebaliknya $3\\mathbb Z$ tidak termuat dalam $2\\mathbb Z$, karena $3$ bukan kelipatan $2$. Menurut proposisi tentang gabungan dua subgrup, $2\\mathbb Z\\cup3\\mathbb Z$ bukan subgrup. Secara langsung, $2$ dan $3$ berada dalam gabungan, tetapi $2+3=5$ tidak berada dalam salah satunya.",
         "provenance": "dmath-original"
       }
     ]
@@ -441,7 +441,7 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
       {
         "kind": "proposition",
         "title": "Kesamaan Turunan Campuran pada Persamaan Eksak",
-        "statement": "Jika $M,N\\in C^1(D)$ dan $M=F_x$, $N=F_y$ untuk fungsi potensial $F$, maka $M_y=N_x$ di $D$.",
+        "statement": "Jika $D\\subseteq\\mathbb R^2$ terbuka, $M,N\\in C^1(D)$, dan terdapat fungsi potensial $F$ dengan $M=F_x$, $N=F_y$, maka $M_y=N_x$ di $D$.",
         "proof": [
           "Dari $M=F_x$ dan $N=F_y$, diperoleh $M_y=F_{xy}$ serta $N_x=F_{yx}$.",
           "Karena $M,N$ mempunyai turunan parsial pertama yang kontinu di $D$, kedua turunan campuran $F_{xy}$ dan $F_{yx}$ ada serta kontinu. Dengan demikian, hipotesis Teorema Clairaut terpenuhi pada domain terbuka $D$.",
