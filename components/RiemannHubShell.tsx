@@ -90,7 +90,7 @@ export function RiemannHubShell({
           <h1><LabelMath>{title}</LabelMath></h1>
           {lead&&<p className="chapter-lead"><RichMath>{lead}</RichMath></p>}
 
-          {meta.length>0&&<div className="chapter-meta textbook-meta">{meta.map((item)=><span key={item}><LabelMath>{item}</LabelMath></span>)}</div>}
+          {meta.length>0&&<div className="chapter-meta textbook-meta">{meta.map((item)=><span className="chapter-meta-pill" key={item}>{item.includes("$")||item.includes("\\(")||item.includes("\\[")?<LabelMath>{item}</LabelMath>:item}</span>)}</div>}
 
           {stats.length>0&&(
             <div className="chapter-stat-grid">
