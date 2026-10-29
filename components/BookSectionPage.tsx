@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { LearningVideoSection } from "@/components/LearningVideoSection";
+import { PracticeCompletionToggle, PracticeSectionProgress } from "@/components/PracticeCompletion";
 import { RiemannHubShell } from "@/components/RiemannHubShell";
 import { RichMath } from "@/components/RichMath";
 import { MathVisualization, type VisualizationKind } from "@/components/MathVisualizations";
@@ -355,14 +356,16 @@ export function BookSectionPage({
         <span className="eyebrow">Latihan Soal dan Solusi</span>
         <h2>{content.exercises.length} latihan soal</h2>
         <p className="ird-paragraph">Kerjakan soal terlebih dahulu. Petunjuk dan solusi lengkap dapat dibuka setelah mencoba.</p>
+        <PracticeSectionProgress lessonKey={subject.slug+"/"+section.slug} exerciseKeys={content.exercises.map((_,index)=>"exercise-"+index)}/>
         <div className="ird-worked-grid">
           {content.exercises.map((exercise,index)=>{
             const steps=splitAcademicSolution(exercise.answer);
             return(
-              <article className="ird-worked-card" key={index}>
+              <article className="ird-worked-card dmath-exercise-card" key={index}>
                 <div className="ird-worked-head">
                   <div className="ird-problem-number">{String(index+1).padStart(2,"0")}</div>
                   <div><span className="eyebrow">Latihan Soal</span><h3>Soal {index+1}</h3></div>
+                  <PracticeCompletionToggle lessonKey={subject.slug+"/"+section.slug} exerciseKey={"exercise-"+index}/>
                 </div>
                 <div className="ird-worked-prompt"><Text>{exercise.prompt}</Text></div>
                 <details className="ird-proof">
