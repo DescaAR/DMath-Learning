@@ -79,7 +79,7 @@ export const linearSubspacesContent:BookLessonContent = {
         "Karena $T$ linear, $T(au+bv)=aT(u)+bT(v)=a0_U+b0_U=0_U$. Dengan demikian $au+bv\\in\\ker T$.",
         "Kernel takkosong dan tertutup terhadap kombinasi linear, sehingga merupakan subruang menurut uji subruang. Untuk $T(x)=Ax$, persamaan $T(x)=0$ sama persis dengan $Ax=0$."
       ],
-      "explanation": "Sistem takhomogen $Ax=b$ dengan $b\ne0$ tidak mempunyai himpunan solusi yang merupakan subruang, walaupun mungkin memiliki banyak solusi."
+      "explanation": "Sistem takhomogen $Ax=b$ dengan $b\\ne0$ tidak mempunyai himpunan solusi yang merupakan subruang, walaupun mungkin memiliki banyak solusi."
     },
     {
       "kind": "theorem",
