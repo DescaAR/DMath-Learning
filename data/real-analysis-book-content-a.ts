@@ -53,10 +53,10 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
   "Setelah induksi biasa, pembahasan diperluas ke basis sembarang, induksi kuat, dan induksi dua langkah. Pada setiap contoh, pernyataan $P(n)$, domain indeks, hipotesis yang boleh digunakan, serta bentuk tepat $P(k+1)$ dinyatakan terpisah. Rujukan: K. H. Rosen, Discrete Mathematics and Its Applications, edisi ke-8 (2019), bagian Mathematical Induction; D. J. Velleman, How to Prove It, edisi ke-3 (2019), bagian Induction."
  ],
  formal:[
-  D("Himpunan Induktif","Diberikan bilangan bulat $n_0$ dan $I_{n_0}=\{n\\in\\mathbb Z:n\\ge n_0\}$. Suatu himpunan $S\\subseteq I_{n_0}$ disebut induktif mulai dari $n_0$ apabila $n_0\\in S$ dan untuk setiap $k\\in I_{n_0}$ berlaku $k\\in S\\Rightarrow k+1\\in S$. Kedua syarat tersebut harus diperiksa secara terpisah."),
-  T("Prinsip Induksi Matematika","Misalkan $P(n)$ suatu pernyataan untuk setiap $n\\in\\mathbb N=\{1,2,\\ldots\}$. Jika (i) $P(1)$ benar dan (ii) untuk setiap $k\\ge1$, $P(k)\\Rightarrow P(k+1)$ benar, maka $P(n)$ benar untuk setiap $n\\in\\mathbb N$.",[
+  D("Himpunan Induktif","Diberikan bilangan bulat $n_0$ dan $I_{n_0}=\\{n\\in\\mathbb Z:n\\ge n_0\\}$. Suatu himpunan $S\\subseteq I_{n_0}$ disebut induktif mulai dari $n_0$ apabila $n_0\\in S$ dan untuk setiap $k\\in I_{n_0}$ berlaku $k\\in S\\Rightarrow k+1\\in S$. Kedua syarat tersebut harus diperiksa secara terpisah."),
+  T("Prinsip Induksi Matematika","Misalkan $P(n)$ suatu pernyataan untuk setiap $n\\in\\mathbb N=\\{1,2,\\ldots\\}$. Jika (i) $P(1)$ benar dan (ii) untuk setiap $k\\ge1$, $P(k)\\Rightarrow P(k+1)$ benar, maka $P(n)$ benar untuk setiap $n\\in\\mathbb N$.",[
     "Diketahui $P(1)$ benar dan setiap implikasi $P(k)\\Rightarrow P(k+1)$ benar. Akan dibuktikan bahwa tidak ada bilangan asli yang menjadi indeks kegagalan.",
-    "Andaikan sebaliknya $F=\{n\\in\\mathbb N:P(n)\\text{ salah}\}$ tidak kosong. Menurut sifat urutan baik $\\mathbb N$, terdapat elemen terkecil $m=\\min F$.",
+    "Andaikan sebaliknya $F=\\{n\\in\\mathbb N:P(n)\\text{ salah}\\}$ tidak kosong. Menurut sifat urutan baik $\\mathbb N$, terdapat elemen terkecil $m=\\min F$.",
     "Karena $P(1)$ benar, diperoleh $m\\ne1$; jadi $m\\ge2$. Bilangan $m-1$ adalah bilangan asli dan lebih kecil daripada $m$. Dari minimalitas $m$, $P(m-1)$ harus benar.",
     "Terapkan hipotesis langkah induksi pada $k=m-1$. Karena $P(m-1)$ benar, implikasi tersebut memberikan $P(m)$ benar. Ini bertentangan dengan $m\\in F$.",
     "Maka $F=\\varnothing$, sehingga $P(n)$ benar untuk semua $n\\in\\mathbb N$. $\\square$"
@@ -84,7 +84,7 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
   ])
  ],
  examples:[
-  {title:"Himpunan Induktif yang Konkret",forDefinition:"Himpunan Induktif",problem:"Untuk $S=\{n\\in\\mathbb N:3\\mid(4^n-1)\}$, periksa kedua syarat himpunan induktif mulai dari $1$.",solution:[
+  {title:"Himpunan Induktif yang Konkret",forDefinition:"Himpunan Induktif",problem:"Untuk $S=\\{n\\in\\mathbb N:3\\mid(4^n-1)\\}$, periksa kedua syarat himpunan induktif mulai dari $1$.",solution:[
     "Keanggotaan $n\\in S$ berarti terdapat bilangan bulat $a$ dengan $4^n-1=3a$. Basis terpenuhi karena $4^1-1=3$, sehingga $1\\in S$.",
     "Ambil sembarang $k\\ge1$ dengan $k\\in S$. Maka $4^k-1=3a$ untuk suatu $a\\in\\mathbb Z$. Hitung $4^{k+1}-1=4(4^k-1)+3=4(3a)+3=3(4a+1)$.",
     "Karena $4a+1$ bilangan bulat, $3\\mid(4^{k+1}-1)$; jadi $k+1\\in S$. Kedua syarat definisi telah diperiksa, bukan hanya beberapa nilai pertama."
