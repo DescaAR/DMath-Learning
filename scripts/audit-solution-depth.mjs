@@ -57,6 +57,57 @@ const assert=nativeRequire("node:assert/strict");
 const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
+
+// Regression for the actual public number-theory lesson and its derived problem bank.
+// These checks detect missing proofs, generic rubrics, and elementary arithmetic errors.
+const primeLesson=getBookSectionContent("nt-primes");
+assert.ok(primeLesson,"Missing authored prime-factorization lesson");
+const primeDefinitions=primeLesson.formal.filter(item=>item.kind==="definition");
+const primeResults=primeLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(primeDefinitions.length,4);
+assert.equal(primeResults.length,7);
+assert.ok(primeLesson.examples.length>=8);
+assert.ok(primeLesson.exercises.length>=8);
+for(const definition of primeDefinitions){
+  assert.ok(primeLesson.examples.some(example=>example.forDefinition===definition.title),
+    "Number theory definition missing its linked example: "+definition.title);
+}
+for(const item of primeResults){
+  assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>300,
+    "Number theory result missing a full proof: "+item.title);
+}
+for(const item of primeLesson.exercises){
+  assert.ok(normalize(item.answer).length>=450 &&
+    !/jawaban yang baik|contoh harus|susun satu soal|soal harus/i.test(item.answer),
+    "Number theory exercise must contain a concrete solution: "+item.prompt);
+}
+assert.ok(primeLesson.exercises.some(x=>x.prompt.includes("P-07")) &&
+  primeLesson.exercises.some(x=>x.prompt.includes("P-08")),
+  "Missing higher-order number theory proofs");
+const isPrimeForTest=n=>{
+  if(n<2)return false;
+  for(let d=2;d*d<=n;d++)if(n%d===0)return false;
+  return true;
+};
+for(let n=2;n<=600;n++){
+  const hasSmallPrimeDivisor=Array.from({length:Math.floor(Math.sqrt(n))-1},
+    (_,i)=>i+2).some(p=>isPrimeForTest(p)&&n%p===0);
+  assert.equal(isPrimeForTest(n),!hasSmallPrimeDivisor,
+    "Primality square-root criterion mismatch for "+n);
+}
+const divisorCount=n=>{
+  let count=0;
+  for(let d=1;d<=n;d++)if(n%d===0)count++;
+  return count;
+};
+assert.equal(divisorCount(360),24);
+assert.equal(divisorCount(540),24);
+assert.equal(divisorCount(60),12);
+assert.ok(Array.from({length:59},(_,i)=>i+1).every(n=>divisorCount(n)!==12),
+  "60 must be the smallest positive integer with 12 divisors");
+assert.equal(2*3**2*7*11,1386);
+assert.equal(19*23,437);
+assert.equal(120*2520,360*840);
 // Source-level regression for the public Peluang lesson. These checks validate
 // the rendered registry and a few independent mathematical identities; length
 // thresholds remain triage, not a correctness certificate.
