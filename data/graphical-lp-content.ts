@@ -207,7 +207,32 @@ export const graphicalLinearProgrammingContent:BookLessonContent = {
       ]
     }
   ],
-  "exercises": [],
+  "exercises": [
+    {
+      "prompt": "Untuk $x,y\\ge0$, $x+y\\le5$, $2x+y\\le8$, periksa kelayakan $(3,2)$ dan $(4,1)$ serta tentukan seluruh titik sudut.",
+      "hint": "Periksa kendala satu per satu dan perpotongan garis batas.",
+      "answer": "1. Pada $(3,2)$ berlaku $3+2=5$ dan $6+2=8$, sehingga titik layak. Pada $(4,1)$ kendala kedua bernilai $9>8$, sehingga tidak layak.\\n\\n2. Pada sumbu x, kendala kedua membatasi x sampai 4, sehingga muncul $(4,0)$. Pada sumbu y, kendala pertama membatasi y sampai 5, sehingga muncul $(0,5)$.\\n\\n3. Perpotongan $x+y=5$ dan $2x+y=8$ menghasilkan $(3,2)$. Bersama titik asal, keempat titik sudut adalah $(0,0),(4,0),(3,2),(0,5)$.\\n\\n4. Semua kandidat telah diuji terhadap seluruh kendala, sehingga daftar titik sudut lengkap.",
+      "provenance": "dmath-original"
+    },
+    {
+      "prompt": "Buktikan titik tengah dua titik layak dari $Ax\\le b$ juga layak. Berikan kontra-contoh jika koefisien kombinasi diperbolehkan negatif.",
+      "hint": "Gunakan linearitas A dan pertidaksamaan komponen.",
+      "answer": "1. Ambil $Au\\le b$ dan $Av\\le b$. Maka $A((u+v)/2)=(Au+Av)/2\\le b$, sehingga titik tengah layak.\\n\\n2. Lebih umum, $A(tu+(1-t)v)\\le tb+(1-t)b=b$ untuk $0\\le t\\le1$.\\n\\n3. Untuk koefisien negatif, ambil $P=[0,1]$ pada garis real, $u=0$, $v=1$, dan $t=2$. Kombinasi $2u+(1-2)v=-1$ tidak termasuk P.\\n\\n4. Karena itu syarat koefisien nonnegatif tidak boleh dihilangkan dari argumen konveksitas.",
+      "provenance": "dmath-original"
+    },
+    {
+      "prompt": "Maksimumkan $2x+5y$ pada poligon $P$ dan buktikan pilihan titik optimal.",
+      "hint": "Evaluasi keempat titik sudut.",
+      "answer": "1. Titik sudut P adalah $(0,0),(3,0),(2,3),(0,4)$. Daerahnya poligon konveks tertutup dan terbatas.\\n\\n2. Nilai $2x+5y$ pada titik-titik itu berturut-turut $0,6,19,20$.\\n\\n3. Prinsip titik sudut menjamin maksimum pada salah satu titik sudut karena tujuan linear.\\n\\n4. Nilai terbesar adalah $20$, sehingga $(0,4)$ optimal. Ketaksamaan ketat dengan semua titik sudut lain menunjukkan titik optimal tunggal.",
+      "provenance": "dmath-original"
+    },
+    {
+      "prompt": "Temukan pengali nonnegatif yang membuktikan $3x+4y\\le18$ dari kendala $x+2y\\le8$ dan $3x+y\\le9$.",
+      "hint": "Samakan koefisien x dan y.",
+      "answer": "1. Cari $\\lambda_1,\\lambda_2\\ge0$ dengan $\\lambda_1+3\\lambda_2=3$ dan $2\\lambda_1+\\lambda_2=4$.\\n\\n2. Penyelesaian sistem memberikan $\\lambda_1=9/5$ dan $\\lambda_2=2/5$, keduanya nonnegatif.\\n\\n3. Menjumlahkan kendala dengan pengali tersebut menghasilkan $3x+4y\\le(9/5)8+(2/5)9=18$.\\n\\n4. Karena $(2,3)$ layak dan memberikan nilai 18, batas atas ini tajam dan membuktikan optimalitas.",
+      "provenance": "dmath-original"
+    }
+  ],
   "mistakes": [],
   "connections": []
 };
