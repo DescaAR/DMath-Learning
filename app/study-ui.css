@@ -1,0 +1,598 @@
+/* DMath Learning — Study Experience v2
+   Mathematical statements remain manuscript-like; tools, reading flow and
+   practice interactions gain a consistent modern interface.
+   Loaded after experience-ui.css, without changing lesson text or LaTeX.
+*/
+:root{
+  --study-ink:#17233a;
+  --study-line:#dfe8f3;
+  --study-soft:#f4f7fc;
+  --study-blue:#1e65db;
+  --study-violet:#7556d7;
+  --study-teal:#149b84;
+  --study-amber:#bd7d25;
+}
+:root[data-theme="dark"]{
+  --study-ink:#edf4ff;
+  --study-line:#2b4260;
+  --study-soft:#14243d;
+  --study-blue:#8bb9ff;
+  --study-violet:#b4a1ff;
+  --study-teal:#6bdeca;
+  --study-amber:#e9ba72;
+}
+.textbook-page .textbook-section-shell{background:transparent;padding-top:clamp(22px,3vw,38px)}
+.textbook-page .textbook-layout{align-items:start}
+.textbook-page .textbook-article{
+  padding:clamp(22px,3.2vw,46px);
+  border-radius:20px;
+  border-color:var(--study-line);
+  box-shadow:0 20px 55px rgba(19,40,74,.045)
+}
+.textbook-page .textbook-article > .book-section{margin-bottom:clamp(48px,5.5vw,74px)}
+.textbook-page .textbook-article .book-section > .eyebrow{
+  display:inline-block;
+  color:var(--study-blue);
+  font-size:.69rem;
+  font-weight:810;
+  line-height:1.55;
+  letter-spacing:.125em
+}
+.textbook-page .textbook-article .book-section > h2{
+  font-weight:820;
+  color:var(--study-ink);
+  letter-spacing:-.05em;
+  font-size:clamp(1.75rem,2.8vw,2.45rem);
+  margin:8px 0 18px;
+  line-height:1.17;
+  text-wrap:balance
+}
+.textbook-page .textbook-article .book-section > .ird-paragraph{
+  color:var(--muted);
+  font-size:.99rem;
+  line-height:1.86;
+  max-width:75ch
+}
+.textbook-page .ird-rich-text,
+.textbook-page .ca-rich-text,
+.textbook-page .thesis-formal-body,
+.textbook-page .thesis-proof-body{
+  line-height:1.87;
+  overflow-wrap:break-word
+}
+.textbook-page .math-block,
+.textbook-page .katex-display{
+  max-width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scrollbar-width:thin;
+  padding-bottom:4px
+}
+.textbook-page .katex{font-size:1em}
+/* Reading toolbar - anchored above content, focus hides sidebar without
+   erasing the section navigation from the document. */
+.dmath-reading-toolbar{
+  position:relative;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:14px;
+  margin:-4px 0 35px;padding:13px 15px;
+  border:1px solid var(--study-line);
+  border-radius:13px;
+  background:var(--surface-2)
+}
+.dmath-reading-toolbar-label{
+  display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+  font-size:.66rem;font-weight:840;letter-spacing:.09em;
+  color:var(--muted)
+}
+.dmath-reading-toolbar-label>span:last-child{letter-spacing:normal;text-transform:none;font-weight:730}
+.dmath-reading-toolbar-dot{width:7px;height:7px;background:var(--study-teal);border-radius:50%;flex:none}
+.dmath-reading-toolbar-separator{height:14px;width:1px;background:var(--study-line)}
+.dmath-reading-toolbar-actions{display:flex;align-items:center;gap:7px}
+.dmath-focus-button,.dmath-back-top{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:36px;padding:7px 11px;
+  font-size:.77rem;font-weight:780;line-height:1.2;
+  border:1px solid var(--study-line);border-radius:9px;
+  color:var(--text);background:var(--surface);
+  transition:color .16s ease,border-color .16s ease,background .16s ease
+}
+.dmath-focus-button:hover,.dmath-back-top:hover{border-color:var(--study-blue);color:var(--study-blue)}
+.dmath-focus-button.active{color:var(--study-blue);background:color-mix(in srgb,var(--blue) 10%,var(--surface));border-color:color-mix(in srgb,var(--blue) 32%,var(--border))}
+.dmath-back-top>span{display:inline-block}
+.textbook-page.study-focus-mode .textbook-layout{
+  grid-template-columns:minmax(0,1fr)!important;
+  justify-content:center;
+  max-width:1140px
+}
+.textbook-page.study-focus-mode .textbook-toc{display:none!important}
+.textbook-page.study-focus-mode .textbook-article{
+  width:100%;max-width:960px;margin-inline:auto;
+  padding:clamp(25px,5.5vw,64px)
+}
+/* The statement itself looks like modern academic typesetting, not a callout */
+.textbook-page .thesis-formal-group{
+  margin:18px 0 24px;
+  display:grid;gap:0;min-width:0
+}
+.textbook-page .thesis-formal-group > .thesis-formal{
+  position:relative;
+  display:block;
+  padding:21px clamp(20px,2.5vw,27px) 23px;
+  border:1px solid var(--study-line);
+  border-left:3px solid var(--study-violet);
+  border-radius:14px;
+  background:var(--surface);
+  box-shadow:none;
+  overflow:hidden
+}
+.textbook-page .thesis-formal-group > .ird-definition{border-left-color:var(--study-blue)}
+.textbook-page .thesis-formal-group > .ird-theorem{border-left-color:var(--study-violet)}
+.textbook-page .thesis-formal-group > .ird-lemma{border-left-color:var(--study-teal)}
+.textbook-page .thesis-formal-group > .ird-proposition{border-left-color:#327fbd}
+.textbook-page .thesis-formal-group > .ird-corollary{border-left-color:var(--study-amber)}
+.textbook-page .thesis-formal-group .thesis-formal-head{
+  display:flex;align-items:baseline;gap:5px 12px;
+  flex-wrap:wrap;margin:0 0 12px;
+  font-size:1.02rem;line-height:1.6
+}
+.textbook-page .thesis-formal-group .thesis-formal-label{
+  font-size:.91rem;line-height:1.55;font-weight:860;
+  white-space:normal;
+  color:var(--study-ink)
+}
+.textbook-page .thesis-formal-group .thesis-formal-title{
+  color:var(--study-ink);font-weight:720
+}
+.textbook-page .thesis-formal-group .thesis-citation{font-size:.8rem;color:var(--muted)}
+.textbook-page .thesis-formal-group .thesis-formal-body{
+  padding:0;margin:0;font-size:1.015rem;
+  text-align:left;line-height:1.94;
+  color:var(--text)
+}
+.textbook-page .thesis-formal-group .thesis-formal-body .ird-rich-text{margin:0}
+.textbook-page .formal-result-pair{margin:18px 0 36px;min-width:0}
+.textbook-page .formal-result-pair > .thesis-formal-group{margin-bottom:0}
+.textbook-page .formal-result-pair > .ird-formal-explanation,
+.textbook-page .definition-example-pair > .ird-formal-explanation{
+  border:1px solid var(--study-line);
+  border-radius:12px;
+  background:var(--surface-2);
+  padding:16px 20px;
+  margin-top:12px;
+  line-height:1.84
+}
+.textbook-page .ird-formal-explanation>strong{font-size:.71rem;text-transform:uppercase;letter-spacing:.08em;color:var(--study-blue)}
+/* Proofs: progressive disclosure, airy paragraphs and quiet QED */
+.textbook-page details.thesis-proof,
+.textbook-page details.ird-proof,
+.textbook-page details.ird-worked-solution{
+  position:relative;
+  overflow:hidden;
+  border:1px solid var(--study-line);
+  border-radius:12px;
+  background:var(--surface);
+  padding:0;
+  box-shadow:none
+}
+.textbook-page .thesis-formal-group > details.thesis-proof{
+  margin:10px 0 0;
+  border-left:1px solid var(--study-line)
+}
+.textbook-page details.ird-proof{margin-top:12px}
+.textbook-page details.ird-worked-solution{margin-top:12px}
+.textbook-page details.thesis-proof>summary,
+.textbook-page details.ird-proof>summary,
+.textbook-page details.ird-worked-solution>summary{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:13px 17px;
+  border:none;min-height:49px;margin:0;
+  background:var(--surface-2);
+  font-size:.82rem;font-weight:800;letter-spacing:.005em;
+  color:var(--study-blue);
+  cursor:pointer;list-style:none;
+  transition:background .16s ease,color .16s ease
+}
+.textbook-page details.thesis-proof>summary::-webkit-details-marker,
+.textbook-page details.ird-proof>summary::-webkit-details-marker,
+.textbook-page details.ird-worked-solution>summary::-webkit-details-marker{display:none}
+.textbook-page details.thesis-proof>summary::after,
+.textbook-page details.ird-proof>summary::after,
+.textbook-page details.ird-worked-solution>summary::after{
+  content:"";
+  flex:none;
+  width:7px;height:7px;
+  border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;
+  transform:rotate(45deg);
+  transition:transform .16s ease;
+  margin-right:4px
+}
+.textbook-page details[open].thesis-proof>summary::after,
+.textbook-page details[open].ird-proof>summary::after,
+.textbook-page details[open].ird-worked-solution>summary::after{transform:rotate(225deg);margin-top:5px}
+.textbook-page details.thesis-proof>summary:hover,
+.textbook-page details.ird-proof>summary:hover,
+.textbook-page details.ird-worked-solution>summary:hover{
+  background:color-mix(in srgb,var(--blue) 9%,var(--surface))
+}
+.textbook-page details[open].thesis-proof>summary,
+.textbook-page details[open].ird-proof>summary,
+.textbook-page details[open].ird-worked-solution>summary{
+  border-bottom:1px solid var(--study-line)
+}
+.textbook-page .thesis-proof-body,
+.textbook-page .ird-proof-body,
+.textbook-page .ird-worked-solution-body{
+  padding:clamp(17px,2.5vw,26px);
+  margin:0;
+  font-size:.98rem;
+  line-height:1.93;
+  color:var(--text)
+}
+.textbook-page .thesis-proof-lead{margin:0 0 17px}
+.textbook-page .thesis-proof-paragraphs{display:grid;gap:13px}
+.textbook-page .thesis-proof-paragraph{margin:0}
+.textbook-page .thesis-proof-paragraph .ird-rich-text{line-height:1.95}
+.textbook-page .thesis-proof-direction{
+  border:1px solid var(--study-line);
+  border-radius:11px;padding:15px 18px;
+  background:var(--surface-2);margin-top:17px
+}
+.textbook-page .thesis-proof-direction .thesis-direction-heading{padding-bottom:10px}
+.textbook-page .thesis-proof-conclusion{
+  display:flex;justify-content:space-between;align-items:baseline;
+  gap:18px;margin-top:22px;padding-top:14px;
+  border-top:1px solid var(--study-line);
+  font-size:.93rem;font-weight:720
+}
+.textbook-page .thesis-qed{color:var(--study-blue)}
+.textbook-page .thesis-proof-targets{padding-left:25px}
+.textbook-page .thesis-standalone-proof{border-left:2px solid var(--study-line);padding:8px 16px}
+/* Exercises and worked examples, no automatic number badges inside proofs */
+.textbook-page .ird-worked-grid{gap:16px}
+.textbook-page .ird-worked-card{
+  position:relative;
+  display:flex;flex-direction:column;
+  min-width:0;
+  padding:clamp(20px,2.7vw,27px);
+  border:1px solid var(--study-line);
+  background:var(--surface);
+  border-radius:15px;
+  box-shadow:none;
+  overflow:visible
+}
+.textbook-page .ird-worked-card:hover{
+  box-shadow:0 10px 26px rgba(30,58,95,.055);
+  border-color:color-mix(in srgb,var(--study-blue) 26%,var(--study-line));
+  transform:none
+}
+.textbook-page .ird-worked-card > .ird-worked-head{
+  display:flex;align-items:flex-start;
+  gap:12px;flex-wrap:wrap;
+  padding:0 0 15px;margin:0 0 18px;
+  border-bottom:1px solid var(--study-line)
+}
+.textbook-page .ird-worked-head > .ird-problem-number{
+  display:grid;place-items:center;
+  min-width:42px;height:42px;
+  border:1px solid color-mix(in srgb,var(--study-blue) 17%,var(--study-line));
+  border-radius:11px;
+  background:color-mix(in srgb,var(--blue) 7%,var(--surface));
+  color:var(--study-blue);
+  font-size:.8rem;font-weight:850;
+  font-variant-numeric:tabular-nums;
+  flex:none
+}
+.textbook-page .ird-worked-head>div:nth-child(2){
+  flex:1;min-width:160px
+}
+.textbook-page .ird-worked-head .eyebrow{
+  color:var(--muted);
+  font-size:.66rem;
+  letter-spacing:.11em;font-weight:820
+}
+.textbook-page .ird-worked-head h3{
+  font-size:clamp(1.08rem,1.8vw,1.27rem);
+  letter-spacing:-.025em;
+  font-weight:780;
+  color:var(--study-ink);
+  line-height:1.45;
+  margin:5px 0 0
+}
+.textbook-page .ird-worked-prompt{
+  padding:0;margin:0;
+  font-size:1rem;line-height:1.89;
+  color:var(--text);
+  flex:none
+}
+.textbook-page .ird-worked-prompt p{margin-block:0 12px}
+.textbook-page .ird-worked-card>details.ird-proof,
+.textbook-page .ird-worked-card>details.ird-worked-solution{width:100%}
+.textbook-page .ird-worked-card>details.ird-proof{margin-top:22px}
+.textbook-page .ird-worked-card>details.ird-worked-solution{margin-top:8px}
+.textbook-page .ird-worked-card>details.ird-proof>summary{color:var(--study-amber)}
+.textbook-page .ird-worked-card>details.ird-proof>summary:hover{
+  background:color-mix(in srgb,var(--study-amber) 9%,var(--surface))
+}
+.textbook-page .ird-worked-card>details.ird-worked-solution>summary{color:var(--study-blue)}
+.textbook-page .ird-practice-section .ird-worked-grid{
+  display:grid;grid-template-columns:1fr;gap:17px
+}
+.textbook-page .ird-practice-section .ird-worked-grid>.ird-worked-card{
+  border-radius:15px;
+  padding:clamp(20px,2.6vw,28px)
+}
+.textbook-page .ird-practice-section .ird-worked-card > .ird-worked-prompt{
+  font-size:1.03rem;
+  line-height:1.93
+}
+.textbook-page .ird-practice-section .ird-worked-card[open]{
+  border-color:var(--study-blue)
+}
+/* New practice dashboard */
+.dmath-practice-dashboard{
+  padding:clamp(17px,2.5vw,24px);
+  border:1px solid color-mix(in srgb,var(--study-blue) 20%,var(--study-line));
+  background:linear-gradient(140deg,color-mix(in srgb,var(--blue) 5%,var(--surface)),var(--surface));
+  border-radius:15px;
+  margin:21px 0 22px;
+}
+.dmath-practice-dashboard-row{display:flex;justify-content:space-between;align-items:center;gap:18px}
+.dmath-practice-dashboard-row>div:first-child{display:grid;gap:5px;min-width:0}
+.dmath-practice-dashboard-kicker{
+  font-size:.67rem;color:var(--study-blue);
+  letter-spacing:.12em;font-weight:850
+}
+.dmath-practice-dashboard-row>div:first-child>strong{
+  font-size:.93rem;color:var(--study-ink);font-weight:730;
+  line-height:1.5
+}
+.dmath-practice-dashboard-count{
+  display:flex;flex-direction:column;text-align:right;flex:none;
+  line-height:1.15;color:var(--study-ink)
+}
+.dmath-practice-dashboard-count>strong{font-size:1.55rem;font-weight:840;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.dmath-practice-dashboard-count>strong span{font-weight:540;color:var(--muted);font-size:1.03rem}
+.dmath-practice-dashboard-count small{font-size:.68rem;color:var(--muted);margin-top:4px}
+.dmath-practice-dashboard-track{
+  height:7px;overflow:hidden;border-radius:999px;
+  background:color-mix(in srgb,var(--study-blue) 12%,var(--surface));
+  margin-top:17px
+}
+.dmath-practice-dashboard-track>span{
+  display:block;height:100%;border-radius:inherit;
+  background:linear-gradient(90deg,var(--study-blue),var(--study-teal));
+  transition:width .25s ease
+}
+.dmath-practice-dashboard>p{
+  color:var(--muted);font-size:.75rem;margin:12px 0 0;
+  line-height:1.65
+}
+.dmath-exercise-card .ird-worked-head{align-items:center!important}
+.dmath-exercise-complete{
+  display:inline-flex;align-items:center;gap:7px;
+  cursor:pointer;
+  padding:8px 10px;
+  border:1px solid var(--study-line);
+  border-radius:9px;background:var(--surface-2);
+  color:var(--muted);font-size:.74rem;font-weight:790;
+  transition:background .16s ease,border-color .16s ease;
+  white-space:nowrap;
+  margin-left:auto
+}
+.dmath-exercise-complete:hover{border-color:var(--study-teal)}
+.dmath-exercise-complete input{
+  position:absolute;opacity:0;width:1px;height:1px;
+  pointer-events:none
+}
+.dmath-exercise-complete:focus-within{
+  outline:3px solid color-mix(in srgb,var(--study-blue) 55%,transparent);
+  outline-offset:2px
+}
+.dmath-exercise-complete-icon{
+  display:grid;place-items:center;
+  width:17px;height:17px;flex:none;
+  background:var(--surface);
+  border:1.5px solid color-mix(in srgb,var(--muted) 65%,var(--study-line));
+  border-radius:5px;
+  font-size:.7rem;line-height:1;font-weight:900;
+  color:var(--surface)
+}
+.dmath-exercise-complete.is-complete{
+  border-color:color-mix(in srgb,var(--study-teal) 37%,var(--study-line));
+  background:color-mix(in srgb,var(--study-teal) 8%,var(--surface));
+  color:var(--study-teal)
+}
+.dmath-exercise-complete.is-complete .dmath-exercise-complete-icon{
+  background:var(--study-teal);border-color:var(--study-teal);color:var(--surface)
+}
+.dmath-exercise-card:has(.dmath-exercise-complete.is-complete){
+  border-color:color-mix(in srgb,var(--study-teal) 40%,var(--study-line));
+}
+/* Examples paired immediately after definitions remain visually connected */
+.textbook-page .definition-example-pair{
+  gap:10px;margin:18px 0 36px
+}
+.textbook-page .definition-example-pair>.thesis-formal-group{margin:0}
+.textbook-page .definition-example-pair>.ird-worked-card,
+.textbook-page .definition-example-pair>.detailed-example-card{
+  border-left:3px solid var(--study-teal);
+  margin:0 0 0 10px;
+  border-radius:12px
+}
+.textbook-page .definition-example-pair>.ird-worked-card .ird-worked-head{
+  margin-bottom:12px
+}
+/* Summary of definitions and results: less bulky and easier to scan */
+.textbook-page .ird-summary-grid{gap:11px}
+.textbook-page .ird-summary-card{
+  border:1px solid var(--study-line);
+  background:var(--surface);
+  border-radius:12px;
+  box-shadow:none;
+  overflow:hidden;
+  transition:border-color .16s ease,background .16s ease
+}
+.textbook-page .ird-summary-card:hover{transform:none;box-shadow:none;border-color:var(--study-blue)}
+.textbook-page .ird-summary-card>summary{
+  padding:15px 17px;
+  min-height:64px;
+  font-size:.9rem;
+  color:var(--study-ink);
+  background:transparent
+}
+.textbook-page .ird-summary-card[open]>summary{border-bottom:1px solid var(--study-line);background:var(--surface-2)}
+.textbook-page .ird-summary-card .ird-paragraph{padding:17px 20px;margin:0}
+.textbook-page .ird-summary-card .ird-paragraph .ird-rich-text{line-height:1.86}
+/* Interactive visuals; preserve diagrams and all mathematical input functionality */
+.textbook-page .interactive-lab,
+.textbook-page .ird-visual-lab,
+.textbook-page .ird-svg-card,
+.textbook-page .math-figure,
+.textbook-page .ird-exercise-lab,
+.textbook-page .ird-exercise-visual{
+  border:1px solid var(--study-line);
+  border-radius:15px;
+  box-shadow:none;
+  overflow:hidden
+}
+.textbook-page .interactive-lab input[type="range"],
+.textbook-page .ird-visual-lab input[type="range"]{accent-color:var(--study-blue)}
+/* Guided independent practice */
+.material-practice{
+  margin:25px 0 35px;
+  padding:clamp(18px,3vw,26px);
+  border:1px solid var(--study-line);
+  background:var(--surface-2);
+  border-radius:17px
+}
+.material-practice .practice-head{align-items:center;margin-bottom:20px;gap:18px}
+.material-practice .practice-head h2{font-size:clamp(1.55rem,2.7vw,2.2rem);font-weight:800;letter-spacing:-.04em}
+.material-practice .practice-head p{max-width:610px;color:var(--muted);font-size:.89rem}
+.material-practice .practice-progress{
+  border:1px solid var(--study-line);
+  border-radius:12px;background:var(--surface);
+  box-shadow:none;padding:13px 17px
+}
+.material-practice .practice-filter-chips{gap:7px}
+.material-practice .practice-filter-chips button{
+  font-size:.76rem;min-height:36px;
+  border-radius:9px;padding:7px 13px;
+  border-color:var(--study-line);
+  background:var(--surface)
+}
+.material-practice .practice-filter-chips button.active{
+  color:var(--study-blue);
+  background:color-mix(in srgb,var(--blue) 10%,var(--surface));
+  border-color:color-mix(in srgb,var(--blue) 35%,var(--study-line))
+}
+.material-practice .practice-card{
+  padding:clamp(18px,2.5vw,25px);
+  border-radius:14px;
+  border:1px solid var(--study-line);
+  box-shadow:none
+}
+.material-practice .practice-card h3{font-size:1.14rem;font-weight:790;letter-spacing:-.025em;color:var(--study-ink)}
+.material-practice .practice-prompt{font-size:1rem;line-height:1.86}
+.material-practice .practice-card.completed{
+  border-color:color-mix(in srgb,var(--study-teal) 40%,var(--study-line));
+  background:color-mix(in srgb,var(--study-teal) 3%,var(--surface))
+}
+.material-practice .practice-actions button{
+  border:1px solid var(--study-line);
+  border-radius:9px;
+  color:var(--study-blue);
+  background:var(--surface-2);
+  font-size:.78rem;font-weight:800;
+  padding:10px 14px;
+  min-height:39px;
+  transition:background .16s ease,border-color .16s ease
+}
+.material-practice .practice-actions button:hover{
+  border-color:var(--study-blue);
+  background:color-mix(in srgb,var(--blue) 8%,var(--surface))
+}
+.material-practice .practice-reveal{
+  padding:19px 21px;
+  margin-top:12px;
+  border-radius:11px;
+  font-size:.96rem;line-height:1.85
+}
+.material-practice .practice-reveal.hint{
+  border-color:color-mix(in srgb,var(--study-amber) 28%,var(--study-line));
+  background:color-mix(in srgb,var(--study-amber) 6%,var(--surface))
+}
+.material-practice .practice-reveal.answer{
+  border-color:color-mix(in srgb,var(--study-blue) 24%,var(--study-line));
+  background:color-mix(in srgb,var(--blue) 4%,var(--surface))
+}
+/* Bank soal: modern, compact cards with meaningful hierarchy */
+.bank-catalog-shell .filtered-material-list{
+  grid-template-columns:repeat(2,minmax(0,1fr))
+}
+.bank-catalog-shell .filtered-material-list>.material-row{
+  min-height:260px;
+  display:grid;
+  grid-template-columns:36px minmax(0,1fr);
+  align-content:start;
+  border-radius:15px
+}
+.bank-catalog-shell .material-main{display:flex;flex-direction:column}
+.bank-catalog-shell .material-main h2{color:var(--study-ink)}
+.bank-catalog-shell .material-row-actions{margin-top:auto}
+.problem-detail-page .ird-worked-card{border-left:3px solid var(--study-blue)}
+.problem-detail-page .ird-practice-section{min-width:0}
+.problem-detail-page .ird-worked-solution[open]{border-color:color-mix(in srgb,var(--study-blue) 35%,var(--study-line))}
+.problem-detail-page .problem-detail-nav{gap:10px}
+.textbook-page .next-learning-block{
+  border:1px solid var(--study-line);
+  border-radius:16px;
+  box-shadow:none
+}
+/* Keep interactive tools operational and tap targets readable */
+@media(max-width:980px){
+  .textbook-page .textbook-layout{grid-template-columns:1fr!important}
+  .textbook-page .textbook-toc{
+    max-height:270px;position:relative;top:auto;
+  }
+}
+@media(max-width:760px){
+  .textbook-page .textbook-article{padding:clamp(15px,4vw,24px);border-radius:15px}
+  .textbook-page .thesis-formal-group > .thesis-formal{padding:17px 16px}
+  .textbook-page .thesis-formal-group .thesis-formal-body{text-align:left;font-size:.98rem}
+  .textbook-page .thesis-formal-group .thesis-formal-head{gap:4px 9px}
+  .textbook-page .ird-worked-card{padding:17px}
+  .textbook-page .ird-practice-section .ird-worked-grid{grid-template-columns:1fr!important}
+  .textbook-page .ird-worked-head{align-items:flex-start}
+  .textbook-page .ird-worked-head>div:nth-child(2){min-width:0}
+  .textbook-page .thesis-proof-body,
+  .textbook-page .ird-proof-body,
+  .textbook-page .ird-worked-solution-body{padding:16px}
+  .textbook-page .ird-worked-card>details summary{min-height:46px}
+  .textbook-page .book-section>h2{font-size:clamp(1.65rem,6vw,2.15rem)}
+  .book-subject-hub .subject-summary-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bank-catalog-shell .filtered-material-list{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .dmath-reading-toolbar{align-items:start;flex-direction:column}
+  .dmath-reading-toolbar-actions{width:100%}
+  .dmath-focus-button{flex:1}
+  .dmath-reading-toolbar-label{font-size:.62rem}
+  .dmath-exercise-complete{font-size:.71rem;padding:7px 9px}
+  .dmath-exercise-card .ird-worked-head .dmath-exercise-complete{
+    margin-left:0;
+    width:max-content
+  }
+  .dmath-practice-dashboard{padding:16px}
+  .dmath-practice-dashboard-row>div:first-child>strong{font-size:.86rem}
+  .textbook-page .definition-example-pair>.ird-worked-card{margin-left:0}
+  .material-practice{padding:15px}
+  .material-practice .practice-actions{flex-wrap:wrap}
+  .material-practice .practice-actions button{min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){
+  .dmath-reading-toolbar *, .dmath-exercise-complete,
+  .dmath-practice-dashboard-track>span,
+  .textbook-page details>summary::after{transition:none!important}
+}
