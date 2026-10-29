@@ -289,6 +289,54 @@ assert.equal(fine.slice(0,4).reduce((a,b)=>a+b,0)/4,3);
 assert.equal(fine.slice(4).reduce((a,b)=>a+b,0)/4,11);
 
 
+// Analytic geometry regression: inspect the rendered source, not only its length.
+// All four definitions require a directly attached worked example; proofs must
+// state valid hypotheses and all eight exercises must be concrete solutions.
+const geometry=getBookSectionContent("calc-app-conics-basics");
+assert.ok(geometry,"Public Geometri lesson missing from the book-section registry");
+const geometryDefs=geometry.formal.filter(x=>x.kind==="definition");
+const geometryResults=geometry.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+assert.equal(geometryDefs.length,4);
+assert.equal(geometryResults.length,6);
+assert.equal(geometry.examples.length,8);
+assert.equal(geometry.exercises.length,8);
+for(const def of geometryDefs){
+  assert.ok(geometry.examples.some(ex=>ex.forDefinition===def.title),
+    "Geometry definition missing its immediate example: "+def.title);
+}
+for(const item of geometryResults){
+  assert.ok(item.proof?.length>=2 && normalize(item.proof.join(" ")).length>350,
+    "Geometry formal result needs an actual proof: "+item.title);
+}
+for(const item of geometry.exercises){
+  assert.ok(normalize(item.answer).length>350 && !likelyUnsolved(item.answer),
+    "Geometry exercise is a generic rubric or incomplete answer: "+item.prompt);
+}
+const geometryPageSource=fs.readFileSync(path.join(root,"components/BookSectionPage.tsx"),"utf8");
+const geometryLabSource=fs.readFileSync(path.join(root,"components/AnalyticGeometryLab.tsx"),"utf8");
+const siteDataSource=fs.readFileSync(path.join(root,"data/site-data.ts"),"utf8");
+assert.match(geometryPageSource,/section\.slug==="calc-app-conics-basics"\?<AnalyticGeometryLab/);
+assert.match(geometryLabSource,/Math\.sqrt\(Math\.max\(0,radius\*radius-h\*h\)\)/);
+assert.match(siteDataSource,/subject: "Geometri"[\s\S]{0,270}calc-app-conics-basics/);
+for(const h of [-3,-2,-1.5,0,1.5,2,3]){
+  const expected=Math.abs(h)<2?2:Math.abs(h)===2?1:0;
+  const intersections=Math.abs(h)>2?[]:Math.abs(h)===2?[0]:
+    [-Math.sqrt(4-h*h),Math.sqrt(4-h*h)];
+  assert.equal(intersections.length,expected);
+  for(const x of intersections)assert.ok(Math.abs(x*x+h*h-4)<1e-12);
+}
+for(const x of [-10,-4,-1,0,1,4,10]){
+  const p=3,y=x*x/(4*p);
+  const focusDistance=Math.hypot(x,y-p);
+  const directrixDistance=Math.abs(y+p);
+  assert.ok(Math.abs(focusDistance-directrixDistance)<1e-10);
+}
+for(const [x,y] of [[3,4],[-3,-4]]){
+  assert.equal(x*x+y*y,25);
+  const direction=[-y,x];
+  assert.equal(x*direction[0]+y*direction[1],0);
+}
+
 // Additional public routes outside the 17 book curricula: deep materials and
 // their independent practice banks. These figures are separate from book totals
 // so historical book-only triage counts remain comparable across deployments.
