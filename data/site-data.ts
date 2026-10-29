@@ -22,6 +22,14 @@ export const subjects = [
 
 export const materials = [
   {
+    title: "Probabilitas Kontinu: Densitas, CDF, Ekspektasi, dan Pengondisian",
+    level: "Kuliah",
+    subject: "Peluang",
+    status: "published" as ContentStatus,
+    summary: "Normalisasi densitas, CDF, peluang interval, ekspektasi, transformasi monoton, probabilitas bersyarat, teorema dan pembuktian, serta solusi integral rinci.",
+    href: "/materi/kalkulus/calc-probability",
+  },
+  {
     title: "Optimisasi Satu Variabel: Ekstrem Global dan Konveksitas",
     level: "Kuliah",
     subject: "Optimisasi",
