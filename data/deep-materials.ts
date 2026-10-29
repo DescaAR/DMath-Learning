@@ -386,19 +386,49 @@ export const deepMaterials: DeepMaterial[] = [
     ],
     examples: [
       {
+        title: "Sinus dan Cosinus",
+        problem: "Tentukan koordinat titik lingkaran satuan untuk $\\theta=5\\pi/6$ dan jelaskan tanda kedua koordinatnya.",
+        solution: [
+          "Sudut $5\\pi/6=\\pi-\\pi/6$ berada di kuadran II. Refleksi titik sudut $\\pi/6$ terhadap sumbu-$y$ mempertahankan koordinat vertikal tetapi membalik tanda koordinat horizontal.",
+          "Karena titik untuk $\\pi/6$ adalah $(\\sqrt3/2,1/2)$, titik untuk $5\\pi/6$ ialah $P=(-\\sqrt3/2,1/2)$. Menurut definisi lingkaran satuan, $\\cos(5\\pi/6)=-\\sqrt3/2$ dan $\\sin(5\\pi/6)=1/2$.",
+          "Pemeriksaan: $(-\\sqrt3/2)^2+(1/2)^2=3/4+1/4=1$, sehingga $P$ memang terletak pada lingkaran satuan; tanda negatif cosinus dan positif sinus cocok dengan kuadran II."
+        ]
+      },
+      {
+        title: "Tangen",
+        problem: "Hitung $\\tan(\\pi/3)$ dan tentukan apakah $\\tan(\\pi/2)$ terdefinisi.",
+        solution: [
+          "Definisi tangen adalah $\\tan\\theta=\\sin\\theta/\\cos\\theta$, dengan syarat penyebut $\\cos\\theta\\ne0$. Pada $\\theta=\\pi/3$, diketahui $\\sin(\\pi/3)=\\sqrt3/2$ dan $\\cos(\\pi/3)=1/2$.",
+          "Karena $\\cos(\\pi/3)\\ne0$, pembagian sah dan $\\tan(\\pi/3)=(\\sqrt3/2)/(1/2)=\\sqrt3$. Sebaliknya, titik lingkaran satuan pada $\\pi/2$ adalah $(0,1)$, sehingga $\\cos(\\pi/2)=0$.",
+          "Maka $\\tan(\\pi/2)$ tidak terdefinisi, bukan bernilai tak hingga sebagai bilangan real. Perbedaan ini penting saat menyelesaikan persamaan yang melibatkan pembagian oleh cosinus."
+        ]
+      },
+      {
         title: "Identitas",
         problem: "Sederhanakan $\\frac{1-\\cos^2x}{\\sin x}$ untuk $\\sin x\\neq0$.",
-        solution: ["Gunakan $1-\\cos^2x=\\sin^2x$.", "Diperoleh $\\frac{\\sin^2x}{\\sin x}=\\sin x$."]
+        solution: [
+          "Diketahui penyebut $\\sin x$ tidak nol. Identitas Pythagoras $\\sin^2x+\\cos^2x=1$, yang berlaku untuk setiap $x\\in\\mathbb R$, memberikan $1-\\cos^2x=\\sin^2x$.",
+          "Substitusi ke bentuk semula menghasilkan $\\frac{1-\\cos^2x}{\\sin x}=\\frac{\\sin^2x}{\\sin x}=\\sin x$. Langkah pencoretan sah hanya karena $\\sin x\\ne0$, sebagaimana dinyatakan dalam soal.",
+          "Untuk verifikasi, ambil $x=\\pi/2$: ruas semula bernilai $(1-0)/1=1$, sama dengan $\\sin(\\pi/2)=1$. Pada $x=0$, bentuk awal tidak terdefinisi walaupun $\\sin0=0$, sehingga kesamaan ini berlaku pada domain asal saja."
+        ]
       },
       {
         title: "Persamaan Dasar",
         problem: "Selesaikan $2\\sin x=1$ untuk $0\\le x<2\\pi$.",
-        solution: ["Diperoleh $\\sin x=\\frac12$.", "Pada interval tersebut, $x=\\frac\\pi6$ atau $x=\\frac{5\\pi}{6}$."]
+        solution: [
+          "Membagi kedua ruas dengan $2$ yang tidak nol memberi persamaan ekuivalen $\\sin x=1/2$. Pada lingkaran satuan, ordinat $1/2$ terjadi di kuadran I dan II, dengan sudut acuan $\\pi/6$.",
+          "Semua solusi real adalah $x=\\pi/6+2k\\pi$ atau $x=5\\pi/6+2k\\pi$, $k\\in\\mathbb Z$. Karena interval yang diminta hanya satu putaran, hanya $k=0$ pada kedua keluarga yang memenuhi $0\\le x<2\\pi$.",
+          "Jadi himpunan solusinya $\\{\\pi/6,5\\pi/6\\}$. Substitusi memberi $2\\sin(\\pi/6)=2(1/2)=1$ dan $2\\sin(5\\pi/6)=1$; tidak ada sudut lain dalam interval karena garis horizontal $y=1/2$ memotong lingkaran satuan tepat di dua titik."
+        ]
       },
       {
         title: "Aturan Cosinus",
-        problem: "Segitiga memiliki sisi $a=5$, $b=7$, dan sudut apit $C=60^\\circ$. Tentukan sisi $c$.",
-        solution: ["Gunakan $c^2=a^2+b^2-2ab\\cos C$.", "$c^2=25+49-70\\cdot\\frac12=39$, jadi $c=\\sqrt{39}$."]
+        problem: "Segitiga memiliki sisi $a=5$, $b=7$, dan sudut apit $C=60^\\circ$. Tentukan panjang sisi $c$ di hadapan sudut $C$.",
+        solution: [
+          "Diketahui dua sisi positif dan sudut apit di antara keduanya, sehingga aturan cosinus dapat diterapkan: $c^2=a^2+b^2-2ab\\cos C$. Sudut $60^\\circ$ mempunyai $\\cos60^\\circ=1/2$.",
+          "Dengan substitusi diperoleh $c^2=5^2+7^2-2(5)(7)(1/2)=25+49-35=39$. Karena $c$ adalah panjang sisi, $c=\\sqrt{39}$, bukan $-\\sqrt{39}$.",
+          "Pemeriksaan: $2=|7-5|<\\sqrt{39}<12=7+5$ memenuhi ketaksamaan segitiga. Memasukkan $c^2=39$ ke rumus balik memberi $\\cos C=(25+49-39)/(70)=1/2$, sesuai sudut apit $60^\\circ$."
+        ]
       }
     ],
     mistakes: [
