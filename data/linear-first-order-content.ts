@@ -107,7 +107,7 @@ export const linearFirstOrderContent:BookLessonContent = {
     },
     {
       "kind": "proposition",
-      "title": "Kesalahan Global Metode Euler untuk Koefisien Konstan",
+      "title": "Rumus Iterasi Euler dan Stabilitas Titik Setimbang",
       "statement": "Untuk $a,b\\in\\mathbb R$, $T>0$, dan $n\\in\\mathbb N$, metode Euler dengan $h=T/n$ pada $y'=b-ay$, $y(0)=y_0$, menghasilkan $Y_k=(b/a)+(y_0-b/a)(1-ah)^k$ jika $a\\ne0$; untuk $a=0$, $Y_k=y_0+bkh$. Jika $a>0$, iterasi menuju $b/a$ saat $k\\to\\infty$ dengan $h$ tetap tepat ketika $|1-ah|<1$ (kecuali bila mulai tepat di setimbang).",
       "proof": [
         "Metode Euler menggunakan $Y_{k+1}=Y_k+h(b-aY_k)=(1-ah)Y_k+bh$, dengan $Y_0=y_0$.",
