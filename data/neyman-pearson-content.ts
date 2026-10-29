@@ -36,8 +36,8 @@ export const neymanPearsonContent:BookLessonContent={
         "Diketahui rasio likelihood diperluas $\\Lambda$. Di bawah $P_0$, $\\Lambda$ bernilai hingga hampir pasti: himpunan tempat $f_0=0$ mempunyai probabilitas $P_0$ nol. Karena $\\Lambda\\geq0$, fungsi $t\\mapsto P_0(\\Lambda>t)$ tidak naik dan menuju nol ketika $t\\to\\infty$.",
         "Definisikan $k=\\inf\\{t\\geq0:P_0(\\Lambda>t)\\leq\\alpha\\}$. Himpunan di dalam infimum tidak kosong, sehingga $k$ hingga. Ambil barisan $t_n\\downarrow k$ dari himpunan tersebut; kontinuitas probabilitas dari bawah pada kejadian $\\{\\Lambda>t_n\\}$ memberi $P_0(\\Lambda>k)\\leq\\alpha$.",
         "Jika $k>0$, ambil $s_n\\uparrow k$ dengan $s_n<k$. Berdasarkan definisi infimum, $P_0(\\Lambda>s_n)>\\alpha$. Kontinuitas probabilitas dari atas memberi $P_0(\\Lambda\\geq k)\\geq\\alpha$. Jika $k=0$, ketaksamaan terakhir juga berlaku karena $P_0(\\Lambda\\geq0)=1$.",
-        "Tuliskan $p_>=P_0(\\Lambda>k)$ dan $p_=P_0(\\Lambda=k)$. Telah diperoleh $p_>\\leq\\alpha\\leq p_>+p_=$. Jika $p_=>0$, pilih $\\gamma=(\\alpha-p_>)/p_=$, yang berada dalam $[0,1]$; jika $p_=0$, ketaksamaan memaksa $p_>=\\alpha$ dan $\\gamma$ dapat dipilih sebarang.",
-        "Dengan definisi uji pada daerah $>$, $=$, dan $<$, diperoleh $E_0[\\phi_{k,\\gamma}]=p_>+\\gamma p_==\\alpha$. Jadi ambang dan pengacakan yang diperlukan benar-benar ada untuk $0<\\alpha<1$."
+        "Tuliskan $p_{\\mathrm{gt}}=P_0(\\Lambda>k)$ dan $p_{\\mathrm{eq}}=P_0(\\Lambda=k)$. Telah diperoleh $p_{\\mathrm{gt}}\\leq\\alpha\\leq p_{\\mathrm{gt}}+p_{\\mathrm{eq}}$. Jika $p_{\\mathrm{eq}}>0$, pilih $\\gamma=(\\alpha-p_{\\mathrm{gt}})/p_{\\mathrm{eq}}$, yang berada dalam $[0,1]$; jika $p_{\\mathrm{eq}}=0$, ketaksamaan memaksa $p_{\\mathrm{gt}}=\\alpha$ dan $\\gamma$ dapat dipilih sebarang.",
+        "Dengan definisi uji pada daerah $>$, $=$, dan $<$, diperoleh $E_0[\\phi_{k,\\gamma}]=p_{\\mathrm{gt}}+\\gamma p_{\\mathrm{eq}}=\\alpha$. Jadi ambang dan pengacakan yang diperlukan benar-benar ada untuk $0<\\alpha<1$."
       ],
       "citation": "Casella dan Berger (2002); Lehmann dan Romano (2005)."
     },
