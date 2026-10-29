@@ -13,7 +13,7 @@ const lesson=load("data/nested-quantifiers-content.ts").nestedQuantifiersContent
 const defs=lesson.formal.filter(f=>f.kind==="definition");
 const results=lesson.formal.filter(f=>["lemma","proposition","theorem","corollary"].includes(f.kind));
 assert.equal(defs.length,4);
-assert.equal(results.length,7);
+assert.equal(results.length,8);
 assert.equal(lesson.examples.length,8);
 assert.equal(lesson.exercises.length,8);
 for(const d of defs){
@@ -65,4 +65,4 @@ assert.match(lab,/role="img"/);
 assert.match(lab,/aria-label/);
 assert.match(lab,/analyzeRelation/);
 assert.doesNotMatch(lesson.intro.join(" "),/daftar notasi|kesalahan umum|prasyarat/i);
-console.log("Nested-quantifiers audit passed: 4 definitions, 7 proved results, 8 examples, 8 exercises, "+checks+" finite-relation checks.");
+console.log("Nested-quantifiers audit passed: 4 definitions, 8 proved results, 8 examples, 8 exercises, "+checks+" finite-relation checks.");
