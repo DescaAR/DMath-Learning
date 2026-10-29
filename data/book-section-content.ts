@@ -6,6 +6,7 @@ import { preciseLimitContent } from "@/data/precise-limit-content";
 import { groupAxiomsContent } from "@/data/group-axioms-content";
 import { linearSubspacesContent } from "@/data/linear-subspaces-content";
 import { complexPlaneSetsContent } from "@/data/complex-plane-sets-content";
+import { linearFirstOrderContent } from "@/data/linear-first-order-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -64,6 +65,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "la-subspaces":linearSubspacesContent,
   // Dedicated complex-plane topology with formal proofs and explicit domain distinctions.
   "himpunan-di-bidang-kompleks":complexPlaneSetsContent,
+  // Dedicated integrating-factor derivation, existence and uniqueness for first-order ODEs.
+  "de-linear-first":linearFirstOrderContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
