@@ -96,6 +96,64 @@ assert.ok(Math.abs((4/3)-(8/6))<1e-12);
 assert.ok(Math.abs((7/9)-((8/9)*(7/8)))<1e-12);
 assert.ok(Math.abs((1/9)-(1/(1+2)**2))<1e-12);
 
+// Public Statistika: the exact book-section registry, original examples,
+// independent exercises and outlier lab are checked together. Length is only
+// a triage signal; the identities below independently check mathematical claims.
+const central=getBookSectionContent("sta-central");
+assert.ok(central,"Missing authored public Statistika central tendency lesson");
+const centralDefinitions=central.formal.filter(x=>x.kind==="definition");
+const centralResults=central.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+assert.equal(centralDefinitions.length,4);
+assert.equal(centralResults.length,7);
+assert.equal(central.examples.length,8);
+assert.equal(central.exercises.length,8);
+for(const item of centralDefinitions){
+  assert.ok(central.examples.some(ex=>ex.forDefinition===item.title),
+    "Statistika definition has no immediately linked example: "+item.title);
+}
+for(const item of centralResults){
+  assert.ok(item.proof?.length>=2 && normalize(item.proof.join(" ")).length>=350,
+    "Statistika result lacks an adequate proof: "+item.title);
+}
+for(const item of central.examples){
+  assert.ok(normalize(item.solution.join(" ")).length>=380,
+    "Statistika worked example needs a substantive solution: "+item.title);
+}
+for(const item of central.exercises){
+  assert.ok(normalize(item.answer).length>=300 &&
+    !/jawaban yang baik|contoh harus|soal harus|susun langkah/i.test(item.answer),
+    "Statistika exercise needs a concrete mathematical answer: "+item.prompt);
+}
+const centralUi=fs.readFileSync(path.join(root,"components/BookSectionPage.tsx"),"utf8");
+const centralLab=fs.readFileSync(path.join(root,"components/CentralTendencyLab.tsx"),"utf8");
+const centralCatalog=fs.readFileSync(path.join(root,"data/site-data.ts"),"utf8");
+assert.match(centralUi,/section\.slug==="sta-central"\?<CentralTendencyLab/);
+assert.match(centralLab,/aria-labelledby/);
+assert.match(centralCatalog,/subject: "Statistika"[\s\S]{0,400}sta-central/);
+const close=(a,b)=>Math.abs(a-b)<1e-8;
+for(let n=1;n<=8;n++)for(let seed=0;seed<25;seed++){
+  const xs=Array.from({length:n},(_,i)=>((i*7+seed*3)%23)-11).sort((a,b)=>a-b);
+  const mean=xs.reduce((a,b)=>a+b,0)/n;
+  const sq=t=>xs.reduce((sum,x)=>sum+(x-t)**2,0);
+  const abs=t=>xs.reduce((sum,x)=>sum+Math.abs(x-t),0);
+  const med=n%2?xs[(n-1)/2]:(xs[n/2-1]+xs[n/2])/2;
+  for(const t of [-20,-10,-3,0,4,10,20]){
+    assert.ok(close(sq(t)-sq(mean),n*(t-mean)**2),"Mean least-squares identity");
+    assert.ok(abs(med)<=abs(t)+1e-8,"Median must minimize absolute deviations");
+  }
+  const a=-3,b=5;
+  const ys=xs.map(x=>a*x+b).sort((x,y)=>x-y);
+  const medY=n%2?ys[(n-1)/2]:(ys[n/2-1]+ys[n/2])/2;
+  assert.ok(close(medY,a*med+b),"Median must be affine equivariant for negative scale");
+}
+for(let last=6;last<=106;last+=5){
+  const xs=[2,3,4,5,last];
+  const mean=xs.reduce((a,b)=>a+b,0)/5;
+  assert.ok(close(mean,(14+last)/5));
+  assert.equal(xs[2],4);
+  assert.equal((xs[1]+xs[2]+xs[3])/3,4);
+}
+
 const markers=[
   /jawaban yang baik/i,
   /contoh harus memperlihatkan/i,
