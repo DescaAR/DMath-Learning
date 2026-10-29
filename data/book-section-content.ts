@@ -4,6 +4,7 @@ import { euclideanDivisionContent } from "@/data/euclidean-division-content";
 import { supremumApplicationsContent } from "@/data/supremum-applications-content";
 import { preciseLimitContent } from "@/data/precise-limit-content";
 import { groupAxiomsContent } from "@/data/group-axioms-content";
+import { linearSubspacesContent } from "@/data/linear-subspaces-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -58,6 +59,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "calc-precise-limit":preciseLimitContent,
   // Dedicated, fully proved group-axiom lesson replaces the generated summary.
   "alg-groups":groupAxiomsContent,
+  // Proof-based linear subspace lesson supersedes generic matrix curriculum text.
+  "la-subspaces":linearSubspacesContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
