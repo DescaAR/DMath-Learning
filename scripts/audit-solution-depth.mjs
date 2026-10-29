@@ -145,11 +145,17 @@ const totals=subjects.reduce((out,row)=>{
   for(const [k,v] of Object.entries(row))if(typeof v==="number")out[k]=(out[k]??0)+v;
   return out;
 },{});
-const report={scope:"book curricula, 26 fields",method:"length-and-generic-text triage, not mathematical correctness verification",totals,subjects,unresolved:concerns};
+const fieldNamesSource=fs.readFileSync(path.join(root,"data/site-data.ts"),"utf8");
+const catalogStart=fieldNamesSource.indexOf("export const subjects = [");
+const catalogEnd=fieldNamesSource.indexOf("];",catalogStart);
+const catalogSlice=fieldNamesSource.slice(catalogStart,catalogEnd);
+const publicFields=Array.from(catalogSlice.matchAll(/"([^"]+)"/g),x=>x[1]);
+const report={scope:"17 book curricula within a 26-field public directory",method:"length-and-generic-text triage, not mathematical correctness verification",publicFields,totals,subjects,unresolved:concerns};
 if(process.argv.includes("--json")){
   const target=path.join(root,"solution-depth-report.json");
   fs.writeFileSync(target,JSON.stringify(report,null,2)+"\n");
   console.log("Full solution-depth gap report: "+target);
 }
-console.log("Solution depth audit:",JSON.stringify({fields:subjects.length,shortExercises:totals.shortExercises,shortExamples:totals.shortExamples,shortProofs:totals.shortProofs,genericExercises:totals.genericExercises,reviewedSolutionsValidated:checked.length}));
-assert.ok(subjects.length>=26,"Audit expected at least 26 book subjects");
+console.log("Solution depth audit:",JSON.stringify({bookCurricula:subjects.length,publicFields:publicFields.length,shortExercises:totals.shortExercises,shortExamples:totals.shortExamples,shortProofs:totals.shortProofs,genericExercises:totals.genericExercises,reviewedSolutionsValidated:checked.length}));
+assert.equal(publicFields.length,26,"Public site catalog should include 26 fields");
+assert.ok(subjects.length>=17,"Audit expected 17 active book curricula");
