@@ -2,6 +2,20 @@
 
 Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages-static`, bukan menganggap seluruh bidang selesai setelah satu submateri. Jangan ubah branch `main`. Setiap sesi: periksa riwayat commit, pilih submateri berbeda yang masih dangkal/keliru, sempurnakan materi dan visualisasi, jalankan build, lalu perbarui catatan ini dengan bukti perubahan.
 
+## Catatan sesi 2026-10-29 — Analisis Kompleks (himpunan di bidang kompleks)
+
+**Bidang disentuh:** 10 Analisis Kompleks, submateri `himpunan-di-bidang-kompleks`. URL: https://descaar.github.io/DMath-Learning/materi/analisis-kompleks/himpunan-di-bidang-kompleks/.
+
+**Audit awal:** halaman sebelumnya berisi empat definisi singkat, satu proposisi tanpa pembuktian, satu contoh anulus, dan tiga latihan dengan jawaban satu kalimat. Definisi keterhubungan sederhana hanya berupa intuisi dan tidak memisahkan keterbukaan, keterhubungan lintasan, keterhubungan, serta domain. Visualisasi menggunakan template umum, bukan konfigurasi himpunan kompleks.
+
+**Pengayaan:** membuat `data/complex-plane-sets-content.ts` dengan 6 definisi dan 6 contoh yang ditautkan langsung (cakram/lingkungan, himpunan terbuka, tertutup/batas, lintasan, keterhubungan/domain, domain terhubung sederhana), 8 hasil formal dengan bukti lengkap (keterbukaan cakram, gabungan terbuka, irisan hingga terbuka, batas cakram, konveksitas cakram, keterhubungan lintasan mengakibatkan keterhubungan, anulus merupakan domain, kriteria pra-citra terbuka untuk kontinuitas dua arah), 2 contoh aplikasi tambahan, dan 8 latihan dengan solusi. Untuk anulus bukan terhubung sederhana, contoh mengacu secara eksplisit pada invariansi bilangan lilitan; tidak mengklaim membuktikan teorema bilangan lilitan pada halaman ini. Referensi: Zill–Shanahan (2003) dan Conway (1978). Materi hanya menggantikan satu slug di registry; materi lain dipertahankan.
+
+**Visualisasi:** `components/ComplexPlaneSetsLab.tsx` menampilkan SVG responsif lima konfigurasi (cakram terbuka, cakram tertutup, anulus dengan radius dalam dapat diubah, cakram berlubang, dua cakram terpisah), garis batas yang dibedakan, lintasan contoh dua titik, dan klasifikasi keterbukaan, ketertutupan, keterhubungan lintasan, domain, serta domain terhubung sederhana. Predikat keanggotaan murni berada di `lib/complex-plane-explorer.ts`. SVG muncul di pengantar dan bagian visualisasi.
+
+**Pengujian:** `scripts/audit-complex-plane-sets.mjs` diintegrasikan ke `npm run build`; memeriksa contoh-definisi, 8 bukti, 8 solusi, registry/rute/komponen, serta 18.605 titik uji keanggotaan pada lima konfigurasi dan uji batas pada beberapa radius anulus. **Status publikasi:** wajib verifikasi GitHub Actions untuk commit terakhir berstatus `success` sebelum menyatakan halaman terbit.
+
+**Prioritas lanjutan:** 16 Topologi jika tersedia rute publik yang terpisah; jika tidak, 17 Persamaan Diferensial atau 18 Analisis Numerik. Jangan mengulang `himpunan-di-bidang-kompleks` atau tujuh submateri sebelumnya. Cek kegagalan build LaTeX/TypeScript sebelum mengklaim terbit.
+
 ## Catatan sesi 2026-10-29 — Aljabar Linear (subruang)
 
 **Bidang disentuh:** 08 Aljabar Linear, submateri `la-subspaces` (Subruang), URL: https://descaar.github.io/DMath-Learning/materi/aljabar-linear/la-subspaces/.
@@ -115,7 +129,7 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 | 07 | Kalkulus | **1 submateri diperbaiki:** `calc-precise-limit`; bidang belum selesai |
 | 08 | Aljabar Linear | **1 submateri diperbaiki:** `la-subspaces`; bidang belum selesai |
 | 09 | Analisis Real | **1 submateri diperbaiki:** aplikasi-supremum; bidang belum selesai |
-| 10 | Analisis Kompleks | Belum diaudit pada rangkaian ini |
+| 10 | Analisis Kompleks | **1 submateri diperbaiki:** `himpunan-di-bidang-kompleks`; bidang belum selesai |
 | 11 | Struktur Aljabar | **1 submateri diperbaiki:** `alg-groups`; bidang belum selesai |
 | 12 | Statistika | Belum diaudit pada rangkaian ini |
 | 13 | Peluang | Belum diaudit pada rangkaian ini |
@@ -135,8 +149,8 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 
 ## Antrian sesi berikutnya
 
-1. **16 Topologi / 10 Analisis Kompleks:** pilih satu submateri dengan rute publik dan pembuktian atau latihan yang masih dangkal; prioritaskan pengayaan menyeluruh dengan visualisasi matematis khusus.
-2. **09 Analisis Real lanjutan:** pilih submateri berbeda, misalnya nilai-mutlak-dan-garis-real atau barisan-dan-limit, dan audit semua hipotesis sebelum menambah teorema.
-3. **01 Aritmetika:** submateri pecahan sudah ada dalam sumber, tetapi rute tingkat SD dan slug-nya sengaja disembunyikan oleh lib/public-content.ts. Jangan mengubah visibilitas tanpa arahan eksplisit; pilih dahulu bidang yang memiliki halaman publik.
+1. **16 Topologi / 17 Persamaan Diferensial:** cari rute publik dan pilih submateri berbeda yang memiliki bukti terlalu singkat. Topologi saat ini banyak berada di dalam Analisis Real, bukan kategori buku tersendiri; jangan menciptakan klaim rute publik yang tidak ada.
+2. **18 Analisis Numerik:** periksa materi galat atau iterasi Newton yang masih generik dan buat visualisasi yang benar-benar menguji konvergensi.
+3. **01 Aritmetika / 02 Aljabar:** materi sekolah sengaja disembunyikan oleh kebijakan visibilitas. Jangan mengubahnya tanpa permintaan eksplisit.
 
-**Progres pekerjaan yang di-commit pada level submateri:** 7 submateri di 7 dari 26 bidang telah dikerjakan secara mendalam; 19 bidang belum disentuh dalam rangkaian ini. Tidak satu pun bidang dinyatakan selesai seluruhnya. Periksa GitHub Actions dan material-depth-report.json sebelum melaporkan status publikasi atau memilih pekerjaan berikutnya.
+**Progres pekerjaan yang di-commit pada level submateri:** 8 submateri di 8 dari 26 bidang telah dikerjakan secara mendalam; 18 bidang belum disentuh dalam rangkaian ini. Tidak satu pun bidang dinyatakan selesai seluruhnya. Periksa GitHub Actions dan material-depth-report.json sebelum melaporkan status publikasi atau memilih pekerjaan berikutnya.
