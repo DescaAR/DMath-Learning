@@ -2,6 +2,20 @@
 
 Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages-static`, bukan menganggap seluruh bidang selesai setelah satu submateri. Jangan ubah branch `main`. Setiap sesi: periksa riwayat commit, pilih submateri berbeda yang masih dangkal/keliru, sempurnakan materi dan visualisasi, jalankan build, lalu perbarui catatan ini dengan bukti perubahan.
 
+## Catatan sesi 2026-10-29 — Persamaan Diferensial (persamaan linear orde satu)
+
+**Bidang disentuh:** 17 Persamaan Diferensial, submateri `de-linear-first`, URL: https://descaar.github.io/DMath-Learning/materi/persamaan-diferensial/de-linear-first/.
+
+**Audit awal:** halaman memakai generator `expanded-book-content.ts` yang membahas persamaan orde satu secara generik, tidak memberikan pembuktian konstruktif keberadaan dan ketunggalan khusus untuk koefisien kontinu, tidak mengurai keluarga solusi homogen, estimasi kestabilan, prinsip positivitas, maupun stabilitas diskret Euler. Visualisasi bawaan tidak membandingkan solusi eksak, medan kemiringan, dan galat Euler untuk masalah yang sama.
+
+**Pengayaan:** `data/linear-first-order-content.ts` kini menggantikan hanya slug `de-linear-first` di registry. Materi berisi 4 definisi formal dengan contoh terbahas tepat setelahnya (persamaan linear, masalah nilai awal, faktor integrasi ternormalisasi, solusi particular/homogen), 7 hasil formal dengan pembuktian terurai (rumus faktor integrasi dan eksistensi, ketunggalan, seluruh keluarga solusi, koefisien konstan, peluruhan selisih, prinsip positivitas, rumus dan stabilitas Euler), 8 contoh terbahas, dan 8 latihan dengan solusi bertahap. Asumsi kontinuitas dan domain interval dijelaskan secara eksplisit; sumber matematis: Simmons (2017) dan Boyce–DiPrima–Meade (2017). Materi lain tetap dipertahankan.
+
+**Visualisasi:** `components/LinearFirstOrderLab.tsx` menyajikan SVG responsif dengan empat pengendali (koefisien, masukan, nilai awal, dan jumlah langkah), kurva eksak, medan kemiringan, titik setimbang, dan iterasi Euler. Nilai solusi, galat pada waktu akhir, faktor Euler, dan status stabilitas diperbarui dari `lib/linear-first-order-explorer.ts`. Komponen muncul di pengantar dan bagian visualisasi.
+
+**Pengujian:** `scripts/audit-linear-first-order.mjs` diintegrasikan ke `npm run build`; memeriksa kaitan definisi–contoh, 7 pembuktian, 8 solusi latihan, registry/rute/komponen, dan 960 konfigurasi numerik eksak-versus-Euler. **Status publikasi:** tunggu hasil akhir GitHub Actions pada commit terbaru; jangan menyatakan terbit sampai job build dan deploy berstatus `success`.
+
+**Prioritas lanjutan:** 18 Analisis Numerik (misalnya metode bagi dua atau galat numerik), atau 16 Topologi jika ada rute publik; hindari mengulang sembilan submateri yang telah diperkaya. Periksa terlebih dahulu status build dan deployment sesi ini, kemudian pilih bidang baru agar rotasi 26 bidang berlanjut.
+
 ## Catatan sesi 2026-10-29 — Analisis Kompleks (himpunan di bidang kompleks)
 
 **Bidang disentuh:** 10 Analisis Kompleks, submateri `himpunan-di-bidang-kompleks`. URL: https://descaar.github.io/DMath-Learning/materi/analisis-kompleks/himpunan-di-bidang-kompleks/.
