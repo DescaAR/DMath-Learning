@@ -3,7 +3,7 @@
 import {useMemo,useState} from "react";
 
 type Mode="trivial"|"adjacent"|"alternating"|"complete";
-const values=[0,2,4,6] as const;
+const values:number[]=[0,2,4,6];
 const modes:{key:Mode;label:string;groups:number[]}[]=[
   {key:"trivial",label:"Tanpa informasi: satu blok",groups:[0,0,0,0]},
   {key:"adjacent",label:"Dua blok: {1,2} dan {3,4}",groups:[0,0,1,1]},
