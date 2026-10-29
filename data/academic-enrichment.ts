@@ -355,25 +355,25 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
   },
   "num-newton": {
     "intro": [
-      "Iterasi Newton menggunakan garis singgung sebagai aproksimasi lokal kurva. Hubungan dengan akar sederhana terlihat dari sifat titik tetap pemetaan Newton."
+      "Pemetaan Newton $N_f(x)=x-f(x)/f'(x)$ hanya terdefinisi pada titik dengan turunan tidak nol. Karena itu hubungan antara akar dan titik tetap harus diperiksa bersama domain pemetaan; akar multipel dapat menjadi titik di mana $N_f$ tidak terdefinisi walaupun $f(p)=0$."
     ],
     "formal": [
       {
         "kind": "lemma",
         "title": "Akar Sederhana Menjadi Titik Tetap Newton",
-        "statement": "Jika $f(p)=0$ dan $f'(p)\\ne0$, maka $N(p)=p$ untuk $N(x)=x-f(x)/f'(x)$ pada titik di mana turunannya tak nol.",
+        "statement": "Misalkan $f$ terdiferensialkan pada lingkungan $p$, $f(p)=0$, dan $f'(p)\\ne0$. Untuk pemetaan Newton $N_f(x)=x-f(x)/f'(x)$ pada himpunan $D=\\{x:f'(x)\\ne0\\}$, berlaku $p\\in D$ dan $N_f(p)=p$. Sebaliknya, jika $x\\in D$ dan $N_f(x)=x$, maka $f(x)=0$.",
         "proof": [
-          "Diketahui $f(p)=0$ dan $f'(p)\\ne0$, sehingga nilai $N(p)$ terdefinisi.",
-          "Dengan substitusi, $N(p)=p-\\frac{f(p)}{f'(p)}=p-\\frac0{f'(p)}$.",
-          "Oleh karena itu, $N(p)=p$, yakni akar sederhana merupakan titik tetap pemetaan Newton."
+          "Karena $f'(p)\\ne0$, titik $p$ termasuk domain $D$, sehingga substitusi ke dalam rumus Newton sah. Dengan menggunakan $f(p)=0$, diperoleh $N_f(p)=p-f(p)/f'(p)=p-0/f'(p)=p$. Ini membuktikan arah dari akar sederhana ke titik tetap.",
+          "Untuk arah sebaliknya, misalkan $x\\in D$ dan $N_f(x)=x$. Definisi pemetaan memberi $x-f(x)/f'(x)=x$, sehingga $f(x)/f'(x)=0$. Karena $f'(x)\\ne0$, perkalian dengan penyebut tersebut sah dan menghasilkan $f(x)=0$.",
+          "Jadi pada domain tempat turunan tidak nol, titik tetap Newton tepat merupakan akar fungsi yang termasuk domain tersebut. Akar dengan turunan nol tidak otomatis menjadi titik tetap, karena rumus Newton mungkin tidak terdefinisi di sana; contohnya $f(x)=(x-1)^2$ pada $x=1$. $\\square$"
         ]
       }
     ],
     "exercises": [
       {
-        "prompt": "Pada $f(x)=x^2-4$, tentukan $N(x)$ dan periksa apakah $x=2$ titik tetap.",
-        "hint": "Tentukan turunan dan substitusikan akar sederhana.",
-        "answer": "Karena $f'(x)=2x$, pemetaan Newton untuk $x\\ne0$ adalah $N(x)=x-(x^2-4)/(2x)=\\frac12(x+4/x)$. Substitusi $x=2$ menghasilkan $N(2)=\\frac12(2+2)=2$, sesuai sifat titik tetap.",
+        "prompt": "Pada $f(x)=x^2-4$, tentukan $N_f(x)$ dan periksa apakah $x=2$ titik tetap.",
+        "hint": "Tentukan domain pemetaan dari turunan, lalu substitusikan titik yang diminta.",
+        "answer": "Diketahui $f(x)=x^2-4$, sehingga $f'(x)=2x$. Pemetaan Newton hanya terdefinisi ketika $x\\ne0$. Untuk $x$ pada domain itu, $N_f(x)=x-(x^2-4)/(2x)=\\frac{x^2+4}{2x}=\\frac12(x+4/x)$. Karena $2\\ne0$, substitusi $x=2$ sah dan menghasilkan $N_f(2)=\\frac12(2+4/2)=2$. Pemeriksaan langsung juga memberi $f(2)=4-4=0$ dan $f'(2)=4\\ne0$, sesuai lemma. Sebagai pemeriksaan tambahan, $N_f(x)=x$ ekuivalen dengan $x^2=4$ untuk $x\\ne0$, sehingga titik tetapnya tepat $x=\\pm2$. Keduanya akar sederhana; $x=0$ tidak boleh dimasukkan karena pembagian oleh turunan nol.",
         "provenance": "dmath-original"
       }
     ]
