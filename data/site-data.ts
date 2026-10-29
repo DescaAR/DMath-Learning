@@ -22,6 +22,14 @@ export const subjects = [
 
 export const materials = [
   {
+    title: "Pemodelan Matematika: Model Deterministik dan Stokastik",
+    level: "Kuliah",
+    subject: "Pemodelan Matematika",
+    status: "published" as ContentStatus,
+    summary: "Formulasi skenario, risiko ekspektasian, identifiabilitas, kelayakan tangguh, fraktil kritis, tujuh pembuktian dan solusi soal lengkap.",
+    href: "/materi/riset-operasi/or-model-deterministik-stokastik",
+  },
+  {
     title: "Ukuran Pemusatan: Rata-rata, Median, Bobot, dan Pencilan",
     level: "Kuliah",
     subject: "Statistika",

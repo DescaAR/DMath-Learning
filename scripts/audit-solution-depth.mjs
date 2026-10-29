@@ -154,6 +154,57 @@ for(let last=6;last<=106;last+=5){
   assert.equal((xs[1]+xs[2]+xs[3])/3,4);
 }
 
+// Public Pemodelan Matematika: inspect the exact rendered source, not the
+// generated operations-research rubric. These checks cover content structure
+// and independent numerical identities; length alone is never correctness.
+const modeling=getBookSectionContent("or-model-deterministik-stokastik");
+assert.ok(modeling,"Missing authored mathematical modeling page");
+const modelingDefinitions=modeling.formal.filter(item=>item.kind==="definition");
+const modelingResults=modeling.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(modelingDefinitions.length,4);
+assert.equal(modelingResults.length,7);
+assert.equal(modeling.examples.length,8);
+assert.equal(modeling.exercises.length,8);
+for(const definition of modelingDefinitions){
+  assert.ok(modeling.examples.some(example=>example.forDefinition===definition.title),
+    "Modeling definition lacks an immediately linked example: "+definition.title);
+}
+for(const result of modelingResults){
+  assert.ok(result.proof?.length>=2 && normalize(result.proof.join(" ")).length>=350,
+    "Modeling formal result lacks a substantial proof: "+result.title);
+}
+for(const example of modeling.examples){
+  assert.ok(normalize(example.solution.join(" ")).length>=380,
+    "Modeling worked example is abbreviated: "+example.title);
+}
+for(const exercise of modeling.exercises){
+  assert.ok(normalize(exercise.answer).length>=450 &&
+    !/jawaban yang baik|contoh harus|susun langkah|soal harus|pembuktian mengikuti/i.test(exercise.answer),
+    "Modeling exercise is a generic rubric or abbreviated: "+exercise.prompt);
+}
+const modelingUi=fs.readFileSync(path.join(root,"components/BookSectionPage.tsx"),"utf8");
+const modelingLab=fs.readFileSync(path.join(root,"components/ModelingScenariosLab.tsx"),"utf8");
+const modelingCatalog=fs.readFileSync(path.join(root,"data/site-data.ts"),"utf8");
+assert.ok(modelingUi.includes('section.slug==="or-model-deterministik-stokastik"?<ModelingScenariosLab'),
+  "Modeling scenario SVG is not rendered");
+assert.match(modelingLab,/aria-labelledby/);
+assert.match(modelingCatalog,/subject: "Pemodelan Matematika"[\s\S]{0,400}or-model-deterministik-stokastik/);
+const modelLoss=(q,d)=>2*Math.max(q-d,0)+5*Math.max(d-q,0);
+const modelRisk=q=>0.4*modelLoss(q,4)+0.6*modelLoss(q,8);
+assert.ok(Math.abs(modelRisk(6.4)-6.72)<1e-10);
+assert.ok(Math.abs(modelRisk(8)-3.2)<1e-10);
+assert.ok(Math.abs(modelRisk(4)-12)<1e-10);
+for(let i=-50;i<=150;i++){
+  const q=i/10;
+  assert.ok(modelRisk(q)>=3.2-1e-10,"Modeling critical-fractile minimizer fails");
+}
+for(const q of [4,5,6.4,8,10]){
+  assert.ok(modelRisk(q)>=modelLoss(q,6.4)-1e-10,
+    "Convex-loss Jensen numerical regression fails");
+}
+assert.ok(Math.abs(0.4*4+0.6*8-6.4)<1e-10);
+assert.ok(Math.abs(0.4*(4-6.4)**2+0.6*(8-6.4)**2-3.84)<1e-10);
+
 const markers=[
   /jawaban yang baik/i,
   /contoh harus memperlihatkan/i,

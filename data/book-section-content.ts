@@ -19,6 +19,7 @@ import { analyticGeometryContent } from "@/data/analytic-geometry-content";
 import { optimizationContent } from "@/data/optimization-content";
 import { probabilityDensityContent } from "@/data/probability-density-content";
 import { centralTendencyContent } from "@/data/central-tendency-content";
+import { modelingContent } from "@/data/modeling-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -103,6 +104,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "calc-probability":probabilityDensityContent,
   // Descriptive statistics with complete least-squares and median proofs.
   "sta-central":centralTendencyContent,
+  // Scenario-based mathematical modeling with exact risk, identifiability and proofs.
+  "or-model-deterministik-stokastik":modelingContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
