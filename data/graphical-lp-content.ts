@@ -165,6 +165,46 @@ export const graphicalLinearProgrammingContent:BookLessonContent = {
         "Jumlah ruas kanan menjadi $(9/5)8+(2/5)9=18$. Karena pengali nonnegatif, diperoleh batas atas sah.",
         "Titik $(2,3)$ layak dan mencapai nilai $18$, sehingga batas atas tersebut tajam."
       ]
+    },
+    {
+      "title": "Enumerasi Seluruh Titik Sudut",
+      "problem": "Temukan semua titik sudut $P$ melalui perpotongan garis batas.",
+      "solution": [
+        "Pada sumbu $y=0$, kendala $3x\\le9$ memberi $x\\le3$, sehingga ujungnya $(3,0)$. Pada sumbu $x=0$, kendala $2y\\le8$ memberi $y\\le4$, sehingga ujungnya $(0,4)$.",
+        "Perpotongan $x+2y=8$ dan $3x+y=9$ memberi $x=2,y=3$. Titik asal $(0,0)$ adalah perpotongan kedua sumbu.",
+        "Keempat titik memenuhi semua kendala. Kandidat lain seperti $(8,0)$ dan $(0,9)$ melanggar kendala lain.",
+        "Jadi titik sudut lengkap adalah $(0,0),(3,0),(2,3),(0,4)$."
+      ]
+    },
+    {
+      "title": "Perubahan Keuntungan Produksi",
+      "problem": "Jika fungsi tujuan diganti menjadi $6x+y$, tentukan titik optimal baru.",
+      "solution": [
+        "Nilai tujuan pada empat titik sudut berturut-turut $0$, $18$, $15$, dan $4$.",
+        "Karena nilai terbesar $18$ dicapai pada $(3,0)$, titik tersebut optimal.",
+        "Syarat sensitivitas juga memberi kesimpulan yang sama karena $c_1=6>3c_2=3$.",
+        "Perubahan keuntungan mengubah campuran produksi optimal meskipun kapasitas sumber daya tidak berubah."
+      ]
+    },
+    {
+      "title": "Sisi Optimal dengan Tak Hingga Banyak Titik",
+      "problem": "Tentukan seluruh titik optimal untuk fungsi tujuan $3x+y$ pada poligon $P$.",
+      "solution": [
+        "Kendala $3x+y\\le9$ memberikan batas atas langsung sebesar $9$.",
+        "Titik $(3,0)$ dan $(2,3)$ layak dan masing-masing mencapai nilai $9$.",
+        "Konveksitas menjamin seluruh ruas $[(3,0),(2,3)]$ layak; linearitas tujuan menjamin nilainya tetap $9$.",
+        "Sebaliknya setiap pemaksimum harus memenuhi $3x+y=9$, dan irisannya dengan $P$ tepat ruas tersebut."
+      ]
+    },
+    {
+      "title": "Membedakan Infeasible dan Unbounded",
+      "problem": "Bandingkan $\\max\\{x:x\\ge0\\}$ dan $\\max\\{x:x\\ge1,\\ x\\le0\\}$.",
+      "solution": [
+        "Masalah pertama memiliki titik layak, tetapi untuk setiap $M$ terdapat $x>\\max\\{M,0\\}$ yang layak. Maka nilai tujuan tidak terbatas ke atas.",
+        "Karena setiap kandidat $x$ dapat diperbesar, masalah pertama tidak mempunyai pemaksimum.",
+        "Masalah kedua tidak mempunyai titik layak: tidak ada bilangan real yang sekaligus memenuhi $x\\ge1$ dan $x\\le0$.",
+        "Keduanya tidak mempunyai solusi optimal, tetapi yang pertama unbounded sedangkan yang kedua infeasible."
+      ]
     }
   ],
   "exercises": [],
