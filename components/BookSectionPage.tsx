@@ -14,6 +14,7 @@ import { PreciseLimitLab } from "@/components/PreciseLimitLab";
 import { GroupAxiomsLab } from "@/components/GroupAxiomsLab";
 import { LinearSubspacesLab } from "@/components/LinearSubspacesLab";
 import { ComplexPlaneSetsLab } from "@/components/ComplexPlaneSetsLab";
+import { LinearFirstOrderLab } from "@/components/LinearFirstOrderLab";
 import { AcademicSolution, splitAcademicSolution } from "@/components/AcademicSolution";
 import type { BookChapter, BookSection, BookSubject } from "@/data/book-curricula";
 import type { BookExample, BookFormalKind, BookLessonContent } from "@/data/book-content-types";
@@ -207,7 +208,7 @@ export function BookSectionPage({
         <span className="eyebrow">Bagian 1</span>
         <h2>Pengantar</h2>
         {content.intro.map((paragraph,index)=><div className="ird-paragraph" key={index}><Text>{paragraph}</Text></div>)}
-        <div style={{marginTop:28}}>{section.slug==="komb-perfect-covers"?<DominoTilingLab compact/>:section.slug==="gt-definitions"?<GraphDefinitionsLab compact/>:section.slug==="nt-euclid-division"?<EuclideanDivisionLab compact/>:section.slug==="aplikasi-supremum"?<SupremumApplicationsLab compact/>:section.slug==="calc-precise-limit"?<PreciseLimitLab compact/>:section.slug==="alg-groups"?<GroupAxiomsLab compact/>:section.slug==="la-subspaces"?<LinearSubspacesLab compact/>:section.slug==="himpunan-di-bidang-kompleks"?<ComplexPlaneSetsLab compact/>:<MathVisualization kind={visualKind}/>}</div>
+        <div style={{marginTop:28}}>{section.slug==="komb-perfect-covers"?<DominoTilingLab compact/>:section.slug==="gt-definitions"?<GraphDefinitionsLab compact/>:section.slug==="nt-euclid-division"?<EuclideanDivisionLab compact/>:section.slug==="aplikasi-supremum"?<SupremumApplicationsLab compact/>:section.slug==="calc-precise-limit"?<PreciseLimitLab compact/>:section.slug==="alg-groups"?<GroupAxiomsLab compact/>:section.slug==="la-subspaces"?<LinearSubspacesLab compact/>:section.slug==="himpunan-di-bidang-kompleks"?<ComplexPlaneSetsLab compact/>:section.slug==="de-linear-first"?<LinearFirstOrderLab compact/>:<MathVisualization kind={visualKind}/>}</div>
       </section>
 
       <section id="book-lesson-4" className="book-section ird-source-section">
@@ -317,7 +318,7 @@ export function BookSectionPage({
         <h2>Visualisasi dan eksplorasi</h2>
         <p className="ird-paragraph">Representasi visual digunakan untuk memeriksa struktur konsep, sedangkan panel interaktif memungkinkan parameter diubah dan akibatnya diamati langsung.</p>
         <div className="ird-visual-stack">
-          {section.slug==="komb-perfect-covers"?<DominoTilingLab/>:section.slug==="gt-definitions"?<GraphDefinitionsLab/>:section.slug==="nt-euclid-division"?<EuclideanDivisionLab/>:section.slug==="aplikasi-supremum"?<SupremumApplicationsLab/>:section.slug==="calc-precise-limit"?<PreciseLimitLab/>:section.slug==="alg-groups"?<GroupAxiomsLab/>:section.slug==="la-subspaces"?<LinearSubspacesLab/>:section.slug==="himpunan-di-bidang-kompleks"?<ComplexPlaneSetsLab/>:<>
+          {section.slug==="komb-perfect-covers"?<DominoTilingLab/>:section.slug==="gt-definitions"?<GraphDefinitionsLab/>:section.slug==="nt-euclid-division"?<EuclideanDivisionLab/>:section.slug==="aplikasi-supremum"?<SupremumApplicationsLab/>:section.slug==="calc-precise-limit"?<PreciseLimitLab/>:section.slug==="alg-groups"?<GroupAxiomsLab/>:section.slug==="la-subspaces"?<LinearSubspacesLab/>:section.slug==="himpunan-di-bidang-kompleks"?<ComplexPlaneSetsLab/>:section.slug==="de-linear-first"?<LinearFirstOrderLab/>:<>
             <MathVisualization kind={visualKind}/>
             <InteractiveMathLab kind={visualKind}/>
           </>}
