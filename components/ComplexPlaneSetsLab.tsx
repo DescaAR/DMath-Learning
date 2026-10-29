@@ -69,9 +69,9 @@ export function ComplexPlaneSetsLab({compact=false}:{compact?:boolean}){
         <path d={arc} fill="none" stroke="#2563eb" strokeWidth="3" strokeDasharray="5 3"/>
         <line x1={centerX-arcRadius*scale} y1={centerY} x2={pb[0]} y2={pb[1]} stroke="#2563eb" strokeWidth="3" strokeDasharray="5 3"/>
       </g>:facts.pathConnected?<line x1={pa[0]} y1={pa[1]} x2={pb[0]} y2={pb[1]} stroke="#2563eb" strokeWidth="3" strokeDasharray="5 3"/>:null}
-      {[[pa,"A"],[pb,"B"]].map(([p,label])=><g key={label as string}>
-        <circle cx={(p as readonly number[])[0]} cy={(p as readonly number[])[1]} r="5.5" fill="#1d4ed8" stroke="#fff" strokeWidth="1.5"/>
-        <text x={(p as readonly number[])[0]+8} y={(p as readonly number[])[1]-9} fill="var(--text)" fontSize="14" fontWeight="700">{label as string}</text>
+      {[{point:pa,label:"A"},{point:pb,label:"B"}].map(({point,label})=><g key={label}>
+        <circle cx={point[0]} cy={point[1]} r="5.5" fill="#1d4ed8" stroke="#fff" strokeWidth="1.5"/>
+        <text x={point[0]+8} y={point[1]-9} fill="var(--text)" fontSize="14" fontWeight="700">{label}</text>
       </g>)}
       <text x="478" y={centerY-10} fill="var(--text)" fontSize="13">Re</text>
       <text x={centerX+9} y="16" fill="var(--text)" fontSize="13">Im</text>
