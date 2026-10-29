@@ -134,7 +134,23 @@ const checked=[
   ["tup-extension","exercise","Untuk premeasure panjang"],
   ["tup-extension","exercise","Tunjukkan bahwa tanpa syarat"],
   ["tup-extension","exercise","Misalkan $m$ suatu ukuran Borel"],
-  ["tup-extension","exercise","Pada $X=\\{a,b,c\\}$"]
+  ["tup-extension","exercise","Pada $X=\\{a,b,c\\}$"],
+  ["stm-neyman-pearson","example","Model Bernoulli sebagai"],
+  ["stm-neyman-pearson","example","Ukuran dan Power"],
+  ["stm-neyman-pearson","example","Rasio Likelihood pada"],
+  ["stm-neyman-pearson","example","Aturan Batas"],
+  ["stm-neyman-pearson","example","Normal Bergeser"],
+  ["stm-neyman-pearson","example","Tiga Titik"],
+  ["stm-neyman-pearson","example","Hipotesis yang Sama"],
+  ["stm-neyman-pearson","example","Alternatif Berlawanan"],
+  ["stm-neyman-pearson","exercise","Untuk $X"],
+  ["stm-neyman-pearson","exercise","Pada model soal sebelumnya"],
+  ["stm-neyman-pearson","exercise","Pada ruang $\\{a,b,c\\}$"],
+  ["stm-neyman-pearson","exercise","Uji $H_0:X"],
+  ["stm-neyman-pearson","exercise","Misalkan $H_0:X"],
+  ["stm-neyman-pearson","exercise","Pada ruang $\\{0,1\\}$"],
+  ["stm-neyman-pearson","exercise","Jelaskan mengapa uji paling kuat"],
+  ["stm-neyman-pearson","exercise","Pada model $H_0"]
 ];
 for(const [slug,type,anchor] of checked){
   const page=getBookSectionContent(slug);
@@ -155,6 +171,35 @@ assert.ok(uniqueness?.statement.includes("E_1") && uniqueness.statement.includes
   "Uniqueness must require a common finite-measure cover inside the generating algebra");
 assert.ok(normalize(uniqueness.proof?.join(" ")).length>=900,
   "Uniqueness proof must establish the finite-restriction pi-lambda argument and limit passage");
+
+// Regression audit: verify the full source rendered for Neyman-Pearson, not just
+// the text length of an isolated example. These numerical identities also catch
+// incorrect size/power swaps and invalid randomization probabilities.
+const np=getBookSectionContent("stm-neyman-pearson");
+assert.ok(np && np.formal.filter(x=>x.kind==="definition").length===4);
+const npResults=np.formal.filter(x=>["lemma","theorem","proposition","corollary"].includes(x.kind));
+assert.equal(npResults.length,4);
+for(const item of npResults){
+  assert.ok(normalize(item.proof?.join(" ")).length>750,"Incomplete Neyman-Pearson proof: "+item.title);
+}
+assert.ok(np.formal.some(x=>x.kind==="theorem" && x.statement.includes("E_0") && x.statement.includes("E_1")));
+assert.ok(np.formal.some(x=>x.kind==="corollary" && x.statement.includes("k>0")));
+for(const item of np.formal.filter(x=>x.kind==="definition")){
+  assert.ok(np.examples.some(ex=>ex.forDefinition===item.title),"Definition lacks immediate example: "+item.title);
+}
+assert.equal(np.examples.length,8);
+assert.ok(np.exercises.length>=9,"Eight new exercises plus the previously curated Bernoulli exercise must remain");
+const bernoulli0=[4/5,1/5], bernoulli1=[1/5,4/5];
+for(const gamma of [0,0.125,0.5,1]){
+  const size=bernoulli0[1]*gamma, power=bernoulli1[1]*gamma;
+  assert.ok(Math.abs(power-4*size)<1e-12);
+}
+for(const [alpha,gamma] of [[1/5,1],[1/10,1/2]]){
+  assert.ok(Math.abs(bernoulli0[1]*gamma-alpha)<1e-12);
+}
+const f0=[.5,.3,.2],f1=[.1,.3,.6],phi=[0,0,.75];
+assert.ok(Math.abs(phi.reduce((a,v,i)=>a+v*f0[i],0)-.15)<1e-12);
+assert.ok(Math.abs(phi.reduce((a,v,i)=>a+v*f1[i],0)-.45)<1e-12);
 
 const totals=subjects.reduce((out,row)=>{
   for(const [k,v] of Object.entries(row))if(typeof v==="number")out[k]=(out[k]??0)+v;
