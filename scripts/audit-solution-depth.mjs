@@ -124,7 +124,11 @@ const checked=[
   ["ks-brownian-definition","example","Contoh Increment Brownian Motion"],
   ["tup-measures","example","Counting Measure"],
   ["tup-classes-sets","example","Sigma-Algebra pada Himpunan Tiga Elemen"],
-  ["tup-outer-measure","example","Outer Measure dari Panjang"]
+  ["tup-outer-measure","example","Outer Measure dari Panjang"],
+  ["num-galat-absolut-relatif","example","Membandingkan Galat"],
+  ["num-galat-absolut-relatif","example","Cancellation"],
+  ["num-galat-absolut-relatif","example","Orde Galat"],
+  ["num-galat-absolut-relatif","example","Residual dan Error"]
 ];
 for(const [slug,type,anchor] of checked){
   const page=getBookSectionContent(slug);
