@@ -122,7 +122,9 @@ const checked=[
   ["md-ekuivalensi-logika","example","Contoh Ekuivalensi Logika"],
   ["ks-martingale","example","Contoh Martingale Random Walk"],
   ["ks-brownian-definition","example","Contoh Increment Brownian Motion"],
-  ["tup-measures","example","Contoh Ukuran Pencacahan"]
+  ["tup-measures","example","Counting Measure"],
+  ["tup-classes-sets","example","Sigma-Algebra pada Himpunan Tiga Elemen"],
+  ["tup-outer-measure","example","Outer Measure dari Panjang"]
 ];
 for(const [slug,type,anchor] of checked){
   const page=getBookSectionContent(slug);
