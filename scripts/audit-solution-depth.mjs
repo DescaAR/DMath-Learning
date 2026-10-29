@@ -337,6 +337,48 @@ for(const [x,y] of [[3,4],[-3,-4]]){
   assert.equal(x*direction[0]+y*direction[1],0);
 }
 
+// One-variable optimization regression: the rendered lesson must have actual
+// mathematical solutions, not only long generic rubric text. These checks
+// complement, rather than replace, manual proof and domain review.
+const optimization=getBookSectionContent("calc-optimization");
+assert.ok(optimization,"Authored optimization lesson is missing from rendered registry");
+const optimizationDefs=optimization.formal.filter(x=>x.kind==="definition");
+const optimizationResults=optimization.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+assert.equal(optimizationDefs.length,4);
+assert.equal(optimizationResults.length,6);
+assert.equal(optimization.examples.length,8);
+assert.equal(optimization.exercises.length,8);
+for(const def of optimizationDefs){
+  assert.ok(optimization.examples.some(x=>x.forDefinition===def.title),
+    "Optimization definition lacks its directly attached example: "+def.title);
+}
+for(const item of optimizationResults){
+  assert.ok(item.proof?.length>=2 && normalize(item.proof.join(" ")).length>350,
+    "Optimization formal result lacks a substantive proof: "+item.title);
+}
+for(const item of optimization.exercises){
+  assert.ok(normalize(item.answer).length>450 && !likelyUnsolved(item.answer),
+    "Optimization exercise has an abbreviated or generic solution: "+item.prompt);
+}
+const optimizationRenderer=fs.readFileSync(path.join(root,"components/BookSectionPage.tsx"),"utf8");
+const optimizationLab=fs.readFileSync(path.join(root,"components/OptimizationLab.tsx"),"utf8");
+const optimizationSite=fs.readFileSync(path.join(root,"data/site-data.ts"),"utf8");
+assert.match(optimizationRenderer,/section\.slug==="calc-optimization"\?<OptimizationLab/);
+assert.match(optimizationLab,/tangentSlope=2\*\(x-2\)/);
+assert.match(optimizationSite,/subject: "Optimisasi"[\s\S]{0,300}calc-optimization/);
+for(let i=0;i<=400;i++){
+  const x=i/100;
+  const fx=(x-2)**2+1;
+  assert.ok(fx>=1-1e-12 && fx<=5+1e-12);
+  assert.ok(Math.abs(fx-(5-(4*x-x*x)))<1e-10);
+}
+for(const [x,y] of [[-3,-1],[-1,2],[0,0],[1,4],[3,5]]){
+  assert.ok(y*y>=x*x+2*x*(y-x)-1e-12,
+    "Quadratic tangent support inequality violated");
+}
+assert.equal(Math.max(...[-2,-1,1,2].map(x=>x**3-3*x)),2);
+assert.equal(Math.min(...[-2,-1,1,2].map(x=>x**3-3*x)),-2);
+
 // Additional public routes outside the 17 book curricula: deep materials and
 // their independent practice banks. These figures are separate from book totals
 // so historical book-only triage counts remain comparable across deployments.
