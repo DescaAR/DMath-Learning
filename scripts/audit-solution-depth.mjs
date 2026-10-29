@@ -216,7 +216,7 @@ const cePageRenderer=fs.readFileSync(path.join(root,"components/BookSectionPage.
 const ceLabSource=fs.readFileSync(path.join(root,"components/ConditionalExpectationLab.tsx"),"utf8");
 assert.match(cePageRenderer,/section\.slug==="ks-conditional-expectation"\?<ConditionalExpectationLab/);
 assert.match(ceLabSource,/aria-label="Pilih partisi informasi"/);
-assert.match(ceLabSource,/result\.residual\+result\.between/);
+assert.match(ceLabSource,/round\(result\.residual\).*round\(result\.between\)/);
 const ce=getBookSectionContent("ks-conditional-expectation");
 assert.ok(ce,"Conditional expectation lesson missing from the rendered registry");
 const ceDefinitions=ce.formal.filter(x=>x.kind==="definition");
