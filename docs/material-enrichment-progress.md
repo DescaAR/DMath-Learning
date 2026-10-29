@@ -1,3 +1,19 @@
+## Catatan sesi 2026-10-29 — Optimisasi: ekstrem global, Fermat, dan konveksitas (audit naskah dan solusi)
+
+**Bidang publik:** 20 Optimisasi. **URL sumber yang dirender:** https://descaar.github.io/DMath-Learning/materi/kalkulus/calc-optimization/. Materi ini berada pada kurikulum Kalkulus, tetapi sekarang didaftarkan juga sebagai bidang Optimisasi dalam `data/site-data.ts`. Pengayaan satu submateri tidak berarti seluruh bidang selesai.
+
+**Temuan dan tindakan:** submateri `calc-optimization` sebelumnya menggunakan isi generator umum dari `data/expanded-book-content.ts`, sehingga belum memiliki naskah optimisasi satu variabel yang secara khusus menguraikan daerah layak, batas domain, titik tak terdiferensialkan, syarat perlu Fermat, keberadaan ekstrem global, dan karakterisasi konveksitas dengan pembuktian dua arah. Sesi ini menambahkan `data/optimization-content.ts` dan memasangnya hanya untuk slug tersebut melalui `data/book-section-content.ts`. Isi baru terdiri atas **4 definisi dengan contoh langsung**, **6 hasil formal beserta pembuktian**, **8 contoh terbahas**, dan **8 latihan dengan solusi rinci**. Latihan membahas ekstrem kubik, kuadrat, titik stasioner bukan ekstrem, konveks ketat, persegi panjang dengan domain terbuka, minimum biaya AM–GM, ketaksamaan garis singgung, dan ekstrem pada ujung. Seluruh jawaban menyatakan domain dan alasan kandidat, memperlihatkan perhitungan, serta memverifikasi hasil; tidak menggunakan rubrik generik.
+
+**Bukti yang ditinjau:** keberadaan ekstrem pada interval tertutup dibuktikan dengan Bolzano–Weierstrass dan kontinuitas; Fermat dibuktikan dari hasil bagi selisih kanan/kiri; monotonisitas dari Teorema Nilai Rata-Rata; garis singgung pendukung dikarakterisasi dengan **kedua arah**; ketunggalan minimum untuk konveks ketat dibuktikan dengan kontradiksi; kandidat ekstrem global menggabungkan Weierstrass dan Fermat. Hipotesis interior, diferensiabilitas, dan ketercapaian infimum dinyatakan eksplisit.
+
+**Visualisasi:** `components/OptimizationLab.tsx` memperlihatkan grafik eksak $f(x)=(x-2)^2+1$ pada $[0,4]$, garis singgung, titik bergerak, minimum, kedua ujung, dan selisih nilai terhadap minimum; komponen dihubungkan ke dua lokasi visualisasi di `components/BookSectionPage.tsx`. Pengujian interaksi langsung browser masih terbuka.
+
+**Audit dan regresi:** `scripts/audit-solution-depth.mjs` diperluas untuk memeriksa sumber akhir, pasangan definisi–contoh, enam pembuktian, delapan jawaban substantif, tautan UI, dan identitas numerik. Sesi ini juga menemukan bahwa Actions sebelumnya **gagal** pada commit `90cd43e` akibat deklarasi ganda `const geometry` di script audit, bukan karena teorema geometri; perbaikan di-commit sebagai `3f0cd020c85c463bc12a0d9fd46962eb2bb4534d`. Verifikasi build/deployment harus memakai **HEAD terbaru**, bukan run yang gagal atau run yang dibatalkan oleh commit susulan. Angka triage global sebelum/sesudah perlu diambil dari artifact Actions sukses; jangan menganggap perbaikan terpublikasi sebelum kedua job build dan deploy berstatus success.
+
+**Rotasi 26 bidang publik:** bidang yang sudah disentuh dalam rangkaian ini sekarang **23/26**, yakni 01–11 kecuali 12,13, ditambah 14–20,22–26 (sesuai catatan historis). **Belum disentuh:** **12 Statistika, 13 Peluang, 21 Pemodelan Matematika**. Prioritas berikutnya salah satu dari ketiganya, lalu audit soal bank independen dan temuan struktural/solusi pendek pada seluruh katalog. Jangan mengulang Optimisasi tanpa regresi baru.
+
+---
+
 ## Catatan sesi 2026-10-29 — Geometri: garis, lingkaran, dan parabola (audit naskah dan pembahasan)
 
 **Bidang publik:** 05 Geometri. **URL yang dirender:** https://descaar.github.io/DMath-Learning/materi/kalkulus/calc-app-conics-basics/. Submateri ini secara struktural berada di Lampiran A Kalkulus, tetapi kini ditautkan sebagai materi Geometri pada direktori publik data/site-data.ts. Ini bukan pengakuan bahwa seluruh bidang Geometri sudah lengkap.
