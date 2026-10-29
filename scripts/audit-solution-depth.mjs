@@ -1025,3 +1025,53 @@ for(const p of [0,0.25,0.4,0.5,1]){
 }
 assert.ok(Math.abs((10/3)-(4+1+1+4)/3)<1e-12);
 assert.ok(Math.abs(0.24/(2400*0.1**2)-0.01)<1e-12);
+
+
+// Inference rules: verify the rendered public discrete-mathematics lesson.
+// Character counts only guard against accidental reversion to rubric answers;
+// truth-table enumeration below tests the actual validity claims.
+const inferenceLesson=getBookSectionContent("md-aturan-inferensi");
+assert.ok(inferenceLesson,"Authored inference rules lesson not registered");
+const inferenceDefinitions=inferenceLesson.formal.filter(item=>item.kind==="definition");
+const inferenceResults=inferenceLesson.formal.filter(item=>["proposition","lemma","theorem","corollary"].includes(item.kind));
+assert.equal(inferenceDefinitions.length,4);
+assert.equal(inferenceResults.length,7);
+assert.equal(inferenceLesson.examples.length,8);
+assert.equal(inferenceLesson.exercises.length,8);
+for(const definition of inferenceDefinitions){
+  assert.ok(inferenceLesson.examples.some(example=>example.forDefinition===definition.title),
+    "Inference definition missing direct example: "+definition.title);
+}
+for(const item of inferenceResults){
+  assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>=250,
+    "Inference result lacks a reasoned proof: "+item.title);
+}
+for(const example of inferenceLesson.examples){
+  assert.ok(example.solution.length>=3 && example.conclusion,
+    "Inference example lacks worked reasoning: "+example.title);
+}
+for(const exercise of inferenceLesson.exercises){
+  assert.ok(normalize(exercise.answer).length>=350 &&
+    !/jawaban yang baik|contoh harus|susun satu soal|rubrik/i.test(exercise.answer),
+    "Inference exercise is a generic rubric: "+exercise.prompt);
+}
+const inferenceCurriculum=fs.readFileSync(path.join(root,"data/new-academic-curricula.ts"),"utf8");
+assert.ok(inferenceCurriculum.includes('"md-aturan-inferensi"') &&
+  inferenceCurriculum.includes('"slug": "matematika-diskrit"'),
+  "Inference rules route missing from public discrete mathematics curriculum");
+const truth=[false,true];
+for(const P of truth)for(const Q of truth)for(const R of truth){
+  const implies=(a,b)=>!a||b;
+  assert.ok(!(P&&implies(P,Q))||Q,"Modus ponens countermodel");
+  assert.ok(!(implies(P,Q)&&!Q)||!P,"Modus tollens countermodel");
+  assert.ok(!(implies(P,Q)&&implies(Q,R))||implies(P,R),"Hypothetical syllogism countermodel");
+  assert.ok(!((P||Q)&&!P)||Q,"Disjunctive syllogism countermodel");
+}
+assert.ok((!false||true)&&true&&!false,
+  "Affirming the consequent must have a countermodel");
+assert.ok((!false||true)&&!false&&!!true,
+  "Denying the antecedent must have a countermodel");
+const D=[1,2];
+const P=x=>x===1;
+assert.ok(D.some(P)&&!D.every(P),
+  "Existential does not imply universal: finite countermodel failed");
