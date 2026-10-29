@@ -355,10 +355,10 @@ for(const id of ["F-03","F-04","F-05","F-08","F-10"]){
 assert.equal(3*20,5*12);
 assert.equal(18*4,24*3);
 assert.equal(5*5-3*8,1);
-assert.equal(3/4-2/5+7/10,21/20);
-assert.equal((9/10-3/5)*80,24);
-assert.equal((13/3-1)/6,5/9);
-assert.equal(1/(1+1/(1+1/2)),3/5);
+assert.ok(Math.abs((3/4-2/5+7/10)-(21/20))<1e-12,"Fraction numeric regression: 3/4-2/5+7/10");
+assert.ok(Math.abs(((9/10-3/5)*80)-(24))<1e-12,"Fraction numeric regression: (9/10-3/5)*80");
+assert.ok(Math.abs(((13/3-1)/6)-(5/9))<1e-12,"Fraction numeric regression: (13/3-1)/6");
+assert.ok(Math.abs((1/(1+1/(1+1/2)))-(3/5))<1e-12,"Fraction numeric regression: 1/(1+1/(1+1/2))");
 
 const totals=subjects.reduce((out,row)=>{
   for(const [k,v] of Object.entries(row))if(typeof v==="number")out[k]=(out[k]??0)+v;
