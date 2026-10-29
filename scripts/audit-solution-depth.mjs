@@ -375,6 +375,11 @@ for(const definition of [...linear.definitions.map(x=>x.title),
   assert.ok(linearFormal.examples.some(ex=>ex.forDefinition?.id===definition),
     "Missing directly linked linear-equation definition example: "+definition);
 }
+for(const title of ["Contoh Detail: Sistem dengan Parameter","Contoh Detail: Model Campuran"]){
+  const ex=linearFormal.examples.find(x=>x.title.id===title);
+  assert.ok(ex && normalize(ex.solution.map(s=>s.id).join(" ")).length>=400,
+    "Original formal linear-equation worked example lacks full case analysis: "+title);
+}
 for(const ex of linear.examples)assert.ok(normalize(ex.solution.join(" ")).length>=400,
   "Original linear-equation worked example is still too abbreviated: "+ex.title);
 for(const id of ["L-03","L-04","L-05","L-06","L-08","L-09","L-10"]){
