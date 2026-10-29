@@ -1067,9 +1067,11 @@ for(const P of truth)for(const Q of truth)for(const R of truth){
   assert.ok(!(implies(P,Q)&&implies(Q,R))||implies(P,R),"Hypothetical syllogism countermodel");
   assert.ok(!((P||Q)&&!P)||Q,"Disjunctive syllogism countermodel");
 }
-assert.ok((!false||true)&&true&&!false,
+const invalidP=false,invalidQ=true;
+const invalidImplication=!invalidP||invalidQ;
+assert.ok(invalidImplication&&invalidQ&&!invalidP,
   "Affirming the consequent must have a countermodel");
-assert.ok((!false||true)&&!false&&!!true,
+assert.ok(invalidImplication&&!invalidP&&invalidQ,
   "Denying the antecedent must have a countermodel");
 const D=[1,2];
 const P=x=>x===1;
