@@ -55,7 +55,7 @@ export function MaterialPractice({ problems, storageKey }: { problems: MaterialP
 
       <div className="practice-filter-chips">
         {(["Semua","Dasar","Menengah","Menantang"] as Filter[]).map(item=>(
-          <button type="button" className={filter===item?"active":""} onClick={()=>setFilter(item)} key={item}>
+          <button type="button" className={filter===item?"active":""} aria-pressed={filter===item} onClick={()=>setFilter(item)} key={item}>
             {item==="Semua"?(en?"All":"Semua"):difficulty(item as MaterialPracticeProblem["difficulty"])}
           </button>
         ))}
@@ -79,17 +79,17 @@ export function MaterialPractice({ problems, storageKey }: { problems: MaterialP
             <p className="practice-prompt"><RichMath>{en?problem.prompt.en:problem.prompt.id}</RichMath></p>
 
             <div className="practice-actions">
-              <button type="button" onClick={()=>setOpenHint(prev=>({...prev,[problem.id]:!prev[problem.id]}))}>
-                {openHint[problem.id]?(en?"Hide Hint":"Tutup Hint"):(en?"Show Hint":"Lihat Hint")}
+              <button type="button" aria-expanded={Boolean(openHint[problem.id])} onClick={()=>setOpenHint(prev=>({...prev,[problem.id]:!prev[problem.id]}))}>
+                {openHint[problem.id]?(en?"Hide Hint":"Tutup Petunjuk"):(en?"Show Hint":"Buka Petunjuk")}
               </button>
-              <button type="button" onClick={()=>setOpenAnswer(prev=>({...prev,[problem.id]:!prev[problem.id]}))}>
-                {openAnswer[problem.id]?(en?"Hide Solution":"Tutup Pembahasan"):(en?"Reveal Solution":"Buka Solusi")}
+              <button type="button" aria-expanded={Boolean(openAnswer[problem.id])} onClick={()=>setOpenAnswer(prev=>({...prev,[problem.id]:!prev[problem.id]}))}>
+                {openAnswer[problem.id]?(en?"Hide Solution":"Tutup Solusi"):(en?"Reveal Solution":"Buka Solusi")}
               </button>
             </div>
 
             {openHint[problem.id]&&(
               <div className="practice-reveal hint">
-                <strong>{en?"Hint":"Hint"}</strong>
+                <strong>{en?"Hint":"Petunjuk"}</strong>
                 <p><RichMath>{en?problem.hint.en:problem.hint.id}</RichMath></p>
               </div>
             )}
