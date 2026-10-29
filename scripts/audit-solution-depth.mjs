@@ -150,7 +150,15 @@ const checked=[
   ["stm-neyman-pearson","exercise","Misalkan $H_0:X"],
   ["stm-neyman-pearson","exercise","Pada ruang $\\{0,1\\}$"],
   ["stm-neyman-pearson","exercise","Jelaskan mengapa uji paling kuat"],
-  ["stm-neyman-pearson","exercise","Pada model $H_0"]
+  ["stm-neyman-pearson","exercise","Pada model $H_0"],
+  ["ks-conditional-expectation","example","Informasi Dua Kelompok"],
+  ["ks-conditional-expectation","example","Menghitung Rata-Rata"],
+  ["ks-conditional-expectation","example","Independensi Diuji"],
+  ["ks-conditional-expectation","example","Menghitung Varians"],
+  ["ks-conditional-expectation","example","Informasi Trivial"],
+  ["ks-conditional-expectation","example","Menara pada Dua"],
+  ["ks-conditional-expectation","example","Mengeluarkan Faktor"],
+  ["ks-conditional-expectation","example","Ketika Informasi"]
 ];
 for(const [slug,type,anchor] of checked){
   const page=getBookSectionContent(slug);
@@ -200,6 +208,44 @@ for(const [alpha,gamma] of [[1/5,1],[1/10,1/2]]){
 const f0=[.5,.3,.2],f1=[.1,.3,.6],phi=[0,0,.75];
 assert.ok(Math.abs(phi.reduce((a,v,i)=>a+v*f0[i],0)-.15)<1e-12);
 assert.ok(Math.abs(phi.reduce((a,v,i)=>a+v*f1[i],0)-.45)<1e-12);
+
+// Conditional-expectation regression: verify the source actually rendered,
+// all four definitions are linked to examples, and solutions are substantive.
+// Numeric identities test weighted conditioning, tower, and total variance.
+const ce=getBookSectionContent("ks-conditional-expectation");
+assert.ok(ce,"Conditional expectation lesson missing from the rendered registry");
+const ceDefinitions=ce.formal.filter(x=>x.kind==="definition");
+const ceResults=ce.formal.filter(x=>["lemma","theorem","proposition","corollary"].includes(x.kind));
+assert.equal(ceDefinitions.length,4);
+assert.equal(ceResults.length,7);
+for(const definition of ceDefinitions){
+  assert.ok(ce.examples.some(x=>x.forDefinition===definition.title),
+    "Missing immediate example for "+definition.title);
+}
+for(const result of ceResults){
+  assert.ok(normalize(result.proof?.join(" ")).length>=350,
+    "Incomplete conditional-expectation proof: "+result.title);
+}
+assert.equal(ce.examples.length,8);
+assert.ok(ce.exercises.length>=8);
+for(const ex of ce.exercises.slice(-8)){
+  assert.ok(normalize(ex.answer).length>=450,
+    "Unsolved conditional-expectation exercise: "+ex.prompt.slice(0,60));
+}
+const weighted=(2*(1/2)+5*(1/3))/(1/2+1/3);
+assert.ok(Math.abs(weighted-16/5)<1e-12);
+const x=[0,2,4,6],mean=x.reduce((a,b)=>a+b,0)/4;
+const variance=x.reduce((a,v)=>a+(v-mean)**2,0)/4;
+const conditionalMeans=[1,1,5,5];
+const residual=x.reduce((a,v,i)=>a+(v-conditionalMeans[i])**2,0)/4;
+const between=conditionalMeans.reduce((a,v)=>a+(v-mean)**2,0)/4;
+assert.equal(variance,5);
+assert.equal(residual,1);
+assert.equal(between,4);
+assert.equal(residual+between,variance);
+const fine=[1,1,5,5,9,9,13,13];
+assert.equal(fine.slice(0,4).reduce((a,b)=>a+b,0)/4,3);
+assert.equal(fine.slice(4).reduce((a,b)=>a+b,0)/4,11);
 
 const totals=subjects.reduce((out,row)=>{
   for(const [k,v] of Object.entries(row))if(typeof v==="number")out[k]=(out[k]??0)+v;
