@@ -853,3 +853,55 @@ if(process.argv.includes("--json")){
 console.log("Solution depth audit:",JSON.stringify({bookCurricula:subjects.length,publicFields:publicFields.length,shortExercises:totals.shortExercises,shortExamples:totals.shortExamples,shortProofs:totals.shortProofs,genericExercises:totals.genericExercises,reviewedSolutionsValidated:checked.length,nonBookPages:nonBookRows.length,nonBookShortExercises:nonBookRows.reduce((n,r)=>n+r.shortExercises,0),nonBookShortExamples:nonBookRows.reduce((n,r)=>n+r.shortExamples,0)}));
 assert.equal(publicFields.length,26,"Public site catalog should include 26 fields");
 assert.ok(subjects.length>=17,"Audit expected 17 active book curricula");
+
+
+// Public Statistika Matematika: source-level regression for the exact rendered
+// point-estimation page. Length checks are triage only; independent identities
+// below guard the mathematics and the distinction between bias and consistency.
+const pointEstimation=getBookSectionContent("stm-point-estimator");
+assert.ok(pointEstimation,"Authored point-estimation lesson is not in rendered registry");
+const pointDefinitions=pointEstimation.formal.filter(item=>item.kind==="definition");
+const pointResults=pointEstimation.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(pointDefinitions.length,4);
+assert.equal(pointResults.length,6);
+assert.equal(pointEstimation.examples.length,8);
+assert.equal(pointEstimation.exercises.length,8);
+for(const definition of pointDefinitions){
+  assert.ok(pointEstimation.examples.some(example=>example.forDefinition===definition.title),
+    "Point estimation definition without a directly linked example: "+definition.title);
+}
+for(const item of pointResults){
+  assert.ok(item.proof?.length>=4 && normalize(item.proof.join(" ")).length>=450,
+    "Point estimation theorem needs an actual proof: "+item.title);
+}
+for(const example of pointEstimation.examples){
+  assert.ok(normalize(example.solution.join(" ")).length>=450,
+    "Point estimation worked example needs calculation and verification: "+example.title);
+}
+for(const exercise of pointEstimation.exercises){
+  assert.ok(normalize(exercise.answer).length>=450 &&
+    !/jawaban yang baik|contoh harus|rancang masalah|susun satu|rubrik/i.test(exercise.answer),
+    "Point estimation exercise is generic or insufficient: "+exercise.prompt);
+}
+const pointCatalog=fs.readFileSync(path.join(root,"data/book-curricula.ts"),"utf8");
+const pointCurriculum=fs.readFileSync(path.join(root,"data/new-academic-curricula.ts"),"utf8");
+assert.ok(pointCurriculum.includes('"stm-point-estimator"') &&
+  pointCurriculum.includes('"slug": "statistika-matematika"'),
+  "Point estimation lesson not in the public book curriculum");
+for(const n of [2,3,9,16]){
+  const variance=9/n, delta=2;
+  const c=delta*delta/(delta*delta+variance);
+  const risk=x=>x*x*variance+(1-x)*(1-x)*delta*delta;
+  assert.ok(c>=0&&c<=1);
+  assert.ok(risk(c)<=risk(0)+1e-12&&risk(c)<=risk(1)+1e-12);
+  for(let i=0;i<=100;i++)assert.ok(risk(c)<=risk(i/100)+1e-12,
+    "Shrinkage minimum formula contradicts the risk function");
+}
+for(const p of [0,0.25,0.4,0.5,1]){
+  const variance=4*p*(1-p),bias=p-1;
+  const direct=p*(1-p)**2+(1-p)*(-1-p)**2;
+  assert.ok(Math.abs(direct-(variance+bias*bias))<1e-12,
+    "Bernoulli transformed estimator MSE is wrong");
+}
+assert.ok(Math.abs((10/3)-(4+1+1+4)/3)<1e-12);
+assert.ok(Math.abs(0.24/(2400*0.1**2)-0.01)<1e-12);
