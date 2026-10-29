@@ -18,6 +18,7 @@ import { metricSpacesContent } from "@/data/metric-spaces-content";
 import { analyticGeometryContent } from "@/data/analytic-geometry-content";
 import { optimizationContent } from "@/data/optimization-content";
 import { probabilityDensityContent } from "@/data/probability-density-content";
+import { centralTendencyContent } from "@/data/central-tendency-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -100,6 +101,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "calc-optimization":optimizationContent,
   // Dedicated continuous probability: normalized densities, CDFs, moments and conditioning.
   "calc-probability":probabilityDensityContent,
+  // Descriptive statistics with complete least-squares and median proofs.
+  "sta-central":centralTendencyContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
