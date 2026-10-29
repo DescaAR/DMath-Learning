@@ -1,3 +1,17 @@
+## Catatan sesi 2026-10-29 — Teori Ukuran & Probabilitas (kedalaman solusi Carathéodory)
+
+**Bidang:** 26 Teori Ukuran & Probabilitas, submateri `tup-extension`, URL: https://descaar.github.io/DMath-Learning/materi/teori-ukuran-probabilitas/tup-extension/.
+
+**Audit awal yang dibaca:** artifact `dmath-material-depth-audit` dari GitHub Actions run 40827510434, khususnya `solution-depth-report.json`: 1.276 halaman, 6.011 jawaban latihan pendek, 3.474 contoh terbahas pendek, 1.066 pembuktian pendek, dan 746 jawaban bertanda generik menurut pola triage. Pada `tup-extension` tercatat 4 jawaban latihan pendek dan 1 contoh pendek. Ambang karakter hanya alat pemilahan, bukan penentu ketepatan.
+
+**Kesalahan matematika diperbaiki:** klaim lama tentang keunikan perluasan hanya mensyaratkan dua ukuran sigma-finite yang sepakat pada aljabar; hipotesisnya tidak cukup untuk argumen yang diberikan. Teorema sekarang secara eksplisit mensyaratkan penutup berukuran hingga oleh anggota aljabar pembangkit. Pembuktian menyusun penutup meningkat, membuktikan kelas kesamaan terlokalisasi sebagai sistem lambda, memakai teorema pi-lambda, dan mengambil limit melalui kontinuitas ukuran dari bawah.
+
+**Solusi asli yang ditulis ulang:** contoh panjang interval diperluas menjadi empat langkah matematis (aditivitas, penutup sigma-finite, konstruksi outer measure, keunikan Borel). Lima latihan templat diganti dengan soal dan solusi konkret: premeasure pada aljabar empat anggota, penutup interval sigma-finite, contoh tandingan tanpa sigma-finite, ukuran himpunan irasional pada interval, dan konstruksi outer measure diskret beserta kriteria Carathéodory. `measure-probability-content-utils.ts` kini mendukung penggantian latihan khusus satu submateri tanpa mengubah latihan halaman lain. Audit `audit-solution-depth.mjs` memeriksa enam solusi baru dan hipotesis teorema.
+
+**Estimasi perubahan metrik triage (harus diverifikasi dari build commit akhir):** jawaban latihan pendek turun setidaknya 4, contoh pendek turun 1; bukti lama tidak dihitung sebagai pendek oleh ambang. Catat angka sesungguhnya dari laporan setelah deployment. Tidak ada visualisasi baru pada sesi ini; fokus pada kesalahan teorema dan isi jawaban yang semula generik. Rujukan matematis yang dapat dipakai untuk pendalaman: Folland, *Real Analysis: Modern Techniques and Their Applications*, ed. 2 (1999), Bab 1.
+
+**Rotasi 26 bidang:** sudah disentuh 03, 04, 07, 08, 09, 10, 11, 14, 15, 17, 18, 22, 26 (13 bidang, semuanya belum selesai). Belum disentuh 01, 02, 05, 06, 12, 13, 16, 19, 20, 21, 23, 24, 25. Berikutnya prioritaskan 24 Statistika Matematika atau 23 Statistika Terapan, khususnya contoh terbahas yang terlalu singkat dan kesalahan matematis nyata. Jangan mengulang `tup-extension` sebelum ada temuan baru.
+
 ## Catatan sesi 2026-10-29 — Riset Operasi (solusi grafik program linear)
 
 **Bidang:** 22 Riset Operasi, submateri `or-lp-grafik`, URL: https://descaar.github.io/DMath-Learning/materi/riset-operasi/or-lp-grafik/.
