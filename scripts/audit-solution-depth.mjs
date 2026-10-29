@@ -716,6 +716,64 @@ for(const {A,rhs,consistent} of singularCases){
   assert.equal(actual,consistent,"Singular consistency case mismatch");
 }
 
+// Induction: verify the exact rendered Real Analysis source and original questions.
+// The length thresholds are only regression signals; mathematical steps are
+// also checked below with independently calculated finite examples.
+const inductionLesson=getBookSectionContent("induksi-matematika");
+assert.ok(inductionLesson,"Missing mathematical induction lesson");
+const inductionDefinitions=inductionLesson.formal.filter(x=>x.kind==="definition");
+const inductionResults=inductionLesson.formal.filter(x=>
+  ["lemma","proposition","theorem","corollary"].includes(x.kind));
+assert.equal(inductionDefinitions.length,1);
+assert.equal(inductionResults.length,4);
+assert.equal(inductionLesson.examples.length,5);
+assert.equal(inductionLesson.exercises.length,6);
+for(const definition of inductionDefinitions){
+  assert.ok(inductionLesson.examples.some(x=>x.forDefinition===definition.title),
+    "Induction definition has no directly linked concrete example");
+}
+for(const item of inductionResults){
+  assert.ok((item.proof??[]).length>=4 &&
+    normalize(item.proof.join(" ")).length>=550,
+    "Induction principle has an incomplete proof: "+item.title);
+  assert.ok((item.proof??[]).some(s=>s.includes("\\square")),
+    "Induction proof must have a mathematical closing marker: "+item.title);
+}
+for(const prompt of [
+  "Buktikan $1+3+\\cdots+(2n-1)=n^2$.",
+  "Buktikan $2^n\\ge n+1$ untuk $n\\ge0$.",
+  "Jelaskan kesalahan induksi yang tidak memeriksa basis."
+]){
+  const exercise=inductionLesson.exercises.find(x=>x.prompt===prompt);
+  assert.ok(exercise && normalize(exercise.answer).length>=600,
+    "Original induction exercise was lost or its argument truncated: "+prompt);
+}
+for(const example of inductionLesson.examples){
+  assert.ok(normalize(example.solution.join(" ")).length>=450,
+    "Worked induction example lacks complete reasoning: "+example.title);
+}
+for(const item of inductionLesson.exercises){
+  assert.ok(!/jawaban yang baik|rubrik|contoh harus|langkah penilaian/i.test(item.answer),
+    "Induction exercise contains a rubric instead of a solution");
+}
+for(let n=1;n<=80;n++){
+  assert.equal(n*(n+1)/2,Array.from({length:n},(_,j)=>j+1).reduce((a,b)=>a+b,0));
+  assert.equal(n*n,Array.from({length:n},(_,j)=>2*j+1).reduce((a,b)=>a+b,0));
+  const sumCubes=Array.from({length:n},(_,j)=>(j+1)**3).reduce((a,b)=>a+b,0);
+  assert.equal(sumCubes,(n*(n+1)/2)**2);
+}
+const fib=[0,1];
+for(let n=2;n<=35;n++)fib[n]=fib[n-1]+fib[n-2];
+for(let n=1;n<=32;n++){
+  assert.ok(fib[n]<=2**(n-1),"Fibonacci upper bound failed");
+  assert.equal(fib.slice(1,n+1).reduce((a,b)=>a+b,0),fib[n+2]-1);
+}
+for(let n=12;n<=120;n++){
+  assert.ok(Array.from({length:Math.floor(n/4)+1},(_,a)=>a)
+    .some(a=>(n-4*a)%5===0 && n-4*a>=0),
+    "4a+5b induction exercise has a counterexample: "+n);
+}
+
 // Countability: audit the exact Analisis Real page, not only its answer lengths.
 const cardinalityLesson=getBookSectionContent("himpunan-hingga-dan-tak-hingga");
 assert.ok(cardinalityLesson,"Missing finite/infinite sets lesson");
