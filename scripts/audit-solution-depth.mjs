@@ -417,7 +417,7 @@ for(const {A,rhs,consistent} of singularCases){
   const secondNonzero=c!==0||d!==0;
   const actual=firstNonzero
     ? (a!==0 ? f*a===c*e : f*b===d*e)
-    : (e===0 && (!secondNonzero || true) && (secondNonzero || f===0));
+    : (e===0 && (secondNonzero || f===0));
   // For a nonzero second row with zero first row, e=0 is sufficient.
   assert.equal(actual,consistent,"Singular consistency case mismatch");
 }
