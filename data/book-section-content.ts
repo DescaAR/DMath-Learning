@@ -10,6 +10,7 @@ import { linearFirstOrderContent } from "@/data/linear-first-order-content";
 import { bisectionContent } from "@/data/bisection-content";
 import { nestedQuantifiersContent } from "@/data/nested-quantifiers-content";
 import { graphicalLinearProgrammingContent } from "@/data/graphical-lp-content";
+import { neymanPearsonContent } from "@/data/neyman-pearson-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -76,6 +77,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "md-kuantor-bertingkat":nestedQuantifiersContent,
   // Proof-based graphical linear programming replaces the generated operations-research summary.
   "or-lp-grafik":graphicalLinearProgrammingContent,
+  // Full hypothesis-testing proof and actual worked solutions replace the generated rubric.
+  "stm-neyman-pearson":neymanPearsonContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
