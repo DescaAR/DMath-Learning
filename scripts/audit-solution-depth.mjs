@@ -57,6 +57,45 @@ const assert=nativeRequire("node:assert/strict");
 const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
+// Source-level regression for the public Peluang lesson. These checks validate
+// the rendered registry and a few independent mathematical identities; length
+// thresholds remain triage, not a correctness certificate.
+const probability=getBookSectionContent("calc-probability");
+assert.ok(probability,"Missing authored continuous probability page");
+const probabilityDefinitions=probability.formal.filter(item=>item.kind==="definition");
+const probabilityResults=probability.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(probabilityDefinitions.length,4);
+assert.equal(probabilityResults.length,7);
+assert.equal(probability.examples.length,8);
+assert.equal(probability.exercises.length,8);
+for(const definition of probabilityDefinitions){
+  assert.ok(probability.examples.some(ex=>ex.forDefinition===definition.title),
+    "Peluang definition without immediate linked worked example: "+definition.title);
+}
+for(const item of probabilityResults){
+  assert.ok((item.proof??[]).length>=2 && normalize(item.proof.join(" ")).length>=300,
+    "Peluang formal result without substantive proof: "+item.title);
+}
+for(const item of probability.exercises){
+  assert.ok(normalize(item.answer).length>=300 &&
+    !/jawaban yang baik|contoh harus|susun langkah|soal harus/i.test(item.answer),
+    "Peluang exercise must have a real solution: "+item.prompt);
+}
+const probabilityUi=fs.readFileSync(path.join(root,"components/BookSectionPage.tsx"),"utf8");
+const probabilityCatalog=fs.readFileSync(path.join(root,"data/site-data.ts"),"utf8");
+assert.ok(probabilityUi.includes('section.slug==="calc-probability"?<ProbabilityDensityLab'),
+  "Peluang SVG explorer is not rendered");
+assert.ok(probabilityCatalog.includes('subject: "Peluang"')&&probabilityCatalog.includes('/materi/kalkulus/calc-probability'),
+  "Peluang lesson is missing from the 26-field public catalog");
+for(const rate of [0.5,1,2,3])for(const threshold of [0,0.5,1,2,3]){
+  const tail=Math.exp(-rate*threshold);
+  const cdf=1-Math.exp(-rate*threshold);
+  assert.ok(Math.abs(tail+cdf-1)<1e-12,"Exponential CDF/tail mismatch");
+}
+assert.ok(Math.abs((4/3)-(8/6))<1e-12);
+assert.ok(Math.abs((7/9)-((8/9)*(7/8)))<1e-12);
+assert.ok(Math.abs((1/9)-(1/(1+2)**2))<1e-12);
+
 const markers=[
   /jawaban yang baik/i,
   /contoh harus memperlihatkan/i,
