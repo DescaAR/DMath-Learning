@@ -353,9 +353,39 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
           t("Ambil $\\alpha=\\beta=x$ pada Teorema Rumus Jumlah Sudut.","Set $\\alpha=\\beta=x$ in the angle-sum theorem."),
           t("Kedua identitas langsung diperoleh setelah menyederhanakan suku yang sama.","Both identities follow immediately after combining identical terms.")
         ]
+      },
+      {
+        kind:"theorem", title:t("Teorema Aturan Cosinus","Law of Cosines"),
+        statement:t("Untuk segitiga tak degenerat dengan panjang sisi $a,b,c>0$ dan sudut $C\\in(0,\\pi)$ di antara sisi $a$ dan $b$, berlaku $c^2=a^2+b^2-2ab\\cos C$.","In a nondegenerate triangle with positive side lengths $a,b,c$ and included angle $C\\in(0,\\pi)$ between sides $a$ and $b$, one has $c^2=a^2+b^2-2ab\\cos C$."),
+        proof:[
+          t("Tempatkan kedua sisi yang mengapit sudut $C$ sebagai vektor $u$ dan $v$ yang berpangkal pada satu titik, dengan $\\|u\\|=a$, $\\|v\\|=b$, dan sudut antara keduanya $C$. Sisi ketiga menghubungkan ujung $u$ dan $v$, sehingga panjangnya $c=\\|u-v\\|$.","Represent the sides enclosing angle $C$ by vectors $u,v$ with common origin, $\\|u\\|=a$, $\\|v\\|=b$, and included angle $C$. The opposite side joins their endpoints and therefore has length $c=\\|u-v\\|$."),
+          t("Sifat hasil kali titik memberikan $c^2=(u-v)\\cdot(u-v)=\\|u\\|^2+\\|v\\|^2-2u\\cdot v$. Karena $u\\cdot v=\\|u\\|\\|v\\|\\cos C=ab\\cos C$, diperoleh $c^2=a^2+b^2-2ab\\cos C$.","Expanding the dot product yields $c^2=(u-v)\\cdot(u-v)=\\|u\\|^2+\\|v\\|^2-2u\\cdot v$. The dot-product formula gives $u\\cdot v=\\|u\\|\\|v\\|\\cos C=ab\\cos C$, hence $c^2=a^2+b^2-2ab\\cos C$."),
+          t("Tidak ada pembagian oleh sinus atau kosinus, sehingga pembuktian berlaku untuk semua sudut apit dalam $(0,\\pi)$. Sebagai pemeriksaan, jika $C=\\pi/2$, maka $\\cos C=0$ dan rumus mereduksi menjadi Teorema Pythagoras $c^2=a^2+b^2$. $\\square$","No division by sine or cosine occurs, so the argument applies to every included angle in $(0,\\pi)$. For $C=\\pi/2$, $\\cos C=0$ and the formula reduces to the Pythagorean theorem $c^2=a^2+b^2$. $\\square$")
+        ]
+      },
+      {
+        kind:"theorem", title:t("Teorema Aturan Sinus","Law of Sines"),
+        statement:t("Untuk segitiga tak degenerat dengan sisi $a,b,c>0$ yang berhadapan dengan sudut $A,B,C\\in(0,\\pi)$, berlaku $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$.","In a nondegenerate triangle with sides $a,b,c>0$ opposite angles $A,B,C\\in(0,\\pi)$, one has $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$."),
+        proof:[
+          t("Misalkan $\\Delta>0$ adalah luas segitiga. Rumus luas menggunakan dua sisi dan sudut apit menghasilkan $\\Delta=\\frac12bc\\sin A=\\frac12ca\\sin B=\\frac12ab\\sin C$. Setiap sudut berada di $(0,\\pi)$, sehingga ketiga sinusnya positif.","Let $\\Delta>0$ be the triangle's area. The included-angle area formula gives $\\Delta=\\frac12bc\\sin A=\\frac12ca\\sin B=\\frac12ab\\sin C$. Since each angle belongs to $(0,\\pi)$, all three sine values are positive."),
+          t("Karena $abc>0$, membagi setiap bentuk luas dengan $abc/2$ memberikan $\\frac{2\\Delta}{abc}=\\frac{\\sin A}{a}=\\frac{\\sin B}{b}=\\frac{\\sin C}{c}$. Semua ruas positif; mengambil kebalikan mempertahankan kesamaan dan menghasilkan $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$.","As $abc>0$, dividing each area expression by $abc/2$ yields $\\frac{2\\Delta}{abc}=\\frac{\\sin A}{a}=\\frac{\\sin B}{b}=\\frac{\\sin C}{c}$. Every term is positive, so taking reciprocals preserves equality and gives $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$."),
+          t("Hipotesis tak degenerat diperlukan: pada segitiga yang kolinear, luas nol dan beberapa sinus sudut dapat nol, sehingga bentuk pecahan aturan sinus tidak terdefinisi. $\\square$","Nondegeneracy is essential: a collinear triangle has zero area and may have zero sine values, making the displayed ratios undefined. $\\square$")
+        ]
       }
     ],
     examples:[
+      {
+        title:t("Contoh Lingkaran Satuan","Unit-Circle Definition Example"),
+        forDefinition:t("Sinus dan Cosinus pada Lingkaran Satuan","Sine and Cosine on the Unit Circle"),
+        problem:t("Tentukan $\\sin\\pi$, $\\cos\\pi$, dan verifikasi identitas lingkaran satuan.","Find $\\sin\\pi$ and $\\cos\\pi$, and verify the unit-circle equation."),
+        strategy:t("Gunakan titik ujung setengah putaran pada sumbu horizontal.","Use the endpoint of a half-turn on the horizontal axis."),
+        solution:[
+          t("Sudut $\\pi$ radian adalah setengah putaran berlawanan arah jarum jam dari sumbu-$x$ positif. Titik akhirnya pada lingkaran satuan adalah $P=(-1,0)$.","An angle of $\\pi$ radians is a counterclockwise half-turn from the positive horizontal axis. Its unit-circle endpoint is $P=(-1,0)$."),
+          t("Menurut definisi koordinat, $\\cos\\pi=-1$ dan $\\sin\\pi=0$. Pemeriksaan: $(\\cos\\pi)^2+(\\sin\\pi)^2=(-1)^2+0^2=1$.","By the coordinate definitions, $\\cos\\pi=-1$ and $\\sin\\pi=0$. Verification gives $(\\cos\\pi)^2+(\\sin\\pi)^2=(-1)^2+0^2=1$."),
+          t("Hasil ini juga memperlihatkan bahwa cosinus boleh negatif dan sinus boleh nol; keduanya tetap didefinisikan untuk semua sudut real.","This example also shows that cosine may be negative and sine may vanish; both remain defined for every real angle.")
+        ],
+        conclusion:t("Koordinat titiknya adalah $(-1,0)$ dan identitas lingkaran satuan terpenuhi.","The endpoint is $(-1,0)$ and the unit-circle identity is satisfied.")
+      },
       {
         title:t("Contoh Detail: Persamaan Trigonometri","Detailed Example: Trigonometric Equation"),
         problem:t("Selesaikan $2\\sin x\\cos x=\\frac{\\sqrt3}{2}$ untuk $0\\le x<2\\pi$.","Solve $2\\sin x\\cos x=\\frac{\\sqrt3}{2}$ for $0\\le x<2\\pi$."),
