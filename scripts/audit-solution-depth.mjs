@@ -212,6 +212,11 @@ assert.ok(Math.abs(phi.reduce((a,v,i)=>a+v*f1[i],0)-.45)<1e-12);
 // Conditional-expectation regression: verify the source actually rendered,
 // all four definitions are linked to examples, and solutions are substantive.
 // Numeric identities test weighted conditioning, tower, and total variance.
+const cePageRenderer=fs.readFileSync(path.join(root,"components/BookSectionPage.tsx"),"utf8");
+const ceLabSource=fs.readFileSync(path.join(root,"components/ConditionalExpectationLab.tsx"),"utf8");
+assert.match(cePageRenderer,/section\.slug==="ks-conditional-expectation"\?<ConditionalExpectationLab/);
+assert.match(ceLabSource,/aria-label="Pilih partisi informasi"/);
+assert.match(ceLabSource,/result\.residual\+result\.between/);
 const ce=getBookSectionContent("ks-conditional-expectation");
 assert.ok(ce,"Conditional expectation lesson missing from the rendered registry");
 const ceDefinitions=ce.formal.filter(x=>x.kind==="definition");
