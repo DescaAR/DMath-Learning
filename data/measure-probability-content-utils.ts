@@ -20,6 +20,7 @@ export type MeasureProbabilityLessonSpec = {
   definitions: Array<{ title: string; statement: string }>;
   results: MeasureProbabilityResultSpec[];
   examples: MeasureProbabilityExampleSpec[];
+  exercises?: Array<{ prompt: string; hint: string; answer: string }>;
   connections?: string;
 };
 
@@ -91,7 +92,7 @@ export function buildMeasureProbabilityLesson(spec: MeasureProbabilityLessonSpec
     ],
     examples: spec.examples,
     exercises: [
-      ...baseExercises,
+      ...(spec.exercises ? spec.exercises.map(item => ({...item, provenance:"dmath-original" as const})) : baseExercises),
       ...spec.results.map(proofExercise),
     ],
     mistakes: [],
