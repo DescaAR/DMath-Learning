@@ -22,6 +22,14 @@ export const subjects = [
 
 export const materials = [
   {
+    title: "Optimisasi Satu Variabel: Ekstrem Global dan Konveksitas",
+    level: "Kuliah",
+    subject: "Optimisasi",
+    status: "published" as ContentStatus,
+    summary: "Daerah layak, ekstrem lokal dan global, syarat Fermat, kekonveksan, bukti dua arah, kasus ujung dan solusi soal mendalam.",
+    href: "/materi/kalkulus/calc-optimization",
+  },
+  {
     title: "Garis, Lingkaran, dan Parabola: Geometri Analitik",
     level: "Kuliah",
     subject: "Geometri",
