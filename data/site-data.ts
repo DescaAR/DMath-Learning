@@ -30,6 +30,14 @@ export const materials = [
     href: "/materi/" + material.slug,
   })),
   {
+    title: "Ruang Metrik: Fondasi Topologi",
+    level: "Kuliah",
+    subject: "Topologi",
+    status: "published" as ContentStatus,
+    summary: "Aksioma metrik, bola terbuka, konvergensi, barisan Cauchy, kelengkapan, dan karakterisasi kontinuitas melalui barisan, dengan pembuktian lengkap serta visualisasi interaktif.",
+    href: "/materi/analisis-real/ruang-metrik",
+  },
+  {
     title: "Basis dan Dimensi",
     level: "Kuliah",
     subject: "Aljabar Linear",
