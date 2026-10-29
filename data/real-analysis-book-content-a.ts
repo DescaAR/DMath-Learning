@@ -86,25 +86,25 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
     "Jika $A$ hingga, maka setiap $B\\subseteq A$ juga hingga: pembatasan daftar berhingga anggota $A$ pada anggota $B$ menghasilkan daftar berhingga tanpa pengulangan. Selanjutnya anggap $A$ denumerable dan tulis $A=\\{a_1,a_2,\\ldots\\}$ dengan semua $a_i$ berbeda.",
     "Definisikan $I=\\{n\\in\\mathbb N:a_n\\in B\\}$. Jika $I$ hingga, maka $B$ hingga. Jika $I$ tak hingga, pilih $n_1=\\min I$ dan secara rekursif $n_{k+1}=\\min\\{n\\in I:n>n_k\\}$. Minimum ada menurut sifat urutan baik $\\mathbb N$, dan himpunan indeks yang lebih besar selalu tidak kosong karena $I$ tak hingga.",
     "Pemetaan $k\\mapsto a_{n_k}$ injektif karena $n_k$ meningkat ketat dan enumerasi $A$ tidak mengulang anggota. Untuk setiap $b\\in B$, terdapat indeks tunggal $n\\in I$ dengan $a_n=b$; indeks itu muncul pada daftar meningkat $n_1,n_2,\\ldots$, sebab hanya ada hingga banyak bilangan asli yang lebih kecil daripada $n$. Jadi pemetaan tersebut juga surjektif ke $B$.",
-    "Dengan demikian $B$ hingga atau denumerable, sesuai dua kemungkinan yang telah diperiksa. \\(\\square\\)"
+    "Dengan demikian $B$ hingga atau denumerable, sesuai dua kemungkinan yang telah diperiksa. $\\square$"
   ]),
   T("$\\mathbb N\\times\\mathbb N$ Denumerable","Untuk $\\mathbb N=\\{1,2,\\ldots\\}$, terdapat bijeksi $\\mathbb N\\to\\mathbb N\\times\\mathbb N$.",[
     "Untuk setiap $s\\ge2$, definisikan diagonal $D_s=\\{(m,n)\\in\\mathbb N^2:m+n=s\\}$. Diagonal $D_s$ mempunyai tepat $s-1$ pasangan, yakni $(1,s-1),(2,s-2),\\ldots,(s-1,1)$.",
     "Susun seluruh pasangan dengan membaca $D_2,D_3,D_4,\\ldots$ secara berurutan dan, dalam setiap diagonal, menaikkan koordinat pertama. Karena setiap diagonal berhingga, proses ini memberikan posisi bilangan asli yang pasti untuk setiap pasangan yang dilewati.",
     "Tidak ada pasangan yang muncul dua kali: jika $(m,n)$ muncul pada dua diagonal, jumlah $m+n$ harus sama, dan dalam satu diagonal koordinat pertama menentukan pasangan secara tunggal. Sebaliknya, setiap $(m,n)\\in\\mathbb N^2$ berada pada diagonal $D_{m+n}$, yang pasti dikunjungi setelah hingga banyak pasangan sebelumnya.",
-    "Dengan demikian daftar tersebut injektif dan surjektif terhadap $\\mathbb N^2$, sehingga merupakan bijeksi. \\(\\square\\)"
+    "Dengan demikian daftar tersebut injektif dan surjektif terhadap $\\mathbb N^2$, sehingga merupakan bijeksi. $\\square$"
   ]),
   T("$\\mathbb Q$ Denumerable","Himpunan semua bilangan rasional $\\mathbb Q$ denumerable.",[
     "Setiap rasional positif dapat ditulis secara tunggal sebagai $m/n$ dengan $m,n\\in\\mathbb N$ dan $\\gcd(m,n)=1$. Baca pasangan $(m,n)$ menurut enumerasi diagonal pada teorema sebelumnya, tetapi lewati pasangan yang tidak relatif prima. Dengan demikian setiap rasional positif muncul, dan tidak ada rasional positif yang muncul dua kali.",
     "Daftar positif ini tak hingga karena memuat semua bilangan asli positif $k=k/1$. Selain itu, setiap $m/n$ dalam bentuk paling sederhana pasti muncul ketika diagonal $m+n$ dikunjungi. Jadi kita memperoleh enumerasi $q_1,q_2,\\ldots$ dari $\\mathbb Q_{>0}$.",
     "Definisikan $f:\\mathbb N\\to\\mathbb Q$ melalui $f(1)=0$, $f(2k)=q_k$, dan $f(2k+1)=-q_k$ untuk $k\\ge1$. Tidak ada nilai yang berulang karena $q_k>0$ dan semua $q_k$ berbeda; jadi $f$ injektif.",
-    "Setiap rasional bernilai nol, positif, atau negatif. Nol adalah $f(1)$; rasional positif muncul sebagai suatu $q_k=f(2k)$; rasional negatif muncul sebagai $-q_k=f(2k+1)$. Maka $f$ surjektif, sehingga $\\mathbb Q$ denumerable. \\(\\square\\)"
+    "Setiap rasional bernilai nol, positif, atau negatif. Nol adalah $f(1)$; rasional positif muncul sebagai suatu $q_k=f(2k)$; rasional negatif muncul sebagai $-q_k=f(2k+1)$. Maka $f$ surjektif, sehingga $\\mathbb Q$ denumerable. $\\square$"
   ]),
   T("Ketakterhitungan Interval Real","Untuk setiap $a,b\\in\\mathbb R$ dengan $a<b$, interval $[a,b]$ tidak countable.",[
     "Mula-mula pertimbangkan himpunan semua barisan biner $\\{0,1\\}^{\\mathbb N}$. Jika barisan-barisan itu dapat didaftarkan sebagai $s^{(1)},s^{(2)},\\ldots$, definisikan barisan baru $t$ dengan $t_n=1-s^{(n)}_n$. Untuk setiap $n$, barisan $t$ berbeda dari barisan ke-$n$ pada koordinat $n$, sehingga $t$ tidak ada dalam daftar. Ini kontradiksi. Karena himpunan barisan biner jelas tak hingga, himpunan tersebut tidak countable.",
     "Kepada setiap barisan biner $s=(s_1,s_2,\\ldots)$ pasangkan bilangan $\\Phi(s)=\\sum_{n=1}^{\\infty}2s_n/3^n\\in[0,1]$. Jika dua barisan berbeda pertama kali pada indeks $k$, selisih kontribusi pada indeks itu bernilai $2/3^k$, sedangkan nilai mutlak seluruh selisih ekor tidak melebihi $\\sum_{n>k}2/3^n=1/3^k$. Jadi $|\\Phi(s)-\\Phi(t)|\\ge1/3^k>0$; pemetaan $\\Phi$ injektif. Penggunaan digit ternary $0$ dan $2$ menghindari ambiguitas daftar desimal biasa.",
     "Jika $[0,1]$ countable, citra $\\Phi$ juga countable menurut lemma subhimpunan. Karena $\\Phi$ injektif, enumerasi citranya akan menghasilkan enumerasi semua barisan biner melalui invers pada citra, bertentangan dengan langkah pertama. Maka $[0,1]$ tidak countable.",
-    "Terakhir, fungsi $u\\mapsto a+(b-a)u$ adalah bijeksi $[0,1]\\to[a,b]$ karena $b-a>0$; inversnya $x\\mapsto(x-a)/(b-a)$. Jika $[a,b]$ countable, bijeksi ini membuat $[0,1]$ countable, suatu kontradiksi. Jadi setiap interval tertutup tak degenerat tidak countable. \\(\\square\\)"
+    "Terakhir, fungsi $u\\mapsto a+(b-a)u$ adalah bijeksi $[0,1]\\to[a,b]$ karena $b-a>0$; inversnya $x\\mapsto(x-a)/(b-a)$. Jika $[a,b]$ countable, bijeksi ini membuat $[0,1]$ countable, suatu kontradiksi. Jadi setiap interval tertutup tak degenerat tidak countable. $\\square$"
   ])
  ],
  examples:[
