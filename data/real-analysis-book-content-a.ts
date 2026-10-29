@@ -87,7 +87,7 @@ export const realAnalysisContentA:Record<string,BookLessonContent>={
   {title:"Himpunan Induktif yang Konkret",forDefinition:"Himpunan Induktif",problem:"Untuk $S=\\{n\\in\\mathbb N:3\\mid(4^n-1)\\}$, periksa kedua syarat himpunan induktif mulai dari $1$.",solution:[
     "Keanggotaan $n\\in S$ berarti terdapat bilangan bulat $a$ dengan $4^n-1=3a$. Basis terpenuhi karena $4^1-1=3$, sehingga $1\\in S$.",
     "Ambil sembarang $k\\ge1$ dengan $k\\in S$. Maka $4^k-1=3a$ untuk suatu $a\\in\\mathbb Z$. Hitung $4^{k+1}-1=4(4^k-1)+3=4(3a)+3=3(4a+1)$.",
-    "Karena $4a+1$ bilangan bulat, $3\\mid(4^{k+1}-1)$; jadi $k+1\\in S$. Kedua syarat definisi telah diperiksa, bukan hanya beberapa nilai pertama."
+    "Karena $4a+1$ bilangan bulat, $3\\mid(4^{k+1}-1)$; jadi $k+1\\in S$. Sebagai pemeriksaan numerik, $n=2$ memberi $4^2-1=15=3(5)$ dan $n=3$ memberi $4^3-1=63=3(21)$. Kedua perhitungan hanya memverifikasi dua kasus, sedangkan langkah untuk $k$ sembaranglah yang membuktikan sifat induktif."
   ],conclusion:"Himpunan $S$ induktif mulai dari $1$, dan prinsip induksi memastikan $S=\\mathbb N$."},
   {title:"Jumlah Bilangan Asli",problem:"Buktikan $1+2+\\cdots+n=\\frac{n(n+1)}2$ untuk setiap $n\\ge1$.",solution:[
     "Diketahui $n$ bilangan asli. Tetapkan $P(n)$ sebagai persamaan $\\sum_{i=1}^{n}i=n(n+1)/2$. Akan dibuktikan $P(n)$ untuk semua $n\\ge1$, bukan hanya dicocokkan pada beberapa nilai.",
