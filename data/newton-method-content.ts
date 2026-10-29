@@ -16,7 +16,7 @@ export const newtonMethodContent: BookLessonContent = {
     },
     {
       "kind": "definition",
-      "title": "Langkah Newton",
+      "title": "Iterasi Newton",
       "statement": "Misalkan $f$ terdiferensialkan di $x_n$ dan $f'(x_n)\\ne0$. Langkah Newton didefinisikan oleh $x_{n+1}=N_f(x_n)$, dengan $N_f(x)=x-f(x)/f'(x)$ pada himpunan tempat $f'(x)\\ne0$.",
       "explanation": "Rumus berasal dari titik potong garis singgung dengan sumbu horizontal, bukan dari substitusi akar yang sudah diketahui."
     },
@@ -111,7 +111,7 @@ export const newtonMethodContent: BookLessonContent = {
     },
     {
       "title": "Dua Langkah Eksak Menuju Akar Dua",
-      "forDefinition": "Langkah Newton",
+      "forDefinition": "Iterasi Newton",
       "problem": "Untuk $f(x)=x^2-2$ dan $x_0=3/2$, hitung $x_1,x_2$ serta residual masing-masing.",
       "solution": [
         "Diketahui $f'(x)=2x$. Karena $x_0=3/2>0$, pembagian sah. Rumus Newton menjadi $x_{n+1}=(x_n+2/x_n)/2$.",
