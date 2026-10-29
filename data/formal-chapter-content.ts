@@ -143,24 +143,75 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         ]
       },
       {
-        kind:"theorem", title:t("Teorema Klasifikasi Sistem $2\\times2$","Classification Theorem for a $2\\times2$ System"),
-        statement:t("Sistem $ax+by=e$ dan $cx+dy=f$ mempunyai solusi tunggal jika $ad-bc\\neq0$. Jika $ad-bc=0$, sistem mempunyai nol atau tak hingga solusi.","The system $ax+by=e$ and $cx+dy=f$ has a unique solution if $ad-bc\\neq0$. If $ad-bc=0$, it has either no solution or infinitely many solutions."),
+        kind:"theorem", title:t("Teorema Klasifikasi Lengkap Sistem $2\\times2$","Complete Classification of a $2\\times2$ System"),
+        statement:t("Untuk $a,b,c,d,e,f\in\mathbb R$, tinjau sistem $ax+by=e$ dan $cx+dy=f$, serta $\Delta=ad-bc$. Jika $\Delta\neq0$, sistem memiliki tepat satu solusi, yaitu $x=(de-bf)/\Delta$ dan $y=(af-ce)/\Delta$. Jika $\Delta=0$, sistem tidak mempunyai solusi atau mempunyai tak hingga solusi; kasus kedua terjadi tepat ketika kedua persamaan konsisten, termasuk jika keduanya identitas $0=0$.","For real coefficients $a,b,c,d,e,f$, consider $ax+by=e$, $cx+dy=f$, and $\Delta=ad-bc$. If $\Delta\neq0$, the unique solution is $x=(de-bf)/\Delta$ and $y=(af-ce)/\Delta$. If $\Delta=0$, the system has either no solution or infinitely many, with infinitely many precisely when it is consistent, including the case of two identities $0=0$."),
         proof:[
-          t("Eliminasi $y$ menghasilkan $(ad-bc)x=de-bf$.","Eliminating $y$ gives $(ad-bc)x=de-bf$."),
-          t("Jika $ad-bc\\neq0$, nilai $x$ ditentukan unik dan substitusi balik menentukan $y$ secara unik.","If $ad-bc\\neq0$, $x$ is uniquely determined, and back-substitution uniquely determines $y$."),
-          t("Jika $ad-bc=0$, ruas kiri eliminasi menjadi nol. Jika ruas kanan tidak nol, diperoleh kontradiksi; jika ruas kanan juga nol, satu persamaan bergantung pada yang lain dan muncul satu parameter bebas.","If $ad-bc=0$, the eliminated left side vanishes. A nonzero right side creates a contradiction; if it also vanishes, one equation depends on the other and a free parameter remains.")
+          t("Diketahui dua persamaan dengan koefisien real. Kalikan persamaan pertama dengan $d$ dan kedua dengan $b$, lalu kurangkan: $(ad-bc)x=de-bf$. Dengan cara serupa, mengalikan persamaan kedua dengan $a$ dan pertama dengan $c$ memberikan $(ad-bc)y=af-ce$. Operasi ini hanya menghasilkan syarat yang perlu sampai keberadaan pasangan solusi diperiksa.","Multiplying the first equation by $d$ and the second by $b$, then subtracting, yields $(ad-bc)x=de-bf$. Likewise, multiplying the second by $a$ and the first by $c$ yields $(ad-bc)y=af-ce$. These elimination identities are necessary conditions until existence is checked."),
+          t("Jika $\Delta\neq0$, definisikan $x_0=(de-bf)/\Delta$ dan $y_0=(af-ce)/\Delta$. Substitusi langsung memberi $ax_0+by_0=(ade-abf+abf-bce)/\Delta=e$ dan $cx_0+dy_0=(cde-bcf+adf-cde)/\Delta=f$. Jadi pasangan itu benar-benar solusi. Setiap solusi harus memenuhi kedua identitas eliminasi, sehingga harus sama dengan $(x_0,y_0)$; keberadaan dan ketunggalan terbukti.","If $\Delta\neq0$, set $x_0=(de-bf)/\Delta$ and $y_0=(af-ce)/\Delta$. Direct substitution gives $ax_0+by_0=e$ and $cx_0+dy_0=f$. Any solution must satisfy both elimination identities and therefore equals $(x_0,y_0)$. This establishes existence and uniqueness."),
+          t("Sekarang misalkan $\Delta=0$. Jika $(a,b)\neq(0,0)$, maka $(c,d)=\lambda(a,b)$ untuk suatu $\lambda\in\mathbb R$. Jika $f\neq\lambda e$, kedua persamaan bertentangan; jika $f=\lambda e$, persamaan kedua tidak memberi syarat baru dan solusi membentuk satu garis, sehingga tak hingga banyaknya. Argumen ini tetap berlaku ketika $(c,d)=(0,0)$ dengan $\lambda=0$.","Now suppose $\Delta=0$. If $(a,b)\neq(0,0)$, then $(c,d)=\lambda(a,b)$ for some real $\lambda$. When $f\neq\lambda e$, the equations are inconsistent. Otherwise the second equation adds no restriction, and the solution set is a line containing infinitely many points; this also covers a zero second row."),
+          t("Jika $(a,b)=(0,0)$ tetapi $(c,d)\neq(0,0)$, persamaan pertama menuntut $0=e$. Untuk $e\neq0$ sistem tak konsisten, sedangkan untuk $e=0$ persamaan kedua mendefinisikan satu garis. Jika kedua baris koefisien nol, sistem konsisten tepat saat $e=f=0$; pada keadaan ini semua pasangan $(x,y)\in\mathbb R^2$ adalah solusi, dan pada keadaan lainnya tidak ada solusi.","If the first coefficient row is zero and the second is nonzero, consistency requires $e=0$; then the second equation defines a line. If both coefficient rows are zero, the system is consistent exactly when $e=f=0$, in which case every point of $\mathbb R^2$ is a solution; otherwise it has none."),
+          t("Ketiga kemungkinan untuk $\Delta=0$ telah mencakup seluruh kasus, termasuk baris nol yang tidak boleh diabaikan ketika memakai eliminasi. Karena satu garis dan seluruh bidang memuat tak hingga titik, klasifikasi yang dinyatakan berlaku tanpa hipotesis tersembunyi.","The cases exhaust every singular coefficient matrix, including zero rows. Since a line and the entire plane each contain infinitely many points, the stated classification follows without hidden assumptions.")
         ]
       },
       {
-        kind:"corollary", title:t("Akibat Geometris","Geometric Corollary"),
-        statement:t("Dua garis linear di bidang memiliki tepat satu titik potong jika gradiennya berbeda; jika gradien sama, keduanya sejajar atau berimpit.","Two lines in the plane have exactly one intersection if their slopes differ; equal slopes produce parallel or coincident lines."),
+        kind:"corollary", title:t("Akibat Geometris: Dua Garis Termasuk Garis Vertikal","Geometric Corollary: Including Vertical Lines"),
+        statement:t("Misalkan $(a,b)\neq(0,0)$ dan $(c,d)\neq(0,0)$ sehingga $ax+by=e$ dan $cx+dy=f$ masing-masing benar-benar menyatakan garis di $\mathbb R^2$. Kedua garis berpotongan tepat di satu titik jika dan hanya jika $ad-bc\neq0$. Jika $ad-bc=0$, keduanya berimpit atau sejajar tanpa titik potong.","Assume $(a,b)\neq(0,0)$ and $(c,d)\neq(0,0)$, so both equations define genuine lines in $\mathbb R^2$. They intersect at exactly one point if and only if $ad-bc\neq0$. When the determinant vanishes, the lines coincide or are distinct and parallel."),
         proof:[
-          t("Gradien berbeda ekuivalen dengan vektor normal yang tidak proporsional, yang menghasilkan determinan koefisien tak nol.","Different slopes are equivalent to nonproportional normal vectors, giving a nonzero coefficient determinant."),
-          t("Teorema klasifikasi sistem kemudian memberi tepat satu solusi bersama.","The system-classification theorem then gives exactly one common solution.")
+          t("($\Rightarrow$) Misalkan kedua garis memiliki tepat satu titik potong. Jika $ad-bc=0$, kedua vektor normal tak nol saling proporsional. Berdasarkan teorema klasifikasi, kedua garis akan berimpit (tak hingga titik potong) atau tidak berpotongan sama sekali. Keduanya bertentangan dengan ketunggalan titik potong. Maka $ad-bc\neq0$.","(Forward) Suppose the lines intersect at exactly one point. If the determinant vanished, their nonzero normal vectors would be proportional, so the lines would coincide or be disjoint. Both contradict the assumption; hence the determinant is nonzero."),
+          t("($\Leftarrow$) Jika $ad-bc\neq0$, teorema klasifikasi memberikan satu dan hanya satu pasangan $(x,y)$ yang memenuhi kedua persamaan. Pasangan itu adalah tepat satu titik perpotongan garis.","(Backward) A nonzero determinant yields exactly one simultaneous solution by the classification theorem, which is the unique intersection point."),
+          t("Jika $ad-bc=0$, terdapat $\lambda\neq0$ dengan $(c,d)=\lambda(a,b)$. Apabila $f=\lambda e$, kedua garis berimpit; jika $f\neq\lambda e$, tidak ada titik bersama dan kedua garis sejajar. Rumusan ini tetap mencakup garis vertikal seperti $x=1$ dan $x=2$, yang gradiennya tidak terdefinisi.","If the determinant is zero, $(c,d)=\lambda(a,b)$ for some nonzero $\lambda$. The lines coincide if $f=\lambda e$ and are distinct parallel lines otherwise. This also covers vertical lines such as $x=1$ and $x=2$, whose slopes are undefined.")
         ]
       }
     ],
     examples:[
+      {
+        title:t("Contoh Definisi: Persamaan","Definition Example: Equation"),
+        forDefinition:t("Persamaan","Equation"),
+        problem:t("Bedakan $2x+3$, $2x+3=7$, dan $2(x+1)=2x+2$. Tentukan kapan kesetaraan berlaku.","Distinguish $2x+3$, $2x+3=7$, and $2(x+1)=2x+2$. Determine when each equality holds."),
+        strategy:t("Uji apakah ada tanda sama dengan, lalu tentukan himpunan nilai yang membuat kesetaraan benar.","Identify equalities and determine their truth sets."),
+        solution:[
+          t("Ekspresi $2x+3$ bukan persamaan karena tidak membandingkan dua ekspresi dengan tanda sama dengan.","The expression $2x+3$ is not an equation: it does not assert equality."),
+          t("Persamaan $2x+3=7$ benar tepat ketika $2x=4$, yakni $x=2$. Untuk $x=0$, kedua ruas bernilai $3$ dan $7$, sehingga persamaan salah.","The equation $2x+3=7$ holds precisely when $x=2$; at $x=0$ the sides are $3$ and $7$."),
+          t("Dengan distributivitas, $2(x+1)=2x+2$ untuk setiap $x\in\mathbb R$. Kesetaraan terakhir adalah identitas, bukan persamaan yang memilih satu nilai khusus.","By distributivity, $2(x+1)=2x+2$ for every real $x$; this is an identity.")
+        ],
+        conclusion:t("Persamaan dapat benar hanya untuk nilai tertentu atau untuk semua nilai pada domain; ekspresi tunggal bukan persamaan.","An equation may hold at selected values or identically on its domain; a lone expression is not an equation.")
+      },
+      {
+        title:t("Contoh Definisi: Solusi","Definition Example: Solution"),
+        forDefinition:t("Solusi","Solution"),
+        problem:t("Periksa apakah $x=2$ dan $x=1$ merupakan solusi $3x-1=5$.","Test whether $x=2$ and $x=1$ solve $3x-1=5$."),
+        strategy:t("Substitusikan setiap kandidat ke kedua ruas, bukan hanya mengandalkan tebakan.","Substitute each candidate into both sides."),
+        solution:[
+          t("Untuk $x=2$, ruas kiri adalah $3(2)-1=5$, sama dengan ruas kanan. Jadi $2$ merupakan solusi.","At $x=2$, the left side equals $3(2)-1=5$, so $2$ is a solution."),
+          t("Untuk $x=1$, ruas kiri adalah $3(1)-1=2\neq5$, sehingga $1$ bukan solusi.","At $x=1$, the left side is $2\neq5$, so $1$ is not a solution."),
+          t("Dari $3x-1=5$ diperoleh $3x=6$ dan $x=2$ melalui operasi ekuivalen; jadi tidak ada solusi real lain.","Equivalent operations give $3x=6$ and $x=2$, proving there is no other real solution.")
+        ],
+        conclusion:t("Himpunan solusi persamaan pada $\mathbb R$ adalah $\{2\}$.","The solution set over $\mathbb R$ is $\{2\}$.")
+      },
+      {
+        title:t("Contoh Definisi: Persamaan Ekuivalen","Definition Example: Equivalent Equations"),
+        forDefinition:t("Persamaan Ekuivalen","Equivalent Equations"),
+        problem:t("Bandingkan $2x+6=10$, $x=2$, dan $x^2=4$ pada domain $\mathbb R$.","Compare $2x+6=10$, $x=2$, and $x^2=4$ over $\mathbb R$."),
+        strategy:t("Tentukan himpunan solusi masing-masing; bentuk aljabar yang mirip tidak cukup.","Compute each solution set; similar-looking formulas are insufficient."),
+        solution:[
+          t("Mengurangi $6$ dari $2x+6=10$ dan membagi dengan $2\neq0$ memberi $x=2$. Kedua transformasi dapat dibalik, jadi himpunan solusi persamaan pertama adalah $\{2\}$.","Subtracting $6$ and dividing by nonzero $2$ gives $x=2$ through reversible operations, so the first solution set is $\{2\}$."),
+          t("Persamaan $x=2$ juga mempunyai himpunan solusi $\{2\}$. Karena himpunan solusi sama, kedua persamaan pertama ekuivalen.","The second equation has the same solution set $\{2\}$, so the first two equations are equivalent."),
+          t("Sebaliknya, $x^2=4$ ekuivalen dengan $(x-2)(x+2)=0$, sehingga solusinya $\{-2,2\}$. Solusi tambahan $-2$ menunjukkan persamaan ini tidak ekuivalen dengan $x=2$.","In contrast, $x^2=4$ has solution set $\{-2,2\}$ and is not equivalent to $x=2$.")
+        ],
+        conclusion:t("Ekuivalensi berarti kesamaan seluruh himpunan solusi, bukan hanya adanya satu solusi bersama.","Equivalence means equality of the entire solution sets, not merely sharing one solution.")
+      },
+      {
+        title:t("Contoh Definisi: Persamaan Linear","Definition Example: Linear Equation"),
+        forDefinition:t("Persamaan Linear","Linear Equation"),
+        problem:t("Tulis $5x-7=3$ dalam bentuk $ax+b=0$ dan bandingkan dengan $x^2=4$ serta $0x+1=0$.","Put $5x-7=3$ in the form $ax+b=0$ and compare it with $x^2=4$ and $0x+1=0$."),
+        strategy:t("Gunakan definisi dengan syarat koefisien variabel tidak nol.","Use the definition and its nonzero-variable-coefficient hypothesis."),
+        solution:[
+          t("Mengurangi kedua ruas dengan $3$ menghasilkan $5x-10=0$, sehingga $a=5\neq0$ dan $b=-10$. Persamaan ini linear satu variabel.","Subtracting $3$ gives $5x-10=0$, where $a=5\neq0$ and $b=-10$; it is linear."),
+          t("Pembagian dengan $5$ menghasilkan $x=2$. Substitusi ke persamaan asal memberi $5(2)-7=3$, sehingga solusi terverifikasi.","Dividing by $5$ gives $x=2$, verified by $5(2)-7=3$."),
+          t("Persamaan $x^2=4$ bukan linear karena memuat suku kuadrat. Persamaan $0x+1=0$ juga tidak memenuhi definisi $a\neq0$ dan tidak mempunyai solusi.","The equation $x^2=4$ is quadratic; $0x+1=0$ fails the required condition $a\neq0$ and has no solution.")
+        ],
+        conclusion:t("Persamaan linear satu variabel dalam definisi ini memiliki koefisien variabel tak nol dan tepat satu solusi real.","Under this definition a one-variable linear equation has a nonzero variable coefficient and exactly one real solution.")
+      },
       {
         title:t("Contoh Detail: Sistem dengan Parameter","Detailed Example: Parametric System"),
         problem:t("Tentukan nilai $k$ agar sistem $x+2y=3$ dan $2x+4y=k$ mempunyai tak hingga solusi.","Find $k$ so that $x+2y=3$ and $2x+4y=k$ have infinitely many solutions."),
