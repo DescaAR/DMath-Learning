@@ -1,5 +1,20 @@
 # DMath Learning — pengayaan materi dan audit matematis
 
+## Catatan sesi 2026-10-29 — Matematika Diskrit (kuantor bertingkat)
+
+**Bidang disentuh:** 14 Matematika Diskrit, submateri `md-kuantor-bertingkat`, URL: https://descaar.github.io/DMath-Learning/materi/matematika-diskrit/md-kuantor-bertingkat/.
+
+**Audit awal:** `new-academic-content.ts` membangkitkan isi generik untuk submateri ini; pembahasan tidak memberikan analisis saksi lokal vs saksi seragam, contoh tandingan pertukaran kuantor, penanganan domain kosong, atau matriks relasi khusus. Halaman Integral Riemann dijadikan acuan untuk pemisahan definisi, pembuktian, contoh, dan latihan, tanpa menghapus materi bidang lain.
+
+**Pengayaan:** `data/nested-quantifiers-content.ts` menggantikan hanya slug ini dengan 4 definisi formal yang masing-masing mempunyai contoh langsung (lingkup, matriks relasi, saksi lokal/seragam, fungsi saksi); 7 hasil formal dengan bukti dua arah jika relevan (ekspansi domain berhingga, implikasi satu arah saksi seragam, negasi dua kuantor, pertukaran kuantor sejenis, kuantor vakum dan domain kosong, konstruksi fungsi dari saksi unik, saksi diagonal, distributivitas kuantor). **Catatan:** jumlah hasil formal sebenarnya 8, sehingga audit dan laporan harus menghitung sesuai data sebelum menyatakan lulus. Ada 8 contoh terbahas dan 8 latihan bersolusi. Referensi: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, edisi ke-8 (2019), Bab 1.
+
+**Visualisasi:** `components/NestedQuantifiersLab.tsx` menyajikan SVG responsif matriks relasi, enam konfigurasi (kesamaan, ketaksamaan, suksesor siklik, kolom tetap, baris kosong, relasi semesta), pengendali ukuran domain dan pemilih pasangan, serta evaluasi empat urutan kuantor dan saksi masing-masing. Perhitungan eksak disediakan di `lib/nested-quantifiers-explorer.ts`.
+
+**Pengujian:** `scripts/audit-nested-quantifiers.mjs` diintegrasikan ke `npm run build`, menguji semantik kuantor dan penghubungan komponen. **Status publikasi:** tunggu pemeriksaan GitHub Actions pada commit final, jangan mengklaim terbit sebelum `success`. Audit awal harus memperbaiki ketidaksesuaian jumlah hasil formal pada skrip (7 vs 8) sebelum deployment.
+
+**Rotasi 26 bidang:** sudah disentuh: 03, 04, 07, 08, 09, 10, 11, 14, 15, 17, 18 (11 bidang, belum berarti tuntas). Belum disentuh: 01 Aritmetika, 02 Aljabar, 05 Geometri, 06 Trigonometri, 12 Statistika, 13 Peluang, 16 Topologi, 19 Metode Numerik, 20 Optimisasi, 21 Pemodelan Matematika, 22 Riset Operasi, 23 Statistika Terapan, 24 Statistika Matematika, 25 Kalkulus Stokastik, 26 Teori Ukuran & Probabilitas. Topologi dan Metode Numerik belum tersedia sebagai subject book terpisah pada katalog branch saat ini; prioritaskan rute publik berikutnya, misalnya 22 Riset Operasi atau 24 Statistika Matematika, sambil mengaudit pemetaan katalog.
+
+
 ## Catatan sesi 2026-10-29 — Analisis Numerik (metode bisection)
 
 **Bidang disentuh:** 18 Analisis Numerik, submateri \`num-bisection\`. URL: https://descaar.github.io/DMath-Learning/materi/analisis-numerik/num-bisection/.
