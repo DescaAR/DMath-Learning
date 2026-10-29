@@ -136,7 +136,7 @@ export const centralTendencyContent:BookLessonContent={
     },
     {
       "title": "Contoh Optimalitas Kuadrat",
-      "problem": "Untuk data $1,2,7$, bandingkan $Q(3)$ dengan nilai minimum $Q(\bar x)$.",
+      "problem": "Untuk data $1,2,7$, bandingkan $Q(3)$ dengan nilai minimum $Q(\\bar x)$.",
       "solution": [
         "Rata-rata data adalah $\\bar x=(1+2+7)/3=10/3$. Menurut teorema kuadrat, peminimum global tunggal terjadi pada $t=10/3$.",
         "Hitung $Q(10/3)=(-7/3)^2+(-4/3)^2+(11/3)^2=(49+16+121)/9=62/3$. Sementara itu $Q(3)=(1-3)^2+(2-3)^2+(7-3)^2=4+1+16=21$.",
@@ -180,13 +180,13 @@ export const centralTendencyContent:BookLessonContent={
       "provenance": "dmath-original"
     },
     {
-      "prompt": "S-02. Tentukan semua $t$ yang meminimalkan $sum_{xin{0,2,8,10}}|x-t|$.",
+      "prompt": "S-02. Tentukan semua $t$ yang meminimalkan $\\sum_{i=1}^{4}|x_i-t|$ untuk data $(x_1,x_2,x_3,x_4)=(0,2,8,10)$.",
       "hint": "Pasangkan data terkecil dengan terbesar dan gunakan ketaksamaan segitiga.",
       "answer": "Data terurut adalah $0,2,8,10$. Pasangan $(0,10)$ memberi $|t|+|10-t|\\ge10$ dan pasangan $(2,8)$ memberi $|2-t|+|8-t|\\ge6$. Kedua kesamaan berlaku sekaligus tepat ketika $t\\in[0,10]\\cap[2,8]=[2,8]$. Dengan demikian nilai minimum $10+6=16$ dicapai oleh semua $t\\in[2,8]$ dan tidak oleh nilai lain. Median menurut konvensi titik tengah adalah $(2+8)/2=5$; $A(5)=5+3+3+5=16$ memverifikasi hasil.",
       "provenance": "dmath-original"
     },
     {
-      "prompt": "S-03. Data $2,5,11$ berbobot $1,2,1$. Cari peminimum unik $Q_w(t)=sum_iw_i(x_i-t)^2$ dan nilai minimumnya.",
+      "prompt": "S-03. Data $2,5,11$ berbobot $1,2,1$. Cari peminimum unik $Q_w(t)=\\sum_iw_i(x_i-t)^2$ dan nilai minimumnya.",
       "hint": "Hitung jumlah bobot, rata-rata berbobot, kemudian substitusikan.",
       "answer": "Diketahui bobot $1,2,1$ tidak negatif dan $W=4>0$. Rata-rata berbobot adalah $\\bar x_w=(1(2)+2(5)+1(11))/4=23/4$. Teorema kuadrat tertimbang menjamin ini peminimum tunggal. Nilai minimumnya $Q_w(23/4)=(2-23/4)^2+2(5-23/4)^2+(11-23/4)^2=(225+18+441)/16=171/4$. Untuk sembarang $t$, $Q_w(t)=171/4+4(t-23/4)^2$, sehingga tidak ada $t$ lain yang mencapai nilai minimum.",
       "provenance": "dmath-original"
