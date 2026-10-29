@@ -128,7 +128,13 @@ const checked=[
   ["num-galat-absolut-relatif","example","Membandingkan Galat"],
   ["num-galat-absolut-relatif","example","Cancellation"],
   ["num-galat-absolut-relatif","example","Orde Galat"],
-  ["num-galat-absolut-relatif","example","Residual dan Error"]
+  ["num-galat-absolut-relatif","example","Residual dan Error"],
+  ["tup-extension","example","Panjang Interval sebagai Data Awal"],
+  ["tup-extension","exercise","Pada $X="],
+  ["tup-extension","exercise","Untuk premeasure panjang"],
+  ["tup-extension","exercise","Tunjukkan bahwa tanpa syarat"],
+  ["tup-extension","exercise","Misalkan $m$ suatu ukuran Borel"],
+  ["tup-extension","exercise","Pada $X=\\{a,b,c\\}$"]
 ];
 for(const [slug,type,anchor] of checked){
   const page=getBookSectionContent(slug);
@@ -141,6 +147,15 @@ for(const [slug,type,anchor] of checked){
   assert.ok(normalize(source).length>=450,
     slug+": reviewed solution should be at least 450 characters, found "+normalize(source).length);
 }
+// Regression check: the original Carathéodory lesson must not state the false
+// implication from arbitrary sigma-finiteness of the extensions alone.
+const extensionLesson=getBookSectionContent("tup-extension");
+const uniqueness=extensionLesson.formal.find(item=>item.title==="Keunikan Perluasan pada Kasus Sigma-Finite");
+assert.ok(uniqueness?.statement.includes("E_1") && uniqueness.statement.includes("\\mathcal A_0"),
+  "Uniqueness must require a common finite-measure cover inside the generating algebra");
+assert.ok(normalize(uniqueness.proof?.join(" ")).length>=900,
+  "Uniqueness proof must establish the finite-restriction pi-lambda argument and limit passage");
+
 const totals=subjects.reduce((out,row)=>{
   for(const [k,v] of Object.entries(row))if(typeof v==="number")out[k]=(out[k]??0)+v;
   return out;
