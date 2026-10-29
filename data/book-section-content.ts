@@ -12,6 +12,7 @@ import { nestedQuantifiersContent } from "@/data/nested-quantifiers-content";
 import { graphicalLinearProgrammingContent } from "@/data/graphical-lp-content";
 import { neymanPearsonContent } from "@/data/neyman-pearson-content";
 import { conditionalExpectationContent } from "@/data/conditional-expectation-content";
+import { regressionInferenceContent } from "@/data/regression-inference-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -82,6 +83,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "stm-neyman-pearson":neymanPearsonContent,
   // Measure-theoretic conditional expectation, rigorous proofs and actual worked solutions.
   "ks-conditional-expectation":conditionalExpectationContent,
+  // Regression coefficient inference with exact hypotheses, proofs, and actual solutions.
+  "sta-regression-inference":regressionInferenceContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
