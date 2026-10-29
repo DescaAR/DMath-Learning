@@ -16,6 +16,7 @@ import { conditionalExpectationContent } from "@/data/conditional-expectation-co
 import { regressionInferenceContent } from "@/data/regression-inference-content";
 import { metricSpacesContent } from "@/data/metric-spaces-content";
 import { analyticGeometryContent } from "@/data/analytic-geometry-content";
+import { optimizationContent } from "@/data/optimization-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -94,6 +95,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "ruang-metrik":metricSpacesContent,
   // Complete coordinate geometry: lines, circles, tangency, and focus-directrix parabolas.
   "calc-app-conics-basics":analyticGeometryContent,
+  // Dedicated one-variable optimization with endpoint, convexity and differentiability cases.
+  "calc-optimization":optimizationContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
