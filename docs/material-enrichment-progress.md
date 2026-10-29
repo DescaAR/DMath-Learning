@@ -1,3 +1,19 @@
+## Catatan sesi 2026-10-29 — Statistika: ukuran pemusatan dan pencilan
+
+**Bidang publik:** 12 Statistika. **Submateri:** `sta-central` pada kurikulum internal Statistika Terapan, URL: https://descaar.github.io/DMath-Learning/materi/statistika-terapan/sta-central/. Materi ini ditambahkan ke katalog publik 26 bidang sebagai Statistika; tidak mengklaim keseluruhan bidang selesai.
+
+**Audit naskah dan solusi sebelum perubahan:** sumber `data/new-academic-content.ts` menggunakan generator umum untuk `sta-central`. Pengantar berupa kalimat templat, pembuktian dan contoh tidak memadai untuk menjelaskan hubungan rata-rata dengan kuadrat galat, median dengan galat absolut, atau dampak pencilan. Latihan generatif lebih menyerupai rubrik penyusunan jawaban daripada soal dengan data numerik yang dapat diverifikasi. Snapshot sukses sebelumnya (Actions 40903172516) melaporkan total buku 5.971 latihan pendek, 3.452 contoh pendek, 1.057 pembuktian pendek, 742 latihan generik, 1.806 temuan struktural; angka tersebut hanya triage, bukan sertifikasi kualitas.
+
+**Revisi sumber yang dirender:** `data/central-tendency-content.ts` menggantikan **hanya** `sta-central` dalam `data/book-section-content.ts`. Materi baru memuat 4 definisi dengan contoh yang langsung ditautkan (rata-rata, median, rata-rata berbobot, rata-rata pangkas), 7 hasil formal dengan pembuktian lengkap (identitas keseimbangan dan konversnya, minimum kuadrat, minimum absolut dengan kasus ganjil/genap, minimum kuadrat tertimbang, ekivarians afin termasuk skala negatif, batas rata-rata, pembaruan rata-rata), 8 contoh terbahas, dan 8 latihan asli konkret S-01 sampai S-08 dengan jawaban rinci. Seluruh contoh menguraikan angka dan verifikasi, termasuk interval semua peminimum untuk jumlah deviasi absolut genap. Rujukan: Moore–McCabe–Craig, *Introduction to the Practice of Statistics*, edisi 9 (2017), dan Wasserman, *All of Statistics* (2004).
+
+**Visualisasi:** `components/CentralTendencyLab.tsx` memberi SVG responsif dua skala (rentang penuh dan perbesaran 0–10), slider satu pencilan, rata-rata, median, dan rata-rata pangkas yang dihitung tepat dari data `[2,3,4,5,z]`, `6\le z\le106`. Komponen dirender di pengantar dan bagian visualisasi khusus melalui `components/BookSectionPage.tsx`. Pemeriksaan interaksi browser manual tetap terbuka.
+
+**Regresi dan audit:** `scripts/audit-solution-depth.mjs` sekarang memeriksa sumber akhir, pasangan definisi–contoh, tujuh bukti, delapan solusi latihan, delapan contoh terbahas, katalog publik, SVG, dan identitas mean/median untuk 200 dataset terurut beserta perubahan afin skala negatif. Jalankan ulang `npm run audit:solution-depth`, `npm run audit:depth`, audit LaTeX, format skripsi/solusi, TypeScript dan build. Perbandingan angka sebelum/sesudah harus dibaca dari log atau artifact run sukses terakhir; tidak boleh mengklaim deploy berhasil hanya dari commit. Audit bank soal independen tetap terbuka.
+
+**Rotasi 26 bidang:** berdasarkan jejak historis, kini **25/26 bidang** telah memperoleh pengayaan mendalam pada setidaknya satu submateri. Satu bidang belum tersentuh mendalam adalah **21 Pemodelan Matematika**. Berikutnya prioritaskan materi pemodelan yang benar-benar dirender, terutama formulasi, identifiabilitas, satuan, dan verifikasi model; setelah itu lanjutkan pengayaan semua bidang dan bank soal. Jangan mengulang `sta-central` tanpa temuan regresi.
+
+---
+
 ## Catatan sesi 2026-10-29 — Peluang: densitas kontinu, CDF, ekspektasi, dan pengondisian
 
 **Bidang publik:** 13 Peluang. **Sumber yang benar-benar dirender:** `data/probability-density-content.ts` melalui `data/book-section-content.ts` untuk `calc-probability`. **URL:** https://descaar.github.io/DMath-Learning/materi/kalkulus/calc-probability/. Kurikulum internalnya Kalkulus, tetapi halaman juga tercantum dalam katalog 26 bidang publik melalui `data/site-data.ts`. Pengayaan ini tidak berarti seluruh bidang Peluang telah selesai.
