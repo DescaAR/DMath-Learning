@@ -17,6 +17,7 @@ import { regressionInferenceContent } from "@/data/regression-inference-content"
 import { metricSpacesContent } from "@/data/metric-spaces-content";
 import { analyticGeometryContent } from "@/data/analytic-geometry-content";
 import { optimizationContent } from "@/data/optimization-content";
+import { probabilityDensityContent } from "@/data/probability-density-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -97,6 +98,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "calc-app-conics-basics":analyticGeometryContent,
   // Dedicated one-variable optimization with endpoint, convexity and differentiability cases.
   "calc-optimization":optimizationContent,
+  // Dedicated continuous probability: normalized densities, CDFs, moments and conditioning.
+  "calc-probability":probabilityDensityContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
