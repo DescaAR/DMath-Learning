@@ -54,6 +54,7 @@ export function RiemannHubShell({
   className?:string;
 }){
   const [progress,setProgress]=useState(0);
+  const [focused,setFocused]=useState(false);
 
   useEffect(()=>{
     const updateProgress=()=>{
@@ -70,7 +71,7 @@ export function RiemannHubShell({
   },[]);
 
   return(
-    <div className={"textbook-page ird-page "+className} data-no-translate>
+    <div className={"textbook-page ird-page "+className+(focused?" study-focus-mode":"")} data-no-translate>
       <div className="reading-progress" aria-hidden="true"><span style={{width:progress+"%"}}/></div>
 
       <section className="chapter-hero textbook-hero ird-hero">
@@ -131,6 +132,15 @@ export function RiemannHubShell({
           />
 
           <article className="article deep-article textbook-article ird-article">
+            {sections.length>1&&<div className="dmath-reading-toolbar" role="group" aria-label="Pengaturan membaca">
+              <div className="dmath-reading-toolbar-label"><span aria-hidden="true" className="dmath-reading-toolbar-dot"/> STUDY MODE <span className="dmath-reading-toolbar-separator"/> <span>{Math.round(progress)}% dibaca</span></div>
+              <div className="dmath-reading-toolbar-actions">
+                <button type="button" className={"dmath-focus-button"+(focused?" active":"")} aria-pressed={focused} onClick={()=>setFocused(v=>!v)} title="Tampilkan atau sembunyikan daftar isi untuk fokus membaca">
+                  <span aria-hidden="true">{focused?"▣":"□"}</span> {focused?"Tampilkan Daftar Isi":"Mode Fokus"}
+                </button>
+                <a href="#" className="dmath-back-top" aria-label="Kembali ke awal halaman">↑ <span>Atas</span></a>
+              </div>
+            </div>}
             {children}
           </article>
         </div>
