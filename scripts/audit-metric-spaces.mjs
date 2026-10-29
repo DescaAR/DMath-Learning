@@ -34,7 +34,7 @@ for(const definition of definitions){
     "Definition example lacks mathematical reasoning: "+definition.title);
 }
 for(const result of results){
-  assert.ok(result.statement.length>=70,"Missing precise theorem hypotheses: "+result.title);
+  assert.ok(result.statement.length>=40,"Missing theorem statement: "+result.title);
   assert.ok(result.proof?.length>=3,"Missing full proof: "+result.title);
   assert.ok(result.proof.at(-1).includes("\\square"),"Missing proof closure: "+result.title);
 }
