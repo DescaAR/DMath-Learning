@@ -100,7 +100,8 @@ export const centralTendencyContent:BookLessonContent={
       "problem": "Hitung rata-rata data $2,4,4,10$ dan periksa jumlah penyimpangannya.",
       "solution": [
         "Diketahui $n=4$ dan jumlah pengamatan $2+4+4+10=20$. Berdasarkan definisi, $\\bar x=20/4=5$.",
-        "Selisih terhadap rata-rata berturut-turut adalah $-3,-1,-1,5$; jumlahnya $-3-1-1+5=0$. Jadi nilai $5$ bukan hasil pembulatan, melainkan titik keseimbangan tepat bagi keempat data."
+        "Selisih terhadap rata-rata berturut-turut adalah $-3,-1,-1,5$; jumlahnya $-3-1-1+5=0$. Jadi nilai $5$ bukan hasil pembulatan, melainkan titik keseimbangan tepat bagi keempat data.",
+        "Selain itu, nilai $5$ berada di antara minimum $2$ dan maksimum $10$, sebagaimana dipastikan oleh sifat rata-rata. Jika pusat digeser ke $6$, jumlah kuadrat penyimpangan meningkat dari $Q(5)=9+1+1+25=36$ menjadi $Q(6)=16+4+4+16=40$; selisih $4$ sesuai $n(6-5)^2=4$."
       ],
       "forDefinition": "Rata-rata Aritmetika"
     },
@@ -118,7 +119,8 @@ export const centralTendencyContent:BookLessonContent={
       "problem": "Nilai $3,9,12$ masing-masing berbobot $2,1,3$. Tentukan rata-rata berbobot.",
       "solution": [
         "Bobot semuanya tidak negatif dan $W=2+1+3=6>0$, sehingga definisi berlaku. Jumlah tertimbang adalah $2(3)+1(9)+3(12)=6+9+36=51$.",
-        "Maka $\\bar x_w=51/6=17/2=8{,}5$. Verifikasi: $\\sum_iw_i(x_i-17/2)=2(-11/2)+(1/2)+3(7/2)=-11+1/2+21/2=0$."
+        "Maka $\\bar x_w=51/6=17/2=8{,}5$. Verifikasi: $\\sum_iw_i(x_i-17/2)=2(-11/2)+(1/2)+3(7/2)=-11+1/2+21/2=0$.",
+        "Rata-rata tanpa bobot untuk tiga nilai tersebut adalah $(3+9+12)/3=8$. Nilai berbobot $8{,}5$ lebih besar karena pengamatan terbesar, $12$, mendapat bobot tiga. Hasil tetap berada dalam interval $[3,12]$ sesuai sifat kombinasi konveks dengan bobot tak negatif."
       ],
       "forDefinition": "Rata-rata Berbobot"
     },
@@ -127,7 +129,8 @@ export const centralTendencyContent:BookLessonContent={
       "problem": "Hitung rata-rata pangkas tingkat satu untuk data $100,4,1,3,2$.",
       "solution": [
         "Urutkan dahulu menjadi $1,2,3,4,100$. Dengan $n=5$ dan $k=1$, syarat $2k<n$ terpenuhi karena $2<5$.",
-        "Buang satu nilai terkecil dan satu terbesar, yakni $1$ dan $100$. Data yang dipertahankan ialah $2,3,4$ sehingga $T_1=(2+3+4)/3=3$. Rata-rata tanpa pemangkasan adalah $110/5=22$; perbedaan ini menunjukkan pengaruh observasi $100$ terhadap rata-rata biasa."
+        "Buang satu nilai terkecil dan satu terbesar, yakni $1$ dan $100$. Data yang dipertahankan ialah $2,3,4$ sehingga $T_1=(2+3+4)/3=3$. Rata-rata tanpa pemangkasan adalah $110/5=22$; perbedaan ini menunjukkan pengaruh observasi $100$ terhadap rata-rata biasa.",
+        "Jika hanya nilai terbesar $100$ diganti $1000$, urutan tiga pengamatan tengah tetap $2,3,4$ sehingga rata-rata pangkas tetap $3$. Sebaliknya, rata-rata biasa menjadi $(1+2+3+4+1000)/5=202$. Ini memperlihatkan secara konkret bahwa pemangkasan simetris membatasi pengaruh nilai ekstrem pada data ini."
       ],
       "forDefinition": "Rata-rata Pangkas Simetris"
     },
@@ -137,7 +140,8 @@ export const centralTendencyContent:BookLessonContent={
       "solution": [
         "Rata-rata data adalah $\\bar x=(1+2+7)/3=10/3$. Menurut teorema kuadrat, peminimum global tunggal terjadi pada $t=10/3$.",
         "Hitung $Q(10/3)=(-7/3)^2+(-4/3)^2+(11/3)^2=(49+16+121)/9=62/3$. Sementara itu $Q(3)=(1-3)^2+(2-3)^2+(7-3)^2=4+1+16=21$.",
-        "Selisih $21-62/3=1/3$ sama dengan $3(3-10/3)^2=1/3$, sesuai identitas teorema. Karena selisih positif, $t=3$ bukan peminimum."
+        "Selisih $21-62/3=1/3$ sama dengan $3(3-10/3)^2=1/3$, sesuai identitas teorema. Karena selisih positif, $t=3$ bukan peminimum.",
+        "Pemeriksaan kedua pada $t=4$ memberi $Q(4)=9+4+9=22>62/3$. Namun dua perbandingan numerik saja tidak membuktikan minimum global; kepastian global berasal dari identitas $Q(t)=62/3+3(t-10/3)^2$ yang berlaku untuk setiap bilangan real $t$."
       ]
     },
     {
@@ -145,7 +149,8 @@ export const centralTendencyContent:BookLessonContent={
       "problem": "Tentukan seluruh peminimum $A(t)$ untuk data $1,2,7,12$.",
       "solution": [
         "Data sudah terurut dan $n=4$. Menurut teorema median, seluruh peminimum adalah $[x_{(2)},x_{(3)}]=[2,7]$, bukan hanya satu angka.",
-        "Untuk $2\\le t\\le7$, $A(t)=(t-1)+(t-2)+(7-t)+(12-t)=16$. Sebagai pemeriksaan, $A(4)=3+2+3+8=16$, sedangkan $A(0)=1+2+7+12=22$. Median yang didefinisikan sebagai titik tengah adalah $(2+7)/2=9/2$, dan juga menghasilkan $A(9/2)=16$."
+        "Untuk $2\\le t\\le7$, $A(t)=(t-1)+(t-2)+(7-t)+(12-t)=16$. Sebagai pemeriksaan, $A(4)=3+2+3+8=16$, sedangkan $A(0)=1+2+7+12=22$. Median yang didefinisikan sebagai titik tengah adalah $(2+7)/2=9/2$, dan juga menghasilkan $A(9/2)=16$.",
+        "Untuk nilai di luar interval, misalnya $t=8$, didapat $A(8)=7+6+1+4=18>16$. Ketaksamaan pasangan pada pembuktian teorema menjamin bahwa setiap titik di luar $[2,7]$ memberikan nilai lebih besar, sehingga tidak ada kandidat yang terlewat."
       ]
     },
     {
@@ -162,7 +167,8 @@ export const centralTendencyContent:BookLessonContent={
       "problem": "Empat data adalah $1,2,3,4$. Berapa pengamatan kelima agar rata-rata lima data tepat $4$?",
       "solution": [
         "Jumlah empat pengamatan adalah $10$. Jika rata-rata lima data harus $4$, maka jumlah lima data harus $5(4)=20$.",
-        "Jadi pengamatan kelima $z=20-10=10$. Verifikasi langsung: $(1+2+3+4+10)/5=20/5=4$. Rumus pembaruan juga memberi $(4(5/2)+10)/5=4$, sehingga hasil konsisten."
+        "Jadi pengamatan kelima $z=20-10=10$. Verifikasi langsung: $(1+2+3+4+10)/5=20/5=4$. Rumus pembaruan juga memberi $(4(5/2)+10)/5=4$, sehingga hasil konsisten.",
+        "Ketunggalan nilai kelima juga jelas: persamaan $10+z=20$ memiliki tepat satu penyelesaian, yakni $z=10$. Jika $z$ diganti nilai lain, jumlah lima pengamatan bukan $20$, sehingga rata-ratanya tidak mungkin $4$."
       ]
     }
   ],
@@ -206,7 +212,7 @@ export const centralTendencyContent:BookLessonContent={
     {
       "prompt": "S-07. Empat data $4,6,9,y$ mempunyai rata-rata $8$. Tentukan $y$ dan median data lengkap.",
       "hint": "Gunakan jumlah total yang dipaksa oleh rata-rata.",
-      "answer": "Karena ada empat pengamatan dengan rata-rata $8$, jumlah yang diperlukan ialah $4(8)=32$. Jumlah tiga pengamatan yang diketahui $4+6+9=19$, maka $y=32-19=13$. Urutan lengkap $4,6,9,13$; median adalah $(6+9)/2=15/2$. Verifikasi rata-rata: $(4+6+9+13)/4=32/4=8$. Jadi $y=13$ dan median $15/2$.",
+      "answer": "Karena ada empat pengamatan dengan rata-rata $8$, jumlah yang diperlukan ialah $4(8)=32$. Jumlah tiga pengamatan yang diketahui $4+6+9=19$, maka $y=32-19=13$. Urutan lengkap $4,6,9,13$; median adalah $(6+9)/2=15/2$. Verifikasi rata-rata: $(4+6+9+13)/4=32/4=8$. Jadi $y=13$ dan median $15/2$. Nilai $y$ tunggal karena persamaan jumlah $19+y=32$ mempunyai koefisien $y$ sama dengan satu; nilai lain tidak dapat menghasilkan rata-rata $8$. Median $15/2$ juga berada di antara dua pengamatan tengah $6$ dan $9$, sesuai definisi untuk banyak data genap.",
       "provenance": "dmath-original"
     },
     {
