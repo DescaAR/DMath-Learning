@@ -21,6 +21,7 @@ import { probabilityDensityContent } from "@/data/probability-density-content";
 import { centralTendencyContent } from "@/data/central-tendency-content";
 import { modelingContent } from "@/data/modeling-content";
 import { pointEstimationContent } from "@/data/point-estimation-content";
+import { primeFactorizationContent } from "@/data/prime-factorization-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -109,6 +110,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "or-model-deterministik-stokastik":modelingContent,
   // Authored statistical point estimation: bias, MSE, consistency and worked problems.
   "stm-point-estimator":pointEstimationContent,
+  // Fully proved prime factorization and actual original-problem replacements.
+  "nt-primes":primeFactorizationContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
