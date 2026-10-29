@@ -217,9 +217,11 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         problem:t("Tentukan nilai $k$ agar sistem $x+2y=3$ dan $2x+4y=k$ mempunyai tak hingga solusi.","Find $k$ so that $x+2y=3$ and $2x+4y=k$ have infinitely many solutions."),
         strategy:t("Agar tak hingga solusi, persamaan kedua harus ekuivalen dengan kelipatan persamaan pertama.","For infinitely many solutions, the second equation must be an equivalent multiple of the first."),
         solution:[
-          t("Kalikan persamaan pertama dengan $2$: $2x+4y=6$.","Multiply the first equation by $2$: $2x+4y=6$."),
-          t("Agar persamaan kedua sama, harus berlaku $k=6$.","For the second equation to coincide, $k=6$."),
-          t("Jika $k\\neq6$, dua ruas kiri sama tetapi ruas kanan berbeda, menghasilkan kontradiksi.","If $k\\neq6$, the left sides agree while the right sides differ, producing a contradiction.")
+          t("Diketahui sistem $x+2y=3$ dan $2x+4y=k$ untuk $k\\in\\mathbb R$. Persamaan pertama menyatakan garis tak kosong karena misalnya $(x,y)=(3,0)$ memenuhinya.","Consider $x+2y=3$ and $2x+4y=k$ for real $k$. The first equation defines a nonempty line, since $(3,0)$ is a solution."),
+          t("Kalikan kedua ruas persamaan pertama dengan $2\\neq0$ untuk memperoleh $2x+4y=6$. Setiap solusi bersama harus memenuhi $2x+4y=6$ sekaligus $2x+4y=k$, sehingga syarat perlu ialah $k=6$.","Multiplying the first equation by nonzero $2$ yields $2x+4y=6$. A common solution must also satisfy $2x+4y=k$, so necessarily $k=6$."),
+          t("Jika $k\\neq6$, pengurangan kedua persamaan menghasilkan $0=k-6\\neq0$, sebuah kontradiksi. Dengan demikian tidak ada solusi pada kasus ini.","If $k\\neq6$, subtracting the equations gives $0=k-6\\neq0$, a contradiction, so the system is inconsistent."),
+          t("Sebaliknya, jika $k=6$, kedua persamaan ekuivalen. Untuk setiap $t\\in\\mathbb R$, pasangan $(x,y)=(3-2t,t)$ memenuhi $x+2y=3$ dan $2x+4y=6$. Karena $t$ dapat dipilih tak hingga banyaknya, sistem memiliki tak hingga solusi.","Conversely, for $k=6$ the equations are equivalent. Every $(x,y)=(3-2t,t)$ with real $t$ satisfies both equations; infinitely many values of $t$ give infinitely many solutions."),
+          t("Jadi kondisi $k=6$ sekaligus perlu dan cukup, bukan sekadar hasil perbandingan koefisien. Pada kasus ini himpunan solusi adalah garis $\\{(3-2t,t):t\\in\\mathbb R\\}$.","Thus $k=6$ is both necessary and sufficient, and the full solution set is the line $\\{(3-2t,t):t\\in\\mathbb R\\}$.")
         ],
         conclusion:t("Tak hingga solusi terjadi tepat untuk $\\boxed{k=6}$.","Infinitely many solutions occur exactly when $\\boxed{k=6}$.")
       },
@@ -228,10 +230,11 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         problem:t("Campuran $10$ liter dibuat dari larutan $20\\%$ dan $50\\%$ agar konsentrasi akhir $32\\%$. Tentukan volume masing-masing.","A $10$-liter mixture uses $20\\%$ and $50\\%$ solutions to obtain $32\\%$. Find each volume."),
         strategy:t("Gunakan satu persamaan untuk total volume dan satu persamaan untuk total zat terlarut.","Use one equation for total volume and another for total solute."),
         solution:[
-          t("Misalkan $x$ liter larutan $20\\%$ dan $y$ liter larutan $50\\%$.","Let $x$ liters be $20\\%$ solution and $y$ liters be $50\\%$ solution."),
-          t("Total volume memberi $x+y=10$.","Total volume gives $x+y=10$."),
-          t("Total zat terlarut memberi $0.2x+0.5y=0.32(10)=3.2$.","Total solute gives $0.2x+0.5y=0.32(10)=3.2$."),
-          t("Substitusi $x=10-y$ menghasilkan $2+0.3y=3.2$, jadi $y=4$ dan $x=6$.","Substituting $x=10-y$ gives $2+0.3y=3.2$, so $y=4$ and $x=6$.")
+          t("Misalkan $x$ dan $y$ masing-masing volume larutan $20\\%$ dan $50\\%$ dalam liter. Syarat fisik $x,y\\geq0$ harus diperiksa bersama persamaan model.","Let $x,y\\geq0$ denote the liters of the $20\\%$ and $50\\%$ solutions. Their nonnegativity is part of the physical model."),
+          t("Kekekalan volume memberi $x+y=10$. Dengan asumsi volume aditif dan tidak ada zat terlarut yang hilang, jumlah zat terlarut adalah $0.20x+0.50y=0.32(10)=3.2$ liter.","Volume balance gives $x+y=10$. Assuming additive volumes and no loss of solute, solute balance gives $0.20x+0.50y=0.32(10)=3.2$ liters."),
+          t("Dari persamaan pertama, $x=10-y$. Substitusi ke neraca zat terlarut menghasilkan $0.20(10-y)+0.50y=3.2$, yaitu $2+0.30y=3.2$. Maka $0.30y=1.2$, $y=4$, dan $x=6$.","Substitute $x=10-y$ into the solute equation to obtain $2+0.30y=3.2$. Thus $y=4$ and $x=6$."),
+          t("Verifikasi volume: $6+4=10$. Verifikasi zat terlarut: $0.20(6)+0.50(4)=1.2+2=3.2$ liter, sehingga konsentrasi akhir $3.2/10=0.32=32\\%$. Kedua volume tidak negatif.","Check volume: $6+4=10$. Check solute: $0.20(6)+0.50(4)=3.2$ liters, so the final concentration is $3.2/10=32\\%$. Both volumes are nonnegative."),
+          t("Determinan sistem $x+y=10$ dan $0.2x+0.5y=3.2$ adalah $1(0.5)-1(0.2)=0.3\\neq0$, sehingga tidak ada pasangan volume lain yang memenuhi kedua neraca.","The determinant of the two balance equations is $0.5-0.2=0.3\\neq0$, so the verified volume pair is unique.")
         ],
         conclusion:t("Diperlukan $\\boxed{6}$ liter larutan $20\\%$ dan $\\boxed{4}$ liter larutan $50\\%$.","Use $\\boxed{6}$ liters of $20\\%$ solution and $\\boxed{4}$ liters of $50\\%$ solution.")
       }
