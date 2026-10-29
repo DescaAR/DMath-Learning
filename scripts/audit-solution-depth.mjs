@@ -119,6 +119,64 @@ const publicVisibility=loadSource(path.join(root,"lib/public-content.ts"));
 assert.ok(publicVisibility.isPublicBookSubjectSlug("teori-bilangan") &&
   publicVisibility.isPublicAcademicLevel(publicNumberTheory.level),
   "Prime-factorization course is hidden by public visibility filters");
+// Regression for the public combinatorics inclusion–exclusion lesson and
+// its automatically derived subject-problem bank. Mathematical tests below
+// enumerate small finite spaces rather than trusting answer length alone.
+const ieLesson=getBookSectionContent("komb-inclusion-exclusion");
+assert.ok(ieLesson,"Missing authored inclusion–exclusion lesson");
+const ieDefinitions=ieLesson.formal.filter(item=>item.kind==="definition");
+const ieResults=ieLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(ieDefinitions.length,4);
+assert.equal(ieResults.length,6);
+assert.equal(ieLesson.examples.length,8);
+assert.equal(ieLesson.exercises.length,8);
+for(const item of ieDefinitions){
+  assert.ok(ieLesson.examples.some(ex=>ex.forDefinition===item.title),
+    "Inclusion–exclusion definition lacks its linked example: "+item.title);
+}
+for(const item of ieResults){
+  assert.ok(item.proof?.length>=2 && normalize(item.proof.join(" ")).length>=280,
+    "Inclusion–exclusion theorem lacks an adequate proof: "+item.title);
+}
+for(const exercise of ieLesson.exercises){
+  assert.ok(normalize(exercise.answer).length>=450 &&
+    !/jawaban yang baik|contoh harus|susun satu soal|soal harus/i.test(exercise.answer),
+    "Inclusion–exclusion exercise still has a rubric or missing solution: "+exercise.prompt);
+}
+const ieBinomial=(n,k)=>{
+  let result=1;
+  for(let j=1;j<=k;j++)result=result*(n-j+1)/j;
+  return result;
+};
+const ieFactorial=n=>Array.from({length:n},(_,i)=>i+1).reduce((a,b)=>a*b,1);
+for(let n=1;n<=5;n++){
+  const masks=Array.from({length:n},(_,i)=>i);
+  for(let a=0;a<2**n;a++)for(let b=0;b<2**n;b++)for(let c=0;c<2**n;c++){
+    const count=mask=>masks.filter(i=>(mask&(1<<i))!==0).length;
+    const union=count(a|b|c);
+    const rhs=count(a)+count(b)+count(c)-count(a&b)-count(a&c)-count(b&c)+count(a&b&c);
+    assert.equal(union,rhs,"Three-set inclusion–exclusion identity mismatch");
+  }
+}
+const ieDerangements=[1,0,1,2,9,44];
+for(let n=0;n<ieDerangements.length;n++){
+  const exact=ieFactorial(n)*Array.from({length:n+1},(_,k)=>((-1)**k)/ieFactorial(k)).reduce((a,b)=>a+b,0);
+  assert.ok(Math.abs(exact-ieDerangements[n])<1e-8,"Derangement formula mismatch at n="+n);
+}
+for(let n=1;n<=5;n++)for(let m=1;m<=4;m++){
+  const formula=Array.from({length:m+1},(_,k)=>((-1)**k)*ieBinomial(m,k)*(m-k)**n).reduce((a,b)=>a+b,0);
+  let brute=0;
+  for(let code=0;code<m**n;code++){
+    let state=code,used=0;
+    for(let j=0;j<n;j++){used|=1<<(state%m);state=Math.floor(state/m);}
+    if(used===(1<<m)-1)brute++;
+  }
+  assert.equal(formula,brute,"Surjection count mismatch at n="+n+", m="+m);
+}
+assert.equal(Array.from({length:100},(_,i)=>i+1).filter(x=>x%2&&x%3&&x%5).length,26);
+assert.equal(Array.from({length:60},(_,i)=>i+1).filter(x=>[2,3,5].filter(d=>x%d===0).length===2).length,14);
+assert.equal(Array.from({length:120},(_,i)=>i+1).filter(x=>x%2===0||x%3===0||x%7===0).length,86);
+
 // Source-level regression for the public Peluang lesson. These checks validate
 // the rendered registry and a few independent mathematical identities; length
 // thresholds remain triage, not a correctness certificate.
