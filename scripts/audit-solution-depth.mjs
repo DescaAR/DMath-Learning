@@ -108,6 +108,17 @@ assert.ok(Array.from({length:59},(_,i)=>i+1).every(n=>divisorCount(n)!==12),
 assert.equal(2*3**2*7*11,1386);
 assert.equal(19*23,437);
 assert.equal(120*2520,360*840);
+const publicNumberTheory=bookSubjects.find(subject=>subject.slug==="teori-bilangan");
+assert.ok(publicNumberTheory?.chapters.some(chapter=>chapter.sections.some(section=>section.slug==="nt-primes")),
+  "Prime-factorization lesson is not in the public university curriculum");
+const numberTheoryCatalog=fs.readFileSync(path.join(root,"data/site-data.ts"),"utf8");
+assert.ok(numberTheoryCatalog.includes('subject: "Teori Bilangan"') &&
+  numberTheoryCatalog.includes('/materi/teori-bilangan/nt-primes'),
+  "Prime-factorization lesson is not linked from the 26-field public catalog");
+const publicVisibility=loadSource(path.join(root,"lib/public-content.ts"));
+assert.ok(publicVisibility.isPublicBookSubjectSlug("teori-bilangan") &&
+  publicVisibility.isPublicAcademicLevel(publicNumberTheory.level),
+  "Prime-factorization course is hidden by public visibility filters");
 // Source-level regression for the public Peluang lesson. These checks validate
 // the rendered registry and a few independent mathematical identities; length
 // thresholds remain triage, not a correctness certificate.
