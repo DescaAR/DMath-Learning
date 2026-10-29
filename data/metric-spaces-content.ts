@@ -220,19 +220,19 @@ export const metricSpacesContent: BookLessonContent = {
   ],
   exercises: [
     {
-      prompt: "Pada $\\mathbb R$, buktikan bahwa $d_1(x,y)=\\min\\{1,|x-y|\\}$ merupakan metrik.",
-      hint: "Gunakan $\\min\\{1,a+b\\}\\le\\min\\{1,a\\}+\\min\\{1,b\\}$ untuk $a,b\\ge0$.",
-      answer: "Diketahui $d_1(x,y)=\\min\\{1,|x-y|\\}$. Karena nilai mutlak nonnegatif, $d_1\\ge0$; $d_1(x,y)=0$ tepat ketika $|x-y|=0$, yakni $x=y$; dan simetri mengikuti $|x-y|=|y-x|$. Untuk ketaksamaan segitiga, dari $|x-z|\\le|x-y|+|y-z|$ dan sifat monoton fungsi $t\\mapsto\\min\\{1,t\\}$ diperoleh $d_1(x,z)\\le\\min\\{1,|x-y|+|y-z|\\}$. Jika salah satu dari $|x-y|$ atau $|y-z|$ sedikitnya satu, ruas kanan yang ingin dibuktikan, $d_1(x,y)+d_1(y,z)$, sedikitnya satu, sedangkan $d_1(x,z)\\le1$. Jika keduanya kurang dari satu, maka $d_1(x,y)+d_1(y,z)=|x-y|+|y-z|\\ge d_1(x,z)$. Jadi dalam kedua kasus ketaksamaan segitiga berlaku. Dengan demikian $d_1$ metrik pada $\\mathbb R$."
+      prompt: "Verifikasi $d(x,y)=|x-y|$ adalah metrik pada $\\mathbb R$.",
+      hint: "Periksa identitas, simetri, dan ketaksamaan segitiga nilai mutlak untuk tiga bilangan real sebarang.",
+      answer: "Diberikan $d:\\mathbb R\\times\\mathbb R\\to[0,\\infty)$ oleh $d(x,y)=|x-y|$. Untuk setiap $x,y\\in\\mathbb R$, nilai mutlak selalu nonnegatif. Selanjutnya $d(x,y)=0$ jika dan hanya jika $x-y=0$, yakni $x=y$; ini membuktikan aksioma identitas. Karena $|x-y|=|-(y-x)|=|y-x|$, berlaku simetri $d(x,y)=d(y,x)$. Untuk sembarang $x,y,z\\in\\mathbb R$, tulis $x-z=(x-y)+(y-z)$. Ketaksamaan segitiga nilai mutlak memberi $d(x,z)=|(x-y)+(y-z)|\\le|x-y|+|y-z|=d(x,y)+d(y,z)$. Semua sifat berlaku bagi setiap pasangan dan tiga titik real, termasuk ketika ada titik yang sama. Jadi $d$ benar-benar metrik pada $\\mathbb R$."
     },
     {
-      prompt: "Di $\\mathbb R^2$ dengan metrik maksimum, tentukan bola $B((0,0),3/2)$ dan uji apakah titik $(1,1)$ serta $(3/2,0)$ termasuk di dalamnya.",
-      hint: "Ubah ketaksamaan maksimum menjadi dua ketaksamaan koordinat yang ketat.",
-      answer: "Metrik maksimum didefinisikan oleh $d_\\infty((x_1,x_2),(y_1,y_2))=\\max\\{|x_1-y_1|,|x_2-y_2|\\}$. Maka $(u,v)$ berada dalam $B((0,0),3/2)$ jika dan hanya jika $\\max\\{|u|,|v|\\}<3/2$. Ini ekuivalen dengan $|u|<3/2$ dan $|v|<3/2$, sehingga bola adalah $(-3/2,3/2)\\times(-3/2,3/2)$. Untuk $(1,1)$ jaraknya $\\max\\{1,1\\}=1<3/2$, jadi termasuk. Untuk $(3/2,0)$ jaraknya tepat $3/2$, bukan kurang dari $3/2$, sehingga tidak termasuk. Perbedaan tanda $<$ dan $\\le$ menentukan apakah titik batas masuk."
+      prompt: "Apakah $d(x,y)=|x-y|^2$ metrik pada $\\mathbb R$?",
+      hint: "Uji aksioma segitiga dengan tiga titik $0$, $1$, dan $2$.",
+      answer: "Misalkan $d(x,y)=|x-y|^2$. Fungsi ini nonnegatif, simetris, dan $d(x,y)=0$ tepat ketika $x=y$. Namun untuk menjadi metrik, harus pula berlaku $d(x,z)\\le d(x,y)+d(y,z)$ bagi semua $x,y,z\\in\\mathbb R$. Pilih $x=0$, $y=1$, dan $z=2$. Jarak langsung adalah $d(0,2)=|0-2|^2=4$, sedangkan jumlah jarak melalui titik tengah adalah $d(0,1)+d(1,2)=1+1=2$. Aksioma segitiga akan mengharuskan $4\\le2$, yang salah. Karena satu contoh tandingan cukup menggugurkan pernyataan universal, fungsi kuadrat jarak tersebut bukan metrik. Perhatikan bahwa kesalahan terletak pada ketaksamaan segitiga, bukan pada nonnegativitas."
     },
     {
-      prompt: "Buktikan dengan definisi bahwa $x_n=n/(n+1)$ konvergen ke $1$ dalam metrik biasa pada $\\mathbb R$.",
-      hint: "Sederhanakan $|x_n-1|$ dan pilih indeks dari $1/(n+1)<\\varepsilon$.",
-      answer: "Diketahui $x_n=n/(n+1)$ dan kandidat limit $1$. Selisihnya adalah $|x_n-1|=|n/(n+1)-(n+1)/(n+1)|=1/(n+1)$. Untuk setiap $\\varepsilon>0$, pilih bilangan asli $N>1/\\varepsilon$. Jika $n\\ge N$, maka $1/(n+1)\\le1/(N+1)<1/N<\\varepsilon$. Jadi $d(x_n,1)<\\varepsilon$ bagi semua $n\\ge N$. Semua kuantor definisi terpenuhi, sehingga $x_n\\to1$. Sebagai pemeriksaan, $x_n<1$ dan jaraknya dari $1$ memang mengecil seiring $n$ bertambah."
+      prompt: "Mengapa $\\mathbb Q$ tidak complete dengan metrik biasa?",
+      hint: "Bangun pemotongan desimal rasional menuju $\\sqrt2$ dan gunakan ketunggalan limit real.",
+      answer: "Gunakan metrik biasa $d(p,q)=|p-q|$ pada $\\mathbb Q$. Untuk $n\\ge1$, definisikan $q_n=\\lfloor10^n\\sqrt2\\rfloor/10^n$, yang rasional. Sifat lantai memberi $0\\le\\sqrt2-q_n<10^{-n}$. Untuk setiap $\\varepsilon>0$, pilih $N$ dengan $2\\cdot10^{-N}<\\varepsilon$. Jika $m,n\\ge N$, ketaksamaan segitiga menghasilkan $|q_m-q_n|\\le|q_m-\\sqrt2|+|q_n-\\sqrt2|<2\\cdot10^{-N}<\\varepsilon$. Jadi $(q_n)$ Cauchy dalam $\\mathbb Q$. Tetapi dalam $\\mathbb R$ barisan ini konvergen ke $\\sqrt2$. Jika ia mempunyai limit $q\\in\\mathbb Q$, karena rumus jaraknya sama, ia juga konvergen ke $q$ dalam $\\mathbb R$. Ketunggalan limit mengharuskan $q=\\sqrt2$, bertentangan dengan $\\sqrt2\\notin\\mathbb Q$. Maka terdapat barisan Cauchy rasional yang tidak konvergen dalam $\\mathbb Q$, sehingga ruang tersebut tidak lengkap."
     },
     {
       prompt: "Tentukan apakah $x_n=(-1)^n$ merupakan barisan Cauchy dalam $\\mathbb R$.",
@@ -240,9 +240,9 @@ export const metricSpacesContent: BookLessonContent = {
       answer: "Andaikan $(x_n)$ Cauchy. Ambil $\\varepsilon=1$. Maka seharusnya terdapat $N$ sehingga $|x_m-x_n|<1$ untuk semua $m,n\\ge N$. Pilih $n$ genap dan $m$ ganjil yang keduanya sedikitnya $N$. Diperoleh $x_n=1$ dan $x_m=-1$, sehingga $|x_m-x_n|=2$, bertentangan dengan syarat kurang dari satu. Karena untuk setiap $N$ dapat dipilih pasangan berparitas berbeda, tidak ada ambang yang memenuhi definisi. Jadi barisan tersebut bukan Cauchy dan, menurut teorema bahwa konvergen mengakibatkan Cauchy, juga tidak konvergen."
     },
     {
-      prompt: "Berikan contoh barisan Cauchy rasional yang tidak konvergen di $\\mathbb Q$ dan buktikan kedua sifatnya.",
-      hint: "Gunakan pemotongan desimal $\\sqrt2$ dan ketunggalan limit di $\\mathbb R$.",
-      answer: "Ambil $q_n=\\lfloor10^n\\sqrt2\\rfloor/10^n$. Setiap $q_n$ rasional dan $|q_n-\\sqrt2|<10^{-n}$. Untuk setiap $\\varepsilon>0$, pilih $N$ dengan $2\\cdot10^{-N}<\\varepsilon$. Jika $m,n\\ge N$, ketaksamaan segitiga memberi $|q_m-q_n|\\le|q_m-\\sqrt2|+|q_n-\\sqrt2|<2\\cdot10^{-N}<\\varepsilon$. Maka $(q_n)$ Cauchy dalam $\\mathbb Q$. Namun $q_n\\to\\sqrt2$ dalam $\\mathbb R$. Seandainya terdapat $q\\in\\mathbb Q$ dengan $q_n\\to q$ dalam $\\mathbb Q$, jarak yang sama menunjukkan konvergensi ke $q$ dalam $\\mathbb R$. Ketunggalan limit memaksa $q=\\sqrt2$, yang irasional. Kontradiksi ini membuktikan barisan tidak konvergen dalam $\\mathbb Q$."
+      prompt: "Pada $\\mathbb R$, buktikan bahwa $d_1(x,y)=\\min\\{1,|x-y|\\}$ merupakan metrik.",
+      hint: "Gunakan ketaksamaan segitiga nilai mutlak dan pisahkan kasus ketika salah satu jarak sedikitnya satu.",
+      answer: "Diketahui $d_1(x,y)=\\min\\{1,|x-y|\\}$. Karena nilai mutlak nonnegatif, $d_1\\ge0$; $d_1(x,y)=0$ tepat ketika $|x-y|=0$, yakni $x=y$; dan simetri mengikuti $|x-y|=|y-x|$. Untuk ketaksamaan segitiga, dari $|x-z|\\le|x-y|+|y-z|$ dan sifat monoton fungsi $t\\mapsto\\min\\{1,t\\}$ diperoleh $d_1(x,z)\\le\\min\\{1,|x-y|+|y-z|\\}$. Jika salah satu dari $|x-y|$ atau $|y-z|$ sedikitnya satu, maka $d_1(x,y)+d_1(y,z)\\ge1\\ge d_1(x,z)$. Jika keduanya kurang dari satu, jumlah $d_1(x,y)+d_1(y,z)=|x-y|+|y-z|\\ge d_1(x,z)$. Dalam kedua kasus ketaksamaan segitiga berlaku. Jadi $d_1$ adalah metrik pada $\\mathbb R$, walaupun semua jaraknya dibatasi satu."
     },
     {
       prompt: "Buktikan kontinuitas $f(x)=x^2$ di $a=2$ dengan argumen $\\varepsilon$–$\\delta$ yang eksplisit.",
