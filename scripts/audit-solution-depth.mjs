@@ -490,10 +490,10 @@ const systemTheorem=linearFormal.blocks.find(x=>x.title.id.includes("Klasifikasi
 assert.ok(systemTheorem?.proof?.length>=5);
 assert.ok(systemTheorem.proof.some(step=>step.id.includes("(a,b)=(0,0)")),
   "Singular-system proof must include a zero coefficient row");
-const geometry=linearFormal.blocks.find(x=>x.kind==="corollary");
-assert.ok(geometry?.statement.id.includes("vektor normal") ||
-  geometry?.statement.id.includes("benar-benar menyatakan garis"));
-assert.ok(geometry.proof.some(step=>step.id.includes("garis vertikal")),
+const linearGeometryCorollary=linearFormal.blocks.find(x=>x.kind==="corollary");
+assert.ok(linearGeometryCorollary?.statement.id.includes("vektor normal") ||
+  linearGeometryCorollary?.statement.id.includes("benar-benar menyatakan garis"));
+assert.ok(linearGeometryCorollary.proof.some(step=>step.id.includes("garis vertikal")),
   "Geometric classification must cover vertical lines");
 // Cramer's formulas and direct substitution, including negative coefficients.
 for(const [a,b,c,d,e,f] of [
