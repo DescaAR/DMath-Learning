@@ -88,6 +88,7 @@ function visualizationForSubject(slug:BookSubject["slug"]):VisualizationKind{
     "kalkulus":"calculus",
     "teori-graf":"graph-theory",
     "teori-bilangan-olimpiade":"number-theory",
+    "teori-bilangan":"number-theory",
     "persamaan-diferensial":"differential-equations",
     "analisis-numerik":"numerical-analysis",
     "riset-operasi":"operations-research",
