@@ -1,5 +1,20 @@
 # DMath Learning — pengayaan materi dan audit matematis
 
+## Catatan sesi 2026-10-29 — Analisis Numerik (metode bisection)
+
+**Bidang disentuh:** 18 Analisis Numerik, submateri \`num-bisection\`. URL: https://descaar.github.io/DMath-Learning/materi/analisis-numerik/num-bisection/.
+
+**Audit awal:** sumber \`numerical-analysis-content.ts\` hanya menyediakan satu teorema invarian dengan empat langkah bukti singkat dan satu proposisi batas galat tanpa bukti. Delapan latihan berupa pertanyaan templat dengan jawaban singkat yang tidak menguji komputasi, dan visualisasi tidak khusus mengilustrasikan pengurungan akar.
+
+**Pengayaan:** \`data/bisection-content.ts\` menggantikan hanya slug \`num-bisection\`, dengan empat definisi formal yang langsung dipasangkan dengan contoh terbahas (interval pengurung, langkah bisection, batas galat titik tengah, residual), tujuh hasil formal dengan pembuktian bertahap (Teorema Nilai Antara, invarian tanda, penyusutan interval, konvergensi melalui interval bersarang, jumlah iterasi, ketunggalan di bawah monotonisitas ketat, dan estimasi galat dari residual), delapan contoh terbahas dan delapan latihan dengan solusi rinci. Ditekankan bahwa perubahan tanda cukup tetapi tidak perlu untuk keberadaan akar dan tidak menjamin ketunggalan. Rujukan: Burden–Faires (2011) dan Atkinson (1989).
+
+**Visualisasi:** \`components/BisectionLab.tsx\` dan \`lib/bisection-explorer.ts\` menyediakan SVG responsif dengan pemilih lima fungsi, pengendali jumlah pembagian, interval aktif, titik tengah, tabel langkah, panjang interval dan batas galat. Kasus tanpa perubahan tanda secara eksplisit dinyatakan tidak memenuhi syarat bisection standar; kasus akar tepat menghentikan iterasi. Visualisasi ditampilkan pada pengantar dan bagian visualisasi khusus.
+
+**Pengujian:** \`scripts/audit-bisection.mjs\` diintegrasikan ke \`npm run build\`, memeriksa definisi–contoh, bukti, solusi, keterhubungan registry dan komponen, serta 105 kombinasi fungsi dan jumlah langkah. Status deployment harus diverifikasi melalui GitHub Actions pada commit final; jangan klaim publikasi jika belum \`success\`.
+
+**Prioritas lanjutan:** 16 Topologi atau 19 Metode Numerik jika tersedia rute publik; lanjutkan rotasi 26 bidang tanpa mengulang sepuluh submateri yang telah diperkaya. Tinjau kembali keamanan floating-point pada kasus ekstrem, khususnya overflow dan pembulatan titik tengah.
+
+
 Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages-static`, bukan menganggap seluruh bidang selesai setelah satu submateri. Jangan ubah branch `main`. Setiap sesi: periksa riwayat commit, pilih submateri berbeda yang masih dangkal/keliru, sempurnakan materi dan visualisasi, jalankan build, lalu perbarui catatan ini dengan bukti perubahan.
 
 ## Catatan sesi 2026-10-29 — Persamaan Diferensial (persamaan linear orde satu)
