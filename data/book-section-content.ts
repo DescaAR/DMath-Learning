@@ -22,6 +22,7 @@ import { centralTendencyContent } from "@/data/central-tendency-content";
 import { modelingContent } from "@/data/modeling-content";
 import { pointEstimationContent } from "@/data/point-estimation-content";
 import { primeFactorizationContent } from "@/data/prime-factorization-content";
+import { inclusionExclusionContent } from "@/data/inclusion-exclusion-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -112,6 +113,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "stm-point-estimator":pointEstimationContent,
   // Fully proved prime factorization and actual original-problem replacements.
   "nt-primes":primeFactorizationContent,
+  // Rigorous inclusion–exclusion and eight fully solved non-rubric problems.
+  "komb-inclusion-exclusion":inclusionExclusionContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
