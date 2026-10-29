@@ -8,6 +8,7 @@ import { linearSubspacesContent } from "@/data/linear-subspaces-content";
 import { complexPlaneSetsContent } from "@/data/complex-plane-sets-content";
 import { linearFirstOrderContent } from "@/data/linear-first-order-content";
 import { bisectionContent } from "@/data/bisection-content";
+import { newtonMethodContent } from "@/data/newton-method-content";
 import { nestedQuantifiersContent } from "@/data/nested-quantifiers-content";
 import { graphicalLinearProgrammingContent } from "@/data/graphical-lp-content";
 import { neymanPearsonContent } from "@/data/neyman-pearson-content";
@@ -76,6 +77,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "de-linear-first":linearFirstOrderContent,
   // Rigorous bisection lesson replaces generic numerical-analysis summary.
   "num-bisection":bisectionContent,
+  // Fully proved Newton method with exact local convergence hypotheses and actual solutions.
+  "num-newton":newtonMethodContent,
   // Quantifier scope, witness dependence and logically exact counterexamples.
   "md-kuantor-bertingkat":nestedQuantifiersContent,
   // Proof-based graphical linear programming replaces the generated operations-research summary.
