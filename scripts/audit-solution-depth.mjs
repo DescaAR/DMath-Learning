@@ -716,6 +716,67 @@ for(const {A,rhs,consistent} of singularCases){
   assert.equal(actual,consistent,"Singular consistency case mismatch");
 }
 
+// Countability: audit the exact Analisis Real page, not only its answer lengths.
+const cardinalityLesson=getBookSectionContent("himpunan-hingga-dan-tak-hingga");
+assert.ok(cardinalityLesson,"Missing finite/infinite sets lesson");
+const cardinalityDefinitions=cardinalityLesson.formal.filter(item=>item.kind==="definition");
+const cardinalityResults=cardinalityLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(cardinalityDefinitions.length,2);
+assert.equal(cardinalityResults.length,4);
+assert.equal(cardinalityLesson.examples.length,5);
+assert.equal(cardinalityLesson.exercises.length,6);
+for(const definition of cardinalityDefinitions){
+  assert.ok(cardinalityLesson.examples.some(ex=>ex.forDefinition===definition.title),
+    "Countability definition lacks an immediate concrete example: "+definition.title);
+}
+for(const item of cardinalityResults){
+  assert.ok((item.proof??[]).length>=3 && normalize(item.proof.join(" ")).length>=450,
+    "Countability theorem or lemma lacks a complete proof: "+item.title);
+}
+for(const prompt of [
+  "Tunjukkan $\\mathbb Z$ denumerable.",
+  "Buktikan subset dari himpunan countable juga countable.",
+  "Mengapa interval real tidak dapat dihitung?"
+]){
+  const exercise=cardinalityLesson.exercises.find(x=>x.prompt===prompt);
+  assert.ok(exercise && normalize(exercise.answer).length>=500,
+    "Original countability exercise was removed or its proof is incomplete: "+prompt);
+}
+for(const exercise of cardinalityLesson.exercises){
+  assert.ok(!/jawaban yang baik|contoh harus|rubrik|langkah penilaian/i.test(exercise.answer),
+    "Countability answer is a rubric instead of a mathematical solution");
+}
+// Finite-prefix checks do not prove the infinite theorems, but catch wrong
+// diagonal ordering, repeated reduced fractions, and an incorrect Z bijection.
+const cardinalityPairs=[];
+for(let sum=2;sum<=24;sum++){
+  for(let m=1;m<sum;m++)cardinalityPairs.push([m,sum-m]);
+}
+assert.equal(new Set(cardinalityPairs.map(p=>p.join(","))).size,cardinalityPairs.length);
+for(let m=1;m<=10;m++)for(let n=1;n<=10;n++){
+  assert.ok(cardinalityPairs.some(p=>p[0]===m&&p[1]===n),
+    "Diagonal enumeration omitted a bounded pair");
+}
+const integerIndex=n=>n===1?0:n%2===0?n/2:-(n-1)/2;
+const integerValues=Array.from({length:201},(_,i)=>integerIndex(i+1));
+assert.equal(new Set(integerValues).size,201);
+assert.ok(integerValues.every(x=>x>=-100&&x<=100));
+for(let x=-100;x<=100;x++)assert.ok(integerValues.includes(x));
+// Distinct finite binary prefixes give distinct exact ternary numerators.
+for(let length=1;length<=8;length++){
+  const numerators=new Set();
+  for(let bits=0;bits<2**length;bits++){
+    let numerator=0;
+    for(let i=0;i<length;i++){
+      const bit=(bits>>(length-i-1))&1;
+      numerator+=2*bit*3**(length-i-1);
+    }
+    numerators.add(numerator);
+  }
+  assert.equal(numerators.size,2**length,
+    "Ternary Cantor coding failed injectivity on a finite prefix");
+}
+
 const totals=subjects.reduce((out,row)=>{
   for(const [k,v] of Object.entries(row))if(typeof v==="number")out[k]=(out[k]??0)+v;
   return out;
