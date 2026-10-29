@@ -43,7 +43,7 @@ export function NestedQuantifiersLab({compact=false}:{compact?:boolean}){
           <text x={LEFT-16} y={TOP+i*CELL+CELL/2+5} textAnchor="end" fontSize="15" fill="var(--text)">x={i+1}</text>
           {row.map((ok,j)=><g key={j}>
             <rect x={LEFT+j*CELL+3} y={TOP+i*CELL+3} width={CELL-6} height={CELL-6} rx={9}
-              fill={ok?"#0f766e":"#64748b"} fillOpacity={ok?.94:.2}
+              fill={ok?"#0f766e":"#64748b"} fillOpacity={ok ? 0.94 : 0.2}
               stroke={x===i+1&&y===j+1?"#dc2626":result.uniformY.includes(j+1)?"#0f766e":"var(--border)"}
               strokeWidth={x===i+1&&y===j+1?4:result.uniformY.includes(j+1)?3:1}/>
             <text x={LEFT+j*CELL+CELL/2} y={TOP+i*CELL+CELL/2+6} textAnchor="middle" fontWeight="700" fontSize="17" fill={ok?"#ffffff":"var(--text)"}>{ok?"1":"0"}</text>
