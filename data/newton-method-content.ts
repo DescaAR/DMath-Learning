@@ -171,7 +171,7 @@ export const newtonMethodContent: BookLessonContent = {
         "Langkah pertama memberi $x_1=\\frac12(5+9/5)=17/5=3.4$. Langkah kedua memberi $x_2=\\frac12(17/5+45/17)=257/85\\approx3.0235294$.",
         "Akar positif eksaknya $3$. Galat berturut-turut adalah $2$, $2/5$, dan $2/85$. Residual kedua $f(257/85)=(257^2-9\\cdot85^2)/85^2=1024/7225$, positif. Kedua langkah menurunkan galat dan tetap di atas akar."
       ],
-      "conclusion": "Perhitungan dan verifikasi menunjukkan penurunan galat $2\to2/5\to2/85$."
+      "conclusion": "Perhitungan dan verifikasi menunjukkan penurunan galat $2\\to2/5\\to2/85$."
     },
     {
       "title": "Menggunakan Turunan untuk Sertifikat Galat",
