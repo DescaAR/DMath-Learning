@@ -41,7 +41,7 @@ export const bisectionContent:BookLessonContent = {
         "Karena hasil kali $f(a)f(b)$ negatif, kedua nilai tidak nol dan memiliki tanda berlawanan. Tanpa mengurangi keumuman, misalkan $f(a)<0<f(b)$; jika tanda terbalik, argumen yang sama berlaku dengan pertukaran arah ketaksamaan.",
         "Bilangan nol terletak di antara $f(a)$ dan $f(b)$. Kontinuitas $f$ pada seluruh interval tertutup $[a,b]$ memenuhi hipotesis Teorema Nilai Antara.",
         "Teorema Nilai Antara memberikan suatu $p\\in[a,b]$ dengan $f(p)=0$. Karena $f(a)$ dan $f(b)$ keduanya tidak nol, titik $p$ tidak mungkin sama dengan $a$ ataupun $b$.",
-        "Jadi $p\\in(a,b)$. Teorema ini tidak melarang akar lain di dalam interval; contoh $f(x)=x(x^2-1)$ pada $[-2,2]$ memiliki tiga akar meskipun nilai di ujung berlainan tanda. $\\\\square$"
+        "Jadi $p\\in(a,b)$. Teorema ini tidak melarang akar lain di dalam interval; contoh $f(x)=x(x^2-1)$ pada $[-2,2]$ memiliki tiga akar meskipun nilai di ujung berlainan tanda. $\\square$"
       ],
       "explanation": "Kontinuitas dan perubahan tanda cukup untuk menjamin akar, tetapi tidak untuk menjamin akar tunggal."
     },
@@ -53,7 +53,7 @@ export const bisectionContent:BookLessonContent = {
         "Asumsikan pada langkah $n$ telah tersedia $f(a_n)f(b_n)<0$ dan $a_n<b_n$. Titik tengah $m_n$ berada ketat di antara kedua ujung karena $m_n-a_n=b_n-m_n=(b_n-a_n)/2>0$.",
         "Jika $f(m_n)=0$, akar telah ditemukan dan tidak perlu memilih interval baru. Untuk langkah yang berlanjut, $f(m_n)\\ne0$ sehingga tanda nilai tengah terdefinisi.",
         "Apabila $f(a_n)f(m_n)<0$, interval kiri memenuhi syarat. Jika tidak, $f(a_n)$ dan $f(m_n)$ bertanda sama, sehingga karena $f(a_n)$ berlawanan tanda dengan $f(b_n)$, nilai $f(m_n)$ berlawanan tanda dengan $f(b_n)$; interval kanan memenuhi syarat.",
-        "Dalam kedua kasus, interval baru merupakan salah satu setengah interval lama, tetap tertutup, dan mempertahankan perubahan tanda. Induksi dari $n=0$ membuktikan pernyataan untuk setiap langkah yang dijalankan. $\\\\square$"
+        "Dalam kedua kasus, interval baru merupakan salah satu setengah interval lama, tetap tertutup, dan mempertahankan perubahan tanda. Induksi dari $n=0$ membuktikan pernyataan untuk setiap langkah yang dijalankan. $\\square$"
       ],
       "explanation": "Invarian adalah alasan formal bahwa akar tidak hilang ketika separuh interval dibuang."
     },
@@ -65,7 +65,7 @@ export const bisectionContent:BookLessonContent = {
         "Pada setiap langkah yang berlanjut, interval baru adalah salah satu setengah interval sebelumnya. Oleh karena itu $b_{k+1}-a_{k+1}=(b_k-a_k)/2$.",
         "Untuk $n=0$, rumus panjang interval jelas benar. Jika benar untuk $n=k$, maka panjang pada langkah $k+1$ adalah $(b_0-a_0)/2^{k+1}$. Induksi memberikan rumus untuk semua $n$ yang dicapai.",
         "Karena $m_n$ titik tengah $[a_n,b_n]$ dan $p$ terletak dalam interval yang sama, jarak maksimum $|p-m_n|$ terjadi jika $p$ berada di salah satu ujung, yakni tidak lebih dari $(b_n-a_n)/2$.",
-        "Substitusi rumus panjang interval menghasilkan $|p-m_n|\\le(b_0-a_0)/2^{n+1}$. Batas ini tidak mengasumsikan akar tunggal dan tidak memakai nilai turunan. $\\\\square$"
+        "Substitusi rumus panjang interval menghasilkan $|p-m_n|\\le(b_0-a_0)/2^{n+1}$. Batas ini tidak mengasumsikan akar tunggal dan tidak memakai nilai turunan. $\\square$"
       ],
       "explanation": "Satu pembagian mengurangi panjang interval dan batas galat titik tengah menjadi setengahnya."
     },
@@ -77,7 +77,7 @@ export const bisectionContent:BookLessonContent = {
         "Jika terdapat $n$ dengan $f(m_n)=0$, algoritma telah menemukan akar dan kesimpulan pertama berlaku. Selanjutnya andaikan tidak ada titik tengah yang merupakan akar, sehingga semua interval $I_n=[a_n,b_n]$ terdefinisi.",
         "Menurut lemma invarian, $I_{n+1}\\subseteq I_n$, semuanya tidak kosong dan tertutup. Menurut proposisi panjang interval, $\\operatorname{diam}(I_n)=(b_0-a_0)/2^n\\to0$. Sifat kelengkapan bilangan real (teorema interval bersarang) memberi satu titik $p$ dalam irisan seluruh $I_n$.",
         "Karena $a_n\\le p\\le b_n$ dan $b_n-a_n\\to0$, diperoleh $a_n\\to p$, $b_n\\to p$, serta $|m_n-p|\\le(b_n-a_n)/2\\to0$. Jadi titik tengah konvergen ke $p$.",
-        "Kontinuitas $f$ memberikan $f(a_n)\\to f(p)$ dan $f(b_n)\\to f(p)$. Tetapi untuk semua $n$ berlaku $f(a_n)f(b_n)<0$. Jika $f(p)>0$, akhirnya kedua nilai ujung positif; jika $f(p)<0$, akhirnya keduanya negatif. Keduanya bertentangan dengan perubahan tanda. Maka $f(p)=0$. $\\\\square$"
+        "Kontinuitas $f$ memberikan $f(a_n)\\to f(p)$ dan $f(b_n)\\to f(p)$. Tetapi untuk semua $n$ berlaku $f(a_n)f(b_n)<0$. Jika $f(p)>0$, akhirnya kedua nilai ujung positif; jika $f(p)<0$, akhirnya keduanya negatif. Keduanya bertentangan dengan perubahan tanda. Maka $f(p)=0$. $\\square$"
       ],
       "explanation": "Konvergensi tidak memerlukan diferensiabilitas; hanya kontinuitas, perubahan tanda, dan kelengkapan bilangan real."
     },
@@ -89,7 +89,7 @@ export const bisectionContent:BookLessonContent = {
         "Proposisi penyusutan memberikan batas $|m_n-p|\\le L/2^{n+1}$ untuk setiap akar yang masih berada dalam interval setelah $n$ pembagian.",
         "Agar batas tersebut tidak melebihi $\\varepsilon$, cukup meminta $L/2^{n+1}\\le\\varepsilon$. Karena $L,\\varepsilon>0$, ketaksamaan ekuivalen dengan $2^n\\ge L/(2\\varepsilon)$.",
         "Fungsi logaritma basis dua meningkat, sehingga syarat menjadi $n\\ge\\log_2(L/(2\\varepsilon))$. Karena $n$ bilangan bulat taknegatif, pembulatan ke atas dan maksimum dengan nol menghasilkan rumus yang dinyatakan.",
-        "Jika suatu titik tengah merupakan akar eksak, algoritma berhenti dan tidak perlu mencapai banyak pembagian tersebut. Rumus adalah jaminan terburuk berdasarkan panjang interval, bukan prediksi jumlah langkah aktual. $\\\\square$"
+        "Jika suatu titik tengah merupakan akar eksak, algoritma berhenti dan tidak perlu mencapai banyak pembagian tersebut. Rumus adalah jaminan terburuk berdasarkan panjang interval, bukan prediksi jumlah langkah aktual. $\\square$"
       ],
       "explanation": "Perhatikan indeks: setelah n pembagian, galat titik tengah interval terakhir dibatasi oleh L/2^(n+1)."
     },
@@ -101,7 +101,7 @@ export const bisectionContent:BookLessonContent = {
         "Dari kontinuitas dan perubahan tanda, Teorema Nilai Antara menjamin paling sedikit satu akar $p\\in(a,b)$.",
         "Andaikan terdapat dua akar berbeda $p,q\\in(a,b)$ dengan $p<q$. Karena $f$ monoton ketat, berlaku $f(p)<f(q)$ jika $f$ meningkat ketat, atau $f(p)>f(q)$ jika $f$ menurun ketat.",
         "Namun keduanya akar, sehingga $f(p)=f(q)=0$. Kedua ketaksamaan ketat tersebut mustahil. Jadi tidak dapat terdapat dua akar berbeda.",
-        "Keberadaan dan paling banyak satu akar bersama-sama memberikan tepat satu akar. Sebagai pembanding, fungsi $x(x^2-1)$ berubah tanda pada $[-2,2]$ tetapi tidak monoton dan memiliki tiga akar. $\\\\square$"
+        "Keberadaan dan paling banyak satu akar bersama-sama memberikan tepat satu akar. Sebagai pembanding, fungsi $x(x^2-1)$ berubah tanda pada $[-2,2]$ tetapi tidak monoton dan memiliki tiga akar. $\\square$"
       ],
       "explanation": "Pembedaan eksistensi dan keunikan penting ketika hasil numerik akan ditafsirkan sebagai satu-satunya solusi."
     },
@@ -113,7 +113,7 @@ export const bisectionContent:BookLessonContent = {
         "Untuk $x=p$, kedua ruas bernilai nol sehingga kesimpulan langsung benar. Ambil $x\\ne p$. Interval tertutup dengan ujung $x,p$ termuat dalam $[a,b]$, dan $f$ memenuhi syarat Teorema Nilai Rata-rata pada interval tersebut.",
         "Teorema Nilai Rata-rata memberikan suatu $\\xi$ di antara $x$ dan $p$ dengan $f(x)-f(p)=f'(\\xi)(x-p)$.",
         "Karena $f(p)=0$, mengambil nilai mutlak menghasilkan $|f(x)|=|f'(\\xi)|\\,|x-p|$. Hipotesis $|f'(\\xi)|\\ge c$ memberikan $|f(x)|\\ge c|x-p|$.",
-        "Pembagian dengan $c>0$ menghasilkan $|x-p|\\le |f(x)|/c$. Tanpa batas bawah turunan, residual kecil tidak cukup: $f(x)=10^{-8}(x-100)$ memiliki residual kecil pada $x=0$ tetapi galat posisi sebesar 100. $\\\\square$"
+        "Pembagian dengan $c>0$ menghasilkan $|x-p|\\le |f(x)|/c$. Tanpa batas bawah turunan, residual kecil tidak cukup: $f(x)=10^{-8}(x-100)$ memiliki residual kecil pada $x=0$ tetapi galat posisi sebesar 100. $\\square$"
       ],
       "explanation": "Batas a posteriori memerlukan informasi tambahan tentang sensitivitas fungsi; jangan menyamakan residual dengan galat."
     }
