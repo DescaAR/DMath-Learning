@@ -207,18 +207,33 @@ export const deepMaterials: DeepMaterial[] = [
     examples: [
       {
         title: "Persamaan Satu Variabel",
-        problem: "Selesaikan $3(2x-1)-5=4x+6$.",
-        solution: ["Uraikan ruas kiri: $6x-3-5=4x+6$.", "Diperoleh $6x-8=4x+6$, jadi $2x=14$ dan $x=7$."]
+        problem: "Selesaikan $3(2x-1)-5=4x+6$ dan periksa apakah nilai yang diperoleh benar-benar memenuhi persamaan asal.",
+        solution: [
+          "Diketahui $3(2x-1)-5=4x+6$ dengan $x\in\mathbb R$. Distribusikan faktor $3$ pada ruas kiri: $6x-3-5=4x+6$, sehingga $6x-8=4x+6$. Sifat distributif berlaku untuk setiap bilangan real.",
+          "Kurangi kedua ruas dengan $4x$ sehingga $2x-8=6$. Tambahkan $8$ pada kedua ruas untuk memperoleh $2x=14$. Karena $2\neq0$, pembagian kedua ruas dengan $2$ sah dan menghasilkan $x=7$. Setiap operasi dapat dibalik, sehingga himpunan solusi tidak berubah.",
+          "Verifikasi pada persamaan asal: ruas kiri $3(2\cdot7-1)-5=3(13)-5=34$, sedangkan ruas kanan $4\cdot7+6=34$. Kedua ruas sama, sehingga $x=7$ memang solusi.",
+          "Karena persamaan yang telah disederhanakan memiliki koefisien $x$ tak nol, yaitu $2$, solusi tersebut tunggal. Himpunan solusinya adalah $S=\{7\}$."
+        ]
       },
       {
         title: "Model Umur",
-        problem: "Umur A lima tahun lebih tua dari B. Jumlah umur mereka $31$. Tentukan umur masing-masing.",
-        solution: ["Ambil umur B $=x$, sehingga umur A $=x+5$.", "$x+(x+5)=31$ memberi $2x=26$, jadi B berumur $13$ dan A berumur $18$."]
+        problem: "Umur A lima tahun lebih tua dari B. Jumlah umur mereka $31$ tahun. Tentukan umur masing-masing dan periksa hasilnya.",
+        solution: [
+          "Misalkan $x$ adalah umur B dalam tahun. Diketahui A lima tahun lebih tua, sehingga umur A adalah $x+5$. Syarat umur tidak negatif memberikan $x\geq0$.",
+          "Jumlah umur $31$ menghasilkan persamaan $x+(x+5)=31$. Gabungkan suku sejenis untuk memperoleh $2x+5=31$, lalu kurangi kedua ruas dengan $5$ sehingga $2x=26$.",
+          "Karena $2\neq0$, pembagian dengan $2$ memberikan $x=13$. Jadi umur B $13$ tahun dan umur A $13+5=18$ tahun.",
+          "Verifikasi: selisih umur $18-13=5$ tahun dan jumlahnya $18+13=31$ tahun; keduanya memenuhi informasi soal. Kedua umur juga tidak negatif. Dengan demikian pasangan umur yang dicari adalah $(18,13)$ tahun untuk (A,B)."
+        ]
       },
       {
         title: "Sistem Dua Persamaan",
-        problem: "Selesaikan $x+y=5$ dan $2x-y=1$.",
-        solution: ["Jumlahkan kedua persamaan untuk mengeliminasi $y$: $3x=6$.", "Diperoleh $x=2$ dan $y=3$."]
+        problem: "Selesaikan $x+y=5$ dan $2x-y=1$ dengan eliminasi, lalu verifikasi pada kedua persamaan.",
+        solution: [
+          "Diketahui sistem $x+y=5$ dan $2x-y=1$ pada $\mathbb R^2$. Koefisien $y$ pada kedua persamaan saling berlawanan, sehingga penjumlahan kedua persamaan mengeliminasi $y$ tanpa membagi dengan ekspresi yang mungkin nol.",
+          "Jumlahkan kedua ruas persamaan: $(x+y)+(2x-y)=5+1$. Karena $y-y=0$, diperoleh $3x=6$ dan karenanya $x=2$.",
+          "Substitusi $x=2$ ke persamaan pertama memberikan $2+y=5$, sehingga $y=3$. Verifikasi pada persamaan kedua: $2(2)-3=1$; persamaan pertama juga terpenuhi karena $2+3=5$.",
+          "Determinan koefisien $\Delta=1(-1)-1(2)=-3\neq0$. Berdasarkan teorema klasifikasi sistem $2\times2$, pasangan $(2,3)$ merupakan satu-satunya solusi."
+        ]
       }
     ],
     mistakes: [
