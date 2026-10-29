@@ -163,9 +163,10 @@ export const primeFactorizationContent: BookLessonContent = {
       "title": "Contoh Penerapan Lemma Euclid",
       "problem": "Diketahui $5\\mid14\\cdot15$ dan $5\\nmid14$. Tentukan faktor mana yang harus habis dibagi $5$ dan periksa secara langsung.",
       "solution": [
-        "Bilangan $5$ prima dan $14\\cdot15=210$ habis dibagi $5$ karena $210=5\\cdot42$. Syarat Lemma Euclid terpenuhi.",
-        "Karena $14=5\\cdot2+4$, diperoleh $5\\nmid14$. Lemma Euclid memaksa $5\\mid15$.",
-        "Pemeriksaan langsung memberi $15=5\\cdot3$. Kesimpulan ini tidak dapat diperluas ke sembarang pembagi komposit: $6\\mid2\\cdot3$ tetapi $6$ tidak membagi masing-masing faktor."
+      "Diketahui $p=5$ prima, $a=14$, dan $b=15$. Perkalian $ab=210=5\\cdot42$ menunjukkan $5\\mid ab$, sedangkan pembagian $14=5\\cdot2+4$ menunjukkan $5\\nmid a$. Kedua hipotesis pada kasus kedua Lemma Euclid terpenuhi.",
+      "Karena $5$ prima, Lemma Euclid memberikan alternatif $5\\mid14$ atau $5\\mid15$. Alternatif pertama telah dibantah oleh sisa pembagian $4$, sehingga secara logis harus berlaku $5\\mid15$.",
+      "Kita juga dapat memeriksa mekanisme bukti secara eksplisit: $14(-1)+5(3)=1$. Setelah dikalikan dengan $15$ diperoleh $-14\\cdot15+5\\cdot45=15$. Kedua suku pada ruas kiri habis dibagi $5$, jadi ruas kanan pun habis dibagi $5$.",
+      "Verifikasi langsung memberi $15=5\\cdot3$. Kondisi prima tidak boleh dihapus: meskipun $6\\mid2\\cdot3$, tidak berlaku $6\\mid2$ ataupun $6\\mid3$. Dengan demikian kesimpulan khusus untuk faktor prima telah dibuktikan dan diverifikasi."
       ]
     },
     {
