@@ -1,3 +1,17 @@
+## Catatan sesi 2026-10-29 — Riset Operasi (solusi grafik program linear)
+
+**Bidang:** 22 Riset Operasi, submateri `or-lp-grafik`, URL: https://descaar.github.io/DMath-Learning/materi/riset-operasi/or-lp-grafik/.
+
+**Audit awal:** submateri ini berasal dari generator `new-academic-content.ts`; belum memuat pembuktian khusus konveksitas, teorema titik sudut, sertifikat batas atas, sensitivitas koefisien, serta visualisasi poligon dengan evaluasi objektif.
+
+**Pengayaan:** `data/graphical-lp-content.ts` menggantikan hanya slug ini dengan 4 definisi yang masing-masing diikuti contoh terbahas, 7 hasil formal dengan bukti terurai, 8 contoh, dan 8 latihan bersolusi. Model konsisten adalah `x+2y<=8, 3x+y<=9, x,y>=0`; nilai optimum `18` pada `(2,3)` untuk tujuan `3x+4y`. Prinsip titik sudut dibuktikan dengan hipotesis poligon kompak berinterior tidak kosong, sementara sertifikat dibuktikan langsung melalui dualitas lemah. Rujukan: Taha, *Operations Research: An Introduction*, edisi ke-10 (2017).
+
+**Visualisasi:** `components/GraphicalLPLab.tsx` dan `lib/graphical-lp-explorer.ts` menyajikan poligon layak SVG responsif, titik sudut, garis level tujuan, dua pengendali keuntungan, tabel evaluasi, sisi optimal ketika seri, dan pengali sertifikat ketika nonnegatif. Komponen ditampilkan pada pengantar dan bagian visualisasi.
+
+**Pengujian:** `scripts/audit-graphical-lp.mjs` diintegrasikan ke `npm run build`; memeriksa definisi, bukti, contoh, latihan, registry/rute/komponen, serta pengujian grid layak dan sertifikat. **Status publikasi:** wajib memeriksa GitHub Actions pada commit akhir; jangan menyatakan terbit sampai job deploy `success`.
+
+**Rotasi 26 bidang:** sudah disentuh 03, 04, 07, 08, 09, 10, 11, 14, 15, 17, 18, 22 (12 bidang, belum berarti selesai). Belum disentuh: 01 Aritmetika, 02 Aljabar, 05 Geometri, 06 Trigonometri, 12 Statistika, 13 Peluang, 16 Topologi, 19 Metode Numerik, 20 Optimisasi, 21 Pemodelan Matematika, 23 Statistika Terapan, 24 Statistika Matematika, 25 Kalkulus Stokastik, 26 Teori Ukuran & Probabilitas. Prioritas selanjutnya: 24 Statistika Matematika atau 23 Statistika Terapan, dengan mempertimbangkan kelengkapan katalog dan tanpa mengulang slug selesai.
+
 # DMath Learning — pengayaan materi dan audit matematis
 
 ## Catatan sesi 2026-10-29 — Matematika Diskrit (kuantor bertingkat)
