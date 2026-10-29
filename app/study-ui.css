@@ -316,7 +316,8 @@
   background:color-mix(in srgb,var(--study-amber) 9%,var(--surface))
 }
 .textbook-page .ird-worked-card>details.ird-worked-solution>summary{color:var(--study-blue)}
-.textbook-page .ird-practice-section .ird-worked-grid{
+.book-section-page .ird-practice-section .ird-worked-grid,
+.deep-material-page .ird-practice-section .ird-worked-grid{
   display:grid;grid-template-columns:1fr;gap:17px
 }
 .textbook-page .ird-practice-section .ird-worked-grid>.ird-worked-card{
@@ -459,6 +460,31 @@
 }
 .textbook-page .interactive-lab input[type="range"],
 .textbook-page .ird-visual-lab input[type="range"]{accent-color:var(--study-blue)}
+/* The practice directory remains a two-column discovery grid rather than a long one-column problem stack. */
+.textbook-page:has(#latihan-daftar) #latihan-daftar .home-learning-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px
+}
+.textbook-page:has(#latihan-daftar) #latihan-daftar .ird-worked-card{
+  min-height:230px;
+  display:flex;flex-direction:column;
+  border-radius:15px
+}
+.textbook-page:has(#latihan-daftar) #latihan-daftar .ird-worked-card .practice-card-stats{
+  width:100%;
+  gap:9px;
+  margin:5px 0 13px
+}
+.textbook-page:has(#latihan-daftar) #latihan-daftar .ird-worked-card .practice-card-stats>div{
+  padding:9px 11px;border:1px solid var(--study-line);background:var(--surface-2);border-radius:9px;
+  min-width:0
+}
+.textbook-page:has(#latihan-daftar) #latihan-daftar .ird-worked-card .practice-card-stats strong{
+  font-size:1.15rem;overflow-wrap:anywhere;line-height:1.3
+}
+.textbook-page:has(#latihan-daftar) #latihan-daftar .ird-worked-card .actions{margin-top:auto}
+@media(max-width:760px){
+  .textbook-page:has(#latihan-daftar) #latihan-daftar .home-learning-grid{grid-template-columns:1fr}
+}
 /* Guided independent practice */
 .material-practice{
   margin:25px 0 35px;
@@ -563,7 +589,8 @@
   .textbook-page .thesis-formal-group .thesis-formal-body{text-align:left;font-size:.98rem}
   .textbook-page .thesis-formal-group .thesis-formal-head{gap:4px 9px}
   .textbook-page .ird-worked-card{padding:17px}
-  .textbook-page .ird-practice-section .ird-worked-grid{grid-template-columns:1fr!important}
+  .book-section-page .ird-practice-section .ird-worked-grid,
+  .deep-material-page .ird-practice-section .ird-worked-grid{grid-template-columns:1fr!important}
   .textbook-page .ird-worked-head{align-items:flex-start}
   .textbook-page .ird-worked-head>div:nth-child(2){min-width:0}
   .textbook-page .thesis-proof-body,
