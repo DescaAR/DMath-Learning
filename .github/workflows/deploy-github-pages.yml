@@ -44,7 +44,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dmath-material-depth-audit
-          path: material-depth-report.json
+          path: |
+            material-depth-report.json
+            solution-depth-report.json
           if-no-files-found: warn
           retention-days: 30
 
