@@ -52,7 +52,7 @@ export const complexPlaneSetsContent: BookLessonContent = {
       "proof": [
         "Ambil sebarang $z\\in D(a;R)$. Karena $|z-a|<R$, bilangan $\\delta=R-|z-a|$ positif.",
         "Ambil $w\\in D(z;\\delta)$. Ketaksamaan segitiga memberi $|w-a|\\le |w-z|+|z-a|<\\delta+|z-a|=R$.",
-        "Jadi $w\\in D(a;R)$, sehingga $D(z;\\delta)\\subseteq D(a;R)$. Radius $\\delta$ diperoleh untuk setiap $z$ yang dipilih.",
+        "Jadi $w\\in D(a;R)$, sehingga $D(z;\\delta)\\subseteq D(a;R)$. Radius $\\delta$ diperoleh untuk setiap $z$ yang dipilih. Pemilihan ini tidak bergantung pada titik $w$ melainkan hanya pada titik $z$ yang sedang diperiksa.",
         "Menurut definisi himpunan terbuka, $D(a;R)$ terbuka. $\\square$"
       ],
       "explanation": "Margin ke keliling, yaitu R−|z−a|, memberikan radius eksplisit."
@@ -229,7 +229,7 @@ export const complexPlaneSetsContent: BookLessonContent = {
     {
       "prompt": "Buktikan bahwa $E=\\{z\\in\\mathbb C:\\operatorname{Re}z>0,\\ \\operatorname{Im}z>0\\}$ terbuka. Untuk $z=x+iy\\in E$, berikan satu radius eksplisit yang sah dan jelaskan mengapa kedua koordinat tetap positif.",
       "hint": "Gunakan fakta |Re(w-z)| dan |Im(w-z)| tidak melebihi |w-z|.",
-      "answer": "Ambil $z=x+iy$ dengan $x,y>0$, lalu pilih $\\delta=\\frac12\\min\\{x,y\\}>0$. Untuk setiap $w=u+iv$ dengan $|w-z|<\\delta$, berlaku $|u-x|\\le|w-z|<\\delta$ dan $|v-y|\\le|w-z|<\\delta$. Karena itu $u>x-\\delta\\ge x/2>0$ dan $v>y-\\delta\\ge y/2>0$. Jadi $D(z;\\delta)\\subseteq E$. Karena $z$ sebarang, $E$ terbuka."
+      "answer": "Ambil $z=x+iy$ dengan $x,y>0$, lalu pilih $\\delta=\\frac12\\min\\{x,y\\}>0$. Untuk setiap $w=u+iv$ dengan $|w-z|<\\delta$, berlaku $|u-x|\\le|w-z|<\\delta$ dan $|v-y|\\le|w-z|<\\delta$. Karena itu $u>x-\\delta\\ge x/2>0$ dan $v>y-\\delta\\ge y/2>0$. Jadi $D(z;\\delta)\\subseteq E$. Karena $z$ sebarang, $E$ terbuka. Radius yang dipilih bergantung pada koordinat titik $z$, sesuai dengan urutan kuantor dalam definisi keterbukaan; tidak diperlukan radius seragam bagi seluruh kuadran."
     },
     {
       "prompt": "Perlihatkan bahwa irisan takhingga himpunan terbuka tidak harus terbuka dengan $U_n=D(0;1/n)$ untuk $n\\in\\mathbb N$ positif. Tentukan irisannya dan uji keterbukaannya menggunakan definisi lingkungan.",
