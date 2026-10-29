@@ -97,7 +97,7 @@ export const graphicalLinearProgrammingContent:BookLessonContent = {
     {
       "kind": "theorem",
       "title": "Optimum Eksak Model Produksi",
-      "statement": "Untuk $P=\\{(x,y):x,y\\ge0,\\ x+2y\\le8,\\ 3x+y\\le9\\}$, masalah $\\max_{(x,y)\\in P}(3x+4y)$ mempunyai nilai optimal $18$ yang dicapai di $(2,3)$.",
+      "statement": "Untuk daerah layak tidak kosong $P=\\{(x,y)\\in\\mathbb R^2:x,y\\ge0,\\ x+2y\\le8,\\ 3x+y\\le9\\}$, masalah $\\max_{(x,y)\\in P}(3x+4y)$ mempunyai nilai optimal $18$ yang dicapai di $(2,3)$.",
       "explanation": "Dua pengali nonnegatif menghasilkan pembuktian optimalitas tanpa mengandalkan pembacaan grafik.",
       "proof": [
         "Titik $(2,3)$ layak sebab $2+2(3)=8$ dan $3(2)+3=9$, dengan kedua koordinat nonnegatif. Nilai tujuan di titik tersebut adalah $3(2)+4(3)=18$.",
