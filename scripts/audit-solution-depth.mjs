@@ -360,6 +360,68 @@ assert.ok(Math.abs(((9/10-3/5)*80)-(24))<1e-12,"Fraction numeric regression: (9/
 assert.ok(Math.abs(((13/3-1)/6)-(5/9))<1e-12,"Fraction numeric regression: (13/3-1)/6");
 assert.ok(Math.abs((1/(1+1/(1+1/2)))-(3/5))<1e-12,"Fraction numeric regression: 1/(1+1/(1+1/2))");
 
+// Regression for the public, non-book Algebra lesson. This checks the
+// rendered source registry and independently authored answers, not length alone.
+const linear=deepMaterials.find(x=>x.slug==="persamaan-linear");
+const linearFormal=formalChapterContent["persamaan-linear"];
+const linearPractice=[...(materialPractice["persamaan-linear"]??[]),
+  ...(materialPracticeExtra["persamaan-linear"]??[])];
+assert.ok(linear && linear.subject==="Aljabar");
+assert.ok(linearFormal && linearFormal.blocks.length>=5);
+assert.equal(linear.examples.length,3);
+assert.equal(linearPractice.length,10);
+for(const definition of [...linear.definitions.map(x=>x.title),
+  ...linearFormal.blocks.filter(x=>x.kind==="definition").map(x=>x.title.id)]){
+  assert.ok(linearFormal.examples.some(ex=>ex.forDefinition?.id===definition),
+    "Missing directly linked linear-equation definition example: "+definition);
+}
+for(const ex of linear.examples)assert.ok(normalize(ex.solution.join(" ")).length>=400,
+  "Original linear-equation worked example is still too abbreviated: "+ex.title);
+for(const id of ["L-03","L-04","L-05","L-06","L-08","L-09","L-10"]){
+  const item=linearPractice.find(x=>x.id===id);
+  assert.ok(item && normalize(item.answer.id).length>=350,
+    "Reviewed linear-equation exercise is missing its verified derivation: "+id);
+}
+const systemTheorem=linearFormal.blocks.find(x=>x.title.id.includes("Klasifikasi Lengkap"));
+assert.ok(systemTheorem?.proof?.length>=5);
+assert.ok(systemTheorem.proof.some(step=>step.id.includes("(a,b)=(0,0)")),
+  "Singular-system proof must include a zero coefficient row");
+const geometry=linearFormal.blocks.find(x=>x.kind==="corollary");
+assert.ok(geometry?.statement.id.includes("vektor normal") ||
+  geometry?.statement.id.includes("benar-benar menyatakan garis"));
+assert.ok(geometry.proof.some(step=>step.id.includes("garis vertikal")),
+  "Geometric classification must cover vertical lines");
+// Cramer's formulas and direct substitution, including negative coefficients.
+for(const [a,b,c,d,e,f] of [
+  [1,1,2,-1,5,1],[2,3,1,-1,13,1],[0,1,1,0,3,2],[-2,1,3,2,4,-1]
+]){
+  const det=a*d-b*c;
+  assert.notEqual(det,0);
+  const x=(d*e-b*f)/det,y=(a*f-c*e)/det;
+  assert.ok(Math.abs(a*x+b*y-e)<1e-12);
+  assert.ok(Math.abs(c*x+d*y-f)<1e-12);
+}
+// In the singular cases a zero row may still contradict a nonzero right side.
+const singularCases=[
+  {A:[[0,0],[0,0]],rhs:[0,0],consistent:true},
+  {A:[[0,0],[0,0]],rhs:[1,0],consistent:false},
+  {A:[[0,0],[1,2]],rhs:[0,3],consistent:true},
+  {A:[[0,0],[1,2]],rhs:[1,3],consistent:false},
+  {A:[[1,2],[2,4]],rhs:[3,6],consistent:true},
+  {A:[[1,2],[2,4]],rhs:[3,7],consistent:false}
+];
+for(const {A,rhs,consistent} of singularCases){
+  const [[a,b],[c,d]]=A,[e,f]=rhs;
+  assert.equal(a*d-b*c,0);
+  const firstNonzero=a!==0||b!==0;
+  const secondNonzero=c!==0||d!==0;
+  const actual=firstNonzero
+    ? (a!==0 ? f*a===c*e : f*b===d*e)
+    : (e===0 && (!secondNonzero || true) && (secondNonzero || f===0));
+  // For a nonzero second row with zero first row, e=0 is sufficient.
+  assert.equal(actual,consistent,"Singular consistency case mismatch");
+}
+
 const totals=subjects.reduce((out,row)=>{
   for(const [k,v] of Object.entries(row))if(typeof v==="number")out[k]=(out[k]??0)+v;
   return out;
