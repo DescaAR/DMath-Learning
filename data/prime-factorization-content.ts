@@ -51,7 +51,7 @@ export const primeFactorizationContent: BookLessonContent = {
         "Karena $p$ prima, pembagi positif $d$ dari $p$ hanya $1$ atau $p$. Kasus $d=p$ tidak mungkin: $d\\mid a$ akan memberikan $p\\mid a$. Maka $d=1$, yakni terdapat $u,v\\in\\mathbb Z$ dengan $ua+vp=1$.",
         "Kalikan identitas terakhir dengan $b$: $uab+vpb=b$. Kedua suku pada ruas kiri habis dibagi $p$ karena $p\\mid ab$. Jadi $p\\mid b$. Kedua kasus mencakup seluruh kemungkinan, sehingga lemma terbukti."
       ],
-      "explanation": "Kondisi prima esensial: $6mid2cdot3$, tetapi $6\nmid2$ dan $6\nmid3$. Identitas kombinasi linear dibangun di dalam bukti agar tidak bergantung pada teorema Bézout yang dibahas di bagian berikutnya."
+      "explanation": "Kondisi prima esensial: $6\\mid2\\cdot3$, tetapi $6\\nmid2$ dan $6\\nmid3$. Identitas kombinasi linear dibangun di dalam bukti agar tidak bergantung pada teorema Bézout yang dibahas di bagian berikutnya."
     },
     {
       "kind": "theorem",
