@@ -20,7 +20,7 @@ export type BookChapter = {
 };
 
 export type BookSubject = {
-  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar"|"olimpiade-matematika-sma"|"kalkulus"|"teori-graf"|"teori-bilangan-olimpiade"|"persamaan-diferensial"|"analisis-numerik"|"riset-operasi"|"statistika-terapan"|"statistika-matematika"|"matematika-diskrit"|"kalkulus-stokastik"|"teori-ukuran-probabilitas";
+  slug:"analisis-real"|"analisis-kompleks"|"kombinatorika"|"aljabar-linear"|"struktur-aljabar"|"olimpiade-matematika-sma"|"kalkulus"|"teori-graf"|"teori-bilangan-olimpiade"|"teori-bilangan"|"persamaan-diferensial"|"analisis-numerik"|"riset-operasi"|"statistika-terapan"|"statistika-matematika"|"matematika-diskrit"|"kalkulus-stokastik"|"teori-ukuran-probabilitas";
   title:string;
   subtitle:string;
   level:string;
@@ -342,11 +342,36 @@ function buildDMathCurriculum(subject:BookSubject):BookSubject{
   };
 }
 
+// University-level public Teori Bilangan is distinct from the hidden school-olympiad
+// book. Only this independently authored prime-factorization lesson is exposed.
+const publicNumberTheoryFoundations:BookSubject={
+  slug:"teori-bilangan",
+  title:"Teori Bilangan",
+  subtitle:"Fondasi prima, keterbagian, faktorisasi unik, dan pembuktian aritmetika.",
+  level:"Kuliah",
+  source:"Hardy & Wright, An Introduction to the Theory of Numbers, 6th ed.",
+  sourceYear:"2008",
+  chapters:[{
+    number:"1",
+    title:"Bilangan Prima dan Faktorisasi",
+    sourceTitle:"DMath Learning",
+    sections:[{
+      number:"1.1",
+      slug:"nt-primes",
+      title:"Bilangan Prima dan Teorema Fundamental Aritmetika",
+      sourceTitle:"DMath Learning",
+      summary:"Definisi prima dan komposit, Lemma Euclid, faktorisasi prima yang unik, uji prima, valuasi, serta solusi pembuktian dan perhitungan yang lengkap.",
+      keyIdeas:["bilangan prima","faktorisasi unik","Lemma Euclid","valuasi prima","banyak pembagi"],
+    }],
+  }],
+};
+
 const referenceSubjects:BookSubject[]=[
   realAnalysisBook,
   complexAnalysisBook,
   ...additionalBookSubjects,
   ...expandedBookSubjects,
+  publicNumberTheoryFoundations,
   numericalAnalysisBook,
   ...newAcademicSubjects,
 ];
