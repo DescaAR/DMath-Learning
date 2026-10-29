@@ -26,6 +26,14 @@ assert.equal(definitions.length,6);
 assert.ok(results.length>=6);
 assert.equal(lesson.examples.length,8);
 assert.equal(lesson.exercises.length,8);
+for(const originalPrompt of [
+  "Verifikasi $d(x,y)=|x-y|$ adalah metrik",
+  "Apakah $d(x,y)=|x-y|^2$ metrik",
+  "Mengapa $\\mathbb Q$ tidak complete"
+]){
+  assert.ok(lesson.exercises.some(x=>x.prompt.startsWith(originalPrompt)),
+    "Original exercise question was lost: "+originalPrompt);
+}
 for(const definition of definitions){
   assert.ok(definition.statement.length>=120,"Definition too abbreviated: "+definition.title);
   const example=lesson.examples.find(x=>x.forDefinition===definition.title);
