@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { deepMaterials } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { bookSubjects } from "@/data/book-curricula";
@@ -162,6 +162,14 @@ export function MaterialCatalogClient() {
   const [level, setLevel] = useState<LevelFilter>("Semua");
   const [subject, setSubject] = useState("Semua");
   const [difficulty, setDifficulty] = useState<DifficultyFilter>("Semua");
+  // Deep links from the 26-field homepage keep the catalog filter meaningful.
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get("subject");
+    if (!requested) return;
+    if (SUBJECTS.includes(requested)) setSubject(requested);
+    else setQuery(requested);
+  }, []);
+
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -287,7 +295,7 @@ export function MaterialCatalogClient() {
           const levelCategoryLabel = levelCategory(item);
 
           return (
-            <article className="material-row" key={item.id}>
+            <article className="material-row dmath-catalog-card" key={item.id}>
               <div className="material-index">{String(index + 1).padStart(2, "0")}</div>
               <div className="material-main">
                 <span className="meta-line">
@@ -298,14 +306,14 @@ export function MaterialCatalogClient() {
                   <div className="chapter-stat-grid catalog-count-stats">
                     <div><strong>{item.chapterCount}</strong><span>{language === "en" ? "Chapters" : "Bab"}</span></div>
                     <div><strong>{item.sectionCount}</strong><span>{language === "en" ? "Subtopics" : "Submateri"}</span></div>
-                    <div><strong>1</strong><span>{language === "en" ? "Subtopic / Page" : "Submateri / Halaman"}</span></div>
+                    
                   </div>
                 ) : (
                   <p><RichMath>{summary}</RichMath></p>
                 )}
                 {item.topics && item.topics.length > 0 && (
-                  <div className="catalog-material-list">
-                    <strong>{language === "en" ? "Material List" : "Daftar Materi"}</strong>
+                  <details className="catalog-material-list">
+                    <summary><span>{language === "en" ? "Explore chapters" : "Lihat daftar bab"}</span><span aria-hidden="true" className="catalog-expand-arrow">⌄</span></summary>
                     <ol>
                       {item.topics.map((topic) => <li key={topic}>{topic}</li>)}
                     </ol>
@@ -323,7 +331,7 @@ export function MaterialCatalogClient() {
                         </ol>
                       </div>
                     )}
-                  </div>
+                  </details>
                 )}
                 <div className="material-card-tags">
                   <span>{levelCategoryLabel}</span>
@@ -331,7 +339,7 @@ export function MaterialCatalogClient() {
                 </div>
                 <div className="material-row-actions">
                   <Link href={item.href} className="btn primary">
-                    {language === "en" ? "Study" : "Pelajari"}
+                    {language === "en" ? "Explore topic ↗" : "Buka materi ↗"}
                   </Link>
                 </div>
               </div>
