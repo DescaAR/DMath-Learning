@@ -30,6 +30,14 @@ export const materials = [
     href: "/materi/" + material.slug,
   })),
   {
+    title: "Metode Newton: Konvergensi dan Analisis Galat",
+    level: "Kuliah",
+    subject: "Metode Numerik",
+    status: "published" as ContentStatus,
+    summary: "Iterasi Newton, akar sederhana dan multipel, pembuktian konvergensi lokal kuadratik, batas galat residual, contoh dan latihan terbahas.",
+    href: "/materi/analisis-numerik/num-newton",
+  },
+  {
     title: "Ruang Metrik: Fondasi Topologi",
     level: "Kuliah",
     subject: "Topologi",
