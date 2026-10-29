@@ -121,7 +121,52 @@ export const graphicalLinearProgrammingContent:BookLessonContent = {
       ]
     }
   ],
-  "examples": [],
+  "examples": [
+    {
+      "title": "Uji Kelayakan Tiga Kandidat",
+      "forDefinition": "Daerah Layak",
+      "problem": "Uji $(2,3)$, $(3,2)$, dan $(-1,2)$ pada $P=\\{x,y\\ge0:x+2y\\le8,\\ 3x+y\\le9\\}$.",
+      "solution": [
+        "Pada $(2,3)$ berlaku $2+6=8$ dan $6+3=9$, sedangkan kedua koordinat nonnegatif. Jadi titik layak.",
+        "Pada $(3,2)$, kendala kedua memberi $9+2=11>9$, sehingga titik tidak layak walaupun kendala pertama dipenuhi.",
+        "Pada $(-1,2)$, syarat $x\\ge0$ gagal; titik tidak layak tanpa perlu menafsirkan produksi negatif.",
+        "Hanya $(2,3)$ layak dari ketiga kandidat. Semua kendala, termasuk nonnegativitas, harus diperiksa."
+      ]
+    },
+    {
+      "title": "Titik Ekstrem dan Titik pada Sisi",
+      "forDefinition": "Titik Ekstrem",
+      "problem": "Tunjukkan bahwa $(1,0)$ bukan titik ekstrem $P$, sedangkan $(2,3)$ titik ekstrem.",
+      "solution": [
+        "Titik $(1,0)=\\frac23(0,0)+\\frac13(3,0)$ adalah kombinasi konveks taktrivial dua titik layak berbeda, sehingga bukan ekstrem.",
+        "Andaikan $(2,3)=tu+(1-t)w$ dengan $u,w\\in P$ dan $0<t<1$. Pada $(2,3)$ kedua kendala sumber daya aktif.",
+        "Karena kombinasi dua bilangan yang masing-masing tidak melebihi batasnya mencapai batas, kedua ujung $u,w$ juga harus memenuhi $x+2y=8$ dan $3x+y=9$.",
+        "Sistem kedua garis mempunyai solusi tunggal $(2,3)$, maka $u=w=(2,3)$. Jadi titik tersebut ekstrem."
+      ]
+    },
+    {
+      "title": "Mengevaluasi Titik Sudut",
+      "forDefinition": "Solusi Optimal",
+      "problem": "Tentukan maksimum $3x+4y$ pada keempat titik sudut $(0,0),(3,0),(2,3),(0,4)$.",
+      "solution": [
+        "Nilai di $(0,0)$ adalah $0$, sedangkan di $(3,0)$ adalah $9$.",
+        "Nilai di $(2,3)$ adalah $6+12=18$, sedangkan di $(0,4)$ adalah $16$.",
+        "Poligon layak tertutup dan terbatas, sehingga teorema titik sudut berlaku untuk tujuan linear.",
+        "Nilai terbesar $18$ dicapai di $(2,3)$."
+      ]
+    },
+    {
+      "title": "Sertifikat Batas Atas yang Tajam",
+      "forDefinition": "Sertifikat Batas Atas",
+      "problem": "Buktikan $3x+4y\\le18$ untuk semua $(x,y)\\in P$ tanpa menguji titik sudut satu per satu.",
+      "solution": [
+        "Ambil pengali $\\lambda_1=9/5$ untuk kendala $x+2y\\le8$ dan $\\lambda_2=2/5$ untuk kendala $3x+y\\le9$.",
+        "Jumlah ruas kiri menjadi $(9/5+6/5)x+(18/5+2/5)y=3x+4y$.",
+        "Jumlah ruas kanan menjadi $(9/5)8+(2/5)9=18$. Karena pengali nonnegatif, diperoleh batas atas sah.",
+        "Titik $(2,3)$ layak dan mencapai nilai $18$, sehingga batas atas tersebut tajam."
+      ]
+    }
+  ],
   "exercises": [],
   "mistakes": [],
   "connections": []
