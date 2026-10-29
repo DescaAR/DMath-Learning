@@ -296,10 +296,9 @@ export const deepMaterialsEnA: DeepMaterial[] = [
         title: "Cosine Difference Formula",
         statement: "$\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$.",
         proof: [
-          "Take unit vectors $u=(\\cos\\alpha,\\sin\\alpha)$ and $v=(\\cos\\beta,\\sin\\beta)$.",
-          "By the dot product, $u\\cdot v=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$.",
-          "The angle between $u$ and $v$ is $\\alpha-\\beta$, and $\\|u\\|=\\|v\\|=1$, so $u\\cdot v=\\cos(\\alpha-\\beta)$.",
-          "Equating the two expressions for the dot product gives the desired formula."
+          "For arbitrary real angles $\\alpha,\\beta$, set $u=(\\cos\\alpha,\\sin\\alpha)$ and $v=(\\cos\\beta,\\sin\\beta)$. The coordinate definition of the dot product gives $u\\cdot v=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$.",
+          "Rotate both vectors through $-\\beta$. Rotations preserve dot products because they preserve lengths and angles. The vector $v$ becomes $(1,0)$, while $u$ becomes $(\\cos(\\alpha-\\beta),\\sin(\\alpha-\\beta))$ by the geometric definition of an oriented angle on the unit circle.",
+          "Consequently $u\\cdot v=(R_{-\\beta}u)\\cdot(R_{-\\beta}v)=\\cos(\\alpha-\\beta)$. Equating the two expressions proves the cosine-difference formula for all real angles, without incorrectly treating a possibly negative oriented difference as an ordinary angle between vectors. $\\square$"
         ],
         why: "This formula underlies the sum-and-difference, double-angle, and many simplification identities."
       }
