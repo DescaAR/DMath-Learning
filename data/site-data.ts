@@ -21,6 +21,14 @@ export const subjects = [
 ];
 
 export const materials = [
+  {
+    title: "Garis, Lingkaran, dan Parabola: Geometri Analitik",
+    level: "Kuliah",
+    subject: "Geometri",
+    status: "published" as ContentStatus,
+    summary: "Garis dan jarak, lingkaran, garis singgung, fokus–direktriks parabola, pembuktian dua arah, soal lengkap, dan laboratorium interaktif.",
+    href: "/materi/kalkulus/calc-app-conics-basics",
+  },
   ...deepMaterials.map((material) => ({
     title: material.title,
     level: material.level,
