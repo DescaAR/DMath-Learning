@@ -4,6 +4,7 @@ import Link from "next/link";
 import { type ReactNode, useEffect, useState } from "react";
 import { ScrollSpyToc } from "@/components/ScrollSpyToc";
 import { RichMath } from "@/components/RichMath";
+import { useLanguage } from "@/components/LanguageProvider";
 
 type Crumb={label:string;href?:string};
 type Stat={value:string|number;label:string};
@@ -55,6 +56,8 @@ export function RiemannHubShell({
 }){
   const [progress,setProgress]=useState(0);
   const [focused,setFocused]=useState(false);
+  const {language}=useLanguage();
+  const en=language==="en";
 
   useEffect(()=>{
     const updateProgress=()=>{
@@ -132,13 +135,13 @@ export function RiemannHubShell({
           />
 
           <article className="article deep-article textbook-article ird-article">
-            {sections.length>1&&<div className="dmath-reading-toolbar" role="group" aria-label="Pengaturan membaca">
-              <div className="dmath-reading-toolbar-label"><span aria-hidden="true" className="dmath-reading-toolbar-dot"/> STUDY MODE <span className="dmath-reading-toolbar-separator"/> <span>{Math.round(progress)}% dibaca</span></div>
+            {sections.length>1&&<div className="dmath-reading-toolbar" role="group" aria-label={en?"Reading settings":"Pengaturan membaca"}>
+              <div className="dmath-reading-toolbar-label"><span aria-hidden="true" className="dmath-reading-toolbar-dot"/> STUDY MODE <span className="dmath-reading-toolbar-separator"/> <span>{Math.round(progress)}% {en?"read":"dibaca"}</span></div>
               <div className="dmath-reading-toolbar-actions">
-                <button type="button" className={"dmath-focus-button"+(focused?" active":"")} aria-pressed={focused} onClick={()=>setFocused(v=>!v)} title="Tampilkan atau sembunyikan daftar isi untuk fokus membaca">
-                  <span aria-hidden="true">{focused?"▣":"□"}</span> {focused?"Tampilkan Daftar Isi":"Mode Fokus"}
+                <button type="button" className={"dmath-focus-button"+(focused?" active":"")} aria-pressed={focused} onClick={()=>setFocused(v=>!v)} title={en?"Toggle table of contents for focused reading":"Tampilkan atau sembunyikan daftar isi untuk fokus membaca"}>
+                  <span aria-hidden="true">{focused?"▣":"□"}</span> {focused?(en?"Show Contents":"Tampilkan Daftar Isi"):(en?"Focus Mode":"Mode Fokus")}
                 </button>
-                <a href="#" className="dmath-back-top" aria-label="Kembali ke awal halaman">↑ <span>Atas</span></a>
+                <a href="#" className="dmath-back-top" aria-label={en?"Back to top":"Kembali ke awal halaman"}>↑ <span>{en?"Top":"Atas"}</span></a>
               </div>
             </div>}
             {children}
