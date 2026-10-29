@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { LearningVideoSection } from "@/components/LearningVideoSection";
+import { PracticeCompletionToggle, PracticeSectionProgress } from "@/components/PracticeCompletion";
 import { deepMaterials, type DeepMaterial } from "@/data/deep-materials";
 import { deepMaterialEnMap } from "@/data/deep-materials-en";
 import { materialPractice } from "@/data/material-practice";
@@ -340,14 +341,16 @@ export function DeepMaterialPage({ material }: { material: DeepMaterial }) {
           "Kerjakan setiap soal terlebih dahulu. Petunjuk dan pembahasan lengkap dapat dibuka setelah mencoba.",
           "Attempt each problem first. Hints and complete solutions can be opened afterward."
         )}</p>
+        <PracticeSectionProgress lessonKey={material.slug} exerciseKeys={practice.map(problem=>problem.id)}/>
         <div className="ird-worked-grid">
           {practice.map((problem, index) => {
             const steps=splitAcademicSolution(pick(problem.answer));
             return(
-              <article className="ird-worked-card" key={problem.id}>
+              <article className="ird-worked-card dmath-exercise-card" key={problem.id}>
                 <div className="ird-worked-head">
                   <div className="ird-problem-number">{String(index + 1).padStart(2, "0")}</div>
                   <div><span className="eyebrow">{problem.difficulty}</span><h3><TitleText>{pick(problem.title)}</TitleText></h3></div>
+                  <PracticeCompletionToggle lessonKey={material.slug} exerciseKey={problem.id}/>
                 </div>
                 <div className="ird-worked-prompt"><Text>{pick(problem.prompt)}</Text></div>
                 <details className="ird-proof">
