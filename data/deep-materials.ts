@@ -376,10 +376,9 @@ export const deepMaterials: DeepMaterial[] = [
         title: "Rumus Cosinus Selisih Sudut",
         statement: "$\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$.",
         proof: [
-          "Ambil vektor satuan $u=(\\cos\\alpha,\\sin\\alpha)$ dan $v=(\\cos\\beta,\\sin\\beta)$.",
-          "Dari hasil kali titik, $u\\cdot v=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$.",
-          "Sudut antara $u$ dan $v$ adalah $\\alpha-\\beta$, sedangkan $\\|u\\|=\\|v\\|=1$, jadi $u\\cdot v=\\cos(\\alpha-\\beta)$.",
-          "Dengan menyamakan kedua bentuk hasil kali titik diperoleh rumus yang diinginkan."
+          "Untuk setiap $\\alpha,\\beta\\in\\mathbb R$, tetapkan vektor satuan $u=(\\cos\\alpha,\\sin\\alpha)$ dan $v=(\\cos\\beta,\\sin\\beta)$. Dari definisi hasil kali titik diperoleh $u\\cdot v=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$.",
+          "Rotasikan kedua vektor sebesar $-\\beta$. Rotasi mempertahankan hasil kali titik karena mempertahankan panjang dan sudut. Vektor $v$ berubah menjadi $(1,0)$, sedangkan $u$ berubah menjadi $(\\cos(\\alpha-\\beta),\\sin(\\alpha-\\beta))$ menurut definisi sudut berarah pada lingkaran satuan.",
+          "Karena itu $u\\cdot v=(R_{-\\beta}u)\\cdot(R_{-\\beta}v)=\\cos(\\alpha-\\beta)$. Menyamakan dua ekspresi untuk hasil kali titik menghasilkan $\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$ untuk semua sudut real, tanpa mengasumsikan $\\alpha-\\beta$ berada dalam $[0,\\pi]$. $\\square$"
         ],
         why: "Rumus ini menjadi dasar identitas jumlah-selisih, sudut ganda, dan berbagai penyederhanaan."
       }
