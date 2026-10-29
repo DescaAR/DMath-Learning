@@ -160,6 +160,42 @@ const checked=[
   ["ks-conditional-expectation","example","Mengeluarkan Faktor"],
   ["ks-conditional-expectation","example","Ketika Informasi"]
 ];
+// Verify that the actual public-page registry uses the authored regression
+// inference lesson rather than generated rubric prompts. Each example and
+// exercise is included in the same regression gate as earlier reviewed lessons.
+const regression=getBookSectionContent("sta-regression-inference");
+assert.ok(regression,"Missing regression inference page");
+const regDefs=regression.formal.filter(item=>item.kind==="definition");
+const regResults=regression.formal.filter(item=>["lemma","theorem","proposition","corollary"].includes(item.kind));
+assert.equal(regDefs.length,4);
+assert.equal(regResults.length,4);
+for(const def of regDefs)assert.ok(regression.examples.some(ex=>ex.forDefinition===def.title),
+  "Regression definition lacks directly linked example: "+def.title);
+for(const result of regResults)assert.ok(normalize(result.proof?.join(" ")).length>=550,
+  "Regression proof incomplete: "+result.title);
+assert.equal(regression.examples.length,8);
+assert.equal(regression.exercises.length,8);
+assert.ok(regression.exercises.every(ex=>!likelyUnsolved(ex.answer)));
+checked.push(...regression.examples.map(ex=>["sta-regression-inference","example",ex.title]),
+  ...regression.exercises.map(ex=>["sta-regression-inference","exercise",ex.prompt.slice(0,70)]));
+const regX=[0,1,2,3,4],regY=[1,2,2,4,6],xb=2,yb=3;
+const sxx=regX.reduce((s,x)=>s+(x-xb)**2,0);
+const sxy=regX.reduce((s,x,i)=>s+(x-xb)*(regY[i]-yb),0);
+const slope=sxy/sxx,intercept=yb-slope*xb;
+const residuals=regX.map((x,i)=>regY[i]-intercept-slope*x);
+const sse=residuals.reduce((s,v)=>s+v*v,0);
+const sst=regY.reduce((s,y)=>s+(y-yb)**2,0);
+const ssr=slope*slope*sxx;
+const mse=sse/3, t=slope/Math.sqrt(mse/sxx);
+for(const [actual,expected] of [[sxx,10],[sxy,12],[slope,1.2],[intercept,.6],
+  [sse,1.6],[sst,16],[ssr,14.4],[mse,8/15],[t*t,27]]){
+  assert.ok(Math.abs(actual-expected)<1e-10,"Regression numeric identity failed");
+}
+assert.ok(Math.abs(residuals.reduce((s,v)=>s+v,0))<1e-10);
+assert.ok(Math.abs(residuals.reduce((s,v,i)=>s+v*regX[i],0))<1e-10);
+const regressionRegistry=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
+assert.match(regressionRegistry,/"sta-regression-inference":regressionInferenceContent/);
+
 for(const [slug,type,anchor] of checked){
   const page=getBookSectionContent(slug);
   assert.ok(page,"Audited lesson not found: "+slug);
