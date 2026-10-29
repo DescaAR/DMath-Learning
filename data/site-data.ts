@@ -22,6 +22,14 @@ export const subjects = [
 
 export const materials = [
   {
+    title: "Ukuran Pemusatan: Rata-rata, Median, Bobot, dan Pencilan",
+    level: "Kuliah",
+    subject: "Statistika",
+    status: "published" as ContentStatus,
+    summary: "Definisi dan contoh langsung, optimalitas rata-rata serta median dengan pembuktian, delapan soal lengkap, dan eksplorasi pencilan interaktif.",
+    href: "/materi/statistika-terapan/sta-central",
+  },
+  {
     title: "Probabilitas Kontinu: Densitas, CDF, Ekspektasi, dan Pengondisian",
     level: "Kuliah",
     subject: "Peluang",
