@@ -22,6 +22,14 @@ export const subjects = [
 
 export const materials = [
   {
+    title: "Bilangan Prima dan Teorema Fundamental Aritmetika",
+    level: "Kuliah",
+    subject: "Teori Bilangan",
+    status: "published" as ContentStatus,
+    summary: "Definisi dan contoh langsung, Lemma Euclid, eksistensi dan ketunggalan faktorisasi prima, tujuh pembuktian, serta delapan latihan dengan solusi rinci.",
+    href: "/materi/teori-bilangan/nt-primes",
+  },
+  {
     title: "Pemodelan Matematika: Model Deterministik dan Stokastik",
     level: "Kuliah",
     subject: "Pemodelan Matematika",
