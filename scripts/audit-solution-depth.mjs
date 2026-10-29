@@ -296,6 +296,57 @@ const {deepMaterials}=loadSource(path.join(root,"data/deep-materials.ts"));
 const {materialPractice}=loadSource(path.join(root,"data/material-practice.ts"));
 const {materialPracticeExtra}=loadSource(path.join(root,"data/material-practice-extra.ts"));
 const {formalChapterContent}=loadSource(path.join(root,"data/formal-chapter-content.ts"));
+// Trigonometry regression: inspect the actual non-book public source and
+// independent practice banks, not merely a generated curriculum summary.
+const trigMaterial=deepMaterials.find(m=>m.slug==="trigonometri");
+assert.ok(trigMaterial,"Missing public trigonometry material");
+const trigFormal=formalChapterContent.trigonometri;
+assert.ok(trigFormal,"Missing formal trigonometry chapter");
+const trigExamples=[...trigMaterial.examples.map(x=>({title:x.title,solution:x.solution})),
+  ...trigFormal.examples.map(x=>({title:x.title.id,solution:x.solution.map(v=>v.id)}))];
+for(const title of ["Sinus dan Cosinus","Tangen","Identitas","Persamaan Dasar","Aturan Cosinus"]){
+  const example=trigExamples.find(x=>x.title===title);
+  assert.ok(example,"Original trigonometry example absent: "+title);
+  assert.ok(normalize(example.solution.join(" ")).length>=300,
+    "Original trigonometry example lacks reasoning: "+title);
+}
+for(const title of ["Sinus dan Cosinus","Tangen"]){
+  assert.ok(trigExamples.some(x=>x.title===title),"Definition lacks direct worked example: "+title);
+}
+assert.ok(trigFormal.examples.some(x=>x.forDefinition?.id==="Sinus dan Cosinus pada Lingkaran Satuan"),
+  "Formal unit-circle definition lacks an immediately linked example");
+for(const title of ["Teorema Aturan Cosinus","Teorema Aturan Sinus"]){
+  const result=trigFormal.blocks.find(x=>x.title.id===title);
+  assert.ok(result && result.kind==="theorem","Missing trigonometry theorem: "+title);
+  assert.ok(normalize(result.proof.map(x=>x.id).join(" ")).length>=400,
+    "Trigonometry theorem needs a complete proof: "+title);
+}
+const cosineDifference=trigMaterial.theorems.find(x=>x.title==="Rumus Cosinus Selisih Sudut");
+assert.ok(cosineDifference?.proof.join(" ").includes("Rotasikan kedua vektor"),
+  "Cosine-difference proof must handle oriented angles rather than signed 'angle between'");
+const trigPractice=[...(materialPractice.trigonometri??[]),...(materialPracticeExtra.trigonometri??[])];
+for(const id of ["TR-03","TR-04","TR-05","TR-07","TR-09","TR-10"]){
+  const item=trigPractice.find(x=>x.id===id);
+  assert.ok(item,"Missing original trigonometry problem "+id);
+  assert.ok(normalize(item.answer.id).length>=300,
+    "Trigonometry problem remains insufficiently justified: "+id);
+  assert.ok(normalize(item.answer.en).length>=250,
+    "English trigonometry solution incomplete: "+id);
+}
+for(const angle of [0,Math.PI/6,Math.PI/3,Math.PI/2,Math.PI,5*Math.PI/3]){
+  const a=5,b=7,c=Math.PI/3;
+  const side2=a*a+b*b-2*a*b*Math.cos(c);
+  assert.ok(Math.abs(side2-39)<1e-10,"Law of cosines numerical check");
+  const cosDiff=Math.cos(angle-c);
+  const expanded=Math.cos(angle)*Math.cos(c)+Math.sin(angle)*Math.sin(c);
+  assert.ok(Math.abs(cosDiff-expanded)<1e-12,"Cosine difference identity failed");
+}
+const trigRoots=[Math.PI/4,3*Math.PI/4,5*Math.PI/4,7*Math.PI/4];
+for(const root of trigRoots)assert.ok(Math.abs(Math.cos(2*root))<1e-12);
+assert.ok(Math.abs(6*Math.sin(Math.PI/4)/Math.sin(Math.PI/6)-6*Math.SQRT2)<1e-12);
+const trigMax=3*(3/5)+4*(4/5);
+assert.equal(trigMax,5);
+
 const nonBookRows=[],nonBookConcerns=[];
 for(const material of deepMaterials){
   const url="/materi/"+material.slug;
