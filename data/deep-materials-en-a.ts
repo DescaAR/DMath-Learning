@@ -306,19 +306,49 @@ export const deepMaterialsEnA: DeepMaterial[] = [
     ],
     examples: [
       {
+        title: "Sine and Cosine",
+        problem: "Determine the unit-circle coordinates at $\\theta=5\\pi/6$ and explain their signs.",
+        solution: [
+          "The angle $5\\pi/6=\\pi-\\pi/6$ lies in quadrant II. Reflecting the unit-circle point at $\\pi/6$ across the vertical axis reverses its horizontal coordinate but preserves its vertical coordinate.",
+          "Since the point at $\\pi/6$ is $(\\sqrt3/2,1/2)$, the required point is $(-\\sqrt3/2,1/2)$. Thus $\\cos(5\\pi/6)=-\\sqrt3/2$ and $\\sin(5\\pi/6)=1/2$ by the coordinate definitions.",
+          "Indeed, $(-\\sqrt3/2)^2+(1/2)^2=1$, confirming that the point lies on the unit circle and that the signs agree with quadrant II."
+        ]
+      },
+      {
+        title: "Tangent",
+        problem: "Evaluate $\\tan(\\pi/3)$ and decide whether $\\tan(\\pi/2)$ is defined.",
+        solution: [
+          "By definition, $\\tan\\theta=\\sin\\theta/\\cos\\theta$ only when $\\cos\\theta\\ne0$. At $\\theta=\\pi/3$ the numerator is $\\sqrt3/2$ and the denominator is $1/2$, which is nonzero.",
+          "Consequently $\\tan(\\pi/3)=(\\sqrt3/2)/(1/2)=\\sqrt3$. At $\\theta=\\pi/2$, however, the unit-circle point is $(0,1)$ and its horizontal coordinate is zero.",
+          "Therefore $\\tan(\\pi/2)$ is undefined as a real number; it is not an ordinary real value called infinity. This domain restriction must be preserved when dividing by cosine."
+        ]
+      },
+      {
         title: "Identity Simplification",
-        problem: "Simplify $\\frac{1-\\cos^2x}{\\sin x}$ for $\\sin x\\neq0$.",
-        solution: ["Use $1-\\cos^2x=\\sin^2x$.", "Then $\\frac{\\sin^2x}{\\sin x}=\\sin x$."]
+        problem: "Simplify $\\frac{1-\\cos^2x}{\\sin x}$ subject to $\\sin x\\ne0$.",
+        solution: [
+          "The Pythagorean identity $\\sin^2x+\\cos^2x=1$ holds for every real $x$. Rearranging gives $1-\\cos^2x=\\sin^2x$, so the original expression equals $\\sin^2x/\\sin x$.",
+          "Because the hypothesis explicitly requires $\\sin x\\ne0$, cancellation is legitimate and the simplified expression is $\\sin x$. This is an equality on the domain of the original quotient, not a license to extend that quotient to excluded inputs.",
+          "For example, at $x=\\pi/2$ both expressions equal $1$. At $x=0$ the original quotient is undefined, even though the simplified function takes the value $0$."
+        ]
       },
       {
         title: "Basic Trigonometric Equation",
         problem: "Solve $2\\sin x=1$ for $0\\le x<2\\pi$.",
-        solution: ["We obtain $\\sin x=\\frac12$.", "On this interval, $x=\\frac\\pi6$ or $x=\\frac{5\\pi}{6}$."]
+        solution: [
+          "Dividing by the nonzero constant $2$ gives the equivalent equation $\\sin x=1/2$. The unit circle reaches height $1/2$ in quadrants I and II, with reference angle $\\pi/6$.",
+          "The complete real solution families are $x=\\pi/6+2k\\pi$ and $x=5\\pi/6+2k\\pi$, where $k\\in\\mathbb Z$. Restricting to the specified half-open interval retains only the two representatives with $k=0$.",
+          "Thus the solution set is $\\{\\pi/6,5\\pi/6\\}$. Substitution gives $2\\sin(\\pi/6)=2\\sin(5\\pi/6)=1$; no other solutions exist in one revolution because the horizontal line at height $1/2$ meets the unit circle twice."
+        ]
       },
       {
         title: "Law of Cosines",
-        problem: "A triangle has sides $a=5$, $b=7$, with included angle $C=60^\\circ$. Find side $c$.",
-        solution: ["Use $c^2=a^2+b^2-2ab\\cos C$.", "$c^2=25+49-70\\cdot\\frac12=39$, so $c=\\sqrt{39}$."]
+        problem: "A triangle has sides $a=5$ and $b=7$ enclosing angle $C=60^\\circ$. Determine the opposite side $c$.",
+        solution: [
+          "The given angle is included between two positive sides, so the law of cosines applies: $c^2=a^2+b^2-2ab\\cos C$. In degrees, $\\cos60^\\circ=1/2$.",
+          "Substitution yields $c^2=25+49-2(5)(7)(1/2)=39$. Since a side length must be positive, $c=\\sqrt{39}$ rather than the negative square root.",
+          "The triangle inequality $|7-5|=2<\\sqrt{39}<12=7+5$ is satisfied. Conversely, $(25+49-39)/(2\\cdot5\\cdot7)=1/2$ recovers the given included angle."
+        ]
       }
     ],
     mistakes: [
