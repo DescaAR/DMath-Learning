@@ -211,49 +211,49 @@ export const graphicalLinearProgrammingContent:BookLessonContent = {
     {
       "prompt": "Untuk $x,y\\ge0$, $x+y\\le5$, $2x+y\\le8$, periksa kelayakan $(3,2)$ dan $(4,1)$ serta tentukan seluruh titik sudut.",
       "hint": "Periksa kendala satu per satu dan perpotongan garis batas.",
-      "answer": "1. Pada $(3,2)$ berlaku $3+2=5$ dan $6+2=8$, sehingga titik layak. Pada $(4,1)$ kendala kedua bernilai $9>8$, sehingga tidak layak.\\n\\n2. Pada sumbu x, kendala kedua membatasi x sampai 4, sehingga muncul $(4,0)$. Pada sumbu y, kendala pertama membatasi y sampai 5, sehingga muncul $(0,5)$.\\n\\n3. Perpotongan $x+y=5$ dan $2x+y=8$ menghasilkan $(3,2)$. Bersama titik asal, keempat titik sudut adalah $(0,0),(4,0),(3,2),(0,5)$.\\n\\n4. Semua kandidat telah diuji terhadap seluruh kendala, sehingga daftar titik sudut lengkap.",
+      "answer": "1. Pada $(3,2)$ berlaku $3+2=5$ dan $6+2=8$, sehingga titik layak. Pada $(4,1)$ kendala kedua bernilai $9>8$, sehingga tidak layak.\n\n2. Pada sumbu x, kendala kedua membatasi x sampai 4, sehingga muncul $(4,0)$. Pada sumbu y, kendala pertama membatasi y sampai 5, sehingga muncul $(0,5)$.\n\n3. Perpotongan $x+y=5$ dan $2x+y=8$ menghasilkan $(3,2)$. Bersama titik asal, keempat titik sudut adalah $(0,0),(4,0),(3,2),(0,5)$.\n\n4. Semua kandidat telah diuji terhadap seluruh kendala, sehingga daftar titik sudut lengkap.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "Buktikan titik tengah dua titik layak dari $Ax\\le b$ juga layak. Berikan kontra-contoh jika koefisien kombinasi diperbolehkan negatif.",
       "hint": "Gunakan linearitas A dan pertidaksamaan komponen.",
-      "answer": "1. Ambil $Au\\le b$ dan $Av\\le b$. Maka $A((u+v)/2)=(Au+Av)/2\\le b$, sehingga titik tengah layak.\\n\\n2. Lebih umum, $A(tu+(1-t)v)\\le tb+(1-t)b=b$ untuk $0\\le t\\le1$.\\n\\n3. Untuk koefisien negatif, ambil $P=[0,1]$ pada garis real, $u=0$, $v=1$, dan $t=2$. Kombinasi $2u+(1-2)v=-1$ tidak termasuk P.\\n\\n4. Karena itu syarat koefisien nonnegatif tidak boleh dihilangkan dari argumen konveksitas.",
+      "answer": "1. Ambil $Au\\le b$ dan $Av\\le b$. Maka $A((u+v)/2)=(Au+Av)/2\\le b$, sehingga titik tengah layak.\n\n2. Lebih umum, $A(tu+(1-t)v)\\le tb+(1-t)b=b$ untuk $0\\le t\\le1$.\n\n3. Untuk koefisien negatif, ambil $P=[0,1]$ pada garis real, $u=0$, $v=1$, dan $t=2$. Kombinasi $2u+(1-2)v=-1$ tidak termasuk P.\n\n4. Karena itu syarat koefisien nonnegatif tidak boleh dihilangkan dari argumen konveksitas.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "Maksimumkan $2x+5y$ pada poligon $P$ dan buktikan pilihan titik optimal.",
       "hint": "Evaluasi keempat titik sudut.",
-      "answer": "1. Titik sudut P adalah $(0,0),(3,0),(2,3),(0,4)$. Daerahnya poligon konveks tertutup dan terbatas.\\n\\n2. Nilai $2x+5y$ pada titik-titik itu berturut-turut $0,6,19,20$.\\n\\n3. Prinsip titik sudut menjamin maksimum pada salah satu titik sudut karena tujuan linear.\\n\\n4. Nilai terbesar adalah $20$, sehingga $(0,4)$ optimal. Ketaksamaan ketat dengan semua titik sudut lain menunjukkan titik optimal tunggal.",
+      "answer": "1. Titik sudut P adalah $(0,0),(3,0),(2,3),(0,4)$. Daerahnya poligon konveks tertutup dan terbatas.\n\n2. Nilai $2x+5y$ pada titik-titik itu berturut-turut $0,6,19,20$.\n\n3. Prinsip titik sudut menjamin maksimum pada salah satu titik sudut karena tujuan linear.\n\n4. Nilai terbesar adalah $20$, sehingga $(0,4)$ optimal. Ketaksamaan ketat dengan semua titik sudut lain menunjukkan titik optimal tunggal.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "Temukan pengali nonnegatif yang membuktikan $3x+4y\\le18$ dari kendala $x+2y\\le8$ dan $3x+y\\le9$.",
       "hint": "Samakan koefisien x dan y.",
-      "answer": "1. Cari $\\lambda_1,\\lambda_2\\ge0$ dengan $\\lambda_1+3\\lambda_2=3$ dan $2\\lambda_1+\\lambda_2=4$.\\n\\n2. Penyelesaian sistem memberikan $\\lambda_1=9/5$ dan $\\lambda_2=2/5$, keduanya nonnegatif.\\n\\n3. Menjumlahkan kendala dengan pengali tersebut menghasilkan $3x+4y\\le(9/5)8+(2/5)9=18$.\\n\\n4. Karena $(2,3)$ layak dan memberikan nilai 18, batas atas ini tajam dan membuktikan optimalitas.",
+      "answer": "1. Cari $\\lambda_1,\\lambda_2\\ge0$ dengan $\\lambda_1+3\\lambda_2=3$ dan $2\\lambda_1+\\lambda_2=4$.\n\n2. Penyelesaian sistem memberikan $\\lambda_1=9/5$ dan $\\lambda_2=2/5$, keduanya nonnegatif.\n\n3. Menjumlahkan kendala dengan pengali tersebut menghasilkan $3x+4y\\le(9/5)8+(2/5)9=18$.\n\n4. Karena $(2,3)$ layak dan memberikan nilai 18, batas atas ini tajam dan membuktikan optimalitas.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "Untuk $c_1,c_2>0$, cari syarat perlu dan cukup agar $(2,3)$ optimal pada $P$ untuk tujuan $c_1x+c_2y$.",
       "hint": "Bandingkan dengan dua titik sudut yang bertetangga.",
-      "answer": "1. Nilai tujuan di $(2,3)$ adalah $2c_1+3c_2$, di $(3,0)$ adalah $3c_1$, dan di $(0,4)$ adalah $4c_2$.\\n\\n2. Syarat tidak kalah dari $(3,0)$ setara dengan $c_1\\le3c_2$. Syarat tidak kalah dari $(0,4)$ setara dengan $c_1\\ge c_2/2$.\\n\\n3. Nilai di asal nol, sehingga tidak mengalahkan kandidat karena kedua koefisien positif.\\n\\n4. Dengan prinsip titik sudut, syarat perlu dan cukup adalah $c_2/2\\le c_1\\le3c_2$. Pada batas kesamaan terdapat sisi optimal.",
+      "answer": "1. Nilai tujuan di $(2,3)$ adalah $2c_1+3c_2$, di $(3,0)$ adalah $3c_1$, dan di $(0,4)$ adalah $4c_2$.\n\n2. Syarat tidak kalah dari $(3,0)$ setara dengan $c_1\\le3c_2$. Syarat tidak kalah dari $(0,4)$ setara dengan $c_1\\ge c_2/2$.\n\n3. Nilai di asal nol, sehingga tidak mengalahkan kandidat karena kedua koefisien positif.\n\n4. Dengan prinsip titik sudut, syarat perlu dan cukup adalah $c_2/2\\le c_1\\le3c_2$. Pada batas kesamaan terdapat sisi optimal.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "Tentukan semua solusi optimal $x+2y$ pada poligon $P$ dan buktikan tidak ada solusi optimal lain.",
       "hint": "Gunakan kendala pertama sebagai batas atas.",
-      "answer": "1. Dari kendala pertama diperoleh $x+2y\\le8$ untuk setiap titik layak.\\n\\n2. Titik $(0,4)$ dan $(2,3)$ layak dan mencapai nilai $8$. Konveksitas serta linearitas menunjukkan seluruh ruas di antara kedua titik juga optimal.\\n\\n3. Setiap titik optimal harus memenuhi $x+2y=8$ karena nilai optimalnya 8.\\n\\n4. Irisan garis $x+2y=8$ dengan P tepat ruas $[(0,4),(2,3)]$. Jadi ruas tersebut adalah seluruh himpunan solusi optimal.",
+      "answer": "1. Dari kendala pertama diperoleh $x+2y\\le8$ untuk setiap titik layak.\n\n2. Titik $(0,4)$ dan $(2,3)$ layak dan mencapai nilai $8$. Konveksitas serta linearitas menunjukkan seluruh ruas di antara kedua titik juga optimal.\n\n3. Setiap titik optimal harus memenuhi $x+2y=8$ karena nilai optimalnya 8.\n\n4. Irisan garis $x+2y=8$ dengan P tepat ruas $[(0,4),(2,3)]$. Jadi ruas tersebut adalah seluruh himpunan solusi optimal.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "Tunjukkan bahwa daerah layak tidak terbatas tidak selalu membuat nilai tujuan tidak terbatas: maksimalkan $-x-y$ pada $x,y\\ge0$.",
       "hint": "Bandingkan daerah layak dengan tanda fungsi tujuan.",
-      "answer": "1. Daerah layak adalah kuadran pertama, yang tidak terbatas karena memuat $(t,0)$ untuk semua $t\\ge0$.\\n\\n2. Untuk setiap titik layak, $-x-y\\le0$, sehingga nilai tujuan tetap terbatas ke atas.\\n\\n3. Titik asal $(0,0)$ layak dan memberikan nilai 0, sehingga maksimum tercapai di titik tersebut.\\n\\n4. Contoh ini menunjukkan bahwa keterbatasan P merupakan syarat cukup untuk teorema eksistensi, tetapi tidak perlu bagi setiap tujuan linear.",
+      "answer": "1. Daerah layak adalah kuadran pertama, yang tidak terbatas karena memuat $(t,0)$ untuk semua $t\\ge0$.\n\n2. Untuk setiap titik layak, $-x-y\\le0$, sehingga nilai tujuan tetap terbatas ke atas.\n\n3. Titik asal $(0,0)$ layak dan memberikan nilai 0, sehingga maksimum tercapai di titik tersebut.\n\n4. Contoh ini menunjukkan bahwa keterbatasan P merupakan syarat cukup untuk teorema eksistensi, tetapi tidak perlu bagi setiap tujuan linear.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "Jelaskan secara formal perbedaan masalah $\\max\\{x:x\\ge1,x\\le0\\}$ dan $\\max\\{x:x\\ge0\\}$.",
       "hint": "Uji keberadaan titik layak sebelum menguji batas nilai tujuan.",
-      "answer": "1. Sistem pertama menuntut sekaligus $x\\ge1$ dan $x\\le0$, yang tidak mungkin. Jadi daerah layaknya kosong.\\n\\n2. Sistem kedua mempunyai titik layak, misalnya $x=0$, sehingga bukan masalah infeasible.\\n\\n3. Untuk setiap kandidat $x_0\\ge0$, titik $x_0+1$ juga layak dan memberi nilai tujuan lebih besar. Karena itu masalah kedua unbounded.\\n\\n4. Keduanya tidak mempunyai pemaksimum, tetapi penyebabnya berbeda dan harus dilaporkan dengan istilah yang tepat.",
+      "answer": "1. Sistem pertama menuntut sekaligus $x\\ge1$ dan $x\\le0$, yang tidak mungkin. Jadi daerah layaknya kosong.\n\n2. Sistem kedua mempunyai titik layak, misalnya $x=0$, sehingga bukan masalah infeasible.\n\n3. Untuk setiap kandidat $x_0\\ge0$, titik $x_0+1$ juga layak dan memberi nilai tujuan lebih besar. Karena itu masalah kedua unbounded.\n\n4. Keduanya tidak mempunyai pemaksimum, tetapi penyebabnya berbeda dan harus dilaporkan dengan istilah yang tepat.",
       "provenance": "dmath-original"
     }
   ],
