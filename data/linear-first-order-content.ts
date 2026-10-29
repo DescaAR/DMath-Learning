@@ -65,6 +65,7 @@ export const linearFirstOrderContent:BookLessonContent = {
         "Ambil solusi lain $y$. Selisih $z=y-y_p$ memenuhi $z'+pz=(y'+py)-(y_p'+py_p)=q-q=0$.",
         "Kalikan dengan $\\mu$ sehingga $(\\mu z)'=0$. Karena $I$ interval, $\\mu z=C$ konstan. Karena $\\mu>0$, diperoleh $y=y_p+C\\mu^{-1}$.",
         "Sebaliknya, ambil sembarang $C\\in\\mathbb R$ dan tetapkan $y=y_p+C\\mu^{-1}$. Turunan $\\mu^{-1}$ adalah $-p\\mu^{-1}$; karenanya $(\\mu^{-1})'+p\\mu^{-1}=0$.",
+        "Jika dua solusi mempunyai nilai awal yang sama pada $t_0$, maka selisihnya bernilai nol di titik tersebut. Karena $\\mu(t_0)=1$, konstanta $C=\\mu(t_0)(y(t_0)-y_p(t_0))$ ditentukan secara unik oleh data awal.",
         "Maka $y'+py=(y_p'+py_p)+C[(\\mu^{-1})'+p\\mu^{-1}]=q$. Kedua arah terbukti, sehingga keluarga yang dinyatakan memuat semua dan hanya semua solusi. $\\square$"
       ],
       "explanation": "Keluarga solusi persamaan nonhomogen adalah translasi ruang solusi homogen, bukan ruang vektor kecuali q identik nol."
@@ -101,6 +102,7 @@ export const linearFirstOrderContent:BookLessonContent = {
         "Faktor integrasi $\\mu(t)=\\exp(\\int_{t_0}^{t}p(s)\\,ds)$ bernilai positif di seluruh interval, meskipun $p$ berubah tanda.",
         "Untuk $t\\ge t_0$, fungsi integran $\\mu(s)q(s)$ tidak negatif. Oleh karena itu integral $\\int_{t_0}^{t}\\mu(s)q(s)\\,ds$ juga tidak negatif.",
         "Dari $y_0\\ge0$ diperoleh $y_0+\\int_{t_0}^{t}\\mu(s)q(s)\\,ds\\ge0$.",
+        "Perhatikan bahwa argumen memakai arah integral dari $t_0$ menuju $t\\ge t_0$. Untuk waktu lebih kecil dari $t_0$, integral berorientasi sebaliknya dan tidak harus nonnegatif. Karena itu pembatasan interval waktu pada pernyataan tidak boleh dihilangkan.",
         "Membagi ekspresi tersebut dengan $\\mu(t)>0$ mempertahankan tanda. Rumus faktor integrasi memberikan $y(t)\\ge0$ pada seluruh $[t_0,T]$. $\\square$"
       ],
       "explanation": "Arah waktu penting: kesimpulan tidak otomatis berlaku untuk t lebih kecil dari t0."
