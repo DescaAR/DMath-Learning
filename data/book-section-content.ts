@@ -11,6 +11,7 @@ import { bisectionContent } from "@/data/bisection-content";
 import { nestedQuantifiersContent } from "@/data/nested-quantifiers-content";
 import { graphicalLinearProgrammingContent } from "@/data/graphical-lp-content";
 import { neymanPearsonContent } from "@/data/neyman-pearson-content";
+import { conditionalExpectationContent } from "@/data/conditional-expectation-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -79,6 +80,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "or-lp-grafik":graphicalLinearProgrammingContent,
   // Full hypothesis-testing proof and actual worked solutions replace the generated rubric.
   "stm-neyman-pearson":neymanPearsonContent,
+  // Measure-theoretic conditional expectation, rigorous proofs and actual worked solutions.
+  "ks-conditional-expectation":conditionalExpectationContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
