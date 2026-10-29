@@ -65,38 +65,79 @@ export const deepMaterials: DeepMaterial[] = [
     theorems: [
       {
         title: "Sifat Pecahan Senilai",
-        statement: "Untuk $k\\neq0$, berlaku $\\frac{a}{b}=\\frac{ak}{bk}$.",
+        statement: "Untuk $a,b,k\\in\\mathbb Z$ dengan $b\\neq0$ dan $k\\neq0$, berlaku $\\frac ab=\\frac{ak}{bk}$.",
         proof: [
-          "Karena $\\frac{k}{k}=1$ untuk $k\\neq0$, mengalikan sebuah bilangan dengan $\\frac{k}{k}$ tidak mengubah nilainya.",
-          "Dengan demikian, $\\frac{a}{b}\\cdot\\frac{k}{k}=\\frac{ak}{bk}=\\frac{a}{b}$."
+          "Diketahui $b\\neq0$ dan $k\\neq0$. Maka $bk\\neq0$ dan $\\frac{k}{k}=1$ terdefinisi. Karena perkalian dengan satu tidak mengubah bilangan rasional, $\\frac ab=\\frac ab\\cdot\\frac kk=\\frac{ak}{bk}$.",
+          "Periksa kembali kesamaan dengan perkalian silang: $a(bk)=(ak)b$ oleh sifat asosiatif dan komutatif perkalian bilangan bulat. Jadi kedua representasi menunjuk bilangan yang sama, bukan sekadar tampak serupa.",
+          "Hipotesis $k\\neq0$ diperlukan: untuk $k=0$, ruas kanan menjadi $\\frac00$ yang tidak terdefinisi. Dengan demikian sifat pecahan senilai terbukti untuk semua faktor yang diperbolehkan."
         ],
-        why: "Sifat ini menjelaskan mengapa pembilang dan penyebut boleh dikalikan dengan bilangan yang sama ketika mencari penyebut bersama."
+        why: "Pembilang dan penyebut hanya boleh dikalikan atau dibagi oleh faktor sama yang tidak nol; ini menjadi dasar penyederhanaan dan penyebut bersama."
       },
       {
         title: "Kriteria Perbandingan Silang",
-        statement: "Untuk $b,d>0$, berlaku $\\frac{a}{b}<\\frac{c}{d}$ jika dan hanya jika $ad<bc$.",
+        statement: "Jika $a,c\\in\\mathbb Z$ dan $b,d\\in\\mathbb Z$ dengan $b>0$, $d>0$, maka $\\frac ab<\\frac cd$ jika dan hanya jika $ad<bc$.",
         proof: [
-          "Karena $bd>0$, kedua ruas pertidaksamaan boleh dikalikan dengan $bd$ tanpa mengubah arah tanda.",
-          "Dari $\\frac{a}{b}<\\frac{c}{d}$ diperoleh $ad<bc$. Langkah yang sama dapat dibalik, jadi kedua pernyataan ekuivalen."
+          "Diketahui $b,d>0$, sehingga $bd>0$. (⇒) Andaikan $\\frac ab<\\frac cd$. Mengalikan kedua ruas dengan $bd$ yang positif mempertahankan arah pertidaksamaan. Hasilnya $ad<bc$.",
+          "(⇐) Sebaliknya, andaikan $ad<bc$. Membagi kedua ruas dengan $bd>0$ mempertahankan arah tanda dan menghasilkan $\\frac{ad}{bd}<\\frac{bc}{bd}$, yakni $\\frac ab<\\frac cd$. Kedua implikasi sudah dibuktikan.",
+          "Syarat tanda tidak boleh diabaikan. Misalnya $\\frac1{-2}<\\frac12$, tetapi $1\\cdot2=2$ tidak kurang dari $(-2)\\cdot1=-2$. Penyebut negatif harus dinormalkan terlebih dahulu. Dengan demikian kriteria terbukti."
         ],
-        why: "Kriteria ini memberi cara membandingkan pecahan tanpa mengubahnya ke desimal."
+        why: "Perkalian silang sah sebagai perbandingan tepat ketika tanda pengali diperhatikan; normalisasi penyebut mencegah kesimpulan yang terbalik."
       }
     ],
     examples: [
       {
+        title: "Pecahan",
+        problem: "Jelaskan mengapa $\\frac{-3}{4}=\\frac3{-4}$ dan mengapa $\\frac30$ bukan pecahan yang sah.",
+        solution: [
+          "Diketahui pembilang dan penyebut berupa bilangan bulat. Definisi pecahan mensyaratkan penyebut tak nol. Penyebut $4$ dan $-4$ memenuhi syarat tersebut; keduanya menghasilkan nilai negatif karena tanda pembilang dan penyebut berlawanan.",
+          "Kalikan pembilang dan penyebut $\\frac3{-4}$ dengan $-1\\neq0$ untuk memperoleh $\\frac{-3}{4}$. Kedua bentuk mewakili titik yang sama pada garis bilangan, yaitu tiga perempat satuan di kiri nol.",
+          "Sebaliknya, $\\frac30$ melibatkan pembagian oleh nol yang tidak didefinisikan pada bilangan rasional. Dengan demikian dua pecahan pertama sah dan senilai, sedangkan bentuk terakhir tidak."
+        ]
+      },
+      {
+        title: "Pecahan Senilai",
+        problem: "Periksa apakah $\\frac35$, $\\frac{12}{20}$, dan $\\frac3{10}$ semuanya senilai.",
+        solution: [
+          "Diketahui ketiga penyebut tidak nol. Dari sifat pecahan senilai dengan faktor $4$, diperoleh $\\frac35=\\frac{3\\cdot4}{5\\cdot4}=\\frac{12}{20}$. Kesetaraan ini dapat diverifikasi karena $3\\cdot20=5\\cdot12=60$.",
+          "Untuk membandingkan $\\frac35$ dengan $\\frac3{10}$, perkalian silang memberi $3\\cdot10=30$, sedangkan $5\\cdot3=15$. Kedua hasil berbeda, sehingga pecahan tersebut tidak senilai.",
+          "Jadi hanya $\\frac35$ dan $\\frac{12}{20}$ yang mewakili bilangan sama. Kesamaan pembilang tanpa mempertimbangkan penyebut bukan alasan yang sah untuk menyatakan dua pecahan senilai."
+        ]
+      },
+      {
+        title: "Pecahan Sederhana",
+        problem: "Sederhanakan $\\frac{18}{24}$ dan buktikan bahwa bentuk akhirnya sudah paling sederhana.",
+        solution: [
+          "Diketahui $18=2\\cdot3^2$ dan $24=2^3\\cdot3$. Karena faktor persekutuan terbesar keduanya $g=\\gcd(18,24)=6$, bagi pembilang dan penyebut dengan $6\\neq0$.",
+          "Diperoleh $\\frac{18}{24}=\\frac{18:6}{24:6}=\\frac34$. Selanjutnya $\\gcd(3,4)=1$, sebab $3$ tidak membagi $4$ dan satu-satunya faktor positif bersama adalah $1$.",
+          "Kesetaraan dapat diperiksa dengan $18\\cdot4=72=24\\cdot3$. Jadi $\\frac34$ memang bentuk paling sederhana dengan penyebut positif."
+        ]
+      },
+      {
         title: "Menentukan Pecahan Senilai",
-        problem: "Tentukan pecahan dengan penyebut $20$ yang senilai dengan $\\frac{3}{5}$.",
-        solution: ["Karena $5\\cdot4=20$, pembilang juga dikalikan $4$.", "Diperoleh $\\frac{3}{5}=\\frac{12}{20}$."]
+        problem: "Tentukan pecahan berpenyebut $20$ yang senilai dengan $\\frac35$, dan verifikasi hasilnya.",
+        solution: [
+          "Diketahui $\\frac35$ dan dicari pembilang bulat $x$ yang memenuhi $\\frac35=\\frac{x}{20}$. Penyebut $5$ berubah menjadi $20$ dengan dikalikan $4\\neq0$. Sifat pecahan senilai mengharuskan pembilang juga dikalikan faktor yang sama.",
+          "Dengan demikian $\\frac35=\\frac{3\\cdot4}{5\\cdot4}=\\frac{12}{20}$, sehingga $x=12$. Sebagai verifikasi, perkalian silang memberi $3\\cdot20=60$ dan $5\\cdot12=60$.",
+          "Karena persamaan $5x=60$ mempunyai satu solusi, pembilang yang diminta tunggal, yaitu $12$."
+        ]
       },
       {
         title: "Membandingkan Pecahan",
-        problem: "Bandingkan $\\frac{5}{8}$ dan $\\frac{3}{5}$.",
-        solution: ["Hitung hasil kali silang: $5\\cdot5=25$ dan $3\\cdot8=24$.", "Karena $25>24$, diperoleh $\\frac{5}{8}>\\frac{3}{5}$."]
+        problem: "Bandingkan $\\frac58$ dan $\\frac35$, lalu hitung selisih positifnya.",
+        solution: [
+          "Diketahui penyebut $8$ dan $5$ keduanya positif, sehingga kriteria perbandingan silang berlaku. Hitung $5\\cdot5=25$ dan $3\\cdot8=24$. Karena $25>24$, maka $\\frac58>\\frac35$.",
+          "Untuk mengukur selisihnya, tulis kedua pecahan dengan penyebut $40$: $\\frac58-\\frac35=\\frac{25}{40}-\\frac{24}{40}=\\frac1{40}$. Nilai ini positif sehingga sekaligus memverifikasi urutan.",
+          "Dengan demikian $\\frac58$ lebih besar daripada $\\frac35$ sebesar tepat $\\frac1{40}$."
+        ]
       },
       {
         title: "Penjumlahan Berbeda Penyebut",
-        problem: "Hitung $\\frac{2}{3}+\\frac{5}{12}$.",
-        solution: ["Penyebut bersama terkecil adalah $12$.", "$\\frac{2}{3}=\\frac{8}{12}$, jadi $\\frac{8}{12}+\\frac{5}{12}=\\frac{13}{12}=1\\frac{1}{12}$."]
+        problem: "Hitung $\\frac23+\\frac5{12}$ sebagai pecahan biasa dan bilangan campuran.",
+        solution: [
+          "Diketahui penyebut $3$ dan $12$ berbeda. Kelipatan persekutuan terkecilnya $12$, sehingga $\\frac23=\\frac{2\\cdot4}{3\\cdot4}=\\frac8{12}$. Nilai pecahan tidak berubah karena pembilang dan penyebut dikalikan bilangan sama yang tak nol.",
+          "Sekarang kedua suku menyatakan bagian dengan ukuran seperdua belas: $\\frac8{12}+\\frac5{12}=\\frac{8+5}{12}=\\frac{13}{12}$. Penyebut tidak dijumlahkan karena ukuran satu bagiannya tetap.",
+          "Dari pembagian Euclid $13=1\\cdot12+1$ diperoleh $\\frac{13}{12}=1+\\frac1{12}$. Jadi hasilnya $\\frac{13}{12}$ atau $1\\frac1{12}$; $\\gcd(13,12)=1$ memastikan bentuk pecahan biasa telah sederhana."
+        ]
       }
     ],
     mistakes: [

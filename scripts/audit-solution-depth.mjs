@@ -288,6 +288,78 @@ const fine=[1,1,5,5,9,9,13,13];
 assert.equal(fine.slice(0,4).reduce((a,b)=>a+b,0)/4,3);
 assert.equal(fine.slice(4).reduce((a,b)=>a+b,0)/4,11);
 
+
+// Additional public routes outside the 17 book curricula: deep materials and
+// their independent practice banks. These figures are separate from book totals
+// so historical book-only triage counts remain comparable across deployments.
+const {deepMaterials}=loadSource(path.join(root,"data/deep-materials.ts"));
+const {materialPractice}=loadSource(path.join(root,"data/material-practice.ts"));
+const {materialPracticeExtra}=loadSource(path.join(root,"data/material-practice-extra.ts"));
+const {formalChapterContent}=loadSource(path.join(root,"data/formal-chapter-content.ts"));
+const nonBookRows=[],nonBookConcerns=[];
+for(const material of deepMaterials){
+  const url="/materi/"+material.slug;
+  const practice=[...(materialPractice[material.slug]??[]),...(materialPracticeExtra[material.slug]??[])];
+  const formal=formalChapterContent[material.slug];
+  const examples=[...material.examples.map(ex=>({title:ex.title,answer:ex.solution.join(" ")})),
+    ...(formal?.examples??[]).map(ex=>({title:ex.title.id,answer:ex.solution.map(x=>x.id).join(" ")}))];
+  const proofs=[...material.theorems.map(x=>({title:x.title,answer:x.proof.join(" ")})),
+    ...(formal?.blocks??[]).filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind))
+      .map(x=>({title:x.title.id,answer:(x.proof??[]).map(y=>y.id).join(" ")}))];
+  const row={field:material.subject,slug:material.slug,url,exercises:practice.length,
+    shortExercises:0,genericExercises:0,workedExamples:examples.length,
+    shortExamples:0,formalResults:proofs.length,shortProofs:0};
+  for(const item of practice){
+    const answer=normalize(item.answer.id),generic=likelyUnsolved(answer);
+    if(answer.length<300||generic){
+      if(answer.length<300)row.shortExercises++;
+      if(generic)row.genericExercises++;
+      nonBookConcerns.push({field:material.subject,slug:material.slug,url,
+        type:generic?"generic-exercise-answer":"short-exercise-answer",
+        id:item.id,textLength:answer.length,prompt:normalize(item.prompt.id).slice(0,180)});
+    }
+  }
+  for(const [index,ex] of examples.entries())if(normalize(ex.answer).length<380){
+    row.shortExamples++;
+    nonBookConcerns.push({field:material.subject,slug:material.slug,url,
+      type:"short-worked-example",index:index+1,title:ex.title,textLength:normalize(ex.answer).length});
+  }
+  for(const item of proofs)if(normalize(item.answer).length<250){
+    row.shortProofs++;
+    nonBookConcerns.push({field:material.subject,slug:material.slug,url,
+      type:"brief-or-missing-proof",title:item.title,textLength:normalize(item.answer).length});
+  }
+  nonBookRows.push(row);
+}
+// Mathematical regression: the original non-book fractions lesson and its
+// independently rendered exercises must retain their authored solutions.
+const fraction=deepMaterials.find(x=>x.slug==="pecahan");
+assert.ok(fraction && fraction.subject==="Aritmetika");
+const fractionFormal=formalChapterContent.pecahan;
+const fractionPractice=[...(materialPractice.pecahan??[]),...(materialPracticeExtra.pecahan??[])];
+assert.equal(fraction.examples.length,6);
+assert.equal(fractionPractice.length,10);
+assert.ok(fractionFormal?.examples.some(ex=>ex.title.id==="Representasi Rasional"));
+for(const definition of fraction.definitions){
+  assert.ok(fraction.examples.some(ex=>ex.title===definition.title),
+    "Missing immediate fraction definition example: "+definition.title);
+}
+const fractionProof=fractionFormal.blocks.find(x=>x.title.id==="Teorema Bentuk Paling Sederhana");
+assert.ok(fractionProof?.proof?.some(x=>x.id.includes("Lemma Euclid")),
+  "Lowest-terms uniqueness must invoke divisibility, not just prime support");
+for(const id of ["F-03","F-04","F-05","F-08","F-10"]){
+  const item=fractionPractice.find(x=>x.id===id);
+  assert.ok(item && normalize(item.answer.id).length>=300,
+    "Reviewed original fraction solution is missing: "+id);
+}
+assert.equal(3*20,5*12);
+assert.equal(18*4,24*3);
+assert.equal(5*5-3*8,1);
+assert.equal(3/4-2/5+7/10,21/20);
+assert.equal((9/10-3/5)*80,24);
+assert.equal((13/3-1)/6,5/9);
+assert.equal(1/(1+1/(1+1/2)),3/5);
+
 const totals=subjects.reduce((out,row)=>{
   for(const [k,v] of Object.entries(row))if(typeof v==="number")out[k]=(out[k]??0)+v;
   return out;
@@ -297,12 +369,12 @@ const catalogStart=fieldNamesSource.indexOf("export const subjects = [");
 const catalogEnd=fieldNamesSource.indexOf("];",catalogStart);
 const catalogSlice=fieldNamesSource.slice(catalogStart,catalogEnd);
 const publicFields=Array.from(catalogSlice.matchAll(/"([^"]+)"/g),x=>x[1]);
-const report={scope:"17 book curricula within a 26-field public directory",method:"length-and-generic-text triage, not mathematical correctness verification",publicFields,totals,subjects,unresolved:concerns};
+const report={scope:"17 book curricula plus independent deep-material pages and practice banks within the 26-field public directory",method:"length-and-generic-text triage, not mathematical correctness verification",publicFields,totals,subjects,unresolved:concerns,nonBook:{pages:nonBookRows.length,subjects:nonBookRows,unresolved:nonBookConcerns}};
 if(process.argv.includes("--json")){
   const target=path.join(root,"solution-depth-report.json");
   fs.writeFileSync(target,JSON.stringify(report,null,2)+"\n");
   console.log("Full solution-depth gap report: "+target);
 }
-console.log("Solution depth audit:",JSON.stringify({bookCurricula:subjects.length,publicFields:publicFields.length,shortExercises:totals.shortExercises,shortExamples:totals.shortExamples,shortProofs:totals.shortProofs,genericExercises:totals.genericExercises,reviewedSolutionsValidated:checked.length}));
+console.log("Solution depth audit:",JSON.stringify({bookCurricula:subjects.length,publicFields:publicFields.length,shortExercises:totals.shortExercises,shortExamples:totals.shortExamples,shortProofs:totals.shortProofs,genericExercises:totals.genericExercises,reviewedSolutionsValidated:checked.length,nonBookPages:nonBookRows.length,nonBookShortExercises:nonBookRows.reduce((n,r)=>n+r.shortExercises,0),nonBookShortExamples:nonBookRows.reduce((n,r)=>n+r.shortExamples,0)}));
 assert.equal(publicFields.length,26,"Public site catalog should include 26 fields");
 assert.ok(subjects.length>=17,"Audit expected 17 active book curricula");

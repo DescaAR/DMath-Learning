@@ -65,9 +65,9 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         title:t("Teorema Bentuk Paling Sederhana","Lowest-Terms Theorem"),
         statement:t("Setiap bilangan rasional tak nol mempunyai representasi $\\frac ab$ dengan $\\gcd(a,b)=1$, dan representasi ini unik sampai perubahan tanda serentak pada pembilang dan penyebut.","Every nonzero rational number has a representation $\\frac ab$ with $\\gcd(a,b)=1$, unique up to simultaneously changing the signs of numerator and denominator."),
         proof:[
-          t("Mulai dari sembarang representasi $\\frac mn$ dengan $n\\neq0$, lalu ambil $g=\\gcd(m,n)$.","Start with any representation $\\frac mn$ with $n\\neq0$, and let $g=\\gcd(m,n)$."),
-          t("Tuliskan $m=ga$ dan $n=gb$. Dengan demikian $\\frac mn=\\frac ab$ dan $\\gcd(a,b)=1$.","Write $m=ga$ and $n=gb$. Then $\\frac mn=\\frac ab$ and $\\gcd(a,b)=1$."),
-          t("Untuk keunikan, andaikan $\\frac ab=\\frac cd$ dengan kedua pasangan koprima. Dari $ad=bc$, setiap faktor prima pembagi $a$ harus membagi $c$, dan sebaliknya. Dengan tanda penyebut disepakati positif, diperoleh $a=c$ dan $b=d$.","For uniqueness, suppose $\\frac ab=\\frac cd$ with both pairs coprime. From $ad=bc$, every prime divisor of $a$ must divide $c$, and conversely. With positive denominators fixed, one obtains $a=c$ and $b=d$.")
+          t("Ambil bilangan rasional $q\\neq0$ dengan representasi $q=\\frac mn$, $m,n\\in\\mathbb Z$, $n\\neq0$. Tetapkan $g=\\gcd(|m|,|n|)>0$, lalu $a=m/g$ dan $b=n/g$. Maka $a,b$ bilangan bulat, $\\gcd(|a|,|b|)=1$, dan $\\frac mn=\\frac ab$. Jika $b<0$, ganti keduanya dengan lawannya sehingga penyebut positif. Ini membuktikan keberadaan representasi sederhana.","Let $q\\neq0$ be rational and choose $q=\\frac mn$ with integers $m,n$ and $n\\neq0$. Put $g=\\gcd(|m|,|n|)>0$, $a=m/g$, and $b=n/g$. Then $a,b$ are integers, $\\gcd(|a|,|b|)=1$, and $\\frac mn=\\frac ab$. If $b<0$, negate both entries to obtain a positive denominator. This proves existence."),
+          t("Untuk keunikan, andaikan $\\frac ab=\\frac cd$ dengan $b,d>0$ serta $\\gcd(|a|,b)=\\gcd(|c|,d)=1$. Dari $ad=bc$ diperoleh $a\\mid bc$. Karena $\\gcd(|a|,b)=1$, Lemma Euclid mengakibatkan $a\\mid c$. Dengan menukar peran kedua pecahan, dari $c\\mid ad$ dan $\\gcd(|c|,d)=1$ diperoleh $c\\mid a$.","For uniqueness, suppose $\\frac ab=\\frac cd$ with $b,d>0$ and $\\gcd(|a|,b)=\\gcd(|c|,d)=1$. The equality $ad=bc$ implies $a\\mid bc$. Since $\\gcd(|a|,b)=1$, Euclid's lemma gives $a\\mid c$. Interchanging the roles, $c\\mid ad$ and $\\gcd(|c|,d)=1$ yield $c\\mid a$."),
+          t("Karena $q\\neq0$, pembilang $a,c$ tidak nol. Dua bilangan bulat tak nol yang saling membagi mempunyai nilai mutlak sama, sehingga $|a|=|c|$. Penyebut positif membuat tanda $a$ dan $c$ sama; jadi $a=c$. Dari $ad=bc$ dan $a\\neq0$ diperoleh $d=b$. Tanpa konvensi penyebut positif, hanya perubahan tanda serentak yang mungkin. Keberadaan dan keunikan telah dibuktikan.","As $q\\neq0$, both numerators are nonzero. Two nonzero integers dividing each other have equal absolute values, so $|a|=|c|$. Positive denominators force the same numerator sign; hence $a=c$. Then $ad=bc$ and $a\\neq0$ imply $d=b$. Without requiring positive denominators, simultaneous sign reversal is the only alternative. Existence and uniqueness are proved.")
         ]
       },
       {
@@ -81,6 +81,17 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
       }
     ],
     examples:[
+      {
+        title:t("Representasi Rasional","Rational Representation"),
+        problem:t("Periksa apakah $\\frac{-6}{8}$ dan $\\frac3{-4}$ sama, dan apakah $\\frac30$ sah.","Determine whether $\\frac{-6}{8}$ equals $\\frac3{-4}$ and whether $\\frac30$ is valid."),
+        strategy:t("Periksa penyebut terlebih dahulu, lalu gunakan perkalian silang.","Check denominators first, then apply the cross-product criterion."),
+        solution:[
+          t("Penyebut $8$ dan $-4$ keduanya tidak nol. Perkalian silang menghasilkan $(-6)(-4)=24=8\\cdot3$, sehingga kedua representasi rasional sama.","Both denominators, $8$ and $-4$, are nonzero. The cross-products are $(-6)(-4)=24=8\\cdot3$, proving equality."),
+          t("Pembagian pembilang dan penyebut $\\frac{-6}{8}$ dengan $2$ menghasilkan $-\\frac34$; mengalikan pembilang dan penyebut $\\frac3{-4}$ dengan $-1$ juga menghasilkan $-\\frac34$.","Dividing the numerator and denominator of $\\frac{-6}{8}$ by $2$ gives $-\\frac34$; multiplying both entries of $\\frac3{-4}$ by $-1$ gives the same number."),
+          t("Bentuk $\\frac30$ tidak memenuhi syarat penyebut tak nol. Oleh sebab itu bentuk tersebut tidak mendefinisikan bilangan rasional dan tidak dapat dibandingkan dengan perkalian silang.","The expression $\\frac30$ has zero denominator, so it does not define a rational number and the cross-product test does not apply.")
+        ],
+        conclusion:t("Dua bentuk pertama sama dengan $-\\frac34$; bentuk ketiga tidak terdefinisi.","The first two equal $-\\frac34$; the third is undefined.")
+      },
       {
         title:t("Contoh Detail: Menjumlahkan Pecahan Berbeda Penyebut","Detailed Example: Adding Unlike Fractions"),
         problem:t("Hitung $\\frac7{12}+\\frac5{18}$ dan sederhanakan hasilnya.","Compute $\\frac7{12}+\\frac5{18}$ and simplify the result."),
