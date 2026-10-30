@@ -1282,3 +1282,79 @@ assert.ok(Math.abs((1+4+9)/6-7/3)<1e-12,"RN discrete change of measure failed");
 const rnCurriculum=bookSubjects.find(subject=>subject.slug==="teori-ukuran-probabilitas");
 assert.ok(rnCurriculum?.chapters.some(ch=>ch.sections.some(sec=>sec.slug==="tup-radon-nikodym")),
   "Radon–Nikodym lesson must remain in the public measure-theory curriculum");
+
+
+// Discrete martingale regression: check the rendered lesson and exact finite
+// probability identities. Text thresholds only flag potential depth problems.
+const mgLesson=getBookSectionContent("ks-martingale");
+assert.ok(mgLesson,"Martingale lesson is missing from the public registry");
+const mgDefs=mgLesson.formal.filter(item=>item.kind==="definition");
+const mgResults=mgLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(mgDefs.length,4,"Four precise martingale definitions are required");
+assert.equal(mgResults.length,8,"Eight fully proved martingale results are required");
+assert.equal(mgLesson.examples.length,8,"Eight martingale worked examples are required");
+assert.equal(mgLesson.exercises.length,8,"Eight concrete martingale exercises are required");
+for(const definition of mgDefs){
+  assert.ok(mgLesson.examples.some(ex=>ex.forDefinition===definition.title),
+    "Martingale definition lacks a directly linked example: "+definition.title);
+}
+for(const result of mgResults){
+  assert.ok(result.proof?.length>=3 && normalize(result.proof.join(" ")).length>=450,
+    "Martingale result requires a complete proof: "+result.title);
+  assert.ok(result.proof.join(" ").includes("\\square"),
+    "Martingale proof has no explicit conclusion: "+result.title);
+}
+for(const example of mgLesson.examples){
+  assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>=450,
+    "Martingale worked example needs a concrete derivation: "+example.title);
+}
+for(const exercise of mgLesson.exercises){
+  assert.ok(normalize(exercise.answer).length>=450 &&
+    !/jawaban yang baik|contoh harus|rubrik|soal harus/i.test(exercise.answer),
+    "Martingale exercise is a generic rubric: "+exercise.prompt);
+}
+const mgCurriculum=bookSubjects.find(subject=>subject.slug==="kalkulus-stokastik");
+assert.ok(mgCurriculum?.chapters.some(ch=>ch.sections.some(sec=>sec.slug==="ks-martingale")),
+  "Martingale must remain linked to the public stochastic-calculus curriculum");
+// Fair ±1 increments: enumerate two-step conditional means, quadratic
+// compensation, predictable transforms and bounded optional stopping.
+for(const first of [-1,1]){
+  const branches=[-1,1];
+  const conditionalS2=branches.reduce((sum,second)=>sum+first+second,0)/2;
+  assert.equal(conditionalS2,first,"Two-step random walk not a martingale");
+  const conditionalQ2=branches.reduce((sum,second)=>
+    sum+(first+second)**2-2,0)/2;
+  assert.equal(conditionalQ2,first*first-1,"Quadratic compensation failed");
+  const conditionalT2=branches.reduce((sum,second)=>
+    sum+2*first+first*second,0)/2;
+  assert.equal(conditionalT2,2*first,"Predictable transform failed");
+}
+const mgTwoStop=[
+  {prob:1/2,value:1,time:1},
+  {prob:1/4,value:0,time:2},
+  {prob:1/4,value:-2,time:2}
+];
+const mgThreeStop=[
+  {prob:1/2,value:1},
+  {prob:1/4,value:0},
+  {prob:1/8,value:-1},
+  {prob:1/8,value:-3}
+];
+assert.equal(mgTwoStop.reduce((s,x)=>s+x.prob*x.value,0),0,
+  "Bounded optional stopping failed at two steps");
+assert.equal(mgThreeStop.reduce((s,x)=>s+x.prob*x.value,0),0,
+  "Bounded optional stopping failed at three steps");
+assert.equal(mgTwoStop.reduce((s,x)=>s+x.prob*x.value*x.value,0),
+  mgTwoStop.reduce((s,x)=>s+x.prob*x.time,0),
+  "Quadratic stopping identity failed");
+const mgBiased=[
+  {prob:9/16,value:1},{prob:6/16,value:-1},{prob:1/16,value:-3}
+];
+assert.equal(mgBiased.reduce((s,x)=>s+x.prob*x.value,0),0,
+  "Biased coin centering failed");
+for(let n=1;n<=12;n++){
+  const loss=2**n-1,tail=2**(-n);
+  const stoppedMean=(1-tail)-tail*loss;
+  assert.ok(Math.abs(stoppedMean)<1e-12,
+    "Truncated doubling counterexample failed at n="+n);
+}
