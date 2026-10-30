@@ -1,6 +1,7 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 import { floatingPointContent } from "@/data/floating-point-content";
 import { conditioningStabilityContent } from "@/data/conditioning-stability-content";
+import { truncationErrorContent } from "@/data/truncation-error-content";
 import { statisticalIndependenceContent } from "@/data/statistical-independence-content";
 import { newtonOptimizationContent } from "@/data/newton-optimization-content";
 import { graphDefinitionsContent } from "@/data/graph-definitions-content";
@@ -83,6 +84,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "num-floating-point":floatingPointContent,
   // Condition numbers, residual bounds, backward stability, and solved examples.
   "num-conditioning-stability":conditioningStabilityContent,
+  // Taylor remainders, finite differences, Euler error propagation, and solved original exercises.
+  "num-truncation-error":truncationErrorContent,
   // This carefully authored lesson supersedes the generated graph overview.
   "gt-definitions":graphDefinitionsContent,
   // Full proof of the division algorithm supersedes the generic number-theory page.
