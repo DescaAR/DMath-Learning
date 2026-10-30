@@ -24,7 +24,7 @@ export const linearDualityContent:BookLessonContent = {
     {
       "kind": "definition",
       "title": "Slack dan Reduced Cost",
-      "statement": "Untuk pasangan layak $(x,y)$, slack primal ialah $s=b-Ax\\ge0$, sedangkan surplus dual (reduced cost dalam konvensi ini) ialah $r=A^Ty-c\\ge0$. Kondisi complementary slackness ditulis $y_is_i=0$ untuk semua $i$ dan $x_jr_j=0$ untuk semua $j$.",
+      "statement": "Untuk pasangan layak $(x,y)$, slack primal ialah $s=b-Ax\\ge0$, sedangkan surplus kendala dual (negatif dari reduced cost primal dalam konvensi maksimum ini) ialah $r=A^Ty-c\\ge0$. Kondisi complementary slackness ditulis $y_is_i=0$ untuk semua $i$ dan $x_jr_j=0$ untuk semua $j$.",
       "explanation": "Slack positif menunjukkan kendala primal tidak aktif; surplus positif menunjukkan kendala dual tidak aktif."
     },
     {
