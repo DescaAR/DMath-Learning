@@ -795,4 +795,46 @@ generated["or-lp-formulasi"].examples=[
   }
 ];
 
+// Deeply reviewed ANOVA and CLT examples replace two generic examples per lesson.
+generated["sta-anova-oneway"].examples=[
+  {
+    "title": "Contoh Dekomposisi ANOVA Dua Kelompok",
+    "problem": "Dua perlakuan mempunyai data $A=(1,3)$ dan $B=(5,7)$. Hitung variasi total, antarperlakuan, dan residual.",
+    "solution": [
+      "Diketahui dua kelompok dengan masing-masing dua pengamatan. Rata-rata kelompok adalah $\\bar y_A=2$, $\\bar y_B=6$, dan rata-rata seluruh data $\\bar y_{..}=4$. Variasi total dihitung dari semua deviasi terhadap rata-rata gabungan: $SS_T=(1-4)^2+(3-4)^2+(5-4)^2+(7-4)^2=20$.",
+      "Variasi antarperlakuan adalah $SS_{Tr}=2(2-4)^2+2(6-4)^2=16$. Variasi residual dalam kelompok adalah $SS_E=(1-2)^2+(3-2)^2+(5-6)^2+(7-6)^2=4$.",
+      "Identitas $SS_T=SS_{Tr}+SS_E$ terverifikasi karena $20=16+4$. Suku silang dekomposisi nol karena jumlah deviasi dari rata-rata pada setiap kelompok nol. Derajat bebas masing-masing adalah $3=1+2$; $F=(16/1)/(4/2)=8$, tetapi uji signifikansi memerlukan asumsi model ANOVA."
+    ]
+  },
+  {
+    "title": "Contoh Unit Eksperimen dan Replikasi Semu",
+    "problem": "Dua perlakuan masing-masing diberikan kepada dua petak, lalu setiap petak diukur tiga kali. Tentukan banyak unit eksperimen dan derajat bebas residual untuk ANOVA satu arah pada rata-rata petak.",
+    "solution": [
+      "Diketahui perlakuan diacak pada tingkat petak, bukan pada tingkat pengukuran. Ada dua perlakuan dan dua petak independen per perlakuan, sehingga jumlah unit eksperimen adalah $N=2\\cdot2=4$. Tiga pengukuran pada petak yang sama merupakan subsampel yang dapat berkorelasi; ketiganya tidak otomatis menjadi tiga unit eksperimen independen.",
+      "Jika respons tiap petak diringkas sebagai rata-rata tiga pengukurannya, analisis satu arah mempunyai $k=2$ kelompok dan $N=4$ respons tingkat petak. Derajat bebas perlakuan adalah $k-1=1$, sedangkan derajat bebas residual adalah $N-k=2$.",
+      "Menganggap seluruh $2\\cdot2\\cdot3=12$ pengukuran sebagai unit independen akan menghasilkan derajat bebas residual semu $12-2=10$. Perhitungan itu tidak sah tanpa model korelasi dalam petak. Pemilihan unit eksperimen harus mengikuti tingkat randomisasi perlakuan."
+    ]
+  }
+];
+generated["stm-clt"].examples=[
+  {
+    "title": "Contoh Normalisasi Mean dan Peluang Eksak Normal",
+    "problem": "Misalkan $X_1,\\ldots,X_{100}$ iid normal dengan mean $10$ dan varians $4$. Hitung $P(\\bar X>10.4)$ dan jelaskan apakah pendekatan CLT diperlukan.",
+    "solution": [
+      "Diketahui $X_i\\sim N(10,4)$ dan independen. Jumlah peubah normal independen tetap normal, sehingga $\\bar X\\sim N(10,4/100)=N(10,0.04)$ secara eksak, bukan hanya asimtotik. Standar error mean adalah $\\sqrt{0.04}=0.2$.",
+      "Standardisasi ambang menghasilkan $P(\\bar X>10.4)=P((\\bar X-10)/0.2>2)=P(Z>2)$ untuk $Z\\sim N(0,1)$. Dari fungsi distribusi normal baku, peluangnya $1-\\Phi(2)\\approx0.022750132$.",
+      "Karena populasi normal, distribusi mean sampel normal tepat untuk setiap ukuran sampel positif. CLT memberikan limit yang sama untuk populasi umum dengan varians hingga, tetapi tidak diperlukan untuk membenarkan hasil eksak pada contoh ini."
+    ]
+  },
+  {
+    "title": "Contoh Aproksimasi CLT untuk Binomial Diskret",
+    "problem": "Misalkan $X_i$ iid Bernoulli dengan $P(X_i=1)=1/2$ dan $S=\\sum_{i=1}^{100}X_i$. Aproksimasi $P(S\\ge60)$ dengan koreksi kontinuitas dan bandingkan dengan peluang eksak.",
+    "solution": [
+      "Diketahui $S\\sim\\operatorname{Bin}(100,1/2)$, sehingga $E[S]=100(1/2)=50$ dan $\\operatorname{Var}(S)=100(1/2)(1/2)=25$. Simpangan baku jumlah adalah $5$. CLT memberi pendekatan distribusi $S$ oleh normal dengan mean $50$ dan varians $25$.",
+      "Karena $S$ bernilai bulat, kejadian $S\\ge60$ diaproksimasi dengan ambang kontinu $S>59.5$. Standardisasi memberi $z=(59.5-50)/5=1.9$, sehingga peluang normal berkoreksi kontinuitas adalah $1-\\Phi(1.9)\\approx0.02871656$.",
+      "Peluang eksaknya adalah $2^{-100}\\sum_{k=60}^{100}\\binom{100}{k}\\approx0.02844397$. Selisih absolut pendekatan sekitar $0.00027259$. Contoh ini memisahkan nilai eksak binomial dari pendekatan CLT dan memperlihatkan fungsi koreksi kontinuitas pada distribusi diskret."
+    ]
+  }
+];
+
 export const newAcademicContent=generated;
