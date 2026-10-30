@@ -625,7 +625,7 @@ const checked=[
   ["stm-prob-axioms","example","Contoh Ukuran Probabilitas"],
   ["md-ekuivalensi-logika","example","Contoh Ekuivalensi Logika"],
   ["ks-martingale","example","Martingale Random Walk Dua Langkah"],
-  ["ks-brownian-definition","example","Contoh Increment Brownian Motion"],
+  ["ks-brownian-definition","example","Contoh Distribusi pada Waktu Empat"],
   ["tup-measures","example","Counting Measure"],
   ["tup-classes-sets","example","Sigma-Algebra pada Himpunan Tiga Elemen"],
   ["tup-outer-measure","example","Outer Measure dari Panjang"],
