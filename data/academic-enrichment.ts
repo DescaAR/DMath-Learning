@@ -13,17 +13,17 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
         "title": "Sigma-Algebra Tertutup terhadap Selisih Dua Himpunan",
         "statement": "Jika $\\mathcal A$ sigma-algebra pada $X$ dan $A,B\\in\\mathcal A$, maka $A\\setminus B\\in\\mathcal A$.",
         "proof": [
-          "Diketahui $A,B\\in\\mathcal A$. Ketertutupan terhadap komplemen memberikan $B^c\\in\\mathcal A$.",
-          "Menurut hukum De Morgan, $A\\cap B^c=(A^c\\cup B)^{c}$. Karena $A^c,B\\in\\mathcal A$, gabungannya terukur, dan komplemennya juga terukur.",
-          "Diperoleh $A\\setminus B=A\\cap B^c\\in\\mathcal A$, sehingga sigma-algebra tertutup terhadap selisih dua himpunan."
-        ]
+        "Diketahui \\mathcal A sigma-aljabar pada X dan A,B\\in\\mathcal A. Dibuktikan bahwa A\\setminus B\\in\\mathcal A. Definisi sigma-aljabar menjamin ketertutupan terhadap komplemen dan gabungan terhitung, sehingga khususnya terhadap gabungan dua anggota.",
+        "Karena B\\in\\mathcal A, diperoleh B^c=X\\setminus B\\in\\mathcal A. Demikian pula A^c\\in\\mathcal A. Kedua anggota A^c dan B dapat digabungkan menjadi A^c\\cup B\\in\\mathcal A. Pengambilan komplemen sekali lagi menghasilkan (A^c\\cup B)^c\\in\\mathcal A.",
+        "Menurut hukum De Morgan, (A^c\\cup B)^c=A\\cap B^c. Sementara itu, berdasarkan definisi selisih himpunan, x\\in A\\setminus B jika dan hanya jika x\\in A dan x\\notin B, yang ekuivalen dengan x\\in A\\cap B^c. Dengan demikian A\\setminus B=(A^c\\cup B)^c\\in\\mathcal A. Pembuktian berlaku juga jika A atau B kosong dan tidak membutuhkan asumsi keterhinggaan X. \\square"
+]
       }
     ],
     "exercises": [
       {
         "prompt": "Untuk $\\mathcal A=\\{\\varnothing,\\{1\\},\\{2,3\\},X\\}$ pada $X=\\{1,2,3\\}$, hitung $\\{1\\}\\setminus\\{2,3\\}$ dan $X\\setminus\\{1\\}$; periksa keanggotaannya dalam $\\mathcal A$.",
         "hint": "Gunakan operasi selisih sebagai irisan dengan komplemen.",
-        "answer": "Diperoleh $\\{1\\}\\setminus\\{2,3\\}=\\{1\\}\\in\\mathcal A$. Selain itu, $X\\setminus\\{1\\}=\\{2,3\\}\\in\\mathcal A$. Kedua hasil sesuai sifat ketertutupan sigma-algebra terhadap selisih.",
+        "answer": "Diketahui X=\\{1,2,3\\}, \\mathcal A=\\{\\varnothing,\\{1\\},\\{2,3\\},X\\}, dan dua selisih yang harus dihitung. Menurut definisi, A\\setminus B=\\{x\\in A:x\\notin B\\}=A\\cap B^c. Untuk selisih pertama, \\{1\\} dan \\{2,3\\} saling lepas, sehingga \\{1\\}\\setminus\\{2,3\\}=\\{1\\}. Himpunan \\{1\\} tercantum dalam \\mathcal A. Untuk selisih kedua, X\\setminus\\{1\\}=\\{2,3\\}; hasilnya juga anggota \\mathcal A. Sebagai verifikasi menggunakan aksioma sigma-aljabar, komplemen \\{2,3\\} relatif X adalah \\{1\\}, sedangkan komplemen \\{1\\} adalah \\{2,3\\}. Keduanya memang terukur. Hal ini bukan kebetulan dua contoh: untuk setiap A,B\\in\\mathcal A, identitas A\\setminus B=(A^c\\cup B)^c membuktikan ketertutupan terhadap selisih karena komplemen dan gabungan dua anggota selalu terukur. Jadi kedua selisih yang diminta berturut-turut adalah \\{1\\} dan \\{2,3\\}, serta keduanya berada dalam \\mathcal A.",
         "provenance": "dmath-original"
       }
     ]
