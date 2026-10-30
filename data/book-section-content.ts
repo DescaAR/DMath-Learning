@@ -39,6 +39,7 @@ import { fixedPointContent } from "@/data/fixed-point-content";
 import { linearDualityContent } from "@/data/linear-duality-content";
 import { radonNikodymContent } from "@/data/radon-nikodym-content";
 import { martingaleContent } from "@/data/martingale-content";
+import { itoIsometryContent } from "@/data/ito-isometry-content";
 import { pairedDataContent } from "@/data/paired-data-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
@@ -161,6 +162,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   // Fully proved discrete martingales, bounded stopping and non-rubric exercises.
   "ks-martingale":martingaleContent,
   // Paired observations: covariance-aware inference, exact Student proof and solved problems.
+  // L2 stochastic integrals, predictable steps and exact isometry.
+  "ks-ito-isometry":itoIsometryContent,
   "sta-paired":pairedDataContent,
   // Event-wise versus mutual independence, discrete factorization, and solved counterexamples.
   "stm-independence":statisticalIndependenceContent,
