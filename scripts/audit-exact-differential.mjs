@@ -15,7 +15,9 @@ const results=lesson.formal.filter(x=>["lemma","proposition","theorem","corollar
 assert.equal(definitions.length,4);
 assert.equal(results.length,7);
 assert.equal(lesson.examples.length,8);
-assert.equal(lesson.exercises.length,8);
+assert.equal(lesson.exercises.length,9);
+assert.ok(lesson.exercises.some(x=>x.prompt.includes('EX-09.') && x.prompt.includes('3x^2+2y')),
+  'Original exact-equations exercise must be preserved and fully solved');
 for(const definition of definitions){
   assert.ok(lesson.examples.some(x=>x.forDefinition===definition.title),
     "Definition lacks immediately linked worked example: "+definition.title);
@@ -30,13 +32,14 @@ for(const example of lesson.examples){
     "Worked example incomplete: "+example.title);
 }
 for(const exercise of lesson.exercises){
-  assert.match(exercise.prompt,/^EX-0[1-8]\./);
+  assert.match(exercise.prompt,/^EX-0[1-9]\./);
   assert.ok(exercise.answer.length>420 && !/jawaban yang baik|contoh harus|susun satu soal/i.test(exercise.answer),
     "Exercise has no substantive computation or proof: "+exercise.prompt);
 }
 const registry=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
 assert.match(registry,/import \{ exactDifferentialContent \} from "@\/data\/exact-differential-content";/);
 assert.match(registry,/"de-exact":exactDifferentialContent/);
+assert.match(registry,/if\(sectionSlug==="de-exact"\)return content/);
 const curricula=fs.readFileSync(path.join(root,"data/expanded-book-curricula.ts"),"utf8");
 assert.match(curricula,/"de-exact"/);
 const h=1e-6;
