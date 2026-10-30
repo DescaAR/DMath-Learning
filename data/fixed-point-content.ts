@@ -81,7 +81,8 @@ export const fixedPointContent:BookLessonContent = {
       "proof": [
         "Karena $g(p)=p$, tulis $x-p=(x-g(x))+(g(x)-g(p))$.",
         "Ketaksamaan segitiga dan sifat kontraksi menghasilkan $|x-p|\\le |x-g(x)|+L|x-p|$.",
-        "Pindahkan suku terakhir ke ruas kiri dan bagi dengan $1-L>0$. Faktor $1/(1-L)$ memperlihatkan mengapa residual kecil tidak selalu berarti galat kecil. $\\square$"
+        "Pindahkan suku terakhir ke ruas kiri dan bagi dengan $1-L>0$. Faktor $1/(1-L)$ memperlihatkan mengapa residual kecil tidak selalu berarti galat kecil.",
+        "Batas ini dapat tepat: untuk $g(x)=0.99x+0.01$ pada $[0,2]$, titik tetap $p=1$ dan pada $x=0$ diperoleh $|x-p|=1=|x-g(x)|/(1-0.99)$. Dengan demikian faktor kontraksi tidak dapat diabaikan. $\\square$"
       ]
     },
     {
@@ -180,31 +181,31 @@ export const fixedPointContent:BookLessonContent = {
     {
       "prompt": "FP-01. Untuk $g(x)=(x+2)/3$ dan $p_0=0$, tentukan $p_4$ dan galat terhadap titik tetap.",
       "hint": "Periksa hipotesis, hitung secara eksak, dan verifikasi hasil.",
-      "answer": "Diketahui $p_{n+1}=(p_n+2)/3$ dan $p_0=0$. Titik tetap memenuhi $3p=p+2$, sehingga $p=1$. Iterasi berurutan ialah $p_1=2/3$, $p_2=8/9$, $p_3=26/27$, dan $p_4=80/81$. Galat eksak $|p-p_4|=1/81$. Verifikasi residual: $g(80/81)=242/243$, sehingga $|p_4-g(p_4)|=2/243$. Dengan $L=1/3$, batas residual adalah $(2/243)/(2/3)=1/81$, tepat sama dengan galat yang dihitung.",
+      "answer": "Diketahui $p_{n+1}=(p_n+2)/3$ dan $p_0=0$. Titik tetap memenuhi $3p=p+2$, sehingga $p=1$. Iterasi berurutan ialah $p_1=2/3$, $p_2=8/9$, $p_3=26/27$, dan $p_4=80/81$. Galat eksak $|p-p_4|=1/81$. Verifikasi residual: $g(80/81)=242/243$, sehingga $|p_4-g(p_4)|=2/243$. Dengan $L=1/3$, batas residual adalah $(2/243)/(2/3)=1/81$, tepat sama dengan galat yang dihitung. Secara umum, identitas $p_n=1-3^{-n}$ terbukti dengan induksi: benar pada $n=0$, dan $g(1-3^{-n})=1-3^{-(n+1)}$. Rumus ini memastikan nilai $p_4$ bukan hasil pembulatan.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "FP-02. Buktikan $g(x)=(x+3)/4$ kontraksi pada $[0,2]$ dan hitung batas galat a priori setelah tiga iterasi dari $p_0=2$.",
       "hint": "Periksa hipotesis, hitung secara eksak, dan verifikasi hasil.",
-      "answer": "Untuk $x\\in[0,2]$, $g(x)\\in[3/4,5/4]\\subseteq[0,2]$. Selain itu $|g(x)-g(y)|=|x-y|/4$, sehingga $L=1/4<1$. Titik tetap $4p=p+3$ memberi $p=1$. Iterasi dari $2$ adalah $p_1=5/4$, $p_2=17/16$, dan $p_3=65/64$. Batas a priori menghasilkan $|p-p_3|\\le(1/4)^3|5/4-2|/(1-1/4)=1/64$. Pemeriksaan langsung $|1-65/64|=1/64$ menunjukkan batas tersebut tercapai.",
+      "answer": "Untuk $x\\in[0,2]$, $g(x)\\in[3/4,5/4]\\subseteq[0,2]$. Selain itu $|g(x)-g(y)|=|x-y|/4$, sehingga $L=1/4<1$. Titik tetap $4p=p+3$ memberi $p=1$. Iterasi dari $2$ adalah $p_1=5/4$, $p_2=17/16$, dan $p_3=65/64$. Batas a priori menghasilkan $|p-p_3|\\le(1/4)^3|5/4-2|/(1-1/4)=1/64$. Pemeriksaan langsung $|1-65/64|=1/64$ menunjukkan batas tersebut tercapai. Selain batas a priori, batas a posteriori pada $n=3$ memberi $|p-p_3|\\le(1/4)/(3/4)\\,|65/64-17/16|=(1/3)(3/64)=1/64$. Kedua estimator galat konsisten dengan hasil eksak.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "FP-03. Pada $g(x)=0.99x+0.01$ di $[0,2]$, bandingkan residual dan galat di $x=0$.",
       "hint": "Periksa hipotesis, hitung secara eksak, dan verifikasi hasil.",
-      "answer": "Pemetaan mengirim $[0,2]$ ke $[0.01,1.99]$ dan memiliki $L=0.99$. Titik tetap memenuhi $p=0.99p+0.01$, sehingga $p=1$. Residual di $x=0$ adalah $|0-0.01|=0.01$, tetapi galat sesungguhnya $|0-1|=1$. Batas residual memberi $|x-p|\\le0.01/(1-0.99)=1$, sama dengan galat aktual. Perhitungan ini menunjukkan bahwa residual kecil tanpa informasi kontraksi tidak cukup untuk menyatakan galat kecil.",
+      "answer": "Pemetaan mengirim $[0,2]$ ke $[0.01,1.99]$ dan memiliki $L=0.99$. Titik tetap memenuhi $p=0.99p+0.01$, sehingga $p=1$. Residual di $x=0$ adalah $|0-0.01|=0.01$, tetapi galat sesungguhnya $|0-1|=1$. Batas residual memberi $|x-p|\\le0.01/(1-0.99)=1$, sama dengan galat aktual. Perhitungan ini menunjukkan bahwa residual kecil tanpa informasi kontraksi tidak cukup untuk menyatakan galat kecil. Setelah satu langkah, $x_1=g(0)=0.01$, residual berikutnya $|x_1-g(x_1)|=0.0099$, sedangkan galat ke titik tetap masih $|0.01-1|=0.99$. Faktor rasio residual terhadap galat tetap $0.01$.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "FP-04. Buktikan $g(x)=1-x$ pada $[0,1]$ memiliki titik tetap tunggal tetapi iterasi dari $0$ tidak konvergen.",
       "hint": "Periksa hipotesis, hitung secara eksak, dan verifikasi hasil.",
-      "answer": "Persamaan $p=1-p$ memberikan satu-satunya titik tetap $p=1/2$. Pemetaan mengirim $[0,1]$ ke dirinya sendiri, tetapi $|g(x)-g(y)|=|x-y|$, sehingga $L=1$ dan hipotesis kontraksi ketat gagal. Dari $p_0=0$ diperoleh $p_1=1$, $p_2=0$, $p_3=1$. Induksi memberi $p_{2k}=0$ dan $p_{2k+1}=1$ untuk semua $k\\ge0$. Kedua subsekuens memiliki limit berbeda; karena itu barisan tidak konvergen meskipun titik tetapnya unik.",
+      "answer": "Persamaan $p=1-p$ memberikan satu-satunya titik tetap $p=1/2$. Pemetaan mengirim $[0,1]$ ke dirinya sendiri, tetapi $|g(x)-g(y)|=|x-y|$, sehingga $L=1$ dan hipotesis kontraksi ketat gagal. Dari $p_0=0$ diperoleh $p_1=1$, $p_2=0$, $p_3=1$. Induksi memberi $p_{2k}=0$ dan $p_{2k+1}=1$ untuk semua $k\\ge0$. Kedua subsekuens memiliki limit berbeda; karena itu barisan tidak konvergen meskipun titik tetapnya unik. Jika titik awal justru $p_0=1/2$, barisan konstan $p_n=1/2$. Ini tidak bertentangan dengan contoh tandingan: yang gagal adalah jaminan konvergensi dari setiap titik awal, bukan keberadaan orbit konstan.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "FP-05. Buktikan $g(x)=\\cos x$ kontraksi pada $[0,1]$ dan hitung tiga iterasi dari $p_0=0$.",
       "hint": "Periksa hipotesis, hitung secara eksak, dan verifikasi hasil.",
-      "answer": "Pada $[0,1]$ berlaku $\\cos1\\le\\cos x\\le1$ dan $\\cos1>0$, sehingga $g(I)\\subseteq I$. Turunan $g'(x)=-\\sin x$ memenuhi $|g'(x)|\\le\\sin1<1$. Teorema Nilai Rata-rata memberikan konstanta kontraksi $L=\\sin1$. Iterasi adalah $p_1=\\cos0=1$, $p_2=\\cos1\\approx0.5403023059$, dan $p_3=\\cos(\\cos1)\\approx0.8575532158$. Prinsip Kontraksi membuktikan konvergensi ke solusi tunggal $p=\\cos p$ pada interval, walaupun iterasi awal tidak monoton.",
+      "answer": "Pada $[0,1]$ berlaku $\\cos1\\le\\cos x\\le1$ dan $\\cos1>0$, sehingga $g(I)\\subseteq I$. Turunan $g'(x)=-\\sin x$ memenuhi $|g'(x)|\\le\\sin1<1$. Teorema Nilai Rata-rata memberikan konstanta kontraksi $L=\\sin1$. Iterasi adalah $p_1=\\cos0=1$, $p_2=\\cos1\\approx0.5403023059$, dan $p_3=\\cos(\\cos1)\\approx0.8575532158$. Prinsip Kontraksi membuktikan konvergensi ke solusi tunggal $p=\\cos p$ pada interval, walaupun iterasi awal tidak monoton. Langkah berikutnya ialah $p_4=\\cos(p_3)\\approx0.6542897905$. Residual pada $p_3$ sama dengan $|p_3-p_4|\\approx0.2032634$; residual belum nol, tetapi batas kontraksi memastikan galat akhirnya menyusut.",
       "provenance": "dmath-original"
     },
     {
@@ -216,13 +217,13 @@ export const fixedPointContent:BookLessonContent = {
     {
       "prompt": "FP-07. Untuk $g(x)=x^2$, bandingkan perilaku iterasi dekat titik tetap $0$ dan $1$.",
       "hint": "Periksa hipotesis, hitung secara eksak, dan verifikasi hasil.",
-      "answer": "Titik tetap memenuhi $p^2=p$, sehingga $p\\in\\{0,1\\}$. Karena $g'(1)=2>1$, proposisi titik tetap repulsif berlaku di sekitar $1$. Dari rekursi $x_{n+1}=x_n^2$ diperoleh dengan induksi $x_n=x_0^{2^n}$. Untuk $0<x_0<1$, karena $2^n\\to\\infty$, berlaku $x_n\\to0$; titik tetap $0$ menarik orbit tersebut. Untuk $x_0>1$, barisan meningkat menjauhi $1$. Kedua titik tetap memiliki sifat stabilitas berbeda walaupun berasal dari persamaan yang sama.",
+      "answer": "Titik tetap memenuhi $p^2=p$, sehingga $p\\in\\{0,1\\}$. Karena $g'(1)=2>1$, proposisi titik tetap repulsif berlaku di sekitar $1$. Dari rekursi $x_{n+1}=x_n^2$ diperoleh dengan induksi $x_n=x_0^{2^n}$. Untuk $0<x_0<1$, karena $2^n\\to\\infty$, berlaku $x_n\\to0$; titik tetap $0$ menarik orbit tersebut. Untuk $x_0>1$, barisan meningkat menjauhi $1$. Kedua titik tetap memiliki sifat stabilitas berbeda walaupun berasal dari persamaan yang sama. Sebagai pemeriksaan eksplisit, jika $x_0=1/2$, maka $x_1=1/4$, $x_2=1/16$, dan $x_3=1/256$. Deret nilai ini sesuai dengan rumus $x_n=(1/2)^{2^n}$ dan mendekati nol lebih cepat daripada penurunan geometri biasa.",
       "provenance": "dmath-original"
     },
     {
       "prompt": "FP-08. Untuk $g(x)=(x+2)/3$ dan $p_0=0$, cari $n$ terkecil yang menjamin galat kurang dari $10^{-3}$ menggunakan batas a priori.",
       "hint": "Periksa hipotesis, hitung secara eksak, dan verifikasi hasil.",
-      "answer": "Konstanta kontraksi $L=1/3$, titik tetap $p=1$, dan $|p_1-p_0|=2/3$. Batas a priori memberi $|p-p_n|\\le(1/3)^n(2/3)/(1-1/3)=3^{-n}$. Agar galat kurang dari $10^{-3}$, diperlukan $3^n>1000$. Karena $3^6=729<1000$ dan $3^7=2187>1000$, bilangan terkecil adalah $n=7$. Verifikasi langsung dari rekursi memberikan $p_n=1-3^{-n}$, sehingga galat pada $n=7$ tepat $1/2187<10^{-3}$, sedangkan pada $n=6$ masih $1/729>10^{-3}$.",
+      "answer": "Konstanta kontraksi $L=1/3$, titik tetap $p=1$, dan $|p_1-p_0|=2/3$. Batas a priori memberi $|p-p_n|\\le(1/3)^n(2/3)/(1-1/3)=3^{-n}$. Agar galat kurang dari $10^{-3}$, diperlukan $3^n>1000$. Karena $3^6=729<1000$ dan $3^7=2187>1000$, bilangan terkecil adalah $n=7$. Verifikasi langsung dari rekursi memberikan $p_n=1-3^{-n}$, sehingga galat pada $n=7$ tepat $1/2187<10^{-3}$, sedangkan pada $n=6$ masih $1/729>10^{-3}$. Konstanta $L=1/3$ memang sah karena $g([0,2])=[2/3,4/3]\\subseteq[0,2]$ dan $|g(x)-g(y)|=|x-y|/3$. Dengan demikian penggunaan batas a priori tidak melompati pemeriksaan hipotesis.",
       "provenance": "dmath-original"
     }
   ],
