@@ -58,6 +58,66 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Newton optimization: inspect the actual rendered lesson and verify mathematical identities.
+{
+  const lesson=getBookSectionContent("or-newton-opt");
+  assert.ok(lesson,"Authored Newton optimization lesson is missing");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4);
+  assert.equal(results.length,6);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const item of defs){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===item.title),
+      "Newton definition lacks a directly associated worked example: "+item.title);
+  }
+  for(const item of results){
+    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>450,
+      "Newton proof requires full mathematical steps: "+item.title);
+    assert.ok(item.proof.some(step=>step.includes("\\square")),
+      "Newton proof lacks a closing marker: "+item.title);
+  }
+  for(const item of lesson.examples){
+    assert.ok(item.solution.length>=3 && normalize(item.solution.join(" ")).length>350,
+      "Newton example is incomplete: "+item.title);
+  }
+  for(const item of lesson.exercises){
+    assert.ok(normalize(item.answer).length>330 &&
+      !/jawaban yang baik|contoh harus|susun satu soal|kesimpulan menyatakan struktur/i.test(item.answer),
+      "Newton exercise is generic or insufficient: "+item.prompt);
+  }
+  const curriculum=bookSubjects.find(subject=>subject.slug==="riset-operasi");
+  assert.ok(curriculum?.chapters.some(ch=>ch.sections.some(sec=>sec.slug==="or-newton-opt")),
+    "Newton optimization must remain reachable through the public curriculum");
+  const f=x=>x**4-4*x*x,df=x=>4*x**3-8*x,d2f=x=>12*x*x-8;
+  const p=-df(1)/d2f(1);
+  assert.equal(p,1);
+  assert.equal(df(1)*p,-4);
+  const armijo=(alpha)=>f(1+alpha*p)<=f(1)+0.25*alpha*df(1)*p;
+  assert.equal(armijo(1),false,"Full Newton step must fail Armijo");
+  assert.equal(armijo(0.5),true,"Half Newton step must pass Armijo");
+  assert.equal(f(1.5),-63/16);
+  const q=x=>3*x*x-12*x+7;
+  const qGrad=x=>6*x-12;
+  assert.equal(qGrad(0),-12);
+  assert.equal(0-qGrad(0)/6,2);
+  assert.equal(q(2),-5);
+  for(const x of [-3,-1,0,1,2,5]){
+    assert.equal(q(x)-q(2),3*(x-2)**2);
+  }
+  for(let k=0;k<10;k++){
+    const x=3*(2/3)**k;
+    const next=x-(4*x**3)/(12*x*x);
+    assert.ok(Math.abs(next-3*(2/3)**(k+1))<1e-12);
+  }
+  const hessian=[[2,0],[0,8]],g=[2,-4],direction=[-1,0.5];
+  assert.equal(g[0]*direction[0]+g[1]*direction[1],-4);
+  assert.equal(2*direction[0]**2+8*direction[1]**2,4);
+  assert.ok(hessian[0][0]>0&&hessian[1][1]>0);
+}
+
+
 
 {
 // Regression: statistical independence must be a fully solved, non-rubric public lesson.
