@@ -837,4 +837,21 @@ generated["stm-clt"].examples=[
   }
 ];
 
+// Reviewed specific introductions for LP, ANOVA and CLT, replacing generated boilerplate.
+generated["or-lp-formulasi"].intro=[
+  "Formulasi program linear dimulai dari pertanyaan keputusan, bukan dari memilih rumus yang tampak cocok. Jika bengkel membuat produk A dan B, banyaknya unit produksi dinyatakan oleh $x$ dan $y$, sedangkan setiap batas mesin dan bahan baku harus diturunkan dari konsumsi per unit serta kapasitas yang tersedia. Model yang tampak linear belum tentu sah apabila keputusan harus bulat atau biaya penyiapan muncul hanya ketika mesin dinyalakan.",
+  "Pada model $\\max(3x+2y)$ dengan $x+y\\le4$, $2x+y\\le6$, dan $x,y\\ge0$, kita akan memisahkan tiga langkah: menyusun koefisien dari informasi, memeriksa kelayakan, dan membuktikan optimalitas. Pemeriksaan beberapa titik saja belum cukup untuk menyatakan optimum; penjumlahan kendala dengan pengali nonnegatif memberi sertifikat batas atas yang berlaku pada seluruh daerah layak.",
+  "Pembahasan memakai definisi program linear, teorema titik sudut dengan hipotesis poligon kompak, contoh numerik dengan satuan yang konsisten, serta soal yang diselesaikan sampai pemeriksaan batas. Rujukan: Hamdy A. Taha, Operations Research: An Introduction, edisi ke-10 (2017), dan Bertsimas–Tsitsiklis, Introduction to Linear Optimization (1997)."
+];
+generated["sta-anova-oneway"].intro=[
+  "ANOVA satu arah memisahkan variasi data menjadi perubahan rata-rata antarperlakuan dan penyebaran observasi di dalam perlakuan. Identitas $SS_T=SS_{Tr}+SS_E$ merupakan dekomposisi aljabar yang selalu berlaku untuk data berkelompok dengan rata-rata terdefinisi; penafsiran statistik $F$ sebagai pengujian hipotesis memerlukan asumsi probabilistik tambahan.",
+  "Untuk dua kelompok $A=(1,3)$ dan $B=(5,7)$, rata-rata keseluruhan adalah $4$, jumlah kuadrat total $20$, variasi antarperlakuan $16$, dan residual $4$. Perhitungan ini digunakan untuk memperlihatkan mengapa suku silang lenyap dan bagaimana derajat bebas $3=1+2$ muncul. Nilai $F=8$ tidak otomatis membuktikan perbedaan perlakuan tanpa model galat dan taraf uji yang ditetapkan.",
+  "Contoh kedua membedakan unit eksperimen dari pengukuran berulang pada unit yang sama. Replikasi semu dapat memperbesar derajat bebas residual secara keliru ketika pengacakan terjadi pada tingkat petak tetapi seluruh pengukuran diperlakukan independen. Rujukan: Douglas C. Montgomery, Design and Analysis of Experiments, edisi ke-10 (2019), dan George Casella–Roger L. Berger, Statistical Inference, edisi ke-2 (2002)."
+];
+generated["stm-clt"].intro=[
+  "Teorema Limit Pusat menjelaskan bentuk distribusi jumlah atau rata-rata dari banyak pengamatan independen ketika distribusi asal tidak harus normal. Konvergensi dalam distribusi tidak berarti bahwa rata-rata sampel berukuran berhingga pasti normal, dan dua populasi dengan mean serta varians sama dapat memberikan peluang ekor yang berbeda.",
+  "Dengan $n=100$, mean populasi $10$, dan varians $4$, standard error rata-rata adalah $0.2$ dan ambang $10.4$ berada dua standard error di atas mean. Pendekatan normal menghasilkan peluang ekor sekitar $0.02275$. Jika populasi normal, perhitungan itu eksak; jika distribusi asal lain, nilainya hanya pendekatan yang akurasinya dipengaruhi bentuk distribusi.",
+  "Untuk data Bernoulli, jumlah pengamatan mengikuti binomial diskret. Contoh koreksi kontinuitas membandingkan peluang eksak $P(\\operatorname{Bin}(100,1/2)\\ge60)$ dengan aproksimasi normal dan menampilkan besar selisihnya. Rujukan: Sheldon Ross, A First Course in Probability, edisi ke-10 (2019), dan Casella–Berger, Statistical Inference, edisi ke-2 (2002)."
+];
+
 export const newAcademicContent=generated;
