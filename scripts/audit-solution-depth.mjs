@@ -476,7 +476,7 @@ const checked=[
   ["sta-simple-regression","example","Contoh Model Regresi Linear"],
   ["stm-prob-axioms","example","Contoh Ukuran Probabilitas"],
   ["md-ekuivalensi-logika","example","Contoh Ekuivalensi Logika"],
-  ["ks-martingale","example","Contoh Martingale Random Walk"],
+  ["ks-martingale","example","Martingale Random Walk Dua Langkah"],
   ["ks-brownian-definition","example","Contoh Increment Brownian Motion"],
   ["tup-measures","example","Counting Measure"],
   ["tup-classes-sets","example","Sigma-Algebra pada Himpunan Tiga Elemen"],
