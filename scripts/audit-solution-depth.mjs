@@ -1743,3 +1743,45 @@ for(const c of [-5,-2,0,2,5]){
     assert.ok(Math.abs(z-x2)<1e-12);
   }
 }
+
+
+// Curated LP/ANOVA/CLT regression: test the exact original public exercises, not rubric length alone.
+{
+  const cases=[
+    ["or-lp-formulasi","Maksimumkan $z=3x+2y$",["3x+2y\\le10","tunggal","(2,2)"]],
+    ["sta-anova-oneway","Kelompok A mempunyai data",["20=4+16","suku silang","F=16/2=8"]],
+    ["stm-clt","Misalkan $X_1",["0.022750132","APROKSIMASI","Berry"]]
+  ];
+  for(const [slug,prefix,markers] of cases){
+    const lesson=getBookSectionContent(slug);
+    assert.ok(lesson,"Missing rendered lesson for curated regression: "+slug);
+    const exercise=lesson.exercises.find(item=>item.prompt.includes(prefix));
+    assert.ok(exercise,"Missing original curated exercise: "+slug);
+    assert.ok(normalize(exercise.answer).length>900,
+      "Curated answer still lacks derivation and verification: "+slug);
+    for(const marker of markers)
+      assert.ok(exercise.answer.includes(marker),
+        "Missing substantive mathematical check "+marker+" in "+slug);
+    assert.ok(!/jawaban yang baik|contoh harus|rubrik/i.test(exercise.answer),
+      "Curated answer contains a generic rubric: "+slug);
+  }
+  // LP upper-bound certificate and uniqueness at the active constraints.
+  const lp=(x,y)=>3*x+2*y;
+  for(let x=0;x<=3;x+=0.25)for(let y=0;y<=4;y+=0.25)
+    if(x+y<=4+1e-12 && 2*x+y<=6+1e-12)
+      assert.ok(lp(x,y)<=10+1e-12);
+  assert.equal(lp(2,2),10);
+  // Exact ANOVA decomposition and degrees of freedom.
+  const groups=[[1,3],[5,7]];
+  const means=groups.map(g=>g.reduce((a,b)=>a+b,0)/g.length);
+  const all=groups.flat(), grand=all.reduce((a,b)=>a+b,0)/all.length;
+  const sst=all.reduce((s,v)=>s+(v-grand)**2,0);
+  const ssb=groups.reduce((s,g,i)=>s+g.length*(means[i]-grand)**2,0);
+  const sse=groups.reduce((s,g,i)=>s+g.reduce((t,v)=>t+(v-means[i])**2,0),0);
+  assert.deepEqual([sst,ssb,sse],[20,16,4]);
+  assert.equal(ssb/(groups.length-1)/(sse/(all.length-groups.length)),8);
+  // CLT standard error and standardized threshold; approximation not exact by moments alone.
+  const se=Math.sqrt(4/100);
+  assert.equal(se,0.2);
+  assert.ok(Math.abs((10.4-10)/se-2)<1e-12);
+}
