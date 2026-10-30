@@ -1,3 +1,19 @@
+## Catatan sesi 2026-10-31 — Tahapan Studi Riset Operasi (pemodelan dan validasi)
+
+**Rotasi dan sumber:** Bidang publik 22 Riset Operasi, submateri `or-proses-studi`, https://descaar.github.io/DMath-Learning/materi/riset-operasi/or-proses-studi/. Pembahasan terkait bidang 21 Pemodelan Matematika, tetapi halaman ini secara aktual berada pada katalog Riset Operasi; jangan menghitungnya sebagai audit manual mandiri bidang 21. Submateri `num-error-iterative-root` yang telah selesai pada sesi sebelumnya tidak diulang.
+
+**Baseline terverifikasi:** artifact `dmath-material-depth-audit` workflow 41125335446 (commit 4951a215a2fe) diunduh dan dibaca. Untuk URL target, `solution-depth-report.json` memuat 2 contoh terbahas pendek (312 dan 317 karakter); `material-depth-report.json` memuat 1 pengantar generik. Sumber generator `data/new-academic-content.ts` juga memiliki latihan rubrik yang panjangnya dapat melewati ambang triage; tidak boleh dianggap memadai hanya karena tidak ditandai pendek. Total baseline seluruh katalog: 5.863 latihan pendek, 3.390 contoh pendek, 708 jawaban generik, 1.032 bukti pendek, dan 379 pengantar generik. Seluruh angka adalah indikator triage, bukan sertifikasi akademik.
+
+**Revisi sumber yang dirender:** `data/operations-study-content.ts` (24.550 karakter) menggantikan sumber generator melalui override `data/book-section-content.ts`. Materi sekarang berisi 4 definisi dengan contoh langsung, 5 proposisi/teorema dengan pembuktian dua arah ketika perlu, 8 contoh terbahas, dan 8 latihan PS-01–PS-08 dengan solusi matematis spesifik. Hasil formal meliputi irisan daerah layak skenario, sertifikat primal-dual, batas sensitivitas koefisien, identitas galat parameter dari residual, dan reduksi kapasitas tangguh pada interval. Contoh dan latihan mencakup formulasi, sertifikat optimum, validasi residual dan MSE, perubahan koefisien, ketidakidentifikasian, pemeriksaan satuan, serta skenario kapasitas. Visualisasi baru: 0; fokus pada pembuktian dan solusi asli, bukan ornamen.
+
+**Regresi:** `scripts/audit-solution-depth.mjs` kini memeriksa sumber yang benar-benar dirender, keterkaitan setiap definisi dengan contoh, penutup 5 bukti, delapan contoh dan delapan latihan, serta identitas numerik sertifikat nominal/tangguh, residual, dan sensitivitas. Pengujian npm penuh, laporan JSON pascarevisi, TypeScript, build, HTML KaTeX, dan deployment harus diverifikasi dari workflow commit terakhir; tidak boleh diklaim lulus hanya karena commit GitHub diterima. Terminal lokal gagal mengakses GitHub akibat DNS sehingga audit otomatis dilaksanakan melalui GitHub Actions.
+
+**Jejak commit:** sumber khusus `0be36199d33a`, registrasi render `c4303550dbbe`, regresi `981520a31421`. Hanya branch `github-pages-static` yang ditulis. `main`, konfigurasi Vercel, dan `data/lesson-videos.ts` tidak disentuh.
+
+**Prioritas sesi berikutnya:** (1) periksa workflow dan artifact audit commit terakhir, lalu catat delta 2→0 contoh pendek dan 1→0 pengantar generik hanya bila laporan membenarkannya; (2) periksa KaTeX HTML dan regresi; (3) lanjutkan rotasi ke bidang publik 21 Pemodelan Matematika yang benar-benar memiliki halaman sendiri atau bank soal independen bidang 19, bukan mengulang materi Riset Operasi yang sudah diaudit; (4) teliti bank soal generik yang lolos ambang panjang.
+
+---
+
 ## Catatan sesi 2026-10-31 — Analisis Galat Metode Iteratif (bidang 19/18)
 
 **Rotasi dan URL:** Metode Numerik (bidang publik 19), submateri num-error-iterative-root yang terdaftar dalam buku internal Analisis Numerik (bidang publik 18), https://descaar.github.io/DMath-Learning/materi/analisis-numerik/num-error-iterative-root/. Sesi sebelumnya menyelesaikan num-jacobi-gauss-seidel; halaman itu tidak diulang. Laporan audit sebelumnya mengenali 26/26 bidang publik, 1.277 halaman buku, serta materi non-buku; cakupan tersebut berarti terindeks otomatis, bukan telah ditelaah manual seluruhnya.
