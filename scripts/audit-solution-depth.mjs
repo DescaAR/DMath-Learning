@@ -1266,7 +1266,11 @@ for(let mask=0;mask<8;mask++){
 // Continuous density, chain rule, and change-of-measure exercise checks.
 for(let k=0;k<=100;k++){
   const t=k/100;
-  assert.ok(Math.abs((t*t)-(t*t))<1e-12);
+  // Antiderivative of 6x(1-x): F(t)=3t²-2t³; Simpson is exact for quadratics.
+  const f=x=>6*x*(1-x);
+  const simpson=t*(f(0)+4*f(t/2)+f(t))/6;
+  assert.ok(Math.abs(simpson-(3*t*t-2*t*t*t))<1e-12,
+    "RN polynomial density integral failed at "+t);
   assert.ok(Math.abs((2*t*t)*(2*t)-(4*t*t*t))<1e-12,
     "Radon–Nikodym chain rule failed at "+t);
   assert.ok(Math.abs((3*t/2)*(2*t)-3*t*t)<1e-12,
