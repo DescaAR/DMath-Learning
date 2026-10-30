@@ -1628,3 +1628,69 @@ for(const c of [-5,-2,0,2,5]){
   assert.equal(1.02-2.02+1,0);
   assert.ok(Math.abs((1.01-1)**2-0.0001)<1e-12);
 }
+
+
+// Truncation-error regression: the public lesson, source solutions, and numerical identities.
+{
+  const lesson=getBookSectionContent("num-truncation-error");
+  assert.ok(lesson,"Authored truncation-error lesson missing from public registry");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4);
+  assert.equal(results.length,6);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const item of defs){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===item.title),
+      "Truncation definition has no directly linked example: "+item.title);
+  }
+  for(const item of results){
+    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>350,
+      "Truncation proof is incomplete: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),
+      "Truncation proof lacks closure: "+item.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>350,
+      "Truncation example is incomplete: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>450 &&
+      !/jawaban yang baik|contoh harus|rubrik|soal harus/i.test(exercise.answer),
+      "Truncation solution still contains a rubric: "+exercise.prompt);
+  const numerical=bookSubjects.find(subject=>subject.slug==="analisis-numerik");
+  assert.ok(numerical?.chapters.some(ch=>ch.sections.some(sec=>sec.slug==="num-truncation-error")),
+    "Truncation lesson is not registered in the public curriculum");
+
+  const close=(a,b,tol=1e-10)=>assert.ok(Math.abs(a-b)<tol,
+    "Truncation identity mismatch: "+a+" versus "+b);
+  const e=Math.exp;
+  const taylor=e(0.2)-1.22;
+  assert.ok(taylor>0 && taylor<e(0.2)*0.2**3/6);
+  close(e(0.1)-1.105,0.000170185988,1e-9);
+  assert.ok(e(0.1)-1.105<e(0.1)*0.1**3/6);
+  close(e(0.1)-1.1,0.005170918076,1e-9);
+  close(e(0.1)*(e(0.1)-1.1),0.005714748277,1e-9);
+  close((e(0.2)-e(-0.2))/0.4,1.006680012705,1e-9);
+  assert.ok(Math.abs((e(0.2)-e(-0.2))/0.4-1)<e(0.2)*0.2**2/6);
+  close(Math.sin(0.3)-0.2955,0.000020206661,1e-9);
+  assert.ok(Math.abs(Math.sin(0.3)-0.2955)<=0.3**5/120);
+  for(const h of [0.2,0.1,0.05]){
+    const forward=((2+h)**3-8)/h;
+    const central=((2+h)**3-(2-h)**3)/(2*h);
+    close(forward,12+6*h+h*h);
+    close(central,12+h*h);
+  }
+  const euler=[1,1.5,2.25];
+  close(e(1)-euler[2],0.468281828459,1e-9);
+  assert.ok(e(1)-euler[2]<0.3125*e(1));
+  const richardson=2*(3+3*0.1+0.1**2)-(3+3*0.2+0.2**2);
+  close(richardson,2.98);
+  for(const n of [4,5,10,20]){
+    const h=1/n;
+    let w=0;
+    for(let k=0;k<n;k++)w+=h*(k*h);
+    close(0.5-w,h/2);
+  }
+  const B=h=>h+1e-4/h;
+  assert.ok(B(0.01)<B(0.1) && B(0.01)<B(0.001));
+}
