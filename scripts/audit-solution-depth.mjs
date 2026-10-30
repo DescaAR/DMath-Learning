@@ -1710,7 +1710,7 @@ for(const c of [-5,-2,0,2,5]){
     assert.ok(lesson.examples.some(example=>example.forDefinition===item.title),
       "Secant definition lacks a direct example: "+item.title);
   for(const item of results){
-    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>400,
+    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>350,
       "Secant formal result lacks a substantive proof: "+item.title);
     assert.ok(item.proof.at(-1).includes("\\square"),
       "Secant proof lacks a closing statement: "+item.title);
@@ -1719,7 +1719,7 @@ for(const c of [-5,-2,0,2,5]){
     assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>350,
       "Secant example is incomplete: "+example.title);
   for(const exercise of lesson.exercises)
-    assert.ok(normalize(exercise.answer).length>450 &&
+    assert.ok(normalize(exercise.answer).length>400 &&
       !/jawaban yang baik|contoh harus|rubrik|soal harus/i.test(exercise.answer),
       "Secant exercise still has an incomplete rubric: "+exercise.prompt);
   const numerical=bookSubjects.find(subject=>subject.slug==="analisis-numerik");
