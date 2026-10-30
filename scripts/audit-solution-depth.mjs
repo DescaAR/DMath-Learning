@@ -707,9 +707,9 @@ assert.ok(sigmaPage,"Missing public sigma-algebra lesson");
 const sigmaDefs=sigmaPage.formal.filter(x=>x.kind==="definition");
 const sigmaResults=sigmaPage.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
 assert.equal(sigmaDefs.length,4);
-assert.equal(sigmaResults.length,5);
+assert.equal(sigmaResults.length,6);
 assert.equal(sigmaPage.examples.length,8);
-assert.equal(sigmaPage.exercises.length,9);
+assert.equal(sigmaPage.exercises.length,10);
 for(const d of sigmaDefs){
   assert.ok(sigmaPage.examples.some(x=>x.forDefinition===d.title),
     "Sigma-algebra definition has no immediate example: "+d.title);
