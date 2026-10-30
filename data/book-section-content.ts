@@ -1,3 +1,4 @@
+import { minimumSpanningTreeContent } from "@/data/minimum-spanning-tree-content";
 import { operationsStudyContent } from "@/data/operations-study-content";
 import { iterativeRootErrorContent } from "@/data/iterative-root-error-content";
 import { jacobiGaussSeidelContent } from "@/data/jacobi-gauss-seidel-content";
@@ -90,6 +91,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // MST: full cut/cycle exchange proofs, Kruskal invariant, and detailed original solutions.
+  "md-mst":minimumSpanningTreeContent,
   // Full modeling workflow: primal-dual certificates, robust feasibility, residuals, and original solutions.
   "or-proses-studi":operationsStudyContent,
   // Jacobi and Gauss–Seidel: exact splittings, convergence proofs, residuals, and complete exercises.
