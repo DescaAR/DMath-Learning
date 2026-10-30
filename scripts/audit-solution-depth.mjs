@@ -1959,3 +1959,39 @@ for(const [slug,markers] of [
   assert.equal(integerBest,10);
   assert.equal(3*(7/2),21/2);
 }
+
+
+// Ito-isometry authored lesson regression: inspect the rendered override and original curated answer.
+{
+  const lesson=getBookSectionContent("ks-ito-isometry");
+  assert.ok(lesson,"Ito-isometry lesson missing");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4,"Ito-isometry definitions changed unexpectedly");
+  assert.equal(results.length,5,"Ito-isometry formal results changed unexpectedly");
+  assert.equal(lesson.examples.length,8,"Ito-isometry worked examples missing");
+  assert.ok(lesson.exercises.length>=9,"Original curated exercise or new exercises missing");
+  for(const d of defs){
+    assert.ok(lesson.examples.some(ex=>ex.forDefinition===d.title),"Definition lacks directly linked example: "+d.title);
+  }
+  for(const result of results){
+    assert.ok(result.proof?.length>=2 && normalize(result.proof.join(" ")).length>450,"Ito proof too short: "+result.title);
+    assert.ok(result.proof.at(-1).includes("\\square"),"Ito proof lacks ending: "+result.title);
+  }
+  for(const ex of lesson.examples)assert.ok(normalize(ex.solution.join(" ")).length>420,"Ito example incomplete: "+ex.title);
+  for(const ex of lesson.exercises){
+    assert.ok(normalize(ex.answer).length>700 && !/Jawaban yang baik|Contoh harus|Langkah penyelesaian dapat/.test(ex.answer),"Ito exercise is short or rubric-like");
+  }
+  assert.ok(lesson.exercises.some(ex=>ex.prompt.includes("int_0^1t") && ex.answer.includes("I_n")),"Original curated Ito exercise not expanded");
+  assert.equal(1/3,1/(3*1**2));
+  assert.equal(4*(1/4)+3/4,7/4);
+  assert.equal((3/4-1/2+1/4)/2,1/4);
+  assert.equal(4/3-2+1,1/3);
+  assert.ok(577<1000/Math.sqrt(3) && 578>=1000/Math.sqrt(3),"Incorrect Ito RMSE threshold");
+  for(const n of [2,5,10]){
+    const left=Array.from({length:n},(_,k)=>k*k).reduce((a,b)=>a+b,0)/(n**3);
+    const closed=(n-1)*n*(2*n-1)/(6*n**3);
+    assert.ok(Math.abs(left-closed)<1e-12,"Ito sum of squares incorrect");
+    assert.ok(Math.abs((1/3-left)-(3*n-1)/(6*n*n))<1e-12,"Ito sum error mismatch");
+  }
+}
