@@ -356,7 +356,7 @@ function formalFor(subject:string,slug:string,title:string,summary:string,keyIde
   const special:Record<string,BookFormalItem[]>={
     "or-lp-formulasi":[
       {kind:"definition",title:"Program Linear",statement:"Program linear adalah masalah optimisasi dengan fungsi tujuan linear dan seluruh kendala berbentuk persamaan atau pertidaksamaan linear pada variabel keputusan."},
-      {kind:"proposition",title:"Optimalitas pada Titik Ekstrem",statement:"Jika program linear memiliki solusi optimal hingga dan daerah feasible mempunyai titik ekstrem, terdapat sedikitnya satu solusi optimal pada titik ekstrem daerah feasible.",proof:["Daerah feasible program linear merupakan himpunan cembung polihedral.","Jika solusi optimal bukan titik ekstrem, solusi tersebut dapat dinyatakan sebagai kombinasi cembung titik-titik feasible.","Linearitas fungsi tujuan membuat nilai pada kombinasi cembung menjadi kombinasi nilai objektif.","Sedikitnya satu titik ekstrem penyusun memiliki nilai tidak lebih buruk daripada solusi semula."]},
+      {kind:"theorem",title:"Optimum pada Titik Sudut Poligon Terbatas",statement:"Misalkan $P\\subset\\mathbb R^2$ adalah poligon konveks tertutup, terbatas, tidak kosong, dan memiliki sedikitnya satu titik sudut. Untuk setiap $c\\in\\mathbb R^2$, maksimum $c^Tx$ pada $P$ dicapai pada sedikitnya satu titik sudut.",proof:["Diketahui $P$ tertutup dan terbatas, sehingga kompak menurut Heine–Borel. Fungsi $x\\mapsto c^Tx$ kontinu, sehingga terdapat titik pemaksimum $x^*\\in P$. Jika $c=0$, semua titik layak optimal; pilih satu titik sudut yang dijamin hipotesis.","Jika $c\\ne0$ dan $P$ mempunyai interior tak kosong, pemaksimum tidak dapat berada di interior: untuk langkah kecil $\\varepsilon>0$, titik $x^*+\\varepsilon c$ tetap layak tetapi mempunyai nilai $c^Tx^*+\\varepsilon\\|c\\|^2>c^Tx^*$, kontradiksi. Jika $P$ berdimensi paling tinggi satu, setiap titiknya terletak pada ruas antara titik ekstrem, dan argumen berikut langsung berlaku.","Pada batas poligon, titik $x^*$ terletak pada suatu sisi $[u,v]$ dengan ujung-ujung titik sudut. Tulis $x^*=tu+(1-t)v$, $0\\le t\\le1$. Linearitas memberikan $c^Tx^*=t c^Tu+(1-t)c^Tv\\le\\max\\{c^Tu,c^Tv\\}$. Karena $x^*$ sudah optimal, sedikitnya satu ujung mencapai nilai maksimum. Dengan demikian terdapat titik sudut optimal. $\\square$"]}
     ],
     "or-dualitas":[
       {kind:"theorem",title:"Dualitas Lemah",statement:"Untuk primal maksimum $\\max\\{c^Tx:Ax\\le b,\\ x\\ge0\\}$ dan dual minimum $\\min\\{b^Ty:A^Ty\\ge c,\\ y\\ge0\\}$, setiap pasangan solusi feasible memenuhi $c^Tx\\le b^Ty$.",proof:["Diambil solusi feasible primal $x$ dan dual $y$.","Dari $A^Ty\\ge c$ dan $x\\ge0$ diperoleh $x^TA^Ty\\ge c^Tx$.","Karena $Ax\\le b$ dan $y\\ge0$, diperoleh $y^TAx\\le y^Tb$.","Dengan $x^TA^Ty=y^TAx$, diperoleh $c^Tx\\le b^Ty$. Dengan demikian dualitas lemah terbukti."]},
@@ -762,5 +762,37 @@ for(const subject of newAcademicSubjects){
     }
   }
 }
+
+// Deeply reviewed LP formulation examples replace generic feasibility rubrics.
+generated["or-lp-formulasi"].examples=[
+  {
+    "title": "Contoh Program Linear dan Sertifikat Optimum",
+    "forDefinition": "Program Linear",
+    "problem": "Dua produk memberi keuntungan $3x+2y$ dengan kendala $x+y\\le4$, $2x+y\\le6$, dan $x,y\\ge0$. Tentukan optimum dan buktikan secara global.",
+    "solution": [
+      "Diketahui dua variabel keputusan nonnegatif. Kedua kendala adalah pertidaksamaan afine dengan koefisien tetap dan fungsi tujuan linear, sehingga model merupakan program linear. Titik $(2,2)$ layak karena $2+2=4$ dan $2(2)+2=6$.",
+      "Untuk setiap titik layak, penjumlahan kedua kendala memberikan $(x+y)+(2x+y)\\le4+6$, yaitu $3x+2y\\le10$. Ini merupakan sertifikat batas atas yang tidak memerlukan penggambaran daerah layak.",
+      "Pada $(2,2)$, nilai tujuan adalah $3(2)+2(2)=10$, sama dengan batas atas. Jika nilai tujuan mencapai 10, kedua kendala harus aktif, dan sistem $x+y=4$, $2x+y=6$ memiliki solusi tunggal $(2,2)$. Optimum global adalah 10 dan titik optimumnya tunggal."
+    ]
+  },
+  {
+    "title": "Contoh Feasibility dan Unit Sumber Daya",
+    "problem": "Model $2x+y\\le8$, $x+2y\\le8$, $x,y\\ge0$ memakai jam mesin dan jam tenaga kerja. Periksa $(4,0)$, $(0,4)$, dan $(3,3)$.",
+    "solution": [
+      "Diketahui koefisien baris pertama dan kedua menyatakan dua sumber daya yang berbeda. Titik $(4,0)$ menggunakan $2(4)+0=8$ jam mesin dan $4+2(0)=4$ jam tenaga kerja. Keduanya tidak melampaui kapasitas delapan dan koordinat nonnegatif, sehingga titik ini layak.",
+      "Titik $(0,4)$ menggunakan $2(0)+4=4$ jam mesin dan $0+2(4)=8$ jam tenaga kerja, sehingga juga layak. Titik $(3,3)$ menggunakan $2(3)+3=9$ jam mesin dan $3+2(3)=9$ jam tenaga kerja; kedua batas dilanggar.",
+      "Kelayakan tidak dapat diputuskan hanya dari nilai fungsi tujuan atau nonnegativitas. Setiap baris kendala perlu diverifikasi dalam satuan yang tepat. Kesimpulannya, dua titik pertama layak dan titik ketiga tidak layak."
+    ]
+  },
+  {
+    "title": "Contoh Membandingkan Solusi dan Optimalitas",
+    "problem": "Maksimumkan $5x+4y$ dengan $2x+y\\le8$, $x+2y\\le8$, $x,y\\ge0$. Bandingkan $(4,0)$, $(0,4)$, dan perpotongan kedua garis batas.",
+    "solution": [
+      "Kedua titik sumbu layak: $(4,0)$ memakai $(8,4)$ sumber daya dan memberi keuntungan $5(4)=20$; $(0,4)$ memakai $(4,8)$ dan memberi keuntungan $4(4)=16$. Namun perbandingan dua titik belum cukup membuktikan optimum global.",
+      "Perpotongan $2x+y=8$ dan $x+2y=8$ memberi $x=y=8/3$, yang layak dan menghasilkan keuntungan $5(8/3)+4(8/3)=24$.",
+      "Untuk setiap titik layak, dua kali kendala pertama ditambah kendala kedua memberi $5x+4y\\le2(8)+8=24$. Karena nilai 24 dicapai pada perpotongan, optimum global tepat 24. Sertifikat batas atas menutup kemungkinan adanya titik lain dengan nilai lebih besar."
+    ]
+  }
+];
 
 export const newAcademicContent=generated;
