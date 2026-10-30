@@ -112,7 +112,9 @@ export const fixedPointContent:BookLessonContent = {
       "problem": "Cari titik tetap $g(x)=(x+2)/3$ pada $[0,2]$.",
       "solution": [
         "Persamaan $p=(p+2)/3$ setara dengan $3p=p+2$, sehingga $p=1$.",
-        "Verifikasi langsung $g(1)=1$ dan $1\\in[0,2]$. Persamaan linear hanya memiliki satu solusi."
+        "Verifikasi langsung $g(1)=1$ dan $1\\in[0,2]$. Persamaan linear hanya memiliki satu solusi.",
+        "Keberadaan titik tetap juga dapat dibuktikan dengan Prinsip Kontraksi: $g([0,2])=[2/3,4/3]\\subseteq[0,2]$ dan $|g(x)-g(y)|=|x-y|/3$ untuk semua $x,y$ dalam interval. Dengan $L=1/3<1$, titik tetapnya tunggal dan iterasi dari setiap titik awal dalam interval konvergen ke sana.",
+        "Sebagai pemeriksaan numerik, dari $p_0=0$ diperoleh $p_1=2/3$ dan $p_2=8/9$; keduanya berada dalam interval serta mendekati $1$. Perhitungan ini hanya ilustrasi, sedangkan ketunggalan sudah dibuktikan oleh aljabar dan kontraksi."
       ],
       "forDefinition": "Titik Tetap"
     },
@@ -121,7 +123,9 @@ export const fixedPointContent:BookLessonContent = {
       "problem": "Hitung $p_1,p_2,p_3$ untuk $g(x)=(x+2)/3$, $p_0=0$.",
       "solution": [
         "Dari rekursi diperoleh $p_1=2/3$, $p_2=(2/3+2)/3=8/9$, dan $p_3=(8/9+2)/3=26/27$.",
-        "Terhadap titik tetap $p=1$, galat berturut-turut $1/3,1/9,1/27$; setiap langkah mengurangi galat tepat menjadi sepertiga."
+        "Terhadap titik tetap $p=1$, galat berturut-turut $1/3,1/9,1/27$; setiap langkah mengurangi galat tepat menjadi sepertiga.",
+        "Untuk setiap $n\\ge0$, dapat dibuktikan dengan induksi bahwa $p_n=1-3^{-n}$. Basis $n=0$ menghasilkan $p_0=0$. Jika rumus berlaku pada $n$, maka $p_{n+1}=(1-3^{-n}+2)/3=1-3^{-(n+1)}$, sehingga langkah induksi sah.",
+        "Rumus tersebut menunjukkan semua iterasi berada dalam $[0,1)$ dan $p_n\\to1$ karena $3^{-n}\\to0$. Batas galat a priori dengan $L=1/3$ dan $|p_1-p_0|=2/3$ memberi $|p-p_n|\\le3^{-n}$, tepat sama dengan galat eksak."
       ],
       "forDefinition": "Iterasi Titik Tetap"
     },
@@ -130,7 +134,9 @@ export const fixedPointContent:BookLessonContent = {
       "problem": "Periksa $g(x)=(x+2)/3$ pada $[0,2]$.",
       "solution": [
         "Citra interval ialah $[2/3,4/3]\\subseteq[0,2]$. Untuk setiap $x,y$ berlaku $|g(x)-g(y)|=|x-y|/3$.",
-        "Konstanta $L=1/3<1$ sah. Prinsip Kontraksi menjamin seluruh iterasi dari interval konvergen ke $1$."
+        "Konstanta $L=1/3<1$ sah. Prinsip Kontraksi menjamin seluruh iterasi dari interval konvergen ke $1$.",
+        "Kriteria turunan memberi pemeriksaan kedua: $g'(x)=1/3$ untuk seluruh $x\\in(0,2)$, sehingga $|g'(x)|\\le1/3<1$. Dengan demikian baik syarat citra interval maupun batas turunan telah diverifikasi, bukan diasumsikan.",
+        "Sebagai penerapan batas a priori, dari $p_0=0$ dan $p_1=2/3$ diperoleh $|p-p_3|\\le(1/3)^3(2/3)/(1-1/3)=1/27$. Iterasi eksak $p_3=26/27$ menunjukkan bahwa batas ini tepat. Hasil tersebut sekaligus memeriksa konsekuensi kuantitatif kontraksi."
       ],
       "forDefinition": "Pemetaan Kontraksi"
     },
@@ -139,7 +145,9 @@ export const fixedPointContent:BookLessonContent = {
       "problem": "Bandingkan residual dan galat pada $x=0$ untuk $g(x)=0.99x+0.01$ di $[0,2]$.",
       "solution": [
         "Pemetaan memiliki $L=0.99$ dan titik tetap $p=1$. Citra interval $[0.01,1.99]$ tetap berada dalam $[0,2]$.",
-        "Residual di $0$ adalah $|0-g(0)|=0.01$, sedangkan galat sebenarnya $|0-1|=1$. Batas residual $0.01/(1-0.99)=1$ tepat."
+        "Residual di $0$ adalah $|0-g(0)|=0.01$, sedangkan galat sebenarnya $|0-1|=1$. Batas residual $0.01/(1-0.99)=1$ tepat.",
+        "Perhatikan identitas $x-g(x)=0.01(x-1)$ untuk setiap $x\\in[0,2]$. Karena $p=1$, diperoleh $|x-g(x)|=0.01|x-p|$; perbandingan residual dan galat tidak hanya terjadi pada $x=0$, tetapi pada semua titik interval.",
+        "Setelah satu iterasi dari $x_0=0$, diperoleh $x_1=0.01$, residual $|x_1-g(x_1)|=0.0099$, dan galat $|x_1-p|=0.99$. Kedua nilai mengecil, tetapi residual tetap seratus kali lebih kecil daripada galat. Oleh karena itu faktor $1/(1-L)=100$ harus dipertahankan."
       ],
       "forDefinition": "Residual Titik Tetap"
     },
@@ -149,7 +157,9 @@ export const fixedPointContent:BookLessonContent = {
       "solution": [
         "Karena $\\cos1\\le\\cos x\\le1$ untuk $0\\le x\\le1$, fungsi memetakan interval ke dirinya sendiri.",
         "Turunan $-\\sin x$ memenuhi $|g'(x)|\\le\\sin1<1$. Prinsip Kontraksi memberikan titik tetap tunggal. Dari $p_0=0$ diperoleh $p_1=1$, $p_2\\approx0.5403023$, dan $p_3\\approx0.8575532$.",
-        "Iterasi tidak harus monoton untuk konvergen; titik tetapnya sekitar $0.7390851$."
+        "Iterasi tidak harus monoton untuk konvergen; titik tetapnya sekitar $0.7390851$.",
+        "Untuk $p_0=0$, iterasi berikutnya $p_4=\\cos(p_3)\\approx0.6542898$ dan $p_5=\\cos(p_4)\\approx0.7934804$. Selisih berturut-turut tidak selalu menurun monoton dalam tanda, tetapi besarnya dikendalikan oleh kontraksi: $|p_{n+1}-p_n|\\le L^n|p_1-p_0|$.",
+        "Karena $p$ titik tetap tunggal, residual $|p_n-\\cos p_n|=|p_n-p_{n+1}|$ menghasilkan batas galat $|p_n-p|\\le|p_n-p_{n+1}|/(1-\\sin1)$. Batas ini sah tanpa mengetahui nilai eksak $p$ dan dapat dipakai sebagai kriteria berhenti yang terjustifikasi."
       ]
     },
     {
@@ -157,7 +167,9 @@ export const fixedPointContent:BookLessonContent = {
       "problem": "Analisis $g(x)=(x+2/x)/2$ pada $[1,2]$ dari $p_0=1$.",
       "solution": [
         "Turunan $g'(x)=1/2-1/x^2$ memenuhi $|g'(x)|\\le1/2$. Nilai minimum $g(\\sqrt2)=\\sqrt2$ dan maksimum $g(1)=g(2)=3/2$ memastikan $g([1,2])\\subseteq[1,2]$.",
-        "Titik tetap memenuhi $p^2=2$; hanya $\\sqrt2$ berada dalam interval. Iterasi $p_1=3/2$ dan $p_2=17/12$; konvergensi dijamin oleh teorema, bukan dua angka tersebut."
+        "Titik tetap memenuhi $p^2=2$; hanya $\\sqrt2$ berada dalam interval. Iterasi $p_1=3/2$ dan $p_2=17/12$; konvergensi dijamin oleh teorema, bukan dua angka tersebut.",
+        "Untuk memastikan nilai maksimum, gunakan $g'(x)=1/2-1/x^2$. Turunan negatif pada $[1,\\sqrt2)$, nol di $\\sqrt2$, dan positif pada $(\\sqrt2,2]$. Oleh karena itu minimum terjadi di $\\sqrt2$ dan maksimum di salah satu endpoint, yang keduanya bernilai $3/2$.",
+        "Dari batas a priori dengan $L=1/2$, $p_0=1$, dan $p_1=3/2$, diperoleh $|p-p_2|\\le(1/2)^2(1/2)/(1-1/2)=1/4$. Nilai sebenarnya $|17/12-\\sqrt2|\\approx0.0024531$ jauh lebih kecil. Batas teoritis memang boleh konservatif tanpa kehilangan validitas."
       ]
     },
     {
@@ -165,7 +177,9 @@ export const fixedPointContent:BookLessonContent = {
       "problem": "Periksa $g(x)=1-x$ pada $[0,1]$ dari $p_0=0$.",
       "solution": [
         "Titik tetap tunggal adalah $1/2$, tetapi $|g(x)-g(y)|=|x-y|$ sehingga konstanta terbaik $L=1$.",
-        "Orbitnya $0,1,0,1,\\ldots$; dua subsekuens memiliki limit berbeda. Pemetaan ke dalam interval saja tidak cukup."
+        "Orbitnya $0,1,0,1,\\ldots$; dua subsekuens memiliki limit berbeda. Pemetaan ke dalam interval saja tidak cukup.",
+        "Secara eksplisit, induksi memberikan $p_{2k}=0$ dan $p_{2k+1}=1$ untuk setiap $k\\ge0$: jika pasangan $(0,1)$ terjadi, aplikasi $g$ menukarkan keduanya pada dua langkah berikutnya. Karena $\\lim_{k\\to\\infty}p_{2k}=0$ dan $\\lim_{k\\to\\infty}p_{2k+1}=1$, limit seluruh barisan tidak ada.",
+        "Sebaliknya, jika $p_0=1/2$, seluruh iterasi tetap $1/2$. Perbedaan dua titik awal ini menegaskan bahwa keberadaan titik tetap dan bahkan ketunggalannya tidak cukup untuk menjamin konvergensi global ketika syarat $L<1$ tidak berlaku."
       ]
     },
     {
@@ -173,7 +187,9 @@ export const fixedPointContent:BookLessonContent = {
       "problem": "Bandingkan $g_1(x)=(x+2)/3$ dan $g_2(x)=2-x$ pada $[0,2]$.",
       "solution": [
         "Kedua persamaan $g_i(p)=p$ memberikan $p=1$. Untuk $g_1$, $L=1/3$ sehingga iterasi dari $0$ menuju $1$.",
-        "Untuk $g_2$, $L=1$ dan iterasi dari $0$ menghasilkan $0,2,0,2,\\ldots$. Kesamaan akar tidak menjamin kesamaan perilaku iterasi."
+        "Untuk $g_2$, $L=1$ dan iterasi dari $0$ menghasilkan $0,2,0,2,\\ldots$. Kesamaan akar tidak menjamin kesamaan perilaku iterasi.",
+        "Dari $p_0=0$ untuk $g_1$ diperoleh rumus $p_n=1-3^{-n}$ melalui induksi, sehingga $|p_n-1|=3^{-n}\\to0$. Faktor kontraksi $1/3$ memberi jaminan kuantitatif kecepatan konvergensi, bukan sekadar pengamatan beberapa iterasi.",
+        "Untuk $g_2$, diperoleh $p_{2k}=0$ dan $p_{2k+1}=2$ dari titik awal yang sama. Dua subsekuens mempunyai limit berbeda. Dengan demikian memilih reformulasi $x=g(x)$ harus disertai pemeriksaan hipotesis, bukan hanya verifikasi bahwa akar aljabarnya sama."
       ]
     }
   ],
