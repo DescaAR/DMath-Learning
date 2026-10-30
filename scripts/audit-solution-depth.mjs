@@ -1825,3 +1825,18 @@ for(const c of [-5,-2,0,2,5]){
   assert.ok(Math.abs(tail-0.028443966820490395)<1e-12);
   assert.ok(Math.abs(0.02871655981600182-tail)<0.0003);
 }
+
+
+// Regression for the actual narrative introductions (not just answer length).
+for(const [slug,markers] of [
+  ["or-lp-formulasi",["sertifikat batas atas","kelayakan"]],
+  ["sta-anova-oneway",["suku silang","Replikasi semu"]],
+  ["stm-clt",["standard error","koreksi kontinuitas"]]
+]){
+  const lesson=getBookSectionContent(slug);
+  assert.ok(lesson?.intro?.length>=3,"Missing specific introduction: "+slug);
+  const intro=lesson.intro.join(" ");
+  assert.ok(normalize(intro).length>700,"Introduction still generic or too short: "+slug);
+  for(const marker of markers)
+    assert.ok(intro.includes(marker),"Missing specific concept "+marker+" in "+slug);
+}
