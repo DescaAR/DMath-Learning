@@ -1,7 +1,7 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 
 /** Authored secant method: precise hypotheses, exact error identities, and original solved exercises. */
-export const secantContent: BookLessonContent = {
+export const secantContent: BookLessonContent =  {
   "intro": [
     "Metode secant mencari akar persamaan $f(x)=0$ tanpa menghitung turunan secara eksplisit. Dua titik terakhir, $(x_{n-1},f(x_{n-1}))$ dan $(x_n,f(x_n))$, dihubungkan oleh garis; perpotongan garis tersebut dengan sumbu horizontal menjadi pendekatan berikutnya. Berbeda dengan bisection, kedua titik tidak harus mengapit akar, sehingga iterasi dapat keluar dari interval awal atau bahkan tidak terdefinisi.",
     "Sebagai masalah konkret, kita akan menyelesaikan $x^2-2=0$ dengan titik awal $x_0=1$ dan $x_1=2$. Kedua nilai fungsi, $-1$ dan $2$, berbeda sehingga kemiringan secant terdefinisi. Iterasi menghasilkan $x_2=4/3$, $x_3=7/5$, dan $x_4=58/41$. Setiap nilai akan diperiksa melalui substitusi ke persamaan asli, bukan sekadar dinilai dari kecilnya selisih dua iterasi.",
@@ -67,7 +67,7 @@ export const secantContent: BookLessonContent = {
       "proof": [
         "Diketahui $|e_0|,|e_1|\\le\\delta$ dan $2|a|\\delta<1$. Untuk dua galat yang berada dalam interval tersebut, $|1+a(e_n+e_{n-1})|\\ge1-|a|(|e_n|+|e_{n-1}|)\\ge1-2|a|\\delta>0$.",
         "Menurut identitas galat, $|e_{n+1}|\\le\\dfrac{|a||e_n||e_{n-1}|}{1-2|a|\\delta}\\le q|e_n|$ karena $|e_{n-1}|\\le\\delta$. Karena $0<q<1$, diperoleh $|e_{n+1}|\\le q\\delta<\\delta$; induksi menjaga kedua galat dalam interval yang sama.",
-        "Perlu pula memeriksa penyebut $x_n-x_{n-1}$. Bila dua iterasi berurutan sama di sekitar $r$ dan bukan akar, rumus sebelumnya memberi $|e_n|=|e_{n+1}|\\le q|e_n|$, kontradiksi dengan $q<1$. Maka iterasi tidak dapat macet pada nilai bukan akar; jika akar tercapai, proses selesai. Karena $|e_{n+1}|\\le q|e_n|$ untuk setiap langkah yang berjalan, $|e_n|\\le q^{n-1}|e_1|\\to0$. Dengan demikian iterasi konvergen ke $r$. $\\square$"
+        "Periksa keterdefinisian iterasi secara induktif. Pada pasangan awal, $x_0\\ne x_1$. Jika pasangan $(x_{n-1},x_n)$ berbeda dan tidak ada akar yang telah dicapai, selisih fungsi adalah $c(e_n-e_{n-1})[1+a(e_n+e_{n-1})]\\ne0$. Rumus secant memberi $x_{n+1}-x_n=-f(x_n)(x_n-x_{n-1})/[f(x_n)-f(x_{n-1})]$. Karena $|ae_n|\\le|a|\\delta<1$, berlaku $f(x_n)=ce_n(1+ae_n)\\ne0$ untuk $e_n\\ne0$; jadi $x_{n+1}\\ne x_n$. Dengan demikian langkah berikutnya juga sah. Jika $e_n=0$, akar telah ditemukan dan proses berhenti. Pada proses yang tidak berhenti, $|e_{n+1}|\\le q|e_n|$ menghasilkan $|e_n|\\le q^{n-1}|e_1|\\to0$. Maka iterasi konvergen ke $r$. $\\square$"
       ],
       "explanation": "Teorema ini hanya menyatakan konvergensi lokal untuk model kuadratik yang tertulis. Ia tidak menyatakan bahwa setiap fungsi terdiferensialkan atau setiap dua titik awal pasti menghasilkan konvergensi."
     },
