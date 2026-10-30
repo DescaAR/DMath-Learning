@@ -182,7 +182,7 @@ export const truncationErrorContent:BookLessonContent = {
     {
       "prompt": "TR-01. Untuk $f(x)=e^x$, tentukan Taylor derajat dua di nol pada $x=0.1$, galat aktual, dan batas sisa yang sah.",
       "hint": "Gunakan turunan ketiga maksimum pada interval [0,0.1] dan rumus integral sisa.",
-      "answer": "Diketahui $f(x)=e^x$, pusat $x_0=0$, orde $n=2$, dan $h=0.1$. Karena semua turunan $e^x$ bernilai satu di nol, $P_2(0.1)=1+0.1+(0.1)^2/2=1.105$. Nilai eksak $e^{0.1}\\approx1.10517018599$ memberikan galat bertanda $R_2=e^{0.1}-1.105\\approx0.00017018599$. Hipotesis Taylor terpenuhi karena $e^x$ mempunyai turunan kontinu pada seluruh real. Untuk $0\\le t\\le0.1$, turunan ketiga dibatasi $M=e^{0.1}$. Oleh karena itu $|R_2|\\le e^{0.1}(0.1)^3/3!\\approx0.00018419515$. Perbandingan $0.00017018599<0.00018419515$ memverifikasi batas. Nilai 1.105 adalah aproksimasi, bukan pembulatan yang dijamin benar sampai enam desimal.",
+      "answer": "Diketahui $f(x)=e^x$, pusat $x_0=0$, orde $n=2$, dan $h=0.1$. Karena semua turunan $e^x$ bernilai satu di nol, $P_2(0.1)=1+0.1+(0.1)^2/2=1.105$. Nilai eksak $e^{0.1}\\approx1.10517091808$ memberikan galat bertanda $R_2=e^{0.1}-1.105\\approx0.00017091808$. Hipotesis Taylor terpenuhi karena $e^x$ mempunyai turunan kontinu pada seluruh real. Untuk $0\\le t\\le0.1$, turunan ketiga dibatasi $M=e^{0.1}$. Oleh karena itu $|R_2|\\le e^{0.1}(0.1)^3/3!\\approx0.00018419515$. Perbandingan $0.00017091808<0.00018419515$ memverifikasi batas. Nilai 1.105 adalah aproksimasi, bukan pembulatan yang dijamin benar sampai enam desimal.",
       "provenance": "dmath-original"
     },
     {
