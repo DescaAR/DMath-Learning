@@ -2031,8 +2031,7 @@ for(const [slug,markers] of [
     assert.ok(Math.abs(mean-T)<1e-12 && Math.abs(variance-2*T*T/n)<1e-12,
       "Brownian quadratic variation mean/variance mismatch");
   }
-  assert.equal(8/18*0+1,1,"Regression execution sentinel");
-  assert.equal(2*4/8,1,"Brownian Q8 variance");
-  assert.equal(8*2/18,8/9,"Brownian Q18 variance formula check");
-  assert.equal(32/3200,0.01,"Chebyshev threshold mismatch");
+  assert.equal(2*2*2/8,1,"Brownian T=2, n=8 quadratic variation variance");
+  assert.equal(2*3*3/18,1,"Brownian T=3, n=18 quadratic variation variance");
+  assert.equal(32/3200,0.01,"Brownian Chebyshev threshold mismatch");
 }
