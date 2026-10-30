@@ -18,7 +18,7 @@ export const radonNikodymContent:BookLessonContent = {
     {
       "kind": "definition",
       "title": "Densitas atau Turunan Radon–Nikodym",
-      "statement": "Fungsi terukur $f:X\\to[0,\\infty]$ disebut densitas $\\nu$ terhadap $\\mu$ jika $\\nu(A)=\\int_A f\\,d\\mu$ untuk setiap $A\\in\\mathcal A$. Jika densitas ada, ditulis $f=d\\nu/d\\mu$; notasi ini menyatakan kesamaan hampir di mana-mana terhadap $\\mu$, bukan nilai titik demi titik yang unik.",
+      "statement": "Fungsi terukur $f:X\\to[0,\\infty]$ disebut densitas $\\nu$ terhadap $\\mu$ jika $\\nu(A)=\\int_A f\\,d\\mu$ untuk setiap $A\\in\\mathcal A$. Jika densitas ada, ditulis $f=d\\nu/d\\mu$; apabila $\\mu$ dan $\\nu$ sigma-hingga, densitas yang ada unik $\\mu$-hampir di mana-mana; tanpa hipotesis tambahan, ketunggalan tidak boleh diasumsikan.",
       "explanation": "Satu fungsi f harus mewakili seluruh himpunan terukur sekaligus. Mengubah f pada himpunan μ-nol tidak mengubah ukuran ν."
     },
     {
