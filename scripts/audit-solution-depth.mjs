@@ -59,6 +59,7 @@ const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-conte
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
 
+{
 // Regression: statistical independence must be a fully solved, non-rubric public lesson.
 const independenceLesson=getBookSectionContent("stm-independence");
 assert.ok(independenceLesson,"Statistical independence lesson must be registered");
@@ -115,6 +116,8 @@ assert.ok(Math.abs([0,1,2,3].reduce((sum,k)=>sum+binomial(k),0)-1)<1e-12);
 assert.ok(Math.abs(binomial(2)-2/9)<1e-12);
 assert.ok(Math.abs((1-binomial(0))-19/27)<1e-12);
 assert.equal(count((u,v)=>u===1&&v===1),1/4);
+
+}
 
 // Regression: LP duality must use the authored lesson, not generated rubric responses.
 const dualLesson=getBookSectionContent("or-dualitas");
