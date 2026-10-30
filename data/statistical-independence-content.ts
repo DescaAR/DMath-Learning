@@ -164,7 +164,6 @@ export const statisticalIndependenceContent:BookLessonContent={
     },
     {
       "title": "Independensi dengan Peluang Bersyarat",
-      "forDefinition": null,
       "problem": "Diketahui $P(A)=3/5$, $P(B)=1/2$, dan $P(A\\cap B)=3/10$. Periksa independensi dan hitung $P(A\\mid B)$.",
       "solution": [
         "Peluang $B$ positif, sehingga definisi $P(A\\mid B)=P(A\\cap B)/P(B)$ dapat digunakan. Substitusi menghasilkan $(3/10)/(1/2)=3/5$.",
@@ -175,7 +174,6 @@ export const statisticalIndependenceContent:BookLessonContent={
     },
     {
       "title": "Kovarians Nol Bukan Independensi",
-      "forDefinition": null,
       "problem": "Jika $X$ seragam pada $\\{-1,0,1\\}$ dan $Y=X^2$, periksa kovarians dan independensinya.",
       "solution": [
         "Distribusi $X$ simetris sehingga $E[X]=(-1+0+1)/3=0$. Karena $XY=X^3$, diperoleh $E[XY]=(-1+0+1)/3=0$ dan $\\operatorname{Cov}(X,Y)=0$.",
@@ -186,7 +184,6 @@ export const statisticalIndependenceContent:BookLessonContent={
     },
     {
       "title": "Fungsi Peubah Independen",
-      "forDefinition": null,
       "problem": "Jika $X,Y$ independen dan masing-masing seragam pada $\\{-1,0,1\\}$, tentukan peluang $X^2=1$ dan $Y^2=0$ sekaligus.",
       "solution": [
         "Diketahui $P(X^2=1)=P(X\\in\\{-1,1\\})=2/3$ dan $P(Y^2=0)=P(Y=0)=1/3$. Kedua peristiwa bergantung pada peubah yang berbeda.",
@@ -197,7 +194,6 @@ export const statisticalIndependenceContent:BookLessonContent={
     },
     {
       "title": "Jumlah Tiga Bernoulli Independen",
-      "forDefinition": null,
       "problem": "Tiga percobaan Bernoulli independen dengan peluang sukses $1/2$ dilakukan. Hitung peluang tepat dua sukses dan peluang sekurang-kurangnya dua sukses.",
       "solution": [
         "Jumlah sukses $S$ berdistribusi binomial dengan $n=3$ dan $p=1/2$ karena percobaan independen bersama dan parameternya sama.",
