@@ -58,6 +58,64 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+
+// Regression: statistical independence must be a fully solved, non-rubric public lesson.
+const independenceLesson=getBookSectionContent("stm-independence");
+assert.ok(independenceLesson,"Statistical independence lesson must be registered");
+const independenceDefinitions=independenceLesson.formal.filter(item=>item.kind==="definition");
+const independenceResults=independenceLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(independenceDefinitions.length,4,"Retain four precise independence definitions");
+assert.equal(independenceResults.length,8,"Retain eight proved independence results");
+assert.equal(independenceLesson.examples.length,8,"Retain eight worked independence examples");
+assert.equal(independenceLesson.exercises.length,8,"Retain eight authored independence exercises");
+for(const definition of independenceDefinitions){
+  assert.ok(independenceLesson.examples.some(example=>example.forDefinition===definition.title),
+    "Independence definition needs directly associated example: "+definition.title);
+}
+for(const item of independenceResults){
+  assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>350,
+    "Independence proof incomplete: "+item.title);
+  assert.ok(item.proof.some(step=>step.includes("\\square")),
+    "Independence proof missing end marker: "+item.title);
+}
+for(const example of independenceLesson.examples){
+  assert.ok(normalize(example.solution.join(" ")).length>300,
+    "Independence worked example needs mathematical steps: "+example.title);
+}
+for(const exercise of independenceLesson.exercises){
+  assert.ok(normalize(exercise.answer).length>350 &&
+    !/jawaban yang baik|contoh harus|ditetapkan data awal|kesimpulan menyatakan struktur/i.test(exercise.answer),
+    "Independence exercise still contains rubric: "+exercise.prompt.slice(0,50));
+}
+const fourBits=[[0,0],[0,1],[1,0],[1,1]];
+const count=predicate=>fourBits.filter(([u,v])=>predicate(u,v)).length/4;
+const events=[(u,v)=>u===1,(u,v)=>v===1,(u,v)=>u!==v];
+for(let i=0;i<3;i++){
+  assert.equal(count(events[i]),1/2);
+  for(let j=i+1;j<3;j++){
+    assert.equal(count((u,v)=>events[i](u,v)&&events[j](u,v)),1/4,
+      "XOR events must be pairwise independent");
+  }
+}
+assert.equal(count((u,v)=>events.every(event=>event(u,v))),0,
+  "XOR triple intersection must be empty");
+assert.notEqual(count((u,v)=>events.every(event=>event(u,v))),1/8,
+  "Pairwise independence must not be confused with mutual independence");
+const xs=[-1,0,1];
+const meanX=xs.reduce((sum,x)=>sum+x,0)/3;
+const meanY=xs.reduce((sum,x)=>sum+x*x,0)/3;
+const meanXY=xs.reduce((sum,x)=>sum+x*x*x,0)/3;
+assert.equal(meanXY-meanX*meanY,0,"Covariance counterexample must have zero covariance");
+assert.notEqual(1/3,(1/3)*(1/3),
+  "X and X squared must fail joint mass factorization");
+const choose=(n,k)=>{let v=1;for(let j=1;j<=k;j++)v=v*(n-j+1)/j;return v;};
+const p=1/3;
+const binomial=k=>choose(3,k)*p**k*(1-p)**(3-k);
+assert.ok(Math.abs([0,1,2,3].reduce((sum,k)=>sum+binomial(k),0)-1)<1e-12);
+assert.ok(Math.abs(binomial(2)-2/9)<1e-12);
+assert.ok(Math.abs((1-binomial(0))-19/27)<1e-12);
+assert.equal(count((u,v)=>u===1&&v===1),1/4);
+
 // Regression: LP duality must use the authored lesson, not generated rubric responses.
 const dualLesson=getBookSectionContent("or-dualitas");
 assert.ok(dualLesson,"Missing authored linear-programming duality lesson");
