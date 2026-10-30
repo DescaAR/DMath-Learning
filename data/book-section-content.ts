@@ -1,5 +1,6 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 import { floatingPointContent } from "@/data/floating-point-content";
+import { secantContent } from "@/data/secant-content";
 import { absoluteRelativeErrorContent } from "@/data/absolute-relative-error-content";
 import { conditioningStabilityContent } from "@/data/conditioning-stability-content";
 import { truncationErrorContent } from "@/data/truncation-error-content";
@@ -85,6 +86,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "num-galat-absolut-relatif":absoluteRelativeErrorContent,
   // Correctly rounded arithmetic, conditioning and fully worked floating-point problems.
   "num-floating-point":floatingPointContent,
+  // Two-point root finding with exact error identity, explicit failure cases and fully solved problems.
+  "num-secant":secantContent,
   // Condition numbers, residual bounds, backward stability, and solved examples.
   "num-conditioning-stability":conditioningStabilityContent,
   // Taylor remainders, finite differences, Euler error propagation, and solved original exercises.
