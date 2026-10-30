@@ -229,9 +229,9 @@ export const martingaleContent:BookLessonContent = {
       "provenance": "dmath-original"
     },
     {
-      "prompt": "MG-05. Buktikan $Q_n=S_n^2-n$ martingale untuk random walk sederhana simetris. Periksa pula nilai $E[Q_2\\mid\\mathcal F_1]$ pada dua kemungkinan hasil pertama.",
-      "hint": "Kembangkan kuadrat $S_n+X_{n+1}$.",
-      "answer": "Untuk $S_n=\\sum_{k=1}^nX_k$ dengan inkremen independen bernilai $\\pm1$ berpeluang sama, $Q_n=S_n^2-n$ adapted dan integrabel pada setiap n. Identitas $S_{n+1}^2=S_n^2+2S_nX_{n+1}+X_{n+1}^2$ memberikan $E[S_{n+1}^2\\mid\\mathcal F_n]=S_n^2+2S_nE[X_{n+1}\\mid\\mathcal F_n]+E[X_{n+1}^2\\mid\\mathcal F_n]=S_n^2+1$. Karena itu $E[Q_{n+1}\\mid\\mathcal F_n]=S_n^2+1-(n+1)=Q_n$. Pada n=1, $S_1=\\pm1$ sehingga $Q_1=S_1^2-1=0$ pada kedua blok. Jika $X_1=1$, $S_2=2$ atau 0, sehingga $Q_2=2$ atau $-2$ dengan peluang bersyarat $1/2$ masing-masing; rata-ratanya nol. Jika $X_1=-1$, $S_2=0$ atau $-2$ dan $Q_2=-2$ atau 2, kembali bermean nol. Jadi verifikasi eksplisit sesuai identitas umum.",
+      "prompt": "MG-05. Misalkan $X_1$ bernilai $\\pm1$ dan $X_2$ bernilai $\\pm2$, masing-masing simetris serta independen. Untuk $S_n=X_1+\\cdots+X_n$, periksa apakah $Q_n=S_n^2-\\sum_{k=1}^nE[X_k^2]$ martingale hingga waktu dua.",
+      "hint": "Gunakan varians inkremen 1 dan 4, kemudian periksa dua blok informasi pada waktu satu.",
+      "answer": "Diketahui $E[X_1]=E[X_2]=0$, $E[X_1^2]=1$, dan $E[X_2^2]=4$. Proses $S_0=0$, $S_1=X_1$, dan $S_2=X_1+X_2$ adapted serta kuadrat-integrabel. Definisikan $Q_0=0$, $Q_1=S_1^2-1=0$, dan $Q_2=S_2^2-5$. Untuk $X_1=1$, hasil $X_2=2$ menghasilkan $Q_2=3^2-5=4$, sedangkan $X_2=-2$ menghasilkan $Q_2=(-1)^2-5=-4$. Rata-rata bersyaratnya $(4-4)/2=0=Q_1$. Untuk $X_1=-1$, hasil $X_2=2$ menghasilkan $Q_2=1^2-5=-4$, sedangkan $X_2=-2$ menghasilkan $Q_2=(-3)^2-5=4$, dengan rata-rata bersyarat kembali nol. Pada waktu nol, $E[Q_1]=0=Q_0$. Secara aljabar, $E[S_2^2\\mid\\mathcal F_1]=S_1^2+E[X_2^2]=S_1^2+4$, sehingga $E[Q_2\\mid\\mathcal F_1]=S_1^2-1=Q_1$. Dengan demikian proses kompensasi kuadratik ini martingale meskipun varians kedua inkremen tidak sama.",
       "provenance": "dmath-original"
     },
     {
