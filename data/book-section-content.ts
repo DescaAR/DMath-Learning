@@ -27,6 +27,7 @@ import { inferenceRulesContent } from "@/data/inference-rules-content";
 import { topologicalContinuityContent } from "@/data/topological-continuity-content";
 import { exactDifferentialContent } from "@/data/exact-differential-content";
 import { fixedPointContent } from "@/data/fixed-point-content";
+import { linearDualityContent } from "@/data/linear-duality-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -127,6 +128,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "de-exact":exactDifferentialContent,
   // Proof-based contraction iteration, error bounds and concrete numerical solutions.
   "num-fixed-point":fixedPointContent,
+  // Duality with explicit feasibility, complementary slackness, and solved original exercises.
+  "or-dualitas":linearDualityContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
