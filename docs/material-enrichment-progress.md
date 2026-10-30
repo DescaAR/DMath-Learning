@@ -1,3 +1,19 @@
+## Catatan sesi 2026-10-30 — Analisis Numerik / Metode Numerik: Metode Secant (bab 2.5)
+
+**Bidang publik:** 18 Analisis Numerik; relevan untuk 19 Metode Numerik. **Halaman:** \`num-secant\`, https://descaar.github.io/DMath-Learning/materi/analisis-numerik/num-secant/. Sesi ini melanjutkan pengayaan galat absolut dan relatif tanpa mengulang submateri yang sudah diperbaiki. Branch \`main\`, versi Vercel, dan data video tidak disentuh.
+
+**Audit dua dimensi sebelum revisi:** artifact \`dmath-material-depth-audit\` pada GitHub Actions run 41057622975 diunduh dan dibaca per URL. \`solution-depth-report.json\` memuat **13 temuan** pada \`num-secant\`: 4 jawaban generik, 4 jawaban latihan pendek, 4 contoh terbahas pendek, dan 1 hasil formal tanpa bukti. \`material-depth-report.json\` memuat **2 temuan**: definisi tanpa contoh langsung dan hasil formal tanpa bukti. Sumber generator lama menampilkan latihan berupa petunjuk/rubrik, bukan perhitungan secant lengkap.
+
+**Revisi sumber yang benar-benar dirender:** menambah \`data/secant-content.ts\` dan override pada \`data/book-section-content.ts\`. Naskah memuat **4 definisi dengan contoh langsung**, **6 hasil formal beserta pembuktian**, **8 contoh terbahas**, dan **8 latihan SC-01–SC-08 dengan solusi konkret**. Topik mencakup kemiringan secant, selisih terbagi, akar sederhana, residual, akar interpolan linear, ketepatan untuk fungsi afine, identitas galat eksak pada model kuadratik, konvergensi lokal dengan syarat eksplisit, batas galat residual, dan invariansi skala. Penyebut nol dan akar multipel dijelaskan dengan contoh tandingan. Bukti konvergensi lokal direvisi agar argumen keterbedaan dua iterasi tidak sirkular. Tidak menambah visualisasi: perbaikan pembahasan asli menjadi prioritas. Skrip regresi \`scripts/audit-solution-depth.mjs\` memeriksa konten yang dirender dan identitas numerik independen.
+
+**Pengujian terverifikasi:** commit audit \`48b907a4847ef56cda3ae9c87ececd3538028de0\` menjalankan GitHub Actions run **41064614925**; job build dan deploy sama-sama **completed/success**. Audit LaTeX, kedalaman naskah, kedalaman solusi, format skripsi, format pembahasan, TypeScript, dan build static berhasil. Artifact HTML \`num-secant/index.html\` diperiksa: **424 elemen KaTeX, 0 \`katex-error\`**, dan SC-01 sampai SC-08 ditemukan. Pengujian browser interaktif belum dilakukan.
+
+**Perbandingan JSON aktual:** temuan kedalaman target **13→0** dan struktural target **2→0**. Global buku: latihan pendek **5.895→5.887**, jawaban generik **720→716**, contoh pendek **3.417→3.413**, pembuktian pendek **1.035→1.034**; definisi dengan contoh langsung **514→518** dan hasil formal dengan bukti **1.186→1.192**. Angka merupakan indikator triage, bukan sertifikasi kebenaran seluruh katalog. Audit \`publicFields\` tetap memuat tepat **26 bidang publik**, dan \`nonBook\` tetap memuat 12 halaman. Pemeriksaan manual mendalam sesi ini hanya pada \`num-secant\`; 26/26 cakupan historis tidak berarti seluruh submateri selesai.
+
+**Prioritas berikutnya:** rotasikan ke bidang **21 Pemodelan Matematika** atau bank soal independen bidang **19 Metode Numerik**, dengan inspeksi solusi sumber asli dan pemeriksaan kasus batas. Pada Analisis Numerik, \`num-roundoff-cancellation\` dan \`num-error-iterative-root\` masih perlu ditelaah. Hindari mengulang \`num-secant\` tanpa regresi baru. Rujukan: Burden–Faires (2011), *Numerical Analysis*, ed. 9; Traub (1964), *Iterative Methods for the Solution of Equations*.
+
+---
+
 ## Catatan sesi 2026-10-30 — Analisis Numerik: Galat Absolut dan Relatif (bab 1)
 
 **Bidang publik:** 18 Analisis Numerik; relevan untuk 19 Metode Numerik. **Halaman:** `num-galat-absolut-relatif`, https://descaar.github.io/DMath-Learning/materi/analisis-numerik/num-galat-absolut-relatif/. Sesi ini melanjutkan `num-truncation-error` tanpa mengulang materi yang telah diperbaiki. Branch `main`, versi Vercel, dan data video tidak disentuh.
