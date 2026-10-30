@@ -10,6 +10,8 @@
 
 **Prioritas berikutnya:** num-conditioning-stability (8 jawaban generik/pendek dan 2 definisi tanpa contoh), num-galat-absolut-relatif (9 temuan), serta bank soal independen bidang 19 dan 21. Jangan mengulang num-floating-point tanpa temuan akademik baru. Rujukan: Higham (2002), Accuracy and Stability of Numerical Algorithms, ed. 2; Goldberg (1991), ACM Computing Surveys 23(1).
 
+**Verifikasi setelah revisi (30 Oktober 2026):** Commit isi 7be5d0fa5ee4268cefaf0eda7f944b8944f521c5 berhasil melalui GitHub Actions run 41034328874 (completed/success), termasuk audit LaTeX, audit kedalaman naskah dan solusi, format skripsi dan solusi, regresi, TypeScript/build, serta job deploy Pages (success). Artifact audit sebelum (run 41027208768) dan sesudah dibandingkan: temuan num-floating-point **9→0** pada solusi dan **2→0** pada naskah. Global buku: latihan pendek **5.928→5.920**, jawaban generik terdeteksi **736→732**, bukti pendek **1.037→1.036**, contoh pendek **3.417→3.417**; definisi dengan contoh **498→503** dan hasil formal dengan bukti **1.161→1.167**. Angka merupakan triage, bukan sertifikasi matematika. Artifact HTML yang dipublikasikan memuat FP-01 sampai FP-08, memiliki **442 elemen KaTeX dan nol katex-error**. Verifikasi interaksi browser masih terbuka. Pengujian independen Decimal memeriksa ties-to-even, dua contoh pembatalan, urutan penjumlahan, perkalian berurutan, dan kedua akar kuadrat. Pemeriksaan terhadap branch main tetap pada 7689a041d24648f2b8b200040d126a1e248d842a; versi Vercel dan data video tidak diubah.
+
 ---
 
 ## Catatan sesi 2026-10-30 — Optimisasi Numerik: Metode Newton untuk Optimisasi
