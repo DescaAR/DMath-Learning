@@ -1,3 +1,4 @@
+import { iterativeRootErrorContent } from "@/data/iterative-root-error-content";
 import { jacobiGaussSeidelContent } from "@/data/jacobi-gauss-seidel-content";
 import { sigmaAlgebraClassesContent } from "@/data/sigma-algebra-classes-content";
 import type { BookLessonContent } from "@/data/book-content-types";
@@ -90,6 +91,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentD,
   // Jacobi and Gauss–Seidel: exact splittings, convergence proofs, residuals, and complete exercises.
   "num-jacobi-gauss-seidel":jacobiGaussSeidelContent,
+  // Root-finding error certificates, Newton/secant error identities, and complete original exercises.
+  "num-error-iterative-root":iterativeRootErrorContent,
   // Absolute and relative error with explicit domain conditions and fully worked original exercises.
   "num-galat-absolut-relatif":absoluteRelativeErrorContent,
   // Correctly rounded arithmetic, conditioning and fully worked floating-point problems.
