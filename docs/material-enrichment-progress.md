@@ -10,7 +10,9 @@
 
 **Jejak commit:** sumber khusus f174711604ba5e925e5c1c0ce34fbcffa764377e; registrasi render bb4f61fd79f202a4c01fe11eec28aaa40619add6; regresi 3ab0a338a7f5e02fff3bf10323e4daf68e542930. Seluruh commit hanya pada github-pages-static; main, Vercel, dan data video tidak disentuh.
 
-**Prioritas sesi berikutnya:** periksa artifact dan status deployment commit final, bandingkan temuan URL sebelum/sesudah, cek HTML KaTeX dan visualisasi yang sudah ada, lalu rotasi ke bidang publik 21 Pemodelan Matematika atau bank soal independen yang masih memiliki jawaban rubrik. Jangan mengulang pengayaan num-error-iterative-root bila hasil auditnya telah bersih.
+**Hasil audit pascarevisi terverifikasi (commit kode 3ab0a338a7f5, workflow 41124723739 success):** kedua laporan JSON artifact GitHub Actions diunduh dan dibandingkan dengan baseline. Temuan solusi URL target **13 → 0**, temuan struktural **2 → 0**. Global: latihan pendek **5.871 → 5.863**, contoh pendek **3.394 → 3.390**, jawaban generik **712 → 708**, pembuktian pendek **1.033 → 1.032**. Definisi dengan contoh langsung **538 → 542**, hasil formal dengan bukti **1.223 → 1.230**. Semua angka hanya triage. HTML build target diperiksa dari artifact Pages: **486 elemen KaTeX, 0 katex-error**, seluruh ER-01 sampai ER-08 hadir, dan tidak ada LaTeX mentah di luar elemen KaTeX. Regresi aritmetika independen lulus. Deployment workflow commit kode 41124723739 berstatus **completed/success**; commit dokumentasi yang lebih baru harus diperiksa lagi sebelum menyebutnya sebagai deployment terakhir.
+
+**Prioritas sesi berikutnya:** pastikan workflow commit dokumentasi terakhir sukses, lalu rotasi ke bidang publik 21 Pemodelan Matematika atau bank soal independen yang masih memiliki jawaban rubrik. Jangan mengulang pengayaan num-error-iterative-root karena temuan target pada dua audit sudah nol.
 
 ---
 
