@@ -2193,3 +2193,43 @@ for(const [slug,markers] of [
     assert.ok((1+delta)**10>1,"Noncontractive fixed-point counterexample mismatch");
   }
 }
+
+
+// Operations-study workflow: assert the actual rendered source and independent certificates.
+{
+  const lesson=getBookSectionContent("or-proses-studi");
+  assert.ok(lesson,"Authored operations-study lesson is not rendered");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4,"Operations-study definitions missing");
+  assert.equal(results.length,5,"Operations-study formal results missing");
+  assert.equal(lesson.examples.length,8,"Operations-study worked examples missing");
+  assert.equal(lesson.exercises.length,8,"Operations-study exercises missing");
+  for(const def of defs)
+    assert.ok(lesson.examples.some(example=>example.forDefinition===def.title),
+      "Operations-study definition lacks its own example: "+def.title);
+  for(const item of results){
+    assert.ok(item.proof?.length>=2 && normalize(item.proof.join(" ")).length>300,
+      "Operations-study proof insufficient: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),
+      "Operations-study proof missing closure: "+item.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(normalize(example.solution.join(" ")).length>420 &&
+      !/jawaban yang baik|contoh harus|strategi yang baik/i.test(example.solution.join(" ")),
+      "Operations-study example remains generic: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>470 &&
+      !/jawaban yang baik|contoh harus|strategi yang baik/i.test(exercise.answer),
+      "Operations-study exercise remains generic: "+exercise.prompt.slice(0,50));
+  assert.ok(lesson.exercises.some(item=>item.prompt.startsWith("PS-08.")),
+    "Operations-study final exercise missing");
+  const feasible=(x,y,b1=4)=>x>=0&&y>=0&&x+y<=b1&&2*x+y<=6;
+  assert.ok(feasible(2,2)&&3*2+2*2===10,"Nominal certificate mismatch");
+  assert.ok(feasible(3,0,3)&&3*3+2*0===9,"Robust certificate mismatch");
+  assert.ok(!feasible(2,2,3),"Nominal optimum should not be robust");
+  assert.ok(Math.abs((.1*2-.2*2)-(-.2))<1e-12,"Sensitivity example mismatch");
+  assert.ok(Math.abs((.1**2+.2**2+.2**2)/3-.03)<1e-12,"Residual MSE mismatch");
+  assert.ok(Math.abs(4*3+3*2-18)<1e-12,"PS-01 objective mismatch");
+  assert.ok(Math.abs((-.2*1+.1*3+.3*2)-.7)<1e-12,"PS-05 sensitivity mismatch");
+}
