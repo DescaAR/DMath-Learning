@@ -1227,3 +1227,54 @@ for(let k=0;k<=100;k++){
   assert.ok(x>=0&&x<=1&&Math.abs(x*(1-x)-y)<1e-10,
     "Compact continuous image reverse inclusion failed");
 }
+
+
+// Radon–Nikodym regression: inspect the actually rendered lesson, not the
+// obsolete generated measure-theory template. Length is only a triage guard.
+const rnLesson=getBookSectionContent("tup-radon-nikodym");
+assert.ok(rnLesson,"Radon–Nikodym lesson is missing from the book registry");
+const rnDefinitions=rnLesson.formal.filter(item=>item.kind==="definition");
+const rnResults=rnLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(rnDefinitions.length,4,"Four Radon–Nikodym definitions are required");
+assert.equal(rnResults.length,6,"Six proved Radon–Nikodym results are required");
+assert.equal(rnLesson.examples.length,8,"Eight actual Radon–Nikodym examples are required");
+assert.equal(rnLesson.exercises.length,8,"Eight actual Radon–Nikodym exercises are required");
+for(const definition of rnDefinitions){
+  assert.ok(rnLesson.examples.some(example=>example.forDefinition===definition.title),
+    "Missing direct definition example: "+definition.title);
+}
+for(const result of rnResults){
+  assert.ok(result.proof?.length>=3 && normalize(result.proof.join(" ")).length>=450,
+    "Radon–Nikodym proof is incomplete: "+result.title);
+}
+for(const example of rnLesson.examples){
+  assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>=450,
+    "Radon–Nikodym worked example is still short: "+example.title);
+}
+for(const exercise of rnLesson.exercises){
+  assert.ok(normalize(exercise.answer).length>=450 &&
+    !/jawaban yang baik|contoh harus|rubrik|soal harus/i.test(exercise.answer),
+    "Radon–Nikodym exercise is still a generic rubric: "+exercise.prompt);
+}
+// Atomic measures: ν({i})=h(i)μ({i}); verify every one of the 2^3 subsets.
+const muRN=[1,2,4],nuRN=[3,0,2],hRN=nuRN.map((v,i)=>v/muRN[i]);
+for(let mask=0;mask<8;mask++){
+  const nuA=nuRN.reduce((sum,v,i)=>sum+((mask>>i)&1)*v,0);
+  const intA=hRN.reduce((sum,h,i)=>sum+((mask>>i)&1)*h*muRN[i],0);
+  assert.ok(Math.abs(nuA-intA)<1e-12,"RN atomic density failed on subset "+mask);
+}
+// Continuous density, chain rule, and change-of-measure exercise checks.
+for(let k=0;k<=100;k++){
+  const t=k/100;
+  assert.ok(Math.abs((t*t)-(t*t))<1e-12);
+  assert.ok(Math.abs((2*t*t)*(2*t)-(4*t*t*t))<1e-12,
+    "Radon–Nikodym chain rule failed at "+t);
+  assert.ok(Math.abs((3*t/2)*(2*t)-3*t*t)<1e-12,
+    "Radon–Nikodym worked example chain rule failed at "+t);
+}
+assert.ok(Math.abs((3/4-1/4)-1/2)<1e-12,"RN beta density exercise failed");
+assert.ok(Math.abs((1/9)/(1-1/9)-1/8)<1e-12,"RN geometric atom exercise failed");
+assert.ok(Math.abs((1+4+9)/6-7/3)<1e-12,"RN discrete change of measure failed");
+const rnCurriculum=bookSubjects.find(subject=>subject.slug==="teori-ukuran-probabilitas");
+assert.ok(rnCurriculum?.chapters.some(ch=>ch.sections.some(sec=>sec.slug==="tup-radon-nikodym")),
+  "Radon–Nikodym lesson must remain in the public measure-theory curriculum");
