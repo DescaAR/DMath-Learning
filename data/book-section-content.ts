@@ -129,6 +129,9 @@ export const bookSectionContent:Record<string,BookLessonContent>={
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
   const content=bookSectionContent[sectionSlug];
   if(!content)return null;
+  // The authored exact-equations lesson already incorporates and fully solves the
+  // original enrichment exercise; avoid duplicating its older short solution.
+  if(sectionSlug==="de-exact")return content;
   const enrichment=academicEnrichment[sectionSlug];
   const curatedExercises=curatedSectionExercises[sectionSlug]??[];
   if(!enrichment&&curatedExercises.length===0)return content;
