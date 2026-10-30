@@ -39,7 +39,8 @@ for(const exercise of lesson.exercises){
 const registry=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
 assert.match(registry,/import \{ exactDifferentialContent \} from "@\/data\/exact-differential-content";/);
 assert.match(registry,/"de-exact":exactDifferentialContent/);
-assert.match(registry,/if\(sectionSlug==="de-exact"\)return content/);
+assert.ok(!registry.includes('if(sectionSlug==="de-exact")return content'),
+  "Exact-equations content should use normal composition after migration");
 const curricula=fs.readFileSync(path.join(root,"data/expanded-book-curricula.ts"),"utf8");
 assert.match(curricula,/"de-exact"/);
 const h=1e-6;
