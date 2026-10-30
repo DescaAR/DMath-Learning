@@ -1077,3 +1077,65 @@ const D=[1,2];
 const P=x=>x===1;
 assert.ok(D.some(P)&&!D.every(P),
   "Existential does not imply universal: finite countermodel failed");
+
+
+// Topological continuity regression: check the actual book-section registry,
+// formal hypotheses, linked definitions, worked problems and finite-set identities.
+// Length remains a triage guard; mathematical assertions are checked independently.
+const topoLesson=getBookSectionContent("kontinuitas-topologis");
+assert.ok(topoLesson,"Missing authored topological continuity lesson");
+const topoDefs=topoLesson.formal.filter(x=>x.kind==="definition");
+const topoResults=topoLesson.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+assert.equal(topoDefs.length,5);
+assert.equal(topoResults.length,7);
+assert.equal(topoLesson.examples.length,8);
+assert.equal(topoLesson.exercises.length,8);
+for(const definition of topoDefs){
+  assert.ok(topoLesson.examples.some(ex=>ex.forDefinition===definition.title),
+    "Topological definition missing a linked worked example: "+definition.title);
+}
+for(const item of topoResults){
+  assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>=350,
+    "Topological result lacks detailed proof: "+item.title);
+}
+for(const example of topoLesson.examples){
+  assert.ok(example.solution.length>=3 &&
+    normalize(example.solution.join(" ")).length>=350,
+    "Topological worked example is still too terse: "+example.title);
+}
+for(const exercise of topoLesson.exercises){
+  assert.ok(normalize(exercise.answer).length>=500 &&
+    !/jawaban yang baik|contoh harus|soal harus|rubrik/i.test(exercise.answer),
+    "Topological exercise must have an actual detailed solution: "+exercise.prompt);
+}
+const topologyCurriculum=bookSubjects.find(s=>s.slug==="analisis-real");
+assert.ok(topologyCurriculum?.chapters.some(ch=>ch.sections.some(s=>s.slug==="kontinuitas-topologis")),
+  "Topological continuity lesson not linked in public real-analysis chapter 11");
+for(let a=0;a<8;a++)for(let b=0;b<8;b++){
+  const domain=[0,1,2],f=x=>x%2;
+  const pre=mask=>domain.filter(x=>((mask>>f(x))&1)!==0);
+  const same=(xs,ys)=>xs.length===ys.length&&xs.every(x=>ys.includes(x));
+  const union=(a,b)=>a|b,intersection=(a,b)=>a&b;
+  assert.ok(same(pre(union(a,b)),domain.filter(x=>pre(a).includes(x)||pre(b).includes(x))),
+    "Preimage union failed");
+  assert.ok(same(pre(intersection(a,b)),domain.filter(x=>pre(a).includes(x)&&pre(b).includes(x))),
+    "Preimage intersection failed");
+  assert.ok(same(pre((~a)&3),domain.filter(x=>!pre(a).includes(x))),
+    "Preimage complement failed");
+}
+for(let i=0;i<=100;i++){
+  const x=-2+i*0.03;
+  assert.ok(x*x>=0&&x*x<=4+1e-10,"Square image interval bound failed");
+}
+for(let k=0;k<=100;k++){
+  const y=4*k/100;
+  const x=-Math.sqrt(y);
+  assert.ok(x>=-2-1e-12&&x<=1+1e-12&&Math.abs(x*x-y)<1e-10,
+    "Square image reverse inclusion failed");
+}
+for(let k=0;k<=100;k++){
+  const y=k/400;
+  const x=(1-Math.sqrt(1-4*y))/2;
+  assert.ok(x>=0&&x<=1&&Math.abs(x*(1-x)-y)<1e-10,
+    "Compact continuous image reverse inclusion failed");
+}
