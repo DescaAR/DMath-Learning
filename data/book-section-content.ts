@@ -1,4 +1,5 @@
 import type { BookLessonContent } from "@/data/book-content-types";
+import { statisticalIndependenceContent } from "@/data/statistical-independence-content";
 import { graphDefinitionsContent } from "@/data/graph-definitions-content";
 import { euclideanDivisionContent } from "@/data/euclidean-division-content";
 import { supremumApplicationsContent } from "@/data/supremum-applications-content";
@@ -139,6 +140,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "ks-martingale":martingaleContent,
   // Paired observations: covariance-aware inference, exact Student proof and solved problems.
   "sta-paired":pairedDataContent,
+  // Event-wise versus mutual independence, discrete factorization, and solved counterexamples.
+  "stm-independence":statisticalIndependenceContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
