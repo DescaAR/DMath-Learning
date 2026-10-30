@@ -1884,3 +1884,78 @@ for(const [slug,markers] of [
   assert.equal(7*(3/5)+2*3,10.2);
   assert.equal(7+2*3,13);
 }
+
+
+// Authored LP applications regression: inspect the source actually rendered by the public lesson.
+{
+  const lesson=getBookSectionContent("or-lp-aplikasi");
+  assert.ok(lesson,"LP applications lesson missing from public catalog");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const proved=lesson.formal.filter(item=>["proposition","theorem","lemma","corollary"].includes(item.kind));
+  assert.equal(defs.length,4,"LP applications definitions changed");
+  assert.equal(proved.length,6,"LP applications formal results changed");
+  assert.equal(lesson.examples.length,8,"LP applications examples changed");
+  assert.equal(lesson.exercises.length,8,"LP applications exercises changed");
+  for(const def of defs){
+    assert.ok(lesson.examples.some(ex=>ex.forDefinition===def.title),
+      "LP application definition has no direct example: "+def.title);
+  }
+  for(const result of proved){
+    assert.ok(result.proof?.length>=2 &&
+      normalize(result.proof.join(" ")).length>300 &&
+      result.proof.at(-1).includes("\\square"),
+      "LP application result is not fully proved: "+result.title);
+  }
+  for(const ex of lesson.examples){
+    assert.ok(ex.solution.length>=3 && normalize(ex.solution.join(" ")).length>450,
+      "LP application example lacks substantive computation: "+ex.title);
+  }
+  for(const [i,exercise] of lesson.exercises.entries()){
+    assert.ok(exercise.prompt.startsWith("AP-0"+(i+1)+"."),
+      "LP application exercise numbering mismatch: "+i);
+    assert.ok(normalize(exercise.answer).length>450 &&
+      !/jawaban yang baik|contoh harus|rubrik/i.test(exercise.answer),
+      "LP application exercise still generic or incomplete: "+exercise.prompt);
+  }
+  const text=lesson.intro.join(" ");
+  for(const marker of ["satuan","kapasitas","pencampuran","transportasi","sensitivitas"])
+    assert.ok(text.includes(marker),"LP application introduction lacks "+marker);
+  // Production: dual upper-bound certificate and feasible equality.
+  assert.equal(2*3+2,8);
+  assert.equal(3+2,5);
+  assert.equal(4*3+3*2,18);
+  for(let x=0;x<=4;x+=0.25)for(let y=0;y<=5;y+=0.25)
+    if(x+y<=5+1e-12 && 2*x+y<=8+1e-12)
+      assert.ok(4*x+3*y<=18+1e-12,"Production LP certificate violated");
+  // Blending: two distinct units, both binding constraints, and dual lower bound.
+  assert.equal(4+8,12);
+  assert.ok(Math.abs(.1*4+.4*8-3.6)<1e-12);
+  assert.equal(3*4+6*8,60);
+  // Transportation: all four flow balances and global linear cost.
+  const flow=[4,0,1,5];
+  assert.equal(flow[0]+flow[1],4);
+  assert.equal(flow[2]+flow[3],6);
+  assert.equal(flow[0]+flow[2],5);
+  assert.equal(flow[1]+flow[3],5);
+  assert.equal(flow[0]+4*flow[1]+3*flow[2]+2*flow[3],17);
+  // Diet: exact rational intersection and lower bound.
+  assert.equal(3*(6/5)+12/5,6);
+  assert.equal(6/5+2*(12/5),6);
+  assert.ok(Math.abs(5*(6/5)+4*(12/5)-78/5)<1e-12);
+  // Staffing: integer feasible solution and lower-bound decomposition.
+  assert.equal(3+4+2,9);
+  assert.equal(7*3+6*4+2*2,49);
+  // Sensitivity: dual multipliers remain nonnegative exactly on [-1,2].
+  for(const delta of [-1,-.5,0,1,2]){
+    const u=2-delta,v=1+delta;
+    assert.ok(u>=0 && v>=0);
+    assert.equal(u+2*v,4+delta);
+    assert.equal(u+v,3);
+  }
+  // Integrality: compare relaxed optimum to enumerated integer feasible points.
+  let integerBest=-Infinity;
+  for(let x=0;x<=3;x++)for(let y=0;y<=2;y++)
+    if(2*x+3*y<=7)integerBest=Math.max(integerBest,3*x+4*y);
+  assert.equal(integerBest,10);
+  assert.equal(3*(7/2),21/2);
+}
