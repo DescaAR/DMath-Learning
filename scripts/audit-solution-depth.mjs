@@ -726,6 +726,20 @@ for(const ex of sigmaPage.exercises){
   assert.ok(!likelyUnsolved(ex.answer),"Sigma-algebra answer is a rubric");
   checked.push(["tup-classes-sets","exercise",ex.prompt.slice(0,65)]);
 }
+const sigmaMathText=[
+  ...sigmaPage.intro,
+  ...sigmaPage.formal.flatMap(x=>[x.statement,x.explanation??"",...(x.proof??[])]),
+  ...sigmaPage.examples.flatMap(x=>[x.problem,...x.solution,x.conclusion??""]),
+  ...sigmaPage.exercises.flatMap(x=>[x.prompt,x.hint,x.answer]),
+];
+for(const block of sigmaMathText){
+  const parts=block.split("$");
+  assert.equal(parts.length%2,1,"Unbalanced inline-math delimiters in sigma lesson");
+  for(let i=0;i<parts.length;i+=2){
+    assert.ok(!/\\(?:mathcal|sigma|lambda|pi|varnothing|bigcup|bigcap|subseteq|setminus|infty|square|cap|cup|in|notin)\b/.test(parts[i]),
+      "Bare LaTeX command outside math delimiters in sigma lesson: "+parts[i].slice(0,100));
+  }
+}
 const sigmaRegistry=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
 assert.match(sigmaRegistry,/"tup-classes-sets":sigmaAlgebraClassesContent/);
 // Bit-mask model on X={1,2,3}: {X,{1},{1,2}} generates all 8 subsets.
