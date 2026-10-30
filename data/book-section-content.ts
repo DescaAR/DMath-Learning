@@ -28,6 +28,7 @@ import { probabilityDensityContent } from "@/data/probability-density-content";
 import { centralTendencyContent } from "@/data/central-tendency-content";
 import { modelingContent } from "@/data/modeling-content";
 import { linearityModelContent } from "@/data/linearity-model-content";
+import { lpApplicationsContent } from "@/data/lp-applications-content";
 import { pointEstimationContent } from "@/data/point-estimation-content";
 import { primeFactorizationContent } from "@/data/prime-factorization-content";
 import { inclusionExclusionContent } from "@/data/inclusion-exclusion-content";
@@ -137,6 +138,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "or-model-deterministik-stokastik":modelingContent,
   // Proof-based linearity, affine modeling, integer relaxation and fully worked exercises.
   "or-linearitas":linearityModelContent,
+  // Detailed production, blending, transportation and staffing applications with LP certificates.
+  "or-lp-aplikasi":lpApplicationsContent,
   // Authored statistical point estimation: bias, MSE, consistency and worked problems.
   "stm-point-estimator":pointEstimationContent,
   // Fully proved prime factorization and actual original-problem replacements.
