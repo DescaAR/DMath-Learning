@@ -1,5 +1,6 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 import { floatingPointContent } from "@/data/floating-point-content";
+import { conditioningStabilityContent } from "@/data/conditioning-stability-content";
 import { statisticalIndependenceContent } from "@/data/statistical-independence-content";
 import { newtonOptimizationContent } from "@/data/newton-optimization-content";
 import { graphDefinitionsContent } from "@/data/graph-definitions-content";
@@ -80,6 +81,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentD,
   // Correctly rounded arithmetic, conditioning and fully worked floating-point problems.
   "num-floating-point":floatingPointContent,
+  // Condition numbers, residual bounds, backward stability, and solved examples.
+  "num-conditioning-stability":conditioningStabilityContent,
   // This carefully authored lesson supersedes the generated graph overview.
   "gt-definitions":graphDefinitionsContent,
   // Full proof of the division algorithm supersedes the generic number-theory page.
