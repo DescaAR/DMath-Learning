@@ -1,3 +1,4 @@
+import { operationsStudyContent } from "@/data/operations-study-content";
 import { iterativeRootErrorContent } from "@/data/iterative-root-error-content";
 import { jacobiGaussSeidelContent } from "@/data/jacobi-gauss-seidel-content";
 import { sigmaAlgebraClassesContent } from "@/data/sigma-algebra-classes-content";
@@ -89,6 +90,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // Full modeling workflow: primal-dual certificates, robust feasibility, residuals, and original solutions.
+  "or-proses-studi":operationsStudyContent,
   // Jacobi and Gauss–Seidel: exact splittings, convergence proofs, residuals, and complete exercises.
   "num-jacobi-gauss-seidel":jacobiGaussSeidelContent,
   // Root-finding error certificates, Newton/secant error identities, and complete original exercises.
