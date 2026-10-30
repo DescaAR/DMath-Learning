@@ -98,7 +98,7 @@ export const curatedSectionExercises:Record<string,BookExercise[]>={
     {
       prompt:"Untuk Brownian motion standar $W$, tentukan $P(W_4>2)$.",
       hint:"Gunakan $W_4\\sim N(0,4)$ dan standarisasi dengan simpangan baku 2.",
-      answer:"Menurut definisi Brownian motion standar, $W_4\\sim N(0,4)$.\nKarena simpangan bakunya 2, peubah $Z=W_4/2$ mengikuti $N(0,1)$.\nDiperoleh $P(W_4>2)=P(Z>1)$.\nTabel normal baku memberi nilai sekitar $0.1587$."
+      answer:"Diketahui $(W_t)_{t\\ge0}$ adalah gerak Brown standar, sehingga $W_0=0$ hampir pasti dan setiap inkremen $W_t-W_s$ pada $0\\le s<t$ berdistribusi $N(0,t-s)$. Ditentukan peluang $P(W_4>2)$, bukan peluang untuk inkremen pada interval panjang dua.\n\nAmbil $s=0$ dan $t=4$. Karena $W_4-W_0\\sim N(0,4)$ dan $W_0=0$ hampir pasti, diperoleh $W_4\\sim N(0,4)$. Parameter kedua dalam $N(0,4)$ adalah variansi, sehingga simpangan bakunya $\\sigma=\\sqrt4=2$. Untuk menstandarkan, definisikan $Z=(W_4-0)/2$. Sifat transformasi afine Gaussian menjamin $Z\\sim N(0,1)$.\n\nKarena pembagian dengan $2>0$ mempertahankan arah pertidaksamaan, peristiwa $\\{W_4>2\\}$ sama dengan $\\{Z>1\\}$. Dengan fungsi distribusi normal baku $\\Phi(z)=P(Z\\le z)$, diperoleh $P(W_4>2)=1-\\Phi(1)$. Menggunakan $\\Phi(1)\\approx0{,}841344746$, hasilnya $P(W_4>2)\\approx0{,}158655254$, yaitu sekitar $15{,}87\\%$.\n\nSebagai pemeriksaan, ambang $2$ tepat satu simpangan baku di atas mean nol. Peluang ekor kanan normal pada satu simpangan baku memang sekitar $0{,}159$. Kesamaan $P(W_4=2)=0$ mengikuti kontinuitas distribusi normal, sehingga tanda $>$ dapat diganti $\\ge$ tanpa mengubah hasil."
     }
   ],
   "ks-ito-isometry":[
