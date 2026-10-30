@@ -2,15 +2,16 @@ import type { BookExample } from "@/data/book-content-types";
 
 /** Individually proved examples keyed to exact formal definitions. */
 export const enrichedMeasureExamples:Record<string,BookExample>={
-  "teori-ukuran-probabilitas:Sistem $\\pi$ dan Sistem $\\lambda$": {
+  "teori-ukuran-probabilitas:Sistem Pi": {
     "title": "Sistem $\\pi$ dan Sistem $\\lambda$",
-    "forDefinition": "Sistem $\\pi$ dan Sistem $\\lambda$",
+    "forDefinition": "Sistem Pi",
     "problem": "Ambil $X=\\{1,2,3\\}$ dan $\\mathcal P=\\{\\varnothing,\\{1\\},X\\}$. Buktikan bahwa $\\mathcal P$ merupakan sistem $\\pi$ tetapi bukan sistem $\\lambda$.",
     "solution": [
-      "Irisan sebarang dua anggota $\\mathcal P$ masih berupa $\\varnothing$, $\\{1\\}$, atau $X$. Jadi $\\mathcal P$ tertutup terhadap irisan hingga.",
-      "Akan tetapi, $X\\setminus\\{1\\}=\\{2,3\\}\\notin\\mathcal P$. Oleh karena itu, $\\mathcal P$ tidak tertutup terhadap komplemen.",
-      "Karena salah satu aksioma sistem $\\lambda$ gagal, $\\mathcal P$ bukan sistem $\\lambda$."
-    ],
+    "Diketahui $X=\\{1,2,3\\}$ dan $\\mathcal P=\\{\\varnothing,\\{1\\},X\\}$. Dibuktikan bahwa $\\mathcal P$ memenuhi definisi sistem $\\pi$ tetapi gagal memenuhi definisi sistem $\\lambda$. Ketiga anggotanya bersarang: $\\varnothing\\subseteq\\{1\\}\\subseteq X$.",
+    "Diambil sebarang $A,B\\in\\mathcal P$. Karena kedua anggota dapat dibandingkan menurut inklusi, irisannya sama dengan anggota yang lebih kecil. Jadi $A\\cap B$ tetap salah satu dari $\\varnothing,\\{1\\},X$ dan berada dalam $\\mathcal P$. Keluarga ini tidak kosong; dengan demikian seluruh syarat sistem $\\pi$ terpenuhi.",
+    "Untuk sistem $\\lambda$, syarat $X\\in\\mathcal P$ memang terpenuhi. Namun ambil $A=\\{1\\}$ dan $B=X$, yang keduanya berada dalam $\\mathcal P$ dan memenuhi $A\\subseteq B$. Selisih bertingkatnya $B\\setminus A=\\{2,3\\}$ tidak termasuk $\\mathcal P$. Jadi aksioma selisih bertingkat gagal. Setara dengan itu, komplemen $\\{1\\}^c=\\{2,3\\}$ tidak termasuk keluarga.",
+    "Karena satu aksioma yang diwajibkan gagal, $\\mathcal P$ bukan sistem $\\lambda$. Contoh ini juga menunjukkan bahwa ketertutupan irisan tidak dengan sendirinya memberikan ketertutupan komplemen atau selisih; kedua jenis sistem harus dibedakan secara formal."
+],
     "conclusion": "$\\mathcal P$ merupakan sistem $\\pi$, tetapi bukan sistem $\\lambda$."
   },
   "teori-ukuran-probabilitas:Himpunan Nol": {
