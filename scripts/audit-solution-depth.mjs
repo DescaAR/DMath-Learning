@@ -1568,3 +1568,63 @@ for(const c of [-5,-2,0,2,5]){
   assert.ok(Math.abs(mean-(3+c))<1e-12 && Math.abs(variance-2.5)<1e-12,
     "Paired-data shift identity failed for c="+c);
 }
+
+
+// Conditioning-stability regression: inspect the rendered lesson and verify
+// its mathematics independently of prose-length triage.
+{
+  const lesson=getBookSectionContent("num-conditioning-stability");
+  assert.ok(lesson,"Conditioning and stability lesson missing from public registry");
+  const definitions=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(definitions.length,5);
+  assert.equal(results.length,7);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const item of definitions)
+    assert.ok(lesson.examples.some(example=>example.forDefinition===item.title),
+      "Definition lacks a linked worked example: "+item.title);
+  for(const item of results){
+    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>=350,
+      "Incomplete conditioning proof: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),
+      "Missing proof closure: "+item.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>=350,
+      "Incomplete conditioning example: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>=450 &&
+      !/jawaban yang baik|contoh harus|rubrik|soal harus/i.test(exercise.answer),
+      "Rubric-style conditioning solution: "+exercise.prompt);
+  const subject=bookSubjects.find(item=>item.slug==="analisis-numerik");
+  assert.ok(subject?.chapters.some(chapter=>chapter.sections.some(section=>
+    section.slug==="num-conditioning-stability")),
+    "Conditioning lesson missing from numerical analysis curriculum");
+
+  // A scalar 1% perturbation: f(x)=x^2 at x=2.
+  assert.equal((2*2)*(2*2)/(2*2),4);
+  assert.ok(Math.abs((2.02**2-4)/4-0.0201)<1e-12);
+  // A diagonal matrix has infinity condition number 100.
+  const diag=[1,0.01], inverse=diag.map(value=>1/value);
+  const condition=Math.max(...diag.map(Math.abs))*Math.max(...inverse.map(Math.abs));
+  assert.equal(condition,100);
+  const exact=[1,100],approx=[1,99],rhs=[1,1];
+  const residual=rhs.map((value,i)=>value-diag[i]*approx[i]);
+  const error=exact.map((value,i)=>value-approx[i]);
+  assert.ok(Math.abs(residual[1]-0.01)<1e-12);
+  assert.equal(error[1],1);
+  assert.ok(Math.abs(inverse[1]*residual[1]-error[1])<1e-12);
+  // Matrix perturbation: actual 1/11 < upper bound 1/9.
+  const eta=10*0.01;
+  assert.ok(eta<1 && 1/11<eta/(1-eta));
+  // Rounded summation: a+b=1.23456 -> 1.23.
+  const delta=(1.23-1.23456)/1.23456;
+  assert.ok(Math.abs(delta)<0.005);
+  assert.ok(Math.abs((1.23+0.00456)*(1+delta)-1.23)<1e-12);
+  // Algebraically identical formulas can have different finite-precision results.
+  const exactRoot=1/(Math.sqrt(10001)+100);
+  assert.ok(exactRoot>0 && Math.abs(0.005-exactRoot)/exactRoot<0.00003);
+  assert.equal(1.02-2.02+1,0);
+  assert.ok(Math.abs((1.01-1)**2-0.0001)<1e-12);
+}
