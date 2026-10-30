@@ -1986,7 +1986,7 @@ for(const [slug,markers] of [
   assert.equal(1/3,1/(3*1**2));
   assert.equal(4*(1/4)+3/4,7/4);
   assert.equal((3/4-1/2+1/4)/2,1/4);
-  assert.equal(4/3-2+1,1/3);
+  assert.ok(Math.abs((4/3-2+1)-1/3)<1e-12,"Ito integral variance floating-point check");
   assert.ok(577<1000/Math.sqrt(3) && 578>=1000/Math.sqrt(3),"Incorrect Ito RMSE threshold");
   for(const n of [2,5,10]){
     const left=Array.from({length:n},(_,k)=>k*k).reduce((a,b)=>a+b,0)/(n**3);
