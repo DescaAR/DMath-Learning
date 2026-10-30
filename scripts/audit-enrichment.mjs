@@ -62,9 +62,14 @@ const {enrichedDifferentialExamples}=loadSource(path.join(root,"data/enriched-di
 const {academicEnrichment}=loadSource(path.join(root,"data/academic-enrichment.ts"));
 
 const authored={...enrichedMeasureExamples,...enrichedAlgebraNumericalExamples,...enrichedDifferentialExamples};
-const expectedExampleCount=50,expectedSectionCount=23;
+const expectedExampleCount=50,expectedSectionCount=22;
 assert.equal(Object.keys(authored).length,expectedExampleCount,"Total individual examples changed unexpectedly");
 assert.equal(Object.keys(academicEnrichment).length,expectedSectionCount,"Incomplete enrichment chapter coverage");
+// The former exact-equations enrichment was migrated into a full authored lesson.
+// Keep a regression for the original exercise instead of retaining duplicate formal items.
+assert.equal(academicEnrichment["de-exact"],undefined,"Superseded exact-equations enrichment must not duplicate authored content");
+assert.ok(getBookSectionContent("de-exact")?.exercises.some(x=>x.prompt.includes("3x^2+2y") && x.answer.includes("F_y")),
+  "Original exact-equations exercise must survive migration with a worked solution");
 const issues=[];
 const subjectMap=new Map(bookSubjects.map(s=>[s.slug,s]));
 const slugMap=new Map();
