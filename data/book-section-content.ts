@@ -30,6 +30,7 @@ import { fixedPointContent } from "@/data/fixed-point-content";
 import { linearDualityContent } from "@/data/linear-duality-content";
 import { radonNikodymContent } from "@/data/radon-nikodym-content";
 import { martingaleContent } from "@/data/martingale-content";
+import { pairedDataContent } from "@/data/paired-data-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -136,6 +137,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "tup-radon-nikodym":radonNikodymContent,
   // Fully proved discrete martingales, bounded stopping and non-rubric exercises.
   "ks-martingale":martingaleContent,
+  // Paired observations: covariance-aware inference, exact Student proof and solved problems.
+  "sta-paired":pairedDataContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
