@@ -24,6 +24,7 @@ import { pointEstimationContent } from "@/data/point-estimation-content";
 import { primeFactorizationContent } from "@/data/prime-factorization-content";
 import { inclusionExclusionContent } from "@/data/inclusion-exclusion-content";
 import { inferenceRulesContent } from "@/data/inference-rules-content";
+import { topologicalContinuityContent } from "@/data/topological-continuity-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -118,6 +119,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "komb-inclusion-exclusion":inclusionExclusionContent,
   // Validity, countermodels, quantifier side conditions and complete original exercises.
   "md-aturan-inferensi":inferenceRulesContent,
+  // Topological preimages, two-way continuity proofs and solved exercises.
+  "kontinuitas-topologis":topologicalContinuityContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
