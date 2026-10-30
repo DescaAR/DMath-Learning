@@ -1785,3 +1785,43 @@ for(const c of [-5,-2,0,2,5]){
   assert.equal(se,0.2);
   assert.ok(Math.abs((10.4-10)/se-2)<1e-12);
 }
+
+
+// Authored LP/ANOVA/CLT worked-example regression, checking the public rendered registry.
+{
+  for(const [slug,count] of [["or-lp-formulasi",3],["sta-anova-oneway",2],["stm-clt",2]]){
+    const lesson=getBookSectionContent(slug);
+    assert.ok(lesson,"Missing public lesson for reviewed examples: "+slug);
+    assert.equal(lesson.examples.length,count,"Reviewed example count mismatch: "+slug);
+    for(const example of lesson.examples){
+      assert.ok(example.solution.length>=3,"Worked example lacks a stepwise solution: "+example.title);
+      assert.ok(normalize(example.solution.join(" ")).length>430,
+        "Worked example still too shallow: "+example.title);
+      assert.ok(!/jawaban yang baik|contoh harus|rubrik/i.test(example.solution.join(" ")),
+        "Generic solution in "+example.title);
+    }
+  }
+  const lp=getBookSectionContent("or-lp-formulasi");
+  assert.ok(lp.formal.some(item=>item.kind==="theorem" &&
+    item.title==="Optimum pada Titik Sudut Poligon Terbatas" &&
+    item.proof?.length===3 && item.proof.at(-1).includes("\\square")),
+    "Bounded LP corner theorem is missing or unproved");
+  assert.ok(lp.examples.some(example=>example.forDefinition==="Program Linear"),
+    "LP definition has no directly linked example");
+  const anova=getBookSectionContent("sta-anova-oneway");
+  assert.ok(anova.examples.some(example=>example.solution.join(" ").includes("12-2=10")),
+    "ANOVA pseudoreplication case not demonstrated");
+  const clt=getBookSectionContent("stm-clt");
+  assert.ok(clt.examples.some(example=>example.solution.join(" ").includes("0.02844397")),
+    "Binomial exact-versus-CLT comparison missing");
+  // Independent arithmetic checks for the reviewed worked examples.
+  assert.equal(3*2+2*2,10);
+  assert.equal(5*(8/3)+4*(8/3),24);
+  assert.equal(2*(8/3)+(8/3),8);
+  assert.equal(16/1/(4/2),8);
+  const choose=(n,k)=>{let x=1;for(let j=1;j<=k;j++)x=x*(n-j+1)/j;return x};
+  let tail=0;
+  for(let k=60;k<=100;k++)tail+=choose(100,k)/2**100;
+  assert.ok(Math.abs(tail-0.028443966820490395)<1e-12);
+  assert.ok(Math.abs(0.02871655981600182-tail)<0.0003);
+}
