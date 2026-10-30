@@ -58,6 +58,54 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Regression: authored numerical-analysis fixed-point lesson, not the generated rubric.
+const fixedPointLesson=getBookSectionContent("num-fixed-point");
+assert.ok(fixedPointLesson,"Missing fixed-point iteration content");
+const fpDefinitions=fixedPointLesson.formal.filter(item=>item.kind==="definition");
+const fpResults=fixedPointLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(fpDefinitions.length,4);
+assert.equal(fpResults.length,7);
+assert.equal(fixedPointLesson.examples.length,8);
+assert.equal(fixedPointLesson.exercises.length,8);
+for(const definition of fpDefinitions){
+  assert.ok(fixedPointLesson.examples.some(example=>example.forDefinition===definition.title),
+    "Fixed-point definition without a directly linked example: "+definition.title);
+}
+for(const result of fpResults){
+  assert.ok(result.proof?.length>=3 && normalize(result.proof.join(" ")).length>300,
+    "Fixed-point theorem without a detailed proof: "+result.title);
+}
+for(const exercise of fixedPointLesson.exercises){
+  assert.ok(normalize(exercise.answer).length>450 &&
+    !/jawaban yang baik|contoh harus|soal yang baik|susun satu soal/i.test(exercise.answer),
+    "Fixed-point exercise has a generic or brief solution: "+exercise.prompt);
+}
+const fpG=x=>(x+2)/3;
+for(let i=0;i<=20;i++){
+  const x=2*i/20;
+  assert.ok(fpG(x)>=0&&fpG(x)<=2,"Fixed-point map leaves interval");
+  for(let j=0;j<=20;j++){
+    const y=2*j/20;
+    assert.ok(Math.abs(fpG(x)-fpG(y))<=Math.abs(x-y)/3+1e-12,
+      "Fixed-point contraction constant mismatch");
+  }
+}
+let fpIter=0;
+for(let n=1;n<=8;n++){
+  fpIter=fpG(fpIter);
+  assert.ok(Math.abs(fpIter-(1-Math.pow(3,-n)))<1e-12,
+    "Fixed-point iteration exact formula mismatch at n="+n);
+}
+assert.equal(3**6<1000&&3**7>1000,true,"Fixed-point stopping criterion regression");
+const fpSqrtG=x=>x-(x*x-2)/3;
+assert.ok(Math.abs(fpSqrtG(1)-4/3)<1e-12);
+assert.ok(Math.abs(fpSqrtG(4/3)-38/27)<1e-12);
+for(let i=0;i<=100;i++){
+  const x=1+i/100;
+  assert.ok(fpSqrtG(x)>=1&&fpSqrtG(x)<=2,"Fixed-point sqrt map leaves interval");
+}
+
+
 // Regression for the actual public number-theory lesson and its derived problem bank.
 // These checks detect missing proofs, generic rubrics, and elementary arithmetic errors.
 const primeLesson=getBookSectionContent("nt-primes");
