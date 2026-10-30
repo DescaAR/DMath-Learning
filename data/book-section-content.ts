@@ -1,3 +1,4 @@
+import { sigmaAlgebraClassesContent } from "@/data/sigma-algebra-classes-content";
 import type { BookLessonContent } from "@/data/book-content-types";
 import { floatingPointContent } from "@/data/floating-point-content";
 import { secantContent } from "@/data/secant-content";
@@ -160,6 +161,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "num-fixed-point":fixedPointContent,
   // Duality with explicit feasibility, complementary slackness, and solved original exercises.
   "or-dualitas":linearDualityContent,
+  // Sigma-algebra axioms, finite atoms, generating classes and complete pi-lambda proof.
+  "tup-classes-sets":sigmaAlgebraClassesContent,
   // Sigma-finite Radon–Nikodym theorem, Hilbert-space proof, and concrete exercises.
   "tup-radon-nikodym":radonNikodymContent,
   // Fully proved discrete martingales, bounded stopping and non-rubric exercises.
