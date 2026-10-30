@@ -1293,7 +1293,9 @@ const mgResults=mgLesson.formal.filter(item=>["lemma","proposition","theorem","c
 assert.equal(mgDefs.length,4,"Four precise martingale definitions are required");
 assert.equal(mgResults.length,8,"Eight fully proved martingale results are required");
 assert.equal(mgLesson.examples.length,8,"Eight martingale worked examples are required");
-assert.equal(mgLesson.exercises.length,8,"Eight concrete martingale exercises are required");
+assert.equal(mgLesson.exercises.length,9,"Preserve the original curated proof and eight authored exercises");
+assert.ok(mgLesson.exercises.some(ex=>ex.prompt.includes("S_n^2-n") && normalize(ex.answer).length>650),
+  "The original quadratic-martingale exercise must be preserved and deeply solved");
 for(const definition of mgDefs){
   assert.ok(mgLesson.examples.some(ex=>ex.forDefinition===definition.title),
     "Martingale definition lacks a directly linked example: "+definition.title);
