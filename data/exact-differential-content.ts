@@ -10,7 +10,7 @@ export const exactDifferentialContent: BookLessonContent = {
   "formal": [
     {
       "kind": "definition",
-      "title": "Persamaan Diferensial Eksak",
+      "title": "Persamaan Diferensial Eksak dan Fungsi Potensial",
       "statement": "Misalkan $U\\subseteq\\mathbb R^2$ terbuka dan $M,N\\in C^1(U)$. Bentuk diferensial $M(x,y)\\,dx+N(x,y)\\,dy$ disebut eksak pada $U$ apabila terdapat $F\\in C^2(U)$ sehingga $F_x=M$ dan $F_y=N$ di setiap titik $U$. Persamaan $M\\,dx+N\\,dy=0$ disebut persamaan eksak pada $U$.",
       "explanation": "Eksak adalah sifat pada seluruh domain yang disebutkan, bukan hanya kesamaan dua turunan pada satu titik."
     },
@@ -127,7 +127,7 @@ export const exactDifferentialContent: BookLessonContent = {
         "Pilih $C=0$. Verifikasi langsung: $F_x=2xy+3=M$ dan $F_y=x^2+2y=N$. Maka kurva solusi implisit adalah $x^2y+3x+y^2=C$."
       ],
       "conclusion": "Bentuk tersebut eksak pada seluruh bidang, dan kedua turunan potensial telah diverifikasi.",
-      "forDefinition": "Persamaan Diferensial Eksak"
+      "forDefinition": "Persamaan Diferensial Eksak dan Fungsi Potensial"
     },
     {
       "title": "Potensial Tidak Ditentukan oleh Satu Turunan Saja",
