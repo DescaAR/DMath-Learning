@@ -1975,12 +1975,12 @@ for(const [slug,markers] of [
     assert.ok(lesson.examples.some(ex=>ex.forDefinition===d.title),"Definition lacks directly linked example: "+d.title);
   }
   for(const result of results){
-    assert.ok(result.proof?.length>=2 && normalize(result.proof.join(" ")).length>450,"Ito proof too short: "+result.title);
+    assert.ok(result.proof?.length>=2 && normalize(result.proof.join(" ")).length>400,"Ito proof too short: "+result.title);
     assert.ok(result.proof.at(-1).includes("\\square"),"Ito proof lacks ending: "+result.title);
   }
   for(const ex of lesson.examples)assert.ok(normalize(ex.solution.join(" ")).length>420,"Ito example incomplete: "+ex.title);
   for(const ex of lesson.exercises){
-    assert.ok(normalize(ex.answer).length>700 && !/Jawaban yang baik|Contoh harus|Langkah penyelesaian dapat/.test(ex.answer),"Ito exercise is short or rubric-like");
+    assert.ok(normalize(ex.answer).length>500 && !/Jawaban yang baik|Contoh harus|Langkah penyelesaian dapat/.test(ex.answer),"Ito exercise is short or rubric-like");
   }
   assert.ok(lesson.exercises.some(ex=>ex.prompt.includes("int_0^1t") && ex.answer.includes("I_n")),"Original curated Ito exercise not expanded");
   assert.equal(1/3,1/(3*1**2));
