@@ -26,7 +26,7 @@ export const statisticalIndependenceContent:BookLessonContent={
     {
       "kind": "definition",
       "title": "Independensi Dua Peubah Acak Diskret",
-      "statement": "Peubah acak diskret $X,Y$ disebut independen apabila untuk setiap himpunan nilai $C,D$ berlaku $P(X\\in C,Y\\in D)=P(X\\in C)P(Y\\in D)$. Untuk peubah dengan dukungan hingga, syarat ini ekuivalen dengan $p_{X,Y}(x,y)=p_X(x)p_Y(y)$ untuk setiap pasangan nilai $x,y$. Syarat independensi lebih kuat daripada $\\operatorname{Cov}(X,Y)=0$."
+      "statement": "Peubah acak diskret $X,Y$ disebut independen apabila untuk setiap himpunan nilai $C,D$ berlaku $P(X\\in C,Y\\in D)=P(X\\in C)P(Y\\in D)$. Untuk peubah dengan dukungan hingga, syarat ini ekuivalen dengan $p_{X,Y}(x,y)=p_X(x)p_Y(y)$ untuk setiap pasangan nilai $x,y$. Untuk keluarga diskret $X_1,\\ldots,X_n$, independensi bersama berarti $P(\\bigcap_{i=1}^n\\{X_i\\in C_i\\})=\\prod_{i=1}^n P(X_i\\in C_i)$ bagi setiap pilihan himpunan nilai $C_1,\\ldots,C_n$. Syarat independensi lebih kuat daripada $\\operatorname{Cov}(X,Y)=0$."
     },
     {
       "kind": "proposition",
