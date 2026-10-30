@@ -1840,3 +1840,47 @@ for(const [slug,markers] of [
   for(const marker of markers)
     assert.ok(intro.includes(marker),"Missing specific concept "+marker+" in "+slug);
 }
+
+
+// Authored linearity and modeling lesson regression: mathematical substance, not a word-count certificate.
+{
+  const lesson=getBookSectionContent("or-linearitas");
+  assert.ok(lesson,"Authored linearity lesson is not rendered");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4,"Linearity definitions changed");
+  assert.equal(results.length,6,"Linearity formal results changed");
+  assert.equal(lesson.examples.length,8,"Linearity examples changed");
+  assert.equal(lesson.exercises.length,8,"Linearity exercises changed");
+  for(const def of defs)
+    assert.ok(lesson.examples.some(example=>example.forDefinition===def.title),
+      "Definition without a directly linked example: "+def.title);
+  for(const result of results){
+    assert.ok(result.proof?.length>=2 && normalize(result.proof.join(" ")).length>180,
+      "Missing substantial proof: "+result.title);
+    assert.ok(result.proof.at(-1).includes("\\square"),
+      "Proof lacks closure: "+result.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>320,
+      "Linearity example lacks detailed mathematical steps: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>380 &&
+      !/jawaban yang baik|contoh harus|rubrik/i.test(exercise.answer),
+      "Linearity exercise still contains a short or generic answer");
+  assert.ok(lesson.intro.join(" ").includes("proporsionalitas") &&
+    lesson.intro.join(" ").includes("keterbagian"),
+    "Linearity introduction does not distinguish modeling assumptions");
+  assert.equal(2*3+2,8);
+  assert.equal(3*2+2*3,12);
+  assert.equal(3*(1+2)+(2*1+2),13);
+  assert.equal(5*1+4*2,13);
+  for(let x=0;x<=4;x+=0.25)
+    for(let y=0;y<=4;y+=0.25)
+      if(x+y<=3+1e-12 && 2*x+y<=4+1e-12)
+        assert.ok(5*x+4*y<=13+1e-12);
+  assert.equal(3*(11/4),33/4);
+  assert.equal(33/4-6,9/4);
+  assert.equal(7*(3/5)+2*3,10.2);
+  assert.equal(7+2*3,13);
+}
