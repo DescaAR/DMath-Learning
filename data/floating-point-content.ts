@@ -66,7 +66,7 @@ export const floatingPointContent:BookLessonContent = {
       "proof": [
         "Diketahui selisih eksak $s=a-b\\ne0$ dan selisih terperturbasi $\\widetilde s=(a+\\Delta a)-(b+\\Delta b)$. Pengurangan kedua persamaan memberi $\\widetilde s-s=\\Delta a-\\Delta b$.",
         "Ketaksamaan segitiga menghasilkan $|\\widetilde s-s|\\le|\\Delta a|+|\\Delta b|\\le\\varepsilon(|a|+|b|)$. Membagi dengan $|a-b|>0$ membuktikan batas yang dinyatakan.",
-        "Jika $a,b$ tidak nol, pilih $\\Delta a$ dengan tanda sama dengan $a$ dan $\\Delta b$ dengan tanda berlawanan dengan $b$ agar $\\Delta a-\\Delta b$ mencapai salah satu tanda ekstrem yang sesuai; secara umum supremum atas perturbasi dalam batas yang diberikan ialah $\\varepsilon(|a|+|b|)$. Karena itu faktor kondisi tersebut tidak dapat diperkecil secara universal. $\\square$"
+        "Untuk mencapai batas atas, pilih perturbasi $\\Delta a=\\varepsilon|a|$ dan $\\Delta b=-\\varepsilon|b|$, yang memenuhi kedua batas masukan dan memberikan $|\\Delta a-\\Delta b|=\\varepsilon(|a|+|b|)$. Pilihan ini berlaku untuk tanda $a$ dan $b$ apa pun. Karena itu faktor kondisi tersebut tidak dapat diperkecil secara universal. $\\square$"
       ]
     },
     {
