@@ -25,6 +25,7 @@ import { primeFactorizationContent } from "@/data/prime-factorization-content";
 import { inclusionExclusionContent } from "@/data/inclusion-exclusion-content";
 import { inferenceRulesContent } from "@/data/inference-rules-content";
 import { topologicalContinuityContent } from "@/data/topological-continuity-content";
+import { exactDifferentialContent } from "@/data/exact-differential-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -121,6 +122,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "md-aturan-inferensi":inferenceRulesContent,
   // Topological preimages, two-way continuity proofs and solved exercises.
   "kontinuitas-topologis":topologicalContinuityContent,
+  // Exact differential equations with domain-aware theorems and complete solutions.
+  "de-exact":exactDifferentialContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
