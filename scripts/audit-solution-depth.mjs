@@ -2100,3 +2100,50 @@ for(const [slug,markers] of [
   assert.equal(2*3*3/18,1,"Brownian T=3, n=18 quadratic variation variance");
   assert.equal(32/3200,0.01,"Brownian Chebyshev threshold mismatch");
 }
+
+
+// Jacobi–Gauss–Seidel: verify the actually rendered lesson, proofs, and exact arithmetic.
+{
+  const lesson=getBookSectionContent("num-jacobi-gauss-seidel");
+  assert.ok(lesson,"Authored Jacobi–Gauss–Seidel lesson is missing");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4,"Jacobi–Gauss–Seidel definitions missing");
+  assert.equal(results.length,6,"Jacobi–Gauss–Seidel proved results missing");
+  assert.equal(lesson.examples.length,8,"Jacobi–Gauss–Seidel examples missing");
+  assert.equal(lesson.exercises.length,8,"Jacobi–Gauss–Seidel exercises missing");
+  for(const item of defs)
+    assert.ok(lesson.examples.some(example=>example.forDefinition===item.title),"Definition lacks a directly associated example: "+item.title);
+  for(const item of results){
+    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>450,"Incomplete Jacobi–Gauss–Seidel proof: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),"Missing proof closure: "+item.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(normalize(example.solution.join(" ")).length>450 && !/jawaban yang baik|contoh harus/i.test(example.solution.join(" ")),
+      "Short or rubric-like Jacobi–Gauss–Seidel example: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>550 && !/jawaban yang baik|contoh harus/i.test(exercise.answer),
+      "Short or rubric-like Jacobi–Gauss–Seidel exercise: "+exercise.prompt.slice(0,50));
+  const jacobi=(x,y)=>[(1-y)/4,(2-2*x)/3];
+  const gs=(x,y)=>{const u=(1-y)/4;return [u,(2-2*u)/3];};
+  let j=[0,0],g=[0,0];
+  const jExpected=[[1/4,2/3],[1/12,1/2],[1/8,11/18]];
+  const gExpected=[[1/4,1/2],[1/8,7/12],[5/48,43/72]];
+  for(let k=0;k<3;k++){
+    j=jacobi(...j);g=gs(...g);
+    for(let i=0;i<2;i++){
+      assert.ok(Math.abs(j[i]-jExpected[k][i])<1e-13,"Jacobi iterate arithmetic mismatch");
+      assert.ok(Math.abs(g[i]-gExpected[k][i])<1e-13,"Gauss–Seidel iterate arithmetic mismatch");
+    }
+  }
+  const xStar=[1/10,3/5];
+  assert.ok(Math.abs(4*xStar[0]+xStar[1]-1)<1e-14);
+  assert.ok(Math.abs(2*xStar[0]+3*xStar[1]-2)<1e-14);
+  const approx=[1/8,7/12],r=[1-4*approx[0]-approx[1],2-2*approx[0]-3*approx[1]];
+  assert.ok(Math.abs(r[0]+1/12)<1e-14 && Math.abs(r[1])<1e-14,"Residual identity incorrect");
+  assert.ok(Math.abs(xStar[0]-approx[0]+1/40)<1e-14);
+  assert.ok(Math.abs(xStar[1]-approx[1]-1/60)<1e-14);
+  assert.ok(1/Math.sqrt(6)<1 && 1/6<1,"Spectral radii should certify convergence");
+  assert.ok(Math.sqrt(12)>1,"Unpermuted Jacobi should fail the spectral criterion");
+  assert.ok(Math.abs((1/2)**4*2/(1-1/2)-1/4)<1e-14,"A priori bound incorrect");
+}
