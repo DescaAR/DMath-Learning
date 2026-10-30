@@ -1,5 +1,6 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 import { statisticalIndependenceContent } from "@/data/statistical-independence-content";
+import { newtonOptimizationContent } from "@/data/newton-optimization-content";
 import { graphDefinitionsContent } from "@/data/graph-definitions-content";
 import { euclideanDivisionContent } from "@/data/euclidean-division-content";
 import { supremumApplicationsContent } from "@/data/supremum-applications-content";
@@ -142,6 +143,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "sta-paired":pairedDataContent,
   // Event-wise versus mutual independence, discrete factorization, and solved counterexamples.
   "stm-independence":statisticalIndependenceContent,
+  // Hessian-aware Newton minimization, local convergence and Armijo with solved exercises.
+  "or-newton-opt":newtonOptimizationContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
