@@ -428,36 +428,6 @@ export const academicEnrichment:Record<string,LessonEnrichment> = {
       }
     ]
   },
-  "de-exact": {
-    "intro": [
-      "Persamaan eksak diselesaikan dengan membangun fungsi potensial. Kesamaan turunan silang merupakan syarat perlu keeksakan, sedangkan kecukupannya membutuhkan kondisi domain."
-    ],
-    "formal": [
-      {
-        "kind": "definition",
-        "title": "Persamaan Diferensial Eksak dan Fungsi Potensial",
-        "statement": "Bentuk $M(x,y)\\,dx+N(x,y)\\,dy$ disebut eksak jika terdapat $F\\in C^1(D)$ dengan $F_x=M$ dan $F_y=N$ pada domain $D$. Solusi implisit memenuhi $F(x,y)=C$."
-      },
-      {
-        "kind": "proposition",
-        "title": "Kesamaan Turunan Campuran pada Persamaan Eksak",
-        "statement": "Jika $D\\subseteq\\mathbb R^2$ terbuka, $M,N\\in C^1(D)$, dan terdapat fungsi potensial $F$ dengan $M=F_x$, $N=F_y$, maka $M_y=N_x$ di $D$.",
-        "proof": [
-          "Dari $M=F_x$ dan $N=F_y$, diperoleh $M_y=F_{xy}$ serta $N_x=F_{yx}$.",
-          "Karena $M,N$ mempunyai turunan parsial pertama yang kontinu di $D$, kedua turunan campuran $F_{xy}$ dan $F_{yx}$ ada serta kontinu. Dengan demikian, hipotesis Teorema Clairaut terpenuhi pada domain terbuka $D$.",
-          "Teorema kesamaan turunan parsial campuran memberikan $F_{xy}=F_{yx}$. Oleh karena itu, $M_y=F_{xy}=F_{yx}=N_x$ di seluruh domain yang dipertimbangkan."
-        ]
-      }
-    ],
-    "exercises": [
-      {
-        "prompt": "Tentukan solusi implisit $(3x^2+2y)\\,dx+(2x+4y)\\,dy=0$.",
-        "hint": "Bangun potensial F dengan mengintegralkan M terhadap x.",
-        "answer": "Diketahui $M_y=2=N_x$, sehingga pada $\\mathbb R^2$ terdapat potensial. Integrasi $F_x=3x^2+2y$ memberi $F=x^3+2xy+g(y)$. Dari $F_y=2x+g'(y)=2x+4y$ diperoleh $g=2y^2$ hingga konstanta. Solusi implisit adalah $x^3+2xy+2y^2=C$.",
-        "provenance": "dmath-original"
-      }
-    ]
-  },
   "de-linear-first": {
     "intro": [
       "Faktor integrasi mengubah persamaan linear menjadi turunan dari hasil kali. Rumus solusi dapat diturunkan langsung dan sekaligus membuktikan keunikan masalah nilai awal."
