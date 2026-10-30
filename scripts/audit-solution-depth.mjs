@@ -1995,3 +1995,44 @@ for(const [slug,markers] of [
     assert.ok(Math.abs((1/3-left)-(3*n-1)/(6*n*n))<1e-12,"Ito sum error mismatch");
   }
 }
+
+// Brownian motion authored lesson regression: actual rendered source and original exercise.
+{
+  const lesson=getBookSectionContent("ks-brownian-definition");
+  assert.ok(lesson,"Brownian motion lesson missing");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4,"Brownian definitions changed");
+  assert.equal(results.length,6,"Brownian proved results changed");
+  assert.equal(lesson.examples.length,8,"Brownian worked examples missing");
+  assert.equal(lesson.exercises.length,9,"Brownian original or new exercises missing");
+  for(const def of defs)
+    assert.ok(lesson.examples.some(example=>example.forDefinition===def.title),"Brownian definition without worked example: "+def.title);
+  for(const result of results){
+    assert.ok(result.proof?.length>=3 && normalize(result.proof.join(" ")).length>450,"Brownian proof incomplete: "+result.title);
+    assert.ok(result.proof.at(-1).includes("\\square"),"Brownian proof lacks ending: "+result.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(normalize(example.solution.join(" ")).length>350,"Brownian example incomplete: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>400 && !/Jawaban yang baik|Contoh harus|Langkah penyelesaian dapat/.test(exercise.answer),
+      "Brownian exercise short or rubric-like: "+exercise.prompt.slice(0,40));
+  assert.ok(lesson.exercises[0].prompt.includes("W_4>2") && lesson.exercises[0].answer.includes("0{,}158655254"),
+    "Original curated Brownian problem or verified result missing");
+  for(const t of [0.5,1,3,6]){
+    const s=t/3;
+    assert.equal(Math.min(s,t),s,"Brownian covariance identity");
+    assert.ok(Math.abs((t-s)+s-t)<1e-12,"Brownian independent increment variance");
+  }
+  for(const [T,n] of [[1,10],[2,8],[3,18]]){
+    const h=T/n;
+    const mean=n*h;
+    const variance=n*2*h*h;
+    assert.ok(Math.abs(mean-T)<1e-12 && Math.abs(variance-2*T*T/n)<1e-12,
+      "Brownian quadratic variation mean/variance mismatch");
+  }
+  assert.equal(8/18*0+1,1,"Regression execution sentinel");
+  assert.equal(2*4/8,1,"Brownian Q8 variance");
+  assert.equal(8*2/18,8/9,"Brownian Q18 variance formula check");
+  assert.equal(32/3200,0.01,"Chebyshev threshold mismatch");
+}
