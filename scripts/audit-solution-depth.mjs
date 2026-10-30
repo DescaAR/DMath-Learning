@@ -700,6 +700,57 @@ assert.ok(Math.abs(residuals.reduce((s,v,i)=>s+v*regX[i],0))<1e-10);
 const regressionRegistry=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
 assert.match(regressionRegistry,/"sta-regression-inference":regressionInferenceContent/);
 
+// Sigma-algebra lesson: check the actual registry and the original curated answer,
+// not only the newly authored data file. Validate finite examples independently.
+const sigmaPage=getBookSectionContent("tup-classes-sets");
+assert.ok(sigmaPage,"Missing public sigma-algebra lesson");
+const sigmaDefs=sigmaPage.formal.filter(x=>x.kind==="definition");
+const sigmaResults=sigmaPage.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+assert.equal(sigmaDefs.length,4);
+assert.equal(sigmaResults.length,5);
+assert.equal(sigmaPage.examples.length,8);
+assert.equal(sigmaPage.exercises.length,9);
+for(const d of sigmaDefs){
+  assert.ok(sigmaPage.examples.some(x=>x.forDefinition===d.title),
+    "Sigma-algebra definition has no immediate example: "+d.title);
+}
+for(const item of sigmaResults){
+  const proof=(item.proof??[]).join(" ");
+  assert.ok(normalize(proof).length>=650 && proof.includes("\\square"),
+    "Sigma-algebra result has missing or incomplete proof: "+item.title);
+}
+assert.ok(sigmaResults.some(x=>x.title==="Teorema Pi–Lambda" &&
+  x.proof?.join(" ").includes("D_A") && x.proof?.join(" ").includes("E_B")));
+for(const ex of sigmaPage.examples)checked.push(["tup-classes-sets","example",ex.title]);
+for(const ex of sigmaPage.exercises){
+  assert.ok(!likelyUnsolved(ex.answer),"Sigma-algebra answer is a rubric");
+  checked.push(["tup-classes-sets","exercise",ex.prompt.slice(0,65)]);
+}
+const sigmaRegistry=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
+assert.match(sigmaRegistry,/"tup-classes-sets":sigmaAlgebraClassesContent/);
+// Bit-mask model on X={1,2,3}: {X,{1},{1,2}} generates all 8 subsets.
+const generated=new Set([7,1,3]);
+let grew=true;
+while(grew){
+  const before=generated.size;
+  for(const a of [...generated])generated.add(7^a);
+  for(const a of [...generated])for(const b of [...generated])generated.add(a|b);
+  grew=generated.size!==before;
+}
+assert.equal(generated.size,8);
+// Lambda but not pi on X={1,2,3,4}; 3,12 and 5,10 are complement pairs.
+const dynkin=[0,15,3,12,5,10],dynkinSet=new Set(dynkin);
+for(const a of dynkin){
+  assert.ok(dynkinSet.has(15^a));
+  for(const b of dynkin){
+    if((a&b)===a)assert.ok(dynkinSet.has(b&~a),
+      "Nested difference fails Dynkin test");
+    if((a&b)===0)assert.ok(dynkinSet.has(a|b),
+      "Disjoint union fails Dynkin test");
+  }
+}
+assert.ok(!dynkinSet.has(3&5),"Dynkin example must not be a pi-system");
+
 for(const [slug,type,anchor] of checked){
   const page=getBookSectionContent(slug);
   assert.ok(page,"Audited lesson not found: "+slug);
