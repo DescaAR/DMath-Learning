@@ -2282,3 +2282,60 @@ for(const [slug,markers] of [
       "Least-squares completion-of-squares identity incorrect");
   assert.equal(sse(-1,2),0);
 }
+
+
+// Simple regression: audit the rendered chapter, the original curated exercise, and exact identities.
+{
+  const lesson=getBookSectionContent("sta-simple-regression");
+  assert.ok(lesson,"Simple-regression chapter is missing");
+  const defs=lesson.formal.filter(x=>x.kind==="definition");
+  const results=lesson.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+  assert.equal(defs.length,4,"Simple-regression definitions missing");
+  assert.equal(results.length,6,"Simple-regression proofs missing");
+  assert.equal(lesson.examples.length,8,"Simple-regression examples missing");
+  assert.equal(lesson.exercises.length,9,"Original regression exercise must be preserved");
+  for(const d of defs)
+    assert.ok(lesson.examples.some(x=>x.forDefinition===d.title),
+      "Simple-regression definition lacks its own worked example: "+d.title);
+  for(const result of results){
+    assert.ok(result.proof?.length>=2 &&
+      normalize(result.proof.join(" ")).length>450 &&
+      result.proof.at(-1).includes("\\square"),
+      "Simple-regression proof incomplete: "+result.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(normalize(example.solution.join(" ")).length>350 &&
+      !/jawaban yang baik|contoh harus|langkah yang dapat/i.test(example.solution.join(" ")),
+      "Simple-regression example is still rubric-like: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>350 &&
+      !/jawaban yang baik|contoh harus/i.test(exercise.answer),
+      "Simple-regression solution is still rubric-like: "+exercise.prompt.slice(0,50));
+  for(let i=1;i<=8;i++)
+    assert.ok(lesson.exercises.some(x=>x.prompt.startsWith("SR-"+String(i).padStart(2,"0")+".")),
+      "Missing original solved exercise SR-"+i);
+  const fit=points=>{
+    const n=points.length;
+    const xb=points.reduce((s,p)=>s+p[0],0)/n;
+    const yb=points.reduce((s,p)=>s+p[1],0)/n;
+    const xx=points.reduce((s,p)=>s+(p[0]-xb)**2,0);
+    const xy=points.reduce((s,p)=>s+(p[0]-xb)*(p[1]-yb),0);
+    const b1=xy/xx,b0=yb-b1*xb;
+    const residuals=points.map(([x,y])=>y-b0-b1*x);
+    const sse=residuals.reduce((s,e)=>s+e*e,0);
+    const sst=points.reduce((s,p)=>s+(p[1]-yb)**2,0);
+    return {b0,b1,sse,sst,residuals};
+  };
+  const near=(a,b)=>Math.abs(a-b)<1e-10;
+  const a=fit([[1,2],[2,3],[3,5]]);
+  assert.ok(near(a.b0,1/3)&&near(a.b1,3/2)&&near(a.sse,1/6)&&
+    near(a.sst,14/3)&&near(1-a.sse/a.sst,27/28),
+    "Main regression example numerical identity failed");
+  const b=fit([[0,1],[1,2],[2,2]]);
+  assert.ok(near(b.b0,7/6)&&near(b.b1,1/2)&&near(b.sse,1/6)&&
+    near(b.sst,2/3)&&near(1-b.sse/b.sst,3/4),
+    "Secondary regression example numerical identity failed");
+  assert.ok(near(a.residuals.reduce((s,e)=>s+e,0),0));
+  assert.ok(near(a.residuals.reduce((s,e,i)=>s+(i+1)*e,0),0));
+  assert.ok(near(6/2,3),"Fixed-design variance identity failed");
+}
