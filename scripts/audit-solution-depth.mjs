@@ -1694,3 +1694,52 @@ for(const c of [-5,-2,0,2,5]){
   const B=h=>h+1e-4/h;
   assert.ok(B(0.01)<B(0.1) && B(0.01)<B(0.001));
 }
+
+
+// Secant regression: inspect the rendered lesson and verify the exact two-step algebra.
+{
+  const lesson=getBookSectionContent("num-secant");
+  assert.ok(lesson,"Secant lesson missing from rendered public registry");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4);
+  assert.equal(results.length,6);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const item of defs)
+    assert.ok(lesson.examples.some(example=>example.forDefinition===item.title),
+      "Secant definition lacks a direct example: "+item.title);
+  for(const item of results){
+    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>400,
+      "Secant formal result lacks a substantive proof: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),
+      "Secant proof lacks a closing statement: "+item.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>350,
+      "Secant example is incomplete: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>450 &&
+      !/jawaban yang baik|contoh harus|rubrik|soal harus/i.test(exercise.answer),
+      "Secant exercise still has an incomplete rubric: "+exercise.prompt);
+  const numerical=bookSubjects.find(subject=>subject.slug==="analisis-numerik");
+  assert.ok(numerical?.chapters.some(ch=>ch.sections.some(sec=>sec.slug==="num-secant")),
+    "Secant page missing from numerical analysis curriculum");
+  const f=x=>x*x-2;
+  const step=(a,b)=>b-f(b)*(b-a)/(f(b)-f(a));
+  const x2=step(1,2),x3=step(2,x2),x4=step(x2,x3);
+  assert.ok(Math.abs(x2-4/3)<1e-12);
+  assert.ok(Math.abs(x3-7/5)<1e-12);
+  assert.ok(Math.abs(x4-58/41)<1e-12);
+  assert.ok(Math.abs(f(58/41)-2/1681)<1e-12);
+  assert.equal(f(-1),f(1)); // Different abscissas need not give a valid secant slope.
+  const r=1,a=0.5,e0=0.1,e1=-0.1;
+  const e2=a*e0*e1/(1+a*(e0+e1));
+  assert.ok(Math.abs(e2+1/200)<1e-12);
+  assert.ok(Math.abs((r+e2)-199/200)<1e-12);
+  for(const scale of [0.1,7,-3]){
+    const g=x=>scale*f(x);
+    const z=2-g(2)*(2-1)/(g(2)-g(1));
+    assert.ok(Math.abs(z-x2)<1e-12);
+  }
+}
