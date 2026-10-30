@@ -2147,3 +2147,49 @@ for(const [slug,markers] of [
   assert.ok(Math.sqrt(12)>1,"Unpermuted Jacobi should fail the spectral criterion");
   assert.ok(Math.abs((1/2)**4*2/(1-1/2)-1/4)<1e-14,"A priori bound incorrect");
 }
+
+
+// Root-iteration error: check the rendered authored lesson, all solution sources,
+// and independent numerical identities rather than relying on length triage alone.
+{
+  const lesson=getBookSectionContent("num-error-iterative-root");
+  assert.ok(lesson,"Authored root-error lesson missing");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4,"Root-error definitions changed");
+  assert.equal(results.length,7,"Root-error formal results missing");
+  assert.equal(lesson.examples.length,8,"Root-error examples missing");
+  assert.equal(lesson.exercises.length,8,"Root-error exercises missing");
+  for(const def of defs)
+    assert.ok(lesson.examples.some(example=>example.forDefinition===def.title),
+      "Root-error definition without linked example: "+def.title);
+  for(const item of results){
+    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>320,
+      "Root-error proof incomplete: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),"Root-error proof missing closure: "+item.title);
+  }
+  for(const example of lesson.examples)
+    assert.ok(normalize(example.solution.join(" ")).length>380 && !/Jawaban yang baik|Contoh harus/i.test(example.solution.join(" ")),
+      "Root-error example is short or rubric-like: "+example.title);
+  for(const exercise of lesson.exercises)
+    assert.ok(normalize(exercise.answer).length>420 && !/Jawaban yang baik|Contoh harus|Soal yang baik/i.test(exercise.answer),
+      "Root-error exercise is short or rubric-like: "+exercise.prompt.slice(0,40));
+  assert.ok(lesson.exercises.some(x=>x.prompt.startsWith("ER-08.")),"Counterexample exercise missing");
+  const root=Math.sqrt(2);
+  assert.ok(Math.abs(1.4-root)<=0.04/2.8,"Mean-value residual bound incorrect");
+  const newton1=17/12,newton2=577/408;
+  assert.ok(Math.abs(newton2-(newton1+2/newton1)/2)<1e-14,"Newton second iterate mismatch");
+  assert.ok(Math.abs(newton2-root)<=0.5*(newton1-root)**2+1e-14,"Newton error bound mismatch");
+  const secant2=4/3,secant3=7/5;
+  assert.ok(Math.abs(secant3-(secant2*2+2)/(secant2+2))<1e-14,"Secant iterate mismatch");
+  assert.ok(Math.abs((secant3-root)-(secant2-root)*(2-root)/(secant2+2))<1e-14,
+    "Secant exact error identity mismatch");
+  assert.ok(3**8<10000 && 3**9>10000,"A priori stopping threshold mismatch");
+  assert.ok(Math.abs(97/56-(19/11*5/3+3)/(19/11+5/3))<1e-14,
+    "Three-step secant arithmetic mismatch");
+  for(const delta of [1e-2,1e-6]){
+    const f=x=>delta*(x-1);
+    assert.ok(Math.abs(f(0))===delta,"Residual counterexample mismatch");
+    assert.ok((1+delta)**10>1,"Noncontractive fixed-point counterexample mismatch");
+  }
+}
