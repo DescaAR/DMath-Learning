@@ -916,3 +916,22 @@ Dokumen ini melacak perubahan **yang sudah di-commit** pada branch `github-pages
 3. **01 Aritmetika / 02 Aljabar:** materi sekolah sengaja disembunyikan oleh kebijakan visibilitas. Jangan mengubahnya tanpa permintaan eksplisit.
 
 **Progres pekerjaan yang di-commit pada level submateri:** 8 submateri di 8 dari 26 bidang telah dikerjakan secara mendalam; 18 bidang belum disentuh dalam rangkaian ini. Tidak satu pun bidang dinyatakan selesai seluruhnya. Periksa GitHub Actions dan material-depth-report.json sebelum melaporkan status publikasi atau memilih pekerjaan berikutnya.
+
+
+---
+
+## Catatan sesi 2026-10-31 — Jacobi dan Gauss–Seidel (rotasi bidang 19)
+
+**Bidang dan URL:** 19 Metode Numerik (secara internal katalog buku berada di bidang 18 Analisis Numerik), submateri num-jacobi-gauss-seidel, https://descaar.github.io/DMath-Learning/materi/analisis-numerik/num-jacobi-gauss-seidel/. Sesi ini tidak mengulang num-newton, num-secant, num-floating-point, atau tup-classes-sets. Audit katalog tetap mencakup 26 bidang UI publik, bukan hanya 18 kelompok buku; materi non-buku dan bank soal perlu tetap masuk rotasi.
+
+**Temuan awal dua dimensi:** sumber lama data/numerical-analysis-content.ts menyatakan kriteria radius spektral sebagai teorema tanpa pembuktian, hanya memberi satu definisi iterasi stasioner, dan contoh numerik umum tidak mengikuti soal Jacobi–Gauss–Seidel yang spesifik. Pembahasan algoritmik dan batas galat belum menyajikan contoh iterasi terhitung yang cukup. Masalah akademik nyata yang diprioritaskan: hipotesis diagonal tidak nol, perbedaan pembaruan komponen, syarat cukup dominasi diagonal versus kriteria perlu-dan-cukup radius spektral, serta residual yang tidak otomatis sama dengan galat.
+
+**Revisi sumber yang benar-benar dirender:** data/jacobi-gauss-seidel-content.ts (sekitar 27 ribu karakter), didaftarkan melalui data/book-section-content.ts, menggantikan konten generator hanya pada num-jacobi-gauss-seidel. Naskah berisi **4 definisi dengan contoh langsung**, **6 proposisi/teorema dengan pembuktian lengkap**, **8 contoh terbahas**, dan **8 latihan JG-01–JG-08 dengan solusi rinci**. Pembuktian meliputi ekuivalensi titik tetap dengan sistem asli (dua arah), konvergensi Jacobi dan Gauss–Seidel di bawah dominasi diagonal ketat, kriteria radius spektral (dua arah, dengan argumen bentuk Jordan), hubungan residual dan galat, serta batas a priori dan a posteriori untuk kontraksi. Kasus batas dan contoh tandingan nonsingular yang divergen juga dibahas. Tidak ada visualisasi baru; fokus pada perbaikan substansi naskah dan pembahasan asli.
+
+**Verifikasi independen dan regresi:** pecahan eksak untuk sistem $4x+y=1$, $2x+3y=2$ diperiksa: Jacobi $(1/4,2/3)$, $(1/12,1/2)$, $(1/8,11/18)$; Gauss–Seidel $(1/4,1/2)$, $(1/8,7/12)$, $(5/48,43/72)$. Solusi eksak $(1/10,3/5)$ dan residual aproksimasi $(1/8,7/12)$ adalah $(-1/12,0)$. Regresi baru di scripts/audit-solution-depth.mjs memeriksa sumber render, kaitan definisi–contoh, keenam bukti, kedelapan contoh dan latihan, serta identitas numerik tersebut. Bukti induksi Gauss–Seidel diperiksa ulang dan diperbaiki untuk membedakan suku galat baru dan lama (commit 5e5db8c20f87).
+
+**Jejak commit:** sumber khusus 771cbb594890; registrasi 6fff33ce77b1; regresi 3c5065f6b3e5; koreksi pembuktian 5e5db8c20f87. Hanya branch github-pages-static yang diedit; main, konfigurasi Vercel, dan data/lesson-videos.ts tidak disentuh.
+
+**Status pengujian saat pencatatan:** terminal lokal gagal mengakses GitHub karena DNS. Workflow GitHub Actions untuk commit materi terbaru perlu diperiksa hingga selesai. Jalankan/baca npm run audit:solution-depth dan solution-depth-report.json, audit:depth, audit:thesis, audit:solutions, audit LaTeX, TypeScript, build, dan deployment; status sukses hanya boleh dilaporkan setelah job deployment success. Baseline historis terakhir: 5.879 latihan pendek, 3.398 contoh pendek, 716 jawaban generik, 1.034 pembuktian pendek; angka ini belum merupakan hasil pascarevisi dan hanya untuk triage. Periksa artifact HTML dan KaTeX, khususnya matriks $T_J,T_{GS}$, batas norma, dan teorema radius spektral.
+
+**Prioritas berikutnya:** setelah memverifikasi audit/deployment, rotasikan ke bank soal independen bidang 19 dan submateri num-error-iterative-root atau ke bidang publik 01–02 yang belum mendapat pemeriksaan mendalam baru. Pertahankan penyelesaian yang sudah benar; periksa kesalahan matematika sebelum memperpanjang jawaban.
