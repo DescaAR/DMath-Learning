@@ -1360,3 +1360,63 @@ for(let n=1;n<=12;n++){
   assert.ok(Math.abs(stoppedMean)<1e-12,
     "Truncated doubling counterexample failed at n="+n);
 }
+
+
+// Paired-data regression: check the actual public lesson, not the old
+// generic answer generator. These length checks are triage only; the exact
+// computations below separately guard the mathematical content.
+const pairedLesson=getBookSectionContent("sta-paired");
+assert.ok(pairedLesson,"Paired-data lesson is missing from the public registry");
+const pairedDefs=pairedLesson.formal.filter(item=>item.kind==="definition");
+const pairedResults=pairedLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(pairedDefs.length,4,"Four precise paired-data definitions are required");
+assert.equal(pairedResults.length,7,"Seven proved paired-data results are required");
+assert.equal(pairedLesson.examples.length,8,"Eight actual paired-data examples are required");
+assert.equal(pairedLesson.exercises.length,8,"Eight original paired-data exercises are required");
+for(const def of pairedDefs){
+  assert.ok(pairedLesson.examples.some(ex=>ex.forDefinition===def.title),
+    "Paired-data definition lacks a directly linked example: "+def.title);
+}
+for(const item of pairedResults){
+  assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>=320,
+    "Paired-data formal result has an incomplete proof: "+item.title);
+  assert.ok(item.proof.join(" ").includes("\\square"),
+    "Paired-data proof must end explicitly: "+item.title);
+}
+for(const ex of pairedLesson.examples){
+  assert.ok(ex.solution.length>=3 && normalize(ex.solution.join(" ")).length>=320,
+    "Paired-data worked example requires explicit calculations: "+ex.title);
+}
+for(const ex of pairedLesson.exercises){
+  assert.ok(normalize(ex.answer).length>=380 &&
+    !/jawaban yang baik|contoh harus|rubrik|soal harus/i.test(ex.answer),
+    "Paired-data exercise has a short or rubric-style answer: "+ex.prompt);
+}
+const pairedCurriculum=bookSubjects.find(subject=>subject.slug==="statistika-terapan");
+assert.ok(pairedCurriculum?.chapters.some(ch=>ch.sections.some(sec=>sec.slug==="sta-paired")),
+  "Paired-data lesson must remain in the applied-statistics public curriculum");
+const pairedDiff=[2,4,3,5,1],pairedMean=pairedDiff.reduce((s,x)=>s+x,0)/5;
+const pairedSS=pairedDiff.reduce((s,x)=>s+(x-pairedMean)**2,0);
+assert.equal(pairedMean,3);
+assert.equal(pairedSS,10);
+assert.equal(pairedSS/(pairedDiff.length-1),2.5);
+assert.ok(Math.abs(pairedMean/Math.sqrt((pairedSS/4)/5)-3*Math.SQRT2)<1e-12);
+const pairedX=[10,12,11,14,9],pairedY=[8,8,8,9,8];
+const meanX=pairedX.reduce((s,x)=>s+x,0)/5;
+const meanY=pairedY.reduce((s,x)=>s+x,0)/5;
+const varX=pairedX.reduce((s,x)=>s+(x-meanX)**2,0)/4;
+const varY=pairedY.reduce((s,x)=>s+(x-meanY)**2,0)/4;
+const covXY=pairedX.reduce((s,x,i)=>s+(x-meanX)*(pairedY[i]-meanY),0)/4;
+assert.ok(Math.abs(varX-3.7)<1e-12 && Math.abs(varY-0.2)<1e-12);
+assert.ok(Math.abs(covXY-0.7)<1e-12);
+assert.ok(Math.abs(varX+varY-2*covXY-2.5)<1e-12);
+const choose=(n,k)=>{let r=1;for(let i=1;i<=k;i++)r=r*(n-i+1)/i;return r;};
+assert.equal(2*(choose(6,5)+choose(6,6))/2**6,7/32);
+assert.equal(2*(choose(8,7)+choose(8,8))/2**8,9/128);
+for(const c of [-5,-2,0,2,5]){
+  const shifted=pairedDiff.map(x=>x+c);
+  const mean=shifted.reduce((s,x)=>s+x,0)/5;
+  const variance=shifted.reduce((s,x)=>s+(x-mean)**2,0)/4;
+  assert.ok(Math.abs(mean-(3+c))<1e-12 && Math.abs(variance-2.5)<1e-12,
+    "Paired-data shift identity failed for c="+c);
+}
