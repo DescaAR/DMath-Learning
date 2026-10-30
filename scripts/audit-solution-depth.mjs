@@ -58,6 +58,46 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Regression: LP duality must use the authored lesson, not generated rubric responses.
+const dualLesson=getBookSectionContent("or-dualitas");
+assert.ok(dualLesson,"Missing authored linear-programming duality lesson");
+const dualDefinitions=dualLesson.formal.filter(item=>item.kind==="definition");
+const dualProofs=dualLesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+assert.equal(dualDefinitions.length,4,"LP duality definitions must be retained");
+assert.equal(dualProofs.length,7,"LP duality formal results must be retained");
+assert.equal(dualLesson.examples.length,8,"LP duality needs eight concrete worked examples");
+assert.ok(dualLesson.exercises.length>=9,"Preserve the curated duality question and eight authored exercises");
+for(const definition of dualDefinitions){
+  assert.ok(dualLesson.examples.some(example=>example.forDefinition===definition.title),
+    "Missing immediately linked example for LP duality definition "+definition.title);
+}
+for(const theorem of dualProofs){
+  assert.ok(theorem.proof?.length>=3 && normalize(theorem.proof.join(" ")).length>300,
+    "LP duality proof is too incomplete: "+theorem.title);
+}
+for(const example of dualLesson.examples){
+  assert.ok(normalize(example.solution.join(" ")).length>450,
+    "LP duality example needs detailed mathematical reasoning: "+example.title);
+}
+for(const exercise of dualLesson.exercises){
+  assert.ok(normalize(exercise.answer).length>250 &&
+    !/jawaban yang baik|contoh harus|soal yang baik|susun satu soal/i.test(exercise.answer),
+    "LP duality exercise contains rubric or a missing solution: "+exercise.prompt.slice(0,45));
+}
+for(const [x,z,u,v] of [[2,2,1,1],[1,2,1,1],[2,2,0,2],[1,2,2,1]]){
+  const s1=4-x-z,s2=6-2*x-z,r1=u+2*v-3,r2=u+v-2;
+  assert.ok([x,z,u,v,s1,s2,r1,r2].every(value=>value>=0));
+  const gap=4*u+6*v-3*x-2*z;
+  assert.equal(gap,u*s1+v*s2+x*r1+z*r2,
+    "LP duality gap identity fails for a feasible pair");
+  assert.ok(gap>=0,"Weak duality fails for a feasible pair");
+}
+for(let delta=-1;delta<=2;delta+=0.25){
+  const x=2-delta,z=2+2*delta;
+  assert.ok(x>=0 && z>=0);
+  assert.ok(Math.abs((3*x+2*z)-(10+delta))<1e-9);
+}
+
 // Regression: authored numerical-analysis fixed-point lesson, not the generated rubric.
 const fixedPointLesson=getBookSectionContent("num-fixed-point");
 assert.ok(fixedPointLesson,"Missing fixed-point iteration content");
