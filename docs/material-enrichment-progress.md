@@ -10,7 +10,9 @@
 
 **Jejak commit:** sumber khusus `0be36199d33a`, registrasi render `c4303550dbbe`, regresi `981520a31421`. Hanya branch `github-pages-static` yang ditulis. `main`, konfigurasi Vercel, dan `data/lesson-videos.ts` tidak disentuh.
 
-**Prioritas sesi berikutnya:** (1) periksa workflow dan artifact audit commit terakhir, lalu catat delta 2→0 contoh pendek dan 1→0 pengantar generik hanya bila laporan membenarkannya; (2) periksa KaTeX HTML dan regresi; (3) lanjutkan rotasi ke bidang publik 21 Pemodelan Matematika yang benar-benar memiliki halaman sendiri atau bank soal independen bidang 19, bukan mengulang materi Riset Operasi yang sudah diaudit; (4) teliti bank soal generik yang lolos ambang panjang.
+**Hasil pascarevisi terverifikasi:** workflow GitHub Actions **41131842127** pada commit `06df1e1da199` berstatus **completed/success** (build dan deploy). Kedua laporan JSON diunduh dan dibandingkan dengan baseline workflow 41125335446. Pada URL target, temuan contoh pendek **2 → 0** dan pengantar generik **1 → 0**. Global: contoh pendek **3.390 → 3.388**, pengantar generik **379 → 378**, hasil formal **1.739 → 1.744**, hasil formal dengan bukti **1.230 → 1.235**, definisi dengan contoh langsung **542 → 546**. Latihan pendek tetap **5.863**, jawaban generik tetap **708**; perbaikan delapan solusi generator tidak tercermin pada dua indikator ini karena ambang panjangnya. HTML target dari artifact Pages diperiksa langsung: **422 elemen KaTeX, 0 `katex-error`**, latihan PS-01–PS-08 dan judul hasil formal hadir, tidak ada tanda dolar LaTeX mentah dalam teks yang terlihat. Pengujian interaksi browser belum dilakukan.
+
+**Prioritas sesi berikutnya:** (1) rotasi ke bidang publik 21 Pemodelan Matematika yang benar-benar memiliki halaman sendiri atau bank soal independen bidang 19, bukan mengulang materi Riset Operasi yang sudah diaudit; (2) audit secara matematis jawaban bank soal generik yang lolos ambang panjang; (3) lanjutkan pencatatan 26 bidang publik secara terpisah dari 18 kelompok kurikulum buku.
 
 ---
 
