@@ -58,6 +58,33 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Floating-point: actual rendered content, direct definition examples, and independent exact identities.
+{
+  const lesson=getBookSectionContent("num-floating-point");
+  assert.ok(lesson,"Authored floating-point lesson is missing");
+  const defs=lesson.formal.filter(x=>x.kind==="definition");
+  const results=lesson.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+  assert.equal(defs.length,5);
+  assert.equal(results.length,6);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const item of defs)assert.ok(lesson.examples.some(x=>x.forDefinition===item.title),"Floating-point definition without linked example: "+item.title);
+  for(const item of results){
+    assert.ok(item.proof?.length>=3 && normalize(item.proof.join(" ")).length>350,"Floating-point proof too brief: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),"Floating-point proof lacks ending: "+item.title);
+  }
+  for(const example of lesson.examples)assert.ok(normalize(example.solution.join(" ")).length>320,"Floating-point example incomplete: "+example.title);
+  for(const exercise of lesson.exercises)assert.ok(normalize(exercise.answer).length>380 && !/Jawaban yang baik|Contoh harus/.test(exercise.answer),"Floating-point exercise is generic");
+  const u=0.5*Math.pow(10,-2);
+  assert.equal(u,0.005);
+  assert.equal((1.234+1.233)/0.001,2467);
+  const smallRoot=2/(1000+Math.sqrt(999996));
+  assert.ok(Math.abs(smallRoot-0.001000001000002)<1e-11);
+  assert.ok(Math.abs((smallRoot*(1000-smallRoot))-1)<1e-9);
+  assert.ok(Math.abs((1.02**3)-1.061208)<1e-12);
+  assert.ok(0.01/0.99>0.001);
+}
+
 // Newton optimization: inspect the actual rendered lesson and verify mathematical identities.
 {
   const lesson=getBookSectionContent("or-newton-opt");

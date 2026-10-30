@@ -1,3 +1,17 @@
+## Catatan sesi 2026-10-30 — Analisis Numerik / Metode Numerik: Representasi Floating-Point
+
+**Bidang publik:** 18 Analisis Numerik dan 19 Metode Numerik; kelompok buku yang dirender: Analisis Numerik bab 1.4. **URL:** https://descaar.github.io/DMath-Learning/materi/analisis-numerik/num-floating-point/. Tidak mengulang or-newton-opt; perubahan hanya pada branch github-pages-static.
+
+**Audit dua dimensi sebelum:** artifact dmath-material-depth-audit run 41027208768, dibaca dari solution-depth-report.json dan material-depth-report.json. Halaman num-floating-point mempunyai **9 temuan kedalaman** (8 jawaban rubrik/pendek dan 1 hasil formal tanpa bukti) serta **2 temuan naskah** (definisi tanpa contoh langsung dan hasil tanpa bukti). Baseline buku: 5.928 latihan pendek, 3.417 contoh pendek, 1.037 pembuktian pendek, 736 jawaban generik; 498 definisi dengan contoh dan 1.161 hasil formal dengan bukti. Ambang karakter hanyalah triage, bukan sertifikasi kebenaran.
+
+**Revisi sumber yang dirender:** data/floating-point-content.ts dan override num-floating-point dalam data/book-section-content.ts. Lima definisi mempunyai contoh yang terhubung langsung (model floating-point, unit roundoff, galat forward/backward, kondisi relatif, stabilitas backward). Enam hasil formal memiliki bukti eksplisit: batas relatif pembulatan normal, kondisi diferensial lokal, sensitivitas pengurangan, stabilitas backward penjumlahan tunggal, batas produk galat gamma_n, dan rasionalisasi akar kecil. Delapan contoh dan delapan latihan FP-01 sampai FP-08 berisi angka konkret, pemeriksaan hipotesis, dan verifikasi. Contoh menyingkap perbedaan kondisi masalah dan stabilitas algoritma; tidak mengklaim batas relatif saat underflow/overflow. Tidak ada visualisasi baru; prioritas diberikan pada pembahasan yang sebelumnya rubrik.
+
+**Pemeriksaan sumber dan matematika:** regresi baru di scripts/audit-solution-depth.mjs memeriksa struktur, contoh definisi, penutup bukti, identitas bilangan kondisi, akar kuadrat kecil, dan batas perkalian. Perlu memastikan audit npm, TypeScript, build, KaTeX, serta deployment GitHub Actions setelah commit. Periksa juga apakah angka triage turun pada URL ini; baseline 9 solusi + 2 naskah. Seluruh 26 bidang publik tetap tercatat oleh audit; pengayaan historis 26/26 tidak berarti seluruh katalog selesai.
+
+**Prioritas berikutnya:** num-conditioning-stability (8 jawaban generik/pendek dan 2 definisi tanpa contoh), num-galat-absolut-relatif (9 temuan), serta bank soal independen bidang 19 dan 21. Jangan mengulang num-floating-point tanpa temuan akademik baru. Rujukan: Higham (2002), Accuracy and Stability of Numerical Algorithms, ed. 2; Goldberg (1991), ACM Computing Surveys 23(1).
+
+---
+
 ## Catatan sesi 2026-10-30 — Optimisasi Numerik: Metode Newton untuk Optimisasi
 
 **Bidang publik terkait:** 20 Optimisasi dan 19 Metode Numerik; **kelompok buku sumber:** 22 Riset Operasi, karena halaman `or-newton-opt` berada pada kurikulum buku Riset Operasi. **URL:** https://descaar.github.io/DMath-Learning/materi/riset-operasi/or-newton-opt/. Ini pengayaan satu submateri, bukan klaim bahwa tiga bidang tersebut selesai. Rotasi setelah 24 Statistika Matematika; tidak mengulang `stm-independence`.
