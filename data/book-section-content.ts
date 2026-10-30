@@ -26,6 +26,7 @@ import { inclusionExclusionContent } from "@/data/inclusion-exclusion-content";
 import { inferenceRulesContent } from "@/data/inference-rules-content";
 import { topologicalContinuityContent } from "@/data/topological-continuity-content";
 import { exactDifferentialContent } from "@/data/exact-differential-content";
+import { fixedPointContent } from "@/data/fixed-point-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -124,6 +125,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "kontinuitas-topologis":topologicalContinuityContent,
   // Exact differential equations with domain-aware theorems and complete solutions.
   "de-exact":exactDifferentialContent,
+  // Proof-based contraction iteration, error bounds and concrete numerical solutions.
+  "num-fixed-point":fixedPointContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
