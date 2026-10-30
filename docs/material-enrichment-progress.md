@@ -1,3 +1,17 @@
+## Catatan sesi 2026-10-30 — Analisis Numerik: Iterasi Titik Tetap
+
+**Bidang publik:** 18 Analisis Numerik; **submateri:** `num-fixed-point`, URL: https://descaar.github.io/DMath-Learning/materi/analisis-numerik/num-fixed-point/. Rotasi dari Persamaan Diferensial; `num-bisection` dan `num-newton` yang sudah diperdalam tidak diulang. Cakupan historis tetap 26/26 bidang publik, tetapi belum semua submateri selesai.
+
+**Audit dua dimensi sebelum:** sumber yang benar-benar dirender adalah `data/numerical-analysis-content.ts`, dengan satu teorema kontraksi tanpa pembuktian, empat contoh umum unit akar yang pendek (isolasi akar, satu langkah Newton, kriteria henti, perbandingan metode), dan delapan latihan yang meminta menjelaskan/membuat contoh, tetapi jawabannya rubrik generik seperti "Jawaban yang baik" dan "Contoh harus". Secara matematis, teorema lama belum membuktikan konstruksi Cauchy, ketunggalan, batas galat, dan perlunya `g(I) ⊆ I`. Sumber itu diganti khusus pada halaman ini; contoh generik unit akar tetap dipertahankan untuk halaman numerik lain. Baseline global terakhir dari sesi Persamaan Eksak adalah 5.940 latihan pendek, 3.432 contoh pendek, 1.042 bukti pendek, dan 740 jawaban generik (triage, bukan sertifikasi kualitas).
+
+**Perubahan nyata:** `data/fixed-point-content.ts` memuat empat definisi dengan contoh tepat terkait (titik tetap, iterasi, kontraksi, residual), tujuh hasil formal dengan pembuktian (kriteria turunan, prinsip kontraksi, batas galat a priori, a posteriori, residual, kesetaraan akar dan titik tetap dua arah, titik tetap repulsif), delapan contoh terbahas, dan delapan latihan FP-01 s.d. FP-08 dengan solusi perhitungan dan verifikasi. Batas galat dinyatakan dengan hipotesis interval tertutup dan konstanta `0 ≤ L < 1`. Contoh tandingan `g(x)=1-x` memperlihatkan kegagalan ketika `L=1`; kasus `g(x)=0.99x+0.01` memperlihatkan residual kecil dengan galat besar. Tidak ada visualisasi baru, video, atau formulir pengunjung. Rujukan: Burden–Faires (2011), Süli–Mayers (2003).
+
+**Regresi:** `scripts/audit-solution-depth.mjs` memeriksa registrasi halaman, empat contoh definisi, tujuh pembuktian, delapan contoh dan delapan solusi konkret, serta kontraksi fungsi afin pada grid, rumus iterasi, kriteria henti, dan dua langkah transformasi akar kuadrat. Pengujian manual memeriksa asumsi, setiap transformasi, dua arah kesetaraan, dan kasus batas. Terminal lokal tidak dapat mengakses GitHub (DNS), sehingga audit npm, laporan JSON sebelum/sesudah, TypeScript, dan deployment harus dibuktikan melalui GitHub Actions. Jangan mengklaim terpublikasi sebelum workflow commit akhir `github-pages-static` menunjukkan completed/success.
+
+**Pekerjaan terbuka:** periksa artifact `solution-depth-report.json` dan `material-depth-report.json`, uji HTML/KaTeX dan interaksi browser, kemudian lanjutkan rotasi ke 22 Riset Operasi atau bank soal independen (termasuk non-buku) untuk memperdalam seluruh 26 bidang. Jangan ulang `num-fixed-point` tanpa temuan baru.
+
+---
+
 ## Catatan sesi 2026-10-30 — Persamaan Diferensial: Persamaan Eksak
 
 **Bidang publik:** 17 Persamaan Diferensial. **Submateri:** `de-exact` (Persamaan Eksak), URL: https://descaar.github.io/DMath-Learning/materi/persamaan-diferensial/de-exact/. Rotasi dari Kontinuitas Topologis; halaman `de-linear-first` yang sudah diperdalam tidak diulang. Cakupan historis awal tetap 26/26 bidang publik, tetapi bukan berarti semua submateri selesai.
