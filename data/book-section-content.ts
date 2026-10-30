@@ -28,6 +28,7 @@ import { topologicalContinuityContent } from "@/data/topological-continuity-cont
 import { exactDifferentialContent } from "@/data/exact-differential-content";
 import { fixedPointContent } from "@/data/fixed-point-content";
 import { linearDualityContent } from "@/data/linear-duality-content";
+import { radonNikodymContent } from "@/data/radon-nikodym-content";
 import { curatedSectionExercises } from "@/data/curated-section-exercises";
 import { academicEnrichment } from "@/data/academic-enrichment";
 import { realAnalysisContentA } from "@/data/real-analysis-book-content-a";
@@ -130,6 +131,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "num-fixed-point":fixedPointContent,
   // Duality with explicit feasibility, complementary slackness, and solved original exercises.
   "or-dualitas":linearDualityContent,
+  // Sigma-finite Radon–Nikodym theorem, Hilbert-space proof, and concrete exercises.
+  "tup-radon-nikodym":radonNikodymContent,
 };
 
 export function getBookSectionContent(sectionSlug:string):BookLessonContent|null{
