@@ -57,10 +57,10 @@ export const itoIsometryContent:BookLessonContent={
     {
       "kind": "theorem",
       "title": "Eksistensi dan Ketunggalan Perluasan Integral Itô",
-      "statement": "Untuk setiap $H\\in\\mathcal H_T^2$ terdapat tepat satu peubah acak $I_T(H)\\in L^2(P)$ sebagai limit integral proses sederhana yang mendekati $H$. Pemetaan $I_T:\\mathcal H_T^2\\to L^2(P)$ linear dan memenuhi $E[I_T(H)]=0$ serta $E[I_T(H)^2]=E\\int_0^TH_t^2dt$.",
+      "statement": "Untuk setiap $H\\in\\mathcal H_T^2$ terdapat tepat satu kelas ekuivalensi peubah acak $I_T(H)\\in L^2(P)$ sebagai limit integral proses sederhana yang mendekati $H$. Pemetaan $I_T:\\mathcal H_T^2\\to L^2(P)$ linear dan memenuhi $E[I_T(H)]=0$ serta $E[I_T(H)^2]=E\\int_0^TH_t^2dt$.",
       "proof": [
         "Ambil $H^{(n)}$ sederhana teradaptasi dengan $\\|H^{(n)}-H\\|_{\\mathcal H_T^2}\\to0$. Karena selisih dua proses sederhana tetap sederhana, isometri sederhana memberi $\\|I_T(H^{(n)})-I_T(H^{(m)})\\|_{L^2(P)}^2=\\|H^{(n)}-H^{(m)}\\|_{\\mathcal H_T^2}^2$. Ketaksamaan segitiga menunjukkan ruas kanan menuju nol saat $m,n\\to\\infty$.",
-        "Ruang $L^2(P)$ lengkap, sehingga terdapat $Y\\in L^2(P)$ dengan $I_T(H^{(n)})\\to Y$ dalam $L^2(P)$. Jika $K^{(n)}$ pendekatan sederhana lain untuk $H$, maka $\\|I_T(H^{(n)})-I_T(K^{(n)})\\|_2=\\|H^{(n)}-K^{(n)}\\|_{\\mathcal H_T^2}\\le\\|H^{(n)}-H\\|+\\|K^{(n)}-H\\|\\to0$. Limit kedua pendekatan sama, sehingga definisi tidak bergantung pada pilihan.",
+        "Ruang $L^2(P)$ lengkap, sehingga terdapat $Y\\in L^2(P)$ dengan $I_T(H^{(n)})\\to Y$ dalam $L^2(P)$. Jika $K^{(n)}$ pendekatan sederhana lain untuk $H$, maka $\\|I_T(H^{(n)})-I_T(K^{(n)})\\|_2=\\|H^{(n)}-K^{(n)}\\|_{\\mathcal H_T^2}\\le\\|H^{(n)}-H\\|+\\|K^{(n)}-H\\|\\to0$. Limit kedua pendekatan sama sebagai unsur $L^2(P)$, yakni sama hampir pasti, sehingga definisi tidak bergantung pada pilihan representasi atau pendekatan.",
         "Linearitas berlaku untuk proses sederhana dan tetap berlaku setelah mengambil limit $L^2$. Norma kontinu terhadap konvergensi dalam ruang bernorma; dengan mengambil limit pada isometri sederhana diperoleh $\\|Y\\|_2^2=\\|H\\|_{\\mathcal H_T^2}^2$. Selain itu, $|E[Y]-E[I_T(H^{(n)})]|\\le\\|Y-I_T(H^{(n)})\\|_2\\to0$, sedangkan mean integral sederhana nol. Dengan demikian $E[Y]=0$ dan seluruh klaim terbukti. $\\square$"
       ]
     },
