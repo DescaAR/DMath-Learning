@@ -2233,3 +2233,52 @@ for(const [slug,markers] of [
   assert.ok(Math.abs(4*3+3*2-18)<1e-12,"PS-01 objective mismatch");
   assert.ok(Math.abs((-.2*1+.1*3+.3*2)-.7)<1e-12,"PS-05 sensitivity mismatch");
 }
+
+
+// MST: audit the rendered chapter and the original curated answer, not only text length.
+{
+  const lesson=getBookSectionContent("md-mst");
+  assert.ok(lesson,"Authored MST lesson is not rendered");
+  const defs=lesson.formal.filter(x=>x.kind==="definition");
+  const results=lesson.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+  assert.equal(defs.length,4,"MST definitions missing");
+  assert.equal(results.length,6,"MST exchange and greedy proofs missing");
+  assert.equal(lesson.examples.length,8,"MST worked examples missing");
+  assert.equal(lesson.exercises.length,9,"MST curated problem or authored exercises missing");
+  for(const d of defs)
+    assert.ok(lesson.examples.some(x=>x.forDefinition===d.title),
+      "MST definition lacks a direct example: "+d.title);
+  for(const r of results){
+    assert.ok(r.proof?.length>=3 && normalize(r.proof.join(" ")).length>500,
+      "MST proof incomplete: "+r.title);
+    assert.ok(r.proof.at(-1).includes("\\square"),"MST proof has no closure: "+r.title);
+  }
+  for(const e of lesson.examples)
+    assert.ok(normalize(e.solution.join(" ")).length>400 &&
+      !/jawaban yang baik|contoh harus/i.test(e.solution.join(" ")),
+      "MST example remains rubric-like: "+e.title);
+  for(const e of lesson.exercises)
+    assert.ok(normalize(e.answer).length>480 &&
+      !/jawaban yang baik|contoh harus/i.test(e.answer),
+      "MST exercise remains rubric-like: "+e.prompt.slice(0,50));
+  assert.ok(lesson.exercises.some(x=>x.prompt.startsWith("MST-08.")),"MST affine-weight proof missing");
+  const triangleTrees=[[1,2],[1,4],[2,4]];
+  assert.deepEqual(triangleTrees.map(x=>x[0]+x[1]),[3,5,6],
+    "Original triangle MST enumeration incorrect");
+  const graph4=[1,2,3,5,6,8];
+  assert.equal(graph4.slice(0,3).reduce((a,b)=>a+b,0),6,
+    "Kruskal four-vertex example incorrect");
+  for(const [n,w1,w2] of [[3,3,5],[4,6,9],[1,0,0]])
+    assert.equal((3*w1+2*(n-1))<=(3*w2+2*(n-1)),w1<=w2,
+      "Affine MST order invariance incorrect");
+  const regression=getBookSectionContent("sta-simple-regression");
+  assert.ok(regression,"Original regression page missing");
+  const original=regression.exercises.find(x=>x.prompt.includes("(1,1),(2,3),(3,5)"));
+  assert.ok(original && normalize(original.answer).length>1100,
+    "Original least-squares exercise was not substantively expanded");
+  const sse=(b0,b1)=>[1,2,3].reduce((sum,x)=>sum+((2*x-1)-b0-b1*x)**2,0);
+  for(const [b0,b1] of [[-1,2],[0,0],[1,3],[-2,2.5]])
+    assert.ok(Math.abs(sse(b0,b1)-(3*(b0+2*b1-3)**2+2*(b1-2)**2))<1e-10,
+      "Least-squares completion-of-squares identity incorrect");
+  assert.equal(sse(-1,2),0);
+}
