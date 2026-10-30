@@ -1,5 +1,6 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 import { floatingPointContent } from "@/data/floating-point-content";
+import { absoluteRelativeErrorContent } from "@/data/absolute-relative-error-content";
 import { conditioningStabilityContent } from "@/data/conditioning-stability-content";
 import { truncationErrorContent } from "@/data/truncation-error-content";
 import { statisticalIndependenceContent } from "@/data/statistical-independence-content";
@@ -80,6 +81,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // Absolute and relative error with explicit domain conditions and fully worked original exercises.
+  "num-galat-absolut-relatif":absoluteRelativeErrorContent,
   // Correctly rounded arithmetic, conditioning and fully worked floating-point problems.
   "num-floating-point":floatingPointContent,
   // Condition numbers, residual bounds, backward stability, and solved examples.
