@@ -1,3 +1,4 @@
+import { jacobiGaussSeidelContent } from "@/data/jacobi-gauss-seidel-content";
 import { sigmaAlgebraClassesContent } from "@/data/sigma-algebra-classes-content";
 import type { BookLessonContent } from "@/data/book-content-types";
 import { floatingPointContent } from "@/data/floating-point-content";
@@ -87,6 +88,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // Jacobi and Gauss–Seidel: exact splittings, convergence proofs, residuals, and complete exercises.
+  "num-jacobi-gauss-seidel":jacobiGaussSeidelContent,
   // Absolute and relative error with explicit domain conditions and fully worked original exercises.
   "num-galat-absolut-relatif":absoluteRelativeErrorContent,
   // Correctly rounded arithmetic, conditioning and fully worked floating-point problems.
