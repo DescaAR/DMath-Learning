@@ -58,6 +58,50 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Linear-algebra modeling: audit the actual rendered lesson, not a disconnected draft.
+{
+  const lesson=getBookSectionContent("la-modeling-least-squares");
+  assert.ok(lesson,"Least-squares modeling lesson must be registered");
+  const definitions=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(definitions.length,4);
+  assert.equal(results.length,6);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const definition of definitions){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===definition.title),
+      "Least-squares definition missing linked concrete example: "+definition.title);
+  }
+  for(const result of results){
+    assert.ok(result.proof?.length>=3 && result.proof.at(-1).includes("\\square"),
+      "Least-squares result missing a closed proof: "+result.title);
+    assert.ok(normalize(result.proof.join(" ")).length>=450,
+      "Least-squares proof requires mathematical review: "+result.title);
+  }
+  for(const example of lesson.examples){
+    assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>=350,
+      "Least-squares example lacks worked derivation: "+example.title);
+  }
+  for(const exercise of lesson.exercises){
+    assert.ok(normalize(exercise.answer).length>=430 &&
+      !/Jawaban yang baik|Contoh harus|Kesimpulan menyatakan|Susun pembahasan/.test(exercise.answer),
+      "Least-squares exercise remains a short rubric: "+exercise.prompt);
+  }
+  // Independently verify normal equations, residual orthogonality, and exact SSE.
+  const x=[0,1,2], y=[1,2,2], intercept=7/6, slope=1/2;
+  const residual=x.map((value,index)=>y[index]-(intercept+slope*value));
+  const near=(a,b)=>Math.abs(a-b)<1e-12;
+  assert.ok(near(residual.reduce((a,b)=>a+b,0),0));
+  assert.ok(near(residual.reduce((sum,value,i)=>sum+x[i]*value,0),0));
+  assert.ok(near(residual.reduce((sum,value)=>sum+value*value,0),1/6));
+  assert.ok(near((1-5/3)**2+(2-5/3)**2+(2-5/3)**2,2/3));
+  assert.ok(near((0-9/4)**2+3*(3-9/4)**2,27/4));
+  assert.ok(near((-4/3+10/4),7/6));
+  assert.ok(near((-4/3+14/4),13/6));
+  assert.ok(near((4-(7/6+3/2))**2,16/9));
+  assert.ok(near((4-(1+1.5*3-0.5*9))**2,9));
+}
+
 // Calculus functions: verify original solutions, exact domains and coordinate maps.
 {
   const lesson=getBookSectionContent("calc-combining-functions");
