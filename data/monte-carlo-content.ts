@@ -38,7 +38,7 @@ export const monteCarloContent: BookLessonContent = {
       "title": "Ketakbiasan dan Ragam Rata-Rata",
       "statement": "Jika $Y_1,\\ldots,Y_n$ iid dengan $\\mathbb E[Y_i]=\\mu$ dan $\\operatorname{Var}(Y_i)=\\sigma^2<\\infty$, maka $\\mathbb E[\\widehat\\mu_n]=\\mu$, $\\operatorname{Var}(\\widehat\\mu_n)=\\sigma^2/n$, dan $\\operatorname{MSE}(\\widehat\\mu_n)=\\sigma^2/n$.",
       "proof": [
-        "Diketahui $\\widehat\\mu_n=n^{-1}\\sum_{i=1}^nY_i$. Linearitas ekspektasi memberi $\\mathbb E[\\widehat\\mu_n]=n^{-1}\\sum_{i=1}^n\\mathbb E[Y_i]=n^{-1}(n\\mu)=\\mu$. Jadi bias estimator sama dengan nol tanpa perlu menganggap $Y_i$ normal.",
+        "Diketahui $\\widehat\\mu_n=n^{-1}\\sum_{i=1}^nY_i$. Linearitas ekspektasi memberi $\\mathbb E[\\widehat\\mu_n]=n^{-1}\\sum_{i=1}^n\\mathbb E[Y_i]=n^{-1}(n\\mu)=\\mu$. Dengan demikian bias estimator sama dengan nol tanpa perlu menganggap $Y_i$ normal.",
         "Independensi menyebabkan $\\operatorname{Cov}(Y_i,Y_j)=0$ untuk $i\\ne j$. Rumus ragam jumlah menghasilkan $\\operatorname{Var}(\\widehat\\mu_n)=n^{-2}\\sum_{i=1}^n\\operatorname{Var}(Y_i)=n^{-2}(n\\sigma^2)=\\sigma^2/n$. Jika independensi dihapus, suku kovarians tidak boleh diabaikan.",
         "Identitas $\\operatorname{MSE}(T)=\\operatorname{Var}(T)+(\\mathbb E[T]-\\mu)^2$ berlaku bagi estimator berkuadrat integrabel. Dengan bias nol, $\\operatorname{MSE}(\\widehat\\mu_n)=\\sigma^2/n$. Ketiga pernyataan terbukti. $\\square$"
       ],
@@ -80,7 +80,7 @@ export const monteCarloContent: BookLessonContent = {
     {
       "kind": "proposition",
       "title": "Pembangkitan Diskret melalui Invers Kumulatif",
-      "statement": "Misalkan $x_1<\\cdots<x_m$ dan $p_j\\ge0$ dengan $\\sum_jp_j=1$. Definisikan $F_j=\\sum_{k=1}^jp_k$, $F_0=0$, dan $X=x_j$ apabila $F_{j-1}<U\\le F_j$, dengan $U\\sim\\operatorname{Uniform}(0,1)$. Maka $P(X=x_j)=p_j$; interval dengan $p_j=0$ kosong.",
+      "statement": "Misalkan $x_1<\\cdots<x_m$ dan $p_j\\ge0$ dengan $\\sum_jp_j=1$. Definisikan $F_j=\\sum_{k=1}^jp_k$, $F_0=0$, dan $X=x_j$ apabila $F_{j-1}<U\\le F_j$, dengan $U\\sim\\operatorname{Uniform}(0,1)$. Dengan demikian $P(X=x_j)=p_j$; interval dengan $p_j=0$ kosong.",
       "proof": [
         "Untuk setiap $j$, peristiwa $\\{X=x_j\\}$ sama dengan $\\{F_{j-1}<U\\le F_j\\}$ berdasarkan aturan pemetaan. Batas kumulatif memenuhi $0=F_0\\le F_1\\le\\cdots\\le F_m=1$.",
         "Distribusi uniform pada $(0,1)$ memberikan peluang panjang interval, sehingga $P(F_{j-1}<U\\le F_j)=F_j-F_{j-1}=p_j$. Titik batas tidak mengubah peluang karena peubah uniform kontinu.",
@@ -193,7 +193,7 @@ export const monteCarloContent: BookLessonContent = {
     {
       "prompt": "MC-01. Biaya acak bernilai 10 dengan peluang 0.3 dan 20 dengan peluang 0.7. Dari lima keluaran $(20,10,20,20,10)$, hitung estimator mean dan bias teoretisnya.",
       "hint": "Pisahkan mean populasi dari mean sampel.",
-      "answer": "Diketahui $\\mu=10(0.3)+20(0.7)=17$. Lima keluaran berjumlah $20+10+20+20+10=80$, sehingga $\\widehat\\mu_5=80/5=16$. Galat realisasi adalah $16-17=-1$. Akan tetapi, setiap replikasi memiliki ekspektasi 17 dan independen, sehingga $\\mathbb E[\\widehat\\mu_5]=5(17)/5=17$ dan bias teoretis nol. Galat sampel yang tidak nol tidak bertentangan dengan sifat tak bias.",
+      "answer": "Diketahui $\\mu=10(0.3)+20(0.7)=17$. Lima keluaran berjumlah $20+10+20+20+10=80$, sehingga $\\widehat\\mu_5=80/5=16$. Galat realisasi adalah $16-17=-1$. Akan tetapi, setiap replikasi memiliki ekspektasi 17 dan independen, sehingga $\\mathbb E[\\widehat\\mu_5]=5(17)/5=17$ dan bias teoretis nol. Galat sampel yang tidak nol tidak bertentangan dengan sifat tak bias. Untuk memeriksa ukuran ketidakpastian, hitung $\\mathbb E[Y^2]=10^2(0.3)+20^2(0.7)=310$ dan $\\operatorname{Var}(Y)=310-17^2=21$. Ragam rata-rata lima replikasi independen adalah $21/5=4.2$, sehingga simpangan baku estimasinya $\\sqrt{4.2}$. Besaran ini menjelaskan variasi estimator dari sampel ke sampel, berbeda dari galat aktual $-1$ pada data yang diberikan.",
       "provenance": "dmath-original"
     },
     {
