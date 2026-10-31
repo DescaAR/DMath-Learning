@@ -188,6 +188,7 @@ export const compactSetsContent: BookLessonContent = {
       "solution": [
         "Polinomial f kontinu pada K dan K kompak oleh Heine–Borel. Teorema citra kontinu memberi f(K) kompak.",
         "Nilai terkecil f adalah 0 karena 0∈K dan x²≥0. Nilai terbesar adalah 9 pada x=3: untuk -2≤x≤3, berlaku |x|≤3 dan x²≤9.",
+        "Untuk memastikan bahwa batas atas 9 tidak terlampaui, pisahkan domain: jika −2≤x≤0, maka 0≤x²≤4; jika 0≤x≤3, maka 0≤x²≤9. Nilai 9 memang dicapai pada x=3, sedangkan 0 dicapai pada x=0. Jadi kedua ekstrem merupakan nilai fungsi, bukan sekadar batas yang tidak tercapai.",
         "Untuk setiap y∈[0,9], ambil x=√y∈[0,3]⊆K; maka f(x)=y. Jadi f(K)=[0,9], yang juga tertutup dan terbatas."
       ],
       "conclusion": "Citra kontinu kompak dan dapat dihitung persis."
