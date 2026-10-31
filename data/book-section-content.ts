@@ -42,6 +42,7 @@ import { optimizationContent } from "@/data/optimization-content";
 import { probabilityDensityContent } from "@/data/probability-density-content";
 import { centralTendencyContent } from "@/data/central-tendency-content";
 import { modelingContent } from "@/data/modeling-content";
+import { newsvendorContent } from "@/data/newsvendor-content";
 import { brownianMotionContent } from "@/data/brownian-motion-content";
 import { linearityModelContent } from "@/data/linearity-model-content";
 import { lpApplicationsContent } from "@/data/lp-applications-content";
@@ -181,6 +182,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   "sta-central":centralTendencyContent,
   // Scenario-based mathematical modeling with exact risk, identifiability and proofs.
   "or-model-deterministik-stokastik":modelingContent,
+  // Single-period inventory: exact discrete critical-fractile proof and original solved exercises.
+  "or-newsvendor":newsvendorContent,
   // Brownian motion: independent increments, filtration, Gaussian laws and quadratic variation.
   "ks-brownian-definition":brownianMotionContent,
   // Proof-based linearity, affine modeling, integer relaxation and fully worked exercises.
