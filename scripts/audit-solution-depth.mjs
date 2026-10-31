@@ -1200,6 +1200,17 @@ assert.ok(Math.abs(((9/10-3/5)*80)-(24))<1e-12,"Fraction numeric regression: (9/
 assert.ok(Math.abs(((13/3-1)/6)-(5/9))<1e-12,"Fraction numeric regression: (13/3-1)/6");
 assert.ok(Math.abs((1/(1+1/(1+1/2)))-(3/5))<1e-12,"Fraction numeric regression: 1/(1+1/(1+1/2))");
 
+// Original public fraction practice: require actual derivations, not answer keys.
+for(const id of ["F-01","F-02"]){
+  const item=fractionPractice.find(problem=>problem.id===id);
+  assert.ok(item && normalize(item.answer.id).length>=450,
+    "Original arithmetic solution remains abbreviated: "+id);
+  assert.ok(normalize(item.answer.en).length>=350,
+    "English arithmetic solution remains abbreviated: "+id);
+}
+assert.equal(3*35,5*21,"Equivalent-fraction cross multiplication");
+assert.ok(7/12<5/8 && 5/8<2/3,"Fraction order must be exact");
+
 // Regression for the public, non-book Algebra lesson. This checks the
 // rendered source registry and independently authored answers, not length alone.
 const linear=deepMaterials.find(x=>x.slug==="persamaan-linear");
@@ -1210,6 +1221,22 @@ assert.ok(linear && linear.subject==="Aljabar");
 assert.ok(linearFormal && linearFormal.blocks.length>=5);
 assert.equal(linear.examples.length,3);
 assert.equal(linearPractice.length,10);
+for(const id of ["L-01","L-02"]){
+  const item=linearPractice.find(problem=>problem.id===id);
+  assert.ok(item && normalize(item.answer.id).length>=450,
+    "Original linear-equation solution remains abbreviated: "+id);
+  assert.ok(normalize(item.answer.en).length>=350,
+    "English linear-equation solution remains abbreviated: "+id);
+}
+for(const title of ["Prinsip Penjumlahan","Prinsip Perkalian"]){
+  const theorem=linear.theorems.find(item=>item.title===title);
+  assert.ok(theorem && theorem.proof.length>=3 && theorem.proof.at(-1).includes("\\square"),
+    "Missing completed two-inclusion proof: "+title);
+  assert.ok(theorem.proof.some(step=>step.includes("S_1")&&step.includes("S_2")),
+    "Equation equivalence must compare both solution sets: "+title);
+}
+assert.equal(5*(2*4-3)-4,3*4+9,"L-01 substitution check");
+assert.equal(3*7000+2*5000,31000,"L-02 price model check");
 for(const definition of [...linear.definitions.map(x=>x.title),
   ...linearFormal.blocks.filter(x=>x.kind==="definition").map(x=>x.title.id)]){
   assert.ok(linearFormal.examples.some(ex=>ex.forDefinition?.id===definition),
