@@ -58,6 +58,55 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Moving-average forecasting regression: actual rendered lesson and exact numerical identities.
+{
+  const lesson=getBookSectionContent("or-forecast-moving-average");
+  assert.ok(lesson,"Moving-average lesson must be registered on its public route");
+  const definitions=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>item.kind!=="definition"&&item.kind!=="note");
+  assert.equal(definitions.length,4,"Four exact forecasting definitions required");
+  assert.equal(results.length,7,"Seven proved forecasting results required");
+  assert.equal(lesson.examples.length,8,"Eight original forecasting examples required");
+  assert.equal(lesson.exercises.length,8,"Eight solved forecasting exercises required");
+  for(const item of definitions){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===item.title),
+      "Missing direct example for definition "+item.title);
+  }
+  for(const item of results){
+    assert.ok(item.proof?.length>=2,"Missing mathematical proof: "+item.title);
+    assert.match(item.proof.join(" "),/\\square/,"Missing proof terminator: "+item.title);
+  }
+  for(const example of lesson.examples){
+    assert.ok(example.solution.length>=3,"Incomplete worked calculation: "+example.title);
+    assert.doesNotMatch(example.problem+" "+example.solution.join(" "),/matriks transisi|utilisasi server|antrean dengan laju/i,
+      "Unrelated Markov/queue generator example was rendered");
+  }
+  for(const exercise of lesson.exercises){
+    assert.match(exercise.prompt,/^MA-\d{2}\./,"Exercise ID must be stable");
+    assert.doesNotMatch(exercise.answer,/jawaban yang baik|susunlah penjelasan|buatlah contoh|ditentukan asumsi yang relevan/i,
+      "Rubric answer instead of a solved forecasting problem");
+  }
+  const mean=(values)=>values.reduce((sum,value)=>sum+value,0)/values.length;
+  const close=(a,b)=>Math.abs(a-b)<1e-10;
+  assert.ok(close(mean([14,16,18]),16));
+  assert.ok(close(0.5*16+0.3*14+0.2*12,14.6));
+  assert.ok(close(mean([7,9,11])-mean([5,7,9]),(11-5)/3));
+  for(let m=1;m<=6;m++){
+    for(let t=m;t<=9;t++){
+      const history=Array.from({length:t},(_,i)=>2+3*(i+1));
+      const forecast=mean(history.slice(-m));
+      const actual=2+3*(t+1);
+      assert.ok(close(actual-forecast,3*(m+1)/2),
+        "Trend-lag identity fails at m="+m+", t="+t);
+    }
+  }
+  const errors=[8-mean([3,5]),10-mean([5,8]),14-mean([8,10])];
+  assert.ok(close(mean(errors.map(Math.abs)),25/6));
+  assert.ok(close(mean(errors.map(e=>e*e)),71/4));
+  assert.ok(close(16*(1+1/4),20));
+  assert.ok(close(16*(1+1/8),18));
+}
+
 // Newsvendor regression: rendered original content, mathematical cases, and non-rubric solutions.
 {
   const lesson=getBookSectionContent("or-newsvendor");
