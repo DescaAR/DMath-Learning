@@ -58,6 +58,50 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Calculus functions: verify original solutions, exact domains and coordinate maps.
+{
+  const lesson=getBookSectionContent("calc-combining-functions");
+  assert.ok(lesson,"Authored function-combination lesson must be rendered");
+  const definitions=lesson.formal.filter(x=>x.kind==="definition");
+  const results=lesson.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+  assert.equal(definitions.length,4);
+  assert.equal(results.length,5);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const definition of definitions){
+    assert.ok(lesson.examples.some(x=>x.forDefinition===definition.title),
+      "Function-combination definition without direct example: "+definition.title);
+  }
+  for(const result of results){
+    assert.ok(result.proof?.length>=3 && normalize(result.proof.join(" ")).length>=350,
+      "Function-combination result without substantive proof: "+result.title);
+    assert.ok(result.proof.at(-1).includes("\\square"),
+      "Function-combination proof missing closure: "+result.title);
+  }
+  for(const example of lesson.examples){
+    assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>=350,
+      "Function-combination example too brief: "+example.title);
+  }
+  for(const exercise of lesson.exercises){
+    assert.ok(normalize(exercise.answer).length>=390 &&
+      !/Jawaban yang baik|Contoh harus|Kesimpulan menyatakan/.test(exercise.answer),
+      "Function-combination original exercise too brief or generic: "+exercise.prompt);
+  }
+  const root=x=>Math.sqrt(x);
+  assert.equal(root(4-2),Math.sqrt(2));
+  assert.equal(root(4)-2,0);
+  assert.equal((2+2)**2-2,14);
+  assert.equal(4-2*Math.sqrt(9),-2);
+  assert.equal(-12*(0+1)**2+5,-7);
+  assert.equal(3-2*Math.sqrt(5-11/4),0);
+  // A transformed point (u,f(u)) maps to (h+u/b, a*f(u)+k).
+  for(const u of [0,1,4,9]){
+    const a=-2,b=-3,h=1,k=4;
+    const x=h+u/b,y=a*Math.sqrt(u)+k;
+    assert.ok(Math.abs((4-2*Math.sqrt(-3*(x-1)))-y)<1e-10);
+  }
+}
+
 // Public trigonometric functions: verify authored source, exact identities and solutions.
 {
   const lesson=getBookSectionContent("calc-trigonometric-functions");
