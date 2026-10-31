@@ -1,7 +1,7 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 
 /** Exact trigonometric identities, rotations and complete original problems. */
-export const trigonometricFunctionsContent: BookLessonContent = {
+export const trigonometricFunctionsContent: BookLessonContent =  {
   "intro": [
     "Fungsi trigonometri menyatakan koordinat titik pada lingkaran satuan setelah diputar dengan sudut tertentu. Pengertian ini berlaku untuk sudut positif, negatif, dan sudut yang melebihi satu putaran; ia lebih luas daripada perbandingan sisi pada segitiga siku-siku. Jika sebuah titik bergerak satu putaran penuh, koordinatnya kembali seperti semula. Dari geometri sederhana ini muncul identitas, periodisitas, serta model osilasi.",
     "Ukuran sudut yang dipakai adalah radian. Untuk jari-jari $r>0$, busur berorientasi sepanjang $s$ berkaitan dengan sudut $\\theta=s/r$. Dalam lingkaran satuan, koordinat titik akhir rotasi $\\theta$ adalah $(\\cos\\theta,\\sin\\theta)$. Persamaan $\\cos^2\\theta+\\sin^2\\theta=1$ merupakan konsekuensi langsung persamaan lingkaran, bukan rumus yang perlu dihafal tanpa alasan.",
@@ -181,7 +181,7 @@ export const trigonometricFunctionsContent: BookLessonContent = {
     {
       "prompt": "TG-02. Tentukan nilai tepat $\\sin(5\\pi/6)$ dan $\\cos(5\\pi/6)$ serta periksa identitas Pythagoras.",
       "hint": "Sudut acuan adalah $pi/6$ dan sudut berada di kuadran II.",
-      "answer": "Diketahui $5\\pi/6=\\pi-\\pi/6$, sehingga titik akhirnya berada di kuadran II. Sudut acuan $\\pi/6$ mempunyai koordinat $(\\sqrt3/2,1/2)$ pada lingkaran satuan. Refleksi terhadap sumbu vertikal mengubah tanda koordinat horizontal saja. Diperoleh $\\cos(5\\pi/6)=-\\sqrt3/2$ dan $\\sin(5\\pi/6)=1/2$. Pemeriksaan identitas memberikan $(1/2)^2+(-\\sqrt3/2)^2=1/4+3/4=1$. Sinus positif dan kosinus negatif juga cocok dengan kuadran II. Kedua nilai tepat telah diperoleh tanpa pendekatan desimal."
+      "answer": "Diketahui $5\\pi/6=\\pi-\\pi/6$, sehingga titik akhirnya berada di kuadran II. Sudut acuan $\\pi/6$ mempunyai koordinat $(\\sqrt3/2,1/2)$ pada lingkaran satuan. Refleksi terhadap sumbu vertikal mengubah tanda koordinat horizontal saja. Diperoleh $\\cos(5\\pi/6)=-\\sqrt3/2$ dan $\\sin(5\\pi/6)=1/2$. Pemeriksaan identitas memberikan $(1/2)^2+(-\\sqrt3/2)^2=1/4+3/4=1$. Sinus positif dan kosinus negatif juga cocok dengan kuadran II. Kedua nilai tepat telah diperoleh tanpa pendekatan desimal. Pemeriksaan tambahan menggunakan rumus selisih memberi $\\sin(\\pi-\\pi/6)=\\sin(\\pi/6)=1/2$ dan $\\cos(\\pi-\\pi/6)=-\\cos(\\pi/6)=-\\sqrt3/2$, sesuai hasil koordinat."
     },
     {
       "prompt": "TG-03. Buktikan $1+\\tan^2\\theta=1/\\cos^2\\theta$ pada seluruh domain yang sah dan jelaskan mengapa $\\theta=\\pi/2$ dikecualikan.",
