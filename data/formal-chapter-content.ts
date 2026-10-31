@@ -46,8 +46,8 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         title:t("Lemma Penyebut Bersama","Common-Denominator Lemma"),
         statement:t("Untuk $b,d\\neq0$, berlaku $\\frac ab=\\frac{ad}{bd}$ dan $\\frac cd=\\frac{bc}{bd}$.","For $b,d\\neq0$, $\\frac ab=\\frac{ad}{bd}$ and $\\frac cd=\\frac{bc}{bd}$."),
         proof:[
-          t("Karena $d\\neq0$, nilai $\\frac dd=1$. Dengan mengalikan $\\frac ab$ oleh $1$, diperoleh $\\frac ab=\\frac ab\\cdot\\frac dd=\\frac{ad}{bd}$.","Since $d\\neq0$, $\\frac dd=1$. Multiplying $\\frac ab$ by $1$ gives $\\frac ab=\\frac ab\\cdot\\frac dd=\\frac{ad}{bd}$."),
-          t("Argumen yang sama dengan faktor $\\frac bb$ memberi $\\frac cd=\\frac{bc}{bd}$.","The same argument using the factor $\\frac bb$ gives $\\frac cd=\\frac{bc}{bd}$.")
+          t("Diketahui $a,b,c,d\\in\\mathbb Z$ dengan $b,d\\neq0$. Karena $bd\\neq0$, penyebut bersama tersebut sah. Kesamaan $\\frac dd=1$ dan $\\frac bb=1$ memungkinkan kedua pecahan diubah tanpa mengubah bilangan yang diwakili.","Let $a,b,c,d$ be integers with $b,d\\neq0$. Then $bd\\neq0$ is a valid common denominator. Both $\\frac dd=1$ and $\\frac bb=1$ may be used to change representations without changing values."),
+          t("Secara terpisah diperoleh $\\frac ab=\\frac ab\\cdot\\frac dd=\\frac{ad}{bd}$ dan $\\frac cd=\\frac cd\\cdot\\frac bb=\\frac{bc}{bd}$. Kedua identitas tetap benar jika penyebut negatif; misalnya $\\frac23=\\frac{-6}{-9}$. Seluruh pembagian sah karena hipotesis tak nol, sehingga lemma terbukti. $\\square$","Separately, $\\frac ab=\\frac ab\\cdot\\frac dd=\\frac{ad}{bd}$ and $\\frac cd=\\frac cd\\cdot\\frac bb=\\frac{bc}{bd}$. Negative denominators are allowed, for example $\\frac23=\\frac{-6}{-9}$. Every denominator remains nonzero. The lemma is proved. $\\square$")
         ]
       },
       {
@@ -55,8 +55,8 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         title:t("Proposisi Penjumlahan Pecahan","Fraction Addition Proposition"),
         statement:t("Untuk $b,d\\neq0$, $\\displaystyle \\frac ab+\\frac cd=\\frac{ad+bc}{bd}$.","For $b,d\\neq0$, $\\displaystyle \\frac ab+\\frac cd=\\frac{ad+bc}{bd}$."),
         proof:[
-          t("Gunakan Lemma Penyebut Bersama untuk menulis kedua pecahan dengan penyebut $bd$.","Use the Common-Denominator Lemma to rewrite both fractions with denominator $bd$."),
-          t("Diperoleh $\\frac{ad}{bd}+\\frac{bc}{bd}=\\frac{ad+bc}{bd}$ karena penjumlahan dua bagian berukuran sama cukup menjumlahkan banyak bagiannya.","Thus $\\frac{ad}{bd}+\\frac{bc}{bd}=\\frac{ad+bc}{bd}$ because parts of equal size are added by adding their counts.")
+          t("Misalkan $a,b,c,d\\in\\mathbb Z$ dengan $b,d\\neq0$. Berdasarkan Lemma Penyebut Bersama, $\\frac ab=\\frac{ad}{bd}$ dan $\\frac cd=\\frac{bc}{bd}$, dengan penyebut $bd\\neq0$.","Let $a,b,c,d$ be integers with $b,d\\neq0$. The common-denominator lemma gives $\\frac ab=\\frac{ad}{bd}$ and $\\frac cd=\\frac{bc}{bd}$, with $bd\\neq0$."),
+          t("Jumlahkan kedua pecahan yang kini mempunyai satuan bagian sama: $\\frac ab+\\frac cd=\\frac{ad}{bd}+\\frac{bc}{bd}=\\frac{ad+bc}{bd}$. Contohnya $\\frac12+\\frac13=\\frac{3+2}{6}=\\frac56$, bukan $\\frac25$. Penurunan berlaku bagi semua pembilang dan penyebut yang memenuhi hipotesis. Proposisi terbukti. $\\square$","Adding equal-sized parts gives $\\frac ab+\\frac cd=\\frac{ad}{bd}+\\frac{bc}{bd}=\\frac{ad+bc}{bd}$. For example, $\\frac12+\\frac13=\\frac{3+2}{6}=\\frac56$, not $\\frac25$. The argument applies to all allowed numerators and denominators. The proposition is proved. $\\square$")
         ],
         note:t("Rumus ini menjelaskan alasan penyebut tidak dijumlahkan.","This formula explains why denominators are not added.")
       },
@@ -75,8 +75,8 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         title:t("Akibat: Uji Kesetaraan Pecahan","Corollary: Equality Test"),
         statement:t("Untuk $b,d\\neq0$, $\\frac ab=\\frac cd$ jika dan hanya jika $ad=bc$.","For $b,d\\neq0$, $\\frac ab=\\frac cd$ if and only if $ad=bc$."),
         proof:[
-          t("Jika kedua pecahan sama, kalikan kedua ruas dengan $bd$ untuk memperoleh $ad=bc$.","If the fractions are equal, multiply both sides by $bd$ to obtain $ad=bc$."),
-          t("Sebaliknya, jika $ad=bc$, bagi kedua ruas oleh $bd$ untuk memperoleh $\\frac ab=\\frac cd$.","Conversely, if $ad=bc$, divide by $bd$ to obtain $\\frac ab=\\frac cd$.")
+          t("Diketahui $a,b,c,d\\in\\mathbb Z$ dengan $b,d\\neq0$, sehingga $bd\\neq0$. Untuk arah $(\\Rightarrow)$, dari $\\frac ab=\\frac cd$ kalikan kedua ruas dengan $bd$ dan sederhanakan untuk memperoleh $ad=bc$.","Let $a,b,c,d$ be integers with $b,d\\neq0$, so $bd\\neq0$. For $(\\Rightarrow)$, multiply $\\frac ab=\\frac cd$ by $bd$ and cancel to obtain $ad=bc$."),
+          t("Untuk arah $(\\Leftarrow)$, dari $ad=bc$ bagi kedua ruas dengan $bd\\neq0$ sehingga $\\frac{ad}{bd}=\\frac{bc}{bd}$, yang menyederhana menjadi $\\frac ab=\\frac cd$. Misalnya $\\frac{-2}{3}=\\frac4{-6}$ karena hasil kali silang sama-sama $12$. Kedua implikasi terbukti. $\\square$","For $(\\Leftarrow)$, divide $ad=bc$ by $bd\\neq0$ to get $\\frac{ad}{bd}=\\frac{bc}{bd}$ and hence $\\frac ab=\\frac cd$. For example, $\\frac{-2}{3}=\\frac4{-6}$ because both cross-products equal $12$. Both directions are proved. $\\square$")
         ]
       }
     ],
@@ -129,17 +129,16 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         kind:"lemma", title:t("Lemma Operasi Ekuivalen","Equivalent-Operation Lemma"),
         statement:t("Menambah nilai yang sama pada kedua ruas atau mengalikan kedua ruas dengan skalar tak nol tidak mengubah himpunan solusi.","Adding the same value to both sides or multiplying both sides by a nonzero scalar preserves the solution set."),
         proof:[
-          t("Jika $x$ memenuhi $A(x)=B(x)$, maka otomatis $A(x)+c=B(x)+c$. Arah sebaliknya diperoleh dengan mengurangi $c$.","If $x$ satisfies $A(x)=B(x)$, then $A(x)+c=B(x)+c$. The reverse follows by subtracting $c$."),
-          t("Untuk $k\\neq0$, $A(x)=B(x)$ ekuivalen dengan $kA(x)=kB(x)$ karena pembagian kembali oleh $k$ sah.","For $k\\neq0$, $A(x)=B(x)$ is equivalent to $kA(x)=kB(x)$ because division by $k$ is valid.")
+          t("Misalkan $A,B:D\\to\\mathbb R$, $c,k\\in\\mathbb R$, dan $k\\neq0$. Jika $S$ adalah himpunan solusi $A(x)=B(x)$ dan $S_+$ himpunan solusi $A(x)+c=B(x)+c$, maka $S\\subseteq S_+$ melalui penjumlahan $c$ dan $S_+\\subseteq S$ melalui pengurangan $c$. Dengan demikian $S=S_+$.","Let $A,B:D\\to\\mathbb R$, $c,k\\in\\mathbb R$, and $k\\neq0$. Let $S$ solve $A=B$ and $S_+$ solve $A+c=B+c$. Adding $c$ gives $S\\subseteq S_+$, while subtracting $c$ gives $S_+\\subseteq S$. Thus $S=S_+$."),
+          t("Jika $S_k$ adalah himpunan solusi $kA(x)=kB(x)$, perkalian oleh $k$ memberi $S\\subseteq S_k$ dan pembagian oleh $k\\neq0$ memberi $S_k\\subseteq S$. Maka $S=S_k$. Kasus $k=0$ tidak sah: persamaan $x=1$ berubah menjadi $0=0$ yang dipenuhi semua bilangan real. Lemma terbukti. $\\square$","If $S_k$ solves $kA=kB$, multiplication by $k$ gives $S\\subseteq S_k$, and division by nonzero $k$ gives $S_k\\subseteq S$. Hence $S=S_k$. If $k=0$, $x=1$ becomes $0=0$, admitting every real number. The lemma is proved. $\\square$")
         ]
       },
       {
         kind:"proposition", title:t("Proposisi Solusi Tunggal","Unique-Solution Proposition"),
         statement:t("Persamaan $ax+b=c$ dengan $a\\neq0$ mempunyai tepat satu solusi, yaitu $x=\\frac{c-b}{a}$.","The equation $ax+b=c$ with $a\\neq0$ has exactly one solution, namely $x=\\frac{c-b}{a}$."),
         proof:[
-          t("Kurangi kedua ruas dengan $b$ untuk memperoleh $ax=c-b$.","Subtract $b$ from both sides to obtain $ax=c-b$."),
-          t("Bagi kedua ruas dengan $a$ yang tak nol. Diperoleh $x=\\frac{c-b}{a}$.","Divide both sides by nonzero $a$, giving $x=\\frac{c-b}{a}$."),
-          t("Semua transformasi ekuivalen, jadi tidak ada solusi lain yang hilang atau muncul.","All transformations are equivalent, so no other solution is lost or introduced.")
+          t("Diketahui $a,b,c\\in\\mathbb R$ dan $a\\neq0$. Dari $ax+b=c$, kurangi $b$ pada kedua ruas lalu bagi dengan $a$ untuk memperoleh $x^*=\\frac{c-b}{a}$. Kandidat ini memang solusi sebab $ax^*+b=a\\frac{c-b}{a}+b=c$.","Let $a,b,c\\in\\mathbb R$ with $a\\neq0$. Subtracting $b$ from $ax+b=c$ and dividing by $a$ gives $x^*=\\frac{c-b}{a}$. This is a solution because $ax^*+b=a\\frac{c-b}{a}+b=c$."),
+          t("Untuk ketunggalan, jika $x_1,x_2$ keduanya solusi, selisih persamaan asal menghasilkan $a(x_1-x_2)=0$. Karena $a\\neq0$, diperoleh $x_1=x_2$. Jika $a=0$, persamaan dapat menjadi identitas atau kontradiksi; hipotesis tak nol tidak boleh dihilangkan. Eksistensi dan ketunggalan terbukti. $\\square$","If $x_1,x_2$ both solve the equation, subtracting gives $a(x_1-x_2)=0$. Since $a\\neq0$, we get $x_1=x_2$. If $a=0$, the equation may be an identity or a contradiction. Existence and uniqueness are proved. $\\square$")
         ]
       },
       {
