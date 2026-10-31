@@ -1,3 +1,4 @@
+import { coordinates3dContent } from "@/data/coordinates-3d-content";
 import { modelingLeastSquaresContent } from "@/data/modeling-least-squares-content";
 import { combiningFunctionsContent } from "@/data/combining-functions-content";
 import { trigonometricFunctionsContent } from "@/data/trigonometric-functions-content";
@@ -102,6 +103,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentD,
   // Exact domains, composition, translations, scaling, parity and original solutions.
   // Mathematical modeling with least squares: identifiability, exact projections, validation and solved problems.
+  // Exact spatial distances, bisector planes, sphere sections, and original proofs.
+  "calc-3d-coordinates":coordinates3dContent,
   "la-modeling-least-squares":modelingLeastSquaresContent,
   "calc-combining-functions":combiningFunctionsContent,
   // Exact unit-circle trigonometry, rotations, domain and original solved problems.
