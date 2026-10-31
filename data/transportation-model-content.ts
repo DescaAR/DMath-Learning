@@ -70,7 +70,7 @@ export const transportationModelContent:BookLessonContent={
       "proof": [
         "Diketahui $c_{ij}\\ge u_i+v_j$ dan $x_{ij}\\ge0$. Kalikan setiap ketaksamaan dengan $x_{ij}$, lalu jumlahkan: $C(X)=\\sum_{i,j}c_{ij}x_{ij}\\ge\\sum_{i,j}(u_i+v_j)x_{ij}$.",
         "Kelompokkan suku berdasarkan sumber dan tujuan. Kelayakan menghasilkan $\\sum_{i,j}u_ix_{ij}=\\sum_i u_ia_i$ dan $\\sum_{i,j}v_jx_{ij}=\\sum_jv_jb_j$. Oleh karena itu $C(X)\\ge D(u,v)$.",
-        "Jika $X^*$ layak dan mencapai batas bawah dual tersebut, untuk setiap rencana layak $Y$ berlaku $C(Y)\\ge D(u,v)=C(X^*)$. Tidak ada rencana dengan biaya lebih kecil; $X^*$ optimal. $\\square"
+        "Jika $X^*$ layak dan mencapai batas bawah dual tersebut, untuk setiap rencana layak $Y$ berlaku $C(Y)\\ge D(u,v)=C(X^*)$. Tidak ada rencana dengan biaya lebih kecil; $X^*$ optimal. $\\square$"
       ]
     },
     {
