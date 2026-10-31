@@ -1,3 +1,4 @@
+import { trigonometricFunctionsContent } from "@/data/trigonometric-functions-content";
 import { realOpenClosedContent } from "@/data/real-open-closed-content";
 import { transportationModelContent } from "@/data/transportation-model-content";
 import { compactSetsContent } from "@/data/compact-sets-content";
@@ -97,6 +98,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // Exact unit-circle trigonometry, rotations, domain and original solved problems.
+  "calc-trigonometric-functions":trigonometricFunctionsContent,
   // Open/closed sets in R: neighborhood criteria, closure, boundary and complete solutions.
   "himpunan-buka-dan-tertutup-r":realOpenClosedContent,
   // Balanced transportation models: exact feasibility, dual certificates and original solutions.
