@@ -100,7 +100,8 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
           t("$\\operatorname{KPK}(12,18)=36$.","$\\operatorname{lcm}(12,18)=36$."),
           t("$\\frac7{12}=\\frac{21}{36}$ karena pembilang dan penyebut dikalikan $3$.","$\\frac7{12}=\\frac{21}{36}$ by multiplying numerator and denominator by $3$."),
           t("$\\frac5{18}=\\frac{10}{36}$ karena pembilang dan penyebut dikalikan $2$.","$\\frac5{18}=\\frac{10}{36}$ by multiplying numerator and denominator by $2$."),
-          t("Jumlahnya $\\frac{21+10}{36}=\\frac{31}{36}$. Karena $\\gcd(31,36)=1$, hasil sudah paling sederhana.","The sum is $\\frac{21+10}{36}=\\frac{31}{36}$. Since $\\gcd(31,36)=1$, the result is already in lowest terms.")
+          t("Jumlahnya $\\frac{21+10}{36}=\\frac{31}{36}$. Karena $\\gcd(31,36)=1$, hasil sudah paling sederhana.","The sum is $\\frac{21+10}{36}=\\frac{31}{36}$. Since $\\gcd(31,36)=1$, the result is already in lowest terms."),
+          t("Verifikasi independen menggunakan rumus penjumlahan umum: $\\frac7{12}+\\frac5{18}=\\frac{7\\cdot18+5\\cdot12}{12\\cdot18}=\\frac{126+60}{216}=\\frac{186}{216}=\\frac{31}{36}$. Penyederhanaan terakhir membagi pembilang dan penyebut dengan $6\\neq0$. Kedua metode sepakat. Selain itu, $31$ tidak mempunyai faktor prima yang sama dengan $36=2^2\\cdot3^2$, sehingga hasil benar-benar paling sederhana dan tidak memerlukan pembulatan desimal.","Check independently with the general addition rule: $\\frac7{12}+\\frac5{18}=\\frac{7\\cdot18+5\\cdot12}{12\\cdot18}=\\frac{186}{216}=\\frac{31}{36}$. The last equality divides numerator and denominator by nonzero $6$. Both methods agree. The numerator $31$ shares no prime factor with $36=2^2\\cdot3^2$, so the result is in lowest terms without any decimal rounding.")
         ],
         conclusion:t("Hasil akhirnya adalah $\\boxed{\\frac{31}{36}}$.","The final result is $\\boxed{\\frac{31}{36}}$.")
       },
@@ -110,7 +111,8 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         strategy:t("Gunakan perkalian silang karena kedua penyebut positif.","Use cross multiplication because both denominators are positive."),
         solution:[
           t("Hitung $11\\cdot9=99$ dan $7\\cdot15=105$.","Compute $11\\cdot9=99$ and $7\\cdot15=105$."),
-          t("Karena $99<105$, kriteria perbandingan silang memberi $\\frac{11}{15}<\\frac79$.","Since $99<105$, the cross-product criterion gives $\\frac{11}{15}<\\frac79$.")
+          t("Karena $99<105$, kriteria perbandingan silang memberi $\\frac{11}{15}<\\frac79$.","Since $99<105$, the cross-product criterion gives $\\frac{11}{15}<\\frac79$."),
+          t("Selisih kedua bilangan memberikan pemeriksaan tambahan yang tidak bergantung pada tanda hasil kali silang: $\\frac79-\\frac{11}{15}=\\frac{7\\cdot15-11\\cdot9}{135}=\\frac{105-99}{135}=\\frac6{135}=\\frac2{45}>0$. Nilai positif ini memastikan bahwa $\\frac79$ memang lebih besar. Pemeriksaan lain memakai penyebut bersama $45$, yaitu $\\frac79=\\frac{35}{45}$ dan $\\frac{11}{15}=\\frac{33}{45}$; selisihnya tetap $\\frac2{45}$.","An independent check uses the exact difference: $\\frac79-\\frac{11}{15}=\\frac{7\\cdot15-11\\cdot9}{135}=\\frac{105-99}{135}=\\frac2{45}>0$. Its positivity confirms that $\\frac79$ is larger. Equivalently, write $\\frac79=\\frac{35}{45}$ and $\\frac{11}{15}=\\frac{33}{45}$. Their numerators differ by $2$, so the difference is again $\\frac2{45}$.")
         ],
         conclusion:t("$\\boxed{\\frac79}$ lebih besar.","$\\boxed{\\frac79}$ is larger.")
       }
@@ -183,7 +185,8 @@ export const formalChapterContent: Record<string, FormalChapterContent> = {
         solution:[
           t("Untuk $x=2$, ruas kiri adalah $3(2)-1=5$, sama dengan ruas kanan. Jadi $2$ merupakan solusi.","At $x=2$, the left side equals $3(2)-1=5$, so $2$ is a solution."),
           t("Untuk $x=1$, ruas kiri adalah $3(1)-1=2\\neq5$, sehingga $1$ bukan solusi.","At $x=1$, the left side is $2\\neq5$, so $1$ is not a solution."),
-          t("Dari $3x-1=5$ diperoleh $3x=6$ dan $x=2$ melalui operasi ekuivalen; jadi tidak ada solusi real lain.","Equivalent operations give $3x=6$ and $x=2$, proving there is no other real solution.")
+          t("Dari $3x-1=5$ diperoleh $3x=6$ dan $x=2$ melalui operasi ekuivalen; jadi tidak ada solusi real lain.","Equivalent operations give $3x=6$ and $x=2$, proving there is no other real solution."),
+          t("Untuk memastikan tidak ada solusi real lain, selesaikan persamaan pada seluruh domain. Tambahkan $1$ pada kedua ruas $3x-1=5$ sehingga $3x=6$. Pembagian oleh $3\\neq0$ memberikan $x=2$; kedua operasi dapat dibalik sehingga himpunan solusi tidak berubah. Pemeriksaan substitusi pada langkah pertama menunjukkan $x=2$ memenuhi persamaan asal, sedangkan kandidat $x=1$ gagal. Oleh karena itu himpunan solusi lengkap adalah $S=\\{2\\}$, bukan sekadar daftar dua kandidat yang diuji.","To establish that no other real solution exists, solve the equation over its full domain. Adding $1$ to both sides of $3x-1=5$ gives $3x=6$. Division by nonzero $3$ yields $x=2$; both transformations are reversible and preserve the solution set. Direct substitution verifies $x=2$ in the original equation, while $x=1$ fails. Hence the complete solution set is $S=\\{2\\}$, not merely a list of tested candidates.")
         ],
         conclusion:t("Himpunan solusi persamaan pada $\\mathbb R$ adalah $\\{2\\}$.","The solution set over $\\mathbb R$ is $\\{2\\}$.")
       },
