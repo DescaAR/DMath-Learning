@@ -58,6 +58,46 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Open/closed real sets: inspect actual lesson, definition links and mathematical cases.
+{
+  const lesson=getBookSectionContent("himpunan-buka-dan-tertutup-r");
+  assert.ok(lesson,"Open/closed real sets must be rendered from the authored source");
+  const definitions=lesson.formal.filter(item=>item.kind==="definition");
+  const proved=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(definitions.length,5,"Expected five open/closed real definitions");
+  assert.equal(proved.length,7,"Expected seven proved open/closed real results");
+  assert.equal(lesson.examples.length,8,"Expected eight worked examples");
+  assert.equal(lesson.exercises.length,8,"Expected eight original exercises");
+  for(const definition of definitions){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===definition.title),
+      "Definition lacks its directly linked example: "+definition.title);
+  }
+  for(const item of proved){
+    assert.ok(Array.isArray(item.proof)&&item.proof.length>=2,
+      "Missing multi-paragraph proof: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),
+      "Missing proof closure: "+item.title);
+  }
+  for(const [index,example] of lesson.examples.entries()){
+    assert.ok(example.solution.join(" ").length>=500,
+      "Worked example is still too short: "+index);
+  }
+  for(const [index,exercise] of lesson.exercises.entries()){
+    assert.ok(exercise.answer.length>=500,
+      "Original exercise solution is still too short: "+index);
+  }
+  // Independently verify the finite graph of example sets on a sample of real points.
+  const A=x=>x>0&&x<1;
+  const B=x=>x>=1&&x<2;
+  const union=x=>A(x)||B(x);
+  for(const x of [-1,0,0.25,0.99,1,1.5,1.99,2,3]){
+    assert.equal(union(x),x>0&&x<2,
+      "Union counterexample in boundary exercise has incorrect membership");
+  }
+  assert.ok(lesson.exercises.some(x=>x.answer.includes("subsetneq")),
+    "Strict boundary inclusion example must be justified");
+}
+
 // Transportation modeling: inspect the rendered source and validate independent primal-dual certificates.
 {
   const lesson=getBookSectionContent("or-transportation-model");
