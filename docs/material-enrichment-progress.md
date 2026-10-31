@@ -1,3 +1,19 @@
+## Catatan sesi 2026-10-31 — Kombinasi Fungsi, Pergeseran, dan Penskalaan Grafik (bidang 07; publik)
+
+**URL dan sumber:** /materi/kalkulus/calc-combining-functions/. Override data/combining-functions-content.ts diregistrasikan sesudah generator di data/book-section-content.ts. Berbeda dari calc-trigonometric-functions yang sudah diperbaiki sebelumnya. Bidang utama 07 Kalkulus; bukan audit mandiri bidang 02 Aljabar.
+
+**Temuan awal:** artifact JSON workflow 41173585416 mencatat **11 temuan pembahasan** pada URL target: 8 latihan generator dengan jawaban pendek/rubrik, 2 contoh pendek, dan 1 bukti komposisi pendek. Audit naskah mencatat **1 definisi tanpa contoh langsung**. Jawaban lama sering hanya meminta pembaca menyusun jawaban, bukan menyelesaikan soal.
+
+**Revisi sumber:** naskah khusus 23.986 karakter dengan **4 definisi dan contoh terkait**, **5 hasil formal dengan bukti lengkap**, **8 contoh terbahas**, dan **8 latihan KF-01–KF-08 dengan solusi asli**. Materi meliputi domain operasi fungsi, komposisi dan asosiativitas, translasi, refleksi dan penskalaan, karakterisasi grafik dua arah, dua inklusi domain/range, serta simetri genap-ganjil. Kasus pembagian nol, pembatalan faktor, domain akar, dan faktor skala nol ditangani eksplisit. Tidak ada visualisasi baru; fokus pada kebenaran dan kedalaman solusi. Rujukan: OpenStax Precalculus 2e dan Stewart Calculus: Early Transcendentals (2016).
+
+**Regresi:** scripts/audit-solution-depth.mjs kini memeriksa sumber render, 4 pasangan definisi-contoh, 5 penutup bukti, 8 contoh, 8 latihan, dan identitas numerik transformasi. Pemeriksaan independen memvalidasi pemetaan titik grafik pada empat masukan, contoh domain, dan akar persamaan. Pemeriksaan panjang hanya triage, bukan sertifikasi kualitas.
+
+**Audit terverifikasi:** workflow **41177033116** pada commit kode **0b7838301f5bb49ff33ab82d11ecf3518b76ca82** berstatus **build success dan deploy success**. Artifact sebelum **13032227212** dan sesudah **13033382056** dibandingkan langsung: temuan solusi target **11 → 0**, temuan struktural **1 → 0**; triage buku: latihan pendek **5.849 → 5.841**, contoh pendek **3.374 → 3.372**, bukti pendek **1.026 → 1.025**. Definisi dengan contoh terkait **576 → 580**, hasil formal dengan bukti **1.275 → 1.279**. Audit mengenali **26 bidang UI publik**, **18 kelompok buku internal**, serta sumber non-buku terpisah.
+
+**Batasan dan kelanjutan:** pengujian visual langsung melalui browser belum dilakukan. Branch main tetap 7689a041d24648f2b8b200040d126a1e248d842a; Vercel dan data/lesson-videos.ts tidak diubah. Berikutnya rotasikan ke **05 Geometri** atau **21 Pemodelan Matematika** pada halaman publik, lalu bank soal independen 12 Statistika/13 Peluang. Jangan mengulang calc-combining-functions tanpa temuan baru. Status deploy setelah commit dokumentasi ini harus diperiksa kembali.
+
+---
+
 ## Catatan sesi 2026-10-31 — Fungsi Trigonometri (rotasi bidang 07; publik)
 
 **URL publik:** `/materi/kalkulus/calc-trigonometric-functions/` (bidang kurikulum 07 Kalkulus; terkait bidang 06 Trigonometri). Sumber sebelumnya pada halaman yang benar-benar dirender merupakan generator generik: delapan latihan berbentuk permintaan membuat contoh/penjelasan dengan jawaban rubrik, dua contoh sangat pendek, satu bukti pendek, dan satu definisi tanpa contoh terverifikasi. Pekerjaan ini merupakan submateri ketiga sesi, selain dua sumber sekolah tersembunyi yang dibahas pada catatan berikutnya.
