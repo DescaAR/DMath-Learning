@@ -2398,3 +2398,85 @@ for(const [slug,markers] of [
   assert.ok(near(a.residuals.reduce((s,e,i)=>s+(i+1)*e,0),0));
   assert.ok(near(6/2,3),"Fixed-design variance identity failed");
 }
+
+
+// Connectivity: audit the rendered original content and enumerate exact small-graph invariants.
+{
+  const lesson=getBookSectionContent("md-connectivity");
+  assert.ok(lesson,"Graph connectivity chapter is not rendered");
+  const definitions=lesson.formal.filter(x=>x.kind==="definition");
+  const results=lesson.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+  assert.equal(definitions.length,5,"Graph connectivity must have five definitions");
+  assert.equal(results.length,6,"Graph connectivity must have six proved results");
+  assert.equal(lesson.examples.length,8,"Graph connectivity examples missing");
+  assert.equal(lesson.exercises.length,8,"Graph connectivity original exercises missing");
+  for(const definition of definitions)
+    assert.ok(lesson.examples.some(x=>x.forDefinition===definition.title),
+      "Missing directly linked example for "+definition.title);
+  for(const result of results)
+    assert.ok(result.proof?.length>=2 &&
+      normalize(result.proof.join(" ")).length>450 &&
+      result.proof.at(-1).includes("\\square"),
+      "Graph connectivity proof incomplete: "+result.title);
+  for(const example of lesson.examples)
+    assert.ok(normalize(example.solution.join(" ")).length>350 &&
+      !/jawaban yang baik|contoh harus|langkah yang dapat/i.test(example.solution.join(" ")),
+      "Graph connectivity example too short or generic: "+example.title);
+  for(let i=1;i<=8;i++){
+    const id="KG-"+String(i).padStart(2,"0")+".";
+    const exercise=lesson.exercises.find(x=>x.prompt.startsWith(id));
+    assert.ok(exercise && normalize(exercise.answer).length>450 &&
+      !/jawaban yang baik|contoh harus|langkah yang dapat/i.test(exercise.answer),
+      "Graph connectivity exercise too short or generic: "+id);
+  }
+  const graph=(n,edges)=>{
+    const components=(removedVertex=-1,removedEdge=-1)=>{
+      const visited=new Set();
+      let count=0;
+      for(let v=0;v<n;v++){
+        if(v===removedVertex||visited.has(v))continue;
+        count++;
+        const stack=[v];
+        visited.add(v);
+        while(stack.length){
+          const u=stack.pop();
+          for(let i=0;i<edges.length;i++){
+            if(i===removedEdge)continue;
+            const [a,b]=edges[i];
+            if(a===removedVertex||b===removedVertex)continue;
+            const w=a===u?b:b===u?a:-1;
+            if(w>=0&&!visited.has(w)){visited.add(w);stack.push(w);}
+          }
+        }
+      }
+      return count;
+    };
+    const initial=components();
+    const bridges=edges.map((_,i)=>i).filter(i=>components(-1,i)>initial);
+    const articulation=Array.from({length:n},(_,i)=>i)
+      .filter(i=>components(i)>initial);
+    let lambda=Infinity;
+    if(initial===1&&n>=2){
+      for(let mask=1;mask<(1<<n)-1;mask++){
+        const crossing=edges.filter(([u,v])=>Boolean(mask&(1<<u))!==Boolean(mask&(1<<v))).length;
+        lambda=Math.min(lambda,crossing);
+      }
+    }
+    return {initial,bridges,articulation,lambda};
+  };
+  const triangleTail=graph(4,[[0,1],[1,2],[2,0],[2,3]]);
+  assert.deepEqual(triangleTail,{initial:1,bridges:[3],articulation:[2],lambda:1},
+    "Triangle-with-tail connectivity invariants incorrect");
+  const bowtie=graph(5,[[0,1],[1,2],[2,0],[2,3],[3,4],[4,2]]);
+  assert.deepEqual(bowtie,{initial:1,bridges:[],articulation:[2],lambda:2},
+    "Bowtie must have no bridges but one cut vertex");
+  const cycle5=graph(5,[[0,1],[1,2],[2,3],[3,4],[4,0]]);
+  assert.equal(cycle5.lambda,2,"C5 edge connectivity incorrect");
+  const star=graph(5,[[0,1],[0,2],[0,3],[0,4]]);
+  assert.equal(star.lambda,1,"K1,4 edge connectivity incorrect");
+  const disconnected=graph(6,[[0,1],[1,2],[2,0],[3,4]]);
+  assert.equal(disconnected.initial,3,"Disconnected component count incorrect");
+  const source=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
+  assert.match(source,/"md-connectivity":graphConnectivityContent/,
+    "Graph connectivity authored override missing");
+}
