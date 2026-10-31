@@ -621,7 +621,7 @@ const checked=[
   ["konvergensi-absolut","exercise","Jika $"],
   ["konvergensi-absolut","exercise","Mengapa absolute convergence"],
   ["sta-probability-laws","example","Contoh Probabilitas Bersyarat"],
-  ["sta-simple-regression","example","Contoh Model Regresi Linear"],
+  ["sta-simple-regression","example","Contoh Mean Bersyarat dan Prediksi"],
   ["stm-prob-axioms","example","Contoh Ukuran Probabilitas"],
   ["md-ekuivalensi-logika","example","Contoh Ekuivalensi Logika"],
   ["ks-martingale","example","Martingale Random Walk Dua Langkah"],
