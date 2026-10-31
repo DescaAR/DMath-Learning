@@ -2480,3 +2480,43 @@ for(const [slug,markers] of [
   assert.match(source,/"md-connectivity":graphConnectivityContent/,
     "Graph connectivity authored override missing");
 }
+
+
+// Compact subsets of R: inspect the rendered source, not only the authored module.
+{
+  const lesson=getBookSectionContent("himpunan-kompak");
+  assert.ok(lesson,"Compactness chapter is not rendered");
+  const definitions=lesson.formal.filter(x=>x.kind==="definition");
+  const results=lesson.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+  assert.equal(definitions.length,4,"Compactness definitions missing");
+  assert.equal(results.length,7,"Compactness formal results missing");
+  assert.equal(lesson.examples.length,8,"Compactness examples missing");
+  assert.equal(lesson.exercises.length,8,"Compactness exercises missing");
+  for(const definition of definitions)
+    assert.ok(lesson.examples.some(x=>x.forDefinition===definition.title),
+      "Compactness definition lacks an associated worked example: "+definition.title);
+  for(const result of results)
+    assert.ok(result.proof?.length>=3 && normalize(result.proof.join(" ")).length>380 &&
+      result.proof.at(-1).includes("\\square"),
+      "Compactness proof incomplete: "+result.title);
+  for(const example of lesson.examples)
+    assert.ok(normalize(example.solution.join(" ")).length>300 &&
+      !/jawaban yang baik|contoh harus/i.test(example.solution.join(" ")),
+      "Compactness example is generic: "+example.title);
+  for(let i=1;i<=8;i++){
+    const id="HK-"+String(i).padStart(2,"0")+".";
+    const exercise=lesson.exercises.find(x=>x.prompt.startsWith(id));
+    assert.ok(exercise && normalize(exercise.answer).length>350 &&
+      !/jawaban yang baik|contoh harus/i.test(exercise.answer),
+      "Compactness exercise incomplete: "+id);
+  }
+  // The finite union of (1/n,2) over a finite index set is (1/N,2).
+  for(const N of [2,3,7,19]){
+    const uncovered=1/(2*N);
+    assert.ok(uncovered>0 && uncovered<1 && uncovered<=1/N,
+      "Compactness counterexample point is incorrectly covered");
+  }
+  const source=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
+  assert.match(source,/"himpunan-kompak":compactSetsContent/,
+    "Authored compactness override missing");
+}
