@@ -1,3 +1,4 @@
+import { modelingLeastSquaresContent } from "@/data/modeling-least-squares-content";
 import { combiningFunctionsContent } from "@/data/combining-functions-content";
 import { trigonometricFunctionsContent } from "@/data/trigonometric-functions-content";
 import { realOpenClosedContent } from "@/data/real-open-closed-content";
@@ -100,6 +101,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
   // Exact domains, composition, translations, scaling, parity and original solutions.
+  // Mathematical modeling with least squares: identifiability, exact projections, validation and solved problems.
+  "la-modeling-least-squares":modelingLeastSquaresContent,
   "calc-combining-functions":combiningFunctionsContent,
   // Exact unit-circle trigonometry, rotations, domain and original solved problems.
   "calc-trigonometric-functions":trigonometricFunctionsContent,
