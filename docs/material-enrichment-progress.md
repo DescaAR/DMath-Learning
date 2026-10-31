@@ -1,3 +1,17 @@
+## Catatan sesi 2026-10-31 — Sistem Koordinat Tiga Dimensi (rotasi geometri ruang; bidang kurikulum 07)
+
+**URL publik:** `/materi/kalkulus/calc-3d-coordinates/`. Halaman ini termasuk buku Kalkulus, bab Vektor dan Geometri Ruang; keterkaitan dengan menu 05 Geometri **bukan** bukti audit mandiri seluruh bidang 05. Sesi sebelumnya `la-modeling-least-squares` tidak diulang. Branch `main`, Vercel, dan `data/lesson-videos.ts` tidak diubah.
+
+**Audit sebelum revisi:** laporan JSON artifact `dmath-material-depth-audit` run **41181260572** menunjukkan **13 temuan solusi** pada URL target (8 latihan jawaban rubrik/pendek, 4 contoh pendek, 1 bukti pendek) serta **3 temuan naskah** (2 definisi tanpa contoh terkait dan 1 hasil formal tanpa bukti). Generator semula juga menyisipkan turunan fungsi vektor pada halaman koordinat ruang, sehingga urutan konsep tidak sesuai fokus.
+
+**Perbaikan sumber asli yang dirender:** `data/coordinates-3d-content.ts` (23.408 karakter) diregistrasikan dalam `data/book-section-content.ts`. Terdapat **4 definisi dengan contoh terkait langsung**, **6 hasil formal dengan pembuktian berpenutup**, **8 contoh terbahas**, serta **8 latihan KG3-01–KG3-08 dengan solusi konkret dan verifikasi**. Teori: norma dan jarak Euclid, Cauchy–Schwarz dengan kondisi kesamaan, sifat metrik dan ketaksamaan segitiga, ketunggalan titik tengah, karakterisasi bidang pembagi tegak lurus dua arah, tiga kasus irisan permukaan bola dengan bidang, dan kekonveksan bola terbuka/tertutup. Kasus batas dan perbedaan permukaan bola versus bola padat diperiksa. Tidak ada visualisasi baru; prioritas sesi ini adalah mengganti delapan jawaban generator yang berbentuk rubrik. Regresi khusus ditambahkan ke `scripts/audit-solution-depth.mjs` untuk sumber render dan identitas numerik.
+
+**Verifikasi nyata:** workflow **41185104987** pada commit kode **f80456af07709ae30926c1ad6c10c1d596c6efda** memiliki job **build success** dan **deploy success**. Artifact JSON sebelum/sesudah: solusi target **13→0**, naskah target **3→0**. Agregat triage buku: latihan pendek **5.833→5.825**, contoh pendek **3.368→3.364**, bukti pendek **1.025→1.024**, jawaban generik tetap **706**; definisi dengan contoh terkait **583→587**, hasil formal dengan bukti **1.284→1.290**. Audit tetap mengenali **26/26 nama bidang UI**, tetapi belum semuanya diperiksa mendalam. Pemeriksaan HTML hasil static build: **390 elemen KaTeX, 0 `katex-error`**, seluruh KG3-01–KG3-08 dan hasil formal ditemukan. Perhitungan jarak, titik tengah, bidang pembagi, irisan bola, dan irisan dua bola diverifikasi dengan aritmetika eksak independen. Angka audit hanya triage, bukan sertifikasi matematika seluruh katalog. Pengujian visual interaktif langsung melalui browser belum dilakukan.
+
+**Prioritas berikutnya:** audit mandiri bidang **21 Pemodelan Matematika** pada rute publik yang benar-benar aktif atau bank soal non-buku **12 Statistika/13 Peluang**. Pilih halaman yang masih mempunyai solusi rubrik asli, dan cek kembali status GitHub Actions setelah commit dokumentasi. Jangan mengulang `calc-3d-coordinates` tanpa temuan baru.
+
+---
+
 ## Catatan sesi 2026-10-31 — Pemodelan dengan Least Squares (rotasi bidang 21/08; publik)
 
 **URL publik:** `/materi/aljabar-linear/la-modeling-least-squares/`. Halaman ini merupakan submateri Aljabar Linear (08) yang membahas pemodelan matematis (21); kaitan tematis **bukan** audit mandiri menyeluruh seluruh bidang 21. Dipilih untuk rotasi setelah `calc-combining-functions`; jangan mengulang materi tersebut tanpa temuan baru.
