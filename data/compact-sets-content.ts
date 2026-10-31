@@ -176,7 +176,7 @@ export const compactSetsContent: BookLessonContent = {
       "problem": "Periksa bahwa U_1=(-1,3/5) dan U_2=(2/5,2) menutupi [0,1].",
       "solution": [
         "Jika x∈[0,1] dan x<3/5, maka x∈U_1. Jika x≥3/5, berlaku x>2/5 dan x≤1<2, sehingga x∈U_2.",
-        "Jadi [0,1]⊆U_1∪U_2. Kedua himpunan terbuka, dan keduanya sendiri sudah merupakan subpenutup hingga dari penutup yang diberikan.",
+        "Dengan demikian, [0,1]⊆U_1∪U_2. Kedua himpunan terbuka, dan keduanya sendiri sudah merupakan subpenutup hingga dari penutup yang diberikan.",
         "Contoh ini hanya memeriksa satu penutup. Bukti bahwa [0,1] kompak harus berlaku untuk setiap penutup terbuka, sebagaimana teorema interval tertutup."
       ],
       "conclusion": "Satu contoh subpenutup bukan bukti kekompakan umum."
