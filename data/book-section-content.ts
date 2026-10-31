@@ -1,3 +1,4 @@
+import { transportationModelContent } from "@/data/transportation-model-content";
 import { compactSetsContent } from "@/data/compact-sets-content";
 import { eulerHamiltonContent } from "@/data/euler-hamilton-content";
 import { graphConnectivityContent } from "@/data/graph-connectivity-content";
@@ -95,6 +96,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // Balanced transportation models: exact feasibility, dual certificates and original solutions.
+  "or-transportation-model":transportationModelContent,
   // Compactness on the real line: finite subcovers, Heine–Borel and complete solutions.
   "himpunan-kompak":compactSetsContent,
   // Euler edge-trails and Hamilton vertex-cycles: complete parity, Hierholzer, and Ore arguments.
