@@ -1,3 +1,4 @@
+import { combiningFunctionsContent } from "@/data/combining-functions-content";
 import { trigonometricFunctionsContent } from "@/data/trigonometric-functions-content";
 import { realOpenClosedContent } from "@/data/real-open-closed-content";
 import { transportationModelContent } from "@/data/transportation-model-content";
@@ -98,6 +99,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // Exact domains, composition, translations, scaling, parity and original solutions.
+  "calc-combining-functions":combiningFunctionsContent,
   // Exact unit-circle trigonometry, rotations, domain and original solved problems.
   "calc-trigonometric-functions":trigonometricFunctionsContent,
   // Open/closed sets in R: neighborhood criteria, closure, boundary and complete solutions.
