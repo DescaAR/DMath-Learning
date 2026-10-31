@@ -58,6 +58,37 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Transportation modeling: inspect the rendered source and validate independent primal-dual certificates.
+{
+  const lesson=getBookSectionContent("or-transportation-model");
+  assert.ok(lesson,"Transportation lesson is missing from rendered book registry");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4);
+  assert.equal(results.length,6);
+  assert.equal(lesson.examples.length,8);
+  assert.ok(lesson.exercises.length>=8);
+  for(const def of defs)assert.ok(lesson.examples.some(item=>item.forDefinition===def.title),"Unlinked transportation definition: "+def.title);
+  for(const item of results){
+    assert.ok(item.proof?.length>=3&&normalize(item.proof.join(" ")).length>350,"Short transportation proof: "+item.title);
+    assert.ok(item.proof.at(-1).includes("\\square"),"Missing transportation proof ending: "+item.title);
+  }
+  for(const item of lesson.examples)assert.ok(normalize(item.solution.join(" ")).length>=380,"Short transportation example: "+item.title);
+  for(const item of lesson.exercises)assert.ok(normalize(item.answer).length>=380&&!/Jawaban yang baik|Contoh harus|Kesimpulan menyatakan/.test(item.answer),"Generic transportation solution");
+  // All 2x2 plans have the same margins and objective 41-6t.
+  for(const t of [0,1,2,3,4]){
+    const x=[[t,4-t],[5-t,1+t]];
+    assert.equal(x[0][0]+x[0][1],4);
+    assert.equal(x[1][0]+x[1][1],6);
+    assert.equal(x[0][0]+x[1][0],5);
+    assert.equal(x[0][1]+x[1][1],5);
+    assert.equal(2*x[0][0]+5*x[0][1]+4*x[1][0]+x[1][1],41-6*t);
+  }
+  assert.equal(4*0+6*2+5*2+5*(-1),17);
+  assert.ok([2,-1,4,1].every((x,i)=>x<=[2,5,4,1][i]));
+  assert.equal(3*1+4*2+3*2,17);
+}
+
 // Floating-point: actual rendered content, direct definition examples, and independent exact identities.
 {
   const lesson=getBookSectionContent("num-floating-point");
