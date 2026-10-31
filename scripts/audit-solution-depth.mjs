@@ -58,6 +58,45 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Three-dimensional geometry: verify the public rendered source and exact calculations.
+{
+  const lesson=getBookSectionContent("calc-3d-coordinates");
+  assert.ok(lesson,"Three-dimensional coordinates lesson must be registered");
+  const definitions=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(definitions.length,4);
+  assert.equal(results.length,6);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const definition of definitions){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===definition.title),
+      "Missing immediate geometric example: "+definition.title);
+  }
+  for(const result of results){
+    assert.ok(result.proof?.length>=3 && result.proof.at(-1).includes("\\square"),
+      "Missing closed spatial proof: "+result.title);
+    assert.ok(normalize(result.proof.join(" ")).length>=450,
+      "Review the geometric proof: "+result.title);
+  }
+  for(const example of lesson.examples){
+    assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>=350,
+      "Spatial example must include calculation and verification: "+example.title);
+  }
+  for(const exercise of lesson.exercises){
+    assert.ok(normalize(exercise.answer).length>=450 &&
+      !/Jawaban yang baik|Contoh harus|Kesimpulan menyatakan|Susun pembahasan/.test(exercise.answer),
+      "Spatial exercise must be solved rather than described: "+exercise.prompt);
+  }
+  const near=(a,b)=>Math.abs(a-b)<1e-12;
+  assert.ok(near(Math.hypot(4,3,-12),13),"3D distance");
+  assert.ok(near(Math.hypot(2,3,-2),Math.sqrt(17)),"midpoint distance");
+  assert.ok(near(Math.sqrt(25-9),4),"sphere-plane circle radius");
+  assert.ok(near(0-0+2*3,6),"perpendicular bisector membership");
+  assert.ok(near(Math.hypot(-2,2,-1),3),"equidistant verification");
+  assert.ok(near(Math.hypot(1.5,2,0),2.5),"convex-ball midpoint");
+  assert.ok(near(3*3+4*4,25),"two-sphere intersection");
+}
+
 // Linear-algebra modeling: audit the actual rendered lesson, not a disconnected draft.
 {
   const lesson=getBookSectionContent("la-modeling-least-squares");
