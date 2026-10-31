@@ -187,34 +187,24 @@ export const deepMaterials: DeepMaterial[] = [
     theorems: [
       {
         title: "Prinsip Penjumlahan",
-        statement: "Persamaan $A=B$ ekuivalen dengan $A+C=B+C$.",
+        statement: "Misalkan $D\\subseteq\\mathbb R$ dan $A,B,C:D\\to\\mathbb R$. Persamaan $A(x)=B(x)$ dan $A(x)+C(x)=B(x)+C(x)$ mempunyai himpunan solusi yang sama di $D$.",
         proof: [
-          "Jika $A=B$, penambahan nilai yang sama $C$ pada kedua ruas memberi $A+C=B+C$.",
-          "Sebaliknya, dari $A+C=B+C$, kurangi kedua ruas dengan $C$ dan diperoleh kembali $A=B$."
+          "Tuliskan $S_1=\\{x\\in D:A(x)=B(x)\\}$ dan $S_2=\\{x\\in D:A(x)+C(x)=B(x)+C(x)\\}$. Semua fungsi bernilai real dan terdefinisi pada domain $D$ yang sama; penambahan $C(x)$ tidak mengubah domain.",
+          "Untuk membuktikan $S_1\\subseteq S_2$, ambil sebarang $x\\in S_1$. Berdasarkan definisi $S_1$, berlaku $A(x)=B(x)$. Penambahan bilangan real $C(x)$ pada kedua ruas menghasilkan $A(x)+C(x)=B(x)+C(x)$, sehingga $x\\in S_2$.",
+          "Sebaliknya, ambil sebarang $x\\in S_2$. Dari $A(x)+C(x)=B(x)+C(x)$, tambahkan $-C(x)$ pada kedua ruas. Sifat invers aditif memberikan $A(x)=B(x)$, sehingga $x\\in S_1$. Kedua inklusi menghasilkan $S_1=S_2$. Sebagai pemeriksaan, $x+2=5$ dan $(x+2)+x=5+x$ sama-sama mempunyai solusi $x=3$. Pembuktian selesai. $\\square$"
         ],
-        why: "Prinsip ini adalah alasan formal di balik operasi menambah atau mengurangi suku yang sama pada kedua ruas."
-      },
+        why: "Operasi pada kedua ruas harus terdefinisi untuk semua kandidat pada domain yang sama; pengurangan suku yang sama adalah kebalikan dari penjumlahan."
+      },,
       {
         title: "Prinsip Perkalian",
-        statement: "Untuk $k\\neq0$, persamaan $A=B$ ekuivalen dengan $kA=kB$.",
+        statement: "Misalkan $D\\subseteq\\mathbb R$, $A,B:D\\to\\mathbb R$, dan $k\\in\\mathbb R$ dengan $k\\neq0$. Persamaan $A(x)=B(x)$ dan $kA(x)=kB(x)$ mempunyai himpunan solusi yang sama di $D$.",
         proof: [
-          "Jika $A=B$, perkalian kedua ruas dengan $k$ memberi $kA=kB$.",
-          "Sebaliknya, karena $k\\neq0$, kedua ruas dapat dibagi dengan $k$ dan diperoleh $A=B$."
+          "Definisikan $S_1=\\{x\\in D:A(x)=B(x)\\}$ dan $S_2=\\{x\\in D:kA(x)=kB(x)\\}$. Hipotesis $k\\neq0$ memastikan perkalian oleh $k$ memiliki operasi balik, yakni pembagian oleh $k$.",
+          "Untuk arah $S_1\\subseteq S_2$, ambil $x\\in S_1$. Kesamaan $A(x)=B(x)$ dapat dikalikan oleh $k$ pada kedua ruas sehingga $kA(x)=kB(x)$. Oleh definisi $S_2$, diperoleh $x\\in S_2$.",
+          "Untuk arah $S_2\\subseteq S_1$, ambil $x\\in S_2$. Pembagian $kA(x)=kB(x)$ oleh $k\\neq0$ memberikan $A(x)=B(x)$, sehingga $x\\in S_1$. Kedua inklusi membuktikan kesamaan himpunan solusi. Syarat $k\\neq0$ esensial: $x=1$ hanya mempunyai solusi $1$, tetapi jika dikalikan nol berubah menjadi $0=0$, yang dipenuhi semua $x\\in\\mathbb R$. Pembuktian selesai. $\\square$"
         ],
-        why: "Syarat $k\\neq0$ penting. Perkalian dengan nol menghilangkan informasi dan dapat mengubah himpunan solusi."
-      }
-    ],
-    examples: [
-      {
-        title: "Persamaan Satu Variabel",
-        problem: "Selesaikan $3(2x-1)-5=4x+6$ dan periksa apakah nilai yang diperoleh benar-benar memenuhi persamaan asal.",
-        solution: [
-          "Diketahui $3(2x-1)-5=4x+6$ dengan $x\\in\\mathbb R$. Distribusikan faktor $3$ pada ruas kiri: $6x-3-5=4x+6$, sehingga $6x-8=4x+6$. Sifat distributif berlaku untuk setiap bilangan real.",
-          "Kurangi kedua ruas dengan $4x$ sehingga $2x-8=6$. Tambahkan $8$ pada kedua ruas untuk memperoleh $2x=14$. Karena $2\\neq0$, pembagian kedua ruas dengan $2$ sah dan menghasilkan $x=7$. Setiap operasi dapat dibalik, sehingga himpunan solusi tidak berubah.",
-          "Verifikasi pada persamaan asal: ruas kiri $3(2\\cdot7-1)-5=3(13)-5=34$, sedangkan ruas kanan $4\\cdot7+6=34$. Kedua ruas sama, sehingga $x=7$ memang solusi.",
-          "Karena persamaan yang telah disederhanakan memiliki koefisien $x$ tak nol, yaitu $2$, solusi tersebut tunggal. Himpunan solusinya adalah $S=\\{7\\}$."
-        ]
-      },
+        why: "Perkalian dengan nol tidak dapat dibalik dan menghilangkan informasi. Pembagian oleh ekspresi yang mungkin nol juga harus memisahkan kasus nol terlebih dahulu."
+      },,
       {
         title: "Model Umur",
         problem: "Umur A lima tahun lebih tua dari B. Jumlah umur mereka $31$ tahun. Tentukan umur masing-masing dan periksa hasilnya.",
