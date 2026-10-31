@@ -29,7 +29,8 @@ export const simpleRegressionContent: BookLessonContent = {
     ]},
     {kind:"corollary",title:"Batas Koefisien Determinasi",statement:"Jika regresi memuat intersep, $S_{xx}>0$, dan $SST>0$, maka $0\\le R^2\\le1$ serta $R^2=SSR/SST$. Nilai $R^2=1$ tepat ketika semua residual nol.",proof:[
       "Dekomposisi memberikan $SST=SSR+SSE$ dengan $SSR,SSE\\ge0$. Karena $SST>0$, pembagian menghasilkan $1=SSE/SST+SSR/SST$ dan kedua rasio berada pada interval $[0,1]$.",
-      "Dari definisi $R^2=1-SSE/SST$ diperoleh $R^2=SSR/SST$. Persamaan $R^2=1$ ekuivalen dengan $SSE=0$; jumlah kuadrat $SSE=\\sum_i e_i^2$ nol jika dan hanya jika setiap $e_i=0$. $\\square$"
+      "Dari definisi $R^2=1-SSE/SST$ diperoleh $R^2=SSR/SST$. Persamaan $R^2=1$ ekuivalen dengan $SSE=0$; jumlah kuadrat $SSE=\\sum_i e_i^2$ nol jika dan hanya jika setiap $e_i=0$.",
+      "Kasus batas lainnya dapat diperiksa tanpa asumsi distribusi galat. Nilai $R^2=0$ ekuivalen dengan $SSR=0$ karena $SST>0$. Dengan $\\widehat y_i-\\bar y=\\widehat\\beta_1(x_i-\\bar x)$, berlaku $SSR=\\widehat\\beta_1^2 S_{xx}$. Karena $S_{xx}>0$, diperoleh $SSR=0$ jika dan hanya jika $\\widehat\\beta_1=0$, atau ekuivalen $S_{xy}=0$. Artinya garis terpasang konstan pada mean sampel, bukan berarti semua nilai respons sama. $\\square$"
     ]},
     {kind:"proposition",title:"Ketakbiasan Koefisien dengan Desain Tetap",statement:"Misalkan $x_1,\\ldots,x_n$ deterministik dengan $S_{xx}>0$, $Y_i=\\beta_0+\\beta_1x_i+\\varepsilon_i$, dan $E[\\varepsilon_i]=0$ dengan ekspektasi hingga. Penaksir kuadrat terkecil memenuhi $E[\\widehat\\beta_0]=\\beta_0$ dan $E[\\widehat\\beta_1]=\\beta_1$. Independensi dan normalitas galat tidak diperlukan untuk pernyataan ketakbiasan ini.",proof:[
       "Dengan $Y_i-\\bar Y=\\beta_1(x_i-\\bar x)+(\\varepsilon_i-\\bar\\varepsilon)$, rumus kemiringan menghasilkan $\\widehat\\beta_1=\\beta_1+\\sum_i(x_i-\\bar x)\\varepsilon_i/S_{xx}$, karena $\\sum_i(x_i-\\bar x)=0$.",
