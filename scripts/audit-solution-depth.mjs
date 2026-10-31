@@ -1208,6 +1208,28 @@ for(const id of ["F-01","F-02"]){
   assert.ok(normalize(item.answer.en).length>=350,
     "English arithmetic solution remains abbreviated: "+id);
 }
+for(const id of ["F-06","F-07","F-09"]){
+  const item=fractionPractice.find(problem=>problem.id===id);
+  assert.ok(item && normalize(item.answer.id).length>=450,
+    "Unfinished fraction extra-practice answer: "+id);
+}
+for(const title of ["Lemma Penyebut Bersama","Proposisi Penjumlahan Pecahan",
+  "Akibat: Uji Kesetaraan Pecahan"]){
+  const item=fractionFormal.blocks.find(block=>block.title.id===title);
+  assert.ok(item && item.proof.length>=2 &&
+    normalize(item.proof.map(step=>step.id).join(" ")).length>=350 &&
+    item.proof.at(-1).id.includes("\\square"),
+    "Unfinished fraction proof: "+title);
+}
+for(const title of ["Contoh Detail: Menjumlahkan Pecahan Berbeda Penyebut",
+  "Contoh Detail: Membandingkan Pecahan"]){
+  const item=fractionFormal.examples.find(example=>example.title.id===title);
+  assert.ok(item && normalize(item.solution.map(step=>step.id).join(" ")).length>=400,
+    "Unfinished original fraction example: "+title);
+}
+assert.equal(7*27*2,3*9*14,"F-06 exact multiplication check");
+assert.equal(3*10*6,5*9*4,"F-07 inverse-operation check");
+assert.equal(18*40,720,"F-09 scale conversion check");
 assert.equal(3*35,5*21,"Equivalent-fraction cross multiplication");
 assert.ok(7/12<5/8 && 5/8<2/3,"Fraction order must be exact");
 
@@ -1237,6 +1259,23 @@ for(const title of ["Prinsip Penjumlahan","Prinsip Perkalian"]){
 }
 assert.equal(5*(2*4-3)-4,3*4+9,"L-01 substitution check");
 assert.equal(3*7000+2*5000,31000,"L-02 price model check");
+const linearExtra=linearPractice.find(problem=>problem.id==="L-07");
+assert.ok(linearExtra && normalize(linearExtra.answer.id).length>=450,
+  "Unfinished original linear-system answer: L-07");
+for(const title of ["Lemma Operasi Ekuivalen","Proposisi Solusi Tunggal"]){
+  const item=linearFormal.blocks.find(block=>block.title.id===title);
+  assert.ok(item && item.proof.length>=2 &&
+    normalize(item.proof.map(step=>step.id).join(" ")).length>=350 &&
+    item.proof.at(-1).id.includes("\\square"),
+    "Unfinished linear-equation proof: "+title);
+}
+const solutionExample=linearFormal.examples.find(example=>example.title.id==="Contoh Definisi: Solusi");
+assert.ok(solutionExample &&
+  normalize(solutionExample.solution.map(step=>step.id).join(" ")).length>=400,
+  "Unfinished original definition example for solutions");
+assert.equal(5+3,8,"L-07 first equation");
+assert.equal(5-3,2,"L-07 second equation");
+
 for(const definition of [...linear.definitions.map(x=>x.title),
   ...linearFormal.blocks.filter(x=>x.kind==="definition").map(x=>x.title.id)]){
   assert.ok(linearFormal.examples.some(ex=>ex.forDefinition?.id===definition),
