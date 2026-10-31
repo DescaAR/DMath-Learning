@@ -215,5 +215,7 @@ export const eulerHamiltonContent:BookLessonContent={
       "hint": "Bandingkan kebutuhan dua sisi pada siklus dengan satu sisi pada ujung jejak.",
       "answer": "Misalkan $G$ mempunyai sedikitnya tiga simpul dan simpul $u$ berderajat satu. Andaikan terdapat siklus Hamilton. Siklus tersebut melalui $u$ dan, karena panjang siklus sedikitnya tiga, mempunyai dua sisi berbeda yang menempel pada $u$: satu sisi untuk masuk dan satu sisi untuk keluar. Hal ini bertentangan dengan $\\deg(u)=1$. Oleh karena itu $G$ tidak Hamiltonian. Kesimpulan tersebut tidak berlaku untuk jejak Euler terbuka, sebab titik ujung jejak hanya memerlukan satu sisi yang belum dipasangkan. Sebagai contoh, graf lintasan $P_4$ memiliki dua simpul berderajat satu dan dua simpul berderajat dua. Jejak $1,2,3,4$ menggunakan semua sisi tepat sekali, sehingga $P_4$ mempunyai jejak Euler meskipun tidak Hamiltonian."
     }
-  ]
+  ],
+  "mistakes": [],
+  "connections": []
 };
