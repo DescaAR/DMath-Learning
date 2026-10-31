@@ -162,9 +162,10 @@ export const movingAverageForecastContent:BookLessonContent={
       "title": "Contoh 6 · Tren Linear Naik",
       "problem": "Jika $y_s=2+3s$, hitung SMA tiga periode pada akhir periode 5 untuk periode 6.",
       "solution": [
-        "Model memberi $y_3=11$, $y_4=14$, $y_5=17$, dan nilai menurut model pada periode 6 adalah $y_6=20$.",
-        "Ramalan SMA adalah $(11+14+17)/3=14$, sehingga galat terhadap nilai model berikutnya $20-14=6$.",
-        "Rumus kelambatan memberi $b(m+1)/2=3(4)/2=6$, sama dengan perhitungan langsung. Karena tren meningkat, rata-rata historis lebih rendah dari nilai berikutnya."
+        "Diketahui tren deterministik $y_s=2+3s$ dengan $a=2$, $b=3$, $t=5$, dan $m=3$. Observasi dalam jendela yang tersedia pada akhir periode 5 adalah $y_3=11$, $y_4=14$, dan $y_5=17$. Nilai menurut model untuk periode 6 adalah $y_6=2+3(6)=20$, yang dipakai untuk mengevaluasi ramalan, bukan untuk membentuknya.",
+        "Rata-rata jendela adalah $\\widehat y_{6\\mid5}^{(3)}=(11+14+17)/3=42/3=14$. Galat terhadap nilai model periode berikutnya adalah $e_6=20-14=6$. Dari rumus umum $\\widehat y_{t+1\\mid t}^{(m)}=a+b[t-(m-1)/2]$ diperoleh $2+3[5-(3-1)/2]=2+3(4)=14$, sehingga hasil rumus sama dengan perhitungan data.",
+        "Rumus kelambatan memberi $b(m+1)/2=3(3+1)/2=6$, tepat sama dengan galat langsung. Sebagai pembanding, jendela dua periode memakai $(14,17)$ dan menghasilkan ramalan $31/2=15.5$ dengan galat $20-15.5=4.5$, sesuai $3(2+1)/2=4.5$. Jendela lebih panjang tertinggal lebih jauh pada tren naik yang sama.",
+        "Kedua hasil diperoleh tanpa menggunakan nilai periode 6 ketika meramal. Kesimpulan khususnya adalah bahwa SMA tiga periode mengestimasi 14 untuk periode 6 dan mengalami galat deterministik 6 pada tren tersebut; pola galat tidak otomatis berlaku pada data dengan tren berubah atau gangguan acak."
       ]
     },
     {
@@ -195,7 +196,7 @@ export const movingAverageForecastContent:BookLessonContent={
     },
     {
       "prompt": "MA-02. Data terbaru ke terlama $(14,12,10)$ memiliki bobot $(1/2,1/3,1/6)$. Tentukan WMA.",
-      "answer": "Bobot sah karena semuanya nonnegatif dan $1/2+1/3+1/6=(3+2+1)/6=1$. Pasangkan bobot 1/2 dengan data terbaru 14, bobot 1/3 dengan 12, dan bobot 1/6 dengan 10. Diperoleh $\\widehat y=(1/2)14+(1/3)12+(1/6)10=7+4+5/3=38/3$. Nilai $38/3$ terletak di antara minimum 10 dan maksimum 14, sesuai sifat kombinasi konveks.",
+      "answer": "Diketahui tiga nilai dari terbaru ke terlama $(14,12,10)$ dan bobot $(1/2,1/3,1/6)$. Seluruh bobot nonnegatif; normalisasinya diperiksa melalui $1/2+1/3+1/6=(3+2+1)/6=1$. Dengan demikian kombinasi tersebut memenuhi definisi rata-rata bergerak berbobot dan mempertahankan nilai konstanta. Pasangkan bobot 1/2 dengan data terbaru 14, bobot 1/3 dengan 12, dan bobot 1/6 dengan 10. Ramalan $\\widehat y=(1/2)14+(1/3)12+(1/6)10=7+4+5/3=38/3$. Sebagai pemeriksaan alternatif, $38/3=12\\frac23$ berada di antara minimum 10 dan maksimum 14; ini wajib untuk kombinasi konveks. Jika semua data sama dengan 12, rumus yang sama akan menghasilkan $12(1/2+1/3+1/6)=12$. Kedua pemeriksaan menunjukkan bahwa pembobotan dan urutan data diterapkan secara konsisten.",
       "hint": "Perhatikan arah urutan bobot.",
       "provenance": "dmath-original"
     },
@@ -213,7 +214,7 @@ export const movingAverageForecastContent:BookLessonContent={
     },
     {
       "prompt": "MA-05. Buktikan SMA lima periode memberi ramalan 7 jika seluruh nilai dalam jendela adalah 7; tentukan galat jika periode berikutnya juga 7.",
-      "answer": "Ambil sebarang $t\\ge5$ dan lima observasi terakhir semuanya 7. Definisi SMA memberi $\\widehat y_{t+1\\mid t}^{(5)}=(7+7+7+7+7)/5=35/5=7$. Jika nilai berikutnya menurut hipotesis juga $y_{t+1}=7$, maka $e_{t+1}=y_{t+1}-\\widehat y_{t+1\\mid t}^{(5)}=7-7=0$. Bukti berlaku untuk semua jendela lima periode yang konstan. Tanpa asumsi tentang periode berikutnya, ramalan tetap 7 tetapi galat tidak harus nol.",
+      "answer": "Ambil sebarang $t\\ge5$ dan lima observasi terakhir yang semuanya bernilai 7. Definisi SMA memberi $\\widehat y_{t+1\\mid t}^{(5)}=(7+7+7+7+7)/5=35/5=7$. Untuk membuktikan bahwa hasil ini tidak bergantung pada indeks waktu, perhatikan bahwa jumlah lima suku pada jendela mana pun tetap $5(7)=35$, sehingga setiap pergeseran jendela mempertahankan ramalan 7 selama semua observasi barunya tetap 7. Jika realisasi berikutnya menurut hipotesis juga $y_{t+1}=7$, maka galat $e_{t+1}=y_{t+1}-\\widehat y_{t+1\\mid t}^{(5)}=7-7=0$. Sebaliknya, jika realisasi berikutnya 9, ramalan historis tetap 7 tetapi galat menjadi $9-7=2$. Contoh tandingan terakhir menunjukkan bahwa data historis konstan saja tidak cukup untuk menyimpulkan galat masa depan nol; diperlukan asumsi tentang realisasi periode target.",
       "hint": "Bedakan ramalan dari realisasi berikutnya.",
       "provenance": "dmath-original"
     },
