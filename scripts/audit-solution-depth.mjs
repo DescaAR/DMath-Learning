@@ -765,6 +765,65 @@ for(const a of dynkin){
 }
 assert.ok(!dynkinSet.has(3&5),"Dynkin example must not be a pi-system");
 
+// Euler-Hamilton: inspect the actual rendered source, not the generator or mere length statistics.
+{
+  const lesson=getBookSectionContent("md-euler-hamilton");
+  assert.ok(lesson,"Euler-Hamilton lesson is missing from the rendered registry");
+  const defs=lesson.formal.filter(x=>x.kind==="definition");
+  const results=lesson.formal.filter(x=>["lemma","proposition","theorem","corollary"].includes(x.kind));
+  assert.equal(defs.length,4);
+  assert.equal(results.length,6);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const d of defs)assert.ok(lesson.examples.some(x=>x.forDefinition===d.title),
+    "Euler-Hamilton definition lacks a linked worked example: "+d.title);
+  for(const result of results){
+    assert.ok(normalize(result.proof?.join(" ")).length>500,
+      "Euler-Hamilton proof requires further detail: "+result.title);
+    assert.ok(result.proof?.at(-1).includes("\\square"),
+      "Euler-Hamilton proof lacks a formal ending: "+result.title);
+  }
+  for(const ex of lesson.examples){
+    assert.ok(normalize(ex.solution.join(" ")).length>500,
+      "Euler-Hamilton example is incomplete: "+ex.title);
+  }
+  for(const ex of lesson.exercises){
+    assert.ok(normalize(ex.answer).length>500 && !/Jawaban yang baik|Contoh harus|Diperiksa bahwa setiap tahap/.test(ex.answer),
+      "Euler-Hamilton exercise is generic: "+ex.prompt.slice(0,40));
+  }
+  const mathText=[
+    ...lesson.intro,
+    ...lesson.formal.flatMap(x=>[x.statement,...(x.proof??[])]),
+    ...lesson.examples.flatMap(x=>[x.problem,...x.solution,x.conclusion??""]),
+    ...lesson.exercises.flatMap(x=>[x.prompt,x.hint, x.answer]),
+  ];
+  for(const block of mathText)
+    assert.equal(block.split("$").length%2,1,"Unbalanced math delimiter in Euler-Hamilton source");
+  const degree=edges=>{
+    const d=new Map();
+    for(const [a,b] of edges){d.set(a,(d.get(a)??0)+1);d.set(b,(d.get(b)??0)+1);}
+    return d;
+  };
+  const k23=[];
+  for(const a of ["a","b"])for(const b of ["1","2","3"])k23.push([a,b]);
+  const d23=degree(k23);
+  assert.deepEqual([...d23.values()].sort((a,b)=>a-b),[2,2,2,3,3]);
+  const walk=["a","1","b","2","a","3","b"];
+  const used=walk.slice(1).map((v,i)=>[walk[i],v].sort().join(":"));
+  assert.equal(new Set(used).size,6);
+  assert.deepEqual(new Set(used),new Set(k23.map(edge=>edge.sort().join(":"))));
+  const missing=new Set(["1:2","3:4","5:6"]);
+  const hamilton=[1,3,5,2,4,6,1];
+  for(let i=1;i<hamilton.length;i++){
+    const key=[hamilton[i-1],hamilton[i]].sort((a,b)=>a-b).join(":");
+    assert.ok(!missing.has(key),"Ore example uses a deleted edge");
+  }
+  assert.equal(new Set(hamilton.slice(0,-1)).size,6);
+  assert.ok(4+4>=6,"Ore degree threshold failed");
+  const source=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
+  assert.match(source,/"md-euler-hamilton":eulerHamiltonContent/);
+}
+
 for(const [slug,type,anchor] of checked){
   const page=getBookSectionContent(slug);
   assert.ok(page,"Audited lesson not found: "+slug);
