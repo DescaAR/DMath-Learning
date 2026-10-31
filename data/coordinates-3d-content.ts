@@ -36,13 +36,13 @@ export const coordinates3dContent:BookLessonContent = {
     },
     {
       "kind": "lemma",
-      "title": "Ketaksamaan Cauchy–Schwarz di $mathbb R^3$",
+      "title": "Ketaksamaan Cauchy–Schwarz di $\mathbb R^3$",
       "statement": "Untuk setiap $u,v\\in\\mathbb R^3$, berlaku $|u\\cdot v|\\le\\|u\\|\\|v\\|$. Jika $u,v$ tidak nol, kesamaan terjadi tepat ketika keduanya bergantung linear.",
       "explanation": "Ketaksamaan ini menjadi landasan pembuktian ketaksamaan segitiga tanpa mengandalkan intuisi gambar.",
       "proof": [
         "Jika $v=0$, kedua ruas sama dengan nol. Misalkan $v\\ne0$. Untuk setiap $t\\in\\mathbb R$, sifat norma memberi $0\\le\\|u-tv\\|^2=\\|v\\|^2t^2-2(u\\cdot v)t+\\|u\\|^2$.",
         "Pilih $t_0=(u\\cdot v)/\\|v\\|^2$. Substitusi memberikan $0\\le\\|u\\|^2-(u\\cdot v)^2/\\|v\\|^2$. Karena $\\|v\\|^2>0$, diperoleh $(u\\cdot v)^2\\le\\|u\\|^2\\|v\\|^2$. Mengambil akar taknegatif membuktikan ketaksamaan.",
-        "Kesamaan berlaku tepat ketika $\\|u-t_0v\\|^2=0$, yakni $u=t_0v$. Untuk $u,v\\ne0$, kondisi tersebut ekuivalen dengan ketergantungan linear. Sebaliknya, jika $u=tv$, maka $|u\\cdot v|=|t|\\|v\\|^2=\\|u\\|\\|v\\|$. Kedua arah telah dibuktikan. $\\\\square$"
+        "Kesamaan berlaku tepat ketika $\\|u-t_0v\\|^2=0$, yakni $u=t_0v$. Untuk $u,v\\ne0$, kondisi tersebut ekuivalen dengan ketergantungan linear. Sebaliknya, jika $u=tv$, maka $|u\\cdot v|=|t|\\|v\\|^2=\\|u\\|\\|v\\|$. Kedua arah telah dibuktikan. $\\square$"
       ]
     },
     {
@@ -53,7 +53,7 @@ export const coordinates3dContent:BookLessonContent = {
       "proof": [
         "Definisi memberi $d(P,Q)=\\sqrt{\\sum_i(q_i-p_i)^2}\\ge0$. Akar ini nol tepat ketika semua kuadrat nol, yaitu $P=Q$. Simetri mengikuti $(q_i-p_i)^2=(p_i-q_i)^2$.",
         "Tuliskan $u=Q-P$ dan $v=R-Q$, sehingga $R-P=u+v$. Berdasarkan Cauchy–Schwarz, $\\|u+v\\|^2=\\|u\\|^2+2u\\cdot v+\\|v\\|^2\\le(\\|u\\|+\\|v\\|)^2$. Kedua ruas taknegatif, sehingga $\\|u+v\\|\\le\\|u\\|+\\|v\\|$, yang tepat merupakan ketaksamaan segitiga.",
-        "Terapkan hasil tersebut pada lintasan $P\\to Q\\to R$ untuk memperoleh $d(P,R)-d(Q,R)\\le d(P,Q)$. Pertukarkan $P$ dan $Q$ untuk memperoleh $d(Q,R)-d(P,R)\\le d(P,Q)$. Kedua ketaksamaan digabung menjadi $|d(P,R)-d(Q,R)|\\le d(P,Q)$. $\\\\square$"
+        "Terapkan hasil tersebut pada lintasan $P\\to Q\\to R$ untuk memperoleh $d(P,R)-d(Q,R)\\le d(P,Q)$. Pertukarkan $P$ dan $Q$ untuk memperoleh $d(Q,R)-d(P,R)\\le d(P,Q)$. Kedua ketaksamaan digabung menjadi $|d(P,R)-d(Q,R)|\\le d(P,Q)$. $\\square$"
       ]
     },
     {
@@ -64,7 +64,7 @@ export const coordinates3dContent:BookLessonContent = {
       "proof": [
         "Dari persamaan vektor $M-P=Q-M$, penjumlahan $M$ dan $P$ pada kedua ruas memberikan $2M=P+Q$. Karena skalar 2 tidak nol, solusinya tunggal: $M=(P+Q)/2$.",
         "Sebaliknya, untuk titik tersebut, $M-P=(Q-P)/2=Q-M$, sehingga persamaan terpenuhi. Bentuk $M=(1-\\tfrac12)P+\\tfrac12Q$ menunjukkan $M\\in[P,Q]$.",
-        "Homogenitas norma memberi $d(P,M)=\\|(Q-P)/2\\|=\\tfrac12\\|Q-P\\|$ dan $d(M,Q)=\\|(Q-P)/2\\|$ pula. Sebagai pembeda, semua titik pada bidang sumbu tegak lurus $PQ$ berjarak sama ke $P,Q$, tetapi tidak semuanya titik tengah. $\\\\square$"
+        "Homogenitas norma memberi $d(P,M)=\\|(Q-P)/2\\|=\\tfrac12\\|Q-P\\|$ dan $d(M,Q)=\\|(Q-P)/2\\|$ pula. Sebagai pembeda, semua titik pada bidang sumbu tegak lurus $PQ$ berjarak sama ke $P,Q$, tetapi tidak semuanya titik tengah. $\\square$"
       ]
     },
     {
@@ -75,7 +75,7 @@ export const coordinates3dContent:BookLessonContent = {
       "proof": [
         "Arah $(\\\\Rightarrow)$. Misalkan $d(X,P)=d(X,Q)$. Kedua jarak taknegatif, sehingga boleh dikuadratkan: $(X-P)\\cdot(X-P)=(X-Q)\\cdot(X-Q)$. Mengembangkan dan menghapus $\\|X\\|^2$ di kedua ruas memberi $-2X\\cdot P+\\|P\\|^2=-2X\\cdot Q+\\|Q\\|^2$, atau $2X\\cdot(Q-P)=\\|Q\\|^2-\\|P\\|^2$.",
         "Arah $(\\\\Leftarrow)$. Misalkan $X$ memenuhi persamaan linear tersebut. Menyusun ulang langkah aljabar di atas menghasilkan $\\|X-P\\|^2=\\|X-Q\\|^2$. Karena kedua norma taknegatif, akar kuadrat memberikan $d(X,P)=d(X,Q)$.",
-        "Untuk $M=(P+Q)/2$, $2M\\cdot(Q-P)=(P+Q)\\cdot(Q-P)=\\|Q\\|^2-\\|P\\|^2$. Dengan $Q-P\\ne0$, persamaan linear itu memang mendefinisikan bidang yang melalui M dan bervektor normal $Q-P$. $\\\\square$"
+        "Untuk $M=(P+Q)/2$, $2M\\cdot(Q-P)=(P+Q)\\cdot(Q-P)=\\|Q\\|^2-\\|P\\|^2$. Dengan $Q-P\\ne0$, persamaan linear itu memang mendefinisikan bidang yang melalui M dan bervektor normal $Q-P$. $\\square$"
       ]
     },
     {
@@ -86,7 +86,7 @@ export const coordinates3dContent:BookLessonContent = {
       "proof": [
         "Setiap titik $X=(x,y,h)$ pada $H_h$ berada pada permukaan bola tepat ketika $(x-a)^2+(y-b)^2+(h-c)^2=r^2$. Persamaan tersebut ekuivalen dengan $(x-a)^2+(y-b)^2=r^2-(h-c)^2$.",
         "Jika $|h-c|>r$, ruas kanan negatif, sedangkan ruas kiri adalah jumlah kuadrat taknegatif; tidak ada solusi. Jika $|h-c|=r$, ruas kanan nol, memaksa $x=a$ dan $y=b$, sehingga tepat satu titik $(a,b,h)$.",
-        "Jika $|h-c|<r$, ruas kanan positif. Menulis $\\rho=\\sqrt{r^2-(h-c)^2}>0$ memberikan $(x-a)^2+(y-b)^2=\\rho^2$, yakni lingkaran berjari-jari $\\rho$ pada bidang z=h. Sebaliknya setiap titik pada lingkaran ini memenuhi persamaan bola setelah suku $(h-c)^2$ dikembalikan. Ketiga kasus lengkap dan saling lepas. $\\\\square$"
+        "Jika $|h-c|<r$, ruas kanan positif. Menulis $\\rho=\\sqrt{r^2-(h-c)^2}>0$ memberikan $(x-a)^2+(y-b)^2=\\rho^2$, yakni lingkaran berjari-jari $\\rho$ pada bidang z=h. Sebaliknya setiap titik pada lingkaran ini memenuhi persamaan bola setelah suku $(h-c)^2$ dikembalikan. Ketiga kasus lengkap dan saling lepas. $\\square$"
       ]
     },
     {
@@ -97,7 +97,7 @@ export const coordinates3dContent:BookLessonContent = {
       "proof": [
         "Ambil $X_t=(1-t)P+tQ$. Dengan mengurangkan pusat, diperoleh $X_t-C=(1-t)(P-C)+t(Q-C)$ karena $(1-t)+t=1$.",
         "Ketaksamaan segitiga dan homogenitas norma menghasilkan $\\|X_t-C\\|\\le(1-t)\\|P-C\\|+t\\|Q-C\\|$. Jika $P,Q$ di bola tertutup, ruas kanan paling besar $(1-t)r+tr=r$, sehingga $X_t$ tetap di bola tertutup.",
-        "Jika kedua titik di bola terbuka, tulis $\\|P-C\\|<r$ dan $\\|Q-C\\|<r$. Kombinasi konveks dua bilangan yang masing-masing kurang dari r tetap kurang dari r, termasuk pada t=0 dan t=1. Karena itu $\\|X_t-C\\|<r$. Dua klaim telah terbukti. $\\\\square$"
+        "Jika kedua titik di bola terbuka, tulis $\\|P-C\\|<r$ dan $\\|Q-C\\|<r$. Kombinasi konveks dua bilangan yang masing-masing kurang dari r tetap kurang dari r, termasuk pada t=0 dan t=1. Karena itu $\\|X_t-C\\|<r$. Dua klaim telah terbukti. $\\square$"
       ]
     }
   ],
