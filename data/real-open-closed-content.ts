@@ -162,7 +162,7 @@ export const realOpenClosedContent: BookLessonContent = {
       "problem": "Untuk $U_n=(-1/n,1/n)$, $n\\ge1$, hitung $\\bigcap_{n=1}^{\\infty}U_n$ dan tentukan apakah hasilnya terbuka.",
       "solution": [
         "Setiap $U_n$ terbuka karena merupakan interval terbuka. Titik $0$ berada dalam setiap $U_n$, sehingga $\\{0\\}\\subseteq\\bigcap_nU_n$.",
-        "Jika $x\\ne0$, sifat Archimedes memberi $n>1/|x|$, sehingga $1/n<|x|$ dan $x\\notin U_n$. Tidak ada titik taknol dalam irisan. Oleh karena itu $\\bigcap_nU_n=\\{0\\}$. Himpunan ini tidak terbuka di $\\mathbb R$: setiap interval berpusat di $0$ mengandung titik selain $0$. Contoh ini menunjukkan alasan syarat 'hingga' pada teorema irisan terbuka tidak boleh dihapus."
+        "Jika $x\\ne0$, sifat Archimedes memberi $n>1/|x|$, sehingga $1/n<|x|$ dan $x\\notin U_n$. Tidak ada titik taknol dalam irisan. Oleh karena itu $\\bigcap_nU_n=\\{0\\}$. Himpunan ini tidak terbuka di $\\mathbb R$: setiap interval berpusat di $0$ mengandung titik selain $0$. Contoh ini menunjukkan alasan syarat 'hingga' pada teorema irisan terbuka tidak boleh dihapus. Pemeriksaan melalui komplemen memberi kesimpulan yang konsisten: komplemen irisan adalah $\\mathbb R\\setminus\\{0\\}=(-\\infty,0)\\cup(0,\\infty)$, gabungan dua sinar terbuka, sehingga $\\{0\\}$ tertutup. Karena setiap lingkungan $0$ memuat bilangan di luar $\\{0\\}$, interior irisan kosong dan batasnya tepat $\\{0\\}$. Sifat tertutup tersebut tidak bertentangan dengan kegagalan keterbukaan."
       ]
     },
     {
