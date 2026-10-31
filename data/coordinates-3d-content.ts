@@ -36,7 +36,7 @@ export const coordinates3dContent:BookLessonContent = {
     },
     {
       "kind": "lemma",
-      "title": "Ketaksamaan Cauchy–Schwarz di $\mathbb R^3$",
+      "title": "Ketaksamaan Cauchy–Schwarz di $\\mathbb R^3$",
       "statement": "Untuk setiap $u,v\\in\\mathbb R^3$, berlaku $|u\\cdot v|\\le\\|u\\|\\|v\\|$. Jika $u,v$ tidak nol, kesamaan terjadi tepat ketika keduanya bergantung linear.",
       "explanation": "Ketaksamaan ini menjadi landasan pembuktian ketaksamaan segitiga tanpa mengandalkan intuisi gambar.",
       "proof": [
