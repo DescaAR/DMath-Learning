@@ -58,6 +58,52 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Newsvendor regression: rendered original content, mathematical cases, and non-rubric solutions.
+{
+  const lesson=getBookSectionContent("or-newsvendor");
+  assert.ok(lesson,"Newsvendor source must be registered on the public book route");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>item.kind!=="definition"&&item.kind!=="note");
+  assert.equal(defs.length,5,"Newsvendor needs five concrete definitions");
+  assert.equal(results.length,7,"Newsvendor needs seven proved results");
+  assert.equal(lesson.examples.length,8,"Newsvendor needs eight worked examples");
+  assert.equal(lesson.exercises.length,8,"Newsvendor needs eight solved exercises");
+  for(const def of defs){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===def.title),
+      "Missing example immediately associated with definition: "+def.title);
+  }
+  for(const item of results){
+    assert.ok(item.proof?.length>=2,"Missing complete proof for "+item.title);
+    assert.match(item.proof.join(" "),/\\square/,"Missing proof terminator for "+item.title);
+  }
+  for(const example of lesson.examples){
+    assert.ok(example.solution.join(" ").length>450,
+      "Newsvendor worked example is too terse: "+example.title);
+  }
+  for(const [index,exercise] of lesson.exercises.entries()){
+    assert.ok(exercise.answer.length>450,
+      "Newsvendor exercise solution is too terse: "+(index+1));
+    assert.doesNotMatch(exercise.answer,/jawaban yang baik|buatlah contoh|susunlah penjelasan/i,
+      "Rubric answer is not a solved problem: "+(index+1));
+  }
+  assert.ok(lesson.formal.some(item=>item.title==="Karakterisasi Optimalitas Fraktil Kritis"));
+  assert.ok(!lesson.formal.some(item=>item.title==="EOQ Dasar"),
+    "Newsvendor lesson must not be replaced by the EOQ theorem");
+  const risk=(q,p,co,cu)=>p*(co*Math.max(q-4,0)+cu*Math.max(4-q,0))
+    +(1-p)*(co*Math.max(q-8,0)+cu*Math.max(8-q,0));
+  const close=(a,b)=>Math.abs(a-b)<1e-10;
+  assert.ok(close(risk(4,0.4,2,5),12));
+  assert.ok(close(risk(6,0.4,2,5),7.6));
+  assert.ok(close(risk(8,0.4,2,5),3.2));
+  assert.ok(close(risk(6.4,0.4,2,5),6.72));
+  assert.ok(close(risk(8,0.7,2,5),5.6));
+  assert.ok(close(risk(4,0.75,2,5),5));
+  const twoPointFlat=q=>0.6*2*Math.max(q-2,0)+0.4*3*Math.max(5-q,0);
+  for(const q of [2,2.5,3,4,5])assert.ok(close(twoPointFlat(q),3.6));
+  assert.ok(twoPointFlat(1)>3.6&&twoPointFlat(6)>3.6);
+}
+
+
 // Three-dimensional geometry: verify the public rendered source and exact calculations.
 {
   const lesson=getBookSectionContent("calc-3d-coordinates");
