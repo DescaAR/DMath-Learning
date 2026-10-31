@@ -1,7 +1,7 @@
 import type { BookLessonContent } from "@/data/book-content-types";
 
 /** Newsvendor satu periode: distribusi diskret, fraktil kritis, bukti dua arah, dan soal asli. */
-export const newsvendorContent: BookLessonContent = {
+export const newsvendorContent: BookLessonContent =  {
   "intro": [
     "Masalah persediaan satu periode muncul ketika jumlah barang harus diputuskan sebelum permintaan diketahui dan barang yang tersisa tidak dapat dipindahkan secara bebas ke periode berikutnya. Contohnya adalah makanan segar, tiket dengan tanggal tertentu, dan produk musiman. Memesan terlalu banyak menimbulkan biaya kelebihan, sedangkan memesan terlalu sedikit menimbulkan biaya kekurangan. Kedua biaya ini umumnya tidak sama, sehingga mengganti permintaan acak dengan rata-ratanya tidak otomatis menghasilkan keputusan terbaik.",
     "Misalkan keputusan pemesanan adalah $q\\ge 0$ unit, sedangkan permintaan acak $D$ bernilai $4$ unit dengan peluang $2/5$ atau $8$ unit dengan peluang $3/5$. Setiap unit yang tersisa merugikan $c_o=2$ satuan biaya, dan setiap unit permintaan yang tidak terpenuhi merugikan $c_u=5$ satuan biaya. Kerugian ketika permintaan nyata adalah $d$ ditulis $L(q,d)=2(q-d)_++5(d-q)_+$, dengan $x_+=\\max\\{x,0\\}$. Kerugian satuan dan kerugian total tidak boleh tertukar.",
@@ -120,7 +120,8 @@ export const newsvendorContent: BookLessonContent = {
       "solution": [
         "Diketahui $L(q,d)=2(q-d)_++5(d-q)_+$. Untuk $d=4$, berlaku $(6-4)_+=2$ dan $(4-6)_+=0$, sehingga $L(6,4)=2(2)+5(0)=4$ satuan biaya.",
         "Untuk $d=8$, berlaku $(6-8)_+=0$ dan $(8-6)_+=2$, sehingga $L(6,8)=2(0)+5(2)=10$ satuan biaya.",
-        "Pemeriksaan kasus: tidak mungkin terjadi kelebihan dan kekurangan sekaligus untuk satu pasangan $(q,d)$. Kedua nilai berbeda meskipun selisih jumlah barang sama-sama 2 unit karena biaya per unit tidak simetris."
+        "Pemeriksaan kasus: tidak mungkin terjadi kelebihan dan kekurangan sekaligus untuk satu pasangan $(q,d)$. Kedua nilai berbeda meskipun selisih jumlah barang sama-sama 2 unit karena biaya per unit tidak simetris.",
+        "Karena nilai kerugian dihitung setelah permintaan diketahui, nilai 4 dan 10 adalah kerugian bersyarat per skenario. Untuk membandingkan keputusan sebelum permintaan teramati, kedua nilai harus ditimbang menggunakan peluang skenario; operasi itu dilakukan pada definisi risiko."
       ],
       "conclusion": "Kerugian pada permintaan 4 adalah 4, sedangkan pada permintaan 8 adalah 10.",
       "forDefinition": "Kerugian Kelebihan dan Kekurangan"
@@ -131,7 +132,8 @@ export const newsvendorContent: BookLessonContent = {
       "solution": [
         "Diketahui risiko adalah rata-rata kerugian berbobot peluang. Pada $q=4$, kerugian untuk $d=4$ nol dan untuk $d=8$ adalah $5(8-4)=20$, sehingga $R(4)=(2/5)0+(3/5)20=12$.",
         "Pada $q=6$, contoh sebelumnya memberi $L(6,4)=4$ dan $L(6,8)=10$, sehingga $R(6)=(2/5)4+(3/5)10=8/5+6=38/5=7{,}6$.",
-        "Pada $q=8$, kerugian untuk $d=4$ adalah $2(8-4)=8$ dan untuk $d=8$ nol, sehingga $R(8)=(2/5)8+(3/5)0=16/5=3{,}2$. Ketiga keputusan layak, tetapi memiliki risiko berbeda."
+        "Pada $q=8$, kerugian untuk $d=4$ adalah $2(8-4)=8$ dan untuk $d=8$ nol, sehingga $R(8)=(2/5)8+(3/5)0=16/5=3{,}2$. Ketiga keputusan layak, tetapi memiliki risiko berbeda.",
+        "Perbedaan $R(4)-R(8)=12-16/5=44/5$ merupakan penghematan biaya ekspektasian jika memilih 8 alih-alih 4 unit. Ini bukan penghematan yang pasti terjadi pada setiap realisasi: ketika permintaan hanya 4 unit, memesan 4 justru menghasilkan kerugian nol."
       ],
       "conclusion": "Di antara 4, 6, dan 8 unit, pemesanan 8 unit mempunyai risiko terendah, yakni 16/5.",
       "forDefinition": "Risiko Ekspektasi"
