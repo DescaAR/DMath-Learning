@@ -58,6 +58,37 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Public trigonometric functions: verify authored source, exact identities and solutions.
+{
+  const lesson=getBookSectionContent("calc-trigonometric-functions");
+  assert.ok(lesson,"Authored trigonometric-functions lesson must be rendered");
+  const definitions=lesson.formal.filter(item=>item.kind==="definition");
+  const proved=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(definitions.length,4);
+  assert.equal(proved.length,5);
+  assert.equal(lesson.examples.length,8);
+  assert.equal(lesson.exercises.length,8);
+  for(const definition of definitions){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===definition.title),
+      "Trigonometry definition lacks immediate example: "+definition.title);
+  }
+  for(const item of proved){
+    assert.ok(item.proof?.length>=2 && item.proof.at(-1).includes("\\square"),
+      "Trigonometry result lacks a complete proof: "+item.title);
+  }
+  for(const [index,exercise] of lesson.exercises.entries()){
+    assert.ok(exercise.answer.length>=500,
+      "Trigonometry original exercise remains abbreviated: "+index);
+  }
+  const near=(a,b)=>Math.abs(a-b)<1e-12;
+  assert.ok(near(Math.sin(2*Math.PI/3),Math.sqrt(3)/2));
+  assert.ok(near(Math.cos(2*Math.PI/3),-0.5));
+  assert.ok(near(Math.cos(Math.PI/3-Math.PI/6),Math.sqrt(3)/2));
+  assert.ok(near(Math.tan(Math.PI/4),1));
+  assert.ok(near(Math.sin(Math.PI/2+2*Math.PI),1));
+  assert.ok(near(2+1.5*Math.cos(Math.PI*6/6),0.5));
+}
+
 // Open/closed real sets: inspect actual lesson, definition links and mathematical cases.
 {
   const lesson=getBookSectionContent("himpunan-buka-dan-tertutup-r");
