@@ -73,8 +73,6 @@ import { measureProbabilityContentC } from "@/data/measure-probability-content-c
 import { measureProbabilityContentD } from "@/data/measure-probability-content-d";
 
 export const bookSectionContent:Record<string,BookLessonContent>={
-  // Euler edge-trails and Hamilton vertex-cycles: complete parity, Hierholzer, and Ore arguments.
-  "md-euler-hamilton":eulerHamiltonContent,
   ...realAnalysisContentA,
   ...realAnalysisContentB,
   ...complexAnalysisContentA,
@@ -95,6 +93,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // Euler edge-trails and Hamilton vertex-cycles: complete parity, Hierholzer, and Ore arguments.
+  "md-euler-hamilton":eulerHamiltonContent,
   // Simple regression: exact least-squares proofs, model assumptions, and solved original problems.
   "sta-simple-regression":simpleRegressionContent,
   // MST: full cut/cycle exchange proofs, Kruskal invariant, and detailed original solutions.
