@@ -194,7 +194,7 @@ export const deepMaterials: DeepMaterial[] = [
           "Sebaliknya, ambil sebarang $x\\in S_2$. Dari $A(x)+C(x)=B(x)+C(x)$, tambahkan $-C(x)$ pada kedua ruas. Sifat invers aditif memberikan $A(x)=B(x)$, sehingga $x\\in S_1$. Kedua inklusi menghasilkan $S_1=S_2$. Sebagai pemeriksaan, $x+2=5$ dan $(x+2)+x=5+x$ sama-sama mempunyai solusi $x=3$. Pembuktian selesai. $\\square$"
         ],
         why: "Operasi pada kedua ruas harus terdefinisi untuk semua kandidat pada domain yang sama; pengurangan suku yang sama adalah kebalikan dari penjumlahan."
-      },,
+      },
       {
         title: "Prinsip Perkalian",
         statement: "Misalkan $D\\subseteq\\mathbb R$, $A,B:D\\to\\mathbb R$, dan $k\\in\\mathbb R$ dengan $k\\neq0$. Persamaan $A(x)=B(x)$ dan $kA(x)=kB(x)$ mempunyai himpunan solusi yang sama di $D$.",
@@ -204,7 +204,19 @@ export const deepMaterials: DeepMaterial[] = [
           "Untuk arah $S_2\\subseteq S_1$, ambil $x\\in S_2$. Pembagian $kA(x)=kB(x)$ oleh $k\\neq0$ memberikan $A(x)=B(x)$, sehingga $x\\in S_1$. Kedua inklusi membuktikan kesamaan himpunan solusi. Syarat $k\\neq0$ esensial: $x=1$ hanya mempunyai solusi $1$, tetapi jika dikalikan nol berubah menjadi $0=0$, yang dipenuhi semua $x\\in\\mathbb R$. Pembuktian selesai. $\\square$"
         ],
         why: "Perkalian dengan nol tidak dapat dibalik dan menghilangkan informasi. Pembagian oleh ekspresi yang mungkin nol juga harus memisahkan kasus nol terlebih dahulu."
-      },,
+      }
+    ],
+    examples: [
+      {
+        title: "Persamaan Satu Variabel",
+        problem: "Selesaikan $3(2x-1)-5=4x+6$ dan periksa apakah nilai yang diperoleh benar-benar memenuhi persamaan asal.",
+        solution: [
+          "Diketahui $3(2x-1)-5=4x+6$ dengan $x\\in\\mathbb R$. Distribusikan faktor $3$ pada ruas kiri: $6x-3-5=4x+6$, sehingga $6x-8=4x+6$. Sifat distributif berlaku untuk setiap bilangan real.",
+          "Kurangi kedua ruas dengan $4x$ sehingga $2x-8=6$. Tambahkan $8$ pada kedua ruas untuk memperoleh $2x=14$. Karena $2\\neq0$, pembagian kedua ruas dengan $2$ sah dan menghasilkan $x=7$. Setiap operasi dapat dibalik, sehingga himpunan solusi tidak berubah.",
+          "Verifikasi pada persamaan asal: ruas kiri $3(2\\cdot7-1)-5=3(13)-5=34$, sedangkan ruas kanan $4\\cdot7+6=34$. Kedua ruas sama, sehingga $x=7$ memang solusi.",
+          "Karena persamaan yang telah disederhanakan memiliki koefisien $x$ tak nol, yaitu $2$, solusi tersebut tunggal. Himpunan solusinya adalah $S=\\{7\\}$."
+        ]
+      },
       {
         title: "Model Umur",
         problem: "Umur A lima tahun lebih tua dari B. Jumlah umur mereka $31$ tahun. Tentukan umur masing-masing dan periksa hasilnya.",
