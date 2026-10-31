@@ -1,3 +1,4 @@
+import { eulerHamiltonContent } from "@/data/euler-hamilton-content";
 import { simpleRegressionContent } from "@/data/simple-regression-content";
 import { minimumSpanningTreeContent } from "@/data/minimum-spanning-tree-content";
 import { operationsStudyContent } from "@/data/operations-study-content";
@@ -72,6 +73,8 @@ import { measureProbabilityContentC } from "@/data/measure-probability-content-c
 import { measureProbabilityContentD } from "@/data/measure-probability-content-d";
 
 export const bookSectionContent:Record<string,BookLessonContent>={
+  // Euler edge-trails and Hamilton vertex-cycles: complete parity, Hierholzer, and Ore arguments.
+  "md-euler-hamilton":eulerHamiltonContent,
   ...realAnalysisContentA,
   ...realAnalysisContentB,
   ...complexAnalysisContentA,
