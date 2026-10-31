@@ -1,4 +1,5 @@
 import { eulerHamiltonContent } from "@/data/euler-hamilton-content";
+import { graphConnectivityContent } from "@/data/graph-connectivity-content";
 import { simpleRegressionContent } from "@/data/simple-regression-content";
 import { minimumSpanningTreeContent } from "@/data/minimum-spanning-tree-content";
 import { operationsStudyContent } from "@/data/operations-study-content";
@@ -95,6 +96,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentD,
   // Euler edge-trails and Hamilton vertex-cycles: complete parity, Hierholzer, and Ore arguments.
   "md-euler-hamilton":eulerHamiltonContent,
+  // Graph connectivity: complete proofs for cuts, bridges, articulation vertices and spanning trees.
+  "md-connectivity":graphConnectivityContent,
   // Simple regression: exact least-squares proofs, model assumptions, and solved original problems.
   "sta-simple-regression":simpleRegressionContent,
   // MST: full cut/cycle exchange proofs, Kruskal invariant, and detailed original solutions.
