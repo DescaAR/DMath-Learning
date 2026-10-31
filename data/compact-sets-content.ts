@@ -12,33 +12,33 @@ export const compactSetsContent: BookLessonContent = {
     {
       "kind": "definition",
       "title": "Penutup Terbuka",
-      "statement": "Misalkan K⊆ℝ. Keluarga (U_i)_{i∈I} disebut penutup terbuka K apabila setiap U_i terbuka di ℝ dan K⊆⋃_{i∈I}U_i. Subpenutup hingga adalah pilihan indeks i_1,…,i_m dengan K⊆U_{i_1}∪⋯∪U_{i_m}. Untuk K=∅, keluarga kosong merupakan penutup dan subpenutup hingga.",
+      "statement": "Misalkan $K\\subseteq\\mathbb R$. Keluarga (U_i)_{i∈I} disebut penutup terbuka K apabila setiap U_i terbuka di ℝ dan K⊆⋃_{i∈I}U_i. Subpenutup hingga adalah pilihan indeks i_1,…,i_m dengan K⊆U_{i_1}∪⋯∪U_{i_m}. Untuk $K=\\varnothing$, keluarga kosong merupakan penutup dan subpenutup hingga.",
       "explanation": "Indeks I boleh tak hingga. Anggota penutup harus terbuka di ruang ambient yang dinyatakan; tidak cukup hanya menuliskan beberapa himpunan yang gabungannya memuat K."
     },
     {
       "kind": "definition",
       "title": "Himpunan Kompak",
-      "statement": "Himpunan K⊆ℝ disebut kompak apabila setiap penutup terbuka K mempunyai subpenutup hingga. Secara umum, K kompak sebagai subruang X apabila setiap penutup oleh himpunan terbuka relatif terhadap K mempunyai subpenutup hingga.",
+      "statement": "Himpunan $K\\subseteq\\mathbb R$ disebut kompak apabila setiap penutup terbuka K mempunyai subpenutup hingga. Secara umum, K kompak sebagai subruang X apabila setiap penutup oleh himpunan terbuka relatif terhadap K mempunyai subpenutup hingga.",
       "explanation": "Definisi ini berlaku tanpa asumsi K tertutup atau terbatas; kedua sifat tersebut akan diperoleh sebagai teorema khusus di ℝ."
     },
     {
       "kind": "definition",
       "title": "Terbatas dan Tertutup",
-      "statement": "Himpunan K⊆ℝ disebut terbatas jika terdapat M>0 sehingga |x|≤M untuk semua x∈K. Himpunan K disebut tertutup di ℝ jika ℝ∖K terbuka di ℝ; secara ekuivalen, setiap barisan di K yang konvergen di ℝ memiliki limit di K.",
+      "statement": "Himpunan $K\\subseteq\\mathbb R$ disebut terbatas jika terdapat M>0 sehingga |x|≤M untuk semua $x\\in K$. Himpunan K disebut tertutup di ℝ jika ℝ∖K terbuka di ℝ; secara ekuivalen, setiap barisan di K yang konvergen di ℝ memiliki limit di K.",
       "explanation": "Terbatas dan tertutup adalah dua syarat yang berbeda. (0,1) terbatas tetapi tidak tertutup, sedangkan [0,∞) tertutup tetapi tidak terbatas."
     },
     {
       "kind": "definition",
       "title": "Kompak Sekuensial",
-      "statement": "Himpunan K⊆ℝ disebut kompak sekuensial jika setiap barisan (x_n) dengan x_n∈K mempunyai subbarisan (x_{n_j}) yang konvergen dalam ℝ ke suatu titik x∈K.",
+      "statement": "Himpunan $K\\subseteq\\mathbb R$ disebut kompak sekuensial jika setiap barisan (x_n) dengan $x_n\\in K$ mempunyai subbarisan (x_{n_j}) yang konvergen dalam ℝ ke suatu titik $x\\in K$.",
       "explanation": "Syarat limit berada dalam K tidak boleh dihilangkan. Barisan 1/n dalam (0,1) memiliki limit real 0, tetapi limit tersebut bukan anggota (0,1)."
     },
     {
       "kind": "proposition",
       "title": "Himpunan Hingga Bersifat Kompak",
-      "statement": "Setiap himpunan hingga F⊆ℝ kompak, termasuk himpunan kosong.",
+      "statement": "Setiap himpunan hingga $F\\subseteq\\mathbb R$ kompak, termasuk himpunan kosong.",
       "proof": [
-        "Ambil sebarang penutup terbuka (U_i)_{i∈I} dari F. Jika F=∅, keluarga kosong sudah merupakan subpenutup hingga, sehingga kasus ini selesai.",
+        "Ambil sebarang penutup terbuka (U_i)_{i∈I} dari F. Jika $F=\\varnothing$, keluarga kosong sudah merupakan subpenutup hingga, sehingga kasus ini selesai.",
         "Jika F={x_1,…,x_m} dengan m≥1, sifat menutupi menjamin untuk setiap j terdapat indeks i_j∈I dengan x_j∈U_{i_j}. Pemilihan hanya dilakukan sebanyak m kali.",
         "Karena setiap unsur F adalah salah satu x_j, diperoleh F⊆U_{i_1}∪⋯∪U_{i_m}. Jadi setiap penutup terbuka mempunyai subpenutup hingga dan F kompak. $\\square$"
       ],
@@ -47,30 +47,30 @@ export const compactSetsContent: BookLessonContent = {
     {
       "kind": "proposition",
       "title": "Subhimpunan Tertutup dari Himpunan Kompak",
-      "statement": "Jika K⊆ℝ kompak dan F⊆K tertutup relatif terhadap K, maka F kompak.",
+      "statement": "Jika $K\\subseteq\\mathbb R$ kompak dan $F\\subseteq K$ tertutup relatif terhadap K, maka F kompak.",
       "proof": [
         "Ambil sebarang penutup terbuka relatif (V_i)_{i∈I} dari F. Untuk setiap i, terdapat U_i terbuka di ℝ sehingga V_i=F∩U_i. Karena F tertutup relatif terhadap K, K∖F terbuka relatif terhadap K.",
         "Keluarga {K∖F}∪{K∩U_i:i∈I} merupakan penutup terbuka relatif terhadap K: titik dalam F ditutupi oleh salah satu U_i, sedangkan titik K∖F ditutupi oleh himpunan tambahan.",
-        "Kekompakan K memberikan subpenutup hingga. Setelah anggota K∖F dibuang, anggota U_i yang terpilih masih menutupi F karena (K∖F)∩F=∅. Dengan demikian F mempunyai subpenutup hingga untuk penutup awal, sehingga F kompak. $\\square$"
+        "Kekompakan K memberikan subpenutup hingga. Setelah anggota K∖F dibuang, anggota U_i yang terpilih masih menutupi F karena (K∖F)∩$F=\\varnothing$. Dengan demikian F mempunyai subpenutup hingga untuk penutup awal, sehingga F kompak. $\\square$"
       ],
       "explanation": "Sifat tertutup di sini relatif terhadap K; tidak perlu mengasumsikan F memiliki interior di ℝ."
     },
     {
       "kind": "proposition",
       "title": "Kompak di ℝ Mengakibatkan Terbatas dan Tertutup",
-      "statement": "Jika K⊆ℝ kompak, maka K terbatas dan tertutup di ℝ.",
+      "statement": "Jika $K\\subseteq\\mathbb R$ kompak, maka K terbatas dan tertutup di ℝ.",
       "proof": [
-        "Untuk keterbatasan, keluarga U_n=(-n,n), n∈ℕ, menutupi ℝ dan karenanya K. Kekompakan menghasilkan U_{n_1},…,U_{n_m} yang menutupi K. Dengan N=max{n_1,…,n_m}, berlaku K⊆(-N,N). Kasus K=∅ langsung terbatas.",
-        "Untuk ketertutupan, ambil y∈ℝ∖K. Untuk setiap x∈K, tetapkan r_x=|x-y|/3>0, U_x=(x-r_x,x+r_x), dan V_x=(y-r_x,y+r_x). Kedua interval U_x dan V_x saling lepas: jika z berada pada keduanya, ketaksamaan segitiga memberi |x-y|≤|x-z|+|z-y|<2|x-y|/3, kontradiksi.",
-        "Keluarga (U_x)_{x∈K} menutupi K. Pilih subpenutup hingga U_{x_1},…,U_{x_m}. Interval V=⋂_{j=1}^m V_{x_j} terbuka dan memuat y; setiap titik K terletak dalam salah satu U_{x_j}, sedangkan V⊆V_{x_j} tidak beririsan dengan U_{x_j}. Jadi V∩K=∅.",
-        "Setiap y∈ℝ∖K mempunyai persekitaran terbuka yang terletak dalam ℝ∖K. Oleh karena itu komplemen K terbuka dan K tertutup. Untuk K=∅, komplemennya ℝ terbuka. Kedua sifat terbukti. $\\square$"
+        "Untuk keterbatasan, keluarga U_n=(-n,n), $n\\in\\mathbb N$, menutupi ℝ dan karenanya K. Kekompakan menghasilkan U_{n_1},…,U_{n_m} yang menutupi K. Dengan N=max{n_1,…,n_m}, berlaku K⊆(-N,N). Kasus $K=\\varnothing$ langsung terbatas.",
+        "Untuk ketertutupan, ambil $y\\in\\mathbb R$∖K. Untuk setiap $x\\in K$, tetapkan r_x=|x-y|/3>0, U_x=(x-r_x,x+r_x), dan V_x=(y-r_x,y+r_x). Kedua interval U_x dan V_x saling lepas: jika z berada pada keduanya, ketaksamaan segitiga memberi |x-y|≤|x-z|+|z-y|<2|x-y|/3, kontradiksi.",
+        "Keluarga (U_x)_{$x\\in K$} menutupi K. Pilih subpenutup hingga U_{x_1},…,U_{x_m}. Interval V=⋂_{j=1}^m V_{x_j} terbuka dan memuat y; setiap titik K terletak dalam salah satu U_{x_j}, sedangkan V⊆V_{x_j} tidak beririsan dengan U_{x_j}. Jadi V∩$K=\\varnothing$.",
+        "Setiap $y\\in\\mathbb R$∖K mempunyai persekitaran terbuka yang terletak dalam ℝ∖K. Oleh karena itu komplemen K terbuka dan K tertutup. Untuk $K=\\varnothing$, komplemennya ℝ terbuka. Kedua sifat terbukti. $\\square$"
       ],
       "explanation": "Bukti ketertutupan memakai subpenutup hingga secara esensial; tanpa kekompakan, irisan tak hingga persekitaran y tidak harus terbuka."
     },
     {
       "kind": "theorem",
       "title": "Interval Tertutup dan Terbatas Bersifat Kompak",
-      "statement": "Untuk a,b∈ℝ dengan a≤b, interval [a,b] kompak.",
+      "statement": "Untuk $a,b\\in\\mathbb R$ dengan $a\\le b$, interval [a,b] kompak.",
       "proof": [
         "Jika a=b, interval [a,b]={a} hingga dan kompak. Misalkan a<b dan (U_i)_{i∈I} penutup terbuka [a,b]. Definisikan E={x∈[a,b]:[a,x] dapat ditutupi oleh sejumlah hingga U_i}. Karena a berada dalam suatu U_i, diperoleh a∈E. Himpunan E tidak kosong dan dibatasi atas oleh b.",
         "Menurut sifat supremum ℝ, c=sup E∈[a,b]. Ada U_j yang memuat c. Karena U_j terbuka, terdapat ε>0 dengan (c-ε,c+ε)⊆U_j. Dari definisi supremum, terdapat x∈E dengan x>c-ε/2, kecuali c=a; jika c=a, gunakan x=a∈E. Dengan memilih x≤c, seluruh [x,min{b,c+ε/2}] terletak dalam U_j.",
@@ -82,34 +82,34 @@ export const compactSetsContent: BookLessonContent = {
     {
       "kind": "theorem",
       "title": "Teorema Heine–Borel pada ℝ",
-      "statement": "Untuk setiap K⊆ℝ, K kompak jika dan hanya jika K tertutup dan terbatas di ℝ.",
+      "statement": "Untuk setiap $K\\subseteq\\mathbb R$, K kompak jika dan hanya jika K tertutup dan terbatas di ℝ.",
       "proof": [
         "($\\Rightarrow$) Andaikan K kompak. Proposisi 'Kompak di ℝ Mengakibatkan Terbatas dan Tertutup' memberikan keterbatasan dan ketertutupan K secara terpisah. Hipotesis tidak memerlukan K takkosong.",
         "($\\Leftarrow$) Andaikan K tertutup dan terbatas. Ada M>0 sehingga K⊆[-M,M]. Berdasarkan teorema kekompakan interval, [-M,M] kompak. Karena K tertutup di ℝ, K juga tertutup relatif terhadap [-M,M].",
-        "Proposisi subhimpunan tertutup dari himpunan kompak menunjukkan K kompak. Kedua arah telah dibuktikan, termasuk kasus K=∅. $\\square$"
+        "Proposisi subhimpunan tertutup dari himpunan kompak menunjukkan K kompak. Kedua arah telah dibuktikan, termasuk kasus $K=\\varnothing$. $\\square$"
       ],
       "explanation": "Kesetaraan ini khusus ℝ (dan diperluas ke ℝ^n), bukan aturan otomatis pada ruang metrik sebarang."
     },
     {
       "kind": "theorem",
       "title": "Karakterisasi Kekompakan melalui Barisan",
-      "statement": "Untuk K⊆ℝ, K kompak jika dan hanya jika setiap barisan dalam K mempunyai subbarisan yang konvergen ke suatu titik K.",
+      "statement": "Untuk $K\\subseteq\\mathbb R$, K kompak jika dan hanya jika setiap barisan dalam K mempunyai subbarisan yang konvergen ke suatu titik K.",
       "proof": [
-        "($\\Rightarrow$) Jika K kompak, Heine–Borel memberi K terbatas dan tertutup. Ambil sebarang barisan (x_n) dalam K. Teorema Bolzano–Weierstrass untuk barisan real terbatas memberikan subbarisan x_{n_j}→x∈ℝ. Karena K tertutup dan semua suku subbarisan berada dalam K, sifat tertutup sekuensial menjamin x∈K.",
-        "($\\Leftarrow$) Andaikan sifat subbarisan berlaku. Jika K tidak terbatas, untuk setiap n pilih x_n∈K dengan |x_n|>n. Setiap subbarisan memenuhi |x_{n_j}|>n_j→∞, sehingga tidak dapat konvergen dalam ℝ. Kontradiksi; K terbatas.",
-        "Andaikan K tidak tertutup. Ada x∈\\overline K∖K; untuk setiap n pilih x_n∈K dengan |x_n-x|<1/n. Seluruh barisan menuju x. Setiap subbarisan juga menuju x, dan karena limit real tunggal, tidak ada subbarisan yang menuju titik K. Kontradiksi; K tertutup.",
-        "Karena K tertutup dan terbatas, Teorema Heine–Borel memastikan K kompak. Jika K=∅, pernyataan barisan berlaku secara vakum dan K kompak. Kedua implikasi terbukti. $\\square$"
+        "($\\Rightarrow$) Jika K kompak, Heine–Borel memberi K terbatas dan tertutup. Ambil sebarang barisan (x_n) dalam K. Teorema Bolzano–Weierstrass untuk barisan real terbatas memberikan subbarisan x_{n_j}→$x\\in\\mathbb R$. Karena K tertutup dan semua suku subbarisan berada dalam K, sifat tertutup sekuensial menjamin $x\\in K$.",
+        "($\\Leftarrow$) Andaikan sifat subbarisan berlaku. Jika K tidak terbatas, untuk setiap n pilih $x_n\\in K$ dengan |x_n|>n. Setiap subbarisan memenuhi |x_{n_j}|>n_j→∞, sehingga tidak dapat konvergen dalam ℝ. Kontradiksi; K terbatas.",
+        "Andaikan K tidak tertutup. Ada x∈\\overline K∖K; untuk setiap n pilih $x_n\\in K$ dengan |x_n-x|<1/n. Seluruh barisan menuju x. Setiap subbarisan juga menuju x, dan karena limit real tunggal, tidak ada subbarisan yang menuju titik K. Kontradiksi; K tertutup.",
+        "Karena K tertutup dan terbatas, Teorema Heine–Borel memastikan K kompak. Jika $K=\\varnothing$, pernyataan barisan berlaku secara vakum dan K kompak. Kedua implikasi terbukti. $\\square$"
       ],
       "explanation": "Bolzano–Weierstrass digunakan dengan hipotesis barisan real terbatas; ketertutupan diperlukan agar limit subbarisan tidak keluar dari K."
     },
     {
       "kind": "theorem",
       "title": "Citra Kontinu Himpunan Kompak",
-      "statement": "Misalkan K⊆ℝ kompak dan f:K→ℝ kontinu relatif terhadap K. Himpunan f(K) kompak di ℝ; akibatnya f(K) tertutup dan terbatas.",
+      "statement": "Misalkan $K\\subseteq\\mathbb R$ kompak dan $f:K\\to\\mathbb R$ kontinu relatif terhadap K. Himpunan f(K) kompak di ℝ; akibatnya f(K) tertutup dan terbatas.",
       "proof": [
-        "Ambil sebarang penutup terbuka (V_i)_{i∈I} dari f(K). Karena f kontinu, untuk setiap i, himpunan f^{-1}(V_i) terbuka relatif terhadap K. Keluarga pracitra tersebut menutupi K: setiap x∈K memiliki f(x)∈f(K), yang berada dalam suatu V_i.",
-        "Kekompakan K memberikan indeks i_1,…,i_m sehingga K⊆⋃_{j=1}^m f^{-1}(V_{i_j}). Jika y∈f(K), pilih x∈K dengan y=f(x). Salah satu pracitra terpilih memuat x, sehingga y∈V_{i_j}. Ini membuktikan f(K)⊆⋃_{j=1}^m V_{i_j}.",
-        "Setiap penutup terbuka f(K) memiliki subpenutup hingga, sehingga f(K) kompak. Proposisi kekompakan di ℝ kemudian memberi tertutup dan terbatas. Untuk K=∅, citra kosong kompak. $\\square$"
+        "Ambil sebarang penutup terbuka (V_i)_{i∈I} dari f(K). Karena f kontinu, untuk setiap i, himpunan f^{-1}(V_i) terbuka relatif terhadap K. Keluarga pracitra tersebut menutupi K: setiap $x\\in K$ memiliki f(x)∈f(K), yang berada dalam suatu V_i.",
+        "Kekompakan K memberikan indeks i_1,…,i_m sehingga K⊆⋃_{j=1}^m f^{-1}(V_{i_j}). Jika y∈f(K), pilih $x\\in K$ dengan y=f(x). Salah satu pracitra terpilih memuat x, sehingga y∈V_{i_j}. Ini membuktikan $f(K)\\subseteq$⋃_{j=1}^m V_{i_j}.",
+        "Setiap penutup terbuka f(K) memiliki subpenutup hingga, sehingga f(K) kompak. Proposisi kekompakan di ℝ kemudian memberi tertutup dan terbatas. Untuk $K=\\varnothing$, citra kosong kompak. $\\square$"
       ],
       "explanation": "Teorema ini mendasari keberadaan nilai maksimum dan minimum fungsi kontinu pada interval tertutup."
     }
@@ -120,7 +120,7 @@ export const compactSetsContent: BookLessonContent = {
       "forDefinition": "Penutup Terbuka",
       "problem": "Buktikan bahwa U_n=(1/n,2), n≥2, menutupi (0,1), tetapi tidak mempunyai subpenutup hingga.",
       "solution": [
-        "Untuk setiap x∈(0,1), pilih bilangan bulat n>max{2,1/x}. Ketaksamaan 1/n<x<1<2 menunjukkan x∈U_n. Jadi (0,1)⊆⋃_{n≥2}U_n.",
+        "Untuk setiap $x\\in(0,1)$, pilih bilangan bulat n>max{2,1/x}. Ketaksamaan 1/n<x<1<2 menunjukkan $x\\in U_n$. Jadi (0,1)⊆⋃_{n≥2}U_n.",
         "Ambil sembarang indeks hingga n_1,…,n_m dan tulis N=max{n_1,…,n_m}. Karena 1/n mengecil ketika n membesar, gabungan interval terpilih adalah (1/N,2). Titik x=1/(2N) berada dalam (0,1), tetapi tidak dalam (1/N,2).",
         "Setiap subkeluarga hingga gagal menutupi (0,1). Penutup ini merupakan sertifikat langsung bahwa (0,1) tidak kompak, tanpa sekadar mengutip Heine–Borel."
       ],
@@ -206,42 +206,42 @@ export const compactSetsContent: BookLessonContent = {
   ],
   "exercises": [
     {
-      "prompt": "Buktikan langsung bahwa setiap himpunan dengan tepat empat unsur kompak.",
+      "prompt": "HK-01. Buktikan langsung bahwa setiap himpunan dengan tepat empat unsur kompak.",
       "hint": "Pilih satu anggota penutup untuk setiap titik.",
       "answer": "Misalkan F={a,b,c,d}⊆ℝ dan (U_i) penutup terbuka F. Karena setiap titik berada dalam gabungan, pilih indeks i_a,i_b,i_c,i_d dengan a∈U_{i_a}, b∈U_{i_b}, c∈U_{i_c}, dan d∈U_{i_d}. Gabungan keempat himpunan ini menutupi F. Pemilihan berhingga tidak bergantung pada banyaknya anggota penutup semula. Jadi setiap penutup terbuka F memiliki subpenutup dengan paling banyak empat anggota dan F kompak."
     },
     {
-      "prompt": "Buat penutup terbuka (0,1) tanpa subpenutup hingga, lalu buktikan kedua klaim.",
+      "prompt": "HK-02. Buat penutup terbuka (0,1) tanpa subpenutup hingga, lalu buktikan kedua klaim.",
       "hint": "Gunakan interval (1/n,2), n≥2.",
-      "answer": "Ambil U_n=(1/n,2) untuk n≥2. Untuk setiap x∈(0,1), sifat Archimedes memberi n>max{2,1/x}, sehingga 1/n<x<2 dan x∈U_n. Jadi keluarga ini menutupi (0,1). Untuk pilihan indeks hingga n_1,…,n_m, tetapkan N=max n_j. Karena interval bersarang, gabungannya (1/N,2). Titik 1/(2N) terletak dalam (0,1) tetapi tidak dalam gabungan itu. Tidak ada subpenutup hingga, sehingga (0,1) tidak kompak."
+      "answer": "Ambil U_n=(1/n,2) untuk n≥2. Untuk setiap $x\\in(0,1)$, sifat Archimedes memberi n>max{2,1/x}, sehingga 1/n<x<2 dan $x\\in U_n$. Jadi keluarga ini menutupi (0,1). Untuk pilihan indeks hingga n_1,…,n_m, tetapkan N=max n_j. Karena interval bersarang, gabungannya (1/N,2). Titik 1/(2N) terletak dalam (0,1) tetapi tidak dalam gabungan itu. Tidak ada subpenutup hingga, sehingga (0,1) tidak kompak."
     },
     {
-      "prompt": "Buktikan [0,∞) tidak kompak dengan penutup terbuka eksplisit, tanpa Heine–Borel.",
+      "prompt": "HK-03. Buktikan [0,∞) tidak kompak dengan penutup terbuka eksplisit, tanpa Heine–Borel.",
       "hint": "Pakai U_n=(-1,n), n≥1.",
       "answer": "Tetapkan U_n=(-1,n) untuk n≥1. Setiap x≥0 berada dalam U_n apabila n>x; indeks demikian ada menurut sifat Archimedes. Jadi keluarga (U_n) menutupi [0,∞). Jika dipilih hanya U_{n_1},…,U_{n_m}, gabungannya (-1,N) dengan N=max n_j. Titik N+1 termasuk [0,∞) tetapi tidak berada dalam gabungan tersebut. Penutup terbuka ini tidak memiliki subpenutup hingga; akibatnya [0,∞) tidak kompak."
     },
     {
-      "prompt": "Buktikan K={0}∪{1/n:n∈ℕ} kompak langsung menggunakan penutup terbuka.",
+      "prompt": "HK-04. Buktikan K={0}∪{1/n:$n\\in\\mathbb N$} kompak langsung menggunakan penutup terbuka.",
       "hint": "Gunakan satu himpunan yang memuat 0 untuk menutupi ekor barisan.",
       "answer": "Misalkan (U_i) penutup terbuka K. Pilih U_{i_0} yang memuat 0. Karena terbuka, ada ε>0 dengan (−ε,ε)⊆U_{i_0}. Pilih N sehingga 1/N<ε. Untuk setiap n≥N, titik 1/n∈U_{i_0}; titik 0 juga tercakup. Tersisa hanya titik 1,1/2,…,1/(N−1), yang jumlahnya hingga. Pilih satu anggota penutup untuk masing-masing titik tersebut. Gabungan anggota yang terpilih bersama U_{i_0} menutupi seluruh K. Karena penutup awal sebarang, K kompak."
     },
     {
-      "prompt": "Tentukan apakah A={1/n:n∈ℕ} kompak; jelaskan posisi limitnya.",
+      "prompt": "HK-05. Tentukan apakah A={1/n:$n\\in\\mathbb N$} kompak; jelaskan posisi limitnya.",
       "hint": "Periksa barisan 1/n dan sifat tertutup.",
       "answer": "Barisan x_n=1/n seluruhnya berada dalam A dan konvergen di ℝ ke 0. Namun 0 bukan anggota A. Setiap subbarisan x_{n_j}=1/n_j juga menuju 0 karena n_j→∞. Oleh ketunggalan limit, tidak ada subbarisan yang konvergen ke titik A. Jadi A tidak kompak sekuensial dan, berdasarkan karakterisasi sekuensial pada ℝ, A tidak kompak. Secara independen, A tidak tertutup karena memuat barisan konvergen tanpa memuat limitnya, sehingga gagal syarat Heine–Borel."
     },
     {
-      "prompt": "Buktikan bahwa irisan keluarga takkosong himpunan kompak di ℝ kompak. Jelaskan mengapa keluarga kosong perlu dikecualikan.",
+      "prompt": "HK-06. Buktikan bahwa irisan keluarga takkosong himpunan kompak di ℝ kompak. Jelaskan mengapa keluarga kosong perlu dikecualikan.",
       "hint": "Gunakan satu anggota sebagai himpunan kompak induk.",
-      "answer": "Misalkan (K_i)_{i∈I} keluarga himpunan kompak dengan I≠∅, dan pilih i_0∈I. Setiap K_i tertutup di ℝ menurut Heine–Borel. Irisan F=⋂_{i∈I}K_i tertutup sebagai irisan sebarang himpunan tertutup. Selain itu F⊆K_{i_0}; karena K_{i_0} terbatas, F juga terbatas. Heine–Borel menjamin F kompak, termasuk bila F=∅. Jika I=∅ dan irisan diambil relatif terhadap ℝ, konvensinya ⋂_{i∈∅}K_i=ℝ, yang tidak terbatas dan tidak kompak. Jadi hipotesis I≠∅ penting."
+      "answer": "Misalkan (K_i)_{i∈I} keluarga himpunan kompak dengan $I\\ne\\varnothing$, dan pilih i_0∈I. Setiap K_i tertutup di ℝ menurut Heine–Borel. Irisan F=⋂_{i∈I}K_i tertutup sebagai irisan sebarang himpunan tertutup. Selain itu $F\\subseteq K$_{i_0}; karena K_{i_0} terbatas, F juga terbatas. Heine–Borel menjamin F kompak, termasuk bila $F=\\varnothing$. Jika I=∅ dan irisan diambil relatif terhadap ℝ, konvensinya ⋂_{i∈∅}K_i=ℝ, yang tidak terbatas dan tidak kompak. Jadi hipotesis $I\\ne\\varnothing$ penting."
     },
     {
-      "prompt": "Untuk f(x)=1/x pada [1,3], tentukan citranya dan buktikan fungsi mencapai ekstrem.",
+      "prompt": "HK-07. Untuk f(x)=1/x pada [1,3], tentukan citranya dan buktikan fungsi mencapai ekstrem.",
       "hint": "Gunakan kontinuitas dan monoton turun.",
       "answer": "Pada K=[1,3], fungsi f(x)=1/x kontinu karena penyebut tidak nol. Interval K tertutup dan terbatas, sehingga kompak. Karena f menurun ketat untuk x>0, nilai terbesar terjadi pada x=1 dan bernilai 1, sedangkan nilai terkecil terjadi pada x=3 dan bernilai 1/3. Untuk setiap y∈[1/3,1], titik x=1/y berada dalam [1,3] dan f(x)=y; jadi f(K)=[1/3,1]. Kekompakan citra juga mengikuti teorema citra kontinu. Kedua ekstrem dicapai, bukan hanya berupa supremum dan infimum."
     },
     {
-      "prompt": "Buktikan bahwa fungsi kontinu f:[a,b]→ℝ dengan a≤b mencapai maksimum dan minimum.",
+      "prompt": "HK-08. Buktikan bahwa fungsi kontinu f:[a,b]→ℝ dengan $a\\le b$ mencapai maksimum dan minimum.",
       "hint": "Gunakan kekompakan citra dan sifat supremum.",
       "answer": "Karena [a,b] tertutup dan terbatas, Teorema Heine–Borel memastikan K=[a,b] kompak. Fungsi f kontinu, sehingga citra S=f(K) kompak di ℝ. Himpunan S tidak kosong karena a∈K, dan kompak mengakibatkan S terbatas serta tertutup. Oleh sifat kelengkapan ℝ, M=sup S dan m=inf S ada sebagai bilangan real. Pilih untuk setiap n titik y_n∈S dengan M−1/n<y_n≤M. Barisan y_n menuju M; ketertutupan S memberi M∈S. Dengan cara serupa, terdapat z_n∈S yang menuju m dan ketertutupan memberi m∈S. Karena M,m∈f(K), terdapat x_M,x_m∈[a,b] dengan f(x_M)=M dan f(x_m)=m. Dengan demikian kedua nilai ekstrem benar-benar dicapai."
     }
