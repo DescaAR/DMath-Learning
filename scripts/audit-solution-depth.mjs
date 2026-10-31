@@ -58,6 +58,54 @@ const {bookSubjects}=loadSource(path.join(root,"data/book-curricula.ts"));
 const {getBookSectionContent}=loadSource(path.join(root,"data/book-section-content.ts"));
 const normalize=s=>String(s??"").replace(/\s+/g," ").trim();
 
+// Monte Carlo: inspect the public rendered override, original solutions and exact identities.
+{
+  const lesson=getBookSectionContent("or-monte-carlo");
+  assert.ok(lesson,"Monte Carlo lesson must be registered on the public book route");
+  const defs=lesson.formal.filter(item=>item.kind==="definition");
+  const results=lesson.formal.filter(item=>["lemma","proposition","theorem","corollary"].includes(item.kind));
+  assert.equal(defs.length,4,"Monte Carlo requires four exact definitions");
+  assert.equal(results.length,7,"Monte Carlo requires seven fully proved results");
+  assert.equal(lesson.examples.length,8,"Monte Carlo requires eight worked examples");
+  assert.equal(lesson.exercises.length,8,"Monte Carlo requires eight solved exercises");
+  for(const def of defs){
+    assert.ok(lesson.examples.some(example=>example.forDefinition===def.title),
+      "Missing immediate concrete Monte Carlo definition example: "+def.title);
+  }
+  for(const result of results){
+    assert.ok(result.proof?.length>=3 && normalize(result.proof.join(" ")).length>380,
+      "Incomplete Monte Carlo proof: "+result.title);
+    assert.match(result.proof.at(-1),/\\square/,"Missing Monte Carlo proof terminator");
+  }
+  for(const example of lesson.examples){
+    assert.ok(example.solution.length>=3 && normalize(example.solution.join(" ")).length>280,
+      "Monte Carlo worked example too short: "+example.title);
+    assert.doesNotMatch(example.problem+" "+example.solution.join(" "),
+      /matriks transisi|utilisasi server|antrean dengan laju/i,
+      "Unrelated Markov/queue example still rendered");
+  }
+  for(let i=1;i<=8;i++){
+    const id="MC-"+String(i).padStart(2,"0")+".";
+    const exercise=lesson.exercises.find(item=>item.prompt.startsWith(id));
+    assert.ok(exercise && normalize(exercise.answer).length>400,
+      "Missing complete Monte Carlo exercise: "+id);
+    assert.doesNotMatch(exercise.answer,/jawaban yang baik|contoh harus|susunlah penjelasan|strategi penyelesaian/i,
+      "Generic rubric instead of a solved Monte Carlo exercise");
+  }
+  const close=(a,b)=>Math.abs(a-b)<1e-12;
+  assert.ok(close((0+1/16+1/4+9/16)/4,7/32));
+  assert.ok(close(1/5-1/9,4/45));
+  assert.ok(close(4/45/0.1**2/178,80/(9*178)));
+  assert.ok(80/(9*178)<=0.05);
+  assert.ok(close(0.2+2*0.5+3*0.3,2.1));
+  assert.ok(close(1/8-1/9,1/72));
+  assert.ok(close(7/60-1/9,1/180));
+  assert.ok(close(0.3*0.7/100,0.0021));
+  const registry=fs.readFileSync(path.join(root,"data/book-section-content.ts"),"utf8");
+  assert.match(registry,/"or-monte-carlo":monteCarloContent/,"Monte Carlo override not registered");
+}
+
+
 // Moving-average forecasting regression: actual rendered lesson and exact numerical identities.
 {
   const lesson=getBookSectionContent("or-forecast-moving-average");
