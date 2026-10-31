@@ -1,3 +1,4 @@
+import { realOpenClosedContent } from "@/data/real-open-closed-content";
 import { transportationModelContent } from "@/data/transportation-model-content";
 import { compactSetsContent } from "@/data/compact-sets-content";
 import { eulerHamiltonContent } from "@/data/euler-hamilton-content";
@@ -96,6 +97,8 @@ export const bookSectionContent:Record<string,BookLessonContent>={
   ...measureProbabilityContentB,
   ...measureProbabilityContentC,
   ...measureProbabilityContentD,
+  // Open/closed sets in R: neighborhood criteria, closure, boundary and complete solutions.
+  "himpunan-buka-dan-tertutup-r":realOpenClosedContent,
   // Balanced transportation models: exact feasibility, dual certificates and original solutions.
   "or-transportation-model":transportationModelContent,
   // Compactness on the real line: finite subcovers, Heine–Borel and complete solutions.
