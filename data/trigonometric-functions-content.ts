@@ -39,7 +39,7 @@ export const trigonometricFunctionsContent: BookLessonContent =  {
       "statement": "Untuk setiap $\\theta\\in\\mathbb R$, berlaku $\\sin^2\\theta+\\cos^2\\theta=1$. Akibatnya $|\\sin\\theta|\\le1$ dan $|\\cos\\theta|\\le1$.",
       "proof": [
         "Diketahui titik hasil rotasi $\\theta$ dari $(1,0)$ berada pada lingkaran satuan. Berdasarkan definisi sinus dan kosinus, titik tersebut adalah $(\\cos\\theta,\\sin\\theta)$. Persamaan lingkaran satuan menyatakan $x^2+y^2=1$ untuk setiap titiknya.",
-        "Substitusi koordinat memberi $\\cos^2\\theta+\\sin^2\\theta=1$. Karena kedua kuadrat tidak negatif, masing-masing paling besar $1$, sehingga $|\\cos\\theta|\\le1$ dan $|\\sin\\theta|\\le1$. Misalnya untuk $\\theta=\\pi/3$, nilai $\\frac14+\\frac34=1$ memverifikasi identitas. Pernyataan terbukti. $\\\\square$"
+        "Substitusi koordinat memberi $\\cos^2\\theta+\\sin^2\\theta=1$. Karena kedua kuadrat tidak negatif, masing-masing paling besar $1$, sehingga $|\\cos\\theta|\\le1$ dan $|\\sin\\theta|\\le1$. Misalnya untuk $\\theta=\\pi/3$, nilai $\\frac14+\\frac34=1$ memverifikasi identitas. Pernyataan terbukti. $\\square$"
       ],
       "explanation": "Identitas ini merupakan sifat geometri koordinat, bukan asumsi tentang segitiga yang hanya berlaku pada sudut lancip."
     },
@@ -50,7 +50,7 @@ export const trigonometricFunctionsContent: BookLessonContent =  {
       "proof": [
         "Rotasi bidang sebesar $\\alpha$ adalah pemetaan linear yang mengirim basis $e_1=(1,0)$ ke $(\\cos\\alpha,\\sin\\alpha)$ dan basis $e_2=(0,1)$ ke $(-\\sin\\alpha,\\cos\\alpha)$. Citra kedua diperoleh karena rotasi mempertahankan sudut siku-siku dan orientasi. Oleh linearitas rotasi, citra $(x,y)$ adalah $(x\\cos\\alpha-y\\sin\\alpha,\\;x\\sin\\alpha+y\\cos\\alpha)$.",
         "Mulai dari $(1,0)$, rotasi sebesar $\\beta$ menghasilkan $(\\cos\\beta,\\sin\\beta)$. Rotasi lanjutan sebesar $\\alpha$ memberi koordinat $(\\cos\\beta\\cos\\alpha-\\sin\\beta\\sin\\alpha,\\;\\cos\\beta\\sin\\alpha+\\sin\\beta\\cos\\alpha)$. Komposisi dua rotasi berorientasi tersebut sama dengan rotasi sebesar $\\alpha+\\beta$, yang menurut definisi mempunyai koordinat $(\\cos(\\alpha+\\beta),\\sin(\\alpha+\\beta))$.",
-        "Samakan masing-masing koordinat untuk memperoleh kedua identitas yang dinyatakan. Tidak diperlukan pembatasan sudut ke kuadran pertama karena rotasi dan koordinat didefinisikan untuk seluruh bilangan real. Pembuktian selesai. $\\\\square$"
+        "Samakan masing-masing koordinat untuk memperoleh kedua identitas yang dinyatakan. Tidak diperlukan pembatasan sudut ke kuadran pertama karena rotasi dan koordinat didefinisikan untuk seluruh bilangan real. Pembuktian selesai. $\\square$"
       ],
       "explanation": "Tanda minus pada rumus kosinus berasal dari koordinat horizontal citra basis vertikal, yaitu $(-sinalpha,cosalpha)$."
     },
@@ -61,7 +61,7 @@ export const trigonometricFunctionsContent: BookLessonContent =  {
       "proof": [
         "Refleksi terhadap sumbu horizontal mengubah sudut berorientasi $\\theta$ menjadi $-\\theta$ dan titik $(x,y)$ menjadi $(x,-y)$. Karena itu koordinat horizontal tetap dan koordinat vertikal berubah tanda, yang membuktikan sifat genap kosinus serta ganjil sinus.",
         "Rotasi penuh $2\\pi$ mengembalikan setiap titik lingkaran satuan ke posisi semula. Definisi koordinat memberi $\\cos(\\theta+2\\pi)=\\cos\\theta$ dan $\\sin(\\theta+2\\pi)=\\sin\\theta$. Rotasi setengah putaran mengubah $(x,y)$ menjadi $(-x,-y)$, sehingga $\\cos(\\theta+\\pi)=-\\cos\\theta$ dan $\\sin(\\theta+\\pi)=-\\sin\\theta$.",
-        "Jika $\\cos\\theta\\ne0$, kedua koordinat yang berlawanan tanda tetap memiliki rasio sama: $\\tan(\\theta+\\pi)=(-\\sin\\theta)/(-\\cos\\theta)=\\tan\\theta$. Domain juga terpelihara karena $\\cos(\\theta+\\pi)\\ne0$. Semua identitas terbukti. $\\\\square$"
+        "Jika $\\cos\\theta\\ne0$, kedua koordinat yang berlawanan tanda tetap memiliki rasio sama: $\\tan(\\theta+\\pi)=(-\\sin\\theta)/(-\\cos\\theta)=\\tan\\theta$. Domain juga terpelihara karena $\\cos(\\theta+\\pi)\\ne0$. Semua identitas terbukti. $\\square$"
       ],
       "explanation": "Pernyataan bahwa $2pi$ adalah periode belum dengan sendirinya membuktikan bahwa periode fundamentalnya $2pi$; ketunggalan periode terkecil diperiksa tersendiri."
     },
@@ -71,9 +71,9 @@ export const trigonometricFunctionsContent: BookLessonContent =  {
       "statement": "Untuk semua $\\alpha,\\beta\\in\\mathbb R$, berlaku $\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$ dan $\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta$.",
       "proof": [
         "Terapkan rumus penjumlahan pada $\\alpha+(-\\beta)$. Untuk kosinus diperoleh $\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos(-\\beta)-\\sin\\alpha\\sin(-\\beta)$.",
-        "Gunakan sifat genap kosinus dan ganjil sinus: $\\cos(-\\beta)=\\cos\\beta$ dan $\\sin(-\\beta)=-\\sin\\beta$. Substitusi memberi $\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$. Dengan cara yang sama, $\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta$. Kedua identitas terbukti. $\\\\square$"
+        "Gunakan sifat genap kosinus dan ganjil sinus: $\\cos(-\\beta)=\\cos\\beta$ dan $\\sin(-\\beta)=-\\sin\\beta$. Substitusi memberi $\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$. Dengan cara yang sama, $\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta$. Kedua identitas terbukti. $\\square$"
       ],
-      "explanation": "Rumus ini juga menunjukkan bahwa hasil kali titik dua vektor satuan bersudut $alpha$ dan $\beta$ adalah kosinus selisih sudutnya."
+      "explanation": "Rumus ini juga menunjukkan bahwa hasil kali titik dua vektor satuan bersudut $\\alpha$ dan $\\beta$ adalah kosinus selisih sudutnya."
     },
     {
       "kind": "proposition",
@@ -81,7 +81,7 @@ export const trigonometricFunctionsContent: BookLessonContent =  {
       "statement": "Untuk $\\theta\\in\\mathbb R$, $\\sin\\theta=0$ jika dan hanya jika $\\theta=k\\pi$ untuk suatu $k\\in\\mathbb Z$. Selain itu, $\\cos\\theta=0$ jika dan hanya jika $\\theta=\\pi/2+k\\pi$ untuk suatu $k\\in\\mathbb Z$.",
       "proof": [
         "$(\\Rightarrow)$ Jika $\\sin\\theta=0$, titik lingkaran satuan berkoordinat vertikal nol. Persamaan $x^2+y^2=1$ memberi $x=\\pm1$, sehingga titiknya $(1,0)$ atau $(-1,0)$. Sudut yang berakhir pada kedua titik itu adalah kelipatan bulat $\\pi$, karena putaran penuh bernilai $2\\pi$ dan setengah putaran bernilai $\\pi$.",
-        "$(\\Leftarrow)$ Jika $\\theta=k\\pi$, rotasi sejumlah $k$ setengah putaran berakhir pada salah satu dari dua titik sumbu horizontal. Koordinat vertikalnya nol, sehingga $\\sin\\theta=0$. Untuk kosinus, argumen serupa memakai titik $(0,1)$ dan $(0,-1)$ pada sumbu vertikal, yang dicapai tepat pada sudut $\\pi/2+k\\pi$. Kedua arah bagi kedua karakterisasi terbukti. $\\\\square$"
+        "$(\\Leftarrow)$ Jika $\\theta=k\\pi$, rotasi sejumlah $k$ setengah putaran berakhir pada salah satu dari dua titik sumbu horizontal. Koordinat vertikalnya nol, sehingga $\\sin\\theta=0$. Untuk kosinus, argumen serupa memakai titik $(0,1)$ dan $(0,-1)$ pada sumbu vertikal, yang dicapai tepat pada sudut $\\pi/2+k\\pi$. Kedua arah bagi kedua karakterisasi terbukti. $\\square$"
       ],
       "explanation": "Kriteria ini memberikan domain tangen secara tepat; mengabaikan titik nol kosinus menghasilkan pembagian yang tidak terdefinisi."
     }
@@ -175,7 +175,7 @@ export const trigonometricFunctionsContent: BookLessonContent =  {
   "exercises": [
     {
       "prompt": "TG-01. Ubah $150^\\circ$ ke radian, lalu hitung panjang busur pada lingkaran berjari-jari $12$ cm.",
-      "hint": "Gunakan $180^circ=pi$ radian dan $s=r\theta$.",
+      "hint": "Gunakan $180^\\circ=\\pi$ radian dan $s=r\\theta$.",
       "answer": "Diketahui sudut pusat $150^\\circ$ dan jari-jari $r=12$ cm. Konversi ke radian memakai perbandingan satu putaran: $\\theta=150(\\pi/180)=5\\pi/6$ radian. Karena sudut ini lebih kecil daripada $\\pi$, panjang busurnya harus kurang daripada setengah keliling $12\\pi$ cm. Rumus panjang busur dalam radian memberikan $s=r\\theta=12(5\\pi/6)=10\\pi$ cm. Pemeriksaan balik: $s/r=(10\\pi)/12=5\\pi/6$, yang dikonversi menjadi $150^\\circ$. Selain itu $10\\pi<12\\pi$, sesuai ukuran sudut. Panjang busur yang diminta tepat $10\\pi$ cm."
     },
     {
@@ -185,12 +185,12 @@ export const trigonometricFunctionsContent: BookLessonContent =  {
     },
     {
       "prompt": "TG-03. Buktikan $1+\\tan^2\\theta=1/\\cos^2\\theta$ pada seluruh domain yang sah dan jelaskan mengapa $\\theta=\\pi/2$ dikecualikan.",
-      "hint": "Mulai dari $sin^2\theta+cos^2\theta=1$ dan periksa penyebut.",
+      "hint": "Mulai dari $\\sin^2\\theta+\\cos^2\\theta=1$ dan periksa penyebut.",
       "answer": "Diketahui $\\cos\\theta\\ne0$, sehingga $\\tan\\theta=\\sin\\theta/\\cos\\theta$ dan pembagian oleh $\\cos^2\\theta$ sah. Identitas Pythagoras memberi $\\sin^2\\theta+\\cos^2\\theta=1$. Bagi setiap suku dengan $\\cos^2\\theta$ untuk memperoleh $\\sin^2\\theta/\\cos^2\\theta+1=1/\\cos^2\\theta$, yakni $1+\\tan^2\\theta=1/\\cos^2\\theta$. Sebagai pemeriksaan, pada $\\theta=\\pi/4$ kedua ruas bernilai $2$. Pada $\\theta=\\pi/2$, kosinus nol, sehingga kedua bentuk yang memuat pembagian tidak terdefinisi; identitas tidak boleh diterapkan di titik itu. Pembuktian selesai. $\\square$"
     },
     {
       "prompt": "TG-04. Gunakan rumus penjumlahan untuk menghitung $\\sin(\\pi/6+\\pi/3)$ dan verifikasi secara geometris.",
-      "hint": "Gunakan $sin(alpha+\beta)=sinalphacos\beta+cosalphasin\beta$.",
+      "hint": "Gunakan $\\sin(\\alpha+\\beta)=\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta$.",
       "answer": "Diketahui $\\alpha=\\pi/6$ dan $\\beta=\\pi/3$. Rumus penjumlahan memberi $\\sin(\\alpha+\\beta)=\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta$. Substitusi nilai sudut istimewa menghasilkan $(1/2)(1/2)+(\\sqrt3/2)(\\sqrt3/2)=1/4+3/4=1$. Secara geometris, $\\pi/6+\\pi/3=\\pi/2$, dan titik lingkaran satuan pada sudut $\\pi/2$ adalah $(0,1)$, sehingga sinusnya tepat $1$. Kedua perhitungan saling memverifikasi. Hasilnya tidak bergantung pada pendekatan desimal dan menunjukkan konsistensi rumus penjumlahan dengan definisi lingkaran satuan."
     },
     {
