@@ -46,9 +46,9 @@ export function SiteHeader() {
 
         <nav className="desktop-nav" aria-label={language === "en" ? "Main navigation" : "Navigasi utama"}>
           {siteConfig.nav.map((item) => (
-            <Link key={item.href} href={item.href} className={"site-nav-link"+(pathname===item.href||(item.href!=="/"&&pathname.startsWith(item.href+"/"))?" is-active":"")} aria-current={pathname===item.href||(item.href!=="/"&&pathname.startsWith(item.href+"/"))?"page":undefined}>{t(item.label)}</Link>
+            <Link key={item.href} href={item.href} className={"site-nav-link"+(pathname===item.href||pathname.startsWith(item.href+"/")?" is-active":"")} aria-current={pathname===item.href||pathname.startsWith(item.href+"/")?"page":undefined}>{t(item.label)}</Link>
           ))}
-          <Link href="/search" className="nav-search" aria-label={language === "en" ? "Search all content" : "Cari seluruh konten"}>
+          <Link href="/search" className="nav-search" aria-label={language === "en" ? "Search competition problems" : "Cari soal kompetisi"}>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><span>{t("Cari")}</span>
           </Link>
         </nav>
