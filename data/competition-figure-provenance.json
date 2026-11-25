@@ -1,0 +1,96 @@
+{
+  "rule": "Only diagrams actually present in the question source may be published. Reconstructed figures must reproduce the source, not add explanation. Pending visual matches must be tracked.",
+  "figures": {
+    "iymc-2022-qr-e": {
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "iymc-2023-qr-e": {
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "iymc-2025-qr-e": {
+      "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "umo-2018-03": {
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "umo-2018-04": {
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "umo-2018-05": {
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-06": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "basis": "source PDF diagram confirmed"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-07": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "basis": "source PDF diagram confirmed"
+    },
+    "ksnk-sd-2020-02": {
+      "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
+      "basis": "third-party text explicitly refers to original illustration; visual match not yet confirmed"
+    },
+    "osn-sd-2006-i2": {
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-11": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "basis": "source PDF diagram confirmed"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-12": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "basis": "official HTML explicitly references the original diagram; PDF visual match pending"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-16": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "basis": "official HTML explicitly references the original diagram; PDF visual match pending"
+    },
+    "umo-2016-01": {
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "umo-2017-01": {
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "umo-2017-05": {
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "umo-2019-01": {
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "umo-2022-01": {
+      "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    },
+    "umo-2023-01": {
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "basis": "source PDF diagram confirmed"
+    }
+  },
+  "table": {
+    "ksn-smp-2021-07": {
+      "url": "https://id.scribd.com/document/548447534/SOAL-KSN-MATEMATIKA",
+      "basis": "source transcription explicitly refers to table; exact visual match pending"
+    }
+  },
+  "excluded": [
+    "sd-003",
+    "sd-007",
+    "smp-004",
+    "sma-004",
+    "umo-2025-01",
+    "umo-2017-03",
+    "osn-sd-2006-i4"
+  ]
+}

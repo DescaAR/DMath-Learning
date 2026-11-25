@@ -116,7 +116,12 @@ for(const m of figureBlock[1].matchAll(/"([a-z0-9-]+)"\s*:/g)){
  assert.ok(fs.existsSync("figures/competition/"+id+".tex"),"Missing TikZ source "+id);
  figureCount++;
 }
-assert.ok(figureCount>=26,"Missing registered figures");
+const visualPolicy=JSON.parse(read("data/competition-figure-provenance.json"));
+const displayedFigureIds=[...figureBlock[1].matchAll(/"([a-z0-9-]+)"\s*:/g)].map(m=>m[1]).sort();
+assert.deepEqual(displayedFigureIds,Object.keys(visualPolicy.figures).sort(),"Every displayed illustration must have question-source provenance");
+for(const id of displayedFigureIds){const entry=visualPolicy.figures[id];assert.ok(entry.url.startsWith("https://")&&entry.basis.trim(),id+" lacks source verification");}
+for(const id of visualPolicy.excluded)assert.ok(!displayedFigureIds.includes(id),"Supplementary illustration is not allowed: "+id);
+assert.equal(figureCount,displayedFigureIds.length);
 assert.ok(competitionProblems.some(p=>p.id==="ksn-smp-2021-07"));
 assert.match(workspace,/aria-label="Tabel tiga baris dan delapan kolom"/);
 console.log("Question display audit:",choices,"multiple-choice records,",subparts,"lettered lists,",figureCount,"registered figures.");

@@ -1901,7 +1901,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 2,
     "title": "Sudut dalam segitiga",
-    "prompt": "Pada segitiga $ABC$, titik $D$ terletak pada sisi $AB$. Diketahui $\\angle ACD=43^\\circ$, $\\angle DCB=29^\\circ$, dan $\\angle ABC=48^\\circ$. Berapakah besar $\\angle CAD$?",
+    "prompt": "Berapa besar sudut $CAD$?",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2006 — Isian 2",
@@ -1910,7 +1910,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 2",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Isi matematis, nomor soal dan unsur gambar (jika ada) diperiksa terhadap salinan PDF publik, halaman 1, termasuk pemeriksaan visual. Redaksi mandiri."
+      "note": "Isi matematis, nomor soal dan unsur gambar (jika ada) diperiksa terhadap salinan PDF publik, halaman 1, termasuk pemeriksaan visual. Redaksi mandiri. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
     }
   },
   {
@@ -3257,7 +3257,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Maksimum jarak titik ke garis",
-    "prompt": "Distinct points $A,B,C$ lie on a circle centered at $O$, with $\\angle AOB=\\angle BOC=60^\\circ$. Among points $P$ of segment $AC$, choose one maximizing the distance from $C$ to line $BP$. Determine $AP:PC$.",
+    "prompt": "Three different points $A,B,C$ belong to a circle with center $O$, where $\\angle AOB=\\angle BOC=60^\\circ$. Take $P$ on chord $AC$ and draw triangle $BPC$. Determine $AP:PC$ when $P$ is selected to maximize the length of the altitude from $C$ to $BP$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3266,7 +3266,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2017 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
     }
   },
   {
@@ -3293,7 +3293,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Permainan delapan wadah",
-    "prompt": "Eight empty containers each hold two liters. In each round, player A distributes one liter among the containers, then player B empties two containers of B's choice. Player A wins as soon as a container overflows. Can A force a win after finitely many rounds? Prove the answer.",
+    "prompt": "You are challenged by the Great Pumpkin to a game involving eight empty buckets, each with a capacity of two liters of water. You take the first turn, and then alternate with the Great Pumpkin.\n\nOn each of your turns, distribute one liter of water among the buckets in any proportions. On each of its turns, the Great Pumpkin empties two buckets of its choice. You defeat the Great Pumpkin if any bucket overflows.\n\nCan you guarantee victory after sufficiently many turns, regardless of the Great Pumpkin's choices? Prove your conclusion.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3302,7 +3302,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2017 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
     }
   },
   {
@@ -3401,7 +3401,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Pemisahan warna pada lingkaran",
-    "prompt": "Twelve labeled points are equally spaced around a circle. Color exactly three points red, three green, three blue, and three white. For each pair of distinct colors, a straight line must separate the three points of one color from the three of the other. Count the admissible colorings.",
+    "prompt": "Twelve labeled points are equally spaced around a circle, as shown. Choose three points of each color: red, green, blue and white. Count the colorings for which, for any pair of colors, a line separates all three points of the first color from all three of the second. For instance, a line must exist with every green point on one side and every white point on the other.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3410,7 +3410,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2018 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
     }
   },
   {
@@ -3419,7 +3419,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Pengubinan persegi",
-    "prompt": "Count the tilings of a $4\\times4$ square by axis-aligned squares whose side lengths belong to $\\{1,2,3,4\\}$.",
+    "prompt": "In how many ways can a $4\\times4$ square be partitioned into one or more squares of sizes $1\\times1$, $2\\times2$, $3\\times3$ and $4\\times4$? The figure illustrates three distinct partitions.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3428,7 +3428,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2019 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
     }
   },
   {
@@ -3635,7 +3635,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan pelipatan kisi",
-    "prompt": "Alpha and Beta alternate folds of a $10\\times100$ rectangular grid, with Alpha first. Each turn folds the current grid on an interior horizontal or vertical gridline, producing a smaller rectangular grid. The final fold wins. Determine the winner when both play optimally, and prove it.",
+    "prompt": "Alpha and Beta alternate folds of a $10\\times100$ rectangular grid, with Alpha going first. A turn consists of folding the current grid along an interior horizontal or vertical gridline to produce a smaller rectangular grid. For instance, the initial choice is among nine horizontal and ninety-nine vertical lines. The player making the final fold wins. Determine the winner under optimal play, with proof.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3644,7 +3644,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2022 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
     }
   },
   {
@@ -7991,7 +7991,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "FPB dari ekspresi bilangan prima",
-    "prompt": "For distinct primes $p$ and $q$, determine the set of possible values of $$\\gcd\\left(p-1,\\frac{q^p-1}{q-1}\\right).$$",
+    "prompt": "For distinct primes $p$ and $q$, determine the set of possible values of $$\\gcd\\left(p-1,\\frac{q^p-1}{q-1}\\right).$$ For positive integers $x,y$, the notation $\\gcd(x,y)$ means their greatest common divisor.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8000,7 +8000,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2018 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
     }
   },
   {
@@ -8099,7 +8099,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Permainan strategi memetik apel",
-    "prompt": "Menelaus and Paris alternate turns, starting with Menelaus, in a contest with initially empty baskets. Menelaus may pick apples or discard all apples in Paris's basket. Paris may pick apples or transfer all apples from Menelaus's basket to his own, but he may use this theft action at most once.\n\nEach player's first picking action yields one apple; each later picking action yields one more than that player's previous picking action. The first player to accumulate $1225$ unspoiled apples wins.\n\nFor example, the basket counts $(m,p)$ after successive individual actions could be $(1,0),(1,1),(3,1),(3,3),(3,0),(3,3),(6,3),(0,9),(0,0),(0,4)$.\n\nDetermine which player can force a win and prove it.",
+    "prompt": "Menelaus and Paris alternate turns, starting with Menelaus, in an apple-picking competition. Menelaus may pick apples or discard all apples in Paris's basket. Paris may pick apples or transfer all apples from Menelaus's basket to his own, but he may use this theft action at most once.\n\nEach player's first picking action yields one apple; each later picking action yields one more than that player's previous picking action. The first player to accumulate $1225$ unspoiled apples wins.\n\nHere is an example of five rounds, where $(m,p)$ records the apples in the two baskets after each action:\n\nMenelaus picks one: $(1,0)$. Paris picks one: $(1,1)$.\nMenelaus picks two: $(3,1)$. Paris picks two: $(3,3)$.\nMenelaus discards Paris's apples: $(3,0)$. Paris picks three: $(3,3)$.\nMenelaus picks three: $(6,3)$. Paris steals Menelaus's apples: $(0,9)$.\nMenelaus discards Paris's apples: $(0,0)$. Paris picks four: $(0,4)$.\n\nDetermine which player can force a win, and prove the answer.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8108,7 +8108,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2025 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
     }
   }
 ];

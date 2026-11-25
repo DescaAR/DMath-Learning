@@ -1312,7 +1312,7 @@ function IMCFullIndex({items}:{items:typeof imcAll}){
  </div>;
 }
 
-// SVG redrawings and corresponding standalone TikZ sources are stored in figures/competition/.
+// Source-only visual registry: a figure may be displayed only if it appears in the source question. Never add explanatory or solution figures.
 const geometryFigures: Readonly<Record<string, {alt:string; width:number; caption?:string}>> = {
  "iymc-2022-qr-e":{alt:"Two horizontally shifted equilateral triangles with common region A shaded.",width:420},
  "iymc-2023-qr-e":{alt:"Equilateral triangle with vertical side a and parallel dotted segment b enclosing shaded triangle A.",width:300},
@@ -1322,11 +1322,8 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number; captio
  "umo-2018-05":{alt:"Twelve uncolored equally spaced points on a circle, numbered clockwise from 1 at the top.",width:290},
  "cemc-waterloo-2025-gauss-grade-8-06":{alt:"An uncolored triangle directly above a square, sharing its top edge.",width:145},
  "cemc-waterloo-2025-gauss-grade-8-07":{alt:"A coordinate grid with x and y axes and the point (5, 7) marked.",width:290},
- "sd-003":{alt:"Papan 6 kali 6 dengan ubin yang dilepas sesuai posisi dalam soal.",width:240},
- "sd-007":{alt:"Papan 4 kali 4 dengan ubin yang dilepas sesuai posisi dalam soal.",width:240},
  "ksnk-sd-2020-02":{alt:"Ilustrasi pola satu, dua, dan tiga meja segienam yang disambung, dengan kursi pada setiap sisi luar.",width:400},
  "osn-sd-2006-i2":{alt:"Segitiga ABC dengan D pada AB; sudut ACD 43 derajat, DCB 29 derajat, ABC 48 derajat.",width:310},
- "osn-sd-2006-i4":{alt:"Trapesium siku-siku ABCD dengan AB 16 cm, DC 10 cm, dan sudut A 45 derajat.",width:310},
  "cemc-waterloo-2025-gauss-grade-7-11":{alt:"Coordinate plane with point R at (2, 6).",width:290},
  "cemc-waterloo-2026-pascal-grade-9-12":{alt:"Coordinate plane with point P at (2, 3).",width:290},
  "cemc-waterloo-2026-pascal-grade-9-16":{alt:"Four distinct collinear points in order P, Q, R, S; schematic, not to scale.",width:320},
@@ -1334,10 +1331,6 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number; captio
  "umo-2017-01":{alt:"Invalid road coloring: orange edges 1–3 and 2–4, blue edges 1–2, 1–4, 2–3, 3–4.",width:250,caption:"Example of an inadmissible coloring: cities 1 and 2 cannot be connected using only orange roads."},
  "umo-2017-05":{alt:"Eight identical empty containers.",width:400},
  "umo-2019-01":{alt:"Three different tilings of a four by four square, as illustrated in the contest paper.",width:390,caption:"Three distinct examples of tilings."},
- "umo-2025-01":{alt:"Regular octagon with all eight sides and twenty diagonals drawn.",width:300},
- "smp-004":{alt:"Persegi panjang ABCD dengan AB 12, BC 8, AP 3, BQ 2, CR 4, serta segitiga PQR.",width:330},
- "sma-004":{alt:"Segitiga siku-siku ABC dengan AB 10, AC 12, titik P pada AB dan Q pada AC; BP + CQ = 12.",width:300,caption:"Ilustrasi salah satu posisi P dan Q yang memenuhi syarat."},
- "umo-2017-03":{alt:"Points A, B, C on a circle with both central angles sixty degrees; P on chord AC.",width:290,caption:"Illustrative position of P on chord AC."},
  "umo-2022-01":{alt:"Four overlapping squares, each shifted by one sixth of its side length to the upper right.",width:245},
  "umo-2023-01":{alt:"Diamond-shaped board with 25 unit cells in seven centered rows.",width:260},
 };
