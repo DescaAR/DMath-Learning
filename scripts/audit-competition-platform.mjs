@@ -26,15 +26,15 @@ for(const p of competitionProblems){
  }
 }
 const home=read("app/page.tsx"),workspace=read("components/CompetitionWorkspace.tsx"),config=read("config/site.ts"),css=read("app/competition.css"),layout=read("app/layout.tsx");
-for(const [route,name] of [["problem-solving","Problem Solving"],["proof-academy","Proof Academy"],["problem-evolution","Problem Evolution"],["problem-of-the-day","Problem of the Day"]]){
+for(const [route,name] of [["problem-solving","Problem Solving"],["problem-of-the-day","Problem of the Day"]]){
  assert.ok(fs.existsSync("app/"+route+"/page.tsx"),route+" route missing");
  assert.ok(config.includes('href: "/'+route+'"'),route+" missing in main nav");
  assert.ok(home.includes(name),name+" missing from landing page");
 }
 assert.doesNotMatch(home,/HomeMathShowcase|\/materi|Interactive Lab|Math Tools|Find the Mistake/);
 assert.ok(read("app/arsip/page.tsx").includes('"/materi"'),"Legacy material archive is missing");
-assert.match(workspace,/p\.hints\.slice\(0,hints\)/);
-assert.match(workspace,/localStorage\.setItem/);assert.match(workspace,/Asia\/Jakarta/);assert.match(workspace,/dayIndex\(date\)/);assert.match(workspace,/mode==="proof"/);assert.match(workspace,/mode==="evolve"/);
+assert.doesNotMatch(workspace,/Ruang kerja|Catatan penyelesaian|Periksa argumen|Progressive Hints|Tandai selesai|setNotes|localStorage|p\.proof\.prompt|p\.evolution\.prompt/);
+assert.match(workspace,/Asia\/Jakarta/);assert.match(workspace,/dayIndex\(date\)/);assert.match(workspace,/p\.solutions\.map/);assert.match(workspace,/id="solution"/);assert.match(workspace,/id="source"/);assert.doesNotMatch(config,/Proof Academy|Problem Evolution/);
 assert.match(read("app/problem-solving/[id]/page.tsx"),/generateStaticParams/);
 assert.match(layout,/competition\.css/);assert.match(css,/@media\(max-width:500px\)/);assert.match(css,/prefers-reduced-motion/);
-console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and four navigation routes. This is structural validation, not a formal proof checker.");
+console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and two navigation routes. This is structural validation, not a formal proof checker.");
