@@ -609,15 +609,15 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Gabungan dan irisan interval",
-    "prompt": "Untuk $n\\in\\mathbb N$ dengan $n\\ge1$, misalkan $I_n=\\left(1,1+\\frac1n\\right)$. Tentukan $\\bigcup_{n=1}^{\\infty}I_n$ dan $\\bigcap_{n=1}^{\\infty}I_n$.",
+    "prompt": "Diberikan koleksi interval terbuka pada $\\mathbb R$, yaitu $$I=\\left\\{I_n\\mid I_n=\\left(1,1+\\frac1n\\right),\\ n\\in\\mathbb N\\right\\}.$$ Tentukan $\\displaystyle\\bigcup_{I_n\\in I}I_n$ dan $\\displaystyle\\bigcap_{I_n\\in I}I_n$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA 2024 — Wilayah, Hari 1, Isian 1",
       "competition": "ON-MIPA",
       "year": 2024,
       "number": "Hari 1, Isian 1",
-      "url": "https://onmipa.filzabuana.id/onmipa/2024-wilayah/",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "url": "https://paggalih.github.io/olimpiade/onmipa-w-2024/",
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri.",
       "stage": "ON-MIPA Wilayah"
     }
   },
@@ -634,8 +634,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "competition": "ON-MIPA",
       "year": 2024,
       "number": "Hari 1, Isian 3",
-      "url": "https://onmipa.filzabuana.id/onmipa/2024-wilayah/",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "url": "https://paggalih.github.io/olimpiade/onmipa-w-2024/",
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri.",
       "stage": "ON-MIPA Wilayah"
     }
   },
@@ -1770,7 +1770,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 1",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1779,7 +1779,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Nomor kendaraan terbesar",
-    "prompt": "Nomor kendaraan terdiri atas empat digit dengan digit pertama bukan nol. Jumlah keempat digit harus merupakan kelipatan 5. Tentukan nomor terbesar yang diperbolehkan.",
+    "prompt": "Di suatu negara, setiap nomor polisi mobil berupa bilangan empat digit dengan jumlah digit yang habis dibagi $5$. Tentukan nomor polisi terbesar yang diizinkan.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2005 — Isian 2",
@@ -1788,7 +1788,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 2",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1806,7 +1806,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 4",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1815,7 +1815,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 2,
     "title": "Jumlah pertandingan",
-    "prompt": "Sepuluh tim mengikuti sebuah turnamen. Setiap pasangan tim bertanding dua kali. Berapa banyak pertandingan yang berlangsung?",
+    "prompt": "Dalam suatu kompetisi sepak bola yang diikuti oleh $10$ tim, setiap tim bertanding dua kali melawan masing-masing tim lainnya. Tentukan jumlah pertandingan yang dilaksanakan.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2005 — Isian 9",
@@ -1824,7 +1824,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 9",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1833,7 +1833,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 3,
     "title": "Menentukan pecahan",
-    "prompt": "Suatu pecahan berubah menjadi $\\frac{2}{3}$ jika pembilangnya ditambah 3. Jika penyebut pecahan semula dikurangi 1, nilainya menjadi $\\frac{1}{2}$. Tentukan pecahan semula.",
+    "prompt": "Misalkan $X$ suatu pecahan. Penambahan $3$ pada pembilang $X$ menghasilkan pecahan $\\frac23$, sedangkan pengurangan $1$ pada penyebut $X$ menghasilkan pecahan $\\frac12$. Tentukan pecahan $X$ semula.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2005 — Isian 10",
@@ -1842,7 +1842,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 10",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1851,7 +1851,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Perbandingan tiga bahan",
-    "prompt": "Tiga bahan $P,Q,R$ digunakan dengan perbandingan $P:Q=6:8$ dan $Q:R=7:3$. Tentukan $P:R$.",
+    "prompt": "Sebuah benda dibuat menggunakan tiga bahan, yaitu $P$, $Q$, dan $R$. Jika perbandingan banyak bahan $P$ terhadap $Q$ adalah $6:8$ dan $Q$ terhadap $R$ adalah $7:3$, tentukan perbandingan banyak bahan $P$ terhadap $R$.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2006 — Isian 1",
@@ -1860,7 +1860,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 1",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1887,7 +1887,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Luas trapesium siku-siku",
-    "prompt": "Pada trapesium $ABCD$, sisi $AB$ sejajar $DC$. Diketahui $\\angle ABC=90^\\circ$, $\\angle DAB=45^\\circ$, $AB=16$ cm, dan $DC=10$ cm. Tentukan luasnya.",
+    "prompt": "Diberikan trapesium siku-siku $ABCD$ dengan $AB$ sejajar $DC$ dan $\\angle ABC=90^\\circ$. Jika $\\angle DAB=45^\\circ$, $AB=16\\,\\mathrm{cm}$, dan $DC=10\\,\\mathrm{cm}$, tentukan luas trapesium $ABCD$.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2006 — Isian 4",
@@ -1896,7 +1896,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 4",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1914,7 +1914,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 6",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1995,7 +1995,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Banyak solusi bilangan bulat nonnegatif",
-    "prompt": "Hitung banyak tupel $(x_1,x_2,x_3,x_4)$ dengan setiap $x_i$ bilangan bulat nonnegatif dan $x_1+x_2+x_3+x_4=7$.",
+    "prompt": "Salah satu penyelesaian persamaan $x_1+x_2+x_3+x_4=7$ adalah $(2,0,4,1)$. Jika semesta pembicaraannya adalah himpunan bilangan bulat nonnegatif, tentukan banyaknya penyelesaian persamaan tersebut.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SMP 2005 — Hari 1, Nomor 2",
@@ -2004,7 +2004,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 2",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -2013,7 +2013,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Statistika",
     "difficulty": 3,
     "title": "Data dengan rata-rata dan median sama",
-    "prompt": "Kenaikan produksi suatu perusahaan dalam lima periode dicatat sebagai persentase. Empat data yang diketahui adalah 4%, 9%, 7%, dan 5%. Tentukan kemungkinan data kelima jika rata-rata dan median kelima data tersebut sama.",
+    "prompt": "Adi, seorang karyawan perusahaan tekstil, diminta menyiapkan catatan kenaikan produksi selama lima periode. Ia hanya menemukan empat data, yaitu $4\\%$, $9\\%$, $7\\%$, dan $5\\%$. Selidiki kemungkinan data kelima jika rata-rata hitung dan median kelima data sama.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SMP 2005 — Hari 1, Nomor 3",
@@ -2022,7 +2022,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 3",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -2850,7 +2850,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
-      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -2868,7 +2868,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 3",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
-      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -2913,7 +2913,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Menentukan citra pemetaan linear",
-    "prompt": "Pemetaan linear $f:\\mathbb R^2\\to\\mathbb R^2$ memenuhi $f(4,1)=(1,1)$ dan $f(1,1)=(3,-2)$. Tentukan $f(0,1)$.",
+    "prompt": "Diketahui pemetaan linear $f:\\mathbb R^2\\to\\mathbb R^2$ dengan $$f\\left(\\begin{bmatrix}4\\\\1\\end{bmatrix}\\right)=\\begin{bmatrix}1\\\\1\\end{bmatrix},\\qquad f\\left(\\begin{bmatrix}1\\\\1\\end{bmatrix}\\right)=\\begin{bmatrix}3\\\\-2\\end{bmatrix}.$$ Tentukan $f\\left(\\begin{bmatrix}0\\\\1\\end{bmatrix}\\right)$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Seleksi Universitas Tanjungpura 2019 — Isian 2",
@@ -2922,7 +2922,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
-      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -2931,7 +2931,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Elemen berorde dua",
-    "prompt": "Misalkan $G=\\{(a,b)\\in\\mathbb R^2\\mid a\\ne0\\}$ dengan operasi $(a,b)*(c,d)=(ac,b+d)$. Tentukan elemen berorde 2 dalam $G$.",
+    "prompt": "Misalkan $G=\\{(a,b)\\in\\mathbb R^2\\mid a\\ne0\\}$. Pada $G$ didefinisikan operasi biner $*$ melalui $$(a,b)*(c,d)=(ac,b+d)$$ untuk setiap $(a,b),(c,d)\\in G$. Tentukan satu-satunya elemen berorde dua di $G$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Seleksi Universitas Tanjungpura 2019 — Isian 7",
@@ -2940,7 +2940,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 7",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
-      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -2958,7 +2958,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 11",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
-      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -2967,7 +2967,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Kompleks",
     "difficulty": 4,
     "title": "Jari-jari konvergensi deret pangkat",
-    "prompt": "Misalkan $(a_n)$ barisan real dengan $a_0=1$, $a_1=2$, dan $a_n=a_{n-1}+a_{n-2}$ untuk $n\\ge2$. Tentukan jari-jari konvergensi deret $\\sum_{n=0}^{\\infty}a_nz^n$.",
+    "prompt": "Misalkan $(a_n)$ merupakan barisan bilangan real dengan $a_0=1$, $a_1=2$, serta $a_n=a_{n-1}+a_{n-2}$ untuk $n\\ge2$. Tentukan jari-jari konvergensi deret pangkat $$\\sum_{n=0}^{\\infty}a_nz^n.$$",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Seleksi Universitas Tanjungpura 2019 — Isian 22",
@@ -2976,7 +2976,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 22",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
-      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6123,7 +6123,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 1,
     "title": "Jumlah sumbangan",
-    "prompt": "A charity receives a donation of five dollars from each of twelve friends. Find the total amount donated. Pilihan: A. $\\$50$; B. $\\$55$; C. $\\$60$; D. $\\$65$; E. $\\$70$",
+    "prompt": "A charity receives a donation of five dollars from each of twelve friends. Find the total amount donated. Pilihan: A. $50$ dollars; B. $55$ dollars; C. $60$ dollars; D. $65$ dollars; E. $70$ dollars",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6789,7 +6789,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Kesamaan jumlah dan hasil kali",
-    "prompt": "Jika $a,b$ bilangan asli memenuhi $88+a+b=ab$, tentukan nilai $ab$.",
+    "prompt": "Pada sebuah papan terdapat $90$ bilangan asli, yaitu $88$ buah bilangan $1$ serta dua bilangan $a$ dan $b$. Jumlah dan hasil kali seluruh bilangan pada papan bernilai sama, yaitu $A$. Tentukan nilai $A$.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6798,7 +6798,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 3",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6807,7 +6807,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Rasio jumlah deret aritmetika",
-    "prompt": "Untuk $a,b\\in\\mathbb Z_{>0}$ dengan $\\gcd(a,b)=1$ dan $\\frac ab=\\frac{\\sum_{j=1}^{104}j}{\\sum_{j=3}^{106}j}$, tentukan $a+b$.",
+    "prompt": "Diketahui bilangan bulat positif $a$ dan $b$ yang relatif prima memenuhi $$\\frac{1+2+3+\\cdots+104}{3+4+5+\\cdots+106}=\\frac ab.$$ Tentukan nilai $a+b$.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6816,7 +6816,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 4",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6825,7 +6825,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 2,
     "title": "Bilangan empat digit dengan jumlah digit delapan",
-    "prompt": "Tentukan banyaknya bilangan bulat dari $1000$ sampai $9999$ yang jumlah digit desimalnya sama dengan $8$.",
+    "prompt": "Suatu bilangan empat digit disebut bilangan OSK jika digit pertamanya bukan nol dan jumlah seluruh digitnya adalah $8$. Contohnya adalah $2024$. Tentukan banyaknya bilangan OSK.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6834,7 +6834,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 5",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6843,7 +6843,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Suku pertama barisan geometri",
-    "prompt": "Diberikan barisan geometri $(u_n)$ dengan $u_1>u_2$, $u_2=8$, dan $4(u_5+u_7)=17u_6$. Tentukan $u_1$.",
+    "prompt": "Misalkan $u_1,u_2,u_3,\\ldots$ merupakan barisan geometri dengan $u_1>u_2$. Diketahui $u_2=8$ dan $$u_5+u_7=\\frac{17u_6}{4}.$$ Tentukan nilai $u_1$.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6852,7 +6852,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 6",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6861,7 +6861,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Keterbagian jumlah bilangan dan kebalikan digit",
-    "prompt": "Tentukan kardinalitas himpunan $\\{10a+b\\mid a,b\\in\\{1,\\ldots,9\\},\\ 66\\mid(11a+11b)\\}$.",
+    "prompt": "Tentukan banyaknya bilangan dua digit $\\overline{ab}$ dengan kedua digitnya tak nol, sedemikian sehingga penjumlahan $\\overline{ab}+\\overline{ba}$ habis dibagi $66$.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6870,7 +6870,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 8",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 8",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6879,7 +6879,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Kelipatan minimum dengan 28 pembagi",
-    "prompt": "Misalkan $k$ adalah bilangan bulat positif minimum dengan $2024\\mid k$ dan tepat $28$ pembagi positif. Tentukan $k\\bmod100$.",
+    "prompt": "Misalkan $k$ merupakan kelipatan positif terkecil dari $2024$ yang memiliki tepat $28$ faktor positif. Tentukan sisa pembagian $k$ oleh $100$.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6888,7 +6888,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 9",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6897,7 +6897,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 1,
     "title": "Keterbagian faktorial",
-    "prompt": "Tentukan $\\min\\{n\\in\\mathbb Z_{>0}\\mid1430\\mid n!\\}$.",
+    "prompt": "Tentukan bilangan bulat positif terkecil $n$ sedemikian sehingga $1430$ membagi $n!$.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6906,7 +6906,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 2",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6915,7 +6915,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 2,
     "title": "Pencacahan himpunan bagian",
-    "prompt": "Tentukan banyaknya $X\\subseteq\\{1,2,3,4,5,6,7\\}$ dengan $\\{1,2,3,4,5\\}\\subseteq X$ atau $\\{4,5,6\\}\\subseteq X$.",
+    "prompt": "Tentukan banyak himpunan bagian dari $\\{1,2,3,4,5,6,7\\}$ yang memuat seluruh anggota $\\{1,2,3,4,5\\}$ atau seluruh anggota $\\{4,5,6\\}$.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6924,7 +6924,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 4",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6933,7 +6933,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 2,
     "title": "Anggota wajib pada himpunan tanpa pasangan berjumlah tetap",
-    "prompt": "Misalkan $S\\subseteq\\{1,\\ldots,17\\}$, $|S|=9$, dan $a+b\\ne18$ untuk setiap dua anggota berbeda $a,b$ dari $S$. Tentukan bilangan yang selalu menjadi anggota $S$.",
+    "prompt": "Afif memilih sembilan bilangan bulat positif berbeda, semuanya kurang dari $18$, sedemikian sehingga tidak ada dua bilangan terpilih yang berjumlah $18$. Bilangan positif manakah yang pasti dipilih Afif?",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6942,7 +6942,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 5",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6951,7 +6951,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Koefisien binomial kelipatan 81",
-    "prompt": "Tentukan nilai minimum $k\\in\\mathbb Z_{>0}$ sehingga terdapat $n\\in\\mathbb Z_{>0}$ dengan koefisien $x^2$ pada $(x+3)^n$ sama dengan $81k$.",
+    "prompt": "Diketahui koefisien suku $x^2$ pada penjabaran $(x+3)^n$ adalah $81k$, dengan $k$ bilangan asli. Tentukan nilai terkecil $k$ yang memenuhi kondisi tersebut.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6960,7 +6960,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 6",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6978,7 +6978,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 9",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -6987,7 +6987,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Banyak parameter persamaan tanpa akar real",
-    "prompt": "Hitung banyaknya $m\\in\\mathbb Z$ sehingga himpunan $\\{x\\in\\mathbb R\\mid x^2+mx+37=m\\}$ kosong.",
+    "prompt": "Tentukan banyaknya bilangan bulat $m$ yang mengakibatkan persamaan kuadrat $$x^2+mx+37=m$$ tidak memiliki akar real.",
     "source": {
       "kind": "competition",
       "competition": "OSN",
@@ -6996,7 +6996,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 10",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 10",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -7815,7 +7815,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Selisih biaya bahan bakar",
-    "prompt": "Peter's car consumes $10.2$ litres per $100$ kilometres and Mike's hybrid car consumes $6.6$ litres per $100$ kilometres. Fuel costs $1.40$ dollars per litre. Both travel $200$ kilometres. How many dollars less does Mike pay for fuel? Pilihan: A. $\\$3.96$; B. $\\$5.32$; C. $\\$7.36$; D. $\\$8.63$; E. $\\$10.08$",
+    "prompt": "Peter's car consumes $10.2$ litres per $100$ kilometres and Mike's hybrid car consumes $6.6$ litres per $100$ kilometres. Fuel costs $1.40$ dollars per litre. Both travel $200$ kilometres. How many dollars less does Mike pay for fuel? Pilihan: A. $3.96$ dollars; B. $5.32$ dollars; C. $7.36$ dollars; D. $8.63$ dollars; E. $10.08$ dollars",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
