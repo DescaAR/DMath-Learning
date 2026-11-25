@@ -44,7 +44,8 @@ const competitionFullNames: Readonly<Record<string, string>> = {
   "SMC UKMT": "Senior Mathematical Challenge",
   "UMC UNDIP": "UNDIP's Mathematics Competition",
   "OLMAT UNSOED": "Olimpiade Matematika Universitas Jenderal Soedirman",
-  "OMITS": "Olimpiade Matematika ITS"
+  "OMITS": "Olimpiade Matematika ITS",
+  "PEMNAS UB": "Pekan Matematika Nasional Universitas Brawijaya"
 };
 const competitionHeading = (name: string) => competitionFullNames[name] ? `${name} (${competitionFullNames[name]})` : name;
 const categoryOrder=(a:string,b:string)=>a==="DMath Learning Proposed"?1:b==="DMath Learning Proposed"?-1:a.localeCompare(b,"id");
@@ -104,6 +105,595 @@ const yearPapers:YearPaper[]=imcEditions.flatMap(({year}):YearPaper[]=>[
  ...(year<=2025?[{competition:"Putnam",level:"Kuliah" as const,year,stage:"Putnam",label:"Naskah · A1–A6 dan B1–B6"+(year===2020?" (edisi tidak resmi)":""),url:"https://kskedlaya.org/putnam-archive/"+year+".pdf"}]:[]),
  ...(year>=2006?[{competition:"ON-MIPA",level:"Kuliah" as const,year,stage:"ON-MIPA Wilayah",label:year<=2018?"Seleksi wilayah · lima bidang":"Seleksi wilayah · hari 1 dan 2",url:"https://onmipa.filzabuana.id/onmipa/"+year+(year>=2019?"-wilayah":"")+"/"}]:[])
 ]);
+
+const extraYearPapers:YearPaper[] = [
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "year": 2024,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://drive.google.com/file/d/1lctOFVATo7DeBOba_78k4yRl7etAGSfi/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "year": 2024,
+    "stage": "OSN-P",
+    "label": "Provinsi",
+    "url": "https://drive.google.com/file/d/13LOhovBg7FknahJpX3xS8SnyeerK8bn/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "year": 2024,
+    "stage": "OSN Nasional",
+    "label": "Nasional — Teori I",
+    "url": "https://drive.google.com/file/d/1LdmqS0EMG_GtOTSg_kxwkyTOWCm8ANco/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "year": 2024,
+    "stage": "OSN Nasional",
+    "label": "Nasional — Teori II",
+    "url": "https://drive.google.com/file/d/1HqKxxdxjKfXA4ClNyeSO6oqbjt0SIucV/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "year": 2024,
+    "stage": "OSN Nasional",
+    "label": "Nasional — Eksplorasi",
+    "url": "https://drive.google.com/file/d/1hH2zqGbdzMkwp45WKTfpRc2RUdxFe_DW/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2024,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-smp-tahun-2024.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2024,
+    "stage": "OSN-P",
+    "label": "Provinsi",
+    "url": "https://www.folderosn.com/2025/01/download-soal-osn-matematika-smp-tahun.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2024,
+    "stage": "OSN Nasional",
+    "label": "Nasional — Hari 1",
+    "url": "https://drive.google.com/file/d/1TGX4eJCP-6W-07-asCkqdJbPokQsOgM6/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2024,
+    "stage": "OSN Nasional",
+    "label": "Nasional — Hari 2",
+    "url": "https://drive.google.com/file/d/1aS8w4K3keEbT4Aw6wxiaJTe1gsFYS2Q3/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "year": 2024,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota — Paket 1",
+    "url": "https://drive.google.com/file/d/1m6s_-HKN767-nOW_0MMxwjrQjAG6d7_z/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "year": 2024,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota — Paket 2",
+    "url": "https://drive.google.com/file/d/1Rgse1-Kmp3vg0mXvfZsL_KdVUFjbfSq8/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "year": 2024,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota — Paket 3",
+    "url": "https://drive.google.com/file/d/1z0YhJYk9yrh2Shd8Z4goeNZCediGA4Zr/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "year": 2024,
+    "stage": "OSN-P",
+    "label": "Provinsi",
+    "url": "https://drive.google.com/file/d/1HuGpvjsKbAybNr7O860L0uJ0Z8G0zFXF/view"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "year": 2024,
+    "stage": "OSN Nasional",
+    "label": "Nasional — Paket 2024",
+    "url": "https://drive.google.com/file/d/1UQTeKFt6Cv3wH954vjH582eh-qc51md1/view"
+  },
+  {
+    "competition": "ON-MIPA",
+    "level": "Kuliah",
+    "year": 2024,
+    "stage": "ON-MIPA Wilayah",
+    "label": "Seleksi wilayah",
+    "url": "https://wildan-wicaksono.github.io/files/Olympiad/ONMIPA_Wil2024.pdf"
+  },
+  {
+    "competition": "ON-MIPA",
+    "level": "Kuliah",
+    "year": 2024,
+    "stage": "ON-MIPA Nasional",
+    "label": "Seleksi nasional",
+    "url": "https://wildan-wicaksono.github.io/files/Olympiad/ONMIPA_Nas2024.pdf"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2025,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://www.catatanmatematika.com/2026/05/soal-osn-k-smp-2025.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2025,
+    "stage": "OSN-P",
+    "label": "Provinsi",
+    "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/provinsi"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2025,
+    "stage": "OSN Nasional",
+    "label": "Semifinal",
+    "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/semifinal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2025,
+    "stage": "OSN Nasional",
+    "label": "Final",
+    "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/final"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "year": 2026,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2026,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://www.m4th-lab.net/artikel/download-soal-asli-dan-pembahasan-osn-k-matematika-smp-2026"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "year": 2026,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sma-2026.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "year": 2023,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2020,
+    "stage": "KSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://www.defantri.com/2020/09/soal-pembahasan-ksn-k-2020-matematika.html?m=1"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2021,
+    "stage": "KSN Nasional",
+    "label": "Nasional",
+    "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2022,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://melajah-matematika.blogspot.com/2024/04/osk-smp-2022.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2023,
+    "stage": "OSN-K",
+    "label": "Kabupaten/Kota",
+    "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "year": 2020,
+    "stage": "KSN-K",
+    "label": "Kemampuan Dasar",
+    "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/"
+  },
+  {
+    "competition": "KMNR",
+    "level": "SMP",
+    "year": 2016,
+    "stage": "KMNR Penyisihan",
+    "label": "Kelas 7–8",
+    "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/"
+  },
+  {
+    "competition": "KMNR",
+    "level": "SMP",
+    "year": 2016,
+    "stage": "KMNR Penyisihan",
+    "label": "Kelas 9",
+    "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-9-kompetisi-matematika-nalaria-realistik-kmnr-tahun-2016/"
+  },
+  {
+    "competition": "IMSO",
+    "level": "SD",
+    "year": 2005,
+    "stage": "IMSO",
+    "label": "Isian singkat",
+    "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf"
+  },
+  {
+    "competition": "ON-MIPA",
+    "level": "Kuliah",
+    "year": 2018,
+    "stage": "ON-MIPA Seleksi Universitas",
+    "label": "Universitas Tanjungpura",
+    "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/"
+  },
+  {
+    "competition": "ON-MIPA",
+    "level": "Kuliah",
+    "year": 2019,
+    "stage": "ON-MIPA Seleksi Universitas",
+    "label": "Universitas Tanjungpura",
+    "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/"
+  },
+  {
+    "competition": "HMMT",
+    "level": "SMA",
+    "year": 2005,
+    "stage": "HMMT Babak Individu",
+    "label": "Februari — Aljabar",
+    "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf"
+  },
+  {
+    "competition": "HMMT",
+    "level": "SMA",
+    "year": 2025,
+    "stage": "HMMT Babak Individu",
+    "label": "Februari — Aljabar dan Teori Bilangan",
+    "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "year": 2005,
+    "stage": "OSN Nasional",
+    "label": "Naskah nasional 2005",
+    "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf"
+  },
+  {
+    "competition": "JBMO",
+    "level": "SMP",
+    "year": 2024,
+    "stage": "JBMO",
+    "label": "Naskah resmi",
+    "url": "https://jbmo2024.tubitak.gov.tr/problems"
+  },
+  {
+    "competition": "Balkan MO",
+    "level": "SMA",
+    "year": 2023,
+    "stage": "Balkan MO",
+    "label": "Naskah resmi",
+    "url": "https://bmo2023.tubitak.gov.tr/problems"
+  },
+  {
+    "competition": "Balkan MO",
+    "level": "SMA",
+    "year": 2024,
+    "stage": "Balkan MO",
+    "label": "Naskah resmi",
+    "url": "https://bmo2024.org/problems/"
+  },
+  {
+    "competition": "Balkan MO",
+    "level": "SMA",
+    "year": 2012,
+    "stage": "Balkan MO",
+    "label": "Naskah resmi",
+    "url": "https://bmo2012.tubitak.gov.tr/problems.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2017,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/20171.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2018,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/20181.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2019,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/20191.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2020,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/20201.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2021,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/2021.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2022,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/20221.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2023,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/20231.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2024,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/20241.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2025,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/2025.html"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "year": 2026,
+    "stage": "SMMC",
+    "label": "Paket resmi kompetisi",
+    "url": "https://www.simonmarais.org/2026.html"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SD",
+    "year": 2023,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SD (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SD",
+    "year": 2023,
+    "stage": "Semifinal",
+    "label": "Semifinal · SD (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SD",
+    "year": 2024,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SD (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SD",
+    "year": 2024,
+    "stage": "Semifinal",
+    "label": "Semifinal · SD (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SD",
+    "year": 2025,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SD (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SD",
+    "year": 2025,
+    "stage": "Semifinal",
+    "label": "Semifinal · SD (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMP",
+    "year": 2023,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SMP (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMP",
+    "year": 2023,
+    "stage": "Semifinal",
+    "label": "Semifinal · SMP (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMP",
+    "year": 2024,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SMP (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMP",
+    "year": 2024,
+    "stage": "Semifinal",
+    "label": "Semifinal · SMP (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMP",
+    "year": 2025,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SMP (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMP",
+    "year": 2025,
+    "stage": "Semifinal",
+    "label": "Semifinal · SMP (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMA",
+    "year": 2023,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SMA (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMA",
+    "year": 2023,
+    "stage": "Semifinal",
+    "label": "Semifinal · SMA (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMA",
+    "year": 2024,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SMA (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMA",
+    "year": 2024,
+    "stage": "Semifinal",
+    "label": "Semifinal · SMA (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMA",
+    "year": 2025,
+    "stage": "Penyisihan",
+    "label": "Penyisihan · SMA (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "PEMNAS UB",
+    "level": "SMA",
+    "year": 2025,
+    "stage": "Semifinal",
+    "label": "Semifinal · SMA (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "MIC Logika UI",
+    "level": "SMA",
+    "year": 2022,
+    "stage": "Semifinal",
+    "label": "Semifinal (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "MIC Logika UI",
+    "level": "SMA",
+    "year": 2022,
+    "stage": "Final",
+    "label": "Final (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  },
+  {
+    "competition": "UMC UNDIP",
+    "level": "SMA",
+    "year": 2022,
+    "stage": "Final",
+    "label": "Final (pilih paket pada sumber)",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/"
+  }
+];
+for(let year=2005;year<=2026;year++){
+ if(year!==2021)extraYearPapers.push({competition:"AMC 8",level:"SMP",year,stage:"AMC 8",label:"Nomor 1–25",url:"https://live.poshenloh.com/past-contests/amc8/"+year});
+ for(const contest of ["AMC 10","AMC 12","AIME"]){
+  const versions=contest==="AIME"?["I","II"]:year===2021?["A","B","C","D"]:["A","B"];
+  for(const version of versions)extraYearPapers.push({competition:contest,level:"SMA",year,stage:contest+" "+(version==="C"?"A Fall":version==="D"?"B Fall":version),label:"Paket "+(version==="C"?"A Fall":version==="D"?"B Fall":version)+" · Nomor 1–"+(contest==="AIME"?15:25),url:"https://live.poshenloh.com/past-contests/"+contest.toLowerCase().replace(" ","")+"/"+year+version});
+ }
+ if(year>=2012)extraYearPapers.push({competition:"EGMO",level:"SMA",year,stage:"EGMO",label:"Naskah resmi · Hari 1 dan 2",url:"https://www.egmo.org/egmos/egmo"+(year-2011)+"/"});
+}
+yearPapers.push(...extraYearPapers);
+
 const otherFullSets: Readonly<Record<string,{label:string;url:string}[]>> = {
  HMMT:[{label:"Naskah tiap turnamen HMMT",url:"https://www.hmmt.org/www/archive/problems"}],
  Putnam:[{label:"Naskah resmi terbaru dari MAA",url:"https://maa.org/maa-putnam-archive/"}],
@@ -430,7 +1020,7 @@ const contestSources: ContestSource[] = [
   {
     "competition": "ON-MIPA",
     "level": "Kuliah",
-    "label": "Seleksi wilayah dan nasional 2006–2026",
+    "label": "Seleksi wilayah 2006–2026 (nasional belum lengkap)",
     "url": "https://onmipa.filzabuana.id/onmipa/",
     "kind": "Koleksi soal"
   },
@@ -514,8 +1104,8 @@ const contestSources: ContestSource[] = [
 ];
 function YearPaperIndex({items}:{items:YearPaper[]}){
  return <details open={items.length===1||undefined} style={{margin:"0 0 16px",padding:"14px 16px",border:"1px solid var(--cmp-line)",borderRadius:10,background:"var(--cmp-paper)"}}>
-  <summary style={{fontWeight:700,cursor:"pointer"}}>Buka naskah per tahun · {items.length} edisi</summary>
-  <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:8,marginTop:12}}>{items.map(p=><a key={p.year+"-"+p.stage} href={p.url} className="cmp-link-text" target="_blank" rel="noopener noreferrer" style={{display:"block",padding:"10px 12px",border:"1px solid var(--cmp-line)",borderRadius:7}}><strong>{p.competition} {p.year} ↗</strong><span style={{display:"block",fontSize:12,fontWeight:400,color:"var(--cmp-muted)"}}>{p.label}</span></a>)}</div>
+  <summary style={{fontWeight:700,cursor:"pointer"}}>Buka naskah per tahun · {items.length} paket</summary>
+  <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:8,marginTop:12}}>{items.map(p=><a key={p.level+"-"+p.year+"-"+p.stage+"-"+p.label} href={p.url} className="cmp-link-text" target="_blank" rel="noopener noreferrer" style={{display:"block",padding:"10px 12px",border:"1px solid var(--cmp-line)",borderRadius:7}}><strong>{p.competition} {p.year} ↗</strong><span style={{display:"block",fontSize:12,fontWeight:400,color:"var(--cmp-muted)"}}>{p.label}</span></a>)}</div>
  </details>;
 }
 function IMCFullIndex({items}:{items:typeof imcAll}){
