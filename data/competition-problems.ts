@@ -6123,16 +6123,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 1,
     "title": "Jumlah sumbangan",
-    "prompt": "Twelve people each contribute five dollars. Find their total contribution in dollars. Pilihan: A. $50$; B. $55$; C. $60$; D. $65$; E. $70$",
+    "prompt": "A charity receives a donation of five dollars from each of twelve friends. Find the total amount donated. Pilihan: A. $\\$50$; B. $\\$55$; C. $\\$60$; D. $\\$65$; E. $\\$70$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 1",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 1",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 1 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6148,9 +6148,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 5",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 5",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 5 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6166,9 +6166,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 7",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 7",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 7 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6177,16 +6177,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 1,
     "title": "Pengukuran dengan pecahan",
-    "prompt": "A measure holds $\\frac12$ cup. How many full measures give $2\\frac12$ cups of flour? Pilihan: A. $3$; B. $2\\frac12$; C. $10$; D. $4\\frac12$; E. $5$",
+    "prompt": "Sam needs $2\\frac12$ cups of flour for a recipe but has only a measuring container of capacity $\\frac12$ cup. How many times must he fill the container? Pilihan: A. $3$; B. $2\\frac12$; C. $10$; D. $4\\frac12$; E. $5$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 8",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 8",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 8 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6195,16 +6195,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Hari dalam kalender",
-    "prompt": "If June 1 falls on Tuesday, determine the weekday of June 30. Pilihan: A. Monday; B. Tuesday; C. Wednesday; D. Thursday; E. Friday",
+    "prompt": "June contains $30$ days. In a year when June 1 is a Tuesday, what day of the week is June 30? Pilihan: A. Monday; B. Tuesday; C. Wednesday; D. Thursday; E. Friday",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 9",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 9",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 9 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6213,16 +6213,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 2,
     "title": "Translasi titik",
-    "prompt": "Choose the translation sending $(2,6)$ to $(7,0)$. Pilihan: A. right 9, down 6; B. left 5, up 6; C. right 6, down 5; D. left 6, down 5; E. right 5, down 6",
+    "prompt": "Point $R$ has coordinates $(2,6)$. Which of the following translations takes $R$ to $(7,0)$? Pilihan: A. right 9, down 6; B. left 5, up 6; C. right 6, down 5; D. left 6, down 5; E. right 5, down 6",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 11",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 11",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 11 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6231,16 +6231,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Pertemuan dua jadwal",
-    "prompt": "Trains arrive every 3 minutes and buses every 5 minutes. Both arrive at 6:25 a.m. When is their next simultaneous arrival? Pilihan: A. 6:28 a.m.; B. 6:30 a.m.; C. 6:33 a.m.; D. 6:40 a.m.; E. 6:55 a.m.",
+    "prompt": "Trains stop at Waterloo Station every $3$ minutes, and buses every $5$ minutes. A train and a bus stop there together at 6:25 a.m. When do they next stop there together? Pilihan: A. 6:28 a.m.; B. 6:30 a.m.; C. 6:33 a.m.; D. 6:40 a.m.; E. 6:55 a.m.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 12",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 12",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 12 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6256,9 +6256,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 13",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 13",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 13 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6267,16 +6267,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Penyebut pecahan",
-    "prompt": "Find $n$ satisfying $\\frac{28}{32}+\\frac1n=1$. Pilihan: A. $24$; B. $-3$; C. $7$; D. $16$; E. $8$",
+    "prompt": "Find the number that fills the box in $\\dfrac{28}{32}+\\dfrac{1}{\\square}=1$. Pilihan: A. $24$; B. $-3$; C. $7$; D. $16$; E. $8$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 14",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 14",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 14 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6292,9 +6292,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 15",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 15",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 15 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6310,9 +6310,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 16",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 16",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 16 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6321,16 +6321,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 3,
     "title": "Perubahan persentase lemparan koin",
-    "prompt": "A coin is tossed an even number of times, with tails on exactly half of those tosses. One additional toss gives tails, raising the proportion of tails to $60\\%$. Find the final number of tosses. Pilihan: A. $3$; B. $9$; C. $8$; D. $5$; E. $10$",
+    "prompt": "Savanah tosses a fair coin, obtaining tails on $50\\%$ of the tosses. She tosses it once more and obtains tails, so that $60\\%$ of all her tosses are now tails. How many tosses did she make altogether? Pilihan: A. $3$; B. $9$; C. $8$; D. $5$; E. $10$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 17",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 17",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 17 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6346,9 +6346,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 18",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 18",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 18 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6357,16 +6357,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Klasifikasi bilangan",
-    "prompt": "For each integer from $10$ to $19$, count how many of these properties hold: odd, even, prime, composite, perfect square. How many integers have exactly two properties? Pilihan: A. $10$; B. $9$; C. $8$; D. $7$; E. $6$",
+    "prompt": "Ten students receive distinct integer labels from $10$ through $19$. Each student marks all the applicable properties of their label: odd, even, prime, composite, perfect square. How many students mark precisely two properties? Pilihan: A. $10$; B. $9$; C. $8$; D. $7$; E. $6$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 19",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 19",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 19 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6382,9 +6382,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 21",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 21",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 21 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6400,9 +6400,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 22",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 22",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 22 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6411,16 +6411,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Kelipatan delapan belas dengan awalan tetap",
-    "prompt": "Count integers $N$ with $111000\\le N\\le111999$ and $18\\mid N$. Pilihan: A. $50$; B. $55$; C. $56$; D. $110$; E. $112$",
+    "prompt": "Let $a,b,c$ be decimal digits and $N=\\overline{111abc}$. How many values of $N$ are divisible by $18$? Pilihan: A. $50$; B. $55$; C. $56$; D. $110$; E. $112$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
       "year": 2025,
       "stage": "Gauss Grade 7",
       "number": "Nomor 23",
-      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 23",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 23 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6436,9 +6436,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Euclid",
       "number": "Nomor 1",
-      "label": "CEMC Waterloo 2026 — Euclid, 1",
+      "label": "CEMC Waterloo 2026 — Euclid, 1 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6454,9 +6454,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Euclid",
       "number": "Nomor 2",
-      "label": "CEMC Waterloo 2026 — Euclid, 2",
+      "label": "CEMC Waterloo 2026 — Euclid, 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6472,9 +6472,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Euclid",
       "number": "Nomor 3",
-      "label": "CEMC Waterloo 2026 — Euclid, 3",
+      "label": "CEMC Waterloo 2026 — Euclid, 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6490,9 +6490,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Euclid",
       "number": "Nomor 7",
-      "label": "CEMC Waterloo 2026 — Euclid, 7",
+      "label": "CEMC Waterloo 2026 — Euclid, 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6508,9 +6508,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Euclid",
       "number": "Nomor 9",
-      "label": "CEMC Waterloo 2026 — Euclid, 9",
+      "label": "CEMC Waterloo 2026 — Euclid, 9 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -6526,9 +6526,9 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Euclid",
       "number": "Nomor 10",
-      "label": "CEMC Waterloo 2026 — Euclid, 10",
+      "label": "CEMC Waterloo 2026 — Euclid, 10 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7113,7 +7113,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 1,
     "title": "Persamaan linear sederhana",
-    "prompt": "Solve $x-3=5$ in integers. Pilihan: A. $6$; B. $8$; C. $10$; D. $9$; E. $7$",
+    "prompt": "Which integer fills the box in $\\square-3=5$? Pilihan: A. $6$; B. $8$; C. $10$; D. $9$; E. $7$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7122,7 +7122,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7140,7 +7140,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7158,7 +7158,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 5 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7167,7 +7167,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 1,
     "title": "Keliling persegi dengan sisi bulat",
-    "prompt": "Select a possible perimeter (cm) of a square with integer side length (cm). Pilihan: A. $26$; B. $22$; C. $31$; D. $34$; E. $32$",
+    "prompt": "The side length of a square, measured in centimetres, is a whole number. Which of the following could be its perimeter? Pilihan: A. $26\\,\\mathrm{cm}$; B. $22\\,\\mathrm{cm}$; C. $31\\,\\mathrm{cm}$; D. $34\\,\\mathrm{cm}$; E. $32\\,\\mathrm{cm}$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7176,7 +7176,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7185,7 +7185,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Jumlah waktu berjalan",
-    "prompt": "Find the five-day total walking time (minutes) when the daily duration starts at $11$ and increases by $3$ each day. Pilihan: A. $85$; B. $73$; C. $106$; D. $65$; E. $74$",
+    "prompt": "Mauricio walks on five successive days. His first walk takes $11$ minutes, and each subsequent walk takes $3$ minutes longer than the preceding one. Find his total walking time in minutes. Pilihan: A. $85$; B. $73$; C. $106$; D. $65$; E. $74$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7194,7 +7194,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 8",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 8 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7212,7 +7212,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 10",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 10 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7221,7 +7221,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Statistika",
     "difficulty": 1,
     "title": "Rata-rata hasil lompat jauh",
-    "prompt": "Compute the arithmetic mean of $1.60,1.65,1.85,1.90$ metres. Pilihan: A. $1.70$; B. $1.85$; C. $1.80$; D. $1.65$; E. $1.75$",
+    "prompt": "Lana completes four long jumps with distances $1.60$, $1.65$, $1.85$, and $1.90$ metres. Find their arithmetic mean. Pilihan: A. $1.70\\,\\mathrm m$; B. $1.85\\,\\mathrm m$; C. $1.80\\,\\mathrm m$; D. $1.65\\,\\mathrm m$; E. $1.75\\,\\mathrm m$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7230,7 +7230,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 11",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 11 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7239,7 +7239,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Selisih dan jumlah usia",
-    "prompt": "Two ages sum to $27$ years and differ by $3$ years. Find the smaller age. Pilihan: A. $10$; B. $11$; C. $12$; D. $13$; E. $14$",
+    "prompt": "Riley is three years older than Elsa. Their ages total $27$ years. Determine Elsa's age. Pilihan: A. $10$; B. $11$; C. $12$; D. $13$; E. $14$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7248,7 +7248,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 12",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 12 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7266,7 +7266,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 14",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 14 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7275,7 +7275,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Panjang potongan pita",
-    "prompt": "A $36$ m ribbon is divided into at least two equal pieces of integral metre length. Count the possible piece lengths. Pilihan: A. $10$; B. $7$; C. $6$; D. $5$; E. $8$",
+    "prompt": "Asha cuts a $36$-metre ribbon into pieces of equal whole-number lengths in metres, without changing its width. She must make at least one cut. How many different piece lengths are possible? Pilihan: A. $10$; B. $7$; C. $6$; D. $5$; E. $8$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7284,7 +7284,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 17",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 17 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7302,7 +7302,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 18",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 18 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7311,7 +7311,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Kelipatan dengan jumlah digit tertentu",
-    "prompt": "Count multiples of $4$ in $[100,199]$ having digit sum at least $5$. Pilihan: A. $20$; B. $19$; C. $22$; D. $23$; E. $21$",
+    "prompt": "Emil selects an integer between $100$ and $199$, inclusive, that is divisible by $4$ and has a decimal digit sum of at least $5$. How many choices does he have? Pilihan: A. $20$; B. $19$; C. $22$; D. $23$; E. $21$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7320,7 +7320,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 19",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 19 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7329,7 +7329,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 3,
     "title": "Irisan dua kelompok",
-    "prompt": "Among $85$ items every item contains chocolate or vanilla; fractions $\\frac{11}{17}$ and $\\frac{10}{17}$ contain these respectively. Count items containing both. Pilihan: A. $15$; B. $4$; C. $25$; D. $17$; E. $20$",
+    "prompt": "An ice-cream shop sells chocolate, vanilla and twist cones, with twist containing both flavours. Of $85$ cones sold, $\\frac{11}{17}$ contain chocolate and $\\frac{10}{17}$ contain vanilla. How many are twist cones? Pilihan: A. $15$; B. $4$; C. $25$; D. $17$; E. $20$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7338,7 +7338,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 20",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 20 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7356,7 +7356,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 22",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 22 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7374,7 +7374,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 23",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 23 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7383,7 +7383,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Selisih ekstrem bilangan lima digit",
-    "prompt": "Consider five-digit integers $\\overline{abcde}$ using distinct nonzero digits with $5\\mid\\overline{abc}$, $3\\mid\\overline{bcd}$ and $11\\mid\\overline{cde}$. Find the difference between the largest and smallest. Pilihan: A. $84978$; B. $83989$; C. $85015$; D. $84038$; E. $85968$",
+    "prompt": "Call a five-digit positive integer $\\overline{abcde}$ a Sorrol number if its digits are distinct members of $\\{1,\\ldots,9\\}$ and $5\\mid\\overline{abc}$, $3\\mid\\overline{bcd}$ and $11\\mid\\overline{cde}$. Determine the positive difference between the largest and smallest Sorrol numbers. Pilihan: A. $84978$; B. $83989$; C. $85015$; D. $84038$; E. $85968$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7392,7 +7392,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 24",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 24 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7401,7 +7401,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 1,
     "title": "Pembagian merata",
-    "prompt": "Distribute $36$ pieces equally among four recipients. How many does each receive? Pilihan: A. $12$; B. $6$; C. $3$; D. $9$; E. $10$",
+    "prompt": "Seong-hun divides $36$ pieces of dried apricot equally among his four children. How many pieces does each child get? Pilihan: A. $12$; B. $6$; C. $3$; D. $9$; E. $10$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7410,7 +7410,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 2 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7419,7 +7419,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 1,
     "title": "Tanggal pada interval dua minggu",
-    "prompt": "What date is fourteen days after May 12? Pilihan: A. May 19; B. May 20; C. May 25; D. May 26; E. May 27",
+    "prompt": "Recycling is collected once every two weeks. Its most recent collection was on May 12. Find the date of the next collection. Pilihan: A. May 19; B. May 20; C. May 25; D. May 26; E. May 27",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7428,7 +7428,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 3 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7437,7 +7437,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 1,
     "title": "Waktu berakhir film",
-    "prompt": "A film starts at 8:45 a.m. and lasts 2 hours 45 minutes. Find its finishing time. Pilihan: A. 10:30 a.m.; B. 11:15 a.m.; C. 11:30 a.m.; D. 10:50 a.m.; E. 10:45 a.m.",
+    "prompt": "Aisha starts watching a movie at 8:45 a.m. Its duration is $2$ hours and $45$ minutes. If she does not pause the movie or take a break, when will it end? Pilihan: A. 10:30 a.m.; B. 11:15 a.m.; C. 11:30 a.m.; D. 10:50 a.m.; E. 10:45 a.m.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7446,7 +7446,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 4 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7464,7 +7464,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 5 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7473,7 +7473,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 1,
     "title": "Pencacahan pewarnaan dua bangun",
-    "prompt": "Choose one of two colours for a triangle and one of three other colours for a square. Count the choices. Pilihan: A. $5$; B. $3$; C. $9$; D. $6$; E. $2$",
+    "prompt": "A figure consists of a triangle above a square. The triangle may be red or yellow, and the square may be blue, purple or green. How many colourings of the figure are possible? Pilihan: A. $5$; B. $3$; C. $9$; D. $6$; E. $2$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7482,7 +7482,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 6 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7500,7 +7500,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 7 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7509,7 +7509,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Penghapusan satu digit",
-    "prompt": "Delete one element of $(5,2,8,7,9)$ so the remaining sum is divisible by $4$. Which is deleted? Pilihan: A. $5$; B. $2$; C. $8$; D. $7$; E. $9$",
+    "prompt": "Ruhab writes the digits $5,2,8,7,9$ and erases exactly one. The sum of the four remaining digits is divisible by $4$. Which digit was erased? Pilihan: A. $5$; B. $2$; C. $8$; D. $7$; E. $9$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7518,7 +7518,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 9 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7536,7 +7536,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 10",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 10 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7545,7 +7545,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Jarak pada laju tetap",
-    "prompt": "At $1.5$ km per $20$ minutes, find the distance (km) travelled in four hours. Pilihan: A. $18$; B. $30$; C. $22.5$; D. $15$; E. $4.5$",
+    "prompt": "Leticia walks $1.5\\,\\mathrm{km}$ in $20$ minutes. How far can she walk in $4$ hours at the same speed? Pilihan: A. $18\\,\\mathrm{km}$; B. $30\\,\\mathrm{km}$; C. $22.5\\,\\mathrm{km}$; D. $15\\,\\mathrm{km}$; E. $4.5\\,\\mathrm{km}$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7554,7 +7554,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 12",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 12 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7572,7 +7572,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 13",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 13 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7590,7 +7590,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 15",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 15 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7599,7 +7599,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Perbandingan jumlah wadah",
-    "prompt": "At a dog daycare, there is one food bowl per dog, one water bowl per two dogs and one treat bowl per three dogs. Every dog receives food, water and treats. There are $77$ bowls altogether. How many dogs are there? Pilihan: A. $35$; B. $77$; C. $42$; D. $11$; E. $24$",
+    "prompt": "At Doggy Daycare, one food bowl serves one dog, one water bowl serves two dogs, and one treat bowl serves three dogs. Every dog receives all three servings. If there are $77$ bowls altogether, determine the number of dogs. Pilihan: A. $35$; B. $77$; C. $42$; D. $11$; E. $24$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7608,7 +7608,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 16",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 16 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7626,7 +7626,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 18",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 18 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7644,7 +7644,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 19",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 19 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7662,7 +7662,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 23",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 23 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7680,7 +7680,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 1 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7698,7 +7698,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7716,7 +7716,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7734,7 +7734,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 4 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7752,7 +7752,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7770,7 +7770,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 8",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 8 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7779,7 +7779,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 2,
     "title": "Komposisi refleksi dan translasi",
-    "prompt": "Reflect $(2,3)$ across the $x$-axis, then translate three units left. Find the image. Pilihan: A. $(-1,-3)$; B. $(-5,3)$; C. $(1,3)$; D. $(5,-3)$; E. $(2,-6)$",
+    "prompt": "Point $P=(2,3)$ is reflected across the $x$-axis and then translated three units to the left. Find its final coordinates. Pilihan: A. $(-1,-3)$; B. $(-5,3)$; C. $(1,3)$; D. $(5,-3)$; E. $(2,-6)$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7788,7 +7788,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 12",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 12 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7806,7 +7806,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 13",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 13 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7815,7 +7815,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Selisih biaya bahan bakar",
-    "prompt": "Two cars consume $10.2$ and $6.6$ L per $100$ km. Find the cost difference for $200$ km at $1.40$ dollars/L. Pilihan: A. $3.96$; B. $5.32$; C. $7.36$; D. $8.63$; E. $10.08$",
+    "prompt": "Peter's car consumes $10.2$ litres per $100$ kilometres and Mike's hybrid car consumes $6.6$ litres per $100$ kilometres. Fuel costs $1.40$ dollars per litre. Both travel $200$ kilometres. How many dollars less does Mike pay for fuel? Pilihan: A. $\\$3.96$; B. $\\$5.32$; C. $\\$7.36$; D. $\\$8.63$; E. $\\$10.08$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7824,7 +7824,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 15",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 15 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7842,7 +7842,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 16",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 16 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7860,7 +7860,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 18",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 18 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7869,7 +7869,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Peluang",
     "difficulty": 3,
     "title": "Peluang jumlah nilai dua koin",
-    "prompt": "Uniformly choose two coins without replacement from two each of denominations $25,10,5$ cents. Find the probability of a total at least $30$ cents. Pilihan: A. $\\frac8{15}$; B. $\\frac35$; C. $\\frac59$; D. $\\frac13$; E. $\\frac45$",
+    "prompt": "A bag holds two quarters worth $25$ cents each, two dimes worth $10$ cents each, and two nickels worth $5$ cents each. Two coins are randomly selected without replacement. What is the probability that their combined value is at least $30$ cents? Pilihan: A. $\\frac8{15}$; B. $\\frac35$; C. $\\frac59$; D. $\\frac13$; E. $\\frac45$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7878,7 +7878,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 20",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 20 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7887,7 +7887,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Pencacahan kode tiga digit",
-    "prompt": "Count triples of digits $1\\le a<b<c\\le9$ satisfying $c=a+b$.",
+    "prompt": "A lock uses a three-digit combination. Each digit must belong to $\\{1,\\ldots,9\\}$, the digits must be distinct and in increasing order, and the last digit must equal the sum of the first two. How many combinations are possible?",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7896,7 +7896,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 21",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 21 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7914,7 +7914,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 22",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 22 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   },
   {
@@ -7923,7 +7923,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Jumlah digit pada pola berulang",
-    "prompt": "Concatenate the blocks $1234$ followed by $k$ copies of $5$, for $k=1,2,\\ldots$. Let $S$ be the sum of the first $2026$ digits. Find the decimal digit sum of $S$.",
+    "prompt": "The digit string $123451234551234555\\ldots$ is constructed by appending $k$ consecutive copies of the digit $5$ immediately after the $k$th copy of the block $1234$, for every $k\\ge1$. Let $S$ be the sum of its first $2026$ digits. Find the sum of the decimal digits of $S$.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7932,7 +7932,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 24",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 24 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
   }
 ];
