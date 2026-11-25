@@ -4148,7 +4148,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2026 — Hari 2, Nomor 6",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
+      "note": "2026-11-25: problem body checked word for word and visually against user-supplied IMC_2026_Day_2_Problems.pdf, page 1; web rendering pending."
     }
   },
   {
@@ -4157,7 +4157,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Luas gabungan ruas garis",
-    "prompt": "Given a continuous function $f:[0,1]\\to\\mathbb R$, define $S(f)$ as the union of all straight segments in the plane connecting $(x,0)$ and $(f(x),1)$ for $x\\in[0,1]$. Denote the area of $S(f)$ by $A(f)$. Determine its infimum over all continuous $f$.",
+    "prompt": "For a continuous function $f:[0,1]\\to\\mathbb R$, let $S(f)$ be the union of all straight segments in the plane joining points $(x,0)$ and $(f(x),1)$, where $x\\in[0,1]$. Let $A(f)$ be the area of $S(f)$. Find the infimum of $A(f)$ over all continuous $f$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4166,7 +4166,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2026 — Hari 2, Nomor 7",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: problem body checked word for word and visually against user-supplied IMC_2026_Day_2_Problems.pdf, page 1; web rendering pending."
     }
   },
   {
@@ -4175,7 +4175,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Batas tajam energi matriks",
-    "prompt": "Suppose $n\\ge5$ and $A=(a_{ij})$ is a real symmetric $n\\times n$ matrix satisfying $$a_{ii}=0\\qquad\\text{and}\\qquad a_{ij}\\in\\{-1,1\\}\\text{ for }i\\ne j.$$ All scalar products between distinct rows of $A$ have a common value. Denote the eigenvalues of $A$ by $\\lambda_1,\\ldots,\\lambda_n$. Establish $$\\sum_{i=1}^n|\\lambda_i|\\ge2n-2$$ and identify every matrix attaining equality.",
+    "prompt": "Let $n\\ge5$, and suppose that $A=(a_{ij})$ is a real symmetric $n\\times n$ matrix such that\n\n$a_{ii}=0\\quad\\text{and}\\quad a_{ij}\\in\\{-1,1\\}\\text{ for }i\\ne j.$\n\nAssume that the scalar products of any two distinct rows of $A$ have the same value. Let $\\lambda_1,\\ldots,\\lambda_n$ be the eigenvalues of $A$. Prove that\n\n$\\sum_{i=1}^n|\\lambda_i|\\ge2n-2$\n\nand determine all matrices for which equality holds.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4184,7 +4184,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2026 — Hari 2, Nomor 8",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: problem body checked word for word and visually against user-supplied IMC_2026_Day_2_Problems.pdf, page 1; web rendering pending."
     }
   },
   {
@@ -4193,7 +4193,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Batas bawah barisan",
-    "prompt": "Let $a_1,a_2,\\ldots$ be an infinite sequence of positive real numbers satisfying\n\n$a_1+a_2+\\cdots+a_{2n-1}=a_n^2$\n\nfor all positive integers $n$. Prove that\n\n$a_n\\geq2n-1$\n\nfor all positive integers $n$.",
+    "prompt": "Let $a_1,a_2,\\ldots$ be an infinite sequence of positive real numbers satisfying\n\n$a_1+a_2+\\cdots+a_{2n-1}=a_n^2$\n\nfor all positive integers $n$. Prove that $a_n\\ge2n-1$ for all positive integers $n$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4202,7 +4202,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2026 — Hari 2, Nomor 9",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: wording matched to official IMC Day 2 HTML; PDF visual check and website render pending."
+      "note": "2026-11-25: problem body checked word for word and visually against user-supplied IMC_2026_Day_2_Problems.pdf, page 1; web rendering pending."
     }
   },
   {
@@ -4211,7 +4211,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Himpunan berhingga pada papan catur",
-    "prompt": "An infinite chessboard of size $d>0$ is a square grid of side length $d$ whose square interiors alternate white and black; the grid lines have neither colour. The grid admits arbitrary planar translations and rotations.\n\nGiven any finite planar set $p_1,\\ldots,p_n$, must there exist $d\\in(0,1)$ and an infinite chessboard of size $d$ containing every $p_i$ in a white square?",
+    "prompt": "An *infinite chessboard of size* $d>0$ is obtained by colouring the interiors of the squares of an infinite square grid of side length $d$ alternately white and black following the usual chessboard pattern. The points belonging to the grid lines have neither colour and the grid may be translated and rotated arbitrarily in the plane.\n\nIs it true that for any finite set of points $p_1,\\ldots,p_n$ in the plane, there exist $d\\in(0,1)$ and an infinite chessboard of size $d$ such that all the points $p_i$ lie in white squares?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4220,7 +4220,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2026 — Hari 2, Nomor 10",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: problem body checked word for word and visually against user-supplied IMC_2026_Day_2_Problems.pdf, page 1; web rendering pending."
     }
   },
   {
