@@ -10504,6 +10504,438 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
       "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
     }
+  },
+  {
+    "id": "imo-2006-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Jarak titik interior dan incenter",
+    "prompt": "In triangle $ABC$ with incenter $I$, suppose an interior point $P$ satisfies $\\angle PBA+\\angle PCA=\\angle PBC+\\angle PCB$. Establish $AP\\ge AI$, with equality precisely when $P=I$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2006,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2006 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2006-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Triangulasi poligon dengan sisi good",
+    "prompt": "In a regular $2006$-gon $P$, call its sides good, as well as diagonals splitting its boundary into two odd-length side chains. Triangulate $P$ using $2003$ diagonals that do not intersect inside $P$. Maximize the number of isosceles triangles with two good sides.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2006,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2006 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2006-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Konstanta optimal ketaksamaan siklik",
+    "prompt": "Minimize the real constant $M$ for which $$\\left|ab(a^2-b^2)+bc(b^2-c^2)+ca(c^2-a^2)\\right|\\le M(a^2+b^2+c^2)^2$$ for arbitrary real $a,b,c$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2006,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2006 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2006-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Persamaan kuadrat dengan perpangkatan dua",
+    "prompt": "Find every integer pair $(x,y)$ satisfying $1+2^x+2^{2x+1}=y^2$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2006,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2006 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2006-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Titik tetap iterasi polinomial",
+    "prompt": "Take an integer-coefficient polynomial $P(x)$ of degree $n>1$ and a positive integer $k$. Write $Q(x)=P(P(\\cdots P(x)\\cdots))$ for its $k$-fold composition. Prove that $Q(t)=t$ admits at most $n$ integer solutions.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2006,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2006 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2006-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Jumlah luas maksimum segitiga dalam poligon",
+    "prompt": "For every side $b$ of a convex polygon $P$, maximize the area of a triangle contained in $P$ with base $b$. Prove that the sum of these maxima is at least twice the area of $P$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2006,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2006 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2007-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Aproksimasi barisan dengan barisan monoton",
+    "prompt": "Given reals $a_1,\\ldots,a_n$, define $d_i=\\max\\{a_j:1\\le j\\le i\\}-\\min\\{a_j:i\\le j\\le n\\}$ for $1\\le i\\le n$, and $d=\\max\\{d_i:1\\le i\\le n\\}$.\n\n(a) For reals $x_1\\le\\cdots\\le x_n$, prove $\\max\\{|x_i-a_i|:1\\le i\\le n\\}\\ge\\frac d2$.\n\n(b) Establish that a nondecreasing real sequence $x_1,\\ldots,x_n$ attaining equality exists.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2007,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2007 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2007-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Garis bagi sudut pada jajargenjang",
+    "prompt": "Suppose $ABCD$ is a parallelogram and $BCED$ is cyclic. A line $\\ell$ through $A$ meets the interior of $DC$ at $F$ and line $BC$ at $G$. Given $EF=EG=EC$, prove $\\ell$ bisects $\\angle DAB$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2007,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2007 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2007-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pembagian peserta berdasarkan ukuran clique",
+    "prompt": "Among contest participants, friendships are mutual. A clique is a group whose members are pairwise friends (including groups of size zero or one); its size is its membership count. If the maximum clique size is even, prove that partitioning participants between two rooms can equalize their respective maximum clique sizes.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2007,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2007 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2007-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kesamaan luas segitiga",
+    "prompt": "In $ABC$, the bisector of $\\angle BCA$ meets its circumcircle again at $R$ and the perpendicular bisectors of $BC,AC$ at $P,Q$, respectively. With midpoints $K$ of $BC$ and $L$ of $AC$, prove equality of the areas of $RPK$ and $RQL$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2007,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2007 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2007-05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Keterbagian bentuk kuadrat",
+    "prompt": "For positive integers $a,b$, establish that $4ab-1\\mid(4a^2-1)^2$ implies $a=b$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2007,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2007 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2007-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Penutupan titik kisi tiga dimensi",
+    "prompt": "For positive integer $n$, define $S=\\{(x,y,z):x,y,z\\in\\{0,1,\\ldots,n\\},\\ x+y+z>0\\}$, a set of $(n+1)^3-1$ points in three-dimensional space. Minimize the number of planes covering $S$ while excluding the origin.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2007,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2007 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2008-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Konsiklikitas enam titik",
+    "prompt": "An acute triangle $ABC$ has orthocentre $H$. Draw the three circles through $H$ centred at the midpoints of $BC,CA,AB$ respectively. Their intersections with the corresponding side lines are $A_1,A_2$; $B_1,B_2$; and $C_1,C_2$. Prove all six points are concyclic.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2008,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2008 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2008-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketaksamaan pecahan dan kasus kesetaraan",
+    "prompt": "(a) For real $x,y,z$, none equal to $1$, with $xyz=1$, establish $$\\frac{x^2}{(x-1)^2}+\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2}\\ge1.$$\n\n(b) Establish infinitely many rational triples satisfying the same restrictions and attaining equality.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2008,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2008 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2008-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Pembagi prima besar",
+    "prompt": "Prove that infinitely many positive integers $n$ admit a prime divisor of $n^2+1$ exceeding $2n+\\sqrt{2n}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2008,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2008 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2008-04",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Persamaan fungsi pada real positif",
+    "prompt": "Classify maps $f:(0,\\infty)\\to(0,\\infty)$ satisfying $$\\frac{(f(w))^2+(f(x))^2}{f(y^2)+f(z^2)}=\\frac{w^2+x^2}{y^2+z^2}$$ for positive reals $w,x,y,z$ with $wx=yz$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2008,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2008 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2008-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Rasio banyak urutan sakelar lampu",
+    "prompt": "Take positive integers $k\\ge n$ with $k-n$ even. Initially, lamps $1,\\ldots,2n$ are off. A step toggles one lamp. Let $N$ count $k$-step sequences ending with precisely lamps $1,\\ldots,n$ on. Let $M$ count those sequences that never turn on any lamp numbered above $n$. Determine $\\frac NM$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2008,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2008 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2008-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Perpotongan garis singgung persekutuan",
+    "prompt": "In convex $ABCD$ with $|BA|\\ne|BC|$, let $\\omega_1,\\omega_2$ be the incircles of $ABC,ADC$. Suppose a circle $\\omega$ touches rays $BA,BC$ beyond $A,C$, respectively, and lines $AD,CD$. Establish that the common external tangents of $\\omega_1,\\omega_2$ meet on $\\omega$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2008,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2008 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2026-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Invariansi operasi FPB dan KPK",
+    "prompt": "A blackboard holds 2026 integers exceeding $1$, repetitions allowed. Confucius repeatedly replaces two entries $m,n>1$ in different positions by $\\gcd(m,n)$ and $\\frac{\\operatorname{lcm}(m,n)}{\\gcd(m,n)}$ whenever possible.\n\n(a) Prove every such process terminates with precisely one entry $M>1$.\n\n(b) Prove $M$ is independent of the choices.\n\nHere $\\gcd$ and $\\operatorname{lcm}$ mean greatest common divisor and least common multiple.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2026,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2026 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2026-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kesamaan jarak pusat lingkaran",
+    "prompt": "In $ABC$, let $M,N$ be the midpoints of $AB,AC$. Choose $K$ strictly inside both $BMC,ABL$, and $L$ strictly inside both $BNC,AKC$. Assume $\\angle KBA=\\angle ACL$, $\\angle LBK=\\angle LNC$, $\\angle LCK=\\angle BMK$. For circumcentre $O$ of $AKL$, prove $OM=ON$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2026,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2026 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2026-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Strategi pembagian batang satuan",
+    "prompt": "For positive integer $n$, Liu Bang marks up to $n$ distinct points on a unit stick, then Xiang Yu marks up to $n$ more distinct points. Cut at every mark. Starting with Liu, alternate taking one remaining piece, each seeking maximum total length. Find the greatest length $c$ Liu can guarantee.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2026,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2026 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2026-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Strategi pemotongan segitiga",
+    "prompt": "Fix a known angle $0^\\circ<\\theta<180^\\circ$. Shan-Yu chooses a paper triangle $\\mathcal T$. Repeatedly:\n\n• Mulan wins immediately if an angle equals $\\theta$.\n\n• Otherwise she cuts from a nonvertex boundary point $P$ to the opposite vertex.\n\n• Shan-Yu discards one resulting triangle; the other becomes $\\mathcal T$.\n\nClassify $\\theta$ permitting Mulan to force a finite win.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2026,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2026 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2026-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketaksamaan fungsi real positif",
+    "prompt": "Classify $f:\\mathbb R_{>0}\\to\\mathbb R_{>0}$ satisfying $$\\sqrt{\\frac{x^2+f(y)^2}{2}}\\ge\\frac{f(x)+y}{2}\\ge\\sqrt{xf(y)}$$ for every positive real pair $x,y$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2026,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2026 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2026-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Periodisitas aditif barisan FPB",
+    "prompt": "In an infinite integer sequence with $a_i>1$, choose $a_{n+1}$ as the least integer exceeding $a_n$ with $\\gcd(a_{n+1},a_i)>1$ for $1\\le i\\le n$. Establish positive integers $T,L$ satisfying $a_{n+T}=a_n+L$ for every positive $n$. Here $\\gcd$ denotes greatest common divisor.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2026,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2026 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
