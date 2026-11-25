@@ -16,6 +16,7 @@ for(const p of competitionProblems){
  assert.ok(p.title.trim()&&p.prompt.trim()&&p.topic.trim()&&p.source.label.trim());
  assert.deepEqual(Object.keys(p).sort(),["difficulty","id","level","prompt","source","title"].concat("topic").sort(),p.id+" includes non-question data");
  assert.ok(["original","competition"].includes(p.source.kind));
+ if(p.source.kind==="original")assert.equal(p.source.label,"DMath Learning Proposed");
  if(p.source.kind==="competition"){assert.ok(p.source.url?.startsWith("https://")&&p.source.year&&p.source.number&&p.source.competition,p.id+" has incomplete attribution");}
  const strings=[p.prompt];
  for(const s of strings){

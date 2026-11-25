@@ -8,7 +8,7 @@ const difficultyLabels=["","Foundation","Intermediate","Advanced","Expert","Mast
 const isLevel=(v:string):v is Level=>levels.some(x=>x===v);
 const link=(p:CompetitionProblem)=>"/problem-solving/"+p.id+"/";
 const difficulty=(p:CompetitionProblem)=>difficultyLabels[p.difficulty]||"—";
-const shortSource=(p:CompetitionProblem)=>p.source.kind==="original"?"DMath Learning":p.source.label;
+const shortSource=(p:CompetitionProblem)=>p.source.label;
 
 export function LevelCards(){
  return <div className="cmp-levels">{levels.map((level)=><Link className="cmp-level-card" key={level} href={"/problem-solving/?level="+encodeURIComponent(level)}>
@@ -47,7 +47,7 @@ export function CompetitionCatalog(){
     <div className="cmp-filter-grid">
      <label>Topik<select value={topic} onChange={e=>setTopic(e.target.value)}><option>Semua</option>{topics.map(t=><option key={t}>{t}</option>)}</select></label>
      <label>Kesulitan<select value={diff} onChange={e=>setDiff(e.target.value)}><option>Semua</option>{difficultyLabels.slice(1).map((d,i)=><option value={i+1} key={d}>{d}</option>)}</select></label>
-     <label>Sumber<select value={source} onChange={e=>setSource(e.target.value)}><option>Semua</option><option value="original">Latihan DMath</option><option value="competition">Kompetisi resmi</option></select></label>
+     <label>Sumber<select value={source} onChange={e=>setSource(e.target.value)}><option>Semua</option><option value="original">DMath Learning Proposed</option><option value="competition">Kompetisi resmi</option></select></label>
     </div>
    </aside>
    <div className="cmp-results">

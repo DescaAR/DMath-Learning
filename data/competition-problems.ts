@@ -12,7 +12,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitung jumlah $1+2+\\cdots+40$ tanpa menjumlahkan satu per satu.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -24,7 +24,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Rina mempunyai 4 kaus berbeda dan 3 celana berbeda. Salah satu kaus tidak boleh dipasangkan dengan satu celana tertentu. Berapa banyak pakaian berbeda yang dapat dipilih?",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -36,7 +36,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Sebuah persegi panjang berukuran 12 cm × 8 cm. Keempat titik tengah sisinya dihubungkan berurutan. Tentukan luas bangun di bagian dalam.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -48,7 +48,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan bilangan asli terkecil yang lebih besar dari 20 dan bersisa 2 ketika dibagi 3 maupun 5.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -60,7 +60,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Buktikan bahwa $6\\mid(n^3-n)$ untuk setiap bilangan bulat $n$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -72,7 +72,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Diketahui $x+y=9$ dan $xy=14$. Tentukan $x^2+y^2$ dan $x^3+y^3$ tanpa mencari $x$ serta $y$ secara eksplisit.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -84,7 +84,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Dipilih enam bilangan berbeda dari $\\{1,2,\\ldots,10\\}$. Buktikan bahwa ada dua bilangan terpilih yang jumlahnya 11.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -96,7 +96,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Pada segitiga $ABC$, titik $D$ terletak pada $BC$ dengan $BD:DC=2:3$. Jika luas $ABC$ adalah 60, tentukan luas $ABD$ dan $ADC$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -108,7 +108,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Untuk $a,b,c>0$, buktikan $\\frac a{b+c}+\\frac b{c+a}+\\frac c{a+b}\\ge\\frac32$ dan tentukan kondisi kesamaan.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -120,7 +120,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Berapa banyak lintasan dari $(0,0)$ ke $(4,4)$ dengan langkah $(1,0)$ atau $(0,1)$ yang tidak pernah berada di atas garis $y=x$?",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -132,7 +132,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Buktikan bahwa untuk setiap bilangan prima $p>3$, berlaku $24\\mid(p^2-1)$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -144,7 +144,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Segitiga $ABC$ mempunyai sisi $AB=13$, $AC=15$, dan $BC=14$. Jika $M$ titik tengah $BC$, tentukan panjang $AM$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -156,7 +156,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $a_1=\\sqrt2$ dan $a_{n+1}=\\sqrt{2+a_n}$ untuk $n\\in\\mathbb N$. Buktikan konvergensi barisan dan tentukan limitnya.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -168,7 +168,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $V$ ruang vektor berdimensi hingga dan $P:V\\to V$ linear dengan $P^2=P$. Buktikan $V=\\ker P\\oplus\\operatorname{Im}P$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -180,7 +180,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $H$ subgrup dari grup $G$ dengan $[G:H]=2$. Buktikan bahwa $H$ merupakan subgrup normal dari $G$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -192,7 +192,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $\\omega=e^{2\\pi i/n}$ dengan $n\\ge2$. Buktikan $\\sum_{k=0}^{n-1}\\omega^k=0$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri (disusun untuk DMath)"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -238,7 +238,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Jumlah angka puluhan dan angka satuan suatu bilangan dua angka adalah 11. Jika kedua angka ditukar, bilangan baru lebih besar 27 daripada bilangan semula. Tentukan bilangan semula.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -250,7 +250,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Berapa banyak bilangan tiga angka genap yang dapat dibentuk dari angka 0, 1, 2, 3, dan 4 jika tidak ada angka yang berulang?",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -262,7 +262,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Sebuah kebun berbentuk persegi panjang mempunyai keliling 60 meter. Panjang dan lebar kebun merupakan bilangan bulat positif. Tentukan luas terbesar yang mungkin.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -274,7 +274,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tiga lampu masing-masing berkedip setiap 6 detik, 8 detik, dan 15 detik. Ketiganya berkedip bersama pada awal pengamatan. Berapa kali ketiganya berkedip bersama selama 10 menit berikutnya, termasuk tepat pada akhir pengamatan jika ketiganya berkedip saat itu, tetapi tidak termasuk awal pengamatan?",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -286,7 +286,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan semua pasangan bilangan bulat positif $(x,y)$ yang memenuhi $\\frac1x+\\frac1y=\\frac16$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -298,7 +298,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Dalam suatu pertemuan terdapat 12 orang. Setiap pasangan orang berjabat tangan tepat satu kali, kecuali tiga pasangan tertentu yang tidak berjabat tangan. Tentukan banyak jabat tangan yang terjadi.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -310,7 +310,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Persegi $ABCD$ mempunyai panjang sisi 10. Titik $P$ berada di dalam persegi dengan $PA=5$, $PB=\\sqrt{65}$, dan $PC=\\sqrt{85}$. Tentukan $PD$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -322,7 +322,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan sisa pembagian $7^{2026}+3^{2026}$ oleh 100.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -334,7 +334,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan seluruh fungsi $f:\\mathbb R\\to\\mathbb R$ yang memenuhi $f(x+y)=f(x)+f(y)+2xy$ untuk setiap $x,y\\in\\mathbb R$, jika $f$ kontinu di 0 dan $f(1)=3$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -346,7 +346,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Untuk bilangan asli $n,k$ dengan $1\\le k\\le\\lfloor(n+1)/2\\rfloor$, tentukan banyak himpunan bagian beranggota tepat $k$ dari $\\{1,2,\\ldots,n\\}$ yang tidak memuat dua bilangan berurutan.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -358,7 +358,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan seluruh pasangan bilangan bulat positif $(x,y)$ yang memenuhi $x^2-y^2=2025$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -370,7 +370,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Lingkaran dalam segitiga $ABC$ menyinggung sisi $BC$, $CA$, dan $AB$ berturut-turut di $D$, $E$, dan $F$. Jika $AB=13$, $BC=14$, dan $CA=15$, tentukan luas segitiga $DEF$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -382,7 +382,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Untuk $n\\in\\mathbb N$, definisikan $f_n:[0,1]\\to\\mathbb R$ dengan $f_n(x)=nx(1-x)^n$. Tentukan limit titik demi titik dari $(f_n)$ dan selidiki apakah konvergensinya seragam pada $[0,1]$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -394,7 +394,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $A,B\\in M_n(\\mathbb R)$ dengan $AB-BA=A$. Buktikan bahwa $A$ merupakan matriks nilpoten.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -406,7 +406,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $G$ merupakan grup dan $a,b\\in G$ memenuhi $ab=ba$. Jika orde $a$ dan $b$ berturut-turut adalah $m$ dan $n$ dengan $\\gcd(m,n)=1$, buktikan bahwa orde $ab$ adalah $mn$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   },
   {
@@ -418,7 +418,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $G$ merupakan graf sederhana tak berarah dengan $n\\ge3$ titik. Jika setiap titik mempunyai derajat sedikitnya $\\lceil n/2\\rceil$, buktikan bahwa $G$ memuat siklus Hamilton.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning — latihan mandiri"
+      "label": "DMath Learning Proposed"
     }
   }
 ];
