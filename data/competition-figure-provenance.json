@@ -131,6 +131,31 @@
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
       "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
       "page": 2
+    },
+    "umo-2014-01": {
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
+      "page": 1
+    },
+    "umo-2014-03": {
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
+      "page": 1
+    },
+    "umo-2014-06": {
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
+      "page": 2
+    },
+    "umo-2024-02": {
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
+      "page": 1
+    },
+    "umo-2024-06": {
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
+      "page": 2
     }
   },
   "table": {

@@ -1,0 +1,33 @@
+\documentclass[tikz,border=4pt]{standalone}
+\begin{document}
+\begin{tikzpicture}[x=.025cm,y=-.025cm]
+\path[use as bounding box] (0,0) rectangle (250,250);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,25) -- (25,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,25) -- (225,25);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (50,25) -- (50,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,50) -- (225,50);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (75,25) -- (75,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,75) -- (225,75);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (100,25) -- (100,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,100) -- (225,100);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (125,25) -- (125,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,125) -- (225,125);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (150,25) -- (150,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,150) -- (225,150);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (175,25) -- (175,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,175) -- (225,175);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (200,25) -- (200,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,200) -- (225,200);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (225,25) -- (225,225);
+\path[draw=black,fill=none,line width=0.7150000000000001pt] (25,225) -- (225,225);
+\path[draw=black,fill=black] (25,25) circle[radius=0.0625cm];
+\node[inner sep=0pt,font=\small] at (13,15) {$A$};
+\path[draw=black,fill=black] (25,225) circle[radius=0.0625cm];
+\node[inner sep=0pt,font=\small] at (13,238) {$B$};
+\path[draw=black,fill=black] (225,225) circle[radius=0.0625cm];
+\node[inner sep=0pt,font=\small] at (237,238) {$C$};
+\path[draw=black,fill=black] (225,25) circle[radius=0.0625cm];
+\node[inner sep=0pt,font=\small] at (237,15) {$D$};
+\path[draw=black,fill=orange] (125,125) circle[radius=0.1875cm];
+\end{tikzpicture}
+\end{document}

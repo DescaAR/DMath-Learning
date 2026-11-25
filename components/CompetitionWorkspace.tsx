@@ -1352,6 +1352,11 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number; captio
  "umo-2026-02":{alt:"Possible lattice moves: four green cardinal directions for Brutus and eight red directions for James.",width:140},
  "umo-2026-03":{alt:"Cube viewing directions and three identical stair-shaped projections; face labels specify the orientation of each view.",width:220},
  "umo-2026-05":{alt:"Sample path with two pairs of perpendicular logs, the second radial direction indicated by a dashed line.",width:285},
+ "umo-2014-01":{alt:"Eight by eight grid with an orange stone at the center and corners A, B, C, D as in the source.",width:270},
+ "umo-2014-03":{alt:"Right triangle and arrangement of four congruent right triangles around a smaller square, with right-angle marks.",width:190},
+ "umo-2014-06":{alt:"Triangular diamond grid for n=3 with the original example path and four legal directions.",width:225},
+ "umo-2024-02":{alt:"Four dark unit squares and their lightly shaded convex hull, matching the source arrangement.",width:205},
+ "umo-2024-06":{alt:"Type A and B triangles and the specific n=4 rectangle tiling from the contest.",width:155},
 };
 function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
  const figure=geometryFigures[id];

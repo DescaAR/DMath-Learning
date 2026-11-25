@@ -8308,6 +8308,222 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
       "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
     }
+  },
+  {
+    "id": "umo-2014-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Permainan batu pada kisi",
+    "prompt": "Todd and Allison alternate turns on the grid below, starting with an orange stone in the middle. Todd starts; he moves the orange stone one intersection horizontally or vertically, avoiding blue stones, and leaves a blue stone at its old position. Allison places one blue stone on an empty intersection. Todd loses upon being forced onto corner A, B, C or D; Allison loses if Todd cannot move.\n\nAllison minimizes the duration and Todd maximizes it. Assuming Todd loses, determine the final number of blue stones under optimal play.\n\n[[FIGURE]]",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2014,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2014 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2014-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Representasi jumlah dua kuadrat",
+    "prompt": "(a) Determine every pair of positive integers $x,y$ satisfying $x^2+y^2=2014$, or establish nonexistence.\n\n(b) Repeat for $x^2+y^2=3222014$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2014,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2014 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2014-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Segitiga siku-siku dalam susunan persegi",
+    "prompt": "Classify right triangles with positive integer leg lengths for which, in the illustrated arrangement of four copies, the incenters all lie on extensions of the inner square's sides. The incenter is the center of the inscribed circle.\n\n[[FIGURE]]",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2014,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2014 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2014-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Iterasi daftar frekuensi bilangan",
+    "prompt": "Joel starts with an ordered list of nonnegative integers. Replace it by the frequencies of $0,1,2,\\ldots$ up to its largest entry, including zero frequencies. Repeat indefinitely. For example,\n\n$$(0,0,0,2)\\longrightarrow(3,0,1)\\longrightarrow(1,1,0,1)\\longrightarrow(1,3)\\longrightarrow\\cdots$$\n\nand\n\n$$(0,0)\\longrightarrow(2)\\longrightarrow(0,0,1)\\longrightarrow(2,1)\\longrightarrow\\cdots.$$\n\nDetermine every two-entry list $(m,n)$ that can recur infinitely often for some starting list.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2014,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2014 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2014-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Sistem persamaan bilangan real positif",
+    "prompt": "Determine all positive real triples $(x,y,z)$ satisfying $$xyz=1,\\qquad x^2+y^2+z^2=4x\\sqrt{yz}-2yz.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2014,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2014 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2014-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Jumlah lintasan pada kisi segitiga",
+    "prompt": "Arrange $n$ rows of $2n$ equilateral triangles into a diamond, with southwest corner $A$ and northeast corner $B$. The drawing illustrates $n=3$, four permissible step directions, and one path.\n\n[[FIGURE]]\n\nA path goes from $A$ to $B$ by permitted adjacent steps, using no segment twice. Prove that the number of paths is an integer square for every positive integer $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2014,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2014 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2024-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Panjang sisi segitiga dengan keliling satu",
+    "prompt": "Find all possible side-length triples $(a,b,c)$ of a triangle satisfying $$a\\ge b\\ge c,\\qquad a^2-ab+b^2=c^2,\\qquad a+b+c=1.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2024,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2024 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2024-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Luas selubung konveks persegi satuan",
+    "prompt": "Place at least one unit square with integer-coordinate vertices in the plane. Let $P$ be their convex hull. In the example, four dark squares and the light region together form $P$.\n\n[[FIGURE]]\n\nWhich positive integers $n$ can occur when the area of $P$ is $n/2$? You need not establish that every such area is a half-integer.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2024,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2024 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2024-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Digit awal dan akhir pangkat dua",
+    "prompt": "Prove that infinitely many powers of two have initial digits 20 and final digits 24.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2024,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2024 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2024-04",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Sistem persamaan fungsional barisan kompleks",
+    "prompt": "Classify the complex sequences $(x_n)_{n\\ge1},(y_n)_{n\\ge1}$ satisfying, for every pair of positive integers $m,n$, $$x_{m+n}=y_my_n,\\qquad y_{mn}=x_m+x_n.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2024,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2024 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2024-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Strategi turnamen batu kertas gunting",
+    "prompt": "A red team of 27 and a blue team of 2 play 1000 rock-paper-scissors rounds, one representative each. A win earns one team point; after every round each representative may stay or choose a teammate to play next.\n\nBeforehand, each team fixes its starter, every player's move, and that player's successor for each of the opponent's three moves.\n\nExample for three red players: Alice starts. Alice plays Rock, switching to Bob against Rock and Charlie otherwise. Bob plays Scissors, then switches to Alice. Charlie plays Rock and selects Alice against Rock, Bob against Paper, or Charlie against Scissors.\n\nCan Red guarantee victory against every prearranged Blue strategy? Moves are simultaneous; equal moves tie; Rock defeats Scissors, Scissors defeats Paper, and Paper defeats Rock.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2024,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2024 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2024-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Relasi rekurensi penutupan persegi panjang",
+    "prompt": "Type A is an equilateral triangle of side $1$; Type B has sides $1,1,\\sqrt3$. With unlimited copies of both, let $x_n$ count the tilings of an $n\\times\\sqrt3$ rectangle, where $n$ is a positive integer. The drawing includes a tiling for $n=4$.\n\n[[FIGURE]]\n\nFind a linear recurrence for $x_n$, meaning a formula expressing a term as a linear combination of finitely many preceding terms, for example $a_n=3a_{n-1}-4a_{n-2}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2024,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2024 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
