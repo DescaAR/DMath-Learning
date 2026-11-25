@@ -5768,12 +5768,16 @@
       "finding": "Six-square staircase matches."
     },
     "umo-2013-04": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "page": 2,
+      "finding": "Three lines and labels match; viewport expanded to avoid clipping and cropped vertically; figure placed after statement."
     },
     "umo-2013-06": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "page": 2,
+      "finding": "Four triangular border arrays and two tile shapes; heavy boundary edges and compact viewport restored."
     },
     "umo-2019-04": {
       "status": "diagram_structure_checked",
