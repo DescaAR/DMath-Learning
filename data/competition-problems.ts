@@ -18382,6 +18382,397 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Soal Presentasi, Nomor 5",
       "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
     }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-01",
+    "level": "Kuliah",
+    "topic": "Limit",
+    "difficulty": 3,
+    "title": "Limit",
+    "prompt": "Hitung:\n\n$$\\lim_{x\\to\\infty}\\left(x+2-\\sqrt{x^2-2x+6}\\right)$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 1",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 1",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Hitung\n\n$$\\int_0^2\\int_0^{45}\\frac{xy}{2025}\\,dy\\,dx$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 2",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 2",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-03",
+    "level": "Kuliah",
+    "topic": "Limit",
+    "difficulty": 3,
+    "title": "Limit",
+    "prompt": "Hitung:\n\n$$\\lim_{x\\to-\\infty}\\frac{\\sqrt{x^2-x+1}}{2x+1}$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 3",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 3",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-04",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan turunan $(\\frac{dy}{dx})$ dari fungsi:\n\n$$y=\\ln\\sqrt{1+x^2}$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 4",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 4",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-05",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Diketahui fungsi:\n\n$$f(x,y,z)=\\frac{x^2+y^2}{z},\\quad z\\ne0.$$\n\nTentukan:\n\n(a) Gradien $\\nabla f$\n\n(b) Evaluasi gradien di titik $(1,2,-1)$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 5",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 5",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-06",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Tunjukkan bahwa deret berikut konvergen dan tentukan jumlahnya:\n\n$$\\sum_{k=2}^{\\infty}\\left(\\frac1k-\\frac1{k-1}\\right)$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 6",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 6",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-07",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan titik kritis dan nilai ekstrem fungsi:\n\n$$h(t)=\\frac{t^{5/3}}{t+2},\\quad t\\in[-1,8].$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 7",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 7",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Panjang kurva yang didefinisikan menggunakan persamaan parametrik\n\n$$x(t)=6\\sin2t,\\quad y(t)=8\\sin2t$$\n\nuntuk $\\frac{\\pi}{12}\\le t\\le\\frac{\\pi}{8}$ adalah $a(\\sqrt2-b)$. Tentukan nilai $a+b$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 8",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 8",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-09",
+    "level": "Kuliah",
+    "topic": "Limit",
+    "difficulty": 3,
+    "title": "Limit",
+    "prompt": "Hitung:\n\n$$\\lim_{x\\to0}\\frac{3x\\tan x}{\\sin x}$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 9",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 9",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-10",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan rumus umum untuk turunan ke-$n$ dari hasil kali dua fungsi $u$ dan $v$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 10",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 10",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-11",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Tentukan rotasi dari medan vektor:\n\n$$\\vec F(x,y,z)=(y,z,x)$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 11",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 11",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-12",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan luas permukaan benda pejal yang diperoleh dari memutar daerah yang dibatasi oleh kurva\n\n$$y=\\cosh x,\\quad -\\ln2\\le x\\le\\ln2$$\n\nterhadap sumbu-$x$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 12",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 12",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-13",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Tunjukkan bahwa medan vektor $F(x,y)=(y^2,2xy)$ adalah konservatif, dan tentukan fungsi potensial $\\Phi(x,y)$ sehingga $F=\\nabla\\Phi$. Selanjutnya, hitung integral garis $\\int_C F.dr$ sepanjang kurva $C$ yang menghubungkan titik $(0,0)$ ke titik $(1,1)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 13",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 13",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-14",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan selang nilai $x$ dimana grafik fungsi\n\n$$f(x)=28x-\\frac32x^2-\\frac13x^3$$\n\nmonoton turun dan cekung ke atas.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 14",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 14",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-15",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Tentukan apakah deret berikut konvergen atau divergen:\n\n$$\\sum_{k=5}^{\\infty}\\frac{1000}{k(\\ln k)^2}$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 15",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 15",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-16",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan hasil dari:\n\n$$\\int_{\\frac{\\pi}{20}}^{\\frac{\\pi}{15}}\\frac{\\sec(5P)\\tan(5P)}{\\sqrt[7]{5+\\sec(5P)}}\\,dP$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 16",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 16",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-17",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Ujilah apakah deret\n\n$$\\sum_{n=1}^{\\infty}\\frac{n^2+5}{n^3+2n}$$\n\nkonvergen atau divergen.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 17",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 17",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-18",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan turunan dari fungsi:\n\n$$y=\\frac{\\sin(5x^2)}{\\cos^2(3x^2)}$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 18",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 18",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-19",
+    "level": "Kuliah",
+    "topic": "Limit",
+    "difficulty": 3,
+    "title": "Limit",
+    "prompt": "Tentukan limit dari:\n\n$$\\lim_{x\\to0}\\frac{x^3\\ln(x+1)}{e^x-1}$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 19",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 19",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-1-20",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Untuk fungsi\n\n$$f(x,y)=x^2ye^{xy}+\\sin(xy),$$\n\ntentukan turunan parsial $f_{xy}$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 1, Nomor 20",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 1",
+      "number": "Nomor 20",
+      "note": "User Drive: Soal Penyisihan 1 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-final-01",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Diberikan fungsi\n\n$$f(x,y)=x^2+2x+2y^2$$\n\ndan $C$ adalah lingkaran berpusat di $(0,0)$ yang berjari-jari 5. Tentukan semua titik $(x,y)$ pada $C$ di mana $f(x,y)$ **minimal dan maksimal**, beserta nilai fungsinya.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Final, Nomor 1",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 1",
+      "note": "User Drive: Soal Final (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-final-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Jika $P$ adalah himpunan semua titik yang terletak pada parabola\n\n$$x=y^2-2y+4,$$\n\ntentukan nilai minimal dari fungsi\n\n$$f(x,y)=x^2+y^2-2x-2y+2$$\n\npada $P$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Final, Nomor 2",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 2",
+      "note": "User Drive: Soal Final (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-final-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Misalkan $S$ adalah ruang di bawah permukaan\n\n$$z=8-\\sqrt{4x^2+5y^2}$$\n\ndi atas bidang $xy$. Sebuah balok dibuat di dalam ruang $S$ dengan rusuk sejajar sumbu-sumbu koordinat. Tentukan volume terbesar balok yang dapat dibuat.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Final, Nomor 3",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 3",
+      "note": "User Drive: Soal Final (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
