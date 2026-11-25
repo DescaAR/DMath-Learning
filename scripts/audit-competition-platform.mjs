@@ -90,7 +90,7 @@ console.log("Competition platform audit passed:",competitionProblems.length,"pro
 
 const parserMod={exports:{}};
 new Function("exports","module",ts.transpileModule(read("lib/competition-prompt.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(parserMod.exports,parserMod);
-const {splitCompetitionPrompt,splitSubquestions,compactCompetitionMath}=parserMod.exports;
+const {splitCompetitionPrompt,splitSubquestions,compactCompetitionMath,smoothMNPair}=parserMod.exports;
 let choices=0,subparts=0;
 for(const p of competitionProblems){
  const parsed=splitCompetitionPrompt(p.prompt);
@@ -216,6 +216,8 @@ for(const p of competitionProblems){
  const chunks=[...(sub?[sub.intro,...sub.parts.map(x=>x.text)]:[body]),...(parsed?.options??[])].flatMap(x=>x.split("[[FIGURE]]"));
  for(const chunk of chunks){
   const formatted=compactCompetitionMath(chunk.trim());
+  const mathValues = value => tokenizeMath(value).filter(t=>t.kind!=="text").map(t=>t.value);
+  assert.deepEqual(mathValues(formatted),mathValues(smoothMNPair(chunk.trim())),p.id+" mathematical expressions changed during presentation");
   for(const token of tokenizeMath(formatted)){
    if(token.kind==="text")continue;
    try {
@@ -231,3 +233,22 @@ for(const p of competitionProblems){
 }
 assert.equal(compactCompetitionMath("For which $$x=1\\tag{1}$$ holds."),"For which$$x=1\\tag{1}$$holds.");
 console.log("Rendered competition math audit passed:",competitionProblems.length,"questions,",renderedFormulaCount,"formulas.");
+
+ 
+// Consecutive display blocks must not become an unreadable inline list.
+for(const [id, expected] of [
+ ["umo-2022-03",2],
+ ["umo-2014-05",2],
+ ["putnam-2024-b6",2],
+ ["magd-2018-ii-01",2],
+ ["calculus-cup-xvi-2025-penyisihan-2-05",3]
+]){
+ const question=competitionProblems.find(p=>p.id===id);
+ assert.ok(question,id+" missing");
+ const tokens=tokenizeMath(compactCompetitionMath(question.prompt));
+ assert.equal(tokens.filter(t=>t.kind==="display").length,expected,id+" consecutive equations must remain displayed");
+}
+const adjacentMath=compactCompetitionMath("Given $x\\in\\mathbb R$\n\n$$\\begin{aligned}x&=1\\\\y&=2\\end{aligned}$$");
+assert.ok(adjacentMath.includes("$\n$$"),"Adjacent inline and display math need a separator");
+assert.deepEqual(tokenizeMath(adjacentMath).filter(t=>t.kind!=="text").map(t=>t.kind),["inline","display"]);
+console.log("Consecutive equation layout regression checks passed.");
