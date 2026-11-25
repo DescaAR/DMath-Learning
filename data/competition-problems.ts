@@ -2153,7 +2153,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Barisan dengan residu berbeda",
-    "prompt": "Suppose an integer sequence $(a_n)_{n\\ge1}$ has infinitely many positive terms and infinitely many negative terms. For each $n\\ge1$, the first $n$ terms represent distinct residue classes modulo $n$. Establish that each integer appears precisely once among the terms.",
+    "prompt": "Suppose an integer sequence $a_1,a_2,\\ldots$ has infinitely many positive terms and infinitely many negative terms. For each $n\\ge1$, the first $n$ terms represent distinct residue classes modulo $n$. Establish that each integer appears precisely once among the terms.",
     "source": {
       "kind": "competition",
       "label": "IMO 2005 — Hari 1, Nomor 2",
@@ -2162,7 +2162,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -2171,7 +2171,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan tiga variabel",
-    "prompt": "Given positive real numbers $x,y,z$ satisfying $xyz\\ge1$, establish $$\\frac{x^5-x^2}{x^5+y^2+z^2}+\\frac{y^5-y^2}{x^2+y^5+z^2}+\\frac{z^5-z^2}{x^2+y^2+z^5}\\ge0.$$",
+    "prompt": "Given positive real numbers $x,y,z$ satisfying $xyz\\ge1$, establish\n\n$$\\frac{x^5-x^2}{x^5+y^2+z^2}+\\frac{y^5-y^2}{x^2+y^5+z^2}+\\frac{z^5-z^2}{x^2+y^2+z^5}\\ge0.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2005 — Hari 1, Nomor 3",
@@ -2180,7 +2180,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -2189,7 +2189,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Koprimalitas pada barisan",
-    "prompt": "Classify the positive integers $m$ satisfying $\\gcd(m,a_n)=1$ at every index $n\\ge1$, where $$a_n=2^n+3^n+6^n-1.$$",
+    "prompt": "Determine all positive integers relatively prime to all the terms of the infinite sequence\n\n$$a_n=2^n+3^n+6^n-1,\\ n\\ge1.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2005 — Hari 2, Nomor 4",
@@ -2198,7 +2198,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -9278,7 +9278,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2005 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9287,7 +9287,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Titik tetap lingkaran luar",
-    "prompt": "Fix convex $ABCD$ with $BC=DA$ but nonparallel sides $BC,DA$. Vary $E\\in BC$ and $F\\in DA$ subject to $BE=DF$. Define the line intersections $P=AC\\cap BD$, $Q=BD\\cap EF$, $R=EF\\cap AC$. Prove that the circumcircles of $PQR$ all pass through a fixed second point distinct from $P$.",
+    "prompt": "Fix convex $ABCD$ with $BC=DA$ but nonparallel sides $BC,DA$. Vary $E\\in BC$ and $F\\in DA$ subject to $BE=DF$. Define the line intersections $P=AC\\cap BD$, $Q=BD\\cap EF$, $R=EF\\cap AC$.\n\nProve that the circumcircles of $PQR$ all pass through a fixed second point distinct from $P$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9296,7 +9296,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2005 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9314,7 +9314,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2005 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10196,7 +10196,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2009 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10214,7 +10214,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2009 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10223,7 +10223,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Barisan aritmetika dari subbarisan berindeks",
-    "prompt": "A strictly increasing positive integer sequence $(s_i)_{i\\ge1}$ has arithmetic subsequences $(s_{s_i})_{i\\ge1}$ and $(s_{s_i+1})_{i\\ge1}$. Establish that $(s_i)_{i\\ge1}$ is arithmetic.",
+    "prompt": "A strictly increasing positive integer sequence $s_1,s_2,s_3,\\ldots$ has arithmetic subsequences \n\n$$s_{s_1},s_{s_2},s_{s_3},\\ldots\\qquad\\text{and}\\qquad s_{s_1+1},s_{s_2+1},s_{s_3+1},\\ldots$$\n\n. Establish that $s_1,s_2,s_3,\\ldots$ is arithmetic.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10232,7 +10232,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2009 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10250,7 +10250,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2009 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10268,7 +10268,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2009 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10286,7 +10286,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2009 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10295,7 +10295,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi dengan fungsi lantai",
-    "prompt": "Classify $f:\\mathbb R\\to\\mathbb R$ satisfying $f(\\lfloor x\\rfloor y)=f(x)\\lfloor f(y)\\rfloor$ for all real $x,y$. Here $\\lfloor z\\rfloor$ is the greatest integer not exceeding $z$.",
+    "prompt": "Classify $f:\\mathbb R\\to\\mathbb R$ satisfying\n\n$$f(\\lfloor x\\rfloor y)=f(x)\\lfloor f(y)\\rfloor$$\n\nfor all real $x,y$. Here $\\lfloor z\\rfloor$ is the greatest integer not exceeding $z$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10304,7 +10304,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2010 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10313,7 +10313,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Perpotongan garis pada lingkaran luar",
-    "prompt": "Let $I,\\Gamma$ be the incentre and circumcircle of $ABC$, and $D$ the second intersection of $AI$ with $\\Gamma$. Take $E$ on arc $BDC$ and $F$ on side $BC$ with $\\angle BAF=\\angle CAE<\\frac12\\angle BAC$. For midpoint $G$ of $IF$, establish that $DG$ and $EI$ intersect on $\\Gamma$.",
+    "prompt": "Let $I,\\Gamma$ be the incentre and circumcircle of $ABC$, and $D$ the second intersection of $AI$ with $\\Gamma$. Take $E$ on arc $BDC$ and $F$ on side $BC$ with\n\n$$\\angle BAF=\\angle CAE<\\frac12\\angle BAC.$$\n\nFor midpoint $G$ of $IF$, establish that $DG$ and $EI$ intersect on $\\Gamma$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10322,7 +10322,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2010 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10331,7 +10331,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Fungsi dengan hasil kali kuadrat sempurna",
-    "prompt": "Write $\\mathbb N=\\{1,2,\\ldots\\}$. Classify $g:\\mathbb N\\to\\mathbb N$ for which $(g(m)+n)(m+g(n))$ is a perfect square for every $m,n\\in\\mathbb N$.",
+    "prompt": "Let $\\mathbb N$ be the set of positive integers. Determine all functions $g:\\mathbb N\\to\\mathbb N$ such that\n\n$$(g(m)+n)(m+g(n))$$\n\nis a perfect square for all $m,n\\in\\mathbb N$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10340,7 +10340,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2010 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -10358,7 +10358,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2010 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10376,7 +10376,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2010 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10385,7 +10385,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Rekurensi maksimum barisan positif",
-    "prompt": "A positive real sequence $(a_n)_{n\\ge1}$ satisfies $a_n=\\max\\{a_k+a_{n-k}\\mid1\\le k\\le n-1\\}$ whenever $n>s$, for some positive integer $s$. Establish positive integers $\\ell,N$ with $\\ell\\le s$ and $a_n=a_\\ell+a_{n-\\ell}$ whenever $n\\ge N$.",
+    "prompt": "A positive real sequence $a_1,a_2,a_3,\\ldots$ satisfies\n\n$$a_n=\\max\\{a_k+a_{n-k}\\mid1\\le k\\le n-1\\}$$\n\nwhenever $n>s$, for some positive integer $s$. Establish positive integers $\\ell,N$ with $\\ell\\le s$ and $a_n=a_\\ell+a_{n-\\ell}$ whenever $n\\ge N$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10394,7 +10394,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2010 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10511,7 +10511,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Jarak titik interior dan incenter",
-    "prompt": "In triangle $ABC$ with incenter $I$, suppose an interior point $P$ satisfies $\\angle PBA+\\angle PCA=\\angle PBC+\\angle PCB$. Establish $AP\\ge AI$, with equality precisely when $P=I$.",
+    "prompt": "In triangle $ABC$ with incentre $I$, suppose an interior point $P$ satisfies\n\n$$\\angle PBA+\\angle PCA=\\angle PBC+\\angle PCB.$$\n\nEstablish $AP\\ge AI$, with equality precisely when $P=I$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10520,7 +10520,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2006 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10538,7 +10538,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2006 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10547,7 +10547,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Konstanta optimal ketaksamaan siklik",
-    "prompt": "Minimize the real constant $M$ for which $$\\left|ab(a^2-b^2)+bc(b^2-c^2)+ca(c^2-a^2)\\right|\\le M(a^2+b^2+c^2)^2$$ for arbitrary real $a,b,c$.",
+    "prompt": "Minimize the real constant $M$ for which\n\n$$\\left|ab(a^2-b^2)+bc(b^2-c^2)+ca(c^2-a^2)\\right|\\le M(a^2+b^2+c^2)^2$$\n\nfor arbitrary real $a,b,c$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10556,7 +10556,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2006 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10565,7 +10565,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Persamaan kuadrat dengan perpangkatan dua",
-    "prompt": "Find every integer pair $(x,y)$ satisfying $1+2^x+2^{2x+1}=y^2$.",
+    "prompt": "Determine all pairs $(x,y)$ of integers such that\n\n$$1+2^x+2^{2x+1}=y^2.$$",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10574,7 +10574,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2006 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 2; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -10583,7 +10583,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Titik tetap iterasi polinomial",
-    "prompt": "Take an integer-coefficient polynomial $P(x)$ of degree $n>1$ and a positive integer $k$. Write $Q(x)=P(P(\\cdots P(x)\\cdots))$ for its $k$-fold composition. Prove that $Q(t)=t$ admits at most $n$ integer solutions.",
+    "prompt": "Take an integer-coefficient polynomial $P(x)$ of degree $n>1$ and a positive integer $k$. Write $Q(x)=P(P(\\ldots P(P(x))\\ldots))$ for its $k$-fold composition. Prove that $Q(t)=t$ admits at most $n$ integer solutions.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10592,7 +10592,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2006 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10610,7 +10610,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2006 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10619,7 +10619,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Aproksimasi barisan dengan barisan monoton",
-    "prompt": "Given reals $a_1,\\ldots,a_n$, define $d_i=\\max\\{a_j:1\\le j\\le i\\}-\\min\\{a_j:i\\le j\\le n\\}$ for $1\\le i\\le n$, and $d=\\max\\{d_i:1\\le i\\le n\\}$.\n\n(a) For reals $x_1\\le\\cdots\\le x_n$, prove $\\max\\{|x_i-a_i|:1\\le i\\le n\\}\\ge\\frac d2$.\n\n(b) Establish that a nondecreasing real sequence $x_1,\\ldots,x_n$ attaining equality exists.",
+    "prompt": "Given reals $a_1,\\ldots,a_n$, for $1\\le i\\le n$, define\n\n$$d_i=\\max\\{a_j:1\\le j\\le i\\}-\\min\\{a_j:i\\le j\\le n\\}$$\n\nand\n\n$$d=\\max\\{d_i:1\\le i\\le n\\}.$$\n\n(a) For reals $x_1\\le\\cdots\\le x_n$, prove\n\n$$\\max\\{|x_i-a_i|:1\\le i\\le n\\}\\ge\\frac d2.\\tag{*}$$\n\n(b) Establish that a nondecreasing real sequence $x_1,\\ldots,x_n$ attaining equality exists.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10628,7 +10628,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2007 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10646,7 +10646,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2007 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10664,7 +10664,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2007 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10682,7 +10682,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2007 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10691,7 +10691,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Keterbagian bentuk kuadrat",
-    "prompt": "For positive integers $a,b$, establish that $4ab-1\\mid(4a^2-1)^2$ implies $a=b$.",
+    "prompt": "Let $a$ and $b$ be positive integers. Show that if $4ab-1$ divides $(4a^2-1)^2$, then $a=b$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10700,7 +10700,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2007 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 2; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -10709,7 +10709,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Penutupan titik kisi tiga dimensi",
-    "prompt": "For positive integer $n$, define $S=\\{(x,y,z):x,y,z\\in\\{0,1,\\ldots,n\\},\\ x+y+z>0\\}$, a set of $(n+1)^3-1$ points in three-dimensional space. Minimize the number of planes covering $S$ while excluding the origin.",
+    "prompt": "For positive integer $n$, define\n\n$$S=\\{(x,y,z):x,y,z\\in\\{0,1,\\ldots,n\\},\\ x+y+z>0\\}$$\n\nas a set of $(n+1)^3-1$ points in three-dimensional space. Minimize the number of planes covering $S$ while excluding the origin.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10718,7 +10718,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2007 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10736,7 +10736,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2008 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10745,7 +10745,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan pecahan dan kasus kesetaraan",
-    "prompt": "(a) For real $x,y,z$, none equal to $1$, with $xyz=1$, establish $$\\frac{x^2}{(x-1)^2}+\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2}\\ge1.$$\n\n(b) Establish infinitely many rational triples satisfying the same restrictions and attaining equality.",
+    "prompt": "(a) For real $x,y,z$, none equal to $1$, with $xyz=1$, establish\n\n$$\\frac{x^2}{(x-1)^2}+\\frac{y^2}{(y-1)^2}+\\frac{z^2}{(z-1)^2}\\ge1.$$\n\n(b) Establish infinitely many rational triples satisfying the same restrictions and attaining equality.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10754,7 +10754,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2008 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10763,7 +10763,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Pembagi prima besar",
-    "prompt": "Prove that infinitely many positive integers $n$ admit a prime divisor of $n^2+1$ exceeding $2n+\\sqrt{2n}$.",
+    "prompt": "Prove that there exist infinitely many positive integers $n$ such that $n^2+1$ has a prime divisor which is greater than $2n+\\sqrt{2n}$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10772,7 +10772,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2008 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -10781,7 +10781,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi pada real positif",
-    "prompt": "Classify maps $f:(0,\\infty)\\to(0,\\infty)$ satisfying $$\\frac{(f(w))^2+(f(x))^2}{f(y^2)+f(z^2)}=\\frac{w^2+x^2}{y^2+z^2}$$ for positive reals $w,x,y,z$ with $wx=yz$.",
+    "prompt": "Classify maps $f:(0,\\infty)\\to(0,\\infty)$ satisfying\n\n$$\\frac{(f(w))^2+(f(x))^2}{f(y^2)+f(z^2)}=\\frac{w^2+x^2}{y^2+z^2}$$\n\nfor positive reals $w,x,y,z$ with $wx=yz$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10790,7 +10790,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2008 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10799,7 +10799,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Rasio banyak urutan sakelar lampu",
-    "prompt": "Take positive integers $k\\ge n$ with $k-n$ even. Initially, lamps $1,\\ldots,2n$ are off. A step toggles one lamp. Let $N$ count $k$-step sequences ending with precisely lamps $1,\\ldots,n$ on. Let $M$ count those sequences that never turn on any lamp numbered above $n$. Determine $\\frac NM$.",
+    "prompt": "Take positive integers $k\\ge n$ with $k-n$ even. Initially, lamps $1,\\ldots,2n$ are off. A step toggles one lamp.\n\nLet $N$ count $k$-step sequences ending with precisely lamps $1,\\ldots,n$ on.\n\nLet $M$ count those sequences that never turn on any lamp numbered above $n$.\n\nDetermine $N/M$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10808,7 +10808,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2008 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10826,7 +10826,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2008 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
