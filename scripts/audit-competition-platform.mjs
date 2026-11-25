@@ -160,3 +160,9 @@ assert.match(workspace,/className="cmp-material-tag"/);
 assert.match(workspace,/materialOf\(p\)===topic/);
 assert.doesNotMatch(workspace,/<h[13][^>]*>\s*(?:<Link[^>]*>)?\{p\.title\}/,"Descriptive titles must not be displayed");
 assert.match(css,/\.cmp-material-tag\{/);
+
+for(const year of [2019,2026]){
+ const set=competitionProblems.filter(p=>p.source.competition==="IMC"&&p.source.year===year);
+ assert.deepEqual(set.map(p=>p.source.number).sort((a,b)=>a.localeCompare(b,"id",{numeric:true})),Array.from({length:10},(_,i)=>"Hari "+(i<5?1:2)+", Nomor "+(i+1)),"Incomplete IMC set "+year);
+ for(const p of set){const day=Number(p.source.number.match(/Hari (\d+)/)[1]);assert.equal(p.source.url,"https://www.imc-math.org.uk/archive/problems/"+year+"/IMC_"+year+"_Day_"+day+"_Questions.pdf");assert.ok(!displayedFigureIds.includes(p.id),"No illustration in original IMC question: "+p.id);}
+}

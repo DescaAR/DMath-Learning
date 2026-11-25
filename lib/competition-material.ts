@@ -100,6 +100,23 @@ const rules: Readonly<Record<string, readonly (readonly [RegExp,string])[]>> = {
 };
 
 const overrides: Readonly<Record<string,string>>={
+ "imc-2026-01":"Trigonometri",
+ "imc-2026-02":"Matriks",
+ "imc-2026-03":"Permutasi",
+ "imc-2026-04":"Barisan dan Deret",
+ "imc-2026-05":"Polinomial",
+ "imc-2026-06":"Turunan",
+ "imc-2026-07":"Luas dan Keliling",
+ "imc-2026-08":"Nilai Eigen dan Vektor Eigen",
+ "imc-2026-09":"Barisan dan Deret",
+ "imc-2026-10":"Kombinatorika Geometri",
+ "imc-2019-01":"Hasil Kali Tak Hingga",
+ "imc-2019-02":"Sistem Persamaan Linear",
+ "imc-2019-03":"Integral",
+ "imc-2019-04":"Barisan dan Deret",
+ "imc-2019-06":"Turunan",
+ "imc-2019-07":"Barisan dan Deret",
+ "imc-2019-10":"Peluang Geometris",
  "univ-001":"Barisan dan Deret",
  "univ-005":"Barisan Fungsi",
  "imc-2024-06":"Fungsi",

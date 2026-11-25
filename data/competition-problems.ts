@@ -4049,7 +4049,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 2,
     "title": "Persamaan trigonometri",
-    "prompt": "Show that $\\{x\\in\\mathbb R:\\cos(\\cos x)=\\sin(\\sin x)\\}=\\emptyset$.",
+    "prompt": "Prove that the equation $\\cos(\\cos x)=\\sin(\\sin x)$ admits no real solution.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4057,8 +4057,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2026 — Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4067,7 +4067,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Identitas matriks dan komutativitas",
-    "prompt": "For real square matrices $A,B$ of equal size, does $A^{\\mathsf T}A+BB^{\\mathsf T}=AB+BA$ imply $AB=BA$?",
+    "prompt": "Suppose $n$ is a positive integer and $A,B$ are real $n\\times n$ matrices satisfying $$A^\\top A+BB^\\top=AB+BA,$$ with $X^\\top$ denoting the transpose of $X$. Is $AB=BA$ necessarily true?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4075,8 +4075,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2026 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4085,7 +4085,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Penggabungan berselang-seling himpunan bagian terurut",
-    "prompt": "Take a deck labeled $1,\\ldots,n$ with $n\\ge2$. Split it into two nonempty stacks, sorting the first increasingly and the second decreasingly. Alternately remove the next card from each stack, starting with the first; once a stack is empty, append the rest of the other stack. For example, the stacks $(1,3)$ and $(6,5,4,2)$ give $(1,6,3,5,4,2)$ when $n=6$. Count the distinct deck orders achievable by this procedure.",
+    "prompt": "A deck contains $n\\ge2$ cards numbered $1,2,\\ldots,n$. An alternating shuffle splits the deck into two nonempty stacks, orders the first increasingly and the second decreasingly, and draws alternately from them, beginning with the first. When either stack is exhausted, append the remaining cards in their existing order. Count the distinct resulting deck orders.\n\nExample: With $n=6$, stacks $A=(1,3)$ and $B=(6,5,4,2)$ produce $(1,6,3,5,4,2)$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4093,8 +4093,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2026 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4103,7 +4103,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Limit barisan rekursif berbasis rata-rata",
-    "prompt": "Starting with $x_1>0$, define $$x_{n+1}=\\arctan\\left(\\frac{x_1+\\cdots+x_n}{n}\\right),\\qquad n\\ge1.$$ Evaluate $\\displaystyle\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$, where $\\ln$ is the natural logarithm.",
+    "prompt": "Given $x_1>0$, construct the sequence $\\{x_n\\}$ recursively by $$x_{n+1}=\\arctan\\left(\\frac{x_1+x_2+\\cdots+x_n}{n}\\right)$$ for every $n\\ge1$. Evaluate $\\displaystyle\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$, using $\\ln x$ for the natural logarithm of $x$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4111,8 +4111,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2026 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4121,7 +4121,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Konsentrasi polinomial",
-    "prompt": "Establish the existence of a universal $C>0$ such that each $A,B\\in\\mathbb Z_{>0}$ admits $p\\in\\mathbb R[x]$ with $$\\deg p<C\\sqrt{AB},\\qquad p(0)^2>\\sum_{i=-A,\\ i\\ne0}^{B}p(i)^2.$$",
+    "prompt": "Establish a constant $C>0$ for which each pair of positive integers $A,B$ admits a real polynomial $p(x)$ satisfying $$p(0)^2>\\sum_{i=1}^A p(-i)^2+\\sum_{i=1}^B p(i)^2\\qquad\\text{and}\\qquad \\deg p<C\\sqrt{AB}.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4129,8 +4129,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2026 — Hari 1, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4139,7 +4139,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Persamaan komposisi fungsi dan turunan",
-    "prompt": "(a) Decide whether a differentiable function $f:\\mathbb R\\to\\mathbb R$ exists with $f'(f(x))=x$ for every $x\\in\\mathbb R$. (b) Decide whether such a function exists with $f'(f(x))=|x|$ for every $x\\in\\mathbb R$.",
+    "prompt": "(a) Can a differentiable map $f:\\mathbb R\\to\\mathbb R$ satisfy $f'(f(x))=x$ at every $x\\in\\mathbb R$?\n\n(b) Can a differentiable map $f:\\mathbb R\\to\\mathbb R$ satisfy $f'(f(x))=|x|$ at every $x\\in\\mathbb R$?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4147,8 +4147,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2026 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4157,7 +4157,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Luas gabungan ruas garis",
-    "prompt": "For each continuous $f:[0,1]\\to\\mathbb R$, form $S(f)$ from all line segments connecting $(x,0)$ to $(f(x),1)$, for $0\\le x\\le1$. Write $A(f)$ for its planar area. Determine the infimum of $A(f)$ as $f$ ranges over these continuous functions.",
+    "prompt": "Given continuous $f:[0,1]\\to\\mathbb R$, define $S(f)$ as the union of the straight segments joining $(x,0)$ and $(f(x),1)$ for $x\\in[0,1]$. Denote its area by $A(f)$. Determine the infimum of $A(f)$ over such functions.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4165,8 +4165,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2026 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4175,7 +4175,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Batas tajam energi matriks",
-    "prompt": "Fix $n\\ge5$. Let $A=(a_{ij})$ be a symmetric real $n\\times n$ matrix with $a_{ii}=0$ and $a_{ij}\\in\\{-1,1\\}$ for $i\\ne j$. Assume the inner product of any two distinct rows is constant. With eigenvalues $\\lambda_1,\\ldots,\\lambda_n$, establish $$\\sum_{i=1}^n|\\lambda_i|\\ge2n-2$$ and characterize every matrix attaining equality.",
+    "prompt": "Suppose $n\\ge5$ and $A=(a_{ij})$ is a real symmetric $n\\times n$ matrix with $a_{ii}=0$ and $a_{ij}\\in\\{-1,1\\}$ for $i\\ne j$. The scalar products of distinct rows have a common value. Denote the eigenvalues by $\\lambda_1,\\ldots,\\lambda_n$. Establish $$\\sum_{i=1}^n|\\lambda_i|\\ge2n-2$$ and classify the equality matrices.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4183,8 +4183,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2026 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4193,7 +4193,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Batas bawah barisan",
-    "prompt": "Suppose $a_n>0$ and $\\sum_{j=1}^{2n-1}a_j=a_n^2$ for every $n\\ge1$. Establish $a_n\\ge2n-1$.",
+    "prompt": "Suppose $a_1,a_2,\\ldots$ form an infinite sequence of positive real numbers with $$a_1+a_2+\\cdots+a_{2n-1}=a_n^2$$ for every positive integer $n$. Establish $a_n\\ge2n-1$ for every positive integer $n$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4201,8 +4201,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2026 — Hari 2, Nomor 9",
-      "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -4211,7 +4211,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Himpunan berhingga pada papan catur",
-    "prompt": "An infinite square grid of mesh $d>0$ has its open cells colored alternately white and black in the usual checkerboard pattern; the grid lines themselves are uncolored. Translation and rotation of the grid are allowed. Given any finite set of planar points $p_1,\\ldots,p_n$, decide whether there always exists such a grid of mesh $0<d<1$ with all points in white cells.",
+    "prompt": "An infinite chessboard of size $d>0$ is a square grid of side length $d$ whose square interiors alternate white and black; the grid lines have neither colour. The grid admits arbitrary planar translations and rotations.\n\nGiven any finite planar set $p_1,\\ldots,p_n$, must there exist $d\\in(0,1)$ and an infinite chessboard of size $d$ containing every $p_i$ in a white square?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4219,8 +4219,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2026 — Hari 2, Nomor 10",
-      "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2026",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
+      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
     }
   },
   {
@@ -10935,6 +10935,186 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IMO 2026 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
       "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imc-2019-01",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 2,
+    "title": "Hasil kali tak hingga",
+    "prompt": "Calculate $$\\prod_{n=3}^{\\infty}\\frac{(n^3+3n)^2}{n^6-64}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMC 2019 — Hari 1, Nomor 1",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-02",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Sistem persamaan linear dengan digit tahun",
+    "prompt": "A four-digit integer $YEAR$ is very good when the following linear system in $x,y,z,w$ admits two or more solutions:\n\n$\\begin{aligned}Yx+Ey+Az+Rw&=Y,\\\\Rx+Yy+Ez+Aw&=E,\\\\Ax+Ry+Yz+Ew&=A,\\\\Ex+Ay+Rz+Yw&=R.\\end{aligned}$\n\nDetermine all very good years from 2001 through 2100, inclusive (the 21st century).",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMC 2019 — Hari 1, Nomor 2",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-03",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Ketaksamaan integral",
+    "prompt": "Suppose $f:(-1,1)\\to\\mathbb R$ is twice differentiable and $2f'(x)+xf''(x)\\ge1$ throughout $(-1,1)$. Establish $$\\int_{-1}^{1}xf(x)\\,dx\\ge\\frac13.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMC 2019 — Hari 1, Nomor 3",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-04",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Integrality barisan rekursif",
+    "prompt": "Construct $a_0,a_1,\\ldots$ using $a_0=1$, $a_1=2$, and $(n+3)a_{n+2}=(6n+9)a_{n+1}-na_n$ for $n\\ge0$. Prove integrality of every term.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 4",
+      "label": "IMC 2019 — Hari 1, Nomor 4",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-05",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Identitas matriks dan komutativitas",
+    "prompt": "Can an odd positive integer $n$ and integer-entry $n\\times n$ matrices $A,B$ satisfy all three requirements?\n\n1. $\\det(B)=1$;\n2. $AB=BA$;\n3. $A^4+4A^2B^2+16B^4=2019I$.\n\nHere $I$ is the identity matrix of size $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 5",
+      "label": "IMC 2019 — Hari 1, Nomor 5",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-06",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Turunan dan kekontinuan",
+    "prompt": "Suppose $f,g:\\mathbb R\\to\\mathbb R$ are continuous, with $g$ differentiable, and $(f(0)-g'(0))(g'(1)-f(1))>0$. Establish existence of $c\\in(0,1)$ satisfying $f(c)=g'(c)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMC 2019 — Hari 2, Nomor 6",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-07",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Konvergensi deret dan faktorial",
+    "prompt": "Let $C=\\{4,6,8,9,10,\\ldots\\}$ consist of positive composite integers. For $n\\in C$, define $a_n$ as the least positive $k$ with $n\\mid k!$. Decide convergence of $$\\sum_{n\\in C}\\left(\\frac{a_n}{n}\\right)^n.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 7",
+      "label": "IMC 2019 — Hari 2, Nomor 7",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-08",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pencacahan himpunan bagian dengan jumlah sama",
+    "prompt": "For real $x_1,\\ldots,x_n$, assign $s(I)=\\sum_{i\\in I}x_i$ to each subset $I\\subset\\{1,2,\\ldots,n\\}$. If the $2^n$ subsets yield at least $1.8^n$ distinct sums, establish that at most $1.7^n$ subsets satisfy $s(I)=2019$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 8",
+      "label": "IMC 2019 — Hari 2, Nomor 8",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-09",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Persamaan matriks invertibel",
+    "prompt": "Classify positive integers $n$ admitting invertible real $n\\times n$ matrices $A,B$ with $AB-BA=B^2A$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 9",
+      "label": "IMC 2019 — Hari 2, Nomor 9",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+    }
+  },
+  {
+    "id": "imc-2019-10",
+    "level": "Kuliah",
+    "topic": "Peluang",
+    "difficulty": 5,
+    "title": "Peluang selubung konveks",
+    "prompt": "Sample 2019 points independently and uniformly from the unit disc $\\{(x,y)\\in\\mathbb R^2:x^2+y^2\\le1\\}$. Write $C$ for their convex hull. Compare the probabilities that $C$ has three vertices and that it has four vertices: which is greater?",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2019,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 10",
+      "label": "IMC 2019 — Hari 2, Nomor 10",
+      "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
     }
   }
 ];
