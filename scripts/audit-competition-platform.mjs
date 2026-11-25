@@ -13,12 +13,11 @@ let formulaCount=0;
 for(const l of levels)assert.ok(competitionProblems.filter(p=>p.level===l).length>=4,l+" has fewer than four reviewed starting problems");
 for(const p of competitionProblems){
  assert.ok(/^[a-z0-9-]+$/.test(p.id));assert.ok(levels.includes(p.level));assert.ok(p.difficulty>=1&&p.difficulty<=5);
- assert.ok(p.hints.length>=3&&p.hints.every(h=>h.trim()));
- assert.ok(p.idea&&p.prompt&&p.proof.prompt&&p.proof.answer&&p.evolution.prompt);
- assert.ok(p.solutions.length&&p.solutions.every(s=>s.steps.length>=2&&s.steps.every(x=>x.trim())));
- assert.ok(p.evolution.steps.length>=2);
+ assert.ok(p.title.trim()&&p.prompt.trim()&&p.topic.trim()&&p.source.label.trim());
+ assert.deepEqual(Object.keys(p).sort(),["difficulty","id","level","prompt","source","title"].concat("topic").sort(),p.id+" includes non-question data");
+ assert.ok(["original","competition"].includes(p.source.kind));
  if(p.source.kind==="competition"){assert.ok(p.source.url?.startsWith("https://")&&p.source.year&&p.source.number&&p.source.competition,p.id+" has incomplete attribution");}
- const strings=[p.prompt,p.idea,...p.hints,...p.solutions.flatMap(s=>s.steps),p.proof.prompt,p.proof.answer,p.evolution.prompt,...p.evolution.steps];
+ const strings=[p.prompt];
  for(const s of strings){
   let matched=0;
   for(const m of s.matchAll(/\$\$([\s\S]+?)\$\$|\$([^$\n]+)\$/g)){katex.renderToString(m[1]||m[2],{throwOnError:true,strict:"ignore",displayMode:Boolean(m[1])});formulaCount++;matched+=m[0].split("$").length-1;}
@@ -34,7 +33,10 @@ for(const [route,name] of [["problem-solving","Problem Solving"],["problem-of-th
 assert.doesNotMatch(home,/HomeMathShowcase|\/materi|Interactive Lab|Math Tools|Find the Mistake/);
 assert.ok(read("app/arsip/page.tsx").includes('"/materi"'),"Legacy material archive is missing");
 assert.doesNotMatch(workspace,/Ruang kerja|Catatan penyelesaian|Periksa argumen|Progressive Hints|Tandai selesai|setNotes|localStorage|p\.proof\.prompt|p\.evolution\.prompt/);
-assert.match(workspace,/Asia\/Jakarta/);assert.match(workspace,/dayIndex\(date\)/);assert.match(workspace,/p\.solutions\.map/);assert.match(workspace,/id="solution"/);assert.match(workspace,/id="source"/);assert.doesNotMatch(config,/Proof Academy|Problem Evolution/);
+assert.match(workspace,/Asia\/Jakarta/);assert.match(workspace,/dayIndex\(date\)/);assert.doesNotMatch(workspace,/p\.solutions|id="solution"|dan solusi|beserta pembahasan/);assert.match(workspace,/p\.prompt/);assert.match(workspace,/id="source"/);assert.doesNotMatch(config,/Proof Academy|Problem Evolution/);
 assert.match(read("app/problem-solving/[id]/page.tsx"),/generateStaticParams/);
+assert.ok(fs.existsSync("archive/competition-problems-with-solutions.ts"),"Previous solutions must be preserved in the repository");
+assert.doesNotMatch(workspace,/archive\/competition-problems-with-solutions/);
+assert.doesNotMatch(home,/dan solusi|beserta pembahasan/);
 assert.match(layout,/competition\.css/);assert.match(css,/@media\(max-width:500px\)/);assert.match(css,/prefers-reduced-motion/);
-console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and two navigation routes. This is structural validation, not a formal proof checker.");
+console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and two navigation routes. Public records contain questions and attribution only.");

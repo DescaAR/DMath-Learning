@@ -6,7 +6,7 @@ export const siteConfig = {
   shortName: "DMath",
   tagline: "Think Deeper, Solve Better.",
   description:
-    "Platform latihan olimpiade dan problem solving matematika untuk SD, SMP, SMA, dan mahasiswa, dengan kumpulan soal dan solusi lengkap.",
+    "Platform latihan olimpiade dan problem solving matematika untuk SD, SMP, SMA, dan mahasiswa, dengan kumpulan soal.",
   url: publicSiteUrl,
   basePath: githubPagesBasePath,
   locale: "id_ID",
