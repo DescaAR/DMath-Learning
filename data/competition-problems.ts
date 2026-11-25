@@ -217,7 +217,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi pada bilangan bulat",
-    "prompt": "Classify the functions $f:\\mathbb Z\\to\\mathbb Z$ satisfying $$f(2a)+2f(b)=f(f(a+b))$$ for every pair of integers $a,b$.",
+    "prompt": "Classify the functions $f:\\mathbb Z\\to\\mathbb Z$ satisfying\n\n$$f(2a)+2f(b)=f(f(a+b))$$\n\nfor every pair of integers $a,b$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2019 — Hari 1, Nomor 1",
@@ -225,7 +225,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2019,
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending.",
       "stage": "IMO"
     }
   },
@@ -587,7 +587,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Keterbagian jumlah fungsi lantai",
-    "prompt": "Find the real numbers $\\alpha$ for which $$\\lfloor\\alpha\\rfloor+\\lfloor2\\alpha\\rfloor+\\cdots+\\lfloor n\\alpha\\rfloor$$ is divisible by $n$ for each positive integer $n$. Here $\\lfloor z\\rfloor$ is the largest integer not exceeding $z$; for instance, $\\lfloor-\\pi\\rfloor=-4$ and $\\lfloor2\\rfloor=\\lfloor2.9\\rfloor=2$.",
+    "prompt": "Find the real numbers $\\alpha$ for which\n\n$$\\lfloor\\alpha\\rfloor+\\lfloor2\\alpha\\rfloor+\\cdots+\\lfloor n\\alpha\\rfloor$$\n\nis divisible by $n$ for each positive integer $n$. Here $\\lfloor z\\rfloor$ is the largest integer not exceeding $z$; for instance, $\\lfloor-\\pi\\rfloor=-4$ and $\\lfloor2\\rfloor=\\lfloor2.9\\rfloor=2$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2024 — Hari 1, Nomor 1",
@@ -595,7 +595,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending.",
       "stage": "IMO"
     }
   },
@@ -605,7 +605,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "FPB perpangkatan",
-    "prompt": "Classify the positive integer pairs $(a,b)$ admitting positive integers $g,N$ with $$\\gcd(a^n+b,b^n+a)=g\\qquad(n\\ge N,\\ n\\in\\mathbb Z).$$ The notation $\\gcd(x,y)$ means the greatest common divisor of $x$ and $y$.",
+    "prompt": "Classify the positive integer pairs $(a,b)$ admitting positive integers $g,N$ with\n\n$$\\gcd(a^n+b,b^n+a)=g$$\n\nfor all integers $n\\ge N$. The notation $\\gcd(x,y)$ means the greatest common divisor of $x$ and $y$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2024 — Hari 1, Nomor 2",
@@ -613,7 +613,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending.",
       "stage": "IMO"
     }
   },
@@ -1433,7 +1433,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan berbobot",
-    "prompt": "Suppose $a,b,c,d$ are real, $a\\ge b\\ge c\\ge d>0$, and $a+b+c+d=1$. Establish $$(a+2b+3c+4d)a^ab^bc^cd^d<1.$$",
+    "prompt": "The real numbers $a,b,c,d$ are such that $a\\ge b\\ge c\\ge d>0$ and $a+b+c+d=1$. Prove that\n\n$$(a+2b+3c+4d)a^ab^bc^cd^d<1.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2020 — Hari 1, Nomor 2",
@@ -1442,7 +1442,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -1460,7 +1460,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -1469,7 +1469,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan jumlah akar",
-    "prompt": "For arbitrary real $x_1,\\ldots,x_n$, establish $$\\sum_{i=1}^n\\sum_{j=1}^n\\sqrt{|x_i-x_j|}\\le\\sum_{i=1}^n\\sum_{j=1}^n\\sqrt{|x_i+x_j|}.$$",
+    "prompt": "Show that the inequality\n\n$$\\sum_{i=1}^n\\sum_{j=1}^n\\sqrt{|x_i-x_j|}\\le\\sum_{i=1}^n\\sum_{j=1}^n\\sqrt{|x_i+x_j|}$$\n\nholds for all real numbers $x_1,\\ldots,x_n$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2021 — Hari 1, Nomor 2",
@@ -1478,7 +1478,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -1487,7 +1487,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi dengan solusi tunggal",
-    "prompt": "Classify the maps $f:\\mathbb R_{>0}\\to\\mathbb R_{>0}$ for which, given any $x>0$, precisely one positive $y$ satisfies $$xf(y)+yf(x)\\le2.$$",
+    "prompt": "Classify the maps $f:\\mathbb R^+\\to\\mathbb R^+$ for which, given any $x>0$, precisely one positive $y$ satisfies\n\n$$xf(y)+yf(x)\\le2.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2022 — Hari 1, Nomor 2",
@@ -1496,7 +1496,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -1514,7 +1514,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -1523,7 +1523,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Barisan dan polinomial monik",
-    "prompt": "Fix an integer $k\\ge2$. Classify the infinite sequences $(a_n)_{n\\ge1}$ of positive integers admitting a polynomial $$P(x)=x^k+c_{k-1}x^{k-1}+\\cdots+c_1x+c_0$$ with nonnegative integer coefficients $c_0,\\ldots,c_{k-1}$ such that $$P(a_n)=a_{n+1}a_{n+2}\\cdots a_{n+k}$$ for every positive integer $n$.",
+    "prompt": "Fix an integer $k\\ge2$. Classify the infinite sequences $a_1,a_2,\\ldots$ of positive integers admitting a polynomial $P(x)=x^k+c_{k-1}x^{k-1}+\\cdots+c_1x+c_0$ with nonnegative integer coefficients $c_0,\\ldots,c_{k-1}$ such that\n\n$$P(a_n)=a_{n+1}a_{n+2}\\cdots a_{n+k}$$\n\nfor every positive integer $n$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2023 — Hari 1, Nomor 3",
@@ -1532,7 +1532,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -8783,7 +8783,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Operasi pemindahan rantai koin",
-    "prompt": "Marianne has $n$ aluminium coins (A) and $n$ bronze coins (B) from the Bank of Oslo, in arbitrary linear order. A chain is a contiguous run of coins of one type. Fix $1\\le k\\le2n$. Repeatedly move the maximal chain containing coin number $k$ (counted from the left) to the front.\n\nFor $n=k=4$, one example is\n$AAB\\underline{B}BABA\\to BBB\\underline{A}AABA\\to AAA\\underline{B}BBBA\\to BBB\\underline{B}AAAA\\to BBB\\underline{B}AAAA\\to\\cdots$.\n\nClassify $(n,k)$ for which every initial ordering eventually has its first $n$ coins of a single type.",
+    "prompt": "Marianne has $n$ aluminium coins (A) and $n$ bronze coins (B) from the Bank of Oslo, in arbitrary linear order. A chain is a contiguous run of coins of one type. Fix $1\\le k\\le2n$. Repeatedly move the maximal chain containing coin number $k$ (counted from the left) to the front.\n\nFor $n=k=4$, one example is\n$$AAB\\underline{B}BABA\\to BBB\\underline{A}AABA\\to AAA\\underline{B}BBBA\\to BBB\\underline{B}AAAA\\to BBB\\underline{B}AAAA\\to\\cdots.$$\n\nClassify $(n,k)$ for which every initial ordering eventually has its first $n$ coins of a single type.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -8792,7 +8792,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2022 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -8810,7 +8810,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2022 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -8828,7 +8828,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2022 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -8837,7 +8837,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Persamaan faktorial dengan eksponen prima",
-    "prompt": "Classify the positive integer triples $(a,b,p)$ satisfying $a^p=b!+p$, where $p$ is prime.",
+    "prompt": "Find all triples $(a,b,p)$ of positive integers with $p$ prime and\n\n$$a^p=b!+p.$$",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -8846,7 +8846,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2022 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 2; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -8855,7 +8855,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Jumlah lintasan naik pada persegi Nordik",
-    "prompt": "For positive $n$, fill an $n\\times n$ Nordic square bijectively with $1,\\ldots,n^2$. Cells are adjacent when sharing a side; a valley has no adjacent smaller entry. An uphill path is a nonempty sequence of cells beginning at a valley, moving between adjacent cells, with strictly increasing entries. Determine the minimum number of uphill paths in terms of $n$.",
+    "prompt": "For positive $n$, fill an $n\\times n$ Nordic square bijectively with $1,\\ldots,n^2$. Cells are adjacent when sharing a side; a valley has no adjacent smaller entry. An uphill path is a nonempty sequence of cells satisfying these conditions:\n\n(i) It begins at a valley.\n\n(ii) Successive cells are adjacent.\n\n(iii) Entries increase strictly. Determine the minimum number of uphill paths in terms of $n$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -8864,7 +8864,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2022 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -8873,7 +8873,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Garis singgung dan garis bagi sudut",
-    "prompt": "An acute triangle $ABC$ satisfies $AB<AC$ and has circumcircle $\\Omega$. Let $S$ bisect arc $CB$ containing $A$. The perpendicular from $A$ to $BC$ meets $BS$ at $D$ and $\\Omega$ again at $E$. Put $L=BE\\cap\\ell$, where $\\ell$ passes through $D$ parallel to $BC$. The circumcircle $\\omega$ of $BDL$ intersects $\\Omega$ at $B,P$. Show that its tangent at $P\\ne B$ intersects $BS$ on the internal bisector of $\\angle BAC$.",
+    "prompt": "An acute triangle $ABC$ satisfies $AB<AC$ and has circumcircle $\\Omega$. Let $S$ bisect arc $CB$ containing $A$. The perpendicular from $A$ to $BC$ meets $BS$ at $D$ and $\\Omega$ again at $E\\ne A$. Put $L=BE\\cap\\ell$, where $\\ell$ passes through $D$ parallel to $BC$. The circumcircle $\\omega$ of $BDL$ intersects $\\Omega$ at $B,P$. Show that its tangent at $P\\ne B$ intersects $BS$ on the internal bisector of $\\angle BAC$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -8882,7 +8882,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2023 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -8891,7 +8891,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Batas bawah barisan akar hasil kali",
-    "prompt": "Suppose $x_1,\\ldots,x_{2023}$ are distinct positive reals and $a_n=\\sqrt{(x_1+\\cdots+x_n)\\left(\\frac1{x_1}+\\cdots+\\frac1{x_n}\\right)}$ is integral for each $1\\le n\\le2023$. Establish $a_{2023}\\ge3034$.",
+    "prompt": "Suppose $x_1,\\ldots,x_{2023}$ are distinct positive reals and $$a_n=\\sqrt{(x_1+x_2+\\cdots+x_n)\\left(\\frac{1}{x_1}+\\frac{1}{x_2}+\\cdots+\\frac{1}{x_n}\\right)}$$ is integral for each $1\\le n\\le2023$. Establish $a_{2023}\\ge3034$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -8900,7 +8900,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2023 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -8918,7 +8918,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2023 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -8927,7 +8927,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Tiga lingkaran dengan dua titik persekutuan",
-    "prompt": "In equilateral $ABC$, choose interior points $A_1,B_1,C_1$ with $BA_1=A_1C$, $CB_1=B_1A$, $AC_1=C_1B$ and $\\angle BA_1C+\\angle CB_1A+\\angle AC_1B=480^\\circ$. Set $A_2=BC_1\\cap CB_1$, $B_2=CA_1\\cap AC_1$, $C_2=AB_1\\cap BA_1$. If $A_1B_1C_1$ has three unequal sides, prove that the circumcircles of $AA_1A_2$, $BB_1B_2$, $CC_1C_2$ share two points.",
+    "prompt": "In equilateral $ABC$, choose interior points $A_1,B_1,C_1$ with $BA_1=A_1C$, $CB_1=B_1A$, $AC_1=C_1B$ and\n\n$$\\angle BA_1C+\\angle CB_1A+\\angle AC_1B=480^\\circ.$$\n\n Set $A_2=BC_1\\cap CB_1$, $B_2=CA_1\\cap AC_1$, $C_2=AB_1\\cap BA_1$. If $A_1B_1C_1$ is scalene, prove that the circumcircles of $AA_1A_2$, $BB_1B_2$, $CC_1C_2$ share two points.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -8936,7 +8936,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2023 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -8945,7 +8945,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Periodisitas barisan frekuensi",
-    "prompt": "Take an infinite positive integer sequence $(a_n)$ and positive integer $N$. For $n>N$, let $a_n$ count occurrences of $a_{n-1}$ among $a_1,\\ldots,a_{n-1}$. Show that the odd-indexed or even-indexed subsequence is eventually periodic (possibly both). A sequence $(b_m)$ is eventually periodic when $b_{m+p}=b_m$ for all $m\\ge M$ for some positive integers $p,M$.",
+    "prompt": "Take an infinite positive integer sequence $a_1,a_2,a_3,\\ldots$ and positive integer $N$. For $n>N$, let $a_n$ count occurrences of $a_{n-1}$ among $a_1,\\ldots,a_{n-1}$. Show that the sequence $a_1,a_3,a_5,\\ldots$ or $a_2,a_4,a_6,\\ldots$ is eventually periodic (possibly both). A sequence $b_1,b_2,b_3,\\ldots$ is eventually periodic when $b_{m+p}=b_m$ for all $m\\ge M$ for some positive integers $p,M$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -8954,7 +8954,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2024 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -8972,7 +8972,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2024 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -8981,7 +8981,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Strategi Turbo pada papan monster",
-    "prompt": "Turbo the snail faces a $2024\\times2023$ board with 2022 stationary hidden monsters, one per interior row, at most one per column. Their locations are unknown. Each attempt starts in any top-row cell and proceeds by side-adjacent moves, including revisits. Encountering a monster ends the attempt and returns Turbo to the top row. He remembers the status of all visited cells. Arrival at the bottom row wins. Find the least $n$ permitting guaranteed success within $n$ attempts for every monster placement.",
+    "prompt": "Turbo the snail faces a $2024\\times2023$ board with 2022 stationary hidden monsters, exactly one per row other than the first and last, at most one per column. Their locations are unknown. Each attempt starts in any top-row cell and proceeds by side-adjacent moves, including revisits. Encountering a monster ends the attempt and returns Turbo to the top row. He remembers the status of all visited cells. Arrival at the bottom row wins. Find the least $n$ permitting guaranteed success within $n$ attempts for every monster placement.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -8990,7 +8990,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2024 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -8999,7 +8999,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Fungsi aquaesulian pada bilangan rasional",
-    "prompt": "Call $f:\\mathbb Q\\to\\mathbb Q$ aquaesulian when each rational pair $x,y$ satisfies at least one of $f(x+f(y))=f(x)+y$ or $f(f(x)+y)=x+f(y)$. Find the least integer $c$ uniformly bounding the cardinality of $\\{f(r)+f(-r)\\mid r\\in\\mathbb Q\\}$ over aquaesulian functions, proving that such a bound exists.",
+    "prompt": "Call $f:\\mathbb Q\\to\\mathbb Q$ aquaesulian when each rational pair $x,y$ satisfies at least one of the two equalities:\n\n$$f(x+f(y))=f(x)+y\\qquad\\text{or}\\qquad f(f(x)+y)=x+f(y).$$\n\n Find the least integer $c$ uniformly bounding the cardinality of $\\{f(r)+f(-r)\\mid r\\in\\mathbb Q\\}$ over aquaesulian functions, proving that such a bound exists.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9008,7 +9008,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2024 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9026,7 +9026,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2019 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9044,7 +9044,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2019 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9053,7 +9053,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Persamaan faktorial dan hasil kali",
-    "prompt": "Classify positive integer pairs $(k,n)$ satisfying $$k!=(2^n-1)(2^n-2)(2^n-4)\\cdots(2^n-2^{n-1}).$$",
+    "prompt": "Find all pairs $(k,n)$ of positive integers such that\n\n$$k!=(2^n-1)(2^n-2)(2^n-4)\\cdots(2^n-2^{n-1}).$$",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9062,7 +9062,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2019 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 2; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -9080,7 +9080,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2019 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9098,7 +9098,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2019 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9107,7 +9107,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Kekonkurenan garis bagi sudut",
-    "prompt": "Inside a convex quadrilateral $ABCD$, take $P$ satisfying $$\\angle PAD:\\angle PBA:\\angle DPA=1:2:3=\\angle CBP:\\angle BAP:\\angle BPC.$$ Show that the internal angle bisectors of $\\angle ADP,\\angle PCB$ and the perpendicular bisector of $AB$ are concurrent.",
+    "prompt": "Inside a convex quadrilateral $ABCD$, take $P$ satisfying\n\n$$\\angle PAD:\\angle PBA:\\angle DPA=1:2:3=\\angle CBP:\\angle BAP:\\angle BPC .$$\n\nShow that the internal angle bisectors of $\\angle ADP,\\angle PCB$ and the perpendicular bisector of $AB$ are concurrent.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9116,7 +9116,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2020 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9134,7 +9134,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2020 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9152,7 +9152,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2020 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9170,7 +9170,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2020 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9188,7 +9188,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2020 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9206,7 +9206,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2021 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9224,7 +9224,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2021 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9233,7 +9233,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Pertukaran posisi kenari pada lingkaran",
-    "prompt": "Squirrels Bushy and Jumpy collect 2021 walnuts. Jumpy labels them $1,\\ldots,2021$ and digs that many holes around their favourite tree. Bushy places one walnut in each hole in arbitrary order. Jumpy makes 2021 swaps: at step $k$, exchange the two neighbors of walnut $k$. Prove that some step $k$ exchanges labels $a,b$ with $a<k<b$.",
+    "prompt": "Squirrels Bushy and Jumpy collect 2021 walnuts. Jumpy labels them $1,\\ldots,2021$ and digs that many holes in a circular arrangement around their favourite tree. Bushy places one walnut in each hole in arbitrary order. Jumpy makes 2021 swaps: at step $k$, exchange the two neighbors of walnut $k$. Prove that some step $k$ exchanges labels $a,b$ with $a<k<b$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9242,7 +9242,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2021 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9251,7 +9251,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Batas kardinalitas himpunan bilangan bulat",
-    "prompt": "For integer $m\\ge2$, suppose $A$ is a finite integer set (negative and zero elements allowed), and $B_1,\\ldots,B_m\\subseteq A$ satisfy $\\sum_{b\\in B_k}b=m^k$ for $1\\le k\\le m$. Show $|A|\\ge\\frac m2$.",
+    "prompt": "For integer $m\\ge2$, suppose $A$ is a finite integer set (negative and zero elements allowed), and $B_1,\\ldots,B_m\\subseteq A$ satisfy $\\sum_{b\\in B_k}b=m^k$ for $1\\le k\\le m$. Show that $A$ contains at least $m/2$ elements.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9260,7 +9260,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2021 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9431,7 +9431,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Penutupan titik kisi dengan garis sunny",
-    "prompt": "Call a planar line sunny if it is parallel to neither coordinate axis nor $x+y=0$. Given integer $n\\ge3$, classify nonnegative integers $k$ allowing $n$ distinct lines that cover every point $(a,b)$ with $a,b$ positive integers and $a+b\\le n+1$, exactly $k$ lines being sunny.",
+    "prompt": "Call a planar line sunny if it is parallel to neither coordinate axis nor $x+y=0$. Given integer $n\\ge3$, classify nonnegative integers $k$ allowing $n$ distinct lines satisfying both conditions:\n\n• Every point $(a,b)$ with positive integers $a,b$ and $a+b\\le n+1$ is covered.\n\n• Exactly $k$ lines are sunny.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9440,7 +9440,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2025 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9449,7 +9449,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Garis singgung lingkaran BEF",
-    "prompt": "Circles $\\Omega,\\Gamma$ centered at $M,N$ intersect at distinct points $A,B$, with $\\Omega$ smaller in radius. On line $MN$, select $C\\in\\Omega$, $D\\in\\Gamma$ in order $C,M,N,D$. Let $P$ be the circumcenter of $ACD$ and $H$ the intersection of the altitudes of $PMN$. Line $AP$ meets $\\Omega,\\Gamma$ again at $E\\ne A,F\\ne A$, respectively. Establish tangency of the parallel to $AP$ through $H$ to the circumcircle of $BEF$.",
+    "prompt": "Circles $\\Omega,\\Gamma$ centered at $M,N$ intersect at distinct points $A,B$, with $\\Omega$ smaller in radius. On line $MN$, select $C\\in\\Omega$, $D\\in\\Gamma$ in order $C,M,N,D$. Let $P$ be the circumcentre of $ACD$ and $H$ the orthocentre (intersection of the altitudes) of $PMN$. Line $AP$ meets $\\Omega,\\Gamma$ again at $E\\ne A,F\\ne A$, respectively. Establish tangency of the parallel to $AP$ through $H$ to the circumcircle of $BEF$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9458,7 +9458,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2025 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9467,7 +9467,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Batas fungsi bonza",
-    "prompt": "Write $\\mathbb N=\\{1,2,\\ldots\\}$. Call $f:\\mathbb N\\to\\mathbb N$ bonza when $f(a)\\mid b^a-f(b)^{f(a)}$ for every $a,b\\in\\mathbb N$. Determine the least real $c$ bounding $f(n)\\le cn$ uniformly over these functions and positive integers $n$.",
+    "prompt": "Write $\\mathbb N=\\{1,2,\\ldots\\}$. Call $f:\\mathbb N\\to\\mathbb N$ bonza when $$f(a)\\mid b^a-f(b)^{f(a)}$$ for every $a,b\\in\\mathbb N$. Determine the least real $c$ bounding $f(n)\\le cn$ uniformly over these functions and positive integers $n$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9476,7 +9476,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2025 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9485,7 +9485,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Iterasi tiga pembagi sejati terbesar",
-    "prompt": "Every term of an infinite positive integer sequence $(a_n)$ has at least three positive divisors smaller than itself. For $n\\ge1$, set $a_{n+1}$ equal to the sum of the largest three such divisors of $a_n$. Classify the possible starting values $a_1$.",
+    "prompt": "A proper divisor of a positive integer is a positive divisor unequal to that integer. Every term of an infinite positive integer sequence $a_1,a_2,\\ldots$ has at least three proper divisors. For $n\\ge1$, set $a_{n+1}$ equal to the sum of the largest three proper divisors of $a_n$. Classify the possible starting values $a_1$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9494,7 +9494,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2025 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9503,7 +9503,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Strategi permainan inekoalaty",
-    "prompt": "Alice and Bazza play inekoalaty with known $\\lambda>0$. On odd turn $n$, Alice chooses $x_n\\ge0$ subject to $\\sum_{i=1}^n x_i\\le\\lambda n$; on even turn $n$, Bazza chooses $x_n\\ge0$ subject to $\\sum_{i=1}^n x_i^2\\le n$. Choices are public. The first player unable to move loses; infinite play has no winner. Classify $\\lambda$ giving either player a winning strategy.",
+    "prompt": "Alice and Bazza play inekoalaty with known $\\lambda>0$. On turn $n$:\n\n• If $n$ is odd, Alice chooses $x_n\\ge0$ subject to\n\n$$x_1+x_2+\\cdots+x_n\\le\\lambda n.$$\n\n• If $n$ is even, Bazza chooses $x_n\\ge0$ subject to\n\n$$x_1^2+x_2^2+\\cdots+x_n^2\\le n.$$ Choices are public. The first player unable to move loses; infinite play has no winner. Classify $\\lambda$ giving either player a winning strategy.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9512,7 +9512,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2025 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9530,7 +9530,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2025 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10835,7 +10835,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Invariansi operasi FPB dan KPK",
-    "prompt": "A blackboard holds 2026 integers exceeding $1$, repetitions allowed. Confucius repeatedly replaces two entries $m,n>1$ in different positions by $\\gcd(m,n)$ and $\\frac{\\operatorname{lcm}(m,n)}{\\gcd(m,n)}$ whenever possible.\n\n(a) Prove every such process terminates with precisely one entry $M>1$.\n\n(b) Prove $M$ is independent of the choices.\n\nHere $\\gcd$ and $\\operatorname{lcm}$ mean greatest common divisor and least common multiple.",
+    "prompt": "A blackboard holds 2026 integers exceeding $1$, repetitions allowed. Confucius repeatedly replaces two entries $m,n>1$ in different positions by\n\n$$\\gcd(m,n)\\qquad\\text{and}\\qquad\\frac{\\operatorname{lcm}(m,n)}{\\gcd(m,n)}.$$\n\nHe repeats this operation whenever possible.\n\n(a) Prove every such process terminates with precisely one entry $M>1$.\n\n(b) Prove $M$ is independent of the choices.\n\nHere $\\gcd$ and $\\operatorname{lcm}$ mean greatest common divisor and least common multiple.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10844,7 +10844,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2026 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10853,7 +10853,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Kesamaan jarak pusat lingkaran",
-    "prompt": "In $ABC$, let $M,N$ be the midpoints of $AB,AC$. Choose $K$ strictly inside both $BMC,ABL$, and $L$ strictly inside both $BNC,AKC$. Assume $\\angle KBA=\\angle ACL$, $\\angle LBK=\\angle LNC$, $\\angle LCK=\\angle BMK$. For circumcentre $O$ of $AKL$, prove $OM=ON$.",
+    "prompt": "In $ABC$, let $M,N$ be the midpoints of $AB,AC$. Choose $K$ strictly inside both $BMC,ABL$, and $L$ strictly inside both $BNC,AKC$. Assume\n\n$$\\angle KBA=\\angle ACL,\\qquad\\angle LBK=\\angle LNC,\\qquad\\angle LCK=\\angle BMK.$$\n\n For circumcentre $O$ of $AKL$, prove $OM=ON$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10862,7 +10862,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2026 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10880,7 +10880,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2026 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10889,7 +10889,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Strategi pemotongan segitiga",
-    "prompt": "Fix a known angle $0^\\circ<\\theta<180^\\circ$. Shan-Yu chooses a paper triangle $\\mathcal T$. Repeatedly:\n\n• Mulan wins immediately if an angle equals $\\theta$.\n\n• Otherwise she cuts from a nonvertex boundary point $P$ to the opposite vertex.\n\n• Shan-Yu discards one resulting triangle; the other becomes $\\mathcal T$.\n\nClassify $\\theta$ permitting Mulan to force a finite win.",
+    "prompt": "Fix a known angle $0^\\circ<\\theta<180^\\circ$. Shan-Yu chooses a paper triangle $\\mathcal T$. Repeatedly:\n\n• Mulan wins immediately if an angle equals $\\theta$.\n\n• Otherwise she cuts along a straight line from a nonvertex boundary point $P$ to the opposite vertex.\n\n• Shan-Yu discards one resulting triangle; the other becomes $\\mathcal T$.\n\nClassify $\\theta$ permitting Mulan to force a finite win.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10898,7 +10898,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2026 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10907,7 +10907,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan fungsi real positif",
-    "prompt": "Classify $f:\\mathbb R_{>0}\\to\\mathbb R_{>0}$ satisfying $$\\sqrt{\\frac{x^2+f(y)^2}{2}}\\ge\\frac{f(x)+y}{2}\\ge\\sqrt{xf(y)}$$ for every positive real pair $x,y$.",
+    "prompt": "Let $\\mathbb R_{>0}$ be the set of positive real numbers. Determine all functions $f:\\mathbb R_{>0}\\to\\mathbb R_{>0}$ such that\n\n$$\\sqrt{\\frac{x^2+f(y)^2}{2}}\\ge\\frac{f(x)+y}{2}\\ge\\sqrt{xf(y)}$$\n\nfor every $x,y\\in\\mathbb R_{>0}$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10916,7 +10916,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2026 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 2; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -10925,7 +10925,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Periodisitas aditif barisan FPB",
-    "prompt": "In an infinite integer sequence with $a_i>1$, choose $a_{n+1}$ as the least integer exceeding $a_n$ with $\\gcd(a_{n+1},a_i)>1$ for $1\\le i\\le n$. Establish positive integers $T,L$ satisfying $a_{n+T}=a_n+L$ for every positive $n$. Here $\\gcd$ denotes greatest common divisor.",
+    "prompt": "In an infinite integer sequence $a_1,a_2,a_3,\\ldots$ with $a_i>1$, choose $a_{n+1}$ as the least integer exceeding $a_n$ with $\\gcd(a_{n+1},a_i)>1$ for $1\\le i\\le n$. Establish positive integers $T,L$ satisfying\n\n$$a_{n+T}=a_n+L$$\n\nfor every positive $n$. Here $\\gcd$ denotes greatest common divisor.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10934,7 +10934,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2026 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {

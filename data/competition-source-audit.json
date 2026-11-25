@@ -132,12 +132,19 @@
       "sourceUrl": null
     },
     "imo-2019-1": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2019,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Opening and quantifier reworded."
+      }
     },
     "imc-2024-1": {
       "status": "pending_comparison",
@@ -332,20 +339,34 @@
       "sourceUrl": "https://www.aiairyn.com/2024/08/salinan-soal-osn-sma-2024-bidang.html"
     },
     "imo-2024-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2024,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Opening and floor definition rephrased."
+      }
     },
     "imo-2024-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2024,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Equation layout restored; wording differs."
+      }
     },
     "apmo-2024-03": {
       "status": "pending_comparison",
@@ -708,52 +729,94 @@
       "sourceUrl": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/"
     },
     "imo-2020-02": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2020,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Short statement matches official source after replacement; math typesetting spacing normalized."
+      }
     },
     "imo-2021-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2021,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Story reworded."
+      }
     },
     "imo-2021-02": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2021,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Short statement matches official source after replacement; math typesetting spacing normalized."
+      }
     },
     "imo-2022-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2022,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Domain notation restored; wording differs."
+      }
     },
     "imo-2023-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2023,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Divisor condition rephrased."
+      }
     },
     "imo-2023-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2023,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Sequence and polynomial layout restored; wording differs."
+      }
     },
     "imc-2020-01": {
       "status": "pending_comparison",
@@ -4630,220 +4693,409 @@
       "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf"
     },
     "imo-2022-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2022,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Narrative and question rephrased; example display restored."
+      }
     },
     "imo-2022-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2022,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Uniqueness wording differs."
+      }
     },
     "imo-2022-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2022,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Incidences encoded as intersection notation; wording differs."
+      }
     },
     "imo-2022-05": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2022,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Short statement matches official source after replacement; math typesetting spacing normalized."
+      }
     },
     "imo-2022-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2022,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Definition and numbered conditions reworked."
+      }
     },
     "imo-2023-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2023,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Explicit E distinct from A restored."
+      }
     },
     "imo-2023-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2023,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Expanded sum and display restored; wording differs."
+      }
     },
     "imo-2023-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2023,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Narrative and definition condensed."
+      }
     },
     "imo-2023-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2023,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Display restored; scalene condition restored; explanatory note still absent."
+      }
     },
     "imo-2024-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2024,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Explicit subsequences restored; wording differs."
+      }
     },
     "imo-2024-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2024,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Construction rephrased."
+      }
     },
     "imo-2024-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2024,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Row condition clarified; story condensed."
+      }
     },
     "imo-2024-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2024,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Alternative equation layout restored; wording differs."
+      }
     },
     "imo-2019-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2019,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Segment and point construction rewritten."
+      }
     },
     "imo-2019-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2019,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Narrative and operation compressed."
+      }
     },
     "imo-2019-04": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2019,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Short statement matches official source after replacement; math typesetting spacing normalized."
+      }
     },
     "imo-2019-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2019,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Game wording and both subquestions condensed."
+      }
     },
     "imo-2019-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2019,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Construction and proof instruction reworded."
+      }
     },
     "imo-2020-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2020,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Opening and conclusion reworded."
+      }
     },
     "imo-2020-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2020,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Conditions shortened."
+      }
     },
     "imo-2020-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2020,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Narrative and definition shortened."
+      }
     },
     "imo-2020-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2020,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Statement and question condensed."
+      }
     },
     "imo-2020-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2020,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Quantifier, definition, and scoring note reworded."
+      }
     },
     "imo-2021-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2021,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Construction reworded."
+      }
     },
     "imo-2021-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2021,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Construction and conclusion condensed."
+      }
     },
     "imo-2021-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2021,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Circular arrangement detail restored; narrative still condensed."
+      }
     },
     "imo-2021-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2021,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Set/cardinality notation substituted for verbal form."
+      }
     },
     "imo-2005-01": {
       "status": "pending_comparison",
@@ -4918,52 +5170,94 @@
       "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
     },
     "imo-2025-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2025,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Two conditions separated; wording differs."
+      }
     },
     "imo-2025-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2025,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Orthocentre terminology restored; wording differs."
+      }
     },
     "imo-2025-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2025,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Display restored; divisibility expressed symbolically rather than verbally."
+      }
     },
     "imo-2025-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2025,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Proper divisor definition restored; wording differs."
+      }
     },
     "imo-2025-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2025,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Rules and expanded sums restored; wording differs."
+      }
     },
     "imo-2025-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2025,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Question rephrased."
+      }
     },
     "imo-2015-01": {
       "status": "pending_comparison",
@@ -5542,52 +5836,94 @@
       "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf"
     },
     "imo-2026-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2026,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Operation display restored; wording differs."
+      }
     },
     "imo-2026-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2026,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Angle display restored; wording differs."
+      }
     },
     "imo-2026-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2026,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Narrative and conclusion rephrased."
+      }
     },
     "imo-2026-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2026,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Straight cut clarified; wording differs."
+      }
     },
     "imo-2026-05": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2026,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Short statement matches official source after replacement; math typesetting spacing normalized."
+      }
     },
     "imo-2026-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2026,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Sequence and recurrence layout restored; wording differs."
+      }
     },
     "imc-2019-01": {
       "status": "pending_comparison",
@@ -5865,8 +6201,10 @@
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf"
     },
     "imo-2023-05": {
-      "status": "pending_visual_comparison",
-      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "page": 2,
+      "finding": "Compared source page screenshot to SVG: all 21 circles, six red positions, six path vertices and n=6 dimension line match structurally."
     }
   },
   "permissions": {
@@ -5878,6 +6216,10 @@
     "IMC": {
       "source": "https://studolymp.com/imc",
       "status": "Third-party archive explicitly reports reproduction with permission; no DMath reproduction permission established."
+    },
+    "IMO": {
+      "source": "https://www.imo-official.org/problems/",
+      "status": "Official public problem archive verified; permission for full online reproduction not established."
     }
   }
 }
