@@ -460,17 +460,16 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SD",
     "topic": "Aritmetika",
     "difficulty": 2,
-    "title": "Penjumlahan kelipatan",
-    "prompt": "Susi menyusun kelipatan positif 2 dari yang terkecil, sedangkan Wati menyusun kelipatan positif 3 dengan cara yang sama. Tentukan jumlah suku ke-25 pada daftar Susi dan suku ke-20 pada daftar Wati. Pilihan: A. 100; B. 110; C. 115; D. 125.",
+    "title": "Pola Bilangan",
+    "prompt": "Susi mengurutkan bilangan asli terkecil ke terbesar kelipatan 2 dan Wati mengurutkan bilangan asli terkecil ke terbesar kelipatan 3. Jumlah bilangan Susi urutan ke 25 dan bilangan Wati urutan ke 20 adalah …. Pilihan: A. 100; B. 110; C. 115; D. 125",
     "source": {
       "kind": "competition",
-      "label": "OSN-K SD 2024 — Nomor 1",
       "competition": "OSN",
       "year": 2024,
+      "stage": "OSN-K",
       "number": "Nomor 1",
-      "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-tahun-2024.html?m=0",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
-      "stage": "OSN-K"
+      "label": "OSN SD 2024 — OSN-K, Nomor 1",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
     }
   },
   {
@@ -20438,6 +20437,601 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Babak tidak tercantum",
       "number": "Nomor 10",
       "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 3. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-02",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Pola Bilangan",
+    "prompt": "Diketahui suatu pola berikut ini.\n\n■ ♦ ♦ ● ▲ ▲ ▲ ■ ♦ ♦ ● ▲ ▲ ▲ ….\n\nGambar yang akan tampak pada urutan ke-100 adalah …. Pilihan: A. ■; B. ♦; C. ●; D. ▲",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 2",
+      "label": "OSN SD 2024 — OSN-K, Nomor 2",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-03",
+    "level": "SD",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Persamaan Aljabar",
+    "prompt": "Bilangan ratusan $x$ dan $y$ dimana $x=apc$ dan $y=aqc$ memenuhi sifat-sifat $x-y=50$ dan $p+q=11$. Hasil dari $p\\times q=$ …. Pilihan: A. 24; B. 28; C. 30; D. 50",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 3",
+      "label": "OSN SD 2024 — OSN-K, Nomor 3",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-04",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Bilangan Prima",
+    "prompt": "Andi mengurutkan bilangan bulat yang bukan prima atau bukan kelipatan 5, dimulai dari besar ke kecil. Jika urutan ke-10 bilangan yang dituliskan oleh Andi adalah 102, maka urutan ke-21 adalah …. Pilihan: A. 83; B. 84; C. 86; D. 87",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 4",
+      "label": "OSN SD 2024 — OSN-K, Nomor 4",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-06",
+    "level": "SD",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Persamaan Aljabar",
+    "prompt": "Jika $a$ dan $b$ bilangan bulat positif yang memenuhi $a^2-b^2=63$, maka nilai berikut yang bukan merupakan hasil dari $a\\times b$ adalah …. Pilihan: A. 45; B. 135; C. 315; D. 2915",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 6",
+      "label": "OSN SD 2024 — OSN-K, Nomor 6",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-07",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Pola Bilangan",
+    "prompt": "Tiga bilangan x, y, z merupakan tiga bilangan kelipatan n berurutan (contoh: 6, 8, 10 merupakan bilangan kelipatan 2 berurutan). Jumlah tiga bilangan tersebut adalah 27 dan perkalian bilangan terkecil dan terbesarnya adalah 72. Selisih bilangan terbesar dan terkecil adalah …. Pilihan: A. 2; B. 4; C. 6; D. 8",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 7",
+      "label": "OSN SD 2024 — OSN-K, Nomor 7",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-08",
+    "level": "SD",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Persamaan Linear",
+    "prompt": "Diketahui tiga orang sahabat, yaitu Ani, Budi dan Corry. Diantara ketiganya, Ani paling muda dan Corry paling tua. Usia Ani dan Budi berselisih 1 tahun, sedangkan usia Budi dan Corry berselisih 2 tahun. Empat tahun kemudian jumlah usia mereka 76 tahun. Jumlah usia Ani dan Corry saat ini adalah … tahun. Pilihan: A. 41; B. 42; C. 43; D. 45",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 8",
+      "label": "OSN SD 2024 — OSN-K, Nomor 8",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-09",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Aritmetika Sosial",
+    "prompt": "Pak Joni membeli 13 kg keripik pisang seharga Rp650.000. Keripik pisang dijual kembali dengan harga Rp15.000 per 250 gram. Keuntungan maksimum yang akan diperoleh Pak Joni adalah …. Pilihan: A. Rp100.000; B. Rp130.000; C. Rp150.000; D. Rp180.000",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 9",
+      "label": "OSN SD 2024 — OSN-K, Nomor 9",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-10",
+    "level": "SD",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Sistem Persamaan",
+    "prompt": "Naomi, Tori, dan Eksa sedang memainkan suatu permainan dalam 10 babak. Juara ke-1, ke-2, dan ke-3 pada setiap babak akan mendapatkan poin berturut-turut sebesar 5 poin, 3 poin, dan 0 poin. Dari seluruh babak, Naomi memperoleh total poin 28. Berapa kali paling sedikit Naomi menjadi juara ke-3 dari seluruh babak permainan? Pilihan: A. 4 kali; B. 3 kali; C. 2 kali; D. 1 kali",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 10",
+      "label": "OSN SD 2024 — OSN-K, Nomor 10",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-11",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Operasi Hitung",
+    "prompt": "Hasil operasi dari $((0{,}4)^6\\times25^3)+((0{,}5)^4\\times16^3)$ adalah …. Pilihan: A. 320; B. 312; C. 296; D. 272",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 11",
+      "label": "OSN SD 2024 — OSN-K, Nomor 11",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-12",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Pecahan dan Desimal",
+    "prompt": "Diketahui $\\frac34+\\frac7{253}=\\frac a{2024}$. Nilai $a=$ …. Pilihan: A. 787; B. 1012; C. 1574; D. 1724",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 12",
+      "label": "OSN SD 2024 — OSN-K, Nomor 12",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-13",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Operasi Hitung",
+    "prompt": "Azizah akan mengoperasikan suatu bilangan dengan operasi-operasi berikut: ditambah 2, dibagi 6, dibagi 5, dikurang 3 dan dikali 2.\n\nSebagai contoh: Azizah mengoperasikan bilangan 11, untuk mendapatkan hasil akhir 1 dilakukan operasi sebagai berikut:\n1) 11 + 2 = 13;\n2) 13 – 3 = 10;\n3) 10 / 5 = 2;\n4) 2 + 2 = 4;\n5) 4 – 3 = 1.\nPada contoh tersebut Azizah melakukan sebanyak lima operasi.\nJika Azizah mengoperasikan bilangan 122 dan hasil operasi terakhir yang diinginkan adalah 1, maka banyaknya operasi yang paling sedikit dilakukan oleh Azizah adalah … operasi. Pilihan: A. enam; B. tujuh; C. sembilan; D. sepuluh",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 13",
+      "label": "OSN SD 2024 — OSN-K, Nomor 13",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-16",
+    "level": "SD",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Luas dan Keliling",
+    "prompt": "Jumlah keliling suatu persegi dan suatu persegi panjang sama dengan tiga kali keliling suatu segitiga sama sisi. Diketahui panjang sisi persegi dan segitiga sama sisi berturut-turut adalah 12 cm dan 10 cm. Jika lebar persegi panjang adalah 9 cm, maka perbandingan lebar dan panjang dari persegi panjang adalah …. Pilihan: A. 2 : 3; B. 1 : 2; C. 1 : 4; D. 3 : 4",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 16",
+      "label": "OSN SD 2024 — OSN-K, Nomor 16",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-18",
+    "level": "SD",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Bangun Ruang",
+    "prompt": "Diketahui tabung A memiliki jari-jari sama dengan tingginya, sedangkan tabung B memiliki jari-jari sama dengan $\\frac34$ tingginya. Jika jari-jari tabung A sama dengan dua kali jari-jari tabung B, maka perbandingan luas selimut tabung A dan tabung B adalah …. Pilihan: A. 2 : 1; B. 3 : 1; C. 4 : 3; D. 3 : 2",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 18",
+      "label": "OSN SD 2024 — OSN-K, Nomor 18",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-20",
+    "level": "SD",
+    "topic": "Statistika",
+    "difficulty": 3,
+    "title": "Rata-rata",
+    "prompt": "Hasil ujian matematika di suatu kelas yang terdiri dari 20 siswa berada pada interval 56 – 100. Rata-rata seluruh siswa di kelas tersebut adalah 68. Sebanyak 3 siswa mengikuti remedial dengan nilai maksimum 75. Rata-rata tertinggi setelah remedial yang mungkin untuk kelas tersebut adalah …. Pilihan: A. 70,65; B. 70,75; C. 70,85; D. 70,95",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 20",
+      "label": "OSN SD 2024 — OSN-K, Nomor 20",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-25",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Pecahan dan Desimal",
+    "prompt": "Pada perlombaan panjat pinang, mula-mula Jimmy memanjat sejauh $\\frac25$ dari tinggi batang pinang, namun kemudian Jimmy merosot ke posisi $\\frac14$ dari posisi sebelumnya. Selanjutnya, Jimmy memanjat kembali tepat $\\frac15$ dari posisi terakhir. Jika Jimmy harus memanjat 6 meter lagi untuk sampai di puncak, maka tinggi batang pinang adalah … meter. Pilihan: A. 9,125; B. 9,375; C. 9,500; D. 9,750",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 25",
+      "label": "OSN SD 2024 — OSN-K, Nomor 25",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-26",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kaidah Pencacahan",
+    "prompt": "Bilangan penyusun dari tahun 2024 yaitu 2, 0, 2 dan 4, bila dijumlahkan hasilnya adalah 8. Berapa banyak tahun yang memiliki sifat tersebut seabad setelah 2040? Pilihan: A. 6; B. 7; C. 8; D. 9",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 26",
+      "label": "OSN SD 2024 — OSN-K, Nomor 26",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-27",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Permutasi",
+    "prompt": "Berapa banyak bilangan ganjil sembilan angka $abcdefghi$ berbeda yang tersusun dari angka-angka 1,2,3,4,5,6,7,8 dan 9 sehingga $d+e+f=10$ ? Pilihan: A. 2160; B. 4320; C. 6480; D. 8640",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 27",
+      "label": "OSN SD 2024 — OSN-K, Nomor 27",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-28",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Permutasi",
+    "prompt": "Bilangan ratusan $abc$ disusun dari angka-angka yang berbeda 1, 2, 3, 4, 5, dan 6. Jika $b$ merupakan bilangan genap dan $a<c$, maka banyak bilangan ratusan yang mungkin adalah … bilangan Pilihan: A. 16; B. 20; C. 30; D. 32",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 28",
+      "label": "OSN SD 2024 — OSN-K, Nomor 28",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2024-30",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kaidah Pencacahan",
+    "prompt": "Panitia pentas seni membutuhkan 2 orang bagian perlengkapan dan 2 orang bagian sekretariat. Jika terdapat 3 calon anggota bagian perlengkapan dan 4 calon anggota bagian sekretariat, maka banyak susunan anggota berbeda yang dapat dipilih adalah …. Pilihan: A. 9; B. 18; C. 36; D. 72",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K",
+      "number": "Nomor 30",
+      "label": "OSN SD 2024 — OSN-K, Nomor 30",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-01",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Persamaan Fungsi",
+    "prompt": "Misalkan $f$ adalah fungsi yang memenuhi $f(x+1)+f(x-1)=\\sqrt2f(x)$, untuk setiap $x$ bilangan real. Jika $f(x-1)=a$ dan $f(x)=b$, tentukan nilai dari $f(x+4)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 1",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 1, Nomor 1",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-02",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Barisan dan Deret",
+    "prompt": "Barisan “Sanga” dibentuk dengan prosedur sebagai berikut.\n(i). pilih satu bilangan bulat positif $n$.\n(ii). suku pertama barisan ($U_1$) adalah $9n$.\n(iii). Untuk $k\\ge2$, $U_k=U_{k-1}-17$.\nSanga ($r$) adalah barisan sanga yang suku positif terkecilnya adalah $r$.\nSebagai contoh, untuk $n=3$, barisan Sanga yang terbentuk adalah $27,10,-7,-24,-41,\\ldots$. Karena suku positif terkecil dari barisan tersebut adalah 10, untuk $n=3$, barisan yang terbentuk disebut Sangan (10). Untuk $n\\le100$, tentukan jumlah semua $n$ yang dapat dibentuk barisan Sanga (4)?",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 2",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 1, Nomor 2",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-03",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Bangun Ruang",
+    "prompt": "Kubus ABCD.EFGH mempunyai panjang rusuk 6 cm. Titik R berada diperpanjangan garis EH dengan $EH:ER=1:2$ sehingga segitiga AFR memotong rusuk GH di P dan memotong rusuk DH di Q. tentukan luas daerah AFPQ.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 3",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 1, Nomor 3",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-04",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Permutasi",
+    "prompt": "Sepuluh orang penerjun payung berencana untuk membentuk formasi satu lingkaran di udara dengan cara setiap orang memegang tangan kedua orang lainya. Jika setiap orang memiliki dua pilihan warna seragam untuk dikenakan, yaitu merah atau putih, tentukan banyak kemungkinan formasi warna berbeda yang dapat dibentuk.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 4",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 1, Nomor 4",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-05",
+    "level": "SMP",
+    "topic": "Peluang",
+    "difficulty": 4,
+    "title": "Peluang Diskrit",
+    "prompt": "Setelah pemain menekan tombol start, suatu mesin permainan akan bekerja mengikuti prosedur sebagai berikut:\n(i). Memilih secara acak tujuh angka yang berbeda dari satu sampai Sembilan tanpa menampilkannya di layar.\n(ii). Menampilkan hasil perkalian ketujuh bilangan tersebut di layar.\n(iii). Menampilkan menu kalkulator di layar dan meminta pemain untuk menebak apakah jumlah ketujuh angka yang telah di pilih sebelumnya genap atau ganjil.\n(iv). Menunjukkan ketujuh angka yang telah dipilih sebelumnya beserta hasil perkalian dan penjumlahannya.\n(v). Mengeluarkan hadiah jika tebakan peserta tepat atau menampilkan pesan “silahkan coba kembali” di layar jika tebakan peserta tidak tepat.\nMenurut Kiki permainan ini sangat mudah karena peluang menangnya lebih dari 90%. Jelaskan apakah Kamu setuju dengan Kiki.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 5",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 1, Nomor 5",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-07",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Kongruensi",
+    "prompt": "Tentukan jumlah semua bilangan bulat $n\\le2019$ sehingga $1^2+2^2+3^2+\\cdots+n^2$ adalah bilangan ganjil dan $1^1+2^2+3^3+\\cdots+n^n$ adalah juga bilangan ganjil.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 7",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 2, Nomor 7",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-08",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Bangun Ruang",
+    "prompt": "Dua limas segiempat yang panjang seluruh rusuknya sama, alasnya berimpit membentuk suatu bangun ruang baru yang bernama bidang-8. Jika volume bidang-8 adalah $a^3\\sqrt2$ cm$^3$, tentukan volume bola terbesar yang dapat dimuat oleh bidang-8 tersebut.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 8",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 2, Nomor 8",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-09",
+    "level": "SMP",
+    "topic": "Peluang",
+    "difficulty": 4,
+    "title": "Peluang Diskrit",
+    "prompt": "Bilangan enam angka berbeda $\\overline{ABCDEF}$ disusun dari angka-angka 1,2,3,4,5,6,7,8 dengan aturan jumlah tiga angka pertama sama dengan jumlah tiga angka terakhir. Tentukan peluang bilangan yang tersusun mempunyai sifat bahwa tiga angka pertama atau tiga angka terakhir membentuk barisan aritmatika atau geometri.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 9",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 2, Nomor 9",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2019-10",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Representasi Bilangan",
+    "prompt": "$X(n)$ melambangkan bilangan yang disusun oleh angka $X$ sebanyak $n$. sebagai contoh $2(3)=222$, $5(2)=55$. Untuk $A,B,C\\in\\{1,2,3,\\ldots,9\\}$ dan $1\\le n\\le2019$, tentukan banyaknya pasangan terurut $(A,B,C,n)$ yang memenuhi $$A(2n)=2(B(n))+(C(n))^2.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 10",
+      "label": "OSN SMP 2019 — OSN Nasional, Hari 2, Nomor 10",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2018-01",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Keterbagian",
+    "prompt": "Diketahui dua bilangan bulat positif $m$ dan $n$ dengan $10n-9m=7$ dan $m\\le2018$. Bilangan $k=20-\\frac{18m}{n}$ merupakan suatu pecahan sederhana.\na). tentukan bilangan pecahan terkecil $k$ yang mungkin.\nb). jika penyebut bilangan terkecil $k$ tersebut adalah $N$, tentukan semua faktor positif dari $N$.\nc). pada pengambilan satu dari faktor positif dari $N$, tentukan peluang terambilanya satu faktor kelipatan 4.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2018,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 1",
+      "label": "OSN SMP 2018 — OSN Nasional, Hari 1, Nomor 1",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2018-03",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri Lingkaran",
+    "prompt": "Segiempat ABCD memiliki panjang sisi $AB=BC=4\\sqrt3$ cm dan $CD=DA=4$ cm. semua titik sudut segiempat tersebut terletak pada sebuah lingkaran. Hitunglah luas daerah segiempat ABCD.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2018,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 3",
+      "label": "OSN SMP 2018 — OSN Nasional, Hari 1, Nomor 3",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2018-04",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Keterbagian",
+    "prompt": "Terdapat bilangan bulat positif $x$ dan $y$, dengan $x<100$ dan $y>9$. Diketahui bahwa $y=\\frac p{777}x$, dengan $p$ berupa bilangan tiga digit yang memiliki digit puluhan angka 5. Tentukan banyaknya nilai $y$ bebeda yang mungkin.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2018,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 4",
+      "label": "OSN SMP 2018 — OSN Nasional, Hari 1, Nomor 4",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2018-05",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Permutasi",
+    "prompt": "Bilangan 8 digit berbeda $\\overline{abcdefgh}$ disusun dari anggota himpunan $\\{1,2,3,4,5,6,7,8\\}$. Bilangan tersebut memenuhi $a+c+e+g\\ge b+d+f+h$. Tentukan banyaknya bilangan yang mungkin.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2018,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 5",
+      "label": "OSN SMP 2018 — OSN Nasional, Hari 1, Nomor 5",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2018-07",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kombinatorika Geometri",
+    "prompt": "Tiga kelompok garis membagi sebuah bidang menjadi $D$ daerah. Masing-masing garis dalam satu kelompok adalah sejajar. Misalkan $x$, $y$, dan $z$ berturut-turut merupakan banyak garis pada kelompok garis ke-1, ke-2, dan ke-3. Jika tidak ada garis pada kelompok 3 yang melalui titik potong dua garis, maka paling sedikit jumlah garis yang dibutuhkan sehingga terdapat lebih dari 2018 daerah adalah …?",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2018,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 7",
+      "label": "OSN SMP 2018 — OSN Nasional, Hari 2, Nomor 7",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2018-08",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Bangun Ruang",
+    "prompt": "Diketahui limas terpancung ABCD.EFGH dengan ABCD dan EFGH berbentuk persegi yang merupakan dua bidang sejajar. Panjang rusuk persegi ABCD dan EFGH berturut-turut $6a$ dan $3a$ serta tinggi limas adalah $3t$. Titik M dan N berturut-turut adalah titik potong diagonal ABCD dan EFGH serta MN tegak lurus bidang EFGH. Lukislah limas M.EFGH dan N.ABCD serta hitung volume bangun ruang yang merupakan irisan antara limas N.ABCD dan M.EFGH.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2018,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 8",
+      "label": "OSN SMP 2018 — OSN Nasional, Hari 2, Nomor 8",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2018-10",
+    "level": "SMP",
+    "topic": "Peluang",
+    "difficulty": 4,
+    "title": "Peluang Diskrit",
+    "prompt": "Diketahui A adalah himpunan bilangan bulat tiga digit yang tidak memuat angaka nol. Didefinisikan bilangan gadang yaitu anggota A yang digitnya berbeda dan penyusunnya bukan bilangan prima serta memberi sisa 5 jika dibagi 7. Jika dipilih secara acak anggota A, berapakah peluang untuk mendapatkan bilangan gadang?",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2018,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 10",
+      "label": "OSN SMP 2018 — OSN Nasional, Hari 2, Nomor 10",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
     }
   }
 ];

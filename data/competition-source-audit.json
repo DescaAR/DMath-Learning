@@ -304,16 +304,19 @@
     },
     "osnk-sd-2024-01": {
       "status": "pending_comparison",
-      "previousMetadata": "restatement_recorded",
+      "previousMetadata": "user_drive_transcription",
       "competition": "OSN",
       "year": 2024,
       "number": "Nomor 1",
-      "sourceUrl": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-tahun-2024.html?m=0",
-      "strictReview": {
-        "version": 2,
-        "textStatus": "pending_reverification",
-        "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 1",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
       }
     },
     "osnp-sd-2024-01": {
@@ -20328,6 +20331,601 @@
         "localSource": "Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf",
         "method": "Direct visual inspection of PDF page and layout text",
         "finding": "Transcribed the supplied excerpt, not an official organizer original; stage absent, year provisional from excerpt date. Question 10 has only part (a) in the supplied PDF. Website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 2",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 3",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 4",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 6",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 7",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 8",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 9",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 10",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 11",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 11",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 12",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 12",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 13",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 13",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-16": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 16",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 16",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 18",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 18",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 20",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 20",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-25": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 25",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 25",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-26": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 26",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 26",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-27": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 27",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 27",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-28": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 28",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 28",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2024-30": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 30",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "nomor 30",
+        "localSource": "Soal OSN SD Bidang Matematika Tingkat Kabupaten (2024).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 1, Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 2, Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2019-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Hari 2, Nomor 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "2019 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2018-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2018,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2018 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2018-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2018,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2018 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2018-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2018,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2018 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2018-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2018,
+      "number": "Hari 1, Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "2018 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2018-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2018,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "2018 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2018-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2018,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "2018 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2018-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2018,
+      "number": "Hari 2, Nomor 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "2018 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized; original organizer paper not independently verified",
+        "finding": "Transcribed from available retyped copy; visual comparison and website render pending.",
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
