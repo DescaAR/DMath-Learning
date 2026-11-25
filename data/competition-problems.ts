@@ -1001,7 +1001,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Pola jumlah kursi",
-    "prompt": "Satu meja segienam dapat ditempati 6 kursi. Dua meja yang dirapatkan memuat 10 kursi, dan tiga meja memuat 14 kursi. Jika 10 meja disusun memanjang dengan pola yang sama, berapakah kapasitas kursinya?",
+    "prompt": "Sebuah meja berbentuk segienam dapat dikelilingi 6 kursi. Jika dua meja disambung, tersedia tempat bagi 10 kursi, dan jika tiga meja disambung, tersedia tempat bagi 14 kursi. Sekolah Rini mempunyai 10 meja tersebut. Tentukan jumlah maksimum kursi jika seluruh meja disambung memanjang menurut pola yang sama.",
     "source": {
       "kind": "competition",
       "label": "KSN-K SD 2020 — Nomor 2",
@@ -1010,7 +1010,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 2",
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi. Ilustrasi asli belum diperiksa secara visual; pola diberikan secara tekstual."
     }
   },
   {
@@ -1019,7 +1019,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Selisih waktu bersepeda",
-    "prompt": "Dua pesepeda menempuh jarak yang sama dengan kecepatan tetap 30 km/jam dan 25 km/jam. Pesepeda yang lebih cepat tiba setelah 15 menit. Berapa menit selisih waktu tempuh mereka?",
+    "prompt": "Ani dan Budi bersepeda menuju toko buku Pak Dirman. Budi tiba dalam 15 menit dengan kecepatan rata-rata 30 km/jam, sedangkan kecepatan rata-rata Ani 25 km/jam. Jika keduanya berangkat bersama dan menempuh jarak yang sama, berapa menit Budi harus menunggu Ani?",
     "source": {
       "kind": "competition",
       "label": "KSN-K SD 2020 — Nomor 3",
@@ -1028,7 +1028,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 3",
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1046,7 +1046,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 11",
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1055,7 +1055,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 2,
     "title": "Bilangan palindrom",
-    "prompt": "Berapa banyak bilangan palindrom tiga digit yang dapat dibentuk menggunakan digit 1 hingga 5? Bilangan palindrom memiliki susunan digit yang sama ketika dibaca dari kedua arah.",
+    "prompt": "Bilangan palindrom mempunyai susunan digit yang sama ketika dibaca dari kiri ataupun kanan, misalnya 111, 121, dan 131. Tentukan banyak bilangan palindrom tiga digit yang hanya menggunakan digit 1, 2, 3, 4, atau 5.",
     "source": {
       "kind": "competition",
       "label": "KSN-K SD 2020 — Nomor 15",
@@ -1064,7 +1064,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 15",
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1073,7 +1073,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Susunan huruf",
-    "prompt": "Berapa banyak permutasi huruf C, O, V, I, D apabila V dan D harus bersebelahan? Pilihan: A. 24; B. 32; C. 48; D. 52.",
+    "prompt": "Tentukan banyak susunan yang menggunakan seluruh huruf C, O, V, I, D, masing-masing sekali, dengan V dan D bersebelahan. Pilihan: A. 24; B. 32; C. 48; D. 52.",
     "source": {
       "kind": "competition",
       "label": "KSN-K SD 2021 — Nomor 2",
@@ -1082,7 +1082,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 2",
       "url": "https://id.scribd.com/document/790309363/2021-Soal-Osk-Matik-SD-www-konsep-matematika-com",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1091,7 +1091,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 1,
     "title": "Sisa hasil panen",
-    "prompt": "Dari 4 ton padi, sebanyak 32 kuintal dijual dan 85 kg dibagikan. Berapa kilogram padi yang tersisa? Pilihan: A. 615; B. 625; C. 715; D. 725.",
+    "prompt": "Pak Agus memanen 4 ton padi. Ia menjual 32 kuintal kepada pedagang dan memberikan 85 kg kepada tetangga. Sisanya disimpan. Berapa kilogram padi yang disimpan? Pilihan: A. 615; B. 625; C. 715; D. 725.",
     "source": {
       "kind": "competition",
       "label": "KSN-K SD 2021 — Nomor 8",
@@ -1100,7 +1100,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 8",
       "url": "https://id.scribd.com/document/790309363/2021-Soal-Osk-Matik-SD-www-konsep-matematika-com",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1118,7 +1118,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 7",
       "url": "https://id.scribd.com/document/1004179258/2022-Soal-Osk-Matik-SD-Edit",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1127,7 +1127,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Jarak perjalanan",
-    "prompt": "Seorang guru mengendarai sepeda motor dengan kecepatan rata-rata 50 km/jam selama waktu berkendara. Dari total perjalanan 65 menit, 20 menit digunakan untuk singgah di toko buku. Berapakah jarak perjalanannya dalam kilometer? Pilihan: A. 54,17; B. 46; C. 37,5; D. 30.",
+    "prompt": "Pak Guru berkendara dari sekolah menuju rumah dengan sepeda motor berkecepatan rata-rata 50 km/jam selama berkendara. Ia berhenti di toko buku selama 20 menit. Jika perjalanan seluruhnya berlangsung 65 menit, tentukan jarak dari sekolah ke rumah yang ditempuhnya. Pilihan: A. 54,17; B. 46; C. 37,5; D. 30 (km).",
     "source": {
       "kind": "competition",
       "label": "OSN-K SD 2022 — Nomor 13",
@@ -1136,7 +1136,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 13",
       "url": "https://id.scribd.com/document/1004179258/2022-Soal-Osk-Matik-SD-Edit",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1225,8 +1225,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2020,
       "stage": "KSN-K",
       "number": "Nomor 1",
-      "url": "https://www.defantri.com/2020/09/soal-pembahasan-ksn-k-2020-matematika.html?m=1",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "url": "https://id.scribd.com/document/508163598/Soal-Dan-Solusi-KSN-Matematika-SMP-2020-KabKota",
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1235,7 +1235,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Pemilihan bilangan prima",
-    "prompt": "Dari bilangan 2017, 2019, 2021, dan 2023, manakah yang prima?",
+    "prompt": "Manakah bilangan berikut yang prima? Pilihan: A. 2017; B. 2019; C. 2021; D. 2023.",
     "source": {
       "kind": "competition",
       "label": "KSN-K SMP 2020 — Nomor 2",
@@ -1243,8 +1243,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2020,
       "stage": "KSN-K",
       "number": "Nomor 2",
-      "url": "https://www.defantri.com/2020/09/soal-pembahasan-ksn-k-2020-matematika.html?m=1",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "url": "https://id.scribd.com/document/508163598/Soal-Dan-Solusi-KSN-Matematika-SMP-2020-KabKota",
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1604,7 +1604,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KNMIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2021-wilayah/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1613,7 +1613,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Subgrup yang dibangkitkan",
-    "prompt": "Grup $G$ berorde 2021 memuat dua elemen tak identitas $x,y$ yang ordenya berbeda. Tentukan orde subgrup $\\langle x,y\\rangle$.",
+    "prompt": "Misalkan $G$ merupakan grup berorde $2021$ dan $x,y\\in G$ adalah dua elemen bukan identitas dengan orde berbeda. Jika $H$ merupakan subgrup terkecil dari $G$ yang memuat $x$ dan $y$, tentukan banyak elemen $H$.",
     "source": {
       "kind": "competition",
       "label": "KNMIPA Wilayah 2021 — Hari 1, Isian 4",
@@ -1622,7 +1622,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KNMIPA Wilayah",
       "number": "Hari 1, Isian 4",
       "url": "https://onmipa.filzabuana.id/onmipa/2021-wilayah/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1631,7 +1631,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 5,
     "title": "Koprimalitas dan pangkat elemen grup",
-    "prompt": "Misalkan $G$ merupakan grup berorde $n$ dan $k$ bilangan bulat positif. Buktikan ekuivalensi antara $\\gcd(n,k)=1$ dan sifat bahwa $\\{x\\in G\\mid x^k\\in H\\}\\subseteq H$ untuk setiap subgrup $H$ dari $G$.",
+    "prompt": "Misalkan $n,k$ merupakan bilangan bulat positif dan $G$ merupakan grup berorde $n$. Buktikan bahwa kedua pernyataan berikut ekuivalen.\n\n(a) $\\gcd(n,k)=1$.\n\n(b) Untuk setiap subgrup $H$ dari $G$, berlaku $$\\{x\\in G\\mid x^k\\in H\\}\\subseteq H.$$",
     "source": {
       "kind": "competition",
       "label": "KNMIPA Nasional 2021 — Hari 1, Nomor 3",
@@ -1640,7 +1640,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KNMIPA Nasional",
       "number": "Hari 1, Nomor 3",
       "url": "https://id.scribd.com/document/1025602098/Soal-KNMIPA-Nasional-2021",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1649,7 +1649,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 4,
     "title": "Inti dan peta komposisi",
-    "prompt": "Untuk $A\\in M_n(\\mathbb R)$, definisikan $T,S:\\mathbb R^n\\to\\mathbb R^n$ oleh $T(x)=Ax$ dan $S(x)=A^\\top x$. (a) Buktikan $\\ker(S\\circ T)=\\ker T$. (b) Selidiki apakah $\\operatorname{Im}(S\\circ T)=\\operatorname{Im}S$ selalu berlaku.",
+    "prompt": "Diberikan matriks $A\\in M_n(\\mathbb R)$. Pemetaan linear $T,S:\\mathbb R^n\\to\\mathbb R^n$ didefinisikan oleh $T(x)=Ax$ dan $S(x)=A^\\top x$ untuk setiap $x\\in\\mathbb R^n$.\n\n(a) Buktikan bahwa $\\ker(S\\circ T)=\\ker T$.\n\n(b) Jelaskan apakah $\\operatorname{Im}(S\\circ T)=\\operatorname{Im}S$ selalu berlaku.",
     "source": {
       "kind": "competition",
       "label": "KNMIPA Nasional 2021 — Hari 1, Nomor 4",
@@ -1658,7 +1658,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KNMIPA Nasional",
       "number": "Hari 1, Nomor 4",
       "url": "https://id.scribd.com/document/1025602098/Soal-KNMIPA-Nasional-2021",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1676,7 +1676,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1685,7 +1685,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Limit jumlah Riemann",
-    "prompt": "Hitung $$\\lim_{n\\to\\infty}\\sum_{k=0}^n\\frac1{n+k}.$$",
+    "prompt": "Untuk setiap bilangan asli positif $n$, didefinisikan $$a_n=\\sum_{k=0}^{n}\\frac{1}{n+k}.$$ Tentukan $\\lim_{n\\to\\infty}a_n$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2022 — Hari 1, Isian 2",
@@ -1694,7 +1694,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1703,7 +1703,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Komposisi permutasi",
-    "prompt": "Diberikan permutasi $$\\sigma=\\begin{pmatrix}1&2&3&4&5\\\\3&4&1&5&2\\end{pmatrix},\\qquad\\tau=\\begin{pmatrix}1&2&3&4&5\\\\5&2&1&3&4\\end{pmatrix}.$$ Tentukan baris kedua representasi dua baris permutasi $(\\sigma\\circ\\tau)^{-1}$.",
+    "prompt": "Diberikan permutasi $$\\sigma=\\begin{pmatrix}1&2&3&4&5\\\\3&4&1&5&2\\end{pmatrix},\\qquad\\tau=\\begin{pmatrix}1&2&3&4&5\\\\5&2&1&3&4\\end{pmatrix}.$$ Jika $\\alpha=(\\sigma\\circ\\tau)^{-1}$, tentukan baris kedua dari $$\\alpha=\\begin{pmatrix}1&2&3&4&5\\\\?&?&?&?&?\\end{pmatrix}.$$",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2022 — Hari 1, Isian 3",
@@ -1712,7 +1712,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1757,7 +1757,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Indeks subgrup aditif",
-    "prompt": "Misalkan $G=\\{m+n\\sqrt2\\mid m,n\\in\\mathbb Z\\}$ merupakan grup aditif dan $H=\\{3a+5b\\sqrt2\\mid a,b\\in\\mathbb Z\\}$. Tentukan kardinalitas $G/H$.",
+    "prompt": "Misalkan $G=\\{m+n\\sqrt2\\mid m,n\\in\\mathbb Z\\}$ merupakan grup terhadap penjumlahan dan $H=\\{3a+5b\\sqrt2\\mid a,b\\in\\mathbb Z\\}$ merupakan subgrup dari $G$. Tentukan kardinalitas $G/H$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2023 — Hari 1, Isian 3",
@@ -1766,7 +1766,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1784,7 +1784,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 4",
       "url": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -3091,7 +3091,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Pusat lingkaran dalam dan titik-titik konsiklis",
-    "prompt": "Let $ABCD$ be a convex tangential quadrilateral, with $M$ in the interior of segment $AB$. Write $I(XYZ)$ for the incenter of triangle $XYZ$. Prove that $$M,\\ I(MBC),\\ I(MCD),\\ I(MDA)$$ are concyclic.",
+    "prompt": "Suppose a circle is tangent to all four sides of convex quadrilateral $ABCD$, and $M$ is an interior point of side $AB$. Denote the incenters of triangles $MBC$, $MCD$, and $MDA$ by $I_1$, $I_2$, and $I_3$, respectively. Prove that $M,I_1,I_2,I_3$ are concyclic.",
     "source": {
       "kind": "competition",
       "competition": "Balkan MO",
@@ -3099,10 +3099,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Shortlist",
       "number": "G1",
       "label": "Balkan MO 2016 — Shortlist G1",
-      "url": "https://huggingface.co/datasets/AI-MO/olympiads/blob/main/Balkan_Shortlist/md/en-2016_bmo_shortlist.md",
+      "url": "https://imomath.com/srb/zadaci/2016_bmo_shortlist.pdf",
       "collection": "MathNet",
       "collectionUrl": "https://huggingface.co/datasets/ShadenA/MathNet",
-      "note": "Independent mathematical formulation in English; MathNet record 00rl; not verbatim."
+      "note": "Mathematical content and problem number checked against the 2016 shortlist PDF, printed page 17, including visual inspection. Independently worded English adaptation; not verbatim."
     }
   },
   {
