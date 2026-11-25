@@ -19963,6 +19963,261 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 15",
       "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
     }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-01",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Gradien garis singgung kurva $y+\\cos\\cos(xy^2)+3x^2=4$ di titik $\\left(\\pi,\\frac12\\right)$ adalah $\\frac{\\sqrt a+\\pi}{b+c\\pi^2}$ dengan $a,b,c\\in Z$. Tentukan tripel $(a,b,c)$ yang memenuhi.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 1",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 1",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Hitung luas daerah tertutup yang dibatasi oleh kurva $r^2=8\\cos\\cos 2\\theta$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 2",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 2",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-03",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Suatu hiperbola mendatar mempunyai asimtot dengan persamaan $y=2x-5$ dan $y=-2x+7$. Jika jarak kedua puncak hiperbola tersebut adalah 6 maka persamaan hiperbola tersebut adalah $\\ldots$ (sajikan dalam bentuk $\\frac{(x-h)^2}{a^2}-\\frac{(y-k)^2}{b^2}=1$ atau $\\frac{(x-h)^2}{a^2}-\\frac{(y-k)^2}{b^2}=-1$).",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 3",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 3",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-04",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Garis-garis singgung lintasan $4x^3+7xy^2=2y^4$ di titik berabsis 1 berpotongan di titik $(h,k)$. Tentukan koordinat $(h,k)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 4",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 4",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-05",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Tentukan himpunan kekonvergenan deret pangkat berikut ini.\n\n$$\\sum_{n=0}^\\infty\\frac{(x-2)^n}{n^2+1}$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 5",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 5",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-06",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Turunan kedua dari fungsi $f(x)=\\ln(\\tan x^3)$ adalah $\\ldots$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 6",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 6",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-07",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Misalkan $y=x^3\\sinh^{-1}(\\sinh(x))$, maka $D_xy=\\cdots$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 7",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 7",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Hitung nilai minimum dari $f(x,y)=(x+2)^2-y$ untuk $(x,y)$ yang memenuhi $x+y-xy=-31$ adalah $\\ldots$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 8",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 8",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-09",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Andaikan vektor $F=(x^2-3z)\\mathbf i+(y+2x)\\mathbf j+(z^2-xy)\\mathbf k$. Tentukan integral garis $\\int_c F\\cdot dr$, Dimana $C$ merupakan kurva bergaris lurus dari $(0,0,0)$ ke $(1,0,0)$ kemudian ke $(1,1,0)$ dan kemudian ke $(1,1,1)$. Dimana $x=2t,y=t^2,z=2t^3,0<t<1$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 9",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 9",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-10",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Nilai maksimum dari $f(x,y,z)=2x^2+3y^2+5z^2$ untuk $(x,y,z)$ yang memenuhi $x^2+2y^2+3z^2\\le6$ adalah $\\ldots$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 10",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 10",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-11",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Tentukan koordinat titik pada permukaan $x^2y-z^2=-9$ yang paling dekat dengan origin adalah $\\ldots$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 11",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 11",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-12",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Andaikan vektor $F=(3x^2+z)\\mathbf i+(y^2+xz)\\mathbf j+(2zy-xy)\\mathbf k$. Tentukan integral garis $\\int_c F\\cdot dr$, dimana C merupakan kurva yang dinyatakan $x=t,y=2t^2,z=3t^3,0<t<1$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 12",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 12",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-13",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diketahui deret Maclaurin berikut\n\n$$e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}.$$\n\nBentuk deret dari\n\n$$\\int\\frac{e^x-1}{x}dx$$\n\nadalah $\\cdots$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 13",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 13",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-14",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Nilai maksimum dari $f(x,y)=x^4-x^2+2y$ untuk $(x,y)$ yang memenuhi $x^2+y^2=2$ adalah $\\ldots$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 14",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 14",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2025-semifinal-15",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diketahui deret Maclaurin berikut\n\n$$e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}$$\n\ndan\n\n$$\\sin(x)=\\sum_{n=0}^\\infty(-1)^n\\frac{x^{2n+1}}{(2n+1)!}$$\n\nMaka deret Maclaurin dari fungsi $f(x)=e^{-x}+\\cos(x)$ adalah $\\cdots$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV — Semifinal, Nomor 15",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 15",
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
