@@ -18724,6 +18724,601 @@ export const competitionProblems: CompetitionProblem[] = [
     }
   },
   {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-01",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Hitunglah:\n\n$$\\iint_R(x^2+y)\\,dA,\\quad R=[-1,2]\\times[1,4]$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 1",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 1",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Tentukan titik pada bidang $x+y+z=12$ yang terdekat dengan titik $P=(3,2,1)$ dan hitung jaraknya.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 2",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 2",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika\n\n$$y=(x^3-2x^2-3x+1)^{11},$$\n\ntentukan $\\frac{dy}{dx}$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 3",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 3",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-04",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Hitung luas jajar genjang yang dibentuk oleh\n\n$$\\vec u=(1,2,3),\\quad \\vec v=(2,1,1).$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 4",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 4",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-05",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diberikan deret A, B, dan C berikut.\n\n$$A.\\sum_{n=1}^\\infty(-1)^n\\frac{2^n}{(n+3)!},$$\n\n$$B.\\sum_{n=1}^\\infty(-1)^n\\frac{4n}{\\sin 5n},$$\n\n$$C.\\sum_{n=1}^\\infty(-1)^n\\frac{6}{n+7}.$$\n\nSebutkan huruf-hurufnya secara terurut untuk deret yang:\n\n(a) Tidak konvergen\n\n(b) Konvergen bersyarat\n\n(c) Konvergen secara mutlak",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 5",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 5",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-06",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan himpunan solusi real dari persamaan:\n\n$$\\ln(x^2+1)-3\\ln|x|=\\ln 2.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 6",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 6",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-07",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Diketahui kurva\n\n$$x^2-xy+y^2=16.$$\n\nTentukan persamaan garis singgung pada dua titik potong elips dengan sumbu-$x$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 7",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 7",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan nilai dari:\n\n$$\\int\\frac{\\sin(\\ln x^2)}{x}\\,dx.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 8",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 8",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-09",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan koordinat polar dari titik $(3,-4)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 9",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 9",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-10",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan $\\frac{dy}{dx}$ dari persamaan:\n\n$$e^{xy}+xy=2.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 10",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 10",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-11",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diketahui $f'(x)=\\sum_{n=0}^\\infty(n+1)x^n$ dan $f(0)=2$. Tentukan nilai $f\\left(\\frac{2023}{2024}\\right)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 11",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 11",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-12",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan:\n\n$$\\int\\frac{6x^2-3x+1}{4x^3+x^2+4x+1}\\,dx.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 12",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 12",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-13",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Tentukan jari-jari kekonvergenan dari deret pangkat:\n\n$$\\sum_{n=1}^\\infty\\frac{n}{(n+1)!}x^n.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 13",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 13",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-14",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Hitunglah:\n\n$$\\int_0^{\\frac{\\pi}{2}}x\\cos x\\,dx.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 14",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 14",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-15",
+    "level": "Kuliah",
+    "topic": "Analisis Riil",
+    "difficulty": 3,
+    "title": "Analisis Riil",
+    "prompt": "Diketahui:\n\n$$f(x)=\\begin{cases}x\\sin\\left(\\frac1x\\right),&x\\ne0,\\\\0,&x=0.\\end{cases}$$\n\nBuktikan bahwa $f(x)$ kontinu di $x=0$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 15",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 15",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-16",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Daerah di kuadran kedua yang berada di dalam kardoida\n\n$$r=2+2\\sin\\theta$$\n\ndan di luar kardoida\n\n$$r=2+2\\cos\\theta,$$\n\ntentukan luas daerah tersebut.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 16",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 16",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-17",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Tentukan nilai dari integral berikut:\n\n$$I=\\iiint_{\\mathcal D}|xz^2|\\,dx\\,dy\\,dz,$$\n\ndengan\n\n$$\\mathcal D=\\{(x,y,z)\\in\\mathbb R^3\\mid x^2+y^2+z^2\\le1,\\ y\\ge0\\}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 17",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 17",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-18",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Ujilah apakah deret\n\n$$\\sum_{n=2}^\\infty\\frac1{n(\\ln n)^2}$$\n\nkonvergen atau divergen.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 18",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 18",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-19",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Sebuah mobil memiliki posisi $s(t)=5t^3-12t^2+3t$ meter. Tentukan kecepatan dan percepatan mobil pada $t=2$ detik.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 19",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 19",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-penyisihan-2-20",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan turunan $D_xy$, jika\n\n$$y=\\coth^{-1}(x^5).$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Penyisihan 2, Nomor 20",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Penyisihan 2",
+      "number": "Nomor 20",
+      "note": "User Drive: Soal Penyisihan 2 (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-01",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Diketahui\n\n$$G(x)=\\int_{\\sin x}^{x^3}\\sqrt{1+t^4}\\,dt.$$\n\nHitunglah $G'(0)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 1",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 1",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan interval monoton naik/turun dan cekung ke atas/ke bawah untuk\n\n$$f(x)=e^x-x^2.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 2",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 2",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Tentukan nilai dari integral berikut:\n\n$$I=\\int_0^1\\int_0^1\\int_{x^2}^1 12xz^2e^{zy^2}\\,dy\\,dx\\,dz.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 3",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 3",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-04",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Sebuah fraktal dikonstruksi sebagai berikut:\n\n- Mula-mula diambil sebuah bola dengan jari-jari 4.\n- Pada bola ini dilekatkan 12 bola yang masing-masing berjari-jari $\\frac44$.\n- Selanjutnya, pada setiap bola berjari-jari 1 tersebut, dilekatkan kembali 12 bola yang berjari-jari $\\frac4{16}$.\n- Selanjutnya, pada setiap bola berjari-jari $\\frac14$ tersebut, dilekatkan kembali 12 bola yang berjari-jari $\\frac4{64}$.\n\nJika proses ini dilanjutkan sebanyak takhingga kali, tentukan luas permukaan total fraktal yang terbentuk.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 4",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 4",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-05",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Buktikan medan vektor $F(x,y)=(2xy,x^2+y^2)$ ini adalah konservatif. Selanjutnya, tentukan fungsi potensial $\\Phi(x,y)$ sedemikian hingga $F=\\nabla\\Phi$, dan integral garis $\\int_C F.dr$ sepanjang kurva $C$ dari titik $(0,0)$ ke $(2,1)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 5",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 5",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-06",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan titik $(x,y)$ dimana garis singgung dari grafik $y=\\ln(2025x)$ memiliki gradien 2025.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 6",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 6",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-07",
+    "level": "Kuliah",
+    "topic": "Limit",
+    "difficulty": 3,
+    "title": "Limit",
+    "prompt": "Tentukan limit dari:\n\n$$\\lim_{x\\to0}\\frac{x^2\\sin(2x)}{\\ln(1+3x)}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 7",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 7",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan banyaknya bilangan bulat $a$ sehingga\n\n$$\\int_{-\\infty}^\\infty\\frac6{x^2+a}\\,dx$$\n\nkonvergen dan bernilai kelipatan bilangan bulat dari $\\pi$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 8",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 8",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 1; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-09",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diketahui\n\n$$f(x)=\\sqrt{a+x}+\\sqrt{1-x}.$$\n\nTentukan deret Maclaurin dari $f(x)$ dan gunakan deret tersebut untuk menghitung $f^{(4)}(0)$ dan $f^{(31)}(0)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 9",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 9",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-10",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Misalkan grafik\n\n$$y=b-a\\cosh\\left(\\frac xa\\right)$$\n\nmerupakan suatu *catenary* terbalik yang terletak di atas sumbu-$x$. Diketahui jika lebar busur sepanjang sumbu-$x$ adalah $2a$, maka\n\n$$b=a\\cosh(1)\\approx1.54308a.$$\n\nSeorang petani membangun gudang jerami dengan panjang 100 ft dan lebar 48 ft, dengan penampang melintang berbentuk catenary terbalik\n\n$$y=37-24\\cosh\\left(\\frac x{24}\\right).$$\n\nTentukan volume gudang.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 10",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 10",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-11",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Diketahui fungsi\n\n$$f(x,y,z)=e^{xyz}\\ln(x^2+y^2+z^2+1).$$\n\nTentukan turunan parsial campuran $f_{xy}$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 11",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 11",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-12",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Tentukan nilai integral berikut:\n\n$$I=\\iiint_V|x^2-y^2|\\,z\\,dV$$\n\ndengan\n\n$$V=\\{(x,y,z)\\mid x^2+y^2\\le4,\\ 0\\le z\\le3-\\frac12(x^2+y^2)\\}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 12",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 12",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-13",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan turunan dari fungsi:\n\n$$y=\\big(\\tan(2e^x)\\big)\\big(\\arcsin(\\cos(3x))\\big).$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 13",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 13",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-14",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Fungsi biaya produksi suatu barang diberikan oleh\n\n$$C(x)=2x^3-15x^2+24x+50,$$\n\ndengan $x$ menyatakan jumlah barang yang diproduksi. Tentukan jumlah barang $x$ yang meminimalkan biaya produksi dan nilai minimumnya (dalam juta rupiah).",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 14",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 14",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xvi-2025-semifinal-15",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diketahui:\n\n$$\\sin^{-1}x=\\int_0^x\\frac1{\\sqrt{1-t^2}}\\,dt.$$\n\nGunakan teorema binomial untuk menentukan empat suku pertama deret Maclaurin dari $\\sin^{-1}x$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XVI — Semifinal, Nomor 15",
+      "competition": "Calculus Cup",
+      "year": 2025,
+      "stage": "Semifinal",
+      "number": "Nomor 15",
+      "note": "User Drive: Soal Semifinal (1).pdf, PDF page 2; header identifies edition XVI. Year inferred from dated source metadata. Visual PDF comparison done; official final-use confirmation and web rendering pending."
+    }
+  },
+  {
     "id": "calculus-cup-xvi-2025-final-01",
     "level": "Kuliah",
     "topic": "Kalkulus Vektor",
