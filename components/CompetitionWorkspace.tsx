@@ -1313,7 +1313,7 @@ function IMCFullIndex({items}:{items:typeof imcAll}){
 }
 
 // SVG redrawings and corresponding standalone TikZ sources are stored in figures/competition/.
-const geometryFigures: Readonly<Record<string, {alt:string; width:number}>> = {
+const geometryFigures: Readonly<Record<string, {alt:string; width:number; caption?:string}>> = {
  "iymc-2022-qr-e":{alt:"Two horizontally shifted equilateral triangles with common region A shaded.",width:420},
  "iymc-2023-qr-e":{alt:"Equilateral triangle with vertical side a and parallel dotted segment b enclosing shaded triangle A.",width:300},
  "iymc-2025-qr-e":{alt:"Rectangle of height a and width b cut by a diagonal.",width:420},
@@ -1330,13 +1330,22 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number}>> = {
  "cemc-waterloo-2025-gauss-grade-7-11":{alt:"Coordinate plane with point R at (2, 6).",width:290},
  "cemc-waterloo-2026-pascal-grade-9-12":{alt:"Coordinate plane with point P at (2, 3).",width:290},
  "cemc-waterloo-2026-pascal-grade-9-16":{alt:"Four distinct collinear points in order P, Q, R, S; schematic, not to scale.",width:320},
+ "umo-2016-01":{alt:"Six vertices and nine sticks: AB, BC, CD, DE, EF, FA, AC, CE, EA.",width:280},
+ "umo-2017-01":{alt:"Invalid road coloring: orange edges 1–3 and 2–4, blue edges 1–2, 1–4, 2–3, 3–4.",width:250,caption:"Example of an inadmissible coloring: cities 1 and 2 cannot be connected using only orange roads."},
+ "umo-2017-05":{alt:"Eight identical empty containers.",width:400},
+ "umo-2019-01":{alt:"Three different tilings of a four by four square, as illustrated in the contest paper.",width:390,caption:"Three distinct examples of tilings."},
+ "umo-2025-01":{alt:"Regular octagon with all eight sides and twenty diagonals drawn.",width:300},
+ "smp-004":{alt:"Persegi panjang ABCD dengan AB 12, BC 8, AP 3, BQ 2, CR 4, serta segitiga PQR.",width:330},
+ "sma-004":{alt:"Segitiga siku-siku ABC dengan AB 10, AC 12, titik P pada AB dan Q pada AC; BP + CQ = 12.",width:300,caption:"Ilustrasi salah satu posisi P dan Q yang memenuhi syarat."},
+ "umo-2017-03":{alt:"Points A, B, C on a circle with both central angles sixty degrees; P on chord AC.",width:290,caption:"Illustrative position of P on chord AC."},
 };
 function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
  const figure=geometryFigures[id];
  if(!figure)return null;
  const src=(process.env.NEXT_PUBLIC_BASE_PATH||"")+"/figures/competition/"+id+".svg";
- return <figure className={"cmp-geometry-figure"+(compact?" cmp-geometry-compact":"")} style={{margin:"16px auto",display:"flex",justifyContent:"center",maxWidth:"100%"}}>
+ return <figure className={"cmp-geometry-figure"+(compact?" cmp-geometry-compact":"")} style={{margin:"16px auto",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",maxWidth:"100%"}}>
   <img src={src} alt={figure.alt} loading="lazy" decoding="async" style={{display:"block",width:compact?Math.min(figure.width,280):figure.width,maxWidth:"100%",height:"auto",padding:12,background:"#fff",borderRadius:4,boxSizing:"border-box"}}/>
+  {figure.caption&&<figcaption style={{fontSize:"0.85em",lineHeight:1.5,textAlign:"center",color:"var(--cmp-muted)",maxWidth:"100%"}}>{figure.caption}</figcaption>}
  </figure>;
 }
 
