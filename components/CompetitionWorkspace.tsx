@@ -15,6 +15,7 @@ const competitionFullNames: Readonly<Record<string, string>> = {
   "APMO": "Asian Pacific Mathematical Olympiad",
   "HMMT": "Harvard–MIT Mathematics Tournament",
   "IMO": "International Mathematical Olympiad",
+  "IYMC": "International Youth Math Challenge",
   "IMC": "International Mathematics Competition for University Students",
   "IMSO": "International Mathematics and Science Olympiad",
   "KMNR": "Kompetisi Matematika Nalaria Realistik",
