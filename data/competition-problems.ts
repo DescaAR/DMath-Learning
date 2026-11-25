@@ -3140,7 +3140,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2016 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3158,7 +3158,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2016 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3176,7 +3176,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2016 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3194,7 +3194,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2016 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3212,7 +3212,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2016 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3221,7 +3221,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Syarat keterbagian",
-    "prompt": "Determine the positive integer pairs $(u,m)$ for which $um-1\\mid u+m^2$.",
+    "prompt": "Find all positive integer pairs $(u,m)$ such that $u+m^2$ is divisible by $um-1$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3230,7 +3230,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2016 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -3248,7 +3248,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2017 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3266,7 +3266,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2017 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3284,7 +3284,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2017 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3302,7 +3302,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2017 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3320,7 +3320,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2017 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3338,7 +3338,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2018 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3356,7 +3356,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2018 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3365,7 +3365,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan penempatan domino",
-    "prompt": "On a $4\\times4$ grid, Kim and Li alternately place nonoverlapping dominoes aligned with the grid. Kim plays first and can place only vertical dominoes; Li can place only horizontal ones. The last player able to place a domino wins. Determine the winner under optimal play, with proof.",
+    "prompt": "On a $4\\times4$ grid, Kim and Li alternately place nonoverlapping dominoes aligned with the grid. Kim plays first and can place only vertical dominoes; Li can place only horizontal ones. The last player able to place a domino wins.\n\n[[FIGURE]]\n\nDetermine the winner under optimal play, with proof.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3374,7 +3374,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2018 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3392,7 +3392,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2018 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
     }
   },
   {
@@ -3410,7 +3410,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2018 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
     }
   },
   {
@@ -3428,7 +3428,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2019 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3446,7 +3446,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2019 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -3464,7 +3464,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2019 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -3482,7 +3482,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2019 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3500,7 +3500,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2019 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3509,7 +3509,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Persamaan kuadrat dengan koefisien prima",
-    "prompt": "Classify triples $(x,b,c)\\in\\mathbb Z^3$ satisfying $x^2+bx+c=0$, with $b$ prime and $c$ positive and odd.",
+    "prompt": "Find all ordered triples of integers $(x,b,c)$, such that $b$ is prime, $c$ is odd and positive, and $x^2+bx+c=0$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3518,7 +3518,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2021 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -3536,7 +3536,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2021 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3554,7 +3554,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2021 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3572,7 +3572,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2021 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -3590,7 +3590,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2021 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -7982,7 +7982,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2017 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -8000,7 +8000,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2018 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
     }
   },
   {
@@ -8018,7 +8018,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2021 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -8180,7 +8180,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2019 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {

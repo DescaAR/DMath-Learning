@@ -1460,212 +1460,394 @@
       "sourceUrl": "https://live.poshenloh.com/past-contests/aime/2024I"
     },
     "umo-2016-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2016,
       "number": "Nomor 1",
-      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Story and sample-game steps condensed; source diagram shown after text."
+      }
     },
     "umo-2016-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2016,
       "number": "Nomor 2",
-      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Question and both example sentences rephrased."
+      }
     },
     "umo-2016-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2016,
       "number": "Nomor 3",
-      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Question rephrased and non-distinctness moved to a separate sentence."
+      }
     },
     "umo-2016-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2016,
       "number": "Nomor 4",
-      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Opening and geometric condition rephrased."
+      }
     },
     "umo-2016-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2016,
       "number": "Nomor 5",
-      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Sequence definition and final instruction condensed."
+      }
     },
     "umo-2016-06": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2016,
       "number": "Nomor 6",
-      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Short statement restored to original words and mathematical notation."
+      }
     },
     "umo-2017-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2017,
       "number": "Nomor 1",
-      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Question rephrased; explanatory sentence accompanying example diagram missing."
+      }
     },
     "umo-2017-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2017,
       "number": "Nomor 3",
-      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Statement rephrased; original uses degree wording and segment bars."
+      }
     },
     "umo-2017-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2017,
       "number": "Nomor 4",
-      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Explanatory congruence sentence omitted; notation and question changed."
+      }
     },
     "umo-2017-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2017,
       "number": "Nomor 5",
-      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Game description and concluding question rephrased."
+      }
     },
     "umo-2017-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2017,
       "number": "Nomor 6",
-      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Original verbal description of alternating ordering replaced by inequality notation."
+      }
     },
     "umo-2018-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2018,
       "number": "Nomor 1",
-      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Bullet list and numeric wording altered; both subquestions rephrased."
+      }
     },
     "umo-2018-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2018,
       "number": "Nomor 2",
-      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Named polynomials P and Q removed; original statement condensed."
+      }
     },
     "umo-2018-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2018,
       "number": "Nomor 3",
-      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Game rules condensed and rephrased; original diagram position restored before final question."
+      }
     },
     "umo-2018-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2018,
       "number": "Nomor 4",
-      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Text rephrased and original segment and triangle notation altered."
+      }
     },
     "umo-2018-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2018,
       "number": "Nomor 5",
-      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Coloring question and example rephrased."
+      }
     },
     "umo-2019-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2019,
       "number": "Nomor 1",
-      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Tiling question and example caption rephrased."
+      }
     },
     "umo-2019-02": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2019,
       "number": "Nomor 2",
-      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing words and mathematical notation match the source, excluding typesetting spacing."
+      }
     },
     "umo-2019-03": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2019,
       "number": "Nomor 3",
-      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing words and mathematical notation match the source, excluding typesetting spacing."
+      }
     },
     "umo-2019-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2019,
       "number": "Nomor 5",
-      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Geometric wording, segment notation and requested angle notation differ."
+      }
     },
     "umo-2019-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2019,
       "number": "Nomor 6",
-      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Order of hypothesis, conclusion, and example wording changed."
+      }
     },
     "umo-2021-01": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2021,
       "number": "Nomor 1",
-      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Short statement restored to original words and mathematical notation."
+      }
     },
     "umo-2021-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2021,
       "number": "Nomor 2",
-      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Circle names and original wording replaced by description."
+      }
     },
     "umo-2021-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2021,
       "number": "Nomor 3",
-      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Original point-assignment wording replaced with function notation."
+      }
     },
     "umo-2021-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2021,
       "number": "Nomor 5",
-      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Game instructions and final question rephrased; indefinite-play explanation omitted."
+      }
     },
     "umo-2021-06": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2021,
       "number": "Nomor 6",
-      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing words and mathematical notation match the source, excluding typesetting spacing."
+      }
     },
     "umo-2022-02": {
       "status": "exact_verified",
@@ -3808,28 +3990,49 @@
       "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
     },
     "umo-2017-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2017,
       "number": "Nomor 2",
-      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Dialogue rewritten as reported speech; final note rephrased."
+      }
     },
     "umo-2018-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2018,
       "number": "Nomor 6",
-      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Question and definition of gcd rephrased."
+      }
     },
     "umo-2021-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2021,
       "number": "Nomor 4",
-      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Story, sequence definition and final divisibility question rephrased."
+      }
     },
     "umo-2022-01": {
       "status": "wording_differs",
@@ -3931,12 +4134,19 @@
       "sourceUrl": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
     },
     "umo-2019-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2019,
       "number": "Nomor 4",
-      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Rules and concluding proof instruction condensed; example card content retained in separate figure."
+      }
     },
     "umo-2020-01": {
       "status": "wording_differs",
@@ -5348,16 +5558,22 @@
       "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf"
     },
     "umo-2018-03": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "page": 1,
+      "finding": "4×4 grid and two oriented pieces match; Kim label rotation and figure position corrected."
     },
     "umo-2018-04": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "page": 2,
+      "finding": "Square, triangle, contact points and XA segment match structurally; coordinate incidence checked."
     },
     "umo-2018-05": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "page": 2,
+      "finding": "Twelve equally spaced labels clockwise from 1 at top match."
     },
     "cemc-waterloo-2025-gauss-grade-8-06": {
       "status": "pending_visual_comparison",
@@ -5388,20 +5604,26 @@
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
     },
     "umo-2016-01": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "page": 1,
+      "finding": "Six labeled vertices and nine connections match; sticks rendered as single lines rather than outlines."
     },
     "umo-2017-01": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "page": 1,
+      "finding": "All six road endpoints and two orange/four blue edges match."
     },
     "umo-2017-05": {
       "status": "pending_visual_comparison",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
     },
     "umo-2019-01": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "page": 1,
+      "finding": "All three partitions match the source."
     },
     "umo-2022-01": {
       "status": "diagram_structure_checked",
@@ -5426,8 +5648,10 @@
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
     },
     "umo-2019-04": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "page": 1,
+      "finding": "All ten cards and thirty recipient entries match; corrected viewBox to include the fifth column."
     },
     "umo-2020-01": {
       "status": "diagram_structure_checked",
