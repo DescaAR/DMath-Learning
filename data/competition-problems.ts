@@ -21159,7 +21159,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Statistika",
     "difficulty": 3,
     "title": "Penyajian Data",
-    "prompt": "Hasil penilaian tes matematika yang dilakukan sebanyak dua kali di suatu kelas disajikan sebagai berikut:\n\n$$\\begin{array}{cc|ccccc}&&\\multicolumn{5}{c}{\\text{Tes 2}}\\\\&&A&B&C&D&E\\\\\\hline\\text{Tes 1}&A&3&1&1&0&0\\\\&B&1&4&3&0&0\\\\&C&2&3&3&2&0\\\\&D&0&0&1&2&1\\\\&E&0&0&2&1&0\\end{array}$$\n\nPada baris A kolom C tertera angka 1, artinya banyaknya siswa yang memperoleh nilai A pada tes 1 dan nilai C pada tes 2 adalah 1 orang. Persentase siswa yang nilainya sama untuk 2 kali tes adalah … Pilihan: A. 30%; B. 40%; C. 50%; D. 60%",
+    "prompt": "Hasil penilaian tes matematika yang dilakukan sebanyak dua kali di suatu kelas disajikan sebagai berikut:\n\n$$\\begin{array}{cc|ccccc}&&&&\\text{Tes 2}&&\\\\&&A&B&C&D&E\\\\\\hline\\text{Tes 1}&A&3&1&1&0&0\\\\&B&1&4&3&0&0\\\\&C&2&3&3&2&0\\\\&D&0&0&1&2&1\\\\&E&0&0&2&1&0\\end{array}$$\n\nPada baris A kolom C tertera angka 1, artinya banyaknya siswa yang memperoleh nilai A pada tes 1 dan nilai C pada tes 2 adalah 1 orang. Persentase siswa yang nilainya sama untuk 2 kali tes adalah … Pilihan: A. 30%; B. 40%; C. 50%; D. 60%",
     "source": {
       "kind": "competition",
       "competition": "OSN",

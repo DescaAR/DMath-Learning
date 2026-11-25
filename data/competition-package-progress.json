@@ -69,7 +69,9 @@
           7,
           10,
           13,
-          15
+          14,
+          15,
+          16
         ]
       },
       "existing": [
@@ -115,8 +117,26 @@
         "officialOriginal": "pending"
       },
       "status": "incomplete_blocked_pending_original_and_reproduction_basis",
-      "nextStep": "Find organizer original or user-provided authorized copy; inspect diagrams and compare wording before one complete import. Do not mark verified or switch package.",
-      "publishedNewQuestions": 0
+      "nextStep": "Obtain organizer original or authorized supplied file, visually inspect all pages and figures/tables (5,6,7,10,13,14,15,16), compare wording of existing entries, import complete package only when provenance and reproduction basis established.",
+      "publishedNewQuestions": 0,
+      "additionalSource": {
+        "indexUrl": "https://www.defantri.com/2017/10/kumpulan-soal-osn-matematika-sdmi.html",
+        "pdfUrl": "https://drive.google.com/file/d/13LOhovBg7FknahJpXQ3xS8SnyeerK8bn/view",
+        "title": "Soal OSN SD Bidang Matematika Tingkat Propinsi (2024).pdf",
+        "status": "readable_text_retrieved",
+        "finding": "Both copies carry the same question headings and appear to derive from the same Calonguru transcription; text extraction differs due to watermarks and layout; not independent organizer originals."
+      },
+      "reproductionReview": {
+        "source": "https://jdih.mahkamahagung.go.id/index.php/legal-product/uu-nomor-28-tahun-2014/download/dokumen",
+        "article": "43(b)",
+        "finding": "Potential government-work exception subject to restrictions; organizer original and any protection notice not yet established. No blanket permission inferred from public download."
+      },
+      "lastDeploymentRegression": {
+        "failedRun": 45666068597,
+        "reason": "KaTeX unsupported multicolumn in OSN-K SD 2023 question 19",
+        "fix": "Replace spanning header with centered plain array cell; numerical entries unchanged",
+        "verification": "Pending new GitHub Actions result"
+      }
     }
   }
 }
