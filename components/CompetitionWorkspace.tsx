@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { competitionProblems, levels, levelMeta, type CompetitionProblem, type Level } from "@/data/competition-problems";
 import { dailySchedule, dailyDates } from "@/data/competition-daily";
 import { RichMath } from "@/components/RichMath";
-import { splitCompetitionPrompt, splitSubquestions, compactCompetitionMath } from "@/lib/competition-prompt";
+import { splitCompetitionPrompt, splitSubquestions, compactCompetitionMath, hideUnusedEquationTags } from "@/lib/competition-prompt";
 import { materialOf } from "@/lib/competition-material";
 
 const difficultyLabels=["","Dasar","Menengah","Lanjutan","Sulit","Sangat Sulit"];
@@ -90,6 +90,7 @@ function QuestionBody({prompt,problemId,compact=false}:{prompt:string;problemId?
 }
 
 export function CompetitionPrompt({ prompt, problemId, compact=false }: { prompt: string; problemId?: string; compact?: boolean }) {
+ prompt=hideUnusedEquationTags(prompt);
  const parsed=splitCompetitionPrompt(prompt);
  return <div className="cmp-question">
   <QuestionBody prompt={parsed?.question??prompt} problemId={problemId} compact={compact}/>
@@ -1379,7 +1380,7 @@ function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
 
 function ProblemCard({p,kind="list"}:{p:CompetitionProblem;kind?:"list"|"daily"|"related"}){
  return <article className={"cmp-problem-card cmp-problem-"+kind}>
-  <div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span>{p.topic!==materialOf(p)&&<span>{p.topic}</span>}<span className="cmp-difficulty">{difficulty(p)}</span></div>
+  <div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div>
   <div className="cmp-problem-main">
    <div className="cmp-problem-heading"><Link className="cmp-material-tag" href={link(p)} aria-label={"Buka soal "+p.id.toUpperCase()+": "+materialOf(p)}>{materialOf(p)}</Link>{kind==="daily"&&<span className="cmp-level-tag">{levelTitle(p.level)}</span>}</div>
    <div className="cmp-question-preview"><CompetitionPrompt prompt={p.prompt} problemId={p.id} compact/></div>
@@ -1434,7 +1435,7 @@ export function CompetitionProblemDetail({problem:p}:{problem:CompetitionProblem
  return <div className="cmp-page container"><div className="cmp-simple-reading">
   <nav className="cmp-breadcrumb" aria-label="Jejak navigasi"><Link href="/problem-solving/">Kumpulan Soal</Link><span>/</span><Link href={levelHref(p.level)}>{p.level}</Link><span>/</span><span>{p.id.toUpperCase()}</span></nav>
   <article className="cmp-detail">
-   <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{levelTitle(p.level)}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1 className="cmp-material-detail"><span className="cmp-material-tag">{materialOf(p)}</span></h1></header>
+   <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{p.topic}</span><span>{levelTitle(p.level)}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1 className="cmp-material-detail"><span className="cmp-material-tag">{materialOf(p)}</span></h1></header>
    <div className="cmp-main-prompt"><h2>Soal</h2><div><CompetitionPrompt prompt={p.prompt} problemId={p.id}/></div></div>
    <section className="cmp-source-panel" id="source"><h2>Sumber soal</h2><p>{p.source.label}</p>{p.source.collection&&<p>Referensi tambahan: <Link href={"/sumber-lain/"+p.source.collection.toLowerCase()+"/"}>{p.source.collection}</Link>{p.source.collectionUrl&&<> · <a href={p.source.collectionUrl} target="_blank" rel="noopener noreferrer">Buka referensi ↗</a></>}</p>}{p.source.url&&<a href={p.source.url} target="_blank" rel="noopener noreferrer" className="cmp-link-text">Lihat sumber ↗</a>}</section>
   </article>
