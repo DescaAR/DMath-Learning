@@ -220,12 +220,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Classify the functions $f:\\mathbb Z\\to\\mathbb Z$ satisfying $$f(2a)+2f(b)=f(f(a+b))$$ for every pair of integers $a,b$.",
     "source": {
       "kind": "competition",
-      "label": "IMO 2019 — Nomor 1",
+      "label": "IMO 2019 — Hari 1, Nomor 1",
       "competition": "IMO",
       "year": 2019,
-      "number": "Nomor 1",
+      "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Pernyataan soal dalam bahasa Indonesia.",
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source.",
       "stage": "IMO"
     }
   },
@@ -1442,7 +1442,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
     }
   },
   {
@@ -1460,7 +1460,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
     }
   },
   {
@@ -1478,7 +1478,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
     }
   },
   {
@@ -9009,6 +9009,258 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IMO 2024 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
       "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2019-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Konsiklikitas empat titik",
+    "prompt": "In triangle $ABC$, take $A_1\\in BC$, $B_1\\in AC$, $P\\in AA_1$ and $Q\\in BB_1$ (all on the indicated segments), with $PQ\\parallel AB$. Choose $P_1$ on line $PB_1$ and $Q_1$ on line $QA_1$, so that $B_1,A_1$ lie strictly between the corresponding endpoints $P,P_1$ and $Q,Q_1$. Given $\\angle PP_1C=\\angle BAC$ and $\\angle CQ_1Q=\\angle CBA$, establish concyclicity of $P,Q,P_1,Q_1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2019,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2019 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2019-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Operasi perubahan hubungan pertemanan",
+    "prompt": "A network of 2019 users has symmetric friendships. An operation replaces friendships $AB,AC$ by $BC$ whenever $A$ is friends with $B,C$ but $B,C$ are not friends; nothing else changes. Initially 1010 users each have 1009 friends, and the remaining 1009 each have 1010. Prove that operations can leave everyone with at most one friend.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2019,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2019 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2019-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Persamaan faktorial dan hasil kali",
+    "prompt": "Classify positive integer pairs $(k,n)$ satisfying $$k!=(2^n-1)(2^n-2)(2^n-4)\\cdots(2^n-2^{n-1}).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2019,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2019 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2019-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Proses pembalikan koin",
+    "prompt": "Harry arranges $n$ Bank of Bath coins, each marked H and T on opposite faces, in a row. If $k>0$ coins display H, flip the $k$th coin from the left; if none display H, stop. For $n=3$: $THT\\to HHT\\to HTT\\to TTT$ (three flips).\n\n(a) Establish termination for every starting configuration.\n\n(b) Define $L(C)$ as its flip count, e.g. $L(THT)=3$, $L(TTT)=0$. Compute the mean of $L(C)$ over the $2^n$ configurations.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2019,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2019 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2019-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Konkruensi garis pada konstruksi lingkaran",
+    "prompt": "An acute triangle $ABC$ with $AB\\ne AC$ has incenter $I$ and incircle $\\omega$, touching $BC,CA,AB$ at $D,E,F$. The perpendicular to $EF$ through $D$ intersects $\\omega$ again at $R$; $AR$ intersects it again at $P$. The circumcircles of $PCE,PBF$ intersect again at $Q$. Show that $DI,PQ$ intersect on the perpendicular to $AI$ through $A$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2019,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2019 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2020-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kekonkurenan garis bagi sudut",
+    "prompt": "Inside a convex quadrilateral $ABCD$, take $P$ satisfying $$\\angle PAD:\\angle PBA:\\angle DPA=1:2:3=\\angle CBP:\\angle BAP:\\angle BPC.$$ Show that the internal angle bisectors of $\\angle ADP,\\angle PCB$ and the perpendicular bisector of $AB$ are concurrent.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2020,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2020 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2020-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Partisi batu berdasarkan warna dan berat",
+    "prompt": "There are $4n$ pebbles with distinct weights $1,\\ldots,4n$, coloured in $n$ colours, four per colour. Establish a partition into two piles with both properties:\n\n• Equal total weight.\n\n• Two pebbles of every colour in each pile.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2020,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2020 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2020-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Keterhubungan stasiun kereta gantung",
+    "prompt": "For integer $n>1$, a mountain has $n^2$ stations at distinct elevations. Companies $A,B$ each operate $k$ direct uphill cable cars. Within either company, origins are distinct, destinations are distinct, and origin order agrees with destination order by altitude. Two stations are linked by a company when the higher is reachable from the lower using only its cars, possibly several. Find the least positive $k$ forcing some pair to be linked by both companies.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2020,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2020 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2020-05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Rata-rata aritmetika dan geometri",
+    "prompt": "A deck of $n>1$ cards bears positive integers. The arithmetic mean for every pair of cards equals the geometric mean for some nonempty selection of cards from that deck. For which $n$ must all labels coincide?",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2020,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2020 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2020-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Garis pemisah himpunan titik",
+    "prompt": "Establish a universal $c>0$: for every integer $n>1$, any planar $n$-point set $S$ with mutual distances at least $1$ admits a separating line $\\ell$ whose distance from every point of $S$ is at least $cn^{-1/3}$. Separating means that $\\ell$ crosses a segment joining two members of $S$.\n\nNote: partial credit may depend on the exponent $\\alpha>1/3$ if the bound is weakened to $cn^{-\\alpha}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2020,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2020 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2021-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kekonkurenan garis dan pusat lingkaran",
+    "prompt": "In acute $ABC$ with $AB>AC$, choose an interior $D$ satisfying $\\angle DAB=\\angle CAD$. Take $E\\in AC$ and $F\\in AB$ on the respective segments with $\\angle ADE=\\angle BCD$ and $\\angle FDA=\\angle DBC$. Take $X$ on line $AC$ with $CX=BX$. If $O_1,O_2$ are the circumcenters of $ADC,EXD$, prove concurrency of $BC,EF,O_1O_2$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2021,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2021 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2021-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kesamaan jumlah panjang ruas garis",
+    "prompt": "A convex quadrilateral $ABCD$ has all four sides tangent to circle $\\Gamma$ centered at $I$. Let $\\Omega$ be the circumcircle of $AIC$. Extend $BA$ past $A$, $BC$ past $C$, and $AD,CD$ past $D$ to meet $\\Omega$ at $X,Z,Y,T$ respectively. Establish $$AD+DT+TX+XA=CD+DY+YZ+ZC.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2021,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2021 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2021-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pertukaran posisi kenari pada lingkaran",
+    "prompt": "Squirrels Bushy and Jumpy collect 2021 walnuts. Jumpy labels them $1,\\ldots,2021$ and digs that many holes around their favourite tree. Bushy places one walnut in each hole in arbitrary order. Jumpy makes 2021 swaps: at step $k$, exchange the two neighbors of walnut $k$. Prove that some step $k$ exchanges labels $a,b$ with $a<k<b$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2021,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2021 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2021-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Batas kardinalitas himpunan bilangan bulat",
+    "prompt": "For integer $m\\ge2$, suppose $A$ is a finite integer set (negative and zero elements allowed), and $B_1,\\ldots,B_m\\subseteq A$ satisfy $\\sum_{b\\in B_k}b=m^k$ for $1\\le k\\le m$. Show $|A|\\ge\\frac m2$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2021,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2021 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
     }
   }
 ];
