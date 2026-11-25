@@ -4,6 +4,7 @@ import type { CompetitionProblem } from "@/data/competition-problems";
 // Prefer a specific mathematical subject; retain the original broad topic when uncertain.
 const rules: Readonly<Record<string, readonly (readonly [RegExp,string])[]>> = {
  "Analisis Real":[
+  [/fungsi lantai|floor function|greatest integer/,"Fungsi Lantai"],
   [/barisan|deret|rekurs|rekurensi|asimtotik jumlah|limit iteratif|limit jumlah pangkat|limit jumlah binomial/,"Barisan dan Deret"],
   [/supremum|infimum|interval/,"Supremum dan Infimum"],
   [/integral|riemann/,"Integral Riemann"],
@@ -100,6 +101,9 @@ const rules: Readonly<Record<string, readonly (readonly [RegExp,string])[]>> = {
 };
 
 const overrides: Readonly<Record<string,string>>={
+ "imc-2025-04":"Fungsi Lantai",
+ "imc-2025-05":"Permutasi dan Pemetaan",
+ "imc-2025-07":"Ketertutupan Himpunan",
  "imc-2026-01":"Trigonometri",
  "imc-2026-02":"Matriks",
  "imc-2026-03":"Permutasi",
