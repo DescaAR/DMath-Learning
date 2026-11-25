@@ -13996,6 +13996,91 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.ktom-tomi.or.id/",
       "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 6–7. URL is organizer homepage."
     }
+  },
+  {
+    "id": "magd-2018-ii-01",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 4,
+    "title": "Analisis Kompleks",
+    "prompt": "Buktikan bahwa\n\n$$\\int_0^\\infty e^{ix^2}\\,dx=\\frac{\\sqrt{\\pi}(1+i)}{2\\sqrt2}.$$\n\n**Petunjuk:** Tinjau fungsi $f(z)=e^{iz^2}$ dengan $z\\in\\mathbb C$ dan lintasan $C:=C_1\\cup C_2\\cup C_3$ dengan\n\n$$C_1:=\\{z=x:0\\le x\\le R\\},\\ C_2:=\\left\\{z=Re^{it}:0\\le t\\le\\frac{\\pi}{4}\\right\\},$$\n\n$$C_3:=\\left\\{z=\\frac{(1+i)x}{\\sqrt2}:0\\le x\\le R\\right\\},$$\n\ndengan $R>1$, dan tunjukkan bahwa\n\n$$\\lim_{R\\to\\infty}\\int_{C_2}f(z)\\,dz=0.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap II, Nomor 1",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap II",
+      "number": "Nomor 1",
+      "note": "User-supplied University Challange ZIP: MaGD/soal tahap ii magd 2018.pdf, PDF page 1."
+    }
+  },
+  {
+    "id": "magd-2018-ii-02",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Analisis Real",
+    "prompt": "Misalkan $f(x)=x^5-7x+1$.\n\n(a) Buktikan bahwa $f$ memiliki akar $r\\in[0,1]$.\n\n(b) Tentukan suatu barisan bilangan rasional $\\{x_n\\}$ yang konvergen ke $r$ dengan $x_1=0$.\n\n(c) Tentukan suatu $N<8$ sehingga $|x_N-r|<10^{-3}$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap II, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap II",
+      "number": "Nomor 2",
+      "note": "User-supplied University Challange ZIP: MaGD/soal tahap ii magd 2018.pdf, PDF page 2."
+    }
+  },
+  {
+    "id": "magd-2018-ii-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 4,
+    "title": "Kalkulus",
+    "prompt": "Diketahui $f$ memenuhi\n\n$$f(x,y)+\\int_0^{\\sqrt\\pi/2}\\int_{2y}^{y} f(x,y)\\,dxdy=\\sin(x^2)+\\int_{\\sqrt\\pi/2}^{\\sqrt\\pi}\\int_y^{\\sqrt\\pi} f(x,y)\\,dxdy.$$\n\nTentukan\n\n$$\\int_0^{2\\sqrt\\pi}\\int_{y/2}^{\\sqrt\\pi}f(x,y)\\,dxdy.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap II, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap II",
+      "number": "Nomor 3",
+      "note": "User-supplied University Challange ZIP: MaGD/soal tahap ii magd 2018.pdf, PDF page 3."
+    }
+  },
+  {
+    "id": "magd-2019-sayembara",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 4,
+    "title": "Kalkulus",
+    "prompt": "Misalkan $f$ dan $g$ adalah fungsi bernilai real yang kontinu pada interval $[a,b]$ dan memenuhi $f(x)\\ge g(x)$ untuk semua $x\\in[a,b]$. Daerah $D$ didefinisikan sebagai daerah tertutup pada bidang dengan batas garis $x=a$, garis $x=b$, kurva $y=f(x)$ dan $y=g(x)$. Titik pusat massa daerah $D$, yang dinotasikan dengan $(\\overline x,\\overline y)$ dapat dihitung dengan menggunakan rumus\n\n$$\\overline x=\\frac{\\int_a^b x[f(x)-g(x)]\\,dx}{\\int_a^b[f(x)-g(x)]\\,dx}\\quad\\text{dan}\\quad\\overline y=\\frac{\\int_a^b[f(x)^2-g(x)^2]\\,dx}{2\\int_a^b[f(x)-g(x)]\\,dx}.$$\n\n1. Jika $a=1$, $b=4$, $f(x)=\\sqrt x$, dan $g(x)=\\frac{x}{4}$, sketsa daerah $D$ dan tentukan titik pusat massanya. Periksa apakah titik pusat massa berada di $D$.\n\n2. Berikan contoh interval $[a,b]$, fungsi $f$ dan $g$ sedemikian hingga titik pusat massa $(\\overline x,\\overline y)$ tidak berada pada daerah $D$.\n\n3. Tentukan suatu syarat cukup untuk fungsi $f$ dan $g$ agar titik pusat massa $(\\overline x,\\overline y)$ berada di $D$. Buktikan jawaban Anda.\n\n4. Diberikan fungsi $f$ yang grafiknya cekung ke bawah. Selidiki apakah ada syarat yang lebih lemah untuk fungsi $g$ agar titik pusat massa $(\\overline x,\\overline y)$ berada di $D$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2019 — Sayembara, Nomor 1–4",
+      "competition": "MaG-D ITB",
+      "year": 2019,
+      "stage": "Sayembara",
+      "number": "Nomor 1–4",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-Sayembara-MaGD2019.pdf, PDF page 1."
+    }
+  },
+  {
+    "id": "magd-2020-sayembara",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Analisis Real",
+    "prompt": "1. Misalkan $n$ adalah suatu bilangan bulat positif. Diberikan bilangan real positif $x_1,x_2,\\ldots,x_n$ dan $y_1,y_2,\\ldots,y_n$. Definisikan\n\n$$u_n=\\frac{y_1+y_2+\\ldots+y_n}{x_1+x_2+\\ldots+x_n}\\quad\\text{dan}\\quad v_n=\\frac1n\\left(\\frac{y_1}{x_1}+\\frac{y_2}{x_2}+\\ldots+\\frac{y_n}{x_n}\\right).$$\n\nTentukan suatu syarat untuk $x_1,x_2,\\ldots,x_n$ dan $y_1,y_2,\\ldots,y_n$ agar $u_n\\le v_n$ dan syarat agar $u_n\\ge v_n$. Buktikan jawaban Anda.\n\n2. Asumsikan bahwa barisan $(u_n)_{n\\in\\mathbb N}$ dan $(v_n)_{n\\in\\mathbb N}$ keduanya konvergen. Misalkan $u=\\lim_{n\\to\\infty}u_n$ dan $v=\\lim_{n\\to\\infty}v_n$. Berikan suatu kondisi untuk barisan $(x_i)_{i\\in\\mathbb N}$ dan $(y_i)_{i\\in\\mathbb N}$ agar $u\\ge v$ dan kondisi agar $u\\le v$. Buktikan jawaban Anda.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2020 — Sayembara, Nomor 1–2",
+      "competition": "MaG-D ITB",
+      "year": 2020,
+      "stage": "Sayembara",
+      "number": "Nomor 1–2",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-Sayembara-MaG-D-XIII-2020.pdf, PDF page 1."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;

@@ -13832,6 +13832,91 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "magd-2018-ii-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "number": "Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/MaGD/soal tahap ii magd 2018.pdf",
+        "method": "User-supplied competition PDF text extracted and page visually inspected",
+        "finding": "Transcribed original question body; independent recheck and browser render pending. Shared-context questions in sayembara kept together.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2018-ii-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/soal tahap ii magd 2018.pdf",
+        "method": "User-supplied competition PDF text extracted and page visually inspected",
+        "finding": "Transcribed original question body; independent recheck and browser render pending. Shared-context questions in sayembara kept together.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2018-ii-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/soal tahap ii magd 2018.pdf",
+        "method": "User-supplied competition PDF text extracted and page visually inspected",
+        "finding": "Transcribed original question body; independent recheck and browser render pending. Shared-context questions in sayembara kept together.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2019-sayembara": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2019,
+      "number": "Nomor 1–4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/MaGD/Soal-Sayembara-MaGD2019.pdf",
+        "method": "User-supplied competition PDF text extracted and page visually inspected",
+        "finding": "Transcribed original question body; independent recheck and browser render pending. Shared-context questions in sayembara kept together.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2020-sayembara": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2020,
+      "number": "Nomor 1–2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/MaGD/Soal-Sayembara-MaG-D-XIII-2020.pdf",
+        "method": "User-supplied competition PDF text extracted and page visually inspected",
+        "finding": "Transcribed original question body; independent recheck and browser render pending. Shared-context questions in sayembara kept together.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {
