@@ -344,7 +344,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "evolution": {
       "prompt": "Jika $BC$ dibagi menjadi $k$ segmen yang sama panjang, buktikan bahwa segitiga-segitiga dengan puncak $A$ memiliki luas sama.",
       "steps": [
-        "Semua alas mempunyai panjang $BC/k$ dan tinggi yang sama. Maka masing-masing luas $\\frac12(BC/k)h=\\frac1k[ABC]$."
+        "Misalkan titik pembagi pada $BC$ adalah $D_0=B,D_1,\\ldots,D_k=C$ dengan $k\\ge1$. Untuk setiap $i=1,\\ldots,k$, berlaku $D_{i-1}D_i=BC/k$.",
+        "Jarak tegak lurus $A$ ke garis $BC$ adalah $h$. Seluruh segitiga $AD_{i-1}D_i$ memiliki tinggi tersebut karena alas-alasnya terletak pada garis yang sama.",
+        "Luas masing-masing adalah $\\frac12\\cdot\\frac{BC}{k}\\cdot h=\\frac1k[ABC]$. Karena rumus ini tidak bergantung pada $i$, seluruh segitiga mempunyai luas yang sama."
       ]
     },
     "source": {
