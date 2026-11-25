@@ -2712,5 +2712,31 @@ export const competitionArchives: CompetitionArchive[] = [
     "provider": "University of Waterloo",
     "status": "resmi",
     "note": "Indeks internal; naskah individual dan hak reproduksi belum seluruhnya diperiksa."
+  },
+  {
+    "id": "hmmt-feb-2005",
+    "level": "SMA",
+    "competition": "HMMT",
+    "year": 2005,
+    "stage": "HMMT Babak Individu",
+    "round": "Februari — Aljabar",
+    "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
+    "provider": "Harvard-MIT Mathematics Tournament",
+    "status": "resmi",
+    "note": "Naskah diperiksa. Sejumlah pernyataan matematis sudah dimasukkan; bukan paket lengkap.",
+    "numberCount": 10
+  },
+  {
+    "id": "hmmt-feb-2025",
+    "level": "SMA",
+    "competition": "HMMT",
+    "year": 2025,
+    "stage": "HMMT Babak Individu",
+    "round": "Februari — Aljabar dan Teori Bilangan",
+    "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
+    "provider": "Harvard-MIT Mathematics Tournament",
+    "status": "resmi",
+    "note": "Naskah diperiksa. Sejumlah pernyataan matematis sudah dimasukkan; bukan paket lengkap.",
+    "numberCount": 10
   }
 ];

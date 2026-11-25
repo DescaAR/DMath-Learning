@@ -2708,6 +2708,276 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/",
       "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
     }
+  },
+  {
+    "id": "hmmt-2005-feb-1",
+    "level": "SMA",
+    "title": "Persamaan nilai mutlak",
+    "prompt": "Tentukan banyak solusi real dari $|x-1|=|x-2|+|x-3|$.",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "source": {
+      "kind": "competition",
+      "label": "HMMT Februari 2005 — Aljabar, Nomor 1",
+      "competition": "HMMT",
+      "stage": "HMMT Babak Individu",
+      "year": 2005,
+      "number": "Aljabar, Nomor 1",
+      "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
+      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+    }
+  },
+  {
+    "id": "hmmt-2005-feb-2",
+    "level": "SMA",
+    "title": "Persamaan eksponensial",
+    "prompt": "Berapa banyak $x\\in\\mathbb R$ yang memenuhi $2003^x+2004^x=2005^x$?",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "source": {
+      "kind": "competition",
+      "label": "HMMT Februari 2005 — Aljabar, Nomor 2",
+      "competition": "HMMT",
+      "stage": "HMMT Babak Individu",
+      "year": 2005,
+      "number": "Aljabar, Nomor 2",
+      "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
+      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+    }
+  },
+  {
+    "id": "hmmt-2005-feb-3",
+    "level": "SMA",
+    "title": "Rasio jumlah hasil kali",
+    "prompt": "Untuk tiga bilangan real berbeda $x,y,z$ dengan $x+y+z=0$, tentukan nilai maksimum $\\frac{xy+yz+zx}{x^2+y^2+z^2}$.",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "source": {
+      "kind": "competition",
+      "label": "HMMT Februari 2005 — Aljabar, Nomor 3",
+      "competition": "HMMT",
+      "stage": "HMMT Babak Individu",
+      "year": 2005,
+      "number": "Aljabar, Nomor 3",
+      "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
+      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+    }
+  },
+  {
+    "id": "hmmt-2005-feb-9",
+    "level": "SMA",
+    "title": "Jumlah faktor prima",
+    "prompt": "Bilangan $27.000.001$ mempunyai tepat empat faktor prima. Tentukan jumlah keempat faktor tersebut.",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "source": {
+      "kind": "competition",
+      "label": "HMMT Februari 2005 — Aljabar, Nomor 9",
+      "competition": "HMMT",
+      "stage": "HMMT Babak Individu",
+      "year": 2005,
+      "number": "Aljabar, Nomor 9",
+      "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
+      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+    }
+  },
+  {
+    "id": "hmmt-2025-feb-1",
+    "level": "SMA",
+    "title": "Pembagi dengan digit satuan tertentu",
+    "prompt": "Jumlahkan seluruh pembagi positif dari $9!$ yang berakhir dengan digit 1, termasuk pembagi 1.",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "source": {
+      "kind": "competition",
+      "label": "HMMT Februari 2025 — Aljabar dan Teori Bilangan, Nomor 1",
+      "competition": "HMMT",
+      "stage": "HMMT Babak Individu",
+      "year": 2025,
+      "number": "Aljabar dan Teori Bilangan, Nomor 1",
+      "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
+      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+    }
+  },
+  {
+    "id": "hmmt-2025-feb-4",
+    "level": "SMA",
+    "title": "Jumlahan fungsi lantai",
+    "prompt": "Hitung nilai $$\\sum_{j=-1000}^{1000}\\left\\lfloor\\frac{2025}{j+0{,}5}\\right\\rfloor.$$",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "source": {
+      "kind": "competition",
+      "label": "HMMT Februari 2025 — Aljabar dan Teori Bilangan, Nomor 4",
+      "competition": "HMMT",
+      "stage": "HMMT Babak Individu",
+      "year": 2025,
+      "number": "Aljabar dan Teori Bilangan, Nomor 4",
+      "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
+      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+    }
+  },
+  {
+    "id": "hmmt-2025-feb-10",
+    "level": "SMA",
+    "title": "Sistem persamaan kompleks siklik",
+    "prompt": "Tiga bilangan kompleks $a,b,c$ berbeda satu sama lain dan memenuhi $a^2=b+6$, $b^2=c+6$, serta $c^2=a+6$. Tentukan kedua kemungkinan nilai $a+b+c$.",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "source": {
+      "kind": "competition",
+      "label": "HMMT Februari 2025 — Aljabar dan Teori Bilangan, Nomor 10",
+      "competition": "HMMT",
+      "stage": "HMMT Babak Individu",
+      "year": 2025,
+      "number": "Aljabar dan Teori Bilangan, Nomor 10",
+      "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
+      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+    }
+  },
+  {
+    "id": "onmipa-untan-2018-isian-2",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Perpangkatan matriks",
+    "prompt": "Untuk $\\theta\\in\\mathbb R$, diberikan matriks $$A=\\frac12\\begin{pmatrix}2\\cos^2\\theta&\\sin 2\\theta\\\\\\sin 2\\theta&2\\sin^2\\theta\\end{pmatrix}.$$ Tentukan $2018A^{2018}-2018A^{2016}$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Seleksi Universitas Tanjungpura 2018 — Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "stage": "ON-MIPA Seleksi Universitas",
+      "number": "Universitas Tanjungpura, Isian 2",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
+      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+    }
+  },
+  {
+    "id": "onmipa-untan-2018-isian-3",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 2,
+    "title": "Dimensi ruang fungsi",
+    "prompt": "Misalkan $C(\\mathbb R)$ adalah ruang fungsi kontinu bernilai real. Tentukan dimensi subruang $\\{f\\in C(\\mathbb R)\\mid f'=0\\}$, dengan $f'$ terdefinisi di seluruh $\\mathbb R$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Seleksi Universitas Tanjungpura 2018 — Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "stage": "ON-MIPA Seleksi Universitas",
+      "number": "Universitas Tanjungpura, Isian 3",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
+      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+    }
+  },
+  {
+    "id": "onmipa-untan-2018-isian-34",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 2,
+    "title": "Permutasi dengan pengulangan",
+    "prompt": "Tentukan banyak susunan berbeda dari seluruh huruf dalam kata SUCCESS.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Seleksi Universitas Tanjungpura 2018 — Isian 34",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "stage": "ON-MIPA Seleksi Universitas",
+      "number": "Universitas Tanjungpura, Isian 34",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
+      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+    }
+  },
+  {
+    "id": "onmipa-untan-2018-esai-2",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 4,
+    "title": "Subgrup diagonal",
+    "prompt": "Misalkan $G$ grup dan $A=G\\times G$. Definisikan $T=\\{(g,g)\\mid g\\in G\\}$. Buktikan bahwa $T\\cong G$ dan bahwa $T$ normal dalam $A$ jika dan hanya jika $G$ abelian.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Seleksi Universitas Tanjungpura 2018 — Esai 2",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "stage": "ON-MIPA Seleksi Universitas",
+      "number": "Universitas Tanjungpura, Esai 2",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
+      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+    }
+  },
+  {
+    "id": "onmipa-untan-2019-isian-2",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Menentukan citra pemetaan linear",
+    "prompt": "Pemetaan linear $f:\\mathbb R^2\\to\\mathbb R^2$ memenuhi $f(4,1)=(1,1)$ dan $f(1,1)=(3,-2)$. Tentukan $f(0,1)$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Seleksi Universitas Tanjungpura 2019 — Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2019,
+      "stage": "ON-MIPA Seleksi Universitas",
+      "number": "Universitas Tanjungpura, Isian 2",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
+      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+    }
+  },
+  {
+    "id": "onmipa-untan-2019-isian-7",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Elemen berorde dua",
+    "prompt": "Misalkan $G=\\{(a,b)\\in\\mathbb R^2\\mid a\\ne0\\}$ dengan operasi $(a,b)*(c,d)=(ac,b+d)$. Tentukan elemen berorde 2 dalam $G$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Seleksi Universitas Tanjungpura 2019 — Isian 7",
+      "competition": "ON-MIPA",
+      "year": 2019,
+      "stage": "ON-MIPA Seleksi Universitas",
+      "number": "Universitas Tanjungpura, Isian 7",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
+      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+    }
+  },
+  {
+    "id": "onmipa-untan-2019-isian-11",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Kelas koset gelanggang kuosien",
+    "prompt": "Diketahui ideal $I=\\{[0],[8],[16]\\}$ pada gelanggang $\\mathbb Z_{24}$. Tuliskan seluruh elemen gelanggang kuosien $\\mathbb Z_{24}/I$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Seleksi Universitas Tanjungpura 2019 — Isian 11",
+      "competition": "ON-MIPA",
+      "year": 2019,
+      "stage": "ON-MIPA Seleksi Universitas",
+      "number": "Universitas Tanjungpura, Isian 11",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
+      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+    }
+  },
+  {
+    "id": "onmipa-untan-2019-isian-22",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 4,
+    "title": "Jari-jari konvergensi deret pangkat",
+    "prompt": "Misalkan $(a_n)$ barisan real dengan $a_0=1$, $a_1=2$, dan $a_n=a_{n-1}+a_{n-2}$ untuk $n\\ge2$. Tentukan jari-jari konvergensi deret $\\sum_{n=0}^{\\infty}a_nz^n$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Seleksi Universitas Tanjungpura 2019 — Isian 22",
+      "competition": "ON-MIPA",
+      "year": 2019,
+      "stage": "ON-MIPA Seleksi Universitas",
+      "number": "Universitas Tanjungpura, Isian 22",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
+      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
