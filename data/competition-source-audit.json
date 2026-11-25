@@ -5827,12 +5827,16 @@
       "finding": "Eight-by-eight cells, center stone and corner labels match."
     },
     "umo-2014-03": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "page": 1,
+      "finding": "Triangle and four-copy square arrangement match structurally; excess vertical whitespace removed."
     },
     "umo-2014-06": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
+      "page": 2,
+      "finding": "Example path and four legal directions match structurally; figure placed at end and excess whitespace removed."
     },
     "umo-2024-02": {
       "status": "diagram_structure_checked",
