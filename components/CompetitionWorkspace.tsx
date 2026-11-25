@@ -80,10 +80,12 @@ function QuestionBody({prompt}:{prompt:string}){
  </div>;
 }
 
-export function CompetitionPrompt({ prompt }: { prompt: string }) {
+export function CompetitionPrompt({ prompt, problemId, compact=false }: { prompt: string; problemId?: string; compact?: boolean }) {
  const parsed=splitCompetitionPrompt(prompt);
  return <div className="cmp-question">
   <QuestionBody prompt={parsed?.question??prompt}/>
+  {problemId&&<GeometryFigure id={problemId} compact={compact}/>}
+  {problemId==="ksn-smp-2021-07"&&<div style={{maxWidth:"100%",overflowX:"auto",margin:"1em 0"}}><table aria-label="Tabel tiga baris dan delapan kolom" style={{borderCollapse:"collapse",margin:"0 auto",minWidth:"min(320px,100%)"}}><tbody>{[0,1,2].map(r=><tr key={r}>{Array.from({length:8},(_,i)=><td key={i} style={{border:"1px solid currentColor",textAlign:"center",width:"2em",height:"2em",padding:"0.2em"}}>{r===0?i+1:" "}</td>)}</tr>)}</tbody></table></div>}
   {parsed&&<ol type="A" className="cmp-answer-options" aria-label="Pilihan jawaban">
    {parsed.options.map((option,index)=><li key={index}><RichMath className="cmp-question-prose">{option}</RichMath></li>)}
   </ol>}
@@ -1310,11 +1312,19 @@ function IMCFullIndex({items}:{items:typeof imcAll}){
  </div>;
 }
 
-// Each SVG is exported from the corresponding standalone TikZ source in figures/competition/.
+// SVG redrawings and corresponding standalone TikZ sources are stored in figures/competition/.
 const geometryFigures: Readonly<Record<string, {alt:string; width:number}>> = {
  "iymc-2022-qr-e":{alt:"Two horizontally shifted equilateral triangles with common region A shaded.",width:420},
  "iymc-2023-qr-e":{alt:"Equilateral triangle with vertical side a and parallel dotted segment b enclosing shaded triangle A.",width:300},
  "iymc-2025-qr-e":{alt:"Rectangle of height a and width b cut by a diagonal.",width:420},
+ "umo-2018-03":{alt:"An empty four by four grid, with a vertical domino labelled Kim and a horizontal domino labelled Li.",width:360},
+ "umo-2018-04":{alt:"Square ABCD inside triangle XYZ; B lies on XY, C on YZ, D on ZX, and segment XA is drawn.",width:340},
+ "umo-2018-05":{alt:"Twelve uncolored equally spaced points on a circle, numbered clockwise from 1 at the top.",width:290},
+ "cemc-waterloo-2025-gauss-grade-8-06":{alt:"An uncolored triangle directly above a square, sharing its top edge.",width:145},
+ "cemc-waterloo-2025-gauss-grade-8-07":{alt:"A coordinate grid with x and y axes and the point (5, 7) marked.",width:290},
+ "sd-003":{alt:"Papan 6 kali 6 dengan ubin yang dilepas sesuai posisi dalam soal.",width:240},
+ "sd-007":{alt:"Papan 4 kali 4 dengan ubin yang dilepas sesuai posisi dalam soal.",width:240},
+ "ksnk-sd-2020-02":{alt:"Ilustrasi pola satu, dua, dan tiga meja segienam yang disambung, dengan kursi pada setiap sisi luar.",width:400},
 };
 function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
  const figure=geometryFigures[id];
@@ -1330,7 +1340,7 @@ function ProblemCard({p,kind="list"}:{p:CompetitionProblem;kind?:"list"|"daily"|
   <div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div>
   <div className="cmp-problem-main">
    <div className="cmp-problem-heading"><h3><Link href={link(p)}>{p.title}</Link></h3>{kind==="daily"&&<span className="cmp-level-tag">{levelTitle(p.level)}</span>}</div>
-   <div className="cmp-question-preview"><CompetitionPrompt prompt={p.prompt}/><GeometryFigure id={p.id} compact/></div>
+   <div className="cmp-question-preview"><CompetitionPrompt prompt={p.prompt} problemId={p.id} compact/></div>
    <div className="cmp-problem-foot"><span>{kind!=="daily"&&<>{p.level}<span className="cmp-meta-dot">·</span></>}{shortSource(p)}</span><Link className="cmp-link-text" href={link(p)}>Lihat soal <span aria-hidden="true">→</span></Link></div>
   </div>
  </article>;
@@ -1383,7 +1393,7 @@ export function CompetitionProblemDetail({problem:p}:{problem:CompetitionProblem
   <nav className="cmp-breadcrumb" aria-label="Jejak navigasi"><Link href="/problem-solving/">Kumpulan Soal</Link><span>/</span><Link href={levelHref(p.level)}>{p.level}</Link><span>/</span><span>{p.id.toUpperCase()}</span></nav>
   <article className="cmp-detail">
    <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{levelTitle(p.level)}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1>{p.title}</h1></header>
-   <div className="cmp-main-prompt"><h2>Soal</h2><div><CompetitionPrompt prompt={p.prompt}/><GeometryFigure id={p.id}/></div></div>
+   <div className="cmp-main-prompt"><h2>Soal</h2><div><CompetitionPrompt prompt={p.prompt} problemId={p.id}/></div></div>
    <section className="cmp-source-panel" id="source"><h2>Sumber soal</h2><p>{p.source.label}</p>{p.source.collection&&<p>Referensi tambahan: <Link href={"/sumber-lain/"+p.source.collection.toLowerCase()+"/"}>{p.source.collection}</Link>{p.source.collectionUrl&&<> · <a href={p.source.collectionUrl} target="_blank" rel="noopener noreferrer">Buka referensi ↗</a></>}</p>}{p.source.url&&<a href={p.source.url} target="_blank" rel="noopener noreferrer" className="cmp-link-text">Lihat sumber ↗</a>}</section>
   </article>
   <div className="cmp-back"><Link href={levelHref(p.level)} className="cmp-button cmp-secondary">← Kembali ke kumpulan soal</Link></div>

@@ -116,5 +116,7 @@ for(const m of figureBlock[1].matchAll(/"([a-z0-9-]+)"\s*:/g)){
  assert.ok(fs.existsSync("figures/competition/"+id+".tex"),"Missing TikZ source "+id);
  figureCount++;
 }
-assert.ok(figureCount>=3,"Missing registered figures");
+assert.ok(figureCount>=11,"Missing registered figures");
+assert.ok(competitionProblems.some(p=>p.id==="ksn-smp-2021-07"));
+assert.match(workspace,/aria-label="Tabel tiga baris dan delapan kolom"/);
 console.log("Question display audit:",choices,"multiple-choice records,",subparts,"lettered lists,",figureCount,"registered figures.");
