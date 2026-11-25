@@ -10180,6 +10180,330 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
       "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
     }
+  },
+  {
+    "id": "imo-2009-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Keterbagian pada rantai bilangan berbeda",
+    "prompt": "For positive integer $n$, choose distinct $a_1,\\ldots,a_k\\in\\{1,\\ldots,n\\}$ with $k\\ge2$ and $n\\mid a_i(a_{i+1}-1)$ for $1\\le i<k$. Establish $n\\nmid a_k(a_1-1)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2009,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2009 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2009-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kesamaan jarak terhadap pusat lingkaran",
+    "prompt": "In triangle $ABC$ with circumcentre $O$, take $P,Q$ strictly inside sides $CA,AB$, respectively. Set $K,L,M$ as the midpoints of $BP,CQ,PQ$. If $PQ$ touches the circumcircle $\\Gamma$ of $KLM$, establish $OP=OQ$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2009,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2009 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2009-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Barisan aritmetika dari subbarisan berindeks",
+    "prompt": "A strictly increasing positive integer sequence $(s_i)_{i\\ge1}$ has arithmetic subsequences $(s_{s_i})_{i\\ge1}$ and $(s_{s_i+1})_{i\\ge1}$. Establish that $(s_i)_{i\\ge1}$ is arithmetic.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2009,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2009 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2009-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Sudut pada segitiga sama kaki",
+    "prompt": "Triangle $ABC$ has $AB=AC$. The bisectors of $\\angle CAB,\\angle ABC$ meet $BC,CA$ at $D,E$, respectively. With $K$ the incentre of $ADC$ and $\\angle BEK=45^\\circ$, determine every possible $\\angle CAB$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2009,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2009 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2009-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Fungsi dengan syarat ketaksamaan segitiga",
+    "prompt": "Classify maps $f:\\mathbb Z_{>0}\\to\\mathbb Z_{>0}$ for which, for every positive integer pair $a,b$, the lengths $a,f(b),f(b+f(a)-1)$ form a triangle with noncollinear vertices.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2009,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2009 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2009-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Urutan lompatan menghindari titik terlarang",
+    "prompt": "Take distinct positive integers $a_1,\\ldots,a_n$ and a set $M$ of $n-1$ positive integers excluding $s=a_1+\\cdots+a_n$. Starting at $0$, a grasshopper makes $n$ rightward jumps of these lengths in some permutation. Prove that a permutation exists avoiding every landing point in $M$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2009,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2009 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2010-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Persamaan fungsi dengan fungsi lantai",
+    "prompt": "Classify $f:\\mathbb R\\to\\mathbb R$ satisfying $f(\\lfloor x\\rfloor y)=f(x)\\lfloor f(y)\\rfloor$ for all real $x,y$. Here $\\lfloor z\\rfloor$ is the greatest integer not exceeding $z$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2010,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2010 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2010-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Perpotongan garis pada lingkaran luar",
+    "prompt": "Let $I,\\Gamma$ be the incentre and circumcircle of $ABC$, and $D$ the second intersection of $AI$ with $\\Gamma$. Take $E$ on arc $BDC$ and $F$ on side $BC$ with $\\angle BAF=\\angle CAE<\\frac12\\angle BAC$. For midpoint $G$ of $IF$, establish that $DG$ and $EI$ intersect on $\\Gamma$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2010,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2010 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2010-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Fungsi dengan hasil kali kuadrat sempurna",
+    "prompt": "Write $\\mathbb N=\\{1,2,\\ldots\\}$. Classify $g:\\mathbb N\\to\\mathbb N$ for which $(g(m)+n)(m+g(n))$ is a perfect square for every $m,n\\in\\mathbb N$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2010,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2010 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2010-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kesamaan panjang tali busur",
+    "prompt": "For interior $P$ of triangle $ABC$, denote by $K,L,M$ the second intersections of $AP,BP,CP$ with its circumcircle $\\Gamma$. The tangent at $C$ meets line $AB$ at $S$. Given $SC=SP$, establish $MK=ML$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2010,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2010 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2010-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Operasi pemindahan koin antarkotak",
+    "prompt": "Six boxes $B_1,\\ldots,B_6$ start with one coin apiece.\n\nType 1: For nonempty $B_j$, $1\\le j\\le5$, remove one coin and add two to $B_{j+1}$.\n\nType 2: For nonempty $B_k$, $1\\le k\\le4$, remove one coin and swap the contents of $B_{k+1},B_{k+2}$, including empty boxes.\n\nCan finitely many operations empty $B_1,\\ldots,B_5$ and leave precisely $2010^{2010^{2010}}$ coins in $B_6$? Exponents associate as $a^{b^c}=a^{(b^c)}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2010,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2010 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2010-06",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Rekurensi maksimum barisan positif",
+    "prompt": "A positive real sequence $(a_n)_{n\\ge1}$ satisfies $a_n=\\max\\{a_k+a_{n-k}\\mid1\\le k\\le n-1\\}$ whenever $n>s$, for some positive integer $s$. Establish positive integers $\\ell,N$ with $\\ell\\le s$ and $a_n=a_\\ell+a_{n-\\ell}$ whenever $n\\ge N$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2010,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2010 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2011-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Maksimum pasangan pembagi jumlah",
+    "prompt": "For $A=\\{a_1,a_2,a_3,a_4\\}$ of distinct positive integers, set $s_A=a_1+a_2+a_3+a_4$ and let $n_A$ count pairs $(i,j)$ with $1\\le i<j\\le4$ and $a_i+a_j\\mid s_A$. Classify the sets maximizing $n_A$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2011,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2011 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2011-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Proses windmill pada himpunan titik",
+    "prompt": "A finite planar set $S$ has at least two points and no collinear triple. In a windmill, line $\\ell$ initially contains only one member $P$ of $S$. Rotate clockwise about $P$ until another member $Q$ is reached; switch the pivot to $Q$ and continue indefinitely. Prove that suitable initial choices of $P,\\ell$ make every member a pivot infinitely often.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2011,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2011 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2011-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketaksamaan fungsi real",
+    "prompt": "Suppose $f:\\mathbb R\\to\\mathbb R$ obeys $f(x+y)\\le yf(x)+f(f(x))$ for arbitrary real $x,y$. Establish $f(x)=0$ whenever $x\\le0$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2011,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2011 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2011-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Penempatan beban pada neraca",
+    "prompt": "For positive integer $n$, place weights $2^0,2^1,\\ldots,2^{n-1}$ individually on either pan of a balance, choosing any unused weight each time. Count the sequences of placements for which the right pan never outweighs the left.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2011,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2011 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2011-05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Keterbagian pada nilai fungsi",
+    "prompt": "Suppose $f:\\mathbb Z\\to\\mathbb Z_{>0}$ satisfies $f(m-n)\\mid f(m)-f(n)$ for arbitrary integers $m,n$. Establish $f(m)\\mid f(n)$ whenever $f(m)\\le f(n)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2011,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2011 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "imo-2011-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Persinggungan lingkaran hasil refleksi garis",
+    "prompt": "Let $\\Gamma$ be the circumcircle of acute $ABC$ and $\\ell$ a tangent to $\\Gamma$. Reflect $\\ell$ across $BC,CA,AB$ to obtain lines $\\ell_a,\\ell_b,\\ell_c$, respectively. Establish that the circumcircle of their triangle touches $\\Gamma$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2011,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2011 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
