@@ -202,3 +202,32 @@ for(const [id, expected] of [
  assert.equal(compactCompetitionMath(question.prompt.split("[[FIGURE]]")[1].trim()),expected);
 }
 assert.equal(compactCompetitionMath("Diketahui.\n\n$$A=1\\qquad B=2$$"),"Diketahui. $A=1\\qquad B=2$");
+
+// Audit the actual rendered prompt after presentation transformations. The
+// tokenizer is shared with RichMath, so mode-specific errors cannot escape.
+const mathTokenizerModule={exports:{}};
+new Function("exports","module",ts.transpileModule(read("lib/math-tokenizer.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(mathTokenizerModule.exports,mathTokenizerModule);
+const {tokenizeMath}=mathTokenizerModule.exports;
+let renderedFormulaCount=0;
+for(const p of competitionProblems){
+ const parsed=splitCompetitionPrompt(p.prompt);
+ const body=parsed?.question??p.prompt;
+ const sub=splitSubquestions(body);
+ const chunks=[...(sub?[sub.intro,...sub.parts.map(x=>x.text)]:[body]),...(parsed?.options??[])].flatMap(x=>x.split("[[FIGURE]]"));
+ for(const chunk of chunks){
+  const formatted=compactCompetitionMath(chunk.trim());
+  for(const token of tokenizeMath(formatted)){
+   if(token.kind==="text")continue;
+   try {
+    katex.renderToString(token.value,{throwOnError:true,strict:"ignore",displayMode:token.kind==="display",trust:false});
+   } catch(error) {throw new Error(p.id+" rendered math ("+token.kind+"): "+token.value,{cause:error});}
+   renderedFormulaCount++;
+  }
+  const originalTags=tokenizeMath(chunk).filter(t=>t.kind!=="text"&&/\\tag\b/.test(t.value));
+  const renderedTags=tokenizeMath(formatted).filter(t=>t.kind!=="text"&&/\\tag\b/.test(t.value));
+  assert.deepEqual(renderedTags.map(t=>t.value),originalTags.map(t=>t.value),p.id+" numbered equation changed");
+  assert.ok(renderedTags.every(t=>t.kind==="display"),p.id+" numbered equation rendered inline");
+ }
+}
+assert.equal(compactCompetitionMath("For which $$x=1\\tag{1}$$ holds."),"For which$$x=1\\tag{1}$$holds.");
+console.log("Rendered competition math audit passed:",competitionProblems.length,"questions,",renderedFormulaCount,"formulas.");

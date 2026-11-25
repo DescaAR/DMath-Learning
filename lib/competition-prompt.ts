@@ -33,7 +33,7 @@ export function compactCompetitionMath(prompt: string): string {
  prompt = smoothMNPair(stripCompetitionEmphasis(prompt));
  return prompt.replace(display, (match, before: string, dollarTex: string | undefined, bracketTex: string | undefined, after: string, offset: number) => {
   const tex = (dollarTex ?? bracketTex ?? "").trim();
-  const stacked = /\\(?:begin|end|substack|atop|over|cases|displaystyle)\b|\\\\/.test(tex) || /[\r\n]/.test(tex);
+  const stacked = /\\(?:begin|end|substack|atop|over|cases|displaystyle|tag|notag|nonumber)\b|\\\\/.test(tex) || /[\r\n]/.test(tex);
   const approximateWidth = tex.replace(/\\(?:left|right|,|;|!|:)/g, "").replace(/\\[a-zA-Z]+/g, "X").replace(/[{}^_\s]/g, "").length;
   const short = !stacked && approximateWidth <= 44 && tex.length <= 120 && !tex.includes("$");
   if (!short) return "$$" + tex + "$$";
