@@ -1678,8 +1678,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording matches official source."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing words and notation match source."
       }
     },
     "umo-2022-03": {
@@ -1693,8 +1693,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2022-04": {
@@ -1708,8 +1708,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2022-05": {
@@ -1723,8 +1723,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2022-06": {
@@ -1738,33 +1738,54 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2023-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2023,
       "number": "Nomor 3",
-      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2023-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2023,
       "number": "Nomor 4",
-      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2023-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2023,
       "number": "Nomor 6",
-      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Original operation symbol is a vertical bar, not a star; corrected. Prose still differs."
+      }
     },
     "umo-2025-01": {
       "status": "wording_differs",
@@ -1777,8 +1798,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2025-02": {
@@ -1792,8 +1813,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2025-04": {
@@ -1807,8 +1828,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Source includes explicit arithmetic examples and three bullet points; current text condensed."
       }
     },
     "umo-2025-05": {
@@ -1822,8 +1843,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2025-06": {
@@ -1837,33 +1858,54 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2026-01": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2026,
       "number": "Nomor 1",
-      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing wording matches source, excluding spacing in mathematical typesetting."
+      }
     },
     "umo-2026-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2026,
       "number": "Nomor 2",
-      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2026-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2026,
       "number": "Nomor 4",
-      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "imc-2025-01": {
       "status": "pending_comparison",
@@ -1948,8 +1990,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording matches official source."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing short sentence matches source."
       }
     },
     "imc-2026-02": {
@@ -1963,8 +2005,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2026-03": {
@@ -1978,8 +2020,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2026-04": {
@@ -1993,8 +2035,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2026-05": {
@@ -2008,12 +2050,12 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2026-06": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -2023,8 +2065,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending. Inline equation layout restored to match inspected Day 2 Problems PDF."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Both short subquestions now match the source wording and inline notation."
       }
     },
     "imc-2026-07": {
@@ -2038,8 +2080,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2026-08": {
@@ -2053,8 +2095,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2026-09": {
@@ -2068,8 +2110,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2026-10": {
@@ -2083,8 +2125,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2025-04": {
@@ -2898,8 +2940,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2020-04": {
@@ -2913,8 +2955,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
         "page": 2,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "imc-2020-03": {
@@ -3800,33 +3842,54 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Original figure precedes the final question; marker inserted. Added axis-aligned assumption remains a wording discrepancy."
       }
     },
     "umo-2023-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2023,
       "number": "Nomor 1",
-      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Original board occurs before the final question; marker inserted. Paraphrased prose still contains an added board description."
+      }
     },
     "umo-2023-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2023,
       "number": "Nomor 2",
-      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2023-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2023,
       "number": "Nomor 5",
-      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2025-03": {
       "status": "wording_differs",
@@ -3839,8 +3902,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Source calls the sample five turns; current text says rounds. Exact wording pending."
       }
     },
     "umo-2013-01": {
@@ -3886,8 +3949,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2020-03": {
@@ -3901,8 +3964,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
         "page": 1,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2020-05": {
@@ -3916,8 +3979,8 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
         "page": 2,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2020-06": {
@@ -3931,33 +3994,54 @@
         "date": "2026-11-25",
         "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
         "page": 2,
-        "method": "Official PDF text and page image compared",
-        "finding": "Existing wording differs from original; exact replacement pending."
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
       }
     },
     "umo-2026-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2026,
       "number": "Nomor 3",
-      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2026-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2026,
       "number": "Nomor 5",
-      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Source includes four numbered actions and sample path; reconstructed SVG clipping corrected."
+      }
     },
     "umo-2026-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2026,
       "number": "Nomor 6",
-      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2014-01": {
       "status": "pending_comparison",
@@ -4008,52 +4092,94 @@
       "sourceUrl": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
     },
     "umo-2024-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2024,
       "number": "Nomor 1",
-      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2024-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2024,
       "number": "Nomor 2",
-      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2024-03": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2024,
       "number": "Nomor 3",
-      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Short statement restored to original wording."
+      }
     },
     "umo-2024-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2024,
       "number": "Nomor 4",
-      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2024-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2024,
       "number": "Nomor 5",
-      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Existing text is not verbatim; exact replacement pending."
+      }
     },
     "umo-2024-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2024,
       "number": "Nomor 6",
-      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page screenshot compared",
+        "finding": "Source includes two triangle shapes and n=4 example tiling; reconstructed SVG checked, whitespace trimmed."
+      }
     },
     "apmo-2024-apmo-1": {
       "status": "pending_comparison",
@@ -5283,8 +5409,9 @@
       "page": 1
     },
     "umo-2023-01": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "page": 1
     },
     "umo-2013-01": {
       "status": "pending_visual_comparison",
@@ -5323,16 +5450,19 @@
       "page": 2
     },
     "umo-2026-02": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "page": 1
     },
     "umo-2026-03": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "page": 1
     },
     "umo-2026-05": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "page": 2
     },
     "umo-2014-01": {
       "status": "pending_visual_comparison",
@@ -5347,12 +5477,14 @@
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
     },
     "umo-2024-02": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "page": 1
     },
     "umo-2024-06": {
-      "status": "pending_visual_comparison",
-      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
+      "page": 2
     },
     "iymc-2019-qr-e": {
       "status": "pending_visual_comparison",

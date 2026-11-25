@@ -3608,7 +3608,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2022 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "2026-11-25: original wording compared with official PDF page 1 and confirmed; math typeset in LaTeX."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -3626,7 +3626,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2022 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3644,7 +3644,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2022 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3662,7 +3662,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2022 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3680,7 +3680,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2022 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3698,7 +3698,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2023 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3716,7 +3716,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2023 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3725,7 +3725,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Operasi asosiatif yang invarian terhadap translasi",
-    "prompt": "Classify, with proof, the binary operations $\\star$ on the integers such that for all integers $a,b,c$, $$(a\\star b)+c=(a+c)\\star(b+c),$$ $$(a\\star b)\\star c=a\\star(b\\star c).$$ A binary operation here is a map $\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$; addition and multiplication are examples of binary operations.",
+    "prompt": "Classify, with proof, the binary operations $\\mid$ on the integers such that for all integers $a,b,c$, $$(a\\mid b)+c=(a+c)\\mid(b+c),$(a\\mid b)\\mid c=a\\mid(b\\mid c).$$ A binary operation here is a map $\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$; addition and multiplication are examples of binary operations.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3734,7 +3734,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2023 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3752,7 +3752,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2025 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3770,7 +3770,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2025 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3788,7 +3788,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2025 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3806,7 +3806,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2025 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3824,7 +3824,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2025 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3842,7 +3842,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2026 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -3860,7 +3860,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2026 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -3878,7 +3878,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2026 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -4058,7 +4058,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2026 — Hari 1, Nomor 1",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: original wording compared with official PDF page 1 and confirmed; math typeset in LaTeX."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -4076,7 +4076,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2026 — Hari 1, Nomor 2",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -4094,7 +4094,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2026 — Hari 1, Nomor 3",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -4112,7 +4112,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2026 — Hari 1, Nomor 4",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -4130,7 +4130,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2026 — Hari 1, Nomor 5",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -4139,7 +4139,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Persamaan komposisi fungsi dan turunan",
-    "prompt": "(a) Can a differentiable function $f:\\mathbb R\\to\\mathbb R$ satisfy $f'(f(x))=x$ at every $x\\in\\mathbb R$?\n\n(b) Can a differentiable function $f:\\mathbb R\\to\\mathbb R$ satisfy $f'(f(x))=|x|$ at every $x\\in\\mathbb R$?",
+    "prompt": "(a) Is there a differentiable function $f:\\mathbb R\\to\\mathbb R$ such that $f'(f(x))=x$ for every $x\\in\\mathbb R$?\n\n(b) Is there a differentiable function $f:\\mathbb R\\to\\mathbb R$ such that $f'(f(x))=|x|$ for every $x\\in\\mathbb R$?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4148,7 +4148,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2026 — Hari 2, Nomor 6",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -4166,7 +4166,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2026 — Hari 2, Nomor 7",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -4184,7 +4184,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2026 — Hari 2, Nomor 8",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -4202,7 +4202,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2026 — Hari 2, Nomor 9",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -4220,7 +4220,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2026 — Hari 2, Nomor 10",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -6038,7 +6038,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2020 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -6056,7 +6056,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2020 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 2 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8027,7 +8027,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Luas gabungan persegi bertumpuk",
-    "prompt": "For an integer $n\\ge2$, Thibaud the Tiger places $n$ overlapping axis-aligned squares of side length $2$ with centers equally spaced on the segment joining $(0,0)$ and $(1,1)$, including both endpoints. The illustration shows $n=4$, for which the union has area $\\frac{23}{3}$.\n\nDetermine, with proof, the smallest $n$ for which the union has area at least $\\sqrt{63}$.",
+    "prompt": "For an integer $n\\ge2$, Thibaud the Tiger places $n$ overlapping axis-aligned squares of side length $2$ with centers equally spaced on the segment joining $(0,0)$ and $(1,1)$, including both endpoints. The illustration shows $n=4$, for which the union has area $\\frac{23}{3}$.\n\n\n\n[[FIGURE]]\n\nDetermine, with proof, the smallest $n$ for which the union has area at least $\\sqrt{63}$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8036,7 +8036,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2022 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8045,7 +8045,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan pewarnaan baris dan kolom",
-    "prompt": "Scarlett and Indigo alternate moves on the illustrated diamond-shaped board, with Scarlett starting. The board consists of unit squares in seven centered rows of lengths $1,3,5,7,5,3,1$. On a turn, a player chooses an unpainted square and paints every square in its row and column, even if already painted. A player unable to move loses. Prove which player can force a win.",
+    "prompt": "Scarlett and Indigo alternate moves on the illustrated diamond-shaped board, with Scarlett starting. The board consists of unit squares in seven centered rows of lengths $1,3,5,7,5,3,1$. On a turn, a player chooses an unpainted square and paints every square in its row and column, even if already painted. \n\n[[FIGURE]]\n\nA player unable to move loses. Prove which player can force a win.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8054,7 +8054,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2023 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8072,7 +8072,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2023 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8090,7 +8090,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2023 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8108,7 +8108,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2025 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8198,7 +8198,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2020 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8216,7 +8216,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2020 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8234,7 +8234,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2020 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 2 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8252,7 +8252,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2020 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 2 compared; wording differs from source and exact transcription remains pending."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8270,7 +8270,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2026 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8288,7 +8288,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2026 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8306,7 +8306,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2026 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8432,7 +8432,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2024 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8450,7 +8450,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2024 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8459,7 +8459,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Digit awal dan akhir pangkat dua",
-    "prompt": "Prove that infinitely many powers of two have initial digits 20 and final digits 24.",
+    "prompt": "Show that infinitely many powers of 2 begin with 20 and end with 24.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8468,7 +8468,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2024 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -8486,7 +8486,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2024 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8504,7 +8504,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2024 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {
@@ -8522,7 +8522,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2024 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
     }
   },
   {

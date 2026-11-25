@@ -76,7 +76,8 @@
     },
     "umo-2023-01": {
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
+      "basis": "Official page screenshot inspected 2026-11-25; geometry and labels compared. SVG is a reconstruction, not the original image.",
+      "page": 1
     },
     "umo-2013-01": {
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
@@ -116,15 +117,18 @@
     },
     "umo-2026-02": {
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
+      "basis": "Official page screenshot inspected 2026-11-25; geometry and labels compared. SVG is a reconstruction, not the original image.",
+      "page": 1
     },
     "umo-2026-03": {
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
+      "basis": "Official page screenshot inspected 2026-11-25; geometry and labels compared. SVG is a reconstruction, not the original image.",
+      "page": 1
     },
     "umo-2026-05": {
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
+      "basis": "Official page screenshot inspected 2026-11-25; geometry and labels compared. SVG is a reconstruction, not the original image.",
+      "page": 2
     },
     "umo-2014-01": {
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
@@ -140,11 +144,13 @@
     },
     "umo-2024-02": {
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
+      "basis": "Official page screenshot inspected 2026-11-25; geometry and labels compared. SVG is a reconstruction, not the original image.",
+      "page": 1
     },
     "umo-2024-06": {
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
+      "basis": "Official page screenshot inspected 2026-11-25; geometry and labels compared. SVG is a reconstruction, not the original image.",
+      "page": 2
     },
     "iymc-2019-qr-e": {
       "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
