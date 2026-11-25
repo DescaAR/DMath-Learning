@@ -3883,7 +3883,7 @@
       }
     },
     "imc-2026-06": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -3893,14 +3893,19 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Both short subquestions now match the source wording and inline notation."
+        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
+        "finding": "Problem body words and mathematical content match official HTML after normalizing TeX spacing and line wraps.",
+        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
+        "textStatus": "verified_against_official_html",
+        "renderStatus": "pending"
       },
       "strictReview": {
         "version": 2,
-        "textStatus": "pending_reverification",
+        "textStatus": "verified_against_official_html",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
+        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
       },
       "priorAuditStatus": "exact_verified"
     },
@@ -3915,14 +3920,19 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
+        "finding": "Wording differs from official HTML; replacement pending.",
+        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
+        "textStatus": "known_difference",
+        "renderStatus": "pending"
       },
       "strictReview": {
         "version": 2,
         "textStatus": "known_difference",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
+        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
       }
     },
     "imc-2026-08": {
@@ -3936,18 +3946,23 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
+        "finding": "Wording differs from official HTML; replacement pending.",
+        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
+        "textStatus": "known_difference",
+        "renderStatus": "pending"
       },
       "strictReview": {
         "version": 2,
         "textStatus": "known_difference",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
+        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
       }
     },
     "imc-2026-09": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -3957,14 +3972,19 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
+        "finding": "Problem body words and mathematical content match official HTML after normalizing TeX spacing and line wraps.",
+        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
+        "textStatus": "verified_against_official_html",
+        "renderStatus": "pending"
       },
       "strictReview": {
         "version": 2,
-        "textStatus": "known_difference",
+        "textStatus": "verified_against_official_html",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
+        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
       }
     },
     "imc-2026-10": {
@@ -3978,14 +3998,19 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
+        "finding": "Wording differs from official HTML; replacement pending.",
+        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
+        "textStatus": "known_difference",
+        "renderStatus": "pending"
       },
       "strictReview": {
         "version": 2,
         "textStatus": "known_difference",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
+        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
       }
     },
     "imc-2025-04": {
