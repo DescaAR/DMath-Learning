@@ -2161,8 +2161,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
-      "url": "https://www.imo-official.org/problems/2005/eng.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
+      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
     }
   },
   {
@@ -2179,8 +2179,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "stage": "IMO",
       "number": "Hari 1, Nomor 3",
-      "url": "https://www.imo-official.org/problems/2005/eng.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
+      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
     }
   },
   {
@@ -2197,8 +2197,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "stage": "IMO",
       "number": "Hari 2, Nomor 4",
-      "url": "https://www.imo-official.org/problems/2005/eng.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
+      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
     }
   },
   {
@@ -9261,6 +9261,276 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IMO 2021 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
       "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+    }
+  },
+  {
+    "id": "imo-2005-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kekonkurenan diagonal segienam",
+    "prompt": "Choose $A_1,A_2$ on $BC$, $B_1,B_2$ on $CA$, and $C_1,C_2$ on $AB$ of equilateral $ABC$. If $A_1A_2B_1B_2C_1C_2$ is convex with all six sides equal, establish concurrency of $A_1B_2,B_1C_2,C_1A_2$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2005,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2005 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
+      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2005-05",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Titik tetap lingkaran luar",
+    "prompt": "Fix convex $ABCD$ with $BC=DA$ but nonparallel sides $BC,DA$. Vary $E\\in BC$ and $F\\in DA$ subject to $BE=DF$. Define the line intersections $P=AC\\cap BD$, $Q=BD\\cap EF$, $R=EF\\cap AC$. Prove that the circumcircles of $PQR$ all pass through a fixed second point distinct from $P$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2005,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2005 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
+      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2005-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Jumlah peserta dengan lima soal benar",
+    "prompt": "A contest consists of six problems. For each pair, strictly more than $\\frac25$ of all contestants solved both. Nobody solved all six. Establish that at least two contestants solved precisely five.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2005,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2005 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
+      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2018-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kesejajaran garis pada lingkaran",
+    "prompt": "In acute $ABC$ with circumcircle $\\Gamma$, choose $D\\in AB$ and $E\\in AC$ with $AD=AE$. The perpendicular bisectors of $BD,CE$ meet the minor arcs $AB,AC$ at $F,G$, respectively. Establish that lines $DE,FG$ are parallel or coincident.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2018,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2018 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2018-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Barisan real siklik",
+    "prompt": "Classify integers $n\\ge3$ admitting real numbers $a_1,\\ldots,a_{n+2}$ with $a_{n+1}=a_1$, $a_{n+2}=a_2$, and $a_ia_{i+1}+1=a_{i+2}$ for $1\\le i\\le n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2018,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2018 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2018-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Segitiga anti-Pascal",
+    "prompt": "An anti-Pascal triangle uses an equilateral triangular arrangement in which each entry above the bottom row equals the absolute difference of its two immediate lower neighbors. Here is a four-row example using $1$ through $10$:\n\n$\\begin{array}{ccccccc}&&&4&&&\\\\&&2&&6&&\\\\&5&&7&&1&\\\\8&&3&&10&&9\\end{array}$\n\nCan an anti-Pascal triangle of $2018$ rows contain every integer from $1$ through $1+2+\\cdots+2018$?",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2018,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2018 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim. Original numeric array retained in LaTeX."
+    }
+  },
+  {
+    "id": "imo-2018-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Strategi penempatan batu merah",
+    "prompt": "Initially, all $400$ integer-coordinate sites $(x,y)$ with $1\\le x,y\\le20$ are empty. Amy and Ben alternate, Amy first. Amy places red stones on vacant sites, maintaining pairwise red-site distances unequal to $\\sqrt5$. Ben places blue stones on vacant sites without distance restrictions. Play stops when either player cannot move. Maximize the guaranteed number $K$ of red stones Amy can place.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2018,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2018 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2018-05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Barisan rasio bilangan bulat",
+    "prompt": "Suppose $(a_n)_{n\\ge1}$ consists of positive integers and, for some integer $N>1$, the sum $\\frac{a_1}{a_2}+\\frac{a_2}{a_3}+\\cdots+\\frac{a_{n-1}}{a_n}+\\frac{a_n}{a_1}$ is integral whenever $n\\ge N$. Prove eventual constancy: $a_m=a_{m+1}$ for all $m\\ge M$ for some positive integer $M$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2018,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2018 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2018-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Jumlah sudut pada segiempat",
+    "prompt": "In convex $ABCD$, assume $AB\\cdot CD=BC\\cdot DA$. An interior point $X$ satisfies $\\angle XAB=\\angle XCD$ and $\\angle XBC=\\angle XDA$. Establish $\\angle BXA+\\angle DXC=180^\\circ$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2018,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2018 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2025-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Penutupan titik kisi dengan garis sunny",
+    "prompt": "Call a planar line sunny if it is parallel to neither coordinate axis nor $x+y=0$. Given integer $n\\ge3$, classify nonnegative integers $k$ allowing $n$ distinct lines that cover every point $(a,b)$ with $a,b$ positive integers and $a+b\\le n+1$, exactly $k$ lines being sunny.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2025,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2025 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2025-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Garis singgung lingkaran BEF",
+    "prompt": "Circles $\\Omega,\\Gamma$ centered at $M,N$ intersect at distinct points $A,B$, with $\\Omega$ smaller in radius. On line $MN$, select $C\\in\\Omega$, $D\\in\\Gamma$ in order $C,M,N,D$. Let $P$ be the circumcenter of $ACD$ and $H$ the intersection of the altitudes of $PMN$. Line $AP$ meets $\\Omega,\\Gamma$ again at $E\\ne A,F\\ne A$, respectively. Establish tangency of the parallel to $AP$ through $H$ to the circumcircle of $BEF$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2025,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2025 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2025-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Batas fungsi bonza",
+    "prompt": "Write $\\mathbb N=\\{1,2,\\ldots\\}$. Call $f:\\mathbb N\\to\\mathbb N$ bonza when $f(a)\\mid b^a-f(b)^{f(a)}$ for every $a,b\\in\\mathbb N$. Determine the least real $c$ bounding $f(n)\\le cn$ uniformly over these functions and positive integers $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2025,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2025 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2025-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Iterasi tiga pembagi sejati terbesar",
+    "prompt": "Every term of an infinite positive integer sequence $(a_n)$ has at least three positive divisors smaller than itself. For $n\\ge1$, set $a_{n+1}$ equal to the sum of the largest three such divisors of $a_n$. Classify the possible starting values $a_1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2025,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2025 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2025-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Strategi permainan inekoalaty",
+    "prompt": "Alice and Bazza play inekoalaty with known $\\lambda>0$. On odd turn $n$, Alice chooses $x_n\\ge0$ subject to $\\sum_{i=1}^n x_i\\le\\lambda n$; on even turn $n$, Bazza chooses $x_n\\ge0$ subject to $\\sum_{i=1}^n x_i^2\\le n$. Choices are public. The first player unable to move loses; infinite play has no winner. Classify $\\lambda$ giving either player a winning strategy.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2025,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2025 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2025-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Penutupan kisi dengan ubin persegi panjang",
+    "prompt": "Matilda places rectangular tiles of arbitrary sizes on a $2025\\times2025$ unit-square grid, with boundaries along gridlines and no cell covered twice. Minimize the tile count subject to exactly one uncovered cell in every row and every column.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2025,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2025 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
+      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
     }
   }
 ];
