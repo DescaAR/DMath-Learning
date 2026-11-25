@@ -17789,6 +17789,23 @@ export const competitionProblems: CompetitionProblem[] = [
     }
   },
   {
+    "id": "matics-unhas-2026-penyisihan-01",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Tentukan hasil dari\n\n$$\\lim_{n\\to\\infty}\\left(\\frac{n^{12}}{\\sqrt{n^{26}+1^{20}}}+\\frac{n^{12}}{\\sqrt{n^{26}+2^{20}}}+\\cdots+\\frac{n^{12}}{\\sqrt{n^{26}+n^{20}}}\\right).$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 1",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 1",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
+    }
+  },
+  {
     "id": "matics-unhas-2026-penyisihan-02",
     "level": "Kuliah",
     "topic": "Teori Graf",
@@ -17802,7 +17819,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Penyisihan",
       "number": "Nomor 2",
-      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17819,7 +17836,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Penyisihan",
       "number": "Nomor 3",
-      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17836,7 +17853,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Penyisihan",
       "number": "Nomor 4",
-      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17853,7 +17870,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Penyisihan",
       "number": "Nomor 5",
-      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17870,7 +17887,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Penyisihan",
       "number": "Nomor 6",
-      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17887,7 +17904,24 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Penyisihan",
       "number": "Nomor 7",
-      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan nilai maksimum dari fungsi\n\n$$f(x)=\\frac{\\sqrt{2026^3x}-2026\\sqrt[3]{2026^2x}}{2026-\\sqrt[4]{2026x^3}}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 8",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 8",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17904,7 +17938,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Penyisihan",
       "number": "Nomor 9",
-      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 2. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17921,7 +17955,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Penyisihan",
       "number": "Nomor 10",
-      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf, PDF page 2. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17930,7 +17964,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Graf",
     "difficulty": 3,
     "title": "Teori Graf",
-    "prompt": "Banyaknya spanning tree dari graf lengkap dengan 9 titik adalah $S$. Tentukan nilai $S\\bmod 63$.",
+    "prompt": "Banyaknya spanning tree dari graf lengkap dengan 9 titik adalah $S$. Tentukan nilai\n\n$$S\\bmod 63.$$",
     "source": {
       "kind": "competition",
       "label": "MATICS UNHAS 2026 — Semifinal, Nomor 1",
@@ -17938,7 +17972,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Semifinal",
       "number": "Nomor 1",
-      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17955,7 +17989,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Semifinal",
       "number": "Nomor 2",
-      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17972,7 +18006,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Semifinal",
       "number": "Nomor 3",
-      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -17989,7 +18023,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Semifinal",
       "number": "Nomor 4",
-      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {
@@ -18006,7 +18040,24 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "Semifinal",
       "number": "Nomor 5",
-      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-semifinal-06",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Diketahui dalam suatu grup berlaku\n\n$$aba=ba^2b,\\quad a^3=e,\\quad b^{2n-1}=e$$\n\nuntuk suatu bilangan bulat positif $n$. Tentukan\n\n$$\\operatorname{ord}\\left(b^{2026}\\right).$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Semifinal, Nomor 6",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Semifinal",
+      "number": "Nomor 6",
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf, PDF page 1. Dibandingkan dengan tampilan PDF; naskah resmi dan render website belum diperiksa."
     }
   },
   {

@@ -17656,10 +17656,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-penyisihan-03": {
@@ -17672,10 +17673,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-penyisihan-04": {
@@ -17688,10 +17690,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-penyisihan-05": {
@@ -17704,10 +17707,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-penyisihan-06": {
@@ -17720,10 +17724,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-penyisihan-07": {
@@ -17736,10 +17741,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-penyisihan-09": {
@@ -17752,10 +17758,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "2"
       }
     },
     "matics-unhas-2026-penyisihan-10": {
@@ -17768,10 +17775,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "2"
       }
     },
     "matics-unhas-2026-semifinal-01": {
@@ -17784,10 +17792,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-semifinal-02": {
@@ -17800,10 +17809,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-semifinal-03": {
@@ -17816,10 +17826,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-semifinal-04": {
@@ -17832,10 +17843,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-semifinal-05": {
@@ -17848,10 +17860,11 @@
       "comparison": {
         "date": "2026-11-25",
         "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
-        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
-        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
-        "renderStatus": "pending"
+        "renderStatus": "pending",
+        "page": "1"
       }
     },
     "matics-unhas-2026-final-01": {
@@ -18154,6 +18167,57 @@
         "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
         "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
         "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-semifinal-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
+        "method": "Direct visual comparison against rendered user PDF and layout text",
+        "finding": "Question wording and mathematical content compared against user's excerpt, not official original. Website rendering pending.",
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
