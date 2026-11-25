@@ -1311,12 +1311,27 @@ function IMCFullIndex({items}:{items:typeof imcAll}){
  </div>;
 }
 
+// Each SVG is exported from the corresponding standalone TikZ source in figures/competition/.
+const geometryFigures: Readonly<Record<string, {alt:string; width:number}>> = {
+ "iymc-2022-qr-e":{alt:"Two horizontally shifted equilateral triangles with common region A shaded.",width:420},
+ "iymc-2023-qr-e":{alt:"Equilateral triangle with vertical side a and parallel dotted segment b enclosing shaded triangle A.",width:300},
+ "iymc-2025-qr-e":{alt:"Rectangle of height a and width b cut by a diagonal.",width:420},
+};
+function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
+ const figure=geometryFigures[id];
+ if(!figure)return null;
+ const src=(process.env.NEXT_PUBLIC_BASE_PATH||"")+"/figures/competition/"+id+".svg";
+ return <figure className={"cmp-geometry-figure"+(compact?" cmp-geometry-compact":"")} style={{margin:"16px auto",display:"flex",justifyContent:"center",maxWidth:"100%"}}>
+  <img src={src} alt={figure.alt} loading="lazy" decoding="async" style={{display:"block",width:compact?Math.min(figure.width,280):figure.width,maxWidth:"100%",height:"auto",padding:12,background:"#fff",borderRadius:4,boxSizing:"border-box"}}/>
+ </figure>;
+}
+
 function ProblemCard({p,kind="list"}:{p:CompetitionProblem;kind?:"list"|"daily"|"related"}){
  return <article className={"cmp-problem-card cmp-problem-"+kind}>
   <div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div>
   <div className="cmp-problem-main">
    <div className="cmp-problem-heading"><h3><Link href={link(p)}>{p.title}</Link></h3>{kind==="daily"&&<span className="cmp-level-tag">{levelTitle(p.level)}</span>}</div>
-   <div className="cmp-question-preview"><CompetitionPrompt prompt={p.prompt}/></div>
+   <div className="cmp-question-preview"><CompetitionPrompt prompt={p.prompt}/><GeometryFigure id={p.id} compact/></div>
    <div className="cmp-problem-foot"><span>{kind!=="daily"&&<>{p.level}<span className="cmp-meta-dot">·</span></>}{shortSource(p)}</span><Link className="cmp-link-text" href={link(p)}>Lihat soal <span aria-hidden="true">→</span></Link></div>
   </div>
  </article>;
@@ -1376,7 +1391,7 @@ export function CompetitionProblemDetail({problem:p}:{problem:CompetitionProblem
   <nav className="cmp-breadcrumb" aria-label="Jejak navigasi"><Link href="/problem-solving/">Kumpulan Soal</Link><span>/</span><Link href={levelHref(p.level)}>{p.level}</Link><span>/</span><span>{p.id.toUpperCase()}</span></nav>
   <article className="cmp-detail">
    <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{levelTitle(p.level)}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1>{p.title}</h1></header>
-   <div className="cmp-main-prompt"><h2>Soal</h2><div><CompetitionPrompt prompt={p.prompt}/></div></div>
+   <div className="cmp-main-prompt"><h2>Soal</h2><div><CompetitionPrompt prompt={p.prompt}/><GeometryFigure id={p.id}/></div></div>
    <section className="cmp-source-panel" id="source"><h2>Sumber soal</h2><p>{p.source.label}</p>{p.source.collection&&<p>Referensi tambahan: <Link href={"/sumber-lain/"+p.source.collection.toLowerCase()+"/"}>{p.source.collection}</Link>{p.source.collectionUrl&&<> · <a href={p.source.collectionUrl} target="_blank" rel="noopener noreferrer">Buka referensi ↗</a></>}</p>}{p.source.url&&<a href={p.source.url} target="_blank" rel="noopener noreferrer" className="cmp-link-text">Lihat sumber ↗</a>}</section>
   </article>
   <div className="cmp-back"><Link href={levelHref(p.level)} className="cmp-button cmp-secondary">← Kembali ke kumpulan soal</Link></div>
