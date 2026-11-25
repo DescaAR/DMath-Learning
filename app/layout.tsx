@@ -4,6 +4,7 @@ import "./globals.css";
 import "./modern-ui.css";
 import "./experience-ui.css";
 import "./study-ui.css";
+import "./competition.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { LanguageProvider } from "@/components/LanguageProvider";

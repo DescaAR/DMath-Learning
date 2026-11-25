@@ -25,7 +25,7 @@
     "audit:linear-first-order": "node scripts/audit-linear-first-order.mjs",
     "audit:bisection": "node scripts/audit-bisection.mjs",
     "audit:nested-quantifiers": "node scripts/audit-nested-quantifiers.mjs",
-    "audit:design": "node scripts/audit-modern-design.mjs",
+    "audit:design": "node scripts/audit-competition-platform.mjs",
     "audit:study-ui": "node scripts/audit-study-ui.mjs",
     "audit:graphical-lp": "node scripts/audit-graphical-lp.mjs",
     "audit:solution-depth": "node scripts/audit-solution-depth.mjs --json",

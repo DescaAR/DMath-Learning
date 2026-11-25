@@ -1,55 +1,6 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { useLanguage } from "@/components/LanguageProvider";
-
-export function SiteFooter() {
-  const { language, t } = useLanguage();
-
-  return (
-    <footer className="site-footer" data-no-translate>
-      <div className="container footer-grid">
-        <div className="footer-branding">
-          <div className="brand footer-brand">
-            <Image src={siteConfig.basePath + "/brand/logo-symbol.webp"} alt="" width={48} height={48} className="brand-logo" />
-            <span className="brand-copy">
-              <strong>{siteConfig.name}</strong>
-              <small>{siteConfig.tagline}</small>
-            </span>
-          </div>
-          <p>
-            {language === "en"
-              ? "A mathematics learning platform focused on conceptual understanding, reasoning, and problem-solving ability."
-              : "Platform pembelajaran matematika yang berfokus pada pemahaman konsep, pengembangan penalaran, dan kemampuan problem solving."}
-          </p>
-        </div>
-        <div>
-          <h3>{language === "en" ? "Explore" : "Jelajahi"}</h3>
-          <div className="footer-links">
-            <Link href="/materi">{t("Materi")}</Link>
-            <Link href="/latihan-soal">{t("Latihan Soal")}</Link>
-            <Link href="/bank-soal">{t("Bank Soal")}</Link>
-            <Link href="/olimpiade">{t("Olimpiade")}</Link>
-          </div>
-        </div>
-        <div>
-          <h3>DMath Learning</h3>
-          <div className="footer-links">
-            <Link href="/tentang">{t("Tentang")}</Link>
-            <Link href="/sumber-belajar-lain">{t("Sumber Belajar Lain")}</Link>
-            <Link href="/search">{language === "en" ? "Search" : "Cari"}</Link>
-            <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer">
-              YouTube
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} DMath Learning.</span>
-        <span>Think Deeper, Solve Better.</span>
-      </div>
-    </footer>
-  );
-}
+export function SiteFooter(){const {language}=useLanguage();const en=language==="en";return <footer className="site-footer" data-no-translate><div className="container footer-grid"><div className="footer-branding"><div className="brand footer-brand"><Image src={siteConfig.basePath+"/brand/logo-symbol.webp"} alt="" width={48} height={48} className="brand-logo"/><span className="brand-copy"><strong>{siteConfig.name}</strong><small>{siteConfig.tagline}</small></span></div><p>{en?"Mathematical problem solving and competition training, from school to university.":"Ruang latihan problem solving dan kompetisi matematika dari olimpiade sekolah hingga mahasiswa."}</p></div><div><h3>{en?"Practice":"Latihan"}</h3><div className="footer-links">{siteConfig.nav.map(item=><Link key={item.href} href={item.href}>{item.label}</Link>)}</div></div><div><h3>DMath Learning</h3><div className="footer-links"><Link href="/tentang/">{en?"About":"Tentang"}</Link><Link href="/search/">{en?"Search problems":"Cari soal"}</Link><Link href="/arsip/">{en?"Learning archive":"Arsip pembelajaran"}</Link><a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer">YouTube</a></div></div></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} DMath Learning.</span><span>Think Deeper, Solve Better.</span></div></footer>;}
