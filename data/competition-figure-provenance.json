@@ -175,17 +175,20 @@
     "calculus-cup-xv-2024-final-01": {
       "localSource": "Soal Final.pdf",
       "page": 1,
-      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending."
+      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending.",
+      "format": "native-svg"
     },
     "calculus-cup-xv-2024-final-02": {
       "localSource": "Soal Final.pdf",
       "page": 1,
-      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending."
+      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending.",
+      "format": "native-svg"
     },
     "calculus-cup-xv-2024-final-03": {
       "localSource": "Soal Final.pdf",
       "page": 1,
-      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending."
+      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending.",
+      "format": "native-svg"
     }
   },
   "table": {

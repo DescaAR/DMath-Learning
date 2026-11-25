@@ -9,6 +9,7 @@ const mod={exports:{}};new Function("exports","module",outputText)(mod.exports,m
 const {competitionProblems,levels}=mod.exports;
 assert.deepEqual(levels,["SD","SMP","SMA","Kuliah"]);
 assert.equal(new Set(competitionProblems.map(p=>p.id)).size,competitionProblems.length);
+const sourceAudit=JSON.parse(read("data/competition-source-audit.json"));
 let formulaCount=0;
 for(const l of levels)assert.ok(competitionProblems.filter(p=>p.level===l).length>=4,l+" has fewer than four reviewed starting problems");
 for(const p of competitionProblems){
@@ -17,7 +18,14 @@ for(const p of competitionProblems){
  assert.deepEqual(Object.keys(p).sort(),["difficulty","id","level","prompt","source","title"].concat("topic").sort(),p.id+" includes non-question data");
  assert.ok(["original","competition"].includes(p.source.kind));
  if(p.source.kind==="original")assert.equal(p.source.label,"DMath Learning Proposed");
- if(p.source.kind==="competition"){assert.ok(p.source.url?.startsWith("https://")&&p.source.year&&p.source.number&&p.source.stage&&p.source.competition,p.id+" has incomplete attribution");}
+ if(p.source.kind==="competition"){
+  assert.ok(p.source.year&&p.source.number&&p.source.stage&&p.source.competition,p.id+" has incomplete attribution");
+  if(p.source.url!==undefined)assert.ok(p.source.url.startsWith("https://"),p.id+" invalid public source URL");
+  else {
+   const record=sourceAudit.records[p.id];
+   assert.ok(p.source.note?.trim()&&record?.status==="pending_comparison"&&record.sourceUrl===null&&record.comparison?.localSource?.trim()&&record.comparison?.date&&record.comparison?.method?.trim(),p.id+" lacks documented local source");
+  }
+ }
  const strings=[p.prompt];
  for(const s of strings){
   let matched=0;
@@ -107,19 +115,20 @@ assert.deepEqual(splitCompetitionPrompt("Question. Pilihan: A. $x$; B. $y$.").op
 assert.deepEqual(splitCompetitionPrompt("Question. Pilihan: A. $\\text{A; B. x}$; B. $y$.").options,["$\\text{A; B. x}$","$y$."]);
 const figureBlock=workspace.match(/const geometryFigures:[\s\S]*?=\s*\{([\s\S]*?)\n\};/);
 assert.ok(figureBlock,"Missing figure registry");
+const visualPolicy=JSON.parse(read("data/competition-figure-provenance.json"));
 let figureCount=0;
 for(const m of figureBlock[1].matchAll(/"([a-z0-9-]+)"\s*:/g)){
  const id=m[1];
  assert.ok(competitionProblems.some(p=>p.id===id),"Unknown figure ID "+id);
  const svg=read("public/figures/competition/"+id+".svg");
  assert.match(svg,/<svg\b/);
- assert.ok(fs.existsSync("figures/competition/"+id+".tex"),"Missing TikZ source "+id);
+ const evidence=visualPolicy.figures[id];
+ assert.ok(fs.existsSync("figures/competition/"+id+".tex")||(evidence?.format==="native-svg"&&evidence.localSource&&evidence.page&&sourceAudit.records[id]?.comparison?.localSource===evidence.localSource),"Missing editable figure source "+id);
  figureCount++;
 }
-const visualPolicy=JSON.parse(read("data/competition-figure-provenance.json"));
 const displayedFigureIds=[...figureBlock[1].matchAll(/"([a-z0-9-]+)"\s*:/g)].map(m=>m[1]).sort();
 assert.deepEqual(displayedFigureIds,Object.keys(visualPolicy.figures).sort(),"Every displayed illustration must have question-source provenance");
-for(const id of displayedFigureIds){const entry=visualPolicy.figures[id];assert.ok(entry.url.startsWith("https://")&&entry.basis.trim(),id+" lacks source verification");}
+for(const id of displayedFigureIds){const entry=visualPolicy.figures[id];assert.ok(entry.basis.trim()&&(entry.url?.startsWith("https://")||(entry.format==="native-svg"&&entry.localSource&&entry.page&&sourceAudit.records[id]?.status==="pending_comparison"&&sourceAudit.records[id]?.comparison?.localSource===entry.localSource)),id+" lacks source verification");}
 for(const id of visualPolicy.excluded)assert.ok(!displayedFigureIds.includes(id),"Supplementary illustration is not allowed: "+id);
 assert.equal(figureCount,displayedFigureIds.length);
 assert.ok(competitionProblems.some(p=>p.id==="ksn-smp-2021-07"));
