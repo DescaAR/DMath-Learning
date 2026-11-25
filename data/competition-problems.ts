@@ -3203,7 +3203,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Barisan bilangan bulat dengan identitas kuadrat",
-    "prompt": "Classify integer sequences $(a_n)_{n\\ge0}$ satisfying $$a_{n+k}^2-(2k+1)a_na_{n+k}+(k^2+k)a_n^2=k^2-k$$ for every pair of nonnegative integers $n,k$.",
+    "prompt": "Classify integer sequences $(a_n)_{n\\ge0}$ satisfying, for every pair of nonnegative integers $n,k$,\n\n$a_{n+k}^2-(2k+1)a_na_{n+k}+(k^2+k)a_n^2=k^2-k$\n\nFind all possible sequences $(a_n)$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3212,7 +3212,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2016 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3239,7 +3239,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Dua subgraf rentang terhubung",
-    "prompt": "Four cities are joined by one road for each pair. Each road is painted either orange or blue. Count the colorings for which every pair of cities can be connected by a route using only orange roads and also by a route using only blue roads. Justify your answer.",
+    "prompt": "Four cities are joined by one road for each pair. Each road is painted either orange or blue. Count the colorings for which every pair of cities can be connected by a route using only orange roads and also by a route using only blue roads. Justify your answer.\n\nFor example, the coloring below is invalid because no orange-road route joins cities 1 and 2.\n\n[[FIGURE]]",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3248,7 +3248,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2017 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3257,7 +3257,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Maksimum jarak titik ke garis",
-    "prompt": "Three different points $A,B,C$ belong to a circle with center $O$, where $\\angle AOB=\\angle BOC=60^\\circ$. Take $P$ on chord $AC$ and draw triangle $BPC$. Determine $AP:PC$ when $P$ is selected to maximize the length of the altitude from $C$ to $BP$.",
+    "prompt": "Three different points $A,B,C$ belong to a circle with center $O$, where $\\angle AOB=\\angle BOC=60^\\circ$. Take $P$ on chord $\\overline{AC}$ and draw triangle $BPC$. Determine $AP:PC$ when $P$ is selected to maximize the length of the altitude from $C$ to $\\overline{BP}$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3266,7 +3266,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2017 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3275,7 +3275,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Derajat minimum polinomial modulo enam belas",
-    "prompt": "Among polynomials $P\\in\\mathbb Z[x]$ satisfying $nP(n)\\equiv1\\pmod{16}$ for every positive odd integer $n$, determine the least possible degree and prove optimality.",
+    "prompt": "Among polynomials $P\\in\\mathbb Z[x]$ satisfying $nP(n)\\equiv1\\pmod{16}$ for every positive odd integer $n$ (so $nP(n)$ is one more than a multiple of $16$), determine the least possible degree and prove optimality.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3284,7 +3284,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2017 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3329,7 +3329,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Lingkaran bersarang dan pencacahan insidensi",
-    "prompt": "(a) Show that seven circles and eleven points can be drawn on a page with these properties: the circumferences do not intersect, none of the points lies on a circumference, the seven counts of enclosed points are distinct (zero is allowed), and every point is enclosed by equally many circles. (b) Prove that no such arrangement exists with five circles and five points.",
+    "prompt": "(a) Show that seven circles and eleven points can be drawn on a page with these properties: \n\n• The circumferences do not intersect.\n\n• None of the points lies on a circumference.\n\n• The seven counts of enclosed points are distinct (zero is allowed).\n\n• Every point is enclosed by equally many circles.\n\n(b) Prove that no such arrangement exists with five circles and five points.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3338,7 +3338,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2018 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3347,7 +3347,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Dua polinomial kubik",
-    "prompt": "For $a,b,c>0$, suppose $$(x-a)(x-b)(x-c)=(x-ab)(x-bc)(x-ca)$$ identically in $x$. Find the minimum possible sum $a+b+c$.",
+    "prompt": "For $a,b,c>0$, define $P(x)=(x-a)(x-b)(x-c)$ and $Q(x)=(x-ab)(x-bc)(x-ca)$. Suppose $P(x)=Q(x)$ for all $x$. Find the minimum possible sum $a+b+c$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3356,7 +3356,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2018 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3383,7 +3383,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Pencerminan empat segitiga",
-    "prompt": "A square $ABCD$ lies inside triangle $XYZ$, with $B$ on $XY$, $C$ on $YZ$, and $D$ on $ZX$. Draw $XA$, obtaining four triangular regions $XAB$, $YBC$, $ZCD$, and $XDA$. Reflect each region across the square side it touches, respectively $AB$, $BC$, $CD$, and $DA$. Prove that the four reflected regions together cover the square.",
+    "prompt": "A square $ABCD$ lies inside triangle $XYZ$, with $B$ on $\\overline{XY}$, $C$ on $\\overline{YZ}$, and $D$ on $\\overline{ZX}$. Draw $\\overline{XA}$, obtaining four triangular regions $\\triangle XAB$, $\\triangle YBC$, $\\triangle ZCD$, and $\\triangle XDA$. Reflect each region across the square side it touches, respectively $AB$, $BC$, $CD$, and $DA$. Prove that the four reflected regions together cover the square.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3392,7 +3392,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2018 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 2; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3473,7 +3473,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Sudut yang ditentukan oleh lingkaran dalam",
-    "prompt": "Let $I$ be the incenter of $ABC$ and $D$ the contact point of its incircle on $AB$. The line $ID$ meets the circumcircle of $ABI$ again at $E$. If $IE=AC+BC$, determine $\\angle ACB$.",
+    "prompt": "Let $I$ be the incenter of $ABC$ and $D$ the contact point of its incircle on $\\overline{AB}$. The line $ID$ meets the circumcircle of $ABI$ at $I$ and $E$. If $IE=AC+BC$, determine angle $C$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3482,7 +3482,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2019 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3527,7 +3527,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Lingkaran konsentris yang bersinggungan",
-    "prompt": "Three circles are pairwise externally tangent. Suppose a fourth circle is externally tangent to each and a fifth circle is internally tangent to each, and these last two circles have a common center. Must the original three circles have equal radii? Prove or disprove.",
+    "prompt": "Three circles $C_1,C_2,C_3$ are pairwise externally tangent. Suppose a fourth circle $D$ is externally tangent to each and a fifth circle $E$ is internally tangent to each, and these last two circles have a common center. Must the original three circles have equal radii? Prove or disprove.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3536,7 +3536,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2021 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3563,7 +3563,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan pemindahan batu",
-    "prompt": "Gog and Magog start with zero stones. Gog moves first and turns alternate. A turn consists either of gaining one stone or transferring to the opponent an integer number of stones between one and half of the player's current holdings, inclusive. A player loses upon having at least $20$ stones. Prove whether Gog can force a win, Magog can force a win, or neither can.",
+    "prompt": "Gog and Magog start with zero stones. Gog moves first and turns alternate. A turn consists either of gaining one stone or transferring to the opponent an integer number of stones between one and half of the player's current holdings, inclusive. A player loses upon having at least $20$ stones. Prove whether Gog can force a win, Magog can force a win, or neither can (the game continues indefinitely).",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3572,7 +3572,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2021 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3617,7 +3617,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Dua identitas pada barisan",
-    "prompt": "Classify real sequences $(a_n)_{n\\ge1}$ obeying $$a_{m+n}=a_m+a_n-mn,\\qquad a_{mn}=m^2a_n+n^2a_m+2a_ma_n$$ for every $m,n\\ge1$.",
+    "prompt": "Find all sequences $a_1,a_2,a_3,\\ldots$ of real numbers such that for all positive integers $m,n\\ge1$, we have\n\n$$a_{m+n}=a_m+a_n-mn\\ \\text{and}$$\n\n$$a_{mn}=m^2a_n+n^2a_m+2a_ma_n.$$",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3626,7 +3626,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2022 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -3689,7 +3689,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Sudut terbesar dari empat titik",
-    "prompt": "Given four distinct points in the plane, consider all angles $\\angle XYZ$ formed by ordered triples of distinct points from the four. Minimize the greatest such angle over all configurations, and exhibit an attaining configuration.",
+    "prompt": "Given four distinct points $P,Q,R,S$ in the plane, let $M(P,Q,R,S)$ denote the greatest angle formed by any three of them. Find the least possible value of $M(P,Q,R,S)$ and exhibit an arrangement attaining it.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3698,7 +3698,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2023 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3725,7 +3725,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Operasi asosiatif yang invarian terhadap translasi",
-    "prompt": "Classify, with proof, the binary operations $\\mid$ on the integers such that for all integers $a,b,c$, $$(a\\mid b)+c=(a+c)\\mid(b+c),\\qquad (a\\mid b)\\mid c=a\\mid(b\\mid c).$$ A binary operation here is a map $\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$; addition and multiplication are examples of binary operations.",
+    "prompt": "Classify, with proof, the binary operations $\\mid$ on the integers such that for all integers $a,b,c$, $\\begin{aligned}(a\\mid b)+c&=(a+c)\\mid(b+c)\\\\ (a\\mid b)\\mid c&=a\\mid(b\\mid c).\\end{aligned}$ A binary operation here is a map $\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$; addition and multiplication are examples of binary operations.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3734,7 +3734,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2023 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 2; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3761,7 +3761,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Identitas hasil bagi polinomial",
-    "prompt": "For polynomials $f,g$ with $g\\ne0$, define $\\left\\lfloor\\frac{f(x)}{g(x)}\\right\\rfloor$ as the unique polynomial $q$ in the division identity $f=gq+r$, where $r=0$ or $\\deg r<\\deg g$. Determine the real polynomials $p$ satisfying $$\\left\\lfloor\\frac{p(x)}x\\right\\rfloor+\\left\\lfloor\\frac{p(x)}{x+1}\\right\\rfloor=x^2.$$",
+    "prompt": "For polynomials $f(x),g(x)$ with $g(x)\\ne0$, define $\\left\\lfloor\\frac{f(x)}{g(x)}\\right\\rfloor$ as the unique polynomial $q(x)$ in the division identity $f(x)=g(x)\\cdot q(x)+r(x)$, where $r(x)=0$ or $\\deg r(x)<\\deg g(x)$. Determine the real polynomials $p$ satisfying $$\\left\\lfloor\\frac{p(x)}x\\right\\rfloor+\\left\\lfloor\\frac{p(x)}{x+1}\\right\\rfloor=x^2.$$",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3770,7 +3770,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2025 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3779,7 +3779,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Penjumlahan blok bilangan dengan digit berulang",
-    "prompt": "For a positive integer $N$, its split-sum is obtained by splitting its decimal digits into two blocks, with the second block having the same length as the first or one more digit, and adding the resulting integers. For example, the split-sums of $2025,123,6$ are $45,24,6$, respectively. Count the positive integers $m$ satisfying all three requirements: at most $2025$ digits, all digits equal, and split-sum of $m^2$ equal to $m$.",
+    "prompt": "For a positive integer $N$, its split-sum is obtained by splitting its decimal digits into two blocks, with the second block having the same length as the first or one more digit, and adding the resulting integers. For example, the split-sums of $2025,123,6$ are $20+25=45$, $1+23=24$, and $6$, respectively. Count the positive integers $m$ satisfying all three requirements:\n\n• $m$ has at most $2025$ digits.\n\n• All digits of $m$ are equal.\n\n• The split-sum of $m^2$ equals $m$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3788,7 +3788,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2025 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3797,7 +3797,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Segitiga sama sisi dan jajargenjang",
-    "prompt": "For a parallelogram $ABCD$, construct an equilateral triangle $ABP$ with $P$ on the same side of line $AB$ as $C,D$. If lines $CP$ and $DA$ meet at $Q$, show there is an $R$ on line $AB$ such that $CQR$ is equilateral.",
+    "prompt": "For a parallelogram $ABCD$, construct an equilateral triangle $ABP$ with $P$ on the same side of $\\overline{AB}$ as $C,D$. If lines $\\overleftrightarrow{CP}$ and $\\overleftrightarrow{DA}$ meet at $Q$, show there is an $R$ on $\\overleftrightarrow{AB}$ such that $\\triangle CQR$ is equilateral.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3806,7 +3806,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2025 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -3869,7 +3869,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Basis aditif berorde dua",
-    "prompt": "A strictly increasing sequence $(a_i)_{i\\ge0}$ of nonnegative integers has the sum-of-two property if each nonnegative integer equals $a_i+a_j$ for some indices $i,j$, possibly equal. For example, $0,1,3,5,7,\\ldots$ has this property. Prove or disprove that every such sequence admits a constant $K$ with $a_i\\le Ki$ for all $i\\ge0$.",
+    "prompt": "An increasing sequence $a_0,a_1,a_2,\\ldots$ of nonnegative integers has the sum-of-two property if each nonnegative integer equals $a_i+a_j$ for some indices $i,j$, possibly equal. For example, $0,1,3,5,7,\\ldots$ (continuing with all odd numbers) has this property. Prove or disprove that every such sequence admits a constant $K$ with $a_i\\le Ki$ for all $i\\ge0$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3878,7 +3878,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2026 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -5867,7 +5867,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan pemotongan kertas",
-    "prompt": "Alice and Carl alternate cutting a sheet of paper, initially square. On each turn, a straight cut divides the current sheet into two pieces; discard the smaller piece by area (either one in a tie) and pass the remaining piece to the other player. The first player to receive paper of area less than $1\\,\\mathrm{cm}^2$ loses. Alice starts. Characterize, with proof, the initial sizes for which Alice can force a win.",
+    "prompt": "Alice and Carl alternate cutting a sheet of paper, initially square. On each turn, a straight cut (not necessarily parallel to the sides of the page) divides the current sheet into two pieces; discard the smaller piece by area (either one in a tie) and pass the remaining piece to the other player. The first player to receive paper of area less than $1\\,\\mathrm{cm}^2$ loses. Alice starts. Characterize, with proof, the initial sizes for which Alice can force a win.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5876,7 +5876,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2013 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -5903,7 +5903,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Permainan penentuan koefisien polinomial",
-    "prompt": "Malone and Cooper alternate selecting real values for the coefficients $a,b,c$ in $P(x)=x^3+ax^2+bx+c$, with Malone first. A coefficient already assigned cannot be changed. After three turns, Malone wins if $P$ has a nonreal root; otherwise Cooper wins. Determine who can force a win, describe the strategy, and justify it.",
+    "prompt": "Cooper and Malone alternate selecting real values for the coefficients $a,b,c$ in the polynomial below, with Malone first.\n\n$P(x)=x^3+ax^2+bx+c$\n\n A coefficient already assigned cannot be changed. After three turns, Malone wins if $P$ has a nonreal root; otherwise Cooper wins. Determine who can force a win, describe the strategy, and justify it.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5912,7 +5912,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2013 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 2; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -5921,7 +5921,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Jumlah minimum dengan FPB berbeda",
-    "prompt": "Three trolls share $n$ pancakes, each receiving a positive integer number. The greatest common divisor of the holdings of each pair of trolls exceeds $1$, and the three resulting greatest common divisors are distinct. Find the least possible $n$.",
+    "prompt": "Three trolls share $n$ pancakes subject to these conditions:\n\n• Each receives a positive integer number of pancakes.\n\n• The greatest common divisor of the holdings of each pair of trolls exceeds $1$.\n\n• The three resulting greatest common divisors are distinct.\n\nFind the least possible $n$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5930,7 +5930,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2015 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -5993,7 +5993,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Pencacahan matriks dengan hasil kali tetap",
-    "prompt": "Fill a $3\\times3$ grid with integers, allowing negative entries, so that the product along each row and each column equals $20$. One admissible grid is $$\\begin{bmatrix}1&-5&-4\\\\10&-2&-1\\\\2&2&5\\end{bmatrix}.$$ Count all admissible fillings.",
+    "prompt": "Fill a $3\\times3$ grid with integers, allowing negative entries, so that the product along each row and each column equals $20$. One admissible grid is \n\n$\\begin{bmatrix}1&-5&-4\\\\10&-2&-1\\\\2&2&5\\end{bmatrix}$\n\nCount all admissible fillings.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -6002,7 +6002,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2015 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -6047,7 +6047,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Lingkaran yang berpotongan secara ortogonal",
-    "prompt": "Let $\\mathcal C$ be a circle disjoint from a line $L$. Denote the nearest and farthest points of $\\mathcal C$ from $L$ by $A$ and $B$, respectively, and put $X=AB\\cap L$. Let $\\mathcal C'$ be the circle centered at $B$ through $X$. Choose $K$ at an intersection of $\\mathcal C'$ and the perpendicular bisector of $AX$. The circle centered at $X$ through $K$ meets segment $AB$ at $H$. Prove that for every $P\\in L$, the circle centered at $P$ through $H$ is perpendicular to $\\mathcal C$. Two circles are perpendicular when their tangents at each intersection point form a right angle.",
+    "prompt": "Let $C$ be a circle disjoint from a line $L$. Denote the nearest and farthest points of $C$ from $L$ by $A$ and $B$, respectively, and put $X=AB\\cap L$. Let $C'$ be the circle centered at $B$ through $X$. Choose $K$ at an intersection of $C'$ and the perpendicular bisector of $\\overline{AX}$. The circle centered at $X$ through $K$ meets segment $\\overline{AB}$ at $H$. Prove that for every $P\\in L$, the circle centered at $P$ through $H$ is perpendicular to $C$. Two circles are perpendicular when their tangents at each intersection point form a right angle.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -6056,7 +6056,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2020 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 2 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 2; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -8009,7 +8009,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Pertumbuhan populasi peternakan",
-    "prompt": "On day 1, Georgia's farm has $c$ cows and no ostriches, where $c$ is a positive integer. Each subsequent day she adds animals without removing any, so that the new total number of animals equals half of the preceding day's total number of legs. Cows have four legs and ostriches have two.\n\nLet $P_c(n)$ count the possible population histories $((c_1,o_1),\\ldots,(c_n,o_n))$ through day $n$, where $c_i,o_i$ are the respective populations on day $i$ and $(c_1,o_1)=(c,0)$. For example, $P_1(2)=2$, $P_1(3)=5$, and $P_2(3)=12$.\n\nDetermine all positive integers $c$ for which $3\\mid P_c(2021)$.",
+    "prompt": "On day 1, Georgia's farm has $c$ cows and no ostriches, where $c$ is a positive integer. Each subsequent day she adds animals without removing any, so that the new total number of animals equals half of the preceding day's total number of legs. Cows have four legs and ostriches have two. For example, the $4c$ legs on day 1 require exactly $2c$ animals on day 2.\n\nLet $P_c(n)$ count the possible population histories $(c_1,o_1),(c_2,o_2),\\ldots,(c_n,o_n)$ through day $n$, where $c_i,o_i$ are the respective populations on day $i$ and $(c_1,o_1)=(c,0)$. For example, $P_1(2)=2$, $P_1(3)=5$, and $P_2(3)=12$.\n\nDetermine all positive integers $c$ for which $P_c(2021)$ is a multiple of $3$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8018,7 +8018,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2021 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -8027,7 +8027,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Luas gabungan persegi bertumpuk",
-    "prompt": "For an integer $n\\ge2$, Thibaud the Tiger places $n$ overlapping axis-aligned squares of side length $2$ with centers equally spaced on the segment joining $(0,0)$ and $(1,1)$, including both endpoints. The illustration shows $n=4$, for which the union has area $\\frac{23}{3}$.\n\n\n\n[[FIGURE]]\n\nDetermine, with proof, the smallest $n$ for which the union has area at least $\\sqrt{63}$.",
+    "prompt": "For an integer $n\\ge2$, Thibaud the Tiger places $n$ overlapping axis-aligned squares of side length $2$ with centers equally spaced along the line $y=x$ from $(0,0)$ to $(1,1)$, including both endpoints. The illustration shows $n=4$, for which the union has area $\\frac{23}{3}$.\n\n[[FIGURE]]\n\nDetermine, with proof, the smallest $n$ for which the union has area at least $\\sqrt{63}$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8036,7 +8036,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2022 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -8063,7 +8063,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Deduksi bilangan melalui digit desimal",
-    "prompt": "Abigail chooses an integer $A$ with $1\\le A\\le99$. Bruno is told the first digit after the decimal point of $\\frac{A}{11}$ (zero if the quotient is integral), and Chris is told the corresponding digit of $\\frac{A}{99}$.\n\nBruno says that he cannot identify $A$, but knows that Chris can reduce the candidates to exactly ten numbers. Chris responds that he can now reduce the candidates to $N$ numbers, each a product of two distinct primes.\n\nFind $N$ and all of Chris's remaining candidates.",
+    "prompt": "Abigail chooses an integer $A$ with $1\\le A\\le99$. Bruno is told the first digit after the decimal point of $A/11$ (zero if the quotient is integral), and Chris is told the corresponding digit of $A/99$.\n\nBruno says that he cannot identify $A$, but knows that Chris can reduce the candidates to exactly ten numbers. Chris responds that he can now reduce the candidates to $N$ numbers, each a product of two distinct primes.\n\nFind $N$ and all of Chris's remaining candidates.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8072,7 +8072,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2023 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -8117,7 +8117,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Penelusuran diagram",
-    "prompt": "Consider the diagram.\n\n[[FIGURE]]\n\n(a) Demonstrate a way to trace every line without lifting the pencil, using precisely nine straight segments; overlap is permitted.\n\n(b) Prove that eight or fewer such segments cannot suffice.",
+    "prompt": "Consider the following diagram.\n\n[[FIGURE]]\n\n(a) Demonstrate a way to trace every line without lifting the pencil, using precisely nine straight segments; overlap is permitted.\n\n(b) Prove that eight or fewer such segments cannot suffice.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8126,7 +8126,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2013 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -8153,7 +8153,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Penutupan batas kisi heksagonal",
-    "prompt": "Count the tilings of the boundary of a triangular array of hexagons of side length $n$, using only single hexagons and pairs of adjoining hexagons. Express the count through a familiar sequence and prove the formula for every integer $n\\ge3$. The diagrams give the cases $n=3,4,5,6$.\n\n[[FIGURE]]",
+    "prompt": "Count the tilings of the boundary of a triangular array of hexagons of side length $n$, using only $1\\times1$ and $1\\times2$ hexagon tiles. Express the count through a familiar sequence and prove the formula for every integer $n\\ge3$. The diagrams give the cases $n=3$, $n=4$, $n=5$, $n=6$.\n\n[[FIGURE]]",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8162,7 +8162,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2013 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 2; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -8189,7 +8189,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Lintasan sempurna pada kisi",
-    "prompt": "An $n\\times n$ grid consists of islands joined by bridges between neighboring islands, as illustrated for $n=3$.\n\n[[FIGURE]]\n\nThis example contains nine islands and twelve bridges. A path begins and ends at any islands and travels along bridges; for example, traversing the top row from left to right uses two bridges. A perfect path visits each island exactly twice, crosses every bridge at least once, and never immediately reverses across the same bridge.\n\n(a) Construct a perfect path for $n=3$, or prove none exists.\n\n(b) Do the same for $n=4$.",
+    "prompt": "An $n\\times n$ grid consists of islands joined by bridges between neighboring islands, as illustrated for $n=3$.\n\n[[FIGURE]]\n\nThis example contains nine islands and twelve bridges. A path begins and ends at any islands and travels along bridges; for example, traversing the top row from left to right uses two bridges. A perfect path satisfies the following conditions:\n\n• It visits each island exactly twice;\n\n• It crosses every bridge at least once; and\n\n• It never immediately reverses across the same bridge.\n\n(a) Construct a perfect path for $n=3$, or prove none exists.\n\n(b) Do the same for $n=4$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8198,7 +8198,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2020 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -8333,7 +8333,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Representasi jumlah dua kuadrat",
-    "prompt": "(a) Determine every pair of positive integers $x,y$ satisfying $x^2+y^2=2014$, or establish nonexistence.\n\n(b) Repeat for $x^2+y^2=3222014$.",
+    "prompt": "(a) Determine every pair of positive integers $x,y$ satisfying $x^2+y^2=2014$, or establish nonexistence.\n\n(b) Determine every pair of positive integers $x,y$ satisfying $x^2+y^2=3222014$, or establish nonexistence.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8342,7 +8342,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2014 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {
@@ -8423,7 +8423,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Panjang sisi segitiga dengan keliling satu",
-    "prompt": "Find all possible side-length triples $(a,b,c)$ of a triangle satisfying $$a\\ge b\\ge c,\\qquad a^2-ab+b^2=c^2,\\qquad a+b+c=1.$$",
+    "prompt": "A triangle has side lengths $a$, $b$, and $c$ satisfying the following three properties:\n\n• $a\\ge b\\ge c$;\n\n• $a^2-ab+b^2=c^2$;\n\n• $a+b+c=1$.\n\nFind all possible values of $(a,b,c).$",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8432,7 +8432,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2024 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -8477,7 +8477,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Sistem persamaan fungsional barisan kompleks",
-    "prompt": "Classify the complex sequences $(x_n)_{n\\ge1},(y_n)_{n\\ge1}$ satisfying, for every pair of positive integers $m,n$, $$x_{m+n}=y_my_n,\\qquad y_{mn}=x_m+x_n.$$",
+    "prompt": "Classify the complex sequences $x_1,x_2,\\ldots$ and $y_1,y_2,\\ldots$ satisfying, for every pair of positive integers $m,n$, $\\begin{aligned}x_{m+n}&=y_my_n,\\\\ y_{mn}&=x_m+x_n.\\end{aligned}$",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8486,7 +8486,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2024 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: compared against official PDF page 1; partial corrections applied; exact wording replacement pending."
     }
   },
   {

@@ -1531,7 +1531,7 @@
         "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Sequence definition and final instruction condensed."
+        "finding": "Sequence definition and final instruction condensed. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2016-06": {
@@ -1561,7 +1561,7 @@
         "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Question rephrased; explanatory sentence accompanying example diagram missing."
+        "finding": "Question rephrased; explanatory sentence accompanying example diagram missing. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2017-03": {
@@ -1576,7 +1576,7 @@
         "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Statement rephrased; original uses degree wording and segment bars."
+        "finding": "Statement rephrased; original uses degree wording and segment bars. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2017-04": {
@@ -1591,7 +1591,7 @@
         "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Explanatory congruence sentence omitted; notation and question changed."
+        "finding": "Explanatory congruence sentence omitted; notation and question changed. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2017-05": {
@@ -1636,7 +1636,7 @@
         "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Bullet list and numeric wording altered; both subquestions rephrased."
+        "finding": "Bullet list and numeric wording altered; both subquestions rephrased. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2018-02": {
@@ -1651,7 +1651,7 @@
         "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Named polynomials P and Q removed; original statement condensed."
+        "finding": "Named polynomials P and Q removed; original statement condensed. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2018-03": {
@@ -1681,7 +1681,7 @@
         "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
         "page": 2,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Text rephrased and original segment and triangle notation altered."
+        "finding": "Text rephrased and original segment and triangle notation altered. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2018-05": {
@@ -1756,7 +1756,7 @@
         "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Geometric wording, segment notation and requested angle notation differ."
+        "finding": "Geometric wording, segment notation and requested angle notation differ. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2019-06": {
@@ -1801,7 +1801,7 @@
         "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Circle names and original wording replaced by description."
+        "finding": "Circle names and original wording replaced by description. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2021-03": {
@@ -1831,7 +1831,7 @@
         "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Game instructions and final question rephrased; indefinite-play explanation omitted."
+        "finding": "Game instructions and final question rephrased; indefinite-play explanation omitted. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2021-06": {
@@ -1865,7 +1865,7 @@
       }
     },
     "umo-2022-03": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2022,
@@ -1876,7 +1876,7 @@
         "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Statement restored from official source, including mathematical notation and list/display structure."
       }
     },
     "umo-2022-04": {
@@ -1936,7 +1936,7 @@
         "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Existing text is not verbatim; exact replacement pending. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2023-04": {
@@ -1966,7 +1966,7 @@
         "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
         "page": 2,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Original operation symbol is a vertical bar, not a star; corrected. Prose still differs."
+        "finding": "Original operation symbol is a vertical bar, not a star; corrected. Prose still differs. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2025-01": {
@@ -1996,7 +1996,7 @@
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Existing text is not verbatim; exact replacement pending. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2025-04": {
@@ -2011,7 +2011,7 @@
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Source includes explicit arithmetic examples and three bullet points; current text condensed."
+        "finding": "Source includes explicit arithmetic examples and three bullet points; current text condensed. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2025-05": {
@@ -2026,7 +2026,7 @@
         "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Existing text is not verbatim; exact replacement pending. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2025-06": {
@@ -2086,7 +2086,7 @@
         "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Existing text is not verbatim; exact replacement pending. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "imc-2025-01": {
@@ -3051,7 +3051,7 @@
         "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Game wording condensed and explicit allowance for nonparallel cuts omitted."
+        "finding": "Game wording condensed and explicit allowance for nonparallel cuts omitted. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2013-03": {
@@ -3081,7 +3081,7 @@
         "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
         "page": 2,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Original order of player names and paragraph structure differ."
+        "finding": "Original order of player names and paragraph structure differ. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2015-01": {
@@ -3096,7 +3096,7 @@
         "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Original three bullet conditions condensed into prose."
+        "finding": "Original three bullet conditions condensed into prose. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2015-02": {
@@ -3156,7 +3156,7 @@
         "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Wording differs; square-bracket matrix delimiters corrected."
+        "finding": "Wording differs; square-bracket matrix delimiters corrected. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2015-06": {
@@ -3201,7 +3201,7 @@
         "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
         "page": 2,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Existing text is not verbatim; exact replacement pending. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "imc-2020-03": {
@@ -4094,7 +4094,7 @@
         "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Story, sequence definition and final divisibility question rephrased."
+        "finding": "Story, sequence definition and final divisibility question rephrased. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2022-01": {
@@ -4109,7 +4109,7 @@
         "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Original figure precedes the final question; marker inserted. Added axis-aligned assumption remains a wording discrepancy."
+        "finding": "Original figure precedes the final question; marker inserted. Added axis-aligned assumption remains a wording discrepancy. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2023-01": {
@@ -4139,7 +4139,7 @@
         "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Existing text is not verbatim; exact replacement pending. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2023-05": {
@@ -4184,7 +4184,7 @@
         "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Intro and both subquestions reworded; diagram structure matches."
+        "finding": "Intro and both subquestions reworded; diagram structure matches. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2013-04": {
@@ -4214,7 +4214,7 @@
         "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
         "page": 2,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Original wording and tile notation differ."
+        "finding": "Original wording and tile notation differ. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2019-04": {
@@ -4244,7 +4244,7 @@
         "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Existing text is not verbatim; exact replacement pending. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2020-03": {
@@ -4364,7 +4364,7 @@
         "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "First question reworded; second question abbreviated instead of repeated fully."
+        "finding": "First question reworded; second question abbreviated instead of repeated fully. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2014-03": {
@@ -4428,7 +4428,7 @@
       }
     },
     "umo-2024-01": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "UMO",
       "year": 2024,
@@ -4439,7 +4439,7 @@
         "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Statement restored from official source, including mathematical notation and list/display structure."
       }
     },
     "umo-2024-02": {
@@ -4484,7 +4484,7 @@
         "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
         "page": 1,
         "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "finding": "Existing text is not verbatim; exact replacement pending. Additional source-based notation, formatting or missing-detail corrections applied; full wording still differs."
       }
     },
     "umo-2024-05": {
