@@ -4658,6 +4658,114 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
+  },
+  {
+    "id": "imc-2022-03",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Counting closed walks modulo a prime",
+    "prompt": "For prime $p$, set $$N_p=\\left|\\left\\{(s_1,\\ldots,s_{p-1})\\in\\{-1,0,1\\}^{p-1}\\mid \\sum_{i=1}^{p-1}s_i=0\\right\\}\\right|.$$ Compute $N_p\\bmod p$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2022,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMC 2022 — Hari 1, Nomor 3",
+      "url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
+      "note": "Independent English mathematical formulation based on the official paper."
+    }
+  },
+  {
+    "id": "imc-2022-04",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Chromatic number of a shift graph on triples",
+    "prompt": "For integer $n>3$, define a graph on $\\binom{\\{1,\\ldots,n\\}}{3}$ by joining $\\{a,b,c\\}$ and $\\{b,c,d\\}$ whenever $a<b<c<d$. If $m$ is its chromatic number, establish $$\\frac{\\log\\log n}{100}\\le m\\le100\\log\\log n.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2022,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 4",
+      "label": "IMC 2022 — Hari 1, Nomor 4",
+      "url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
+      "note": "Independent English mathematical formulation based on the official paper."
+    }
+  },
+  {
+    "id": "imc-2022-05",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Monochromatic triangles in a regular edge coloring",
+    "prompt": "Partition the edges of $K_{43}$ into red and blue edges so that every vertex has red degree $20$ and blue degree $22$. Given exactly $2022$ all-blue triangles, compute the number of all-red triangles.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2022,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMC 2022 — Hari 2, Nomor 5",
+      "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+      "note": "Independent English mathematical formulation based on the official paper."
+    }
+  },
+  {
+    "id": "imc-2022-06",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "A permutation with a prescribed adjacent-product sum",
+    "prompt": "For each odd prime $p$, establish the existence of a permutation $(x_1,\\ldots,x_{p-1})$ of the nonzero residues modulo $p$ satisfying $$\\sum_{i=1}^{p-2}x_ix_{i+1}\\equiv2\\pmod p.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2022,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMC 2022 — Hari 2, Nomor 6",
+      "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+      "note": "Independent English mathematical formulation based on the official paper."
+    }
+  },
+  {
+    "id": "imc-2022-07",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 4,
+    "title": "Rank bound for anticommuting idempotents",
+    "prompt": "Suppose $A_1,\\ldots,A_k\\in M_n(\\mathbb C)$ with $A_i^2=A_i$ for each $i$ and $A_iA_j+A_jA_i=0$ for $i\\ne j$. Establish $$\\min_{1\\le i\\le k}\\operatorname{rank}(A_i)\\le\\frac nk.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2022,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 7",
+      "label": "IMC 2022 — Hari 2, Nomor 7",
+      "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+      "note": "Independent English mathematical formulation based on the official paper."
+    }
+  },
+  {
+    "id": "imc-2022-08",
+    "level": "Kuliah",
+    "topic": "Peluang",
+    "difficulty": 5,
+    "title": "Intersection of two random inscribed polygons",
+    "prompt": "Let $n,k\\ge3$. Independently sample $n$ blue and $k$ red points from the uniform distribution on a circle. Write $P_B$ and $P_R$ for the respective convex hulls. Determine the expected number of vertices of $P_B\\cap P_R$, counting zero vertices when the intersection is empty.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2022,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 8",
+      "label": "IMC 2022 — Hari 2, Nomor 8",
+      "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+      "note": "Independent English mathematical formulation based on the official paper."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
