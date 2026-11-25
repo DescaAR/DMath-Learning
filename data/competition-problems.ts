@@ -4058,7 +4058,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2026 — Hari 1, Nomor 1",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
+      "note": "2026-11-25: verbatim transcription verified against user-supplied IMC 2026 Day 1 PDF, page 1."
     }
   },
   {
@@ -4067,7 +4067,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Identitas matriks dan komutativitas",
-    "prompt": "Suppose $n$ is a positive integer and $A$ and $B$ are real $n\\times n$ matrices satisfying $$A^\\top A+BB^\\top=AB+BA,$$ with $X^\\top$ denoting the transpose of $X$. Is $AB=BA$ necessarily true?",
+    "prompt": "Let $n$ be a positive integer. Suppose that $A$ and $B$ are $n\\times n$ matrices with real entries such that\n\n$$A^\\top A+BB^\\top=AB+BA,$$\n\nwhere $X^\\top$ denotes the transpose of matrix $X$.\n\nDoes this imply that $AB=BA$?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4076,7 +4076,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2026 — Hari 1, Nomor 2",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: verbatim transcription verified against user-supplied IMC 2026 Day 1 PDF, page 1."
     }
   },
   {
@@ -4085,7 +4085,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Penggabungan berselang-seling himpunan bagian terurut",
-    "prompt": "A deck contains $n\\ge2$ cards numbered $1,2,\\ldots,n$. An alternating shuffle splits the deck into two nonempty stacks, orders the first increasingly and the second decreasingly, and draws alternately from them, beginning with the first. When either stack is exhausted, append the remaining cards in their existing order. Count the distinct resulting deck orders.\n\nExample: With $n=6$, stacks $A=(1,3)$ and $B=(6,5,4,2)$ produce $(1,6,3,5,4,2)$.",
+    "prompt": "Consider a deck of $n\\ge2$ cards labeled $1,2,\\ldots,n$. An alternating shuffle of the deck is performed as follows. We split the deck into two non-empty stacks. We then sort the first stack in increasing order, and the second stack in decreasing order. Finally, we alternately take cards from the first and second stacks (starting with the first). If one of the stacks runs out, the remaining cards from the other stack are placed at the end. How many different final orders of the deck can be obtained in this way?\n\nExample: Suppose $n=6$, the first stack is $A=(1,3)$, and the second stack is $B=(6,5,4,2)$. Then the order resulting from the alternating shuffle is $(1,6,3,5,4,2)$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4094,7 +4094,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2026 — Hari 1, Nomor 3",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: verbatim transcription verified against user-supplied IMC 2026 Day 1 PDF, page 1."
     }
   },
   {
@@ -4103,7 +4103,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Limit barisan rekursif berbasis rata-rata",
-    "prompt": "Given $x_1>0$, construct the sequence $\\{x_n\\}$ recursively by $$x_{n+1}=\\arctan\\left(\\frac{x_1+x_2+\\cdots+x_n}{n}\\right)\\qquad\\text{for all }n\\ge1.$$ Evaluate $\\displaystyle\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$, using $\\ln x$ for the natural logarithm of $x$.",
+    "prompt": "Let $x_1>0$. Define the sequence $\\{x_n\\}$ by the recurrence\n\n$$x_{n+1}=\\arctan\\left(\\frac{x_1+x_2+\\cdots+x_n}{n}\\right)\\quad\\text{for all }n\\ge1.$$\n\nFind $\\displaystyle\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$, where $\\ln x$ denotes the natural logarithm of $x$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4112,7 +4112,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2026 — Hari 1, Nomor 4",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: verbatim transcription verified against user-supplied IMC 2026 Day 1 PDF, page 1."
     }
   },
   {
@@ -4121,7 +4121,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Konsentrasi polinomial",
-    "prompt": "Establish a constant $C>0$ for which each pair of positive integers $A,B$ admits a real polynomial $p(x)$ satisfying $$p(0)^2>\\sum_{i=1}^A p(-i)^2+\\sum_{i=1}^B p(i)^2\\qquad\\text{and}\\qquad \\deg p<C\\sqrt{AB}.$$",
+    "prompt": "Prove that there exists a constant $C>0$ such that for every pair $A,B$ of positive integers, there is a real polynomial $p(x)$ with\n\n$$p(0)^2>\\sum_{i=1}^A p(-i)^2+\\sum_{i=1}^B p(i)^2\\quad\\text{and}\\quad\\deg p<C\\sqrt{AB}.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4130,7 +4130,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2026 — Hari 1, Nomor 5",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: verbatim transcription verified against user-supplied IMC 2026 Day 1 PDF, page 1."
     }
   },
   {

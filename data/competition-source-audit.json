@@ -2536,12 +2536,12 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing short sentence matches source."
+        "method": "User-uploaded IMC_2026_Day_1_Questions(1).pdf: text extraction and visual inspection of page 1",
+        "finding": "Full question text, punctuation, mathematical symbols, example and paragraph order transcribed verbatim from the user-supplied PDF. Line wrapping and math typesetting normalized for web; problem number is existing page metadata; exam score annotation is not question prose."
       }
     },
     "imc-2026-02": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -2551,12 +2551,12 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "method": "User-uploaded IMC_2026_Day_1_Questions(1).pdf: text extraction and visual inspection of page 1",
+        "finding": "Full question text, punctuation, mathematical symbols, example and paragraph order transcribed verbatim from the user-supplied PDF. Line wrapping and math typesetting normalized for web; problem number is existing page metadata; exam score annotation is not question prose."
       }
     },
     "imc-2026-03": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -2566,12 +2566,12 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "method": "User-uploaded IMC_2026_Day_1_Questions(1).pdf: text extraction and visual inspection of page 1",
+        "finding": "Full question text, punctuation, mathematical symbols, example and paragraph order transcribed verbatim from the user-supplied PDF. Line wrapping and math typesetting normalized for web; problem number is existing page metadata; exam score annotation is not question prose."
       }
     },
     "imc-2026-04": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -2581,12 +2581,12 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "method": "User-uploaded IMC_2026_Day_1_Questions(1).pdf: text extraction and visual inspection of page 1",
+        "finding": "Full question text, punctuation, mathematical symbols, example and paragraph order transcribed verbatim from the user-supplied PDF. Line wrapping and math typesetting normalized for web; problem number is existing page metadata; exam score annotation is not question prose."
       }
     },
     "imc-2026-05": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -2596,8 +2596,8 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
         "page": 1,
-        "method": "Official PDF text and page screenshot compared",
-        "finding": "Existing text is not verbatim; exact replacement pending."
+        "method": "User-uploaded IMC_2026_Day_1_Questions(1).pdf: text extraction and visual inspection of page 1",
+        "finding": "Full question text, punctuation, mathematical symbols, example and paragraph order transcribed verbatim from the user-supplied PDF. Line wrapping and math typesetting normalized for web; problem number is existing page metadata; exam score annotation is not question prose."
       }
     },
     "imc-2026-06": {
