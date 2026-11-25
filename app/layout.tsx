@@ -7,7 +7,6 @@ import "./study-ui.css";
 import "./competition.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { LanguageProvider } from "@/components/LanguageProvider";
 import { StructuredData } from "@/components/StructuredData";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
@@ -67,14 +66,12 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="id" suppressHydrationWarning>
+    <html lang="id" data-language="id" suppressHydrationWarning>
       <body>
         <StructuredData data={[organizationJsonLd(), websiteJsonLd()]} />
-        <LanguageProvider>
           <SiteHeader />
           <main>{children}</main>
           <SiteFooter />
-        </LanguageProvider>
       </body>
     </html>
   );

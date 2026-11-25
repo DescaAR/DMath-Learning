@@ -6,7 +6,7 @@ export const siteConfig = {
   shortName: "DMath",
   tagline: "Think Deeper, Solve Better.",
   description:
-    "Platform latihan olimpiade dan problem solving matematika untuk SD, SMP, SMA, dan mahasiswa, dengan kumpulan soal.",
+    "Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan perguruan tinggi.",
   url: publicSiteUrl,
   basePath: githubPagesBasePath,
   locale: "id_ID",
@@ -15,7 +15,7 @@ export const siteConfig = {
   social: {
     youtube: "https://www.youtube.com/@DMathLearning",
   },
-  keywords: ["DMath Learning","olimpiade matematika","problem solving","OSN","ON-MIPA","IMO","IMC","SEAMO","problem of the day"],
+  keywords: ["DMath Learning","olimpiade matematika","pemecahan masalah","OSN","ON-MIPA","IMO","IMC","SEAMO","soal harian"],
   nav: [
     { label: "Olimpiade SD", href: "/olimpiade-sd" },
     { label: "Olimpiade SMP", href: "/olimpiade-smp" },

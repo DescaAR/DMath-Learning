@@ -10,12 +10,12 @@ export default function Home(){
   <section className="cmp-hero" aria-labelledby="cmp-home-title">
    <div className="container cmp-hero-inner">
     <div className="cmp-hero-copy">
-     <span className="cmp-hero-kicker">MATHEMATICS COMPETITION</span>
+     <span className="cmp-hero-kicker">OLIMPIADE MATEMATIKA</span>
      <h1 id="cmp-home-title">Think Deeper,<br/><em>Solve Better.</em></h1>
      <p>Kumpulan soal olimpiade matematika, dari tingkat sekolah dasar hingga perguruan tinggi.</p>
     </div>
     <div className="cmp-hero-index">
-     <div className="cmp-index-heading"><span className="cmp-kicker">PROBLEM COLLECTION</span><span>{competitionProblems.length} soal</span></div>
+     <div className="cmp-index-heading"><span className="cmp-kicker">KOLEKSI SOAL</span><span>{competitionProblems.length} soal</span></div>
      <h2>Pilih jenjang</h2>
      <LevelCards/>
     </div>

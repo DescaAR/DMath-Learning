@@ -65,4 +65,12 @@ for(const date of dailyDates){
  }
 }
 console.log("POTD audit passed:",dailyDates.length,"dates,",scheduledIds.size,"unique questions.");
+const header=read("components/SiteHeader.tsx"),footer=read("components/SiteFooter.tsx"),languageCompat=read("components/LanguageProvider.tsx");
+assert.doesNotMatch(header,/toggleLanguage|language-toggle|Switch to English/);
+assert.doesNotMatch(footer,/useLanguage|language==="en"/);
+assert.doesNotMatch(layout,/<LanguageProvider/);
+assert.match(layout,/<html lang="id" data-language="id"/);
+assert.doesNotMatch(languageCompat,/MutationObserver|localStorage|translatePlainText|translateRichText/);
+assert.doesNotMatch(workspace,/Foundation|Intermediate|Advanced|Expert|Master|Problem of the Day|DAILY PROBLEMS/);
+assert.match(workspace,/Soal Harian/);
 console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and dedicated daily routes. Public records contain questions and attribution only.");
