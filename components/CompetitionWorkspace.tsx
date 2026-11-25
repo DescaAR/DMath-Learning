@@ -62,6 +62,35 @@ function CompetitionPrompt({ prompt }: { prompt: string }) {
  </div>;
 }
 
+// Link to the complete published IMC sets without duplicating copyrighted statements.
+const imcEditions = Array.from({length:22}, (_,i)=>{
+ const year=2026-i;
+ const perDay=year<=2008?6:year>=2020&&year<=2022?4:5;
+ return {year,perDay};
+});
+const imcMissing = imcEditions.flatMap(({year,perDay})=>[1,2].flatMap(day=>Array.from({length:perDay},(_,i)=>{
+ const number=(day-1)*perDay+i+1;
+ const local=competitionProblems.some(p=>p.source.competition==="IMC"&&p.source.year===year&&p.source.number==="Hari "+day+", Nomor "+number);
+ return {year,day,number,local,url:"https://studolymp.com/imc/problems/imc-"+year+"-d"+day+"-p"+(i+1)};
+}).filter(p=>!p.local)));
+const otherFullSets: Readonly<Record<string,{label:string;url:string}[]>> = {
+ IMO:[{label:"Naskah lengkap IMO 2005–2026",url:"https://www.imo-official.org/problems/"}],
+ APMO:[{label:"Naskah lengkap APMO 2005–2026",url:"https://www.apmo-official.org/problems"}],
+ HMMT:[{label:"Naskah tiap turnamen HMMT",url:"https://www.hmmt.org/www/archive/problems"}],
+ Putnam:[{label:"Naskah Putnam 2005–2025",url:"https://kskedlaya.org/putnam-archive/"},{label:"Naskah resmi terbaru dari MAA",url:"https://maa.org/maa-putnam-archive/"}]
+};
+function IMCFullIndex({items}:{items:typeof imcMissing}){
+ const visible=imcEditions.filter(e=>items.some(p=>p.year===e.year));
+ return <div style={{margin:"0 0 16px",padding:"16px",border:"1px solid var(--cmp-line)",borderRadius:10,background:"var(--cmp-paper)"}}>
+  <p style={{margin:"0 0 10px",fontSize:13,color:"var(--cmp-muted)"}}>Soal dari naskah asli (tautan eksternal). Pilih tahun, hari, dan nomor soal. Soal yang sudah tersedia langsung di DMath ditampilkan di bawah.</p>
+  {visible.map(({year})=><details key={year} open={visible.length===1||undefined} style={{borderTop:"1px solid var(--cmp-line)",padding:"10px 0"}}>
+   <summary style={{cursor:"pointer",fontWeight:700,color:"var(--cmp-heading)"}}>IMC {year} · {items.filter(p=>p.year===year).length} tautan soal</summary>
+   {[1,2].map(day=>{const dayItems=items.filter(p=>p.year===year&&p.day===day);return dayItems.length?<div key={day} style={{marginTop:12}}><div style={{fontSize:13,fontWeight:700,marginBottom:6}}>Hari {day}</div><div style={{display:"flex",flexWrap:"wrap",gap:8}}>{dayItems.map(p=><a key={p.number} href={p.url} target="_blank" rel="noopener noreferrer" className="cmp-button cmp-secondary" style={{minHeight:36,padding:"6px 12px",fontSize:13}}>Nomor {p.number} ↗</a>)}</div></div>:null;})}
+   <a className="cmp-link-text" href={"https://www.imc-math.org.uk/?item=problems&year="+year} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",marginTop:12}}>Naskah resmi IMC {year} ↗</a>
+  </details>)}
+ </div>;
+}
+
 function ProblemCard({p,kind="list"}:{p:CompetitionProblem;kind?:"list"|"daily"|"related"}){
  return <article className={"cmp-problem-card cmp-problem-"+kind}>
   <div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div>
@@ -77,17 +106,19 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  const [level,setLevel]=useState<string>(fixedLevel||"Semua"),[query,setQuery]=useState(""),[topic,setTopic]=useState("Semua"),[diff,setDiff]=useState("Semua"),[source,setSource]=useState("Semua"),[year,setYear]=useState("Semua"),[contest,setContest]=useState("Semua"),[stage,setStage]=useState("Semua");
  useEffect(()=>{const params=new URLSearchParams(window.location.search);const l=params.get("level"),q=params.get("q"),s=params.get("source");if(!fixedLevel&&l&&isLevel(l))setLevel(l);if(q)setQuery(q);if(s==="competition"||s==="original")setSource(s);},[fixedLevel]);
  const pool=useMemo(()=>competitionProblems.filter(p=>level==="Semua"||p.level===level),[level]);
- const years=Array.from(new Set(pool.flatMap(p=>p.source.year?[p.source.year]:[]))).sort((a,b)=>b-a);
+ const years=Array.from(new Set([...pool.flatMap(p=>p.source.year?[p.source.year]:[]),...(level==="Semua"||level==="Kuliah"?imcEditions.map(e=>e.year):[])])).sort((a,b)=>b-a);
  const stages=Array.from(new Set(pool.filter(p=>(contest==="Semua"||categoryOf(p)===contest)&&(year==="Semua"||String(p.source.year)===year)).flatMap(p=>p.source.stage?[p.source.stage]:[]))).sort();
  const contests=Array.from(new Set(pool.map(categoryOf))).sort(categoryOrder);
  const topics=Array.from(new Set(pool.map(p=>p.topic))).sort((a,b)=>a.localeCompare(b,"id"));
  const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||categoryOf(p)===contest)&&(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
  const groups=contests.map(c=>({name:c,items:filtered.filter(p=>categoryOf(p)===c).sort((a,b)=>(b.source.year||0)-(a.source.year||0)||(a.source.stage||"").localeCompare(b.source.stage||"","id")||(a.source.number||a.id).localeCompare(b.source.number||b.id,"id",{numeric:true}))})).filter(g=>g.items.length>0);
+ const linkedIMC=(level==="Semua"||level==="Kuliah")&&(contest==="Semua"||contest==="IMC")&&(stage==="Semua"||stage==="IMC")&&topic==="Semua"&&diff==="Semua"&&source!=="original"?imcMissing.filter(p=>(year==="Semua"||String(p.year)===year)&&("IMC "+p.year+" Hari "+p.day+" Nomor "+p.number+" Kuliah").toLowerCase().includes(query.toLowerCase().trim())):[];
+ const displayGroups=linkedIMC.length&&!groups.some(g=>g.name==="IMC")?[...groups,{name:"IMC",items:[] as CompetitionProblem[]}].sort((a,b)=>categoryOrder(a.name,b.name)):groups;
  const reset=()=>{setQuery("");setLevel(fixedLevel||"Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");setYear("Semua");setContest("Semua");setStage("Semua");};
  return <div className="cmp-page container cmp-catalog">
-  <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length}</strong><span>soal tersedia</span></div></header>
+  <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length+((level==="Semua"||level==="Kuliah")?imcMissing.length:0)}</strong><span>soal dan tautan tersedia</span></div></header>
   {fixedLevel&&<nav className="cmp-level-section-nav" aria-label="Menu jenjang"><span aria-current="page">Kumpulan Soal</span><Link href={levelHref(fixedLevel)+"potd/"}>Soal Harian →</Link></nav>}
-  <section className="cmp-category-section" aria-label="Kategori kompetisi"><h2>Kategori kompetisi</h2><div className="cmp-category-buttons" role="group" aria-label="Pilih kategori">{["Semua",...contests].map(c=><button type="button" key={c} aria-pressed={contest===c} onClick={()=>{setContest(c);setStage("Semua");setYear("Semua");setSource("Semua");setTopic("Semua");setDiff("Semua");}}><span>{c==="Semua"?"Semua kompetisi":c}</span><small>{c==="Semua"?pool.length:pool.filter(p=>categoryOf(p)===c).length} soal</small></button>)}</div></section>
+  <section className="cmp-category-section" aria-label="Kategori kompetisi"><h2>Kategori kompetisi</h2><div className="cmp-category-buttons" role="group" aria-label="Pilih kategori">{["Semua",...contests].map(c=><button type="button" key={c} aria-pressed={contest===c} onClick={()=>{setContest(c);setStage("Semua");setYear("Semua");setSource("Semua");setTopic("Semua");setDiff("Semua");}}><span>{c==="Semua"?"Semua kompetisi":c}</span><small>{(c==="Semua"?pool.length:pool.filter(p=>categoryOf(p)===c).length)+((level==="Semua"||level==="Kuliah")&&(c==="Semua"||c==="IMC")?imcMissing.length:0)} soal</small></button>)}</div></section>
   <div className="cmp-catalog-layout">
    <aside className="cmp-filter" aria-label="Filter soal">
     <div className="cmp-filter-title"><h2>Filter soal</h2><button className="cmp-text-button" type="button" onClick={reset}>Atur ulang</button></div>
@@ -105,9 +136,9 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
    </aside>
    <div className="cmp-results">
 
-    <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length} soal ditemukan</span></div>
-    {groups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length} soal</span></div><div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
-    {!filtered.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
+    <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length+linkedIMC.length} soal ditemukan{linkedIMC.length>0?" · "+linkedIMC.length+" tautan":""}</span></div>
+    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length+(g.name==="IMC"?linkedIMC.length:0)} soal</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={linkedIMC}/>} {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
+    {!filtered.length&&!linkedIMC.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
    </div>
   </div>
  </div>;
