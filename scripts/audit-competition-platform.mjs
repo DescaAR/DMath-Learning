@@ -135,3 +135,8 @@ for(const p of competitionProblems.filter(p=>p.prompt.includes("[[FIGURE]]"))){
  assert.equal(p.prompt.split("[[FIGURE]]").length,2,p.id+" duplicate diagram placeholder");
  assert.ok(displayedFigureIds.includes(p.id),p.id+" missing diagram");
 }
+
+for(const year of [2024,2025,2026]){
+ const nums=competitionProblems.filter(p=>p.source.competition==="APMO"&&p.source.year===year).map(p=>p.source.number).sort();
+ assert.deepEqual(nums,Array.from({length:5},(_,i)=>"Nomor "+(i+1)), "Incomplete APMO set "+year);
+}

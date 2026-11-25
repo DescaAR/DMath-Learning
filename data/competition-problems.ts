@@ -8369,7 +8369,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Iterasi daftar frekuensi bilangan",
-    "prompt": "Joel starts with an ordered list of nonnegative integers. Replace it by the frequencies of $0,1,2,\\ldots$ up to its largest entry, including zero frequencies. Repeat indefinitely. For example,\n\n$$(0,0,0,2)\\longrightarrow(3,0,1)\\longrightarrow(1,1,0,1)\\longrightarrow(1,3)\\longrightarrow\\cdots$$\n\nand\n\n$$(0,0)\\longrightarrow(2)\\longrightarrow(0,0,1)\\longrightarrow(2,1)\\longrightarrow\\cdots.$$\n\nDetermine every two-entry list $(m,n)$ that can recur infinitely often for some starting list.",
+    "prompt": "Joel starts with an ordered list of nonnegative integers. Replace it by the frequencies of $0,1,2,\\ldots$ up to its largest entry, including zero frequencies. Repeat indefinitely. For example,\n\n$(0,0,0,2)\\longrightarrow(3,0,1)\\longrightarrow(1,1,0,1)\\longrightarrow(1,3)\\longrightarrow\\cdots$\n\nand\n\n$(0,0)\\longrightarrow(2)\\longrightarrow(0,0,1)\\longrightarrow(2,1)\\longrightarrow\\cdots.$\n\nDetermine every two-entry list $(m,n)$ that can recur infinitely often for some starting list.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8523,6 +8523,150 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "UMO 2024 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
       "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "apmo-2024-apmo-1",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Kolinearitas pada trapesium",
+    "prompt": "In an acute triangle $ABC$, choose $D\\in AB$ and $E\\in AC$ with $DE\\parallel BC$. An interior point $X$ of $BCED$ defines $P=DX\\cap BC$ and $Q=EX\\cap BC$ along the rays $DX,EX$, with $P,Q$ between $B,C$. If the circles through $B,Q,X$ and $C,P,X$ meet again at $Y$, establish collinearity of $A,X,Y$.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2024,
+      "stage": "APMO",
+      "number": "Nomor 1",
+      "label": "APMO 2024 — Nomor 1",
+      "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "apmo-2024-apmo-2",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Keterjangkauan langkah kuda",
+    "prompt": "A piece starts at $(1,1)$ on the integer grid $\\{1,\\ldots,100\\}^2$. Fix an integer $51\\le k\\le99$. Each legal move changes the two coordinates in absolute value by $1,k$, in either order, while remaining on the grid. Determine, as a function of $k$, the number $L(k)$ of cells reachable by a finite sequence of moves.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2024,
+      "stage": "APMO",
+      "number": "Nomor 2",
+      "label": "APMO 2024 — Nomor 2",
+      "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "apmo-2024-apmo-4",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Permutasi koefisien binomial ganjil",
+    "prompt": "For each positive integer $t$, establish existence and uniqueness of a permutation $(a_0,\\ldots,a_{t-1})$ of $\\{0,\\ldots,t-1\\}$ for which, at every index $i$, $\\binom{t+i}{2a_i}$ is odd and $2a_i\\ne t+i$.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2024,
+      "stage": "APMO",
+      "number": "Nomor 4",
+      "label": "APMO 2024 — Nomor 4",
+      "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "apmo-2024-apmo-5",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kolinearitas pada segiempat siklik",
+    "prompt": "A cyclic quadrilateral $ABCD$ has a transversal $\\ell$ meeting the interiors of $BC,AD$ at $R,S$ and the rays $DC,BA$ beyond $C,A$ at $Q,P$. Define $N\\ne Q$ by intersecting the circumcircles of $QCR,QDS$, and $M\\ne P$ by intersecting those of $PAS,PBR$. With $X=MP\\cap NQ$, $K=AB\\cap CD$, $L=BC\\cap AD$, show $X\\in KL$.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2024,
+      "stage": "APMO",
+      "number": "Nomor 5",
+      "label": "APMO 2024 — Nomor 5",
+      "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "apmo-2025-apmo-1",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Luas segiempat dan lingkaran luar",
+    "prompt": "An acute triangle $ABC$ has circumcircle $\\Gamma$ and altitude $AA_1$ to $BC$. Project $A_1$ orthogonally onto $AB,AC$ to obtain $B_1,C_1$. Suppose $AB_1PC_1$ is convex and its area equals that of $ABC$. Can $P$ be strictly inside $\\Gamma$? Justify the conclusion.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2025,
+      "stage": "APMO",
+      "number": "Nomor 1",
+      "label": "APMO 2025 — Nomor 1",
+      "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "apmo-2025-apmo-4",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Dinamika ayam pada susunan melingkar",
+    "prompt": "Arrange $n\\ge3$ binary-labelled cells in a circle. A rooster repeatedly flips the bit of its current cell, then advances counterclockwise one cell if the old bit was $0$, or two cells if it was $1$.\n\nShow that eventually, from its current cell $C$, exactly three revolutions bring it back to $C$ with every label restored to the state at the beginning of those revolutions.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2025,
+      "stage": "APMO",
+      "number": "Nomor 4",
+      "label": "APMO 2025 — Nomor 4",
+      "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "apmo-2026-apmo-4",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Garis tegak lurus pada segiempat singgung",
+    "prompt": "Let $ABCD$ admit an incircle $\\omega$ with centre $I$. Write $E=AC\\cap BD$ and let $J$ be the incenter of $ABD$. Extend ray $EJ$ to meet $\\omega$ at $P$. Establish $PI\\perp BD$.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2026,
+      "stage": "APMO",
+      "number": "Nomor 4",
+      "label": "APMO 2026 — Nomor 4",
+      "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "apmo-2026-apmo-5",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pola penguncian pintu pada kisi",
+    "prompt": "For a positive integer $n$, arrange $n(n+1)$ rooms in $n+1$ rows and $n$ columns, with a door joining each pair of adjacent rooms. Count the subsets of doors that can be locked while preserving an unlocked-door path from some room $S$ of the first row to some room $G$ of the last row.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2026,
+      "stage": "APMO",
+      "number": "Nomor 5",
+      "label": "APMO 2026 — Nomor 5",
+      "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
     }
   }
 ];
