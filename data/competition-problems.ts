@@ -3092,6 +3092,762 @@ export const competitionProblems: CompetitionProblem[] = [
       "collectionUrl": "https://artofproblemsolving.com/school/mathjams-transcripts?id=682",
       "note": "Independent symbolic formulation of the original mathematical task, not verbatim."
     }
+  },
+  {
+    "id": "umo-2016-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Edge-removal game",
+    "prompt": "Consider the graph on vertices $A,B,C,D,E,F$ with edges $AB,BC,CD,DE,EF,FA,AC,CE,EA$. Ada chooses the initial vertex of a token. Starting with Ada, players alternately move the token along an incident edge and delete that edge. The player unable to move loses. Which player has a winning strategy?",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2016,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2016 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2016-02",
+    "level": "SMA",
+    "topic": "Peluang",
+    "difficulty": 3,
+    "title": "Equal-sum dice pairs",
+    "prompt": "Roll four independent fair dice, each numbered $1$ through $6$. Determine the probability that the four outcomes admit a partition into two pairs having equal sums.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2016,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2016 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2016-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Two-color obstruction",
+    "prompt": "Does there exist a coloring $c:\\mathbb Z_{>0}\\to\\{0,1\\}$ for which no solution $a+b+c_0=d$ in positive integers satisfies $c(a)=c(b)=c(c_0)=c(d)$? Repeated integers are allowed.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2016,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2016 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2016-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Tangential quadrilateral inside a hexagon",
+    "prompt": "An equiangular hexagon $ABCDEF$ satisfies $AB=CD=EF>BC$. Define $X=AD\\cap CF$ and $Y=BE\\cap CF$, where the intersections are of segments. If $ABYX$ has an incircle, determine $\\frac{AB}{FA}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2016,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2016 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2016-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Integer sequences satisfying a quadratic identity",
+    "prompt": "Classify integer sequences $(a_n)_{n\\ge0}$ satisfying $$a_{n+k}^2-(2k+1)a_na_{n+k}+(k^2+k)a_n^2=k^2-k$$ for every pair of nonnegative integers $n,k$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2016,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2016 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2016-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "A divisibility condition",
+    "prompt": "Determine the positive integer pairs $(u,m)$ for which $um-1\\mid u+m^2$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2016,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2016 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2017-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Two connected spanning subgraphs",
+    "prompt": "Color each edge of the complete graph $K_4$ orange or blue. Count the colorings for which the subgraphs of both colors are connected and span all four vertices. Justify the count.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2017,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2017 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2017-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Maximizing an altitude",
+    "prompt": "Distinct points $A,B,C$ lie on a circle centered at $O$, with $\\angle AOB=\\angle BOC=60^\\circ$. Among points $P$ of segment $AC$, choose one maximizing the distance from $C$ to line $BP$. Determine $AP:PC$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2017,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2017 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2017-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Minimum polynomial degree modulo sixteen",
+    "prompt": "Among polynomials $P\\in\\mathbb Z[x]$ satisfying $nP(n)\\equiv1\\pmod{16}$ for every positive odd integer $n$, determine the least possible degree and prove optimality.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2017,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2017 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2017-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Eight-bucket game",
+    "prompt": "Eight empty containers each hold two liters. In each round, player A distributes one liter among the containers, then player B empties two containers of B's choice. Player A wins as soon as a container overflows. Can A force a win after finitely many rounds? Prove the answer.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2017,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2017 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2017-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Alternating permutations modulo four",
+    "prompt": "Let $a_n$ count permutations $(p_1,\\ldots,p_n)$ of $\\{1,\\ldots,n\\}$ with $p_1<p_2>p_3<p_4>\\cdots$. Determine $a_n\\bmod4$ for every positive integer $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2017,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2017 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2018-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Nested circles and incidence counts",
+    "prompt": "Construct seven pairwise nonintersecting circles and eleven points, none on a circle, such that the numbers of points inside the seven circles are distinct and each point belongs to the interior of the same number of circles. Prove that the analogous construction with five circles and five points is impossible.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2018,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2018 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2018-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Two cubic polynomials",
+    "prompt": "For $a,b,c>0$, suppose $$(x-a)(x-b)(x-c)=(x-ab)(x-bc)(x-ca)$$ identically in $x$. Find the minimum possible sum $a+b+c$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2018,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2018 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2018-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Domino placement game",
+    "prompt": "On a $4\\times4$ grid, Kim and Li alternately place nonoverlapping dominoes aligned with the grid. Kim plays first and can place only vertical dominoes; Li can place only horizontal ones. The last player able to place a domino wins. Determine the winner under optimal play, with proof.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2018,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2018 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2018-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Reflections of four triangles",
+    "prompt": "A square $ABCD$ is inside triangle $XYZ$, with $B\\in XY$, $C\\in YZ$, and $D\\in ZX$. Reflect triangles $XAB$, $YBC$, $ZCD$, and $XDA$ in lines $AB$, $BC$, $CD$, and $DA$, respectively. Prove that the union of the reflected triangles covers the square.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2018,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2018 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2018-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Separating colors on a circle",
+    "prompt": "Color twelve distinct equally spaced labeled points on a circle with four specified colors, using each color exactly three times. Require that the points of any two different colors can be strictly separated by a line. Count all admissible colorings.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2018,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2018 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2019-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Square tilings",
+    "prompt": "Count the tilings of a $4\\times4$ square by axis-aligned squares whose side lengths belong to $\\{1,2,3,4\\}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2019,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2019 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2019-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "A polynomial composition identity",
+    "prompt": "Find all polynomials $p(x)$ with real coefficients such that $p(x)^2=p(p(x))$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2019,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2019 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2019-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Factorials as sums of powers of two",
+    "prompt": "Find all nonnegative integers $a,b,c$ such that $2^a+2^b=c!$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2019,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2019 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2019-05",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "An angle from the incircle",
+    "prompt": "Let $I$ be the incenter of $ABC$ and $D$ the contact point of its incircle on $AB$. The line $ID$ meets the circumcircle of $ABI$ again at $E$. If $IE=AC+BC$, determine $\\angle ACB$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2019,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2019 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2019-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Equal probability of matching colors",
+    "prompt": "Show that for each integer $n\\ge200$ with $n\\equiv0,1\\pmod4$, one can assign colors to $n$ balls so that two uniformly chosen distinct balls have the same color with probability $\\frac12$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2019,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2019 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2021-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "A quadratic equation with prime coefficient",
+    "prompt": "Classify triples $(x,b,c)\\in\\mathbb Z^3$ satisfying $x^2+bx+c=0$, with $b$ prime and $c$ positive and odd.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2021,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2021 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2021-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Concentric tangent circles",
+    "prompt": "Three circles are pairwise externally tangent. Suppose a fourth circle is externally tangent to each and a fifth circle is internally tangent to each, and these last two circles have a common center. Must the original three circles have equal radii? Prove or disprove.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2021,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2021 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2021-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "A function on the plane",
+    "prompt": "Does a function $f:\\mathbb R^2\\to\\mathbb R$ exist such that $f(P)+f(Q)+f(R)$ equals the perimeter of $PQR$ whenever $PQR$ is an equilateral triangle?",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2021,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2021 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2021-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Stone-transfer game",
+    "prompt": "Two players initially hold zero stones. On a turn, a player either acquires one stone or transfers a positive number of stones not exceeding half their holdings to the opponent. A player loses immediately upon holding at least twenty stones. With alternating turns, determine which player, if any, has a forced win.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2021,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2021 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2021-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Divisors of a factorial",
+    "prompt": "Prove that for all positive integers $n$, the number of divisors of $n!$ is a divisor of $(2n)!$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2021,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2021 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2022-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Coprimality of quadratic forms",
+    "prompt": "Let $x$ and $y$ be relatively prime integers. Show that $x^2+xy+y^2$ and $x^2+3xy+y^2$ are relatively prime.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2022,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2022 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2022-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Two identities for a sequence",
+    "prompt": "Classify real sequences $(a_n)_{n\\ge1}$ obeying $$a_{m+n}=a_m+a_n-mn,\\qquad a_{mn}=m^2a_n+n^2a_m+2a_ma_n$$ for every $m,n\\ge1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2022,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2022 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2022-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Folding game",
+    "prompt": "Two players alternately fold a $10\\times100$ rectangular grid along an interior horizontal or vertical gridline, leaving a smaller rectangular grid. The player making the final fold wins. Determine the winner under optimal play, with proof.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2022,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2022 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2022-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Growth on a circular arrangement",
+    "prompt": "Arrange $2022$ sites cyclically, initially with height $1$. A token starts at one site; at a site of height $k$ it raises that height to $k+1$ and advances $k$ sites clockwise. Determine the maximum achievable difference between the greatest and least heights, or establish that no finite bound exists.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2022,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2022 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2022-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Counting grids with crossing paths",
+    "prompt": "Prove that there are at least $2^{2022}$ subsets of the cells of a $42\\times49$ grid that contain an orthogonally adjacent cell path from the first column to the last column.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2022,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2022 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2023-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "The largest angle of four points",
+    "prompt": "Given four distinct points in the plane, consider all angles $\\angle XYZ$ formed by ordered triples of distinct points from the four. Minimize the greatest such angle over all configurations, and exhibit an attaining configuration.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2023,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2023 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2023-04",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Permutations of function compositions",
+    "prompt": "Ten functions $\\mathbb R\\to\\mathbb R$ have the property that composing them in any order and evaluating at $0$ gives $1$. Determine how many affine functions $x\\mapsto mx+b$, with $m,b\\in\\{0,\\ldots,9\\}$, can occur among such ten functions.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2023,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2023 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2023-06",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Associative translation-invariant operations",
+    "prompt": "Classify binary operations $\\star:\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$ satisfying $$(a\\star b)+c=(a+c)\\star(b+c),\\qquad (a\\star b)\\star c=a\\star(b\\star c)$$ for all integers $a,b,c$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2023,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2023 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2025-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Squares in an octagon",
+    "prompt": "Draw all edges and diagonals of a regular octagon. Count, with proof, the squares whose sides are contained in those drawn segments.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2025,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2025 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2025-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Polynomial quotient identity",
+    "prompt": "For real polynomials $f,g$ with $g\\ne0$, denote the quotient in Euclidean polynomial division by $Q(f,g)$. Classify the polynomials $p\\in\\mathbb R[x]$ for which $$Q(p,x)+Q(p,x+1)=x^2.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2025,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2025 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2025-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Repeated-digit split sums",
+    "prompt": "For a positive integer $N$, define $S(N)$ by splitting its decimal representation into two blocks, the second of length $\\lceil d/2\\rceil$ when $N$ has $d$ digits, and adding the blocks (the empty block is zero). Count positive integers $m$ of at most $2025$ digits, all identical, with $S(m^2)=m$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2025,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2025 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2025-05",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Equilateral triangles and a parallelogram",
+    "prompt": "For a parallelogram $ABCD$, construct an equilateral triangle $ABP$ with $P$ on the same side of line $AB$ as $C,D$. If lines $CP$ and $DA$ meet at $Q$, show there is an $R$ on line $AB$ such that $CQR$ is equilateral.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2025,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2025 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2025-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Equal rational self-powers",
+    "prompt": "Call a positive rational $r$ admissible if some positive rational $s\\ne r$ satisfies $r^r=s^s$. Determine the second smallest admissible rational, with proof.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2025,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2025 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2026-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "A factorial-square equation",
+    "prompt": "Find (with proof) all ordered pairs of integers $(n,k)$, with $n\\ge0$ and $1\\le k\\le10$, such that $$n!+1=(kn+1)^2.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2026,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2026 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2026-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pursuit on a lattice",
+    "prompt": "On the $N\\times N$ lattice, a pursuer starts at the top-left corner and a target at a uniformly random different vertex. Each round the target moves one step horizontally or vertically, then the pursuer moves one step horizontally, vertically or diagonally. Both remain on the lattice. Capture occurs whenever their locations agree. Under optimal opposing play, find the expected number of pursuer moves before capture.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2026,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2026 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
+  },
+  {
+    "id": "umo-2026-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Additive bases of order two",
+    "prompt": "Let $(a_i)_{i\\ge0}$ be a strictly increasing sequence of nonnegative integers for which every nonnegative integer belongs to $\\{a_i+a_j:i,j\\ge0\\}$. Must there exist a constant $K$ such that $a_i\\le Ki$ for every $i\\ge0$? Prove or disprove.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2026,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2026 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
