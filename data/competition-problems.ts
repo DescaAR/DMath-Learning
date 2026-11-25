@@ -11116,6 +11116,510 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
       "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
+  },
+  {
+    "id": "koala-2025-p1-01",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan $\\pi=(1\\ 4\\ 3\\ 2)(5\\ 6\\ 7\\ 8)(6\\ 8\\ 1\\ 5)(4\\ 5\\ 7)\\in S_8$. Order dari $\\pi$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 1",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 1",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-02",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan matriks\n\n$$\\begin{pmatrix}0&1&0&0\\\\0&0&1&0\\\\0&0&0&1\\\\0&0&0&0\\end{pmatrix}$$\n\nmerupakan matriks representasi relatif terhadap basis standar dari transformasi linear $T:\\mathbb R^4\\to\\mathbb R^4$. Dimensi dari $\\operatorname{Ker}(T\\circ T)$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 2",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 2",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-03",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Banyaknya elemen nilpoten di ring $\\mathbb Z_{45}$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 3",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 3",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-04",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Diketahui $\\mathbb R^3$ merupakan ruang vektor atas lapangan $\\mathbb R$ dan misalkan $T:\\mathbb R^3\\to\\mathbb R^3$ transformasi linear yang memenuhi $\\|T(v)\\|=\\|v\\|$ untuk setiap $v\\in\\mathbb R^3$. Banyaknya transformasi linear $T$ yang matriks representasi relatifnya terhadap basis standar mempunyai entri-entri bilangan bulat adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 4",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 4",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-05",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Diberikan himpunan $A:=\\{f:f\\text{ fungsi dari }\\mathbb Z_5\\text{ ke }\\mathbb Z_{25}\\}$ yang merupakan ring terhadap operasi penjumlahan dan perkalian fungsi. Banyaknya elemen nilpoten di ring $A$ adalah . . . .",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 5",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 5",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-06",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Order dari $\\begin{pmatrix}1&1\\\\0&2\\end{pmatrix}$ sebagai elemen dari grup $GL_2(\\mathbb Z_{23})$ adalah . . . .",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 6",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 6",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-07",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan $\\phi$ adalah homomorpisma grup dari $\\mathbb Z_{30}$ ke $\\mathbb Z_6$ sehingga $\\operatorname{Ker}(\\phi)=\\{0,6,12,18,24\\}$ dengan $\\phi(1)\\ne1$. Hasil dari $\\phi(1)$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 7",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 7",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-08",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Diberikan ruang vektor $\\mathbb R[x]$ atas $\\mathbb R$. Misalkan $T:\\mathbb R[x]\\to\\mathbb R[x]$ merupakan transformasi linear dengan definisi $T(P(x))=x^3P(x)-P(x^2)$ untuk setiap $P(x)\\in\\mathbb R[x]$. Dimensi dari $\\operatorname{Ker}(T)$ adalah . . . .",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 8",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 8",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-09",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan $M_5(\\mathbb R)$ adalah ruang vektor semua matriks dengan entri real yang berukuran $5\\times5$ atas lapangan $\\mathbb R$ dan $A\\in M_5(\\mathbb R)$. Misalkan juga $T:M_5(\\mathbb R)\\to M_5(\\mathbb R)$ adalah transformasi linear yang memenuhi $T(X)=AX-XA$ untuk setiap $X\\in M_5(\\mathbb R)$. Jika $p$ dan $q$ berturut-turut menyatakan nilai minimum dan nilai maksimum yang mungkin dari $\\operatorname{rank}(T)$, maka nilai dari $p+q$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 9",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 9",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-10",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Diberikan matriks\n\n$$S=\\begin{pmatrix}1&11&111&1111\\\\11&111&1111&11111\\\\111&1111&11111&111111\\\\1111&11111&111111&1111111\\end{pmatrix}\\in M_{4\\times4}(\\mathbb R).$$\n\nBanyaknya entri tak nol pada bentuk eselon baris tereduksi dari $S$ adalah . . . .",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 10",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 10",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-11",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Jika $A=\\begin{pmatrix}1&3&2\\\\2&1&3\\\\3&2&1\\end{pmatrix}$ dan $v\\in\\mathbb R^3$ dengan $v\\ne\\begin{pmatrix}0\\\\0\\\\0\\end{pmatrix}$, maka nilai maksimum dari $\\dfrac{\\|Av\\|}{\\|v\\|}$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 11",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 11",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-12",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan $A$ adalah matriks berukuran $5\\times5$ dengan $A_{ij}=1+|i-j|$ untuk setiap $i,j\\in\\{1,2,3,4,5\\}$. Nilai dari $\\det(A)$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 12",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 12",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-13",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Elemen $x$ dari ring $R$ dikatakan tripoten jika memenuhi $x^3=x$. Banyaknya elemen tripoten di ring $\\mathbb Z_{216}$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 13",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 13",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 3; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-14",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan $S_5$ adalah grup semua permutasi dari himpunan $T=\\{1,2,3,4,5\\}$. Pasangan $(i,j)\\in T\\times T$ disebut inversi dari permutasi $\\sigma\\in S_5$ jika memenuhi $\\sigma^{-1}(i)<\\sigma^{-1}(j)$ dan $i>j$. Banyaknya elemen dari $S_5$ yang memiliki setidaknya 5 inversi adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 14",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 14",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 3; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-15",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan $\\mathcal H$ adalah himpunan matriks $2\\times2$ dengan entri-entrinya saling berbeda dan merupakan anggota himpunan $\\{1,2,3,4\\}$. Nilai dari\n\n$$\\sum_{M\\in\\mathcal H}\\det(M)$$\n\nadalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 15",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 15",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 3; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-16",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan $a,b,c\\in\\mathbb R$ yang memenuhi $a^2+b^2+c^2=9$. Misalkan juga $m$ dan $n$ berturut-turut menyatakan nilai maksimum dan minimum determinan matriks\n\n$$C=\\begin{pmatrix}a+b&b+c&c+a\\\\c+a&a+b&b+c\\\\b+c&c+a&a+b\\end{pmatrix}.$$\n\nNilai dari $m-n$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 16",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 16",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 3; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-17",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan $GL_3(\\mathbb Z_4)$ adalah grup semua matriks invertibel berukuran $3\\times3$ dengan entri elemen dari ring $\\mathbb Z_4$ (dengan operasi perkalian matriks pada umumnya). Jika kardinalitas dari $GL_3(\\mathbb Z_4)$ adalah $2^a\\cdot b$ untuk suatu bilangan asli $a$ dan $b$ dengan $b$ ganjil, maka nilai dari $a+b$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 17",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 17",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 3; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-18",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Jika banyaknya polinomial monik tak tereduksi dengan derajat 9 dan koefisien elemen dari ring $\\mathbb Z_4$ adalah $2^a\\cdot b$ untuk suatu bilangan asli $a$ dan $b$ dengan $b$ ganjil, maka nilai dari $a+b$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 18",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 18",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 3; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-19",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Banyaknya bilangan asli $n\\le2025$ sedemikian sehingga ring $\\mathbb Z_n$ memiliki subring yang isomorfis dengan $\\mathbb Z_2$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 19",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 19",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 3; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p1-20",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Diberikan grup $G$ dan $a,b,c\\in G$ yang memenuhi $G=\\langle a,b,c\\rangle$ dan $abab=caca^{-1}=cbcb^{-1}=a^4=b^2=c^3=e$ dengan $e$ merupakan elemen identitas di grup $G$. Nilai maksimal dari $|G|$ adalah . . ..",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi I, Nomor 20",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi I",
+      "number": "Nomor 20",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 1.pdf, page 3; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p2-01",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 4,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan matriks $A$ berukuran $n\\times n$ dengan $n\\ge3$. Jika rank dari $A$ adalah $n-2$, maka tentukan rank dari adjoint dari matriks $A$.\n\nCatatan: Untuk matriks $A$ berukuran $n\\times n$, $M_{ij}$ menyatakan determinan matriks yang diperoleh dengan cara menghilangkan baris ke-$i$ dan kolom ke-$j$ dari matriks $A$. Selanjutnya dibentuk matriks $K$ dengan $(K)_{ij}=(-1)^{i+j}M_{ij}$. Tranpose dari matriks $K$ disebut adjoint dari matriks $A$.",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi II, Nomor 1",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi II",
+      "number": "Nomor 1",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 2.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p2-02",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 4,
+    "title": "Struktur Aljabar",
+    "prompt": "Diketahui $G$ grup siklik dengan $|G|=p^2q^2$ dengan $p,q$ bilangan prima berbeda. Selanjutnya didefinisikan himpunan $S\\subseteq G$ dengan\n\n$$S=\\{x\\in G\\mid \\circ(x)=p^2\\text{ atau }\\circ(x)=q^2\\}$$\n\n(a) Tentukan $|S|$, banyaknya anggota himpunan $S$.\n\n(b) Buktikan bahwa $\\langle S\\rangle=G$.",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi II, Nomor 2",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi II",
+      "number": "Nomor 2",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 2.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p2-03",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 4,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan $n\\in\\mathbb N$ dengan $n>1$ dan $v_1,v_2,\\ldots,v_n\\in\\mathbb R^n$. Misalkan juga $A$ adalah matriks berukuran $n\\times n$ dengan $(A)_{ij}=v_j^Tv_i$ untuk setiap $i,j\\in\\{1,2,\\ldots,n\\}$ dan $\\lambda^n+u_1\\lambda^{n-1}+u_2\\lambda^{n-2}+\\ldots+u_{n-2}\\lambda^2+u_{n-1}\\lambda+u_n$ adalah polinomial karakteristik dari $A$ dalam $\\lambda$. Untuk setiap $k\\in\\{1,2,\\ldots,n\\}$, buktikan bahwa $u_k\\le0$ jika $k$ ganjil dan $u_k\\ge0$ jika $k$ genap.",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi II, Nomor 3",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi II",
+      "number": "Nomor 3",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 2.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-p2-04",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 4,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan $R$ adalah ring dengan sifat: untuk setiap $r\\in R$ dengan $rRr=\\{0_R\\}$, berlaku $r=0_R$. Jika $u,v,w\\in R$ memenuhi $urv+vrw=0_R$ untuk setiap $r\\in R$, buktikan bahwa $(u+w)rv=vr(u+w)=0_R$ untuk setiap $r\\in R$.",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Penyisihan Sesi II, Nomor 4",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Penyisihan Sesi II",
+      "number": "Nomor 4",
+      "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "note": "User-supplied University Challange ZIP: KOALA/Soal Sesi 2.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-final-01",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 5,
+    "title": "Struktur Aljabar",
+    "prompt": "Suatu ring $R$ dikatakan lokal jika $R$ mempunyai tepat satu ideal maksimal. Diberikan ring komutatif $R$ dengan elemen identitas. Buktikan bahwa $R$ ring lokal jika dan hanya jika himpunan semua elemen bukan unit merupakan ideal.",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Final, Nomor 1",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 1",
+      "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+      "note": "User-supplied University Challange ZIP: KOALA/final koala.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-final-02",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 5,
+    "title": "Struktur Aljabar",
+    "prompt": "Diberikan grup $G$ dengan sifat $Z(\\operatorname{Aut}(G))$ merupakan subgrup nontrivial dari $\\operatorname{Aut}(G)$.\n\n(a) Buktikan bahwa $Z(G)$ merupakan subgrup nontrivial dari $G$.\n\n(b) Buktikan bahwa terdapat homomorfisma nontrivial dari $G$ ke $Z(G)$.\n\nCatatan: Untuk grup $H$, $\\operatorname{Aut}(H)=\\{f:H\\longrightarrow H\\mid f\\text{ isomorfisma grup}\\}$, grup terhadap komposisi fungsi, dan $Z(H)=\\{x\\in H\\mid xh=hx\\text{ untuk setiap }h\\in H\\}$.",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Final, Nomor 2",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 2",
+      "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+      "note": "User-supplied University Challange ZIP: KOALA/final koala.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-final-03",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Aljabar Linear",
+    "prompt": "Diberikan ruang vektor $V$ atas lapangan $F$ dan transformasi linear $T:V\\to V$.\n\n(a) Jika $\\{x_1,x_2,\\ldots,x_{2^k}\\}\\subseteq V$ serta berlaku $T^m(x_m)\\ne0$ dan $T^{2m}(x_m)=0$ untuk setiap $m$ dengan $1\\le m\\le2^k$, tunjukkan bahwa $\\{x_1,x_2,x_4,\\ldots,x_{2^k}\\}$ merupakan himpunan bebas linear.\n\n(b) Jika $V$ berdimensi hingga, tunjukkan bahwa ada bilangan bulat positif $m$ sedemikian sehingga $\\ker(T^m)\\cap\\operatorname{Im}(T^m)=\\{0\\}$.",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Final, Nomor 3",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 3",
+      "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+      "note": "User-supplied University Challange ZIP: KOALA/final koala.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
+  },
+  {
+    "id": "koala-2025-final-04",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan $A$ dan $B$ adalah matriks-matriks berukuran $3\\times3$ dengan entri real yang memenuhi $A^2B+BA^2=2ABA$. Buktikan bahwa $(AB-BA)^3=O_3$ dengan $O_3$ adalah matriks berukuran $3\\times3$ yang setiap entrinya bernilai 0.",
+    "source": {
+      "kind": "competition",
+      "label": "KOALA 2025 — Final, Nomor 4",
+      "competition": "KOALA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 4",
+      "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+      "note": "User-supplied University Challange ZIP: KOALA/final koala.pdf, page 2; public URL documents competition, not the exam PDF."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;

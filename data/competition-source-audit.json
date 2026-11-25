@@ -10932,6 +10932,510 @@
         "renderStatus": "pending_visual_verification",
         "overallStatus": "not_passed"
       }
+    },
+    "koala-2025-p1-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 4",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 5",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 6",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 7",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 8",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 9",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 10",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 11",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 12",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 13",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 3,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 14",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 3,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 15",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 3,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-16": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 16",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 3,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-17": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 17",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 3,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 18",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 3,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-19": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 19",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 3,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p1-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 20",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 3,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 1.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p2-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 2.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p2-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 2.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p2-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 2.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-p2-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 4",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/babak-penyisihan-kompetisi-aljabar-mahasiswa-koala-2025-tingkat-perguruan-tinggi-digelar-secara-daring/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/Soal Sesi 2.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-final-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/final koala.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-final-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/final koala.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-final-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/final koala.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "koala-2025-final-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KOALA",
+      "year": 2025,
+      "number": "Nomor 4",
+      "sourceUrl": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
+        "page": 2,
+        "method": "User-supplied PDF text extraction and page image inspected",
+        "finding": "Transcribed question body; mathematical layout converted to LaTeX; website render not yet independently verified.",
+        "localSource": "University Challange/KOALA/final koala.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {
