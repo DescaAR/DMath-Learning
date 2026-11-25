@@ -17,7 +17,7 @@ for(const p of competitionProblems){
  assert.deepEqual(Object.keys(p).sort(),["difficulty","id","level","prompt","source","title"].concat("topic").sort(),p.id+" includes non-question data");
  assert.ok(["original","competition"].includes(p.source.kind));
  if(p.source.kind==="original")assert.equal(p.source.label,"DMath Learning Proposed");
- if(p.source.kind==="competition"){assert.ok(p.source.url?.startsWith("https://")&&p.source.year&&p.source.number&&p.source.competition,p.id+" has incomplete attribution");}
+ if(p.source.kind==="competition"){assert.ok(p.source.url?.startsWith("https://")&&p.source.year&&p.source.number&&p.source.stage&&p.source.competition,p.id+" has incomplete attribution");}
  const strings=[p.prompt];
  for(const s of strings){
   let matched=0;
@@ -73,6 +73,6 @@ assert.match(layout,/<html lang="id" data-language="id"/);
 assert.doesNotMatch(languageCompat,/MutationObserver|localStorage|translatePlainText|translateRichText/);
 assert.doesNotMatch(workspace,/Foundation|Intermediate|Advanced|Expert|Master|Problem of the Day|DAILY PROBLEMS/);
 assert.match(workspace,/Soal Harian/);
-const arMod={exports:{}};new Function("exports","module",ts.transpileModule(read("data/competition-archives.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(arMod.exports,arMod);const archives=arMod.exports.competitionArchives;assert.equal(new Set(archives.map(a=>a.id)).size,archives.length);for(const l of levels)assert.ok(archives.some(a=>a.level===l));for(const a of archives){assert.ok(levels.includes(a.level)&&a.year===2024&&a.url.startsWith("https://")&&a.provider&&a.note);assert.ok(["resmi","tautan","terbatas"].includes(a.status));}assert.match(workspace,/competitionArchives/);assert.match(workspace,/setYear/);assert.match(workspace,/setContest/);
-console.log("2024 archive audit:",archives.length,"source references.");
+const arMod={exports:{}};new Function("exports","module",ts.transpileModule(read("data/competition-archives.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(arMod.exports,arMod);const archives=arMod.exports.competitionArchives;assert.equal(new Set(archives.map(a=>a.id)).size,archives.length);for(const l of levels)assert.ok(archives.some(a=>a.level===l));for(const a of archives){assert.ok(levels.includes(a.level)&&a.year>=2024&&a.year<=2026&&a.stage&&a.url.startsWith("https://")&&a.provider&&a.note);assert.ok(["resmi","tautan","terbatas"].includes(a.status));}assert.match(workspace,/competitionArchives/);assert.match(workspace,/setYear/);assert.match(workspace,/setContest/);assert.match(workspace,/setStage/);for(const year of [2024,2025,2026])assert.ok(archives.some(a=>a.year===year));
+console.log("2024–2026 archive audit:",archives.length,"source references.");
 console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and dedicated daily routes. Public records contain questions and attribution only.");

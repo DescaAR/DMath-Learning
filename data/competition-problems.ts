@@ -1,6 +1,6 @@
 export const levels = ["SD","SMP","SMA","Kuliah"] as const;
 export type Level = typeof levels[number];
-export type Source = {kind:"original"|"competition";label:string;competition?:string;year?:number;number?:string;url?:string;note?:string};
+export type Source = {kind:"original"|"competition";label:string;competition?:string;year?:number;stage?:string;number?:string;url?:string;note?:string};
 export type CompetitionProblem = {id:string;level:Level;topic:string;difficulty:number;title:string;prompt:string;source:Source};
 export const competitionProblems: CompetitionProblem[] = [
   {
@@ -204,12 +204,13 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan semua fungsi $f:\\mathbb Z\\to\\mathbb Z$ yang memenuhi persamaan $$f(2a)+2f(b)=f(f(a+b))$$ untuk setiap $a,b\\in\\mathbb Z$.",
     "source": {
       "kind": "competition",
-      "label": "IMO 2019 — Problem 1",
+      "label": "IMO 2019 — Nomor 1",
       "competition": "IMO",
       "year": 2019,
-      "number": "1",
+      "number": "Nomor 1",
       "url": "https://www.imo-official.org/problems/2019/eng.pdf",
-      "note": "Pernyataan soal dalam bahasa Indonesia."
+      "note": "Pernyataan soal dalam bahasa Indonesia.",
+      "stage": "IMO"
     }
   },
   {
@@ -221,12 +222,13 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan semua pasangan bilangan kompleks $(a,b)$ yang memenuhi $|a|=|b|=1$ sedemikian sehingga $a+b+a\\overline{b}$ merupakan bilangan real.",
     "source": {
       "kind": "competition",
-      "label": "IMC 2024 — Day 1, Problem 1",
+      "label": "IMC 2024 — Hari 1, Nomor 1",
       "competition": "IMC",
       "year": 2024,
-      "number": "Day 1 / 1",
+      "number": "Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2024",
-      "note": "Pernyataan soal dalam bahasa Indonesia."
+      "note": "Pernyataan soal dalam bahasa Indonesia.",
+      "stage": "IMC"
     }
   },
   {
@@ -433,9 +435,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "OSN-K SD 2024 — Nomor 1",
       "competition": "OSN",
       "year": 2024,
-      "number": "Kabupaten/Kota, 1",
+      "number": "Nomor 1",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-tahun-2024.html?m=0",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "stage": "OSN-K"
     }
   },
   {
@@ -450,9 +453,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "OSN-P SD 2024 — Nomor 1",
       "competition": "OSN",
       "year": 2024,
-      "number": "Provinsi, 1",
+      "number": "Nomor 1",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "stage": "OSN-P"
     }
   },
   {
@@ -467,9 +471,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "OSN-P SD 2024 — Nomor 4",
       "competition": "OSN",
       "year": 2024,
-      "number": "Provinsi, 4",
+      "number": "Nomor 4",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "stage": "OSN-P"
     }
   },
   {
@@ -484,9 +489,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "OSN-P SD 2024 — Nomor 18",
       "competition": "OSN",
       "year": 2024,
-      "number": "Provinsi, 18",
+      "number": "Nomor 18",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "stage": "OSN-P"
     }
   },
   {
@@ -501,9 +507,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "OSN-K SMP 2024 — Nomor 9",
       "competition": "OSN",
       "year": 2024,
-      "number": "Kabupaten/Kota, 9",
+      "number": "Nomor 9",
       "url": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "stage": "OSN-K"
     }
   },
   {
@@ -518,9 +525,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "OSN-K SMP 2024 — Nomor 8",
       "competition": "OSN",
       "year": 2024,
-      "number": "Kabupaten/Kota, 8",
+      "number": "Nomor 8",
       "url": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa. Pilihan B dan C sama nilainya pada salinan sumber."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa. Pilihan B dan C sama nilainya pada salinan sumber.",
+      "stage": "OSN-K"
     }
   },
   {
@@ -535,9 +543,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "OSN SMA 2024 — Hari 1, Nomor 1",
       "competition": "OSN",
       "year": 2024,
-      "number": "Nasional, Hari 1, 1",
+      "number": "Hari 1, Nomor 1",
       "url": "https://www.aiairyn.com/2024/08/salinan-soal-osn-sma-2024-bidang.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "stage": "OSN Nasional"
     }
   },
   {
@@ -552,9 +561,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IMO 2024 — Nomor 1",
       "competition": "IMO",
       "year": 2024,
-      "number": "1",
+      "number": "Nomor 1",
       "url": "https://www.imo-official.org/problems/2024/",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "stage": "IMO"
     }
   },
   {
@@ -569,9 +579,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IMO 2024 — Nomor 2",
       "competition": "IMO",
       "year": 2024,
-      "number": "2",
+      "number": "Nomor 2",
       "url": "https://www.imo-official.org/problems/2024/",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "stage": "IMO"
     }
   },
   {
@@ -586,9 +597,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "APMO 2024 — Nomor 3",
       "competition": "APMO",
       "year": 2024,
-      "number": "3",
+      "number": "Nomor 3",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "stage": "APMO"
     }
   },
   {
@@ -603,9 +615,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "ON-MIPA 2024 — Wilayah, Hari 1, Isian 1",
       "competition": "ON-MIPA",
       "year": 2024,
-      "number": "Wilayah, Hari 1, Isian 1",
+      "number": "Hari 1, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2024-wilayah/",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "stage": "ON-MIPA Wilayah"
     }
   },
   {
@@ -620,9 +633,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "ON-MIPA 2024 — Wilayah, Hari 1, Isian 3",
       "competition": "ON-MIPA",
       "year": 2024,
-      "number": "Wilayah, Hari 1, Isian 3",
+      "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2024-wilayah/",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "stage": "ON-MIPA Wilayah"
     }
   },
   {
@@ -637,9 +651,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IMC 2024 — Hari 1, Nomor 3",
       "competition": "IMC",
       "year": 2024,
-      "number": "Hari 1, 3",
+      "number": "Hari 1, Nomor 3",
       "url": "https://imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "stage": "IMC"
     }
   },
   {
@@ -654,9 +669,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IMC 2024 — Hari 2, Nomor 6",
       "competition": "IMC",
       "year": 2024,
-      "number": "Hari 2, 6",
+      "number": "Hari 2, Nomor 6",
       "url": "https://imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "stage": "IMC"
     }
   },
   {
@@ -673,7 +689,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "A1",
       "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "stage": "Putnam"
     }
   },
   {
@@ -690,7 +707,260 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "A2",
       "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "stage": "Putnam"
+    }
+  },
+  {
+    "id": "osnk-sd-2025-01",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Pengurutan bilangan",
+    "prompt": "Urutkan $75\\%$, $0{,}745$, $\\frac{67}{100}$, dan $\\frac23$ dari yang terkecil hingga terbesar. Pilihan: A. $\\frac23,\\frac{67}{100},0{,}745,75\\%$; B. $\\frac{67}{100},\\frac23,0{,}745,75\\%$; C. $\\frac23,\\frac{67}{100},75\\%,0{,}745$; D. $\\frac{67}{100},\\frac23,75\\%,0{,}745$.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2025 — Nomor 1",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K",
+      "number": "Nomor 1",
+      "url": "https://www.defantri.com/2026/03/soal-dan-pembahasan-osnk-2025-matematika-sd.html",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnk-sd-2025-03",
+    "level": "SD",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Kubus yang dicat",
+    "prompt": "Permukaan sebuah kubus dengan rusuk 4 cm dicat merah. Kubus tersebut dibagi menjadi kubus-kubus kecil dengan rusuk 1 cm. Berapa banyak kubus kecil yang mempunyai tepat dua sisi merah? Pilihan: A. 16; B. 24; C. 32; D. 48.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2025 — Nomor 3",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K",
+      "number": "Nomor 3",
+      "url": "https://www.defantri.com/2026/03/soal-dan-pembahasan-osnk-2025-matematika-sd.html",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnk-sd-2026-05",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Pertukaran huruf",
+    "prompt": "Susunan huruf KELAPA hendak diubah menjadi KEPALA. Dalam setiap langkah, hanya dua huruf yang bersebelahan yang boleh ditukar. Tentukan jumlah langkah minimum yang diperlukan.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2026 — Nomor 5",
+      "competition": "OSN",
+      "year": 2026,
+      "stage": "OSN-K",
+      "number": "Nomor 5",
+      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnk-sd-2026-10",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Kelipatan persekutuan terkecil",
+    "prompt": "Misalkan $A$ dan $B$ adalah dua bilangan prima yang berbeda. Jika $C=\\operatorname{KPK}(4B,5A,18)$, tentukan nilai terkecil yang mungkin untuk $C$.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2026 — Nomor 10",
+      "competition": "OSN",
+      "year": 2026,
+      "stage": "OSN-K",
+      "number": "Nomor 10",
+      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnk-sd-2026-20",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Keterbagian",
+    "prompt": "Carilah bilangan terbesar kurang dari 4000 yang habis dibagi 3 dan bersisa 2 apabila dibagi 4.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2026 — Nomor 20",
+      "competition": "OSN",
+      "year": 2026,
+      "stage": "OSN-K",
+      "number": "Nomor 20",
+      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnk-smp-2025-01",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 3,
+    "title": "Batas rata-rata",
+    "prompt": "Suatu kumpulan data terdiri atas 35 bilangan bulat positif dengan median 22 dan nilai maksimum 29. Jika $x$ dan $y$ masing-masing menyatakan rata-rata minimum dan maksimum yang mungkin, tentukan $x+y$. Pilihan: A. 40,4; B. 37,4; C. 36,4; D. 25,4.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMP 2025 — Nomor 1",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K",
+      "number": "Nomor 1",
+      "url": "https://www.catatanmatematika.com/2026/05/soal-osn-k-smp-2025.html",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnp-smp-2025-02",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Pangkat dua",
+    "prompt": "Jumlah tiga bilangan berbeda adalah 6208. Setiap bilangan merupakan perpangkatan 2 dengan eksponen bilangan bulat positif. Tentukan jumlah ketiga eksponen tersebut.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-P SMP 2025 — Nomor 2",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-P",
+      "number": "Nomor 2",
+      "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/provinsi",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnp-smp-2025-03",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Representasi bilangan",
+    "prompt": "Diketahui $(1P3)_m=(2Q4)_{m-2}$ dengan $m<8$. Notasi $(a_na_{n-1}\\ldots a_0)_b$ menyatakan representasi bilangan dalam basis bilangan bulat $b>1$, dengan setiap digit memenuhi $0\\le a_k<b$. Tentukan $m+P+Q$.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-P SMP 2025 — Nomor 3",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-P",
+      "number": "Nomor 3",
+      "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/provinsi",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnk-sma-2026-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Ekspresi tiga variabel",
+    "prompt": "Misalkan $x,y,z\\in\\mathbb R$ memenuhi $x-y=1$, $y-z=2$, dan $xyz=77$. Tentukan nilai $$\\frac{x}{yz}+\\frac{y}{xz}+\\frac{z}{xy}-\\left(\\frac1x+\\frac1y+\\frac1z\\right).$$",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMA 2026 — Nomor 1",
+      "competition": "OSN",
+      "year": 2026,
+      "stage": "OSN-K",
+      "number": "Nomor 1",
+      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sma-2026.html",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "osnk-sma-2026-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Digit dalam urutan naik",
+    "prompt": "Tentukan banyak bilangan bulat pada daftar $456,457,\\ldots,2026$ yang digit-digitnya berbeda dan tersusun naik dari kiri ke kanan.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMA 2026 — Nomor 5",
+      "competition": "OSN",
+      "year": 2026,
+      "stage": "OSN-K",
+      "number": "Nomor 5",
+      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sma-2026.html",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "onmipa-2025-w-h1-i1",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Orde elemen grup hasil kali",
+    "prompt": "Tentukan banyak elemen grup $\\mathbb Z_{12}\\times\\mathbb Z_6$ yang berorde 6.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2025 — Hari 1, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2025,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "onmipa-2025-w-h1-i3",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Limit jumlah pangkat",
+    "prompt": "Misalkan $A_1,\\ldots,A_k$ merupakan bilangan real nonnegatif. Tentukan $$\\lim_{n\\to\\infty}\\left(\\sum_{j=1}^{k}A_j^n\\right)^{1/n}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2025 — Hari 1, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2025,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "onmipa-2026-w-h1-i1",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Penempatan bola ke kotak",
+    "prompt": "Sebanyak $n$ bola yang berbeda ditempatkan ke dalam $n$ kotak yang berbeda. Tentukan banyak cara penempatan jika tepat satu kotak dibiarkan kosong.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2026 — Hari 1, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2026,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+    }
+  },
+  {
+    "id": "onmipa-2026-w-h1-i3",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Limit supremum fungsi",
+    "prompt": "Untuk setiap $n\\in\\mathbb N$, misalkan $f_n:[0,1]\\to\\mathbb R$ didefinisikan oleh $f_n(x)=n^2x^2(1-x)^n$. Tentukan $$\\lim_{n\\to\\infty}\\sup_{0\\le x\\le1}f_n(x).$$",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2026 — Hari 1, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2026,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
+      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
     }
   }
 ];

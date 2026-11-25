@@ -1,5 +1,5 @@
 import type { Level } from "@/data/competition-problems";
-export type CompetitionArchive={id:string;level:Level;competition:string;year:number;round:string;url:string;provider:string;status:"resmi"|"tautan"|"terbatas";note:string;numberCount?:number};
+export type CompetitionArchive={id:string;level:Level;competition:string;year:number;stage:string;round:string;url:string;provider:string;status:"resmi"|"tautan"|"terbatas";note:string;numberCount?:number};
 export const competitionArchives: CompetitionArchive[] = [
   {
     "id": "osnk-sd",
@@ -10,7 +10,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1lctOFVATo7DeBOba_78k4yRl7etAGSfi/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN-K"
   },
   {
     "id": "osnp-sd",
@@ -21,7 +22,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/13LOhovBg7FknahJpX3xS8SnyeerK8bn/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN-P"
   },
   {
     "id": "osn-sd-t1",
@@ -32,7 +34,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1LdmqS0EMG_GtOTSg_kxwkyTOWCm8ANco/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN Nasional"
   },
   {
     "id": "osn-sd-t2",
@@ -43,7 +46,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1HqKxxdxjKfXA4ClNyeSO6oqbjt0SIucV/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN Nasional"
   },
   {
     "id": "osn-sd-e",
@@ -54,7 +58,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1hH2zqGbdzMkwp45WKTfpRc2RUdxFe_DW/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN Nasional"
   },
   {
     "id": "osnk-smp",
@@ -65,7 +70,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-smp-tahun-2024.html",
     "provider": "Folder OSN",
     "status": "tautan",
-    "note": "Arsip pihak ketiga; beberapa soal terlihat, paket penuh belum diperiksa."
+    "note": "Arsip pihak ketiga; beberapa soal terlihat, paket penuh belum diperiksa.",
+    "stage": "OSN-K"
   },
   {
     "id": "osnp-smp",
@@ -76,7 +82,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://www.folderosn.com/2025/01/download-soal-osn-matematika-smp-tahun.html",
     "provider": "Folder OSN",
     "status": "tautan",
-    "note": "Tautan unduh tersedia pada halaman sumber; dokumen belum diperiksa."
+    "note": "Tautan unduh tersedia pada halaman sumber; dokumen belum diperiksa.",
+    "stage": "OSN-P"
   },
   {
     "id": "osn-smp-h1",
@@ -87,7 +94,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1TGX4eJCP-6W-07-asCkqdJbPokQsOgM6/view",
     "provider": "Pejuang OSN (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN Nasional"
   },
   {
     "id": "osn-smp-h2",
@@ -98,7 +106,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1aS8w4K3keEbT4Aw6wxiaJTe1gsFYS2Q3/view",
     "provider": "Pejuang OSN (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN Nasional"
   },
   {
     "id": "osnk-sma-1",
@@ -109,7 +118,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1m6s_-HKN767-nOW_0MMxwjrQjAG6d7_z/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN-K"
   },
   {
     "id": "osnk-sma-2",
@@ -120,7 +130,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1Rgse1-Kmp3vg0mXvfZsL_KdVUFjbfSq8/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN-K"
   },
   {
     "id": "osnk-sma-3",
@@ -131,7 +142,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1z0YhJYk9yrh2Shd8Z4goeNZCediGA4Zr/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN-K"
   },
   {
     "id": "osnp-sma",
@@ -142,7 +154,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1HuGpvjsKbAybNr7O860L0uJ0Z8G0zFXF/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Arsip pihak ketiga; berkas sumber juga memuat jawaban."
+    "note": "Arsip pihak ketiga; berkas sumber juga memuat jawaban.",
+    "stage": "OSN-P"
   },
   {
     "id": "osn-sma",
@@ -153,7 +166,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://drive.google.com/file/d/1UQTeKFt6Cv3wH954vjH582eh-qc51md1/view",
     "provider": "Defantri (arsip pihak ketiga)",
     "status": "tautan",
-    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa."
+    "note": "Tautan dokumen ditemukan; isi semua halaman belum diperiksa.",
+    "stage": "OSN Nasional"
   },
   {
     "id": "imo-sma",
@@ -165,7 +179,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "provider": "International Mathematical Olympiad",
     "status": "resmi",
     "note": "Enam soal pada halaman penyelenggara.",
-    "numberCount": 6
+    "numberCount": 6,
+    "stage": "IMO"
   },
   {
     "id": "apmo-sma",
@@ -177,7 +192,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "provider": "APMO",
     "status": "resmi",
     "note": "Naskah soal resmi berisi lima nomor, diperiksa.",
-    "numberCount": 5
+    "numberCount": 5,
+    "stage": "APMO"
   },
   {
     "id": "onmipa-w",
@@ -188,7 +204,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://wildan-wicaksono.github.io/files/Olympiad/ONMIPA_Wil2024.pdf",
     "provider": "Arsip Wildan Wicaksono",
     "status": "tautan",
-    "note": "Dokumen pihak ketiga memuat soal dan pembahasan, bukan naskah resmi; daftar isi hari 1 dan 2 diperiksa."
+    "note": "Dokumen pihak ketiga memuat soal dan pembahasan, bukan naskah resmi; daftar isi hari 1 dan 2 diperiksa.",
+    "stage": "ON-MIPA Wilayah"
   },
   {
     "id": "onmipa-n",
@@ -199,7 +216,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://wildan-wicaksono.github.io/files/Olympiad/ONMIPA_Nas2024.pdf",
     "provider": "Arsip Wildan Wicaksono",
     "status": "tautan",
-    "note": "Dokumen pihak ketiga memuat soal dan pembahasan; daftar isi hari 1 dan 2 diperiksa."
+    "note": "Dokumen pihak ketiga memuat soal dan pembahasan; daftar isi hari 1 dan 2 diperiksa.",
+    "stage": "ON-MIPA Nasional"
   },
   {
     "id": "imc-h1",
@@ -211,7 +229,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "provider": "International Mathematics Competition",
     "status": "resmi",
     "note": "Naskah soal resmi diperiksa.",
-    "numberCount": 5
+    "numberCount": 5,
+    "stage": "IMC"
   },
   {
     "id": "imc-h2",
@@ -223,7 +242,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "provider": "International Mathematics Competition",
     "status": "resmi",
     "note": "Naskah soal resmi diperiksa.",
-    "numberCount": 5
+    "numberCount": 5,
+    "stage": "IMC"
   },
   {
     "id": "putnam",
@@ -235,7 +255,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "provider": "Mathematical Association of America",
     "status": "resmi",
     "note": "Naskah soal resmi dua halaman diperiksa.",
-    "numberCount": 12
+    "numberCount": 12,
+    "stage": "Putnam"
   },
   {
     "id": "sasmo-sd",
@@ -246,7 +267,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2024/",
     "provider": "SIMCC",
     "status": "terbatas",
-    "note": "Paket 2024 tersedia di portal resmi; membutuhkan pendaftaran/masuk akun."
+    "note": "Paket 2024 tersedia di portal resmi; membutuhkan pendaftaran/masuk akun.",
+    "stage": "SASMO"
   },
   {
     "id": "seamo-sd",
@@ -257,7 +279,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://seamo-official.org/page/guidelines",
     "provider": "SEAMO",
     "status": "terbatas",
-    "note": "Portal peserta menyediakan soal terdahulu. Paket 2024 belum dapat diperiksa."
+    "note": "Portal peserta menyediakan soal terdahulu. Paket 2024 belum dapat diperiksa.",
+    "stage": "SEAMO"
   },
   {
     "id": "sasmo-smp",
@@ -268,7 +291,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2024/",
     "provider": "SIMCC",
     "status": "terbatas",
-    "note": "Paket 2024 tersedia di portal resmi; membutuhkan pendaftaran/masuk akun."
+    "note": "Paket 2024 tersedia di portal resmi; membutuhkan pendaftaran/masuk akun.",
+    "stage": "SASMO"
   },
   {
     "id": "seamo-smp",
@@ -279,7 +303,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://seamo-official.org/page/guidelines",
     "provider": "SEAMO",
     "status": "terbatas",
-    "note": "Portal peserta menyediakan soal terdahulu. Paket 2024 belum dapat diperiksa."
+    "note": "Portal peserta menyediakan soal terdahulu. Paket 2024 belum dapat diperiksa.",
+    "stage": "SEAMO"
   },
   {
     "id": "sasmo-sma",
@@ -290,7 +315,8 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2024/",
     "provider": "SIMCC",
     "status": "terbatas",
-    "note": "Paket 2024 tersedia di portal resmi; membutuhkan pendaftaran/masuk akun."
+    "note": "Paket 2024 tersedia di portal resmi; membutuhkan pendaftaran/masuk akun.",
+    "stage": "SASMO"
   },
   {
     "id": "seamo-sma",
@@ -301,6 +327,362 @@ export const competitionArchives: CompetitionArchive[] = [
     "url": "https://seamo-official.org/page/guidelines",
     "provider": "SEAMO",
     "status": "terbatas",
-    "note": "Portal peserta menyediakan soal terdahulu. Paket 2024 belum dapat diperiksa."
+    "note": "Portal peserta menyediakan soal terdahulu. Paket 2024 belum dapat diperiksa.",
+    "stage": "SEAMO"
+  },
+  {
+    "id": "osn-sd-2025-k",
+    "level": "SD",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN-K",
+    "round": "Kabupaten/Kota",
+    "url": "https://www.defantri.com/2017/10/kumpulan-soal-osn-matematika-sdmi.html",
+    "provider": "Defantri",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-sd-2025-p",
+    "level": "SD",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN-P",
+    "round": "Provinsi",
+    "url": "https://www.defantri.com/2017/10/kumpulan-soal-osn-matematika-sdmi.html",
+    "provider": "Defantri",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-sd-2025-semi",
+    "level": "SD",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN Nasional",
+    "round": "Semifinal",
+    "url": "https://www.defantri.com/2017/10/kumpulan-soal-osn-matematika-sdmi.html",
+    "provider": "Defantri",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-sd-2025-final",
+    "level": "SD",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN Nasional",
+    "round": "Final",
+    "url": "https://www.defantri.com/2017/10/kumpulan-soal-osn-matematika-sdmi.html",
+    "provider": "Defantri",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-sma-2025-k",
+    "level": "SMA",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN-K",
+    "round": "Kabupaten/Kota",
+    "url": "https://www.defantri.com/2013/04/materi-soal-osk-osp-matematika-sma.html?m=1",
+    "provider": "Defantri",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-sma-2025-p",
+    "level": "SMA",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN-P",
+    "round": "Provinsi",
+    "url": "https://www.defantri.com/2013/04/materi-soal-osk-osp-matematika-sma.html?m=1",
+    "provider": "Defantri",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-sma-2025-semi",
+    "level": "SMA",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN Nasional",
+    "round": "Semifinal",
+    "url": "https://www.defantri.com/2013/04/materi-soal-osk-osp-matematika-sma.html?m=1",
+    "provider": "Defantri",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-sma-2025-final",
+    "level": "SMA",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN Nasional",
+    "round": "Final",
+    "url": "https://www.defantri.com/2013/04/materi-soal-osk-osp-matematika-sma.html?m=1",
+    "provider": "Defantri",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-smp-2025-k",
+    "level": "SMP",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN-K",
+    "round": "Kabupaten/Kota",
+    "url": "https://www.catatanmatematika.com/2026/05/soal-osn-k-smp-2025.html",
+    "provider": "Catatan Matematika",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-smp-2025-p",
+    "level": "SMP",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN-P",
+    "round": "Provinsi",
+    "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/provinsi",
+    "provider": "AccelerateMyEdu",
+    "status": "tautan",
+    "note": "Salinan dari buku Puspresnas 2025; berisi 20 isian menurut laman sumber.",
+    "numberCount": 20
+  },
+  {
+    "id": "osn-smp-2025-semi",
+    "level": "SMP",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN Nasional",
+    "round": "Semifinal",
+    "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/semifinal",
+    "provider": "AccelerateMyEdu",
+    "status": "tautan",
+    "note": "Laman sumber menampilkan 10 soal.",
+    "numberCount": 10
+  },
+  {
+    "id": "osn-smp-2025-final",
+    "level": "SMP",
+    "competition": "OSN",
+    "year": 2025,
+    "stage": "OSN Nasional",
+    "round": "Final",
+    "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/final",
+    "provider": "AccelerateMyEdu",
+    "status": "tautan",
+    "note": "Laman sumber menampilkan 10 soal.",
+    "numberCount": 10
+  },
+  {
+    "id": "osn-sd-2026-k",
+    "level": "SD",
+    "competition": "OSN",
+    "year": 2026,
+    "stage": "OSN-K",
+    "round": "Kabupaten/Kota",
+    "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html",
+    "provider": "Catatan Matematika",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-smp-2026-k",
+    "level": "SMP",
+    "competition": "OSN",
+    "year": 2026,
+    "stage": "OSN-K",
+    "round": "Kabupaten/Kota",
+    "url": "https://www.m4th-lab.net/artikel/download-soal-asli-dan-pembahasan-osn-k-matematika-smp-2026",
+    "provider": "m4th-lab",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "osn-sma-2026-k",
+    "level": "SMA",
+    "competition": "OSN",
+    "year": 2026,
+    "stage": "OSN-K",
+    "round": "Kabupaten/Kota",
+    "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sma-2026.html",
+    "provider": "Catatan Matematika",
+    "status": "tautan",
+    "note": "Rujukan paket pada arsip pihak ketiga. Naskah asli lengkap belum diperiksa."
+  },
+  {
+    "id": "imo-2025",
+    "level": "SMA",
+    "competition": "IMO",
+    "year": 2025,
+    "stage": "IMO",
+    "round": "Hari 1 dan 2",
+    "url": "https://www.imo-official.org/problems/2025/",
+    "provider": "International Mathematical Olympiad",
+    "status": "resmi",
+    "note": "Laman penyelenggara memuat naskah menurut nomor asli.",
+    "numberCount": 6
+  },
+  {
+    "id": "apmo-2025",
+    "level": "SMA",
+    "competition": "APMO",
+    "year": 2025,
+    "stage": "APMO",
+    "round": "Paket kompetisi",
+    "url": "https://www.apmo-official.org/problems",
+    "provider": "APMO",
+    "status": "resmi",
+    "note": "Pilih naskah tahun 2025 pada indeks resmi; dokumen belum diperiksa per halaman.",
+    "numberCount": 5
+  },
+  {
+    "id": "imc-2025-h1",
+    "level": "Kuliah",
+    "competition": "IMC",
+    "year": 2025,
+    "stage": "IMC",
+    "round": "Hari 1",
+    "url": "https://www.imc-math.org.uk/?item=problems&year=2025",
+    "provider": "International Mathematics Competition",
+    "status": "resmi",
+    "note": "Pilih dokumen soal Hari 1 pada laman resmi."
+  },
+  {
+    "id": "imc-2025-h2",
+    "level": "Kuliah",
+    "competition": "IMC",
+    "year": 2025,
+    "stage": "IMC",
+    "round": "Hari 2",
+    "url": "https://www.imc-math.org.uk/?item=problems&year=2025",
+    "provider": "International Mathematics Competition",
+    "status": "resmi",
+    "note": "Pilih dokumen soal Hari 2 pada laman resmi."
+  },
+  {
+    "id": "onmipa-2025-w",
+    "level": "Kuliah",
+    "competition": "ON-MIPA",
+    "year": 2025,
+    "stage": "ON-MIPA Wilayah",
+    "round": "Hari 1 dan 2",
+    "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
+    "provider": "Arsip Filza Buana",
+    "status": "tautan",
+    "note": "Salinan soal beserta pembahasan pihak ketiga; nomor asli dipertahankan sesuai salinan."
+  },
+  {
+    "id": "imo-2026",
+    "level": "SMA",
+    "competition": "IMO",
+    "year": 2026,
+    "stage": "IMO",
+    "round": "Hari 1 dan 2",
+    "url": "https://www.imo-official.org/problems/2026/",
+    "provider": "International Mathematical Olympiad",
+    "status": "resmi",
+    "note": "Laman penyelenggara memuat naskah menurut nomor asli.",
+    "numberCount": 6
+  },
+  {
+    "id": "apmo-2026",
+    "level": "SMA",
+    "competition": "APMO",
+    "year": 2026,
+    "stage": "APMO",
+    "round": "Paket kompetisi",
+    "url": "https://www.apmo-official.org/problems",
+    "provider": "APMO",
+    "status": "resmi",
+    "note": "Pilih naskah tahun 2026 pada indeks resmi; dokumen belum diperiksa per halaman.",
+    "numberCount": 5
+  },
+  {
+    "id": "imc-2026-h1",
+    "level": "Kuliah",
+    "competition": "IMC",
+    "year": 2026,
+    "stage": "IMC",
+    "round": "Hari 1",
+    "url": "https://www.imc-math.org.uk/?item=problems&year=2026",
+    "provider": "International Mathematics Competition",
+    "status": "resmi",
+    "note": "Pilih dokumen soal Hari 1 pada laman resmi."
+  },
+  {
+    "id": "imc-2026-h2",
+    "level": "Kuliah",
+    "competition": "IMC",
+    "year": 2026,
+    "stage": "IMC",
+    "round": "Hari 2",
+    "url": "https://www.imc-math.org.uk/?item=problems&year=2026",
+    "provider": "International Mathematics Competition",
+    "status": "resmi",
+    "note": "Pilih dokumen soal Hari 2 pada laman resmi."
+  },
+  {
+    "id": "onmipa-2026-w",
+    "level": "Kuliah",
+    "competition": "ON-MIPA",
+    "year": 2026,
+    "stage": "ON-MIPA Wilayah",
+    "round": "Hari 1 dan 2",
+    "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
+    "provider": "Arsip Filza Buana",
+    "status": "tautan",
+    "note": "Salinan soal beserta pembahasan pihak ketiga; nomor asli dipertahankan sesuai salinan."
+  },
+  {
+    "id": "putnam-2025",
+    "level": "Kuliah",
+    "competition": "Putnam",
+    "year": 2025,
+    "stage": "Putnam",
+    "round": "Sesi A dan B",
+    "url": "https://maa.org/maa-putnam-archive/",
+    "provider": "Mathematical Association of America",
+    "status": "resmi",
+    "note": "Pilih 2025 Putnam Problems pada indeks resmi."
+  },
+  {
+    "id": "sasmo-2025-sd",
+    "level": "SD",
+    "competition": "SASMO",
+    "year": 2025,
+    "stage": "SASMO",
+    "round": "Kelas 1–6",
+    "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2025/",
+    "provider": "SIMCC",
+    "status": "terbatas",
+    "note": "Portal penyelenggara; akses naskah per kelas belum diperiksa."
+  },
+  {
+    "id": "sasmo-2025-smp",
+    "level": "SMP",
+    "competition": "SASMO",
+    "year": 2025,
+    "stage": "SASMO",
+    "round": "Kelas 7–9",
+    "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2025/",
+    "provider": "SIMCC",
+    "status": "terbatas",
+    "note": "Portal penyelenggara; akses naskah per kelas belum diperiksa."
+  },
+  {
+    "id": "sasmo-2025-sma",
+    "level": "SMA",
+    "competition": "SASMO",
+    "year": 2025,
+    "stage": "SASMO",
+    "round": "Kelas 10–11",
+    "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2025/",
+    "provider": "SIMCC",
+    "status": "terbatas",
+    "note": "Portal penyelenggara; akses naskah per kelas belum diperiksa."
   }
 ];
