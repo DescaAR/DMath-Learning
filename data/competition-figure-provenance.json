@@ -171,6 +171,21 @@
     "imo-2023-05": {
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
       "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
+    },
+    "calculus-cup-xv-2024-final-01": {
+      "localSource": "Soal Final.pdf",
+      "page": 1,
+      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending."
+    },
+    "calculus-cup-xv-2024-final-02": {
+      "localSource": "Soal Final.pdf",
+      "page": 1,
+      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending."
+    },
+    "calculus-cup-xv-2024-final-03": {
+      "localSource": "Soal Final.pdf",
+      "page": 1,
+      "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending."
     }
   },
   "table": {

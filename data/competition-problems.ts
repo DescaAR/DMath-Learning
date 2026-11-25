@@ -19378,12 +19378,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Turunan dari fungsi $f(x)=x^3\\sqrt{2x^2-3x}$ adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 1",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 1",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 1",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19395,12 +19395,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan divergensi dari medan vektor\n\n$$\\bar F=xz^2\\mathbf i-3y^3z^2\\mathbf j+xy^2z^2\\mathbf k$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 2",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 2",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 2",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19412,12 +19412,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitunglah nilai dari integral berikut!\n\n$$\\int_0^1\\int_1^2(x^2+y^2)\\,dy\\,dx$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 3",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 3",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 3",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19429,12 +19429,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Grafik fungsi $g(x)=\\cos(x+\\frac{\\pi}{3})$ simetri terhadap $\\cdots$.",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 4",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 4",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 4",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19446,12 +19446,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $\\mathbf F(x,y)=(10x^2+8y)\\mathbf i+(8x-7y^2)\\mathbf j$. Hitunglah integral garis $\\int_C\\mathbf F(\\mathbf r).d\\mathbf r$ dengan $C$ adalah garis yang menghubungkan titik (0,0) ke (1,0) dilanjutkan dengan garis dari titik (1,0) ke (1,2).",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 5",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 5",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 5",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19463,12 +19463,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Jika $S$ adalah daerah persegi panjang di bidang $xy$ yang dibatasi oleh $x=0$, $x=3$, $y=0$, dan $y=1$, maka tentukan luas permukaan dari $f(x,y)=\\sqrt{9-x^2}$ yang diproyeksikan ke $S$ !",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 6",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 6",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 6",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19480,12 +19480,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Diketahui $y=\\frac{x^m+1}{x-1}$ dengan $m>3$. Nilai dari $y'''(0)$ adalah...",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 7",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 7",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 7",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19497,12 +19497,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Suatu elips berfokus di titik $(-4,1)$ dan $(0,1)$. Jika elips tersebut melalui titik $(5,13)$ maka luas elips tersebut adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 8",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 8",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 8",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19514,12 +19514,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukanlah\n\n$$\\int\\frac{\\ln^3(x^3)}{x}dx$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 9",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 9",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 9",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19531,12 +19531,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitunglah panjang kurva dengan persamaan $16x^2y-x^6-8=0,\\ 1\\le x\\le2$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 10",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 10",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 10",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19548,12 +19548,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan daerah definisi dari fungsi $f(x)=\\ln\\left(\\frac{\\sqrt{x+1}}{x-1}\\right)$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 11",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 11",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 11",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19565,12 +19565,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $\\mathbf F(x,y)=(2x+xy^2)\\mathbf i+(x^2y-2y)\\mathbf j$. Hitunglah $\\oint_C\\mathbf F(\\mathbf r).d\\mathbf r$ dengan $C$ adalah lingkaran satuan dengan pusat (0,0).",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 12",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 12",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 12",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19582,12 +19582,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitung luas daerah tertutup yang dibatasi oleh kurva $r=4\\sin\\sin 3\\theta$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 13",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 13",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 13",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19599,12 +19599,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Jika $f(x)=\\sum_{n=1}^\\infty\\frac{4^n}{n}x^n$ dan $g(x)=\\sum_{n=1}^\\infty\\frac{n}{(n^2+1)}x^n$ maka tiga suku pertama yang tidak nol dari perkalian $f(x)g(x)$ adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 14",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 14",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 14",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19616,12 +19616,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Diketahui deret pangkat $\\frac1{1-x}=\\sum_{n=0}^\\infty x^n$, maka deret pangkat dari $\\frac{x^3}{x+2}$ adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 15",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 15",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 15",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19633,12 +19633,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitunglah panjang kurva dengan persamaan sebagai berikut!\n\n$$x=\\frac1{2y^3}+\\frac{y^5}{30},\\ 1\\le y\\le2$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 16",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 16",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 16",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19650,12 +19650,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Turunan dari fungsi $f(x)=\\frac{\\sin(e^{3x})}{\\tan^2(x)}$ adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 17",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 17",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 17",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19667,12 +19667,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitunglah integral tak wajar $\\int_{-\\infty}^\\infty\\frac{x^2dx}{(1-x^3)^2}$ jika ada!",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 18",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 18",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 18",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19684,12 +19684,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $z=\\sin 2x\\cos 3y$, Tentukan $\\frac{\\partial^2z}{\\partial x\\partial y}$!",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 19",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 19",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 19",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19701,12 +19701,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitunglah $\\int\\cos\\sinh(1+\\sin(x))dx$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 1, Nomor 20",
+      "label": "Calculus Cup XV 2024 — Penyisihan 1, Nomor 20",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 1",
       "number": "Nomor 20",
-      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 1.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19718,12 +19718,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitunglah nilai dari integral berikut!\n\n$$\\int_0^1\\int_0^1(yx+2y^3)\\,dy\\,dx$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 1",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 1",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 1",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19735,12 +19735,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan hasil dari integral lipat tiga berikut ini!\n\n$$\\int_0^1\\int_1^2\\int_2^3 2x+y^3\\,dz\\,dy\\,dx$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 2",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 2",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 2",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19752,12 +19752,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan luas permukaan $S$ dari 2 dimensi parabola $z=x^2+y^2$ yang diproyeksikan pada bidang $z=4$!",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 3",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 3",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 3",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19769,12 +19769,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Sketsalah grafik fungsi $f(x)=\\ln(|\\sin(x)|+1)$ pada interval $0\\le x\\le2\\pi$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 4",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 4",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 4",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19786,12 +19786,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan nilai limit fungsi trigonometri berikut!\n\n$$\\lim_{t\\to0}\\frac{\\sin(3r)+4t}{t\\sec(t)}$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 5",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 5",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 5",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19803,12 +19803,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan hasil dari\n\n$$\\int_{\\frac{\\pi}{12}}^{\\frac{\\pi}{8}}\\frac{\\csc(4P)\\cot(4P)}{\\sqrt[5]{3+\\csc(4P)}}\\,dP$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 6",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 6",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 6",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19820,12 +19820,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan apakah barisan $a_n=(1+3n)^{\\frac1{3n}}$ konvergen atau divergen? Jika konvergen, tentukan limitnya!",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 7",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 7",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 7",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19837,12 +19837,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Diketahui benda $S$ dibatasi oleh $x+y+z=1$, $x=0$, $z=0$, kepadatan dari benda $S$ adalah $\\delta(x,y,z)=kxyz$, $k$ adalah konstanta. Tentukan massa dari benda tersebut!",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 8",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 8",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 8",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19854,12 +19854,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Jika:\n\n$$\\int\\frac{\\cos(4x)+\\cos(2x)}{2\\cos(2x)-1}dx=\\frac{\\cos(Px)\\tan(x)}2+\\frac{\\sin(x)}{2\\cos(x)}+\\frac{x^Q+Rx^2}{x+1}+C$$\n\nTentukan nilai dari $3P\\ (\\bmod(2Q+3R))$.",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 9",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 9",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 9",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19871,12 +19871,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan hasil dari\n\n$$\\int\\frac{x^3-8x^2-1}{(x+3)(x^2-4x+5)}dx$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 10",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 10",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 10",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19888,12 +19888,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $z=3x^2-5xy+3y^2$, Tentukan $\\frac{\\partial^2z}{\\partial y\\partial x}$!",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 11",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 11",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 11",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19905,12 +19905,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Andaikan vektor $F=(x+yz)\\mathbf i+(y+xz)\\mathbf j+(z-xy)\\mathbf k$. Tentukan integral garis $\\int_c F\\cdot dr$, Dimana $C$ merupakan kurva yang dinyatakan $x=2t,y=t^2,z=2t^3,0<t<1$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 12",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 12",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 12",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19922,12 +19922,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Diberikan lintasan $\\vec r(t)=\\begin{pmatrix}t\\\\t^2\\\\t^3\\end{pmatrix}$. Vektor normal satuan lintasan tersebut untuk $t=1$ adalah",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 13",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 13",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 13",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19939,12 +19939,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan nilai maksimum dan minimum fungsi $f(x)=\\cos^2(x)-2\\sin(x),\\ 0\\le x\\le2\\pi$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 14",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 14",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 14",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19956,12 +19956,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Diberikan permukaan $f(x,y)=xy+\\sqrt[3]{xy}$. Bidang $U$ menyinggung permukaan tersebut di titik $(1,1,2)$ sedangkan bidang $V$ menyinggung permukaan tersebut di titik $\\left(\\frac18,8,2\\right)$. Garis $g$ adalah perpotongan antara bidang $U$ dan $V$. Garis $g$ memotong bidang $xy$ di titik berkoordinat",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Penyisihan 2, Nomor 15",
+      "label": "Calculus Cup XV 2024 — Penyisihan 2, Nomor 15",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Penyisihan 2",
       "number": "Nomor 15",
-      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Penyisihan 2.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19973,12 +19973,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Gradien garis singgung kurva $y+\\cos\\cos(xy^2)+3x^2=4$ di titik $\\left(\\pi,\\frac12\\right)$ adalah $\\frac{\\sqrt a+\\pi}{b+c\\pi^2}$ dengan $a,b,c\\in Z$. Tentukan tripel $(a,b,c)$ yang memenuhi.",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 1",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 1",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 1",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -19990,12 +19990,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitung luas daerah tertutup yang dibatasi oleh kurva $r^2=8\\cos\\cos 2\\theta$.",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 2",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 2",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 2",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20007,12 +20007,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Suatu hiperbola mendatar mempunyai asimtot dengan persamaan $y=2x-5$ dan $y=-2x+7$. Jika jarak kedua puncak hiperbola tersebut adalah 6 maka persamaan hiperbola tersebut adalah $\\ldots$ (sajikan dalam bentuk $\\frac{(x-h)^2}{a^2}-\\frac{(y-k)^2}{b^2}=1$ atau $\\frac{(x-h)^2}{a^2}-\\frac{(y-k)^2}{b^2}=-1$).",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 3",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 3",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 3",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20024,12 +20024,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Garis-garis singgung lintasan $4x^3+7xy^2=2y^4$ di titik berabsis 1 berpotongan di titik $(h,k)$. Tentukan koordinat $(h,k)$.",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 4",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 4",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 4",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20041,12 +20041,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan himpunan kekonvergenan deret pangkat berikut ini.\n\n$$\\sum_{n=0}^\\infty\\frac{(x-2)^n}{n^2+1}$$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 5",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 5",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 5",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20058,12 +20058,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Turunan kedua dari fungsi $f(x)=\\ln(\\tan x^3)$ adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 6",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 6",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 6",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20075,12 +20075,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $y=x^3\\sinh^{-1}(\\sinh(x))$, maka $D_xy=\\cdots$.",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 7",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 7",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 7",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20092,12 +20092,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Hitung nilai minimum dari $f(x,y)=(x+2)^2-y$ untuk $(x,y)$ yang memenuhi $x+y-xy=-31$ adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 8",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 8",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 8",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20109,12 +20109,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Andaikan vektor $F=(x^2-3z)\\mathbf i+(y+2x)\\mathbf j+(z^2-xy)\\mathbf k$. Tentukan integral garis $\\int_c F\\cdot dr$, Dimana $C$ merupakan kurva bergaris lurus dari $(0,0,0)$ ke $(1,0,0)$ kemudian ke $(1,1,0)$ dan kemudian ke $(1,1,1)$. Dimana $x=2t,y=t^2,z=2t^3,0<t<1$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 9",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 9",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 9",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20126,12 +20126,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Nilai maksimum dari $f(x,y,z)=2x^2+3y^2+5z^2$ untuk $(x,y,z)$ yang memenuhi $x^2+2y^2+3z^2\\le6$ adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 10",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 10",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 10",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20143,12 +20143,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan koordinat titik pada permukaan $x^2y-z^2=-9$ yang paling dekat dengan origin adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 11",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 11",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 11",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20160,12 +20160,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Andaikan vektor $F=(3x^2+z)\\mathbf i+(y^2+xz)\\mathbf j+(2zy-xy)\\mathbf k$. Tentukan integral garis $\\int_c F\\cdot dr$, dimana C merupakan kurva yang dinyatakan $x=t,y=2t^2,z=3t^3,0<t<1$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 12",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 12",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 12",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20177,12 +20177,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Diketahui deret Maclaurin berikut\n\n$$e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}.$$\n\nBentuk deret dari\n\n$$\\int\\frac{e^x-1}{x}dx$$\n\nadalah $\\cdots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 13",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 13",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 13",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 1; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20194,12 +20194,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Nilai maksimum dari $f(x,y)=x^4-x^2+2y$ untuk $(x,y)$ yang memenuhi $x^2+y^2=2$ adalah $\\ldots$",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 14",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 14",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 14",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
     }
   },
   {
@@ -20211,12 +20211,63 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Diketahui deret Maclaurin berikut\n\n$$e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}$$\n\ndan\n\n$$\\sin(x)=\\sum_{n=0}^\\infty(-1)^n\\frac{x^{2n+1}}{(2n+1)!}$$\n\nMaka deret Maclaurin dari fungsi $f(x)=e^{-x}+\\cos(x)$ adalah $\\cdots$.",
     "source": {
       "kind": "competition",
-      "label": "Calculus Cup XV — Semifinal, Nomor 15",
+      "label": "Calculus Cup XV 2024 — Semifinal, Nomor 15",
       "competition": "Calculus Cup",
-      "year": 2025,
+      "year": 2024,
       "stage": "Semifinal",
       "number": "Nomor 15",
-      "note": "User Drive: Soal Semifinal.pdf, PDF page 2; edition XV explicit, year provisional based on file date. Apparent source errors retained. Actual administered paper and web render pending."
+      "note": "User Drive: Soal Semifinal.pdf, PDF page 2; edition XV explicit, year confirmed by UNRI official event report. Apparent source errors retained. Actual administered paper and web render pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2024-final-01",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Pada soal, $C$ adalah batas daerah $D$ yang diarsir. Hitung $\\oint_c M\\,dx+N\\,dy$ untuk masing-masing nilai $M$ dan $N$ yang diberikan\n\n[[FIGURE]]\n\nLintasan $C$ terdiri dari 2 potongan busur lingkaran seperti pada gambar.\n\n$$M=-y^2(y+x)\\qquad N=x(x-3y^2)$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV 2024 — Final, Nomor 1",
+      "competition": "Calculus Cup",
+      "year": 2024,
+      "stage": "Final",
+      "number": "Nomor 1",
+      "note": "User Drive: Soal Final.pdf, PDF page 1. Source text and diagram visually inspected; diagram redrawn in SVG. Year confirmed by UNRI event report. Actual administered paper and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2024-final-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Pada soal, $C$ adalah batas daerah $D$ yang diarsir. Hitung $\\oint_c M\\,dx+N\\,dy$ untuk masing-masing nilai $M$ dan $N$ yang diberikan\n\n[[FIGURE]]\n\n$C$ adalah batas dari juring lingkaran pada gambar.\n\n$$M=-2y^2\\qquad N=x^2$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV 2024 — Final, Nomor 2",
+      "competition": "Calculus Cup",
+      "year": 2024,
+      "stage": "Final",
+      "number": "Nomor 2",
+      "note": "User Drive: Soal Final.pdf, PDF page 1. Source text and diagram visually inspected; diagram redrawn in SVG. Year confirmed by UNRI event report. Actual administered paper and web rendering pending."
+    }
+  },
+  {
+    "id": "calculus-cup-xv-2024-final-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus Vektor",
+    "difficulty": 3,
+    "title": "Kalkulus Vektor",
+    "prompt": "Pada soal, $C$ adalah batas daerah $D$ yang diarsir. Hitung $\\oint_c M\\,dx+N\\,dy$ untuk masing-masing nilai $M$ dan $N$ yang diberikan\n\n[[FIGURE]]\n\nLintasan $C$ terdiri dari 2 potongan busur lingkaran seperti pada gambar.\n\n$$M=3xy\\qquad N=x(y-x)$$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Cup XV 2024 — Final, Nomor 3",
+      "competition": "Calculus Cup",
+      "year": 2024,
+      "stage": "Final",
+      "number": "Nomor 3",
+      "note": "User Drive: Soal Final.pdf, PDF page 1–2. Source text and diagram visually inspected; diagram redrawn in SVG. Year confirmed by UNRI event report. Actual administered paper and web rendering pending."
     }
   }
 ];

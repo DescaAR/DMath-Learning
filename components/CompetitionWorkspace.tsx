@@ -1323,6 +1323,9 @@ function IMCFullIndex({items}:{items:typeof imcAll}){
 
 // Source-only visual registry: a figure may be displayed only if it appears in the source question. Never add explanatory or solution figures.
 const geometryFigures: Readonly<Record<string, {alt:string; width:number; caption?:string}>> = {
+ "calculus-cup-xv-2024-final-01":{alt:"Dua busur lingkaran merah dan biru membatasi D, dengan label C serta sumbu x dan y, x = −4 dan y = 2.",width:320},
+ "calculus-cup-xv-2024-final-02":{alt:"Juring lingkaran biru dengan D₁ dan D₂, titik potong sumbu x di −√3 dan √3, dan titik bawah y = −1.",width:320},
+ "calculus-cup-xv-2024-final-03":{alt:"Dua busur lingkaran merah dan biru membatasi D di sebelah kanan sumbu y, dengan tanda x = 2, y = 2 dan y = −2.",width:320},
  "iymc-2022-qr-e":{alt:"Two horizontally shifted equilateral triangles with common region A shaded.",width:420},
  "iymc-2023-qr-e":{alt:"Equilateral triangle with vertical side a and parallel dotted segment b enclosing shaded triangle A.",width:300},
  "iymc-2025-qr-e":{alt:"Rectangle of height a and width b cut by a diagonal.",width:420},
