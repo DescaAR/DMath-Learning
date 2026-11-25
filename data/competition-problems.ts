@@ -1509,7 +1509,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Susunan huruf berparitas genap",
-    "prompt": "Untuk $n$ bilangan bulat positif, hitung banyak kata sepanjang $n$ dari alfabet $\\{a,b,c,d\\}$ yang memuat huruf $a$ sebanyak bilangan genap dan huruf $b$ sebanyak bilangan genap.",
+    "prompt": "For a positive integer $n$, count the length-$n$ words over the alphabet $\\{\\texttt{a},\\texttt{b},\\texttt{c},\\texttt{d}\\}$ with both the number of occurrences of $\\texttt{a}$ and that of $\\texttt{b}$ even. For $n=2$, the six admissible words are $\\texttt{aa},\\texttt{bb},\\texttt{cc},\\texttt{dd},\\texttt{cd},\\texttt{dc}$.",
     "source": {
       "kind": "competition",
       "label": "IMC 2020 — Hari 1, Nomor 1",
@@ -1517,7 +1517,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2020,
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2020",
       "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
     }
   },
@@ -1527,7 +1527,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Rank komutator dan trace",
-    "prompt": "Misalkan $A,B\\in M_n(\\mathbb R)$ dengan $\\operatorname{rank}(AB-BA+I_n)=1$. Buktikan $$\\operatorname{tr}(ABAB)-\\operatorname{tr}(A^2B^2)=\\frac{n(n-1)}2.$$",
+    "prompt": "Take real $n\\times n$ matrices $A,B$ satisfying $\\operatorname{rank}(AB-BA+I_n)=1$, with $I_n$ the identity matrix. Establish $$\\operatorname{tr}(ABAB)-\\operatorname{tr}(A^2B^2)=\\frac12n(n-1).$$ Here rank means the dimension of the column space and trace is the sum of diagonal entries.",
     "source": {
       "kind": "competition",
       "label": "IMC 2020 — Hari 1, Nomor 2",
@@ -1535,7 +1535,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2020,
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2020",
       "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
     }
   },
@@ -1545,7 +1545,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Ketaksamaan polinomial",
-    "prompt": "Misalkan $p\\in\\mathbb R[x]$ memenuhi $p(x+1)-p(x)=x^{100}$ untuk semua $x\\in\\mathbb R$. Buktikan $p(1-t)\\ge p(t)$ bagi $0\\le t\\le\\frac12$.",
+    "prompt": "Suppose $p\\in\\mathbb R[x]$ satisfies $p(x+1)-p(x)=x^{100}$ at every $x\\in\\mathbb R$. Establish the inequality $p(1-t)\\ge p(t)$ on $0\\le t\\le\\frac12$.",
     "source": {
       "kind": "competition",
       "label": "IMC 2020 — Hari 1, Nomor 4",
@@ -1553,7 +1553,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2020,
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2020",
       "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
     }
   },
@@ -3855,7 +3855,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Cakupan garis singgung",
-    "prompt": "For $P\\in\\mathbb R[x]$ of degree at least two define $L_x=\\{(t,P(x)+P'(x)(t-x)):t\\in\\mathbb R\\}$. Prove that $\\bigcup_{x\\in\\mathbb R}L_x=\\mathbb R^2$ when $\\deg P$ is odd. Can equality also hold for even degree?",
+    "prompt": "Let $P\\in\\mathbb R[x]$ have degree at least $2$. For each $x\\in\\mathbb R$, denote the tangent line at $(x,P(x))$ by $\\ell_x\\subseteq\\mathbb R^2$. (a) When $\\deg P$ is odd, establish $$\\bigcup_{x\\in\\mathbb R}\\ell_x=\\mathbb R^2.$$ (b) Decide whether some even-degree polynomial also has this property.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -3863,7 +3863,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2025 — Hari 1, Nomor 1",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -3881,7 +3881,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2025 — Hari 1, Nomor 2",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -3899,7 +3899,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2025 — Hari 1, Nomor 3",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -3917,7 +3917,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2025 — Hari 1, Nomor 5",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -3935,7 +3935,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2025 — Hari 2, Nomor 6",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -3945,7 +3945,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Himpunan bilangan bulat positif yang tertutup terhadap operasi",
-    "prompt": "Classify nonempty $M\\subseteq\\mathbb Z_{>0}$ closed under doubling and under arithmetic means of pairs of its elements whose sum is even.",
+    "prompt": "Determine the nonempty subsets $M$ of the positive integers satisfying these two closure conditions: (a) $x\\in M\\implies 2x\\in M$; (b) $x,y\\in M$ and $x+y$ even imply $\\frac{x+y}{2}\\in M$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -3953,7 +3953,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2025 — Hari 2, Nomor 7",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -3963,7 +3963,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 4,
     "title": "Nilai eigen matriks dengan simetri rotasi seperempat putaran",
-    "prompt": "Suppose $A=(a_{ij})\\in M_n(\\mathbb R)$ satisfies $a_{ij}=a_{j,n+1-i}$. Establish $\\sigma(A)\\subseteq\\mathbb R\\cup i\\mathbb R$.",
+    "prompt": "For a real square matrix $A$, use $A^R$ for its counterclockwise rotation by $90^\\circ$. For example, $$\\begin{pmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{pmatrix}^{R}=\\begin{pmatrix}3&6&9\\\\2&5&8\\\\1&4&7\\end{pmatrix}.$$ Assuming $A=A^R$, establish that every complex eigenvalue $\\lambda$ of $A$ satisfies $\\operatorname{Re}\\lambda=0$ or $\\operatorname{Im}\\lambda=0$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -3971,7 +3971,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2025 — Hari 2, Nomor 8",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -3989,7 +3989,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2025 — Hari 2, Nomor 9",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4007,7 +4007,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2025 — Hari 2, Nomor 10",
-      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2025",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4025,7 +4025,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2026 — Hari 1, Nomor 1",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4043,7 +4043,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2026 — Hari 1, Nomor 2",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4053,7 +4053,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Penggabungan berselang-seling himpunan bagian terurut",
-    "prompt": "Partition $\\{1,\\ldots,n\\}$, $n\\ge2$, into nonempty ordered subsets $A,B$. Read $A$ increasingly and $B$ decreasingly, alternating between them beginning with $A$, and append the unused entries when one is exhausted. Count the distinct resulting permutations.",
+    "prompt": "Take a deck labeled $1,\\ldots,n$ with $n\\ge2$. Split it into two nonempty stacks, sorting the first increasingly and the second decreasingly. Alternately remove the next card from each stack, starting with the first; once a stack is empty, append the rest of the other stack. For example, the stacks $(1,3)$ and $(6,5,4,2)$ give $(1,6,3,5,4,2)$ when $n=6$. Count the distinct deck orders achievable by this procedure.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4061,7 +4061,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2026 — Hari 1, Nomor 3",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4071,7 +4071,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Limit barisan rekursif berbasis rata-rata",
-    "prompt": "For $x_1>0$ and $x_{n+1}=\\arctan(n^{-1}\\sum_{j=1}^n x_j)$, compute $\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$.",
+    "prompt": "Starting with $x_1>0$, define $$x_{n+1}=\\arctan\\left(\\frac{x_1+\\cdots+x_n}{n}\\right),\\qquad n\\ge1.$$ Evaluate $\\displaystyle\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$, where $\\ln$ is the natural logarithm.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4079,7 +4079,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2026 — Hari 1, Nomor 4",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4097,7 +4097,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2026 — Hari 1, Nomor 5",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4107,7 +4107,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Persamaan komposisi fungsi dan turunan",
-    "prompt": "For each $g(x)=x$ and $g(x)=|x|$, decide whether a differentiable $f:\\mathbb R\\to\\mathbb R$ can satisfy $f'(f(x))=g(x)$ identically.",
+    "prompt": "(a) Decide whether a differentiable function $f:\\mathbb R\\to\\mathbb R$ exists with $f'(f(x))=x$ for every $x\\in\\mathbb R$. (b) Decide whether such a function exists with $f'(f(x))=|x|$ for every $x\\in\\mathbb R$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4115,7 +4115,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2026 — Hari 2, Nomor 6",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4125,7 +4125,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Luas gabungan ruas garis",
-    "prompt": "For $f\\in C([0,1],\\mathbb R)$ define $$S_f=\\{((1-t)x+tf(x),t):x,t\\in[0,1]\\}.$$ Determine the infimum of the planar area of $S_f$.",
+    "prompt": "For each continuous $f:[0,1]\\to\\mathbb R$, form $S(f)$ from all line segments connecting $(x,0)$ to $(f(x),1)$, for $0\\le x\\le1$. Write $A(f)$ for its planar area. Determine the infimum of $A(f)$ as $f$ ranges over these continuous functions.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4133,7 +4133,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2026 — Hari 2, Nomor 7",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4143,7 +4143,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Batas tajam energi matriks",
-    "prompt": "Let $A=A^{\\mathsf T}\\in M_n(\\mathbb R)$, $n\\ge5$, have zero diagonal and off-diagonal entries $\\pm1$. Suppose $(A^2)_{ij}$ is constant for $i\\ne j$. Establish $\\sum_{\\lambda\\in\\sigma(A)}|\\lambda|\\ge2n-2$, counting multiplicities, and classify equality.",
+    "prompt": "Fix $n\\ge5$. Let $A=(a_{ij})$ be a symmetric real $n\\times n$ matrix with $a_{ii}=0$ and $a_{ij}\\in\\{-1,1\\}$ for $i\\ne j$. Assume the inner product of any two distinct rows is constant. With eigenvalues $\\lambda_1,\\ldots,\\lambda_n$, establish $$\\sum_{i=1}^n|\\lambda_i|\\ge2n-2$$ and characterize every matrix attaining equality.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4151,7 +4151,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2026 — Hari 2, Nomor 8",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4169,7 +4169,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2026 — Hari 2, Nomor 9",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -4179,7 +4179,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Himpunan berhingga pada papan catur",
-    "prompt": "For every finite $F\\subset\\mathbb R^2$, can one choose $0<d<1$ and a translated and rotated square grid of mesh $d$, with alternating black and white open cells, so that $F$ lies entirely in white cells?",
+    "prompt": "An infinite square grid of mesh $d>0$ has its open cells colored alternately white and black in the usual checkerboard pattern; the grid lines themselves are uncolored. Translation and rotation of the grid are allowed. Given any finite set of planar points $p_1,\\ldots,p_n$, decide whether there always exists such a grid of mesh $0<d<1$ with all points in white cells.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4187,7 +4187,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2026 — Hari 2, Nomor 10",
-      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2026",
       "note": "Independent English mathematical formulation; original statement in official paper."
     }
   },
@@ -5331,7 +5331,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Realisasi siklus melalui komutativitas matriks",
-    "prompt": "Find the smallest $d\\ge1$ for which matrices $A_1,\\ldots,A_{2025}\\in M_d(\\mathbb R)$ realize the equivalence $$[A_i,A_j]=0\\ \\Longleftrightarrow\\ |i-j|\\in\\{0,1,2024\\},$$ where $[X,Y]=XY-YX$.",
+    "prompt": "Determine the least positive integer $k$ admitting real $k\\times k$ matrices $A_1,\\ldots,A_{2025}$ such that $$A_iA_j=A_jA_i\\quad\\Longleftrightarrow\\quad |i-j|\\in\\{0,1,2024\\}.$$",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5349,7 +5349,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Valuasi 2-adik pada barisan rekursif",
-    "prompt": "Set $b_0=0$ and $b_{n+1}=2b_n^2+b_n+1$. Show that $$v_2(b_{2k+1}-2b_{2k})=2k+2\\qquad(k\\ge1),$$ where $v_2$ denotes the exponent of $2$ in an integer.",
+    "prompt": "Define $b_0=0$ and $b_{n+1}=2b_n^2+b_n+1$ for $n\\ge0$. For each integer $k\\ge1$, prove the two divisibility assertions $$2^{2k+2}\\mid(b_{2k+1}-2b_{2k}),\\qquad 2^{2k+3}\\nmid(b_{2k+1}-2b_{2k}).$$",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5421,7 +5421,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Permutasi dengan jumlah bergeser yang berurutan",
-    "prompt": "Characterize the positive integers $n,k$ for which a permutation $\\sigma\\in S_n$ satisfies $$\\{i+\\sigma(i)-k\\mid 1\\le i\\le n\\}=\\{1,\\ldots,n\\}.$$",
+    "prompt": "Consider an $n\\times n$ array, where $n,k$ are positive integers and the entry in row $i$, column $j$ is $i+j-k$. Determine all $(n,k)$ for which one can choose exactly one cell in each row and each column, with the chosen entries comprising $1,2,\\ldots,n$ exactly once.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5457,7 +5457,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Eksponen kritis deret eksponensial",
-    "prompt": "For $a\\in\\mathbb R$ and $0\\le x<1$, define $F_a(x)=\\sum_{n=1}^{\\infty}n^ae^{2n}x^{n^2}$. Determine the threshold $c$ at which the limit of $e^{-1/(1-x)}F_a(x)$ as $x\\uparrow1$ changes from zero for $a<c$ to positive infinity for $a>c$.",
+    "prompt": "For a real parameter $a$, define $$F_a(x)=\\sum_{n=1}^{\\infty}n^ae^{2n}x^{n^2},\\qquad 0\\le x<1.$$ Determine a real threshold $c$ satisfying both conditions: $$\\lim_{x\\to1^-}F_a(x)e^{-\\frac1{1-x}}=0\\quad(a<c),$$ $$\\lim_{x\\to1^-}F_a(x)e^{-\\frac1{1-x}}=+\\infty\\quad(a>c).$$",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5475,7 +5475,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 2,
     "title": "Turunan kedua hasil kali fungsi kosinus",
-    "prompt": "Set $P_n(x)=\\prod_{j=1}^n\\cos(jx)$. Compute $\\min\\{n\\in\\mathbb Z_{>0}\\mid |P_n''(0)|>2023\\}$.",
+    "prompt": "For a positive integer $n$, define $$f_n(x)=\\prod_{j=1}^n\\cos(jx).$$ Determine the least $n$ for which $|f_n''(0)|>2023$.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5493,7 +5493,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Akar tambahan pada identitas interpolasi",
-    "prompt": "Fix a positive even integer $n$. Let $P\\in\\mathbb R[x]$ be monic of degree $2n$, with $P(1/k)=k^2$ for $k\\in\\{-n,\\ldots,-1,1,\\ldots,n\\}$. Determine the real solutions of $P(1/x)=x^2$ outside that specified set.",
+    "prompt": "Take an even positive integer $n$ and a real polynomial $$p(x)=x^{2n}+a_{2n-1}x^{2n-1}+\\cdots+a_1x+a_0.$$ Assume $p(1/k)=k^2$ for all integers $k$ with $1\\le |k|\\le n$. Determine the other real solutions of $p(1/x)=x^2$.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5511,7 +5511,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Nol pertama dengan batas turunan terkait",
-    "prompt": "Minimize $r>0$ over differentiable real functions $f,g$ on $\\mathbb R$ subject to $$f(0)>0,\\quad g(0)=f(r)=0,\\quad |f'|\\le |g|,\\quad |g'|\\le |f|,$$ with the inequalities understood pointwise.",
+    "prompt": "Find the least $r>0$ admitting differentiable functions $f,g:\\mathbb R\\to\\mathbb R$ with the following properties: (a) $f(0)>0$; (b) $g(0)=0$; (c) $|f'(x)|\\le |g(x)|$ for every real $x$; (d) $|g'(x)|\\le |f(x)|$ for every real $x$; (e) $f(r)=0$.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5547,7 +5547,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Determinan matriks pencacahan",
-    "prompt": "For $n\\ge1$, evaluate the determinant of the $n\\times n$ matrix whose entry in position $(i,j)$ is $$\\#\\{(a,b)\\in\\mathbb Z_{\\ge0}^2\\mid ia+jb=n\\}.$$",
+    "prompt": "Fix a positive integer $n$. For $1\\le i,j\\le n$, put $s(i,j)=|\\{(a,b)\\in\\mathbb Z_{\\ge0}^2\\mid ai+bj=n\\}|$ and form the matrix $S=(s(i,j))_{1\\le i,j\\le n}$. For $n=5$, the construction gives $$S=\\begin{pmatrix}6&3&2&2&2\\\\3&0&1&0&1\\\\2&1&0&0&1\\\\2&0&0&0&1\\\\2&1&1&1&2\\end{pmatrix}.$$ Evaluate $\\det S$.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5565,7 +5565,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Akar tunggal persamaan logaritmik",
-    "prompt": "Classify $(a,b)\\in\\mathbb R^2$ for which the equation $\\ln(1+x^2)-ax-b=0$ has precisely one distinct real root.",
+    "prompt": "Determine the real pairs $(a,b)$ for which the graphs of $y=ax+b$ and $y=\\ln(1+x^2)$ have exactly one common point.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5655,7 +5655,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Lintasan terpendek pada kisi dengan panjang lompatan tetap",
-    "prompt": "Let $D=\\{(u,v)\\in\\mathbb Z^2\\mid u^2+v^2=25\\}$. Determine the smallest $m$ such that $(2021,2021)$ can be expressed as a sum of $m$ vectors from $D$, allowing repetitions.",
+    "prompt": "A grasshopper starts at $(0,0)$ and hops between points of the integer lattice in the plane. Every hop has Euclidean length $5$, so the first hop has $12$ possible destinations. Determine the minimum number of hops required to reach $(2021,2021)$.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5673,7 +5673,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Limit iteratif yang melibatkan pangkat real",
-    "prompt": "Evaluate $$\\lim_{x\\to+\\infty}\\frac1x\\left(\\lim_{r\\to0}\\big((x+1)^{r+1}-x^{r+1}\\big)^{1/r}\\right).$$",
+    "prompt": "For $x>0$, define $$g(x)=\\lim_{r\\to0}\\big((x+1)^{r+1}-x^{r+1}\\big)^{\\frac1r}.$$ Evaluate $\\displaystyle\\lim_{x\\to+\\infty}\\frac{g(x)}x$.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5817,7 +5817,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 4,
     "title": "Nilai eigen satu setelah refleksi Householder",
-    "prompt": "For $Q\\in O(n)$ and $u\\in\\mathbb R^n$ with $u^{\\mathsf T}u=1$, establish that $$\\det(I-Q)\\ne0\\ \\Longrightarrow\\ \\det(I-(I-2uu^{\\mathsf T})Q)=0.$$",
+    "prompt": "Let $Q$ be a real orthogonal matrix of size $n$ and $u\\in\\mathbb R^n$ a column vector satisfying $u^{\\mathsf T}u=1$. Define $$P=I_n-2uu^{\\mathsf T}.$$ Establish that $1\\notin\\sigma(Q)$ implies $1\\in\\sigma(PQ)$, where $\\sigma$ denotes the set of eigenvalues.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -6087,7 +6087,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 5,
     "title": "Konjugasi subgrup melalui indeks irisan",
-    "prompt": "Suppose $H_1,H_2\\le G$ have equal finite index $n\\ge2$ and $[G:H_1\\cap H_2]=n(n-1)$. Establish the existence of $g\\in G$ with $g^{-1}H_1g=H_2$.",
+    "prompt": "Suppose $H_1,H_2$ are subgroups of a group $G$ and $n\\ge2$ is an integer with $$[G:H_1]=[G:H_2]=n,\\qquad [G:H_1\\cap H_2]=n(n-1).$$ Prove that $H_1$ and $H_2$ are conjugate, meaning $g^{-1}H_1g=H_2$ for some $g\\in G$. The index $[G:H]$ counts the distinct left cosets of $H$ in $G$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
