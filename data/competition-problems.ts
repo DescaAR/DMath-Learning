@@ -9332,7 +9332,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2018 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9341,7 +9341,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Barisan real siklik",
-    "prompt": "Classify integers $n\\ge3$ admitting real numbers $a_1,\\ldots,a_{n+2}$ with $a_{n+1}=a_1$, $a_{n+2}=a_2$, and $a_ia_{i+1}+1=a_{i+2}$ for $1\\le i\\le n$.",
+    "prompt": "Find all integers $n\\ge3$ for which there exist real numbers $a_1,a_2,\\ldots,a_{n+2}$, such that $a_{n+1}=a_1$ and $a_{n+2}=a_2$, and\n\n$$a_ia_{i+1}+1=a_{i+2}$$\n\nfor $i=1,2,\\ldots,n$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9350,7 +9350,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2018 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -9359,7 +9359,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Segitiga anti-Pascal",
-    "prompt": "An anti-Pascal triangle uses an equilateral triangular arrangement in which each entry above the bottom row equals the absolute difference of its two immediate lower neighbors. Here is a four-row example using $1$ through $10$:\n\n$\\begin{array}{ccccccc}&&&4&&&\\\\&&2&&6&&\\\\&5&&7&&1&\\\\8&&3&&10&&9\\end{array}$\n\nCan an anti-Pascal triangle of $2018$ rows contain every integer from $1$ through $1+2+\\cdots+2018$?",
+    "prompt": "An anti-Pascal triangle uses an equilateral triangular arrangement in which each entry above the bottom row equals the absolute difference of its two immediate lower neighbors. Here is a four-row example using $1$ through $10$:\n\n$$\\begin{array}{ccccccc}&&&4&&&\\\\&&2&&6&&\\\\&5&&7&&1&\\\\8&&3&&10&&9\\end{array}$$\n\nCan an anti-Pascal triangle of $2018$ rows contain every integer from $1$ through $1+2+\\cdots+2018$?",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9368,7 +9368,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2018 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9386,7 +9386,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2018 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9395,7 +9395,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Barisan rasio bilangan bulat",
-    "prompt": "Suppose $(a_n)_{n\\ge1}$ consists of positive integers and, for some integer $N>1$, the sum $\\frac{a_1}{a_2}+\\frac{a_2}{a_3}+\\cdots+\\frac{a_{n-1}}{a_n}+\\frac{a_n}{a_1}$ is integral whenever $n\\ge N$. Prove eventual constancy: $a_m=a_{m+1}$ for all $m\\ge M$ for some positive integer $M$.",
+    "prompt": "Suppose $(a_n)_{n\\ge1}$ consists of positive integers and, for some integer $N>1$, the sum\n\n$$\\frac{a_1}{a_2}+\\frac{a_2}{a_3}+\\cdots+\\frac{a_{n-1}}{a_n}+\\frac{a_n}{a_1}$$\n\nis integral whenever $n\\ge N$. Prove eventual constancy: $a_m=a_{m+1}$ for all $m\\ge M$ for some positive integer $M$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9404,7 +9404,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2018 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9413,7 +9413,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Jumlah sudut pada segiempat",
-    "prompt": "In convex $ABCD$, assume $AB\\cdot CD=BC\\cdot DA$. An interior point $X$ satisfies $\\angle XAB=\\angle XCD$ and $\\angle XBC=\\angle XDA$. Establish $\\angle BXA+\\angle DXC=180^\\circ$.",
+    "prompt": "In convex $ABCD$, assume $AB\\cdot CD=BC\\cdot DA$. An interior point $X$ satisfies\n\n$$\\angle XAB=\\angle XCD\\qquad\\text{and}\\qquad\\angle XBC=\\angle XDA.$$ Establish $\\angle BXA+\\angle DXC=180^\\circ$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9422,7 +9422,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2018 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9548,7 +9548,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2015 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9557,7 +9557,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Tiga selisih berpangkat dua",
-    "prompt": "Classify positive integer triples $(a,b,c)$ for which $ab-c$, $bc-a$, and $ca-b$ each equal a power $2^n$ with nonnegative integer exponent.",
+    "prompt": "Classify positive integer triples $(a,b,c)$ for which $$ab-c,\\qquad bc-a,\\qquad ca-b$$\n\neach equal a power $2^n$ with nonnegative integer exponent.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9566,7 +9566,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2015 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9575,7 +9575,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Persinggungan dua lingkaran luar",
-    "prompt": "In acute $ABC$ with $AB>AC$, let $\\Gamma,H,F,M$ denote its circumcircle, orthocenter, altitude foot from $A$, and midpoint of $BC$. Choose $Q,K\\in\\Gamma$ satisfying $\\angle HQA=\\angle HKQ=90^\\circ$. Distinct points $A,B,C,K,Q$ occur in that order on $\\Gamma$. Establish tangency of circumcircles of $KQH,FKM$.",
+    "prompt": "In acute $ABC$ with $AB>AC$, let $\\Gamma,H,F,M$ denote its circumcircle, orthocentre, altitude foot from $A$, and midpoint of $BC$. Choose $Q,K\\in\\Gamma$ satisfying $\\angle HQA=\\angle HKQ=90^\\circ$. Distinct points $A,B,C,K,Q$ occur in that order on $\\Gamma$. Establish tangency of circumcircles of $KQH,FKM$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9584,7 +9584,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2015 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9593,7 +9593,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Titik potong pada garis pusat lingkaran",
-    "prompt": "Triangle $ABC$ has circumcircle $\\Omega$ centered at $O$. Circle $\\Gamma$ centered at $A$ meets segment $BC$ at $D,E$ (distinct order $B,D,E,C$) and $\\Omega$ at $F,G$ (order $A,F,B,C,G$). Circumcircles of $BDF,CGE$ meet segments $AB,CA$ again at $K,L$, respectively. If distinct lines $FK,GL$ intersect at $X$, show $X\\in AO$.",
+    "prompt": "Triangle $ABC$ has circumcircle $\\Omega$ centred at $O$. Circle $\\Gamma$ centered at $A$ meets segment $BC$ at $D,E$ (distinct order $B,D,E,C$) and $\\Omega$ at $F,G$ (order $A,F,B,C,G$). Circumcircles of $BDF,CGE$ meet segments $AB,CA$ again at $K,L$, respectively. If distinct lines $FK,GL$ intersect at $X$, show $X\\in AO$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9602,7 +9602,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2015 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9611,7 +9611,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi real",
-    "prompt": "Classify $f:\\mathbb R\\to\\mathbb R$ satisfying $f(x+f(x+y))+f(xy)=x+f(x+y)+yf(x)$ for every real pair $x,y$.",
+    "prompt": "Classify $f:\\mathbb R\\to\\mathbb R$ satisfying\n\n$$f(x+f(x+y))+f(xy)=x+f(x+y)+yf(x)$$\n\nfor every real pair $x,y$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9620,7 +9620,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2015 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9629,7 +9629,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Keterbatasan jumlah parsial barisan",
-    "prompt": "An integer sequence obeys\n\n(i) $1\\le a_j\\le2015$ for $j\\ge1$;\n\n(ii) $k+a_k\\ne\\ell+a_\\ell$ whenever $1\\le k<\\ell$.\n\nEstablish positive integers $b,N$ for which $\\left|\\sum_{j=m+1}^{n}(a_j-b)\\right|\\le1007^2$ whenever integers $n>m\\ge N$.",
+    "prompt": "An integer sequence obeys\n\n(i) $1\\le a_j\\le2015$ for $j\\ge1$;\n\n(ii) $k+a_k\\ne\\ell+a_\\ell$ whenever $1\\le k<\\ell$.\n\nEstablish positive integers $b,N$ for which\n\n$$\\left|\\sum_{j=m+1}^{n}(a_j-b)\\right|\\le1007^2$$\n\nwhenever integers $n>m\\ge N$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9638,7 +9638,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2015 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9656,7 +9656,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2016 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9674,7 +9674,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2016 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9692,7 +9692,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2016 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9701,7 +9701,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Himpunan bilangan fragrant",
-    "prompt": "A positive-integer set is fragrant when it has at least two members and every member shares a prime divisor with another member. For $P(n)=n^2+n+1$, minimize positive integer $b$ admitting nonnegative integer $a$ with $\\{P(a+1),\\ldots,P(a+b)\\}$ fragrant.",
+    "prompt": "A positive-integer set is fragrant when it has at least two members and every member shares a prime divisor with another member. For $P(n)=n^2+n+1$, minimize positive integer $b$ admitting nonnegative integer $a$ with\n\n$$\\{P(a+1),P(a+2),\\ldots,P(a+b)\\}$$\n\nfragrant.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9710,7 +9710,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2016 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9719,7 +9719,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Penghapusan faktor persamaan polinomial",
-    "prompt": "Start with $(x-1)(x-2)\\cdots(x-2016)=(x-1)(x-2)\\cdots(x-2016)$. Minimize the number $k$ of deleted factors among the $4032$ occurrences, leaving at least one factor on either side and no real solution.",
+    "prompt": "Start with\n\n$$(x-1)(x-2)\\cdots(x-2016)=(x-1)(x-2)\\cdots(x-2016)$$ Minimize the number $k$ of deleted factors among the $4032$ occurrences, leaving at least one factor on either side and no real solution.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9728,7 +9728,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2016 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9746,7 +9746,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2016 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9755,7 +9755,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Iterasi akar kuadrat dan penjumlahan",
-    "prompt": "For integer $a_0>1$ and each $n\\ge0$, define\n\n$a_{n+1}=\\begin{cases}\\sqrt{a_n},&\\sqrt{a_n}\\in\\mathbb Z,\\\\a_n+3,&\\text{otherwise}.\\end{cases}$\n\nClassify starting values permitting a number $A$ attained by infinitely many terms.",
+    "prompt": "For integer $a_0>1$ and each $n\\ge0$, define\n\n$$a_{n+1}=\\begin{cases}\\sqrt{a_n},&\\sqrt{a_n}\\in\\mathbb Z,\\\\a_n+3,&\\text{otherwise}.\\end{cases}$$\n\nClassify starting values permitting a number $A$ attained by infinitely many terms.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9764,7 +9764,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2017 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9773,7 +9773,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi komposisi",
-    "prompt": "Classify maps $f:\\mathbb R\\to\\mathbb R$ obeying $f(f(x)f(y))+f(x+y)=f(xy)$ for every real $x,y$.",
+    "prompt": "Classify maps $f:\\mathbb R\\to\\mathbb R$ obeying\n\n$$f(f(x)f(y))+f(x+y)=f(xy)$$\n\nfor every real $x,y$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9782,7 +9782,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2017 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9800,7 +9800,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2017 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9818,7 +9818,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2017 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9836,7 +9836,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2017 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9845,7 +9845,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Polinomial homogen pada titik primitif",
-    "prompt": "A primitive point is an integer pair $(x,y)$ with $\\gcd(x,y)=1$. Given a finite set $S$ of such points, establish a positive integer $n$ and integers $a_0,\\ldots,a_n$ satisfying $a_0x^n+a_1x^{n-1}y+a_2x^{n-2}y^2+\\cdots+a_{n-1}xy^{n-1}+a_ny^n=1$ throughout $S$.",
+    "prompt": "A primitive point is an integer pair $(x,y)$ with $\\gcd(x,y)=1$. Given a finite set $S$ of such points, establish a positive integer $n$ and integers $a_0,\\ldots,a_n$ satisfying\n\n$$a_0x^n+a_1x^{n-1}y+a_2x^{n-2}y^2+\\cdots+a_{n-1}xy^{n-1}+a_ny^n=1$$\n\nthroughout $S$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9854,7 +9854,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2017 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9872,7 +9872,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2012 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9881,7 +9881,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan hasil kali berpangkat",
-    "prompt": "Given integer $n\\ge3$ and positive reals $a_2,\\ldots,a_n$ with $a_2a_3\\cdots a_n=1$, establish $$(1+a_2)^2(1+a_3)^3\\cdots(1+a_n)^n>n^n.$$",
+    "prompt": "Given integer $n\\ge3$ and positive reals $a_2,\\ldots,a_n$ with $a_2a_3\\cdots a_n=1$, establish\n\n$$(1+a_2)^2(1+a_3)^3\\cdots(1+a_n)^n>n^n.$$",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9890,7 +9890,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2012 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9908,7 +9908,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2012 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -9917,7 +9917,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi pada bilangan bulat",
-    "prompt": "Classify integer-valued maps $f:\\mathbb Z\\to\\mathbb Z$ obeying $$f(a)^2+f(b)^2+f(c)^2=2f(a)f(b)+2f(b)f(c)+2f(c)f(a)$$ whenever integers $a,b,c$ sum to zero.",
+    "prompt": "Classify integer-valued maps $f:\\mathbb Z\\to\\mathbb Z$ obeying\n\n$$f(a)^2+f(b)^2+f(c)^2=2f(a)f(b)+2f(b)f(c)+2f(c)f(a)$$\n\nwhenever integers $a,b,c$ sum to zero.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9926,7 +9926,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2012 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9944,7 +9944,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2012 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -9953,7 +9953,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Jumlah pecahan dengan pangkat dua dan tiga",
-    "prompt": "Classify positive integers $n$ admitting nonnegative integers $a_1,\\ldots,a_n$ with $$\\frac1{2^{a_1}}+\\frac1{2^{a_2}}+\\cdots+\\frac1{2^{a_n}}=\\frac1{3^{a_1}}+\\frac2{3^{a_2}}+\\cdots+\\frac n{3^{a_n}}=1.$$",
+    "prompt": "Find all positive integers $n$ for which there exist non-negative integers $a_1,a_2,\\ldots,a_n$ such that\n\n$$\\frac{1}{2^{a_1}}+\\frac{1}{2^{a_2}}+\\cdots+\\frac{1}{2^{a_n}}=\\frac{1}{3^{a_1}}+\\frac{2}{3^{a_2}}+\\cdots+\\frac{n}{3^{a_n}}=1.$$",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9962,7 +9962,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2012 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 2; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -9971,7 +9971,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Faktorisasi pecahan positif",
-    "prompt": "For positive integers $k,n$, establish existence of positive integers $m_1,\\ldots,m_k$, allowing repetitions, satisfying $$1+\\frac{2^k-1}{n}=\\left(1+\\frac1{m_1}\\right)\\left(1+\\frac1{m_2}\\right)\\cdots\\left(1+\\frac1{m_k}\\right).$$",
+    "prompt": "Prove that for any pair of positive integers $k$ and $n$, there exist $k$ positive integers $m_1,m_2,\\ldots,m_k$ (not necessarily different) such that\n\n$$1+\\frac{2^k-1}{n}=\\left(1+\\frac{1}{m_1}\\right)\\left(1+\\frac{1}{m_2}\\right)\\cdots\\left(1+\\frac{1}{m_k}\\right).$$",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -9980,7 +9980,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2013 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -9998,7 +9998,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2013 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10016,7 +10016,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2013 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10034,7 +10034,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2013 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10052,7 +10052,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2013 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10061,7 +10061,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Pelabelan beautiful pada lingkaran",
-    "prompt": "For integer $n\\ge3$, label $n+1$ equally spaced circular points bijectively by $0,\\ldots,n$, identifying rotations. A labelling is beautiful when chords $ad$ and $bc$ never intersect for labels $a<b<c<d$ satisfying $a+d=b+c$. Let $M$ count beautiful labellings and $N$ count ordered positive-integer pairs $(x,y)$ satisfying $x+y\\le n$ and $\\gcd(x,y)=1$. Establish $M=N+1$.",
+    "prompt": "For integer $n\\ge3$, label $n+1$ equally spaced circular points bijectively by $0,\\ldots,n$, identifying rotations. A labelling is beautiful when chords $ad$ and $bc$ never intersect for labels $a<b<c<d$ satisfying $a+d=b+c$. Let $M$ count beautiful labellings and $N$ count ordered positive-integer pairs $(x,y)$ satisfying $x+y\\le n$ and $\\gcd(x,y)=1$. Establish\n\n$$M=N+1.$$",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10070,7 +10070,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2013 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10079,7 +10079,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketunggalan indeks pada barisan meningkat",
-    "prompt": "Given an infinite strictly increasing sequence $a_0<a_1<a_2<\\cdots$ of positive integers, establish existence and uniqueness of integer $n\\ge1$ satisfying $$a_n<\\frac{a_0+a_1+\\cdots+a_n}{n}\\le a_{n+1}.$$",
+    "prompt": "Let $a_0<a_1<a_2<\\cdots$ be an infinite sequence of positive integers. Prove that there exists a unique integer $n\\ge1$ such that\n\n$$a_n<\\frac{a_0+a_1+\\cdots+a_n}{n}\\le a_{n+1}.$$",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10088,7 +10088,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2014 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -10106,7 +10106,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2014 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10115,7 +10115,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Garis singgung pada lingkaran TSH",
-    "prompt": "Convex $ABCD$ satisfies $\\angle ABC=\\angle CDA=90^\\circ$. Let $H$ be the perpendicular foot from $A$ to line $BD$. Choose $S\\in AB,T\\in AD$ on the sides, with $H$ interior to $SCT$ and $\\angle CHS-\\angle CSB=90^\\circ$, $\\angle THC-\\angle DTC=90^\\circ$. Establish tangency of $BD$ to the circumcircle of $TSH$.",
+    "prompt": "Convex $ABCD$ satisfies $\\angle ABC=\\angle CDA=90^\\circ$. Let $H$ be the perpendicular foot from $A$ to line $BD$. Choose $S\\in AB,T\\in AD$ on the sides, with $H$ interior to $SCT$ and\n\n$$\\angle CHS-\\angle CSB=90^\\circ,\\qquad \\angle THC-\\angle DTC=90^\\circ.$$\n\nEstablish tangency of $BD$ to the circumcircle of $TSH$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10124,7 +10124,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2014 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10142,7 +10142,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2014 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10160,7 +10160,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2014 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10178,7 +10178,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2014 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10412,7 +10412,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2011 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10430,7 +10430,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2011 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10439,7 +10439,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan fungsi real",
-    "prompt": "Suppose $f:\\mathbb R\\to\\mathbb R$ obeys $f(x+y)\\le yf(x)+f(f(x))$ for arbitrary real $x,y$. Establish $f(x)=0$ whenever $x\\le0$.",
+    "prompt": "Suppose $f:\\mathbb R\\to\\mathbb R$ obeys\n\n$$f(x+y)\\le yf(x)+f(f(x))$$\n\nfor arbitrary real $x,y$. Establish $f(x)=0$ whenever $x\\le0$.",
     "source": {
       "kind": "competition",
       "competition": "IMO",
@@ -10448,7 +10448,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2011 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; full original replacement pending."
     }
   },
   {
@@ -10466,7 +10466,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2011 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10484,7 +10484,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2011 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {
@@ -10502,7 +10502,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2011 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; full original replacement pending."
     }
   },
   {

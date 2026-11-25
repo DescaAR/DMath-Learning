@@ -5164,52 +5164,94 @@
       }
     },
     "imo-2018-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2018,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Construction and conclusion rephrased. Full wording replacement pending."
+      }
     },
     "imo-2018-02": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2018,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Short statement restored to exact source wording and notation; typesetting spacing normalized."
+      }
     },
     "imo-2018-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2018,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Definition and example description condensed; numeric array matches. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2018-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2018,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Game wording compressed. Full wording replacement pending."
+      }
     },
     "imo-2018-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2018,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Sequence and final claim rephrased. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2018-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2018,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Construction and conclusion condensed. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2025-01": {
       "status": "wording_differs",
@@ -5302,292 +5344,544 @@
       }
     },
     "imo-2015-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2015,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Balanced and centre-free definitions rephrased. Full wording replacement pending."
+      }
     },
     "imo-2015-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2015,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Power-of-two definition absorbed into prose. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2015-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2015,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Construction rephrased. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2015-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2015,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Construction rephrased. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2015-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2015,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Function statement compressed. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2015-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2015,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Sequence and quantifier wording condensed. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2016-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2016,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Construction rephrased. Full wording replacement pending."
+      }
     },
     "imo-2016-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2016,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Table conditions and diagonal note condensed. Full wording replacement pending."
+      }
     },
     "imo-2016-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2016,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Polygon hypotheses rephrased. Full wording replacement pending."
+      }
     },
     "imo-2016-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2016,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Fragrant-set definition and question condensed. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2016-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2016,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Board scenario shortened. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2016-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2016,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Frog procedure and subquestions condensed. Full wording replacement pending."
+      }
     },
     "imo-2017-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2017,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Recurrence and final question rephrased. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2017-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2017,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Function statement compressed. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2017-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2017,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Game narrative and rules compressed. Full wording replacement pending."
+      }
     },
     "imo-2017-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2017,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Geometric construction rephrased. Full wording replacement pending."
+      }
     },
     "imo-2017-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2017,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Numbered conditions replaced with rank-pair notation. Full wording replacement pending."
+      }
     },
     "imo-2017-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2017,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Primitive-point definition and existence statement condensed. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2012-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2012,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Excircle construction and midpoint conclusion rewritten; separate explanatory note absorbed into prose. Full wording replacement pending."
+      }
     },
     "imo-2012-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2012,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Hypothesis and proof instruction rephrased. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2012-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2012,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Game narrative and two claims compressed. Full wording replacement pending."
+      }
     },
     "imo-2012-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2012,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Function equation wording rephrased; original explanatory note absent. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2012-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2012,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Point construction rephrased. Full wording replacement pending."
+      }
     },
     "imo-2012-06": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2012,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Short statement restored to exact source wording and notation; typesetting spacing normalized."
+      }
     },
     "imo-2013-01": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2013,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Short statement restored to exact source wording and notation; typesetting spacing normalized."
+      }
     },
     "imo-2013-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2013,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Definition and conditions combined; explicit total 4027 omitted. Full wording replacement pending."
+      }
     },
     "imo-2013-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2013,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Construction and explanatory note condensed. Full wording replacement pending."
+      }
     },
     "imo-2013-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2013,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Circle names omitted; construction compressed. Full wording replacement pending."
+      }
     },
     "imo-2013-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2013,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Domain definition and condition wording compressed. Full wording replacement pending."
+      }
     },
     "imo-2013-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2013,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Labelling definition and final conclusion rephrased. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2014-01": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2014,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Short statement restored to exact source wording and notation; typesetting spacing normalized."
+      }
     },
     "imo-2014-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2014,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Board and rook definitions compressed. Full wording replacement pending."
+      }
     },
     "imo-2014-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2014,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Point construction and proof instruction compressed. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2014-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2014,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Midpoint construction replaced with reflection terminology. Full wording replacement pending."
+      }
     },
     "imo-2014-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2014,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Coin statement rephrased. Full wording replacement pending."
+      }
     },
     "imo-2014-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2014,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Definitions and scoring note condensed. Full wording replacement pending."
+      }
     },
     "imo-2009-01": {
       "status": "wording_differs",
@@ -5770,52 +6064,94 @@
       }
     },
     "imo-2011-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2011,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Set definition and maximization rephrased. Full wording replacement pending."
+      }
     },
     "imo-2011-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2011,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Windmill narrative and conclusion condensed. Full wording replacement pending."
+      }
     },
     "imo-2011-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2011,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+        "page": 1,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Function statement rephrased. Mathematical display or spelling corrected; full wording still differs."
+      }
     },
     "imo-2011-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2011,
       "number": "Hari 2, Nomor 4",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Balance procedure condensed. Full wording replacement pending."
+      }
     },
     "imo-2011-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2011,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Divisibility conditions expressed symbolically instead of original wording. Full wording replacement pending."
+      }
     },
     "imo-2011-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMO",
       "year": 2011,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
+        "page": 2,
+        "method": "Official PDF page screenshot and text compared",
+        "finding": "Reflection and tangency wording condensed. Full wording replacement pending."
+      }
     },
     "imo-2006-01": {
       "status": "wording_differs",
