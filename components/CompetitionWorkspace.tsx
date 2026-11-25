@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { competitionProblems, levels, levelMeta, officialResources, type CompetitionProblem, type Level } from "@/data/competition-problems";
-import { competitionArchives } from "@/data/competition-archives";
+import { competitionProblems, levels, levelMeta, type CompetitionProblem, type Level } from "@/data/competition-problems";
 import { dailySchedule, dailyDates } from "@/data/competition-daily";
 import { RichMath } from "@/components/RichMath";
 
@@ -37,11 +36,9 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  const [level,setLevel]=useState<string>(fixedLevel||"Semua"),[query,setQuery]=useState(""),[topic,setTopic]=useState("Semua"),[diff,setDiff]=useState("Semua"),[source,setSource]=useState("Semua"),[year,setYear]=useState("Semua"),[contest,setContest]=useState("Semua"),[stage,setStage]=useState("Semua");
  useEffect(()=>{const params=new URLSearchParams(window.location.search);const l=params.get("level"),q=params.get("q"),s=params.get("source");if(!fixedLevel&&l&&isLevel(l))setLevel(l);if(q)setQuery(q);if(s==="competition"||s==="original")setSource(s);},[fixedLevel]);
  const pool=useMemo(()=>competitionProblems.filter(p=>level==="Semua"||p.level===level),[level]);
- const archivePool=competitionArchives.filter(a=>level==="Semua"||a.level===level);
- const years=Array.from(new Set([...pool.flatMap(p=>p.source.year?[p.source.year]:[]),...archivePool.map(a=>a.year)])).sort((a,b)=>b-a);
- const stages=Array.from(new Set([...pool.filter(p=>(contest==="Semua"||p.source.competition===contest)&&(year==="Semua"||String(p.source.year)===year)).flatMap(p=>p.source.stage?[p.source.stage]:[]),...archivePool.filter(a=>(contest==="Semua"||a.competition===contest)&&(year==="Semua"||String(a.year)===year)).map(a=>a.stage)])).sort();
+ const years=Array.from(new Set(pool.flatMap(p=>p.source.year?[p.source.year]:[]))).sort((a,b)=>b-a);
+ const stages=Array.from(new Set(pool.filter(p=>(contest==="Semua"||p.source.competition===contest)&&(year==="Semua"||String(p.source.year)===year)).flatMap(p=>p.source.stage?[p.source.stage]:[]))).sort();
  const contests=Array.from(new Set(pool.flatMap(p=>p.source.competition?[p.source.competition]:[]))).sort();
- const packages=competitionArchives.filter(a=>(stage==="Semua"||a.stage===stage)&&(level==="Semua"||a.level===level)&&(year==="Semua"||String(a.year)===year)&&(contest==="Semua"||a.competition===contest)&&(source!=="original")&&[a.competition,a.stage,a.year,a.round,a.provider,a.level].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
  const topics=Array.from(new Set(pool.map(p=>p.topic))).sort((a,b)=>a.localeCompare(b,"id"));
  const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||p.source.competition===contest)&&(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
  const reset=()=>{setQuery("");setLevel(fixedLevel||"Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");setYear("Semua");setContest("Semua");setStage("Semua");};
@@ -56,7 +53,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
     <div className="cmp-level-tabs" role="group" aria-label="Jenjang">{["Semua",...levels].map(l=><button type="button" key={l} aria-pressed={l===level} onClick={()=>{setLevel(l);setTopic("Semua");setYear("Semua");setContest("Semua");setStage("Semua");}}><span>{l==="Semua"?"Semua jenjang":l==="Kuliah"?"Mahasiswa":l}</span><small>{l==="Semua"?competitionProblems.length:competitionProblems.filter(p=>p.level===l).length}</small></button>)}</div></>}
     <div className="cmp-filter-grid">
      <label>Tahun<select value={year} onChange={e=>{setYear(e.target.value);setStage("Semua");}}><option>Semua</option>{years.map(y=><option key={y} value={y}>{y}</option>)}</select></label>
-     <label>Kompetisi<select value={contest} onChange={e=>{setContest(e.target.value);setStage("Semua");}}><option>Semua</option>{Array.from(new Set([...contests,...competitionArchives.filter(a=>level==="Semua"||a.level===level).map(a=>a.competition)])).sort().map(c=><option key={c}>{c}</option>)}</select></label>
+     <label>Kompetisi<select value={contest} onChange={e=>{setContest(e.target.value);setStage("Semua");}}><option>Semua</option>{contests.map(c=><option key={c}>{c}</option>)}</select></label>
      <label>Tahap seleksi<select value={stage} onChange={e=>setStage(e.target.value)}><option>Semua</option>{stages.map(s=><option key={s}>{s}</option>)}</select></label>
      <label>Topik<select value={topic} onChange={e=>setTopic(e.target.value)}><option>Semua</option>{topics.map(t=><option key={t}>{t}</option>)}</select></label>
      <label>Kesulitan<select value={diff} onChange={e=>setDiff(e.target.value)}><option>Semua</option>{difficultyLabels.slice(1).map((d,i)=><option value={i+1} key={d}>{d}</option>)}</select></label>
@@ -64,14 +61,12 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
     </div>
    </aside>
    <div className="cmp-results">
-    {packages.length>0&&<details className="cmp-archive-section" open><summary><strong>Arsip naskah kompetisi 2024–2026</strong><span>{packages.length} rujukan</span></summary><p>Telusuri paket menurut kompetisi dan babak. Tautan sumber dapat memuat jawaban; DMath tidak menampilkan pembahasan. Naskah yang belum diperiksa seluruhnya diberi keterangan.</p><div className="cmp-archive-list">{packages.map(a=><article key={a.id} className="cmp-archive-row"><div><small>{a.level} · {a.year} · {a.provider}</small><h3>{a.stage} {a.year} — {a.round}</h3><p>{a.note}</p></div><div className="cmp-archive-action"><span>{a.status==="resmi"?"Naskah resmi":a.status==="tautan"?"Arsip pihak ketiga":"Akses terbatas"}</span><a className="cmp-link-text" href={a.url} target="_blank" rel="noopener noreferrer">{a.status==="terbatas"?"Buka portal":"Buka sumber"} ↗</a></div></article>)}</div></details>}
 
     <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length} soal ditemukan</span></div>
     <div className="cmp-problem-list">{filtered.map(p=><ProblemCard p={p} key={p.id}/>)}</div>
     {!filtered.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
    </div>
   </div>
-  <section className="cmp-subsection cmp-refs"><h2>Referensi kompetisi</h2><div className="cmp-resources">{officialResources.map(r=><a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer"><strong>{r.name} ↗</strong><small>{r.level}</small><span>{r.description}</span></a>)}</div></section>
  </div>;
 }
 
