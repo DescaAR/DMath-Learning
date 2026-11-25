@@ -13654,6 +13654,348 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.ktom-tomi.or.id/",
       "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 7. URL is organizer homepage."
     }
+  },
+  {
+    "id": "ktom-2018-oct-a-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Terdapat 4 bola merah dan 3 bola putih pada suatu kotak. Dua bola dari kotak akan diambil secara bersamaan. Jika bentuk paling sederhana dari peluang terambilnya bola berwarna sama adalah $\\frac mn$, tentukan $m+n$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 1",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan bilangan bulat $n$ terbesar sehingga $5000\\cdot(0,6)^n$ merupakan bilangan bulat.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 2",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diketahui $(g\\circ f)(x+2)=2x^2+8x+5$ serta $g(x)=2x+5$ untuk setiap bilangan real $x$. Tentukan bilangan real positif $x$ yang memenuhi $f(x)=96$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 3",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diketahui luas segienam beraturan $ABCDEF$ adalah $150\\sqrt3$. Tentukan panjang $AD$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 4",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Seorang guru mengadakan ulangan sejarah. Ulangan tersebut terdiri dari lima soal pilihan ganda dan setiap soal terdiri dari lima pilihan jawaban. Kimi, salah satu peserta ulangan, mengetahui bahwa soal pertama terdapat empat pilihan jawaban yang pasti salah, soal kedua terdapat tiga pilihan jawaban yang pasti salah, soal ketiga terdapat dua pilihan jawaban yang pasti salah, soal keempat terdapat satu jawaban yang pasti salah, dan soal kelima tidak terdapat pilihan jawaban yang pasti salah. Asumsikan setiap soal hanya memiliki satu jawaban benar, Kimi menjawab semua soal dengan menebak jawaban dengna syarat Kimi tidak memilih jawaban yang sudah pasti salah. Jika peluang Kimi menjawab dengan benar tepat tiga dari lima soal dapat dinyatakan dalam bentuk $\\frac ab$ dimana $a$ dan $b$ adalah bilangan asli yang relatif prima, tentukan nilai dari $100a+b$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 5",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 5",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan faktor persekutuan terbesar dari $(2018!+1)$ dan $2019!$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 6",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 6",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-07",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Russell menyusun suatu persamaan kubik $x^3-px^2+qx-r=0$ dimana $(p,q,r)$ adalah susunan acak dari $(1,2,3)$. Bila akar-akar dari persamaan kubik tersebut adalah $a,b$, dan $c$, tentukan nilai terbesar dari $(a+2)(b+2)(c+2)$ yang mungkin.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 7",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 7",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-08",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diketahui pada segitiga $ABC$, panjang $BC$ adalah 17. Titik $A,D,E$, dan $B$ terletak segaris dengan urutan demikian, sedangkan titik $A,F,G$, dan $C$ terletak segaris dengan urutan demikian sehingga luas kelima segitiga $ADF,DFG,DEG,CEG$, dan $BEC$ adalah sama. Bila $AE=12$ dan $CG=2$, tentukan luas segitiga $AFD$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 8",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 8",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-09",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan banyaknya nilai $n$ bilangan bulat tak negatif sehingga\n\n$$((n!+1)!+2)!+3$$\n\nadalah bilangan kubik sempurna.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 9",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 9",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-10",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Misal $a$ dan $b$ adalah akar-akar dari persamaan kuadrat $x^2+20x+18=0$. Misalkan\n\n$$\\frac{20b^2-400a-20a^2}{18a-18b-a^2b}=\\frac pq$$\n\nuntuk suatu bilangan bulat $p$ dan $q$ yang positif dan relatif prima. Tentukan nilai $p-q^2$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 10",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 10",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-11",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Terdapat segmen $AB$ dengan panjang 6. $C$ dan $D$ dipilih acak pada segmen $AB$ sedemikian sehingga $0\\le AC\\le AD\\le AB$. Jika peluang $CD\\ge4$ dan $2AC\\le CD$ dapat dinyatakan dalam $\\frac ab$ dengan $a$ dan $b$ adalah dua bilangan bulat positif yang saling relatif prima, tentukan nilai dari $a+b$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 11",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 11",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-12",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diketahui sebuah segitiga lancip $ABC$ dengan $BC>CA>AB$ dan $\\angle BCA=22.5^\\circ$. $H$ dan $O$ ialah titik tinggi dan titik pusat lingkaran luar segitiga tersebut. Jari-jari lingkaran luar segitiga ini ialah 2. Jika $[AHO]+[BHO]+[CHO]=\\sqrt{18}-\\sqrt6$, berapakah besar dari sudut $\\angle ABC$?",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 12",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 12",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-13",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Misalkan $a,b\\in\\mathbb R$ dan $b\\ne0$. Jika nilai maksimum dari\n\n$$\\min\\left(\\frac{4-a^2b}{4b},\\frac{4ab^2-1}{4b^2}\\right)$$\n\nadalah $M$, di mana $\\min(x,y)$ menyatakan bilangan terkecil di antara $x$ dan $y$. Tentukan nilai dari $\\lfloor100M\\rfloor$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 13",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 13",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-14",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Seorang pecinta alam bernama Afif sedang tersesat di tengah hutan weebuu yang berbentuk segitiga dengan titik sudut $(0,0),(4,0)$ dan $(0,4)$. Pada kedua sisi tegak hutan (yaitu sumbu-$x$ dan sumbu-$y$) terdapat katak raksasa yang lapar, sehingga ketika Afif menginjakkan kaki sisi tegak tersebut, ia akan langsung dimangsa. Namun, pada sisi miring segitiga siku-siku tersebut (garis $x+y=4$), terdapat pintu ke mana saja yang dapat mengantarkan Afif pulang dalam sekejap.\n\nPada saat ini, Afif berada pada titik $(1,1)$ dan melangkah secara acak karena ia tidak membawa kompas. Diketahui bahwa jika Afif berada pada titik $(x,y)$ maka Afif hanya dapat melangkah ke titik $(x-1,y)$ atau $(x,y-1)$ dengan peluang $\\frac38$ serta ke titik $(x+1,y)$ atau $(x,y+1)$ dengan peluang $\\frac18$. Jika peluang Afif berhasil pulang dapat dituliskan sebagai $\\frac mn$ dimana $m$ dan $n$ adalah bilangan asli relatif prima, tentukan nilai $m+n$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 14",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 14",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-15",
+    "level": "SMA",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diberikan $j,k,l$ tiga buah bilangan bulat positif berbeda yang tidak lebih besar daripada 2018. Tentukan banyaknya pasangan bilangan bulat $(j,k,l)$ yang memenuhi kedua kondisi berikut:\n\n$$\\left\\lfloor\\frac jk\\right\\rfloor,\\left\\lfloor\\frac kl\\right\\rfloor,\\left\\lfloor\\frac lj\\right\\rfloor$$\n\nadalah barisan aritmatika dengan urutan tersebut dan\n\n$$\\left\\lceil\\frac jk\\right\\rceil,\\left\\lceil\\frac kl\\right\\rceil,\\left\\lceil\\frac lj\\right\\rceil$$\n\nadalah barisan geometri dengan urutan tersebut.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 15",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 15",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-a-16",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga $ABC$ dengan $BC=10$ dan $\\angle BAC=45^\\circ$. Pada sisi $AB$ dan $AC$, dibentuk persegi $ABDE$ dan $ACFG$ ke arah luar segitiga $ABC$. Misalkan $O$ adalah pusat lingkaran luar $AEG$. Diketahui bahwa $OD^2+OF^2=1308$. Tentukan luas segitiga $ADF$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian A, Nomor 16",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian A, Nomor 16",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-b-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Aljabar",
+    "prompt": "Tentukan semua bilangan bulat positif $n$, sehingga untuk setiap bilangan real $a$ dan $b$, dipunyai\n\n$$a^n+b^n\\ge a^{n-1}b+b^{n-1}a.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian B, Nomor 2",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian B, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-b-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri",
+    "prompt": "Pada segitiga lancip $ABC$, misalkan $D,E$ ialah dua titik di lingkaran luar segitiga $ABC$ sehingga $DE$ ialah diameter, $DE\\parallel BC$ dan $D$ lebih dekat ke $B$ dibandingkan dengan $C$. Misalkan $H$ titik tinggi dari $ABC$, dan $\\Gamma$ ialah lingkaran dengan diameter $AH$. $\\Gamma$ memotong $AD,AB,AC,AE$ berturut-turut di $M,G,F,L$, dan $MF$ memotong $GL$ di $P$. Buktikan $\\angle BPC=90^\\circ$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian B, Nomor 3",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian B, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-oct-b-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Teori Bilangan",
+    "prompt": "Diberikan barisan bilangan asli $(u_n)_{n=1}^\\infty$ dengan\n\n$$u_n=a^n-b^n$$\n\nuntuk suatu bilangan asli $a>b$ yang relatif prima. Tentukan, dengan bukti, semua pasangan $(a,b)$ yang mungkin sedemikian sehingga terdapat empat bilangan $u_p,u_q,u_r$, dan $u_s$, dimana $s\\ne p$, $s\\ne q$, dan $s\\ne r$, yang memenuhi\n\n$$u_pu_qu_r=u_s.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — Oktober, Bagian B, Nomor 4",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes Oktober",
+      "number": "Bagian B, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM OKTOBER 2018.pdf, PDF page 6–7. URL is organizer homepage."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
