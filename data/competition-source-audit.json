@@ -3893,24 +3893,23 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
-        "finding": "Problem body words and mathematical content match official HTML after normalizing TeX spacing and line wraps.",
-        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
-        "textStatus": "verified_against_official_html",
-        "renderStatus": "pending"
+        "method": "User-supplied IMC_2026_Day_2_Problems.pdf: extracted text and visually inspected rendered PDF page 1",
+        "finding": "Question body, punctuation, mathematical notation, and paragraph order matched. Author byline excluded from question-only display; typography and line wraps normalized for web."
       },
       "strictReview": {
         "version": 2,
-        "textStatus": "verified_against_official_html",
+        "textStatus": "verified_against_user_pdf",
         "renderStatus": "pending_visual_verification",
         "overallStatus": "not_passed",
-        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
-        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
+        "source": "User-supplied IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "reviewedRevision": "90d855e5427ee5822fd698e6fe8b50e2ff593546",
+        "note": "PDF page 1 visually inspected; website render not yet verified."
       },
       "priorAuditStatus": "exact_verified"
     },
     "imc-2026-07": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -3920,23 +3919,22 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
-        "finding": "Wording differs from official HTML; replacement pending.",
-        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
-        "textStatus": "known_difference",
-        "renderStatus": "pending"
+        "method": "User-supplied IMC_2026_Day_2_Problems.pdf: extracted text and visually inspected rendered PDF page 1",
+        "finding": "Question body, punctuation, mathematical notation, and paragraph order matched. Author byline excluded from question-only display; typography and line wraps normalized for web."
       },
       "strictReview": {
         "version": 2,
-        "textStatus": "known_difference",
+        "textStatus": "verified_against_user_pdf",
         "renderStatus": "pending_visual_verification",
         "overallStatus": "not_passed",
-        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
-        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
+        "source": "User-supplied IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "reviewedRevision": "90d855e5427ee5822fd698e6fe8b50e2ff593546",
+        "note": "PDF page 1 visually inspected; website render not yet verified."
       }
     },
     "imc-2026-08": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -3946,19 +3944,18 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
-        "finding": "Wording differs from official HTML; replacement pending.",
-        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
-        "textStatus": "known_difference",
-        "renderStatus": "pending"
+        "method": "User-supplied IMC_2026_Day_2_Problems.pdf: extracted text and visually inspected rendered PDF page 1",
+        "finding": "Question body, punctuation, mathematical notation, and paragraph order matched. Author byline excluded from question-only display; typography and line wraps normalized for web."
       },
       "strictReview": {
         "version": 2,
-        "textStatus": "known_difference",
+        "textStatus": "verified_against_user_pdf",
         "renderStatus": "pending_visual_verification",
         "overallStatus": "not_passed",
-        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
-        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
+        "source": "User-supplied IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "reviewedRevision": "90d855e5427ee5822fd698e6fe8b50e2ff593546",
+        "note": "PDF page 1 visually inspected; website render not yet verified."
       }
     },
     "imc-2026-09": {
@@ -3972,23 +3969,22 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
-        "finding": "Problem body words and mathematical content match official HTML after normalizing TeX spacing and line wraps.",
-        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
-        "textStatus": "verified_against_official_html",
-        "renderStatus": "pending"
+        "method": "User-supplied IMC_2026_Day_2_Problems.pdf: extracted text and visually inspected rendered PDF page 1",
+        "finding": "Question body, punctuation, mathematical notation, and paragraph order matched. Author byline excluded from question-only display; typography and line wraps normalized for web."
       },
       "strictReview": {
         "version": 2,
-        "textStatus": "verified_against_official_html",
+        "textStatus": "verified_against_user_pdf",
         "renderStatus": "pending_visual_verification",
         "overallStatus": "not_passed",
-        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
-        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
+        "source": "User-supplied IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "reviewedRevision": "90d855e5427ee5822fd698e6fe8b50e2ff593546",
+        "note": "PDF page 1 visually inspected; website render not yet verified."
       }
     },
     "imc-2026-10": {
-      "status": "wording_differs",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2026,
@@ -3998,19 +3994,18 @@
         "date": "2026-11-25",
         "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
         "page": 1,
-        "method": "Official organizer HTML problem statement compared to repository text; PDF screenshot unavailable",
-        "finding": "Wording differs from official HTML; replacement pending.",
-        "htmlUrl": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2026",
-        "textStatus": "known_difference",
-        "renderStatus": "pending"
+        "method": "User-supplied IMC_2026_Day_2_Problems.pdf: extracted text and visually inspected rendered PDF page 1",
+        "finding": "Question body, punctuation, mathematical notation, and paragraph order matched. Author byline excluded from question-only display; typography and line wraps normalized for web."
       },
       "strictReview": {
         "version": 2,
-        "textStatus": "known_difference",
+        "textStatus": "verified_against_user_pdf",
         "renderStatus": "pending_visual_verification",
         "overallStatus": "not_passed",
-        "reviewedRevision": "de8de43f7dbb83c6768c13e92f83a8698482c45d",
-        "note": "HTML comparison only; original PDF screenshot and website render not verified in this session."
+        "source": "User-supplied IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "reviewedRevision": "90d855e5427ee5822fd698e6fe8b50e2ff593546",
+        "note": "PDF page 1 visually inspected; website render not yet verified."
       }
     },
     "imc-2025-04": {
