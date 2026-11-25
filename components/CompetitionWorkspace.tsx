@@ -45,7 +45,11 @@ const competitionFullNames: Readonly<Record<string, string>> = {
   "UMC UNDIP": "UNDIP's Mathematics Competition",
   "OLMAT UNSOED": "Olimpiade Matematika Universitas Jenderal Soedirman",
   "OMITS": "Olimpiade Matematika ITS",
-  "PEMNAS UB": "Pekan Matematika Nasional Universitas Brawijaya"
+  "PEMNAS UB": "Pekan Matematika Nasional Universitas Brawijaya",
+  "MCR UNESA": "Mathematics Competition Revolution Universitas Negeri Surabaya",
+  "OMVN UM": "Olimpiade Matematika Vektor Nasional Universitas Negeri Malang",
+  "VTRMC": "Virginia Tech Regional Mathematics Contest",
+  "SEEMOUS": "South Eastern European Mathematical Olympiad for University Students"
 };
 const competitionHeading = (name: string) => competitionFullNames[name] ? `${name} (${competitionFullNames[name]})` : name;
 const categoryOrder=(a:string,b:string)=>a==="DMath Learning Proposed"?1:b==="DMath Learning Proposed"?-1:a.localeCompare(b,"id");
@@ -1102,6 +1106,191 @@ const contestSources: ContestSource[] = [
     "kind": "Koleksi soal"
   }
 ];
+contestSources.push(...[
+  {
+    "competition": "LMNas UGM",
+    "level": "SMP",
+    "label": "Kumpulan soal terdahulu resmi LMNas UGM",
+    "url": "https://lmnas.fmipa.ugm.ac.id/soal-lmnas-sebelumnya/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "LMNas UGM",
+    "level": "SMA",
+    "label": "Kumpulan soal terdahulu resmi LMNas UGM",
+    "url": "https://lmnas.fmipa.ugm.ac.id/soal-lmnas-sebelumnya/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "LMNas UGM",
+    "level": "SMP",
+    "label": "Koleksi soal LMNas UGM dari beberapa tahun",
+    "url": "https://www.defantri.com/2021/11/kumpulan-soal-lmnas-ugm-smp-sma.html?m=1",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "LMNas UGM",
+    "level": "SMA",
+    "label": "Koleksi soal LMNas UGM dari beberapa tahun",
+    "url": "https://www.defantri.com/2021/11/kumpulan-soal-lmnas-ugm-smp-sma.html?m=1",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "LMNas UGM",
+    "level": "SMP",
+    "label": "Paket terbaru dari penyelenggara",
+    "url": "https://lmnas.fmipa.ugm.ac.id/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "LMNas UGM",
+    "level": "SMA",
+    "label": "Paket terbaru dari penyelenggara",
+    "url": "https://lmnas.fmipa.ugm.ac.id/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OMITS",
+    "level": "SD",
+    "label": "Kumpulan soal OMITS",
+    "url": "https://www.konsep-matematika.com/2022/11/download-kumpulan-soal-omits.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OMITS",
+    "level": "SMP",
+    "label": "Kumpulan soal OMITS",
+    "url": "https://www.konsep-matematika.com/2022/11/download-kumpulan-soal-omits.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OMITS",
+    "level": "SMA",
+    "label": "Kumpulan soal OMITS",
+    "url": "https://www.konsep-matematika.com/2022/11/download-kumpulan-soal-omits.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "MCR UNESA",
+    "level": "SMP",
+    "label": "Soal matematika UNESA beberapa edisi",
+    "url": "https://kamtoalrasyid84.wordpress.com/mathematic-competition/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "MCR UNESA",
+    "level": "SMA",
+    "label": "Soal matematika UNESA beberapa edisi",
+    "url": "https://kamtoalrasyid84.wordpress.com/mathematic-competition/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OMVN UM",
+    "level": "SD",
+    "label": "Koleksi soal OMVN — LMS Matematika",
+    "url": "https://www.math-lms.com/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OMVN UM",
+    "level": "SMP",
+    "label": "Koleksi soal OMVN — LMS Matematika",
+    "url": "https://www.math-lms.com/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OMVN UM",
+    "level": "SMA",
+    "label": "Koleksi soal OMVN — LMS Matematika",
+    "url": "https://www.math-lms.com/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OLMAT UNSOED",
+    "level": "SMA",
+    "label": "Kumpulan soal resmi HIMATIKA UNSOED",
+    "url": "https://himatika.ukm.unsoed.ac.id/olmat/kumpulan-soal/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "VTRMC",
+    "level": "Kuliah",
+    "label": "Paket resmi Virginia Tech 1987–2022",
+    "url": "https://math.vt.edu/undergrad-math/vtrmc.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SEAMO",
+    "level": "SD",
+    "label": "Kumpulan soal SEAMO",
+    "url": "https://www.k12mathcontests.com/contest/seamo",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SEAMO",
+    "level": "SMP",
+    "label": "Kumpulan soal SEAMO",
+    "url": "https://www.k12mathcontests.com/contest/seamo",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SEAMO",
+    "level": "SMA",
+    "label": "Kumpulan soal SEAMO",
+    "url": "https://www.k12mathcontests.com/contest/seamo",
+    "kind": "Koleksi soal"
+  }
+]);
+yearPapers.push(...[
+  {
+    "competition": "SEEMOUS",
+    "level": "Kuliah",
+    "year": 2020,
+    "stage": "SEEMOUS",
+    "label": "Naskah resmi kompetisi",
+    "url": "https://seemous2020.math.auth.gr/contestproblems"
+  },
+  {
+    "competition": "SEEMOUS",
+    "level": "Kuliah",
+    "year": 2024,
+    "stage": "SEEMOUS",
+    "label": "Naskah resmi kompetisi",
+    "url": "https://math.etti.tuiasi.ro/seemous2024/index.php/group-contest/problems/"
+  },
+  {
+    "competition": "SEEMOUS",
+    "level": "Kuliah",
+    "year": 2007,
+    "stage": "SEEMOUS",
+    "label": "Naskah kompetisi",
+    "url": "https://armaganka.org.mk/uploads/books/7cO4YoWQyE6pSRQpj36AKQ.pdf"
+  },
+  {
+    "competition": "LMNas UGM",
+    "level": "SMP",
+    "year": 2021,
+    "stage": "Penyisihan",
+    "label": "LMNas 32 · SMP",
+    "url": "https://lmnas.fmipa.ugm.ac.id/wp-content/uploads/sites/770/2021/10/Penyisihan-SMp-merged.pdf"
+  },
+  {
+    "competition": "LMNas UGM",
+    "level": "SMP",
+    "year": 2023,
+    "stage": "Penyisihan",
+    "label": "LMNas 34 · SMP",
+    "url": "https://lmnas.fmipa.ugm.ac.id/wp-content/uploads/sites/770/2024/09/LMNas34-SMP-Penyisihan.pdf"
+  },
+  {
+    "competition": "LMNas UGM",
+    "level": "SMP",
+    "year": 2023,
+    "stage": "Semifinal",
+    "label": "LMNas 34 · SMP",
+    "url": "https://lmnas.fmipa.ugm.ac.id/wp-content/uploads/sites/770/2024/09/LMNas34-SMP-Semifinal.pdf"
+  }
+] as YearPaper[]);
 function YearPaperIndex({items}:{items:YearPaper[]}){
  return <details open={items.length===1||undefined} style={{margin:"0 0 16px",padding:"14px 16px",border:"1px solid var(--cmp-line)",borderRadius:10,background:"var(--cmp-paper)"}}>
   <summary style={{fontWeight:700,cursor:"pointer"}}>Buka naskah per tahun · {items.length} paket</summary>
@@ -1153,7 +1342,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  return <div className="cmp-page container cmp-catalog">
   <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length+((level==="Semua"||level==="Kuliah")?imcMissing.length:0)}</strong><span>{level==="Semua"||level==="Kuliah"?"soal dan tautan tersedia":"soal tersedia"}</span></div></header>
   {fixedLevel&&<nav className="cmp-level-section-nav" aria-label="Menu jenjang"><span aria-current="page">Kumpulan Soal</span><Link href={levelHref(fixedLevel)+"potd/"}>Soal Harian →</Link></nav>}
-  <section className="cmp-category-section" aria-label="Kategori kompetisi"><h2>Kategori kompetisi</h2><div className="cmp-category-buttons" role="group" aria-label="Pilih kategori">{["Semua",...contests].map(c=><button type="button" key={c} aria-pressed={contest===c} onClick={()=>{setContest(c);setStage("Semua");setYear("Semua");setSource("Semua");setTopic("Semua");setDiff("Semua");}}><span>{c==="Semua"?"Semua kompetisi":c}</span><small>{(c==="Semua"?pool.length:pool.filter(p=>categoryOf(p)===c).length)+((level==="Semua"||level==="Kuliah")&&(c==="Semua"||c==="IMC")?imcMissing.length:0)||""}{(c==="Semua"||pool.some(p=>categoryOf(p)===c)||c==="IMC")?" soal":""}{sourcesForLevel.some(s=>c==="Semua"||s.competition===c)||papersForLevel.some(s=>c==="Semua"||s.competition===c)?" · naskah":""}</small></button>)}</div></section>
+  <section className="cmp-category-section" aria-label="Kategori kompetisi"><h2>Kategori kompetisi</h2><div className="cmp-category-buttons" role="group" aria-label="Pilih kategori">{["Semua",...contests].map(c=><button type="button" key={c} aria-pressed={contest===c} onClick={()=>{setContest(c);setStage("Semua");setYear("Semua");setSource("Semua");setTopic("Semua");setDiff("Semua");}}><span>{c==="Semua"?"Semua kompetisi":c}</span><small>{[((c==="Semua"?pool.length:pool.filter(p=>categoryOf(p)===c).length)+((level==="Semua"||level==="Kuliah")&&(c==="Semua"||c==="IMC")?imcMissing.length:0))||null, sourcesForLevel.some(s=>c==="Semua"||s.competition===c)||papersForLevel.some(s=>c==="Semua"||s.competition===c)?"naskah":null].map(x=>typeof x==="number"?x+" soal":x).filter(Boolean).join(" · ")}</small></button>)}</div></section>
   <div className="cmp-catalog-layout">
    <aside className="cmp-filter" aria-label="Filter soal">
     <div className="cmp-filter-title"><h2>Filter soal</h2><button className="cmp-text-button" type="button" onClick={reset}>Atur ulang</button></div>
@@ -1172,7 +1361,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
    <div className="cmp-results">
 
     <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length+linkedIMC.length} soal ditemukan{linkedIMC.length>0?" · "+linkedIMC.length+" tautan":""}{linkedPapers.length>0?" · "+linkedPapers.length+" naskah":""}{linkedSources.length>0?" · "+new Set(linkedSources.map(s=>s.competition+"|"+s.url)).size+" sumber":""}</span></div>
-    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length+(g.name==="IMC"?linkedIMC.length:0)} soal{linkedPapers.some(p=>p.competition===g.name)?" · "+linkedPapers.filter(p=>p.competition===g.name).length+" naskah":""}</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={imcVisible}/>} {linkedPapers.some(p=>p.competition===g.name)&&<YearPaperIndex items={linkedPapers.filter(p=>p.competition===g.name)}/> } {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&source!=="original"&&year==="Semua"&&stage==="Semua"&&!query.trim()&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}{linkedSources.some(s=>s.competition===g.name)&&<div style={{display:"grid",gap:8,marginBottom:14}}>{Array.from(new Map(linkedSources.filter(s=>s.competition===g.name).map(s=>[s.url,s])).values()).map(s=><a key={s.url} href={s.url} className="cmp-link-text" target="_blank" rel="noopener noreferrer" style={{display:"block",padding:"12px 14px",border:"1px solid var(--cmp-line)",borderRadius:8,background:"var(--cmp-paper)"}}>{s.label} ↗<span style={{display:"block",fontSize:12,fontWeight:400,color:"var(--cmp-muted)"}}>{s.kind} · eksternal</span></a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
+    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{[g.items.length+(g.name==="IMC"?linkedIMC.length:0)>0?(g.items.length+(g.name==="IMC"?linkedIMC.length:0))+" soal":"",linkedPapers.some(p=>p.competition===g.name)?linkedPapers.filter(p=>p.competition===g.name).length+" paket":"",linkedSources.some(s=>s.competition===g.name)?new Set(linkedSources.filter(s=>s.competition===g.name).map(s=>s.url)).size+" sumber":""].filter(Boolean).join(" · ")}</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={imcVisible}/>} {linkedPapers.some(p=>p.competition===g.name)&&<YearPaperIndex items={linkedPapers.filter(p=>p.competition===g.name)}/> } {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&source!=="original"&&year==="Semua"&&stage==="Semua"&&!query.trim()&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}{linkedSources.some(s=>s.competition===g.name)&&<div style={{display:"grid",gap:8,marginBottom:14}}>{Array.from(new Map(linkedSources.filter(s=>s.competition===g.name).map(s=>[s.url,s])).values()).map(s=><a key={s.url} href={s.url} className="cmp-link-text" target="_blank" rel="noopener noreferrer" style={{display:"block",padding:"12px 14px",border:"1px solid var(--cmp-line)",borderRadius:8,background:"var(--cmp-paper)"}}>{s.label} ↗<span style={{display:"block",fontSize:12,fontWeight:400,color:"var(--cmp-muted)"}}>{s.kind} · eksternal</span></a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
     {!filtered.length&&!linkedIMC.length&&!linkedPapers.length&&!linkedSources.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
    </div>
   </div>
