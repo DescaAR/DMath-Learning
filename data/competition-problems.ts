@@ -9856,6 +9856,330 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
       "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
     }
+  },
+  {
+    "id": "imo-2012-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Titik tengah pada konstruksi lingkaran singgung luar",
+    "prompt": "The $A$-excircle of triangle $ABC$, centered at $J$, touches segment $BC$ at $M$ and rays $AB,AC$ beyond $B,C$ at $K,L$. Set $F=LM\\cap BJ$, $G=KM\\cap CJ$, $S=AF\\cap BC$, $T=AG\\cap BC$ (line intersections). Establish $SM=MT$ with $M$ between $S,T$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2012,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2012 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2012-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketaksamaan hasil kali berpangkat",
+    "prompt": "Given integer $n\\ge3$ and positive reals $a_2,\\ldots,a_n$ with $a_2a_3\\cdots a_n=1$, establish $$(1+a_2)^2(1+a_3)^3\\cdots(1+a_n)^n>n^n.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2012,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2012 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2012-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Strategi permainan penebak dan pembohong",
+    "prompt": "In the liar's guessing game, both players know positive integers $k,n$. A chooses integers $1\\le x\\le N$, revealing $N$ truthfully but hiding $x$. B repeatedly asks whether $x\\in S$ for arbitrary positive-integer sets $S$ (repetitions allowed). A answers immediately yes or no; every block of $k+1$ successive answers must include a truthful one. B chooses when to stop and names a set $X$ of at most $n$ positive integers, winning precisely when $x\\in X$.\n\nProve:\n\n1. B has a guaranteed winning strategy for $n\\ge2^k$.\n2. For sufficiently large $k$, some integer $n\\ge1.99^k$ prevents B from guaranteeing victory.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2012,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2012 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2012-04",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Persamaan fungsi pada bilangan bulat",
+    "prompt": "Classify integer-valued maps $f:\\mathbb Z\\to\\mathbb Z$ obeying $$f(a)^2+f(b)^2+f(c)^2=2f(a)f(b)+2f(b)f(c)+2f(c)f(a)$$ whenever integers $a,b,c$ sum to zero.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2012,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2012 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2012-05",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kesamaan panjang dua ruas",
+    "prompt": "Triangle $ABC$ is right at $C$, with altitude foot $D$. Choose $X$ strictly inside $CD$, $K\\in AX$ satisfying $BK=BC$, and $L\\in BX$ satisfying $AL=AC$ (segment membership). For $M=AL\\cap BK$, establish $MK=ML$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2012,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2012 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2012-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Jumlah pecahan dengan pangkat dua dan tiga",
+    "prompt": "Classify positive integers $n$ admitting nonnegative integers $a_1,\\ldots,a_n$ with $$\\frac1{2^{a_1}}+\\frac1{2^{a_2}}+\\cdots+\\frac1{2^{a_n}}=\\frac1{3^{a_1}}+\\frac2{3^{a_2}}+\\cdots+\\frac n{3^{a_n}}=1.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2012,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2012 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2013-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Faktorisasi pecahan positif",
+    "prompt": "For positive integers $k,n$, establish existence of positive integers $m_1,\\ldots,m_k$, allowing repetitions, satisfying $$1+\\frac{2^k-1}{n}=\\left(1+\\frac1{m_1}\\right)\\left(1+\\frac1{m_2}\\right)\\cdots\\left(1+\\frac1{m_k}\\right).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2013,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2013 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2013-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pemisahan titik merah dan biru",
+    "prompt": "A Colombian configuration comprises 2013 red and 2014 blue planar points, with no collinear triple. A good arrangement of lines avoids all marked points and divides the plane into regions containing at most one colour. Minimize $k$ guaranteeing such an arrangement of $k$ lines for every Colombian configuration.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2013,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2013 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2013-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Pusat lingkaran segitiga titik singgung",
+    "prompt": "For triangle $ABC$, let $A_1,B_1,C_1$ be the contact points of its opposite excircles on $BC,CA,AB$, respectively. Each excircle touches the opposite side segment and the two adjacent side rays extended beyond their endpoints. If the circumcenter of $A_1B_1C_1$ belongs to the circumcircle of $ABC$, establish that $ABC$ is right-angled.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2013,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2013 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2013-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kolinearitas titik diameter dan ortosenter",
+    "prompt": "In acute triangle $ABC$ with orthocenter $H$, choose $W$ strictly between $B,C$. Let $M,N$ be the altitude feet from $B,C$. Choose $X,Y$ so that $WX,WY$ are diameters of the circumcircles of $BWN,CWM$, respectively. Establish collinearity of $X,Y,H$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2013,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2013 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2013-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Karakterisasi fungsi identitas rasional positif",
+    "prompt": "Suppose $f:\\mathbb Q_{>0}\\to\\mathbb R$ obeys\n\n(i) $f(x)f(y)\\ge f(xy)$ for positive rationals $x,y$;\n\n(ii) $f(x+y)\\ge f(x)+f(y)$ for positive rationals $x,y$;\n\n(iii) $f(a)=a$ for some rational $a>1$.\n\nEstablish $f(x)=x$ throughout $\\mathbb Q_{>0}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2013,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2013 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2013-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pelabelan beautiful pada lingkaran",
+    "prompt": "For integer $n\\ge3$, label $n+1$ equally spaced circular points bijectively by $0,\\ldots,n$, identifying rotations. A labelling is beautiful when chords $ad$ and $bc$ never intersect for labels $a<b<c<d$ satisfying $a+d=b+c$. Let $M$ count beautiful labellings and $N$ count ordered positive-integer pairs $(x,y)$ satisfying $x+y\\le n$ and $\\gcd(x,y)=1$. Establish $M=N+1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2013,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2013 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2014-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketunggalan indeks pada barisan meningkat",
+    "prompt": "Given an infinite strictly increasing sequence $a_0<a_1<a_2<\\cdots$ of positive integers, establish existence and uniqueness of integer $n\\ge1$ satisfying $$a_n<\\frac{a_0+a_1+\\cdots+a_n}{n}\\le a_{n+1}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2014,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2014 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2014-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Persegi kosong pada papan benteng",
+    "prompt": "For integer $n\\ge2$, a peaceful placement on an $n\\times n$ chessboard has one rook per row and column. Determine the largest positive integer $k$ such that every peaceful placement leaves some contiguous $k\\times k$ square of unit cells entirely rook-free.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2014,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2014 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2014-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Garis singgung pada lingkaran TSH",
+    "prompt": "Convex $ABCD$ satisfies $\\angle ABC=\\angle CDA=90^\\circ$. Let $H$ be the perpendicular foot from $A$ to line $BD$. Choose $S\\in AB,T\\in AD$ on the sides, with $H$ interior to $SCT$ and $\\angle CHS-\\angle CSB=90^\\circ$, $\\angle THC-\\angle DTC=90^\\circ$. Establish tangency of $BD$ to the circumcircle of $TSH$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2014,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2014 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2014-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Perpotongan garis pada lingkaran luar",
+    "prompt": "In acute triangle $ABC$, take $P,Q$ on side $BC$ satisfying $\\angle PAB=\\angle BCA$, $\\angle CAQ=\\angle ABC$. Reflect $A$ through $P,Q$ to obtain $M,N$, respectively. Establish that $BM$ and $CN$ meet on the circumcircle of $ABC$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2014,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2014 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2014-05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Partisi koleksi koin pecahan",
+    "prompt": "The Bank of Cape Town issues denominations $\\frac1n$ for every positive integer $n$. Prove that any finite collection of these coins, allowing repeated denominations, worth at most $99+\\frac12$, can be partitioned into at most 100 groups each worth at most 1.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2014,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2014 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
+  },
+  {
+    "id": "imo-2014-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pewarnaan garis pada posisi umum",
+    "prompt": "Planar lines are in general position when no two are parallel and no three concurrent. Their arrangement defines finite regions (regions of finite area). For sufficiently large $n$, establish that any $n$ such lines admit a selection of at least $\\sqrt n$ to colour blue, with no finite region bounded exclusively by blue lines.\n\nNote: Partial credit for the bound $c\\sqrt n$ depends on $c$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2014,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2014 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
+      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
