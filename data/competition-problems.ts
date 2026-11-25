@@ -14081,6 +14081,380 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1–2",
       "note": "User-supplied University Challange ZIP: MaGD/Soal-Sayembara-MaG-D-XIII-2020.pdf, PDF page 1."
     }
+  },
+  {
+    "id": "losema-2025-final-01",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Jika $V$ adalah himpunan pasangan terurut $(x,y)$ bilangan riil. Buktikan bahwa $V$ merupakan ruang Vektor dengan operasi\n\n$$(x,y)+(x_1,y_1)=(x+x_1,y+y_1+1)$$\n\ndan\n\n$$a(x,y)=(ax+a,ay+a-1)$$\n\ndan dapatkan nilai Vektor nol dari $V$.",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 1",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 1",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-02",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan $T:V\\to W$ adalah pemetaan linear. Tunjukkan:\n\n(a) $T$ bijektif jika dan hanya jika $v_1,v_2,\\ldots,v_n$ basis $V$ maka $\\{T(v_1),T(v_2),\\ldots,T(v_n)\\}$ basis $W$.\n\n(b) Jika $T$ isomorfisma maka $T^{-1}:W\\to V$ juga isomorfisma.",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 2",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 2",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-03",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Tentukan persamaan garis bagi suatu sudut yang dibentuk oleh garis $4x+3y-12=0$ dan $5x-12y-60=0$.",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 3",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 3",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-04",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Seorang wanita berdiri pada karang memandang sebuah perahu motor yang bergerak ke arah pantai tepat di bawahnya. Jika teropong berada 250 kaki di atas permukaan laut dan jika perahu mendekat dengan laju 20 kaki/detik. Berapa laju perubahan sudut teropong pada waktu perahu berada 250 kaki dari pantai?",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 4",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 4",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-05",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Seorang arkeolog menemukan sebuah cawan kuno yang bentuknya sangat unik. Permukaan bagian dalam cawan tersebut, jika dilihat dalam penampang dua dimensi pada bidang koordinat kartesius $(x,y)$, dibatasi oleh grafik fungsi $y=\\sqrt{9-x^2}$ untuk rentang horizontal dari $-2$ hingga $3$, dan alasnya dibatasi oleh sumbu $x$. Tentukan Volume cawan kuno tersebut jika diputar mengelilingi sumbu $x$!",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 5",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 5",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-06",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan luas daerah antara kurva $y=|x^2-4|$ dan sumbu $x$ antara $-3\\le x\\le3$.",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 6",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 6",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-07",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Diberikan fungsi dua peubah $u(x,y)=e^{ky^2}\\cos(ky)$ dengan $k$ adalah konstanta. Nilai dari $u_{xx}+u_{yy}$ adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 7",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 7",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Apabila diketahui $\\displaystyle\\int_{-\\infty}^{\\infty}e^{-x^2}dx=\\sqrt{\\pi}$ dan $f(t)=\\displaystyle\\int_{-\\infty}^{\\infty}e^{-tx^2}dx$, $t>0$. Maka nilai dari $f'(1)$ adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 8",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 8",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-09",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Diketahui sebuah prisma segitiga di ruang yang dibatasi oleh bidang-bidang datar $x=0$, $y=0$, $3x+2y-6=0$, $z=-4$, dan $z=4$. Prisma tersebut kemudian dipenggal oleh bidang datar $x+2+z=a$. Nilai $a$ sehingga bidang penggal tersebut membagi prisma menjadi dua bagian yang volumenya sama besar adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 9",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 9",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 2. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-10",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Nilai dari deret $\\displaystyle\\sum_{k=1}^{\\infty}\\frac{\\ln\\left(\\frac{k^k+1}{(k+1)^2}\\right)}{k(k+1)}$ adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 10",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 10",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 2. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-11",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$f(x)$ fungsi ganjil yang memenuhi persamaan integral\n\n$$\\int_0^\\pi f(x)\\sin(nx)dx=4$$\n\ndan\n\n$$\\int_0^1 f(x)\\cos(nx)dx=6$$\n\nMaka nilai dari\n\n$$\\int_{-1}^1\\left(f(x)\\sin(x)+f(x)\\cos(x)+f(x)\\sin^2(x)\\right)dx$$\n\nadalah...",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 11",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 11",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 2. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-12",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Diketahui segilima $ABCDE$ dengan $A(0,2)$, $B(4,0)$, $C(2\\pi+1,0)$, $D(2\\pi+1,4)$, dan $E(0,4)$. Titik $P$ dipilih secara acak dari titik di dalam segilima tersebut. Peluang sudut $APB$ berukuran tumpul adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 12",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 12",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 2. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-13",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Jika $D$ suatu daerah integral dengan sifat setiap unsur $x\\in D$ memenuhi $x^2=x$, maka unsur di $D$ adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 13",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 13",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 2. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-14",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diberikan bilangan real $c\\le2$. Buktikan bahwa untuk setiap bilangan real positif $x,y$ dengan $xy=1$ berlaku ketaksamaan:\n\n$$\\sqrt{\\frac{x^2+y^2}{2}}+\\frac{c}{x+y}\\ge1+\\frac c2$$",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 14",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 14",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 2. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "losema-2025-final-15",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Turunan kedua dari fungsi $y=f(x)$ yakni $6x-16$. Gradien garis singgung kurva pada titik $P(2,7)$ adalah $5$. Maka $f(x)$ adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "LOSEMA 2025 — Final, Nomor 15",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "stage": "Final",
+      "number": "Nomor 15",
+      "note": "User-supplied ZIP: University Challange/LOSEMA/Final_LOSEMA_X.pdf, PDF page 2. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "umc-undip-2022-final-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan lingkaran $\\Gamma_1$ dan $\\Gamma_2$ yang berpotongan di titik $X$ dan $Y$. Titik $Z$ berada pada garis singgung lingkaran $\\Gamma_1$ yang melewati $X$ sedemikian sehingga $\\angle XYZ=90^\\circ$. Titik $A$ dan $B$ terletak pada $\\Gamma_2$ sedemikian sehingga $A,B,Z$ terletak pada satu garis. Garis $XA$ memotong kembali $\\Gamma_1$ di titik $K$ dan garis $XB$ memotong $\\Gamma_1$ di titik $M$. Jika $L$ adalah titik yang terletak pada garis $AB$ sedemikian sehingga $XL\\perp AB$, buktikan bahwa $K,L,M$ terletak pada satu garis.",
+    "source": {
+      "kind": "competition",
+      "label": "UMC UNDIP 2022 — Final, Nomor 1",
+      "competition": "UMC UNDIP",
+      "year": 2022,
+      "stage": "Final",
+      "number": "Nomor 1",
+      "note": "User-supplied ZIP: UMC/Final Round_UNDIP 2022.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "umc-undip-2022-final-02",
+    "level": "SMA",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Misalkan $n$ adalah bilangan bulat positif dengan $n\\ge2$. Diberikan barisan $n$ suku:\n\n$$1,\\quad-\\frac14,\\quad\\frac19,\\quad-\\frac1{16},\\quad\\cdots,\\quad\\frac{(-1)^{n+1}}{n^2}.\\tag{1}$$\n\nSelanjutnya dari barisan ini, dilakukan suatu proses yaitu: dibentuk barisan baru dengan cara mengambil rata-rata aritmatika dari setiap dua suku berurutan, sehingga dari barisan (1) diperoleh barisan dengan $n-1$ suku:\n\n$$\\frac38,\\quad-\\frac5{72},\\quad\\frac7{288},\\quad\\cdots,\\quad\\frac{n^2(-1)^n+(n-1)^2(-1)^{n+1}}{2n^2(n-1)^2}.\\tag{2}$$\n\nLakukan proses yang sama pada barisan (2) untuk memperoleh barisan baru yang terdiri dari $n-2$ suku, dan ulangi proses ini terus menerus hingga akhirnya diperoleh sebuah bilangan $x_n$. Buktikan bahwa $x_n<\\frac2n$.",
+    "source": {
+      "kind": "competition",
+      "label": "UMC UNDIP 2022 — Final, Nomor 2",
+      "competition": "UMC UNDIP",
+      "year": 2022,
+      "stage": "Final",
+      "number": "Nomor 2",
+      "note": "User-supplied ZIP: UMC/Final Round_UNDIP 2022.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "umc-undip-2022-final-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Untuk setiap bilangan riil positif $a,b,$ dan $c$. Buktikan bahwa\n\n$$\\sqrt{a+b-\\sqrt{3ab}}+\\sqrt{b+c-\\sqrt{3bc}}\\ge\\sqrt{a+c-\\sqrt{ac}}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "UMC UNDIP 2022 — Final, Nomor 3",
+      "competition": "UMC UNDIP",
+      "year": 2022,
+      "stage": "Final",
+      "number": "Nomor 3",
+      "note": "User-supplied ZIP: UMC/Final Round_UNDIP 2022.pdf, PDF page 1. Retyped competition questions; official organizer paper not yet compared."
+    }
+  },
+  {
+    "id": "mathlicious-2022-final-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diketahui $a,b,c$ akar dari persamaan $x^3-5x^2-9x+10=0$. Jika suku banyak $P(x)=Ax^3+Bx^2+Cx-2015$ memenuhi $P(a)=b+c$, $P(b)=a+c$, $P(c)=a+b$. Maka nilai dari $\\frac{-(A+B-C)}{3}$ adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "MATHLICIOUS 2022 — Final, Nomor 1",
+      "competition": "MATHLICIOUS",
+      "year": 2022,
+      "stage": "Final",
+      "number": "Nomor 1",
+      "note": "User-supplied ZIP: MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf, PDF page 1. Photographed question sheet; identification based on supplied filename."
+    }
+  },
+  {
+    "id": "mathlicious-2022-final-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diketahui sebuah segitiga dengan panjang alasnya adalah 10 cm dan luas segitiga adalah 60 $\\mathrm{cm}^2$. Jika terdapat lingkaran besar yang memotong semua titik segitiga pada sisi lingkaran tersebut dan terdapat lingkaran kecil di dalam segitiga dimana setiap sisi lingkaran tersebut bersinggungan dengan sisi segitiga misalkan $\\frac ab$ merupakan pecahan paling sederhana dari pembagian jari-jari lingkaran yang berada di dalam segitiga dengan jari-jari lingkaran yang berada di luar segitiga maka tentukanlah nilai $a+b$",
+    "source": {
+      "kind": "competition",
+      "label": "MATHLICIOUS 2022 — Final, Nomor 2",
+      "competition": "MATHLICIOUS",
+      "year": 2022,
+      "stage": "Final",
+      "number": "Nomor 2",
+      "note": "User-supplied ZIP: MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf, PDF page 1. Photographed question sheet; identification based on supplied filename."
+    }
+  },
+  {
+    "id": "mathlicious-2022-final-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Seekor kucing hendak melangkah ke makanan yang berada sejauh 10 langkah di depannya. Kucing tersebut hanya boleh melangkah ke depan sebanyak kelipatan tiga langkah dan selebihnya harus melangkah ke belakang. Tentukan banyaknya cara melangkah agar bisa mencapai makanan, jika ia harus melangkah tidak lebih dari 20 langkah!\n\n(Catatan: jika kucing melangkah 2 kali dimana masing-masing melangkah sekali ke belakang, maka dianggap sama saja dengan 2 langkah ke belakang.)",
+    "source": {
+      "kind": "competition",
+      "label": "MATHLICIOUS 2022 — Final, Nomor 4",
+      "competition": "MATHLICIOUS",
+      "year": 2022,
+      "stage": "Final",
+      "number": "Nomor 4",
+      "note": "User-supplied ZIP: MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf, PDF page 1. Photographed question sheet; identification based on supplied filename."
+    }
+  },
+  {
+    "id": "mathlicious-2022-final-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Diketahui terdapat 5 bola merah di kantong A. Jika satu bola dipindahkan ke kantong B yang berisikan sejumlah bola putih. Dari kantong B itu, dipilih secara acak satu bola, kemudian bola tersebut dipindahkan ke kantong A. Dari kantong A, dipilih secara acak lagi yaitu satu bola, kemudian dipindahkan ke kantong B. Akhirnya, bola dipilih secara acak dari kantong B. Jika peluang mendapatkan bola putih pada pengambilan terakhir ini adalah $\\frac35$, berapa bola putih yang ada di dalam kantong B mula-mula...",
+    "source": {
+      "kind": "competition",
+      "label": "MATHLICIOUS 2022 — Final, Nomor 5",
+      "competition": "MATHLICIOUS",
+      "year": 2022,
+      "stage": "Final",
+      "number": "Nomor 5",
+      "note": "User-supplied ZIP: MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf, PDF page 1. Photographed question sheet; identification based on supplied filename."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;

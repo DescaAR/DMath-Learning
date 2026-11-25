@@ -13917,6 +13917,402 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "losema-2025-final-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 11",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 12",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 13",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 14",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "losema-2025-final-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "LOSEMA",
+      "year": 2025,
+      "number": "Nomor 15",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/LOSEMA/Final_LOSEMA_X.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "retitled_copy"
+      }
+    },
+    "umc-undip-2022-final-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "UMC UNDIP",
+      "year": 2022,
+      "number": "Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "UMC/Final Round_UNDIP 2022.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "solution_document"
+      }
+    },
+    "umc-undip-2022-final-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "UMC UNDIP",
+      "year": 2022,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "UMC/Final Round_UNDIP 2022.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "solution_document"
+      }
+    },
+    "umc-undip-2022-final-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "UMC UNDIP",
+      "year": 2022,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "UMC/Final Round_UNDIP 2022.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed as printed in supplied retyped document; original organizer paper not compared.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "solution_document"
+      }
+    },
+    "mathlicious-2022-final-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATHLICIOUS",
+      "year": 2022,
+      "number": "Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed from photographed sheet; official identity and independent recheck pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "photographed_paper"
+      }
+    },
+    "mathlicious-2022-final-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATHLICIOUS",
+      "year": 2022,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed from photographed sheet; official identity and independent recheck pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "photographed_paper"
+      }
+    },
+    "mathlicious-2022-final-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATHLICIOUS",
+      "year": 2022,
+      "number": "Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed from photographed sheet; official identity and independent recheck pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "photographed_paper"
+      }
+    },
+    "mathlicious-2022-final-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATHLICIOUS",
+      "year": 2022,
+      "number": "Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 1,
+        "localSource": "MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf",
+        "method": "Visual inspection of supplied PDF question page and transcription",
+        "finding": "Question body transcribed from photographed sheet; official identity and independent recheck pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending",
+        "sourceKind": "photographed_paper"
+      }
     }
   },
   "figureRecords": {
