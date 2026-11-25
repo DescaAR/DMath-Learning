@@ -116,7 +116,12 @@ for(const m of figureBlock[1].matchAll(/"([a-z0-9-]+)"\s*:/g)){
  assert.ok(fs.existsSync("figures/competition/"+id+".tex"),"Missing TikZ source "+id);
  figureCount++;
 }
-assert.ok(figureCount>=24,"Missing registered figures");
+assert.ok(figureCount>=26,"Missing registered figures");
 assert.ok(competitionProblems.some(p=>p.id==="ksn-smp-2021-07"));
 assert.match(workspace,/aria-label="Tabel tiga baris dan delapan kolom"/);
 console.log("Question display audit:",choices,"multiple-choice records,",subparts,"lettered lists,",figureCount,"registered figures.");
+
+for(const year of [2015,2016,2017,2018,2021,2022,2023,2025]){
+ const nums=competitionProblems.filter(p=>p.source.competition==="UMO"&&p.source.year===year).map(p=>p.source.number).sort();
+ assert.deepEqual(nums,Array.from({length:6},(_,i)=>"Nomor "+(i+1)), "Incomplete UMO set "+year);
+}

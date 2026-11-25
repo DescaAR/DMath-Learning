@@ -7966,6 +7966,150 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
       "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
     }
+  },
+  {
+    "id": "umo-2017-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Deduksi posisi ratu pada papan catur",
+    "prompt": "Quinn secretly places a queen on an empty $8\\times8$ chessboard. Alex learns only its row, and Adrian learns only its column. They are asked in turn whether they know how many moves the queen has available.\n\nAlex does not know. Adrian says that he did not know initially but knows now. Alex then says that he knows as well.\n\nDetermine the number of available moves. The queen may move to any other square in its row, column or either diagonal.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2017,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2017 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2018-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "FPB dari ekspresi bilangan prima",
+    "prompt": "For distinct primes $p$ and $q$, determine the set of possible values of $$\\gcd\\left(p-1,\\frac{q^p-1}{q-1}\\right).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2018,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2018 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2021-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pertumbuhan populasi peternakan",
+    "prompt": "On day 1, Georgia's farm has $c$ cows and no ostriches, where $c$ is a positive integer. Each subsequent day she adds animals without removing any, so that the new total number of animals equals half of the preceding day's total number of legs. Cows have four legs and ostriches have two.\n\nLet $P_c(n)$ count the possible population histories $((c_1,o_1),\\ldots,(c_n,o_n))$ through day $n$, where $c_i,o_i$ are the respective populations on day $i$ and $(c_1,o_1)=(c,0)$. For example, $P_1(2)=2$, $P_1(3)=5$, and $P_2(3)=12$.\n\nDetermine all positive integers $c$ for which $3\\mid P_c(2021)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2021,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2021 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2022-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Luas gabungan persegi bertumpuk",
+    "prompt": "For an integer $n\\ge2$, Thibaud the Tiger places $n$ overlapping axis-aligned squares of side length $2$ with centers equally spaced on the segment joining $(0,0)$ and $(1,1)$, including both endpoints. The illustration shows $n=4$, for which the union has area $\\frac{23}{3}$.\n\nDetermine, with proof, the smallest $n$ for which the union has area at least $\\sqrt{63}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2022,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2022 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2023-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Permainan pewarnaan baris dan kolom",
+    "prompt": "Scarlett and Indigo alternate moves on the illustrated diamond-shaped board, with Scarlett starting. The board consists of unit squares in seven centered rows of lengths $1,3,5,7,5,3,1$. On a turn, a player chooses an unpainted square and paints every square in its row and column, even if already painted. A player unable to move loses. Prove which player can force a win.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2023,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2023 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2023-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Deduksi bilangan melalui digit desimal",
+    "prompt": "Abigail chooses an integer $A$ with $1\\le A\\le99$. Bruno is told the first digit after the decimal point of $\\frac{A}{11}$ (zero if the quotient is integral), and Chris is told the corresponding digit of $\\frac{A}{99}$.\n\nBruno says that he cannot identify $A$, but knows that Chris can reduce the candidates to exactly ten numbers. Chris responds that he can now reduce the candidates to $N$ numbers, each a product of two distinct primes.\n\nFind $N$ and all of Chris's remaining candidates.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2023,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2023 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2023-05",
+    "level": "SMA",
+    "topic": "Peluang",
+    "difficulty": 5,
+    "title": "Strategi optimal pelemparan dadu",
+    "prompt": "Noureddine partitions 2023 fair six-sided dice into at least two nonempty piles before playing. He rolls the first pile and either keeps a single die, ending the game, or discards the entire pile and rolls the next. This process continues; if he reaches the final pile, he must select a die from it. His score is the face value of the chosen die. Describe and prove a strategy maximizing his expected score.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2023,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2023 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2025-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Permainan strategi memetik apel",
+    "prompt": "Menelaus and Paris alternate turns, starting with Menelaus, in a contest with initially empty baskets. Menelaus may pick apples or discard all apples in Paris's basket. Paris may pick apples or transfer all apples from Menelaus's basket to his own, but he may use this theft action at most once.\n\nEach player's first picking action yields one apple; each later picking action yields one more than that player's previous picking action. The first player to accumulate $1225$ unspoiled apples wins.\n\nFor example, the basket counts $(m,p)$ after successive individual actions could be $(1,0),(1,1),(3,1),(3,3),(3,0),(3,3),(6,3),(0,9),(0,0),(0,4)$.\n\nDetermine which player can force a win and prove it.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2025,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2025 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;

@@ -1338,6 +1338,8 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number; captio
  "smp-004":{alt:"Persegi panjang ABCD dengan AB 12, BC 8, AP 3, BQ 2, CR 4, serta segitiga PQR.",width:330},
  "sma-004":{alt:"Segitiga siku-siku ABC dengan AB 10, AC 12, titik P pada AB dan Q pada AC; BP + CQ = 12.",width:300,caption:"Ilustrasi salah satu posisi P dan Q yang memenuhi syarat."},
  "umo-2017-03":{alt:"Points A, B, C on a circle with both central angles sixty degrees; P on chord AC.",width:290,caption:"Illustrative position of P on chord AC."},
+ "umo-2022-01":{alt:"Four overlapping squares, each shifted by one sixth of its side length to the upper right.",width:245},
+ "umo-2023-01":{alt:"Diamond-shaped board with 25 unit cells in seven centered rows.",width:260},
 };
 function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
  const figure=geometryFigures[id];
