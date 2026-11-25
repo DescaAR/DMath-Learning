@@ -762,7 +762,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 5",
       "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -816,7 +816,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://www.catatanmatematika.com/2026/05/soal-osn-k-smp-2025.html",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -825,7 +825,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Pangkat dua",
-    "prompt": "Jumlah tiga bilangan berbeda adalah 6208. Setiap bilangan merupakan perpangkatan 2 dengan eksponen bilangan bulat positif. Tentukan jumlah ketiga eksponen tersebut.",
+    "prompt": "Ali, Budi, dan Cika bermain gim. Pada akhir permainan, layar menunjukkan total skor $6208$ poin, yaitu jumlah tiga skor berbeda yang diperoleh mereka. Masing-masing skor merupakan perpangkatan $2$ dengan pangkat bilangan bulat positif. Tentukan jumlah ketiga pangkat tersebut.",
     "source": {
       "kind": "competition",
       "label": "OSN-P SMP 2025 — Nomor 2",
@@ -833,8 +833,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "OSN-P",
       "number": "Nomor 2",
-      "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/provinsi",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "url": "https://pusatprestasinasional.kemendikdasmen.go.id/api/open/4",
+      "note": "Isi matematis diperiksa terhadap buku resmi Kumpulan Soal OSN SMP, OSN Provinsi Matematika, halaman tercetak 101. Tangkapan PDF gagal dimuat. Redaksi mandiri."
     }
   },
   {
@@ -843,7 +843,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Representasi bilangan",
-    "prompt": "Diketahui $(1P3)_m=(2Q4)_{m-2}$ dengan $m<8$. Notasi $(a_na_{n-1}\\ldots a_0)_b$ menyatakan representasi bilangan dalam basis bilangan bulat $b>1$, dengan setiap digit memenuhi $0\\le a_k<b$. Tentukan $m+P+Q$.",
+    "prompt": "Untuk bilangan bulat positif $b>1$, representasi bilangan bulat $N=(a_na_{n-1}\\ldots a_1a_0)_b$ dalam basis $b$ didefinisikan oleh $$N=a_nb^n+a_{n-1}b^{n-1}+\\cdots+a_1b+a_0,$$ dengan $a_k\\in\\mathbb Z$ dan $0\\le a_k<b$ untuk $k=0,1,\\ldots,n$. Jika $(1P3)_m=(2Q4)_{m-2}$ dan $m<8$, tentukan nilai $m+P+Q$.",
     "source": {
       "kind": "competition",
       "label": "OSN-P SMP 2025 — Nomor 3",
@@ -851,8 +851,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "stage": "OSN-P",
       "number": "Nomor 3",
-      "url": "https://www.acceleratemyedu.com/resources/osn/smp/matematika/provinsi",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "url": "https://pusatprestasinasional.kemendikdasmen.go.id/api/open/4",
+      "note": "Isi matematis diperiksa terhadap buku resmi Kumpulan Soal OSN SMP, OSN Provinsi Matematika, halaman tercetak 101. Tangkapan PDF gagal dimuat. Redaksi mandiri."
     }
   },
   {
@@ -861,7 +861,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Ekspresi tiga variabel",
-    "prompt": "Misalkan $x,y,z\\in\\mathbb R$ memenuhi $x-y=1$, $y-z=2$, dan $xyz=77$. Tentukan nilai $$\\frac{x}{yz}+\\frac{y}{xz}+\\frac{z}{xy}-\\left(\\frac1x+\\frac1y+\\frac1z\\right).$$",
+    "prompt": "Diketahui $x-y=1$, $y-z=2$, dan $xyz=77$. Tentukan nilai $$E=\\frac{x}{yz}+\\frac{y}{xz}+\\frac{z}{xy}-\\left(\\frac1x+\\frac1y+\\frac1z\\right).$$",
     "source": {
       "kind": "competition",
       "label": "OSN-K SMA 2026 — Nomor 1",
@@ -869,8 +869,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "OSN-K",
       "number": "Nomor 1",
-      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sma-2026.html",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "url": "https://www.ruangparabintang.com/2026/07/soal-asli-matematika-osn-tingkat.html",
+      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1121,8 +1121,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2023,
       "stage": "OSN-K",
       "number": "Nomor 1",
-      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1",
+      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1131,7 +1131,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Operasi pecahan",
-    "prompt": "Hitung nilai $125\\%\\times\\frac25\\div0{,}25\\times1\\frac14\\div2{,}5$. Pilihan: A. 0,1; B. 0,64; C. 1; D. 10.",
+    "prompt": "Evaluate $125\\%\\times\\frac25\\div0{,}25\\times1\\frac14\\div2{,}5$. Pilihan: A. $0{,}1$; B. $0{,}64$; C. $1$; D. $10$",
     "source": {
       "kind": "competition",
       "label": "OSN-K SD 2023 — Nomor 2",
@@ -1139,8 +1139,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2023,
       "stage": "OSN-K",
       "number": "Nomor 2",
-      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1",
+      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1157,8 +1157,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2023,
       "stage": "OSN-K",
       "number": "Nomor 4",
-      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1",
+      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -1167,7 +1167,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Jarak olahraga",
-    "prompt": "Butet berjalan selama 45 menit dengan laju rata-rata 4 km/jam, kemudian berlari selama 30 menit dengan laju rata-rata 10 km/jam. Tentukan total jaraknya dalam kilometer. Pilihan: A. 5; B. 6; C. 7; D. 8.",
+    "prompt": "Butet berolahraga selama $1\\frac14$ jam. Ia berjalan kaki selama $45$ menit dengan kecepatan rata-rata $4$ km/jam dan kemudian berlari selama $30$ menit dengan kecepatan rata-rata $10$ km/jam. Tentukan jarak yang ditempuh Butet dalam kilometer. Pilihan: A. $5$; B. $6$; C. $7$; D. $8$",
     "source": {
       "kind": "competition",
       "label": "OSN-K SD 2023 — Nomor 8",
@@ -1175,8 +1175,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2023,
       "stage": "OSN-K",
       "number": "Nomor 8",
-      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1",
+      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
     }
   },
   {
@@ -5889,7 +5889,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Jumlah minimum dengan FPB berbeda",
-    "prompt": "Minimize $a+b+c$ over positive integers $a,b,c$ for which $\\gcd(a,b),\\gcd(b,c),\\gcd(c,a)$ are pairwise distinct and greater than $1$.",
+    "prompt": "Three trolls share $n$ pancakes, each receiving a positive integer number. The greatest common divisor of the holdings of each pair of trolls exceeds $1$, and the three resulting greatest common divisors are distinct. Find the least possible $n$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5898,7 +5898,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2015 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
     }
   },
   {
@@ -5907,7 +5907,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Panjang median segitiga",
-    "prompt": "A triangle has $AB=20$, $AC=13$, and $\\operatorname{dist}(A,\\overleftrightarrow{BC})=12$. Determine all attainable values of $AM$, where $M$ is the midpoint of $BC$.",
+    "prompt": "In triangle $ABC$, $AC=13$, $AB=20$, and the altitude from $A$ to line $BC$ has length $12$. Let $M$ be the midpoint of $BC$. Determine every possible length of $AM$ and demonstrate that each is attainable.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5916,7 +5916,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2015 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
     }
   },
   {
@@ -5925,7 +5925,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "FPB koefisien polinomial binomial",
-    "prompt": "Classify $n\\in\\{2,\\ldots,20\\}$ such that $\\gcd\\{\\binom nk\\mid 1\\le k<n\\}=3$. Prove the classification.",
+    "prompt": "Determine, with proof, every integer $n$ with $2\\le n\\le20$ for which the greatest common divisor of the coefficients of $(x+y)^n-x^n-y^n$ is exactly $3$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5934,7 +5934,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2015 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
     }
   },
   {
@@ -5943,7 +5943,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Optimasi waktu perjalanan dengan satu sepeda",
-    "prompt": "Two travelers must cover $100$ km. Their walking speeds are respectively $5$ and $4$ km/h, and either can ride their one shared bicycle at $10$ km/h. They may reverse direction or leave the bicycle at any location for the other to retrieve. Minimize the time by which both arrive.",
+    "prompt": "Anastasia and Balthazar must reach a grocery store $100$ km away. Their walking speeds are $5$ and $4$ km/h, respectively. They share one bicycle which either can ride at $10$ km/h. Either person may travel in either direction, and the bicycle may be left along the route for the other to collect. Find the shortest time by which both can reach the store.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5952,7 +5952,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2015 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
     }
   },
   {
@@ -5961,7 +5961,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Pencacahan matriks dengan hasil kali tetap",
-    "prompt": "Count the matrices $(a_{ij})\\in M_3(\\mathbb Z)$ satisfying $\\prod_{j=1}^3a_{ij}=20$ for every row $i$ and $\\prod_{i=1}^3a_{ij}=20$ for every column $j$.",
+    "prompt": "Fill a $3\\times3$ grid with integers, allowing negative entries, so that the product along each row and each column equals $20$. One admissible grid is $$\\begin{pmatrix}1&-5&-4\\\\10&-2&-1\\\\2&2&5\\end{pmatrix}.$$ Count all admissible fillings.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5970,7 +5970,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2015 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
     }
   },
   {
@@ -5979,7 +5979,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Tinggi minimum limas segitiga",
-    "prompt": "Among triangular pyramids with base perimeter $84$ that contain a right circular cylinder of radius $4$ and height $10$ having one base in the plane of the pyramid's base, determine the least possible pyramid altitude and prove attainability.",
+    "prompt": "A triangular pyramid has apex $O$ and base $ABC$ with perimeter $84$. A cylinder of radius $4$ and height $10$ fits wholly inside it, with one circular base in the plane of $ABC$. Determine the smallest possible altitude of $O$ above that plane and show that it can be attained.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5988,7 +5988,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2015 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
     }
   },
   {
@@ -6006,7 +6006,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2020 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
     }
   },
   {
@@ -6015,7 +6015,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Lingkaran yang berpotongan secara ortogonal",
-    "prompt": "Let $\\Gamma$ be a circle disjoint from a line $\\ell$. Denote by $A,B$ the nearest and farthest points of $\\Gamma$ from $\\ell$ and set $X=AB\\cap\\ell$. Choose $K$ on the circle centered at $B$ through $X$, with $KA=KX$. Let $H\\in AB$ be the point with $XH=XK$. Prove that every circle centered at $P\\in\\ell$ through $H$ intersects $\\Gamma$ orthogonally.",
+    "prompt": "Let $\\mathcal C$ be a circle disjoint from a line $L$. Denote the nearest and farthest points of $\\mathcal C$ from $L$ by $A$ and $B$, respectively, and put $X=AB\\cap L$. Let $\\mathcal C'$ be the circle centered at $B$ through $X$. Choose $K$ at an intersection of $\\mathcal C'$ and the perpendicular bisector of $AX$. The circle centered at $X$ through $K$ meets segment $AB$ at $H$. Prove that for every $P\\in L$, the circle centered at $P$ through $H$ is perpendicular to $\\mathcal C$. Two circles are perpendicular when their tangents at each intersection point form a right angle.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -6024,7 +6024,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2020 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
     }
   },
   {
