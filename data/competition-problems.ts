@@ -4931,7 +4931,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Dua pola barisan",
-    "prompt": "Give a natural continuation and a general term for each sequence: $$\\begin{aligned}(a_n)&:2,5,9,14,20,27,\\ldots,\\\\(b_n)&:1,3,12,60,360,2520,\\ldots.\\end{aligned}$$ In particular, give the seventh term of each.",
+    "prompt": "Continue the two sequences shown in the table and give a formula for each. $$\\begin{array}{c|rrrrrr|c|c}n&1&2&3&4&5&6&7&\\text{Equation}\\\\\\hline a_n&2&5&9&14&20&27&&\\\\ b_n&1&3&12&60&360&2520&&\\end{array}$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -4940,7 +4940,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2021 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original table restored using LaTeX; values checked against official PDF, page 1. Independently worded."
     }
   },
   {
@@ -5165,7 +5165,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Kelanjutan dua barisan",
-    "prompt": "Supply a natural seventh term and a general-term formula for each of the following lists: $$\\begin{aligned}(a_n)&:2,5,10,17,26,37,\\ldots,\\\\(b_n)&:1,2,8,48,384,3840,\\ldots.\\end{aligned}$$",
+    "prompt": "Continue both sequences in the table and find a formula for their $n$th terms. $$\\begin{array}{c|rrrrrr|c|c}n&1&2&3&4&5&6&7&\\text{Equation}\\\\\\hline a_n&2&5&10&17&26&37&&\\\\ b_n&1&2&8&48&384&3840&&\\end{array}$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5174,7 +5174,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2024 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original table restored using LaTeX; values checked against official PDF, page 1. Independently worded."
     }
   },
   {
@@ -8667,6 +8667,114 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "APMO 2026 — Nomor 5",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
       "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+    }
+  },
+  {
+    "id": "iymc-2019-qr-c",
+    "level": "SMA",
+    "topic": "Trigonometri",
+    "difficulty": 3,
+    "title": "Persamaan trigonometri",
+    "prompt": "Give at least two values of $x$ satisfying $$\\sin\\left(x+\\frac{\\pi^3+2\\sqrt{\\pi^6}}{\\pi^2+\\pi^2}+\\pi^{\\pi^0}\\right)=\\cos\\left(x+\\frac{(-1)^{16}}2-\\frac{\\log_2(\\sqrt8)}3\\right).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2019,
+      "stage": "Qualification Round",
+      "number": "Problem C",
+      "label": "IYMC 2019 — Qualification Round, Problem C",
+      "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
+      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+    }
+  },
+  {
+    "id": "iymc-2019-qr-e",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 2,
+    "title": "Luas persegi dalam lingkaran",
+    "prompt": "The illustrated circle has area $A_1=1\\,\\mathrm{m}^2$. Compute the area $A_2$ of the inscribed square.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2019,
+      "stage": "Qualification Round",
+      "number": "Problem E",
+      "label": "IYMC 2019 — Qualification Round, Problem E",
+      "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
+      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+    }
+  },
+  {
+    "id": "iymc-2020-qr-e",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Luas daerah abu-abu",
+    "prompt": "In the figure, a white square of area $A$ lies at the center of the gray rectangle. The rectangle's width is twice the square's width $a$. Determine the area of the gray region excluding the white square.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2020,
+      "stage": "Qualification Round",
+      "number": "Problem E",
+      "label": "IYMC 2020 — Qualification Round, Problem E",
+      "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
+      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+    }
+  },
+  {
+    "id": "iymc-2021-qr-e",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Panjang sisi segitiga siku-siku",
+    "prompt": "A line parallel to side $z$ intersects the right triangle in the diagram and forms angle $\\alpha$. Given the lengths $x$ and $y$ of the indicated lower and upper segments and the angle $\\alpha$, obtain a formula for $z$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2021,
+      "stage": "Qualification Round",
+      "number": "Problem E",
+      "label": "IYMC 2021 — Qualification Round, Problem E",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
+      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+    }
+  },
+  {
+    "id": "iymc-2023-qr-a",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Akar fungsi eksponensial",
+    "prompt": "Determine the roots of $$f(x)=\\left(\\pi^x-\\frac1\\pi\\right)\\cdot x^\\pi\\cdot\\left(\\frac1{\\pi^2}-\\pi^x\\right),\\qquad x\\in\\mathbb R.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2023,
+      "stage": "Qualification Round",
+      "number": "Problem A",
+      "label": "IYMC 2023 — Qualification Round, Problem A",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
+      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+    }
+  },
+  {
+    "id": "iymc-2024-qr-e",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Luas bagian persegi yang tidak beririsan",
+    "prompt": "The figure depicts two squares of side length $a$. One is rotated through $45^\\circ$ and positioned at the center of the other as shown. Calculate the area of the rotated square outside the unrotated square (gray region).",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2024,
+      "stage": "Qualification Round",
+      "number": "Problem E",
+      "label": "IYMC 2024 — Qualification Round, Problem E",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
+      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
     }
   }
 ];

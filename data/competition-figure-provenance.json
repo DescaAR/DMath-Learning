@@ -156,12 +156,40 @@
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
       "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
       "page": 2
+    },
+    "iymc-2019-qr-e": {
+      "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
+      "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
+      "page": 1
+    },
+    "iymc-2020-qr-e": {
+      "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
+      "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
+      "page": 1
+    },
+    "iymc-2021-qr-e": {
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
+      "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
+      "page": 1
+    },
+    "iymc-2024-qr-e": {
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
+      "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
+      "page": 1
     }
   },
   "table": {
     "ksn-smp-2021-07": {
       "url": "https://id.scribd.com/document/548447534/SOAL-KSN-MATEMATIKA",
       "basis": "source transcription explicitly refers to table; exact visual match pending"
+    },
+    "iymc-2021-qr-a": {
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
+      "basis": "Official PDF page 1 table visually checked; original values and empty answer columns retained."
+    },
+    "iymc-2024-qr-a": {
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
+      "basis": "Official PDF page 1 table visually checked; original values and empty answer columns retained."
     }
   },
   "excluded": [

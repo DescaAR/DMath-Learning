@@ -1357,6 +1357,10 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number; captio
  "umo-2014-06":{alt:"Triangular diamond grid for n=3 with the original example path and four legal directions.",width:225},
  "umo-2024-02":{alt:"Four dark unit squares and their lightly shaded convex hull, matching the source arrangement.",width:205},
  "umo-2024-06":{alt:"Type A and B triangles and the specific n=4 rectangle tiling from the contest.",width:155},
+ "iymc-2019-qr-e":{alt:"A square inscribed in a circle.",width:190},
+ "iymc-2020-qr-e":{alt:"Gray composite figure with two tilted squares, a triangular region, a rectangle and a semicircle. A white diamond in the rectangle is marked A; its horizontal diagonal is a and rectangle width is 2a.",width:420},
+ "iymc-2021-qr-e":{alt:"Right triangle with an interior line parallel to side z, lower segment x, upper segment y and angle alpha.",width:340},
+ "iymc-2024-qr-e":{alt:"Two equal squares, one rotated 45 degrees with its left vertex at the center of the upright square. The nonoverlapping part of the rotated square is gray.",width:250},
 };
 function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
  const figure=geometryFigures[id];
