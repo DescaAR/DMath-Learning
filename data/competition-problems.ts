@@ -1,6 +1,6 @@
 export const levels = ["SD","SMP","SMA","Kuliah"] as const;
 export type Level = typeof levels[number];
-export type Source = {kind:"original"|"competition";label:string;competition?:string;year?:number;stage?:string;number?:string;url?:string;note?:string};
+export type Source = {kind:"original"|"competition";label:string;competition?:string;year?:number;stage?:string;number?:string;url?:string;note?:string;collection?:"MathNet"|"AoPS";collectionUrl?:string};
 export type CompetitionProblem = {id:string;level:Level;topic:string;difficulty:number;title:string;prompt:string;source:Source};
 export const competitionProblems: CompetitionProblem[] = [
   {
@@ -3031,6 +3031,66 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "url": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2011AIME-II.pdf#page=2",
       "note": "Redaksi bahasa Inggris dicocokkan dengan naskah asli. Izin penggunaan soal individual untuk pendidikan nonkomersial tercantum pada naskah."
+    }
+  },
+  {
+    "id": "egmo-2013-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "A right angle from equal segments",
+    "prompt": "In the plane, take noncollinear points $A,B,C$ and define $D=2C-B$ and $E=3A-2C$. Prove that $|AD|=|BE|$ implies that $\\triangle ABC$ is right-angled.",
+    "source": {
+      "kind": "competition",
+      "competition": "EGMO",
+      "year": 2013,
+      "stage": "EGMO",
+      "number": "Nomor 1",
+      "label": "EGMO 2013 — Nomor 1 · MathNet",
+      "url": "https://imomath.com/srb/zadaci/2013_egmo_resenja_e.pdf",
+      "collection": "MathNet",
+      "collectionUrl": "https://huggingface.co/datasets/ShadenA/MathNet",
+      "note": "Independent mathematical formulation in English; MathNet record 05dg; not verbatim."
+    }
+  },
+  {
+    "id": "bmo-shortlist-2016-g1",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Incenters and concyclicity",
+    "prompt": "Let $ABCD$ be a convex tangential quadrilateral, with $M$ in the interior of segment $AB$. Write $I(XYZ)$ for the incenter of triangle $XYZ$. Prove that $$M,\\ I(MBC),\\ I(MCD),\\ I(MDA)$$ are concyclic.",
+    "source": {
+      "kind": "competition",
+      "competition": "Balkan MO",
+      "year": 2016,
+      "stage": "Shortlist",
+      "number": "G1",
+      "label": "Balkan MO 2016 — Shortlist G1 · MathNet",
+      "url": "https://huggingface.co/datasets/AI-MO/olympiads/blob/main/Balkan_Shortlist/md/en-2016_bmo_shortlist.md",
+      "collection": "MathNet",
+      "collectionUrl": "https://huggingface.co/datasets/ShadenA/MathNet",
+      "note": "Independent mathematical formulation in English; MathNet record 00rl; not verbatim."
+    }
+  },
+  {
+    "id": "aime1-2024-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "A system of rational equations",
+    "prompt": "Let $s>0$ and $t\\ge0$ satisfy $$\\frac{9}{s}+\\frac{t}{60}=4,\\qquad \\frac{9}{s+2}+\\frac{t}{60}=\\frac{12}{5}.$$ Determine the value of $\\frac{540}{s+\\frac12}+t$.",
+    "source": {
+      "kind": "competition",
+      "competition": "AIME",
+      "year": 2024,
+      "stage": "AIME I",
+      "number": "Nomor 1",
+      "label": "AIME I 2024 — Nomor 1 · AoPS",
+      "url": "https://artofproblemsolving.com/school/mathjams-transcripts?id=682",
+      "collection": "AoPS",
+      "collectionUrl": "https://artofproblemsolving.com/school/mathjams-transcripts?id=682",
+      "note": "Independent symbolic formulation of the original mathematical task, not verbatim."
     }
   }
 ];
