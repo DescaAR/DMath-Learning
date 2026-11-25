@@ -680,8 +680,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Persamaan Diophantine berpangkat",
-    "prompt": "Karakterisasikan semua bilangan bulat positif $n$ yang memungkinkan persamaan $$2a^n+3b^n=4c^n$$ mempunyai solusi $(a,b,c)\\in\\mathbb Z_{>0}^3$.",
+    "title": "Solvable integer exponents",
+    "prompt": "Characterize $n\\in\\mathbb Z_{>0}$ for which the equation $2a^n+3b^n=4c^n$ admits $(a,b,c)\\in\\mathbb Z_{>0}^3$.",
     "source": {
       "kind": "competition",
       "label": "Putnam 2024 — A1",
@@ -689,7 +689,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "A1",
       "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "note": "Independent English mathematical formulation of the source problem; not verbatim.",
       "stage": "Putnam"
     }
   },
@@ -698,8 +698,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar",
     "difficulty": 5,
-    "title": "Komposisi polinomial",
-    "prompt": "Tentukan semua $p\\in\\mathbb R[x]$ sehingga terdapat $q\\in\\mathbb R[x]$ dengan identitas $$p(p(x))-x=(p(x)-x)^2q(x).$$",
+    "title": "Polynomial divisibility under composition",
+    "prompt": "Find $p\\in\\mathbb R[x]$ for which $(p(x)-x)^2$ divides $p(p(x))-x$ in $\\mathbb R[x]$.",
     "source": {
       "kind": "competition",
       "label": "Putnam 2024 — A2",
@@ -707,7 +707,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "A2",
       "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "note": "Independent English mathematical formulation of the source problem; not verbatim.",
       "stage": "Putnam"
     }
   },
@@ -5287,6 +5287,546 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IYMC 2025 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
       "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2025-a1",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Coprimality in a reduced-fraction recurrence",
+    "prompt": "Start with distinct $m_0,n_0\\in\\mathbb Z_{>0}$. Define $(m_k,n_k)$ by reducing the fraction $\\frac{2m_{k-1}+1}{2n_{k-1}+1}$ to lowest terms. Establish that $\\gcd(2m_k+1,2n_k+1)=1$ for all sufficiently large $k$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2025,
+      "stage": "Putnam",
+      "number": "A1",
+      "label": "Putnam 2025 — A1",
+      "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2025-a2",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Sharp quadratic bounds for sine",
+    "prompt": "Compute the infimum and supremum of $\\frac{\\sin x}{x(\\pi-x)}$ over $0<x<\\pi$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2025,
+      "stage": "Putnam",
+      "number": "A2",
+      "label": "Putnam 2025 — A2",
+      "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2025-a4",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Realization of a cycle by matrix commutation",
+    "prompt": "Find the smallest $d\\ge1$ for which matrices $A_1,\\ldots,A_{2025}\\in M_d(\\mathbb R)$ realize the equivalence $$[A_i,A_j]=0\\ \\Longleftrightarrow\\ |i-j|\\in\\{0,1,2024\\},$$ where $[X,Y]=XY-YX$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2025,
+      "stage": "Putnam",
+      "number": "A4",
+      "label": "Putnam 2025 — A4",
+      "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2025-a6",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Two-adic valuation in a recurrence",
+    "prompt": "Set $b_0=0$ and $b_{n+1}=2b_n^2+b_n+1$. Show that $$v_2(b_{2k+1}-2b_{2k})=2k+2\\qquad(k\\ge1),$$ where $v_2$ denotes the exponent of $2$ in an integer.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2025,
+      "stage": "Putnam",
+      "number": "A6",
+      "label": "Putnam 2025 — A6",
+      "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2025-b6",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 5,
+    "title": "Growth constraint for an integer function",
+    "prompt": "Determine the maximum of the set $$\\{r\\in\\mathbb R\\mid \\exists g:\\mathbb Z_{>0}\\to\\mathbb Z_{>0},\\ \\forall n\\ge1,\\ g(n+1)-g(n)\\ge g(g(n))^r\\}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2025,
+      "stage": "Putnam",
+      "number": "B6",
+      "label": "Putnam 2025 — B6",
+      "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2024-a4",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Powers arranged as a modular progression",
+    "prompt": "Classify primes $p>5$ for which some $a\\in\\mathbb F_p$ has the following property: the multiset $(a^j)_{j=0}^{p-5}$ admits an ordering forming an arithmetic progression in $\\mathbb F_p$ with nonzero common difference.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2024,
+      "stage": "Putnam",
+      "number": "A4",
+      "label": "Putnam 2024 — A4",
+      "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2024-a6",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Hankel determinant of an algebraic series",
+    "prompt": "Define coefficients $c_j$ by the expansion at zero $$\\sum_{j\\ge0}c_jx^j=\\frac{1-3x-\\sqrt{1-14x+9x^2}}4.$$ For $n\\ge1$, evaluate $\\det(c_{i+j-1})_{1\\le i,j\\le n}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2024,
+      "stage": "Putnam",
+      "number": "A6",
+      "label": "Putnam 2024 — A6",
+      "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2024-b1",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Permutation with consecutive displaced sums",
+    "prompt": "Characterize the positive integers $n,k$ for which a permutation $\\sigma\\in S_n$ satisfies $$\\{i+\\sigma(i)-k\\mid 1\\le i\\le n\\}=\\{1,\\ldots,n\\}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2024,
+      "stage": "Putnam",
+      "number": "B1",
+      "label": "Putnam 2024 — B1",
+      "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2024-b3",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Spacing between tangent roots",
+    "prompt": "Enumerate the positive roots of $\\tan x-x$ in increasing order as $r_1,r_2,\\ldots$. Establish $$\\pi<r_{n+1}-r_n<\\pi+\\frac1{\\pi n(n+1)}\\qquad(n\\ge1).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2024,
+      "stage": "Putnam",
+      "number": "B3",
+      "label": "Putnam 2024 — B3",
+      "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2024-b6",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 5,
+    "title": "Critical exponent for an exponential series",
+    "prompt": "For $a\\in\\mathbb R$ and $0\\le x<1$, define $F_a(x)=\\sum_{n=1}^{\\infty}n^ae^{2n}x^{n^2}$. Determine the threshold $c$ at which the limit of $e^{-1/(1-x)}F_a(x)$ as $x\\uparrow1$ changes from zero for $a<c$ to positive infinity for $a>c$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2024,
+      "stage": "Putnam",
+      "number": "B6",
+      "label": "Putnam 2024 — B6",
+      "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2023-a1",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 2,
+    "title": "Second derivative of a cosine product",
+    "prompt": "Set $P_n(x)=\\prod_{j=1}^n\\cos(jx)$. Compute $\\min\\{n\\in\\mathbb Z_{>0}\\mid |P_n''(0)|>2023\\}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2023,
+      "stage": "Putnam",
+      "number": "A1",
+      "label": "Putnam 2023 — A1",
+      "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2023-a2",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Additional roots of an interpolation identity",
+    "prompt": "Fix a positive even integer $n$. Let $P\\in\\mathbb R[x]$ be monic of degree $2n$, with $P(1/k)=k^2$ for $k\\in\\{-n,\\ldots,-1,1,\\ldots,n\\}$. Determine the real solutions of $P(1/x)=x^2$ outside that specified set.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2023,
+      "stage": "Putnam",
+      "number": "A2",
+      "label": "Putnam 2023 — A2",
+      "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2023-a3",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "First possible zero under coupled derivative bounds",
+    "prompt": "Minimize $r>0$ over differentiable real functions $f,g$ on $\\mathbb R$ subject to $$f(0)>0,\\quad g(0)=f(r)=0,\\quad |f'|\\le |g|,\\quad |g'|\\le |f|,$$ with the inequalities understood pointwise.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2023,
+      "stage": "Putnam",
+      "number": "A3",
+      "label": "Putnam 2023 — A3",
+      "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2023-b2",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Minimum binary digit sum of a multiple",
+    "prompt": "Write $s_2(m)$ for the binary digit sum of $m\\in\\mathbb Z_{>0}$. Evaluate $\\min_{n\\ge1}s_2(2023n)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2023,
+      "stage": "Putnam",
+      "number": "B2",
+      "label": "Putnam 2023 — B2",
+      "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2023-b6",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Determinant of a counting matrix",
+    "prompt": "For $n\\ge1$, evaluate the determinant of the $n\\times n$ matrix whose entry in position $(i,j)$ is $$\\#\\{(a,b)\\in\\mathbb Z_{\\ge0}^2\\mid ia+jb=n\\}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2023,
+      "stage": "Putnam",
+      "number": "B6",
+      "label": "Putnam 2023 — B6",
+      "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2022-a1",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Unique root of a logarithmic equation",
+    "prompt": "Classify $(a,b)\\in\\mathbb R^2$ for which the equation $\\ln(1+x^2)-ax-b=0$ has precisely one distinct real root.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2022,
+      "stage": "Putnam",
+      "number": "A1",
+      "label": "Putnam 2022 — A1",
+      "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2022-a2",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Negative coefficients of a polynomial square",
+    "prompt": "For fixed $n\\ge2$, maximize $\\#\\{j\\mid [x^j]P(x)^2<0\\}$ over $P\\in\\mathbb R[x]$ of degree $n$, where $[x^j]$ denotes coefficient extraction.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2022,
+      "stage": "Putnam",
+      "number": "A2",
+      "label": "Putnam 2022 — A2",
+      "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2022-a3",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Nonzero modular recurrence",
+    "prompt": "Let $p>5$ be prime and $\\mathcal S_p$ consist of infinite sequences in $\\mathbb F_p^\\times$ obeying $a_na_{n+2}=1+a_{n+1}$ for all $n\\ge1$. Prove $\\#\\mathcal S_p\\equiv0$ or $2\\pmod5$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2022,
+      "stage": "Putnam",
+      "number": "A3",
+      "label": "Putnam 2022 — A3",
+      "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2022-b1",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 4,
+    "title": "Nonvanishing Taylor coefficients",
+    "prompt": "For $P\\in x\\mathbb Z[x]$ with $P'(0)$ odd, establish $[x^k]\\exp(P(x))\\ne0$ for every integer $k\\ge0$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2022,
+      "stage": "Putnam",
+      "number": "B1",
+      "label": "Putnam 2022 — B1",
+      "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2022-b2",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 4,
+    "title": "Finite sets closed under vector products",
+    "prompt": "Find the possible positive cardinalities of a finite set $S\\subseteq\\mathbb R^3$ satisfying $$S=\\{u\\times v\\mid u,v\\in S\\},$$ with $\\times$ the usual vector cross product.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2022,
+      "stage": "Putnam",
+      "number": "B2",
+      "label": "Putnam 2022 — B2",
+      "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2021-a1",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Shortest lattice path with fixed jump length",
+    "prompt": "Let $D=\\{(u,v)\\in\\mathbb Z^2\\mid u^2+v^2=25\\}$. Determine the smallest $m$ such that $(2021,2021)$ can be expressed as a sum of $m$ vectors from $D$, allowing repetitions.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2021,
+      "stage": "Putnam",
+      "number": "A1",
+      "label": "Putnam 2021 — A1",
+      "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2021-a2",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Iterated limit involving real powers",
+    "prompt": "Evaluate $$\\lim_{x\\to+\\infty}\\frac1x\\left(\\lim_{r\\to0}\\big((x+1)^{r+1}-x^{r+1}\\big)^{1/r}\\right).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2021,
+      "stage": "Putnam",
+      "number": "A2",
+      "label": "Putnam 2021 — A2",
+      "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2021-a5",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Power sums over a reduced residue system",
+    "prompt": "Determine the integers $j\\ge0$ satisfying $$\\sum_{u\\in(\\mathbb Z/2021\\mathbb Z)^\\times}u^j=0\\quad\\text{in }\\mathbb Z/2021\\mathbb Z.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2021,
+      "stage": "Putnam",
+      "number": "A5",
+      "label": "Putnam 2021 — A5",
+      "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2021-b2",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Optimization of weighted geometric means",
+    "prompt": "Compute $$\\max_{\\substack{a_k\\ge0\\\\\\sum_{k\\ge1}a_k=1}}\\sum_{n=1}^{\\infty}\\frac{n}{2^n}\\left(\\prod_{k=1}^n a_k\\right)^{1/n}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2021,
+      "stage": "Putnam",
+      "number": "B2",
+      "label": "Putnam 2021 — B2",
+      "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2021-b5",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Odd principal minors under powers",
+    "prompt": "Suppose $A\\in M_n(\\mathbb Z)$ has odd determinant on each nonempty principal submatrix. Establish that every nonempty principal minor of $A^k$ is odd for each $k\\ge1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2021,
+      "stage": "Putnam",
+      "number": "B5",
+      "label": "Putnam 2021 — B5",
+      "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2019-a1",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Range of a cubic form on nonnegative integers",
+    "prompt": "Characterize the set $$\\{a^3+b^3+c^3-3abc\\mid a,b,c\\in\\mathbb Z_{\\ge0}\\}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2019,
+      "stage": "Putnam",
+      "number": "A1",
+      "label": "Putnam 2019 — A1",
+      "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2019-a3",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 4,
+    "title": "Sharp lower bound on mean root modulus",
+    "prompt": "For $P(z)=\\sum_{k=0}^{2019}b_kz^k$ with $1\\le b_0<b_1<\\cdots<b_{2019}\\le2019$, enumerate its complex roots $z_j$ with multiplicity. Determine the infimum of $\\frac1{2019}\\sum_{j=1}^{2019}|z_j|$ over these polynomials.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2019,
+      "stage": "Putnam",
+      "number": "A3",
+      "label": "Putnam 2019 — A3",
+      "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2019-a5",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 5,
+    "title": "Root multiplicity in a finite-field polynomial",
+    "prompt": "Fix an odd prime $p$ and set $Q(X)=\\sum_{k=1}^{p-1}k^{(p-1)/2}X^k\\in\\mathbb F_p[X]$. Determine the multiplicity of $1$ as a root of $Q$.",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2019,
+      "stage": "Putnam",
+      "number": "A5",
+      "label": "Putnam 2019 — A5",
+      "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2019-b2",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Asymptotics of a trigonometric sum",
+    "prompt": "Evaluate $$\\lim_{n\\to\\infty}\\frac1{n^3}\\sum_{k=1}^{n-1}\\frac{\\sin((2k-1)\\pi/(2n))}{\\cos^2((k-1)\\pi/(2n))\\cos^2(k\\pi/(2n))}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2019,
+      "stage": "Putnam",
+      "number": "B2",
+      "label": "Putnam 2019 — B2",
+      "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+    }
+  },
+  {
+    "id": "putnam-2019-b3",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 4,
+    "title": "Unit eigenvalue after a Householder reflection",
+    "prompt": "For $Q\\in O(n)$ and $u\\in\\mathbb R^n$ with $u^{\\mathsf T}u=1$, establish that $$\\det(I-Q)\\ne0\\ \\Longrightarrow\\ \\det(I-(I-2uu^{\\mathsf T})Q)=0.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "Putnam",
+      "year": 2019,
+      "stage": "Putnam",
+      "number": "B3",
+      "label": "Putnam 2019 — B3",
+      "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
+      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
     }
   }
 ];
