@@ -20929,6 +20929,465 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "osnk-sd-2023-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 3",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 5",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 6",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 13",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 13",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 14",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 14",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 15",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 15",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-17": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 17",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 17",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-19": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 19",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 19",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-21": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 21",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 21",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-22": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 22",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 22",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-23": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 23",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 23",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-24": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 24",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 24",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-25": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 25",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 25",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-26": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 26",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 26",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osnk-sd-2023-29": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 29",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "nomor 29",
+        "localSource": "Soal Matematika OSN-K SD 2023.pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2016-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2016,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "1",
+        "localSource": "2016 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2016-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2016,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "1",
+        "localSource": "2016 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2016-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2016,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "1",
+        "localSource": "2016 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2016-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2016,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "2",
+        "localSource": "2016 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2016-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2016,
+      "number": "Hari 2, Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "2",
+        "localSource": "2016 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2017-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2017,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "1",
+        "localSource": "2017 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2017-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2017,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "1",
+        "localSource": "2017 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2017-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2017,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "1",
+        "localSource": "2017 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2017-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2017,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "2",
+        "localSource": "2017 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2017-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2017,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "2",
+        "localSource": "2017 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2017-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2017,
+      "number": "Hari 2, Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "2",
+        "localSource": "2017 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "osn-smp-2017-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_drive_transcription",
+      "competition": "OSN",
+      "year": 2017,
+      "number": "Hari 2, Nomor 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "2",
+        "localSource": "2017 soal OSN Matik SMP(www.konsep-matematika.com).pdf",
+        "method": "Transcription from readable text of user Drive PDF; LaTeX normalized",
+        "finding": "Third-party copy; official original and visual rendering pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {

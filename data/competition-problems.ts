@@ -21033,6 +21033,465 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "OSN SMP 2018 — OSN Nasional, Hari 2, Nomor 10",
       "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
     }
+  },
+  {
+    "id": "osnk-sd-2023-03",
+    "level": "SD",
+    "topic": "Statistika",
+    "difficulty": 3,
+    "title": "Median dan Rata-rata",
+    "prompt": "Benny menyalin data dari hasil survey yang dilakukannya. Karena kurang hati-hati kertas hasil survey terkena air sehingga terdapat sejumlah data yang tidak terbaca. Data yang tidak terbaca diberi simbol dengan huruf. Data yang dituliskan Benny adalah sebagai berikut: 96, A, 64, 78, 78, 90, 60, 60, 70, 80, dan B. Jika median data tersebut adalah 76 dan rata-rata data tersebut adalah 75, maka data yang tidak terbaca adalah … Pilihan: A. 76 dan 75; B. 76 dan 73; C. 77 dan 75; D. 78 dan 74",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 3",
+      "label": "OSN SD 2023 — OSN-K, Nomor 3",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-05",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kaidah Pencacahan",
+    "prompt": "Banyak cara menyusun tiga bilangan asli dengan susunan genap-ganjil-genap yang hasil kalinya merupakan kelipatan 8 dan kurang dari 30 adalah …. Pilihan: A. 9; B. 10; C. 11; D. 12",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 5",
+      "label": "OSN SD 2023 — OSN-K, Nomor 5",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-06",
+    "level": "SD",
+    "topic": "Statistika",
+    "difficulty": 3,
+    "title": "Rata-rata",
+    "prompt": "Data banyaknya kepala keluarga (KK) dan pemilih kepala Desa Taruma Indah pada 4 RW disajikan sebagai berikut\n\n$$\\begin{array}{c|c|c}\\text{RW}&\\text{Banyak Kepala Keluarga (KK)}&\\text{Banyak Pemilih}\\\\\\hline 01&95&210\\\\02&153&200\\\\03&120&280\\\\04&135&165\\end{array}$$\n\nRata-rata banyak pemilih di setiap RW yang bukan kepala keluarga (KK) adalah … orang. Pilihan: A. 80; B. 85; C. 88; D. 92",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 6",
+      "label": "OSN SD 2023 — OSN-K, Nomor 6",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-13",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinasi",
+    "prompt": "Felly berada di toko alat-alat kantor hendak membeli 3 buah buku dan 2 buah bolpoin. Di etalase toko terdapat 5 merek buku dan 7 merek bolpoin, serta tidak ada buku dan bolpoin yang bermerek sama. Berapa banyak pilihan yang dimiliki oleh Felly, jika buku dan bolpoin yang dibeli berasal dari merek yang berbeda? Pilihan: A. 210; B. 420; C. 840; D. 2520",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 13",
+      "label": "OSN SD 2023 — OSN-K, Nomor 13",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-14",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Pecahan dan Persentase",
+    "prompt": "Bagiyo, Gito, dan Rio merupakan tiga bersaudara yang memiliki jumlah tabungan yang sama. Bagiyo memberi Gito sebesar $\\frac15$ dari semua tabungannya, kemudian Gito memberi Rio 50% dari semua tabungan yang dimiliki saat ini. Selanjutnya jika Rio memberikan sebesar $\\frac1{10}$ dari semua tabungannya kepada Bagiyo, maka tabungan Bagiyo akan berkurang Rp500.000,00 dari tabungan awal yang dimiliki. Jumlah tabungan yang dimiliki oleh Gito saat ini adalah … Pilihan: A. Rp2.500.000,00; B. Rp7.500.000,00; C. Rp12.500.000,00; D. Rp18.000.000,00",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 14",
+      "label": "OSN SD 2023 — OSN-K, Nomor 14",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-15",
+    "level": "SD",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Luas dan Keliling",
+    "prompt": "Dua buah bangun yang berbentuk persegi dan segitiga mempunyai keliling yang sama. Sisi-sisi segitiga tersebut mempunyai panjang 5 cm, 8 cm dan 5 cm. Jumlah luas kedua bangun tersebut adalah …. Pilihan: A. 32; B. 32,25; C. 32,5; D. 32,75",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 15",
+      "label": "OSN SD 2023 — OSN-K, Nomor 15",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-17",
+    "level": "SD",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Bangun Ruang",
+    "prompt": "Perbandingan panjang, lebar, dan tinggi suatu balok adalah 1:5:2. Jika luas permukaan balok tersebut 9.826 cm$^2$, maka volume balok tersebut adalah … cm$^3$. Pilihan: A. 49.013; B. 49.130; C. 49.301; D. 49.310",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 17",
+      "label": "OSN SD 2023 — OSN-K, Nomor 17",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-19",
+    "level": "SD",
+    "topic": "Statistika",
+    "difficulty": 3,
+    "title": "Penyajian Data",
+    "prompt": "Hasil penilaian tes matematika yang dilakukan sebanyak dua kali di suatu kelas disajikan sebagai berikut:\n\n$$\\begin{array}{cc|ccccc}&&\\multicolumn{5}{c}{\\text{Tes 2}}\\\\&&A&B&C&D&E\\\\\\hline\\text{Tes 1}&A&3&1&1&0&0\\\\&B&1&4&3&0&0\\\\&C&2&3&3&2&0\\\\&D&0&0&1&2&1\\\\&E&0&0&2&1&0\\end{array}$$\n\nPada baris A kolom C tertera angka 1, artinya banyaknya siswa yang memperoleh nilai A pada tes 1 dan nilai C pada tes 2 adalah 1 orang. Persentase siswa yang nilainya sama untuk 2 kali tes adalah … Pilihan: A. 30%; B. 40%; C. 50%; D. 60%",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 19",
+      "label": "OSN SD 2023 — OSN-K, Nomor 19",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-21",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Jarak, Waktu, dan Kecepatan",
+    "prompt": "Pada suatu permainan flying fox, seorang pemain harus menaiki tangga AB kemudian meluncur pada kabel baja BC dan menuruni tangga CD. Tinggi AB dan CD masing-masing 3 meter. David menaiki tangga AB dengan kecepatan 2 meter/menit, meluncur pada BC dengan kecepatan 15 km/jam dan menuruni tangga CD dengan kecepatan 3 meter/menit. Jika waktu yang diperlukan David untuk bermain flying fox adalah 5 menit (dari A ke D), maka panjang kabel baja flying fox adalah … meter. Pilihan: A. 550; B. 575; C. 600; D. 625",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 21",
+      "label": "OSN SD 2023 — OSN-K, Nomor 21",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-22",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kaidah Pencacahan",
+    "prompt": "Banyak bilangan bulat antara 100 sampai 400 yang memuat angka 2 adalah … bilangan Pilihan: A. 128; B. 136; C. 138; D. 140",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 22",
+      "label": "OSN SD 2023 — OSN-K, Nomor 22",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-23",
+    "level": "SD",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Sistem Persamaan Linear",
+    "prompt": "Sebuah sanggar tari memiliki 40 anggota yang dibagi menjadi 2 kelas. Seluruh anggota akan tampil pada suatu acara dan membutuhkan kostum. Harga sewa kostum untuk kelas A adalah Rp60.000,00/orang dan untuk kelas B adalah Rp70.000,00/orang. Jika total biaya sewa seluruh kostum adalah Rp2.580.000,00 maka total biaya sewa kostum untuk seluruh anggota kelas A adalah …. Pilihan: A. Rp1.080.000,00; B. Rp1.260.000,00; C. Rp1.320.000,00; D. Rp1.380.000,00",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 23",
+      "label": "OSN SD 2023 — OSN-K, Nomor 23",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-24",
+    "level": "SD",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Luas dan Keliling",
+    "prompt": "Agnes memiliki 5 buah persegi panjang yang masing-masing berukuran 2 cm x 3 cm. Pak guru meminta Agnes untuk membentuk bangun datar baru dengan cara menempelkan sisi-sisi kelima persegi panjang tersebut sehingga sisi yang sama panjang tepat berimpit. Banyak bangun datar dengan keliling berbeda yang dapat dibuat oleh Agnes ada … bangun. Pilihan: A. 3; B. 4; C. 5; D. 6",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 24",
+      "label": "OSN SD 2023 — OSN-K, Nomor 24",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-25",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Kongruensi",
+    "prompt": "Jika $m$ merupakan bilangan asli terkecil yang bersisa 3 ketika dibagi 4, bersisa 4 jika dibagi 9, dan bersisa 1 ketika dibagi 3, maka nilai $m-6$ adalah …. Pilihan: A. 25; B. 29; C. 31; D. 34",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 25",
+      "label": "OSN SD 2023 — OSN-K, Nomor 25",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-26",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Operasi Hitung",
+    "prompt": "Diberikan empat bilangan bulat positif yang berbeda A, B, C dan D sehingga $$A+B+C+D=15$$ Hasil operasi dari $$A\\times C+B\\times D-A:B$$ Sebesar mungkin adalah … (pembulatan sampai 2 angka di belakang koma) Pilihan: A. 32,83; B. 33,87; C. 36,86; D. 37,17",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 26",
+      "label": "OSN SD 2023 — OSN-K, Nomor 26",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-29",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Perbandingan",
+    "prompt": "Ati, Bani, dan Cici menabung di Bank M dan N. Perbandingan tabungan Ati, Bani, dan Cici di Bank M adalah 2 : 3 : 5, sementara di Bank N adalah 5 : 4 : 3. Jika tabungan Ati di Bank M sebesar Rp2.400.000,00 dan rata-rata tabungan mereka di Bank N adalah dua kali rata-rata tabungan mereka di Bank M, maka tabungan Ati di Bank N sebesar …. Pilihan: A. Rp8.400.000,00; B. Rp10.000.000,00; C. Rp10.600.000,00; D. Rp12.000.000,00",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 29",
+      "label": "OSN SD 2023 — OSN-K, Nomor 29",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2016-01",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Persamaan Aljabar",
+    "prompt": "Tentukan semua bilangan real yang memenuhi persamaan $$(1+x^2+x^4+\\cdots+x^{2014})(x^{2016}+1)=2016x^{2015}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2016,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 1",
+      "label": "OSN SMP 2016 — OSN Nasional, Hari 1, Nomor 1",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2016-03",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri Segitiga",
+    "prompt": "Pada segitiga ABC, titik P dan Q berada pada sisi BC sehingga panjang BP sama dnegan CQ, $\\angle BAP=\\angle CAQ$ dan $\\angle APB$ lancip. Apakah segitiga ABC sama kaki? Tulis alasan Anda.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2016,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 3",
+      "label": "OSN SMP 2016 — OSN Nasional, Hari 1, Nomor 3",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2016-04",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kaidah Pencacahan",
+    "prompt": "Ayu akan membuat koper tetapi dia lupa kuncinya. Kode koper tersebut terdiri dari sembilan angka yakni empat angka 0 (nol) dan lima angka 1. Ayu ingat bahwa tidak ada empat angka sama yang berurutan. Berapa banyak kode yang mungkin harus dicoba sehingga dipastikan koper tersebut terbuka?",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2016,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 4",
+      "label": "OSN SMP 2016 — OSN Nasional, Hari 1, Nomor 4",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2016-06",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Relasi Rekurensi",
+    "prompt": "Diketahui $f(x)=\\frac{1+x}{1-x}$, untuk $x\\ne1$. Didefinisikan $p\\nabla q=\\frac{p+q}{1+pq}$ untuk semua bilagnan rasional positif $p$ dan $q$. Perhatikan barisan $a_1,a_2,a_3,\\ldots$ dengan $$a_1=2\\nabla3$$ $$a_n=a_{n-1}\\nabla(n+2),\\ \\text{untuk }n\\ge2.$$ Tentukan $f(a_{223})$ dan $a_{223}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2016,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 6",
+      "label": "OSN SMP 2016 — OSN Nasional, Hari 2, Nomor 6",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2016-09",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Permutasi",
+    "prompt": "Sembilan pasang suami istri ingin berfoto dalam posisi tiga baris dengan latar belakang Jembatan Ampera Palembang. Terdapat 4 orang di baris depan, 6 orang di baris tengah, dan 8 orang di baris belakan. Mereka sepakat bahwa setiap pasang suami istri harus dalam baris yang sama, serta setiap dua orang yang bersebelahan haruslah pasangan suami istri atau berjenis kelamin sama. Tentukan banyak susunan posisi berbeda yang mungkin dilakukan.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2016,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 9",
+      "label": "OSN SMP 2016 — OSN Nasional, Hari 2, Nomor 9",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2017-01",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Pertidaksamaan",
+    "prompt": "Carilah semua bilangan real $x$ yang memenuhi pertidaksamaan $$\\frac{x^2-3}{x^2-1}+\\frac{x^2+5}{x^2+3}\\ge\\frac{x^2-5}{x^2-3}+\\frac{x^2+3}{x^2+1}$$",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2017,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 1",
+      "label": "OSN SMP 2017 — OSN Nasional, Hari 1, Nomor 1",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2017-02",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Bilangan Kuadrat",
+    "prompt": "Diketahui $m$ adalah bilangan asli empat angka dengan angka satuan dan ribuan sama. Jika $m$ merupakan bilangan kuadrat, tentukan semua nilai $m$ yang mungkin.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2017,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 2",
+      "label": "OSN SMP 2017 — OSN Nasional, Hari 1, Nomor 2",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2017-04",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kombinasi",
+    "prompt": "Acara perpisahan suatu kelas terdiri dari 10 anak laki-laki dan 12 anak perempuan. Wali kelas dari kelas tersebut menyediakan enam hadiah untuk siswanya dipilih secara acak. Hadiah yang disediakan adalah satu tas sekolah, dua buah novel dan tiga buah kalkulator. Jika total siswa lakilaki mendapatkan hadiah sama banyak dengan total siswa perempuan yang mendapatkan hadiah, ada berapa banyak susunan yang mungkin dari siswa yang mendapatkan hadiah?",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2017,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 4",
+      "label": "OSN SMP 2017 — OSN Nasional, Hari 1, Nomor 4",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2017-06",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Fungsi Kuadrat",
+    "prompt": "Parabola $y=ax^2+bx$, $a<0$ memiliki puncak di titik $C$ dan memotong sumbu $x$ di titik $A$ dan $B$ yang berbeda. Garis $y=ax$ memotong parabola tersebut di titik berbeda $A$ dan $D$. Jika luas segitiga $ABC$ sama dengan $|ab|$ kali luas segitiga $ABD$, tentukan nilai $b$ sebagai fungsi dari $a$ tanpa menggunakan nilai mutlak.\n\nCatatan: $|x|$ disebut nilai mutlak $x$ dengan $$|x|=\\begin{cases}x,&\\text{jika }x\\ge0\\\\-x,&\\text{jika }x<0\\end{cases}$$",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2017,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 6",
+      "label": "OSN SMP 2017 — OSN Nasional, Hari 2, Nomor 6",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2017-07",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Bilangan Kuadrat",
+    "prompt": "Diketahui $a$ bilangan prima dan $k$ adalah bilangan bulat positif. Jika $\\sqrt{k^2-ak}$ adalah bilangan bulat positif, tentukan nilai $k$ sebagai fungsi $a$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2017,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 7",
+      "label": "OSN SMP 2017 — OSN Nasional, Hari 2, Nomor 7",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2017-09",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kaidah Pencacahan",
+    "prompt": "Diketahui barisan bilangan bulat positif 7-angka $a_1,a_2,\\ldots,a_{2017}$ dengan $a_1<a_2<\\cdots<a_{2017}$. Setiap suku barisan bilangan tersebut memiliki angka-angka penyusun tak naik. Diketahui $a_1=1000000$, dan $a_{n+1}$ adalah bilangan terkecil yang mungkin lebih besar dari $a_n$. Sebagai contoh diperoleh $a_2=1100000$ dan $a_3=1110000$. Tentukan $a_{2017}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2017,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 9",
+      "label": "OSN SMP 2017 — OSN Nasional, Hari 2, Nomor 9",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
+  },
+  {
+    "id": "osn-smp-2017-10",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Optimasi",
+    "prompt": "Pada kilang minyak di daerah Duri, tersedia pompa-1 dan pompa-2. Kedua pompa tersebut digunakan untuk mengisi tangki penampungan dengan volume $V$. Tangki tersebut dapat diisi penuh menggunakan pompa-1 saja dalam waktu 4 jam, atau menggunakan pompa-2 saja dalam waktu 6 jam. Mula-mula kedua pompa digunakan secara bersama-sama dalam waktu $a$ jam, kemudian dilanjutkan hanya menggunakan pompa-1 selama b jam dan dilanjutkan dengan pompa-2 selama c jam. Jika biaya operasional pompa-1 adalah $15(a+b)$ ribu per jam dan biaya operasional pompa-2 adalah $4(a+c)$ ribu per jam, tentukan $b$ dan $c$ agar biaya operasional seluruh pompa adalah minimum (nyatakan $b$ dan $c$ sebagai fungsi $a$). Tentukan juga nilai $a$ yang mungkin.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2017,
+      "stage": "OSN Nasional",
+      "number": "Hari 2, Nomor 10",
+      "label": "OSN SMP 2017 — OSN Nasional, Hari 2, Nomor 10",
+      "note": "Transkripsi dari salinan soal; belum dicocokkan dengan naskah resmi penyelenggara."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
