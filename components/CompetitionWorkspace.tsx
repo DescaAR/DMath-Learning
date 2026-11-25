@@ -21,7 +21,30 @@ const competitionFullNames: Readonly<Record<string, string>> = {
   "LMNas UGM": "Lomba Matematika Nasional Universitas Gadjah Mada",
   "OSN": "Olimpiade Sains Nasional",
   "ON-MIPA": "Olimpiade Nasional Matematika dan Ilmu Pengetahuan Alam",
-  "Putnam": "William Lowell Putnam Mathematical Competition"
+  "Putnam": "William Lowell Putnam Mathematical Competition",
+  "AMC 8": "American Mathematics Competitions 8",
+  "AMC 10": "American Mathematics Competitions 10",
+  "AMC 12": "American Mathematics Competitions 12",
+  "AIME": "American Invitational Mathematics Examination",
+  "USAMO": "USA Mathematical Olympiad",
+  "USAJMO": "USA Junior Mathematical Olympiad",
+  "EGMO": "European Girls’ Mathematical Olympiad",
+  "BMO UK": "British Mathematical Olympiad",
+  "JBMO": "Junior Balkan Mathematical Olympiad",
+  "Balkan MO": "Balkan Mathematical Olympiad",
+  "MEMO": "Middle European Mathematical Olympiad",
+  "RMM": "Romanian Master of Mathematics",
+  "SASMO": "Singapore and Asian Schools Math Olympiad",
+  "SEAMO": "Southeast Asian Mathematical Olympiad",
+  "SMKC": "Singapore Math Kangaroo Contest",
+  "SMMC": "Simon Marais Mathematics Competition",
+  "VJIMC": "Vojtěch Jarník International Mathematical Competition",
+  "JMC UKMT": "Junior Mathematical Challenge",
+  "IMC UKMT": "Intermediate Mathematical Challenge",
+  "SMC UKMT": "Senior Mathematical Challenge",
+  "UMC UNDIP": "UNDIP's Mathematics Competition",
+  "OLMAT UNSOED": "Olimpiade Matematika Universitas Jenderal Soedirman",
+  "OMITS": "Olimpiade Matematika ITS"
 };
 const competitionHeading = (name: string) => competitionFullNames[name] ? `${name} (${competitionFullNames[name]})` : name;
 const categoryOrder=(a:string,b:string)=>a==="DMath Learning Proposed"?1:b==="DMath Learning Proposed"?-1:a.localeCompare(b,"id");
@@ -87,6 +110,408 @@ const otherFullSets: Readonly<Record<string,{label:string;url:string}[]>> = {
  "ON-MIPA":[{label:"Koleksi tambahan ON-MIPA, termasuk beberapa naskah nasional",url:"https://mathcyber1997.com/kumpulan-soal-on-mipa-pt-bidang-matematika-tahun-2006-sekarang/"}],
  OSN:[{label:"Kumpulan naskah OSN SD, SMP, SMA",url:"https://mathcyber1997.com/download-soal-osn-ksn-bidang-matematika/"}]
 };
+type ContestSource = {competition:string;level:Level;label:string;url:string;kind:string};
+const contestSources: ContestSource[] = [
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "label": "Bank soal resmi BPTI",
+    "url": "https://bpti.kemendikdasmen.go.id/2024/07/02/bank-soal-osn-jenjang-sd-smp-dan-sma/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "label": "Bank soal resmi BPTI",
+    "url": "https://bpti.kemendikdasmen.go.id/2024/07/02/bank-soal-osn-jenjang-sd-smp-dan-sma/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "label": "Bank soal resmi BPTI",
+    "url": "https://bpti.kemendikdasmen.go.id/2024/07/02/bank-soal-osn-jenjang-sd-smp-dan-sma/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "label": "Paket OSK, OSP, OSN menurut jenjang dan tahun",
+    "url": "https://www.mathsolar.com/download",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "label": "Paket OSK, OSP, OSN menurut jenjang dan tahun",
+    "url": "https://www.mathsolar.com/download",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "label": "Paket OSK, OSP, OSN menurut jenjang dan tahun",
+    "url": "https://www.mathsolar.com/download",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "label": "Paket OSK, OSP dan OSN — forum pelatihan",
+    "url": "https://www.forum.pelatihan-osn.com/arsip",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "label": "Paket OSK, OSP dan OSN — forum pelatihan",
+    "url": "https://www.forum.pelatihan-osn.com/arsip",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMA",
+    "label": "Paket OSK, OSP dan OSN — forum pelatihan",
+    "url": "https://www.forum.pelatihan-osn.com/arsip",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SMP",
+    "label": "OSK dan OSP 2003–2023 — MGMP Makassar",
+    "url": "https://www.mgmpmatsmpmakassar.org/2019/03/soal-soal-olimpiade-matematika.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OSN",
+    "level": "SD",
+    "label": "Paket nasional 2003–2017",
+    "url": "https://www.infodikdasmen.com/2019/01/soal-dan-pembahasan-olimpiade-sains.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "AMC 8",
+    "level": "SMP",
+    "label": "Paket tahunan dan nomor soal — arsip berizin MAA",
+    "url": "https://live.poshenloh.com/past-contests",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "AMC 10",
+    "level": "SMA",
+    "label": "Paket tahunan dan nomor soal — arsip berizin MAA",
+    "url": "https://live.poshenloh.com/past-contests",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "AMC 12",
+    "level": "SMA",
+    "label": "Paket tahunan dan nomor soal — arsip berizin MAA",
+    "url": "https://live.poshenloh.com/past-contests",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "AIME",
+    "level": "SMA",
+    "label": "Paket tahunan dan nomor soal — arsip berizin MAA",
+    "url": "https://live.poshenloh.com/past-contests",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "USAMO",
+    "level": "SMA",
+    "label": "Paket tahunan USAMO dan USAJMO",
+    "url": "https://en.amcclub.org.cn/usajmo-past-papers",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "USAJMO",
+    "level": "SMA",
+    "label": "Paket tahunan USAMO dan USAJMO",
+    "url": "https://en.amcclub.org.cn/usajmo-past-papers",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "EGMO",
+    "level": "SMA",
+    "label": "Seluruh edisi sejak 2012 — penyelenggara",
+    "url": "https://www.egmo.org/egmos/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "BMO UK",
+    "level": "SMA",
+    "label": "Babak 1 dan 2 — penyelenggara",
+    "url": "https://bmos.ukmt.org.uk/home/bmo",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "JBMO",
+    "level": "SMP",
+    "label": "Koleksi soal JBMO",
+    "url": "https://www.k12mathcontests.com/contest/jbmo",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "Balkan MO",
+    "level": "SMA",
+    "label": "Telusuri kompetisi di MathNet Explorer",
+    "url": "https://mathnet.mit.edu/explorer.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "MEMO",
+    "level": "SMA",
+    "label": "Telusuri kompetisi di MathNet Explorer",
+    "url": "https://mathnet.mit.edu/explorer.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "RMM",
+    "level": "SMA",
+    "label": "Telusuri kompetisi di MathNet Explorer",
+    "url": "https://mathnet.mit.edu/explorer.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "Math Kangaroo",
+    "level": "SD",
+    "label": "Paket tahun sebelumnya — Math Kangaroo USA",
+    "url": "https://mathkangaroo.org/mks/practice/pdf-exams/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "Math Kangaroo",
+    "level": "SMP",
+    "label": "Paket tahun sebelumnya — Math Kangaroo USA",
+    "url": "https://mathkangaroo.org/mks/practice/pdf-exams/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "Math Kangaroo",
+    "level": "SMA",
+    "label": "Paket tahun sebelumnya — Math Kangaroo USA",
+    "url": "https://mathkangaroo.org/mks/practice/pdf-exams/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "MATHCOUNTS",
+    "level": "SMP",
+    "label": "Paket kompetisi — penyelenggara",
+    "url": "https://www.mathcounts.org/resources/past-competitions",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "MATHCOUNTS",
+    "level": "SMP",
+    "label": "Koleksi paket berbagai tahun dan babak",
+    "url": "https://ruizesun.com/resource/mathcounts-resources/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SASMO",
+    "level": "SD",
+    "label": "Koleksi soal menurut jenjang",
+    "url": "https://www.k12mathcontests.com/contest/sasmo",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SASMO",
+    "level": "SMP",
+    "label": "Koleksi soal menurut jenjang",
+    "url": "https://www.k12mathcontests.com/contest/sasmo",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SASMO",
+    "level": "SMA",
+    "label": "Koleksi soal menurut jenjang",
+    "url": "https://www.k12mathcontests.com/contest/sasmo",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SASMO",
+    "level": "SD",
+    "label": "Paket 2025 — penyelenggara (akses sesuai ketentuan)",
+    "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2025/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SASMO",
+    "level": "SMP",
+    "label": "Paket 2025 — penyelenggara (akses sesuai ketentuan)",
+    "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2025/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SASMO",
+    "level": "SMA",
+    "label": "Paket 2025 — penyelenggara (akses sesuai ketentuan)",
+    "url": "https://sasmo.simcc.org/courses/sasmo-past-papers-year-2025/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SEAMO",
+    "level": "SD",
+    "label": "Contoh soal resmi",
+    "url": "https://seamo-official.org/resources",
+    "kind": "Contoh soal"
+  },
+  {
+    "competition": "SEAMO",
+    "level": "SMP",
+    "label": "Contoh soal resmi",
+    "url": "https://seamo-official.org/resources",
+    "kind": "Contoh soal"
+  },
+  {
+    "competition": "SEAMO",
+    "level": "SMA",
+    "label": "Contoh soal resmi",
+    "url": "https://seamo-official.org/resources",
+    "kind": "Contoh soal"
+  },
+  {
+    "competition": "SMKC",
+    "level": "SD",
+    "label": "Kursus dan paket soal penyelenggara",
+    "url": "https://smkc.simcc.org/courses/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SMKC",
+    "level": "SMP",
+    "label": "Kursus dan paket soal penyelenggara",
+    "url": "https://smkc.simcc.org/courses/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SMKC",
+    "level": "SMA",
+    "label": "Kursus dan paket soal penyelenggara",
+    "url": "https://smkc.simcc.org/courses/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "JMC UKMT",
+    "level": "SMP",
+    "label": "Kumpulan paket UKMT",
+    "url": "https://www.westiesworkshop.com/whole-past-papers/ukmt-papers/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "IMC UKMT",
+    "level": "SMA",
+    "label": "Kumpulan paket UKMT",
+    "url": "https://www.westiesworkshop.com/whole-past-papers/ukmt-papers/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SMC UKMT",
+    "level": "SMA",
+    "label": "Kumpulan paket UKMT",
+    "url": "https://www.westiesworkshop.com/whole-past-papers/ukmt-papers/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "CEMC Waterloo",
+    "level": "SMP",
+    "label": "Paket kontes berdasarkan kelas dan tahun",
+    "url": "https://cemc.uwaterloo.ca/resources/past-contests",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "CEMC Waterloo",
+    "level": "SMA",
+    "label": "Paket kontes berdasarkan kelas dan tahun",
+    "url": "https://cemc.uwaterloo.ca/resources/past-contests",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "ON-MIPA",
+    "level": "Kuliah",
+    "label": "Seleksi wilayah dan nasional 2006–2026",
+    "url": "https://onmipa.filzabuana.id/onmipa/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "ON-MIPA",
+    "level": "Kuliah",
+    "label": "Seleksi universitas, wilayah dan nasional",
+    "url": "https://mathcyber1997.com/kumpulan-soal-on-mipa-pt-bidang-matematika-tahun-2006-sekarang/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "label": "Paket kompetisi 2024",
+    "url": "https://www.simonmarais.org/2024.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "label": "Paket kompetisi 2025",
+    "url": "https://www.simonmarais.org/2025.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "SMMC",
+    "level": "Kuliah",
+    "label": "Paket kompetisi 2021",
+    "url": "https://www.simonmarais.org/2021.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "VJIMC",
+    "level": "Kuliah",
+    "label": "Kumpulan soal 1991–2022",
+    "url": "https://www.eisatopon.gr/2024/06/vojtech-jarnik-international.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "VJIMC",
+    "level": "Kuliah",
+    "label": "Edisi 2026 — kategori II",
+    "url": "https://jarnik.osu.cz/storage/uploads/j33problems2.pdf",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "MIC Logika UI",
+    "level": "SMA",
+    "label": "Koleksi naskah lomba kampus",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "UMC UNDIP",
+    "level": "SMA",
+    "label": "Koleksi naskah lomba kampus",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "Penta Mathematics Competition",
+    "level": "SMA",
+    "label": "Koleksi naskah lomba kampus",
+    "url": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OMITS",
+    "level": "SMP",
+    "label": "Indeks kompetisi matematika — KoMa",
+    "url": "https://www.konsep-matematika.com/p/halaman-download-soal-olimpiade.html",
+    "kind": "Koleksi soal"
+  },
+  {
+    "competition": "OMITS",
+    "level": "SMA",
+    "label": "Indeks kompetisi matematika — KoMa",
+    "url": "https://www.konsep-matematika.com/p/halaman-download-soal-olimpiade.html",
+    "kind": "Koleksi soal"
+  }
+];
 function YearPaperIndex({items}:{items:YearPaper[]}){
  return <details open={items.length===1||undefined} style={{margin:"0 0 16px",padding:"14px 16px",border:"1px solid var(--cmp-line)",borderRadius:10,background:"var(--cmp-paper)"}}>
   <summary style={{fontWeight:700,cursor:"pointer"}}>Buka naskah per tahun · {items.length} edisi</summary>
@@ -123,20 +548,22 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  const papersForLevel=yearPapers.filter(p=>level==="Semua"||p.level===level);
  const years=Array.from(new Set([...pool.flatMap(p=>p.source.year?[p.source.year]:[]),...papersForLevel.map(p=>p.year),...(level==="Semua"||level==="Kuliah"?imcEditions.map(e=>e.year):[])])).sort((a,b)=>b-a);
  const stages=Array.from(new Set([...pool.filter(p=>(contest==="Semua"||categoryOf(p)===contest)&&(year==="Semua"||String(p.source.year)===year)).flatMap(p=>p.source.stage?[p.source.stage]:[]),...papersForLevel.filter(p=>(contest==="Semua"||p.competition===contest)&&(year==="Semua"||String(p.year)===year)).map(p=>p.stage),...((level==="Semua"||level==="Kuliah")&&(contest==="Semua"||contest==="IMC")?["IMC"]:[])])).sort();
- const contests=Array.from(new Set(pool.map(categoryOf))).sort(categoryOrder);
+ const sourcesForLevel=contestSources.filter(s=>level==="Semua"||s.level===level);
+ const contests=Array.from(new Set([...pool.map(categoryOf),...papersForLevel.map(p=>p.competition),...sourcesForLevel.map(s=>s.competition)])).sort(categoryOrder);
  const topics=Array.from(new Set(pool.map(p=>p.topic))).sort((a,b)=>a.localeCompare(b,"id"));
  const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||categoryOf(p)===contest)&&(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
  const groups=contests.map(c=>({name:c,items:filtered.filter(p=>categoryOf(p)===c).sort((a,b)=>(b.source.year||0)-(a.source.year||0)||(a.source.stage||"").localeCompare(b.source.stage||"","id")||(a.source.number||a.id).localeCompare(b.source.number||b.id,"id",{numeric:true}))})).filter(g=>g.items.length>0);
  const linkedIMC=(level==="Semua"||level==="Kuliah")&&(contest==="Semua"||contest==="IMC")&&(stage==="Semua"||stage==="IMC")&&topic==="Semua"&&diff==="Semua"&&source!=="original"?imcMissing.filter(p=>(year==="Semua"||String(p.year)===year)&&("IMC "+p.year+" Hari "+p.day+" Nomor "+p.number+" Kuliah").toLowerCase().includes(query.toLowerCase().trim())):[];
  const imcVisible=linkedIMC.length?imcAll.filter(p=>linkedIMC.includes(p)||Boolean(p.localId&&filtered.some(q=>q.id===p.localId))):[];
  const linkedPapers=topic==="Semua"&&diff==="Semua"&&source!=="original"?papersForLevel.filter(p=>(contest==="Semua"||p.competition===contest)&&(year==="Semua"||String(p.year)===year)&&(stage==="Semua"||p.stage===stage)&&[p.competition,p.year,p.stage,p.label].join(" ").toLowerCase().includes(query.toLowerCase().trim())):[];
- const extraNames=[...new Set([...(linkedIMC.length?["IMC"]:[]),...linkedPapers.map(p=>p.competition)])].filter(name=>!groups.some(g=>g.name===name));
+ const linkedSources=topic==="Semua"&&diff==="Semua"&&source!=="original"&&stage==="Semua"&&year==="Semua"?sourcesForLevel.filter(s=>(contest==="Semua"||s.competition===contest)&&[competitionHeading(s.competition),s.label,s.level].join(" ").toLowerCase().includes(query.toLowerCase().trim())):[];
+ const extraNames=[...new Set([...(linkedIMC.length?["IMC"]:[]),...linkedPapers.map(p=>p.competition),...linkedSources.map(s=>s.competition)])].filter(name=>!groups.some(g=>g.name===name));
  const displayGroups=[...groups,...extraNames.map(name=>({name,items:[] as CompetitionProblem[]}))].sort((a,b)=>categoryOrder(a.name,b.name));
  const reset=()=>{setQuery("");setLevel(fixedLevel||"Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");setYear("Semua");setContest("Semua");setStage("Semua");};
  return <div className="cmp-page container cmp-catalog">
   <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length+((level==="Semua"||level==="Kuliah")?imcMissing.length:0)}</strong><span>{level==="Semua"||level==="Kuliah"?"soal dan tautan tersedia":"soal tersedia"}</span></div></header>
   {fixedLevel&&<nav className="cmp-level-section-nav" aria-label="Menu jenjang"><span aria-current="page">Kumpulan Soal</span><Link href={levelHref(fixedLevel)+"potd/"}>Soal Harian →</Link></nav>}
-  <section className="cmp-category-section" aria-label="Kategori kompetisi"><h2>Kategori kompetisi</h2><div className="cmp-category-buttons" role="group" aria-label="Pilih kategori">{["Semua",...contests].map(c=><button type="button" key={c} aria-pressed={contest===c} onClick={()=>{setContest(c);setStage("Semua");setYear("Semua");setSource("Semua");setTopic("Semua");setDiff("Semua");}}><span>{c==="Semua"?"Semua kompetisi":c}</span><small>{(c==="Semua"?pool.length:pool.filter(p=>categoryOf(p)===c).length)+((level==="Semua"||level==="Kuliah")&&(c==="Semua"||c==="IMC")?imcMissing.length:0)} soal</small></button>)}</div></section>
+  <section className="cmp-category-section" aria-label="Kategori kompetisi"><h2>Kategori kompetisi</h2><div className="cmp-category-buttons" role="group" aria-label="Pilih kategori">{["Semua",...contests].map(c=><button type="button" key={c} aria-pressed={contest===c} onClick={()=>{setContest(c);setStage("Semua");setYear("Semua");setSource("Semua");setTopic("Semua");setDiff("Semua");}}><span>{c==="Semua"?"Semua kompetisi":c}</span><small>{(c==="Semua"?pool.length:pool.filter(p=>categoryOf(p)===c).length)+((level==="Semua"||level==="Kuliah")&&(c==="Semua"||c==="IMC")?imcMissing.length:0)||""}{(c==="Semua"||pool.some(p=>categoryOf(p)===c)||c==="IMC")?" soal":""}{sourcesForLevel.some(s=>c==="Semua"||s.competition===c)||papersForLevel.some(s=>c==="Semua"||s.competition===c)?" · naskah":""}</small></button>)}</div></section>
   <div className="cmp-catalog-layout">
    <aside className="cmp-filter" aria-label="Filter soal">
     <div className="cmp-filter-title"><h2>Filter soal</h2><button className="cmp-text-button" type="button" onClick={reset}>Atur ulang</button></div>
@@ -154,9 +581,9 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
    </aside>
    <div className="cmp-results">
 
-    <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length+linkedIMC.length} soal ditemukan{linkedIMC.length>0?" · "+linkedIMC.length+" tautan":""}{linkedPapers.length>0?" · "+linkedPapers.length+" naskah":""}</span></div>
-    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length+(g.name==="IMC"?linkedIMC.length:0)} soal{linkedPapers.some(p=>p.competition===g.name)?" · "+linkedPapers.filter(p=>p.competition===g.name).length+" naskah":""}</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={imcVisible}/>} {linkedPapers.some(p=>p.competition===g.name)&&<YearPaperIndex items={linkedPapers.filter(p=>p.competition===g.name)}/> } {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&source!=="original"&&year==="Semua"&&stage==="Semua"&&!query.trim()&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
-    {!filtered.length&&!linkedIMC.length&&!linkedPapers.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
+    <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length+linkedIMC.length} soal ditemukan{linkedIMC.length>0?" · "+linkedIMC.length+" tautan":""}{linkedPapers.length>0?" · "+linkedPapers.length+" naskah":""}{linkedSources.length>0?" · "+new Set(linkedSources.map(s=>s.competition+"|"+s.url)).size+" sumber":""}</span></div>
+    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length+(g.name==="IMC"?linkedIMC.length:0)} soal{linkedPapers.some(p=>p.competition===g.name)?" · "+linkedPapers.filter(p=>p.competition===g.name).length+" naskah":""}</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={imcVisible}/>} {linkedPapers.some(p=>p.competition===g.name)&&<YearPaperIndex items={linkedPapers.filter(p=>p.competition===g.name)}/> } {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&source!=="original"&&year==="Semua"&&stage==="Semua"&&!query.trim()&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}{linkedSources.some(s=>s.competition===g.name)&&<div style={{display:"grid",gap:8,marginBottom:14}}>{Array.from(new Map(linkedSources.filter(s=>s.competition===g.name).map(s=>[s.url,s])).values()).map(s=><a key={s.url} href={s.url} className="cmp-link-text" target="_blank" rel="noopener noreferrer" style={{display:"block",padding:"12px 14px",border:"1px solid var(--cmp-line)",borderRadius:8,background:"var(--cmp-paper)"}}>{s.label} ↗<span style={{display:"block",fontSize:12,fontWeight:400,color:"var(--cmp-muted)"}}>{s.kind} · eksternal</span></a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
+    {!filtered.length&&!linkedIMC.length&&!linkedPapers.length&&!linkedSources.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
    </div>
   </div>
  </div>;
