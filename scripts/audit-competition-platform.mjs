@@ -145,3 +145,8 @@ for(const year of Array.from({length:7},(_,i)=>2019+i)){
  const nums=competitionProblems.filter(p=>p.source.competition==="IYMC"&&p.source.year===year).map(p=>p.source.number).sort();
  assert.deepEqual(nums,["Problem A","Problem B","Problem C","Problem D","Problem E"],"Incomplete IYMC qualification set "+year);
 }
+
+for(const year of [2022,2023,2024]){
+ const nums=competitionProblems.filter(p=>p.source.competition==="IMO"&&p.source.year===year).map(p=>p.source.number).sort();
+ assert.deepEqual(nums,Array.from({length:6},(_,i)=>"Hari "+(i<3?1:2)+", Nomor "+(i+1)), "Incomplete IMO set "+year);
+}

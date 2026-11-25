@@ -590,12 +590,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Find the real numbers $\\alpha$ for which $$\\lfloor\\alpha\\rfloor+\\lfloor2\\alpha\\rfloor+\\cdots+\\lfloor n\\alpha\\rfloor$$ is divisible by $n$ for each positive integer $n$. Here $\\lfloor z\\rfloor$ is the largest integer not exceeding $z$; for instance, $\\lfloor-\\pi\\rfloor=-4$ and $\\lfloor2\\rfloor=\\lfloor2.9\\rfloor=2$.",
     "source": {
       "kind": "competition",
-      "label": "IMO 2024 — Nomor 1",
+      "label": "IMO 2024 — Hari 1, Nomor 1",
       "competition": "IMO",
       "year": 2024,
-      "number": "Nomor 1",
+      "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim.",
       "stage": "IMO"
     }
   },
@@ -608,12 +608,12 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Classify the positive integer pairs $(a,b)$ admitting positive integers $g,N$ with $$\\gcd(a^n+b,b^n+a)=g\\qquad(n\\ge N,\\ n\\in\\mathbb Z).$$ The notation $\\gcd(x,y)$ means the greatest common divisor of $x$ and $y$.",
     "source": {
       "kind": "competition",
-      "label": "IMO 2024 — Nomor 2",
+      "label": "IMO 2024 — Hari 1, Nomor 2",
       "competition": "IMO",
       "year": 2024,
-      "number": "Nomor 2",
+      "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim.",
       "stage": "IMO"
     }
   },
@@ -1496,7 +1496,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim."
     }
   },
   {
@@ -1514,7 +1514,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim."
     }
   },
   {
@@ -1532,7 +1532,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim."
     }
   },
   {
@@ -8775,6 +8775,240 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IYMC 2024 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
       "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+    }
+  },
+  {
+    "id": "imo-2022-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Operasi pemindahan rantai koin",
+    "prompt": "Marianne has $n$ aluminium coins (A) and $n$ bronze coins (B) from the Bank of Oslo, in arbitrary linear order. A chain is a contiguous run of coins of one type. Fix $1\\le k\\le2n$. Repeatedly move the maximal chain containing coin number $k$ (counted from the left) to the front.\n\nFor $n=k=4$, one example is\n$AAB\\underline{B}BABA\\to BBB\\underline{A}AABA\\to AAA\\underline{B}BBBA\\to BBB\\underline{B}AAAA\\to BBB\\underline{B}AAAA\\to\\cdots$.\n\nClassify $(n,k)$ for which every initial ordering eventually has its first $n$ coins of a single type.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2022,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2022 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2022-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Susunan prima pada lingkaran",
+    "prompt": "Fix a positive integer $k$ and a finite set $S$ of odd primes. Prove uniqueness, modulo rotations and reflections, of any circular ordering in which each neighboring product equals $x^2+x+k$ for some positive integer $x$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2022,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2022 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2022-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Empat titik konsiklik",
+    "prompt": "In a convex pentagon $ABCDE$, suppose $BC=DE$. An interior point $T$ satisfies $TB=TD$, $TC=TE$, and $\\angle ABT=\\angle TEA$. Put $P=AB\\cap CD$, $Q=AB\\cap CT$, $R=AE\\cap CD$, $S=AE\\cap DT$, with collinear orders $P,B,A,Q$ and $R,E,A,S$. Prove that $P,S,Q,R$ are concyclic.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2022,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2022 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2022-05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Persamaan faktorial dengan eksponen prima",
+    "prompt": "Classify the positive integer triples $(a,b,p)$ satisfying $a^p=b!+p$, where $p$ is prime.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2022,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2022 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2022-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Jumlah lintasan naik pada persegi Nordik",
+    "prompt": "For positive $n$, fill an $n\\times n$ Nordic square bijectively with $1,\\ldots,n^2$. Cells are adjacent when sharing a side; a valley has no adjacent smaller entry. An uphill path is a nonempty sequence of cells beginning at a valley, moving between adjacent cells, with strictly increasing entries. Determine the minimum number of uphill paths in terms of $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2022,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2022 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2023-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Garis singgung dan garis bagi sudut",
+    "prompt": "An acute triangle $ABC$ satisfies $AB<AC$ and has circumcircle $\\Omega$. Let $S$ bisect arc $CB$ containing $A$. The perpendicular from $A$ to $BC$ meets $BS$ at $D$ and $\\Omega$ again at $E$. Put $L=BE\\cap\\ell$, where $\\ell$ passes through $D$ parallel to $BC$. The circumcircle $\\omega$ of $BDL$ intersects $\\Omega$ at $B,P$. Show that its tangent at $P\\ne B$ intersects $BS$ on the internal bisector of $\\angle BAC$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2023,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2023 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2023-04",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Batas bawah barisan akar hasil kali",
+    "prompt": "Suppose $x_1,\\ldots,x_{2023}$ are distinct positive reals and $a_n=\\sqrt{(x_1+\\cdots+x_n)\\left(\\frac1{x_1}+\\cdots+\\frac1{x_n}\\right)}$ is integral for each $1\\le n\\le2023$. Establish $a_{2023}\\ge3034$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2023,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2023 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2023-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Lintasan ninja pada segitiga Jepang",
+    "prompt": "For positive $n$, a Japanese triangle has $1+2+\\cdots+n$ circles in triangular formation, with one red circle among the $i$ circles of row $i$. A ninja path selects a circle in the first row and then one of the two circles directly below each selection until row $n$. The example for $n=6$ includes a path visiting two red circles.\n\n[[FIGURE]]\n\nDetermine the largest $k$ guaranteed as a lower bound on the number of red circles visited by some ninja path in every such triangle.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2023,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2023 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2023-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Tiga lingkaran dengan dua titik persekutuan",
+    "prompt": "In equilateral $ABC$, choose interior points $A_1,B_1,C_1$ with $BA_1=A_1C$, $CB_1=B_1A$, $AC_1=C_1B$ and $\\angle BA_1C+\\angle CB_1A+\\angle AC_1B=480^\\circ$. Set $A_2=BC_1\\cap CB_1$, $B_2=CA_1\\cap AC_1$, $C_2=AB_1\\cap BA_1$. If $A_1B_1C_1$ has three unequal sides, prove that the circumcircles of $AA_1A_2$, $BB_1B_2$, $CC_1C_2$ share two points.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2023,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2023 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2024-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Periodisitas barisan frekuensi",
+    "prompt": "Take an infinite positive integer sequence $(a_n)$ and positive integer $N$. For $n>N$, let $a_n$ count occurrences of $a_{n-1}$ among $a_1,\\ldots,a_{n-1}$. Show that the odd-indexed or even-indexed subsequence is eventually periodic (possibly both). A sequence $(b_m)$ is eventually periodic when $b_{m+p}=b_m$ for all $m\\ge M$ for some positive integers $p,M$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2024,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2024 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 1; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2024-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Jumlah sudut pada konstruksi garis singgung",
+    "prompt": "For triangle $ABC$ with $AB<AC<BC$, denote its incenter and incircle by $I,\\omega$. On line $BC$ choose $X\\ne C$ and $Y\\ne B$ so that parallels to $AC$ through $X$ and $AB$ through $Y$ touch $\\omega$. Let $P\\ne A$ be the second intersection of $AI$ with the circumcircle; $K,L$ are the midpoints of $AC,AB$, respectively. Prove $\\angle KIL+\\angle YPX=180^\\circ$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2024,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2024 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2024-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Strategi Turbo pada papan monster",
+    "prompt": "Turbo the snail faces a $2024\\times2023$ board with 2022 stationary hidden monsters, one per interior row, at most one per column. Their locations are unknown. Each attempt starts in any top-row cell and proceeds by side-adjacent moves, including revisits. Encountering a monster ends the attempt and returns Turbo to the top row. He remembers the status of all visited cells. Arrival at the bottom row wins. Find the least $n$ permitting guaranteed success within $n$ attempts for every monster placement.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2024,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2024 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+    }
+  },
+  {
+    "id": "imo-2024-06",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Fungsi aquaesulian pada bilangan rasional",
+    "prompt": "Call $f:\\mathbb Q\\to\\mathbb Q$ aquaesulian when each rational pair $x,y$ satisfies at least one of $f(x+f(y))=f(x)+y$ or $f(f(x)+y)=x+f(y)$. Find the least integer $c$ uniformly bounding the cardinality of $\\{f(r)+f(-r)\\mid r\\in\\mathbb Q\\}$ over aquaesulian functions, proving that such a bound exists.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2024,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2024 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
+      "note": "Independent English formulation based on official paper, day 2; not verbatim."
     }
   }
 ];

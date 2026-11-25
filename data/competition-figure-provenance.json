@@ -176,6 +176,11 @@
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
       "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
       "page": 1
+    },
+    "imo-2023-05": {
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "basis": "Official PDF day 2 problem 5 visually checked; red positions and path reconstructed.",
+      "page": 2
     }
   },
   "table": {

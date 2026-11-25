@@ -1361,6 +1361,7 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number; captio
  "iymc-2020-qr-e":{alt:"Gray composite figure with two tilted squares, a triangular region, a rectangle and a semicircle. A white diamond in the rectangle is marked A; its horizontal diagonal is a and rectangle width is 2a.",width:420},
  "iymc-2021-qr-e":{alt:"Right triangle with an interior line parallel to side z, lower segment x, upper segment y and angle alpha.",width:340},
  "iymc-2024-qr-e":{alt:"Two equal squares, one rotated 45 degrees with its left vertex at the center of the upright square. The nonoverlapping part of the rotated square is gray.",width:250},
+ "imo-2023-05":{alt:"Japanese triangle of six rows, with one red circle per row and a path visiting two red circles.",width:220},
 };
 function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
  const figure=geometryFigures[id];
