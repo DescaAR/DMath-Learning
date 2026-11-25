@@ -11620,6 +11620,222 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://math.fmipa.ugm.ac.id/id/dominasi-total-tim-ugm-borong-4-emas-di-ajang-perdana-koala-2025/",
       "note": "User-supplied University Challange ZIP: KOALA/final koala.pdf, page 2; public URL documents competition, not the exam PDF."
     }
+  },
+  {
+    "id": "ktom-2023-nov-a-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan banyaknya bilangan 3 digit yang merupakan bilangan kuadrat sempurna serta jumlah digit-digitnya kurang dari 10.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 1",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Jika diketahui $x+\\frac1y=11$ dan $x^2+\\frac1{y^2}=65$, maka $xy+\\frac1{xy}=\\frac mn$ di mana $m$ dan $n$ adalah bilangan asli yang relatif prima. Tentukan nilai dari $m+n$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 2",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Andi bermain dengan melempar sebuah dadu adil bersisi enam yang dilabeli angka-angka $1,2,3,4,5,6$ secara berulang. Ia dinyatakan kalah ketika angka yang muncul pada suatu pelemparan sama dengan angka yang muncul pada satu pelemparan sebelumnya. Jika peluang Andi belum kalah setelah 4 kali pelemparan adalah $\\frac mn$, di mana $m$ dan $n$ adalah bilangan asli yang relatif prima, tentukan nilai dari $m+n$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 3",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan sebuah persegi $ABCD$ dengan titik $P$ dan $Q$ berturut-turut di dalam segmen $AB$ dan $CD$, sedangkan $M$ adalah titik tengah $BC$. Jika diketahui bahwa\n\n$$[PBM]:[QCM]:[APQD]=1:2:3$$\n\nmaka $[PMQ]:[ABCD]=m:n$, di mana $m$ dan $n$ adalah bilangan asli yang relatif prima. Tentukan nilai dari $m+n$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 4",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diberikan sebuah sistem persamaan dengan $x,y\\in\\mathbb R$\n\n$$\\begin{aligned}x^4+3x&=y^4+y\\\\x^2-y^2&=2\\end{aligned}$$\n\nJika jumlah semua $x$ yang memenuhi adalah $S$, tentukan nilai dari $\\lfloor|S|\\rfloor$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 5",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 5",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segilima beraturan $ABCDE$. Titik $F$ terletak di dalam segmen $AB$ sehingga $AC=AE+AF$. Tentukan besar sudut $\\angle ACF$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 6",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 6",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-07",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Untuk setiap bilangan asli $N$, definisikan $f(N)$ sebagai bilangan kuadrat terdekat dengan $N$. Sebagai contoh, $f(4)=4$, $f(6)=4$ (karena $|6-4|=2<3=|6-9|$), dan $f(7)=9$. Tentukan banyaknya bilangan asli $N\\le400$ yang memenuhi $\\gcd(f(N),N)=1$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 7",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 7",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-08",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Dalam negeri fantasi KTOM, jam tidur seseorang pada suatu malam diukur dengan sebuah bilangan bulat dari 0 sampai 20. Total jam tidur malam minimal dalam 4 malam berturut-turut yang direkomendasikan oleh dokter adalah 20 jam. Ariel ingin memenuhi target tepat 20 jam tidur dalam 4 malam. Ariel bisa mengendalikan jam tidurnya sesuka hati namun dengan syarat berikut: jika ia sudah tertidur lebih dari 1 jam, ia pasti akan tertidur pulas dan mencapai jam tidur setidaknya 4 jam. Tentukan banyaknya cara ia dapat mengatur jam tidurnya dalam 4 malam tersebut.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 8",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 8",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-09",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diberikan sebuah polinom $P(x)=x^3-3x-1$ yang memiliki akar-akar kompleks berbeda $a,b,c$. Tentukan nilai dari\n\n$$\\left|\\frac{a}{b(a+b)}+\\frac{b}{c(b+c)}+\\frac{c}{a(c+a)}\\right|.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 9",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 9",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-a-10",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Diberikan fungsi $\\Omega(n)$ yang menyatakan hasil penjumlahan dari eksponen-eksponen setiap prima dalam faktorisasi prima $n$, di mana $n$ bilangan asli (dengan kata lain, $\\Omega(n)=\\sum_{p\\text{ prima}}v_p(n)$), dan $\\Omega(1)=0$. Sebagai contoh, $\\Omega(30)=3$ dan $\\Omega(48)=5$. Tentukan nilai dari\n\n$$S=\\sum_{n=1}^{2023}(-1)^{\\Omega(n)}\\left\\lfloor\\frac{2023}{n}\\right\\rfloor.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian A, Nomor 10",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian A, Nomor 10",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-b-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga lancip $ABC$ dengan $H$ merupakan perpotongan ketiga garis tingginya. Misalkan $D$ dan $E$ sedemikian sehingga $BCAE$ dan $BCHD$ keduanya jajar genjang. Tunjukkan bahwa $\\angle EDH=\\angle EBH=90^\\circ$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian B, Nomor 1",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian B, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-nov-b-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kombinatorika",
+    "prompt": "Diberikan sebuah himpunan $S=\\{1,2,3,...,9\\}$. Tentukan nilai $n$ terkecil sehingga, untuk setiap $n$ himpunan bagian berbeda $A_1,A_2,...,A_n$ masing-masing berisikan 3 anggota, selalu terdapat dua bilangan berbeda $p,q\\in S$ dan dua indeks $i,j\\in\\{1,2,...,n\\}$ sehingga $\\{p,q\\}$ adalah subhimpunan dari $A_i$ dan $A_j$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — November, Bagian B, Nomor 2",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 1",
+      "number": "Bagian B, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 6. URL is organizer homepage."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
