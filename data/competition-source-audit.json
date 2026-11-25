@@ -1,0 +1,5389 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-25",
+  "definition": "Exact means words and mathematical notation compared against an accessible source; typesetting delimiters may differ. Earlier uncorroborated review claims are not evidence. The registry is internal and does not change reader-facing status.",
+  "records": {
+    "sd-001": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sd-002": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sd-003": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sd-004": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "smp-001": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "smp-002": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "smp-003": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "smp-004": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sma-001": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sma-002": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sma-003": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sma-004": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "univ-001": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "univ-002": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "univ-003": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "univ-004": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "imo-2019-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2019,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+    },
+    "imc-2024-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2024"
+    },
+    "sd-005": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sd-006": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sd-007": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sd-008": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "smp-005": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "smp-006": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "smp-007": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "smp-008": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sma-005": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sma-006": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sma-007": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "sma-008": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "univ-005": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "univ-006": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "univ-007": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "univ-008": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null
+    },
+    "osnk-sd-2024-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-tahun-2024.html?m=0"
+    },
+    "osnp-sd-2024-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html"
+    },
+    "osnp-sd-2024-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 4",
+      "sourceUrl": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html"
+    },
+    "osnp-sd-2024-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 18",
+      "sourceUrl": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html"
+    },
+    "osnk-smp-2024-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 9",
+      "sourceUrl": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html"
+    },
+    "osnk-smp-2024-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 8",
+      "sourceUrl": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html"
+    },
+    "osn-sma-2024-h1-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.aiairyn.com/2024/08/salinan-soal-osn-sma-2024-bidang.html"
+    },
+    "imo-2024-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2024,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+    },
+    "imo-2024-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2024,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+    },
+    "apmo-2024-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2024,
+      "number": "Nomor 3",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+    },
+    "onmipa-2024-w-h1-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "ON-MIPA",
+      "year": 2024,
+      "number": "Hari 1, Isian 1",
+      "sourceUrl": "https://paggalih.github.io/olimpiade/onmipa-w-2024/"
+    },
+    "onmipa-2024-w-h1-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "ON-MIPA",
+      "year": 2024,
+      "number": "Hari 1, Isian 3",
+      "sourceUrl": "https://paggalih.github.io/olimpiade/onmipa-w-2024/"
+    },
+    "imc-2024-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2024"
+    },
+    "imc-2024-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2024"
+    },
+    "putnam-2024-a1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "A1",
+      "sourceUrl": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf"
+    },
+    "putnam-2024-a2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "A2",
+      "sourceUrl": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf"
+    },
+    "osnk-sd-2025-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.defantri.com/2026/03/soal-dan-pembahasan-osnk-2025-matematika-sd.html"
+    },
+    "osnk-sd-2025-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": "https://www.defantri.com/2026/03/soal-dan-pembahasan-osnk-2025-matematika-sd.html"
+    },
+    "osnk-sd-2026-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html"
+    },
+    "osnk-sd-2026-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2026,
+      "number": "Nomor 10",
+      "sourceUrl": "https://id.scribd.com/document/1053240605/Soal-Dan-Solusi-Osk-Sd-2026"
+    },
+    "osnk-sd-2026-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2026,
+      "number": "Nomor 20",
+      "sourceUrl": "https://id.scribd.com/document/1053240605/Soal-Dan-Solusi-Osk-Sd-2026"
+    },
+    "osnk-smp-2025-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.catatanmatematika.com/2026/05/soal-osn-k-smp-2025.html"
+    },
+    "osnp-smp-2025-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://pusatprestasinasional.kemendikdasmen.go.id/api/open/4"
+    },
+    "osnp-smp-2025-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": "https://pusatprestasinasional.kemendikdasmen.go.id/api/open/4"
+    },
+    "osnk-sma-2026-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.ruangparabintang.com/2026/07/soal-asli-matematika-osn-tingkat.html"
+    },
+    "osnk-sma-2026-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": "https://id.scribd.com/document/1059177068/Osk-Sma-2026"
+    },
+    "onmipa-2025-w-h1-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2025,
+      "number": "Hari 1, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/"
+    },
+    "onmipa-2025-w-h1-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2025,
+      "number": "Hari 1, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/"
+    },
+    "onmipa-2026-w-h1-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2026,
+      "number": "Hari 1, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/"
+    },
+    "onmipa-2026-w-h1-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2026,
+      "number": "Hari 1, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/"
+    },
+    "ksnk-sd-2020-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Nomor 2",
+      "sourceUrl": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten"
+    },
+    "ksnk-sd-2020-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Nomor 3",
+      "sourceUrl": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten"
+    },
+    "ksnk-sd-2020-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Nomor 11",
+      "sourceUrl": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten"
+    },
+    "ksnk-sd-2020-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Nomor 15",
+      "sourceUrl": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten"
+    },
+    "ksnk-sd-2021-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2021,
+      "number": "Nomor 2",
+      "sourceUrl": "https://id.scribd.com/document/790309363/2021-Soal-Osk-Matik-SD-www-konsep-matematika-com"
+    },
+    "ksnk-sd-2021-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2021,
+      "number": "Nomor 8",
+      "sourceUrl": "https://id.scribd.com/document/790309363/2021-Soal-Osk-Matik-SD-www-konsep-matematika-com"
+    },
+    "osnk-sd-2022-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2022,
+      "number": "Nomor 7",
+      "sourceUrl": "https://id.scribd.com/document/1004179258/2022-Soal-Osk-Matik-SD-Edit"
+    },
+    "osnk-sd-2022-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2022,
+      "number": "Nomor 13",
+      "sourceUrl": "https://id.scribd.com/document/1004179258/2022-Soal-Osk-Matik-SD-Edit"
+    },
+    "osnk-sd-2023-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1"
+    },
+    "osnk-sd-2023-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 2",
+      "sourceUrl": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1"
+    },
+    "osnk-sd-2023-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 4",
+      "sourceUrl": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1"
+    },
+    "osnk-sd-2023-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 8",
+      "sourceUrl": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1"
+    },
+    "ksnk-smp-2020-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Nomor 1",
+      "sourceUrl": "https://id.scribd.com/document/508163598/Soal-Dan-Solusi-KSN-Matematika-SMP-2020-KabKota"
+    },
+    "ksnk-smp-2020-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Nomor 2",
+      "sourceUrl": "https://id.scribd.com/document/508163598/Soal-Dan-Solusi-KSN-Matematika-SMP-2020-KabKota"
+    },
+    "ksn-smp-2021-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2021,
+      "number": "Nomor 5",
+      "sourceUrl": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html"
+    },
+    "ksn-smp-2021-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2021,
+      "number": "Nomor 7",
+      "sourceUrl": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html"
+    },
+    "ksn-smp-2021-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2021,
+      "number": "Nomor 8",
+      "sourceUrl": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html"
+    },
+    "osnk-smp-2022-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2022,
+      "number": "Nomor 2",
+      "sourceUrl": "https://melajah-matematika.blogspot.com/2024/04/osk-smp-2022.html"
+    },
+    "osnk-smp-2023-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html"
+    },
+    "osnk-smp-2023-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 13",
+      "sourceUrl": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html"
+    },
+    "osnk-smp-2023-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2023,
+      "number": "Nomor 20",
+      "sourceUrl": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html"
+    },
+    "ksnk-sma-2020-d01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Kemampuan Dasar, Nomor 1",
+      "sourceUrl": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/"
+    },
+    "ksnk-sma-2020-d04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Kemampuan Dasar, Nomor 4",
+      "sourceUrl": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/"
+    },
+    "ksnk-sma-2020-d06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2020,
+      "number": "Kemampuan Dasar, Nomor 6",
+      "sourceUrl": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/"
+    },
+    "imo-2020-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2020,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+    },
+    "imo-2021-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2021,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+    },
+    "imo-2021-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2021,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+    },
+    "imo-2022-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2022,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+    },
+    "imo-2023-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2023,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+    },
+    "imo-2023-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2023,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+    },
+    "imc-2020-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "IMC",
+      "year": 2020,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2020"
+    },
+    "imc-2020-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "IMC",
+      "year": 2020,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2020"
+    },
+    "imc-2020-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "IMC",
+      "year": 2020,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2020"
+    },
+    "knmipa-2021-w-h1-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2021,
+      "number": "Hari 1, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2021-wilayah/"
+    },
+    "knmipa-2021-w-h1-i4": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2021,
+      "number": "Hari 1, Isian 4",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2021-wilayah/"
+    },
+    "knmipa-2021-n-h1-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2021,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://id.scribd.com/document/1025602098/Soal-KNMIPA-Nasional-2021"
+    },
+    "knmipa-2021-n-h1-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2021,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://id.scribd.com/document/1025602098/Soal-KNMIPA-Nasional-2021"
+    },
+    "onmipa-2022-w-h1-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2022,
+      "number": "Hari 1, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/"
+    },
+    "onmipa-2022-w-h1-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2022,
+      "number": "Hari 1, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/"
+    },
+    "onmipa-2022-w-h1-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2022,
+      "number": "Hari 1, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/"
+    },
+    "imc-2022-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "IMC",
+      "year": 2022,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf"
+    },
+    "imc-2022-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "IMC",
+      "year": 2022,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf"
+    },
+    "onmipa-2023-w-h1-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2023,
+      "number": "Hari 1, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/"
+    },
+    "onmipa-2023-w-h1-i4": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2023,
+      "number": "Hari 1, Isian 4",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/"
+    },
+    "osn-sd-2005-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2005,
+      "number": "Isian 1",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+    },
+    "osn-sd-2005-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2005,
+      "number": "Isian 2",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+    },
+    "osn-sd-2005-i4": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2005,
+      "number": "Isian 4",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+    },
+    "osn-sd-2005-i9": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2005,
+      "number": "Isian 9",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+    },
+    "osn-sd-2005-i10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2005,
+      "number": "Isian 10",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+    },
+    "osn-sd-2006-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2006,
+      "number": "Isian 1",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+    },
+    "osn-sd-2006-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2006,
+      "number": "Isian 2",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+    },
+    "osn-sd-2006-i4": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2006,
+      "number": "Isian 4",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+    },
+    "osn-sd-2006-i6": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2006,
+      "number": "Isian 6",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+    },
+    "osn-sd-2007-i7": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2007,
+      "number": "Isian 7",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf"
+    },
+    "osn-sd-2007-i9": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2007,
+      "number": "Isian 9",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf"
+    },
+    "imso-sd-2005-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "IMSO",
+      "year": 2005,
+      "number": "Isian 6",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf"
+    },
+    "imso-sd-2005-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "IMSO",
+      "year": 2005,
+      "number": "Isian 7",
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf"
+    },
+    "osn-smp-2005-h1-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2005,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf"
+    },
+    "osn-smp-2005-h1-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2005,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf"
+    },
+    "osn-smp-2005-h1-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "OSN",
+      "year": 2005,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf"
+    },
+    "kmnr-smp-2016-78-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "KMNR",
+      "year": 2016,
+      "number": "Kelas 7–8, Nomor 2",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/"
+    },
+    "kmnr-smp-2016-78-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "KMNR",
+      "year": 2016,
+      "number": "Kelas 7–8, Nomor 3",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/"
+    },
+    "kmnr-smp-2016-9-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "KMNR",
+      "year": 2016,
+      "number": "Kelas 9, Nomor 2",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-9-kompetisi-matematika-nalaria-realistik-kmnr-tahun-2016/"
+    },
+    "osnk-smp-2019-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2019,
+      "number": "Nomor 1",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-osn-bidang-matematika-smp-kabupaten-kota-2019/"
+    },
+    "imo-2005-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2005,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf"
+    },
+    "imo-2005-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2005,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf"
+    },
+    "imo-2005-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2005,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf"
+    },
+    "lmnas-ugm-sma-2018-pg01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "LMNas UGM",
+      "year": 2018,
+      "number": "Pilihan Ganda 1",
+      "sourceUrl": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN"
+    },
+    "lmnas-ugm-sma-2018-pg02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "LMNas UGM",
+      "year": 2018,
+      "number": "Pilihan Ganda 2",
+      "sourceUrl": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN"
+    },
+    "lmnas-ugm-sma-2018-pg03": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "LMNas UGM",
+      "year": 2018,
+      "number": "Pilihan Ganda 3",
+      "sourceUrl": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN"
+    },
+    "lmnas-ugm-sma-2018-pg05": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "LMNas UGM",
+      "year": 2018,
+      "number": "Pilihan Ganda 5",
+      "sourceUrl": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN"
+    },
+    "onmipa-2006-w-struktur-aljabar-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2006,
+      "number": "Struktur Aljabar, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/"
+    },
+    "onmipa-2006-w-struktur-aljabar-i5": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2006,
+      "number": "Struktur Aljabar, Isian 5",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/"
+    },
+    "onmipa-2006-w-struktur-aljabar-i7": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2006,
+      "number": "Struktur Aljabar, Isian 7",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/"
+    },
+    "onmipa-2007-w-struktur-aljabar-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2007,
+      "number": "Struktur Aljabar, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/"
+    },
+    "onmipa-2007-w-struktur-aljabar-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2007,
+      "number": "Struktur Aljabar, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/"
+    },
+    "onmipa-2007-w-struktur-aljabar-i5": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2007,
+      "number": "Struktur Aljabar, Isian 5",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/"
+    },
+    "onmipa-2008-w-aljabar-linear-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2008,
+      "number": "Aljabar Linear, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2008-aljabar-linear/"
+    },
+    "onmipa-2008-w-aljabar-linear-i5": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2008,
+      "number": "Aljabar Linear, Isian 5",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2008-aljabar-linear/"
+    },
+    "onmipa-2009-w-aljabar-linear-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2009,
+      "number": "Aljabar Linear, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2009-aljabar-linear/"
+    },
+    "onmipa-2009-w-aljabar-linear-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2009,
+      "number": "Aljabar Linear, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2009-aljabar-linear/"
+    },
+    "onmipa-2010-w-aljabar-linear-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2010,
+      "number": "Aljabar Linear, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2010-aljabar-linear/"
+    },
+    "onmipa-2010-w-aljabar-linear-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2010,
+      "number": "Aljabar Linear, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2010-aljabar-linear/"
+    },
+    "onmipa-2011-w-analisis-real-i7": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2011,
+      "number": "Analisis Real, Isian 7",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2011-analisis-real/"
+    },
+    "onmipa-2012-w-analisis-real-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2012,
+      "number": "Analisis Real, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2012-analisis-real/"
+    },
+    "onmipa-2012-w-analisis-real-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2012,
+      "number": "Analisis Real, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2012-analisis-real/"
+    },
+    "onmipa-2013-w-struktur-aljabar-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2013,
+      "number": "Struktur Aljabar, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2013-struktur-aljabar/"
+    },
+    "onmipa-2013-w-struktur-aljabar-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2013,
+      "number": "Struktur Aljabar, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2013-struktur-aljabar/"
+    },
+    "onmipa-2014-w-struktur-aljabar-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2014,
+      "number": "Struktur Aljabar, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2014-struktur-aljabar/"
+    },
+    "onmipa-2015-w-struktur-aljabar-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2015,
+      "number": "Struktur Aljabar, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2015-struktur-aljabar/"
+    },
+    "onmipa-2015-w-struktur-aljabar-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2015,
+      "number": "Struktur Aljabar, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2015-struktur-aljabar/"
+    },
+    "onmipa-2016-w-struktur-aljabar-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2016,
+      "number": "Struktur Aljabar, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2016-struktur-aljabar/"
+    },
+    "onmipa-2016-w-struktur-aljabar-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2016,
+      "number": "Struktur Aljabar, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2016-struktur-aljabar/"
+    },
+    "onmipa-2017-w-struktur-aljabar-i2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2017,
+      "number": "Struktur Aljabar, Isian 2",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2017-struktur-aljabar/"
+    },
+    "onmipa-2017-w-struktur-aljabar-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2017,
+      "number": "Struktur Aljabar, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2017-struktur-aljabar/"
+    },
+    "onmipa-2018-w-struktur-aljabar-i1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "number": "Struktur Aljabar, Isian 1",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/"
+    },
+    "onmipa-2018-w-struktur-aljabar-i3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "number": "Struktur Aljabar, Isian 3",
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/"
+    },
+    "hmmt-2005-feb-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "HMMT",
+      "year": 2005,
+      "number": "Aljabar, Nomor 1",
+      "sourceUrl": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf"
+    },
+    "hmmt-2005-feb-2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "HMMT",
+      "year": 2005,
+      "number": "Aljabar, Nomor 2",
+      "sourceUrl": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf"
+    },
+    "hmmt-2005-feb-3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "HMMT",
+      "year": 2005,
+      "number": "Aljabar, Nomor 3",
+      "sourceUrl": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf"
+    },
+    "hmmt-2005-feb-9": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "HMMT",
+      "year": 2005,
+      "number": "Aljabar, Nomor 9",
+      "sourceUrl": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf"
+    },
+    "hmmt-2025-feb-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "HMMT",
+      "year": 2025,
+      "number": "Aljabar dan Teori Bilangan, Nomor 1",
+      "sourceUrl": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf"
+    },
+    "hmmt-2025-feb-4": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "HMMT",
+      "year": 2025,
+      "number": "Aljabar dan Teori Bilangan, Nomor 4",
+      "sourceUrl": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf"
+    },
+    "hmmt-2025-feb-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "HMMT",
+      "year": 2025,
+      "number": "Aljabar dan Teori Bilangan, Nomor 10",
+      "sourceUrl": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf"
+    },
+    "onmipa-untan-2018-isian-2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "number": "Universitas Tanjungpura, Isian 2",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/"
+    },
+    "onmipa-untan-2018-isian-3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "number": "Universitas Tanjungpura, Isian 3",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/"
+    },
+    "onmipa-untan-2018-isian-34": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "number": "Universitas Tanjungpura, Isian 34",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/"
+    },
+    "onmipa-untan-2018-esai-2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "number": "Universitas Tanjungpura, Esai 2",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/"
+    },
+    "onmipa-untan-2019-isian-2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "ON-MIPA",
+      "year": 2019,
+      "number": "Universitas Tanjungpura, Isian 2",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/"
+    },
+    "onmipa-untan-2019-isian-7": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "ON-MIPA",
+      "year": 2019,
+      "number": "Universitas Tanjungpura, Isian 7",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/"
+    },
+    "onmipa-untan-2019-isian-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "ON-MIPA",
+      "year": 2019,
+      "number": "Universitas Tanjungpura, Isian 11",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/"
+    },
+    "onmipa-untan-2019-isian-22": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "ON-MIPA",
+      "year": 2019,
+      "number": "Universitas Tanjungpura, Isian 22",
+      "sourceUrl": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/"
+    },
+    "amc8-2008-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "AMC 8",
+      "year": 2008,
+      "number": "Nomor 7",
+      "sourceUrl": "https://live.poshenloh.com/past-contests/amc8/2008"
+    },
+    "amc12b-2007-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "AMC 12",
+      "year": 2007,
+      "number": "Nomor 9",
+      "sourceUrl": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2007AMC12-B.pdf#page=3"
+    },
+    "aime2-2011-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "AIME",
+      "year": 2011,
+      "number": "Nomor 6",
+      "sourceUrl": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2011AIME-II.pdf#page=2"
+    },
+    "egmo-2013-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "EGMO",
+      "year": 2013,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.egmo.org/egmos/egmo2/paper-day1-English.pdf"
+    },
+    "bmo-shortlist-2016-g1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Balkan MO",
+      "year": 2016,
+      "number": "G1",
+      "sourceUrl": "https://imomath.com/srb/zadaci/2016_bmo_shortlist.pdf"
+    },
+    "aime1-2024-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "AIME",
+      "year": 2024,
+      "number": "Nomor 1",
+      "sourceUrl": "https://live.poshenloh.com/past-contests/aime/2024I"
+    },
+    "umo-2016-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2016,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+    },
+    "umo-2016-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2016,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+    },
+    "umo-2016-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2016,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+    },
+    "umo-2016-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2016,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+    },
+    "umo-2016-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2016,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+    },
+    "umo-2016-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2016,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+    },
+    "umo-2017-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2017,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+    },
+    "umo-2017-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2017,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+    },
+    "umo-2017-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2017,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+    },
+    "umo-2017-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2017,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+    },
+    "umo-2017-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2017,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+    },
+    "umo-2018-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2018,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "umo-2018-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2018,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "umo-2018-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2018,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "umo-2018-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2018,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "umo-2018-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2018,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "umo-2019-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2019,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+    },
+    "umo-2019-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2019,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+    },
+    "umo-2019-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2019,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+    },
+    "umo-2019-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2019,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+    },
+    "umo-2019-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2019,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+    },
+    "umo-2021-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2021,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+    },
+    "umo-2021-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2021,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+    },
+    "umo-2021-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2021,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+    },
+    "umo-2021-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2021,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+    },
+    "umo-2021-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2021,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+    },
+    "umo-2022-02": {
+      "status": "exact_verified",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2022,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording matches official source."
+      }
+    },
+    "umo-2022-03": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2022,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2022-04": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2022,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2022-05": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2022,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2022-06": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2022,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2023-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2023,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+    },
+    "umo-2023-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2023,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+    },
+    "umo-2023-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2023,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+    },
+    "umo-2025-01": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2025-02": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2025-04": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2025,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2025-05": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2025,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2025-06": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2025,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2026-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "umo-2026-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "umo-2026-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2026,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "imc-2025-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2025"
+    },
+    "imc-2025-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2025"
+    },
+    "imc-2025-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2025"
+    },
+    "imc-2025-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 1, Nomor 5",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2025"
+    },
+    "imc-2025-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2025"
+    },
+    "imc-2025-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2025"
+    },
+    "imc-2025-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2025"
+    },
+    "imc-2025-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 2, Nomor 9",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2025"
+    },
+    "imc-2025-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 2, Nomor 10",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2025"
+    },
+    "imc-2026-01": {
+      "status": "exact_verified",
+      "previousMetadata": "exact_claim_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording matches official source."
+      }
+    },
+    "imc-2026-02": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2026-03": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2026-04": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2026-05": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 1, Nomor 5",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2026-06": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending. Inline equation layout restored to match inspected Day 2 Problems PDF."
+      }
+    },
+    "imc-2026-07": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2026-08": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2026-09": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 2, Nomor 9",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2026-10": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2026,
+      "number": "Hari 2, Nomor 10",
+      "sourceUrl": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2025-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2025,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2025"
+    },
+    "imc-2024-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2024"
+    },
+    "imc-2024-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2024"
+    },
+    "imc-2024-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 1, Nomor 5",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2024"
+    },
+    "imc-2024-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2024"
+    },
+    "imc-2024-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2024"
+    },
+    "imc-2024-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 2, Nomor 9",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2024"
+    },
+    "imc-2024-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 2, Nomor 10",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2024"
+    },
+    "imc-2023-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2023"
+    },
+    "imc-2023-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2023"
+    },
+    "imc-2023-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2023"
+    },
+    "imc-2023-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2023"
+    },
+    "imc-2023-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 1, Nomor 5",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2023"
+    },
+    "imc-2023-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2023"
+    },
+    "imc-2023-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2023"
+    },
+    "imc-2023-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2023"
+    },
+    "imc-2023-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 2, Nomor 9",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2023"
+    },
+    "imc-2023-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2023,
+      "number": "Hari 2, Nomor 10",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2023"
+    },
+    "imc-2021-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2021,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2021"
+    },
+    "imc-2021-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2021,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2021"
+    },
+    "imc-2021-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2021,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2021"
+    },
+    "imc-2021-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2021,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2021"
+    },
+    "imc-2021-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2021,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2021"
+    },
+    "imc-2021-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2021,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2021"
+    },
+    "imc-2021-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2021,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2021"
+    },
+    "imc-2021-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2021,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2021"
+    },
+    "imc-2022-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2022,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf"
+    },
+    "imc-2022-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2022,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf"
+    },
+    "imc-2022-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2022,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf"
+    },
+    "imc-2022-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2022,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf"
+    },
+    "imc-2022-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2022,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf"
+    },
+    "imc-2022-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2022,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf"
+    },
+    "iymc-2019-qr-a": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2019,
+      "number": "Problem A",
+      "sourceUrl": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf"
+    },
+    "iymc-2019-qr-b": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2019,
+      "number": "Problem B",
+      "sourceUrl": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf"
+    },
+    "iymc-2019-qr-d": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2019,
+      "number": "Problem D",
+      "sourceUrl": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf"
+    },
+    "iymc-2020-qr-a": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2020,
+      "number": "Problem A",
+      "sourceUrl": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf"
+    },
+    "iymc-2020-qr-b": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2020,
+      "number": "Problem B",
+      "sourceUrl": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf"
+    },
+    "iymc-2020-qr-c": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2020,
+      "number": "Problem C",
+      "sourceUrl": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf"
+    },
+    "iymc-2020-qr-d": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2020,
+      "number": "Problem D",
+      "sourceUrl": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf"
+    },
+    "iymc-2021-qr-a": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2021,
+      "number": "Problem A",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf"
+    },
+    "iymc-2021-qr-b": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2021,
+      "number": "Problem B",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf"
+    },
+    "iymc-2021-qr-c": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2021,
+      "number": "Problem C",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf"
+    },
+    "iymc-2021-qr-d": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2021,
+      "number": "Problem D",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf"
+    },
+    "iymc-2022-qr-a": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2022,
+      "number": "Problem A",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf"
+    },
+    "iymc-2022-qr-b": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2022,
+      "number": "Problem B",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf"
+    },
+    "iymc-2022-qr-c": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2022,
+      "number": "Problem C",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf"
+    },
+    "iymc-2022-qr-d": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2022,
+      "number": "Problem D",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf"
+    },
+    "iymc-2022-qr-e": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2022,
+      "number": "Problem E",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf"
+    },
+    "iymc-2023-qr-b": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2023,
+      "number": "Problem B",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf"
+    },
+    "iymc-2023-qr-c": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2023,
+      "number": "Problem C",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf"
+    },
+    "iymc-2023-qr-d": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2023,
+      "number": "Problem D",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf"
+    },
+    "iymc-2023-qr-e": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2023,
+      "number": "Problem E",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf"
+    },
+    "iymc-2024-qr-a": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2024,
+      "number": "Problem A",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf"
+    },
+    "iymc-2024-qr-b": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2024,
+      "number": "Problem B",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf"
+    },
+    "iymc-2024-qr-c": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2024,
+      "number": "Problem C",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf"
+    },
+    "iymc-2024-qr-d": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2024,
+      "number": "Problem D",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf"
+    },
+    "iymc-2025-qr-a": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2025,
+      "number": "Problem A",
+      "sourceUrl": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf"
+    },
+    "iymc-2025-qr-b": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2025,
+      "number": "Problem B",
+      "sourceUrl": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf"
+    },
+    "iymc-2025-qr-c": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2025,
+      "number": "Problem C",
+      "sourceUrl": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf"
+    },
+    "iymc-2025-qr-d": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2025,
+      "number": "Problem D",
+      "sourceUrl": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf"
+    },
+    "iymc-2025-qr-e": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2025,
+      "number": "Problem E",
+      "sourceUrl": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf"
+    },
+    "putnam-2025-a1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2025,
+      "number": "A1",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2025.pdf"
+    },
+    "putnam-2025-a2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2025,
+      "number": "A2",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2025.pdf"
+    },
+    "putnam-2025-a4": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2025,
+      "number": "A4",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2025.pdf"
+    },
+    "putnam-2025-a6": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2025,
+      "number": "A6",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2025.pdf"
+    },
+    "putnam-2025-b6": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2025,
+      "number": "B6",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2025.pdf"
+    },
+    "putnam-2024-a4": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "A4",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2024.pdf"
+    },
+    "putnam-2024-a6": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "A6",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2024.pdf"
+    },
+    "putnam-2024-b1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "B1",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2024.pdf"
+    },
+    "putnam-2024-b3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "B3",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2024.pdf"
+    },
+    "putnam-2024-b6": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "B6",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2024.pdf"
+    },
+    "putnam-2023-a1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2023,
+      "number": "A1",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2023.pdf"
+    },
+    "putnam-2023-a2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2023,
+      "number": "A2",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2023.pdf"
+    },
+    "putnam-2023-a3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2023,
+      "number": "A3",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2023.pdf"
+    },
+    "putnam-2023-b2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2023,
+      "number": "B2",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2023.pdf"
+    },
+    "putnam-2023-b6": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2023,
+      "number": "B6",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2023.pdf"
+    },
+    "putnam-2022-a1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2022,
+      "number": "A1",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2022.pdf"
+    },
+    "putnam-2022-a2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2022,
+      "number": "A2",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2022.pdf"
+    },
+    "putnam-2022-a3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2022,
+      "number": "A3",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2022.pdf"
+    },
+    "putnam-2022-b1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2022,
+      "number": "B1",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2022.pdf"
+    },
+    "putnam-2022-b2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2022,
+      "number": "B2",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2022.pdf"
+    },
+    "putnam-2021-a1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2021,
+      "number": "A1",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2021.pdf"
+    },
+    "putnam-2021-a2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2021,
+      "number": "A2",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2021.pdf"
+    },
+    "putnam-2021-a5": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2021,
+      "number": "A5",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2021.pdf"
+    },
+    "putnam-2021-b2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2021,
+      "number": "B2",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2021.pdf"
+    },
+    "putnam-2021-b5": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2021,
+      "number": "B5",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2021.pdf"
+    },
+    "putnam-2019-a1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2019,
+      "number": "A1",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2019.pdf"
+    },
+    "putnam-2019-a3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2019,
+      "number": "A3",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2019.pdf"
+    },
+    "putnam-2019-a5": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2019,
+      "number": "A5",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2019.pdf"
+    },
+    "putnam-2019-b2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2019,
+      "number": "B2",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2019.pdf"
+    },
+    "putnam-2019-b3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "Putnam",
+      "year": 2019,
+      "number": "B3",
+      "sourceUrl": "https://kskedlaya.org/putnam-archive/2019.pdf"
+    },
+    "umo-2013-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2013,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2013-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2013,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2013-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2013,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2015-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2015,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf"
+    },
+    "umo-2015-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2015,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf"
+    },
+    "umo-2015-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2015,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf"
+    },
+    "umo-2015-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2015,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf"
+    },
+    "umo-2015-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2015,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf"
+    },
+    "umo-2015-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2015,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf"
+    },
+    "umo-2020-02": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2020,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2020-04": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2020,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "imc-2020-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2020,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2020"
+    },
+    "imc-2020-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2020,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2020"
+    },
+    "imc-2020-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2020,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2020"
+    },
+    "imc-2020-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2020,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2020"
+    },
+    "imc-2020-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2020,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2020"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-5": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 5",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-7": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 7",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-8": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 8",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-9": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 9",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 11",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 12",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 13",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 14",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 15",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-16": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 16",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-17": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 17",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 18",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-19": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 19",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-21": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 21",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-22": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 22",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-23": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 23",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-euclid-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html"
+    },
+    "cemc-waterloo-2026-euclid-2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html"
+    },
+    "cemc-waterloo-2026-euclid-3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html"
+    },
+    "cemc-waterloo-2026-euclid-7": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 7",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html"
+    },
+    "cemc-waterloo-2026-euclid-9": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 9",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html"
+    },
+    "cemc-waterloo-2026-euclid-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 10",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html"
+    },
+    "smmc-2025-paper-a-a1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "SMMC",
+      "year": 2025,
+      "number": "Nomor A1",
+      "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf"
+    },
+    "smmc-2025-paper-a-a2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "SMMC",
+      "year": 2025,
+      "number": "Nomor A2",
+      "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf"
+    },
+    "smmc-2025-paper-a-a3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "SMMC",
+      "year": 2025,
+      "number": "Nomor A3",
+      "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf"
+    },
+    "smmc-2025-paper-a-a4": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "SMMC",
+      "year": 2025,
+      "number": "Nomor A4",
+      "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf"
+    },
+    "smmc-2025-paper-b-b1": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "SMMC",
+      "year": 2025,
+      "number": "Nomor B1",
+      "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf"
+    },
+    "smmc-2025-paper-b-b2": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "SMMC",
+      "year": 2025,
+      "number": "Nomor B2",
+      "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf"
+    },
+    "smmc-2025-paper-b-b3": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "SMMC",
+      "year": 2025,
+      "number": "Nomor B3",
+      "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf"
+    },
+    "smmc-2025-paper-b-b4": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "SMMC",
+      "year": 2025,
+      "number": "Nomor B4",
+      "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf"
+    },
+    "apmo-2025-apmo-2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+    },
+    "apmo-2025-apmo-3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+    },
+    "apmo-2025-apmo-5": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2025,
+      "number": "Nomor 5",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+    },
+    "apmo-2026-apmo-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+    },
+    "apmo-2026-apmo-2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+    },
+    "apmo-2026-apmo-3": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+    },
+    "osnk-sma-2024-dasar-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 3",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/"
+    },
+    "osnk-sma-2024-dasar-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 4",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/"
+    },
+    "osnk-sma-2024-dasar-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 5",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/"
+    },
+    "osnk-sma-2024-dasar-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 6",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/"
+    },
+    "osnk-sma-2024-dasar-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 8",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/"
+    },
+    "osnk-sma-2024-dasar-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nomor 9",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/"
+    },
+    "osnk-sma-2025-dasar-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/"
+    },
+    "osnk-sma-2025-dasar-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 4",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/"
+    },
+    "osnk-sma-2025-dasar-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 5",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/"
+    },
+    "osnk-sma-2025-dasar-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 6",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/"
+    },
+    "osnk-sma-2025-dasar-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 9",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/"
+    },
+    "osnk-sma-2025-dasar-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "OSN",
+      "year": 2025,
+      "number": "Nomor 10",
+      "sourceUrl": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/"
+    },
+    "bmo-uk-2025-r1-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "BMO UK",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf"
+    },
+    "bmo-uk-2025-r1-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "BMO UK",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf"
+    },
+    "bmo-uk-2025-r1-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "BMO UK",
+      "year": 2025,
+      "number": "Nomor 5",
+      "sourceUrl": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf"
+    },
+    "egmo-2026-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "EGMO",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf"
+    },
+    "egmo-2026-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "EGMO",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf"
+    },
+    "egmo-2026-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "unclear",
+      "competition": "EGMO",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 7",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 8",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 10",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 11",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 12",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 14",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-17": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 17",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 18",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-19": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 19",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 20",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-22": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 22",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-23": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 23",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-gauss-grade-7-24": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 24",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 2",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 4",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 5",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 6",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 7",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 9",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 10",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 12",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 13",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 15",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-16": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 16",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 18",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-19": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 19",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-23": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "number": "Nomor 23",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 4",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 7",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 8",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 12",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 13",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 15",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-16": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 16",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 18",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 20",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-21": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 21",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-22": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 22",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-24": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 24",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "umo-2017-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2017,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+    },
+    "umo-2018-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2018,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "umo-2021-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2021,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf"
+    },
+    "umo-2022-01": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2022,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2023-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2023,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+    },
+    "umo-2023-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2023,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+    },
+    "umo-2023-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2023,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+    },
+    "umo-2025-03": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2025,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2013-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2013,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2013-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2013,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2013-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2013,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2019-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2019,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+    },
+    "umo-2020-01": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2020,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2020-03": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2020,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+        "page": 1,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2020-05": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2020,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2020-06": {
+      "status": "wording_differs",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2020,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+        "page": 2,
+        "method": "Official PDF text and page image compared",
+        "finding": "Existing wording differs from original; exact replacement pending."
+      }
+    },
+    "umo-2026-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "umo-2026-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "umo-2026-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2026,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "umo-2014-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2014,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2014-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2014,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2014-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2014,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2014-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2014,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2014-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2014,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2014-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2014,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2024-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2024,
+      "number": "Nomor 1",
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+    },
+    "umo-2024-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2024,
+      "number": "Nomor 2",
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+    },
+    "umo-2024-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2024,
+      "number": "Nomor 3",
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+    },
+    "umo-2024-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2024,
+      "number": "Nomor 4",
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+    },
+    "umo-2024-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2024,
+      "number": "Nomor 5",
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+    },
+    "umo-2024-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "UMO",
+      "year": 2024,
+      "number": "Nomor 6",
+      "sourceUrl": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+    },
+    "apmo-2024-apmo-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2024,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+    },
+    "apmo-2024-apmo-2": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2024,
+      "number": "Nomor 2",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+    },
+    "apmo-2024-apmo-4": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2024,
+      "number": "Nomor 4",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+    },
+    "apmo-2024-apmo-5": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2024,
+      "number": "Nomor 5",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+    },
+    "apmo-2025-apmo-1": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2025,
+      "number": "Nomor 1",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+    },
+    "apmo-2025-apmo-4": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2025,
+      "number": "Nomor 4",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+    },
+    "apmo-2026-apmo-4": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2026,
+      "number": "Nomor 4",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+    },
+    "apmo-2026-apmo-5": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "APMO",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+    },
+    "iymc-2019-qr-c": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2019,
+      "number": "Problem C",
+      "sourceUrl": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf"
+    },
+    "iymc-2019-qr-e": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2019,
+      "number": "Problem E",
+      "sourceUrl": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf"
+    },
+    "iymc-2020-qr-e": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2020,
+      "number": "Problem E",
+      "sourceUrl": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf"
+    },
+    "iymc-2021-qr-e": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2021,
+      "number": "Problem E",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf"
+    },
+    "iymc-2023-qr-a": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2023,
+      "number": "Problem A",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf"
+    },
+    "iymc-2024-qr-e": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IYMC",
+      "year": 2024,
+      "number": "Problem E",
+      "sourceUrl": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf"
+    },
+    "imo-2022-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2022,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+    },
+    "imo-2022-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2022,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+    },
+    "imo-2022-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2022,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+    },
+    "imo-2022-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2022,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+    },
+    "imo-2022-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2022,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf"
+    },
+    "imo-2023-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2023,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+    },
+    "imo-2023-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2023,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+    },
+    "imo-2023-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2023,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+    },
+    "imo-2023-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2023,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+    },
+    "imo-2024-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2024,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+    },
+    "imo-2024-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2024,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+    },
+    "imo-2024-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2024,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+    },
+    "imo-2024-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2024,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf"
+    },
+    "imo-2019-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2019,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+    },
+    "imo-2019-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2019,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+    },
+    "imo-2019-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2019,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+    },
+    "imo-2019-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2019,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+    },
+    "imo-2019-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2019,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf"
+    },
+    "imo-2020-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2020,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+    },
+    "imo-2020-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2020,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+    },
+    "imo-2020-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2020,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+    },
+    "imo-2020-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2020,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+    },
+    "imo-2020-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2020,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf"
+    },
+    "imo-2021-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2021,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+    },
+    "imo-2021-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2021,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+    },
+    "imo-2021-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2021,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+    },
+    "imo-2021-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2021,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf"
+    },
+    "imo-2005-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2005,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf"
+    },
+    "imo-2005-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2005,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf"
+    },
+    "imo-2005-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2005,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf"
+    },
+    "imo-2018-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2018,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+    },
+    "imo-2018-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2018,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+    },
+    "imo-2018-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2018,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+    },
+    "imo-2018-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2018,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+    },
+    "imo-2018-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2018,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+    },
+    "imo-2018-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2018,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf"
+    },
+    "imo-2025-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2025,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+    },
+    "imo-2025-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2025,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+    },
+    "imo-2025-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2025,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+    },
+    "imo-2025-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2025,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+    },
+    "imo-2025-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2025,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+    },
+    "imo-2025-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2025,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf"
+    },
+    "imo-2015-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2015,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+    },
+    "imo-2015-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2015,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+    },
+    "imo-2015-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2015,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+    },
+    "imo-2015-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2015,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+    },
+    "imo-2015-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2015,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+    },
+    "imo-2015-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2015,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf"
+    },
+    "imo-2016-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2016,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+    },
+    "imo-2016-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2016,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+    },
+    "imo-2016-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2016,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+    },
+    "imo-2016-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2016,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+    },
+    "imo-2016-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2016,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+    },
+    "imo-2016-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2016,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf"
+    },
+    "imo-2017-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2017,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+    },
+    "imo-2017-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2017,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+    },
+    "imo-2017-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2017,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+    },
+    "imo-2017-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2017,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+    },
+    "imo-2017-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2017,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+    },
+    "imo-2017-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2017,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf"
+    },
+    "imo-2012-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2012,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+    },
+    "imo-2012-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2012,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+    },
+    "imo-2012-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2012,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+    },
+    "imo-2012-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2012,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+    },
+    "imo-2012-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2012,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+    },
+    "imo-2012-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2012,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf"
+    },
+    "imo-2013-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2013,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+    },
+    "imo-2013-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2013,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+    },
+    "imo-2013-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2013,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+    },
+    "imo-2013-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2013,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+    },
+    "imo-2013-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2013,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+    },
+    "imo-2013-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2013,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf"
+    },
+    "imo-2014-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2014,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+    },
+    "imo-2014-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2014,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+    },
+    "imo-2014-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2014,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+    },
+    "imo-2014-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2014,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+    },
+    "imo-2014-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2014,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+    },
+    "imo-2014-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2014,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf"
+    },
+    "imo-2009-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2009,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf"
+    },
+    "imo-2009-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2009,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf"
+    },
+    "imo-2009-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2009,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf"
+    },
+    "imo-2009-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2009,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf"
+    },
+    "imo-2009-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2009,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf"
+    },
+    "imo-2009-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2009,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf"
+    },
+    "imo-2010-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2010,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf"
+    },
+    "imo-2010-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2010,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf"
+    },
+    "imo-2010-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2010,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf"
+    },
+    "imo-2010-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2010,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf"
+    },
+    "imo-2010-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2010,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf"
+    },
+    "imo-2010-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2010,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf"
+    },
+    "imo-2011-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2011,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+    },
+    "imo-2011-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2011,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+    },
+    "imo-2011-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2011,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+    },
+    "imo-2011-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2011,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+    },
+    "imo-2011-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2011,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+    },
+    "imo-2011-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2011,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf"
+    },
+    "imo-2006-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2006,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf"
+    },
+    "imo-2006-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2006,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf"
+    },
+    "imo-2006-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2006,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf"
+    },
+    "imo-2006-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2006,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf"
+    },
+    "imo-2006-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2006,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf"
+    },
+    "imo-2006-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2006,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf"
+    },
+    "imo-2007-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2007,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf"
+    },
+    "imo-2007-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2007,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf"
+    },
+    "imo-2007-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2007,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf"
+    },
+    "imo-2007-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2007,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf"
+    },
+    "imo-2007-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2007,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf"
+    },
+    "imo-2007-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2007,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf"
+    },
+    "imo-2008-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2008,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf"
+    },
+    "imo-2008-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2008,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf"
+    },
+    "imo-2008-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2008,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf"
+    },
+    "imo-2008-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2008,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf"
+    },
+    "imo-2008-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2008,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf"
+    },
+    "imo-2008-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2008,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf"
+    },
+    "imo-2026-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2026,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+    },
+    "imo-2026-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2026,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+    },
+    "imo-2026-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2026,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+    },
+    "imo-2026-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2026,
+      "number": "Hari 2, Nomor 4",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+    },
+    "imo-2026-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2026,
+      "number": "Hari 2, Nomor 5",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+    },
+    "imo-2026-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMO",
+      "year": 2026,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf"
+    },
+    "imc-2019-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 1, Nomor 1",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+    },
+    "imc-2019-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 1, Nomor 2",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+    },
+    "imc-2019-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 1, Nomor 3",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+    },
+    "imc-2019-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 1, Nomor 4",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+    },
+    "imc-2019-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 1, Nomor 5",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+    },
+    "imc-2019-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 2, Nomor 6",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+    },
+    "imc-2019-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 2, Nomor 7",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+    },
+    "imc-2019-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 2, Nomor 8",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+    },
+    "imc-2019-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 2, Nomor 9",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+    },
+    "imc-2019-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "restatement_recorded",
+      "competition": "IMC",
+      "year": 2019,
+      "number": "Hari 2, Nomor 10",
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+    }
+  },
+  "figureRecords": {
+    "iymc-2022-qr-e": {
+      "status": "pending_visual_comparison",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf"
+    },
+    "iymc-2023-qr-e": {
+      "status": "pending_visual_comparison",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf"
+    },
+    "iymc-2025-qr-e": {
+      "status": "pending_visual_comparison",
+      "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf"
+    },
+    "umo-2018-03": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "umo-2018-04": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "umo-2018-05": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-06": {
+      "status": "pending_visual_comparison",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "cemc-waterloo-2025-gauss-grade-8-07": {
+      "status": "pending_visual_comparison",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html"
+    },
+    "ksnk-sd-2020-02": {
+      "status": "pending_visual_comparison",
+      "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten"
+    },
+    "osn-sd-2006-i2": {
+      "status": "pending_visual_comparison",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+    },
+    "cemc-waterloo-2025-gauss-grade-7-11": {
+      "status": "pending_visual_comparison",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-12": {
+      "status": "pending_visual_comparison",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "cemc-waterloo-2026-pascal-grade-9-16": {
+      "status": "pending_visual_comparison",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html"
+    },
+    "umo-2016-01": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf"
+    },
+    "umo-2017-01": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+    },
+    "umo-2017-05": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf"
+    },
+    "umo-2019-01": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+    },
+    "umo-2022-01": {
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
+      "page": 1
+    },
+    "umo-2023-01": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf"
+    },
+    "umo-2013-01": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2013-04": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2013-06": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf"
+    },
+    "umo-2019-04": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf"
+    },
+    "umo-2020-01": {
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "page": 1
+    },
+    "umo-2020-03": {
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "page": 1
+    },
+    "umo-2020-05": {
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "page": 2
+    },
+    "umo-2020-06": {
+      "status": "diagram_structure_checked",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "page": 2
+    },
+    "umo-2026-02": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "umo-2026-03": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "umo-2026-05": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf"
+    },
+    "umo-2014-01": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2014-03": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2014-06": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf"
+    },
+    "umo-2024-02": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+    },
+    "umo-2024-06": {
+      "status": "pending_visual_comparison",
+      "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf"
+    },
+    "iymc-2019-qr-e": {
+      "status": "pending_visual_comparison",
+      "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf"
+    },
+    "iymc-2020-qr-e": {
+      "status": "pending_visual_comparison",
+      "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf"
+    },
+    "iymc-2021-qr-e": {
+      "status": "pending_visual_comparison",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf"
+    },
+    "iymc-2024-qr-e": {
+      "status": "pending_visual_comparison",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf"
+    },
+    "imo-2023-05": {
+      "status": "pending_visual_comparison",
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf"
+    }
+  },
+  "permissions": {
+    "UMO": {
+      "source": "https://utahmath.org/problems/",
+      "status": "Educational redistribution with attribution permitted; commercial use prohibited",
+      "condition": "Confirm noncommercial use before full reproduction."
+    },
+    "IMC": {
+      "source": "https://studolymp.com/imc",
+      "status": "Third-party archive explicitly reports reproduction with permission; no DMath reproduction permission established."
+    }
+  }
+}

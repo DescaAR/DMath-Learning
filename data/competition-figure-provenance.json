@@ -3,184 +3,168 @@
   "figures": {
     "iymc-2022-qr-e": {
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "iymc-2023-qr-e": {
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "iymc-2025-qr-e": {
       "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2018-03": {
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2018-04": {
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2018-05": {
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "cemc-waterloo-2025-gauss-grade-8-06": {
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "cemc-waterloo-2025-gauss-grade-8-07": {
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "ksnk-sd-2020-02": {
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "basis": "third-party text explicitly refers to original illustration; visual match not yet confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "osn-sd-2006-i2": {
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "cemc-waterloo-2025-gauss-grade-7-11": {
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "cemc-waterloo-2026-pascal-grade-9-12": {
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "basis": "official HTML explicitly references the original diagram; PDF visual match pending"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "cemc-waterloo-2026-pascal-grade-9-16": {
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "basis": "official HTML explicitly references the original diagram; PDF visual match pending"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2016-01": {
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2017-01": {
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2017-05": {
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2019-01": {
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2022-01": {
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Official page image inspected 2026-11-25; diagram content and labels compared. SVG is a reconstruction, not the original image.",
+      "page": 1
     },
     "umo-2023-01": {
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "basis": "source PDF diagram confirmed"
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2013-01": {
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2013-04": {
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
-      "page": 2
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2013-06": {
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
-      "page": 2
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2019-04": {
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2020-01": {
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "basis": "Official page image inspected 2026-11-25; diagram content and labels compared. SVG is a reconstruction, not the original image.",
       "page": 1
     },
     "umo-2020-03": {
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "basis": "Official page image inspected 2026-11-25; diagram content and labels compared. SVG is a reconstruction, not the original image.",
       "page": 1
     },
     "umo-2020-05": {
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "basis": "Official page image inspected 2026-11-25; diagram content and labels compared. SVG is a reconstruction, not the original image.",
       "page": 2
     },
     "umo-2020-06": {
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "basis": "Official page image inspected 2026-11-25; diagram content and labels compared. SVG is a reconstruction, not the original image.",
       "page": 2
     },
     "umo-2026-02": {
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2026-03": {
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2026-05": {
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
-      "page": 2
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2014-01": {
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2014-03": {
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2014-06": {
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
-      "page": 2
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2024-02": {
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "umo-2024-06": {
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "basis": "Official PDF original diagram visually inspected and redrawn in SVG.",
-      "page": 2
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "iymc-2019-qr-e": {
       "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
-      "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "iymc-2020-qr-e": {
       "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
-      "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "iymc-2021-qr-e": {
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
-      "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "iymc-2024-qr-e": {
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
-      "basis": "Official PDF page 1 visually checked; source diagram reconstructed in SVG.",
-      "page": 1
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     },
     "imo-2023-05": {
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "basis": "Official PDF day 2 problem 5 visually checked; red positions and path reconstructed.",
-      "page": 2
+      "basis": "Existing reconstruction; exact match with original image not independently verified in current audit."
     }
   },
   "table": {

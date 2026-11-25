@@ -1,9 +1,12 @@
 \documentclass[tikz,border=4pt]{standalone}
 \begin{document}
 \begin{tikzpicture}[x=.025cm,y=-.025cm]
-\draw[fill=gray!30] (15,75) rectangle (135,195);
-\draw[fill=gray!30] (35,55) rectangle (155,175);
-\draw[fill=gray!30] (55,35) rectangle (175,155);
-\draw[fill=gray!30] (75,15) rectangle (195,135);
+\draw[fill=gray!50] (15,75) rectangle (135,195);
+\draw[fill=gray!50] (35,55) rectangle (155,175);
+\draw[fill=gray!50] (55,35) rectangle (175,155);
+\draw[fill=gray!50] (75,15) rectangle (195,135);
+\draw[gray,dashed] (35,75)--(135,75)--(135,175);
+\draw[gray,dashed] (55,55)--(155,55)--(155,155);
+\draw[gray,dashed] (75,35)--(175,35)--(175,135);
 \end{tikzpicture}
 \end{document}

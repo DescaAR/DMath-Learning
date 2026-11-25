@@ -225,7 +225,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2019,
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "IMO"
     }
   },
@@ -243,7 +243,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2024",
-      "note": "Pernyataan soal dalam bahasa Indonesia.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "IMC"
     }
   },
@@ -469,7 +469,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 1",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-tahun-2024.html?m=0",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "OSN-K"
     }
   },
@@ -487,7 +487,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 1",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "OSN-P"
     }
   },
@@ -505,7 +505,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 4",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "OSN-P"
     }
   },
@@ -523,7 +523,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 18",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "OSN-P"
     }
   },
@@ -541,7 +541,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 9",
       "url": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "OSN-K"
     }
   },
@@ -559,7 +559,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 8",
       "url": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri. Salinan memuat dua opsi bernilai sama, B=2/2 dan C=3/3; opsi dipertahankan sampai naskah resmi tersedia.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "OSN-K"
     }
   },
@@ -577,7 +577,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Nomor 1",
       "url": "https://www.aiairyn.com/2024/08/salinan-soal-osn-sma-2024-bidang.html",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "OSN Nasional"
     }
   },
@@ -595,7 +595,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "IMO"
     }
   },
@@ -613,7 +613,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "IMO"
     }
   },
@@ -631,7 +631,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 3",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "APMO"
     }
   },
@@ -649,7 +649,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Isian 1",
       "url": "https://paggalih.github.io/olimpiade/onmipa-w-2024/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "ON-MIPA Wilayah"
     }
   },
@@ -667,7 +667,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Isian 3",
       "url": "https://paggalih.github.io/olimpiade/onmipa-w-2024/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "ON-MIPA Wilayah"
     }
   },
@@ -685,7 +685,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2024",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "IMC"
     }
   },
@@ -703,7 +703,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2024",
-      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "IMC"
     }
   },
@@ -721,7 +721,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "A1",
       "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf",
-      "note": "Independent English mathematical formulation of the source problem; not verbatim.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "Putnam"
     }
   },
@@ -739,7 +739,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "A2",
       "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf",
-      "note": "Independent English mathematical formulation of the source problem; not verbatim.",
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
       "stage": "Putnam"
     }
   },
@@ -758,7 +758,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://www.defantri.com/2026/03/soal-dan-pembahasan-osnk-2025-matematika-sd.html",
-      "note": "Isi matematis diperiksa terhadap salinan buku Kumpulan Soal OSN SD/MI 2025 terbitan Pusat Prestasi Nasional (hlm. 52), diunggah pada SlideShare; pilihan nomor 1 juga dicocokkan dengan cuplikan KawalTalenta. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -776,7 +776,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 3",
       "url": "https://www.defantri.com/2026/03/soal-dan-pembahasan-osnk-2025-matematika-sd.html",
-      "note": "Isi matematis diperiksa terhadap salinan buku Kumpulan Soal OSN SD/MI 2025 terbitan Pusat Prestasi Nasional (hlm. 53), diunggah pada SlideShare; pilihan nomor 1 juga dicocokkan dengan cuplikan KawalTalenta. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -794,7 +794,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 5",
       "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html",
-      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -812,7 +812,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 10",
       "url": "https://id.scribd.com/document/1053240605/Soal-Dan-Solusi-Osk-Sd-2026",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -830,7 +830,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 20",
       "url": "https://id.scribd.com/document/1053240605/Soal-Dan-Solusi-Osk-Sd-2026",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -848,7 +848,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://www.catatanmatematika.com/2026/05/soal-osn-k-smp-2025.html",
-      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -866,7 +866,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-P",
       "number": "Nomor 2",
       "url": "https://pusatprestasinasional.kemendikdasmen.go.id/api/open/4",
-      "note": "Isi matematis diperiksa terhadap buku resmi Kumpulan Soal OSN SMP, OSN Provinsi Matematika, halaman tercetak 101. Tangkapan PDF gagal dimuat. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -884,7 +884,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-P",
       "number": "Nomor 3",
       "url": "https://pusatprestasinasional.kemendikdasmen.go.id/api/open/4",
-      "note": "Isi matematis diperiksa terhadap buku resmi Kumpulan Soal OSN SMP, OSN Provinsi Matematika, halaman tercetak 101. Tangkapan PDF gagal dimuat. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -902,7 +902,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://www.ruangparabintang.com/2026/07/soal-asli-matematika-osn-tingkat.html",
-      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -920,7 +920,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 5",
       "url": "https://id.scribd.com/document/1059177068/Osk-Sma-2026",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -938,7 +938,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -956,7 +956,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -974,7 +974,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -992,7 +992,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1010,7 +1010,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 2",
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi. Ilustrasi asli belum diperiksa secara visual; pola diberikan secara tekstual."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1028,7 +1028,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 3",
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1046,7 +1046,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 11",
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1064,7 +1064,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 15",
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1082,7 +1082,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 2",
       "url": "https://id.scribd.com/document/790309363/2021-Soal-Osk-Matik-SD-www-konsep-matematika-com",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1100,7 +1100,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 8",
       "url": "https://id.scribd.com/document/790309363/2021-Soal-Osk-Matik-SD-www-konsep-matematika-com",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1118,7 +1118,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 7",
       "url": "https://id.scribd.com/document/1004179258/2022-Soal-Osk-Matik-SD-Edit",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1136,7 +1136,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 13",
       "url": "https://id.scribd.com/document/1004179258/2022-Soal-Osk-Matik-SD-Edit",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1154,7 +1154,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1",
-      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1172,7 +1172,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 2",
       "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1",
-      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1190,7 +1190,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 4",
       "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1",
-      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1208,7 +1208,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 8",
       "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html?m=1",
-      "note": "Isi matematis diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1226,7 +1226,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 1",
       "url": "https://id.scribd.com/document/508163598/Soal-Dan-Solusi-KSN-Matematika-SMP-2020-KabKota",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1244,7 +1244,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Nomor 2",
       "url": "https://id.scribd.com/document/508163598/Soal-Dan-Solusi-KSN-Matematika-SMP-2020-KabKota",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1262,7 +1262,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN Nasional",
       "number": "Nomor 5",
       "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1280,7 +1280,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN Nasional",
       "number": "Nomor 7",
       "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1298,7 +1298,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN Nasional",
       "number": "Nomor 8",
       "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1316,7 +1316,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 2",
       "url": "https://melajah-matematika.blogspot.com/2024/04/osk-smp-2022.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri. Kondisi pada salinan tidak menentukan beda barisan secara tunggal; verifikasi naskah resmi diperlukan sebelum memperbaiki hipotesis."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1334,7 +1334,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1352,7 +1352,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 13",
       "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1370,7 +1370,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 20",
       "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1388,7 +1388,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Kemampuan Dasar, Nomor 1",
       "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1406,7 +1406,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Kemampuan Dasar, Nomor 4",
       "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1424,7 +1424,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Kemampuan Dasar, Nomor 6",
       "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1442,7 +1442,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1460,7 +1460,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1478,7 +1478,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1496,7 +1496,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1514,7 +1514,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1532,7 +1532,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Existing English formulation checked against official English PDF, day 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1550,7 +1550,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2020",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1568,7 +1568,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2020",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1586,7 +1586,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2020",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1604,7 +1604,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KNMIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2021-wilayah/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1622,7 +1622,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KNMIPA Wilayah",
       "number": "Hari 1, Isian 4",
       "url": "https://onmipa.filzabuana.id/onmipa/2021-wilayah/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1640,7 +1640,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KNMIPA Nasional",
       "number": "Hari 1, Nomor 3",
       "url": "https://id.scribd.com/document/1025602098/Soal-KNMIPA-Nasional-2021",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1658,7 +1658,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KNMIPA Nasional",
       "number": "Hari 1, Nomor 4",
       "url": "https://id.scribd.com/document/1025602098/Soal-KNMIPA-Nasional-2021",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1676,7 +1676,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1694,7 +1694,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1712,7 +1712,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1730,7 +1730,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1748,7 +1748,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
-      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1766,7 +1766,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1784,7 +1784,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 4",
       "url": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) diperiksa terhadap teks salinan publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1802,7 +1802,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 1",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1820,7 +1820,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 2",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1838,7 +1838,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 4",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1856,7 +1856,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 9",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1874,7 +1874,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 10",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1892,7 +1892,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 1",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1910,7 +1910,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 2",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Isi matematis, nomor soal dan unsur gambar (jika ada) diperiksa terhadap salinan PDF publik, halaman 1, termasuk pemeriksaan visual. Redaksi mandiri. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1928,7 +1928,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 4",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1946,7 +1946,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 6",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1964,7 +1964,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 7",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri. Teks PDF tersedia, tetapi tangkapan halaman gagal dimuat."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -1982,7 +1982,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 9",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri. Teks PDF tersedia, tetapi tangkapan halaman gagal dimuat."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2000,7 +2000,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMSO",
       "number": "Isian 6",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2018,7 +2018,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMSO",
       "number": "Isian 7",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2036,7 +2036,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 2",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2054,7 +2054,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 3",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Isi matematis diperiksa terhadap teks yang dapat diekstrak dari salinan PDF; pemeriksaan visual belum berhasil. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2072,7 +2072,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 4",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Isi matematis, nomor soal dan unsur gambar (jika ada) diperiksa terhadap salinan PDF publik, halaman 1, termasuk pemeriksaan visual. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2090,7 +2090,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KMNR Penyisihan",
       "number": "Kelas 7–8, Nomor 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2108,7 +2108,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KMNR Penyisihan",
       "number": "Kelas 7–8, Nomor 3",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2126,7 +2126,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KMNR Penyisihan",
       "number": "Kelas 9, Nomor 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-9-kompetisi-matematika-nalaria-realistik-kmnr-tahun-2016/",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2144,7 +2144,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-osn-bidang-matematika-smp-kabupaten-kota-2019/",
-      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2162,7 +2162,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2180,7 +2180,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2198,7 +2198,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMO",
       "number": "Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2216,7 +2216,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "LMNas UGM Penyisihan",
       "number": "Pilihan Ganda 1",
       "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2234,7 +2234,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "LMNas UGM Penyisihan",
       "number": "Pilihan Ganda 2",
       "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2252,7 +2252,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "LMNas UGM Penyisihan",
       "number": "Pilihan Ganda 3",
       "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2270,7 +2270,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "LMNas UGM Penyisihan",
       "number": "Pilihan Ganda 5",
       "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2288,7 +2288,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2306,7 +2306,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 5",
       "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2324,7 +2324,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 7",
       "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2342,7 +2342,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2360,7 +2360,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2378,7 +2378,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 5",
       "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2396,7 +2396,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2008-aljabar-linear/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2414,7 +2414,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 5",
       "url": "https://onmipa.filzabuana.id/onmipa/2008-aljabar-linear/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2432,7 +2432,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2009-aljabar-linear/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2450,7 +2450,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2009-aljabar-linear/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2468,7 +2468,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2010-aljabar-linear/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2486,7 +2486,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2010-aljabar-linear/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2504,7 +2504,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Analisis Real, Isian 7",
       "url": "https://onmipa.filzabuana.id/onmipa/2011-analisis-real/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2522,7 +2522,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Analisis Real, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2012-analisis-real/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2540,7 +2540,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Analisis Real, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2012-analisis-real/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2558,7 +2558,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2013-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2576,7 +2576,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2013-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2594,7 +2594,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2014-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2612,7 +2612,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2015-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2630,7 +2630,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2015-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2648,7 +2648,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2016-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2666,7 +2666,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2016-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2684,7 +2684,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2017-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2702,7 +2702,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2017-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2720,7 +2720,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2738,7 +2738,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/",
-      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2756,7 +2756,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "number": "Aljabar, Nomor 1",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2774,7 +2774,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "number": "Aljabar, Nomor 2",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2792,7 +2792,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "number": "Aljabar, Nomor 3",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2810,7 +2810,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "number": "Aljabar, Nomor 9",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2828,7 +2828,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "number": "Aljabar dan Teori Bilangan, Nomor 1",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2846,7 +2846,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "number": "Aljabar dan Teori Bilangan, Nomor 4",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2864,7 +2864,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "number": "Aljabar dan Teori Bilangan, Nomor 10",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2882,7 +2882,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2900,7 +2900,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 3",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2918,7 +2918,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 34",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara. Teks lengkap soal tersedia dalam hasil indeks Mathcyber1997; akses langsung halaman gagal."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2936,7 +2936,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Esai 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara. Teks lengkap soal tersedia dalam hasil indeks Mathcyber1997; akses langsung halaman gagal."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2954,7 +2954,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2972,7 +2972,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 7",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -2990,7 +2990,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 11",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3008,7 +3008,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 22",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3026,7 +3026,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "AMC 8",
       "number": "Nomor 7",
       "url": "https://live.poshenloh.com/past-contests/amc8/2008",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3044,7 +3044,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "AMC 12 B",
       "number": "Nomor 9",
       "url": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2007AMC12-B.pdf#page=3",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3062,7 +3062,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "AIME II",
       "number": "Nomor 6",
       "url": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2011AIME-II.pdf#page=2",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3082,7 +3082,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.egmo.org/egmos/egmo2/paper-day1-English.pdf",
       "collection": "MathNet",
       "collectionUrl": "https://huggingface.co/datasets/ShadenA/MathNet",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3102,7 +3102,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://imomath.com/srb/zadaci/2016_bmo_shortlist.pdf",
       "collection": "MathNet",
       "collectionUrl": "https://huggingface.co/datasets/ShadenA/MathNet",
-      "note": "Mathematical content and problem number checked against the 2016 shortlist PDF, printed page 17, including visual inspection. Independently worded English adaptation; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3122,7 +3122,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://live.poshenloh.com/past-contests/aime/2024I",
       "collection": "AoPS",
       "collectionUrl": "https://artofproblemsolving.com/school/mathjams-transcripts?id=682",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3140,7 +3140,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2016 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3158,7 +3158,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2016 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3176,7 +3176,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2016 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3194,7 +3194,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2016 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3212,7 +3212,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2016 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3230,7 +3230,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2016 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3248,7 +3248,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2017 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3266,7 +3266,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2017 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3284,7 +3284,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2017 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3302,7 +3302,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2017 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3320,7 +3320,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2017 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3338,7 +3338,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2018 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3356,7 +3356,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2018 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3374,7 +3374,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2018 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3392,7 +3392,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2018 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3410,7 +3410,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2018 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3428,7 +3428,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2019 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3446,7 +3446,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2019 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3464,7 +3464,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2019 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3482,7 +3482,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2019 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3500,7 +3500,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2019 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3518,7 +3518,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2021 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3536,7 +3536,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2021 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3554,7 +3554,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2021 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3572,7 +3572,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2021 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3590,7 +3590,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2021 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3608,7 +3608,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2022 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: original wording compared with official PDF page 1 and confirmed; math typeset in LaTeX."
     }
   },
   {
@@ -3626,7 +3626,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2022 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3644,7 +3644,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2022 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3662,7 +3662,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2022 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3680,7 +3680,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2022 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3698,7 +3698,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2023 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3716,7 +3716,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2023 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3734,7 +3734,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2023 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3752,7 +3752,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2025 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3770,7 +3770,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2025 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3788,7 +3788,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2025 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3806,7 +3806,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2025 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3824,7 +3824,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2025 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -3842,7 +3842,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2026 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3860,7 +3860,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2026 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3878,7 +3878,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2026 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3896,7 +3896,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2025 — Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3914,7 +3914,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2025 — Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3932,7 +3932,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2025 — Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3950,7 +3950,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2025 — Hari 1, Nomor 5",
       "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3968,7 +3968,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2025 — Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -3986,7 +3986,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2025 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4004,7 +4004,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2025 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4022,7 +4022,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2025 — Hari 2, Nomor 9",
       "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4040,7 +4040,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2025 — Hari 2, Nomor 10",
       "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation; original statement in official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4057,8 +4057,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2026 — Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Original short sentence retained. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: original wording compared with official PDF page 1 and confirmed; math typeset in LaTeX."
     }
   },
   {
@@ -4075,8 +4075,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2026 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4093,8 +4093,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2026 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4111,8 +4111,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2026 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4129,8 +4129,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2026 — Hari 1, Nomor 5",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4139,7 +4139,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Persamaan komposisi fungsi dan turunan",
-    "prompt": "(a) Can a differentiable function $f:\\mathbb R\\to\\mathbb R$ satisfy $$f'(f(x))=x$$ at every $x\\in\\mathbb R$?\n\n(b) Can a differentiable function $f:\\mathbb R\\to\\mathbb R$ satisfy $$f'(f(x))=|x|$$ at every $x\\in\\mathbb R$?",
+    "prompt": "(a) Can a differentiable function $f:\\mathbb R\\to\\mathbb R$ satisfy $f'(f(x))=x$ at every $x\\in\\mathbb R$?\n\n(b) Can a differentiable function $f:\\mathbb R\\to\\mathbb R$ satisfy $f'(f(x))=|x|$ at every $x\\in\\mathbb R$?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4147,8 +4147,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2026 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4165,8 +4165,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2026 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4183,8 +4183,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2026 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4201,8 +4201,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2026 — Hari 2, Nomor 9",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4219,8 +4219,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2026 — Hari 2, Nomor 10",
-      "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -4238,7 +4238,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2025 — Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2025",
-      "note": "Independent English mathematical formulation checked against the official contest statement."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4256,7 +4256,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2024 — Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2024",
-      "note": "Independent English mathematical formulation checked against the official contest statement."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4274,7 +4274,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2024 — Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2024",
-      "note": "Independent English mathematical formulation checked against the official contest statement."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4292,7 +4292,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2024 — Hari 1, Nomor 5",
       "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2024",
-      "note": "Independent English mathematical formulation checked against the official contest statement."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4310,7 +4310,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2024 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2024",
-      "note": "Independent English mathematical formulation checked against the official contest statement."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4328,7 +4328,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2024 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2024",
-      "note": "Independent English mathematical formulation checked against the official contest statement."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4346,7 +4346,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2024 — Hari 2, Nomor 9",
       "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2024",
-      "note": "Independent English mathematical formulation checked against the official contest statement."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4364,7 +4364,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2024 — Hari 2, Nomor 10",
       "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2024",
-      "note": "Independent English mathematical formulation checked against the official contest statement."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4382,7 +4382,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2023 — Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4400,7 +4400,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2023 — Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4418,7 +4418,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2023 — Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4436,7 +4436,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2023 — Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4454,7 +4454,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2023 — Hari 1, Nomor 5",
       "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4472,7 +4472,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2023 — Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4490,7 +4490,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2023 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4508,7 +4508,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2023 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4526,7 +4526,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2023 — Hari 2, Nomor 9",
       "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4544,7 +4544,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2023 — Hari 2, Nomor 10",
       "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2023",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4562,7 +4562,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2021 — Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2021",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4580,7 +4580,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2021 — Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2021",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4598,7 +4598,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2021 — Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2021",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4616,7 +4616,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2021 — Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2021",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4634,7 +4634,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMC 2021 — Hari 2, Nomor 5",
       "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2021",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4652,7 +4652,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2021 — Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2021",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4670,7 +4670,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2021 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2021",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4688,7 +4688,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2021 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2021",
-      "note": "Independent English mathematical formulation; official IMC problem archive."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4706,7 +4706,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2022 — Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
-      "note": "Independent English mathematical formulation based on the official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4724,7 +4724,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2022 — Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
-      "note": "Independent English mathematical formulation based on the official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4742,7 +4742,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMC 2022 — Hari 2, Nomor 5",
       "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
-      "note": "Independent English mathematical formulation based on the official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4760,7 +4760,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2022 — Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
-      "note": "Independent English mathematical formulation based on the official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4778,7 +4778,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2022 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
-      "note": "Independent English mathematical formulation based on the official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4796,7 +4796,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2022 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
-      "note": "Independent English mathematical formulation based on the official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4814,7 +4814,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2019 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4832,7 +4832,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem B",
       "label": "IYMC 2019 — Qualification Round, Problem B",
       "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4850,7 +4850,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem D",
       "label": "IYMC 2019 — Qualification Round, Problem D",
       "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4868,7 +4868,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2020 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4886,7 +4886,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem B",
       "label": "IYMC 2020 — Qualification Round, Problem B",
       "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4904,7 +4904,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem C",
       "label": "IYMC 2020 — Qualification Round, Problem C",
       "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4922,7 +4922,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem D",
       "label": "IYMC 2020 — Qualification Round, Problem D",
       "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4940,7 +4940,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2021 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
-      "note": "Original table restored using LaTeX; values checked against official PDF, page 1. Independently worded."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4958,7 +4958,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem B",
       "label": "IYMC 2021 — Qualification Round, Problem B",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4976,7 +4976,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem C",
       "label": "IYMC 2021 — Qualification Round, Problem C",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -4994,7 +4994,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem D",
       "label": "IYMC 2021 — Qualification Round, Problem D",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5012,7 +5012,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2022 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5030,7 +5030,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem B",
       "label": "IYMC 2022 — Qualification Round, Problem B",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5048,7 +5048,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem C",
       "label": "IYMC 2022 — Qualification Round, Problem C",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5066,7 +5066,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem D",
       "label": "IYMC 2022 — Qualification Round, Problem D",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5084,7 +5084,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem E",
       "label": "IYMC 2022 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5102,7 +5102,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem B",
       "label": "IYMC 2023 — Qualification Round, Problem B",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5120,7 +5120,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem C",
       "label": "IYMC 2023 — Qualification Round, Problem C",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5138,7 +5138,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem D",
       "label": "IYMC 2023 — Qualification Round, Problem D",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5156,7 +5156,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem E",
       "label": "IYMC 2023 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5174,7 +5174,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2024 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
-      "note": "Original table restored using LaTeX; values checked against official PDF, page 1. Independently worded."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5192,7 +5192,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem B",
       "label": "IYMC 2024 — Qualification Round, Problem B",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5210,7 +5210,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem C",
       "label": "IYMC 2024 — Qualification Round, Problem C",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5228,7 +5228,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem D",
       "label": "IYMC 2024 — Qualification Round, Problem D",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5246,7 +5246,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2025 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5264,7 +5264,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem B",
       "label": "IYMC 2025 — Qualification Round, Problem B",
       "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5282,7 +5282,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem C",
       "label": "IYMC 2025 — Qualification Round, Problem C",
       "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5300,7 +5300,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem D",
       "label": "IYMC 2025 — Qualification Round, Problem D",
       "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5318,7 +5318,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem E",
       "label": "IYMC 2025 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
-      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5336,7 +5336,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A1",
       "label": "Putnam 2025 — A1",
       "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5354,7 +5354,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A2",
       "label": "Putnam 2025 — A2",
       "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5372,7 +5372,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A4",
       "label": "Putnam 2025 — A4",
       "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5390,7 +5390,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A6",
       "label": "Putnam 2025 — A6",
       "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5408,7 +5408,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B6",
       "label": "Putnam 2025 — B6",
       "url": "https://kskedlaya.org/putnam-archive/2025.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5426,7 +5426,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A4",
       "label": "Putnam 2024 — A4",
       "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5444,7 +5444,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A6",
       "label": "Putnam 2024 — A6",
       "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5462,7 +5462,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B1",
       "label": "Putnam 2024 — B1",
       "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5480,7 +5480,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B3",
       "label": "Putnam 2024 — B3",
       "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5498,7 +5498,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B6",
       "label": "Putnam 2024 — B6",
       "url": "https://kskedlaya.org/putnam-archive/2024.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5516,7 +5516,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A1",
       "label": "Putnam 2023 — A1",
       "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5534,7 +5534,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A2",
       "label": "Putnam 2023 — A2",
       "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5552,7 +5552,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A3",
       "label": "Putnam 2023 — A3",
       "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5570,7 +5570,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B2",
       "label": "Putnam 2023 — B2",
       "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5588,7 +5588,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B6",
       "label": "Putnam 2023 — B6",
       "url": "https://kskedlaya.org/putnam-archive/2023.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5606,7 +5606,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A1",
       "label": "Putnam 2022 — A1",
       "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5624,7 +5624,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A2",
       "label": "Putnam 2022 — A2",
       "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5642,7 +5642,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A3",
       "label": "Putnam 2022 — A3",
       "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5660,7 +5660,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B1",
       "label": "Putnam 2022 — B1",
       "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5678,7 +5678,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B2",
       "label": "Putnam 2022 — B2",
       "url": "https://kskedlaya.org/putnam-archive/2022.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5696,7 +5696,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A1",
       "label": "Putnam 2021 — A1",
       "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5714,7 +5714,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A2",
       "label": "Putnam 2021 — A2",
       "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5732,7 +5732,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A5",
       "label": "Putnam 2021 — A5",
       "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5750,7 +5750,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B2",
       "label": "Putnam 2021 — B2",
       "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5768,7 +5768,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B5",
       "label": "Putnam 2021 — B5",
       "url": "https://kskedlaya.org/putnam-archive/2021.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5786,7 +5786,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A1",
       "label": "Putnam 2019 — A1",
       "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5804,7 +5804,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A3",
       "label": "Putnam 2019 — A3",
       "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5822,7 +5822,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "A5",
       "label": "Putnam 2019 — A5",
       "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5840,7 +5840,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B2",
       "label": "Putnam 2019 — B2",
       "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5858,7 +5858,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "B3",
       "label": "Putnam 2019 — B3",
       "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
-      "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5876,7 +5876,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2013 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5894,7 +5894,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2013 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5912,7 +5912,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2013 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5930,7 +5930,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2015 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5948,7 +5948,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2015 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5966,7 +5966,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2015 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -5984,7 +5984,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2015 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6002,7 +6002,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2015 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6020,7 +6020,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2015 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6038,7 +6038,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2020 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -6056,7 +6056,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2020 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "Compared with indexed text of the official UMO problem paper; PDF visual inspection failed. Mathematical adaptation, not verbatim. © UMO Committee; educational noncommercial use with attribution: https://utahmath.org/problems/."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -6074,7 +6074,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2020 — Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2020",
-      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6092,7 +6092,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMC 2020 — Hari 2, Nomor 5",
       "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2020",
-      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6110,7 +6110,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2020 — Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2020",
-      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6128,7 +6128,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2020 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2020",
-      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6146,7 +6146,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2020 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2020",
-      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6164,7 +6164,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 1 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6182,7 +6182,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 5 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6200,7 +6200,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 7 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6218,7 +6218,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 8",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 8 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6236,7 +6236,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 9 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6254,7 +6254,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 11",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 11 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6272,7 +6272,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 12",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 12 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6290,7 +6290,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 13",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 13 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6308,7 +6308,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 14",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 14 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6326,7 +6326,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 15",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 15 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6344,7 +6344,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 16",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 16 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6362,7 +6362,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 17",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 17 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6380,7 +6380,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 18",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 18 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6398,7 +6398,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 19",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 19 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6416,7 +6416,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 21",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 21 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6434,7 +6434,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 22",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 22 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6452,7 +6452,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 23",
       "label": "CEMC Waterloo 2025 — Gauss Grade 7, 23 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6470,7 +6470,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "CEMC Waterloo 2026 — Euclid, 1 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6488,7 +6488,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "CEMC Waterloo 2026 — Euclid, 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6506,7 +6506,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "CEMC Waterloo 2026 — Euclid, 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6524,7 +6524,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2026 — Euclid, 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6542,7 +6542,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "CEMC Waterloo 2026 — Euclid, 9 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6560,7 +6560,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 10",
       "label": "CEMC Waterloo 2026 — Euclid, 10 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6578,7 +6578,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor A1",
       "label": "SMMC 2025 — Paper A, A1",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6596,7 +6596,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor A2",
       "label": "SMMC 2025 — Paper A, A2",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6614,7 +6614,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor A3",
       "label": "SMMC 2025 — Paper A, A3",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6632,7 +6632,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor A4",
       "label": "SMMC 2025 — Paper A, A4",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6650,7 +6650,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor B1",
       "label": "SMMC 2025 — Paper B, B1",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6668,7 +6668,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor B2",
       "label": "SMMC 2025 — Paper B, B2",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6686,7 +6686,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor B3",
       "label": "SMMC 2025 — Paper B, B3",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6704,7 +6704,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor B4",
       "label": "SMMC 2025 — Paper B, B4",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6722,7 +6722,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "APMO 2025 — APMO, 2",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Independent English mathematical formulation based on official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6740,7 +6740,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "APMO 2025 — APMO, 3",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Independent English mathematical formulation based on official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6758,7 +6758,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "APMO 2025 — APMO, 5",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Independent English mathematical formulation based on official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6776,7 +6776,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "APMO 2026 — APMO, 1",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Independent English mathematical formulation based on official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6794,7 +6794,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "APMO 2026 — APMO, 2",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Independent English mathematical formulation based on official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6812,7 +6812,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "APMO 2026 — APMO, 3",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Independent English mathematical formulation based on official paper."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6830,7 +6830,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 3",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6848,7 +6848,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 4",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6866,7 +6866,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 5",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6884,7 +6884,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 6",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6902,7 +6902,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 8",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 8",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6920,7 +6920,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 9",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6938,7 +6938,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 2",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6956,7 +6956,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 4",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6974,7 +6974,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 5",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -6992,7 +6992,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 6",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7010,7 +7010,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 9",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7028,7 +7028,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 10",
       "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 10",
       "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
-      "note": "Isi matematis dan nomor soal diperiksa terhadap salinan publik pihak ketiga; belum diverifikasi terhadap naskah resmi penyelenggara. Redaksi merupakan formulasi mandiri."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7046,7 +7046,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "BMO UK 2025 — Round 1, Nomor 1",
       "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7064,7 +7064,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "BMO UK 2025 — Round 1, Nomor 2",
       "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7082,7 +7082,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "BMO UK 2025 — Round 1, Nomor 5",
       "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7100,7 +7100,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "EGMO 2026 — Hari 1, Nomor 1",
       "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7118,7 +7118,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "EGMO 2026 — Hari 1, Nomor 2",
       "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7136,7 +7136,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "EGMO 2026 — Hari 1, Nomor 3",
       "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
-      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7154,7 +7154,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7172,7 +7172,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7190,7 +7190,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 5 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7208,7 +7208,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7226,7 +7226,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 8",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 8 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7244,7 +7244,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 10",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 10 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7262,7 +7262,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 11",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 11 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7280,7 +7280,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 12",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 12 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7298,7 +7298,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 14",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 14 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7316,7 +7316,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 17",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 17 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7334,7 +7334,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 18",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 18 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7352,7 +7352,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 19",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 19 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7370,7 +7370,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 20",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 20 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7388,7 +7388,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 22",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 22 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7406,7 +7406,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 23",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 23 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7424,7 +7424,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 24",
       "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 24 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7442,7 +7442,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 2 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7460,7 +7460,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 3 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7478,7 +7478,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 4 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7496,7 +7496,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 5 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7514,7 +7514,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 6 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7532,7 +7532,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 7 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7550,7 +7550,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 9 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7568,7 +7568,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 10",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 10 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7586,7 +7586,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 12",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 12 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7604,7 +7604,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 13",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 13 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7622,7 +7622,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 15",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 15 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7640,7 +7640,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 16",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 16 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7658,7 +7658,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 18",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 18 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7676,7 +7676,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 19",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 19 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7694,7 +7694,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 23",
       "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 23 · © 2025 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7712,7 +7712,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 1 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7730,7 +7730,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7748,7 +7748,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7766,7 +7766,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 4 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7784,7 +7784,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7802,7 +7802,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 8",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 8 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7820,7 +7820,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 12",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 12 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7838,7 +7838,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 13",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 13 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7856,7 +7856,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 15",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 15 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7874,7 +7874,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 16",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 16 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7892,7 +7892,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 18",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 18 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7910,7 +7910,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 20",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 20 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7928,7 +7928,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 21",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 21 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7946,7 +7946,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 22",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 22 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7964,7 +7964,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 24",
       "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 24 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
-      "note": "English mathematical adaptation; original question and answer choices compared with official CEMC HTML. Licensed CC BY-NC 4.0 for noncommercial use; https://cemc.uwaterloo.ca/copyright. Diagrams not independently audited."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -7982,7 +7982,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2017 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8000,7 +8000,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2018 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8018,7 +8018,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2021 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8036,7 +8036,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2022 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -8054,7 +8054,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2023 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8072,7 +8072,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2023 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8090,7 +8090,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2023 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8108,7 +8108,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2025 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -8126,7 +8126,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2013 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8144,7 +8144,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2013 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8162,7 +8162,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2013 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8180,7 +8180,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2019 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8198,7 +8198,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2020 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -8216,7 +8216,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2020 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "2026-11-25: official PDF page 1 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -8234,7 +8234,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2020 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -8252,7 +8252,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2020 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "2026-11-25: official PDF page 2 compared; wording differs from source and exact transcription remains pending."
     }
   },
   {
@@ -8270,7 +8270,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2026 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8288,7 +8288,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2026 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8306,7 +8306,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2026 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8324,7 +8324,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2014 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8342,7 +8342,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2014 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8360,7 +8360,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2014 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8378,7 +8378,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2014 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8396,7 +8396,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2014 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8414,7 +8414,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2014 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8432,7 +8432,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2024 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8450,7 +8450,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2024 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8468,7 +8468,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2024 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8486,7 +8486,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2024 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8504,7 +8504,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2024 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8522,7 +8522,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2024 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2024UtahMathOlympiad.pdf",
-      "note": "Independent English formulation checked against the official paper; original examples and diagram content retained; not verbatim. Noncommercial educational use with attribution: https://utahmath.org/problems/."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8540,7 +8540,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "APMO 2024 — Nomor 1",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8558,7 +8558,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "APMO 2024 — Nomor 2",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8576,7 +8576,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "APMO 2024 — Nomor 4",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8594,7 +8594,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "APMO 2024 — Nomor 5",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8612,7 +8612,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "APMO 2025 — Nomor 1",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8630,7 +8630,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "APMO 2025 — Nomor 4",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8648,7 +8648,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "APMO 2026 — Nomor 4",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8666,7 +8666,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "APMO 2026 — Nomor 5",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Independent English mathematical formulation based on official APMO question paper, page 1; original paper has no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8684,7 +8684,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem C",
       "label": "IYMC 2019 — Qualification Round, Problem C",
       "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
-      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8702,7 +8702,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem E",
       "label": "IYMC 2019 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
-      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8720,7 +8720,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem E",
       "label": "IYMC 2020 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
-      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8738,7 +8738,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem E",
       "label": "IYMC 2021 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
-      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8756,7 +8756,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem A",
       "label": "IYMC 2023 — Qualification Round, Problem A",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
-      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8774,7 +8774,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Problem E",
       "label": "IYMC 2024 — Qualification Round, Problem E",
       "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
-      "note": "Mathematical content checked against official qualification PDF, page 1; independently worded, not verbatim. Original diagram redrawn where applicable."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8792,7 +8792,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2022 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8810,7 +8810,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2022 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8828,7 +8828,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2022 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8846,7 +8846,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2022 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8864,7 +8864,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2022 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8882,7 +8882,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2023 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8900,7 +8900,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2023 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8918,7 +8918,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2023 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8936,7 +8936,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2023 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8954,7 +8954,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2024 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8972,7 +8972,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2024 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -8990,7 +8990,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2024 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9008,7 +9008,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2024 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
-      "note": "Independent English formulation based on official paper, day 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9026,7 +9026,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2019 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9044,7 +9044,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2019 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9062,7 +9062,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2019 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9080,7 +9080,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2019 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9098,7 +9098,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2019 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9116,7 +9116,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2020 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9134,7 +9134,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2020 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9152,7 +9152,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2020 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9170,7 +9170,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2020 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9188,7 +9188,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2020 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9206,7 +9206,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2021 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 1; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9224,7 +9224,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2021 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9242,7 +9242,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2021 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9260,7 +9260,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2021 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
-      "note": "Independent English mathematical formulation, checked against official English paper page 2; not verbatim. No question illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9278,7 +9278,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2005 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9296,7 +9296,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2005 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9314,7 +9314,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2005 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2005/2005_eng.pdf",
-      "note": "Independent English formulation based on the official consolidated PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9332,7 +9332,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2018 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9350,7 +9350,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2018 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9368,7 +9368,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2018 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim. Original numeric array retained in LaTeX."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9386,7 +9386,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2018 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9404,7 +9404,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2018 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9422,7 +9422,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2018 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2018/2018_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9440,7 +9440,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2025 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9458,7 +9458,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2025 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9476,7 +9476,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2025 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 1; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9494,7 +9494,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2025 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9512,7 +9512,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2025 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9530,7 +9530,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2025 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
-      "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9548,7 +9548,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2015 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9566,7 +9566,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2015 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9584,7 +9584,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2015 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9602,7 +9602,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2015 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9620,7 +9620,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2015 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9638,7 +9638,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2015 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9656,7 +9656,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2016 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9674,7 +9674,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2016 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9692,7 +9692,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2016 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9710,7 +9710,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2016 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9728,7 +9728,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2016 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9746,7 +9746,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2016 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9764,7 +9764,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2017 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9782,7 +9782,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2017 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9800,7 +9800,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2017 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9818,7 +9818,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2017 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9836,7 +9836,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2017 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9854,7 +9854,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2017 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
-      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9872,7 +9872,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2012 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9890,7 +9890,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2012 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9908,7 +9908,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2012 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9926,7 +9926,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2012 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9944,7 +9944,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2012 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9962,7 +9962,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2012 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2012/2012_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9980,7 +9980,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2013 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -9998,7 +9998,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2013 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10016,7 +10016,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2013 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10034,7 +10034,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2013 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10052,7 +10052,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2013 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10070,7 +10070,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2013 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2013/2013_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10088,7 +10088,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2014 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10106,7 +10106,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2014 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10124,7 +10124,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2014 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 1, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10142,7 +10142,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2014 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10160,7 +10160,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2014 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10178,7 +10178,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2014 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2014/2014_eng.pdf",
-      "note": "Independent English formulation checked against official PDF page 2, including visual inspection; not verbatim. No illustration in source."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10196,7 +10196,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2009 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10214,7 +10214,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2009 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10232,7 +10232,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2009 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10250,7 +10250,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2009 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10268,7 +10268,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2009 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10286,7 +10286,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2009 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2009/2009_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10304,7 +10304,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2010 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10322,7 +10322,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2010 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10340,7 +10340,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2010 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10358,7 +10358,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2010 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10376,7 +10376,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2010 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10394,7 +10394,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2010 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2010/2010_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10412,7 +10412,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2011 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10430,7 +10430,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2011 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10448,7 +10448,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2011 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 1; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10466,7 +10466,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2011 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10484,7 +10484,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2011 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10502,7 +10502,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2011 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2011/2011_eng.pdf",
-      "note": "Independent mathematical formulation in English based on official PDF page 2; text and page image inspected; no question diagram. Not verbatim."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10520,7 +10520,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2006 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10538,7 +10538,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2006 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10556,7 +10556,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2006 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10574,7 +10574,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2006 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10592,7 +10592,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2006 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10610,7 +10610,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2006 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10628,7 +10628,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2007 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10646,7 +10646,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2007 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10664,7 +10664,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2007 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10682,7 +10682,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2007 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10700,7 +10700,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2007 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10718,7 +10718,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2007 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2007/2007_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10736,7 +10736,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2008 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10754,7 +10754,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2008 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10772,7 +10772,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2008 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10790,7 +10790,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2008 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10808,7 +10808,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2008 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10826,7 +10826,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2008 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2008/2008_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10844,7 +10844,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMO 2026 — Hari 1, Nomor 1",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10862,7 +10862,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMO 2026 — Hari 1, Nomor 2",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10880,7 +10880,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMO 2026 — Hari 1, Nomor 3",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 1, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10898,7 +10898,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 4",
       "label": "IMO 2026 — Hari 2, Nomor 4",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10916,7 +10916,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 5",
       "label": "IMO 2026 — Hari 2, Nomor 5",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10934,7 +10934,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMO 2026 — Hari 2, Nomor 6",
       "url": "https://www.imo-official.org/assets/documents/problems/2026/2026_eng.pdf",
-      "note": "Independent English mathematical restatement based on official PDF page 2, checked against page image; not verbatim. No source illustration."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10952,7 +10952,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2019 — Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10970,7 +10970,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2019 — Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -10988,7 +10988,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2019 — Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -11006,7 +11006,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2019 — Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -11024,7 +11024,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2019 — Hari 1, Nomor 5",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "2026-11-25: official Day 1 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -11042,7 +11042,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2019 — Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -11060,7 +11060,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2019 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -11078,7 +11078,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2019 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -11096,7 +11096,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2019 — Hari 2, Nomor 9",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   },
   {
@@ -11114,7 +11114,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2019 — Hari 2, Nomor 10",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "2026-11-25: official Day 2 Questions PDF, page 1; text and page image compared. Independent English formulation, not verbatim. Original value: 10 points. No source diagram."
+      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
     }
   }
 ];

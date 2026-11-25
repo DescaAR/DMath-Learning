@@ -164,5 +164,10 @@ assert.match(css,/\.cmp-material-tag\{/);
 for(const year of [2019,2026]){
  const set=competitionProblems.filter(p=>p.source.competition==="IMC"&&p.source.year===year);
  assert.deepEqual(set.map(p=>p.source.number).sort((a,b)=>a.localeCompare(b,"id",{numeric:true})),Array.from({length:10},(_,i)=>"Hari "+(i<5?1:2)+", Nomor "+(i+1)),"Incomplete IMC set "+year);
- for(const p of set){const day=Number(p.source.number.match(/Hari (\d+)/)[1]);assert.equal(p.source.url,"https://www.imc-math.org.uk/archive/problems/"+year+"/IMC_"+year+"_Day_"+day+"_Questions.pdf");assert.ok(!displayedFigureIds.includes(p.id),"No illustration in original IMC question: "+p.id);}
+ for(const p of set){const day=Number(p.source.number.match(/Hari (\d+)/)[1]);assert.equal(p.source.url,year===2026?"https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_"+day+(day===1?"_Questions.pdf":"_Problems.pdf"):"https://www.imc-math.org.uk/archive/problems/"+year+"/IMC_"+year+"_Day_"+day+"_Questions.pdf");assert.ok(!displayedFigureIds.includes(p.id),"No illustration in original IMC question: "+p.id);}
 }
+
+// Source fidelity is separate from completeness, math syntax, and layout checks.
+const fidelity=JSON.parse(read("data/competition-source-audit.json"));
+assert.deepEqual(Object.keys(fidelity.records).sort(),competitionProblems.map(p=>p.id).sort(),"Every problem needs a source audit record");
+for(const p of competitionProblems){const r=fidelity.records[p.id];assert.equal(r.sourceUrl,p.source.url??null,p.id+" source URL changed; update audit record");assert.ok(["original","exact_verified","wording_differs","pending_comparison"].includes(r.status));assert.equal(r.status==="original",p.source.kind==="original");if(r.status==="exact_verified"||r.status==="wording_differs"){assert.ok(r.comparison?.url&&r.comparison?.page&&r.comparison?.date,p.id+" missing direct comparison evidence");}}
