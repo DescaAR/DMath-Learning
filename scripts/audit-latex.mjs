@@ -23,10 +23,10 @@ for(const file of files){
   const lines=source.split("\n");
 
   lines.forEach((line,index)=>{
-    const mathSegments=[...line.matchAll(/\$(?![$\{])(.*?)(?<!\\)\$/g)];
+    const mathSegments=[...line.matchAll(/\$\$([^$]+?)\$\$|\$(?![$\{])([^$]+?)(?<!\\)\$(?!\$)/g)];
 
     for(const match of mathSegments){
-      if(/(?<!\\)\\(?!\\)/.test(match[1])){
+      if(/(?<!\\)\\(?!\\)/.test((match[1]??match[2]))){
         failures.push(
           path.relative(root,file)+":"+(index+1)+
           ": unescaped LaTeX backslash inside $...$."
@@ -34,7 +34,7 @@ for(const file of files){
         continue;
       }
 
-      const runtimeTex=match[1].replace(/\\\\/g,"\\");
+      const runtimeTex=(match[1]??match[2]).replace(/\\\\/g,"\\");
       try{
         katex.renderToString(runtimeTex,{
           throwOnError:true,

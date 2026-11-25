@@ -4058,7 +4058,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2026 — Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: exact question sentence checked against official Day 1 Questions PDF, page 1, and official problem page. Original score 10 points; no illustration. Formula typeset in LaTeX."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Original short sentence retained. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4067,7 +4067,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Identitas matriks dan komutativitas",
-    "prompt": "Suppose $n$ is a positive integer and $A,B$ are real $n\\times n$ matrices satisfying $$A^\\top A+BB^\\top=AB+BA,$$ with $X^\\top$ denoting the transpose of $X$. Is $AB=BA$ necessarily true?",
+    "prompt": "Suppose $n$ is a positive integer and $A$ and $B$ are real $n\\times n$ matrices satisfying $$A^\\top A+BB^\\top=AB+BA,$$ with $X^\\top$ denoting the transpose of $X$. Is $AB=BA$ necessarily true?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4076,7 +4076,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2026 — Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4094,7 +4094,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2026 — Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4103,7 +4103,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Limit barisan rekursif berbasis rata-rata",
-    "prompt": "Given $x_1>0$, construct the sequence $\\{x_n\\}$ recursively by $$x_{n+1}=\\arctan\\left(\\frac{x_1+x_2+\\cdots+x_n}{n}\\right)$$ for every $n\\ge1$. Evaluate $\\displaystyle\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$, using $\\ln x$ for the natural logarithm of $x$.",
+    "prompt": "Given $x_1>0$, construct the sequence $\\{x_n\\}$ recursively by $$x_{n+1}=\\arctan\\left(\\frac{x_1+x_2+\\cdots+x_n}{n}\\right)\\qquad\\text{for all }n\\ge1.$$ Evaluate $\\displaystyle\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$, using $\\ln x$ for the natural logarithm of $x$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4112,7 +4112,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2026 — Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4130,7 +4130,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2026 — Hari 1, Nomor 5",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 1 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4139,7 +4139,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Persamaan komposisi fungsi dan turunan",
-    "prompt": "(a) Can a differentiable map $f:\\mathbb R\\to\\mathbb R$ satisfy $f'(f(x))=x$ at every $x\\in\\mathbb R$?\n\n(b) Can a differentiable map $f:\\mathbb R\\to\\mathbb R$ satisfy $f'(f(x))=|x|$ at every $x\\in\\mathbb R$?",
+    "prompt": "(a) Can a differentiable function $f:\\mathbb R\\to\\mathbb R$ satisfy $$f'(f(x))=x$$ at every $x\\in\\mathbb R$?\n\n(b) Can a differentiable function $f:\\mathbb R\\to\\mathbb R$ satisfy $$f'(f(x))=|x|$$ at every $x\\in\\mathbb R$?",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4148,7 +4148,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2026 — Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4157,7 +4157,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Luas gabungan ruas garis",
-    "prompt": "Given continuous $f:[0,1]\\to\\mathbb R$, define $S(f)$ as the union of the straight segments joining $(x,0)$ and $(f(x),1)$ for $x\\in[0,1]$. Denote its area by $A(f)$. Determine the infimum of $A(f)$ over such functions.",
+    "prompt": "Given a continuous function $f:[0,1]\\to\\mathbb R$, define $S(f)$ as the union of all straight segments in the plane connecting $(x,0)$ and $(f(x),1)$ for $x\\in[0,1]$. Denote the area of $S(f)$ by $A(f)$. Determine its infimum over all continuous $f$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4166,7 +4166,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2026 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4175,7 +4175,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Batas tajam energi matriks",
-    "prompt": "Suppose $n\\ge5$ and $A=(a_{ij})$ is a real symmetric $n\\times n$ matrix with $a_{ii}=0$ and $a_{ij}\\in\\{-1,1\\}$ for $i\\ne j$. The scalar products of distinct rows have a common value. Denote the eigenvalues by $\\lambda_1,\\ldots,\\lambda_n$. Establish $$\\sum_{i=1}^n|\\lambda_i|\\ge2n-2$$ and classify the equality matrices.",
+    "prompt": "Suppose $n\\ge5$ and $A=(a_{ij})$ is a real symmetric $n\\times n$ matrix satisfying $$a_{ii}=0\\qquad\\text{and}\\qquad a_{ij}\\in\\{-1,1\\}\\text{ for }i\\ne j.$$ All scalar products between distinct rows of $A$ have a common value. Denote the eigenvalues of $A$ by $\\lambda_1,\\ldots,\\lambda_n$. Establish $$\\sum_{i=1}^n|\\lambda_i|\\ge2n-2$$ and identify every matrix attaining equality.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4184,7 +4184,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2026 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4202,7 +4202,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2026 — Hari 2, Nomor 9",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
@@ -4220,7 +4220,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2026 — Hari 2, Nomor 10",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 2 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: compared mathematical conditions and equations against official Day 2 Questions PDF, page 1, including screenshot. Independent English wording; not verbatim. Official score: 10 points. No source diagram."
     }
   },
   {
