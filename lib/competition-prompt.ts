@@ -31,12 +31,29 @@ export function splitSubquestions(prompt: string) {
 export function compactCompetitionMath(prompt: string): string {
  const display = /([ \t\r\n]*)(?:\$\$([\s\S]+?)\$\$|\\\[([\s\S]+?)\\\])([ \t\r\n]*)/g;
  prompt = smoothMNPair(stripCompetitionEmphasis(prompt));
+ // Consecutive displayed equations are a group, not independent inline
+ // fragments. Preserve their original layout (systems, conditions, lists).
+ const blocks = Array.from(prompt.matchAll(/\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\]/g));
+ const grouped = new Set<number>();
+ for (let i = 1; i < blocks.length; i++) {
+  const previous = blocks[i - 1], current = blocks[i];
+  if (!prompt.slice(previous.index! + previous[0].length, current.index!).trim()) {
+   grouped.add(previous.index!);
+   grouped.add(current.index!);
+  }
+ }
  return prompt.replace(display, (match, before: string, dollarTex: string | undefined, bracketTex: string | undefined, after: string, offset: number) => {
   const tex = (dollarTex ?? bracketTex ?? "").trim();
   const stacked = /\\(?:begin|end|substack|atop|over|cases|displaystyle|tag|notag|nonumber)\b|\\\\/.test(tex) || /[\r\n]/.test(tex);
   const approximateWidth = tex.replace(/\\(?:left|right|,|;|!|:)/g, "").replace(/\\[a-zA-Z]+/g, "X").replace(/[{}^_\s]/g, "").length;
-  const short = !stacked && approximateWidth <= 44 && tex.length <= 120 && !tex.includes("$");
-  if (!short) return "$$" + tex + "$$";
+  const short = !grouped.has(offset + before.length) && !stacked && approximateWidth <= 44 && tex.length <= 120 && !tex.includes("$");
+  if (!short) {
+   // Keep a separator when a display borders another math token.
+   const end = offset + match.length - after.length;
+   const left = before && /[$\])]/.test(prompt[offset - 1] ?? "") ? "\n" : "";
+   const right = after && /^(?:\$|\\\[|\\\()/.test(prompt.slice(end + after.length)) ? "\n" : "";
+   return left + "$" + tex + "$" + right;
+  }
   const left = before && offset > 0 ? " " : "";
   const next = prompt[offset + match.length] ?? "";
   const right = after && next && !/^[,.;:!?)]$/.test(next) ? " " : "";
