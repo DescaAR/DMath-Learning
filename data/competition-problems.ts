@@ -13312,6 +13312,348 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.ktom-tomi.or.id/",
       "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 6. URL is organizer homepage."
     }
+  },
+  {
+    "id": "ktom-2018-sep-a-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Tentukan banyaknya bilangan genap di antara 1000 sampai dengan 7000 yang semua digit-digitnya berbeda.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 1",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan bilangan asli terkecil $a$ yang membuat\n\n$$a+4a+7a+10a+\\cdots+97a$$\n\nmenjadi bilangan kuadrat sempurna.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 2",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Audrey, Bill dan Clifton berdiri pada satu garis lurus dengan urutan tersebut. Jarak Audrey ke Bill sama dengan jarak Bill ke Clifton dan kecepatan Bill berlari 2 kali lebih cepat dari kecepatan Clifton. Pada saat yang sama, Bill mulai berlari ke arah Clifton, Clifton berlari ke arah Bill dan Audrey berlari ke arah Bill. Diketahui bahwa mereka bertiga bertemu pada suatu titik secara bersamaan dan jarak yang ditempuh Bill adalah 180 meter. Tentukan jarak Audrey dan Clifton sebelum berlari dalam meter.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 3",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diketahui titik $A=(2,4)$ dan $B=(4,8)$ di bidang Kartesius. Titik $C$ merupakan perpotongan garis $y=4$ dan garis yang melalui $B$ dan tegak lurus $AB$. Tentukan luas segitiga $ABC$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 4",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Tentukan nilai minimum dari\n\n$$4K^2+9T^2+3O^2+75M^2+12KT+30OM$$\n\ndimana $K,T,O,M$ adalah empat bilangan real positif yang memenuhi $KTOM=10$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 5",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 5",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Suatu komputer diprogram untuk menampilkan salah satu dari tiga warna (merah, biru, atau hitam). Warna ini berganti setiap detiknya. Jika komputer menampilkan warna merah, warna yang ditampilkan berikutnya adalah warna biru. Jika komputer menampilkan warna biru, warna yang ditampilkan berikutnya adalah warna hitam. Tentukan banyaknya kemungkinan komputer menampilkan 3 warna merah, 5 warna biru, dan 8 warna hitam dalam selang waktu 16 detik.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 6",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 6",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-07",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Gasly, Verstappen, dan Kvyat masing-masing memilih satu titik awal pada suatu bidang. Diketahui jarak terpendek antara titik awal Gasly dengan titik awal Verstappen adalah 15 meter, titik awal Verstappen dengan titik awal Kvyat adalah 41 meter, dan titik awal Kvyat dengan titik awal Gasly adalah 52 meter. Misalkan terdapat titik $R$ di bidang yang sama. Mereka bertiga hendak mencari jarak terpendek antara titik awal mereka masing-masing dengan titik $R$. Hasilnya, jarak terpendek antara titik awal Gasly dengan titik $R$ adalah 28 meter, sedangkan titik awal Kvyat dengan titik $R$ adalah 80 meter. Tentukan jarak terpendek antara titik awal Verstappen dengan titik $R$ dalam satuan meter.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 7",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 7",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-08",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukanlah jumlah semua nilai $p$ sedemikian sehingga $p,p^2+2018,p^4+2018$ merupakan bilangan prima.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 8",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 8",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-09",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Diberikan himpunan $A=\\{1,2,3,\\ldots,40\\}$. Tentukan banyaknya cara memilih pasangan tidak terurut $(a,b,c,d)$ sehingga $a,b,c,d\\in A$ dan $a+b=c+d$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 9",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 9",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-10",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan persegi $ABCD$ dengan titik $E$ dan $F$ pada segmen $AB$ dan $BC$ sehingga segitiga $DEF$ sama sisi. Titik $G,H$, dan $I$ berturut-turut terletak pada segmen $AE,ED$, dan $DA$ sehingga segiempat $AGHI$ adalah persegi. Titik $J$ dan $K$ terletak pada segmen $EF$ sehingga $HJ\\perp EF$ dan $FK=EJ$. Titik $L$ terletak pada $DF$ sehingga $HL\\parallel EF$. Jika luas persegi panjang $HJKL=x$ dan luas persegi $AGHI=y$. Tentukan nilai dari $\\left\\lfloor\\frac{100x}{y}\\right\\rfloor$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 10",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 10",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-11",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diberikan sebuah fungsi satu-satu $f:\\mathbb V\\to\\mathbb V$ dimana $\\mathbb V=\\{1,2,3,4,5,6\\}$ dan $f(n)\\ne n,\\forall n\\in\\mathbb V$. Apabila\n\n$$f(1+2f(2))+f(1)=f(4f(m)+f(6))+f(2f(3)-3)+f(4)$$\n\nuntuk suatu bilangan asli $m$, tentukan nilai dari\n\n$$\\sum_{i=1}^6m^if(i).$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 11",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 11",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-12",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Barisan $7,63,511,728,\\cdots$ merupakan barisan bilangan-bilangan asli yang merupakan kelipatan 7 dan juga kurang 1 dari pangkat 3 suatu bilangan bulat. Di sini, 7, 63, 511, 728 semuanya habis dibagi 7, dan $7=2^3-1$, $63=4^3-1$, $511=8^3-1$ dan $728=9^3-1$.\n\nTentukan 3 digit terakhir dari suku ke 2018 dari barisan tersebut.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 12",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 12",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-13",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Sebuah bilangan empat digit dikatakan *aneh* jika dan hanya jika bilangan baru yang terbentuk dari penghapusan digit satuannya habis dibagi 7. Sebuah bilangan empat digit dikatakan *cantik* jika dan hanya jika bilangan baru yang terbentuk dari penghapusan digit ribuannya habis dibagi 9. Misalkan $R$ adalah himpunan seluruh bilangan yang aneh dan cantik. Jika $x$ adalah rata-rata dari penjumlahan seluruh anggota $R$, tentukan nilai dari $2x-10000$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 13",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 13",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-14",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Misalkan $ABCD$ adalah segiempat siklis. Garis $AB$ dan $CD$ bertemu di titik $R$. Garis $AD$ dan $BC$ bertemu di titik $V$. Diketahui titik $S$ dan titik $I$ terletak pada lingkaran luar segiempat $ABCD$ sehingga $RS$ dan $VI$ adalah garis singgung lingkaran tersebut. Jika panjang $VI=13552$ dan panjang $RV=17777$, tentukan panjang $RS$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 14",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 14",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-a-15",
+    "level": "SMA",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diberikan sebuah nilai $S$ yang merupakan deret tak terhingga yang suku ke -$n$ didefinisikan sebagai\n\n$$U_n=\\frac{T_n\\times1^2+T_{n-1}\\times2^2+T_{n-2}\\times3^2+\\cdots+T_2\\times(n-1)^2+T_1\\times n^2}{10^n},$$\n\ndimana $T_n$ menyatakan bilangan segitiga ke-$n$. Dipunyai\n\n$$S=\\frac{1^2}{10}+\\frac{3\\times1^2+2^2}{10^2}+\\frac{6\\times1^2+3\\times2^2+1\\times3^2}{10^3}+\\ldots$$\n\nDiketahui bahwa nilai $S$ dapat dinyatakan dalam $\\frac ab$, dimana $a$ dan $b$ adalah dua buah bilangan bulat positif yang saling relatif prima. Apabila $X=a+b$, tentukan nilai dari $\\left\\lfloor\\frac X{100}\\right\\rfloor$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian A, Nomor 15",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian A, Nomor 15",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-b-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Aljabar",
+    "prompt": "Misalkan $P$ adalah sebuah polinomial yang memenuhi $P(x)=x^4+2x^3+2x^2+6x-2$ untuk semua bilangan bulat $x$.\n\n(a) Jika $x>3$, tunjukkan $P(x)>x^4+2x^3+x^2=(x^2+x)^2$.\n\n(b) Jika $x>3$, tunjukkan $P(x)<x^4+2x^3+3x^2+2x+1=(x^2+x+1)^2$.\n\n(c) Jika $x<-6$, tunjukkan $P(x)>(x^2+x)^2$.\n\n(d) Jika $x<-6$, tunjukkan $P(x)<(x^2+x+1)^2$.\n\nDiketahui $t$ dan $u$ adalah bilangan bulat yang memenuhi $t^2=P(u)$.\n\n(e) Simpulkan bahwa $-6\\le u\\le3$.\n\n(f) Tentukan semua pasangan $(t,u)$ yang memenuhi persamaan tersebut.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian B, Nomor 1",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian B, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 7. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-b-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Teori Bilangan",
+    "prompt": "Buktikan bahwa tidak ada tripel bilangan bulat $(x,y,z)$ yang memenuhi persamaan\n\n$$x^2+y^2+z^2=xyz-1.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian B, Nomor 2",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian B, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 7. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-b-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kombinatorika",
+    "prompt": "Ubai menuliskan 2018 bilangan asli pertama: $1,2,\\ldots,2018$ di papan tulis. Tiap menit, dia akan menghapus 4 bilangan (tidak harus berbeda): $x,y,z$ dan $x+y+z$ dan menuliskan $x+y$, $x+z$ dan $y+z$ pada papan tulis. Misalnya, bila Ubai menghapus 1, 2, 3, dan 6, maka dia akan menulis 3, 4, 5 di papan tulis.\n\nUbai akan berhenti apabila dia tidak dapat menghapus 4 bilangan manapun yang memenuhi syarat lagi. Apabila Ubai mulai menghapus bilangan pada pukul $08:00$, buktikan bahwa Ubai akan berhenti sebelum jam $16:30$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian B, Nomor 3",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian B, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 7. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-sep-b-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri",
+    "prompt": "Diberikan sebuah segiempat konveks $ABCD$. Misalkan $O$ perpotongan diagonal $AC$ dan $BD$, dan misalkan $I,K,H$ berturut-turut adalah proyeksi titik $B,O,C$ ke $AD$. Buktikan\n\n$$AD\\times BI\\times CH\\le AC\\times BD\\times OK$$\n\ndan tentukan kapan kesamaan terjadi.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — September, Bagian B, Nomor 4",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes September",
+      "number": "Bagian B, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM SEPTEMBER 2018.pdf, PDF page 7. URL is organizer homepage."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
