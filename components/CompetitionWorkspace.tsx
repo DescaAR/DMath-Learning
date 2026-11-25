@@ -10,6 +10,8 @@ const isLevel=(v:string):v is Level=>levels.some(x=>x===v);
 const link=(p:CompetitionProblem)=>"/problem-solving/"+p.id+"/";
 const difficulty=(p:CompetitionProblem)=>difficultyLabels[p.difficulty]||"—";
 const shortSource=(p:CompetitionProblem)=>p.source.label;
+const categoryOf=(p:CompetitionProblem)=>p.source.competition||"DMath Learning Proposed";
+const categoryOrder=(a:string,b:string)=>a==="DMath Learning Proposed"?1:b==="DMath Learning Proposed"?-1:a.localeCompare(b,"id");
 const levelHref=(l:Level)=>"/olimpiade-"+l.toLowerCase()+"/";
 const levelTitle=(l:Level)=>l==="Kuliah"?"Olimpiade Kuliah":levelMeta[l].title;
 
@@ -37,14 +39,16 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  useEffect(()=>{const params=new URLSearchParams(window.location.search);const l=params.get("level"),q=params.get("q"),s=params.get("source");if(!fixedLevel&&l&&isLevel(l))setLevel(l);if(q)setQuery(q);if(s==="competition"||s==="original")setSource(s);},[fixedLevel]);
  const pool=useMemo(()=>competitionProblems.filter(p=>level==="Semua"||p.level===level),[level]);
  const years=Array.from(new Set(pool.flatMap(p=>p.source.year?[p.source.year]:[]))).sort((a,b)=>b-a);
- const stages=Array.from(new Set(pool.filter(p=>(contest==="Semua"||p.source.competition===contest)&&(year==="Semua"||String(p.source.year)===year)).flatMap(p=>p.source.stage?[p.source.stage]:[]))).sort();
- const contests=Array.from(new Set(pool.flatMap(p=>p.source.competition?[p.source.competition]:[]))).sort();
+ const stages=Array.from(new Set(pool.filter(p=>(contest==="Semua"||categoryOf(p)===contest)&&(year==="Semua"||String(p.source.year)===year)).flatMap(p=>p.source.stage?[p.source.stage]:[]))).sort();
+ const contests=Array.from(new Set(pool.map(categoryOf))).sort(categoryOrder);
  const topics=Array.from(new Set(pool.map(p=>p.topic))).sort((a,b)=>a.localeCompare(b,"id"));
- const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||p.source.competition===contest)&&(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
+ const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||categoryOf(p)===contest)&&(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
+ const groups=contests.map(c=>({name:c,items:filtered.filter(p=>categoryOf(p)===c).sort((a,b)=>(b.source.year||0)-(a.source.year||0)||(a.source.stage||"").localeCompare(b.source.stage||"","id")||(a.source.number||a.id).localeCompare(b.source.number||b.id,"id",{numeric:true}))})).filter(g=>g.items.length>0);
  const reset=()=>{setQuery("");setLevel(fixedLevel||"Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");setYear("Semua");setContest("Semua");setStage("Semua");};
  return <div className="cmp-page container cmp-catalog">
   <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length}</strong><span>soal tersedia</span></div></header>
   {fixedLevel&&<nav className="cmp-level-section-nav" aria-label="Menu jenjang"><span aria-current="page">Kumpulan Soal</span><Link href={levelHref(fixedLevel)+"potd/"}>Soal Harian →</Link></nav>}
+  <section className="cmp-category-section" aria-label="Kategori kompetisi"><h2>Kategori kompetisi</h2><div className="cmp-category-buttons" role="group" aria-label="Pilih kategori">{["Semua",...contests].map(c=><button type="button" key={c} aria-pressed={contest===c} onClick={()=>{setContest(c);setStage("Semua");setYear("Semua");setSource("Semua");setTopic("Semua");setDiff("Semua");}}><span>{c==="Semua"?"Semua kompetisi":c}</span><small>{c==="Semua"?pool.length:pool.filter(p=>categoryOf(p)===c).length} soal</small></button>)}</div></section>
   <div className="cmp-catalog-layout">
    <aside className="cmp-filter" aria-label="Filter soal">
     <div className="cmp-filter-title"><h2>Filter soal</h2><button className="cmp-text-button" type="button" onClick={reset}>Atur ulang</button></div>
@@ -53,17 +57,17 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
     <div className="cmp-level-tabs" role="group" aria-label="Jenjang">{["Semua",...levels].map(l=><button type="button" key={l} aria-pressed={l===level} onClick={()=>{setLevel(l);setTopic("Semua");setYear("Semua");setContest("Semua");setStage("Semua");}}><span>{l==="Semua"?"Semua jenjang":l==="Kuliah"?"Mahasiswa":l}</span><small>{l==="Semua"?competitionProblems.length:competitionProblems.filter(p=>p.level===l).length}</small></button>)}</div></>}
     <div className="cmp-filter-grid">
      <label>Tahun<select value={year} onChange={e=>{setYear(e.target.value);setStage("Semua");}}><option>Semua</option>{years.map(y=><option key={y} value={y}>{y}</option>)}</select></label>
-     <label>Kompetisi<select value={contest} onChange={e=>{setContest(e.target.value);setStage("Semua");}}><option>Semua</option>{contests.map(c=><option key={c}>{c}</option>)}</select></label>
+     
      <label>Tahap seleksi<select value={stage} onChange={e=>setStage(e.target.value)}><option>Semua</option>{stages.map(s=><option key={s}>{s}</option>)}</select></label>
      <label>Topik<select value={topic} onChange={e=>setTopic(e.target.value)}><option>Semua</option>{topics.map(t=><option key={t}>{t}</option>)}</select></label>
      <label>Kesulitan<select value={diff} onChange={e=>setDiff(e.target.value)}><option>Semua</option>{difficultyLabels.slice(1).map((d,i)=><option value={i+1} key={d}>{d}</option>)}</select></label>
-     <label>Sumber<select value={source} onChange={e=>setSource(e.target.value)}><option>Semua</option><option value="original">DMath Learning Proposed</option><option value="competition">Kompetisi resmi</option></select></label>
+     <label>Sumber<select value={source} onChange={e=>setSource(e.target.value)}><option>Semua</option><option value="original">DMath Learning Proposed</option><option value="competition">Soal kompetisi</option></select></label>
     </div>
    </aside>
    <div className="cmp-results">
 
     <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length} soal ditemukan</span></div>
-    <div className="cmp-problem-list">{filtered.map(p=><ProblemCard p={p} key={p.id}/>)}</div>
+    {groups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3>{g.name}</h3><span>{g.items.length} soal</span></div><div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
     {!filtered.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
    </div>
   </div>

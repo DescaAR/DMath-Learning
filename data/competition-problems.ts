@@ -1754,6 +1754,960 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/",
       "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
     }
+  },
+  {
+    "id": "osn-sd-2005-i1",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Kelipatan tiga belas",
+    "prompt": "Hitung banyak bilangan bulat kelipatan 13 yang terletak di antara 1000 dan 2005.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2005 — Isian 1",
+      "competition": "OSN",
+      "year": 2005,
+      "stage": "OSN Nasional",
+      "number": "Isian 1",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2005-i2",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Nomor kendaraan terbesar",
+    "prompt": "Nomor kendaraan terdiri atas empat digit dengan digit pertama bukan nol. Jumlah keempat digit harus merupakan kelipatan 5. Tentukan nomor terbesar yang diperbolehkan.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2005 — Isian 2",
+      "competition": "OSN",
+      "year": 2005,
+      "stage": "OSN Nasional",
+      "number": "Isian 2",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2005-i4",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Uang sebelum dibagikan",
+    "prompt": "Pak Marpaung menyerahkan Rp240.000 kepada istrinya, kemudian memberikan dua pertiga sisa uangnya kepada anaknya. Uang yang masih dipegangnya adalah Rp195.000. Berapa jumlah uangnya semula?",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2005 — Isian 4",
+      "competition": "OSN",
+      "year": 2005,
+      "stage": "OSN Nasional",
+      "number": "Isian 4",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2005-i9",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 2,
+    "title": "Jumlah pertandingan",
+    "prompt": "Sepuluh tim mengikuti sebuah turnamen. Setiap pasangan tim bertanding dua kali. Berapa banyak pertandingan yang berlangsung?",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2005 — Isian 9",
+      "competition": "OSN",
+      "year": 2005,
+      "stage": "OSN Nasional",
+      "number": "Isian 9",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2005-i10",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Menentukan pecahan",
+    "prompt": "Suatu pecahan berubah menjadi $\\frac{2}{3}$ jika pembilangnya ditambah 3. Jika penyebut pecahan semula dikurangi 1, nilainya menjadi $\\frac{1}{2}$. Tentukan pecahan semula.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2005 — Isian 10",
+      "competition": "OSN",
+      "year": 2005,
+      "stage": "OSN Nasional",
+      "number": "Isian 10",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2006-i1",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Perbandingan tiga bahan",
+    "prompt": "Tiga bahan $P,Q,R$ digunakan dengan perbandingan $P:Q=6:8$ dan $Q:R=7:3$. Tentukan $P:R$.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2006 — Isian 1",
+      "competition": "OSN",
+      "year": 2006,
+      "stage": "OSN Nasional",
+      "number": "Isian 1",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2006-i2",
+    "level": "SD",
+    "topic": "Geometri",
+    "difficulty": 2,
+    "title": "Sudut dalam segitiga",
+    "prompt": "Pada segitiga $ABC$, titik $D$ terletak pada sisi $AB$. Diketahui $\\angle ACD=43^\\circ$, $\\angle DCB=29^\\circ$, dan $\\angle ABC=48^\\circ$. Berapakah besar $\\angle CAD$?",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2006 — Isian 2",
+      "competition": "OSN",
+      "year": 2006,
+      "stage": "OSN Nasional",
+      "number": "Isian 2",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2006-i4",
+    "level": "SD",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Luas trapesium siku-siku",
+    "prompt": "Pada trapesium $ABCD$, sisi $AB$ sejajar $DC$. Diketahui $\\angle ABC=90^\\circ$, $\\angle DAB=45^\\circ$, $AB=16$ cm, dan $DC=10$ cm. Tentukan luasnya.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2006 — Isian 4",
+      "competition": "OSN",
+      "year": 2006,
+      "stage": "OSN Nasional",
+      "number": "Isian 4",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2006-i6",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Muatan truk",
+    "prompt": "Sebuah truk membawa 300 kotak dengan berat masing-masing 1 kg atau 2 kg. Total berat kotak 530 kg. Berapa banyak kotak seberat 1 kg?",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2006 — Isian 6",
+      "competition": "OSN",
+      "year": 2006,
+      "stage": "OSN Nasional",
+      "number": "Isian 6",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2007-i7",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 4,
+    "title": "Waktu mengecat kamar",
+    "prompt": "Sebanyak 75 kamar harus dicat. Setiap pekerja mampu mengecat tiga perempat kamar per hari. Selama dua pertiga waktu pengerjaan, ada 12 pekerja; selama sisa waktunya, hanya satu pekerja. Tentukan lama pengerjaan dalam hari.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2007 — Isian 7",
+      "competition": "OSN",
+      "year": 2007,
+      "stage": "OSN Nasional",
+      "number": "Isian 7",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-sd-2007-i9",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Kadar garam",
+    "prompt": "Enam liter air laut mempunyai kadar garam 4%. Satu liter air menguap tanpa mengurangi jumlah garamnya. Tentukan persentase kadar garam setelah penguapan.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SD 2007 — Isian 9",
+      "competition": "OSN",
+      "year": 2007,
+      "stage": "OSN Nasional",
+      "number": "Isian 9",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "imso-sd-2005-06",
+    "level": "SD",
+    "topic": "Statistika",
+    "difficulty": 2,
+    "title": "Perubahan rata-rata",
+    "prompt": "Nilai rata-rata ulangan 48 siswa adalah 80. Dua nilai dikoreksi: 86 menjadi 93 dan 85 menjadi 84. Hitung rata-rata setelah koreksi.",
+    "source": {
+      "kind": "competition",
+      "label": "IMSO 2005 — Isian 6",
+      "competition": "IMSO",
+      "year": 2005,
+      "stage": "IMSO",
+      "number": "Isian 6",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "imso-sd-2005-07",
+    "level": "SD",
+    "topic": "Logika",
+    "difficulty": 3,
+    "title": "Hari dalam kalender",
+    "prompt": "Gaji dibayarkan pada Rabu pertama setiap bulan dan uangnya diambil dari bank pada Selasa pertama. Pada Rabu pertama suatu bulan, pengambilan uang belum dilakukan. Hari apakah tanggal 5 pada bulan tersebut?",
+    "source": {
+      "kind": "competition",
+      "label": "IMSO 2005 — Isian 7",
+      "competition": "IMSO",
+      "year": 2005,
+      "stage": "IMSO",
+      "number": "Isian 7",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-smp-2005-h1-02",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Banyak solusi bilangan bulat nonnegatif",
+    "prompt": "Hitung banyak tupel $(x_1,x_2,x_3,x_4)$ dengan setiap $x_i$ bilangan bulat nonnegatif dan $x_1+x_2+x_3+x_4=7$.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SMP 2005 — Hari 1, Nomor 2",
+      "competition": "OSN",
+      "year": 2005,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 2",
+      "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-smp-2005-h1-03",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 3,
+    "title": "Data dengan rata-rata dan median sama",
+    "prompt": "Kenaikan produksi suatu perusahaan dalam lima periode dicatat sebagai persentase. Empat data yang diketahui adalah 4%, 9%, 7%, dan 5%. Tentukan kemungkinan data kelima jika rata-rata dan median kelima data tersebut sama.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SMP 2005 — Hari 1, Nomor 3",
+      "competition": "OSN",
+      "year": 2005,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 3",
+      "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osn-smp-2005-h1-04",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Sistem persamaan bilangan bulat",
+    "prompt": "Tentukan seluruh pasangan $(x,y)\\in\\mathbb Z^2$ yang memenuhi $$x(y+1)=y^2-1,\\qquad y(x+1)=x^2-1.$$",
+    "source": {
+      "kind": "competition",
+      "label": "OSN Nasional SMP 2005 — Hari 1, Nomor 4",
+      "competition": "OSN",
+      "year": 2005,
+      "stage": "OSN Nasional",
+      "number": "Hari 1, Nomor 4",
+      "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "kmnr-smp-2016-78-02",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Perbandingan desimal",
+    "prompt": "Manakah yang terbesar di antara $2{,}06$, $2{,}1$, $2{,}18$, $2{,}109$, dan $2{,}115$?",
+    "source": {
+      "kind": "competition",
+      "label": "KMNR Penyisihan 2016 — Kelas 7–8, Nomor 2",
+      "competition": "KMNR",
+      "year": 2016,
+      "stage": "KMNR Penyisihan",
+      "number": "Kelas 7–8, Nomor 2",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "kmnr-smp-2016-78-03",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Operasi aritmetika",
+    "prompt": "Tentukan nilai $20\\cdot15+20\\cdot16$. Pilihan: A. 520; B. 620; C. 820; D. 5.120; E. 11.200.",
+    "source": {
+      "kind": "competition",
+      "label": "KMNR Penyisihan 2016 — Kelas 7–8, Nomor 3",
+      "competition": "KMNR",
+      "year": 2016,
+      "stage": "KMNR Penyisihan",
+      "number": "Kelas 7–8, Nomor 3",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "kmnr-smp-2016-9-02",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Pecahan aritmetika",
+    "prompt": "Hitung $\\frac{2+0+1+6}{6-1-0-2}$. Pilihan: A. $1$; B. $\\frac23$; C. $2$; D. $\\frac32$; E. $3$.",
+    "source": {
+      "kind": "competition",
+      "label": "KMNR Penyisihan 2016 — Kelas 9, Nomor 2",
+      "competition": "KMNR",
+      "year": 2016,
+      "stage": "KMNR Penyisihan",
+      "number": "Kelas 9, Nomor 2",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-9-kompetisi-matematika-nalaria-realistik-kmnr-tahun-2016/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "osnk-smp-2019-01",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Nilai maksimum perpangkatan",
+    "prompt": "Pilih tiga anggota berbeda $a,b,c$ dari $\\{0,1,2,3,4\\}$ sehingga $(a^b)^c$ terdefinisi. Berapakah nilai terbesarnya? Pilihan: A. 4096; B. 6561; C. 9561; D. 9651.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMP 2019 — Nomor 1",
+      "competition": "OSN",
+      "year": 2019,
+      "stage": "OSN-K",
+      "number": "Nomor 1",
+      "url": "https://mathcyber1997.com/soal-dan-pembahasan-osn-bidang-matematika-smp-kabupaten-kota-2019/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "imo-2005-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Barisan dengan residu berbeda",
+    "prompt": "Misalkan $(a_n)$ barisan bilangan bulat yang mempunyai tak berhingga banyak suku positif dan tak berhingga banyak suku negatif. Untuk setiap $n\\ge1$, residu dari $a_1,\\ldots,a_n$ modulo $n$ semuanya berbeda. Buktikan bahwa setiap bilangan bulat muncul tepat sekali dalam barisan itu.",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2005 — Hari 1, Nomor 2",
+      "competition": "IMO",
+      "year": 2005,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/problems/2005/eng.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "imo-2005-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketaksamaan tiga variabel",
+    "prompt": "Buktikan bahwa untuk $x,y,z>0$ dan $xyz\\ge1$, berlaku $$\\frac{x^5-x^2}{x^5+y^2+z^2}+\\frac{y^5-y^2}{x^2+y^5+z^2}+\\frac{z^5-z^2}{x^2+y^2+z^5}\\ge0.$$",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2005 — Hari 1, Nomor 3",
+      "competition": "IMO",
+      "year": 2005,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/problems/2005/eng.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "imo-2005-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Koprimalitas pada barisan",
+    "prompt": "Tentukan semua bilangan bulat positif yang relatif prima terhadap setiap suku barisan $a_n=2^n+3^n+6^n-1$, $n\\ge1$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2005 — Hari 2, Nomor 4",
+      "competition": "IMO",
+      "year": 2005,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/problems/2005/eng.pdf",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "lmnas-ugm-sma-2018-pg01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Perpangkatan dan kebalikan",
+    "prompt": "Bilangan real negatif $x$ memenuhi $x^2+\\frac{1}{x^2}=47$. Tentukan $x^3+\\frac{1}{x^3}$. Pilihan: A. $-332$; B. $-252$; C. $-7$; D. $7$; E. $322$.",
+    "source": {
+      "kind": "competition",
+      "label": "LMNas UGM Penyisihan 2018 — Pilihan Ganda 1",
+      "competition": "LMNas UGM",
+      "year": 2018,
+      "stage": "LMNas UGM Penyisihan",
+      "number": "Pilihan Ganda 1",
+      "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "lmnas-ugm-sma-2018-pg02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Sistem persamaan eksponensial",
+    "prompt": "Misalkan $a,b\\in\\mathbb Z$ memenuhi $3^a=81^{b+2}$ dan $125^b=5^{a-3}$. Tentukan $ab$. Pilihan: A. 10; B. 29; C. 60; D. 64; E. 2018.",
+    "source": {
+      "kind": "competition",
+      "label": "LMNas UGM Penyisihan 2018 — Pilihan Ganda 2",
+      "competition": "LMNas UGM",
+      "year": 2018,
+      "stage": "LMNas UGM Penyisihan",
+      "number": "Pilihan Ganda 2",
+      "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "lmnas-ugm-sma-2018-pg03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Susunan tempat duduk",
+    "prompt": "Delapan kursi berjajar ditempati oleh tiga siswi dan lima siswa, termasuk Budi. Berapa susunan tempat duduk yang membuat Budi duduk tepat di antara dua siswi? Pilihan: A. 720; B. 1440; C. 2160; D. 3600; E. 4320.",
+    "source": {
+      "kind": "competition",
+      "label": "LMNas UGM Penyisihan 2018 — Pilihan Ganda 3",
+      "competition": "LMNas UGM",
+      "year": 2018,
+      "stage": "LMNas UGM Penyisihan",
+      "number": "Pilihan Ganda 3",
+      "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "lmnas-ugm-sma-2018-pg05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Tiga digit terakhir jumlah faktorial",
+    "prompt": "Jika $N=\\sum_{k=1}^{2018}(k!)^3$ dan tiga digit terakhir $N$ adalah $a,b,c$, hitung $a+b+c$. Pilihan: A. 9; B. 10; C. 11; D. 12; E. 13.",
+    "source": {
+      "kind": "competition",
+      "label": "LMNas UGM Penyisihan 2018 — Pilihan Ganda 5",
+      "competition": "LMNas UGM",
+      "year": 2018,
+      "stage": "LMNas UGM Penyisihan",
+      "number": "Pilihan Ganda 5",
+      "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2006-w-struktur-aljabar-i1",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Subgrup berorde empat",
+    "prompt": "Misalkan $G=\\{1,-1\\}$ merupakan grup terhadap perkalian. Tentukan banyak subgrup berorde 4 dari grup hasil kali langsung $G^3$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2006 — Struktur Aljabar, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2006,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2006-w-struktur-aljabar-i5",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Ideal maksimal",
+    "prompt": "Berikan sebuah contoh ideal maksimal di gelanggang $\\mathbb Z_{18}$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2006 — Struktur Aljabar, Isian 5",
+      "competition": "ON-MIPA",
+      "year": 2006,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 5",
+      "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2006-w-struktur-aljabar-i7",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Faktorisasi polinomial",
+    "prompt": "Faktorkan $x^4+4$ menjadi faktor-faktor tak tereduksi dalam $\\mathbb Z_5[x]$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2006 — Struktur Aljabar, Isian 7",
+      "competition": "ON-MIPA",
+      "year": 2006,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 7",
+      "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2007-w-struktur-aljabar-i1",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Automorfisme grup",
+    "prompt": "Tentukan banyak automorfisme dari grup aditif $\\mathbb Z_2\\times\\mathbb Z_2$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2007 — Struktur Aljabar, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2007,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2007-w-struktur-aljabar-i2",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Pusat grup linear umum",
+    "prompt": "Misalkan $F$ merupakan lapangan berhingga dengan $k$ elemen dan $G=GL_n(F)$. Tentukan kardinalitas pusat $Z(G)$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2007 — Struktur Aljabar, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2007,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2007-w-struktur-aljabar-i5",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Daerah integral idempoten",
+    "prompt": "Misalkan $D$ merupakan daerah integral dengan $x^2=x$ untuk setiap $x\\in D$. Berapakah kardinalitas $D$?",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2007 — Struktur Aljabar, Isian 5",
+      "competition": "ON-MIPA",
+      "year": 2007,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 5",
+      "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2008-w-aljabar-linear-i3",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Trace komutator",
+    "prompt": "Untuk $A,B\\in M_n(F)$ dengan $F$ suatu lapangan, tentukan $\\operatorname{tr}(AB-BA)$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2008 — Aljabar Linear, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2008,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Aljabar Linear, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2008-aljabar-linear/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2008-w-aljabar-linear-i5",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Dimensi ruang vektor",
+    "prompt": "Misalkan $U,V,W$ merupakan ruang vektor atas $F$, dengan $\\dim U=2008$ dan $\\dim V=8002$. Pemetaan linear $T:V\\to W$ injektif, $S:W\\to U$ surjektif, serta $\\operatorname{Im}T=\\ker S$. Tentukan $\\dim W$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2008 — Aljabar Linear, Isian 5",
+      "competition": "ON-MIPA",
+      "year": 2008,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Aljabar Linear, Isian 5",
+      "url": "https://onmipa.filzabuana.id/onmipa/2008-aljabar-linear/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2009-w-aljabar-linear-i1",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Bentuk eselon tereduksi",
+    "prompt": "Tentukan bentuk eselon baris tereduksi matriks $$\\begin{pmatrix}1&2&3&4\\\\5&6&7&8\\\\9&10&11&12\\end{pmatrix}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2009 — Aljabar Linear, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2009,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Aljabar Linear, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2009-aljabar-linear/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2009-w-aljabar-linear-i2",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Dimensi ruang solusi",
+    "prompt": "Tentukan dimensi subruang fungsi kontinu real $\\{f\\mid f''+f=0\\}$, dengan turunan kedua terdefinisi pada $\\mathbb R$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2009 — Aljabar Linear, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2009,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Aljabar Linear, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2009-aljabar-linear/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2010-w-aljabar-linear-i2",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Dimensi irisan subruang",
+    "prompt": "Misalkan $K,L$ merupakan subruang dari $\\mathbb R^{10}$ dengan $\\dim K+\\dim L=12$. Tentukan nilai minimum $\\dim(K\\cap L)$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2010 — Aljabar Linear, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2010,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Aljabar Linear, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2010-aljabar-linear/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2010-w-aljabar-linear-i3",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Koordinat terhadap basis",
+    "prompt": "Diketahui basis terurut $S=((1,1,1),(1,1,0),(1,0,0))$ dari $\\mathbb R^3$. Tentukan koordinat $u=(1,2,1)$ terhadap $S$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2010 — Aljabar Linear, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2010,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Aljabar Linear, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2010-aljabar-linear/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2011-w-analisis-real-i7",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Fungsi kontinu bernilai rasional",
+    "prompt": "Misalkan $f:[0,1]\\to\\mathbb R$ kontinu, $f(x)\\in\\mathbb Q$ untuk setiap $x\\in[0,1]$, dan $f(0)=0$. Tentukan $f\\left(\\frac{\\sqrt2}{4}\\right)$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2011 — Analisis Real, Isian 7",
+      "competition": "ON-MIPA",
+      "year": 2011,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Analisis Real, Isian 7",
+      "url": "https://onmipa.filzabuana.id/onmipa/2011-analisis-real/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2012-w-analisis-real-i1",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Supremum dan infimum fungsi",
+    "prompt": "Berikan contoh $D\\subseteq\\mathbb R$ serta fungsi $f,g:D\\to\\mathbb R$ dengan $f(x)\\le g(x)$ untuk setiap $x\\in D$, tetapi $\\sup_{x\\in D}f(x)>\\inf_{x\\in D}g(x)$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2012 — Analisis Real, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2012,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Analisis Real, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2012-analisis-real/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2012-w-analisis-real-i3",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Limit selisih terpusat",
+    "prompt": "Misalkan $f:(a,b)\\to\\mathbb R$ mempunyai turunan semua orde di $c\\in(a,b)$. Tentukan $$\\lim_{h\\to0}\\frac{f(c+h)-2f(c)+f(c-h)}{h^2}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2012 — Analisis Real, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2012,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Analisis Real, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2012-analisis-real/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2013-w-struktur-aljabar-i1",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Subgrup berorde prima",
+    "prompt": "Misalkan $G$ merupakan grup berorde 2013. Tentukan banyak subgrup $H$ dari $G$ dengan $|H|=13$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2013 — Struktur Aljabar, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2013,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2013-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2013-w-struktur-aljabar-i2",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Elemen berorde dua",
+    "prompt": "Misalkan $D_8=\\langle x,y\\mid x^2=y^4=e,\\ xy=y^{-1}x\\rangle$ merupakan grup dihedral berorde 8. Berapa banyak elemen yang berorde 2?",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2013 — Struktur Aljabar, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2013,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2013-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2014-w-struktur-aljabar-i2",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Orde maksimum subgrup sejati",
+    "prompt": "Tentukan orde terbesar di antara seluruh subgrup sejati dari grup aditif $\\mathbb Z_{2014}$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2014 — Struktur Aljabar, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2014,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2014-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2015-w-struktur-aljabar-i1",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Citra homomorfisme",
+    "prompt": "Misalkan $G,H,K$ merupakan grup berhingga, $\\varphi:G\\to H$ dan $\\psi:H\\to K$ homomorfisme dengan $\\operatorname{Im}\\varphi=\\ker\\psi$. Jika $\\psi$ surjektif dan $|H|=|K|=n$, tentukan $|\\operatorname{Im}\\varphi|$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2015 — Struktur Aljabar, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2015,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2015-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2015-w-struktur-aljabar-i2",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Polinomial tak tereduksi",
+    "prompt": "Tentukan banyak polinomial tak tereduksi berderajat 3 dalam $\\mathbb Z_2[x]$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2015 — Struktur Aljabar, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2015,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2015-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2016-w-struktur-aljabar-i1",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Subgrup siklis hasil kali langsung",
+    "prompt": "Tentukan orde subgrup siklis $\\langle(3,2)\\rangle$ dari $\\mathbb Z_{12}\\times\\mathbb Z_4$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2016 — Struktur Aljabar, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2016,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2016-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2016-w-struktur-aljabar-i2",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Kernel operator diferensial",
+    "prompt": "Pada grup aditif $\\mathbb R[x,y]$, didefinisikan $\\varphi(f)=\\frac{\\partial^2 f}{\\partial x\\,\\partial y}$. Tentukan $\\ker\\varphi$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2016 — Struktur Aljabar, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2016,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2016-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2017-w-struktur-aljabar-i2",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Elemen berorde dua pada grup simetri",
+    "prompt": "Tentukan banyak elemen berorde 2 dari grup simetri $S_5$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2017 — Struktur Aljabar, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2017,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2017-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2017-w-struktur-aljabar-i3",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Subgrup hasil kali langsung",
+    "prompt": "Tentukan banyak subgrup berorde 4 dari $\\mathbb Z_2\\times\\mathbb Z_4$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2017 — Struktur Aljabar, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2017,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2017-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2018-w-struktur-aljabar-i1",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Subgrup invariant terhadap pertukaran",
+    "prompt": "Tentukan banyak subgrup $H$ dari $\\mathbb Z_2\\times\\mathbb Z_2$ yang memenuhi $(b,a)\\in H$ untuk setiap $(a,b)\\in H$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2018 — Struktur Aljabar, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
+  },
+  {
+    "id": "onmipa-2018-w-struktur-aljabar-i3",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Pembagi nol gelanggang kuosien",
+    "prompt": "Misalkan $I=\\langle x^2+x\\rangle$ di $\\mathbb Z_2[x]$. Tentukan banyak pembagi nol tak nol dalam gelanggang $\\mathbb Z_2[x]/I$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2018 — Struktur Aljabar, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2018,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Struktur Aljabar, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/",
+      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
