@@ -4766,6 +4766,528 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
       "note": "Independent English mathematical formulation based on the official paper."
     }
+  },
+  {
+    "id": "iymc-2019-qr-a",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Maximum of a cubic",
+    "prompt": "Determine $\\max_{x\\ge0}(x+x^2-x^3)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2019,
+      "stage": "Qualification Round",
+      "number": "Problem A",
+      "label": "IYMC 2019 — Qualification Round, Problem A",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2019.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2019-qr-b",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Divisibility of a cubic expression",
+    "prompt": "For $n\\in\\mathbb Z_{>0}$, establish $6\\mid(n^3+3n^2+2n)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2019,
+      "stage": "Qualification Round",
+      "number": "Problem B",
+      "label": "IYMC 2019 — Qualification Round, Problem B",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2019.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2019-qr-d",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "A symmetric linear system",
+    "prompt": "Determine $\\alpha$ for real triples $(\\alpha,\\beta,\\gamma)$ satisfying $$\\begin{aligned}\\alpha+\\beta+\\gamma&=1,\\\\2\\beta+\\gamma&=1,\\\\\\beta+2\\gamma&=1.\\end{aligned}$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2019,
+      "stage": "Qualification Round",
+      "number": "Problem D",
+      "label": "IYMC 2019 — Qualification Round, Problem D",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2019.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2020-qr-a",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Zeros of an exponential product",
+    "prompt": "Solve $(2^x-1)(x^2+2x-3)=0$ over $\\mathbb R$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2020,
+      "stage": "Qualification Round",
+      "number": "Problem A",
+      "label": "IYMC 2020 — Qualification Round, Problem A",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2020.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2020-qr-b",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Divisibility by nine",
+    "prompt": "Establish $9\\mid(3\\cdot4^n+51)$ for every $n\\in\\mathbb Z_{>0}$, and deduce divisibility by $3$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2020,
+      "stage": "Qualification Round",
+      "number": "Problem B",
+      "label": "IYMC 2020 — Qualification Round, Problem B",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2020.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2020-qr-c",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Exact evaluation of nested expressions",
+    "prompt": "Evaluate the expression exactly: $$\\sqrt{\\sin\\left(\\frac{\\pi+\\log_2\\sqrt{2^\\pi\\cdot2^\\pi}}{2^5-2^4-2^3}\\right)\\sqrt[3]{\\frac{2^{4-1}}{2^{3/2}}}+\\log_2\\left(\\log_3(9^{15})+\\pi^{1+(-1)^{17}}+1\\right)+\\frac{(-1)^5+(-1)^{27}}{(-1)^{766}}}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2020,
+      "stage": "Qualification Round",
+      "number": "Problem C",
+      "label": "IYMC 2020 — Qualification Round, Problem C",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2020.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2020-qr-d",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "A trigonometric inequality",
+    "prompt": "Establish $1-\\sin^2 x\\le|\\cos x|$ on $\\mathbb R$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2020,
+      "stage": "Qualification Round",
+      "number": "Problem D",
+      "label": "IYMC 2020 — Qualification Round, Problem D",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2020.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2021-qr-a",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Two sequence patterns",
+    "prompt": "Give a natural continuation and a general term for each sequence: $$\\begin{aligned}(a_n)&:2,5,9,14,20,27,\\ldots,\\\\(b_n)&:1,3,12,60,360,2520,\\ldots.\\end{aligned}$$ In particular, give the seventh term of each.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2021,
+      "stage": "Qualification Round",
+      "number": "Problem A",
+      "label": "IYMC 2021 — Qualification Round, Problem A",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2021-qr-b",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Solving a nested cubic",
+    "prompt": "Determine the real solution set of $123=x(2x(3x-3)-2)+100+20+3$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2021,
+      "stage": "Qualification Round",
+      "number": "Problem B",
+      "label": "IYMC 2021 — Qualification Round, Problem B",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2021-qr-c",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "A sum and a product",
+    "prompt": "Compute, by exact algebra rather than numerical approximation, $$\\left(\\frac{\\log_{10}(1000^{100})}{100}+\\sum_{n=1}^{100}\\frac{\\sin(\\pi n)+1}{(-1)^n}\\right)\\sqrt{\\prod_{m=1}^{1000}\\frac{1}{\\cos^2(\\pi m)}}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2021,
+      "stage": "Qualification Round",
+      "number": "Problem C",
+      "label": "IYMC 2021 — Qualification Round, Problem C",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2021-qr-d",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "An exponential bound",
+    "prompt": "Establish $(n+2)\\sin n<2^{n+1}$ whenever $n$ is a positive integer.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2021,
+      "stage": "Qualification Round",
+      "number": "Problem D",
+      "label": "IYMC 2021 — Qualification Round, Problem D",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2021.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2022-qr-a",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Zeros of a logarithmic product",
+    "prompt": "Solve $(\\log(3^x)-2\\log 3)(x^2-1)=0$ in real numbers.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2022,
+      "stage": "Qualification Round",
+      "number": "Problem A",
+      "label": "IYMC 2022 — Qualification Round, Problem A",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2022-qr-b",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "An infinite geometric sum",
+    "prompt": "Evaluate $$1+\\sum_{k=1}^{\\infty}\\frac{3}{\\pi^k}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2022,
+      "stage": "Qualification Round",
+      "number": "Problem B",
+      "label": "IYMC 2022 — Qualification Round, Problem B",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2022-qr-c",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Exact logarithmic evaluation",
+    "prompt": "Simplify the following to a numerical value using exact identities: $$\\log\\left[\\log(3)\\log(2)\\left(\\frac{\\sqrt3-2\\sin(\\pi/3)}{\\pi^3+1}+1\\right)-\\log(2)\\log(3)+(-1)^{100}\\right].$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2022,
+      "stage": "Qualification Round",
+      "number": "Problem C",
+      "label": "IYMC 2022 — Qualification Round, Problem C",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2022-qr-d",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Divisor sum of a prime square",
+    "prompt": "For each prime $p$, establish $\\sum_{d\\mid p^2,\\ d>0}d<2p^2$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2022,
+      "stage": "Qualification Round",
+      "number": "Problem D",
+      "label": "IYMC 2022 — Qualification Round, Problem D",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2022-qr-e",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 2,
+    "title": "Intersection of equilateral triangles",
+    "prompt": "Take two congruent upright equilateral triangles of side length $a>0$ on the same horizontal baseline. Translate one horizontally by $a/2$ relative to the other. Compute the area common to both triangles.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2022,
+      "stage": "Qualification Round",
+      "number": "Problem E",
+      "label": "IYMC 2022 — Qualification Round, Problem E",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2022.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2023-qr-b",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Alternating powers modulo three",
+    "prompt": "Establish the congruence $2^n\\equiv(-1)^n\\pmod3$ for every positive integer $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2023,
+      "stage": "Qualification Round",
+      "number": "Problem B",
+      "label": "IYMC 2023 — Qualification Round, Problem B",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2023-qr-c",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "A finite sum inside a logarithm",
+    "prompt": "Calculate exactly $$\\log_3\\left(\\frac{\\sin(2\\pi)}{\\tan(\\pi/3)}+\\sum_{n=0}^{10}\\left(\\frac{1+\\sqrt{1+\\sqrt1}}{1+(1^{-1}+1^{1-1})\\cos(\\pi/4)}-\\frac{2^4-2^3}{(1+\\sqrt1)^2}\\right)^n\\right).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2023,
+      "stage": "Qualification Round",
+      "number": "Problem C",
+      "label": "IYMC 2023 — Qualification Round, Problem C",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2023-qr-d",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "A recurrence for divisor sums",
+    "prompt": "Write $\\sigma(k)=\\sum_{d\\mid k,\\ d>0}d$ for $k\\ge1$. Establish $\\sigma(p^m)-p\\sigma(p^{m-1})=1$ whenever $p$ is prime and $m$ is a positive integer.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2023,
+      "stage": "Qualification Round",
+      "number": "Problem D",
+      "label": "IYMC 2023 — Qualification Round, Problem D",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2023-qr-e",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 2,
+    "title": "A triangular section",
+    "prompt": "In an equilateral triangle of side length $a$, a segment of length $b$ parallel to one side cuts off a smaller triangle at the opposite vertex. Express the area of that smaller triangle in terms of $a$ and $b$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2023,
+      "stage": "Qualification Round",
+      "number": "Problem E",
+      "label": "IYMC 2023 — Qualification Round, Problem E",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2023.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2024-qr-a",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Two sequence continuations",
+    "prompt": "Supply a natural seventh term and a general-term formula for each of the following lists: $$\\begin{aligned}(a_n)&:2,5,10,17,26,37,\\ldots,\\\\(b_n)&:1,2,8,48,384,3840,\\ldots.\\end{aligned}$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2024,
+      "stage": "Qualification Round",
+      "number": "Problem A",
+      "label": "IYMC 2024 — Qualification Round, Problem A",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2024-qr-b",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "A quartic equation",
+    "prompt": "Determine the set of real solutions of $x^4+x^2-x-1=1-x-x^2-x^4$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2024,
+      "stage": "Qualification Round",
+      "number": "Problem B",
+      "label": "IYMC 2024 — Qualification Round, Problem B",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2024-qr-c",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Evaluation of two factors",
+    "prompt": "Compute the exact value of $$\\left(\\sqrt2+(3^2)^{1/4}+\\sum_{m=1}^3\\left(\\frac1{m!}-\\sqrt m\\right)\\right)\\left(2^{\\log_2(8)}+\\frac1{2^3}-\\prod_{k=1}^8\\left(1+\\frac1k\\right)\\right).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2024,
+      "stage": "Qualification Round",
+      "number": "Problem C",
+      "label": "IYMC 2024 — Qualification Round, Problem C",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2024-qr-d",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Fifth powers modulo five",
+    "prompt": "Establish $n^5\\equiv n\\pmod5$ for all positive integers $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2024,
+      "stage": "Qualification Round",
+      "number": "Problem D",
+      "label": "IYMC 2024 — Qualification Round, Problem D",
+      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2024.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2025-qr-a",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Explicit formula for a recurrence",
+    "prompt": "Let $a_1=1$ and $a_{n+1}=a_n+n+1$ for $n\\ge1$. Express $a_n$ directly in terms of $n$, then evaluate $a_{100}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2025,
+      "stage": "Qualification Round",
+      "number": "Problem A",
+      "label": "IYMC 2025 — Qualification Round, Problem A",
+      "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2025-qr-b",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "An impossible radical equation",
+    "prompt": "Prove that the real solution set of $\\sqrt{3+x}+\\sqrt{7-x}=5$ is empty.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2025,
+      "stage": "Qualification Round",
+      "number": "Problem B",
+      "label": "IYMC 2025 — Qualification Round, Problem B",
+      "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2025-qr-c",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "A trigonometric sum minus a product",
+    "prompt": "Evaluate exactly $$\\sum_{k=1}^{3}\\frac{\\sin(\\frac{k\\pi}{12})+\\sin(\\frac{(6-k)\\pi}{12})}{\\cos(\\frac{k\\pi}{12})+\\cos(\\frac{(6-k)\\pi}{12})}-\\prod_{m=1}^{2}\\frac{\\tan(\\frac{\\pi}{4}+\\frac{m\\pi}{12})-\\tan(\\frac{\\pi}{4}-\\frac{m\\pi}{12})}{1+\\tan(\\frac{\\pi}{4}+\\frac{m\\pi}{12})\\tan(\\frac{\\pi}{4}-\\frac{m\\pi}{12})}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2025,
+      "stage": "Qualification Round",
+      "number": "Problem C",
+      "label": "IYMC 2025 — Qualification Round, Problem C",
+      "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2025-qr-d",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Composite fourth-power expression",
+    "prompt": "Determine the unique positive integer $n$ for which $n^4+4$ is not composite, and prove uniqueness.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2025,
+      "stage": "Qualification Round",
+      "number": "Problem D",
+      "label": "IYMC 2025 — Qualification Round, Problem D",
+      "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
+  },
+  {
+    "id": "iymc-2025-qr-e",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 2,
+    "title": "Diagonal of a rectangle",
+    "prompt": "A diagonal divides a rectangle of dimensions $a\\times b$ into two triangles. Determine the perimeter and area of each triangle.",
+    "source": {
+      "kind": "competition",
+      "competition": "IYMC",
+      "year": 2025,
+      "stage": "Qualification Round",
+      "number": "Problem E",
+      "label": "IYMC 2025 — Qualification Round, Problem E",
+      "url": "https://iymc.info/docs/problems/2025/QR/en/IYMC_Qualification_Round_2025.pdf",
+      "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
