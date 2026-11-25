@@ -938,7 +938,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -956,7 +956,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -974,7 +974,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -992,7 +992,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Hari 1, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -1910,7 +1910,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 2",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal dan unsur gambar (jika ada) diperiksa terhadap salinan PDF publik, halaman 1, termasuk pemeriksaan visual. Redaksi mandiri."
     }
   },
   {
@@ -2072,7 +2072,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 4",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal dan unsur gambar (jika ada) diperiksa terhadap salinan PDF publik, halaman 1, termasuk pemeriksaan visual. Redaksi mandiri."
     }
   },
   {
@@ -2279,7 +2279,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Subgrup berorde empat",
-    "prompt": "Misalkan $G=\\{1,-1\\}$ merupakan grup terhadap perkalian. Tentukan banyak subgrup berorde 4 dari grup hasil kali langsung $G^3$.",
+    "prompt": "Misalkan $G=\\{1,-1\\}$ merupakan grup terhadap perkalian. Pada $G^3=\\{(a,b,c)\\mid a,b,c\\in G\\}$, operasi didefinisikan oleh $$(a_1,b_1,c_1)*(a_2,b_2,c_2)=(a_1a_2,b_1b_2,c_1c_2).$$ Tentukan banyak subgrup $G^3$ yang berorde $4$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2006 — Struktur Aljabar, Isian 1",
@@ -2288,7 +2288,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2306,7 +2306,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 5",
       "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2324,7 +2324,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 7",
       "url": "https://onmipa.filzabuana.id/onmipa/2006-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2342,7 +2342,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2351,7 +2351,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Pusat grup linear umum",
-    "prompt": "Misalkan $F$ merupakan lapangan berhingga dengan $k$ elemen dan $G=GL_n(F)$. Tentukan kardinalitas pusat $Z(G)$.",
+    "prompt": "Misalkan $F$ merupakan lapangan berhingga dengan $k$ elemen dan $G=GL_n(F)$. Jika pusat grup $G$ didefinisikan sebagai $$Z(G)=\\{g\\in G\\mid xg=gx\\text{ untuk setiap }x\\in G\\},$$ tentukan banyak elemen $Z(G)$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2007 — Struktur Aljabar, Isian 2",
@@ -2360,7 +2360,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2378,7 +2378,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 5",
       "url": "https://onmipa.filzabuana.id/onmipa/2007-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2387,7 +2387,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Trace komutator",
-    "prompt": "Untuk $A,B\\in M_n(F)$ dengan $F$ suatu lapangan, tentukan $\\operatorname{tr}(AB-BA)$.",
+    "prompt": "Untuk suatu lapangan $F$ dan matriks $X=[x_{ij}]\\in M_n(F)$, didefinisikan $$\\operatorname{tr}(X)=\\sum_{i=1}^{n}x_{ii}.$$ Jika $A,B\\in M_n(F)$, tentukan $\\operatorname{tr}(AB-BA)$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2008 — Aljabar Linear, Isian 3",
@@ -2396,7 +2396,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2008-aljabar-linear/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2414,7 +2414,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 5",
       "url": "https://onmipa.filzabuana.id/onmipa/2008-aljabar-linear/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2432,7 +2432,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2009-aljabar-linear/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2441,7 +2441,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Dimensi ruang solusi",
-    "prompt": "Tentukan dimensi subruang fungsi kontinu real $\\{f\\mid f''+f=0\\}$, dengan turunan kedua terdefinisi pada $\\mathbb R$.",
+    "prompt": "Misalkan $C(\\mathbb R)$ merupakan ruang vektor fungsi kontinu dari $\\mathbb R$ ke $\\mathbb R$. Tentukan dimensi subruang $\\{f\\in C(\\mathbb R)\\mid f''+f=0\\}$, dengan $f''$ terdefinisi pada $\\mathbb R$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2009 — Aljabar Linear, Isian 2",
@@ -2450,7 +2450,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2009-aljabar-linear/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2468,7 +2468,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2010-aljabar-linear/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2486,7 +2486,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Aljabar Linear, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2010-aljabar-linear/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2504,7 +2504,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Analisis Real, Isian 7",
       "url": "https://onmipa.filzabuana.id/onmipa/2011-analisis-real/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2522,7 +2522,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Analisis Real, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2012-analisis-real/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2540,7 +2540,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Analisis Real, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2012-analisis-real/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2558,7 +2558,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2013-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2567,7 +2567,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Elemen berorde dua",
-    "prompt": "Misalkan $D_8=\\langle x,y\\mid x^2=y^4=e,\\ xy=y^{-1}x\\rangle$ merupakan grup dihedral berorde 8. Berapa banyak elemen yang berorde 2?",
+    "prompt": "Diperhatikan grup dihedral berorde $8$, yaitu $$D_8=\\{e,y,y^2,y^3,x,xy,xy^2,xy^3\\},$$ dengan $x^2=y^4=e$ dan $xy=y^{-1}x$. Tentukan banyak elemen $D_8$ yang berorde $2$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2013 — Struktur Aljabar, Isian 2",
@@ -2576,7 +2576,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2013-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2594,7 +2594,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2014-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2612,7 +2612,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2015-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2630,7 +2630,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2015-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2648,7 +2648,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2016-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2657,7 +2657,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Kernel operator diferensial",
-    "prompt": "Pada grup aditif $\\mathbb R[x,y]$, didefinisikan $\\varphi(f)=\\frac{\\partial^2 f}{\\partial x\\,\\partial y}$. Tentukan $\\ker\\varphi$.",
+    "prompt": "Misalkan $\\mathbb R[x,y]$ merupakan grup aditif polinomial real dalam dua variabel $x$ dan $y$. Didefinisikan homomorfisme $\\varphi:\\mathbb R[x,y]\\to\\mathbb R[x,y]$ oleh $$\\varphi(f)=\\frac{\\partial^2 f}{\\partial x\\,\\partial y}.$$ Tentukan kernel $\\varphi$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2016 — Struktur Aljabar, Isian 2",
@@ -2666,7 +2666,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2016-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2675,7 +2675,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Elemen berorde dua pada grup simetri",
-    "prompt": "Tentukan banyak elemen berorde 2 dari grup simetri $S_5$.",
+    "prompt": "Misalkan $S_5$ merupakan grup permutasi pada himpunan $\\{1,2,3,4,5\\}$. Tentukan banyak elemen $S_5$ yang berorde $2$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2017 — Struktur Aljabar, Isian 2",
@@ -2684,7 +2684,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 2",
       "url": "https://onmipa.filzabuana.id/onmipa/2017-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2702,7 +2702,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2017-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2711,7 +2711,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Subgrup invariant terhadap pertukaran",
-    "prompt": "Tentukan banyak subgrup $H$ dari $\\mathbb Z_2\\times\\mathbb Z_2$ yang memenuhi $(b,a)\\in H$ untuk setiap $(a,b)\\in H$.",
+    "prompt": "Subgrup $H$ dari $\\mathbb Z_2\\times\\mathbb Z_2$ disebut swapped jika untuk setiap $(a,b)\\in H$ berlaku $(b,a)\\in H$. Tentukan banyak subgrup bertipe swapped dari $\\mathbb Z_2\\times\\mathbb Z_2$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2018 — Struktur Aljabar, Isian 1",
@@ -2720,7 +2720,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 1",
       "url": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
@@ -2729,7 +2729,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 3,
     "title": "Pembagi nol gelanggang kuosien",
-    "prompt": "Misalkan $I=\\langle x^2+x\\rangle$ di $\\mathbb Z_2[x]$. Tentukan banyak pembagi nol tak nol dalam gelanggang $\\mathbb Z_2[x]/I$.",
+    "prompt": "Misalkan $\\mathbb Z_2[x]$ merupakan gelanggang polinomial berkoefisien di $\\mathbb Z_2$ dan $I=\\langle x^2+x\\rangle$ merupakan idealnya. Tentukan banyak pembagi nol tak nol dalam gelanggang $R=\\mathbb Z_2[x]/I$.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Wilayah 2018 — Struktur Aljabar, Isian 3",
@@ -2738,7 +2738,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Wilayah",
       "number": "Struktur Aljabar, Isian 3",
       "url": "https://onmipa.filzabuana.id/onmipa/2018-struktur-aljabar/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor soal, hipotesis dan notasi diperiksa terhadap transkripsi publik pihak ketiga Filza Buana; bukan verifikasi naskah resmi. Redaksi mandiri."
     }
   },
   {
