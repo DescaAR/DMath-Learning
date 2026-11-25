@@ -17787,6 +17787,550 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Isian, Nomor 5",
       "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 9. Apparent source errors retained."
     }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-02",
+    "level": "Kuliah",
+    "topic": "Teori Graf",
+    "difficulty": 3,
+    "title": "Teori Graf",
+    "prompt": "Tentukan banyaknya graf terhubung dari graf berlabel yang memiliki 4 titik.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 2",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 2",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-03",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Diketahui $\\det(A)\\ne 0$ dan $\\det(B)\\ne 0$, serta\n\n$$\\operatorname{tr}(AB^{-1})=\\det(AB^{-1})=1.$$\n\nTentukan nilai\n\n$$\\det\\left(I_2+A^{-1}B\\right).$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 3",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 3",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-04",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Hitung integral tak wajar berikut:\n\n$$\\int_1^\\infty\\left(\\frac{\\ln x}{x}\\right)^{2026}dx.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 4",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 4",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-05",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Diketahui operasi biner $\\ast$ memenuhi\n\n$$(x\\cdot y)\\ast y=x\\cdot(y\\cdot y),\\quad (x\\ast1)\\ast x=x\\ast1,\\quad 1\\ast1=1.$$\n\nTentukan nilai\n\n$$2008\\ast2026.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 5",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 5",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-06",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Tentukan bilangan $a$ sehingga\n\n$$\\oint_{|z-i|=1}\\frac{dz}{z^2-z+a}=\\pi.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 6",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 6",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-07",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Diberikan 10 pertanyaan dengan opsi benar/salah. Jika seseorang menjawab tepat 5 benar dan 5 salah, maka dapat dipastikan ia memperoleh setidaknya 4 poin. Berapa banyak kemungkinan kunci jawaban yang ada?",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 7",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 7",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-09",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Diketahui\n\n$$\\varepsilon=\\cos\\left(\\frac{2\\pi}{3}\\right)+i\\sin\\left(\\frac{2\\pi}{3}\\right).$$\n\nTentukan nilai\n\n$$(1+\\varepsilon)(1+\\varepsilon^2)\\cdots(1+\\varepsilon^{2026}).$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 9",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 9",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-penyisihan-10",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Sebuah matriks $A$ berukuran $2026\\times2026$ dengan setiap entri didefinisikan oleh\n\n$$A_{ij}=\\frac{1}{\\min(i,j)},\\quad 1\\le i,j\\le2026.$$\n\nTentukan nilai\n\n$$\\det(A).$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Penyisihan, Nomor 10",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Penyisihan",
+      "number": "Nomor 10",
+      "note": "Cuplikan pengguna: Cuplikan_Penyisihan_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-semifinal-01",
+    "level": "Kuliah",
+    "topic": "Teori Graf",
+    "difficulty": 3,
+    "title": "Teori Graf",
+    "prompt": "Banyaknya spanning tree dari graf lengkap dengan 9 titik adalah $S$. Tentukan nilai $S\\bmod 63$.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Semifinal, Nomor 1",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Semifinal",
+      "number": "Nomor 1",
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-semifinal-02",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Tentukan banyaknya subhimpunan $S\\subseteq\\{1,2,3,\\ldots,10\\}$ yang memenuhi syarat: terdapat $a<b<c$ sehingga\n\n$$a\\in S,\\quad b\\notin S,\\quad c\\in S.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Semifinal, Nomor 2",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Semifinal",
+      "number": "Nomor 2",
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-semifinal-03",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Jika bilangan kompleks $z$ memenuhi\n\n$$11z^{10}+10iz^9+10iz-11=0,$$\n\ntentukan modulus $|z|$.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Semifinal, Nomor 3",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Semifinal",
+      "number": "Nomor 3",
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-semifinal-04",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Tentukan nilai\n\n$$\\frac{1}{2\\pi}\\int_0^{2\\pi}\\frac{1}{|3e^{i\\theta}-4|}d\\theta.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Semifinal, Nomor 4",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Semifinal",
+      "number": "Nomor 4",
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-semifinal-05",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Tentukan konstanta $c_0$ sehingga deret\n\n$$\\sum_{n=0}^\\infty\\frac{n!}{(cn)^n}$$\n\nkonvergen untuk $c>c_0$ dan divergen untuk $0<c<c_0$.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Semifinal, Nomor 5",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Semifinal",
+      "number": "Nomor 5",
+      "note": "Cuplikan pengguna: Cuplikan_Semifinal_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-01",
+    "level": "Kuliah",
+    "topic": "Teori Graf",
+    "difficulty": 3,
+    "title": "Teori Graf",
+    "prompt": "Diberikan sebuah unlabeled tree dengan 7 titik sudut (vertices). Tentukan banyaknya struktur tree yang dapat dibentuk yang saling non-isomorfik.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 1",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 1",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan hasil dari nilai integral berikut:\n\n$$\\int_{-\\infty}^\\infty\\frac{\\sin^2 x}{x^2}dx$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 2",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 2",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-03",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Diberikan ruang vektor polinomial berderajat 4 dengan hasil kali dalam $\\langle f,g\\rangle=\\int_{-1}^1 f(x)g(x)\\,dx$. Jika sebuah polinomial $f(x)=a+bx-x^3$ bersifat ortogonal terhadap setiap vektor yang derajatnya kurang dari 3, tentukan nilai dari $a+b$.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 3",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 3",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-04",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Banyaknya permutasi $(a_1,a_2,\\ldots,a_8)$ dari himpunan bilangan $\\{1,2,\\ldots,8\\}$ yang memenuhi persamaan $a_1-a_2+a_3-a_4+a_5-a_6+a_7-a_8=0$ adalah...",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 4",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 4",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-05",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Ada berapa banyak cara mewarnai titik-titik sudut sebuah kubus dengan warna merah atau biru sedemikian rupa sehingga warna setiap titik sudut merupakan warna mayoritas dari tiga titik sudut yang bertetangga dengannya?",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 5",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 5",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-06",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Diberikan sistem persamaan berikut:\n\n(a) $x+y+kz=2$\n\n(b) $x+ky+z=1$\n\n(c) $kx+y+z=1$\n\nTentukan semua nilai $k$ agar sistem tersebut tidak memiliki solusi.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 6",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 6",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-07",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Diberikan grup siklik $G=\\mathbb{Z}_{20}$ dan grup simetri $S_3$.\n\n(a) Tentukan banyaknya homomorfisma tidak trivial $\\phi:\\mathbb{Z}_{20}\\to S_3$.\n\n(b) Tentukan banyaknya elemen dari grup automorfisma $\\operatorname{Aut}(\\mathbb{Z}_{20})$.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 7",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 7",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-08",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Tentukan banyaknya akar (nol) dari persamaan kompleks:\n\n$$15z^5+z^8-4z^4+z^3-2z+e^z+\\sin(z)+1=0$$\n\nyang terletak di dalam cakram unit $|z|<1$.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 8",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 8",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-final-09",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Diberikan matriks $A\\in M_{2\\times2}(\\mathbb{R})$ yang memenuhi $\\det(A)=2$ dan $\\operatorname{tr}(A)=2$. Jika $k$ adalah konstanta riil yang memenuhi persamaan:\n\n$$\\det(A^4+4I)+\\det(kA^2)+\\det(A-I)=\\det(A^2-2A)+\\det(A)+\\det(I)$$\n\nTentukan nilai $k$ yang mungkin.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Final, Nomor 9",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Final",
+      "number": "Nomor 9",
+      "note": "Cuplikan pengguna: Cuplikan_Final_MATICS_2026.pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-01",
+    "level": "Kuliah",
+    "topic": "Teori Graf",
+    "difficulty": 3,
+    "title": "Teori Graf",
+    "prompt": "Berapa banyaknya graf non-isomorfik yang memiliki 9 titik dan setiap titik terhubung dengan 6 titik lainnya?",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Nomor 1",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Nomor 1",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-02",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Misalkan $\\{x\\}$ adalah bagian pecahan dari $x$. Tentukan nilai dari:\n\n$$\\{\\ln(1+e)\\}+\\{\\ln(1+e^2)\\}+\\{\\ln(1+e^4)\\}+\\{\\ln(1+e^8)\\}+\\ldots$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Nomor 2",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Nomor 2",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-03",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Angka 1 sampai 10 akan diwarnai dengan 3 warna berbeda. Diberikan ketentuan bahwa untuk setiap pasangan bilangan $a$ dan $b$, jika $|a-b|$ adalah bilangan ganjil, maka $a$ dan $b$ harus memiliki warna yang berbeda. Berapa banyak pewarnaan yang mungkin dilakukan?",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Nomor 3",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Nomor 3",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-04",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Diberikan sebuah grid berukuran $2\\times2026$ yang akan diwarnai dengan 3 warna. Ketentuannya adalah tidak boleh ada dua kotak yang berbagi sisi memiliki warna yang sama. Berapa banyak kemungkinan pewarnaan yang dapat dibentuk?",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Nomor 4",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Nomor 4",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-05",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Diberikan sebuah grup $G$ yang didefinisikan oleh presentasi berikut:\n\n$$G=\\langle x,y\\mid x^2=y^3,\\ x=yxy^{-1},\\ y^{10}=e\\rangle$$\n\nJika diberikan elemen $z=x^3y^2$, tentukan invers dari $z$ (yaitu $z^{-1}$) dan nyatakan dalam bentuk $x^ay^b$, di mana $a$ dan $b$ adalah bilangan bulat non-negatif terkecil.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Nomor 5",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Nomor 5",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-presentasi-01",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Dalam kurun waktu 10 hari, terdapat total 15 pertandingan yang diselenggarakan. Jika setiap hari minimal terjadi 1 pertandingan, tunjukkan bahwa pasti ada periode beberapa hari berturut-turut di mana jumlah total pertandingannya tepat sebanyak 4 pertandingan.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Soal Presentasi, Nomor 1",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Soal Presentasi, Nomor 1",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-presentasi-02",
+    "level": "Kuliah",
+    "topic": "Analisis Riil",
+    "difficulty": 3,
+    "title": "Analisis Riil",
+    "prompt": "Misalkan $f:\\mathbb{R}\\to\\mathbb{R}$ adalah fungsi kontinu yang memenuhi persamaan $f(x)=f(x^2)$ untuk setiap $x\\in\\mathbb{R}$. Buktikan bahwa $f$ adalah fungsi konstan.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Soal Presentasi, Nomor 2",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Soal Presentasi, Nomor 2",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-presentasi-03",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Diberikan ruang vektor $V$ yang berisi matriks berordo $2\\times2$ dengan entri bilangan riil. Misalkan $W$ adalah subruang dari $V$ yang direntang (spanned) oleh matriks-matriks berbentuk $(AB-BA)^3$ untuk semua $A,B\\in V$. Tentukan dimensi dari subruang $W$.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Soal Presentasi, Nomor 3",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Soal Presentasi, Nomor 3",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-presentasi-04",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan $R$ adalah suatu ring komutatif dengan elemen identitas 1. Misalkan $a\\in R$ merupakan elemen unit dan $b\\in R$ merupakan elemen nilpoten. Buktikan bahwa polinomial:\n\n$$f(z)=a+bz$$\n\nmerupakan elemen unit dalam ring polinomial $R[z]$.",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Soal Presentasi, Nomor 4",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Soal Presentasi, Nomor 4",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
+  },
+  {
+    "id": "matics-unhas-2026-grand-final-presentasi-05",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Misalkan $a\\in\\mathbb{R}$ dengan $a\\ne0$. Jika diketahui persamaan polinomial $P(x)=x^{2026}+ax+1=0$ tidak mempunyai akar real, tunjukkan bahwa setiap akar kompleks $z$ dari persamaan tersebut memenuhi:\n\n$$|z|\\ge\\sqrt[2026]{\\frac{1}{2025}}$$",
+    "source": {
+      "kind": "competition",
+      "label": "MATICS UNHAS 2026 — Grand Final, Soal Presentasi, Nomor 5",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "stage": "Grand Final",
+      "number": "Soal Presentasi, Nomor 5",
+      "note": "Cuplikan pengguna: Cuplikan_Grandfinal_MATICS (1).pdf. Transkripsi dari teks PDF; belum dibandingkan visual maupun dengan naskah resmi."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;

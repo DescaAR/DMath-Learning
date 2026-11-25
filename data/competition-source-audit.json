@@ -17645,6 +17645,518 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "matics-unhas-2026-penyisihan-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-penyisihan-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Penyisihan_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-semifinal-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-semifinal-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-semifinal-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-semifinal-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-semifinal-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Semifinal_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-final-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Final_MATICS_2026.pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-presentasi-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Soal Presentasi, Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-presentasi-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Soal Presentasi, Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-presentasi-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Soal Presentasi, Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-presentasi-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Soal Presentasi, Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "matics-unhas-2026-grand-final-presentasi-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MATICS UNHAS",
+      "year": 2026,
+      "number": "Soal Presentasi, Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "localSource": "Cuplikan_Grandfinal_MATICS (1).pdf",
+        "method": "Readable text extracted from user's Drive PDF excerpt; formulas transcribed in LaTeX",
+        "finding": "No visual PDF or official competition original comparison; no browser render check. Ambiguous questions omitted.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {
