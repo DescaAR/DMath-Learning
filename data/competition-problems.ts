@@ -6782,6 +6782,330 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
       "note": "Independent English mathematical formulation based on official paper."
     }
+  },
+  {
+    "id": "osnk-sma-2024-dasar-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Kesamaan jumlah dan hasil kali",
+    "prompt": "Jika $a,b$ bilangan asli memenuhi $88+a+b=ab$, tentukan nilai $ab$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 3",
+      "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 3",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2024-dasar-04",
+    "level": "SMA",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Rasio jumlah deret aritmetika",
+    "prompt": "Untuk $a,b\\in\\mathbb Z_{>0}$ dengan $\\gcd(a,b)=1$ dan $\\frac ab=\\frac{\\sum_{j=1}^{104}j}{\\sum_{j=3}^{106}j}$, tentukan $a+b$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 4",
+      "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 4",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2024-dasar-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 2,
+    "title": "Bilangan empat digit dengan jumlah digit delapan",
+    "prompt": "Tentukan banyaknya bilangan bulat dari $1000$ sampai $9999$ yang jumlah digit desimalnya sama dengan $8$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 5",
+      "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 5",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2024-dasar-06",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Suku pertama barisan geometri",
+    "prompt": "Diberikan barisan geometri $(u_n)$ dengan $u_1>u_2$, $u_2=8$, dan $4(u_5+u_7)=17u_6$. Tentukan $u_1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 6",
+      "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 6",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2024-dasar-08",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Keterbagian jumlah bilangan dan kebalikan digit",
+    "prompt": "Tentukan kardinalitas himpunan $\\{10a+b\\mid a,b\\in\\{1,\\ldots,9\\},\\ 66\\mid(11a+11b)\\}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 8",
+      "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 8",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2024-dasar-09",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Kelipatan minimum dengan 28 pembagi",
+    "prompt": "Misalkan $k$ adalah bilangan bulat positif minimum dengan $2024\\mid k$ dan tepat $28$ pembagi positif. Tentukan $k\\bmod100$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2024,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 9",
+      "label": "OSN 2024 — OSN-K Kemampuan Dasar, Nomor 9",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2024-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2025-dasar-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 1,
+    "title": "Keterbagian faktorial",
+    "prompt": "Tentukan $\\min\\{n\\in\\mathbb Z_{>0}\\mid1430\\mid n!\\}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 2",
+      "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 2",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2025-dasar-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 2,
+    "title": "Pencacahan himpunan bagian",
+    "prompt": "Tentukan banyaknya $X\\subseteq\\{1,2,3,4,5,6,7\\}$ dengan $\\{1,2,3,4,5\\}\\subseteq X$ atau $\\{4,5,6\\}\\subseteq X$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 4",
+      "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 4",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2025-dasar-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 2,
+    "title": "Anggota wajib pada himpunan tanpa pasangan berjumlah tetap",
+    "prompt": "Misalkan $S\\subseteq\\{1,\\ldots,17\\}$, $|S|=9$, dan $a+b\\ne18$ untuk setiap dua anggota berbeda $a,b$ dari $S$. Tentukan bilangan yang selalu menjadi anggota $S$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 5",
+      "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 5",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2025-dasar-06",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Koefisien binomial kelipatan 81",
+    "prompt": "Tentukan nilai minimum $k\\in\\mathbb Z_{>0}$ sehingga terdapat $n\\in\\mathbb Z_{>0}$ dengan koefisien $x^2$ pada $(x+3)^n$ sama dengan $81k$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 6",
+      "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 6",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2025-dasar-09",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Nilai polinomial pada argumen eksponensial",
+    "prompt": "Suatu polinomial $P$ memenuhi $P(5^b+1)=5^{5b}+4$ untuk seluruh $b\\in\\mathbb R$. Tentukan $P(3)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 9",
+      "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 9",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sma-2025-dasar-10",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Banyak parameter persamaan tanpa akar real",
+    "prompt": "Hitung banyaknya $m\\in\\mathbb Z$ sehingga himpunan $\\{x\\in\\mathbb R\\mid x^2+mx+37=m\\}$ kosong.",
+    "source": {
+      "kind": "competition",
+      "competition": "OSN",
+      "year": 2025,
+      "stage": "OSN-K Kemampuan Dasar",
+      "number": "Nomor 10",
+      "label": "OSN 2025 — OSN-K Kemampuan Dasar, Nomor 10",
+      "url": "https://mathcyber1997.com/osn-k-matematika-sma-2025-dasar/",
+      "note": "Formulasi matematika mandiri berdasarkan dokumentasi pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "bmo-uk-2025-r1-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Pangkat prima sebagai jumlah rantai keterbagian",
+    "prompt": "For each prime $p$ and integer $n\\ge1$, decide whether $p^n$ belongs to $\\{a+b+c\\mid a,b,c\\in\\mathbb Z_{>0}\\text{ pairwise distinct},\\ a\\mid b,\\ b\\mid c\\}$, with proof.",
+    "source": {
+      "kind": "competition",
+      "competition": "BMO UK",
+      "year": 2025,
+      "stage": "Round 1",
+      "number": "Nomor 1",
+      "label": "BMO UK 2025 — Round 1, Nomor 1",
+      "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
+      "note": "Independent mathematical formulation based on official paper; not verbatim."
+    }
+  },
+  {
+    "id": "bmo-uk-2025-r1-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Sistem persamaan kuadrat siklik",
+    "prompt": "Determine the real solution set of $$x^2+2yz=4,\\quad y^2+2zx=4,\\quad z^2+2xy=1.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "BMO UK",
+      "year": 2025,
+      "stage": "Round 1",
+      "number": "Nomor 2",
+      "label": "BMO UK 2025 — Round 1, Nomor 2",
+      "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
+      "note": "Independent mathematical formulation based on official paper; not verbatim."
+    }
+  },
+  {
+    "id": "bmo-uk-2025-r1-05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Barisan rekursif dengan pencacahan suku satu",
+    "prompt": "Set $t_1=1$ and recursively define $$t_{n+1}=\\begin{cases}t_n/2&t_n\\text{ even},\\\\\\lfloor t_n/3+1/2\\rfloor&t_n>1\\text{ odd},\\\\2025|\\{i\\le n:t_i=1\\}|&t_n=1.\\end{cases}$$ Is $\\{t_n:n\\ge1\\}=\\mathbb Z_{>0}$?",
+    "source": {
+      "kind": "competition",
+      "competition": "BMO UK",
+      "year": 2025,
+      "stage": "Round 1",
+      "number": "Nomor 5",
+      "label": "BMO UK 2025 — Round 1, Nomor 5",
+      "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
+      "note": "Independent mathematical formulation based on official paper; not verbatim."
+    }
+  },
+  {
+    "id": "egmo-2026-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Submatriks dengan jumlah ganjil",
+    "prompt": "For each nonzero binary matrix $A$ of size $2026\\times2026$, let $m(A)$ be the greatest number of entries in a contiguous rectangular submatrix having odd entry sum. Determine $\\min_A m(A)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "EGMO",
+      "year": 2026,
+      "stage": "Hari 1",
+      "number": "Nomor 1",
+      "label": "EGMO 2026 — Hari 1, Nomor 1",
+      "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
+      "note": "Independent mathematical formulation based on official paper; not verbatim."
+    }
+  },
+  {
+    "id": "egmo-2026-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Barisan operasi pembulatan ke kelipatan",
+    "prompt": "For $n\\ge1$, let $S_n$ be the smallest subset of positive integers containing $1$ and closed under $v\\mapsto j\\lfloor v/j+1/2\\rfloor$ for $1\\le j\\le n$, allowing zero if reached. (a) Establish boundedness of the reachable values. (b) With $f(n)$ their maximum, establish $2026\\mid f(n)$ for all sufficiently large $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "EGMO",
+      "year": 2026,
+      "stage": "Hari 1",
+      "number": "Nomor 2",
+      "label": "EGMO 2026 — Hari 1, Nomor 2",
+      "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
+      "note": "Independent mathematical formulation based on official paper; not verbatim."
+    }
+  },
+  {
+    "id": "egmo-2026-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Persamaan fungsi kuadrat komposisi",
+    "prompt": "Classify $f:\\mathbb R\\to\\mathbb R$ subject to $$f((f(x)+f(y))^2)=(x+y)f(x+y)\\qquad(x,y\\in\\mathbb R).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "EGMO",
+      "year": 2026,
+      "stage": "Hari 1",
+      "number": "Nomor 3",
+      "label": "EGMO 2026 — Hari 1, Nomor 3",
+      "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
+      "note": "Independent mathematical formulation based on official paper; not verbatim."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
