@@ -7,9 +7,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "sd-001",
     "level": "SD",
     "topic": "Aritmetika",
-    "difficulty": 1,
-    "title": "Penjumlahan bilangan asli",
-    "prompt": "Tentukan hasil penjumlahan $1+2+3+\\cdots+40$ tanpa menjumlahkan bilangan-bilangan tersebut satu per satu.",
+    "difficulty": 2,
+    "title": "Tiga kotak setelah dua pemindahan",
+    "prompt": "Tiga kotak berisi seluruhnya 48 kelereng. Lima kelereng dipindahkan dari kotak pertama ke kotak kedua, kemudian tiga kelereng dipindahkan dari kotak kedua ke kotak ketiga. Setelah kedua pemindahan, ketiga kotak berisi sama banyak kelereng. Tentukan isi setiap kotak sebelum pemindahan.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -20,8 +20,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SD",
     "topic": "Kombinatorika",
     "difficulty": 2,
-    "title": "Pemilihan pakaian",
-    "prompt": "Rina memiliki 4 kaus dan 3 celana yang semuanya berbeda. Ia ingin mengenakan satu kaus dan satu celana, tetapi ada tepat satu pasangan kaus dan celana yang tidak boleh dikenakan bersama. Berapa banyak pilihan pakaian yang dapat dikenakan Rina?",
+    "title": "Susunan kartu dengan puncak di tengah",
+    "prompt": "Tersedia lima kartu bernomor 1, 2, 3, 4, dan 5. Tiga kartu berbeda dipilih dan disusun berjajar. Nomor kartu tengah harus lebih besar daripada kedua nomor di sampingnya, sedangkan jumlah kedua nomor di sampingnya harus genap. Berapa banyak susunan yang mungkin?",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -31,9 +31,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "sd-003",
     "level": "SD",
     "topic": "Geometri",
-    "difficulty": 2,
-    "title": "Luas bangun dari titik tengah sisi",
-    "prompt": "Sebuah persegi panjang memiliki panjang 12 cm dan lebar 8 cm. Titik-titik tengah keempat sisinya dihubungkan secara berurutan sehingga terbentuk sebuah bangun datar. Berapakah luas bangun datar tersebut?",
+    "difficulty": 3,
+    "title": "Keliling papan setelah enam ubin dilepas",
+    "prompt": "Papan persegi terdiri atas 36 ubin persegi berukuran $1\\text{ cm}\\times1\\text{ cm}$, tersusun dalam enam baris dan enam kolom. Empat ubin di sudut dilepas. Dua ubin lain, yaitu ubin pada baris pertama kolom ketiga dan baris keenam kolom keempat, juga dilepas. Tentukan luas dan keliling bangun yang tersisa.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -44,8 +44,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SD",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "Bilangan dengan sisa pembagian sama",
-    "prompt": "Suatu bilangan asli lebih besar dari 20. Jika dibagi 3, bilangan tersebut bersisa 2. Jika dibagi 5, bilangan tersebut juga bersisa 2. Tentukan bilangan terkecil yang memenuhi kedua syarat tersebut.",
+    "title": "Kode dua angka dengan dua pembagian",
+    "prompt": "Suatu kode merupakan bilangan dua angka. Jika dibagi 4, sisanya 1. Jika dibagi 5, sisanya 2. Jumlah kedua angkanya adalah 10. Tentukan kode tersebut.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -55,9 +55,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "smp-001",
     "level": "SMP",
     "topic": "Teori Bilangan",
-    "difficulty": 2,
-    "title": "Keterbagian selisih pangkat tiga",
-    "prompt": "Buktikan bahwa $n^3-n$ habis dibagi 6 untuk setiap bilangan bulat $n$.",
+    "difficulty": 3,
+    "title": "Pembagi polinomial pada bilangan asli",
+    "prompt": "Tentukan semua bilangan asli $n$ sedemikian sehingga $n+1$ membagi $n^2+5n+12$. Buktikan bahwa daftar yang diperoleh lengkap.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -67,9 +67,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "smp-002",
     "level": "SMP",
     "topic": "Aljabar",
-    "difficulty": 2,
-    "title": "Jumlah kuadrat dan pangkat tiga",
-    "prompt": "Diketahui dua bilangan $x$ dan $y$ memenuhi $x+y=9$ dan $xy=14$. Tanpa menentukan nilai $x$ dan $y$ masing-masing, tentukan nilai $x^2+y^2$ serta $x^3+y^3$.",
+    "difficulty": 3,
+    "title": "Pemulihan tiga bilangan dari hasil kali",
+    "prompt": "Tiga bilangan real positif $x,y,z$ memenuhi $x+y+z=9$, $xy+yz+zx=26$, dan $xyz=24$. Tanpa menebak ketiga bilangan, tentukan himpunan $\\{x,y,z\\}$ serta nilai $x^3+y^3+z^3$.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -79,9 +79,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "smp-003",
     "level": "SMP",
     "topic": "Kombinatorika",
-    "difficulty": 3,
-    "title": "Pemilihan enam bilangan",
-    "prompt": "Enam bilangan berbeda dipilih dari himpunan $\\{1,2,\\ldots,10\\}$. Buktikan bahwa di antara keenam bilangan tersebut terdapat dua bilangan yang jumlahnya 11.",
+    "difficulty": 4,
+    "title": "Pemilihan titik pada segi delapan",
+    "prompt": "Pada delapan titik sudut segi delapan beraturan, dipilih tepat tiga titik. Tidak ada dua titik terpilih yang bertetangga maupun saling berhadapan. Berapa banyak himpunan tiga titik yang memenuhi kedua syarat?",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -92,8 +92,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMP",
     "topic": "Geometri",
     "difficulty": 3,
-    "title": "Perbandingan luas segitiga",
-    "prompt": "Diketahui segitiga $ABC$ memiliki luas 60 satuan luas. Titik $D$ terletak pada sisi $BC$ sedemikian sehingga $BD:DC=2:3$. Tentukan luas segitiga $ABD$ dan luas segitiga $ADC$.",
+    "title": "Luas segitiga dari tiga sisi persegi panjang",
+    "prompt": "Persegi panjang $ABCD$ memiliki $AB=12$ dan $BC=8$. Titik $P,Q,R$ masing-masing terletak pada $AB,BC,CD$ dengan $AP=3$, $BQ=2$, dan $CR=4$. Tentukan luas segitiga $PQR$ dengan memanfaatkan luas bangun-bangun di luar segitiga tersebut.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -103,9 +103,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "sma-001",
     "level": "SMA",
     "topic": "Aljabar",
-    "difficulty": 3,
-    "title": "Ketaksamaan tiga pecahan",
-    "prompt": "Misalkan $a,b,c$ merupakan bilangan real positif. Buktikan bahwa $$\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\ge\\frac{3}{2}.$$ Tentukan pula syarat terjadinya kesamaan.",
+    "difficulty": 4,
+    "title": "Batas tajam variasi tiga bilangan",
+    "prompt": "Misalkan $a,b,c$ merupakan bilangan real positif dengan $a+b+c=1$. Tentukan supremum dari $$\\frac{(a-b)^2}{a+b}+\\frac{(b-c)^2}{b+c}+\\frac{(c-a)^2}{c+a}.$$ Selidiki apakah supremum tersebut dapat dicapai.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -115,9 +115,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "sma-002",
     "level": "SMA",
     "topic": "Kombinatorika",
-    "difficulty": 3,
-    "title": "Pencacahan lintasan pada bidang koordinat",
-    "prompt": "Suatu lintasan pada bidang koordinat dimulai dari titik $(0,0)$ dan berakhir di titik $(4,4)$. Pada setiap langkah, lintasan bergerak satu satuan ke kanan atau satu satuan ke atas. Tentukan banyak lintasan yang tidak pernah berada di atas garis $y=x$.",
+    "difficulty": 4,
+    "title": "Lintasan dengan satu titik singgah diagonal",
+    "prompt": "Suatu lintasan dari $(0,0)$ ke $(5,5)$ menggunakan langkah $(1,0)$ atau $(0,1)$ dan tidak pernah berada di atas garis $y=x$. Berapa banyak lintasan yang melalui tepat satu titik pada garis $y=x$ selain titik awal dan titik akhir?",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -128,8 +128,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Keterbagian kuadrat bilangan prima",
-    "prompt": "Misalkan $p$ merupakan bilangan prima yang lebih besar dari 3. Buktikan bahwa $p^2-1$ habis dibagi 24.",
+    "title": "Pembagi ekspresi eksponensial",
+    "prompt": "Tentukan semua bilangan bulat positif $n$ sehingga $2^n-1$ membagi $3\\cdot 2^{2n}+5\\cdot 2^n+7$. Buktikan kelengkapan jawaban tanpa memeriksa nilai $n$ satu per satu.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -139,9 +139,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "sma-004",
     "level": "SMA",
     "topic": "Geometri",
-    "difficulty": 3,
-    "title": "Panjang garis berat segitiga",
-    "prompt": "Diketahui segitiga $ABC$ dengan panjang sisi $AB=13$, $BC=14$, dan $CA=15$. Jika $M$ merupakan titik tengah sisi $BC$, tentukan panjang $AM$.",
+    "difficulty": 4,
+    "title": "Luas segitiga dengan tali penghubung",
+    "prompt": "Segitiga $ABC$ siku-siku di $A$, dengan $AB=10$ dan $AC=12$. Titik $P$ pada $AB$ dan titik $Q$ pada $AC$ memenuhi $BP+CQ=12$. Tentukan luas maksimum segitiga $APQ$ dan posisi kedua titik saat maksimum dicapai.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -151,9 +151,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "univ-001",
     "level": "Kuliah",
     "topic": "Analisis Real",
-    "difficulty": 3,
-    "title": "Konvergensi barisan rekursif",
-    "prompt": "Misalkan $(a_n)_{n\\in\\mathbb N}$ merupakan barisan yang didefinisikan secara rekursif oleh $$a_1=\\sqrt{2},\\qquad a_{n+1}=\\sqrt{2+a_n}$$ untuk setiap $n\\in\\mathbb N$. Buktikan bahwa $(a_n)$ konvergen dan tentukan limitnya.",
+    "difficulty": 4,
+    "title": "Laju asimtotik barisan rasional rekursif",
+    "prompt": "Diketahui $a_1>0$ dan $a_{n+1}=\\frac{a_n}{1+a_n^2}$ untuk setiap $n\\in\\mathbb N$. Buktikan bahwa $\\lim_{n\\to\\infty}\\sqrt n\\,a_n=\\frac{1}{\\sqrt2}$, tanpa mengasumsikan terlebih dahulu laju konvergensi barisan $(a_n)$.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -163,9 +163,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "univ-002",
     "level": "Kuliah",
     "topic": "Aljabar Linear",
-    "difficulty": 3,
-    "title": "Dekomposisi ruang vektor oleh proyeksi",
-    "prompt": "Misalkan $V$ merupakan ruang vektor berdimensi hingga dan $P:V\\to V$ merupakan pemetaan linear yang memenuhi $P^2=P$. Buktikan bahwa $$V=\\ker P\\oplus\\operatorname{Im}P.$$",
+    "difficulty": 5,
+    "title": "Klasifikasi matriks dengan persamaan transpose",
+    "prompt": "Misalkan $A$ merupakan matriks real berordo $n$ yang memenuhi $A^2+A^{\\mathsf T}=I_n$. Buktikan bahwa $A$ simetris. Kemudian, tentukan seluruh kemungkinan nilai eigen $A$ dan karakterisasikan seluruh matriks yang memenuhi persamaan tersebut.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -175,9 +175,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "univ-003",
     "level": "Kuliah",
     "topic": "Struktur Aljabar",
-    "difficulty": 3,
-    "title": "Normalitas subgrup berindeks dua",
-    "prompt": "Misalkan $G$ merupakan suatu grup dan $H$ merupakan subgrup dari $G$ dengan indeks $[G:H]=2$. Buktikan bahwa $H$ merupakan subgrup normal dari $G$.",
+    "difficulty": 4,
+    "title": "Bijeksi perkalian simetris pada grup berorde ganjil",
+    "prompt": "Misalkan $G$ merupakan grup berhingga berorde ganjil dan $a\\in G$. Buktikan bahwa pemetaan $T_a:G\\to G$ dengan $T_a(x)=xax$ merupakan bijeksi. Nyatakan $T_a^{-1}(y)$ secara eksplisit menggunakan $a,y$, dan $|G|$.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -187,9 +187,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "univ-004",
     "level": "Kuliah",
     "topic": "Analisis Kompleks",
-    "difficulty": 3,
-    "title": "Jumlah akar kesatuan",
-    "prompt": "Misalkan $n\\ge2$ merupakan bilangan bulat dan $\\omega=e^{2\\pi i/n}$. Buktikan bahwa $$\\sum_{k=0}^{n-1}\\omega^k=0.$$",
+    "difficulty": 5,
+    "title": "Modulus konstan pada akar satuan",
+    "prompt": "Misalkan $n\\ge1$ dan $P\\in\\mathbb C[z]$ merupakan polinomial tak nol berderajat paling tinggi $n$. Diketahui bahwa $|P(z)|$ bernilai sama pada seluruh akar persamaan $z^{2n+1}=1$. Buktikan bahwa $P(z)=cz^k$ untuk suatu $c\\in\\mathbb C\\setminus\\{0\\}$ dan $0\\le k\\le n$.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -236,8 +236,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SD",
     "topic": "Aritmetika",
     "difficulty": 3,
-    "title": "Bilangan dua angka",
-    "prompt": "Jumlah angka puluhan dan angka satuan suatu bilangan dua angka adalah 11. Jika kedua angka tersebut ditukar tempatnya, diperoleh bilangan baru yang 27 lebih besar daripada bilangan semula. Berapakah bilangan semula?",
+    "title": "Tiga bilangan dari putaran angka",
+    "prompt": "Tiga angka berbeda $a,b,c$ berada di antara 1 dan 9. Dibentuk tiga bilangan dua angka $\\overline{ab},\\overline{bc},\\overline{ca}$. Jumlah ketiganya 132. Bilangan $\\overline{ab}$ lebih besar 18 daripada $\\overline{bc}$, dan $a$ merupakan angka terbesar. Tentukan ketiga bilangan tersebut.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -248,8 +248,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SD",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Penyusunan bilangan genap",
-    "prompt": "Dari angka 0, 1, 2, 3, dan 4 akan dibentuk bilangan genap yang terdiri atas tiga angka. Setiap angka hanya boleh digunakan satu kali dalam sebuah bilangan. Berapa banyak bilangan genap yang dapat dibentuk?",
+    "title": "Bendera dengan dua warna bersebelahan",
+    "prompt": "Empat posisi berjajar akan diisi dengan tepat dua bendera merah, satu bendera biru, dan satu bendera hijau. Bendera biru tidak boleh bersebelahan dengan bendera hijau, sedangkan kedua bendera merah harus bersebelahan. Berapa banyak susunan warna yang mungkin?",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -259,9 +259,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "sd-007",
     "level": "SD",
     "topic": "Geometri",
-    "difficulty": 2,
-    "title": "Luas maksimum kebun",
-    "prompt": "Sebuah kebun berbentuk persegi panjang memiliki keliling 60 meter. Jika panjang dan lebar kebun dalam satuan meter merupakan bilangan bulat positif, berapakah luas terbesar yang dapat dimiliki kebun tersebut?",
+    "difficulty": 3,
+    "title": "Persegi yang tidak memuat ubin hilang",
+    "prompt": "Sebuah papan $4\\times4$ tersusun dari 16 ubin persegi satuan. Ubin pada baris kedua kolom kedua dilepas. Berapa banyak persegi dengan sisi sejajar tepi papan yang masih dapat dibentuk seluruhnya dari ubin yang tersisa? Hitung persegi dari semua ukuran.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -271,9 +271,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "sd-008",
     "level": "SD",
     "topic": "Teori Bilangan",
-    "difficulty": 3,
-    "title": "Kedipan tiga lampu",
-    "prompt": "Tiga lampu berkedip secara berkala. Lampu pertama berkedip setiap 6 detik, lampu kedua setiap 8 detik, dan lampu ketiga setiap 15 detik. Pada awal pengamatan, ketiga lampu berkedip secara bersamaan. Berapa kali ketiga lampu kembali berkedip secara bersamaan selama 10 menit berikutnya? Kedipan pada awal pengamatan tidak dihitung, sedangkan kedipan tepat pada akhir pengamatan tetap dihitung.",
+    "difficulty": 4,
+    "title": "Tepat satu lampu menyala",
+    "prompt": "Tiga lampu berkedip setiap 4, 6, dan 10 detik. Ketiganya berkedip bersamaan pada detik ke-0. Dari detik ke-1 sampai detik ke-60, berapa banyak detik ketika tepat satu lampu berkedip?",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -284,8 +284,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMP",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "Persamaan pecahan",
-    "prompt": "Tentukan semua pasangan bilangan bulat positif $(x,y)$ yang memenuhi persamaan $$\\frac{1}{x}+\\frac{1}{y}=\\frac{1}{6}.$$",
+    "title": "Pasangan bilangan dengan hasil kali bergeser",
+    "prompt": "Tentukan semua pasangan terurut bilangan bulat positif $(x,y)$ yang memenuhi $xy=2x+2y+12$. Kemudian, tentukan pasangan yang meminimumkan $x^2+y^2$.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -296,8 +296,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMP",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Jabat tangan",
-    "prompt": "Dalam suatu pertemuan yang dihadiri oleh 12 orang, setiap dua orang berjabat tangan tepat satu kali, kecuali tiga pasangan orang yang tidak saling berjabat tangan. Berapa banyak jabat tangan yang terjadi dalam pertemuan tersebut?",
+    "title": "Jabat tangan antara dua kelompok",
+    "prompt": "Delapan peserta terbagi ke dalam dua kelompok, masing-masing beranggotakan empat orang. Setiap peserta berjabat tangan dengan tepat tiga orang, dan tidak ada jabat tangan di dalam kelompok yang sama. Buktikan bahwa setiap peserta pada kelompok pertama memiliki tepat satu peserta pada kelompok kedua yang tidak berjabat tangan dengannya. Berapa banyak pola jabat tangan berbeda jika seluruh peserta dibedakan?",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -307,9 +307,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "smp-007",
     "level": "SMP",
     "topic": "Geometri",
-    "difficulty": 3,
-    "title": "Jarak titik ke titik sudut persegi",
-    "prompt": "Diketahui persegi $ABCD$ dengan panjang sisi 10 satuan. Titik $P$ terletak di bagian dalam persegi tersebut sedemikian sehingga $PA=5$, $PB=\\sqrt{65}$, dan $PC=\\sqrt{85}$. Tentukan panjang $PD$.",
+    "difficulty": 4,
+    "title": "Luas segitiga dengan titik yang bergerak",
+    "prompt": "Persegi $ABCD$ memiliki panjang sisi 12. Titik $P$ pada $AB$ dan titik $Q$ pada $BC$ memenuhi $AP=BQ=x$, dengan $0<x<12$. Tentukan nilai $x$ jika luas segitiga $DPQ$ adalah 54 satuan luas. Buktikan bahwa tidak ada nilai lainnya.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -320,8 +320,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMP",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Sisa pembagian bilangan berpangkat",
-    "prompt": "Tentukan sisa yang diperoleh ketika $7^{2026}+3^{2026}$ dibagi oleh 100.",
+    "title": "Dua pembagi untuk jumlah tiga suku",
+    "prompt": "Tentukan semua bilangan bulat $n$ dengan $1\\le n\\le91$ sehingga $n^2+n+1$ habis dibagi 7 dan 13. Jelaskan mengapa tidak ada bilangan lain dalam rentang tersebut.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -332,8 +332,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 4,
-    "title": "Persamaan fungsi pada bilangan real",
-    "prompt": "Tentukan semua fungsi $f:\\mathbb R\\to\\mathbb R$ yang kontinu di 0, memenuhi $f(1)=3$, dan memenuhi persamaan $$f(x+y)=f(x)+f(y)+2xy$$ untuk setiap $x,y\\in\\mathbb R$.",
+    "title": "Polinomial dari selisih nilai berurutan",
+    "prompt": "Tentukan semua polinomial real $P$ yang memenuhi $P(0)=1$ dan $$P(x+1)-P(x)=3x^2+5x+4$$ untuk setiap $x\\in\\mathbb R$. Kemudian, tentukan apakah $P$ mempunyai tepat satu akar real.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -343,9 +343,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "sma-006",
     "level": "SMA",
     "topic": "Kombinatorika",
-    "difficulty": 4,
-    "title": "Himpunan bagian tanpa bilangan berurutan",
-    "prompt": "Misalkan $n$ dan $k$ merupakan bilangan asli dengan $1\\le k\\le\\left\\lfloor\\frac{n+1}{2}\\right\\rfloor$. Tentukan banyak himpunan bagian dari $\\{1,2,\\ldots,n\\}$ yang memiliki tepat $k$ anggota dan tidak memuat dua bilangan bulat berurutan.",
+    "difficulty": 5,
+    "title": "Subhimpunan dengan tepat satu pasangan berurutan",
+    "prompt": "Misalkan $n,k$ merupakan bilangan asli dengan $2\\le k\\le n$ dan $n\\ge2k-2$. Tentukan banyak himpunan bagian beranggota tepat $k$ dari $\\{1,2,\\ldots,n\\}$ yang memuat tepat satu pasangan bilangan berurutan. Dua pasangan seperti $(2,3)$ dan $(3,4)$ dihitung sebagai dua pasangan berbeda.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -356,8 +356,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Persamaan selisih dua kuadrat",
-    "prompt": "Tentukan semua pasangan bilangan bulat positif $(x,y)$ yang memenuhi persamaan $$x^2-y^2=2025.$$",
+    "title": "Persamaan kuadrat dengan pergeseran berbeda",
+    "prompt": "Tentukan semua pasangan bilangan bulat positif $(x,y)$ yang memenuhi $x^2-y^2=2x+4y+20$. Buktikan kelengkapan jawaban dengan faktorisasi bilangan bulat.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -368,8 +368,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "Luas segitiga titik singgung",
-    "prompt": "Diketahui segitiga $ABC$ dengan panjang sisi $AB=13$, $BC=14$, dan $CA=15$. Lingkaran dalam segitiga tersebut menyinggung sisi $BC$, $CA$, dan $AB$ berturut-turut di titik $D$, $E$, dan $F$. Tentukan luas segitiga $DEF$.",
+    "title": "Ekstrem jumlah kuadrat jarak ke tiga sisi",
+    "prompt": "Segitiga sama sisi $ABC$ mempunyai tinggi $h$. Untuk titik $P$ di dalam atau pada batas segitiga, misalkan $d_1,d_2,d_3$ berturut-turut jarak $P$ ke garis $AB,BC,CA$. Tentukan nilai minimum dan maksimum $d_1^2+d_2^2+d_3^2$ serta seluruh posisi $P$ yang mencapai kedua nilai tersebut.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -379,9 +379,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "univ-005",
     "level": "Kuliah",
     "topic": "Analisis Real",
-    "difficulty": 4,
-    "title": "Konvergensi titik demi titik dan seragam",
-    "prompt": "Untuk setiap $n\\in\\mathbb N$, didefinisikan fungsi $f_n:[0,1]\\to\\mathbb R$ oleh $$f_n(x)=nx(1-x)^n.$$ Tentukan limit titik demi titik barisan fungsi $(f_n)$ pada $[0,1]$. Selidiki pula apakah barisan fungsi tersebut konvergen seragam pada $[0,1]$.",
+    "difficulty": 5,
+    "title": "Konvergensi seragam dan kegagalan pada turunan",
+    "prompt": "Untuk setiap $x\\in[0,1]$, diperhatikan deret fungsi $$\\sum_{n=0}^{\\infty}x^n(1-x)^2.$$ Tentukan fungsi jumlahnya pada seluruh $[0,1]$. Buktikan bahwa deret konvergen seragam, kemudian selidiki konvergensi seragam deret turunan dari fungsi-fungsi sukunya pada interval yang sama.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -391,9 +391,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "univ-006",
     "level": "Kuliah",
     "topic": "Aljabar Linear",
-    "difficulty": 4,
-    "title": "Nilpotensi matriks",
-    "prompt": "Misalkan $A$ dan $B$ merupakan matriks persegi berordo $n$ dengan entri bilangan real. Jika $AB-BA=A$, buktikan bahwa $A$ merupakan matriks nilpoten.",
+    "difficulty": 5,
+    "title": "Pasangan spektrum matriks antikomutatif",
+    "prompt": "Misalkan $A,B$ merupakan matriks real simetris berordo sama yang memenuhi $A^2+B^2=I$ dan $AB+BA=0$. Buktikan bahwa setiap nilai eigen $\\lambda$ dari $A$ dengan $-1<\\lambda<1$ memiliki multiplicitas yang sama dengan $-\\lambda$. Karakterisasikan peran $B$ pada ruang eigen terkait.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -403,9 +403,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "univ-007",
     "level": "Kuliah",
     "topic": "Struktur Aljabar",
-    "difficulty": 4,
-    "title": "Orde hasil kali elemen grup",
-    "prompt": "Misalkan $G$ merupakan suatu grup dan $a,b\\in G$ memenuhi $ab=ba$. Diketahui orde $a$ adalah $m$ dan orde $b$ adalah $n$, dengan $\\gcd(m,n)=1$. Buktikan bahwa orde $ab$ adalah $mn$.",
+    "difficulty": 5,
+    "title": "Serat pemetaan dari automorfisme involutif",
+    "prompt": "Misalkan $G$ merupakan grup berhingga dan $\\alpha:G\\to G$ merupakan automorfisme dengan $\\alpha^2=\\operatorname{id}_G$. Definisikan $F(x)=x^{-1}\\alpha(x)$ dan $H=\\{g\\in G\\mid\\alpha(g)=g\\}$. Buktikan bahwa setiap serat tak kosong dari $F$ merupakan koset kanan dari $H$, tentukan kardinalitas $F(G)$, dan buktikan bahwa $\\alpha(y)=y^{-1}$ untuk setiap $y\\in F(G)$.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
@@ -415,9 +415,9 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "univ-008",
     "level": "Kuliah",
     "topic": "Kombinatorika",
-    "difficulty": 4,
-    "title": "Derajat minimum dan siklus Hamilton",
-    "prompt": "Misalkan $G$ merupakan graf sederhana tak berarah dengan $n\\ge3$ titik. Jika derajat setiap titik pada $G$ sekurang-kurangnya $\\left\\lceil\\frac{n}{2}\\right\\rceil$, buktikan bahwa $G$ memuat siklus Hamilton.",
+    "difficulty": 5,
+    "title": "Regularitas graf dari jumlah tetangga bersama",
+    "prompt": "Misalkan $G$ merupakan graf sederhana tak berarah dengan $n\\ge2$ titik. Untuk setiap dua titik berbeda $u,v$, terdapat tepat dua titik yang bertetangga dengan keduanya. Buktikan bahwa $G$ regular. Jika derajat setiap titik adalah $d$, buktikan pula bahwa $d(d-1)=2(n-1)$.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
