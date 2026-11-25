@@ -30,7 +30,7 @@ export function splitSubquestions(prompt: string) {
 // remains a display block. Blank lines around display math are redundant.
 export function compactCompetitionMath(prompt: string): string {
  const display = /([ \t\r\n]*)(?:\$\$([\s\S]+?)\$\$|\\\[([\s\S]+?)\\\])([ \t\r\n]*)/g;
- prompt = stripCompetitionEmphasis(prompt);
+ prompt = smoothMNPair(stripCompetitionEmphasis(prompt));
  return prompt.replace(display, (match, before: string, dollarTex: string | undefined, bracketTex: string | undefined, after: string, offset: number) => {
   const tex = (dollarTex ?? bracketTex ?? "").trim();
   const stacked = /\\(?:begin|end|substack|atop|over|cases|displaystyle)\b|\\\\/.test(tex) || /[\r\n]/.test(tex);
@@ -48,4 +48,10 @@ export function compactCompetitionMath(prompt: string): string {
 export function stripCompetitionEmphasis(prompt: string): string {
  const math = /(\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\))/g;
  return prompt.split(math).map((part, i) => i % 2 ? part : part.replace(/\*\*([^*\r\n]+?)\*\*/g, "$1").replace(/(?<!\*)\*([A-Za-z][^*\r\n]*?)\*(?!\*)/g, "$1")).join("");
+}
+
+// Join the two coefficients of a line-integral question to the preceding sentence.
+// The archived prompt and both mathematical expressions remain unchanged.
+export function smoothMNPair(prompt: string): string {
+ return prompt.replace(/\.\s*\$\$\s*(M\s*=[^$]+?)\\(?:qquad|quad)\s*(N\s*=[^$]+?)\s*\$\$(?=\s*$)/g, (_match, m: string, n: string) => ", dengan $" + m.trim() + "$ dan $" + n.trim() + "$.");
 }

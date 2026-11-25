@@ -191,3 +191,14 @@ assert.match(workspace,/compactCompetitionMath\(value\)/);
 assert.equal(compactCompetitionMath("Tentukan nilai **minimal dan maksimal**."),"Tentukan nilai minimal dan maksimal.");
 assert.equal(compactCompetitionMath("**Petunjuk:** Tinjau $x**y$."),"Petunjuk: Tinjau $x**y$.");
 assert.equal(compactCompetitionMath("Suatu *catenary* terbalik."),"Suatu catenary terbalik.");
+
+for(const [id, expected] of [
+ ["calculus-cup-xv-2024-final-01", "Lintasan $C$ terdiri dari 2 potongan busur lingkaran seperti pada gambar, dengan $M=-y^2(y+x)$ dan $N=x(x-3y^2)$."],
+ ["calculus-cup-xv-2024-final-02", "$C$ adalah batas dari juring lingkaran pada gambar, dengan $M=-2y^2$ dan $N=x^2$."],
+ ["calculus-cup-xv-2024-final-03", "Lintasan $C$ terdiri dari 2 potongan busur lingkaran seperti pada gambar, dengan $M=3xy$ dan $N=x(y-x)$."]
+]){
+ const question=competitionProblems.find(p=>p.id===id);
+ assert.ok(question);
+ assert.equal(compactCompetitionMath(question.prompt.split("[[FIGURE]]")[1].trim()),expected);
+}
+assert.equal(compactCompetitionMath("Diketahui.\n\n$$A=1\\qquad B=2$$"),"Diketahui. $A=1\\qquad B=2$");
