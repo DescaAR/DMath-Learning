@@ -6116,6 +6116,672 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2020",
       "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
     }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-1",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Jumlah sumbangan",
+    "prompt": "Twelve people each contribute five dollars. Find their total contribution in dollars. Pilihan: A. $50$; B. $55$; C. $60$; D. $65$; E. $70$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 1",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 1",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-5",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 1,
+    "title": "Luas persegi",
+    "prompt": "Which expression gives the area of a square of side length $8$? Pilihan: A. $8\\times2$; B. $2\\times(8+8)$; C. $8\\times8$; D. $4\\times8$; E. $8\\times8\\times8\\times8$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 5",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 5",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-7",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 2,
+    "title": "Modus tunggal",
+    "prompt": "The multiset $\\{3,15,8,8,9,9,n\\}$ has $8$ as its unique mode. Find $n$. Pilihan: A. $15$; B. $9$; C. $3$; D. $8$; E. $10$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 7",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 7",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-8",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Pengukuran dengan pecahan",
+    "prompt": "A measure holds $\\frac12$ cup. How many full measures give $2\\frac12$ cups of flour? Pilihan: A. $3$; B. $2\\frac12$; C. $10$; D. $4\\frac12$; E. $5$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 8",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 8",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-9",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Hari dalam kalender",
+    "prompt": "If June 1 falls on Tuesday, determine the weekday of June 30. Pilihan: A. Monday; B. Tuesday; C. Wednesday; D. Thursday; E. Friday",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 9",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 9",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-11",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 2,
+    "title": "Translasi titik",
+    "prompt": "Choose the translation sending $(2,6)$ to $(7,0)$. Pilihan: A. right 9, down 6; B. left 5, up 6; C. right 6, down 5; D. left 6, down 5; E. right 5, down 6",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 11",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 11",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-12",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Pertemuan dua jadwal",
+    "prompt": "Trains arrive every 3 minutes and buses every 5 minutes. Both arrive at 6:25 a.m. When is their next simultaneous arrival? Pilihan: A. 6:28 a.m.; B. 6:30 a.m.; C. 6:33 a.m.; D. 6:40 a.m.; E. 6:55 a.m.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 12",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 12",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-13",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Frekuensi digit pada pola berulang",
+    "prompt": "How many occurrences of $5$ lie in the first $50$ terms of the periodic sequence $(2,0,2,5,2,0,2,5,\\ldots)$? Pilihan: A. $10$; B. $11$; C. $12$; D. $13$; E. $25$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 13",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 13",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-14",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Penyebut pecahan",
+    "prompt": "Find $n$ satisfying $\\frac{28}{32}+\\frac1n=1$. Pilihan: A. $24$; B. $-3$; C. $7$; D. $16$; E. $8$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 14",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 14",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-15",
+    "level": "SMP",
+    "topic": "Peluang",
+    "difficulty": 2,
+    "title": "Jumlah dadu dengan peluang terkecil",
+    "prompt": "For two independent fair six-sided dice numbered $1$ through $6$, which listed total has the smallest probability? Pilihan: A. $7$; B. $8$; C. $9$; D. $10$; E. $11$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 15",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 15",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-16",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Maksimum operasi bilangan dua digit",
+    "prompt": "Form three two-digit integers $a,b,c$ using each digit of $\\{7,1,3,6,8,2\\}$ exactly once. Maximize $a+b-c$. Pilihan: A. $139$; B. $145$; C. $147$; D. $149$; E. $138$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 16",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 16",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-17",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Perubahan persentase lemparan koin",
+    "prompt": "A coin is tossed an even number of times, with tails on exactly half of those tosses. One additional toss gives tails, raising the proportion of tails to $60\\%$. Find the final number of tosses. Pilihan: A. $3$; B. $9$; C. $8$; D. $5$; E. $10$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 17",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 17",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-18",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Sudut yang bukan sudut segi empat",
+    "prompt": "Four of the angles in the list $62^\\circ,85^\\circ,99^\\circ,108^\\circ,114^\\circ$ belong to one quadrilateral. Identify the excluded angle. Pilihan: A. $62^\\circ$; B. $85^\\circ$; C. $99^\\circ$; D. $108^\\circ$; E. $114^\\circ$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 18",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 18",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-19",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Klasifikasi bilangan",
+    "prompt": "For each integer from $10$ to $19$, count how many of these properties hold: odd, even, prime, composite, perfect square. How many integers have exactly two properties? Pilihan: A. $10$; B. $9$; C. $8$; D. $7$; E. $6$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 19",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 19",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-21",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Rata-rata luas lingkaran",
+    "prompt": "The circles of radii $1$, $5$, and $x$ centimetres have mean area $30\\pi\\,\\mathrm{cm}^2$. Determine $x>0$. Pilihan: A. $64$; B. $5$; C. $24$; D. $8$; E. $2$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 21",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 21",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-22",
+    "level": "SMP",
+    "topic": "Peluang",
+    "difficulty": 3,
+    "title": "Peluang warna tidak terpakai",
+    "prompt": "Independently assign to each of three doors one of three equally probable colours: black, white, gold. Calculate the probability that fewer than three colours occur. Pilihan: A. $\\frac79$; B. $\\frac59$; C. $\\frac{20}{27}$; D. $\\frac29$; E. $\\frac23$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 22",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 22",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-7-23",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Kelipatan delapan belas dengan awalan tetap",
+    "prompt": "Count integers $N$ with $111000\\le N\\le111999$ and $18\\mid N$. Pilihan: A. $50$; B. $55$; C. $56$; D. $110$; E. $112$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 23",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 7, 23",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss7Contest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-euclid-1",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Persamaan rasional dan bentuk akar",
+    "prompt": "(a) Solve $\\frac{2t}{3}+\\frac{3t}{2}=26$ for $t\\in\\mathbb Z$. (b) Solve $\\frac{3+x}{4}=\\frac{6+x}{8}$ for $x\\in\\mathbb Z$. (c) Determine $y>0$ satisfying $\\sqrt{3^2+4^2+12^2}=\\sqrt{3^2+4^2}+\\sqrt{y^2}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Euclid",
+      "number": "Nomor 1",
+      "label": "CEMC Waterloo 2026 — Euclid, 1",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-euclid-2",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Digit bilangan dan sistem persamaan",
+    "prompt": "(a) Determine the least integer greater than $2026$ with decimal digit sum $10$. (b) Count the three-digit positive integers with digit product $9$. (c) Solve $x+3x+4y=48$ and $(x+y)/2=3x$ for $(x,y)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Euclid",
+      "number": "Nomor 2",
+      "label": "CEMC Waterloo 2026 — Euclid, 2",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-euclid-3",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Kubik sempurna, eksponen, dan parabola",
+    "prompt": "(a) Minimize the positive integer $n$ for which $\\frac{9\\cdot8\\cdot7\\cdot6\\cdot5\\cdot4\\cdot3}{n}$ is an integer cube. (b) Find $(a,b)$ satisfying $3^{a+b}=27$ and $a-b=-5$. (c) A parabola $y=-x^2+7x+c$ has x-intercepts $P=(10,0)$ and $Q$ and y-intercept $R$. Compute the area of $\\triangle PQR$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Euclid",
+      "number": "Nomor 3",
+      "label": "CEMC Waterloo 2026 — Euclid, 3",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-euclid-7",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Proporsi dan iterasi logaritma",
+    "prompt": "(a) All flowers in a garden are roses or carnations and are yellow or white. Half the yellow flowers are roses, one quarter of the roses are yellow, and one quarter of the entire garden consists of white carnations. Find the proportion of yellow roses. (b) Define $$f(x)=\\begin{cases}0&0<x\\le1,\\\\1+f(\\log_2 x)&x>1.\\end{cases}$$ Count positive integers $n$ such that $f(n)=4$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Euclid",
+      "number": "Nomor 7",
+      "label": "CEMC Waterloo 2026 — Euclid, 7",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-euclid-9",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Segitiga sama kaki dengan luas dan keliling tetap",
+    "prompt": "(a) For an isosceles triangle $XY=XZ$, base $YZ=b$, area $40$, and perimeter $32$, construct a cubic integer-coefficient polynomial having $b$ as a root. (b) Establish that for prescribed positive area $A$ and perimeter $P$, at most two pairwise noncongruent isosceles triangles have those measurements. (c) Find positive integers $A,P$ admitting two such noncongruent triangles, all of whose side lengths are positive integers below $300$, exactly one of the two bases being divisible by $7$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Euclid",
+      "number": "Nomor 9",
+      "label": "CEMC Waterloo 2026 — Euclid, 9",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-euclid-10",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Permutasi dengan tepat satu puncak internal",
+    "prompt": "For a permutation $(a_1,\\ldots,a_n)$ of $\\{1,\\ldots,n\\}$, call $t$ an internal peak if $2\\le t<n$ and $a_{t-1}<a_t>a_{t+1}$. (a) Count the permutations of five elements with sole internal peak at $t=3$. (b) For $n\\ge5$, give a closed-form count for sole internal peak at $t=2$. (c) Give a closed-form count for sole internal peak at $t=3$, for $n\\ge5$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Euclid",
+      "number": "Nomor 10",
+      "label": "CEMC Waterloo 2026 — Euclid, 10",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "note": "Independent English mathematical formulation based on official paper; © University of Waterloo, CC BY-NC 4.0 (https://cemc.uwaterloo.ca/copyright)."
+    }
+  },
+  {
+    "id": "smmc-2025-paper-a-a1",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Representasi fungsi sebagai maksimum polinomial",
+    "prompt": "Decide whether there are finitely many $p_i\\in\\mathbb R[x]$, all nonnegative on $[0,\\infty)$, with $$\\min(x,x^2)=\\max_i p_i(x)\\qquad(x\\ge0).$$",
+    "source": {
+      "kind": "competition",
+      "competition": "SMMC",
+      "year": 2025,
+      "stage": "Paper A",
+      "number": "Nomor A1",
+      "label": "SMMC 2025 — Paper A, A1",
+      "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
+      "note": "Independent English mathematical formulation; official paper consulted."
+    }
+  },
+  {
+    "id": "smmc-2025-paper-a-a2",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Rata-rata banyak vektor eigen",
+    "prompt": "For prime $p$ and $n\\ge1$, evaluate $$\\frac{1}{p^{n^2}}\\sum_{M\\in M_n(\\mathbb F_p)}|\\{v\\in\\mathbb F_p^n\\setminus\\{0\\}\\mid Mv\\in\\mathbb F_pv\\}|.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "SMMC",
+      "year": 2025,
+      "stage": "Paper A",
+      "number": "Nomor A2",
+      "label": "SMMC 2025 — Paper A, A2",
+      "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
+      "note": "Independent English mathematical formulation; official paper consulted."
+    }
+  },
+  {
+    "id": "smmc-2025-paper-a-a3",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Akar polinomial pada perpangkatan matriks",
+    "prompt": "Set $$M(t)=\\begin{pmatrix}t+1&t\\\\1&1\\end{pmatrix},\\qquad a(t)=(M(t)^{2025})_{11},\\quad b(t)=(M(t)^{2025})_{12}.$$ Establish that each polynomial has $2025$ distinct real zeros and that their increasing lists of zeros interlace in the order $\\alpha_1<\\beta_1<\\cdots<\\alpha_{2025}<\\beta_{2025}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "SMMC",
+      "year": 2025,
+      "stage": "Paper A",
+      "number": "Nomor A3",
+      "label": "SMMC 2025 — Paper A, A3",
+      "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
+      "note": "Independent English mathematical formulation; official paper consulted."
+    }
+  },
+  {
+    "id": "smmc-2025-paper-a-a4",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 5,
+    "title": "Subruang fungsi mulus yang invarian terhadap dilatasi",
+    "prompt": "If $V$ is a finite-dimensional real linear subspace of $C^\\infty(\\mathbb R,\\mathbb R)$ invariant under the operator $(Tg)(x)=g(2x)$, establish $V\\subseteq\\mathbb R[x]$.",
+    "source": {
+      "kind": "competition",
+      "competition": "SMMC",
+      "year": 2025,
+      "stage": "Paper A",
+      "number": "Nomor A4",
+      "label": "SMMC 2025 — Paper A, A4",
+      "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
+      "note": "Independent English mathematical formulation; official paper consulted."
+    }
+  },
+  {
+    "id": "smmc-2025-paper-b-b1",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Eksistensi fungsi dengan syarat keterbagian",
+    "prompt": "Determine the positive integers $n$ for which every $m\\ge1$ admits a map $f:\\{1,\\ldots,n\\}\\to\\{m+1,\\ldots,m+n\\}$ satisfying $a\\mid f(a)$ for each $a$ and $f(a)\\ne f(b)$ whenever $a\\ne b$ and $\\gcd(a,b)>1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "SMMC",
+      "year": 2025,
+      "stage": "Paper B",
+      "number": "Nomor B1",
+      "label": "SMMC 2025 — Paper B, B1",
+      "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
+      "note": "Independent English mathematical formulation; official paper consulted."
+    }
+  },
+  {
+    "id": "smmc-2025-paper-b-b2",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Dekomposisi Minkowski segi empat",
+    "prompt": "For the interior $W$ of a convex quadrilateral in $\\mathbb R^2$ without parallel sides, establish the existence of open triangle interiors $S,T$ satisfying $W=S+T=\\{s+t\\mid s\\in S,\\ t\\in T\\}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "SMMC",
+      "year": 2025,
+      "stage": "Paper B",
+      "number": "Nomor B2",
+      "label": "SMMC 2025 — Paper B, B2",
+      "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
+      "note": "Independent English mathematical formulation; official paper consulted."
+    }
+  },
+  {
+    "id": "smmc-2025-paper-b-b3",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Determinan matriks berpangkat kompleks",
+    "prompt": "Fix $n\\ge1$, put $\\omega=e^{2\\pi i/n}$, and choose pairwise distinct $z_1,\\ldots,z_n\\in\\mathbb C$. Prove the implication $$\\det\\big[(z_j-\\omega^k)^n\\big]_{j,k=1}^n=0\\ \\Longrightarrow\\ \\prod_{j=1}^nz_j=1.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "SMMC",
+      "year": 2025,
+      "stage": "Paper B",
+      "number": "Nomor B3",
+      "label": "SMMC 2025 — Paper B, B3",
+      "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
+      "note": "Independent English mathematical formulation; official paper consulted."
+    }
+  },
+  {
+    "id": "smmc-2025-paper-b-b4",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Persamaan Diophantine jumlah pangkat",
+    "prompt": "(a) Classify integer triples $(x,y,q)$ with odd $q\\ge3$ satisfying $\\sum_{j=0}^3x^j=y^q$. (b) Classify integer quadruples $(x,y,n,q)$ with $n,q\\ge2$ satisfying $\\sum_{j=0}^nx^j=y^q$. Part (b) was designated an open problem in the contest.",
+    "source": {
+      "kind": "competition",
+      "competition": "SMMC",
+      "year": 2025,
+      "stage": "Paper B",
+      "number": "Nomor B4",
+      "label": "SMMC 2025 — Paper B, B4",
+      "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
+      "note": "Independent English mathematical formulation; official paper consulted."
+    }
+  },
+  {
+    "id": "apmo-2025-apmo-2",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Lintasan kisi dan fungsi lantai",
+    "prompt": "Classify $(\\alpha,\\beta)\\in\\mathbb R_{>0}^2$ for which there exists an infinite lattice path $(x_t,y_t)_{t\\ge0}$ starting at $(0,0)$, with increments $(1,0)$ or $(0,1)$, satisfying $|x_t-y_t|<2025$ and such that $t\\mapsto\\lfloor\\alpha x_t+\\beta y_t\\rfloor$ is a bijection onto $\\mathbb Z_{\\ge0}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2025,
+      "stage": "APMO",
+      "number": "Nomor 2",
+      "label": "APMO 2025 — APMO, 2",
+      "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "note": "Independent English mathematical formulation based on official paper."
+    }
+  },
+  {
+    "id": "apmo-2025-apmo-3",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Keterbagian polinomial pada barisan",
+    "prompt": "For $P\\in\\mathbb Z[x]$ of positive degree with $P(0)\\ne0$, prove that any integer sequence satisfying $P(i-j)\\mid a_i-a_j$ for all distinct $i,j\\ge1$ is constant.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2025,
+      "stage": "APMO",
+      "number": "Nomor 3",
+      "label": "APMO 2025 — APMO, 3",
+      "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "note": "Independent English mathematical formulation based on official paper."
+    }
+  },
+  {
+    "id": "apmo-2025-apmo-5",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Barisan terbatas atau linear",
+    "prompt": "Suppose $a_j\\in\\mathbb Z_{>0}$ for all $j\\ge1$ and $$a_{n-m+1}a_{n+m}\\mid100!\\sum_{j=m}^n a_j\\qquad(1\\le m\\le n).$$ Prove that either $\\sup_j a_j<\\infty$ or $a_j=ja_1$ for every $j$.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2025,
+      "stage": "APMO",
+      "number": "Nomor 5",
+      "label": "APMO 2025 — APMO, 5",
+      "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "note": "Independent English mathematical formulation based on official paper."
+    }
+  },
+  {
+    "id": "apmo-2026-apmo-1",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Persamaan faktorial dan perpangkatan",
+    "prompt": "Determine the set of $(a,p,m,o)\\in\\mathbb Z_{>0}^4$ satisfying $o\\ge2$ and $a!+p!-m^o=26$.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2026,
+      "stage": "APMO",
+      "number": "Nomor 1",
+      "label": "APMO 2026 — APMO, 1",
+      "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "note": "Independent English mathematical formulation based on official paper."
+    }
+  },
+  {
+    "id": "apmo-2026-apmo-2",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Jumlah irisan himpunan bagian siklik",
+    "prompt": "For $n\\ge2$, list the distinct subsets of an $n$-element set cyclically as $(A_j)_{j=1}^{2^n}$, setting $A_{2^n+1}=A_1$. Establish $$\\sum_{j=1}^{2^n}|A_j\\cap A_{j+1}|\\ge2^{n-2}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2026,
+      "stage": "APMO",
+      "number": "Nomor 2",
+      "label": "APMO 2026 — APMO, 2",
+      "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "note": "Independent English mathematical formulation based on official paper."
+    }
+  },
+  {
+    "id": "apmo-2026-apmo-3",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Fungsi yang mempertahankan urutan jarak",
+    "prompt": "Classify $f:\\mathbb R_{>0}\\to\\mathbb R$ for which $$|x-y|<|y-z|\\iff |f(x)-f(y)|<|f(y)-f(z)|$$ for every positive real triple $(x,y,z)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "APMO",
+      "year": 2026,
+      "stage": "APMO",
+      "number": "Nomor 3",
+      "label": "APMO 2026 — APMO, 3",
+      "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "note": "Independent English mathematical formulation based on official paper."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
