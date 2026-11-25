@@ -6026,6 +6026,96 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
       "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
     }
+  },
+  {
+    "id": "imc-2020-03",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Aproksimasi politop konveks simetris",
+    "prompt": "Fix an integer $d\\ge2$. Establish a uniform bound $C_d\\varepsilon^{-(d-1)}$ for the number of vertices needed in an inner polytope approximation $L$ of any origin-symmetric convex polytope $K$ in $\\mathbb R^d$, with $(1-\\varepsilon)K\\subseteq L\\subseteq K$ and $0<\\varepsilon<1$. Here $C_d$ may depend only on $d$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2020,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMC 2020 — Hari 1, Nomor 3",
+      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2020",
+      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+    }
+  },
+  {
+    "id": "imc-2020-05",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Karakterisasi fungsi positif melalui turunan",
+    "prompt": "Characterize the positive real-valued functions in $C^2(\\mathbb R)$ subject to the pointwise inequality $ff''-2(f')^2\\ge0$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2020,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMC 2020 — Hari 2, Nomor 5",
+      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2020",
+      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+    }
+  },
+  {
+    "id": "imc-2020-06",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Akar tunggal polinomial kubik modulo prima",
+    "prompt": "Determine the primes $p$ for which $X^3-3X+1\\in\\mathbb F_p[X]$ has exactly one distinct zero in $\\mathbb F_p$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2020,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMC 2020 — Hari 2, Nomor 6",
+      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2020",
+      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+    }
+  },
+  {
+    "id": "imc-2020-07",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 5,
+    "title": "Konjugasi subgrup melalui indeks irisan",
+    "prompt": "Suppose $H_1,H_2\\le G$ have equal finite index $n\\ge2$ and $[G:H_1\\cap H_2]=n(n-1)$. Establish the existence of $g\\in G$ with $g^{-1}H_1g=H_2$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2020,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 7",
+      "label": "IMC 2020 — Hari 2, Nomor 7",
+      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2020",
+      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+    }
+  },
+  {
+    "id": "imc-2020-08",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 5,
+    "title": "Limit jumlah binomial logaritmik",
+    "prompt": "Using natural logarithms, determine the asymptotic ratio $$\\lim_{n\\to\\infty}\\frac{\\sum_{k=1}^n(-1)^k\\binom nk\\ln k}{\\ln\\ln n}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2020,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 8",
+      "label": "IMC 2020 — Hari 2, Nomor 8",
+      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2020",
+      "note": "Independent mathematical formulation of the referenced problem, not a verbatim transcription."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
