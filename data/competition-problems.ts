@@ -4049,7 +4049,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 2,
     "title": "Persamaan trigonometri",
-    "prompt": "Prove that the equation $\\cos(\\cos x)=\\sin(\\sin x)$ admits no real solution.",
+    "prompt": "Show that the equation $\\cos(\\cos x)=\\sin(\\sin x)$ has no real solutions.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4058,7 +4058,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2026 — Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Questions.pdf",
-      "note": "2026-11-25: compared against official Day 1 Questions PDF, page 1 (text and page image). Mathematical notation and original example/subparts preserved; independently worded English, not verbatim. Original value: 10 points. No source diagram."
+      "note": "2026-11-25: exact question sentence checked against official Day 1 Questions PDF, page 1, and official problem page. Original score 10 points; no illustration. Formula typeset in LaTeX."
     }
   },
   {
