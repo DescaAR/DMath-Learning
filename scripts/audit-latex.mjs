@@ -38,6 +38,7 @@ for(const file of files){
       try{
         katex.renderToString(runtimeTex,{
           throwOnError:true,
+          displayMode:match[1]!==undefined,
           strict:"ignore",
           trust:false,
           output:"htmlAndMathml"
