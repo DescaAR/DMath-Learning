@@ -83,9 +83,13 @@ function splitCompetitionPrompt(prompt: string) {
 
 // Detect sequential subquestions only in prose, never inside a LaTeX formula.
 function splitSubquestions(prompt: string) {
- const markers = Array.from(prompt.matchAll(/\$\$[\s\S]+?\$\$|\$[^$\n]+\$|(?:^|\s)\(([a-z])\)(?=\s)/g))
+ const candidates = Array.from(prompt.matchAll(/\$\$[\s\S]+?\$\$|\$[^$\n]+\$|(?:^|\s)\(([a-z])\)(?=\s)/g))
   .filter(m => m[1] !== undefined);
- if(markers.length<2 || !markers.every((m,i)=>m[1]===String.fromCharCode(97+i))) return null;
+ const markers: RegExpMatchArray[]=[];
+ for(const m of candidates){
+  if(m[1]===String.fromCharCode(97+markers.length))markers.push(m);
+ }
+ if(markers.length<2)return null;
  const parts=markers.map((m,i)=>({
   label:m[1],
   text:prompt.slice(m.index!+m[0].length,markers[i+1]?.index??prompt.length).trim()
