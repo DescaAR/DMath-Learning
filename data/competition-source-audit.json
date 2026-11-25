@@ -17271,6 +17271,380 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "smartmc-2022-pg-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 14",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "3–4",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 15",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "4",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-16": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 16",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "4",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-17": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 17",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "4–5",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 18",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "5",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-19": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 19",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "5",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 20",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "5",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-21": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 21",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "5",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-22": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 22",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "5–6",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-23": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 23",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "6",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-24": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 24",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "6",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-25": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 25",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "6",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-26": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 26",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "7",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-27": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 27",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "7",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-28": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 28",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "7",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-29": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 29",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "7–8",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-30": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 30",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "8",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-isian-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Isian, Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "8",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-isian-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Isian, Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "8",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-isian-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Isian, Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "8",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-isian-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Isian, Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "8–9",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-isian-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Isian, Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "9",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Rendered PDF pages 3–9 inspected visually with extracted text cross-check",
+        "finding": "Question body and all available options transcribed. Operation tables encoded in math arrays; apparent source typos preserved. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {

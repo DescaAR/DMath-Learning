@@ -17413,6 +17413,380 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Pilihan Ganda, Nomor 13",
       "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 3. Original apparent subscript and wording errors retained."
     }
+  },
+  {
+    "id": "smartmc-2022-pg-14",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Diberikan $z_1=4+2i$ dan $z_2=2\\sqrt8+\\sqrt2i$. Tentukan nilai dari\n\n$$|z_1-z_2|+\\int_0^{\\frac\\pi4}2e^{it}\\,dt=\\cdots$$\n\nA. $6-\\sqrt2+i(2-5\\sqrt2)$\n\nB. $6-2\\sqrt2+i(2-\\sqrt2)$\n\nC. $6-3\\sqrt2+i(2-2\\sqrt2)$\n\nD. $6-4\\sqrt2+i(2-3\\sqrt2)$\n\nE. $6-5\\sqrt2+i(2-4\\sqrt2)$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 14",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 14",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 3–4. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-15",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Diberikan t sebagai berikut\n\n$$t=\\frac{6+5i^{851}+7i^{947}}{3-3i^{533}+3^{779}+2i^{1234}},$$\n\nmaka tentukan nilai dari $\\operatorname{Re}(t)\\times\\frac{|t|}{\\operatorname{Im}(t)}$.\n\nA. $3\\sqrt5$\n\nB. $3\\sqrt5+6$\n\nC. $-3\\sqrt5$\n\nD. $-3\\sqrt5+6$\n\nE. $-6\\sqrt5$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 15",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 15",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 4. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-16",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Tentukan nilai dari\n\n$$\\sin\\left(\\frac\\pi2+i\\ln(\\pi+\\sqrt{\\pi^2-1})\\right)+\\cos\\left(\\frac\\pi2+i\\ln(\\pi+\\sqrt{\\pi^2-1})\\right).$$\n\nA. $\\pi-\\frac{\\sqrt{\\pi^2-1}}i$\n\nB. $\\pi+\\frac{\\sqrt{\\pi^2-1}}i$\n\nC. $2\\pi-\\frac{\\sqrt{\\pi^2-1}}{2i}$\n\nD. $2\\pi+\\frac{\\sqrt{\\pi^2-1}}{2i}$\n\nE. $2\\pi-\\frac{\\sqrt{\\pi^2-1}}i$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 16",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 16",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 4. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-17",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "If $h(z)$ is the Laurent series that represents the function\n\n$$f(z)=\\frac{2022}{z^2-iz}$$\n\nin the domain $|z+i|<1$. Then find $\\frac43h(z)$.\n\nA. $2696\\sum(z+i)^n\\left(\\frac1{(-i)^n}+\\frac1{(2^n)(i^n)}\\right)$\n\nB. $2696\\sum(z+i)^n\\left(\\frac1{(-i)^n}+\\frac1{(2^{n+1})(i^n)}\\right)$\n\nC. $2696\\sum(z+i)^n\\left(\\frac1{(-i)^n}+\\frac1{(2^n)(i^{n+1})}\\right)$\n\nD. $2696\\sum(z+i)^n\\left(\\frac1{(-i)^{n+1}}+\\frac1{(2^n)(i^n)}\\right)$\n\nE. $2696\\sum(z+i)^n\\left(\\frac1{(-i)^{n+1}}+\\frac1{(2^{n+1})(i^{n+1})}\\right)$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 17",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 17",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 4–5. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-18",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Diberikan $z_n$ sebagai berikut\n\n$$z_n=\\frac{2n-n^2i}{4+3i}$$\n\nuntuk setiap $n\\in\\mathbb N$ dan $i=\\sqrt{-1}$. Tentukan nilai dari ekspresi di bawah ini\n\n$$25\\sum_{n=1}^{25}(\\operatorname{Re}(z_n)-\\operatorname{Im}(z_n))=\\cdots$$\n\nA. 10075\n\nB. 10750\n\nC. 15070\n\nD. 17050\n\nE. 17500",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 18",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 18",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 5. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-19",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan S suatu grup dengan $|S|=2022$, banyak subgrup T dari S sehingga $|T|=22$ adalah ...\n\nA. 0\n\nB. 1\n\nC. 2\n\nD. 11\n\nE. 22",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 19",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 19",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 5. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-20",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Diberikan $(S,\\star)$ suatu grup dan $a,b\\in S$. Diketahui $a\\star b=b\\star a^{-1}$ dan $b\\star a=a\\star b^{-1}$. Elemen identitas dari $S$ adalah …\n\nA. $a^5$\n\nB. $a^4$\n\nC. $a^3$\n\nD. $a^2$\n\nE. $a$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 20",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 20",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 5. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-21",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Diketahui suatu grup sebagai berikut :\n\n$$\\frac{\\mathbb Z_{64}\\times\\mathbb Z_9}{\\langle(\\overline4,\\overline3)\\rangle}$$\n\nTentukan orde dari grup tersebut adalah...\n\nA. 10\n\nB. 12\n\nC. 14\n\nD. 16\n\nE. 18",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 21",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 21",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 5. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-22",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan $a$ dan $b$ berturut-turut menyatakan banyaknya elemen idempoten dan pembagi nol di $\\mathbb Z_{2022}$. Nilai dari $\\sum_{i=a}^b i$ adalah ….\n\nA. 910603\n\nB. 901630\n\nC. 601903\n\nD. 630109\n\nE. 360910",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 22",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 22",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 5–6. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-23",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Misalkan $T=\\{a,b,c,d\\}$ terhadap operasi $\\oplus$ dan operasi $\\otimes$ yang didefinisikan oleh tabel berikut ini merupakan suatu Ring.\n\n$$\\begin{array}{c|cccc}\\oplus&a&b&c&d\\\\\\hline a&a&b&c&d\\\\ b&b&a&d&c\\\\ c&c&d&a&b\\\\ d&d&c&b&a\\end{array}\\qquad\\begin{array}{c|cccc}\\otimes&a&b&c&d\\\\\\hline a&a&a&a&a\\\\ b&a&b&c&d\\\\ c&a&c&d&b\\\\ d&a&d&b&c\\end{array}$$\n\nMaka $T$ adalah?\n\nA. Ring dengan pembagi nol\n\nB. Daerah integral namun bukan lapangan\n\nC. Lapangan namun bukan daerah integral\n\nD. Daerah integral sekaligus lapangan\n\nE. Semua salah",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 23",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 23",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 6. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-24",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "If $G$ is a group with the identity element $e$. Let $x,y,z\\in G$ so that $x^2=e$, $y^3=e$, and $z^3=e$ and $zxyz=y^2xz^3$. Find the order of an element $xyz$ of a group G.\n\nA. 2\n\nB. 3\n\nC. 4\n\nD. 5\n\nE. 6",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 24",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 24",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 6. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-25",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Di bawah ini yang merupakan supremum dan infimum dari himpunan $S=\\left\\{\\frac{n+3}{4n}\\mid n\\in N\\right\\}$ adalah …\n\nA. $Sup(S)=2,Inf(S)=0$\n\nB. $Sup(S)=2,Inf(S)=\\frac14$\n\nC. $Sup(S)=1,Inf(S)=\\frac25$\n\nD. $Sup(S)=1,Inf(S)=\\frac14$\n\nE. $Sup(S)=\\frac25,Inf(S)=0$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 25",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 25",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 6. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-26",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Diberikan ruang metrik $(d,\\mathbb Q)$ dengan fungsi jarak $d(x,y)=|x-y|$ dan didefinisikan himpunan $T=\\{x\\in\\mathbb Q:6<x^2<7\\}$. Sifat-sifat himpunan $T$ pada $\\mathbb Q$ adalah….\n\nA. Terbatas ke bawah, tidak terbuka, dan kompak\n\nB. Terbatas ke atas, terbuka, dan kompak\n\nC. Terbatas, tertutup, dan tidak kompak\n\nD. Terbatas, tidak tertutup, dan tidak kompak\n\nE. Tidak terbatas, tertutup, dan tidak kompak",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 26",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 26",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 7. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-27",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Diberikan barisan $\\{x_n\\}$ di dalam $\\mathbb R^2$ dengan\n\n$$x_n=\\left(2n^{20}\\cos^{22}\\left(\\frac{(2n^2+1)\\pi}{2}\\right),3n^{-20}\\sin^{22}\\left(\\frac{(n+1)n\\pi}{2}\\right)\\right)$$\n\ndan didefinisikan metrik $d:X\\times Y\\to\\mathbb R^+$ pada $\\mathbb R^2$ dengan\n\n$$d((x1,y1),(x2,y2))=|x1-x2|+|y1-y2|.$$\n\nNilai dari $d(x_n,(2n^{-20},22))$ untuk setiap $n$ dan $n\\to\\infty$ berturut-turut adalah….\n\nA. $(3n^{-20}-22)$ dan $-22$\n\nB. $(2n^{-20}+22)$ dan 22\n\nC. $(2n^{20}-2n^{-20})$ dan $\\infty$\n\nD. $5n^{-20}$ dan 0\n\nE. $-n^{20}$ dan $-\\infty$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 27",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 27",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 7. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-28",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Misalkan $(p_n)_{n\\ge1}$ merupakan barisan bilangan real dengan $p_1=0.75$ dan\n\n$$p_{n+1}=\\frac{p_n^2}{\\frac12p_n^2-p_n+2}$$\n\nUntuk $n\\ge1$. Nilai dari $\\sum_{n=1}^\\infty p_n$ adalah…\n\nA. $\\frac45$\n\nB. $\\frac65$\n\nC. $\\frac43$\n\nD. 3\n\nE. $\\infty$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 28",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 28",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 7. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-29",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Determine the value of $\\lim_{n\\to\\infty}a_n$ if given a sequence of real numbers $\\{a_n\\}$ with\n\n$$a_n=\\sum_{k=1}^n\\frac{6^{k+2}+6k!}{k!\\,6^{k+1}}$$\n\nA. $6e-\\frac{28}5$\n\nB. $6e-\\frac{29}5$\n\nC. $6e-\\frac{28}6$\n\nD. $6e-\\frac{29}6$\n\nE. $3e-\\frac{28}6$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 29",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 29",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 7–8. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-30",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Let\n\n$$S=\\left\\{\\frac{x+1}{x!}:x\\in\\mathbb N\\right\\}\\cup\\{x\\in\\mathbb R:x^3-6x^2+8x\\le0\\}\\cup[-1,1]$$\n\nIf the set of all interior points of $S$ denoted by $int(S)$, then the members of $S$ and $int(S)$ are…\n\nA. $S=(-\\infty,1]\\cup\\left\\{\\frac32\\right\\}\\cup[2,4]$ and $int(S)=(-\\infty,1)\\cup(2,4)$\n\nB. $S=[-1,1]\\cup[2,4]$ and $int(S)=(-1,1)\\cup(2,4)$\n\nC. $S=[-1,2]\\cup[4,\\infty)$ and $int(S)=(-1,2)\\cup(4,\\infty)$\n\nD. $S=[-1,1]\\cup\\left\\{\\frac32,2\\right\\}\\cup[4,\\infty)$ and $int(S)=[-1,1]\\cup\\left\\{\\frac32,2\\right\\}\\cup[4,\\infty)$\n\nE. $S=(-\\infty,1]\\cup\\left\\{\\frac32\\right\\}\\cup[2,\\infty)$ and $int(S)=(-\\infty,1)\\cup\\left\\{\\frac32\\right\\}\\cup(2,\\infty)$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 30",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 30",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 8. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-isian-01",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Tentukan bilangan bulat positif terkecil $k$ terkecil, sedemikian sehingga untuk setiap $k$ buah matriks $A_1,A_2,\\ldots,A_k$ berukuran $100\\times100$ dengan komponen riil, senantiasa terdapat bilangan riil $\\alpha_1,\\alpha_2,\\ldots,\\alpha_k$ yang tidak semuanya nol sehingga\n\n$$det(\\alpha_1A_1+\\alpha_2A_2+\\cdots+\\alpha_kA_k)=0$$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Isian, Nomor 1",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Isian, Nomor 1",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 8. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-isian-02",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Given a permutation $\\pi=\\begin{pmatrix}1&2&\\cdots&n\\\\\\pi(1)&\\pi(2)&\\cdots&\\pi(n)\\end{pmatrix}$ over the set $\\{1,2,\\ldots,n\\}$ with $n\\ge7$. The number of permutations $\\pi$ so that $\\pi(1)=5$ or $\\pi(3)=7$ or $\\pi(6)=2$ is…",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Isian, Nomor 2",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Isian, Nomor 2",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 8. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-isian-03",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Tentukan bilangan bulat terkecil $n$ denga $n\\ge337$ sehingga $(\\sqrt{12}+6i)^n$ merupakan bilangan real.",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Isian, Nomor 3",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Isian, Nomor 3",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 8. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-isian-04",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Struktur Aljabar",
+    "prompt": "Given $f(x)=x^6+2x^5+x^2+2x+1,g(x)=2x^4+x^3+2x+1\\in Z_3[x]$ and the polynomial $q(x),r(x)\\in Z_3[x]$ so that $f(x)=q(x)g(x)+r(x)$ where $r(x)=0$ or $0\\le deg\\ deg(r(x))<deg\\ deg(g(x))$. If the sum of all coefficients (without constant) in $q(x)$ is $a$ and the sum of all coefficients (without constant) in $r(x)$ is $b$, then determine the value of $(a\\times b)^2$.",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Isian, Nomor 4",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Isian, Nomor 4",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 8–9. Apparent source errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-isian-05",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Diberikan fungsi $f:\\mathbb R\\mapsto\\mathbb R$ dengan $f(x)=4x^2+1$ dan barisan\n\n$$x_n=\\sum_{k=1}^n\\frac1{k^2+5k+6}$$\n\nuntuk setiap $n\\in\\mathbb N$. Nilai $\\lim_{x\\to\\infty}f(x_n)=\\ldots.$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Isian, Nomor 5",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Isian, Nomor 5",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 9. Apparent source errors retained."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
