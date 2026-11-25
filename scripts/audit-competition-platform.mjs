@@ -150,3 +150,13 @@ for(const year of Array.from({length:22},(_,i)=>2005+i)){
  const nums=competitionProblems.filter(p=>p.source.competition==="IMO"&&p.source.year===year).map(p=>p.source.number).sort();
  assert.deepEqual(nums,Array.from({length:6},(_,i)=>"Hari "+(i<3?1:2)+", Nomor "+(i+1)), "Incomplete IMO set "+year);
 }
+
+const materialModule={exports:{}};
+new Function("exports","module",ts.transpileModule(read("lib/competition-material.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(materialModule.exports,materialModule);
+const {materialOf}=materialModule.exports;
+for(const p of competitionProblems){assert.ok(typeof materialOf(p)==="string"&&materialOf(p).trim(),p.id+" missing material tag");}
+assert.equal(materialOf(competitionProblems.find(p=>p.id==="univ-001")),"Barisan dan Deret");
+assert.match(workspace,/className="cmp-material-tag"/);
+assert.match(workspace,/materialOf\(p\)===topic/);
+assert.doesNotMatch(workspace,/<h[13][^>]*>\s*(?:<Link[^>]*>)?\{p\.title\}/,"Descriptive titles must not be displayed");
+assert.match(css,/\.cmp-material-tag\{/);

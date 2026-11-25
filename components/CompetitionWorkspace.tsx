@@ -5,6 +5,7 @@ import { competitionProblems, levels, levelMeta, type CompetitionProblem, type L
 import { dailySchedule, dailyDates } from "@/data/competition-daily";
 import { RichMath } from "@/components/RichMath";
 import { splitCompetitionPrompt, splitSubquestions } from "@/lib/competition-prompt";
+import { materialOf } from "@/lib/competition-material";
 
 const difficultyLabels=["","Dasar","Menengah","Lanjutan","Sulit","Sangat Sulit"];
 const isLevel=(v:string):v is Level=>levels.some(x=>x===v);
@@ -1375,9 +1376,9 @@ function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
 
 function ProblemCard({p,kind="list"}:{p:CompetitionProblem;kind?:"list"|"daily"|"related"}){
  return <article className={"cmp-problem-card cmp-problem-"+kind}>
-  <div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div>
+  <div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span>{p.topic!==materialOf(p)&&<span>{p.topic}</span>}<span className="cmp-difficulty">{difficulty(p)}</span></div>
   <div className="cmp-problem-main">
-   <div className="cmp-problem-heading"><h3><Link href={link(p)}>{p.title}</Link></h3>{kind==="daily"&&<span className="cmp-level-tag">{levelTitle(p.level)}</span>}</div>
+   <div className="cmp-problem-heading"><Link className="cmp-material-tag" href={link(p)} aria-label={"Buka soal "+p.id.toUpperCase()+": "+materialOf(p)}>{materialOf(p)}</Link>{kind==="daily"&&<span className="cmp-level-tag">{levelTitle(p.level)}</span>}</div>
    <div className="cmp-question-preview"><CompetitionPrompt prompt={p.prompt} problemId={p.id} compact/></div>
    <div className="cmp-problem-foot"><span>{kind!=="daily"&&<>{p.level}<span className="cmp-meta-dot">·</span></>}{shortSource(p)}</span><Link className="cmp-link-text" href={link(p)}>Lihat soal <span aria-hidden="true">→</span></Link></div>
   </div>
@@ -1392,8 +1393,8 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  const contestPool=pool.filter(p=>contest==="Semua"||categoryOf(p)===contest);
  const years=Array.from(new Set(contestPool.flatMap(p=>p.source.year?[p.source.year]:[]))).sort((a,b)=>b-a);
  const stages=Array.from(new Set(contestPool.filter(p=>year==="Semua"||String(p.source.year)===year).flatMap(p=>p.source.stage?[p.source.stage]:[]))).sort();
- const topics=Array.from(new Set(pool.map(p=>p.topic))).sort((a,b)=>a.localeCompare(b,"id"));
- const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||categoryOf(p)===contest)&&(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
+ const topics=Array.from(new Set(pool.map(materialOf))).sort((a,b)=>a.localeCompare(b,"id"));
+ const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||categoryOf(p)===contest)&&(topic==="Semua"||materialOf(p)===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[materialOf(p),p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
  const groups=contests.map(c=>({name:c,items:filtered.filter(p=>categoryOf(p)===c).sort((a,b)=>(b.source.year||0)-(a.source.year||0)||(a.source.stage||"").localeCompare(b.source.stage||"","id")||(a.source.number||a.id).localeCompare(b.source.number||b.id,"id",{numeric:true}))})).filter(g=>g.items.length>0);
  const reset=()=>{setQuery("");setLevel(fixedLevel||"Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");setYear("Semua");setContest("Semua");setStage("Semua");};
  return <div className="cmp-page container cmp-catalog">
@@ -1402,7 +1403,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
   <div className="cmp-catalog-layout">
    <aside className="cmp-filter" aria-label="Filter soal">
     <div className="cmp-filter-title"><h2>Filter soal</h2><button className="cmp-text-button" type="button" onClick={reset}>Atur ulang</button></div>
-    <label className="cmp-search-label">Pencarian<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Judul, topik, kompetisi…"/></label>
+    <label className="cmp-search-label">Pencarian<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Materi, kompetisi, kata kunci…"/></label>
     {!fixedLevel&&<><div className="cmp-filter-label">Jenjang</div>
     <div className="cmp-level-tabs" role="group" aria-label="Jenjang">{["Semua",...levels].map(l=><button type="button" key={l} aria-pressed={l===level} onClick={()=>{setLevel(l);setTopic("Semua");setYear("Semua");setContest("Semua");setStage("Semua");}}><span>{l==="Semua"?"Semua jenjang":l==="Kuliah"?"Mahasiswa":l}</span><small>{l==="Semua"?competitionProblems.length:competitionProblems.filter(p=>p.level===l).length}</small></button>)}</div></>}
     <div className="cmp-filter-grid">
@@ -1410,7 +1411,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
      <label>Tahun<select value={year} onChange={e=>{setYear(e.target.value);setStage("Semua");}}><option>Semua</option>{years.map(y=><option key={y} value={y}>{y}</option>)}</select></label>
      
      <label>Tahap seleksi<select value={stage} onChange={e=>setStage(e.target.value)}><option>Semua</option>{stages.map(s=><option key={s}>{s}</option>)}</select></label>
-     <label>Topik<select value={topic} onChange={e=>setTopic(e.target.value)}><option>Semua</option>{topics.map(t=><option key={t}>{t}</option>)}</select></label>
+     <label>Materi<select value={topic} onChange={e=>setTopic(e.target.value)}><option>Semua</option>{topics.map(t=><option key={t}>{t}</option>)}</select></label>
      <label>Kesulitan<select value={diff} onChange={e=>setDiff(e.target.value)}><option>Semua</option>{difficultyLabels.slice(1).map((d,i)=><option value={i+1} key={d}>{d}</option>)}</select></label>
      <label>Sumber<select value={source} onChange={e=>setSource(e.target.value)}><option>Semua</option><option value="original">DMath Learning Proposed</option><option value="competition">Soal kompetisi</option></select></label>
     </div>
@@ -1426,11 +1427,11 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
 }
 
 export function CompetitionProblemDetail({problem:p}:{problem:CompetitionProblem}){
- const related=competitionProblems.filter(x=>x.id!==p.id&&x.level===p.level).sort((a,b)=>Number(b.topic===p.topic)-Number(a.topic===p.topic)).slice(0,3);
+ const related=competitionProblems.filter(x=>x.id!==p.id&&x.level===p.level).sort((a,b)=>Number(materialOf(b)===materialOf(p))-Number(materialOf(a)===materialOf(p))).slice(0,3);
  return <div className="cmp-page container"><div className="cmp-simple-reading">
   <nav className="cmp-breadcrumb" aria-label="Jejak navigasi"><Link href="/problem-solving/">Kumpulan Soal</Link><span>/</span><Link href={levelHref(p.level)}>{p.level}</Link><span>/</span><span>{p.id.toUpperCase()}</span></nav>
   <article className="cmp-detail">
-   <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{levelTitle(p.level)}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1>{p.title}</h1></header>
+   <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{levelTitle(p.level)}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1 className="cmp-material-detail"><span className="cmp-material-tag">{materialOf(p)}</span></h1></header>
    <div className="cmp-main-prompt"><h2>Soal</h2><div><CompetitionPrompt prompt={p.prompt} problemId={p.id}/></div></div>
    <section className="cmp-source-panel" id="source"><h2>Sumber soal</h2><p>{p.source.label}</p>{p.source.collection&&<p>Referensi tambahan: <Link href={"/sumber-lain/"+p.source.collection.toLowerCase()+"/"}>{p.source.collection}</Link>{p.source.collectionUrl&&<> · <a href={p.source.collectionUrl} target="_blank" rel="noopener noreferrer">Buka referensi ↗</a></>}</p>}{p.source.url&&<a href={p.source.url} target="_blank" rel="noopener noreferrer" className="cmp-link-text">Lihat sumber ↗</a>}</section>
   </article>

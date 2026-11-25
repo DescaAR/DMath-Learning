@@ -252,3 +252,11 @@ body{background:var(--cmp-background)}
 .cmp-question .katex{font-size:1.02em}
 .cmp-question-preview,.cmp-main-prompt{overflow-wrap:anywhere;min-width:0}
 @media(max-width:500px){.cmp-question .math-block{margin:.5em 0;padding:.25em 0}.cmp-subquestions>li{grid-template-columns:1.5em minmax(0,1fr)}}
+
+/* Material chips replace descriptive problem titles; all statements remain unboxed. */
+.cmp-problem-heading{flex-direction:row;align-items:center;flex-wrap:wrap;gap:8px}
+.cmp-material-tag{display:inline-flex;align-items:center;max-width:100%;width:fit-content;padding:4px 10px;border:1px solid var(--cmp-line);border-radius:6px;background:var(--cmp-soft);color:var(--cmp-accent);font-size:12px;font-weight:650;line-height:1.45;letter-spacing:0;text-decoration:none;overflow-wrap:anywhere}
+a.cmp-material-tag:hover{background:var(--cmp-accent-soft);border-color:var(--cmp-accent);color:var(--cmp-accent)}
+a.cmp-material-tag:focus-visible{outline:2px solid var(--cmp-accent);outline-offset:3px}
+.cmp-detail-head h1.cmp-material-detail{font-size:inherit;line-height:1.45;margin:12px 0 0;letter-spacing:0}
+.cmp-material-detail .cmp-material-tag{font-size:15px;padding:6px 12px}
