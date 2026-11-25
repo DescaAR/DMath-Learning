@@ -577,7 +577,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Hari 1, Nomor 1",
       "url": "https://www.aiairyn.com/2024/08/salinan-soal-osn-sma-2024-bidang.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara.",
       "stage": "OSN Nasional"
     }
   },
@@ -811,8 +811,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "OSN-K",
       "number": "Nomor 10",
-      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "url": "https://id.scribd.com/document/1053240605/Soal-Dan-Solusi-Osk-Sd-2026",
+      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara."
     }
   },
   {
@@ -821,7 +821,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Keterbagian",
-    "prompt": "Carilah bilangan terbesar kurang dari 4000 yang habis dibagi 3 dan bersisa 2 apabila dibagi 4.",
+    "prompt": "Suatu bilangan kurang dari 4.000 habis dibagi 3. Jika bilangan tersebut dikurangi 2, hasilnya habis dibagi 4. Tentukan bilangan terbesar yang memenuhi kedua syarat tersebut.",
     "source": {
       "kind": "competition",
       "label": "OSN-K SD 2026 — Nomor 20",
@@ -829,8 +829,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "OSN-K",
       "number": "Nomor 20",
-      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sd-2026.html",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "url": "https://id.scribd.com/document/1053240605/Soal-Dan-Solusi-Osk-Sd-2026",
+      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara."
     }
   },
   {
@@ -911,7 +911,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Digit dalam urutan naik",
-    "prompt": "Tentukan banyak bilangan bulat pada daftar $456,457,\\ldots,2026$ yang digit-digitnya berbeda dan tersusun naik dari kiri ke kanan.",
+    "prompt": "Tentukan banyak bilangan asli pada daftar $456,457,458,\\ldots,2026$ yang digit-digitnya berbeda dan berada dalam urutan naik jika dibaca dari kiri ke kanan.",
     "source": {
       "kind": "competition",
       "label": "OSN-K SMA 2026 — Nomor 5",
@@ -919,8 +919,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2026,
       "stage": "OSN-K",
       "number": "Nomor 5",
-      "url": "https://www.catatanmatematika.com/2026/06/soal-osn-k-sma-2026.html",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "url": "https://id.scribd.com/document/1059177068/Osk-Sma-2026",
+      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara."
     }
   },
   {
@@ -2918,7 +2918,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Isian 34",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
-      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara. Teks lengkap soal tersedia dalam hasil indeks Mathcyber1997; akses langsung halaman gagal."
     }
   },
   {
@@ -2927,7 +2927,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 4,
     "title": "Subgrup diagonal",
-    "prompt": "Misalkan $G$ grup dan $A=G\\times G$. Definisikan $T=\\{(g,g)\\mid g\\in G\\}$. Buktikan bahwa $T\\cong G$ dan bahwa $T$ normal dalam $A$ jika dan hanya jika $G$ abelian.",
+    "prompt": "Misalkan $G$ merupakan grup, $A=G\\times G$ merupakan grup hasil kali langsung, dan $T=\\{(g,g)\\mid g\\in G\\}$. Buktikan bahwa:\n\n(a) $T\\cong G$.\n\n(b) $T$ merupakan subgrup normal dari $A$ jika dan hanya jika $G$ abelian.",
     "source": {
       "kind": "competition",
       "label": "ON-MIPA Seleksi Universitas Tanjungpura 2018 — Esai 2",
@@ -2936,7 +2936,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "ON-MIPA Seleksi Universitas",
       "number": "Universitas Tanjungpura, Esai 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2018/",
-      "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
+      "note": "Isi matematis dan nomor soal diperiksa terhadap transkripsi publik pihak ketiga; redaksi mandiri, belum diverifikasi terhadap naskah resmi penyelenggara. Teks lengkap soal tersedia dalam hasil indeks Mathcyber1997; akses langsung halaman gagal."
     }
   },
   {
