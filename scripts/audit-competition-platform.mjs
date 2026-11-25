@@ -79,3 +79,42 @@ for(const year of Array.from({length:22},(_,i)=>2005+i))assert.ok(competitionPro
 const arMod={exports:{}};new Function("exports","module",ts.transpileModule(read("data/competition-archives.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(arMod.exports,arMod);const archives=arMod.exports.competitionArchives;assert.equal(new Set(archives.map(a=>a.id)).size,archives.length);for(const l of levels)assert.ok(archives.some(a=>a.level===l));for(const a of archives){assert.ok(levels.includes(a.level)&&a.year>=2005&&a.year<=2026&&a.stage&&a.url.startsWith("https://")&&a.provider&&a.note);assert.ok(["resmi","tautan","terbatas"].includes(a.status));}assert.doesNotMatch(workspace,/competitionArchives|cmp-archive-section|Arsip naskah kompetisi|Referensi kompetisi/,"Competition archives are internal research data, not reader-facing content");assert.match(workspace,/setYear/);assert.match(workspace,/setContest/);assert.match(workspace,/setStage/);assert.match(workspace,/<select[^>]*value=\{contest\}|cmp-category-buttons/);assert.match(workspace,/cmp-contest-group/);assert.doesNotMatch(workspace,/\{p\.source\.note\}/);for(const year of Array.from({length:22},(_,i)=>2005+i))assert.ok(archives.some(a=>a.year===year));
 console.log("2005–2026 archive audit:",archives.length,"source references.");
 console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and dedicated daily routes. Public records contain questions and attribution only.");
+
+const parserMod={exports:{}};
+new Function("exports","module",ts.transpileModule(read("lib/competition-prompt.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(parserMod.exports,parserMod);
+const {splitCompetitionPrompt,splitSubquestions}=parserMod.exports;
+let choices=0,subparts=0;
+for(const p of competitionProblems){
+ const parsed=splitCompetitionPrompt(p.prompt);
+ if(/\bPilihan\s*:/i.test(p.prompt)){
+  assert.ok(parsed,p.id+" answer options did not parse");
+  const reconstructed=parsed.question+" Pilihan: "+parsed.options.map((o,i)=>String.fromCharCode(65+i)+". "+o).join("; ");
+  assert.equal(reconstructed.replace(/\s+/g," ").trim(),p.prompt.replace(/\s+/g," ").trim(),p.id+" answer text lost");
+  choices++;
+ }
+ const body=parsed?.question??p.prompt;
+ const parts=splitSubquestions(body);
+ if(parts){
+  const reconstructed=[parts.intro,...parts.parts.map(x=>"("+x.label+") "+x.text)].filter(Boolean).join(" ");
+  assert.equal(reconstructed.replace(/\s+/g," ").trim(),body.replace(/\s+/g," ").trim(),p.id+" subquestion text lost");
+  subparts++;
+ }
+}
+assert.ok(choices>=93,"Missing parsed multiple-choice questions");
+assert.ok(subparts>=20,"Missing parsed lettered subquestions");
+assert.equal(splitSubquestions("Prove $f(a)+f(b)=0$."),null);
+assert.deepEqual(splitCompetitionPrompt("Question. Pilihan: A. $x$; B. $y$.").options,["$x$","$y$."]);
+assert.deepEqual(splitCompetitionPrompt("Question. Pilihan: A. $\\text{A; B. x}$; B. $y$.").options,["$\\text{A; B. x}$","$y$."]);
+const figureBlock=workspace.match(/const geometryFigures:[\s\S]*?=\s*\{([\s\S]*?)\n\};/);
+assert.ok(figureBlock,"Missing figure registry");
+let figureCount=0;
+for(const m of figureBlock[1].matchAll(/"([a-z0-9-]+)"\s*:/g)){
+ const id=m[1];
+ assert.ok(competitionProblems.some(p=>p.id===id),"Unknown figure ID "+id);
+ const svg=read("public/figures/competition/"+id+".svg");
+ assert.match(svg,/<svg\b/);
+ assert.ok(fs.existsSync("figures/competition/"+id+".tex"),"Missing TikZ source "+id);
+ figureCount++;
+}
+assert.ok(figureCount>=3,"Missing registered figures");
+console.log("Question display audit:",choices,"multiple-choice records,",subparts,"lettered lists,",figureCount,"registered figures.");

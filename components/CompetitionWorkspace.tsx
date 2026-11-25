@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { competitionProblems, levels, levelMeta, type CompetitionProblem, type Level } from "@/data/competition-problems";
 import { dailySchedule, dailyDates } from "@/data/competition-daily";
 import { RichMath } from "@/components/RichMath";
+import { splitCompetitionPrompt, splitSubquestions } from "@/lib/competition-prompt";
 
 const difficultyLabels=["","Dasar","Menengah","Lanjutan","Sulit","Sangat Sulit"];
 const isLevel=(v:string):v is Level=>levels.some(x=>x===v);
@@ -66,59 +67,26 @@ export function LevelCards(){
  </Link>)}</div>;
 }
 
-// Render legacy multiple-choice prompts without altering their mathematical source.
-function splitCompetitionPrompt(prompt: string) {
- const marker = /\s+Pilihan\s*:\s*(?=A\.\s)/i.exec(prompt);
- if (!marker) return null;
- const entries = prompt.slice(marker.index + marker[0].length).split(/;\s*(?=[B-E]\.\s)/);
- if (entries.length < 2 || !entries.every((entry, index) => entry.startsWith(String.fromCharCode(65 + index) + ". ") && entry.slice(3).trim())) return null;
- return {
-  question: prompt.slice(0, marker.index).trim(),
-  options: entries.map((entry, index) => {
-   const value = entry.slice(3).trim();
-   return index === entries.length - 1 ? value.replace(/\.$/, "") : value;
-  }),
- };
-}
-
-// Detect sequential subquestions only in prose, never inside a LaTeX formula.
-function splitSubquestions(prompt: string) {
- const candidates = Array.from(prompt.matchAll(/\$\$[\s\S]+?\$\$|\$[^$\n]+\$|(?:^|\s)\(([a-z])\)(?=\s)/g))
-  .filter(m => m[1] !== undefined);
- const markers: RegExpMatchArray[]=[];
- for(const m of candidates){
-  if(m[1]===String.fromCharCode(97+markers.length))markers.push(m);
- }
- if(markers.length<2)return null;
- const parts=markers.map((m,i)=>({
-  label:m[1],
-  text:prompt.slice(m.index!+m[0].length,markers[i+1]?.index??prompt.length).trim()
- }));
- if(parts.some(p=>!p.text))return null;
- return {intro:prompt.slice(0,markers[0].index).trim(),parts};
-}
-
 function QuestionBody({prompt}:{prompt:string}){
  const parsed=splitSubquestions(prompt);
- if(!parsed)return <RichMath>{prompt}</RichMath>;
- return <div>
-  {parsed.intro&&<div style={{marginBottom:"0.65em"}}><RichMath>{parsed.intro}</RichMath></div>}
-  <ol aria-label="Subbagian soal" style={{listStyle:"none",padding:0,margin:0,display:"grid",gap:"0.6em"}}>
-   {parsed.parts.map(part=><li key={part.label} style={{display:"grid",gridTemplateColumns:"1.7em minmax(0,1fr)",alignItems:"start",gap:"0.15em",margin:0,padding:0}}>
-    <span aria-hidden="true">({part.label})</span><div style={{minWidth:0}}><RichMath>{part.text}</RichMath></div>
+ if(!parsed)return <RichMath className="cmp-question-prose">{prompt}</RichMath>;
+ return <div className="cmp-question-body">
+  {parsed.intro&&<div className="cmp-question-intro"><RichMath className="cmp-question-prose">{parsed.intro}</RichMath></div>}
+  <ol className="cmp-subquestions" aria-label="Subbagian soal">
+   {parsed.parts.map(part=><li key={part.label}>
+    <span className="cmp-subquestion-label" aria-hidden="true">({part.label})</span><div className="cmp-subquestion-content"><RichMath className="cmp-question-prose">{part.text}</RichMath></div>
    </li>)}
   </ol>
  </div>;
 }
 
 export function CompetitionPrompt({ prompt }: { prompt: string }) {
- const parsed = splitCompetitionPrompt(prompt);
- if (!parsed) return <QuestionBody prompt={prompt}/>;
- return <div>
-  <QuestionBody prompt={parsed.question}/>
-  <ol type="A" aria-label="Pilihan jawaban" style={{listStyleType:"upper-alpha",listStylePosition:"outside",paddingInlineStart:"1.65em",margin:"0.75em 0 0"}}>
-   {parsed.options.map((option, index) => <li key={index} style={{display:"list-item",paddingInlineStart:"0.3em",marginBlock:"0.3em",minWidth:0,overflowWrap:"anywhere"}}><RichMath>{option}</RichMath></li>)}
-  </ol>
+ const parsed=splitCompetitionPrompt(prompt);
+ return <div className="cmp-question">
+  <QuestionBody prompt={parsed?.question??prompt}/>
+  {parsed&&<ol type="A" className="cmp-answer-options" aria-label="Pilihan jawaban">
+   {parsed.options.map((option,index)=><li key={index}><RichMath className="cmp-question-prose">{option}</RichMath></li>)}
+  </ol>}
  </div>;
 }
 
