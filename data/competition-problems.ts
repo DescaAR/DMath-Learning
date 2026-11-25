@@ -12232,6 +12232,366 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.ktom-tomi.or.id/",
       "note": "User-supplied KTOM ZIP: soal (2).pdf, PDF page 4. URL is organizer homepage."
     }
+  },
+  {
+    "id": "ktom-2022-mar-a-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan bilangan asli $n$ terbesar sehingga $3^n$ habis membagi 999999999 (ada 9 digit).",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 1",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Misalkan $O$ adalah titik pusat lingkaran luar dari segitiga $ABC$. Titik $D$ terletak pada $\\overline{AC}$ sehingga garis $BD$ adalah garis bagi dalam $\\angle ABC$. Jika $\\angle BOC=\\angle BDC$ dan $\\angle BCA=60^\\circ$, berapakah besar $\\angle BAC$ dalam satuan derajat?",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 2",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Tentukanlah banyak bilangan lima-digit yang digit-digitnya hanya terdiri dari 1, 2, dan 3, dengan setiap digit termuat setidaknya sekali (sebagai contoh, bilangan 21232 memenuhi soal, namun 33223 dan 12343 tidak memenuhi soal).",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 3",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-04",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diketahui bilangan riil $a,b,c,d$ yang tak nol sehingga barisan bilangan $ab,2bc,3cd,4da$ membentuk barisan geometrik. Tentukan nilai dari $\\left\\lfloor32\\left(\\frac ac+\\frac bd\\right)^2\\right\\rfloor$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 4",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Di depan pintu sebuah lift, ada tombol naik dan tombol turun. Karena lift sudah tua, lift akan rusak setelah menekan salah satu tombol 5 kali (tidak harus berturut-turut). Tentukan berapa banyak rangkaian penekanan tombol yang akan membuat lift rusak tepat setelah penekanan terakhir.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 5",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 5",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan banyak nilai $n$ asli yang mungkin sehingga persamaan $x^2-nx-20^{22}=0$ memiliki solusi bulat.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 6",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 6",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-07",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diberikan $a,b$, dan $c$ di mana $a\\ne b\\ne c\\ne a$ memenuhi sistem persamaan\n\n$$\\begin{aligned}a^3+b^3&=c^2\\\\b^3+c^3&=a^2\\\\c^3+a^3&=b^2.\\end{aligned}$$\n\nTentukan nilai $100\\cdot abc$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 7",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 7",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-08",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga $ABC$ dengan perbandingan ketiga garis tingginya adalah $10:12:15$ dan perbandingan luas dengan kelilingnya adalah $7:3$. Misalkan $R$ dan $r$ adalah panjang jari-jari lingkaran luar dan lingkaran dalam segitiga $ABC$ berturut-turut. Jika nilai dari $R+r$ dapat dinyatakan dalam bentuk $\\frac mn$ dengan $m,n$ relatif prima, maka tentukan $10m+n$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 8",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 8",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-09",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Misalkan $N$ adalah banyaknya pasangan terurut himpunan $A$ dan $B$ yang memenuhi:\n\n• $A\\cup B=\\{1,2,3,4,5,6,7,8,9,10\\}$,\n\n• $A\\cap B=\\emptyset$,\n\n• $|A|$ bukan anggota $A$,\n\n• $|B|$ bukan anggota $B$.\n\nTentukan nilai $N$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 9",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 9",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-10",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan jumlah semua bilangan asli $n$ di mana $n\\ge3$ yang memenuhi $n!$ habis dibagi $n^{n-3}$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 10",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 10",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-11",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Misalkan $\\sqrt[6]{63\\sqrt[3]{20}-171}$ dapat dinyatakan dalam bentuk $\\sqrt[3]{x}+\\sqrt[3]{y}$ dengan $x,y$ adalah bilangan bulat. Tentukan nilai dari $x+y$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 11",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 11",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-12",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segiempat konveks $ABCD$. Diketahui bahwa $CD$ tegak lurus terhadap $AC$, $AB$ tegak lurus terhadap $BD$, $CD=130$, dan $AB=56$. Titik $E$ adalah proyeksi titik $B$ terhadap $AD$. Jika $BE$ memotong $AC$ di $O$ dengan $AO=16$ serta $CO=x$, tentukan $\\lfloor x\\rfloor$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 12",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 12",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-13",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Tentukan banyaknya kuadrupel bilangan asli terurut $(a,b,c,d)$ yang memenuhi persamaan\n\n$$a+2b+3c+4d=420.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 13",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 13",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-14",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diberikan dua buah fungsi $f,g:\\mathbb R\\to\\mathbb R$. Kita katakan pasangan fungsi $(f,g)$ mengkomi apabila\n\n$$xg(x)+g(f(x)f(y))=|f(g(y))|+f(x)^2$$\n\nuntuk sembarang bilangan riil $x,y\\in\\mathbb R$. Definisikan sebuah himpunan $\\mathcal H$ sehingga\n\n$$\\mathcal H=\\left\\{h:\\mathbb R\\to\\mathbb R\\ \\middle|\\ \\begin{array}{l}\\text{terdapat finit (setidaknya satu) buah fungsi}\\\\ f:\\mathbb R\\to\\mathbb R\\text{ sehingga }(f,h)\\text{ mengkomi}\\end{array}\\right\\}$$\n\nTentukan nilai dari\n\n$$\\max_{h\\in\\mathcal H}\\sum_{(f,h)\\text{ mengkomi}} f(2022)$$\n\nCatatan: Jawab 9999 apabila $\\mathcal H$ merupakan himpunan kosong.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 14",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 14",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-15",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga $ABC$ di mana panjang $\\overline{AB}=5,\\overline{BC}=7$, dan $\\overline{CA}=8$. Titik $D$ terletak pada lingkaran luar segitiga $ABC$ sedemikian sehingga $AD$ berpotongan tegak lurus dengan $BC$ di titik $W$. Garis $AB$ memotong lingkaran luar segitiga $BWD$ sekali lagi di titik $X$. Garis $WX$ memotong lingkaran luar segitiga $CWD$ di titik $Y$ di mana $Y\\ne W$. Panjang $AY$ dapat dinyatakan dalam bentuk $\\frac ab$ di mana $a$ dan $b$ keduanya bilangan asli yang relatif prima. Tentukan nilai dari $a+b$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 15",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 15",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-a-16",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan banyaknya bilangan asli $n$ yang memenuhi\n\n$$\\left\\lfloor\\frac n3\\right\\rfloor+2=\\left\\lfloor\\frac n8\\right\\rfloor+\\left\\lfloor\\frac n9\\right\\rfloor+\\left\\lfloor\\frac n{10}\\right\\rfloor.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian A, Nomor 16",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian A, Nomor 16",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-b-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Teori Bilangan",
+    "prompt": "Diberikan sebuah persamaan\n\n$$(n+1)^a+(n+2)ab=(n+3)^b$$\n\ndengan $a,b$ bilangan bulat nonnegatif sehingga memenuhi untuk setiap bilangan asli $n$.\n\n(a) Buktikan jika salah satu dari $a$ atau $b$ bernilai 0, maka $a=b=0$.\n\n(b) Untuk $a,b$ bilangan asli, tinjau $n=2$, buktikan bahwa $a$ dan $b$ keduanya bilangan genap.\n\n(c) Berdasarkan bagian (b), misalkan $a=2x$ dan $b=2y$ dengan $x,y$ bilangan asli, buktikan bahwa $x\\le3$. (Petunjuk : $(5^y+3^x)(5^y-3^x)=16xy$)\n\n(d) Tentukan semua pasangan $(x,y)$ yang memenuhi untuk $n=2$.\n\n(e) Simpulkan semua pasangan $(a,b)$ yang memenuhi persamaan untuk setiap bilangan asli $n$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian B, Nomor 1",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian B, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-b-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Aljabar",
+    "prompt": "Diberikan $a,b,c,d$ bilangan riil yang memenuhi $a+\\frac b2+\\frac c3+\\frac d4=k$ untuk suatu bilangan riil $k$. Apakah ada bilangan riil $k$ sehingga nilai minimal dari $|a|+|b|+|c|+|d|$ dapat tercapai oleh setidaknya dua buah pasangan bilangan riil $(a,b,c,d)$ yang berbeda?\n\nJika ada, tentukan nilai maksimal $k$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian B, Nomor 2",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian B, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-b-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kombinatorika",
+    "prompt": "Terdapat $2n+1$ tim dalam sebuah turnamen, dan setiap dua tim dijadwalkan dalam tepat satu pertandingan pada waktu yang berbeda-beda. Setelah beberapa pertandingan, jika sebuah tim sudah kalah sebanyak $n$ kali, mereka akan tereliminasi dan tidak bertanding lagi. Tidak ada pertandingan yang berakhir seri, dan pertandingan yang belum dimulai akan dibatalkan jika salah satu tim tereliminasi.\n\n(a) Buktikan banyaknya pertandingan yang dimainkan selalu kurang dari $2n^2+n$.\n\n(b) Buktikan ada setidaknya $\\frac{3n^2+n}{2}$ pertandingan yang dimainkan.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian B, Nomor 3",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian B, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2022-mar-b-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga $ABC$ dengan $\\angle ABC$ sudut tumpul dan $AB\\ne BC$. Misalkan $\\omega$ adalah lingkaran luar $\\triangle ABC$ dan $O$ adalah titik pusatnya. Titik $N$ adalah titik tengah busur $ABC$. Lingkaran luar $\\triangle BON$ berpotongan dengan $AC$ di titik $X$ dan $Y$. Garis $BX$ dan $BY$ berpotongan dengan $\\omega$ untuk kedua kalinya di $P$ dan $Q$ berturut-turut. Jika $N'$ adalah pencerminan titik $N$ terhadap garis $AC$, buktikan bahwa $PQ$ menyinggung lingkaran luar $\\triangle XYN'$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2022 — Maret, Bagian B, Nomor 4",
+      "competition": "KTOM",
+      "year": 2022,
+      "stage": "Kontes Maret",
+      "number": "Bagian B, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 6. URL is organizer homepage."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
