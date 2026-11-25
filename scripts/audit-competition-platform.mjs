@@ -41,4 +41,8 @@ assert.doesNotMatch(home,/dan solusi|beserta pembahasan/);
 assert.match(layout,/competition\.css/);assert.match(css,/@media\(max-width:500px\)/);assert.match(css,/prefers-reduced-motion/);
 for(const color of ["#061B3E","#0B2D6B","#1565D8","#00C2FF","#F3F7FB","#1F2A44","#64748B","#FFFFFF"])assert.ok(css.includes(color),"Missing official brand color "+color);
 assert.doesNotMatch(css,/--cmp-teal|#0a6e70|#79e0cd/i,"Off-brand teal palette must not return");
+assert.match(home,/cmp-hero-index/,"Home must prioritize a functional collection index");
+assert.doesNotMatch(home,/cmp-collection-panel/,"Avoid decorative stats panel");
+assert.match(workspace,/cmp-catalog-layout/);assert.match(workspace,/cmp-problem-list/);assert.match(workspace,/cmp-daily-grid/);
+assert.match(css,/\.cmp-hero\{background:var\(--cmp-paper\)/,"Light editorial hero required");
 console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and two navigation routes. Public records contain questions and attribution only.");
