@@ -1959,7 +1959,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Statistika",
     "difficulty": 2,
     "title": "Perubahan rata-rata",
-    "prompt": "Nilai rata-rata ulangan 48 siswa adalah 80. Dua nilai dikoreksi: 86 menjadi 93 dan 85 menjadi 84. Hitung rata-rata setelah koreksi.",
+    "prompt": "A mathematics test taken by $48$ students has a mean score of $80$. Two scores are subsequently corrected, from $86$ to $93$ and from $85$ to $84$. Determine the revised mean.",
     "source": {
       "kind": "competition",
       "label": "IMSO 2005 — Isian 6",
@@ -1968,7 +1968,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMSO",
       "number": "Isian 6",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -1977,7 +1977,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Logika",
     "difficulty": 3,
     "title": "Hari dalam kalender",
-    "prompt": "Gaji dibayarkan pada Rabu pertama setiap bulan dan uangnya diambil dari bank pada Selasa pertama. Pada Rabu pertama suatu bulan, pengambilan uang belum dilakukan. Hari apakah tanggal 5 pada bulan tersebut?",
+    "prompt": "Ms. Olmer pays her employees on the first Wednesday of each month and collects their salaries from the bank on the first Tuesday. One Wednesday morning she finds that payment is due although she has not yet collected the money. What weekday is the fifth day of that month?",
     "source": {
       "kind": "competition",
       "label": "IMSO 2005 — Isian 7",
@@ -1986,7 +1986,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMSO",
       "number": "Isian 7",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/short-answer1.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -2049,7 +2049,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 1,
     "title": "Perbandingan desimal",
-    "prompt": "Manakah yang terbesar di antara $2{,}06$, $2{,}1$, $2{,}18$, $2{,}109$, dan $2{,}115$?",
+    "prompt": "Tentukan bilangan terbesar dari pilihan berikut. Pilihan: A. $2{,}06$; B. $2{,}1$; C. $2{,}18$; D. $2{,}109$; E. $2{,}115$",
     "source": {
       "kind": "competition",
       "label": "KMNR Penyisihan 2016 — Kelas 7–8, Nomor 2",
@@ -2058,7 +2058,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KMNR Penyisihan",
       "number": "Kelas 7–8, Nomor 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -2076,7 +2076,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KMNR Penyisihan",
       "number": "Kelas 7–8, Nomor 3",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-7-8-matematika-nalaria-realistik/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -2094,7 +2094,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KMNR Penyisihan",
       "number": "Kelas 9, Nomor 2",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-babak-penyisihan-kategori-kelas-9-kompetisi-matematika-nalaria-realistik-kmnr-tahun-2016/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -2184,7 +2184,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "LMNas UGM Penyisihan",
       "number": "Pilihan Ganda 1",
       "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -2202,7 +2202,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "LMNas UGM Penyisihan",
       "number": "Pilihan Ganda 2",
       "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -2220,7 +2220,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "LMNas UGM Penyisihan",
       "number": "Pilihan Ganda 3",
       "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -2229,7 +2229,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Tiga digit terakhir jumlah faktorial",
-    "prompt": "Jika $N=\\sum_{k=1}^{2018}(k!)^3$ dan tiga digit terakhir $N$ adalah $a,b,c$, hitung $a+b+c$. Pilihan: A. 9; B. 10; C. 11; D. 12; E. 13.",
+    "prompt": "Misalkan $N=(1!)^3+(2!)^3+\\cdots+(2018!)^3$. Jika tiga digit terakhir $N$ berturut-turut adalah $a,b,c$, tentukan nilai $a+b+c$. Pilihan: A. $9$; B. $10$; C. $11$; D. $12$; E. $13$",
     "source": {
       "kind": "competition",
       "label": "LMNas UGM Penyisihan 2018 — Pilihan Ganda 5",
@@ -2238,7 +2238,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "LMNas UGM Penyisihan",
       "number": "Pilihan Ganda 5",
       "url": "https://id.scribd.com/document/431458432/SOAL-OLIMPIADE-MATEMATIKA-UGM-BABAK-PENYISIHAN",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -2713,7 +2713,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "id": "hmmt-2005-feb-1",
     "level": "SMA",
     "title": "Persamaan nilai mutlak",
-    "prompt": "Tentukan banyak solusi real dari $|x-1|=|x-2|+|x-3|$.",
+    "prompt": "Determine the number of real solutions of $$|x-1|=|x-2|+|x-3|.$$",
     "topic": "Aljabar",
     "difficulty": 3,
     "source": {
@@ -2724,14 +2724,14 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "number": "Aljabar, Nomor 1",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
-      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
     "id": "hmmt-2005-feb-2",
     "level": "SMA",
     "title": "Persamaan eksponensial",
-    "prompt": "Berapa banyak $x\\in\\mathbb R$ yang memenuhi $2003^x+2004^x=2005^x$?",
+    "prompt": "Determine the number of real solutions of $$2003^x+2004^x=2005^x.$$",
     "topic": "Aljabar",
     "difficulty": 4,
     "source": {
@@ -2742,14 +2742,14 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "number": "Aljabar, Nomor 2",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
-      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
     "id": "hmmt-2005-feb-3",
     "level": "SMA",
     "title": "Rasio jumlah hasil kali",
-    "prompt": "Untuk tiga bilangan real berbeda $x,y,z$ dengan $x+y+z=0$, tentukan nilai maksimum $\\frac{xy+yz+zx}{x^2+y^2+z^2}$.",
+    "prompt": "Suppose $x,y,z$ are pairwise distinct real numbers with $x+y+z=0$. Find the greatest attainable value of $$\\frac{xy+yz+zx}{x^2+y^2+z^2}.$$",
     "topic": "Aljabar",
     "difficulty": 3,
     "source": {
@@ -2760,14 +2760,14 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "number": "Aljabar, Nomor 3",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
-      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
     "id": "hmmt-2005-feb-9",
     "level": "SMA",
     "title": "Jumlah faktor prima",
-    "prompt": "Bilangan $27.000.001$ mempunyai tepat empat faktor prima. Tentukan jumlah keempat faktor tersebut.",
+    "prompt": "The integer $27{,}000{,}001$ has exactly four prime factors. Determine the sum of those factors.",
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "source": {
@@ -2778,14 +2778,14 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2005,
       "number": "Aljabar, Nomor 9",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2005/feb/alg/problems.pdf",
-      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
     "id": "hmmt-2025-feb-1",
     "level": "SMA",
     "title": "Pembagi dengan digit satuan tertentu",
-    "prompt": "Jumlahkan seluruh pembagi positif dari $9!$ yang berakhir dengan digit 1, termasuk pembagi 1.",
+    "prompt": "Find the sum of all positive divisors of $9!$ whose units digit is $1$, counting the divisor $1$.",
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "source": {
@@ -2796,14 +2796,14 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "number": "Aljabar dan Teori Bilangan, Nomor 1",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
-      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
     "id": "hmmt-2025-feb-4",
     "level": "SMA",
     "title": "Jumlahan fungsi lantai",
-    "prompt": "Hitung nilai $$\\sum_{j=-1000}^{1000}\\left\\lfloor\\frac{2025}{j+0{,}5}\\right\\rfloor.$$",
+    "prompt": "For real $z$, let $\\lfloor z\\rfloor$ be the largest integer not exceeding $z$. Evaluate $$\\sum_{j=-1000}^{1000}\\left\\lfloor\\frac{2025}{j+0.5}\\right\\rfloor.$$",
     "topic": "Aljabar",
     "difficulty": 4,
     "source": {
@@ -2814,14 +2814,14 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "number": "Aljabar dan Teori Bilangan, Nomor 4",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
-      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
     "id": "hmmt-2025-feb-10",
     "level": "SMA",
     "title": "Sistem persamaan kompleks siklik",
-    "prompt": "Tiga bilangan kompleks $a,b,c$ berbeda satu sama lain dan memenuhi $a^2=b+6$, $b^2=c+6$, serta $c^2=a+6$. Tentukan kedua kemungkinan nilai $a+b+c$.",
+    "prompt": "Suppose $a,b,c$ are pairwise distinct complex numbers satisfying $$a^2=b+6,\\qquad b^2=c+6,\\qquad c^2=a+6.$$ Find both possible values of $a+b+c$.",
     "topic": "Aljabar",
     "difficulty": 5,
     "source": {
@@ -2832,7 +2832,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2025,
       "number": "Aljabar dan Teori Bilangan, Nomor 10",
       "url": "https://hmmt-archive.s3.amazonaws.com/tournaments/2025/feb/algnt/problems.pdf",
-      "note": "Pernyataan matematis dalam bahasa Indonesia; nomor diperiksa pada naskah penyelenggara."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -2993,8 +2993,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2008,
       "stage": "AMC 8",
       "number": "Nomor 7",
-      "url": "https://agmath.com/media/DIR_37352/2008AMC8.pdf#page=3",
-      "note": "Redaksi bahasa Inggris dicocokkan dengan naskah asli. Izin penggunaan soal individual untuk pendidikan nonkomersial tercantum pada naskah."
+      "url": "https://live.poshenloh.com/past-contests/amc8/2008",
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -3012,7 +3012,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "AMC 12 B",
       "number": "Nomor 9",
       "url": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2007AMC12-B.pdf#page=3",
-      "note": "Redaksi bahasa Inggris dicocokkan dengan naskah asli. Izin penggunaan soal individual untuk pendidikan nonkomersial tercantum pada naskah."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -3030,7 +3030,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "AIME II",
       "number": "Nomor 6",
       "url": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2011AIME-II.pdf#page=2",
-      "note": "Redaksi bahasa Inggris dicocokkan dengan naskah asli. Izin penggunaan soal individual untuk pendidikan nonkomersial tercantum pada naskah."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -3039,7 +3039,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Sudut siku-siku dari kesamaan panjang ruas",
-    "prompt": "In the plane, take noncollinear points $A,B,C$ and define $D=2C-B$ and $E=3A-2C$. Prove that $|AD|=|BE|$ implies that $\\triangle ABC$ is right-angled.",
+    "prompt": "In triangle $ABC$, extend $BC$ past $C$ to a point $D$ with $CD=BC$. Extend $CA$ past $A$ to a point $E$ with $AE=2CA$. Assuming $AD=BE$, prove that $ABC$ is a right triangle.",
     "source": {
       "kind": "competition",
       "competition": "EGMO",
@@ -3047,10 +3047,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "EGMO",
       "number": "Nomor 1",
       "label": "EGMO 2013 — Nomor 1",
-      "url": "https://imomath.com/srb/zadaci/2013_egmo_resenja_e.pdf",
+      "url": "https://www.egmo.org/egmos/egmo2/paper-day1-English.pdf",
       "collection": "MathNet",
       "collectionUrl": "https://huggingface.co/datasets/ShadenA/MathNet",
-      "note": "Independent mathematical formulation in English; MathNet record 05dg; not verbatim."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -3079,7 +3079,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Sistem persamaan rasional",
-    "prompt": "Let $s>0$ and $t\\ge0$ satisfy $$\\frac{9}{s}+\\frac{t}{60}=4,\\qquad \\frac{9}{s+2}+\\frac{t}{60}=\\frac{12}{5}.$$ Determine the value of $\\frac{540}{s+\\frac12}+t$.",
+    "prompt": "Aya walks a route of length $9$ kilometres each morning and then visits a coffee shop for $t$ minutes. Walking at constant speed $s$ kilometres per hour gives a total duration of four hours, including the visit. At speed $s+2$ kilometres per hour, the total is two hours and twenty-four minutes with the same visit duration. Find the total duration in minutes at speed $s+\\frac12$ kilometres per hour.",
     "source": {
       "kind": "competition",
       "competition": "AIME",
@@ -3087,10 +3087,10 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "AIME I",
       "number": "Nomor 1",
       "label": "AIME I 2024 — Nomor 1",
-      "url": "https://artofproblemsolving.com/school/mathjams-transcripts?id=682",
+      "url": "https://live.poshenloh.com/past-contests/aime/2024I",
       "collection": "AoPS",
       "collectionUrl": "https://artofproblemsolving.com/school/mathjams-transcripts?id=682",
-      "note": "Independent symbolic formulation of the original mathematical task, not verbatim."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Third-party source copy."
     }
   },
   {
@@ -6537,7 +6537,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Representasi fungsi sebagai maksimum polinomial",
-    "prompt": "Decide whether there are finitely many $p_i\\in\\mathbb R[x]$, all nonnegative on $[0,\\infty)$, with $$\\min(x,x^2)=\\max_i p_i(x)\\qquad(x\\ge0).$$",
+    "prompt": "Call a map $f:[0,\\infty)\\to[0,\\infty)$ max-poly when there are finitely many real polynomials $p_1,\\ldots,p_n$ such that $p_i(x)\\ge0$ for every $x\\ge0$ and $1\\le i\\le n$, and $$f(x)=\\max\\{p_1(x),\\ldots,p_n(x)\\}\\qquad(x\\ge0).$$ Decide whether $f(x)=\\min\\{x,x^2\\}$ is max-poly.",
     "source": {
       "kind": "competition",
       "competition": "SMMC",
@@ -6546,7 +6546,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor A1",
       "label": "SMMC 2025 — Paper A, A1",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
-      "note": "Independent English mathematical formulation; official paper consulted."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -6555,7 +6555,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Rata-rata banyak vektor eigen",
-    "prompt": "For prime $p$ and $n\\ge1$, evaluate $$\\frac{1}{p^{n^2}}\\sum_{M\\in M_n(\\mathbb F_p)}|\\{v\\in\\mathbb F_p^n\\setminus\\{0\\}\\mid Mv\\in\\mathbb F_pv\\}|.$$",
+    "prompt": "Fix a prime $p$. For a square matrix $M$ over $\\mathbb Z/p\\mathbb Z$, call a nonzero vector $v$ over that field an eigenvector if $Mv=\\lambda v$ for some $\\lambda\\in\\mathbb Z/p\\mathbb Z$. For each positive integer $n$, find the mean number of eigenvectors among all $n\\times n$ matrices over $\\mathbb Z/p\\mathbb Z$, the integers modulo $p$.",
     "source": {
       "kind": "competition",
       "competition": "SMMC",
@@ -6564,7 +6564,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor A2",
       "label": "SMMC 2025 — Paper A, A2",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
-      "note": "Independent English mathematical formulation; official paper consulted."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -6582,7 +6582,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor A3",
       "label": "SMMC 2025 — Paper A, A3",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
-      "note": "Independent English mathematical formulation; official paper consulted."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -6591,7 +6591,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Subruang fungsi mulus yang invarian terhadap dilatasi",
-    "prompt": "If $V$ is a finite-dimensional real linear subspace of $C^\\infty(\\mathbb R,\\mathbb R)$ invariant under the operator $(Tg)(x)=g(2x)$, establish $V\\subseteq\\mathbb R[x]$.",
+    "prompt": "Let $V$ be a finite-dimensional real linear subspace of the space of $C^\\infty$ functions $\\mathbb R\\to\\mathbb R$. Suppose the function $x\\mapsto g(2x)$ belongs to $V$ whenever $g\\in V$. Prove that every member of $V$ is polynomial. Here $C^\\infty$ means that derivatives of every positive integer order exist everywhere.",
     "source": {
       "kind": "competition",
       "competition": "SMMC",
@@ -6600,7 +6600,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor A4",
       "label": "SMMC 2025 — Paper A, A4",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_a.pdf",
-      "note": "Independent English mathematical formulation; official paper consulted."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -6609,7 +6609,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Eksistensi fungsi dengan syarat keterbagian",
-    "prompt": "Determine the positive integers $n$ for which every $m\\ge1$ admits a map $f:\\{1,\\ldots,n\\}\\to\\{m+1,\\ldots,m+n\\}$ satisfying $a\\mid f(a)$ for each $a$ and $f(a)\\ne f(b)$ whenever $a\\ne b$ and $\\gcd(a,b)>1$.",
+    "prompt": "For positive integers $m,n$, call $f:\\{1,\\ldots,n\\}\\to\\{m+1,\\ldots,m+n\\}$ beaut if $a\\mid f(a)$ for each $a$ in its domain and $f(a)\\ne f(b)$ whenever $a,b$ are distinct domain elements with $\\gcd(a,b)\\ne1$. Determine the positive integers $n$ admitting a beaut function for every positive integer $m$.",
     "source": {
       "kind": "competition",
       "competition": "SMMC",
@@ -6618,7 +6618,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor B1",
       "label": "SMMC 2025 — Paper B, B1",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
-      "note": "Independent English mathematical formulation; official paper consulted."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -6636,7 +6636,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor B2",
       "label": "SMMC 2025 — Paper B, B2",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
-      "note": "Independent English mathematical formulation; official paper consulted."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -6654,7 +6654,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor B3",
       "label": "SMMC 2025 — Paper B, B3",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
-      "note": "Independent English mathematical formulation; official paper consulted."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -6663,7 +6663,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Persamaan Diophantine jumlah pangkat",
-    "prompt": "(a) Classify integer triples $(x,y,q)$ with odd $q\\ge3$ satisfying $\\sum_{j=0}^3x^j=y^q$. (b) Classify integer quadruples $(x,y,n,q)$ with $n,q\\ge2$ satisfying $\\sum_{j=0}^nx^j=y^q$. Part (b) was designated an open problem in the contest.",
+    "prompt": "The contest identifies the second subquestion as open. Seven points are available for the first subquestion, with up to seven more for progress on the second. (a) Determine the integer triples $(x,y,q)$ satisfying $$x^3+x^2+x+1=y^q,$$ where $q\\ge3$ is odd. (b) Determine the integer quadruples $(x,y,n,q)$ satisfying $$x^n+x^{n-1}+\\cdots+x+1=y^q,$$ where $n,q\\ge2$.",
     "source": {
       "kind": "competition",
       "competition": "SMMC",
@@ -6672,7 +6672,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor B4",
       "label": "SMMC 2025 — Paper B, B4",
       "url": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf",
-      "note": "Independent English mathematical formulation; official paper consulted."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -7005,7 +7005,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Pangkat prima sebagai jumlah rantai keterbagian",
-    "prompt": "For each prime $p$ and integer $n\\ge1$, decide whether $p^n$ belongs to $\\{a+b+c\\mid a,b,c\\in\\mathbb Z_{>0}\\text{ pairwise distinct},\\ a\\mid b,\\ b\\mid c\\}$, with proof.",
+    "prompt": "Call a sequence of three distinct positive integers $(a,b,c)$ a ramp when $a\\mid b$ and $b\\mid c$. For every prime $p$ and positive integer $n$, decide, with proof, whether $p^n$ is the sum of some ramp.",
     "source": {
       "kind": "competition",
       "competition": "BMO UK",
@@ -7014,7 +7014,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "BMO UK 2025 — Round 1, Nomor 1",
       "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
-      "note": "Independent mathematical formulation based on official paper; not verbatim."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -7032,7 +7032,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "BMO UK 2025 — Round 1, Nomor 2",
       "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
-      "note": "Independent mathematical formulation based on official paper; not verbatim."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -7041,7 +7041,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Barisan rekursif dengan pencacahan suku satu",
-    "prompt": "Set $t_1=1$ and recursively define $$t_{n+1}=\\begin{cases}t_n/2&t_n\\text{ even},\\\\\\lfloor t_n/3+1/2\\rfloor&t_n>1\\text{ odd},\\\\2025|\\{i\\le n:t_i=1\\}|&t_n=1.\\end{cases}$$ Is $\\{t_n:n\\ge1\\}=\\mathbb Z_{>0}$?",
+    "prompt": "George constructs a positive integer sequence beginning with $t_1=1$. For $n\\ge1$, halve $t_n$ if it is even; if it is odd and exceeds $1$, divide it by $3$ and round to the nearest integer; if $t_n=1$, set $t_{n+1}=2025k$, where $k$ counts the occurrences of $1$ among the first $n$ terms. Does every positive integer occur in this sequence?",
     "source": {
       "kind": "competition",
       "competition": "BMO UK",
@@ -7050,7 +7050,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "BMO UK 2025 — Round 1, Nomor 5",
       "url": "https://bmos.ukmt.org.uk/home/bmo1-2026.pdf",
-      "note": "Independent mathematical formulation based on official paper; not verbatim."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -7059,7 +7059,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Submatriks dengan jumlah ganjil",
-    "prompt": "For each nonzero binary matrix $A$ of size $2026\\times2026$, let $m(A)$ be the greatest number of entries in a contiguous rectangular submatrix having odd entry sum. Determine $\\min_A m(A)$.",
+    "prompt": "Call a $2026\\times2026$ board bordeaux when at least one unit cell is red. A rectangle consisting of cells is oddly-rectangular when its red-cell count is odd. Find the greatest positive integer $M$ such that every bordeaux board contains an oddly-rectangular region of at least $M$ unit cells. The rectangles must be aligned with the board and include their entire interiors.",
     "source": {
       "kind": "competition",
       "competition": "EGMO",
@@ -7068,7 +7068,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "EGMO 2026 — Hari 1, Nomor 1",
       "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
-      "note": "Independent mathematical formulation based on official paper; not verbatim."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -7077,7 +7077,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Barisan operasi pembulatan ke kelipatan",
-    "prompt": "Fix a positive integer $n$. Begin with $V=1$ and repeatedly choose an integer $j$ from $1$ through $n$ and replace $V$ by $jR(V/j)$, where $R(x)$ rounds to the nearest integer, with ties rounded upward. For instance, $R(1.3)=1$ and $R(1.5)=R(1.8)=2$. (a) Establish an upper bound on all values obtainable for each fixed $n$. (b) Let $f(n)$ be the maximum value obtainable by finitely many replacements. Prove that $2026$ divides $f(n)$ for every sufficiently large $n$.",
+    "prompt": "For a positive integer $n$, Marie starts with $1$ on a blackboard. She can repeatedly choose an integer $j$ satisfying $1\\le j\\le n$ and replace the current value $V$ by $jR\\left(\\frac Vj\\right)$. Here $R(x)$ rounds to the nearest integer, with a tie resolved upward; for example, $R(1.3)=1$ and $R(1.5)=R(1.8)=2$. (a) For each $n$, establish the existence of a positive integer $B$ which no obtainable value exceeds. (b) Let $f(n)$ denote the greatest value obtainable after finitely many moves. Prove that some positive integer $N$ satisfies $2026\\mid f(n)$ for every $n\\ge N$.",
     "source": {
       "kind": "competition",
       "competition": "EGMO",
@@ -7086,7 +7086,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "EGMO 2026 — Hari 1, Nomor 2",
       "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
-      "note": "Independent mathematical formulation based on official paper; not verbatim."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
@@ -7104,7 +7104,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "EGMO 2026 — Hari 1, Nomor 3",
       "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
-      "note": "Independent mathematical formulation based on official paper; not verbatim."
+      "note": "Mathematical content compared against available source text; adapted formulation, not a verbatim transcription. Published paper or archived copy; some PDF screenshots unavailable."
     }
   },
   {
