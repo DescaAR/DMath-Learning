@@ -68,11 +68,12 @@ const imcEditions = Array.from({length:22}, (_,i)=>{
  const perDay=year<=2008?6:year>=2020&&year<=2022?4:5;
  return {year,perDay};
 });
-const imcMissing = imcEditions.flatMap(({year,perDay})=>[1,2].flatMap(day=>Array.from({length:perDay},(_,i)=>{
+const imcAll = imcEditions.flatMap(({year,perDay})=>[1,2].flatMap(day=>Array.from({length:perDay},(_,i)=>{
  const number=(day-1)*perDay+i+1;
- const local=competitionProblems.some(p=>p.source.competition==="IMC"&&p.source.year===year&&p.source.number==="Hari "+day+", Nomor "+number);
- return {year,day,number,local,url:"https://studolymp.com/imc/problems/imc-"+year+"-d"+day+"-p"+(i+1)};
-}).filter(p=>!p.local)));
+ const local=competitionProblems.find(p=>p.source.competition==="IMC"&&p.source.year===year&&p.source.number==="Hari "+day+", Nomor "+number);
+ return {year,day,number,localId:local?.id,url:"https://studolymp.com/imc/problems/imc-"+year+"-d"+day+"-p"+(i+1)};
+})));
+const imcMissing=imcAll.filter(p=>!p.localId);
 type YearPaper={competition:string;level:Level;year:number;stage:string;label:string;url:string};
 const yearPapers:YearPaper[]=imcEditions.flatMap(({year}):YearPaper[]=>[
  {competition:"IMO",level:"SMA",year,stage:"IMO",label:"Naskah resmi · Nomor 1–6",url:"https://www.imo-official.org/problems/"+year+"/"},
@@ -92,13 +93,13 @@ function YearPaperIndex({items}:{items:YearPaper[]}){
   <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:8,marginTop:12}}>{items.map(p=><a key={p.year+"-"+p.stage} href={p.url} className="cmp-link-text" target="_blank" rel="noopener noreferrer" style={{display:"block",padding:"10px 12px",border:"1px solid var(--cmp-line)",borderRadius:7}}><strong>{p.competition} {p.year} ↗</strong><span style={{display:"block",fontSize:12,fontWeight:400,color:"var(--cmp-muted)"}}>{p.label}</span></a>)}</div>
  </details>;
 }
-function IMCFullIndex({items}:{items:typeof imcMissing}){
+function IMCFullIndex({items}:{items:typeof imcAll}){
  const visible=imcEditions.filter(e=>items.some(p=>p.year===e.year));
  return <div style={{margin:"0 0 16px",padding:"16px",border:"1px solid var(--cmp-line)",borderRadius:10,background:"var(--cmp-paper)"}}>
-  <p style={{margin:"0 0 10px",fontSize:13,color:"var(--cmp-muted)"}}>Soal dari naskah asli (tautan eksternal). Pilih tahun, hari, dan nomor soal. Soal yang sudah tersedia langsung di DMath ditampilkan di bawah.</p>
+  <p style={{margin:"0 0 10px",fontSize:13,color:"var(--cmp-muted)"}}>Pilih tahun, hari, dan nomor soal. Tanda ↗ menunjukkan tautan eksternal; soal tanpa tanda tersebut tersedia langsung di DMath.</p>
   {visible.map(({year})=><details key={year} open={visible.length===1||undefined} style={{borderTop:"1px solid var(--cmp-line)",padding:"10px 0"}}>
-   <summary style={{cursor:"pointer",fontWeight:700,color:"var(--cmp-heading)"}}>IMC {year} · {items.filter(p=>p.year===year).length} tautan soal</summary>
-   {[1,2].map(day=>{const dayItems=items.filter(p=>p.year===year&&p.day===day);return dayItems.length?<div key={day} style={{marginTop:12}}><div style={{fontSize:13,fontWeight:700,marginBottom:6}}>Hari {day}</div><div style={{display:"flex",flexWrap:"wrap",gap:8}}>{dayItems.map(p=><a key={p.number} href={p.url} target="_blank" rel="noopener noreferrer" className="cmp-button cmp-secondary" style={{minHeight:36,padding:"6px 12px",fontSize:13}}>Nomor {p.number} ↗</a>)}</div></div>:null;})}
+   <summary style={{cursor:"pointer",fontWeight:700,color:"var(--cmp-heading)"}}>IMC {year} · {items.filter(p=>p.year===year).length} soal</summary>
+   {[1,2].map(day=>{const dayItems=items.filter(p=>p.year===year&&p.day===day);return dayItems.length?<div key={day} style={{marginTop:12}}><div style={{fontSize:13,fontWeight:700,marginBottom:6}}>Hari {day}</div><div style={{display:"flex",flexWrap:"wrap",gap:8}}>{dayItems.map(p=>p.localId?<Link key={p.number} href={"/problem-solving/"+p.localId+"/"} className="cmp-button cmp-secondary" style={{minHeight:36,padding:"6px 12px",fontSize:13}}>Nomor {p.number}</Link>:<a key={p.number} href={p.url} target="_blank" rel="noopener noreferrer" className="cmp-button cmp-secondary" style={{minHeight:36,padding:"6px 12px",fontSize:13}}>Nomor {p.number} ↗</a>)}</div></div>:null;})}
    <a className="cmp-link-text" href={"https://www.imc-math.org.uk/?item=problems&year="+year} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",marginTop:12}}>Naskah resmi IMC {year} ↗</a>
   </details>)}
  </div>;
@@ -127,6 +128,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||categoryOf(p)===contest)&&(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
  const groups=contests.map(c=>({name:c,items:filtered.filter(p=>categoryOf(p)===c).sort((a,b)=>(b.source.year||0)-(a.source.year||0)||(a.source.stage||"").localeCompare(b.source.stage||"","id")||(a.source.number||a.id).localeCompare(b.source.number||b.id,"id",{numeric:true}))})).filter(g=>g.items.length>0);
  const linkedIMC=(level==="Semua"||level==="Kuliah")&&(contest==="Semua"||contest==="IMC")&&(stage==="Semua"||stage==="IMC")&&topic==="Semua"&&diff==="Semua"&&source!=="original"?imcMissing.filter(p=>(year==="Semua"||String(p.year)===year)&&("IMC "+p.year+" Hari "+p.day+" Nomor "+p.number+" Kuliah").toLowerCase().includes(query.toLowerCase().trim())):[];
+ const imcVisible=linkedIMC.length?imcAll.filter(p=>linkedIMC.includes(p)||Boolean(p.localId&&filtered.some(q=>q.id===p.localId))):[];
  const linkedPapers=topic==="Semua"&&diff==="Semua"&&source!=="original"?papersForLevel.filter(p=>(contest==="Semua"||p.competition===contest)&&(year==="Semua"||String(p.year)===year)&&(stage==="Semua"||p.stage===stage)&&[p.competition,p.year,p.stage,p.label].join(" ").toLowerCase().includes(query.toLowerCase().trim())):[];
  const extraNames=[...new Set([...(linkedIMC.length?["IMC"]:[]),...linkedPapers.map(p=>p.competition)])].filter(name=>!groups.some(g=>g.name===name));
  const displayGroups=[...groups,...extraNames.map(name=>({name,items:[] as CompetitionProblem[]}))].sort((a,b)=>categoryOrder(a.name,b.name));
@@ -153,7 +155,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
    <div className="cmp-results">
 
     <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length+linkedIMC.length} soal ditemukan{linkedIMC.length>0?" · "+linkedIMC.length+" tautan":""}{linkedPapers.length>0?" · "+linkedPapers.length+" naskah":""}</span></div>
-    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length+(g.name==="IMC"?linkedIMC.length:0)} soal{linkedPapers.some(p=>p.competition===g.name)?" · "+linkedPapers.filter(p=>p.competition===g.name).length+" naskah":""}</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={linkedIMC}/>} {linkedPapers.some(p=>p.competition===g.name)&&<YearPaperIndex items={linkedPapers.filter(p=>p.competition===g.name)}/> } {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&source!=="original"&&year==="Semua"&&stage==="Semua"&&!query.trim()&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
+    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length+(g.name==="IMC"?linkedIMC.length:0)} soal{linkedPapers.some(p=>p.competition===g.name)?" · "+linkedPapers.filter(p=>p.competition===g.name).length+" naskah":""}</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={imcVisible}/>} {linkedPapers.some(p=>p.competition===g.name)&&<YearPaperIndex items={linkedPapers.filter(p=>p.competition===g.name)}/> } {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&source!=="original"&&year==="Semua"&&stage==="Semua"&&!query.trim()&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
     {!filtered.length&&!linkedIMC.length&&!linkedPapers.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
    </div>
   </div>
