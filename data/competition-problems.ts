@@ -12952,6 +12952,366 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.ktom-tomi.or.id/",
       "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 6. URL is organizer homepage."
     }
+  },
+  {
+    "id": "ktom-2024-jan-a-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diketahui polinomial $x^2+20x+24$ memiliki akar $p$ dan $q$. Hasil penjumlahan dari semua akar $x^2+px+q$ dan $x^2+qx+p$ adalah ...",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 1",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan suatu persegi $ABCD$. Misalkan ada setengah lingkaran dengan diameter $CD$ yang dibuat ke arah luar persegi $ABCD$. Misalkan $E$ adalah titik tengah busur setengah lingkaran tersebut. Jika $AB=6$, tentukanlah luas $\\triangle BDE$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 2",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Dalam rangka merayakan tahun baru, Tommy menyalakan petasan putih, biru, kuning, dan hijau secara bersamaan. Jika peluang bahwa petasan terakhir yang meledak bukan petasan putih adalah $\\frac mn$, di mana $m$ dan $n$ adalah bilangan asli yang saling relatif prima, tentukan nilai dari $m+n$. (Asumsikan urutan ledakan 4 petasan tersebut terjadi secara acak dan dengan peluang yang setara, dan tidak ada dua petasan yang meledak secara bersamaan.)",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 3",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Diberikan sebuah bilangan asli $n$. Notasikan $f(n)$ sebagai banyaknya digit yang ada pada representasi desimal $n$. Sebagai contoh, $f(8)=1$ dan $f(20)=2$. Tentukan banyaknya bilangan asli $n<1000$ sehingga\n\n$$\\frac{f(1)+f(2)+\\cdots+f(n)}{n}$$\n\nmerupakan bilangan asli.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 4",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Bilangan $1,2,\\ldots,12$ ditulis di papan tulis, dengan setiap bilangan ditulis tepat sekali. Setiap menit, Kanade memilih dua bilangan yang tertulis di papan, sebutlah $a$ dan $b$, menghapus keduanya, dan menggantinya dengan $a+b-2$. Operasi ini dilakukan berulang-ulang hingga pada suatu saat hanya tersisa satu bilangan $K$. Tentukan nilai $K$ terkecil yang mungkin didapat Kanade.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 5",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 5",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-06",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Misalkan $f:\\mathbb Z\\to\\mathbb R_{>0}$ memenuhi $f(n)+f(10-n)=(5-n)^2+4$ untuk setiap $n$ bulat. Untuk setiap bilangan bulat $n\\le0$, berlaku pula $f(n)=2$. Tentukan bilangan asli terkecil $a$ agar $f(1)+f(2)+\\cdots+f(a)\\ge2024$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 6",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 6",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-07",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan trapesium siku-siku $ABCD$ dengan $AB\\parallel CD$ dan $DA\\perp AB$. Suatu lingkaran melewati $B,C$, dan menyinggung $AD$ di $E$ sehingga $CE$ membagi $\\angle BCD$ menjadi 2 bagian sama besar. Diketahui juga $BC=13, CD=3$, dan $DE=4$. Jika luas segiempat $ABCD$ dapat dinyatakan dalam bentuk $\\frac ab$, dengan $a$ dan $b$ adalah bilangan asli yang saling relatif prima, tentukan nilai $a+b$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 7",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 7",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-08",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan banyaknya pasangan bilangan asli $(a,b)$ yang memenuhi $a!=7^b+a^2+1$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 8",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 8",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-09",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Untuk setiap bilangan real $x\\ne1$, fungsi $f$ memenuhi\n\n$$f(x)=(1-x^{2024})^{-\\frac{1}{2024}}.$$\n\nJika $(\\underbrace{f(f(\\ldots(f(2024))\\ldots))}_{2024})^{2024}=\\frac ab$, di mana $a,b$ merupakan bilangan asli yang relatif prima, tentukan nilai dari $b-a$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 9",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 9",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-10",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Satu bidak gajah dan satu bidak benteng akan diletakkan pada 2 kotak berbeda di papan catur $8\\times8$. Sebuah gajah dapat menyerang semua kotak yang terletak pada arah diagonal dari posisinya (sejajar dengan salah satu dari kedua diagonal utama), dan sebuah benteng menyerang semua kotak yang terletak pada baris atau kolom yang sama dengan posisinya. Berapa banyak cara meletakkan dua bidak tersebut sehingga keduanya tidak saling menyerang?",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 10",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 10",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-11",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Sebuah bilangan asli $n$ memiliki faktor positif $d_1,d_2,\\ldots,d_{18}$, dengan $1=d_1<d_2<\\ldots<d_{18}=n$. Jika diketahui bahwa $d_7=20$ dan $d_{16}-d_3=601$, jumlah semua nilai $n$ yang mungkin adalah ...",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 11",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 11",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-12",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segiempat $ABCD$ yang terletak pada lingkaran $\\Gamma$. Diketahui bahwa jari-jari $\\Gamma$ adalah 5, dan $\\angle ABC=90^\\circ$. Misal $M$ adalah titik tengah $BD$, sehingga $AM=9$ dan $CM=3$. Tentukan luas dari $ABCD$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 12",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 12",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-13",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Untuk bilangan riil positif $a,b$, dan $c$, definisikan $K$ sebagai berikut:\n\n$$K=\\frac1{a+2b+4c}+\\frac1{b+2c+4a}+\\frac1{c+2a+4b}.$$\n\nJika diketahui $\\frac1a+\\frac1b+\\frac1c=3$, tentukan nilai maksimum dari $\\lfloor2024K\\rfloor$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 13",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 13",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-14",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukanlah banyak pasangan bilangan bulat $(a,b)$ yang merupakan solusi dari persamaan\n\n$$a^2(a^2+b^2-2ab-a-b)=(a^2+b^2)(a-b).$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 14",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 14",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-15",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Seekor katak awalnya berdiri di titik $(0,0)$ dari bidang koordinat kartesius. Setiap langkah, ia melompat 1 unit ke salah satu dari 4 arah: $x$-positif, $x$-negatif, $y$-positif, atau $y$-negatif. Ia ingin melangkah sebanyak 8 kali sehingga ia kembali ke titik $(0,0)$ setelah langkah terakhir, sedangkan pada 7 lompatan pertama ia tidak menyentuh titik $(0,0)$ kecuali di posisi awal. Jika ia boleh mengunjungi titik yang sama lebih dari sekali, tentukan banyaknya susunan langkah yang dapat ia lakukan.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 15",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 15",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-a-16",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga siku-siku $ABC$ dengan $\\angle C=90^\\circ$. Garis $\\ell$ menyinggung lingkaran luar $ABC$ di titik $C$, dan titik $I$ merupakan perpotongan ketiga garis bagi segitiga $ABC$. Garis yang melalui $I$ dan tegak lurus $AB$ memotong $\\overline{AB}$ dan $\\ell$ berturut-turut di titik $M$ dan $N$. Jika $[ABC]=2024$ dan panjang $NC=1$, tentukan panjang dari $MN$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian A, Nomor 16",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian A, Nomor 16",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-b-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Teori Bilangan",
+    "prompt": "Misalkan pasangan bilangan asli $(x,y)$ memenuhi\n\n$$x^{y+1}-(x+1)^y=99.$$\n\n(a) Tunjukkan bahwa $x\\mid100$.\n\n(b) Tunjukkan bahwa $x+1\\mid100$.\n\n(c) Tentukan semua pasangan bilangan asli $(x,y)$ yang mungkin.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian B, Nomor 1",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian B, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-b-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga $ABC$ dengan lingkaran luar $\\omega$. Misalkan $m$ dan $n$ adalah dua garis berbeda yang melalui $A$ dan memotong segmen $BC$ di $X$ dan $Y$, secara berturut-turut. Misalkan pula $m$ dan $n$ memotong $\\omega$ di $P$ dan $Q$ secara berturut-turut ($P\\ne A,Q\\ne A$). Diketahui bahwa keempat titik $X,Y,Q$, dan $P$ konsiklis. Buktikan bahwa $AB=AC$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian B, Nomor 2",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian B, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-b-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kombinatorika",
+    "prompt": "Mula-mula pada papan tertulis dua pasangan bilangan terurut: $(7,7)$ dan $(21,49)$. Pada setiap langkah, Emily dapat menuliskan pasangan bilangan baru menurut aturan: jika pada papan terdapat pasangan $(a,b)$ dan $(c,d)$, Emily dapat menuliskan $(a+c,b+d)$, $(a+d,b+c)$, atau $(ka,kb)$, dengan $k$ merupakan bilangan bulat yang ia pilih secara bebas setiap langkah. Tentukan semua pasangan yang mungkin ditulis oleh Emily di papan.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian B, Nomor 3",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian B, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2024-jan-b-04",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Aljabar",
+    "prompt": "Tentukan semua bilangan asli $n\\ge2$ sehingga terdapat tepat dua buah fungsi $f:\\mathbb Q\\to\\mathbb Q$ yang memenuhi\n\n$$\\left\\{\\sum_{i=1}^nf(a_i),\\prod_{i=1}^nf(a_i)\\right\\}=\\left\\{f\\left(\\sum_{i=1}^na_i\\right),f\\left(\\prod_{i=1}^na_i\\right)\\right\\}$$\n\nuntuk sembarang bilangan rasional $a_1,\\ldots,a_n$. Catatan: Kita katakan $\\{x,y\\}=\\{z,w\\}$ apabila $x=z,y=w$ atau $x=w,y=z$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2024 — Januari, Bagian B, Nomor 4",
+      "competition": "KTOM",
+      "year": 2024,
+      "stage": "Kontes Januari",
+      "number": "Bagian B, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (5).pdf, PDF page 6. URL is organizer homepage."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
