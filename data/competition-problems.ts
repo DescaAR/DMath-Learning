@@ -16393,6 +16393,397 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Pilihan Ganda, Nomor 25",
       "note": "User-supplied University Challange ZIP: MaGD/Soal Babak I MagD 2017.pdf, PDF page 5, packet 1. Number assigned by original row order."
     }
+  },
+  {
+    "id": "magd-2014-i-pg-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Luas daerah $D=\\{(x,y)\\mid4\\le x^2+y^2\\le4y\\}$ adalah $L$ satuan luas, dengan $L=$\n\n(a) $\\frac23\\pi+\\sqrt3$\n\n(b) $\\frac43\\pi+2\\sqrt3$\n\n(c) 8\n\n(d) $6\\sqrt3$\n\n(e) $3\\pi$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 2",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-04",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Jika daerah definisi fungsi $f(x)=\\frac{(1+x)^2}{1+x^2}$ adalah $D_f=\\mathbb R$, maka daerah nilai $f$ adalah $R_f=$\n\n(a) $\\mathbb R$\n\n(b) $\\{y\\in\\mathbb R\\mid0\\le y\\le2\\}$\n\n(c) $\\{y\\in\\mathbb R\\mid1\\le y\\le2\\}$\n\n(d) $\\{y\\in\\mathbb R\\mid y\\ge0\\}$\n\n(e) $\\{y\\in\\mathbb R\\mid y\\ge1\\}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 4",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 4",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-05",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\lim_{x\\to0}\\frac{\\sqrt{1-\\cos x}}{\\sin x}=$$\n\n(a) 0\n\n(b) $\\frac12\\sqrt2$\n\n(c) $-\\frac12\\sqrt2$\n\n(d) 1\n\n(e) tidak ada",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 5",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 5",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-06",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Fungsi $f(x)=\\frac{x^2}{1-\\cos x}$ kontinu untuk setiap $x\\ne0$. Agar fungsi ini kontinu di 0, maka nilai $f(0)$ harus didefinisikan sebagai $f(0)=$\n\n(a) 0\n\n(b) 1\n\n(c) −1\n\n(d) 2\n\n(e) −2",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 6",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 6",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-07",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Turunan pertama dari fungsi $f(x)=\\frac x2+x^2\\sin\\frac2x$ di titik $x=\\frac2{n\\pi}$ untuk $n$ bilangan ganjil positif adalah $f'\\left(\\frac2{n\\pi}\\right)=$\n\n(a) $2\\frac12$\n\n(b) $1\\frac12$\n\n(c) $\\frac12$\n\n(d) $-\\frac12$\n\n(e) $-1\\frac12$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 7",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 7",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $A$ adalah himpunan semua titik ekstrim dari fungsi $f(x)=|2x^2-x^4|$, maka banyaknya unsur di himpunan $A$ adalah\n\n(a) 3\n\n(b) 4\n\n(c) 5\n\n(d) 6\n\n(e) 7",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 8",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 8",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-09",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Fungsi $f$ mempunyai turunan pertama yang kontinu pada selang buka $I$ yang memuat $c$. Jika $f(c)=0$ dan $f'(c)>0$, maka $\\exists\\delta>0$ sehingga\n\n(a) $f(x)=0\\ \\forall x\\in(c-\\delta,c+\\delta)$\n\n(b) $f(x)>0\\ \\forall x\\in(c-\\delta,c)$ dan $f(x)<0\\ \\forall x\\in(c,c+\\delta)$\n\n(c) $f(x)>0\\ \\forall x\\in(c-\\delta,c+\\delta)$\n\n(d) $f(x)<0\\ \\forall x\\in(c-\\delta,c)$ dan $f(x)>0\\ \\forall x\\in(c,c+\\delta)$\n\n(e) $f(x)<0\\ \\forall x\\in(c-\\delta,c+\\delta)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 9",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 9",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-10",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika fungsi $f$ terintegralkan pada $[0,1]$ dan $P$ suatu partisi yang membagi $[0,1]$ atas $n$ bagian sama panjang, maka $\\int_0^1 f(x)\\,dx=$\n\n(a) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac1k f\\left(\\frac kn\\right)$\n\n(b) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac nk f\\left(\\frac kn\\right)$\n\n(c) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n f\\left(\\frac kn\\right)$\n\n(d) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac kn f\\left(\\frac kn\\right)$\n\n(e) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac1n f\\left(\\frac kn\\right)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 10",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 10",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-11",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika fungsi $f$ kontinu dan monoton naik pada $[a,b]$ dan $a>0$, maka $\\int_a^b f(x)\\,dx+\\int_{f(a)}^{f(b)} f^{-1}(y)\\,dy=$\n\n(a) $af(a)+bf(b)$\n\n(b) $(b-a)(f(b)-f(a))$\n\n(c) $bf(b)-af(a)$\n\n(d) $af(b)-bf(a)$\n\n(e) $bf(b)-bf(a)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 11",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 11",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-12",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika fungsi $f$ dan $g$ yang kontinu pada $[a,b]$ memenuhi $\\int_a^b f(x)\\,dx=\\int_a^b g(x)\\,dx$, maka\n\n(a) $\\exists C$ ($C$ konstanta real) $\\ni f(x)=g(x)+C\\ \\forall x\\in[a,b]$\n\n(b) $\\exists c\\in[a,b]\\ni f(c)+g(c)=0$\n\n(c) $f(x)=g(x)\\ \\forall x\\in[a,b]$\n\n(d) $f(x)+g(x)=0\\ \\forall x\\in[a,b]$\n\n(e) $\\exists c\\in[a,b]\\ni f(c)=g(c)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 12",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 12",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-13",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Jika suku barisan bilangan real $\\{a_n\\}$, $n\\in\\mathbb N$ adalah $a_1>0$, $a_2=\\frac1{2+a_1},\\cdots,a_{n+1}=\\frac1{2+a_n},\\cdots$, maka barisan $\\{a_n\\}$ konvergen ke\n\n(a) $2-\\sqrt2$\n\n(b) $\\sqrt2+1$\n\n(c) 2\n\n(d) $\\sqrt2-1$\n\n(e) 1",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 13",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 13",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-14",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika barisan fungsi $\\{f_n\\}$, $n\\in\\mathbb N$ dengan $f_n(x)=nxe^{-nx}$, $x\\in\\mathbb R$ konvergen $y=f(x)$, $x\\in\\mathbb R$, maka $\\sup\\{|f_n(x)-f(x)|:x\\in\\mathbb R\\}=$\n\n(a) 0\n\n(b) 1\n\n(c) $\\frac1e$\n\n(d) $\\frac1{e-1}$\n\n(e) $e$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 14",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 14",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-15",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Deret Maclaurin dari fungsi $f(x)=\\frac{1-e^{-x^2}}{x^2}$, $x\\ne0$; $f(0)=1$ adalah\n\n(a) $\\displaystyle\\sum_{n=0}^\\infty\\frac{(-1)^nx^{2n}}{(n+1)!}$\n\n(b) $\\displaystyle\\sum_{n=1}^\\infty\\frac{(-1)^{n+1}x^{2n}}{n!}$\n\n(c) $\\displaystyle\\sum_{n=0}^\\infty\\frac{(-1)^nx^{2n}}{n!}$\n\n(d) $\\displaystyle\\sum_{n=0}^\\infty\\frac{(-1)^{n+1}x^{2n}}{(n+1)!}$\n\n(e) $\\displaystyle\\sum_{n=0}^\\infty\\frac{x^{2n}}{(n+1)!}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 15",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 15",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-16",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Jika garis $g$ melalui titik $A(1,1,1)$ dan $B(2,3,4)$, maka titik tembus $g$ dengan bidang $yoz$ adalah titik\n\n(a) $(0,-2,-1)$\n\n(b) $(0,-1,-2)$\n\n(c) $(0,1,2)$\n\n(d) $(0,2,3)$\n\n(e) $(0,3,4)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 16",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 16",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-17",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\lim_{(x,y)\\to(1,2)}\\frac{4x^2-y^2}{2x^2-xy}=$$\n\n(a) 4\n\n(b) 2\n\n(c) 0\n\n(d) −4\n\n(e) tidak ada",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 17",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 17",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-18",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Sebutir peluru ditembakkan ke arah bidang $xoy$ dengan ujung senjata di titik $(1,2,1)$ pada permukaan $S:z=y^2-3x^2$. Jika arah peluru tegak lurus permukaan $S$ dan lintasannya berbentuk garis lurus, maka titik tembus peluru di bidang $xoy$ adalah\n\n(a) $(-5,-6,0)$\n\n(b) $(-6,5,0)$\n\n(c) $(6,-5,0)$\n\n(d) $(-5,6,0)$\n\n(e) $(5,6,0)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 18",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 18",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-19",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika fungsi $g$ terdiferensialkan pada kuadran pertama dan $f(x,y)=\\frac yx+g\\left(\\frac xy\\right)$, maka $x\\frac{\\partial f}{\\partial x}+y\\frac{\\partial f}{\\partial y}=$\n\n(a) $-2\\frac xy$\n\n(b) $-2\\frac yx$\n\n(c) 0\n\n(d) $2\\frac xy$\n\n(e) $2\\frac yx$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 19",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 19",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-20",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Dengan transformasi ke koordinat bola, jika $B=\\{(x,y,z)\\mid1\\le x^2+y^2+z^2\\le4\\}$, maka $\\iiint_B(x^2+y^2)\\,dV=$\n\n(a) $\\int_0^{2\\pi}\\int_0^{2\\pi}\\int_1^2r^3\\sin\\phi\\,dr\\,d\\phi\\,d\\theta$\n\n(b) $\\int_0^{2\\pi}\\int_0^\\pi\\int_1^4r^4\\sin^3\\phi\\,dr\\,d\\phi\\,d\\theta$\n\n(c) $\\int_0^{2\\pi}\\int_0^\\pi\\int_1^2r^3\\sin\\phi\\,dr\\,d\\phi\\,d\\theta$\n\n(d) $\\int_0^{2\\pi}\\int_0^\\pi\\int_1^2r^4\\sin^3\\theta\\,dr\\,d\\phi\\,d\\theta$\n\n(e) $\\int_0^{2\\pi}\\int_0^\\pi\\int_1^2r^4\\sin^3\\phi\\,dr\\,d\\phi\\,d\\theta$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 20",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 20",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-21",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $\\mathbf F(x,y)=e^xy^2\\mathbf i+(2ye^x+6xy)\\mathbf j$ dan $C=C_1+C_2$; $C_1:y=0$ dari $(0,0)$ ke $(2,0)$, $C_2$: busur lingkaran $x^2+y^2=2x$ dari $(2,0)$ ke $(0,0)$, maka dalam koordinat kutub integral garis $\\oint_C\\mathbf F\\cdot d\\mathbf r=$\n\n(a) $\\int_0^{\\pi/2}\\int_0^{2\\cos\\theta}6r\\sin\\theta\\,dr\\,d\\theta$\n\n(b) $\\int_0^{\\pi/2}\\int_0^{2\\sin\\theta}6r\\cos\\theta\\,dr\\,d\\theta$\n\n(c) $\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}6r^2\\sin\\theta\\,dr\\,d\\theta$\n\n(d) $\\int_0^{\\pi/2}\\int_0^{2\\cos\\theta}6r^2\\sin\\theta\\,dr\\,d\\theta$\n\n(e) $\\int_0^{\\pi/2}\\int_0^{2\\sin\\theta}6r^2\\cos\\theta\\,dr\\,d\\theta$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 21",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 21",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-22",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $B=\\{(x,y,z)\\mid-1\\le x\\le1,0\\le y\\le3,0\\le z\\le\\sqrt{1-x^2}\\}$, $S$ adalah permukaan batas $B$ dengan vektor normal satuan $\\mathbf n$ ke arah luar, dan $\\mathbf F(x,y,z)=(2xy+y^2z)\\mathbf i+(xz-y^2)\\mathbf j+(xy^2+z^2)\\mathbf k$, maka $\\oiint_S\\mathbf F\\cdot\\mathbf n\\,dS=$\n\n(a) 2\n\n(b) 4\n\n(c) 6\n\n(d) $\\pi$\n\n(e) $2\\pi$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 22",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 22",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-23",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Argumen dari $z\\in\\mathbb C$, $z\\ne0$ adalah sudut antara $0z$ dengan sumbu-$x$ positif. Jika $z\\ne0$, maka $\\arg(z^{-1})=$\n\n(a) $\\arg z$\n\n(b) $\\arg(-z)$\n\n(c) $\\arg iz$\n\n(d) $-\\arg iz$\n\n(e) $-\\arg z$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 23",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 23",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-24",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Himpunan semua bilangan kompleks yang memenuhi $\\cosh z=0$ adalah\n\n(a) $n\\pi i,n\\in\\mathbb Z$\n\n(b) $(n+\\frac12)\\pi i,n\\in\\mathbb Z$\n\n(c) $(2n+\\frac12)\\pi i,n\\in\\mathbb Z$\n\n(d) $(2n+1)\\pi i,n\\in\\mathbb Z$\n\n(e) $2n\\pi i,n\\in\\mathbb Z$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 24",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 24",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2014-i-pg-25",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Jika lintasan $C:|z|=2$ berorientasi positif, maka integral kompleks $\\int_C\\frac{e^{iz}\\,dz}{\\cos z}=$\n\n(a) $4\\pi$\n\n(b) $4\\pi i$\n\n(c) 0\n\n(d) $-4\\pi i$\n\n(e) $-4\\pi$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Pilihan Ganda, Nomor 25",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 25",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
