@@ -2978,6 +2978,60 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-on-mipa-pt-matematika-seleksi-universitas-tanjungpura-tahun-2019/",
       "note": "Redaksi disusun dari salinan Mathcyber1997; naskah asli belum diperiksa."
     }
+  },
+  {
+    "id": "amc8-2008-07",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Ratios",
+    "prompt": "If $\\frac35=\\frac{M}{45}=\\frac{60}{N}$, what is $M+N$? Pilihan: A. $27$; B. $29$; C. $45$; D. $105$; E. $127$",
+    "source": {
+      "kind": "competition",
+      "label": "AMC 8 2008 — Nomor 7 · Copyright © 2008, The Mathematical Association of America",
+      "competition": "AMC 8",
+      "year": 2008,
+      "stage": "AMC 8",
+      "number": "Nomor 7",
+      "url": "https://agmath.com/media/DIR_37352/2008AMC8.pdf#page=3",
+      "note": "Redaksi bahasa Inggris dicocokkan dengan naskah asli. Izin penggunaan soal individual untuk pendidikan nonkomersial tercantum pada naskah."
+    }
+  },
+  {
+    "id": "amc12b-2007-09",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Function evaluation",
+    "prompt": "A function $f$ has the property that $f(3x-1)=x^2+x+1$ for all real numbers $x$. What is $f(5)$? Pilihan: A. $7$; B. $13$; C. $31$; D. $111$; E. $211$",
+    "source": {
+      "kind": "competition",
+      "label": "AMC 12 B 2007 — Nomor 9 · Copyright © 2007, The Mathematical Association of America",
+      "competition": "AMC 12",
+      "year": 2007,
+      "stage": "AMC 12 B",
+      "number": "Nomor 9",
+      "url": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2007AMC12-B.pdf#page=3",
+      "note": "Redaksi bahasa Inggris dicocokkan dengan naskah asli. Izin penggunaan soal individual untuk pendidikan nonkomersial tercantum pada naskah."
+    }
+  },
+  {
+    "id": "aime2-2011-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Interesting ordered quadruples",
+    "prompt": "Define an ordered quadruple of integers $(a,b,c,d)$ to be interesting if $1\\le a<b<c<d\\le10$ and $a+d>b+c$. How many interesting ordered quadruples are there?",
+    "source": {
+      "kind": "competition",
+      "label": "AIME II 2011 — Nomor 6 · Copyright © 2011, The Mathematical Association of America",
+      "competition": "AIME",
+      "year": 2011,
+      "stage": "AIME II",
+      "number": "Nomor 6",
+      "url": "https://f.hubspotusercontent30.net/hubfs/981338/Math%20Competition%20Problems_PDFS/2011AIME-II.pdf#page=2",
+      "note": "Redaksi bahasa Inggris dicocokkan dengan naskah asli. Izin penggunaan soal individual untuk pendidikan nonkomersial tercantum pada naskah."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
