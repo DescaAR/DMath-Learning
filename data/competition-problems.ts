@@ -962,6 +962,798 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
       "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
     }
+  },
+  {
+    "id": "ksnk-sd-2020-02",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Pola jumlah kursi",
+    "prompt": "Satu meja segienam dapat ditempati 6 kursi. Dua meja yang dirapatkan memuat 10 kursi, dan tiga meja memuat 14 kursi. Jika 10 meja disusun memanjang dengan pola yang sama, berapakah kapasitas kursinya?",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SD 2020 — Nomor 2",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Nomor 2",
+      "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-sd-2020-03",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Selisih waktu bersepeda",
+    "prompt": "Dua pesepeda menempuh jarak yang sama dengan kecepatan tetap 30 km/jam dan 25 km/jam. Pesepeda yang lebih cepat tiba setelah 15 menit. Berapa menit selisih waktu tempuh mereka?",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SD 2020 — Nomor 3",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Nomor 3",
+      "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-sd-2020-11",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 1,
+    "title": "Bilangan prima",
+    "prompt": "Carilah bilangan prima pertama setelah 350.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SD 2020 — Nomor 11",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Nomor 11",
+      "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-sd-2020-15",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 2,
+    "title": "Bilangan palindrom",
+    "prompt": "Berapa banyak bilangan palindrom tiga digit yang dapat dibentuk menggunakan digit 1 hingga 5? Bilangan palindrom memiliki susunan digit yang sama ketika dibaca dari kedua arah.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SD 2020 — Nomor 15",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Nomor 15",
+      "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-sd-2021-02",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Susunan huruf",
+    "prompt": "Berapa banyak permutasi huruf C, O, V, I, D apabila V dan D harus bersebelahan? Pilihan: A. 24; B. 32; C. 48; D. 52.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SD 2021 — Nomor 2",
+      "competition": "OSN",
+      "year": 2021,
+      "stage": "KSN-K",
+      "number": "Nomor 2",
+      "url": "https://id.scribd.com/document/790309363/2021-Soal-Osk-Matik-SD-www-konsep-matematika-com",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-sd-2021-08",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Sisa hasil panen",
+    "prompt": "Dari 4 ton padi, sebanyak 32 kuintal dijual dan 85 kg dibagikan. Berapa kilogram padi yang tersisa? Pilihan: A. 615; B. 625; C. 715; D. 725.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SD 2021 — Nomor 8",
+      "competition": "OSN",
+      "year": 2021,
+      "stage": "KSN-K",
+      "number": "Nomor 8",
+      "url": "https://id.scribd.com/document/790309363/2021-Soal-Osk-Matik-SD-www-konsep-matematika-com",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sd-2022-07",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Gaji setelah pajak",
+    "prompt": "Gaji bruto seorang pekerja golongan I adalah Rp4.000.000 dengan pajak 5%. Pajak golongan II sebesar 20%. Tentukan gaji bruto pekerja golongan II agar penerimaan bersihnya Rp400.000 lebih tinggi daripada golongan I. Pilihan: A. Rp4.800.000; B. Rp5.250.000; C. Rp5.400.000; D. Rp6.100.000.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2022 — Nomor 7",
+      "competition": "OSN",
+      "year": 2022,
+      "stage": "OSN-K",
+      "number": "Nomor 7",
+      "url": "https://id.scribd.com/document/1004179258/2022-Soal-Osk-Matik-SD-Edit",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sd-2022-13",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Jarak perjalanan",
+    "prompt": "Seorang guru mengendarai sepeda motor dengan kecepatan rata-rata 50 km/jam selama waktu berkendara. Dari total perjalanan 65 menit, 20 menit digunakan untuk singgah di toko buku. Berapakah jarak perjalanannya dalam kilometer? Pilihan: A. 54,17; B. 46; C. 37,5; D. 30.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2022 — Nomor 13",
+      "competition": "OSN",
+      "year": 2022,
+      "stage": "OSN-K",
+      "number": "Nomor 13",
+      "url": "https://id.scribd.com/document/1004179258/2022-Soal-Osk-Matik-SD-Edit",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-01",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "FPB dan KPK",
+    "prompt": "Suatu bilangan asli $a$ memenuhi $\\operatorname{FPB}(3,a)=3$ dan $\\operatorname{KPK}(15,a)=105$. Tentukan $a$. Pilihan: A. 7; B. 15; C. 21; D. 45.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2023 — Nomor 1",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 1",
+      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-02",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Operasi pecahan",
+    "prompt": "Hitung nilai $125\\%\\times\\frac25\\div0{,}25\\times1\\frac14\\div2{,}5$. Pilihan: A. 0,1; B. 0,64; C. 1; D. 10.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2023 — Nomor 2",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 2",
+      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-04",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Pertidaksamaan pecahan",
+    "prompt": "Berapa banyak bilangan asli $q$ dalam pertidaksamaan $\\frac{21}{135}<\\frac q8<\\frac{27}{24}$? Pilihan: A. 7; B. 8; C. 9; D. 10.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2023 — Nomor 4",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 4",
+      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-sd-2023-08",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Jarak olahraga",
+    "prompt": "Butet berjalan selama 45 menit dengan laju rata-rata 4 km/jam, kemudian berlari selama 30 menit dengan laju rata-rata 10 km/jam. Tentukan total jaraknya dalam kilometer. Pilihan: A. 5; B. 6; C. 7; D. 8.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2023 — Nomor 8",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 8",
+      "url": "https://www.defantri.com/2023/06/soal-dan-pembahasan-osnk-matematika-sd.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-smp-2020-01",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Nilai minimum rasio",
+    "prompt": "Untuk empat bilangan bulat positif berbeda $a,b,c,d$ dengan $abcd=2020$, tentukan nilai minimum $\\frac{a+b}{c+d}$. Pilihan: A. $\\frac3{507}$; B. $\\frac5{106}$; C. $\\frac1{17}$; D. $\\frac1{69}$.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SMP 2020 — Nomor 1",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Nomor 1",
+      "url": "https://www.defantri.com/2020/09/soal-pembahasan-ksn-k-2020-matematika.html?m=1",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-smp-2020-02",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Pemilihan bilangan prima",
+    "prompt": "Dari bilangan 2017, 2019, 2021, dan 2023, manakah yang prima?",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SMP 2020 — Nomor 2",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Nomor 2",
+      "url": "https://www.defantri.com/2020/09/soal-pembahasan-ksn-k-2020-matematika.html?m=1",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksn-smp-2021-05",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Tiga bilangan berurutan",
+    "prompt": "Hasil kali tiga bilangan bulat positif berurutan sama dengan 16 kali jumlahnya. Tentukan jumlah kuadrat ketiga bilangan. Pilihan: A. 21; B. 149; C. 14; D. 441.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN Nasional SMP 2021 — Nomor 5",
+      "competition": "OSN",
+      "year": 2021,
+      "stage": "KSN Nasional",
+      "number": "Nomor 5",
+      "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksn-smp-2021-07",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Permutasi dengan paritas sama",
+    "prompt": "Baris pertama berisi $1,2,\\ldots,8$. Baris kedua adalah suatu permutasi dari bilangan-bilangan tersebut. Berapa permutasi yang membuat jumlah pada setiap kolom genap? Pilihan: A. 8; B. 16; C. 48; D. 576.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN Nasional SMP 2021 — Nomor 7",
+      "competition": "OSN",
+      "year": 2021,
+      "stage": "KSN Nasional",
+      "number": "Nomor 7",
+      "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksn-smp-2021-08",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 3,
+    "title": "Median data",
+    "prompt": "Lima data bilangan asli paling besar 10 memiliki modus 5 dan rata-rata 6. Satu data bilangan asli yang tidak melebihi 10 ditambahkan. Manakah median enam data yang mungkin? Pilihan: A. 4; B. 4,5; C. 5; D. 6,5.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN Nasional SMP 2021 — Nomor 8",
+      "competition": "OSN",
+      "year": 2021,
+      "stage": "KSN Nasional",
+      "number": "Nomor 8",
+      "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-smp-2022-02",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Barisan aritmetika bilangan bulat",
+    "prompt": "Barisan aritmetika $(a_n)$ terdiri atas bilangan bulat. Diketahui $3\\mid a_1$, $5\\mid a_2$, $7\\mid a_3$, $a_1+a_2+a_3=405$, dan $a_1>105$. Tentukan indeks terkecil $k$ dengan $a_k>1000$. Pilihan: A. 74; B. 75; C. 76; D. 77.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMP 2022 — Nomor 2",
+      "competition": "OSN",
+      "year": 2022,
+      "stage": "OSN-K",
+      "number": "Nomor 2",
+      "url": "https://melajah-matematika.blogspot.com/2024/04/osk-smp-2022.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-smp-2023-01",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Jumlah kuadrat ganjil",
+    "prompt": "Empat bilangan bulat positif berbeda $a,b,c,d$ memenuhi bahwa $a+b$, $a+c$, dan $a+d$ semuanya kuadrat sempurna ganjil. Tentukan minimum $a+b+c+d$. Pilihan: A. 33; B. 67; C. 81; D. 83.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMP 2023 — Nomor 1",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 1",
+      "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-smp-2023-13",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Bilangan biner habis dibagi enam",
+    "prompt": "Berapa banyak bilangan desimal tujuh digit yang hanya menggunakan 0 dan 1 serta merupakan kelipatan 6? Pilihan: A. 11; B. 17; C. 21; D. 22.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMP 2023 — Nomor 13",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 13",
+      "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "osnk-smp-2023-20",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 2,
+    "title": "Himpunan bagian",
+    "prompt": "Hitung banyak himpunan bagian beranggota tiga dari $\\{1,2,\\ldots,9\\}$ dengan tepat dua anggota ganjil. Pilihan: A. 40; B. 84; C. 30; D. 48.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMP 2023 — Nomor 20",
+      "competition": "OSN",
+      "year": 2023,
+      "stage": "OSN-K",
+      "number": "Nomor 20",
+      "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-sma-2020-d01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Nilai polinomial",
+    "prompt": "Untuk $$f(x)=\\frac{3(x-1)(x-2)}{2}+\\frac{(x-2)(x-3)}{2}-2(x-1)(x-3),$$ tentukan $f(20)$.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SMA 2020 — Kemampuan Dasar, Nomor 1",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Kemampuan Dasar, Nomor 1",
+      "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-sma-2020-d04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Maksimum bentuk linear",
+    "prompt": "Misalkan $x,y$ bilangan asli dengan $2x+3y=2020$. Tentukan maksimum $3x+2y$.",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SMA 2020 — Kemampuan Dasar, Nomor 4",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Kemampuan Dasar, Nomor 4",
+      "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "ksnk-sma-2020-d06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Titik tengah kisi",
+    "prompt": "Diberikan $S=\\{(x,y)\\in\\mathbb Z^2\\mid0\\le x\\le20,\\ 0\\le y\\le19\\}$. Berapa banyak pasangan tak berurutan dari dua titik berbeda di $S$ yang titik tengahnya juga berada di $S$?",
+    "source": {
+      "kind": "competition",
+      "label": "KSN-K SMA 2020 — Kemampuan Dasar, Nomor 6",
+      "competition": "OSN",
+      "year": 2020,
+      "stage": "KSN-K",
+      "number": "Kemampuan Dasar, Nomor 6",
+      "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "imo-2020-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketaksamaan berbobot",
+    "prompt": "Untuk $a\\ge b\\ge c\\ge d>0$ dengan $a+b+c+d=1$, buktikan $$ (a+2b+3c+4d)a^ab^bc^cd^d<1.$$",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2020 — Hari 1, Nomor 2",
+      "competition": "IMO",
+      "year": 2020,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2020/2020_eng.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imo-2021-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Partisi dan kuadrat sempurna",
+    "prompt": "Misalkan $n\\ge100$ bilangan bulat. Buktikan bahwa pada setiap pembagian $\\{n,n+1,\\ldots,2n\\}$ menjadi dua kelompok, terdapat dua anggota berbeda dalam satu kelompok yang jumlahnya kuadrat sempurna.",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2021 — Hari 1, Nomor 1",
+      "competition": "IMO",
+      "year": 2021,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imo-2021-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketaksamaan jumlah akar",
+    "prompt": "Untuk sebarang bilangan real $x_1,\\ldots,x_n$, buktikan $$\\sum_{i,j=1}^n\\sqrt{|x_i-x_j|}\\le\\sum_{i,j=1}^n\\sqrt{|x_i+x_j|}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2021 — Hari 1, Nomor 2",
+      "competition": "IMO",
+      "year": 2021,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2021/2021_eng.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imo-2022-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Persamaan fungsi dengan solusi tunggal",
+    "prompt": "Tentukan semua fungsi $f:(0,\\infty)\\to(0,\\infty)$ dengan sifat: bagi setiap $x>0$, terdapat tepat satu $y>0$ yang memenuhi $xf(y)+yf(x)\\le2$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2022 — Hari 1, Nomor 2",
+      "competition": "IMO",
+      "year": 2022,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2022/2022_eng.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imo-2023-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Keterbagian faktor berurutan",
+    "prompt": "Tentukan semua bilangan komposit $n>1$ dengan sifat berikut: apabila pembagi positifnya diurutkan sebagai $1=d_1<d_2<\\cdots<d_k=n$, maka $d_i\\mid(d_{i+1}+d_{i+2})$ untuk $1\\le i\\le k-2$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2023 — Hari 1, Nomor 1",
+      "competition": "IMO",
+      "year": 2023,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imo-2023-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Barisan dan polinomial monik",
+    "prompt": "Untuk setiap bilangan bulat $k\\ge2$, tentukan semua barisan tak berhingga bilangan bulat positif $(a_n)$ yang memiliki polinomial monik $P\\in\\mathbb Z[x]$ berderajat $k$ dengan koefisien nonnegatif sehingga $P(a_n)=a_{n+1}\\cdots a_{n+k}$ bagi setiap $n\\ge1$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2023 — Hari 1, Nomor 3",
+      "competition": "IMO",
+      "year": 2023,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2023/2023_eng.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imc-2020-01",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Susunan huruf berparitas genap",
+    "prompt": "Untuk $n$ bilangan bulat positif, hitung banyak kata sepanjang $n$ dari alfabet $\\{a,b,c,d\\}$ yang memuat huruf $a$ sebanyak bilangan genap dan huruf $b$ sebanyak bilangan genap.",
+    "source": {
+      "kind": "competition",
+      "label": "IMC 2020 — Hari 1, Nomor 1",
+      "competition": "IMC",
+      "year": 2020,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 1",
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imc-2020-02",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Rank komutator dan trace",
+    "prompt": "Misalkan $A,B\\in M_n(\\mathbb R)$ dengan $\\operatorname{rank}(AB-BA+I_n)=1$. Buktikan $$\\operatorname{tr}(ABAB)-\\operatorname{tr}(A^2B^2)=\\frac{n(n-1)}2.$$",
+    "source": {
+      "kind": "competition",
+      "label": "IMC 2020 — Hari 1, Nomor 2",
+      "competition": "IMC",
+      "year": 2020,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 2",
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imc-2020-04",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 5,
+    "title": "Ketaksamaan polinomial",
+    "prompt": "Misalkan $p\\in\\mathbb R[x]$ memenuhi $p(x+1)-p(x)=x^{100}$ untuk semua $x\\in\\mathbb R$. Buktikan $p(1-t)\\ge p(t)$ bagi $0\\le t\\le\\frac12$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMC 2020 — Hari 1, Nomor 4",
+      "competition": "IMC",
+      "year": 2020,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 4",
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "knmipa-2021-w-h1-i3",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 4,
+    "title": "Lapangan kuosien",
+    "prompt": "Misalkan $a$ bilangan asli terkecil sehingga $\\mathbb Z[x]/\\langle a,x^2+1\\rangle$ merupakan lapangan dengan lebih dari satu elemen. Jika banyak elemennya $b$, tentukan $ab$.",
+    "source": {
+      "kind": "competition",
+      "label": "KNMIPA Wilayah 2021 — Hari 1, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2021,
+      "stage": "KNMIPA Wilayah",
+      "number": "Hari 1, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2021-wilayah/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "knmipa-2021-w-h1-i4",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Subgrup yang dibangkitkan",
+    "prompt": "Grup $G$ berorde 2021 memuat dua elemen tak identitas $x,y$ yang ordenya berbeda. Tentukan orde subgrup $\\langle x,y\\rangle$.",
+    "source": {
+      "kind": "competition",
+      "label": "KNMIPA Wilayah 2021 — Hari 1, Isian 4",
+      "competition": "ON-MIPA",
+      "year": 2021,
+      "stage": "KNMIPA Wilayah",
+      "number": "Hari 1, Isian 4",
+      "url": "https://onmipa.filzabuana.id/onmipa/2021-wilayah/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "knmipa-2021-n-h1-03",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 5,
+    "title": "Koprimalitas dan pangkat elemen grup",
+    "prompt": "Misalkan $G$ merupakan grup berorde $n$ dan $k$ bilangan bulat positif. Buktikan ekuivalensi antara $\\gcd(n,k)=1$ dan sifat bahwa $\\{x\\in G\\mid x^k\\in H\\}\\subseteq H$ untuk setiap subgrup $H$ dari $G$.",
+    "source": {
+      "kind": "competition",
+      "label": "KNMIPA Nasional 2021 — Hari 1, Nomor 3",
+      "competition": "ON-MIPA",
+      "year": 2021,
+      "stage": "KNMIPA Nasional",
+      "number": "Hari 1, Nomor 3",
+      "url": "https://id.scribd.com/document/1025602098/Soal-KNMIPA-Nasional-2021",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "knmipa-2021-n-h1-04",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 4,
+    "title": "Inti dan peta komposisi",
+    "prompt": "Untuk $A\\in M_n(\\mathbb R)$, definisikan $T,S:\\mathbb R^n\\to\\mathbb R^n$ oleh $T(x)=Ax$ dan $S(x)=A^\\top x$. (a) Buktikan $\\ker(S\\circ T)=\\ker T$. (b) Selidiki apakah $\\operatorname{Im}(S\\circ T)=\\operatorname{Im}S$ selalu berlaku.",
+    "source": {
+      "kind": "competition",
+      "label": "KNMIPA Nasional 2021 — Hari 1, Nomor 4",
+      "competition": "ON-MIPA",
+      "year": 2021,
+      "stage": "KNMIPA Nasional",
+      "number": "Hari 1, Nomor 4",
+      "url": "https://id.scribd.com/document/1025602098/Soal-KNMIPA-Nasional-2021",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "onmipa-2022-w-h1-i1",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Ketaksamaan fungsi",
+    "prompt": "Misalkan $f:\\mathbb R\\to\\mathbb R$ memenuhi $|f(x)-f(y)|\\le|x^3-x^2y|^2$ untuk semua $x,y\\in\\mathbb R$. Jika $f(1)=1$, tentukan $f(2022)$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2022 — Hari 1, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2022,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "onmipa-2022-w-h1-i2",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Limit jumlah Riemann",
+    "prompt": "Hitung $$\\lim_{n\\to\\infty}\\sum_{k=0}^n\\frac1{n+k}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2022 — Hari 1, Isian 2",
+      "competition": "ON-MIPA",
+      "year": 2022,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 2",
+      "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "onmipa-2022-w-h1-i3",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Komposisi permutasi",
+    "prompt": "Diberikan permutasi $$\\sigma=\\begin{pmatrix}1&2&3&4&5\\\\3&4&1&5&2\\end{pmatrix},\\qquad\\tau=\\begin{pmatrix}1&2&3&4&5\\\\5&2&1&3&4\\end{pmatrix}.$$ Tentukan baris kedua representasi dua baris permutasi $(\\sigma\\circ\\tau)^{-1}$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2022 — Hari 1, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2022,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "imc-2022-01",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Ketaksamaan integral",
+    "prompt": "Misalkan $f:[0,1]\\to(0,\\infty)$ terintegralkan dan $f(x)f(1-x)=1$ untuk setiap $x\\in[0,1]$. Buktikan $\\int_0^1 f(x)\\,dx\\ge1$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMC 2022 — Hari 1, Nomor 1",
+      "competition": "IMC",
+      "year": 2022,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 1",
+      "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "imc-2022-02",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Persamaan matriks dan transpos",
+    "prompt": "Untuk $n$ bilangan bulat positif, tentukan semua $A\\in M_n(\\mathbb R)$ yang seluruh nilai eigennya real dan memenuhi $A+A^k=A^\\top$ bagi suatu bilangan bulat $k\\ge n$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMC 2022 — Hari 1, Nomor 2",
+      "competition": "IMC",
+      "year": 2022,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 2",
+      "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+      "note": "Redaksi matematika dalam bahasa Indonesia berdasarkan naskah penyelenggara."
+    }
+  },
+  {
+    "id": "onmipa-2023-w-h1-i3",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Indeks subgrup aditif",
+    "prompt": "Misalkan $G=\\{m+n\\sqrt2\\mid m,n\\in\\mathbb Z\\}$ merupakan grup aditif dan $H=\\{3a+5b\\sqrt2\\mid a,b\\in\\mathbb Z\\}$. Tentukan kardinalitas $G/H$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2023 — Hari 1, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2023,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
+  },
+  {
+    "id": "onmipa-2023-w-h1-i4",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Banyak ideal gelanggang",
+    "prompt": "Tentukan banyak ideal dari gelanggang $\\mathbb Z_{23}\\times\\mathbb Z_{24}$ dengan operasi komponen demi komponen.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA Wilayah 2023 — Hari 1, Isian 4",
+      "competition": "ON-MIPA",
+      "year": 2023,
+      "stage": "ON-MIPA Wilayah",
+      "number": "Hari 1, Isian 4",
+      "url": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/",
+      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
