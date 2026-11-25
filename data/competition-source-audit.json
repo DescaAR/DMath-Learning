@@ -15435,6 +15435,414 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "magd-2015-i-pg-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 11",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 12",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 13",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 2,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 14",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 15",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-16": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 16",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-17": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 17",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 18",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-19": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 19",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 20",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-21": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 21",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-22": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 22",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-23": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 23",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-24": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 24",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "magd-2015-i-pg-25": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "number": "Pilihan Ganda, Nomor 25",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": 3,
+        "localSource": "University Challange/MaGD/Soal-MagDay-2015.pdf",
+        "method": "Rendered scanned PDF pages inspected visually and manually transcribed",
+        "finding": "Question body and five options transcribed in original order. Number inferred by row order. Independent recheck and web render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {

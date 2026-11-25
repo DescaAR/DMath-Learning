@@ -15577,6 +15577,414 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Pilihan Ganda, Nomor 25",
       "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
     }
+  },
+  {
+    "id": "magd-2015-i-pg-02",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Sisi terpanjang dari sebuah segitiga siku-siku sama dengan dua kali sisi terpendeknya. Jika keliling segitiga siku-siku ini adalah $6+2\\sqrt3$, maka luasnya adalah\n\n(a) $\\sqrt3$\n\n(b) $2\\sqrt3$\n\n(c) $4\\sqrt3$\n\n(d) $6\\sqrt3$\n\n(e) $8\\sqrt3$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 2",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-03",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Ekivalensi atau kesetaraan ($\\Leftrightarrow$) yang **salah** pada rangkaian operasi aljabar:\n\n$$x=4\\underset{1}{\\Leftrightarrow}x^2=4x\\underset{2}{\\Leftrightarrow}x^2-16=4x-16\\underset{3}{\\Leftrightarrow}(x+4)(x-4)=4(x-4)\\underset{4}{\\Leftrightarrow}x+4=4\\underset{5}{\\Leftrightarrow}x=0$$\n\nadalah langkah ke\n\n(a) 1, 4, dan 5\n\n(b) 3 dan 5\n\n(c) 4 dan 5\n\n(d) 1 dan 4\n\n(e) 1 dan 2",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 3",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-04",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\lim_{x\\to2^-}\\frac{\\sqrt{2-x}-\\sqrt{2+x}}{2x-x^2}=$$\n\n(a) $\\frac{\\sqrt2}{4}$\n\n(b) 0\n\n(c) $-\\frac{\\sqrt2}{4}$\n\n(d) $\\infty$\n\n(e) $-\\infty$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 4",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 4",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-05",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $\\lim_{x\\to0}\\frac{a-\\sqrt{a^2-x^2}}{x^2}=1$, $a$ konstanta positif, maka $a=$\n\n(a) 4\n\n(b) 2\n\n(c) 1\n\n(d) $\\frac12$\n\n(e) $\\frac14$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 5",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 5",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-06",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Fungsi $f(x)=\\begin{cases}\\frac{e^x-x-1}{x^2},&x\\ne0\\\\\\frac12,&x=0\\end{cases}$ kontinu di 0. Turunan dari fungsi $f$ di 0 adalah $f'(0)=$\n\n(a) 0\n\n(b) $\\frac16$\n\n(c) $\\frac12$\n\n(d) 1\n\n(e) tidak ada",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 6",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 6",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-07",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\int_1^3\\frac{dx}{\\sqrt x(1+x)}=$$\n\n(a) $\\frac16\\pi$\n\n(b) $\\frac13\\pi$\n\n(c) $\\frac23\\pi$\n\n(d) $1+\\sqrt2$\n\n(e) $\\ln4\\sqrt3$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 7",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 7",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Daerah $D$ terletak di kuadran pertama, dibatasi kurva $y=e^x$, garis $y=e$, dan sumbu $y$. Jika daerah $D$ diputar terhadap sumbu $y$, maka volume benda putar yang terjadi adalah\n\n(a) $\\frac12\\pi(e-2)$\n\n(b) $2\\pi(e-2)$\n\n(c) $\\pi(e-2)$\n\n(d) $2\\pi$\n\n(e) $2\\pi e$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 8",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 8",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-09",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\lim_{x\\to0}(1+\\sin x)^{1/x}$$\n\n(a) $\\frac1e$\n\n(b) $\\frac2e$\n\n(c) 1\n\n(d) $\\frac e2$\n\n(e) $e$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 9",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 9",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-10",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Untuk deret pangkat $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^{n+1}(x-3)^n}{n\\cdot2^n}$, himpunan **semua** bilangan real $x$ sehingga deret ini konvergen adalah\n\n(a) $\\{x\\in\\mathbb R\\mid1<x<5\\}$\n\n(b) $\\{x\\in\\mathbb R\\mid1\\le x<5\\}$\n\n(c) $\\{x\\in\\mathbb R\\mid1<x<5,x\\ne3\\}$\n\n(d) $\\{x\\in\\mathbb R\\mid1<x\\le5\\}$\n\n(e) $\\{x\\in\\mathbb R\\mid1\\le x\\le5\\}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 10",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 10",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-11",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Persamaan garis yang melalui $(0,0,0)$ dan tegak lurus bidang $2x+2y+z=4$ adalah\n\n(a) $x=y=2z$\n\n(b) $2x=2y=z$\n\n(c) $2x=y=2z$\n\n(d) $x=2y=2z$\n\n(e) $x=y=z$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 11",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 11",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-12",
+    "level": "Kuliah",
+    "topic": "Persamaan Diferensial",
+    "difficulty": 3,
+    "title": "Persamaan Diferensial",
+    "prompt": "Banyaknya polutan di suatu daerah pada tahun ke-$t$ diperkirakan $p=p(t)$ kg. Andaikan laju perubahan $p$ terhadap $t$ setiap saat $t$ memenuhi persamaan $\\frac{dp}{dt}=200-\\frac{p}{t+20}$ dengan banyaknya polutan saat awal adalah $p(0)=200$ kg. Banyaknya polutan saat $t=10$ tahun adalah $p(10)$ kg, dengan $p(10)=$\n\n(a) 1200\n\n(b) 1500\n\n(c) 1800\n\n(d) 2100\n\n(e) 2400",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 12",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 12",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-13",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika keping datar $D=\\{(x,y)\\mid-1\\le x\\le1,\\ 0\\le y\\le3(1-x^2)\\}$ mempunyai rapat massa konstan, maka titik pusat massa keping $D$ adalah $(\\overline x,\\overline y)$, dengan $\\overline x=0$ dan $\\overline y=$\n\n(a) $\\frac32$\n\n(b) $\\frac43$\n\n(c) $\\frac54$\n\n(d) $\\frac65$\n\n(e) 1",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 13",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 13",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-14",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Untuk fungsi tiga peubah $w=\\ln(x^2+y^2+2z)$, jika $x=s+t$, $y=s-t$, dan $z=2st$, maka $\\frac{\\partial w}{\\partial s}+\\frac{\\partial w}{\\partial t}=$\n\n(a) 0\n\n(b) $\\frac1s+\\frac1t$\n\n(c) $\\frac1{s+t}$\n\n(d) $\\frac4s+\\frac4t$\n\n(e) $\\frac4{s+t}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 14",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 14",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-15",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika vektor posisi gerakan partikel di setiap saat $t\\in\\mathbb R$ adalah $\\mathbf r(t)=2t\\mathbf i+(t^2-t)\\mathbf j+t^2\\mathbf k$, maka sudut antara vektor kecepatan dan vektor percepatannya pada saat $t=1$ adalah\n\n(a) $15^\\circ$\n\n(b) $30^\\circ$\n\n(c) $45^\\circ$\n\n(d) $60^\\circ$\n\n(e) $75^\\circ$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 15",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 15",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-16",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Kemiringan pendakian pada permukaan $z=2-\\frac12x^2-\\frac12y^2$ di titik $(1,1,1)$ pada $S$ dalam arah vektor $\\mathbf v=3\\mathbf i-4\\mathbf j$ adalah\n\n(a) $\\frac15$\n\n(b) $\\frac25$\n\n(c) $\\frac35$\n\n(d) $\\frac45$\n\n(e) 1",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 16",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 16",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-17",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $C=C_1+C_2$ ($C_1$ dilanjutkan $C_2$), $C_1$: ruas garis $y=0$ dari $(0,0)$ ke $(2,0)$ dan $C_2$: busur setengah lingkaran berorientasi positif $x^2+y^2=2x$ dari $(2,0)$ ke $(0,0)$, maka integral garis $\\oint_C e^xy^2dx+(2ye^x+6xy)dy=$\n\n(a) 2\n\n(b) 4\n\n(c) 8\n\n(d) 12\n\n(e) 16",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 17",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 17",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-18",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika kurva $C:\\mathbf r=\\mathbf r(t)$ adalah perpotongan permukaan $z=x^2+y^2$ dengan bidang $y=x$ dari titik $(0,0,0)$ ke $(1,1,2)$, dan $F(x,y,z)=yze^x\\mathbf i+ze^x\\mathbf j+ye^x\\mathbf k$ medan vektor konservatif, maka $\\int_C F\\cdot d\\mathbf r=$\n\n(a) $2e$\n\n(b) $e$\n\n(c) $e^2$\n\n(d) 6\n\n(e) 2",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 18",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 18",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-19",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $B=\\{(x,y,z)\\mid x^2+y^2+z^2\\le4\\text{ dan }z\\ge0\\}$, maka dengan menggunakan koordinat bola diperoleh $\\iiint_B\\sqrt{x^2+y^2+z^2}\\,dV=$\n\n(a) $4\\pi$\n\n(b) $8\\pi$\n\n(c) $16\\pi$\n\n(d) $2\\pi^2$\n\n(e) $4\\pi^2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 19",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 19",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-20",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Kurva $C:\\mathbf r=\\mathbf r(t)$ adalah $\\triangle PQR$ dengan $P(1,0,0)$, $Q(0,2,0)$, $R(0,0,1)$, $C$ berorientasi positif dan $S$ adalah permukaan $\\triangle PQR$. Jika $F(x,y,z)=2y\\mathbf i+4x\\mathbf j+(y-3z)\\mathbf k$, maka\n\n$$\\oint_C F\\cdot d\\mathbf r=\\iint_S(\\nabla\\times F)\\cdot\\mathbf n_S\\,dS=k(\\text{luas }\\triangle PQR),$$\n\ndengan $k=$\n\n(a) 1\n\n(b) $\\frac43$\n\n(c) $\\frac53$\n\n(d) 2\n\n(e) $\\frac73$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 20",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 20",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-21",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Fungsi kompleks $w=f(z)$ memetakan $z=x+yi$ di bidang $xy$ ke $w=u+vi$ di bidang $uv$. Peta daerah $y\\ge0$ di bidang $xy$ oleh $w=\\frac{z-i}{z+i}$ adalah daerah di bidang $uv$ yang memenuhi\n\n(a) $u^2+v^2\\le2v$\n\n(b) $u^2+v^2\\le v$\n\n(c) $u^2+v^2\\le2u$\n\n(d) $u^2+v^2\\le u$\n\n(e) $u^2+v^2\\le1$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 21",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 21",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-22",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Bilangan kompleks $e^z$, $z=x+yi$ adalah bilangan real jika $z=$\n\n(a) $x+(n+\\frac12)\\pi i,\\ n\\in\\mathbb Z$\n\n(b) $x+n\\pi i,\\ n\\in\\mathbb Z$\n\n(c) $x+\\frac12n\\pi i,\\ n\\in\\mathbb Z$\n\n(d) $n\\pi+yi,\\ n\\in\\mathbb Z$\n\n(e) $(n+\\frac12)\\pi+yi,\\ n\\in\\mathbb Z$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 22",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 22",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-23",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika $A=[0,1)\\cup[2,3]\\subseteq\\mathbb R$, $B=[0,2]\\subseteq\\mathbb R$, dan $f:A\\to B$, $f(x)=\\begin{cases}x,&0\\le x<1\\\\x-1,&2\\le x\\le3\\end{cases}$, maka\n\n(a) $f$ bijektif, $f$ kontinu, dan $f^{-1}$ tak kontinu\n\n(b) $f$ bijektif, $f$ tak kontinu, dan $f^{-1}$ kontinu\n\n(c) $f$ bijektif, $f$ kontinu, dan $f^{-1}$ kontinu\n\n(d) $f$ bijektif serta $f$ dan $f^{-1}$ tak kontinu\n\n(e) $f$ tak bijektif serta $f$ dan $f^{-1}$ kontinu",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 23",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 23",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-24",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Barisan fungsi $f_n(x)=\\frac{x}{1+nx}$ dengan $x\\ge0$ dan $n\\in\\mathbb N$ konvergen ke $f(x)=0$. Untuk barisan $\\{f_n\\}$ ini, $\\sup_{x\\ge0}|f_n(x)-f(x)|=$\n\n(a) 1\n\n(b) $1-\\frac1n$\n\n(c) $\\frac1n$\n\n(d) $\\frac1{n+1}$\n\n(e) 0",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 24",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 24",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2015-i-pg-25",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Deret fungsi $\\displaystyle\\sum_{n=0}^{\\infty}x(1-x)^n$ bersifat\n\n(a) divergen untuk semua bilangan real $x$\n\n(b) konvergen ke $f(x)=x$ untuk $-1<x<1$\n\n(c) konvergen ke $f(x)=1$ untuk $-1<x<1$\n\n(d) konvergen ke $f(x)=x$ untuk $0<x<2$\n\n(e) konvergen ke $f(x)=1$ untuk $0<x<2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Pilihan Ganda, Nomor 25",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 25",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2015.pdf, PDF page 3. Number assigned by original row order."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
