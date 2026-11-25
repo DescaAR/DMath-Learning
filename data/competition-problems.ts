@@ -14897,6 +14897,278 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Uraian, Nomor 3",
       "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 6. "
     }
+  },
+  {
+    "id": "magd-2013-i-uraian-02-a",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Buktikan untuk setiap $x$ yang memenuhi $x>1$ berlaku ketaksamaan $1-\\frac1x<\\ln x<x-1$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Esei Singkat, Nomor 2 (Varian halaman 7)",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 2 (Varian halaman 7)",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2013A.pdf, PDF page 7. Esei number assigned by row order; variant identified by page, not an official packet label."
+    }
+  },
+  {
+    "id": "magd-2013-i-uraian-03-a",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $f:\\mathbb R\\to\\mathbb R$, $f(x)=\\begin{cases}\\frac{\\sin x}{x},&x\\ne0\\\\1,&x=0\\end{cases}$, tentukan turunan pertama dari $f$ dan buktikan $f'$ kontinu di 0.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Esei Singkat, Nomor 3 (Varian halaman 7)",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 3 (Varian halaman 7)",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2013A.pdf, PDF page 7. Esei number assigned by row order; variant identified by page, not an official packet label."
+    }
+  },
+  {
+    "id": "magd-2013-i-uraian-02-b",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Buktikan untuk setiap $x$ yang memenuhi $0<x<\\frac{\\pi}{2}$ berlaku ketaksamaan $\\sin x<x<\\tan x$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Esei Singkat, Nomor 2 (Varian halaman 8)",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 2 (Varian halaman 8)",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2013A.pdf, PDF page 8. Esei number assigned by row order; variant identified by page, not an official packet label."
+    }
+  },
+  {
+    "id": "magd-2013-i-uraian-03-b",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $f:\\mathbb R\\to\\mathbb R$, $f(x)=\\begin{cases}\\frac{e^x-1}{x},&x\\ne0\\\\1,&x=0\\end{cases}$, tentukan turunan pertama dari $f$ dan buktikan $f'$ kontinu di 0.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Esei Singkat, Nomor 3 (Varian halaman 8)",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 3 (Varian halaman 8)",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2013A.pdf, PDF page 8. Esei number assigned by row order; variant identified by page, not an official packet label."
+    }
+  },
+  {
+    "id": "magd-2014-i-uraian-01",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan solusi pertaksamaan $\\sqrt{2-x}\\ge x$ kemudian periksa kebenaran solusinya dengan menggambarkan kurva $K_1:y=\\sqrt{2-x}$ dan $K_2:y=x$ pada satu sistem koordinat.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Esei Singkat, Nomor 1",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 1",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2014.pdf, PDF page 8. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2014-i-uraian-02",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Jika fungsi kompleks $w=f(z)=u(x,y)+iv(x,y)$, $z=x+iy$ analitik pada daerah $D$ di bidang kompleks dan $|f(z)|$ konstan $\\forall z\\in D$, buktikan fungsi $f$ konstan pada $D$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Esei Singkat, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 2",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2014.pdf, PDF page 8. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2014-i-uraian-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $f(x)=\\begin{cases}\\frac{1-\\cos x}{x},&x\\ne0\\\\0,&x=0\\end{cases}$, tentukan turunan pertama dari fungsi $f$ dan buktikan $f'$ kontinu di 0.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2014 — Tahap I, Esei Singkat, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2014,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 3",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2014.pdf, PDF page 8. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2015-i-uraian-01",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika $f:[a,b]\\subseteq\\mathbb R\\to\\mathbb R$, fungsi $f$ kontinu pada selang tutup $[a,b]$ dan $x_1,x_2,\\ldots,x_n\\in[a,b]$, buktikan\n\n$$\\exists s\\in[a,b]\\ni f(s)=\\frac1n(f(x_1)+f(x_2)+\\cdots+f(x_n)).$$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Esei Singkat, Nomor 1",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 1",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2015.pdf, PDF page 4. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2015-i-uraian-02",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Buktikan $f(z)=\\begin{cases}\\frac{\\overline z^2}{z},&z\\ne0\\\\0,&z=0\\end{cases}$ memenuhi persamaan Cauchy-Riemann di $(0,0)$ tetapi $f'(0)$ tidak ada.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Esei Singkat, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 2",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2015.pdf, PDF page 4. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2015-i-uraian-03",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika $\\{x_n\\}$ dan $\\{y_n\\}$ barisan di ruang metrik $(X,d)$, $x_n\\to x$, dan $d(x_n,y_n)<\\frac1n\\ \\forall n\\in\\mathbb N$, buktikan $y_n\\to x$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2015 — Tahap I, Esei Singkat, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2015,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 3",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2015.pdf, PDF page 4. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2016-i-uraian-01",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Buktikan grafik fungsi $y=x^3+ax^2+bx+c$ ($a,b,c$ konstanta real) selalu memotong sumbu $x$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Esei Singkat, Nomor 1",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 1",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2016.pdf, PDF page 4. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2016-i-uraian-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Daerah $D$ terletak di kuadran pertama yang dibatasi grafik fungsi $y=\\frac1x$, $y=\\frac4x$, $y=\\sqrt x$, dan $y=2\\sqrt x$. Gambarkan daerah $D$ dan hitunglah luasnya.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Esei Singkat, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 2",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2016.pdf, PDF page 4. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2016-i-uraian-03",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Tunjukkan fungsi $f(x)=\\frac{1-x^2}{1+x^2}$ terbatas kemudian tentukan $\\sup_{x\\in\\mathbb R}f(x)$ dan $\\inf_{x\\in\\mathbb R}f(x)$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Esei Singkat, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 3",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal-MagDay-2016.pdf, PDF page 4. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2017-i-uraian-01",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika $|x|<\\frac{\\pi}{2}$, buktikan $\\sin|x|\\le|x|\\le\\tan|x|$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2017 — Tahap I, Esei Singkat, Nomor 1",
+      "competition": "MaG-D ITB",
+      "year": 2017,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 1",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal Babak I MagD 2017.pdf, PDF page 7. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2017-i-uraian-02",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Misalkan fungsi $f:\\mathbb R\\to\\mathbb R$ memenuhi $f(s+t)=f(s)+f(t)\\ \\forall s,t\\in\\mathbb R$. (1) Buktikan $f(0)=0$ dan $f$ adalah fungsi ganjil. (2) Jika $f$ kontinu di $c\\in\\mathbb R$, buktikan $f$ kontinu di setiap $x\\in\\mathbb R$ (kontinu pada $\\mathbb R$).",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2017 — Tahap I, Esei Singkat, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2017,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 2",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal Babak I MagD 2017.pdf, PDF page 7. Esei number assigned by row order; blank answer workspace omitted."
+    }
+  },
+  {
+    "id": "magd-2017-i-uraian-03",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika fungsi $f$ kontinu pada selang tutup $[a,b]$ dan $\\exists c\\in(a,b)\\ni f(c)\\ne0$, buktikan $\\int_a^b|f(x)|\\,dx>0$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2017 — Tahap I, Esei Singkat, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2017,
+      "stage": "Tahap I",
+      "number": "Esei Singkat, Nomor 3",
+      "note": "User-supplied ZIP: University Challange/MaGD/Soal Babak I MagD 2017.pdf, PDF page 7. Esei number assigned by row order; blank answer workspace omitted."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
