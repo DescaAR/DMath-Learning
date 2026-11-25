@@ -201,14 +201,14 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi pada bilangan bulat",
-    "prompt": "Tentukan semua fungsi $f:\\mathbb Z\\to\\mathbb Z$ yang memenuhi persamaan $$f(2a)+2f(b)=f(f(a+b))$$ untuk setiap $a,b\\in\\mathbb Z$.",
+    "prompt": "Classify the functions $f:\\mathbb Z\\to\\mathbb Z$ satisfying $$f(2a)+2f(b)=f(f(a+b))$$ for every pair of integers $a,b$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2019 — Nomor 1",
       "competition": "IMO",
       "year": 2019,
       "number": "Nomor 1",
-      "url": "https://www.imo-official.org/problems/2019/eng.pdf",
+      "url": "https://www.imo-official.org/assets/documents/problems/2019/2019_eng.pdf",
       "note": "Pernyataan soal dalam bahasa Indonesia.",
       "stage": "IMO"
     }
@@ -555,14 +555,14 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Keterbagian jumlah fungsi lantai",
-    "prompt": "Tentukan semua $\\alpha\\in\\mathbb R$ dengan sifat bahwa untuk setiap bilangan bulat positif $n$, berlaku $$n\\mid\\sum_{k=1}^{n}\\lfloor k\\alpha\\rfloor.$$ Notasi $\\lfloor x\\rfloor$ menyatakan bilangan bulat terbesar yang tidak melebihi $x$.",
+    "prompt": "Find the real numbers $\\alpha$ for which $$\\lfloor\\alpha\\rfloor+\\lfloor2\\alpha\\rfloor+\\cdots+\\lfloor n\\alpha\\rfloor$$ is divisible by $n$ for each positive integer $n$. Here $\\lfloor z\\rfloor$ is the largest integer not exceeding $z$; for instance, $\\lfloor-\\pi\\rfloor=-4$ and $\\lfloor2\\rfloor=\\lfloor2.9\\rfloor=2$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2024 — Nomor 1",
       "competition": "IMO",
       "year": 2024,
       "number": "Nomor 1",
-      "url": "https://www.imo-official.org/problems/2024/",
+      "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
       "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
       "stage": "IMO"
     }
@@ -573,14 +573,14 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "FPB perpangkatan",
-    "prompt": "Carilah pasangan bilangan bulat positif $(a,b)$ yang membuat barisan $\\bigl(\\gcd(a^n+b,b^n+a)\\bigr)_{n\\ge1}$ bernilai konstan mulai suatu indeks tertentu.",
+    "prompt": "Classify the positive integer pairs $(a,b)$ admitting positive integers $g,N$ with $$\\gcd(a^n+b,b^n+a)=g\\qquad(n\\ge N,\\ n\\in\\mathbb Z).$$ The notation $\\gcd(x,y)$ means the greatest common divisor of $x$ and $y$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2024 — Nomor 2",
       "competition": "IMO",
       "year": 2024,
       "number": "Nomor 2",
-      "url": "https://www.imo-official.org/problems/2024/",
+      "url": "https://www.imo-official.org/assets/documents/problems/2024/2024_eng.pdf",
       "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
       "stage": "IMO"
     }
@@ -591,7 +591,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan produk dan jumlah",
-    "prompt": "Untuk setiap bilangan bulat positif $n$ dan setiap pilihan $a_1,\\ldots,a_n>0$, buktikan bahwa $$\\sum_{i=1}^{n}\\frac{1}{2^i}\\left(\\frac{2}{1+a_i}\\right)^{2^i}\\ge\\frac{2}{1+a_1a_2\\cdots a_n}-\\frac{1}{2^n}.$$",
+    "prompt": "For each positive integer $n$ and positive reals $a_1,\\ldots,a_n$, establish $$\\sum_{i=1}^n\\frac{1}{2^i}\\left(\\frac{2}{1+a_i}\\right)^{2^i}\\ge\\frac{2}{1+a_1a_2\\cdots a_n}-\\frac{1}{2^n}.$$",
     "source": {
       "kind": "competition",
       "label": "APMO 2024 — Nomor 3",
@@ -1401,7 +1401,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan berbobot",
-    "prompt": "Untuk $a\\ge b\\ge c\\ge d>0$ dengan $a+b+c+d=1$, buktikan $$ (a+2b+3c+4d)a^ab^bc^cd^d<1.$$",
+    "prompt": "Suppose $a,b,c,d$ are real, $a\\ge b\\ge c\\ge d>0$, and $a+b+c+d=1$. Establish $$(a+2b+3c+4d)a^ab^bc^cd^d<1.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2020 — Hari 1, Nomor 2",
@@ -1419,7 +1419,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Partisi dan kuadrat sempurna",
-    "prompt": "Misalkan $n\\ge100$ bilangan bulat. Buktikan bahwa pada setiap pembagian $\\{n,n+1,\\ldots,2n\\}$ menjadi dua kelompok, terdapat dua anggota berbeda dalam satu kelompok yang jumlahnya kuadrat sempurna.",
+    "prompt": "Take an integer $n\\ge100$. Ivan labels $n+1$ separate cards with the integers $n,n+1,\\ldots,2n$ and distributes them into two piles after shuffling. Show that some pile has two cards whose labels add to a perfect square.",
     "source": {
       "kind": "competition",
       "label": "IMO 2021 — Hari 1, Nomor 1",
@@ -1437,7 +1437,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan jumlah akar",
-    "prompt": "Untuk sebarang bilangan real $x_1,\\ldots,x_n$, buktikan $$\\sum_{i,j=1}^n\\sqrt{|x_i-x_j|}\\le\\sum_{i,j=1}^n\\sqrt{|x_i+x_j|}.$$",
+    "prompt": "For arbitrary real $x_1,\\ldots,x_n$, establish $$\\sum_{i=1}^n\\sum_{j=1}^n\\sqrt{|x_i-x_j|}\\le\\sum_{i=1}^n\\sum_{j=1}^n\\sqrt{|x_i+x_j|}.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2021 — Hari 1, Nomor 2",
@@ -1455,7 +1455,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Persamaan fungsi dengan solusi tunggal",
-    "prompt": "Tentukan semua fungsi $f:(0,\\infty)\\to(0,\\infty)$ dengan sifat: bagi setiap $x>0$, terdapat tepat satu $y>0$ yang memenuhi $xf(y)+yf(x)\\le2$.",
+    "prompt": "Classify the maps $f:\\mathbb R_{>0}\\to\\mathbb R_{>0}$ for which, given any $x>0$, precisely one positive $y$ satisfies $$xf(y)+yf(x)\\le2.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2022 — Hari 1, Nomor 2",
@@ -1473,7 +1473,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Keterbagian faktor berurutan",
-    "prompt": "Tentukan semua bilangan komposit $n>1$ dengan sifat berikut: apabila pembagi positifnya diurutkan sebagai $1=d_1<d_2<\\cdots<d_k=n$, maka $d_i\\mid(d_{i+1}+d_{i+2})$ untuk $1\\le i\\le k-2$.",
+    "prompt": "For a composite integer $n>1$, enumerate its positive divisors as $1=d_1<d_2<\\cdots<d_k=n$. Find all such $n$ satisfying $$d_i\\mid(d_{i+1}+d_{i+2})\\qquad(1\\le i\\le k-2).$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2023 — Hari 1, Nomor 1",
@@ -1491,7 +1491,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Barisan dan polinomial monik",
-    "prompt": "Untuk setiap bilangan bulat $k\\ge2$, tentukan semua barisan tak berhingga bilangan bulat positif $(a_n)$ yang memiliki polinomial monik $P\\in\\mathbb Z[x]$ berderajat $k$ dengan koefisien nonnegatif sehingga $P(a_n)=a_{n+1}\\cdots a_{n+k}$ bagi setiap $n\\ge1$.",
+    "prompt": "Fix an integer $k\\ge2$. Classify the infinite sequences $(a_n)_{n\\ge1}$ of positive integers admitting a polynomial $$P(x)=x^k+c_{k-1}x^{k-1}+\\cdots+c_1x+c_0$$ with nonnegative integer coefficients $c_0,\\ldots,c_{k-1}$ such that $$P(a_n)=a_{n+1}a_{n+2}\\cdots a_{n+k}$$ for every positive integer $n$.",
     "source": {
       "kind": "competition",
       "label": "IMO 2023 — Hari 1, Nomor 3",
@@ -2121,7 +2121,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Barisan dengan residu berbeda",
-    "prompt": "Misalkan $(a_n)$ barisan bilangan bulat yang mempunyai tak berhingga banyak suku positif dan tak berhingga banyak suku negatif. Untuk setiap $n\\ge1$, residu dari $a_1,\\ldots,a_n$ modulo $n$ semuanya berbeda. Buktikan bahwa setiap bilangan bulat muncul tepat sekali dalam barisan itu.",
+    "prompt": "Suppose an integer sequence $(a_n)_{n\\ge1}$ has infinitely many positive terms and infinitely many negative terms. For each $n\\ge1$, the first $n$ terms represent distinct residue classes modulo $n$. Establish that each integer appears precisely once among the terms.",
     "source": {
       "kind": "competition",
       "label": "IMO 2005 — Hari 1, Nomor 2",
@@ -2139,7 +2139,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan tiga variabel",
-    "prompt": "Buktikan bahwa untuk $x,y,z>0$ dan $xyz\\ge1$, berlaku $$\\frac{x^5-x^2}{x^5+y^2+z^2}+\\frac{y^5-y^2}{x^2+y^5+z^2}+\\frac{z^5-z^2}{x^2+y^2+z^5}\\ge0.$$",
+    "prompt": "Given positive real numbers $x,y,z$ satisfying $xyz\\ge1$, establish $$\\frac{x^5-x^2}{x^5+y^2+z^2}+\\frac{y^5-y^2}{x^2+y^5+z^2}+\\frac{z^5-z^2}{x^2+y^2+z^5}\\ge0.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2005 — Hari 1, Nomor 3",
@@ -2157,7 +2157,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Koprimalitas pada barisan",
-    "prompt": "Tentukan semua bilangan bulat positif yang relatif prima terhadap setiap suku barisan $a_n=2^n+3^n+6^n-1$, $n\\ge1$.",
+    "prompt": "Classify the positive integers $m$ satisfying $\\gcd(m,a_n)=1$ at every index $n\\ge1$, where $$a_n=2^n+3^n+6^n-1.$$",
     "source": {
       "kind": "competition",
       "label": "IMO 2005 — Hari 2, Nomor 4",
@@ -4781,7 +4781,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Qualification Round",
       "number": "Problem A",
       "label": "IYMC 2019 — Qualification Round, Problem A",
-      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2019.pdf",
+      "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
       "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
     }
   },
@@ -4791,7 +4791,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Keterbagian ekspresi kubik",
-    "prompt": "For $n\\in\\mathbb Z_{>0}$, establish $6\\mid(n^3+3n^2+2n)$.",
+    "prompt": "Establish divisibility of $1n^3+2n+3n^2$ by both $2$ and $3$ for each positive integer $n$.",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -4799,7 +4799,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Qualification Round",
       "number": "Problem B",
       "label": "IYMC 2019 — Qualification Round, Problem B",
-      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2019.pdf",
+      "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
       "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
     }
   },
@@ -4809,7 +4809,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Sistem persamaan linear simetris",
-    "prompt": "Determine $\\alpha$ for real triples $(\\alpha,\\beta,\\gamma)$ satisfying $$\\begin{aligned}\\alpha+\\beta+\\gamma&=1,\\\\2\\beta+\\gamma&=1,\\\\\\beta+2\\gamma&=1.\\end{aligned}$$",
+    "prompt": "Given real numbers $\\alpha,\\beta,\\gamma$ satisfying the three equations $$\\begin{aligned}\\alpha+\\beta+\\gamma&=1,\\\\\\beta+\\gamma+\\beta&=1,\\\\\\gamma+\\beta+\\gamma&=1,\\end{aligned}$$ determine $\\alpha$.",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -4817,7 +4817,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Qualification Round",
       "number": "Problem D",
       "label": "IYMC 2019 — Qualification Round, Problem D",
-      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2019.pdf",
+      "url": "https://iymc.info/docs/problems/2019/IYMC_Qualification_Round_2019.pdf",
       "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
     }
   },
@@ -4827,7 +4827,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Akar persamaan hasil kali eksponensial",
-    "prompt": "Solve $(2^x-1)(x^2+2x-3)=0$ over $\\mathbb R$.",
+    "prompt": "Determine the real zeros of the function $$f(x)=(2^x-1)(x^2+2x-3).$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -4835,7 +4835,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Qualification Round",
       "number": "Problem A",
       "label": "IYMC 2020 — Qualification Round, Problem A",
-      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2020.pdf",
+      "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
       "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
     }
   },
@@ -4845,7 +4845,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Keterbagian oleh sembilan",
-    "prompt": "Establish $9\\mid(3\\cdot4^n+51)$ for every $n\\in\\mathbb Z_{>0}$, and deduce divisibility by $3$.",
+    "prompt": "Establish that $3\\cdot4^n+51$ is a multiple of both $3$ and $9$ for each positive integer $n$.",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -4853,7 +4853,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Qualification Round",
       "number": "Problem B",
       "label": "IYMC 2020 — Qualification Round, Problem B",
-      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2020.pdf",
+      "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
       "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
     }
   },
@@ -4871,7 +4871,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Qualification Round",
       "number": "Problem C",
       "label": "IYMC 2020 — Qualification Round, Problem C",
-      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2020.pdf",
+      "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
       "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
     }
   },
@@ -4881,7 +4881,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Ketaksamaan trigonometri",
-    "prompt": "Establish $1-\\sin^2 x\\le|\\cos x|$ on $\\mathbb R$.",
+    "prompt": "Establish the inequality $|\\cos(x)|\\ge1-\\sin^2(x)$ for every $x\\in\\mathbb R$.",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -4889,7 +4889,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "Qualification Round",
       "number": "Problem D",
       "label": "IYMC 2020 — Qualification Round, Problem D",
-      "url": "https://iymc.info/docs/IYMC_Qualification_Round_2020.pdf",
+      "url": "https://iymc.info/docs/problems/2020/IYMC_Qualification_Round_2020.pdf",
       "note": "Independent English mathematical formulation based on the official qualification paper; not a verbatim transcription."
     }
   },
@@ -4971,7 +4971,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Akar persamaan hasil kali logaritmik",
-    "prompt": "Solve $(\\log(3^x)-2\\log 3)(x^2-1)=0$ in real numbers.",
+    "prompt": "Find the real zeros of $$f(x)=(\\log(3^x)-2\\log(3))(x^2-1).$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -4989,7 +4989,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Jumlah deret geometri tak hingga",
-    "prompt": "Evaluate $$1+\\sum_{k=1}^{\\infty}\\frac{3}{\\pi^k}.$$",
+    "prompt": "Find the sum of the infinite series $$1+\\frac3\\pi+\\frac3{\\pi^2}+\\frac3{\\pi^3}+\\frac3{\\pi^4}+\\frac3{\\pi^5}+\\cdots.$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5025,7 +5025,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Jumlah pembagi kuadrat bilangan prima",
-    "prompt": "For each prime $p$, establish $\\sum_{d\\mid p^2,\\ d>0}d<2p^2$.",
+    "prompt": "For positive integers $n$, write $\\sigma(n)$ for the sum of the positive divisors of $n$. For every prime $p$, establish $\\sigma(n)<2n$ when $n=p^2$.",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5061,7 +5061,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Perpangkatan berselang-seling modulo tiga",
-    "prompt": "Establish the congruence $2^n\\equiv(-1)^n\\pmod3$ for every positive integer $n$.",
+    "prompt": "Establish divisibility of $2^n-(-1)^n$ by $3$ at each positive integer $n$.",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5097,7 +5097,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Relasi rekursif jumlah pembagi",
-    "prompt": "Write $\\sigma(k)=\\sum_{d\\mid k,\\ d>0}d$ for $k\\ge1$. Establish $\\sigma(p^m)-p\\sigma(p^{m-1})=1$ whenever $p$ is prime and $m$ is a positive integer.",
+    "prompt": "For positive integers $n$, denote their positive divisor sum by $\\sigma(n)$. For every prime $p$ and positive integer $m$, establish $$\\sigma(p^m)=1+p\\cdot\\sigma(p^{m-1}).$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5187,7 +5187,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Pangkat lima modulo lima",
-    "prompt": "Establish $n^5\\equiv n\\pmod5$ for all positive integers $n$.",
+    "prompt": "Establish $5\\mid(n^5-n)$ for every positive integer $n$.",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -6681,7 +6681,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Lintasan kisi dan fungsi lantai",
-    "prompt": "Classify $(\\alpha,\\beta)\\in\\mathbb R_{>0}^2$ for which there exists an infinite lattice path $(x_t,y_t)_{t\\ge0}$ starting at $(0,0)$, with increments $(1,0)$ or $(0,1)$, satisfying $|x_t-y_t|<2025$ and such that $t\\mapsto\\lfloor\\alpha x_t+\\beta y_t\\rfloor$ is a bijection onto $\\mathbb Z_{\\ge0}$.",
+    "prompt": "Take positive real parameters $\\alpha,\\beta$. Emerald begins at the origin of the coordinate plane. At each minute she moves one unit upwards or rightwards, staying within $|x-y|<2025$. At each visited point $(x,y)$, she records $\\lfloor x\\alpha+y\\beta\\rfloor$. Classify the pairs $(\\alpha,\\beta)$ permitting a journey in which every nonnegative integer is recorded exactly once.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -6717,7 +6717,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Barisan terbatas atau linear",
-    "prompt": "Suppose $a_j\\in\\mathbb Z_{>0}$ for all $j\\ge1$ and $$a_{n-m+1}a_{n+m}\\mid100!\\sum_{j=m}^n a_j\\qquad(1\\le m\\le n).$$ Prove that either $\\sup_j a_j<\\infty$ or $a_j=ja_1$ for every $j$.",
+    "prompt": "Suppose $(a_n)_{n\\ge1}$ is an infinite sequence of positive integers for which $$a_{n-m+1}a_{n+m}\\mid100!(a_m+a_{m+1}+\\cdots+a_n)\\qquad(1\\le m\\le n).$$ Prove that the sequence is bounded or linear. Bounded here means that a constant $N$ exists with $a_n<N$ at all positive indices, and linear means $a_n=na_1$ at every such index.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -6735,7 +6735,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Persamaan faktorial dan perpangkatan",
-    "prompt": "Determine the set of $(a,p,m,o)\\in\\mathbb Z_{>0}^4$ satisfying $o\\ge2$ and $a!+p!-m^o=26$.",
+    "prompt": "Classify positive integer quadruples $(a,p,m,o)$ with $o\\ge2$ satisfying $$a!+p!=m^o+26.$$",
     "source": {
       "kind": "competition",
       "competition": "APMO",
