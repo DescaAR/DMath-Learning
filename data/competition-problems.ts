@@ -1793,7 +1793,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 2,
     "title": "Kelipatan tiga belas",
-    "prompt": "Hitung banyak bilangan bulat kelipatan 13 yang terletak di antara 1000 dan 2005.",
+    "prompt": "Banyaknya bilangan bulat di antara 1000 dan 2005 yang habis dibagi 13 adalah . . .",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2005 — Isian 1",
@@ -1802,7 +1802,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 1",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Matches archived exam sheet; source typography normalized."
     }
   },
   {
@@ -1820,7 +1820,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 2",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived exam sheet compared; wording differs."
     }
   },
   {
@@ -1838,7 +1838,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 4",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived exam sheet compared; wording differs."
     }
   },
   {
@@ -1856,7 +1856,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 9",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived exam sheet compared; wording differs."
     }
   },
   {
@@ -1874,7 +1874,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 10",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived exam sheet compared; wording differs."
     }
   },
   {
@@ -1892,7 +1892,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 1",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived exam sheet compared; wording differs."
     }
   },
   {
@@ -1901,7 +1901,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 2,
     "title": "Sudut dalam segitiga",
-    "prompt": "Berapa besar sudut $CAD$?",
+    "prompt": "Berapa besar sudut CAD?\n\n[[FIGURE]]",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2006 — Isian 2",
@@ -1910,7 +1910,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 2",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Matches archived exam sheet; source typography normalized."
     }
   },
   {
@@ -1928,7 +1928,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 4",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived exam sheet compared; wording differs."
     }
   },
   {
@@ -1946,7 +1946,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 6",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived exam sheet compared; wording differs."
     }
   },
   {
@@ -1964,7 +1964,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 7",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived copy checked; original exam provenance pending."
     }
   },
   {
@@ -1973,7 +1973,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Kadar garam",
-    "prompt": "Enam liter air laut memiliki kadar garam $4\\%$. Setelah satu liter air laut menguap, berapakah persentase kadar garam yang baru?",
+    "prompt": "Kadar garam dalam enam liter air laut adalah $4\\%$. Setelah air laut tersebut menguap sebanyak 1 liter, kadar garam menjadi ... persen.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2007 — Isian 9",
@@ -1982,7 +1982,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 9",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived copy checked; original exam provenance pending."
     }
   },
   {
@@ -2036,7 +2036,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 2",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived copy checked; original exam provenance pending."
     }
   },
   {
@@ -2054,7 +2054,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 3",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived copy checked; original exam provenance pending."
     }
   },
   {
@@ -2063,7 +2063,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Sistem persamaan bilangan bulat",
-    "prompt": "Tentukan seluruh pasangan $(x,y)\\in\\mathbb Z^2$ yang memenuhi $$x(y+1)=y^2-1,\\qquad y(x+1)=x^2-1.$$",
+    "prompt": "Tentukan semua pasangan bilangan bulat $(x,y)$ yang memenuhi sistem persamaan berikut.\n\n$$\\begin{cases}x(y+1)=y^2-1\\\\y(x+1)=x^2-1\\end{cases}$$",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SMP 2005 — Hari 1, Nomor 4",
@@ -2072,7 +2072,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Hari 1, Nomor 4",
       "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Archived copy checked; original exam provenance pending."
     }
   },
   {

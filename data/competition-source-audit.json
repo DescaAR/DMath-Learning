@@ -1036,76 +1036,148 @@
       "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2023-wilayah/"
     },
     "osn-sd-2005-i1": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "OSN",
       "year": 2005,
       "number": "Isian 1",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Restored short question from archived question-and-answer sheet.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2005-i2": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "OSN",
       "year": 2005,
       "number": "Isian 2",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Three sentences in source are compressed into two; response blank omitted.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2005-i4": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "OSN",
       "year": 2005,
       "number": "Isian 4",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Original three sentences and explicit rupiah amounts are rephrased.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2005-i9": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "OSN",
       "year": 2005,
       "number": "Isian 9",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+        "page": 3,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Order of conditions and question changed.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2005-i10": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "OSN",
       "year": 2005,
       "number": "Isian 10",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/a1-final-isian-singkat-osn-2005.pdf",
+        "page": 3,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Opening and conditional statements rephrased.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2006-i1": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "OSN",
       "year": 2006,
       "number": "Isian 1",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Original wording and printed typo differ.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2006-i2": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "unclear",
       "competition": "OSN",
       "year": 2006,
       "number": "Isian 2",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Short wording matches archived exam sheet; figure marker inserted.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2006-i4": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "OSN",
       "year": 2006,
       "number": "Isian 4",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Original opening and question rephrased; source says 'di bawah ini' but archived page does not show a separate trapezium.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2006-i6": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "OSN",
       "year": 2006,
       "number": "Isian 6",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Original two-sentence statement rephrased.",
+        "limitation": "Archived exam sheet hosted on a third-party site."
+      }
     },
     "osn-sd-2007-i7": {
       "status": "pending_comparison",
@@ -1113,7 +1185,15 @@
       "competition": "OSN",
       "year": 2007,
       "number": "Isian 7",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
+        "page": 2,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Archived compilation uses a completion blank and different wording.",
+        "limitation": "Third-party compilation or edited copy, not verified against organizer's original."
+      }
     },
     "osn-sd-2007-i9": {
       "status": "pending_comparison",
@@ -1121,7 +1201,15 @@
       "competition": "OSN",
       "year": 2007,
       "number": "Isian 9",
-      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf"
+      "sourceUrl": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
+        "page": 2,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Restored short wording in archived compilation; original exam provenance not confirmed.",
+        "limitation": "Third-party compilation or edited copy, not verified against organizer's original."
+      }
     },
     "imso-sd-2005-06": {
       "status": "pending_comparison",
@@ -1145,7 +1233,15 @@
       "competition": "OSN",
       "year": 2005,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf"
+      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Archived copy has different order of example and repeated equation.",
+        "limitation": "Third-party compilation or edited copy, not verified against organizer's original."
+      }
     },
     "osn-smp-2005-h1-03": {
       "status": "pending_comparison",
@@ -1153,7 +1249,15 @@
       "competition": "OSN",
       "year": 2005,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf"
+      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Archived copy has longer narrative and different question.",
+        "limitation": "Third-party compilation or edited copy, not verified against organizer's original."
+      }
     },
     "osn-smp-2005-h1-04": {
       "status": "pending_comparison",
@@ -1161,7 +1265,15 @@
       "competition": "OSN",
       "year": 2005,
       "number": "Hari 1, Nomor 4",
-      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf"
+      "sourceUrl": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://masdwijanto.wordpress.com/wp-content/uploads/2011/07/osn-matematika-smp-2005.pdf",
+        "page": 1,
+        "method": "Archived PDF text and page screenshot compared",
+        "finding": "Restored short wording and brace-form system from archived copy; original exam provenance not confirmed.",
+        "limitation": "Third-party compilation or edited copy, not verified against organizer's original."
+      }
     },
     "kmnr-smp-2016-78-02": {
       "status": "pending_comparison",
@@ -7233,8 +7345,10 @@
       "url": "https://id.scribd.com/document/1055438818/Ksn-Matematika-Sd-Tahun-2020-Tingkat-Kabupaten"
     },
     "osn-sd-2006-i2": {
-      "status": "pending_visual_comparison",
-      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf"
+      "status": "diagram_structure_checked",
+      "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2008/12/e1-zoalisiansingkatosn-2006.pdf",
+      "page": 1,
+      "finding": "Compared screenshot: A,D,B collinear, C above, segment CD, 43°, 29°, 48° agree. SVG is a redraw, not pixel-identical."
     },
     "cemc-waterloo-2025-gauss-grade-7-11": {
       "status": "pending_visual_comparison",
