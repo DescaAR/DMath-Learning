@@ -3848,6 +3848,348 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
       "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
     }
+  },
+  {
+    "id": "imc-2025-01",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Coverage by tangent lines",
+    "prompt": "For $P\\in\\mathbb R[x]$ of degree at least two define $L_x=\\{(t,P(x)+P'(x)(t-x)):t\\in\\mathbb R\\}$. Prove that $\\bigcup_{x\\in\\mathbb R}L_x=\\mathbb R^2$ when $\\deg P$ is odd. Can equality also hold for even degree?",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMC 2025 — Hari 1, Nomor 1",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2025-02",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Sharp integral estimate",
+    "prompt": "If $f\\in C^2(\\mathbb R)$, $f(-1)=f(1)=1$, and $\\int_{-1}^1 f(x)\\,dx=0$, establish $$\\int_{-1}^1 |f''(x)|^2\\,dx\\ge15$$ and characterize equality.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMC 2025 — Hari 1, Nomor 2",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2025-03",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Commuting random matrices",
+    "prompt": "Choose $A,B$ independently and uniformly from $\\{X\\in M_{2025}(\\mathbb R):X=X^{\\mathsf T},\\ \\operatorname{rank}X=1,\\ x_{ij}\\in\\{-1,1\\}\\}$. Compute $\\mathbb P(AB=BA)$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMC 2025 — Hari 1, Nomor 3",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2025-05",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Maximal iteration orders",
+    "prompt": "Write $o(T)=|\\{T^j:j\\ge1\\}|$ for a self-map of $\\{1,\\ldots,n\\}$. Let $f(n)$ and $g(n)$ be the maxima of $o(T)$ over permutations and arbitrary self-maps, respectively. Establish $g(n)-f(n)<n^{0.501}$ eventually.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 5",
+      "label": "IMC 2025 — Hari 1, Nomor 5",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2025-06",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 2,
+    "title": "An intermediate derivative identity",
+    "prompt": "Suppose $f\\in C^1((0,\\infty))$ and $0<a<b$ satisfy $f(a)=f(b)=k$. Establish the existence of $\\xi\\in(a,b)$ with $f(\\xi)-\\xi f'(\\xi)=k$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMC 2025 — Hari 2, Nomor 6",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2025-07",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Closed subsets of positive integers",
+    "prompt": "Classify nonempty $M\\subseteq\\mathbb Z_{>0}$ closed under doubling and under arithmetic means of pairs of its elements whose sum is even.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 7",
+      "label": "IMC 2025 — Hari 2, Nomor 7",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2025-08",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 4,
+    "title": "Eigenvalues under quarter-turn symmetry",
+    "prompt": "Suppose $A=(a_{ij})\\in M_n(\\mathbb R)$ satisfies $a_{ij}=a_{j,n+1-i}$. Establish $\\sigma(A)\\subseteq\\mathbb R\\cup i\\mathbb R$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 8",
+      "label": "IMC 2025 — Hari 2, Nomor 8",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2025-09",
+    "level": "Kuliah",
+    "topic": "Peluang",
+    "difficulty": 5,
+    "title": "Maximum of a random sample without replacement",
+    "prompt": "Starting with $\\mathbb Z_{>0}$, select and delete its $i$th smallest remaining member with probability $2^{-i}$ at each step. If $Y_n$ is the greatest of the first $n$ selected integers, prove $$\\mathbb E Y_n=\\sum_{i=1}^n\\frac{2^i}{2^i-1}.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 9",
+      "label": "IMC 2025 — Hari 2, Nomor 9",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2025-10",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Asymptotic count of square products",
+    "prompt": "Set $$S_N=|\\{(a,b)\\in\\{1,\\ldots,N\\}^2:a(a+1)b(b+1)\\text{ is a square}\\}|.$$ Prove convergence of $S_N/N$ and determine its limit.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2025,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 10",
+      "label": "IMC 2025 — Hari 2, Nomor 10",
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-01",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 2,
+    "title": "A trigonometric equation",
+    "prompt": "Show that $\\{x\\in\\mathbb R:\\cos(\\cos x)=\\sin(\\sin x)\\}=\\emptyset$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMC 2026 — Hari 1, Nomor 1",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-02",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Matrix identity and commutation",
+    "prompt": "For real square matrices $A,B$ of equal size, does $A^{\\mathsf T}A+BB^{\\mathsf T}=AB+BA$ imply $AB=BA$?",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMC 2026 — Hari 1, Nomor 2",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-03",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Alternating merges of ordered subsets",
+    "prompt": "Partition $\\{1,\\ldots,n\\}$, $n\\ge2$, into nonempty ordered subsets $A,B$. Read $A$ increasingly and $B$ decreasingly, alternating between them beginning with $A$, and append the unused entries when one is exhausted. Count the distinct resulting permutations.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMC 2026 — Hari 1, Nomor 3",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-04",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Limit of a mean-driven recurrence",
+    "prompt": "For $x_1>0$ and $x_{n+1}=\\arctan(n^{-1}\\sum_{j=1}^n x_j)$, compute $\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 4",
+      "label": "IMC 2026 — Hari 1, Nomor 4",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-05",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Polynomial concentration",
+    "prompt": "Establish the existence of a universal $C>0$ such that each $A,B\\in\\mathbb Z_{>0}$ admits $p\\in\\mathbb R[x]$ with $$\\deg p<C\\sqrt{AB},\\qquad p(0)^2>\\sum_{i=-A,\\ i\\ne0}^{B}p(i)^2.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 5",
+      "label": "IMC 2026 — Hari 1, Nomor 5",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_1_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-06",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Composed derivative equations",
+    "prompt": "For each $g(x)=x$ and $g(x)=|x|$, decide whether a differentiable $f:\\mathbb R\\to\\mathbb R$ can satisfy $f'(f(x))=g(x)$ identically.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMC 2026 — Hari 2, Nomor 6",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-07",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Area of a union of segments",
+    "prompt": "For $f\\in C([0,1],\\mathbb R)$ define $$S_f=\\{((1-t)x+tf(x),t):x,t\\in[0,1]\\}.$$ Determine the infimum of the planar area of $S_f$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 7",
+      "label": "IMC 2026 — Hari 2, Nomor 7",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-08",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Sharp matrix energy bound",
+    "prompt": "Let $A=A^{\\mathsf T}\\in M_n(\\mathbb R)$, $n\\ge5$, have zero diagonal and off-diagonal entries $\\pm1$. Suppose $(A^2)_{ij}$ is constant for $i\\ne j$. Establish $\\sum_{\\lambda\\in\\sigma(A)}|\\lambda|\\ge2n-2$, counting multiplicities, and classify equality.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 8",
+      "label": "IMC 2026 — Hari 2, Nomor 8",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-09",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 5,
+    "title": "Lower bound for a sequence",
+    "prompt": "Suppose $a_n>0$ and $\\sum_{j=1}^{2n-1}a_j=a_n^2$ for every $n\\ge1$. Establish $a_n\\ge2n-1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 9",
+      "label": "IMC 2026 — Hari 2, Nomor 9",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
+  },
+  {
+    "id": "imc-2026-10",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Finite sets on a chessboard",
+    "prompt": "For every finite $F\\subset\\mathbb R^2$, can one choose $0<d<1$ and a translated and rotated square grid of mesh $d$, with alternating black and white open cells, so that $F$ lies entirely in white cells?",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2026,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 10",
+      "label": "IMC 2026 — Hari 2, Nomor 10",
+      "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
+      "note": "Independent English mathematical formulation; original statement in official paper."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
