@@ -20269,6 +20269,176 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "note": "User Drive: Soal Final.pdf, PDF page 1–2. Source text and diagram visually inspected; diagram redrawn in SVG. Year confirmed by UNRI event report. Actual administered paper and web rendering pending."
     }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-01",
+    "level": "Kuliah",
+    "topic": "Medan Vektor",
+    "difficulty": 3,
+    "title": "Medan Vektor",
+    "prompt": "Misalkan $\\vec r(t)=\\frac{t^2}{t-1}\\vec i+\\sqrt{t+8}\\vec j+\\frac{\\sin(\\pi t)}{t}\\vec k$ adalah medan vektor.\n\n1. Tentukan domain (daerah asal) dari medan vektor $\\vec r(t)$.\n2. Hitung turunan pertama $\\vec r'(t)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 1",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 1",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 1. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-02",
+    "level": "Kuliah",
+    "topic": "Turunan",
+    "difficulty": 3,
+    "title": "Turunan",
+    "prompt": "Diberikan fungsi polinom $f(x)=4ax^3+6bx^2+12cx+d$ dengan $a,b,c,d$ adalah konstanta. Jika $a<0$, $b>0$, dan $D=b^2-4ac>0$, tentukan pembuat maksimum dan pembuat minimum fungsi $f$. Nyatakan dalam $a,b$, dan $D$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 2",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 2",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 1. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-03",
+    "level": "Kuliah",
+    "topic": "Komposisi Fungsi",
+    "difficulty": 3,
+    "title": "Komposisi Fungsi",
+    "prompt": "Diberikan fungsi $f(x)=-x^2+6x-4$ dan $g(x)=\\sqrt{x+5}$. Periksa apakah fungsi komposisi $g\\circ f$ terdefinisi. Jika terdefinisi, tentukanlah fungsi $g\\circ f$, domain $D_{g\\circ f}$, dan range $R_{g\\circ f}$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 3",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 3",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 1. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-04",
+    "level": "Kuliah",
+    "topic": "Optimasi",
+    "difficulty": 3,
+    "title": "Optimasi",
+    "prompt": "Diberikan bola dengan persamaan $x^2+y^2+z^2=1$.\n\n1. Tentukan titik pada permukaan bola yang jaraknya terdekat dari titik $(2,1,1)$.\n2. Tentukan pula titik pada permukaan bola yang letaknya terjauh dari titik $(2,1,1)$.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 4",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 4",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 1. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-05",
+    "level": "Kuliah",
+    "topic": "Limit Fungsi Dua Variabel",
+    "difficulty": 3,
+    "title": "Limit Fungsi Dua Variabel",
+    "prompt": "Diketahui fungsi:\n\n$$f(x,y)=\\frac{x^2y^2}{x^4+3y^4}$$\n\nTentukan nilai limit $f(x,y)$ di titik asal $(0,0)$ jika ada. Jika tidak mempunyai limit, berikan penjelasan secara matematis.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 5",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 5",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 2. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-06",
+    "level": "Kuliah",
+    "topic": "Integral Lipat",
+    "difficulty": 3,
+    "title": "Integral Lipat",
+    "prompt": "Tentukan volume benda pejal di oktan pertama $(x\\geq0,y\\geq0,z\\geq0)$ yang dibatasi oleh paraboloid bundar $z=x^2+y^2$, tabung $x^2+y^2=4$, dan bidang-bidang koordinat.",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 6",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 6",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 2. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-07",
+    "level": "Kuliah",
+    "topic": "Bilangan Kompleks",
+    "difficulty": 3,
+    "title": "Bilangan Kompleks",
+    "prompt": "Tuliskan bilangan kompleks berikut dalam bentuk polar:\n\n(a) $4+i$\n\n(b) $-3$\n\n(c) $6+8i$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 7",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 7",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 2. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-08",
+    "level": "Kuliah",
+    "topic": "Bilangan Kompleks",
+    "difficulty": 3,
+    "title": "Bilangan Kompleks",
+    "prompt": "Tentukan nilai argumen dan argumen utama dari bilangan kompleks berikut:\n\n(a) $-6-6i$\n\n(b) $-10-i$\n\n(c) $-\\pi$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 8",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 8",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 2. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-09",
+    "level": "Kuliah",
+    "topic": "Bilangan Kompleks",
+    "difficulty": 3,
+    "title": "Bilangan Kompleks",
+    "prompt": "Carilah semua nilai dari akar kompleks berikut:\n\n(a) $\\sqrt{i}$\n\n(b) $\\sqrt{-8i}$\n\n(c) $\\sqrt{1+i}$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 9",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 9",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 2. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
+  },
+  {
+    "id": "games-uho-2025-cuplikan-10",
+    "level": "Kuliah",
+    "topic": "Bilangan Kompleks",
+    "difficulty": 3,
+    "title": "Bilangan Kompleks",
+    "prompt": "Selesaikan persamaan kuadrat kompleks berikut untuk $z$:\n\n(a) $z^2+z+1-i=0$",
+    "source": {
+      "kind": "competition",
+      "label": "Calculus Competition (GAMES UHO) — Nomor 10",
+      "competition": "Calculus Competition GAMES UHO",
+      "year": 2025,
+      "stage": "Babak tidak tercantum",
+      "number": "Nomor 10",
+      "note": "User Drive: Cuplikan_Soal_Calculus_Competition__GAMES_UHO_.pdf, PDF page 3. User-authored excerpt dated 22 June 2025; edition year provisional from excerpt date, round not specified. All available wording and formulas visually compared; official organizer paper and website rendering pending."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
