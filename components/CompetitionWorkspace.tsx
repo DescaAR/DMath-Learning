@@ -81,11 +81,37 @@ function splitCompetitionPrompt(prompt: string) {
  };
 }
 
-function CompetitionPrompt({ prompt }: { prompt: string }) {
- const parsed = splitCompetitionPrompt(prompt);
- if (!parsed) return <RichMath>{prompt}</RichMath>;
+// Detect sequential subquestions only in prose, never inside a LaTeX formula.
+function splitSubquestions(prompt: string) {
+ const markers = Array.from(prompt.matchAll(/\$\$[\s\S]+?\$\$|\$[^$\n]+\$|(?:^|\s)\(([a-z])\)(?=\s)/g))
+  .filter(m => m[1] !== undefined);
+ if(markers.length<2 || !markers.every((m,i)=>m[1]===String.fromCharCode(97+i))) return null;
+ const parts=markers.map((m,i)=>({
+  label:m[1],
+  text:prompt.slice(m.index!+m[0].length,markers[i+1]?.index??prompt.length).trim()
+ }));
+ if(parts.some(p=>!p.text))return null;
+ return {intro:prompt.slice(0,markers[0].index).trim(),parts};
+}
+
+function QuestionBody({prompt}:{prompt:string}){
+ const parsed=splitSubquestions(prompt);
+ if(!parsed)return <RichMath>{prompt}</RichMath>;
  return <div>
-  <div><RichMath>{parsed.question}</RichMath></div>
+  {parsed.intro&&<div style={{marginBottom:"0.65em"}}><RichMath>{parsed.intro}</RichMath></div>}
+  <ol aria-label="Subbagian soal" style={{listStyle:"none",padding:0,margin:0,display:"grid",gap:"0.6em"}}>
+   {parsed.parts.map(part=><li key={part.label} style={{display:"grid",gridTemplateColumns:"1.7em minmax(0,1fr)",alignItems:"start",gap:"0.15em",margin:0,padding:0}}>
+    <span aria-hidden="true">({part.label})</span><div style={{minWidth:0}}><RichMath>{part.text}</RichMath></div>
+   </li>)}
+  </ol>
+ </div>;
+}
+
+export function CompetitionPrompt({ prompt }: { prompt: string }) {
+ const parsed = splitCompetitionPrompt(prompt);
+ if (!parsed) return <QuestionBody prompt={prompt}/>;
+ return <div>
+  <QuestionBody prompt={parsed.question}/>
   <ol type="A" aria-label="Pilihan jawaban" style={{listStyleType:"upper-alpha",listStylePosition:"outside",paddingInlineStart:"1.65em",margin:"0.75em 0 0"}}>
    {parsed.options.map((option, index) => <li key={index} style={{display:"list-item",paddingInlineStart:"0.3em",marginBlock:"0.3em",minWidth:0,overflowWrap:"anywhere"}}><RichMath>{option}</RichMath></li>)}
   </ol>
