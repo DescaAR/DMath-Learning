@@ -437,7 +437,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 1",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-tahun-2024.html?m=0",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
       "stage": "OSN-K"
     }
   },
@@ -455,7 +455,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 1",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
       "stage": "OSN-P"
     }
   },
@@ -473,7 +473,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 4",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
       "stage": "OSN-P"
     }
   },
@@ -483,7 +483,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Pemilihan jenis roti",
-    "prompt": "Sebuah toko menyediakan delapan jenis roti. Anita hendak membeli lima roti yang jenisnya berbeda-beda. Dua jenis telah ia tentukan. Berapa banyak pilihan pembelian yang masih mungkin?",
+    "prompt": "Toko kue Echo menyediakan delapan jenis roti. Anita ingin membeli lima roti berlainan jenis. Jika dua jenis roti sudah ditentukan, berapa banyak kemungkinan pilihan lima roti Anita?",
     "source": {
       "kind": "competition",
       "label": "OSN-P SD 2024 — Nomor 18",
@@ -491,7 +491,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 18",
       "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
       "stage": "OSN-P"
     }
   },
@@ -509,7 +509,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 9",
       "url": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa.",
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri.",
       "stage": "OSN-K"
     }
   },
@@ -527,7 +527,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 8",
       "url": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html",
-      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa. Pilihan B dan C sama nilainya pada salinan sumber.",
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri. Salinan memuat dua opsi bernilai sama, B=2/2 dan C=3/3; opsi dipertahankan sampai naskah resmi tersedia.",
       "stage": "OSN-K"
     }
   },
@@ -1230,7 +1230,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN Nasional",
       "number": "Nomor 5",
       "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1239,7 +1239,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Permutasi dengan paritas sama",
-    "prompt": "Baris pertama berisi $1,2,\\ldots,8$. Baris kedua adalah suatu permutasi dari bilangan-bilangan tersebut. Berapa permutasi yang membuat jumlah pada setiap kolom genap? Pilihan: A. 8; B. 16; C. 48; D. 576.",
+    "prompt": "Bintang mengisi baris pertama sebuah tabel dengan bilangan $1,2,\\ldots,8$ secara berurutan. Ia akan mengisi baris kedua menggunakan kedelapan bilangan tersebut dalam suatu urutan. Pada baris ketiga, setiap bilangan adalah jumlah kedua bilangan di atasnya. Berapa banyak cara mengisi baris kedua agar seluruh bilangan pada baris ketiga genap? Pilihan: A. $8$; B. $16$; C. $48$; D. $576$",
     "source": {
       "kind": "competition",
       "label": "KSN Nasional SMP 2021 — Nomor 7",
@@ -1248,7 +1248,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN Nasional",
       "number": "Nomor 7",
       "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1266,7 +1266,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN Nasional",
       "number": "Nomor 8",
       "url": "https://www.ruangparabintang.com/2021/09/soal-kompetisi-sains-nasional-ksn.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1284,7 +1284,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 2",
       "url": "https://melajah-matematika.blogspot.com/2024/04/osk-smp-2022.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri. Kondisi pada salinan tidak menentukan beda barisan secara tunggal; verifikasi naskah resmi diperlukan sebelum memperbaiki hipotesis."
     }
   },
   {
@@ -1302,7 +1302,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1320,7 +1320,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 13",
       "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1338,7 +1338,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 20",
       "url": "https://www.catatanmatematika.com/2023/06/pembahasan-soal-osn-k-smp-2023.html",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1356,7 +1356,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Kemampuan Dasar, Nomor 1",
       "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1374,7 +1374,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Kemampuan Dasar, Nomor 4",
       "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1383,7 +1383,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Titik tengah kisi",
-    "prompt": "Diberikan $S=\\{(x,y)\\in\\mathbb Z^2\\mid0\\le x\\le20,\\ 0\\le y\\le19\\}$. Berapa banyak pasangan tak berurutan dari dua titik berbeda di $S$ yang titik tengahnya juga berada di $S$?",
+    "prompt": "Misalkan $S$ merupakan himpunan seluruh titik $(x,y)$ pada bidang Kartesius dengan $x,y$ bilangan bulat, $0\\le x\\le20$, dan $0\\le y\\le19$. Tentukan banyak cara memilih dua titik berbeda dari $S$ dengan titik tengah di $S$. Dua titik $P=(a,b)$ dan $Q=(c,d)$ berbeda jika $a\\ne c$ atau $b\\ne d$. Pemilihan $(P,Q)$ dan $(Q,P)$ dihitung sebagai satu cara.",
     "source": {
       "kind": "competition",
       "label": "KSN-K SMA 2020 — Kemampuan Dasar, Nomor 6",
@@ -1392,7 +1392,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "KSN-K",
       "number": "Kemampuan Dasar, Nomor 6",
       "url": "https://www.soalfismat.com/pembahasan-soal-seleksi-ksn-k-osk-matematika-sma-ma-2020-kemampuan-dasar/",
-      "note": "Redaksi disusun ulang dari salinan publik pihak ketiga; belum dicocokkan dengan naskah resmi."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
@@ -1923,7 +1923,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 4,
     "title": "Waktu mengecat kamar",
-    "prompt": "Sebanyak 75 kamar harus dicat. Setiap pekerja mampu mengecat tiga perempat kamar per hari. Selama dua pertiga waktu pengerjaan, ada 12 pekerja; selama sisa waktunya, hanya satu pekerja. Tentukan lama pengerjaan dalam hari.",
+    "prompt": "Dua belas tukang mengecat $75$ kamar hotel. Setiap tukang dapat menyelesaikan $\\frac34$ kamar dalam sehari. Selama $\\frac23$ dari total waktu pengerjaan, pekerjaan dilakukan oleh kedua belas tukang, sedangkan sisanya diselesaikan seorang tukang. Tentukan total lama pengerjaan dalam hari.",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2007 — Isian 7",
@@ -1932,7 +1932,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 7",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri. Teks PDF tersedia, tetapi tangkapan halaman gagal dimuat."
     }
   },
   {
@@ -1941,7 +1941,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Kadar garam",
-    "prompt": "Enam liter air laut mempunyai kadar garam 4%. Satu liter air menguap tanpa mengurangi jumlah garamnya. Tentukan persentase kadar garam setelah penguapan.",
+    "prompt": "Enam liter air laut memiliki kadar garam $4\\%$. Setelah satu liter air laut menguap, berapakah persentase kadar garam yang baru?",
     "source": {
       "kind": "competition",
       "label": "OSN Nasional SD 2007 — Isian 9",
@@ -1950,7 +1950,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN Nasional",
       "number": "Isian 9",
       "url": "https://fadjarp3g.wordpress.com/wp-content/uploads/2013/01/2007-soal-osn-lengkap.pdf",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri. Teks PDF tersedia, tetapi tangkapan halaman gagal dimuat."
     }
   },
   {
@@ -2103,7 +2103,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Nilai maksimum perpangkatan",
-    "prompt": "Pilih tiga anggota berbeda $a,b,c$ dari $\\{0,1,2,3,4\\}$ sehingga $(a^b)^c$ terdefinisi. Berapakah nilai terbesarnya? Pilihan: A. 4096; B. 6561; C. 9561; D. 9651.",
+    "prompt": "Diberikan himpunan $A=\\{0,1,2,3,4\\}$. Jika $a,b,c$ merupakan tiga anggota berbeda dari $A$ dan $n=(a^b)^c$, tentukan nilai maksimum $n$. Pilihan: A. $4096$; B. $6561$; C. $9561$; D. $9651$",
     "source": {
       "kind": "competition",
       "label": "OSN-K SMP 2019 — Nomor 1",
@@ -2112,7 +2112,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://mathcyber1997.com/soal-dan-pembahasan-osn-bidang-matematika-smp-kabupaten-kota-2019/",
-      "note": "Redaksi Indonesia disusun berdasarkan salinan yang ditelusuri. Nomor mengikuti sumber."
+      "note": "Isi matematis, nomor dan pilihan jawaban (jika ada) dicocokkan dengan salinan publik pihak ketiga; bukan verifikasi naskah resmi. Redaksi merupakan formulasi mandiri."
     }
   },
   {
