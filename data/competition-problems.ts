@@ -4193,7 +4193,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Batas bawah barisan",
-    "prompt": "Suppose $a_1,a_2,\\ldots$ form an infinite sequence of positive real numbers with $$a_1+a_2+\\cdots+a_{2n-1}=a_n^2$$ for every positive integer $n$. Establish $a_n\\ge2n-1$ for every positive integer $n$.",
+    "prompt": "Let $a_1,a_2,\\ldots$ be an infinite sequence of positive real numbers satisfying\n\n$a_1+a_2+\\cdots+a_{2n-1}=a_n^2$\n\nfor all positive integers $n$. Prove that\n\n$a_n\\geq2n-1$\n\nfor all positive integers $n$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4202,7 +4202,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2026 — Hari 2, Nomor 9",
       "url": "https://imc-math.org.uk/archive/problems/2026/IMC_2026_Day_2_Problems.pdf",
-      "note": "2026-11-25: official PDF page 1 compared; wording differs and exact transcription pending."
+      "note": "2026-11-25: wording matched to official IMC Day 2 HTML; PDF visual check and website render pending."
     }
   },
   {
