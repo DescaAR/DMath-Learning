@@ -73,12 +73,25 @@ const imcMissing = imcEditions.flatMap(({year,perDay})=>[1,2].flatMap(day=>Array
  const local=competitionProblems.some(p=>p.source.competition==="IMC"&&p.source.year===year&&p.source.number==="Hari "+day+", Nomor "+number);
  return {year,day,number,local,url:"https://studolymp.com/imc/problems/imc-"+year+"-d"+day+"-p"+(i+1)};
 }).filter(p=>!p.local)));
+type YearPaper={competition:string;level:Level;year:number;stage:string;label:string;url:string};
+const yearPapers:YearPaper[]=imcEditions.flatMap(({year}):YearPaper[]=>[
+ {competition:"IMO",level:"SMA",year,stage:"IMO",label:"Naskah resmi · Nomor 1–6",url:"https://www.imo-official.org/problems/"+year+"/"},
+ {competition:"APMO",level:"SMA",year,stage:"APMO",label:"Naskah resmi · Nomor 1–5",url:"https://www.apmo-official.org/static/problems/apmo"+year+"_prb.pdf"},
+ ...(year<=2025?[{competition:"Putnam",level:"Kuliah" as const,year,stage:"Putnam",label:"Naskah · A1–A6 dan B1–B6"+(year===2020?" (edisi tidak resmi)":""),url:"https://kskedlaya.org/putnam-archive/"+year+".pdf"}]:[]),
+ ...(year>=2006?[{competition:"ON-MIPA",level:"Kuliah" as const,year,stage:"ON-MIPA Wilayah",label:year<=2018?"Seleksi wilayah · lima bidang":"Seleksi wilayah · hari 1 dan 2",url:"https://onmipa.filzabuana.id/onmipa/"+year+(year>=2019?"-wilayah":"")+"/"}]:[])
+]);
 const otherFullSets: Readonly<Record<string,{label:string;url:string}[]>> = {
- IMO:[{label:"Naskah lengkap IMO 2005–2026",url:"https://www.imo-official.org/problems/"}],
- APMO:[{label:"Naskah lengkap APMO 2005–2026",url:"https://www.apmo-official.org/problems"}],
  HMMT:[{label:"Naskah tiap turnamen HMMT",url:"https://www.hmmt.org/www/archive/problems"}],
- Putnam:[{label:"Naskah Putnam 2005–2025",url:"https://kskedlaya.org/putnam-archive/"},{label:"Naskah resmi terbaru dari MAA",url:"https://maa.org/maa-putnam-archive/"}]
+ Putnam:[{label:"Naskah resmi terbaru dari MAA",url:"https://maa.org/maa-putnam-archive/"}],
+ "ON-MIPA":[{label:"Koleksi tambahan ON-MIPA, termasuk beberapa naskah nasional",url:"https://mathcyber1997.com/kumpulan-soal-on-mipa-pt-bidang-matematika-tahun-2006-sekarang/"}],
+ OSN:[{label:"Kumpulan naskah OSN SD, SMP, SMA",url:"https://mathcyber1997.com/download-soal-osn-ksn-bidang-matematika/"}]
 };
+function YearPaperIndex({items}:{items:YearPaper[]}){
+ return <details open={items.length===1||undefined} style={{margin:"0 0 16px",padding:"14px 16px",border:"1px solid var(--cmp-line)",borderRadius:10,background:"var(--cmp-paper)"}}>
+  <summary style={{fontWeight:700,cursor:"pointer"}}>Buka naskah per tahun · {items.length} edisi</summary>
+  <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:8,marginTop:12}}>{items.map(p=><a key={p.year+"-"+p.stage} href={p.url} className="cmp-link-text" target="_blank" rel="noopener noreferrer" style={{display:"block",padding:"10px 12px",border:"1px solid var(--cmp-line)",borderRadius:7}}><strong>{p.competition} {p.year} ↗</strong><span style={{display:"block",fontSize:12,fontWeight:400,color:"var(--cmp-muted)"}}>{p.label}</span></a>)}</div>
+ </details>;
+}
 function IMCFullIndex({items}:{items:typeof imcMissing}){
  const visible=imcEditions.filter(e=>items.some(p=>p.year===e.year));
  return <div style={{margin:"0 0 16px",padding:"16px",border:"1px solid var(--cmp-line)",borderRadius:10,background:"var(--cmp-paper)"}}>
@@ -106,17 +119,20 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  const [level,setLevel]=useState<string>(fixedLevel||"Semua"),[query,setQuery]=useState(""),[topic,setTopic]=useState("Semua"),[diff,setDiff]=useState("Semua"),[source,setSource]=useState("Semua"),[year,setYear]=useState("Semua"),[contest,setContest]=useState("Semua"),[stage,setStage]=useState("Semua");
  useEffect(()=>{const params=new URLSearchParams(window.location.search);const l=params.get("level"),q=params.get("q"),s=params.get("source");if(!fixedLevel&&l&&isLevel(l))setLevel(l);if(q)setQuery(q);if(s==="competition"||s==="original")setSource(s);},[fixedLevel]);
  const pool=useMemo(()=>competitionProblems.filter(p=>level==="Semua"||p.level===level),[level]);
- const years=Array.from(new Set([...pool.flatMap(p=>p.source.year?[p.source.year]:[]),...(level==="Semua"||level==="Kuliah"?imcEditions.map(e=>e.year):[])])).sort((a,b)=>b-a);
- const stages=Array.from(new Set(pool.filter(p=>(contest==="Semua"||categoryOf(p)===contest)&&(year==="Semua"||String(p.source.year)===year)).flatMap(p=>p.source.stage?[p.source.stage]:[]))).sort();
+ const papersForLevel=yearPapers.filter(p=>level==="Semua"||p.level===level);
+ const years=Array.from(new Set([...pool.flatMap(p=>p.source.year?[p.source.year]:[]),...papersForLevel.map(p=>p.year),...(level==="Semua"||level==="Kuliah"?imcEditions.map(e=>e.year):[])])).sort((a,b)=>b-a);
+ const stages=Array.from(new Set([...pool.filter(p=>(contest==="Semua"||categoryOf(p)===contest)&&(year==="Semua"||String(p.source.year)===year)).flatMap(p=>p.source.stage?[p.source.stage]:[]),...papersForLevel.filter(p=>(contest==="Semua"||p.competition===contest)&&(year==="Semua"||String(p.year)===year)).map(p=>p.stage),...((level==="Semua"||level==="Kuliah")&&(contest==="Semua"||contest==="IMC")?["IMC"]:[])])).sort();
  const contests=Array.from(new Set(pool.map(categoryOf))).sort(categoryOrder);
  const topics=Array.from(new Set(pool.map(p=>p.topic))).sort((a,b)=>a.localeCompare(b,"id"));
  const filtered=pool.filter(p=>(stage==="Semua"||p.source.stage===stage)&&(year==="Semua"||String(p.source.year)===year)&&(contest==="Semua"||categoryOf(p)===contest)&&(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.source.stage,p.source.number,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
  const groups=contests.map(c=>({name:c,items:filtered.filter(p=>categoryOf(p)===c).sort((a,b)=>(b.source.year||0)-(a.source.year||0)||(a.source.stage||"").localeCompare(b.source.stage||"","id")||(a.source.number||a.id).localeCompare(b.source.number||b.id,"id",{numeric:true}))})).filter(g=>g.items.length>0);
  const linkedIMC=(level==="Semua"||level==="Kuliah")&&(contest==="Semua"||contest==="IMC")&&(stage==="Semua"||stage==="IMC")&&topic==="Semua"&&diff==="Semua"&&source!=="original"?imcMissing.filter(p=>(year==="Semua"||String(p.year)===year)&&("IMC "+p.year+" Hari "+p.day+" Nomor "+p.number+" Kuliah").toLowerCase().includes(query.toLowerCase().trim())):[];
- const displayGroups=linkedIMC.length&&!groups.some(g=>g.name==="IMC")?[...groups,{name:"IMC",items:[] as CompetitionProblem[]}].sort((a,b)=>categoryOrder(a.name,b.name)):groups;
+ const linkedPapers=topic==="Semua"&&diff==="Semua"&&source!=="original"?papersForLevel.filter(p=>(contest==="Semua"||p.competition===contest)&&(year==="Semua"||String(p.year)===year)&&(stage==="Semua"||p.stage===stage)&&[p.competition,p.year,p.stage,p.label].join(" ").toLowerCase().includes(query.toLowerCase().trim())):[];
+ const extraNames=[...new Set([...(linkedIMC.length?["IMC"]:[]),...linkedPapers.map(p=>p.competition)])].filter(name=>!groups.some(g=>g.name===name));
+ const displayGroups=[...groups,...extraNames.map(name=>({name,items:[] as CompetitionProblem[]}))].sort((a,b)=>categoryOrder(a.name,b.name));
  const reset=()=>{setQuery("");setLevel(fixedLevel||"Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");setYear("Semua");setContest("Semua");setStage("Semua");};
  return <div className="cmp-page container cmp-catalog">
-  <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length+((level==="Semua"||level==="Kuliah")?imcMissing.length:0)}</strong><span>soal dan tautan tersedia</span></div></header>
+  <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length+((level==="Semua"||level==="Kuliah")?imcMissing.length:0)}</strong><span>{level==="Semua"||level==="Kuliah"?"soal dan tautan tersedia":"soal tersedia"}</span></div></header>
   {fixedLevel&&<nav className="cmp-level-section-nav" aria-label="Menu jenjang"><span aria-current="page">Kumpulan Soal</span><Link href={levelHref(fixedLevel)+"potd/"}>Soal Harian →</Link></nav>}
   <section className="cmp-category-section" aria-label="Kategori kompetisi"><h2>Kategori kompetisi</h2><div className="cmp-category-buttons" role="group" aria-label="Pilih kategori">{["Semua",...contests].map(c=><button type="button" key={c} aria-pressed={contest===c} onClick={()=>{setContest(c);setStage("Semua");setYear("Semua");setSource("Semua");setTopic("Semua");setDiff("Semua");}}><span>{c==="Semua"?"Semua kompetisi":c}</span><small>{(c==="Semua"?pool.length:pool.filter(p=>categoryOf(p)===c).length)+((level==="Semua"||level==="Kuliah")&&(c==="Semua"||c==="IMC")?imcMissing.length:0)} soal</small></button>)}</div></section>
   <div className="cmp-catalog-layout">
@@ -136,9 +152,9 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
    </aside>
    <div className="cmp-results">
 
-    <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length+linkedIMC.length} soal ditemukan{linkedIMC.length>0?" · "+linkedIMC.length+" tautan":""}</span></div>
-    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length+(g.name==="IMC"?linkedIMC.length:0)} soal</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={linkedIMC}/>} {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
-    {!filtered.length&&!linkedIMC.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
+    <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length+linkedIMC.length} soal ditemukan{linkedIMC.length>0?" · "+linkedIMC.length+" tautan":""}{linkedPapers.length>0?" · "+linkedPapers.length+" naskah":""}</span></div>
+    {displayGroups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length+(g.name==="IMC"?linkedIMC.length:0)} soal{linkedPapers.some(p=>p.competition===g.name)?" · "+linkedPapers.filter(p=>p.competition===g.name).length+" naskah":""}</span></div>{g.name==="IMC"&&linkedIMC.length>0&&<IMCFullIndex items={linkedIMC}/>} {linkedPapers.some(p=>p.competition===g.name)&&<YearPaperIndex items={linkedPapers.filter(p=>p.competition===g.name)}/> } {otherFullSets[g.name]&&topic==="Semua"&&diff==="Semua"&&source!=="original"&&year==="Semua"&&stage==="Semua"&&!query.trim()&&<div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:12}}>{otherFullSets[g.name].map(s=><a key={s.url} className="cmp-link-text" href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</div>}<div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
+    {!filtered.length&&!linkedIMC.length&&!linkedPapers.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
    </div>
   </div>
  </div>;
