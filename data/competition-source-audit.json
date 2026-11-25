@@ -13148,6 +13148,348 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "ktom-2018-sep-a-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 1",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 4,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 2",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 4,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 3",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 4,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 4",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 4,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 5",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 4,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 6",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 4,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 7",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 4,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 8",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 4,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 9",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 5,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 10",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 5,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 11",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 5,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 12",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 5,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 13",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 5,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 14",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 5,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-a-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian A, Nomor 15",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 5,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-b-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian B, Nomor 1",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 7,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-b-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian B, Nomor 2",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 7,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-b-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian B, Nomor 3",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 7,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "ktom-2018-sep-b-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "KTOM",
+      "year": 2018,
+      "number": "Bagian B, Nomor 4",
+      "sourceUrl": "https://www.ktom-tomi.or.id/",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.ktom-tomi.or.id/",
+        "page": 7,
+        "method": "User-supplied PDF page visually inspected and question body transcribed",
+        "finding": "Text transcribed; independent recheck and web rendering pending.",
+        "localSource": "KTOM/KTOM SEPTEMBER 2018.pdf",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {
