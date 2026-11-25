@@ -77,7 +77,7 @@ export function CompetitionProblemDetail({problem:p}:{problem:CompetitionProblem
   <article className="cmp-detail">
    <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{levelTitle(p.level)}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1>{p.title}</h1></header>
    <div className="cmp-main-prompt"><h2>Soal</h2><div><RichMath>{p.prompt}</RichMath></div></div>
-   <section className="cmp-source-panel" id="source"><h2>Sumber soal</h2><p>{p.source.label}</p>{p.source.kind==="competition"&&<p>Tahap: {p.source.stage} · Tahun: {p.source.year} · {p.source.number}</p>}{p.source.note&&<p>{p.source.note}</p>}{p.source.url&&<a href={p.source.url} target="_blank" rel="noopener noreferrer" className="cmp-link-text">Lihat sumber ↗</a>}</section>
+   <section className="cmp-source-panel" id="source"><h2>Sumber soal</h2><p>{p.source.label}</p>{p.source.url&&<a href={p.source.url} target="_blank" rel="noopener noreferrer" className="cmp-link-text">Lihat sumber ↗</a>}</section>
   </article>
   <div className="cmp-back"><Link href={levelHref(p.level)} className="cmp-button cmp-secondary">← Kembali ke kumpulan soal</Link></div>
   <section className="cmp-subsection cmp-related"><h2>Soal lainnya</h2><div className="cmp-problem-list">{related.map(x=><ProblemCard p={x} key={x.id} kind="related"/>)}</div></section>
