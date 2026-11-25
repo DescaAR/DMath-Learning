@@ -12592,6 +12592,366 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.ktom-tomi.or.id/",
       "note": "User-supplied KTOM ZIP: KTOM MARET 2022.pdf, PDF page 6. URL is organizer homepage."
     }
+  },
+  {
+    "id": "ktom-2018-nov-a-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Selamat datang di KTOM November $\\overline{\\spadesuit\\circ\\star\\diamondsuit}$ ! Sebagai soal nomor $\\star$, kami ingin memberikan soal yang mudah. Sayang, komputer kami rusak sehingga semua tombol angka kami menghasilkan simbol. Tapi, kalian ialah murid-murid yang pintar, jadi kalian pasti dapat menyelesaikan soal ini! Selamat mengerjakan!\n\nJika $s(i)=i^{\\spadesuit}+\\diamondsuit i$, tentukan nilai dari $s(\\spadesuit)+s(\\spadesuit+\\star)+s(\\spadesuit+\\spadesuit)+\\ldots+s(\\overline{\\star\\circ})$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 1",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga $ABC$ dengan $AB=14, BC=16, CA=18$. Titik $D$ terletak pada sisi $BC$ sedemikian hingga $AD$ adalah garis tinggi segitiga $ABC$. Apabila $M$ adalah titik tengah $AD$, tentukan nilai $BM^2$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 2",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Seorang pedagang kaki lima menjual eskrim 8 rasa dengan 5 toping berbeda. Jika Tendo ingin membeli eskrim dengan 1 macam toping, tentukan banyaknya kombinasi eskrim dan toping yang dapat dibeli Tendo.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 3",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Bilangan palindrom adalah bilangan yang jika dibaca dari depan ke belakang dan dari belakang ke depan adalah sama, sebagai contoh 1881, 13431, dan 284482 adalah bilangan palindrom. Bilangan dikatakan 11−indrom (Sebelasindrom) jika bilangan tersebut merupakan bilangan palindrom dan habis dibagi 11. Tentukan banyaknya bilangan 11−indrom 6−digit.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 4",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Terdapat dua buah dadu seimbang dengan delapan sisi. Pada setiap sisi dadu, dituliskan angka 1 hingga 8. Kedua dadu dilempar dan hasilnya dijumlahkan. Bila peluang jumlah kedua mata dadu adalah kelipatan 5 adalah $p$, tentukan nilai $128p$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 5",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 5",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan banyak bilangan asli $x\\le2018$ sehingga\n\n$$\\frac{x+2}{91}$$\n\nmerupakan pecahan yang tidak dapat disederhanakan lagi.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 6",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 6",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-07",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diketahui bilangan real $a,b,c$ memenuhi $a+2b+c=8$. Tentukan nilai $b$ sedemikian hingga $ab+bc+b^2$ mencapai nilai maksimum.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 7",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 7",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-08",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan layang-layang $ABCD$ dengan $\\angle ABC=\\angle ADC$. Lingkaran luar $\\triangle BCD$ memotong segmen $AD$ dan segmen $AB$ berturut-turut di $E$ dan $F$ sehingga $FE=ED=DC$. Jika $\\angle ADC=x^\\circ$ dan $\\angle BAD=y^\\circ$, maka tentukan nilai $\\frac{10x}{y}$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 8",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 8",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-09",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diberikan $x$ dan $y$ merupakan bilangan real positif sehingga\n\n$$x^4+y^4+3(xy)^3=(xy)^5$$\n\nJika $V=\\sqrt[3]{\\frac xy}+\\sqrt[3]{\\frac yx}-\\sqrt{2+xy}$, tentukan nilai $\\lfloor20V^3+18\\rfloor$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 9",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 9",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-10",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga $ABC$ dengan panjang $AB=6$. Titik $F$ pada $BC$ sehingga $AF$ adalah garis bagi $\\angle BAC$. $D$ adalah titik tengah segmen $BC$. Titik $E$ pada $AF$ sehingga $BE$ tegak lurus $AF$. Jika panjang $DE=2$, tentukan panjang garis $AC$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 10",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 10",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-11",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Diberikan barisan $\\{a_n\\}$ yang memenuhi\n\n$$a_n=n\\cdot2015^n+n^{2018}.$$\n\nuntuk setiap bilangan asli $n$. Tentukan nilai dari $FPB(a_1,a_2,\\ldots,a_{2018})$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 11",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 11",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-12",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Valen mewarnai dua buah persegi satuan dari sebuah papan berukuran $9\\times9$. Dua buah pewarnaan persegi dikatakan sama jika salah satu dari kedua pewarnaan tersebut merupakan hasil rotasi dari pewarnaan yang lain. Tentukan banyak cara berbeda Valen mewarnai papan.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 12",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 12",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-13",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Diberikan barisan bilangan $b_{n+1}=6b_n-4b_{n-1}, b_0=1$ dan $b_1=5$. Diketahui barisan bilangan tersebut dapat dinyatakan dalam bentuk $b_{n+1}=xb_n+\\lfloor\\sqrt{y}b_n\\rfloor$. Tentukan nilai dari $x+y$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 13",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 13",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-14",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Diketahui bahwa $V$ adalah bilangan real positif terkecil sedemikian hingga untuk setiap bilangan bulat positif $n$, pertidaksamaan berikut terpenuhi :\n\n$$FPB(n,\\lfloor n\\sqrt2\\rfloor)<\\sqrt{Vn}$$\n\nTentukanlah nilai dari $\\lceil100V\\rceil$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 14",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 14",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-15",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Misalkan $ABCD$ adalah segiempat talibusur dengan $AB=48, BC=75, CD=99, DA=180$. Diagonal $AC$ dan $BD$ berpotongan di $E$. $B_1,B_2,B_3,B_4$ adalah titik tengah dari $AE,BE,CE,DE$ secara berturut-turut. $G_1,G_2,G_3,G_4$ adalah titik berat dari segitiga $ABE,BCE,CDE,ADE$ secara berturut-turut. Tentukan luas dari segidelapan $B_1G_1B_2G_2B_3G_3B_4G_4$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 15",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 15",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-a-16",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Sebuah domino adalah persegi panjang berdimensi $1\\times2$. Tentukan banyaknya cara mewarnai sebuah kotak $8\\times8$ sedemikian hingga terdapat 16 domino berwarna hitam dan 32 persegi satuan berwarna putih sehingga setiap kotak $2\\times2$ mempunyai bagian putih yang berbentuk domino.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian A, Nomor 16",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian A, Nomor 16",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-b-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Aljabar",
+    "prompt": "Misalkan $P(x)$ adalah polinomial berderajat 4 yang memenuhi\n\n$$P(1)=\\frac12,P(2)=\\frac16,P(3)=\\frac1{12},P(4)=\\frac1{20},P(5)=\\frac1{30}$$\n\n(a) Misalkan $Q(x)=x(x+1)P(x)-1$. Buktikan bahwa 1, 2, 3, 4 dan 5 adalah akar-akar dari $Q(x)$ serta $Q(x)$ merupakan polinomial berderajat 6.\n\n(b) Simpulkan bahwa\n\n$$x(x+1)P(x)-1=L(x)(x-1)(x-2)(x-3)(x-4)(x-5)$$\n\nuntuk suatu polinomial linear (berderajat 1) $L(x)$.\n\n(c) Tentukan polinomial $L(x)$ yang memenuhi persamaan pada nomor sebelumnya.\n\n(Petunjuk : Karena $P(x)$ merupakan polinomial, maka polinomial $x(x+1)$ harus membagi $L(x)(x-1)(x-2)(x-3)(x-4)(x-5)+1$. Gunakan fakta ini untuk menentukan $L(x)$).\n\n(d) Tentukan nilai $P(6)$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian B, Nomor 1",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian B, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-b-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Teori Bilangan",
+    "prompt": "Saat upacara, 1234567 siswa di SMA Mantap berbaris. Orang yang berada di paling kiri memilih suatu bilangan prima, kemudian orang ke-2 dari kiri memilih bilangan prima yang lebih besar dari orang paling kiri. Selanjutnya, setiap orang memilih suatu bilangan prima yang lebih besar daripada bilangan prima orang disebelah kirinya. Lucas berdiri pada urutan 1234 dari kiri dan Jessen berdiri pada urutan 1235 dari kiri, Lucas menghitung FPB dari jumlah semua bilangan orang-orang disebelah kirinya dengan bilangan yang ia pilih kemudian menulis hasil tersebut di dahinya. Kemudian Jessen melakukan hal yang sama. Buktikan bahwa salah satu dari bilangan yang ada di dahi Jessen atau Lucas sama dengan 1.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian B, Nomor 2",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian B, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-b-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Aljabar",
+    "prompt": "Buktikan bahwa untuk setiap $n$ bilangan asli, berlaku\n\n$$\\sum_{0\\le j\\le i\\le n}\\frac{(-1)^j}{(n-i)!j!}=1.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian B, Nomor 3",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian B, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 6. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2018-nov-b-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri",
+    "prompt": "Diberikan suatu segitiga lancip $ABC$ dengan $AC>AB$, dan suatu titik $S$ di busur kecil $AB$ di lingkaran luar segitiga $ABC$. Misal refleksi $A$ terhadap $O$, titik pusat lingkaran luar segitiga $ABC$, adalah $A'$. $SA'$ memotong $BC$ di $P$, dan $PO$ memotong $AC$ di $Q$. Jika $H$ adalah titik tinggi segitiga $ABC$, buktikan bahwa $\\angle BSH=\\angle PQC$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2018 — November, Bagian B, Nomor 4",
+      "competition": "KTOM",
+      "year": 2018,
+      "stage": "Kontes November",
+      "number": "Bagian B, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM NOVEMBER 2018.pdf, PDF page 6. URL is organizer homepage."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
