@@ -3099,7 +3099,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan penghapusan sisi graf",
-    "prompt": "Consider the graph on vertices $A,B,C,D,E,F$ with edges $AB,BC,CD,DE,EF,FA,AC,CE,EA$. Ada chooses the initial vertex of a token. Starting with Ada, players alternately move the token along an incident edge and delete that edge. The player unable to move loses. Which player has a winning strategy?",
+    "prompt": "Ada and Otto play on a graph with six vertices $A,B,C,D,E,F$ and nine edges $AB,BC,CD,DE,EF,FA,AC,CE,EA$. Ada places a pebble at any vertex. She then takes the first turn, and the players alternate: move the pebble along an incident edge and remove that edge. The last player to move wins. For example, starting at $B$, the successive moves along $BC,CD,DE,EA,AB$ give Ada a win. Determine the winner under optimal play.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3108,7 +3108,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2016 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3117,7 +3117,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Peluang",
     "difficulty": 3,
     "title": "Pasangan dadu dengan jumlah sama",
-    "prompt": "Roll four independent fair dice, each numbered $1$ through $6$. Determine the probability that the four outcomes admit a partition into two pairs having equal sums.",
+    "prompt": "Four fair six-sided dice are rolled. Find the probability that their values can be grouped into two pairs with equal sums. For instance, $(1,4,6,3)$ can be grouped as $(1,6)$ and $(4,3)$, both summing to $7$, whereas $(1,1,5,2)$ admits no such grouping.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3126,7 +3126,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2016 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3135,7 +3135,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Pewarnaan dua warna pada bilangan bulat",
-    "prompt": "Does there exist a coloring $c:\\mathbb Z_{>0}\\to\\{0,1\\}$ for which no solution $a+b+c_0=d$ in positive integers satisfies $c(a)=c(b)=c(c_0)=c(d)$? Repeated integers are allowed.",
+    "prompt": "Is there a red-blue coloring of the positive integers such that whenever positive integers $a,b,c,d$ satisfy $a+b+c=d$, at least two of the four have different colors? The four integers need not be distinct.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3144,7 +3144,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2016 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3153,7 +3153,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Segi empat bersinggungan dalam segi enam",
-    "prompt": "An equiangular hexagon $ABCDEF$ satisfies $AB=CD=EF>BC$. Define $X=AD\\cap CF$ and $Y=BE\\cap CF$, where the intersections are of segments. If $ABYX$ has an incircle, determine $\\frac{AB}{FA}$.",
+    "prompt": "Let $ABCDEF$ be an equiangular hexagon with $AB=CD=EF$ and $AB>BC$. The segments $AD$ and $CF$ meet at $X$, while $BE$ and $CF$ meet at $Y$. Suppose a circle inside quadrilateral $ABYX$ touches all four of its sides. Determine $\\frac{AB}{FA}$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3162,7 +3162,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2016 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3180,7 +3180,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2016 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3198,7 +3198,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2016 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2016UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3207,7 +3207,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Dua subgraf rentang terhubung",
-    "prompt": "Color each edge of the complete graph $K_4$ orange or blue. Count the colorings for which the subgraphs of both colors are connected and span all four vertices. Justify the count.",
+    "prompt": "Four cities are joined by one road for each pair. Each road is painted either orange or blue. Count the colorings for which every pair of cities can be connected by a route using only orange roads and also by a route using only blue roads. Justify your answer.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3216,7 +3216,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2017 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3234,7 +3234,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2017 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3252,7 +3252,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2017 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3270,7 +3270,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2017 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3279,7 +3279,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Permutasi berselang-seling modulo empat",
-    "prompt": "Let $a_n$ count permutations $(p_1,\\ldots,p_n)$ of $\\{1,\\ldots,n\\}$ with $p_1<p_2>p_3<p_4>\\cdots$. Determine $a_n\\bmod4$ for every positive integer $n$.",
+    "prompt": "For a deck containing the numbers $1,\\ldots,n$ once each, let $a_n$ count the arrangements $(p_1,\\ldots,p_n)$ satisfying $p_1<p_2>p_3<p_4>\\cdots$. For example, $a_1=a_2=1$, $a_3=2$, and $a_4=5$. Determine the remainder of $a_n$ upon division by $4$ for every positive integer $n$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3288,7 +3288,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2017 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2017UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3297,7 +3297,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Lingkaran bersarang dan pencacahan insidensi",
-    "prompt": "Construct seven pairwise nonintersecting circles and eleven points, none on a circle, such that the numbers of points inside the seven circles are distinct and each point belongs to the interior of the same number of circles. Prove that the analogous construction with five circles and five points is impossible.",
+    "prompt": "(a) Show that seven circles and eleven points can be drawn on a page with these properties: the circumferences do not intersect, none of the points lies on a circumference, the seven counts of enclosed points are distinct (zero is allowed), and every point is enclosed by equally many circles. (b) Prove that no such arrangement exists with five circles and five points.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3306,7 +3306,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2018 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3324,7 +3324,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2018 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3342,7 +3342,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2018 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3351,7 +3351,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Pencerminan empat segitiga",
-    "prompt": "A square $ABCD$ is inside triangle $XYZ$, with $B\\in XY$, $C\\in YZ$, and $D\\in ZX$. Reflect triangles $XAB$, $YBC$, $ZCD$, and $XDA$ in lines $AB$, $BC$, $CD$, and $DA$, respectively. Prove that the union of the reflected triangles covers the square.",
+    "prompt": "A square $ABCD$ lies inside triangle $XYZ$, with $B$ on $XY$, $C$ on $YZ$, and $D$ on $ZX$. Draw $XA$, obtaining four triangular regions $XAB$, $YBC$, $ZCD$, and $XDA$. Reflect each region across the square side it touches, respectively $AB$, $BC$, $CD$, and $DA$. Prove that the four reflected regions together cover the square.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3360,7 +3360,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2018 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3369,7 +3369,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Pemisahan warna pada lingkaran",
-    "prompt": "Color twelve distinct equally spaced labeled points on a circle with four specified colors, using each color exactly three times. Require that the points of any two different colors can be strictly separated by a line. Count all admissible colorings.",
+    "prompt": "Twelve labeled points are equally spaced around a circle. Color exactly three points red, three green, three blue, and three white. For each pair of distinct colors, a straight line must separate the three points of one color from the three of the other. Count the admissible colorings.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3378,7 +3378,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2018 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2018UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3396,7 +3396,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2019 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3414,7 +3414,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2019 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3432,7 +3432,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2019 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3450,7 +3450,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2019 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3459,7 +3459,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Peluang kesamaan warna",
-    "prompt": "Show that for each integer $n\\ge200$ with $n\\equiv0,1\\pmod4$, one can assign colors to $n$ balls so that two uniformly chosen distinct balls have the same color with probability $\\frac12$.",
+    "prompt": "A bag contains $n$ balls of various colors. For each integer $n\\ge200$ with $n\\equiv0$ or $1\\pmod4$, prove that colors can be assigned so that two balls drawn uniformly without replacement are equally likely to have matching or different colors. An example for $n=13$ consists of nine red, three green and one blue ball.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3468,7 +3468,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2019 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3486,7 +3486,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2021 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3504,7 +3504,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2021 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3522,7 +3522,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2021 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3531,7 +3531,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan pemindahan batu",
-    "prompt": "Two players initially hold zero stones. On a turn, a player either acquires one stone or transfers a positive number of stones not exceeding half their holdings to the opponent. A player loses immediately upon holding at least twenty stones. With alternating turns, determine which player, if any, has a forced win.",
+    "prompt": "Gog and Magog start with zero stones. Gog moves first and turns alternate. A turn consists either of gaining one stone or transferring to the opponent an integer number of stones between one and half of the player's current holdings, inclusive. A player loses upon having at least $20$ stones. Prove whether Gog can force a win, Magog can force a win, or neither can.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3540,7 +3540,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2021 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3558,7 +3558,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2021 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2021UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3576,7 +3576,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2022 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3594,7 +3594,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2022 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3603,7 +3603,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan pelipatan kisi",
-    "prompt": "Two players alternately fold a $10\\times100$ rectangular grid along an interior horizontal or vertical gridline, leaving a smaller rectangular grid. The player making the final fold wins. Determine the winner under optimal play, with proof.",
+    "prompt": "Alpha and Beta alternate folds of a $10\\times100$ rectangular grid, with Alpha first. Each turn folds the current grid on an interior horizontal or vertical gridline, producing a smaller rectangular grid. The final fold wins. Determine the winner when both play optimally, and prove it.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3612,7 +3612,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2022 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3621,7 +3621,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Pertumbuhan pada susunan melingkar",
-    "prompt": "Arrange $2022$ sites cyclically, initially with height $1$. A token starts at one site; at a site of height $k$ it raises that height to $k+1$ and advances $k$ sites clockwise. Determine the maximum achievable difference between the greatest and least heights, or establish that no finite bound exists.",
+    "prompt": "A circle of $2022$ lily pads begins with all heights equal to $1$. A frog starts on one pad. Whenever its current pad has height $k$, that pad grows by one unit and the frog jumps $k$ positions clockwise, passing over $k-1$ pads. Let $D(n)$ be the greatest height minus the least height after $n$ jumps. Determine the maximum of $D(n)$ over all $n$, with proof, or show that it is unbounded.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3630,7 +3630,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2022 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3639,7 +3639,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Pencacahan kisi dengan lintasan penyeberangan",
-    "prompt": "Prove that there are at least $2^{2022}$ subsets of the cells of a $42\\times49$ grid that contain an orthogonally adjacent cell path from the first column to the last column.",
+    "prompt": "Call an $m\\times n$ grid fish-friendly if a subset of its cells is colored blue and there is a path of blue cells from the first column to the last, using only horizontal and vertical adjacency. Prove that at least $2^{2022}$ different blue-cell subsets make a $42\\times49$ grid fish-friendly.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3648,7 +3648,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2022 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2022UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3666,7 +3666,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2023 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3675,7 +3675,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Permutasi komposisi fungsi",
-    "prompt": "Ten functions $\\mathbb R\\to\\mathbb R$ have the property that composing them in any order and evaluating at $0$ gives $1$. Determine how many affine functions $x\\mapsto mx+b$, with $m,b\\in\\{0,\\ldots,9\\}$, can occur among such ten functions.",
+    "prompt": "Daniel and nine other attendees each submit a function from $\\mathbb R$ to $\\mathbb R$. In every ordering $f_1,\\ldots,f_{10}$ of the submissions, the composition satisfies $$f_{10}(f_9(\\cdots f_2(f_1(0))\\cdots))=1.$$ If Daniel's function is $f(x)=mx+b$ with $m,b\\in\\{0,\\ldots,9\\}$, count the possible choices for his function.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3684,7 +3684,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2023 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3693,7 +3693,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Operasi asosiatif yang invarian terhadap translasi",
-    "prompt": "Classify binary operations $\\star:\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$ satisfying $$(a\\star b)+c=(a+c)\\star(b+c),\\qquad (a\\star b)\\star c=a\\star(b\\star c)$$ for all integers $a,b,c$.",
+    "prompt": "Classify, with proof, the binary operations $\\star$ on the integers such that for all integers $a,b,c$, $$(a\\star b)+c=(a+c)\\star(b+c),$$ $$(a\\star b)\\star c=a\\star(b\\star c).$$ A binary operation here is a map $\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$; addition and multiplication are examples of binary operations.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3702,7 +3702,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2023 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3720,7 +3720,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2025 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3729,7 +3729,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Identitas hasil bagi polinomial",
-    "prompt": "For real polynomials $f,g$ with $g\\ne0$, denote the quotient in Euclidean polynomial division by $Q(f,g)$. Classify the polynomials $p\\in\\mathbb R[x]$ for which $$Q(p,x)+Q(p,x+1)=x^2.$$",
+    "prompt": "For polynomials $f,g$ with $g\\ne0$, define $\\left\\lfloor\\frac{f(x)}{g(x)}\\right\\rfloor$ as the unique polynomial $q$ in the division identity $f=gq+r$, where $r=0$ or $\\deg r<\\deg g$. Determine the real polynomials $p$ satisfying $$\\left\\lfloor\\frac{p(x)}x\\right\\rfloor+\\left\\lfloor\\frac{p(x)}{x+1}\\right\\rfloor=x^2.$$",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3738,7 +3738,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2025 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3747,7 +3747,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Penjumlahan blok bilangan dengan digit berulang",
-    "prompt": "For a positive integer $N$, define $S(N)$ by splitting its decimal representation into two blocks, the second of length $\\lceil d/2\\rceil$ when $N$ has $d$ digits, and adding the blocks (the empty block is zero). Count positive integers $m$ of at most $2025$ digits, all identical, with $S(m^2)=m$.",
+    "prompt": "For a positive integer $N$, its split-sum is obtained by splitting its decimal digits into two blocks, with the second block having the same length as the first or one more digit, and adding the resulting integers. For example, the split-sums of $2025,123,6$ are $45,24,6$, respectively. Count the positive integers $m$ satisfying all three requirements: at most $2025$ digits, all digits equal, and split-sum of $m^2$ equal to $m$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3756,7 +3756,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2025 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3774,7 +3774,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2025 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3783,7 +3783,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Kesamaan bilangan rasional berpangkat dirinya",
-    "prompt": "Call a positive rational $r$ admissible if some positive rational $s\\ne r$ satisfies $r^r=s^s$. Determine the second smallest admissible rational, with proof.",
+    "prompt": "A positive rational $r$ is called friendly when another positive rational $s\\ne r$ satisfies $r^r=s^s$. Determine the second smallest friendly number and prove your answer.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3792,7 +3792,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2025 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3810,7 +3810,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2026 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3819,7 +3819,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Permainan pengejaran pada kisi",
-    "prompt": "On the $N\\times N$ lattice, a pursuer starts at the top-left corner and a target at a uniformly random different vertex. Each round the target moves one step horizontally or vertically, then the pursuer moves one step horizontally, vertically or diagonally. Both remain on the lattice. Capture occurs whenever their locations agree. Under optimal opposing play, find the expected number of pursuer moves before capture.",
+    "prompt": "James tries to catch his dog Brutus on an $N\\times N$ grid of lattice points. James begins at the top-left corner; Brutus starts at a randomly chosen different point. In each round Brutus moves first to a horizontal or vertical neighbor, and James then moves to a horizontal, vertical or diagonal neighbor. Both stay on the grid. Capture occurs at any instant when the two occupy the same point. Find the expected number of moves James needs for capture, assuming James minimizes and Brutus maximizes the capture time.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3828,7 +3828,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2026 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -3837,7 +3837,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Basis aditif berorde dua",
-    "prompt": "Let $(a_i)_{i\\ge0}$ be a strictly increasing sequence of nonnegative integers for which every nonnegative integer belongs to $\\{a_i+a_j:i,j\\ge0\\}$. Must there exist a constant $K$ such that $a_i\\le Ki$ for every $i\\ge0$? Prove or disprove.",
+    "prompt": "A strictly increasing sequence $(a_i)_{i\\ge0}$ of nonnegative integers has the sum-of-two property if each nonnegative integer equals $a_i+a_j$ for some indices $i,j$, possibly equal. For example, $0,1,3,5,7,\\ldots$ has this property. Prove or disprove that every such sequence admits a constant $K$ with $a_i\\le Ki$ for all $i\\ge0$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -3846,7 +3846,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2026 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
-      "note": "Educational reuse with attribution permitted by https://utahmath.org/problems/. English mathematical transcription or independent formulation; not guaranteed verbatim."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -5835,7 +5835,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Permainan pemotongan kertas",
-    "prompt": "Two players alternate cutting a convex sheet along a straight line, discarding the piece of smaller area and handing the remaining piece to the opponent. In a tie either piece may be retained. A player loses upon receiving a piece of area less than $1\\,\\mathrm{cm}^2$. Characterize the initial square sheets for which the first player can force a win.",
+    "prompt": "Alice and Carl alternate cutting a sheet of paper, initially square. On each turn, a straight cut divides the current sheet into two pieces; discard the smaller piece by area (either one in a tie) and pass the remaining piece to the other player. The first player to receive paper of area less than $1\\,\\mathrm{cm}^2$ loses. Alice starts. Characterize, with proof, the initial sizes for which Alice can force a win.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5844,7 +5844,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2013 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -5862,7 +5862,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2013 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
@@ -5871,7 +5871,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Permainan penentuan koefisien polinomial",
-    "prompt": "Starting with $P(x)=x^3+ax^2+bx+c$, two players alternately assign a real value to one as-yet-unassigned coefficient. The first player wins if the resulting cubic has a nonreal root; otherwise the second player wins. Determine and justify a winning strategy.",
+    "prompt": "Malone and Cooper alternate selecting real values for the coefficients $a,b,c$ in $P(x)=x^3+ax^2+bx+c$, with Malone first. A coefficient already assigned cannot be changed. After three turns, Malone wins if $P$ has a nonreal root; otherwise Cooper wins. Determine who can force a win, describe the strategy, and justify it.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5880,7 +5880,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2013 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+      "note": "Mathematical formulation checked against the official UMO question paper text; adapted, not verbatim. © UMO Committee; educational noncommercial reuse with attribution: https://utahmath.org/problems/. Visual diagrams not fully verified."
     }
   },
   {
