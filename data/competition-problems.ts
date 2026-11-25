@@ -11836,6 +11836,402 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.ktom-tomi.or.id/",
       "note": "User-supplied KTOM ZIP: 12. KTOM November 2023.pdf, PDF page 6. URL is organizer homepage."
     }
+  },
+  {
+    "id": "ktom-2023-dec-b-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Aljabar",
+    "prompt": "Diberikan suatu barisan bilangan asli $a_1,a_2,\\ldots,a_n$, di mana $n\\ge3$ dan $0<a_{i+1}-a_i<a_{j+1}-a_j$ untuk setiap $1\\le i<j\\le n-1$. Misalkan $b_k=\\frac{a_{k+1}-a_k}{k}$ untuk setiap $1\\le k\\le n-1$. Jika $b_1<b_2<\\cdots<b_{n-1}$, buktikan bahwa $a_{k+1}-a_k\\ge k+1$ untuk setiap $2\\le k\\le n-1$ dan tentukan kapan kesamaan terjadi.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — Desember, Bagian B, Nomor 1",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 2",
+      "number": "Bagian B, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM Desember 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-dec-b-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kombinatorika",
+    "prompt": "Pada papan tulis tertulis semua bilangan asli dari 1 sampai 15. Buktikan bahwa, jika Budi menghapus sembarang 4 bilangan dari papan, ia pasti masih dapat menemukan 3 bilangan berbeda di papan yang hasil kalinya merupakan bilangan kuadrat sempurna.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — Desember, Bagian B, Nomor 2",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 2",
+      "number": "Bagian B, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM Desember 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-dec-b-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Teori Bilangan",
+    "prompt": "Untuk sembarang bilangan asli $x$ dengan $3\\le x\\le2023$, misalkan $D(x)$ menyatakan banyaknya bilangan asli $y$ sehingga $x+y+1\\mid xy-x-1$. Tentukan nilai maksimum dari $D(x)$ dan nilai $x$ saat $D(x)$ mencapai maksimum.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — Desember, Bagian B, Nomor 3",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 2",
+      "number": "Bagian B, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM Desember 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2023-dec-b-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga lancip $\\triangle ABC$ dengan $\\angle ABC>\\angle BCA$. Misalkan $O$ adalah titik pusat lingkaran luar $\\triangle ABC$, dan $AO$ memotong $BC$ di $P$. Titik $D$ adalah kaki tinggi dari $A$ ke $BC$, dan $D'$ adalah titik di segmen $BC$ sehingga $BD=CD'$. Misalkan lingkaran luar $\\triangle BOC$ dan $\\triangle OPD'$ berpotongan untuk yang kedua kalinya di titik $Q$ ($Q\\ne O$). Misalkan pula $R$ adalah titik di sinar garis $\\overrightarrow{BC}$ sehingga $\\angle ARB=\\angle QD'C$. Buktikan bahwa $RO$ melalui titik tengah $AD$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2023 — Desember, Bagian B, Nomor 4",
+      "competition": "KTOM",
+      "year": 2023,
+      "stage": "Kontes Akhir Tahun Babak 2",
+      "number": "Bagian B, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: KTOM Desember 2023.pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Carilah banyak cara menyusun kata $SURABAYA$ sehingga tidak ada dua huruf $A$ yang bersebelahan.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 1",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Tentukan bilangan asli $M$ terkecil sehingga\n\n$$1+2+\\cdots+M\\ge10000.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 2",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan jumlah seluruh bilangan asli $n$ sehingga $n^2+8n+151$ merupakan bilangan kuadrat sempurna.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 3",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan persegi $ABCD$ dengan panjang sisi 12. Lingkaran $\\omega$ terletak di dalam persegi $ABCD$ yang menyinggung keempat sisi $ABCD$. Terdapat persegi $EFGH$ sehingga $E,F,G,H$ semua terletak di $\\omega$ dan $A,B,C,D$ terletak di garis $EF,FG,GH,HE$ berturut-turut. Jika keliling dari segitiga $ABF$ dapat dinyatakan sebagai $m+\\sqrt n$ untuk bilangan asli $m$ dan $n$, tentukan nilai dari $m+n$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 4",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Sebuah polinomial $P$ dengan koefisien bilangan bulat taknegatif memenuhi $P(1)=24$ dan $P(9)=2024$. Tentukan nilai dari $P(5)$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 5",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 5",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diberikan segitiga $ABC$ dengan panjang sisi-sisi $AB=13$, $BC=14$, dan $CA=15$. Diberikan titik $P$ di dalam segitiga $ABC$ sehingga jarak titik $P$ ke garis $AB,BC,CA$ berturut-turut adalah $x,y,z$. Jika diketahui bahwa $x,y,z$ merupakan bilangan bulat positif, tentukan nilai minimal yang mungkin dari $xyz$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 6",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 6",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-07",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan banyaknya bilangan bulat positif $b\\leqslant1000$ sehingga terdapat bilangan bulat positif $a$ dan $c$ sedemikian sehingga\n\n$$\\operatorname{FPB}(a,b)+\\operatorname{KPK}(b,c)=\\operatorname{KPK}(c,a)^3.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 7",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 7",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-08",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diketahui pada segitiga $\\triangle ABC$ terdapat titik-titik $D,E,F$ pada ruas garis $BC$ secara terurut sehingga $AD,AE$, dan $AF$ membagi $\\angle BAC$ menjadi empat sudut yang sama. Jika $BD+EF=7$, $DE+FC=11$, dan $AB:AC=1:2$, tentukan nilai dari $AB^2+AC^2$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 8",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 8",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-09",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Misalkan $x,y,z$ adalah bilangan real positif sehingga $x+yz=13$ dan $x+y+z=10$. Tentukan nilai maksimal dari\n\n$$\\lfloor y+xz\\rfloor+\\lfloor z+xy\\rfloor.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 9",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 9",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-10",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Misalkan $(p_1,q_1),(p_2,q_2),\\ldots,(p_k,q_k)$ merupakan semua pasangan terurut bilangan prima $(p,q)$ sehingga terdapat bilangan asli $m$ dan $n$ yang memenuhi\n\n$$(p_i-q_i)^m=(p_i+q_i)^n.$$\n\nTentukan nilai dari\n\n$$p_1+q_1+p_2+q_2+\\cdots+p_k+q_k.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 10",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 10",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-11",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Diberikan himpunan enam elemen $S$, tentukan banyaknya fungsi bijeksi $f:S\\to S$ sehingga memenuhi\n\n$$f(f(f(x)))=f^{-1}(x)$$\n\nuntuk setiap $x\\in S$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 11",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 11",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-12",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Terletak 1001 titik berbeda pada satu lingkaran yang akan diwarnai dengan $k$ warna. Dua segmen dikatakan berteman jika mereka berpotongan di dalam lingkaran. Diketahui bahwa untuk setiap 5 segmen yang saling berteman di mana kesepuluh titik ujung nya merupakan sepuluh titik berbeda pada lingkaran, terdapat setidaknya 3 segmen sehingga kedua ujung segmen memiliki warna yang berbeda. Tentukan nilai minimum yang mungkin dari $k$ sehingga pewarnaan ini mungkin.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 12",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 12",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-13",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Teori Bilangan",
+    "prompt": "Tentukan nilai dari $a+b$ terkecil jika $a>b$ merupakan bilangan bulat positif dan koefisien binomial $\\binom ab$ merupakan kelipatan 1000.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 13",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 13",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-a-14",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Misalkan seluruh bilangan real positif $k$ sehingga persamaan\n\n$$\\lfloor x\\rfloor(x-\\lfloor x\\rfloor)=kx$$\n\nmemiliki tepat 24 solusi real $x$ adalah interval $a\\le k<b$. Tentukan nilai dari $\\left\\lceil\\frac1{b-a}\\right\\rceil$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian A, Nomor 14",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian A, Nomor 14",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (1).pdf, PDF page 5. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-b-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Kombinatorika",
+    "prompt": "Diberikan bilangan-bilangan $1,2,3,\\ldots,2025$ yang tertulis pada papan, urut dari kiri ke kanan. Mulai dari kiri ke kanan, Hopps menghapus bilangan yang ada pada urutan ketiga (jadi menghapus bilangan ketiga, keenam, kesembilan, dan seterusnya). Jika Hopps sudah menghapus sampai ujung, maka Hopps melakukan penghapusan bilangan lagi dimulai dari bilangan paling kiri dengan cara yang sama.\n\nJika Hopps berhenti menghapus bilangan-bilangan pada papan ketika dia sudah menghapus bilangan 67, tentukan jumlah tiga bilangan terbesar yang tersisa di papan.\n\nInilah contoh penghapusan yang dilakukan oleh Hopps untuk $1,2,3,4,5,6,7$:\n\n$$1,2,3,4,5,6,7\\to1,2,4,5,6,7\\to1,2,4,5,7\\to1,2,5,7\\to1,2,7\\to1,2$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian B, Nomor 1",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian B, Nomor 1",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (2).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-b-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Teori Bilangan",
+    "prompt": "Untuk setiap bilangan asli $n$, buktikan bahwa\n\n$$\\left\\lfloor\\frac{3n^2+2n}{4}\\right\\rfloor\\leqslant\\left\\lfloor\\frac n1\\right\\rfloor+2\\left\\lfloor\\frac n2\\right\\rfloor+3\\left\\lfloor\\frac n3\\right\\rfloor+\\cdots+n\\left\\lfloor\\frac nn\\right\\rfloor\\leqslant n^2.$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian B, Nomor 2",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian B, Nomor 2",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (2).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-b-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Teori Bilangan",
+    "prompt": "Misalkan $\\mathbb N$ menyatakan himpunan seluruh bilangan bulat positif. Tentukan seluruh fungsi $f:\\mathbb N\\to\\mathbb N$ sehingga untuk seluruh bilangan asli $a$ dan $b$,\n\n$$f(a)+f(b)\\qquad\\text{habis membagi}\\qquad af(a)-bf(b).$$",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian B, Nomor 3",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian B, Nomor 3",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (2).pdf, PDF page 4. URL is organizer homepage."
+    }
+  },
+  {
+    "id": "ktom-2025-dec-b-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Geometri",
+    "prompt": "Misalkan $\\Omega$ and $\\Gamma$ adalah lingkaran yang berpusat berturut-turut di $M$ dan $N$ sehingga panjang jari-jari lingkaran $\\Omega$ kurang dari panjang jari-jari lingkaran $\\Gamma$. Misalkan $\\Omega$ dan $\\Gamma$ berpotongan pada dua titik berbeda $A$ and $B$. Garis $MN$ memotong $\\Omega$ di $C$ dan $\\Gamma$ di $D$, sehingga titik $C,M,N,D$ terletak pada garis $MN$ dengan urutan tersebut. Misalkan $E$ dan $F$ adalah titik sehingga $CE$ adalah diameter $\\Omega$ dan $DF$ adalah diameter $\\Gamma$. Misalkan $X$ adalah titik pada segmen $AB$. Misalkan $EX$ dan $FX$ memotong $\\Omega$ dan $\\Gamma$ lagi di $Y\\ne E$ dan $Z\\ne F$. Misalkan $CX$ dan $DX$ memotong $\\Omega$ dan $\\Gamma$ lagi di $Q\\ne C$ dan $P\\ne D$.\n\nTunjukkan bahwa terdapat suatu titik $T$ sehingga $T$ dilewati $YZ,PQ,CD$, serta $TA$ menyinggung lingkaran luar $ACD$ dan lingkaran luar $AEF$.",
+    "source": {
+      "kind": "competition",
+      "label": "KTOM 2025 — Desember, Bagian B, Nomor 4",
+      "competition": "KTOM",
+      "year": 2025,
+      "stage": "Kontes Akhir Tahun",
+      "number": "Bagian B, Nomor 4",
+      "url": "https://www.ktom-tomi.or.id/",
+      "note": "User-supplied KTOM ZIP: soal (2).pdf, PDF page 4. URL is organizer homepage."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
