@@ -219,7 +219,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Kompleks",
     "difficulty": 4,
     "title": "Bilangan kompleks pada lingkaran satuan",
-    "prompt": "Tentukan semua pasangan bilangan kompleks $(a,b)$ yang memenuhi $|a|=|b|=1$ sedemikian sehingga $a+b+a\\overline{b}$ merupakan bilangan real.",
+    "prompt": "Determine the complex pairs $(a,b)$ satisfying $$|a|=|b|=1,\\qquad a+b+a\\overline b\\in\\mathbb R.$$",
     "source": {
       "kind": "competition",
       "label": "IMC 2024 — Hari 1, Nomor 1",
@@ -645,14 +645,14 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Kuadrat matriks biner",
-    "prompt": "Tentukan semua $n\\in\\mathbb Z_{>0}$ sehingga terdapat $A\\in\\{0,1\\}^{n\\times n}$ dengan $A^2=J_n$, dengan $J_n$ menyatakan matriks berordo $n$ yang seluruh entrinya 1.",
+    "prompt": "Determine the positive integers $n$ for which some $n\\times n$ matrix $A$ with entries in $\\{0,1\\}$ has $A^2$ equal to the all-ones matrix.",
     "source": {
       "kind": "competition",
       "label": "IMC 2024 — Hari 1, Nomor 3",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 1, Nomor 3",
-      "url": "https://imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2024",
       "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
       "stage": "IMC"
     }
@@ -663,14 +663,14 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Puncak fungsi bernilai bulat",
-    "prompt": "Misalkan $f:\\mathbb Q\\to\\mathbb Z$ merupakan fungsi sebarang. Buktikan bahwa terdapat $a,b,c\\in\\mathbb Q$ dengan $a<b<c$ dan $f(b)\\ge\\max\\{f(a),f(c)\\}$.",
+    "prompt": "For an arbitrary function $f:\\mathbb Q\\to\\mathbb Z$, establish the existence of rational numbers $a<b<c$ satisfying $$f(b)\\ge f(a),\\qquad f(b)\\ge f(c).$$",
     "source": {
       "kind": "competition",
       "label": "IMC 2024 — Hari 2, Nomor 6",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 2, Nomor 6",
-      "url": "https://imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2024",
       "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber.",
       "stage": "IMC"
     }
@@ -1689,7 +1689,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Ketaksamaan integral",
-    "prompt": "Misalkan $f:[0,1]\\to(0,\\infty)$ terintegralkan dan $f(x)f(1-x)=1$ untuk setiap $x\\in[0,1]$. Buktikan $\\int_0^1 f(x)\\,dx\\ge1$.",
+    "prompt": "Suppose $f:[0,1]\\to(0,\\infty)$ is integrable and $f(x)f(1-x)=1$ for every $x\\in[0,1]$. Establish $$\\int_0^1 f(x)\\,dx\\ge1.$$",
     "source": {
       "kind": "competition",
       "label": "IMC 2022 — Hari 1, Nomor 1",
@@ -1707,7 +1707,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Persamaan matriks dan transpos",
-    "prompt": "Untuk $n$ bilangan bulat positif, tentukan semua $A\\in M_n(\\mathbb R)$ yang seluruh nilai eigennya real dan memenuhi $A+A^k=A^\\top$ bagi suatu bilangan bulat $k\\ge n$.",
+    "prompt": "For a positive integer $n$, classify the real $n\\times n$ matrices $A$ whose eigenvalues are all real and for which $$A+A^k=A^{\\mathsf T}$$ for at least one integer $k\\ge n$. Here $A^{\\mathsf T}$ is the transpose of $A$.",
     "source": {
       "kind": "competition",
       "label": "IMC 2022 — Hari 1, Nomor 2",
@@ -4215,7 +4215,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Limit logaritmik",
-    "prompt": "Evaluate $$\\lim_{n\\to\\infty}\\left(\\frac{1}{n^2}\\sum_{k=1}^n k\\ln k-\\frac12\\ln n\\right).$$",
+    "prompt": "For each positive integer $n$, define $$S_n=\\log\\left(\\sqrt[n^2]{1^1\\cdot2^2\\cdots n^n}\\right)-\\log(\\sqrt n),$$ with $\\log$ the natural logarithm. Evaluate $\\displaystyle\\lim_{n\\to\\infty}S_n$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4223,7 +4223,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2024 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2024",
+      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2024",
       "note": "Independent English mathematical formulation checked against the official contest statement."
     }
   },
@@ -4241,7 +4241,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2024 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2024",
+      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2024",
       "note": "Independent English mathematical formulation checked against the official contest statement."
     }
   },
@@ -4259,7 +4259,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2024 — Hari 1, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2024",
+      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2024",
       "note": "Independent English mathematical formulation checked against the official contest statement."
     }
   },
@@ -4277,7 +4277,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2024 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2024",
+      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2024",
       "note": "Independent English mathematical formulation checked against the official contest statement."
     }
   },
@@ -4295,7 +4295,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2024 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2024",
+      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2024",
       "note": "Independent English mathematical formulation checked against the official contest statement."
     }
   },
@@ -4305,7 +4305,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Paritas pencacahan matriks bilangan bulat",
-    "prompt": "Fix $m,n\\ge1$. Count matrices $A=(a_{ij})$ of size $m\\times n$ subject to these conditions: their distinct entries are $1,\\ldots,2t$ for some $t\\ge1$; entries weakly increase along rows and columns; equal entries share a row or column; each consecutive pair of values $s,s+1$ occurs in some two positions with different row and column indices. Prove that the count is even.",
+    "prompt": "Call an integer matrix $A=(a_{ij})$ nice when all four conditions hold: (a) its set of entries is $\\{1,\\ldots,2t\\}$ for some positive integer $t$; (b) its rows and columns are nondecreasing; (c) if $a_{ij}=a_{k\\ell}$, then $i=k$ or $j=\\ell$; (d) for each $s=1,\\ldots,2t-1$, some positions $(i,j),(k,\\ell)$ with $i\\ne k$ and $j\\ne\\ell$ have entries $s,s+1$, respectively. The two nice matrices of size $2\\times3$ are $$\\begin{pmatrix}1&1&1\\\\2&2&2\\end{pmatrix},\\qquad\\begin{pmatrix}1&1&3\\\\2&4&4\\end{pmatrix}.$$ Prove that, for all positive integers $m,n$, the number of nice $m\\times n$ matrices is even.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4313,7 +4313,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2024 — Hari 2, Nomor 9",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2024",
+      "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2024",
       "note": "Independent English mathematical formulation checked against the official contest statement."
     }
   },
@@ -4323,7 +4323,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Kongruensi pembagi bilangan bebas kuadrat",
-    "prompt": "Let $n$ be a square-free positive integer, $D=\\{d\\in\\mathbb Z_{>0}:d\\mid n\\}$, and $k=|D|$. Assume $$\\sum_{d\\in D}x^d\\equiv kx\\pmod n\\qquad(x\\in\\mathbb Z).$$ If $r$ is a Fermat prime and some prime $p\\mid n$ satisfies $p\\equiv1\\pmod r$, establish $d\\equiv1\\pmod r$ for every $d\\in D$.",
+    "prompt": "Call a positive integer $n$ almost prime if it is square-free and its positive divisors $1=d_1<\\cdots<d_k=n$ satisfy $$n\\mid\\left(\\sum_{i=1}^k x^{d_i}-kx\\right)\\qquad(x\\in\\mathbb Z).$$ Square-free means that no square $d^2$ with integer $d>1$ divides $n$. Suppose $r=2^{2^m}+1$ is a Fermat prime, where $m\\ge0$ is an integer, and an almost prime integer $n$ has a prime divisor $p$ with $p\\equiv1\\pmod r$. Establish $d_i\\equiv1\\pmod r$ for every $1\\le i\\le k$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4331,7 +4331,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2024 — Hari 2, Nomor 10",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2024",
+      "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2024",
       "note": "Independent English mathematical formulation checked against the official contest statement."
     }
   },
@@ -4349,7 +4349,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2023 — Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4367,7 +4367,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2023 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4385,7 +4385,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2023 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4395,7 +4395,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Polinomial permutasi modulo prima",
-    "prompt": "For prime $p$ and integer $k\\ge1$, assume $i\\mapsto i^k+i$ permutes $\\mathbb F_p$. Determine the possible values of $2^k+2$ in $\\mathbb F_p$ (allowing all admissible $p,k$, with the answer specified for each $p$).",
+    "prompt": "For a prime $p$ and a positive integer $k$, define $a_i=i^k+i$ for $i=0,1,\\ldots,p-1$. Suppose these $p$ integers represent all residue classes modulo $p$. Determine the set of possible remainders of $a_2$ modulo $p$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4403,7 +4403,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2023 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4413,7 +4413,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Batas bawah kardinalitas keluarga permutasi",
-    "prompt": "Take $2\\le k\\le n$ and a nonempty family $\\mathcal F\\subseteq S_n$. For each $\\pi\\in\\mathcal F$, suppose there exist $i_1<\\cdots<i_k$ such that $\\pi\\circ(i_j\\ i_{j+1})\\in\\mathcal F$ for every $1\\le j<k$. Establish $|\\mathcal F|\\ge k!$.",
+    "prompt": "Fix integers $2\\le k\\le n$ and a set $M$ of $n$ fruits. Ivan has a nonempty collection of preferred orderings of the fruits. For each preferred ordering $x=(x_1,\\ldots,x_n)$, assume there are positions $i_1<\\cdots<i_k$ such that swapping $x_{i_j}$ with $x_{i_{j+1}}$ produces another preferred ordering for every $1\\le j<k$. Establish that the collection contains at least $k!$ orderings.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4421,7 +4421,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2023 — Hari 1, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4439,7 +4439,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2023 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4457,7 +4457,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2023 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4467,7 +4467,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Indeks Wiener dan Harary pada pohon",
-    "prompt": "For a tree $T$ of order $n$, use the graph distance $d_T$. Define $W=\\sum_{\\{u,v\\}\\in\\binom{V(T)}2}d_T(u,v)$ and $H=\\sum_{\\{u,v\\}\\in\\binom{V(T)}2}d_T(u,v)^{-1}$. Establish $$WH\\ge\\frac{(n-1)^3(n+2)}4.$$",
+    "prompt": "Let $T$ be a tree (a connected simple graph without cycles) on $n$ vertices. For vertices $u,v$, let $d(u,v)$ count the edges on a shortest path connecting them. Define $$W(T)=\\sum_{\\substack{\\{u,v\\}\\subseteq V(T)\\\\u\\ne v}}d(u,v),\\qquad H(T)=\\sum_{\\substack{\\{u,v\\}\\subseteq V(T)\\\\u\\ne v}}\\frac1{d(u,v)}.$$ Establish $$W(T)H(T)\\ge\\frac{(n-1)^3(n+2)}4.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4475,7 +4475,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2023 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4493,7 +4493,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2023 — Hari 2, Nomor 9",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4511,7 +4511,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2023 — Hari 2, Nomor 10",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2023",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4521,7 +4521,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 2,
     "title": "Persamaan matriks linear dengan koefisien nilpoten",
-    "prompt": "Given $A\\in M_n(\\mathbb R)$ with $A^3=0$, establish that $X+AX+XA^2=A$ has exactly one solution $X\\in M_n(\\mathbb R)$, and express that solution using $A$.",
+    "prompt": "Suppose $A\\in M_n(\\mathbb R)$ satisfies $A^3=0$. (a) Establish existence and uniqueness of a real $n\\times n$ matrix $X$ satisfying $$X+AX+XA^2=A.$$ (b) Give a formula for $X$ in terms of $A$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4529,7 +4529,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2021 — Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2021",
+      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4539,7 +4539,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Peluang",
     "difficulty": 3,
     "title": "Invariansi peluang pengurutan",
-    "prompt": "For positive integers $k,n$ and integer $a\\ge0$, independently sample uniform subsets $X\\in\\binom{\\{1,\\ldots,k+a\\}}k$ and $Y\\in\\binom{\\{1,\\ldots,k+n+a\\}}n$. Show that $\\mathbb P(\\max X<\\min Y)$ is independent of $a$.",
+    "prompt": "Fix positive integers $n,k$ and take any nonnegative integer $a$. Choose a $k$-element subset $X$ of $\\{1,\\ldots,k+a\\}$ uniformly at random. Independently choose an $n$-element subset $Y$ of $\\{1,\\ldots,k+n+a\\}$ uniformly at random. Show that $\\mathbb P(\\min Y>\\max X)$ is independent of $a$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4547,7 +4547,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2021 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2021",
+      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4557,7 +4557,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Pembagian interval berturut-turut yang optimal",
-    "prompt": "Find the supremum of $d>0$ such that there is a sequence $(a_j)_{j\\ge1}$ in $(0,d)$ for which the longest component interval of $[0,d]\\setminus\\{a_1,\\ldots,a_n\\}$ has length at most $1/n$ at every $n\\ge1$.",
+    "prompt": "Call a positive real number $d$ good when an infinite sequence $(a_j)_{j\\ge1}$ in $(0,d)$ exists such that, for every $n\\ge1$, the partition of $[0,d]$ by $a_1,\\ldots,a_n$ has every segment of length at most $\\frac1n$. Determine $\\sup\\{d\\mid d\\text{ is good}\\}$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4565,7 +4565,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2021 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2021",
+      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4575,7 +4575,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Syarat cukup untuk fungsi kelas satu Baire",
-    "prompt": "Suppose $f:\\mathbb R\\to\\mathbb R$ has the property that for each $\\varepsilon>0$ some $g:\\mathbb R\\to(0,\\infty)$ satisfies $$|x-y|<\\min(g(x),g(y))\\implies |f(x)-f(y)|<\\varepsilon.$$ Establish that $f$ is a pointwise limit of continuous real functions.",
+    "prompt": "Suppose $f:\\mathbb R\\to\\mathbb R$ has the following property: for every $\\varepsilon>0$, there is a function $g:\\mathbb R\\to(0,\\infty)$ such that, for all real $x,y$, $$|x-y|<\\min\\{g(x),g(y)\\}\\implies |f(x)-f(y)|<\\varepsilon.$$ Establish the existence of continuous functions $h_j:\\mathbb R\\to\\mathbb R$ satisfying $\\lim_{j\\to\\infty}h_j(x)=f(x)$ for every $x\\in\\mathbb R$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4583,7 +4583,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2021 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2021",
+      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4601,7 +4601,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 5",
       "label": "IMC 2021 — Hari 2, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
+      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4619,7 +4619,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2021 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
+      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4637,7 +4637,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2021 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
+      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4655,7 +4655,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2021 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
+      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2021",
       "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   },
@@ -4665,7 +4665,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Pencacahan jalan tertutup modulo prima",
-    "prompt": "For prime $p$, set $$N_p=\\left|\\left\\{(s_1,\\ldots,s_{p-1})\\in\\{-1,0,1\\}^{p-1}\\mid \\sum_{i=1}^{p-1}s_i=0\\right\\}\\right|.$$ Compute $N_p\\bmod p$.",
+    "prompt": "A flea starts at $0$ on the real line. During each minute, it can move one unit left, move one unit right, or remain where it is. For a prime $p$, let $f(p)$ count the move sequences that return the flea to $0$ after $p-1$ minutes. For instance, $f(3)=3$, corresponding to the move pairs $(0,0),(-1,1),(1,-1)$. Find the remainder of $f(p)$ modulo $p$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4683,7 +4683,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Bilangan kromatik graf pergeseran pada tripel",
-    "prompt": "For integer $n>3$, define a graph on $\\binom{\\{1,\\ldots,n\\}}{3}$ by joining $\\{a,b,c\\}$ and $\\{b,c,d\\}$ whenever $a<b<c<d$. If $m$ is its chromatic number, establish $$\\frac{\\log\\log n}{100}\\le m\\le100\\log\\log n.$$",
+    "prompt": "Fix an integer $n>3$ and let $\\Omega$ consist of the three-element subsets of $\\{1,\\ldots,n\\}$. Let $m$ be the smallest number of colors needed to color $\\Omega$ so that $\\{a,b,c\\}$ and $\\{b,c,d\\}$ receive different colors whenever $1\\le a<b<c<d\\le n$. Establish $$\\frac{\\log\\log n}{100}\\le m\\le100\\log\\log n.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4701,7 +4701,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Segitiga monokromatik dalam pewarnaan sisi regular",
-    "prompt": "Partition the edges of $K_{43}$ into red and blue edges so that every vertex has red degree $20$ and blue degree $22$. Given exactly $2022$ all-blue triangles, compute the number of all-red triangles.",
+    "prompt": "All sides and diagonals of a regular $43$-gon are colored red or blue. Exactly $20$ red segments and $22$ blue segments meet at each vertex. A triangle with vertices from the polygon is monochromatic when its three sides have one color. Given that $2022$ such triangles are blue, determine the number of red ones.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
