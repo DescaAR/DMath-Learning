@@ -3725,7 +3725,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Operasi asosiatif yang invarian terhadap translasi",
-    "prompt": "Classify, with proof, the binary operations $\\mid$ on the integers such that for all integers $a,b,c$, $$(a\\mid b)+c=(a+c)\\mid(b+c),$(a\\mid b)\\mid c=a\\mid(b\\mid c).$$ A binary operation here is a map $\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$; addition and multiplication are examples of binary operations.",
+    "prompt": "Classify, with proof, the binary operations $\\mid$ on the integers such that for all integers $a,b,c$, $$(a\\mid b)+c=(a+c)\\mid(b+c),\\qquad (a\\mid b)\\mid c=a\\mid(b\\mid c).$$ A binary operation here is a map $\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$; addition and multiplication are examples of binary operations.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
