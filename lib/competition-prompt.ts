@@ -72,3 +72,18 @@ export function stripCompetitionEmphasis(prompt: string): string {
 export function smoothMNPair(prompt: string): string {
  return prompt.replace(/\.\s*\$\$\s*(M\s*=[^$]+?)\\(?:qquad|quad)\s*(N\s*=[^$]+?)\s*\$\$(?=\s*$)/g, (_match, m: string, n: string) => ", dengan $" + m.trim() + "$ dan $" + n.trim() + "$.");
 }
+
+
+// Hide an equation number only when the complete statement never refers to it.
+// Keep the archived TeX untouched and retain labels required by later prose.
+export function hideUnusedEquationTags(prompt: string): string {
+ const tag = /\\tag\*?\{([0-9]+|\*)\}/g;
+ const rest = prompt.replace(tag, "");
+ return prompt.replace(tag, (original, label: string) => {
+  const referenced = rest.includes("(" + label + ")") ||
+   rest.includes("\\eqref{" + label + "}") ||
+   rest.includes("\\ref{" + label + "}") ||
+   rest.includes("[" + label + "]");
+  return referenced ? original : "";
+ });
+}
