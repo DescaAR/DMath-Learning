@@ -680,7 +680,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Solvable integer exponents",
+    "title": "Eksponen bulat yang memenuhi persamaan",
     "prompt": "Characterize $n\\in\\mathbb Z_{>0}$ for which the equation $2a^n+3b^n=4c^n$ admits $(a,b,c)\\in\\mathbb Z_{>0}^3$.",
     "source": {
       "kind": "competition",
@@ -698,7 +698,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar",
     "difficulty": 5,
-    "title": "Polynomial divisibility under composition",
+    "title": "Keterbagian polinomial pada komposisi",
     "prompt": "Find $p\\in\\mathbb R[x]$ for which $(p(x)-x)^2$ divides $p(p(x))-x$ in $\\mathbb R[x]$.",
     "source": {
       "kind": "competition",
@@ -2984,7 +2984,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMP",
     "topic": "Aritmetika",
     "difficulty": 2,
-    "title": "Ratios",
+    "title": "Perbandingan",
     "prompt": "If $\\frac35=\\frac{M}{45}=\\frac{60}{N}$, what is $M+N$? Pilihan: A. $27$; B. $29$; C. $45$; D. $105$; E. $127$",
     "source": {
       "kind": "competition",
@@ -3002,7 +3002,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "Function evaluation",
+    "title": "Nilai fungsi",
     "prompt": "A function $f$ has the property that $f(3x-1)=x^2+x+1$ for all real numbers $x$. What is $f(5)$? Pilihan: A. $7$; B. $13$; C. $31$; D. $111$; E. $211$",
     "source": {
       "kind": "competition",
@@ -3020,7 +3020,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Interesting ordered quadruples",
+    "title": "Pencacahan kuadruplet terurut",
     "prompt": "Define an ordered quadruple of integers $(a,b,c,d)$ to be interesting if $1\\le a<b<c<d\\le10$ and $a+d>b+c$. How many interesting ordered quadruples are there?",
     "source": {
       "kind": "competition",
@@ -3038,7 +3038,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 3,
-    "title": "A right angle from equal segments",
+    "title": "Sudut siku-siku dari kesamaan panjang ruas",
     "prompt": "In the plane, take noncollinear points $A,B,C$ and define $D=2C-B$ and $E=3A-2C$. Prove that $|AD|=|BE|$ implies that $\\triangle ABC$ is right-angled.",
     "source": {
       "kind": "competition",
@@ -3058,7 +3058,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "Incenters and concyclicity",
+    "title": "Pusat lingkaran dalam dan titik-titik konsiklis",
     "prompt": "Let $ABCD$ be a convex tangential quadrilateral, with $M$ in the interior of segment $AB$. Write $I(XYZ)$ for the incenter of triangle $XYZ$. Prove that $$M,\\ I(MBC),\\ I(MCD),\\ I(MDA)$$ are concyclic.",
     "source": {
       "kind": "competition",
@@ -3078,7 +3078,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "A system of rational equations",
+    "title": "Sistem persamaan rasional",
     "prompt": "Let $s>0$ and $t\\ge0$ satisfy $$\\frac{9}{s}+\\frac{t}{60}=4,\\qquad \\frac{9}{s+2}+\\frac{t}{60}=\\frac{12}{5}.$$ Determine the value of $\\frac{540}{s+\\frac12}+t$.",
     "source": {
       "kind": "competition",
@@ -3098,7 +3098,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 4,
-    "title": "Edge-removal game",
+    "title": "Permainan penghapusan sisi graf",
     "prompt": "Consider the graph on vertices $A,B,C,D,E,F$ with edges $AB,BC,CD,DE,EF,FA,AC,CE,EA$. Ada chooses the initial vertex of a token. Starting with Ada, players alternately move the token along an incident edge and delete that edge. The player unable to move loses. Which player has a winning strategy?",
     "source": {
       "kind": "competition",
@@ -3116,7 +3116,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Peluang",
     "difficulty": 3,
-    "title": "Equal-sum dice pairs",
+    "title": "Pasangan dadu dengan jumlah sama",
     "prompt": "Roll four independent fair dice, each numbered $1$ through $6$. Determine the probability that the four outcomes admit a partition into two pairs having equal sums.",
     "source": {
       "kind": "competition",
@@ -3134,7 +3134,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Two-color obstruction",
+    "title": "Pewarnaan dua warna pada bilangan bulat",
     "prompt": "Does there exist a coloring $c:\\mathbb Z_{>0}\\to\\{0,1\\}$ for which no solution $a+b+c_0=d$ in positive integers satisfies $c(a)=c(b)=c(c_0)=c(d)$? Repeated integers are allowed.",
     "source": {
       "kind": "competition",
@@ -3152,7 +3152,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "Tangential quadrilateral inside a hexagon",
+    "title": "Segi empat bersinggungan dalam segi enam",
     "prompt": "An equiangular hexagon $ABCDEF$ satisfies $AB=CD=EF>BC$. Define $X=AD\\cap CF$ and $Y=BE\\cap CF$, where the intersections are of segments. If $ABYX$ has an incircle, determine $\\frac{AB}{FA}$.",
     "source": {
       "kind": "competition",
@@ -3170,7 +3170,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 5,
-    "title": "Integer sequences satisfying a quadratic identity",
+    "title": "Barisan bilangan bulat dengan identitas kuadrat",
     "prompt": "Classify integer sequences $(a_n)_{n\\ge0}$ satisfying $$a_{n+k}^2-(2k+1)a_na_{n+k}+(k^2+k)a_n^2=k^2-k$$ for every pair of nonnegative integers $n,k$.",
     "source": {
       "kind": "competition",
@@ -3188,7 +3188,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "A divisibility condition",
+    "title": "Syarat keterbagian",
     "prompt": "Determine the positive integer pairs $(u,m)$ for which $um-1\\mid u+m^2$.",
     "source": {
       "kind": "competition",
@@ -3206,7 +3206,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Two connected spanning subgraphs",
+    "title": "Dua subgraf rentang terhubung",
     "prompt": "Color each edge of the complete graph $K_4$ orange or blue. Count the colorings for which the subgraphs of both colors are connected and span all four vertices. Justify the count.",
     "source": {
       "kind": "competition",
@@ -3224,7 +3224,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "Maximizing an altitude",
+    "title": "Maksimum jarak titik ke garis",
     "prompt": "Distinct points $A,B,C$ lie on a circle centered at $O$, with $\\angle AOB=\\angle BOC=60^\\circ$. Among points $P$ of segment $AC$, choose one maximizing the distance from $C$ to line $BP$. Determine $AP:PC$.",
     "source": {
       "kind": "competition",
@@ -3242,7 +3242,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Minimum polynomial degree modulo sixteen",
+    "title": "Derajat minimum polinomial modulo enam belas",
     "prompt": "Among polynomials $P\\in\\mathbb Z[x]$ satisfying $nP(n)\\equiv1\\pmod{16}$ for every positive odd integer $n$, determine the least possible degree and prove optimality.",
     "source": {
       "kind": "competition",
@@ -3260,7 +3260,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Eight-bucket game",
+    "title": "Permainan delapan wadah",
     "prompt": "Eight empty containers each hold two liters. In each round, player A distributes one liter among the containers, then player B empties two containers of B's choice. Player A wins as soon as a container overflows. Can A force a win after finitely many rounds? Prove the answer.",
     "source": {
       "kind": "competition",
@@ -3278,7 +3278,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Alternating permutations modulo four",
+    "title": "Permutasi berselang-seling modulo empat",
     "prompt": "Let $a_n$ count permutations $(p_1,\\ldots,p_n)$ of $\\{1,\\ldots,n\\}$ with $p_1<p_2>p_3<p_4>\\cdots$. Determine $a_n\\bmod4$ for every positive integer $n$.",
     "source": {
       "kind": "competition",
@@ -3296,7 +3296,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 4,
-    "title": "Nested circles and incidence counts",
+    "title": "Lingkaran bersarang dan pencacahan insidensi",
     "prompt": "Construct seven pairwise nonintersecting circles and eleven points, none on a circle, such that the numbers of points inside the seven circles are distinct and each point belongs to the interior of the same number of circles. Prove that the analogous construction with five circles and five points is impossible.",
     "source": {
       "kind": "competition",
@@ -3314,7 +3314,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "Two cubic polynomials",
+    "title": "Dua polinomial kubik",
     "prompt": "For $a,b,c>0$, suppose $$(x-a)(x-b)(x-c)=(x-ab)(x-bc)(x-ca)$$ identically in $x$. Find the minimum possible sum $a+b+c$.",
     "source": {
       "kind": "competition",
@@ -3332,7 +3332,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 4,
-    "title": "Domino placement game",
+    "title": "Permainan penempatan domino",
     "prompt": "On a $4\\times4$ grid, Kim and Li alternately place nonoverlapping dominoes aligned with the grid. Kim plays first and can place only vertical dominoes; Li can place only horizontal ones. The last player able to place a domino wins. Determine the winner under optimal play, with proof.",
     "source": {
       "kind": "competition",
@@ -3350,7 +3350,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 5,
-    "title": "Reflections of four triangles",
+    "title": "Pencerminan empat segitiga",
     "prompt": "A square $ABCD$ is inside triangle $XYZ$, with $B\\in XY$, $C\\in YZ$, and $D\\in ZX$. Reflect triangles $XAB$, $YBC$, $ZCD$, and $XDA$ in lines $AB$, $BC$, $CD$, and $DA$, respectively. Prove that the union of the reflected triangles covers the square.",
     "source": {
       "kind": "competition",
@@ -3368,7 +3368,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 4,
-    "title": "Separating colors on a circle",
+    "title": "Pemisahan warna pada lingkaran",
     "prompt": "Color twelve distinct equally spaced labeled points on a circle with four specified colors, using each color exactly three times. Require that the points of any two different colors can be strictly separated by a line. Count all admissible colorings.",
     "source": {
       "kind": "competition",
@@ -3386,7 +3386,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Square tilings",
+    "title": "Pengubinan persegi",
     "prompt": "Count the tilings of a $4\\times4$ square by axis-aligned squares whose side lengths belong to $\\{1,2,3,4\\}$.",
     "source": {
       "kind": "competition",
@@ -3404,7 +3404,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 4,
-    "title": "A polynomial composition identity",
+    "title": "Identitas komposisi polinomial",
     "prompt": "Find all polynomials $p(x)$ with real coefficients such that $p(x)^2=p(p(x))$.",
     "source": {
       "kind": "competition",
@@ -3422,7 +3422,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Factorials as sums of powers of two",
+    "title": "Faktorial sebagai jumlah pangkat dua",
     "prompt": "Find all nonnegative integers $a,b,c$ such that $2^a+2^b=c!$.",
     "source": {
       "kind": "competition",
@@ -3440,7 +3440,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "An angle from the incircle",
+    "title": "Sudut yang ditentukan oleh lingkaran dalam",
     "prompt": "Let $I$ be the incenter of $ABC$ and $D$ the contact point of its incircle on $AB$. The line $ID$ meets the circumcircle of $ABI$ again at $E$. If $IE=AC+BC$, determine $\\angle ACB$.",
     "source": {
       "kind": "competition",
@@ -3458,7 +3458,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Equal probability of matching colors",
+    "title": "Peluang kesamaan warna",
     "prompt": "Show that for each integer $n\\ge200$ with $n\\equiv0,1\\pmod4$, one can assign colors to $n$ balls so that two uniformly chosen distinct balls have the same color with probability $\\frac12$.",
     "source": {
       "kind": "competition",
@@ -3476,7 +3476,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "A quadratic equation with prime coefficient",
+    "title": "Persamaan kuadrat dengan koefisien prima",
     "prompt": "Classify triples $(x,b,c)\\in\\mathbb Z^3$ satisfying $x^2+bx+c=0$, with $b$ prime and $c$ positive and odd.",
     "source": {
       "kind": "competition",
@@ -3494,7 +3494,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "Concentric tangent circles",
+    "title": "Lingkaran konsentris yang bersinggungan",
     "prompt": "Three circles are pairwise externally tangent. Suppose a fourth circle is externally tangent to each and a fifth circle is internally tangent to each, and these last two circles have a common center. Must the original three circles have equal radii? Prove or disprove.",
     "source": {
       "kind": "competition",
@@ -3512,7 +3512,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "A function on the plane",
+    "title": "Fungsi pada bidang",
     "prompt": "Does a function $f:\\mathbb R^2\\to\\mathbb R$ exist such that $f(P)+f(Q)+f(R)$ equals the perimeter of $PQR$ whenever $PQR$ is an equilateral triangle?",
     "source": {
       "kind": "competition",
@@ -3530,7 +3530,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 4,
-    "title": "Stone-transfer game",
+    "title": "Permainan pemindahan batu",
     "prompt": "Two players initially hold zero stones. On a turn, a player either acquires one stone or transfers a positive number of stones not exceeding half their holdings to the opponent. A player loses immediately upon holding at least twenty stones. With alternating turns, determine which player, if any, has a forced win.",
     "source": {
       "kind": "competition",
@@ -3548,7 +3548,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Divisors of a factorial",
+    "title": "Pembagi faktorial",
     "prompt": "Prove that for all positive integers $n$, the number of divisors of $n!$ is a divisor of $(2n)!$.",
     "source": {
       "kind": "competition",
@@ -3566,7 +3566,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "Coprimality of quadratic forms",
+    "title": "Koprimalitas bentuk kuadrat",
     "prompt": "Let $x$ and $y$ be relatively prime integers. Show that $x^2+xy+y^2$ and $x^2+3xy+y^2$ are relatively prime.",
     "source": {
       "kind": "competition",
@@ -3584,7 +3584,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 4,
-    "title": "Two identities for a sequence",
+    "title": "Dua identitas pada barisan",
     "prompt": "Classify real sequences $(a_n)_{n\\ge1}$ obeying $$a_{m+n}=a_m+a_n-mn,\\qquad a_{mn}=m^2a_n+n^2a_m+2a_ma_n$$ for every $m,n\\ge1$.",
     "source": {
       "kind": "competition",
@@ -3602,7 +3602,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 4,
-    "title": "Folding game",
+    "title": "Permainan pelipatan kisi",
     "prompt": "Two players alternately fold a $10\\times100$ rectangular grid along an interior horizontal or vertical gridline, leaving a smaller rectangular grid. The player making the final fold wins. Determine the winner under optimal play, with proof.",
     "source": {
       "kind": "competition",
@@ -3620,7 +3620,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Growth on a circular arrangement",
+    "title": "Pertumbuhan pada susunan melingkar",
     "prompt": "Arrange $2022$ sites cyclically, initially with height $1$. A token starts at one site; at a site of height $k$ it raises that height to $k+1$ and advances $k$ sites clockwise. Determine the maximum achievable difference between the greatest and least heights, or establish that no finite bound exists.",
     "source": {
       "kind": "competition",
@@ -3638,7 +3638,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Counting grids with crossing paths",
+    "title": "Pencacahan kisi dengan lintasan penyeberangan",
     "prompt": "Prove that there are at least $2^{2022}$ subsets of the cells of a $42\\times49$ grid that contain an orthogonally adjacent cell path from the first column to the last column.",
     "source": {
       "kind": "competition",
@@ -3656,7 +3656,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "The largest angle of four points",
+    "title": "Sudut terbesar dari empat titik",
     "prompt": "Given four distinct points in the plane, consider all angles $\\angle XYZ$ formed by ordered triples of distinct points from the four. Minimize the greatest such angle over all configurations, and exhibit an attaining configuration.",
     "source": {
       "kind": "competition",
@@ -3674,7 +3674,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 4,
-    "title": "Permutations of function compositions",
+    "title": "Permutasi komposisi fungsi",
     "prompt": "Ten functions $\\mathbb R\\to\\mathbb R$ have the property that composing them in any order and evaluating at $0$ gives $1$. Determine how many affine functions $x\\mapsto mx+b$, with $m,b\\in\\{0,\\ldots,9\\}$, can occur among such ten functions.",
     "source": {
       "kind": "competition",
@@ -3692,7 +3692,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 5,
-    "title": "Associative translation-invariant operations",
+    "title": "Operasi asosiatif yang invarian terhadap translasi",
     "prompt": "Classify binary operations $\\star:\\mathbb Z\\times\\mathbb Z\\to\\mathbb Z$ satisfying $$(a\\star b)+c=(a+c)\\star(b+c),\\qquad (a\\star b)\\star c=a\\star(b\\star c)$$ for all integers $a,b,c$.",
     "source": {
       "kind": "competition",
@@ -3710,7 +3710,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 3,
-    "title": "Squares in an octagon",
+    "title": "Persegi pada segi delapan",
     "prompt": "Draw all edges and diagonals of a regular octagon. Count, with proof, the squares whose sides are contained in those drawn segments.",
     "source": {
       "kind": "competition",
@@ -3728,7 +3728,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 4,
-    "title": "Polynomial quotient identity",
+    "title": "Identitas hasil bagi polinomial",
     "prompt": "For real polynomials $f,g$ with $g\\ne0$, denote the quotient in Euclidean polynomial division by $Q(f,g)$. Classify the polynomials $p\\in\\mathbb R[x]$ for which $$Q(p,x)+Q(p,x+1)=x^2.$$",
     "source": {
       "kind": "competition",
@@ -3746,7 +3746,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Repeated-digit split sums",
+    "title": "Penjumlahan blok bilangan dengan digit berulang",
     "prompt": "For a positive integer $N$, define $S(N)$ by splitting its decimal representation into two blocks, the second of length $\\lceil d/2\\rceil$ when $N$ has $d$ digits, and adding the blocks (the empty block is zero). Count positive integers $m$ of at most $2025$ digits, all identical, with $S(m^2)=m$.",
     "source": {
       "kind": "competition",
@@ -3764,7 +3764,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 4,
-    "title": "Equilateral triangles and a parallelogram",
+    "title": "Segitiga sama sisi dan jajargenjang",
     "prompt": "For a parallelogram $ABCD$, construct an equilateral triangle $ABP$ with $P$ on the same side of line $AB$ as $C,D$. If lines $CP$ and $DA$ meet at $Q$, show there is an $R$ on line $AB$ such that $CQR$ is equilateral.",
     "source": {
       "kind": "competition",
@@ -3782,7 +3782,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Equal rational self-powers",
+    "title": "Kesamaan bilangan rasional berpangkat dirinya",
     "prompt": "Call a positive rational $r$ admissible if some positive rational $s\\ne r$ satisfies $r^r=s^s$. Determine the second smallest admissible rational, with proof.",
     "source": {
       "kind": "competition",
@@ -3800,7 +3800,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "A factorial-square equation",
+    "title": "Persamaan faktorial dan kuadrat sempurna",
     "prompt": "Find (with proof) all ordered pairs of integers $(n,k)$, with $n\\ge0$ and $1\\le k\\le10$, such that $$n!+1=(kn+1)^2.$$",
     "source": {
       "kind": "competition",
@@ -3818,7 +3818,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Pursuit on a lattice",
+    "title": "Permainan pengejaran pada kisi",
     "prompt": "On the $N\\times N$ lattice, a pursuer starts at the top-left corner and a target at a uniformly random different vertex. Each round the target moves one step horizontally or vertically, then the pursuer moves one step horizontally, vertically or diagonally. Both remain on the lattice. Capture occurs whenever their locations agree. Under optimal opposing play, find the expected number of pursuer moves before capture.",
     "source": {
       "kind": "competition",
@@ -3836,7 +3836,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Additive bases of order two",
+    "title": "Basis aditif berorde dua",
     "prompt": "Let $(a_i)_{i\\ge0}$ be a strictly increasing sequence of nonnegative integers for which every nonnegative integer belongs to $\\{a_i+a_j:i,j\\ge0\\}$. Must there exist a constant $K$ such that $a_i\\le Ki$ for every $i\\ge0$? Prove or disprove.",
     "source": {
       "kind": "competition",
@@ -3854,7 +3854,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 3,
-    "title": "Coverage by tangent lines",
+    "title": "Cakupan garis singgung",
     "prompt": "For $P\\in\\mathbb R[x]$ of degree at least two define $L_x=\\{(t,P(x)+P'(x)(t-x)):t\\in\\mathbb R\\}$. Prove that $\\bigcup_{x\\in\\mathbb R}L_x=\\mathbb R^2$ when $\\deg P$ is odd. Can equality also hold for even degree?",
     "source": {
       "kind": "competition",
@@ -3872,7 +3872,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 3,
-    "title": "Sharp integral estimate",
+    "title": "Batas tajam integral",
     "prompt": "If $f\\in C^2(\\mathbb R)$, $f(-1)=f(1)=1$, and $\\int_{-1}^1 f(x)\\,dx=0$, establish $$\\int_{-1}^1 |f''(x)|^2\\,dx\\ge15$$ and characterize equality.",
     "source": {
       "kind": "competition",
@@ -3890,7 +3890,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 3,
-    "title": "Commuting random matrices",
+    "title": "Matriks acak yang komutatif",
     "prompt": "Choose $A,B$ independently and uniformly from $\\{X\\in M_{2025}(\\mathbb R):X=X^{\\mathsf T},\\ \\operatorname{rank}X=1,\\ x_{ij}\\in\\{-1,1\\}\\}$. Compute $\\mathbb P(AB=BA)$.",
     "source": {
       "kind": "competition",
@@ -3908,7 +3908,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Maximal iteration orders",
+    "title": "Orde maksimum iterasi pemetaan",
     "prompt": "Write $o(T)=|\\{T^j:j\\ge1\\}|$ for a self-map of $\\{1,\\ldots,n\\}$. Let $f(n)$ and $g(n)$ be the maxima of $o(T)$ over permutations and arbitrary self-maps, respectively. Establish $g(n)-f(n)<n^{0.501}$ eventually.",
     "source": {
       "kind": "competition",
@@ -3926,7 +3926,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 2,
-    "title": "An intermediate derivative identity",
+    "title": "Identitas turunan pada titik antara",
     "prompt": "Suppose $f\\in C^1((0,\\infty))$ and $0<a<b$ satisfy $f(a)=f(b)=k$. Establish the existence of $\\xi\\in(a,b)$ with $f(\\xi)-\\xi f'(\\xi)=k$.",
     "source": {
       "kind": "competition",
@@ -3944,7 +3944,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Closed subsets of positive integers",
+    "title": "Himpunan bilangan bulat positif yang tertutup terhadap operasi",
     "prompt": "Classify nonempty $M\\subseteq\\mathbb Z_{>0}$ closed under doubling and under arithmetic means of pairs of its elements whose sum is even.",
     "source": {
       "kind": "competition",
@@ -3962,7 +3962,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 4,
-    "title": "Eigenvalues under quarter-turn symmetry",
+    "title": "Nilai eigen matriks dengan simetri rotasi seperempat putaran",
     "prompt": "Suppose $A=(a_{ij})\\in M_n(\\mathbb R)$ satisfies $a_{ij}=a_{j,n+1-i}$. Establish $\\sigma(A)\\subseteq\\mathbb R\\cup i\\mathbb R$.",
     "source": {
       "kind": "competition",
@@ -3980,7 +3980,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Peluang",
     "difficulty": 5,
-    "title": "Maximum of a random sample without replacement",
+    "title": "Maksimum sampel acak tanpa pengembalian",
     "prompt": "Starting with $\\mathbb Z_{>0}$, select and delete its $i$th smallest remaining member with probability $2^{-i}$ at each step. If $Y_n$ is the greatest of the first $n$ selected integers, prove $$\\mathbb E Y_n=\\sum_{i=1}^n\\frac{2^i}{2^i-1}.$$",
     "source": {
       "kind": "competition",
@@ -3998,7 +3998,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Asymptotic count of square products",
+    "title": "Pencacahan asimtotik hasil kali kuadrat sempurna",
     "prompt": "Set $$S_N=|\\{(a,b)\\in\\{1,\\ldots,N\\}^2:a(a+1)b(b+1)\\text{ is a square}\\}|.$$ Prove convergence of $S_N/N$ and determine its limit.",
     "source": {
       "kind": "competition",
@@ -4016,7 +4016,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 2,
-    "title": "A trigonometric equation",
+    "title": "Persamaan trigonometri",
     "prompt": "Show that $\\{x\\in\\mathbb R:\\cos(\\cos x)=\\sin(\\sin x)\\}=\\emptyset$.",
     "source": {
       "kind": "competition",
@@ -4034,7 +4034,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 3,
-    "title": "Matrix identity and commutation",
+    "title": "Identitas matriks dan komutativitas",
     "prompt": "For real square matrices $A,B$ of equal size, does $A^{\\mathsf T}A+BB^{\\mathsf T}=AB+BA$ imply $AB=BA$?",
     "source": {
       "kind": "competition",
@@ -4052,7 +4052,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Alternating merges of ordered subsets",
+    "title": "Penggabungan berselang-seling himpunan bagian terurut",
     "prompt": "Partition $\\{1,\\ldots,n\\}$, $n\\ge2$, into nonempty ordered subsets $A,B$. Read $A$ increasingly and $B$ decreasingly, alternating between them beginning with $A$, and append the unused entries when one is exhausted. Count the distinct resulting permutations.",
     "source": {
       "kind": "competition",
@@ -4070,7 +4070,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "Limit of a mean-driven recurrence",
+    "title": "Limit barisan rekursif berbasis rata-rata",
     "prompt": "For $x_1>0$ and $x_{n+1}=\\arctan(n^{-1}\\sum_{j=1}^n x_j)$, compute $\\lim_{n\\to\\infty}x_n\\sqrt{\\ln n}$.",
     "source": {
       "kind": "competition",
@@ -4088,7 +4088,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar",
     "difficulty": 5,
-    "title": "Polynomial concentration",
+    "title": "Konsentrasi polinomial",
     "prompt": "Establish the existence of a universal $C>0$ such that each $A,B\\in\\mathbb Z_{>0}$ admits $p\\in\\mathbb R[x]$ with $$\\deg p<C\\sqrt{AB},\\qquad p(0)^2>\\sum_{i=-A,\\ i\\ne0}^{B}p(i)^2.$$",
     "source": {
       "kind": "competition",
@@ -4106,7 +4106,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "Composed derivative equations",
+    "title": "Persamaan komposisi fungsi dan turunan",
     "prompt": "For each $g(x)=x$ and $g(x)=|x|$, decide whether a differentiable $f:\\mathbb R\\to\\mathbb R$ can satisfy $f'(f(x))=g(x)$ identically.",
     "source": {
       "kind": "competition",
@@ -4124,7 +4124,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "Area of a union of segments",
+    "title": "Luas gabungan ruas garis",
     "prompt": "For $f\\in C([0,1],\\mathbb R)$ define $$S_f=\\{((1-t)x+tf(x),t):x,t\\in[0,1]\\}.$$ Determine the infimum of the planar area of $S_f$.",
     "source": {
       "kind": "competition",
@@ -4142,7 +4142,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 5,
-    "title": "Sharp matrix energy bound",
+    "title": "Batas tajam energi matriks",
     "prompt": "Let $A=A^{\\mathsf T}\\in M_n(\\mathbb R)$, $n\\ge5$, have zero diagonal and off-diagonal entries $\\pm1$. Suppose $(A^2)_{ij}$ is constant for $i\\ne j$. Establish $\\sum_{\\lambda\\in\\sigma(A)}|\\lambda|\\ge2n-2$, counting multiplicities, and classify equality.",
     "source": {
       "kind": "competition",
@@ -4160,7 +4160,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 5,
-    "title": "Lower bound for a sequence",
+    "title": "Batas bawah barisan",
     "prompt": "Suppose $a_n>0$ and $\\sum_{j=1}^{2n-1}a_j=a_n^2$ for every $n\\ge1$. Establish $a_n\\ge2n-1$.",
     "source": {
       "kind": "competition",
@@ -4178,7 +4178,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Geometri",
     "difficulty": 5,
-    "title": "Finite sets on a chessboard",
+    "title": "Himpunan berhingga pada papan catur",
     "prompt": "For every finite $F\\subset\\mathbb R^2$, can one choose $0<d<1$ and a translated and rotated square grid of mesh $d$, with alternating black and white open cells, so that $F$ lies entirely in white cells?",
     "source": {
       "kind": "competition",
@@ -4196,7 +4196,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "Floor identity involving even roots",
+    "title": "Identitas fungsi lantai dengan akar berderajat genap",
     "prompt": "For a fixed even integer $a\\ge2$, characterize the real parameters $x$ for which the identity $$\\left\\lfloor b^{a-1}(b^a+x)^{1/a}\\right\\rfloor=b^a+\\left\\lfloor\\frac{x}{a}\\right\\rfloor$$ is defined and valid at every $b\\in\\mathbb Z_{>0}$.",
     "source": {
       "kind": "competition",
@@ -4214,7 +4214,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 3,
-    "title": "Logarithmic limit",
+    "title": "Limit logaritmik",
     "prompt": "Evaluate $$\\lim_{n\\to\\infty}\\left(\\frac{1}{n^2}\\sum_{k=1}^n k\\ln k-\\frac12\\ln n\\right).$$",
     "source": {
       "kind": "competition",
@@ -4232,7 +4232,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Struktur Aljabar",
     "difficulty": 5,
-    "title": "Subgroups generated by consecutive products",
+    "title": "Subgrup yang dibangkitkan oleh hasil kali berurutan",
     "prompt": "Fix $g\\ne h$ in a group $G$ and $n\\in\\mathbb Z_{>0}$. For a non-eventually-periodic sequence $w\\in\\{g,h\\}^{\\mathbb N}$, put $$H_w=\\langle w_k w_{k+1}\\cdots w_{k+n-1}\\mid k\\ge1\\rangle.$$ Establish that all such sequences yield the same subgroup $H_w$.",
     "source": {
       "kind": "competition",
@@ -4250,7 +4250,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Peluang",
     "difficulty": 5,
-    "title": "Radial monotonicity of convex-hull probabilities",
+    "title": "Monotonisitas radial peluang selubung konveks",
     "prompt": "Fix integers $n>d\\ge1$ and independent uniform samples $X_1,\\ldots,X_n$ in the Euclidean unit ball of $\\mathbb R^d$. Set $F(p)=\\mathbb P(p\\in\\operatorname{conv}\\{X_1,\\ldots,X_n\\})$. Show that $F(p)\\ge F(q)$ whenever $\\|p\\|<\\|q\\|\\le1$.",
     "source": {
       "kind": "competition",
@@ -4268,7 +4268,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 4,
-    "title": "Determinant under a matrix identity",
+    "title": "Determinan pada identitas matriks",
     "prompt": "For fixed $n\\ge1$, determine the set of possible $\\det(AB)$ with $A,B\\in GL_n(\\mathbb C)$ subject to $$A+B=I_n,\\qquad (A^2+B^2)(A^4+B^4)=A^5+B^5.$$",
     "source": {
       "kind": "competition",
@@ -4286,7 +4286,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 5,
-    "title": "Limit bounds for a nonlinear recurrence",
+    "title": "Batas limit barisan rekursif nonlinear",
     "prompt": "Starting from $x_1=2,\\ x_2=4$, iterate $$x_{n+2}=3x_{n+1}-2x_n+\\frac{2^n}{x_n}\\quad(n\\ge1).$$ Establish existence of $L=\\lim_{n\\to\\infty}2^{-n}x_n$ and the bounds $(1+\\sqrt3)/2\\le L\\le3/2$.",
     "source": {
       "kind": "competition",
@@ -4304,7 +4304,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Parity of constrained integer matrices",
+    "title": "Paritas pencacahan matriks bilangan bulat",
     "prompt": "Fix $m,n\\ge1$. Count matrices $A=(a_{ij})$ of size $m\\times n$ subject to these conditions: their distinct entries are $1,\\ldots,2t$ for some $t\\ge1$; entries weakly increase along rows and columns; equal entries share a row or column; each consecutive pair of values $s,s+1$ occurs in some two positions with different row and column indices. Prove that the count is even.",
     "source": {
       "kind": "competition",
@@ -4322,7 +4322,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Congruences for divisors of square-free integers",
+    "title": "Kongruensi pembagi bilangan bebas kuadrat",
     "prompt": "Let $n$ be a square-free positive integer, $D=\\{d\\in\\mathbb Z_{>0}:d\\mid n\\}$, and $k=|D|$. Assume $$\\sum_{d\\in D}x^d\\equiv kx\\pmod n\\qquad(x\\in\\mathbb Z).$$ If $r$ is a Fermat prime and some prime $p\\mid n$ satisfies $p\\equiv1\\pmod r$, establish $d\\equiv1\\pmod r$ for every $d\\in D$.",
     "source": {
       "kind": "competition",
@@ -4340,7 +4340,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 2,
-    "title": "Dilation identity for twice differentiable functions",
+    "title": "Identitas dilatasi fungsi terdiferensialkan dua kali",
     "prompt": "Determine the solution set in $C^2(\\mathbb R)$ of $f(7x+1)=49f(x)$, with the identity required on $\\mathbb R$.",
     "source": {
       "kind": "competition",
@@ -4358,7 +4358,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 2,
-    "title": "Matrix powers under coupled identities",
+    "title": "Perpangkatan matriks dengan identitas terkait",
     "prompt": "Given $A,B,C\\in M_n(\\mathbb C)$ satisfying $A^2=B^2=C^2$ and $B^3-ABC=2I_n$, establish $A^6=I_n$.",
     "source": {
       "kind": "competition",
@@ -4376,7 +4376,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "Multiplicative polynomials in two real variables",
+    "title": "Polinomial multiplikatif dalam dua variabel real",
     "prompt": "Classify $P\\in\\mathbb R[X,Y]$ for which $$P(x,y)P(z,t)=P(xz-yt,xt+yz)$$ identically.",
     "source": {
       "kind": "competition",
@@ -4394,7 +4394,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Permutation polynomials modulo a prime",
+    "title": "Polinomial permutasi modulo prima",
     "prompt": "For prime $p$ and integer $k\\ge1$, assume $i\\mapsto i^k+i$ permutes $\\mathbb F_p$. Determine the possible values of $2^k+2$ in $\\mathbb F_p$ (allowing all admissible $p,k$, with the answer specified for each $p$).",
     "source": {
       "kind": "competition",
@@ -4412,7 +4412,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Lower bound on a family of permutations",
+    "title": "Batas bawah kardinalitas keluarga permutasi",
     "prompt": "Take $2\\le k\\le n$ and a nonempty family $\\mathcal F\\subseteq S_n$. For each $\\pi\\in\\mathcal F$, suppose there exist $i_1<\\cdots<i_k$ such that $\\pi\\circ(i_j\\ i_{j+1})\\in\\mathcal F$ for every $1\\le j<k$. Establish $|\\mathcal F|\\ge k!$.",
     "source": {
       "kind": "competition",
@@ -4430,7 +4430,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 3,
-    "title": "Reachability by row and column operations",
+    "title": "Ketercapaian melalui operasi baris dan kolom",
     "prompt": "Start with $\\begin{pmatrix}2&3\\\\2&4\\end{pmatrix}$. Allowed moves replace either row by its componentwise product or quotient with the other row; the analogous moves on columns are also allowed. Decide whether $\\begin{pmatrix}2&4\\\\2&3\\end{pmatrix}$ is reachable.",
     "source": {
       "kind": "competition",
@@ -4448,7 +4448,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "A universal derivative condition",
+    "title": "Syarat universal pada turunan",
     "prompt": "Set $\\mathcal V=\\{f\\in C([0,1]):f\\text{ is differentiable on }(0,1),\\ f(0)=0,\\ f(1)=1\\}$. Find the real parameters $\\alpha$ for which each $f\\in\\mathcal V$ admits $\\xi\\in(0,1)$ with $f'(\\xi)-f(\\xi)=\\alpha$.",
     "source": {
       "kind": "competition",
@@ -4466,7 +4466,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 4,
-    "title": "Wiener and Harary indices of trees",
+    "title": "Indeks Wiener dan Harary pada pohon",
     "prompt": "For a tree $T$ of order $n$, use the graph distance $d_T$. Define $W=\\sum_{\\{u,v\\}\\in\\binom{V(T)}2}d_T(u,v)$ and $H=\\sum_{\\{u,v\\}\\in\\binom{V(T)}2}d_T(u,v)^{-1}$. Establish $$WH\\ge\\frac{(n-1)^3(n+2)}4.$$",
     "source": {
       "kind": "competition",
@@ -4484,7 +4484,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Geometri",
     "difficulty": 5,
-    "title": "Convex bodies with disjoint projections",
+    "title": "Benda konveks dengan proyeksi saling lepas",
     "prompt": "Consider closed convex sets $X,Y\\subseteq[0,1]^3$ of equal volume $v$, whose orthogonal projections onto each coordinate plane are disjoint. Determine the supremum of the achievable values of $v$.",
     "source": {
       "kind": "competition",
@@ -4502,7 +4502,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Denominators of partial exponential sums",
+    "title": "Penyebut jumlah parsial deret eksponensial",
     "prompt": "Write $\\sum_{j=0}^{n}1/j!=f_n/g_n$ in lowest terms with $g_n>0$. Decide whether $g_n>n^{0.999n}$ holds for at least one integer $n\\ge1$.",
     "source": {
       "kind": "competition",
@@ -4520,7 +4520,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 2,
-    "title": "Linear matrix equation with a nilpotent coefficient",
+    "title": "Persamaan matriks linear dengan koefisien nilpoten",
     "prompt": "Given $A\\in M_n(\\mathbb R)$ with $A^3=0$, establish that $X+AX+XA^2=A$ has exactly one solution $X\\in M_n(\\mathbb R)$, and express that solution using $A$.",
     "source": {
       "kind": "competition",
@@ -4538,7 +4538,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Peluang",
     "difficulty": 3,
-    "title": "An invariant ordering probability",
+    "title": "Invariansi peluang pengurutan",
     "prompt": "For positive integers $k,n$ and integer $a\\ge0$, independently sample uniform subsets $X\\in\\binom{\\{1,\\ldots,k+a\\}}k$ and $Y\\in\\binom{\\{1,\\ldots,k+n+a\\}}n$. Show that $\\mathbb P(\\max X<\\min Y)$ is independent of $a$.",
     "source": {
       "kind": "competition",
@@ -4556,7 +4556,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 5,
-    "title": "Optimal successive subdivisions of an interval",
+    "title": "Pembagian interval berturut-turut yang optimal",
     "prompt": "Find the supremum of $d>0$ such that there is a sequence $(a_j)_{j\\ge1}$ in $(0,d)$ for which the longest component interval of $[0,d]\\setminus\\{a_1,\\ldots,a_n\\}$ has length at most $1/n$ at every $n\\ge1$.",
     "source": {
       "kind": "competition",
@@ -4574,7 +4574,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 5,
-    "title": "A sufficient condition for Baire class one",
+    "title": "Syarat cukup untuk fungsi kelas satu Baire",
     "prompt": "Suppose $f:\\mathbb R\\to\\mathbb R$ has the property that for each $\\varepsilon>0$ some $g:\\mathbb R\\to(0,\\infty)$ satisfies $$|x-y|<\\min(g(x),g(y))\\implies |f(x)-f(y)|<\\varepsilon.$$ Establish that $f$ is a pointwise limit of continuous real functions.",
     "source": {
       "kind": "competition",
@@ -4592,7 +4592,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 3,
-    "title": "A determinant constraint from symmetric solutions",
+    "title": "Batas determinan dari solusi matriks simetris",
     "prompt": "For $A\\in M_n(\\mathbb R)$, suppose every $m\\ge1$ admits a symmetric real matrix $B$ with $A^m=2021B-B^2$. Establish $|\\det A|\\le1$.",
     "source": {
       "kind": "competition",
@@ -4610,7 +4610,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Struktur Aljabar",
     "difficulty": 4,
-    "title": "Nonexistence of a faithful permutation representation",
+    "title": "Ketakberadaan representasi permutasi setia",
     "prompt": "For prime $p$, establish that $\\operatorname{GL}_2(\\mathbb F_p)$ does not embed as a subgroup of the symmetric group $S_p$.",
     "source": {
       "kind": "competition",
@@ -4628,7 +4628,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Kompleks",
     "difficulty": 4,
-    "title": "A bound on a holomorphic function multiplied by a monic polynomial",
+    "title": "Batas fungsi holomorfik yang dikalikan polinomial monik",
     "prompt": "Take $f$ holomorphic on an open neighborhood of $\\{z\\in\\mathbb C:|z|\\le1\\}$ and a monic polynomial $p$. Establish $$|f(0)|\\le\\max_{|z|=1}|f(z)p(z)|.$$",
     "source": {
       "kind": "competition",
@@ -4646,7 +4646,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 5,
-    "title": "Unit vectors with an orthogonality restriction",
+    "title": "Vektor satuan dengan syarat ortogonalitas",
     "prompt": "Determine the maximum cardinality of $S\\subseteq\\{v\\in\\mathbb R^n:\\|v\\|=1\\}$ subject to every three-element subset of $S$ containing an orthogonal pair.",
     "source": {
       "kind": "competition",
@@ -4664,7 +4664,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 4,
-    "title": "Counting closed walks modulo a prime",
+    "title": "Pencacahan jalan tertutup modulo prima",
     "prompt": "For prime $p$, set $$N_p=\\left|\\left\\{(s_1,\\ldots,s_{p-1})\\in\\{-1,0,1\\}^{p-1}\\mid \\sum_{i=1}^{p-1}s_i=0\\right\\}\\right|.$$ Compute $N_p\\bmod p$.",
     "source": {
       "kind": "competition",
@@ -4682,7 +4682,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 5,
-    "title": "Chromatic number of a shift graph on triples",
+    "title": "Bilangan kromatik graf pergeseran pada tripel",
     "prompt": "For integer $n>3$, define a graph on $\\binom{\\{1,\\ldots,n\\}}{3}$ by joining $\\{a,b,c\\}$ and $\\{b,c,d\\}$ whenever $a<b<c<d$. If $m$ is its chromatic number, establish $$\\frac{\\log\\log n}{100}\\le m\\le100\\log\\log n.$$",
     "source": {
       "kind": "competition",
@@ -4700,7 +4700,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Monochromatic triangles in a regular edge coloring",
+    "title": "Segitiga monokromatik dalam pewarnaan sisi regular",
     "prompt": "Partition the edges of $K_{43}$ into red and blue edges so that every vertex has red degree $20$ and blue degree $22$. Given exactly $2022$ all-blue triangles, compute the number of all-red triangles.",
     "source": {
       "kind": "competition",
@@ -4718,7 +4718,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "A permutation with a prescribed adjacent-product sum",
+    "title": "Permutasi dengan jumlah hasil kali bersebelahan tertentu",
     "prompt": "For each odd prime $p$, establish the existence of a permutation $(x_1,\\ldots,x_{p-1})$ of the nonzero residues modulo $p$ satisfying $$\\sum_{i=1}^{p-2}x_ix_{i+1}\\equiv2\\pmod p.$$",
     "source": {
       "kind": "competition",
@@ -4736,7 +4736,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 4,
-    "title": "Rank bound for anticommuting idempotents",
+    "title": "Batas rank matriks idempoten antikomutatif",
     "prompt": "Suppose $A_1,\\ldots,A_k\\in M_n(\\mathbb C)$ with $A_i^2=A_i$ for each $i$ and $A_iA_j+A_jA_i=0$ for $i\\ne j$. Establish $$\\min_{1\\le i\\le k}\\operatorname{rank}(A_i)\\le\\frac nk.$$",
     "source": {
       "kind": "competition",
@@ -4754,7 +4754,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Peluang",
     "difficulty": 5,
-    "title": "Intersection of two random inscribed polygons",
+    "title": "Irisan dua poligon acak dalam lingkaran",
     "prompt": "Let $n,k\\ge3$. Independently sample $n$ blue and $k$ red points from the uniform distribution on a circle. Write $P_B$ and $P_R$ for the respective convex hulls. Determine the expected number of vertices of $P_B\\cap P_R$, counting zero vertices when the intersection is empty.",
     "source": {
       "kind": "competition",
@@ -4772,7 +4772,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "Maximum of a cubic",
+    "title": "Nilai maksimum polinomial kubik",
     "prompt": "Determine $\\max_{x\\ge0}(x+x^2-x^3)$.",
     "source": {
       "kind": "competition",
@@ -4790,7 +4790,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 2,
-    "title": "Divisibility of a cubic expression",
+    "title": "Keterbagian ekspresi kubik",
     "prompt": "For $n\\in\\mathbb Z_{>0}$, establish $6\\mid(n^3+3n^2+2n)$.",
     "source": {
       "kind": "competition",
@@ -4808,7 +4808,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "A symmetric linear system",
+    "title": "Sistem persamaan linear simetris",
     "prompt": "Determine $\\alpha$ for real triples $(\\alpha,\\beta,\\gamma)$ satisfying $$\\begin{aligned}\\alpha+\\beta+\\gamma&=1,\\\\2\\beta+\\gamma&=1,\\\\\\beta+2\\gamma&=1.\\end{aligned}$$",
     "source": {
       "kind": "competition",
@@ -4826,7 +4826,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "Zeros of an exponential product",
+    "title": "Akar persamaan hasil kali eksponensial",
     "prompt": "Solve $(2^x-1)(x^2+2x-3)=0$ over $\\mathbb R$.",
     "source": {
       "kind": "competition",
@@ -4844,7 +4844,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 2,
-    "title": "Divisibility by nine",
+    "title": "Keterbagian oleh sembilan",
     "prompt": "Establish $9\\mid(3\\cdot4^n+51)$ for every $n\\in\\mathbb Z_{>0}$, and deduce divisibility by $3$.",
     "source": {
       "kind": "competition",
@@ -4862,7 +4862,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "Exact evaluation of nested expressions",
+    "title": "Nilai eksak ekspresi bersarang",
     "prompt": "Evaluate the expression exactly: $$\\sqrt{\\sin\\left(\\frac{\\pi+\\log_2\\sqrt{2^\\pi\\cdot2^\\pi}}{2^5-2^4-2^3}\\right)\\sqrt[3]{\\frac{2^{4-1}}{2^{3/2}}}+\\log_2\\left(\\log_3(9^{15})+\\pi^{1+(-1)^{17}}+1\\right)+\\frac{(-1)^5+(-1)^{27}}{(-1)^{766}}}.$$",
     "source": {
       "kind": "competition",
@@ -4880,7 +4880,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "A trigonometric inequality",
+    "title": "Ketaksamaan trigonometri",
     "prompt": "Establish $1-\\sin^2 x\\le|\\cos x|$ on $\\mathbb R$.",
     "source": {
       "kind": "competition",
@@ -4898,7 +4898,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "Two sequence patterns",
+    "title": "Dua pola barisan",
     "prompt": "Give a natural continuation and a general term for each sequence: $$\\begin{aligned}(a_n)&:2,5,9,14,20,27,\\ldots,\\\\(b_n)&:1,3,12,60,360,2520,\\ldots.\\end{aligned}$$ In particular, give the seventh term of each.",
     "source": {
       "kind": "competition",
@@ -4916,7 +4916,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "Solving a nested cubic",
+    "title": "Penyelesaian persamaan kubik bersarang",
     "prompt": "Determine the real solution set of $123=x(2x(3x-3)-2)+100+20+3$.",
     "source": {
       "kind": "competition",
@@ -4934,7 +4934,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "A sum and a product",
+    "title": "Penjumlahan dan perkalian",
     "prompt": "Compute, by exact algebra rather than numerical approximation, $$\\left(\\frac{\\log_{10}(1000^{100})}{100}+\\sum_{n=1}^{100}\\frac{\\sin(\\pi n)+1}{(-1)^n}\\right)\\sqrt{\\prod_{m=1}^{1000}\\frac{1}{\\cos^2(\\pi m)}}.$$",
     "source": {
       "kind": "competition",
@@ -4952,7 +4952,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "An exponential bound",
+    "title": "Batas eksponensial",
     "prompt": "Establish $(n+2)\\sin n<2^{n+1}$ whenever $n$ is a positive integer.",
     "source": {
       "kind": "competition",
@@ -4970,7 +4970,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "Zeros of a logarithmic product",
+    "title": "Akar persamaan hasil kali logaritmik",
     "prompt": "Solve $(\\log(3^x)-2\\log 3)(x^2-1)=0$ in real numbers.",
     "source": {
       "kind": "competition",
@@ -4988,7 +4988,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "An infinite geometric sum",
+    "title": "Jumlah deret geometri tak hingga",
     "prompt": "Evaluate $$1+\\sum_{k=1}^{\\infty}\\frac{3}{\\pi^k}.$$",
     "source": {
       "kind": "competition",
@@ -5006,7 +5006,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "Exact logarithmic evaluation",
+    "title": "Nilai eksak ekspresi logaritmik",
     "prompt": "Simplify the following to a numerical value using exact identities: $$\\log\\left[\\log(3)\\log(2)\\left(\\frac{\\sqrt3-2\\sin(\\pi/3)}{\\pi^3+1}+1\\right)-\\log(2)\\log(3)+(-1)^{100}\\right].$$",
     "source": {
       "kind": "competition",
@@ -5024,7 +5024,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "Divisor sum of a prime square",
+    "title": "Jumlah pembagi kuadrat bilangan prima",
     "prompt": "For each prime $p$, establish $\\sum_{d\\mid p^2,\\ d>0}d<2p^2$.",
     "source": {
       "kind": "competition",
@@ -5042,7 +5042,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 2,
-    "title": "Intersection of equilateral triangles",
+    "title": "Irisan dua segitiga sama sisi",
     "prompt": "Take two congruent upright equilateral triangles of side length $a>0$ on the same horizontal baseline. Translate one horizontally by $a/2$ relative to the other. Compute the area common to both triangles.",
     "source": {
       "kind": "competition",
@@ -5060,7 +5060,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 2,
-    "title": "Alternating powers modulo three",
+    "title": "Perpangkatan berselang-seling modulo tiga",
     "prompt": "Establish the congruence $2^n\\equiv(-1)^n\\pmod3$ for every positive integer $n$.",
     "source": {
       "kind": "competition",
@@ -5078,7 +5078,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "A finite sum inside a logarithm",
+    "title": "Jumlah berhingga dalam logaritma",
     "prompt": "Calculate exactly $$\\log_3\\left(\\frac{\\sin(2\\pi)}{\\tan(\\pi/3)}+\\sum_{n=0}^{10}\\left(\\frac{1+\\sqrt{1+\\sqrt1}}{1+(1^{-1}+1^{1-1})\\cos(\\pi/4)}-\\frac{2^4-2^3}{(1+\\sqrt1)^2}\\right)^n\\right).$$",
     "source": {
       "kind": "competition",
@@ -5096,7 +5096,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "A recurrence for divisor sums",
+    "title": "Relasi rekursif jumlah pembagi",
     "prompt": "Write $\\sigma(k)=\\sum_{d\\mid k,\\ d>0}d$ for $k\\ge1$. Establish $\\sigma(p^m)-p\\sigma(p^{m-1})=1$ whenever $p$ is prime and $m$ is a positive integer.",
     "source": {
       "kind": "competition",
@@ -5114,7 +5114,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 2,
-    "title": "A triangular section",
+    "title": "Luas potongan segitiga",
     "prompt": "In an equilateral triangle of side length $a$, a segment of length $b$ parallel to one side cuts off a smaller triangle at the opposite vertex. Express the area of that smaller triangle in terms of $a$ and $b$.",
     "source": {
       "kind": "competition",
@@ -5132,7 +5132,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "Two sequence continuations",
+    "title": "Kelanjutan dua barisan",
     "prompt": "Supply a natural seventh term and a general-term formula for each of the following lists: $$\\begin{aligned}(a_n)&:2,5,10,17,26,37,\\ldots,\\\\(b_n)&:1,2,8,48,384,3840,\\ldots.\\end{aligned}$$",
     "source": {
       "kind": "competition",
@@ -5150,7 +5150,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "A quartic equation",
+    "title": "Persamaan kuartik",
     "prompt": "Determine the set of real solutions of $x^4+x^2-x-1=1-x-x^2-x^4$.",
     "source": {
       "kind": "competition",
@@ -5168,7 +5168,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "Evaluation of two factors",
+    "title": "Nilai hasil kali dua faktor",
     "prompt": "Compute the exact value of $$\\left(\\sqrt2+(3^2)^{1/4}+\\sum_{m=1}^3\\left(\\frac1{m!}-\\sqrt m\\right)\\right)\\left(2^{\\log_2(8)}+\\frac1{2^3}-\\prod_{k=1}^8\\left(1+\\frac1k\\right)\\right).$$",
     "source": {
       "kind": "competition",
@@ -5186,7 +5186,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 2,
-    "title": "Fifth powers modulo five",
+    "title": "Pangkat lima modulo lima",
     "prompt": "Establish $n^5\\equiv n\\pmod5$ for all positive integers $n$.",
     "source": {
       "kind": "competition",
@@ -5204,7 +5204,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "Explicit formula for a recurrence",
+    "title": "Rumus eksplisit barisan rekursif",
     "prompt": "Let $a_1=1$ and $a_{n+1}=a_n+n+1$ for $n\\ge1$. Express $a_n$ directly in terms of $n$, then evaluate $a_{100}$.",
     "source": {
       "kind": "competition",
@@ -5222,7 +5222,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 2,
-    "title": "An impossible radical equation",
+    "title": "Persamaan bentuk akar tanpa solusi real",
     "prompt": "Prove that the real solution set of $\\sqrt{3+x}+\\sqrt{7-x}=5$ is empty.",
     "source": {
       "kind": "competition",
@@ -5240,7 +5240,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Aljabar",
     "difficulty": 3,
-    "title": "A trigonometric sum minus a product",
+    "title": "Selisih jumlah dan hasil kali trigonometri",
     "prompt": "Evaluate exactly $$\\sum_{k=1}^{3}\\frac{\\sin(\\frac{k\\pi}{12})+\\sin(\\frac{(6-k)\\pi}{12})}{\\cos(\\frac{k\\pi}{12})+\\cos(\\frac{(6-k)\\pi}{12})}-\\prod_{m=1}^{2}\\frac{\\tan(\\frac{\\pi}{4}+\\frac{m\\pi}{12})-\\tan(\\frac{\\pi}{4}-\\frac{m\\pi}{12})}{1+\\tan(\\frac{\\pi}{4}+\\frac{m\\pi}{12})\\tan(\\frac{\\pi}{4}-\\frac{m\\pi}{12})}.$$",
     "source": {
       "kind": "competition",
@@ -5258,7 +5258,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "Composite fourth-power expression",
+    "title": "Ekspresi pangkat empat yang bernilai komposit",
     "prompt": "Determine the unique positive integer $n$ for which $n^4+4$ is not composite, and prove uniqueness.",
     "source": {
       "kind": "competition",
@@ -5276,7 +5276,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "SMA",
     "topic": "Geometri",
     "difficulty": 2,
-    "title": "Diagonal of a rectangle",
+    "title": "Diagonal persegi panjang",
     "prompt": "A diagonal divides a rectangle of dimensions $a\\times b$ into two triangles. Determine the perimeter and area of each triangle.",
     "source": {
       "kind": "competition",
@@ -5294,7 +5294,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "Coprimality in a reduced-fraction recurrence",
+    "title": "Koprimalitas pada barisan rekursif pecahan sederhana",
     "prompt": "Start with distinct $m_0,n_0\\in\\mathbb Z_{>0}$. Define $(m_k,n_k)$ by reducing the fraction $\\frac{2m_{k-1}+1}{2n_{k-1}+1}$ to lowest terms. Establish that $\\gcd(2m_k+1,2n_k+1)=1$ for all sufficiently large $k$.",
     "source": {
       "kind": "competition",
@@ -5312,7 +5312,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 3,
-    "title": "Sharp quadratic bounds for sine",
+    "title": "Batas kuadratik tajam fungsi sinus",
     "prompt": "Compute the infimum and supremum of $\\frac{\\sin x}{x(\\pi-x)}$ over $0<x<\\pi$.",
     "source": {
       "kind": "competition",
@@ -5330,7 +5330,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 5,
-    "title": "Realization of a cycle by matrix commutation",
+    "title": "Realisasi siklus melalui komutativitas matriks",
     "prompt": "Find the smallest $d\\ge1$ for which matrices $A_1,\\ldots,A_{2025}\\in M_d(\\mathbb R)$ realize the equivalence $$[A_i,A_j]=0\\ \\Longleftrightarrow\\ |i-j|\\in\\{0,1,2024\\},$$ where $[X,Y]=XY-YX$.",
     "source": {
       "kind": "competition",
@@ -5348,7 +5348,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Two-adic valuation in a recurrence",
+    "title": "Valuasi 2-adik pada barisan rekursif",
     "prompt": "Set $b_0=0$ and $b_{n+1}=2b_n^2+b_n+1$. Show that $$v_2(b_{2k+1}-2b_{2k})=2k+2\\qquad(k\\ge1),$$ where $v_2$ denotes the exponent of $2$ in an integer.",
     "source": {
       "kind": "competition",
@@ -5366,7 +5366,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 5,
-    "title": "Growth constraint for an integer function",
+    "title": "Syarat pertumbuhan fungsi bilangan bulat",
     "prompt": "Determine the maximum of the set $$\\{r\\in\\mathbb R\\mid \\exists g:\\mathbb Z_{>0}\\to\\mathbb Z_{>0},\\ \\forall n\\ge1,\\ g(n+1)-g(n)\\ge g(g(n))^r\\}.$$",
     "source": {
       "kind": "competition",
@@ -5384,7 +5384,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Powers arranged as a modular progression",
+    "title": "Susunan perpangkatan sebagai barisan aritmetika modular",
     "prompt": "Classify primes $p>5$ for which some $a\\in\\mathbb F_p$ has the following property: the multiset $(a^j)_{j=0}^{p-5}$ admits an ordering forming an arithmetic progression in $\\mathbb F_p$ with nonzero common difference.",
     "source": {
       "kind": "competition",
@@ -5402,7 +5402,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 5,
-    "title": "Hankel determinant of an algebraic series",
+    "title": "Determinan Hankel dari deret aljabar",
     "prompt": "Define coefficients $c_j$ by the expansion at zero $$\\sum_{j\\ge0}c_jx^j=\\frac{1-3x-\\sqrt{1-14x+9x^2}}4.$$ For $n\\ge1$, evaluate $\\det(c_{i+j-1})_{1\\le i,j\\le n}$.",
     "source": {
       "kind": "competition",
@@ -5420,7 +5420,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Permutation with consecutive displaced sums",
+    "title": "Permutasi dengan jumlah bergeser yang berurutan",
     "prompt": "Characterize the positive integers $n,k$ for which a permutation $\\sigma\\in S_n$ satisfies $$\\{i+\\sigma(i)-k\\mid 1\\le i\\le n\\}=\\{1,\\ldots,n\\}.$$",
     "source": {
       "kind": "competition",
@@ -5438,7 +5438,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "Spacing between tangent roots",
+    "title": "Jarak antara akar persamaan tangen",
     "prompt": "Enumerate the positive roots of $\\tan x-x$ in increasing order as $r_1,r_2,\\ldots$. Establish $$\\pi<r_{n+1}-r_n<\\pi+\\frac1{\\pi n(n+1)}\\qquad(n\\ge1).$$",
     "source": {
       "kind": "competition",
@@ -5456,7 +5456,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 5,
-    "title": "Critical exponent for an exponential series",
+    "title": "Eksponen kritis deret eksponensial",
     "prompt": "For $a\\in\\mathbb R$ and $0\\le x<1$, define $F_a(x)=\\sum_{n=1}^{\\infty}n^ae^{2n}x^{n^2}$. Determine the threshold $c$ at which the limit of $e^{-1/(1-x)}F_a(x)$ as $x\\uparrow1$ changes from zero for $a<c$ to positive infinity for $a>c$.",
     "source": {
       "kind": "competition",
@@ -5474,7 +5474,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 2,
-    "title": "Second derivative of a cosine product",
+    "title": "Turunan kedua hasil kali fungsi kosinus",
     "prompt": "Set $P_n(x)=\\prod_{j=1}^n\\cos(jx)$. Compute $\\min\\{n\\in\\mathbb Z_{>0}\\mid |P_n''(0)|>2023\\}$.",
     "source": {
       "kind": "competition",
@@ -5492,7 +5492,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar",
     "difficulty": 4,
-    "title": "Additional roots of an interpolation identity",
+    "title": "Akar tambahan pada identitas interpolasi",
     "prompt": "Fix a positive even integer $n$. Let $P\\in\\mathbb R[x]$ be monic of degree $2n$, with $P(1/k)=k^2$ for $k\\in\\{-n,\\ldots,-1,1,\\ldots,n\\}$. Determine the real solutions of $P(1/x)=x^2$ outside that specified set.",
     "source": {
       "kind": "competition",
@@ -5510,7 +5510,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "First possible zero under coupled derivative bounds",
+    "title": "Nol pertama dengan batas turunan terkait",
     "prompt": "Minimize $r>0$ over differentiable real functions $f,g$ on $\\mathbb R$ subject to $$f(0)>0,\\quad g(0)=f(r)=0,\\quad |f'|\\le |g|,\\quad |g'|\\le |f|,$$ with the inequalities understood pointwise.",
     "source": {
       "kind": "competition",
@@ -5528,7 +5528,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "Minimum binary digit sum of a multiple",
+    "title": "Jumlah digit biner minimum suatu kelipatan",
     "prompt": "Write $s_2(m)$ for the binary digit sum of $m\\in\\mathbb Z_{>0}$. Evaluate $\\min_{n\\ge1}s_2(2023n)$.",
     "source": {
       "kind": "competition",
@@ -5546,7 +5546,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 5,
-    "title": "Determinant of a counting matrix",
+    "title": "Determinan matriks pencacahan",
     "prompt": "For $n\\ge1$, evaluate the determinant of the $n\\times n$ matrix whose entry in position $(i,j)$ is $$\\#\\{(a,b)\\in\\mathbb Z_{\\ge0}^2\\mid ia+jb=n\\}.$$",
     "source": {
       "kind": "competition",
@@ -5564,7 +5564,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 3,
-    "title": "Unique root of a logarithmic equation",
+    "title": "Akar tunggal persamaan logaritmik",
     "prompt": "Classify $(a,b)\\in\\mathbb R^2$ for which the equation $\\ln(1+x^2)-ax-b=0$ has precisely one distinct real root.",
     "source": {
       "kind": "competition",
@@ -5582,7 +5582,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar",
     "difficulty": 4,
-    "title": "Negative coefficients of a polynomial square",
+    "title": "Koefisien negatif pada kuadrat polinomial",
     "prompt": "For fixed $n\\ge2$, maximize $\\#\\{j\\mid [x^j]P(x)^2<0\\}$ over $P\\in\\mathbb R[x]$ of degree $n$, where $[x^j]$ denotes coefficient extraction.",
     "source": {
       "kind": "competition",
@@ -5600,7 +5600,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 5,
-    "title": "Nonzero modular recurrence",
+    "title": "Barisan rekursif modular tak nol",
     "prompt": "Let $p>5$ be prime and $\\mathcal S_p$ consist of infinite sequences in $\\mathbb F_p^\\times$ obeying $a_na_{n+2}=1+a_{n+1}$ for all $n\\ge1$. Prove $\\#\\mathcal S_p\\equiv0$ or $2\\pmod5$.",
     "source": {
       "kind": "competition",
@@ -5618,7 +5618,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Kompleks",
     "difficulty": 4,
-    "title": "Nonvanishing Taylor coefficients",
+    "title": "Koefisien Taylor tak nol",
     "prompt": "For $P\\in x\\mathbb Z[x]$ with $P'(0)$ odd, establish $[x^k]\\exp(P(x))\\ne0$ for every integer $k\\ge0$.",
     "source": {
       "kind": "competition",
@@ -5636,7 +5636,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 4,
-    "title": "Finite sets closed under vector products",
+    "title": "Himpunan berhingga yang tertutup terhadap hasil kali silang",
     "prompt": "Find the possible positive cardinalities of a finite set $S\\subseteq\\mathbb R^3$ satisfying $$S=\\{u\\times v\\mid u,v\\in S\\},$$ with $\\times$ the usual vector cross product.",
     "source": {
       "kind": "competition",
@@ -5654,7 +5654,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Kombinatorika",
     "difficulty": 3,
-    "title": "Shortest lattice path with fixed jump length",
+    "title": "Lintasan terpendek pada kisi dengan panjang lompatan tetap",
     "prompt": "Let $D=\\{(u,v)\\in\\mathbb Z^2\\mid u^2+v^2=25\\}$. Determine the smallest $m$ such that $(2021,2021)$ can be expressed as a sum of $m$ vectors from $D$, allowing repetitions.",
     "source": {
       "kind": "competition",
@@ -5672,7 +5672,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 3,
-    "title": "Iterated limit involving real powers",
+    "title": "Limit iteratif yang melibatkan pangkat real",
     "prompt": "Evaluate $$\\lim_{x\\to+\\infty}\\frac1x\\left(\\lim_{r\\to0}\\big((x+1)^{r+1}-x^{r+1}\\big)^{1/r}\\right).$$",
     "source": {
       "kind": "competition",
@@ -5690,7 +5690,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 4,
-    "title": "Power sums over a reduced residue system",
+    "title": "Jumlah perpangkatan pada sistem residu tereduksi",
     "prompt": "Determine the integers $j\\ge0$ satisfying $$\\sum_{u\\in(\\mathbb Z/2021\\mathbb Z)^\\times}u^j=0\\quad\\text{in }\\mathbb Z/2021\\mathbb Z.$$",
     "source": {
       "kind": "competition",
@@ -5708,7 +5708,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "Optimization of weighted geometric means",
+    "title": "Optimasi rata-rata geometri berbobot",
     "prompt": "Compute $$\\max_{\\substack{a_k\\ge0\\\\\\sum_{k\\ge1}a_k=1}}\\sum_{n=1}^{\\infty}\\frac{n}{2^n}\\left(\\prod_{k=1}^n a_k\\right)^{1/n}.$$",
     "source": {
       "kind": "competition",
@@ -5726,7 +5726,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 5,
-    "title": "Odd principal minors under powers",
+    "title": "Minor utama ganjil pada perpangkatan matriks",
     "prompt": "Suppose $A\\in M_n(\\mathbb Z)$ has odd determinant on each nonempty principal submatrix. Establish that every nonempty principal minor of $A^k$ is odd for each $k\\ge1$.",
     "source": {
       "kind": "competition",
@@ -5744,7 +5744,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Teori Bilangan",
     "difficulty": 3,
-    "title": "Range of a cubic form on nonnegative integers",
+    "title": "Daerah hasil bentuk kubik pada bilangan bulat nonnegatif",
     "prompt": "Characterize the set $$\\{a^3+b^3+c^3-3abc\\mid a,b,c\\in\\mathbb Z_{\\ge0}\\}.$$",
     "source": {
       "kind": "competition",
@@ -5762,7 +5762,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Kompleks",
     "difficulty": 4,
-    "title": "Sharp lower bound on mean root modulus",
+    "title": "Batas bawah tajam rata-rata modulus akar",
     "prompt": "For $P(z)=\\sum_{k=0}^{2019}b_kz^k$ with $1\\le b_0<b_1<\\cdots<b_{2019}\\le2019$, enumerate its complex roots $z_j$ with multiplicity. Determine the infimum of $\\frac1{2019}\\sum_{j=1}^{2019}|z_j|$ over these polynomials.",
     "source": {
       "kind": "competition",
@@ -5780,7 +5780,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Struktur Aljabar",
     "difficulty": 5,
-    "title": "Root multiplicity in a finite-field polynomial",
+    "title": "Multiplisitas akar polinomial atas lapangan berhingga",
     "prompt": "Fix an odd prime $p$ and set $Q(X)=\\sum_{k=1}^{p-1}k^{(p-1)/2}X^k\\in\\mathbb F_p[X]$. Determine the multiplicity of $1$ as a root of $Q$.",
     "source": {
       "kind": "competition",
@@ -5798,7 +5798,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Analisis Real",
     "difficulty": 4,
-    "title": "Asymptotics of a trigonometric sum",
+    "title": "Asimtotik jumlah trigonometri",
     "prompt": "Evaluate $$\\lim_{n\\to\\infty}\\frac1{n^3}\\sum_{k=1}^{n-1}\\frac{\\sin((2k-1)\\pi/(2n))}{\\cos^2((k-1)\\pi/(2n))\\cos^2(k\\pi/(2n))}.$$",
     "source": {
       "kind": "competition",
@@ -5816,7 +5816,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "level": "Kuliah",
     "topic": "Aljabar Linear",
     "difficulty": 4,
-    "title": "Unit eigenvalue after a Householder reflection",
+    "title": "Nilai eigen satu setelah refleksi Householder",
     "prompt": "For $Q\\in O(n)$ and $u\\in\\mathbb R^n$ with $u^{\\mathsf T}u=1$, establish that $$\\det(I-Q)\\ne0\\ \\Longrightarrow\\ \\det(I-(I-2uu^{\\mathsf T})Q)=0.$$",
     "source": {
       "kind": "competition",
