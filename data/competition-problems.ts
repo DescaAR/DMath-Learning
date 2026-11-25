@@ -9532,6 +9532,330 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.imo-official.org/assets/documents/problems/2025/2025_eng.pdf",
       "note": "Independent English mathematical formulation based on official PDF page 2; not verbatim."
     }
+  },
+  {
+    "id": "imo-2015-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Himpunan balanced dan centre-free",
+    "prompt": "A finite planar set $S$ is balanced when every distinct pair $A,B\\in S$ admits $C\\in S$ with $AC=BC$. It is centre-free when no $P\\in S$ is equidistant from three distinct members of $S$.\n\n(a) Establish existence of balanced $n$-point sets for each integer $n\\ge3$.\n\n(b) Classify integers $n\\ge3$ admitting balanced centre-free $n$-point sets.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2015,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2015 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2015-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Tiga selisih berpangkat dua",
+    "prompt": "Classify positive integer triples $(a,b,c)$ for which $ab-c$, $bc-a$, and $ca-b$ each equal a power $2^n$ with nonnegative integer exponent.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2015,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2015 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2015-03",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Persinggungan dua lingkaran luar",
+    "prompt": "In acute $ABC$ with $AB>AC$, let $\\Gamma,H,F,M$ denote its circumcircle, orthocenter, altitude foot from $A$, and midpoint of $BC$. Choose $Q,K\\in\\Gamma$ satisfying $\\angle HQA=\\angle HKQ=90^\\circ$. Distinct points $A,B,C,K,Q$ occur in that order on $\\Gamma$. Establish tangency of circumcircles of $KQH,FKM$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2015,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2015 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2015-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Titik potong pada garis pusat lingkaran",
+    "prompt": "Triangle $ABC$ has circumcircle $\\Omega$ centered at $O$. Circle $\\Gamma$ centered at $A$ meets segment $BC$ at $D,E$ (distinct order $B,D,E,C$) and $\\Omega$ at $F,G$ (order $A,F,B,C,G$). Circumcircles of $BDF,CGE$ meet segments $AB,CA$ again at $K,L$, respectively. If distinct lines $FK,GL$ intersect at $X$, show $X\\in AO$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2015,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2015 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2015-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Persamaan fungsi real",
+    "prompt": "Classify $f:\\mathbb R\\to\\mathbb R$ satisfying $f(x+f(x+y))+f(xy)=x+f(x+y)+yf(x)$ for every real pair $x,y$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2015,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2015 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2015-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Keterbatasan jumlah parsial barisan",
+    "prompt": "An integer sequence obeys\n\n(i) $1\\le a_j\\le2015$ for $j\\ge1$;\n\n(ii) $k+a_k\\ne\\ell+a_\\ell$ whenever $1\\le k<\\ell$.\n\nEstablish positive integers $b,N$ for which $\\left|\\sum_{j=m+1}^{n}(a_j-b)\\right|\\le1007^2$ whenever integers $n>m\\ge N$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2015,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2015 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2016-01",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Kekonkurenan tiga garis",
+    "prompt": "Triangle $BCF$ is right at $B$. Choose $A$ on line $CF$ with $FA=FB$, $F$ between $A,C$. Choose $D$ satisfying $DA=DC$ and $AC$ bisecting $\\angle DAB$, then $E$ satisfying $EA=ED$ and $AD$ bisecting $\\angle EAC$. For midpoint $M$ of $CF$, construct parallelogram $AMXE$ ($AM\\parallel EX$, $AE\\parallel MX$). Establish concurrency of $BD,FX,ME$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2016,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2016 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2016-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pewarnaan tabel IMO",
+    "prompt": "Classify positive integers $n$ admitting an $n\\times n$ array of letters I, M, O satisfying:\n\n• Each row and column contains equal counts of all three letters.\n\n• Each diagonal of length divisible by three contains equal counts of all three letters.\n\nNote: Cells have indices $(i,j)$ with $1\\le i,j\\le n$. For $n>1$, there are $4n-2$ diagonals: sets of cells with constant $i+j$ or constant $i-j$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2016,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2016 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2016-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Keterbagian luas poligon siklik",
+    "prompt": "Let $S$ be the area of convex polygon $P=A_1\\cdots A_k$ with concyclic integer-coordinate vertices. Given odd positive integer $n$ dividing every squared side length, establish that $2S$ is integral and divisible by $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2016,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2016 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2016-04",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Himpunan bilangan fragrant",
+    "prompt": "A positive-integer set is fragrant when it has at least two members and every member shares a prime divisor with another member. For $P(n)=n^2+n+1$, minimize positive integer $b$ admitting nonnegative integer $a$ with $\\{P(a+1),\\ldots,P(a+b)\\}$ fragrant.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2016,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2016 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2016-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Penghapusan faktor persamaan polinomial",
+    "prompt": "Start with $(x-1)(x-2)\\cdots(x-2016)=(x-1)(x-2)\\cdots(x-2016)$. Minimize the number $k$ of deleted factors among the $4032$ occurrences, leaving at least one factor on either side and no real solution.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2016,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2016 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2016-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Lintasan katak pada ruas berpotongan",
+    "prompt": "Take $n\\ge2$ planar segments crossing pairwise, without triple intersections. Geoff places a frog at one endpoint per segment, facing the other endpoint. Each of $n-1$ claps triggers simultaneous forward jumps to the next crossings, without reversals.\n\n(a) Prove that the frogs can avoid sharing any crossing simultaneously for odd $n$.\n\n(b) Prove impossibility for even $n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2016,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2016 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2016/2016_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2017-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Iterasi akar kuadrat dan penjumlahan",
+    "prompt": "For integer $a_0>1$ and each $n\\ge0$, define\n\n$a_{n+1}=\\begin{cases}\\sqrt{a_n},&\\sqrt{a_n}\\in\\mathbb Z,\\\\a_n+3,&\\text{otherwise}.\\end{cases}$\n\nClassify starting values permitting a number $A$ attained by infinitely many terms.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2017,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMO 2017 — Hari 1, Nomor 1",
+      "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2017-02",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Persamaan fungsi komposisi",
+    "prompt": "Classify maps $f:\\mathbb R\\to\\mathbb R$ obeying $f(f(x)f(y))+f(x+y)=f(xy)$ for every real $x,y$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2017,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMO 2017 — Hari 1, Nomor 2",
+      "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2017-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Strategi pemburu dan kelinci tak terlihat",
+    "prompt": "A hunter and invisible rabbit start together at $B_0=A_0$ in the Euclidean plane. Round $n$ proceeds as follows:\n\n(i) Rabbit moves invisibly to $A_n$ with $A_{n-1}A_n=1$.\n\n(ii) A tracker reports $P_n$, guaranteeing only $P_nA_n\\le1$.\n\n(iii) Hunter moves visibly to $B_n$ with $B_{n-1}B_n=1$.\n\nCan she guarantee $A_{10^9}B_{10^9}\\le100$ regardless of rabbit moves and tracker reports?",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2017,
+      "stage": "IMO",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMO 2017 — Hari 1, Nomor 3",
+      "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 1, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2017-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Garis singgung lingkaran JST",
+    "prompt": "Distinct $R,S\\in\\Omega$ do not form a diameter. Let $\\ell$ touch circle $\\Omega$ at $R$. Extend $RS$ to $T$ with midpoint $S$. Choose $J$ on minor arc $RS$ so circumcircle $\\Gamma$ of $JST$ crosses $\\ell$ twice. Let $A$ be the intersection nearer $R$; $AJ$ meets $\\Omega$ again at $K$. Establish tangency of $KT$ to $\\Gamma$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2017,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 4",
+      "label": "IMO 2017 — Hari 2, Nomor 4",
+      "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2017-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Pemilihan pasangan pemain sepak bola",
+    "prompt": "For integer $N\\ge2$, arrange $N(N+1)$ soccer players of distinct heights in a row. Sir Alex removes $N(N-1)$ players. Prove he can leave $2N$ players such that consecutive height ranks $(1,2),(3,4),\\ldots,(2N-1,2N)$ form adjacent pairs in the remaining row.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2017,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMO 2017 — Hari 2, Nomor 5",
+      "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
+  },
+  {
+    "id": "imo-2017-06",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Polinomial homogen pada titik primitif",
+    "prompt": "A primitive point is an integer pair $(x,y)$ with $\\gcd(x,y)=1$. Given a finite set $S$ of such points, establish a positive integer $n$ and integers $a_0,\\ldots,a_n$ satisfying $a_0x^n+a_1x^{n-1}y+a_2x^{n-2}y^2+\\cdots+a_{n-1}xy^{n-1}+a_ny^n=1$ throughout $S$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMO",
+      "year": 2017,
+      "stage": "IMO",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMO 2017 — Hari 2, Nomor 6",
+      "url": "https://www.imo-official.org/assets/documents/problems/2017/2017_eng.pdf",
+      "note": "Independent English formulation from official PDF, page 2, visually inspected; not verbatim. No source illustration."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
