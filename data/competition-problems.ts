@@ -623,7 +623,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Ketaksamaan produk dan jumlah",
-    "prompt": "For each positive integer $n$ and positive reals $a_1,\\ldots,a_n$, establish $$\\sum_{i=1}^n\\frac{1}{2^i}\\left(\\frac{2}{1+a_i}\\right)^{2^i}\\ge\\frac{2}{1+a_1a_2\\cdots a_n}-\\frac{1}{2^n}.$$",
+    "prompt": "Let $n$ be a positive integer and $a_1,a_2,\\ldots,a_n$ be positive real numbers. Prove that\n\n$$\\sum_{i=1}^n\\frac{1}{2^i}\\left(\\frac{2}{1+a_i}\\right)^{2^i}\\ge\\frac{2}{1+a_1a_2\\cdots a_n}-\\frac{1}{2^n}.$$",
     "source": {
       "kind": "competition",
       "label": "APMO 2024 — Nomor 3",
@@ -631,7 +631,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "number": "Nomor 3",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
+      "note": "2026-11-25: short original statement verified against official PDF.",
       "stage": "APMO"
     }
   },
@@ -4229,7 +4229,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Identitas fungsi lantai dengan akar berderajat genap",
-    "prompt": "Fix a positive even integer $a$. Determine all real $x$ for which $$\\left\\lfloor\\sqrt[a]{b^a+x}\\cdot b^{a-1}\\right\\rfloor=b^a+\\left\\lfloorx/a\\right\\rfloor\\tag{1}$$ holds for every positive integer $b$, where $\\lfloor t\\rfloor$ is the greatest integer not exceeding $t$.",
+    "prompt": "Fix a positive even integer $a$. Determine all real $x$ for which $$\\left\\lfloor\\sqrt[a]{b^a+x}\\cdot b^{a-1}\\right\\rfloor=b^a+\\left\\lfloor x/a\\right\\rfloor\\tag{1}$$ holds for every positive integer $b$, where $\\lfloor t\\rfloor$ is the greatest integer not exceeding $t$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4355,7 +4355,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Kongruensi pembagi bilangan bebas kuadrat",
-    "prompt": "Call a positive integer $n$ almost prime if it is square-free and its positive divisors $1=d_1<\\cdots<d_k=n$ satisfy $$n\\midx^{d_1}+x^{d_2}+\\cdots+x^{d_k}-kx\\qquad(x\\in\\mathbb Z).$$ Square-free means that no square $d^2$ with integer $d>1$ divides $n$. Suppose $r=2^{2^m}+1$ is a Fermat prime, where $m\\ge0$ is an integer, and an almost prime integer $n$ has a prime divisor $p$ with $p\\equiv1\\pmod r$. Establish $d_i\\equiv1\\pmod r$ for every $1\\le i\\le k$.",
+    "prompt": "Call a positive integer $n$ almost prime if it is square-free and its positive divisors $1=d_1<\\cdots<d_k=n$ satisfy $$n\\mid x^{d_1}+x^{d_2}+\\cdots+x^{d_k}-kx\\qquad(x\\in\\mathbb Z).$$ Square-free means that no square $d^2$ with integer $d>1$ divides $n$. Suppose $r=2^{2^m}+1$ is a Fermat prime, where $m\\ge0$ is an integer, and an almost prime integer $n$ has a prime divisor $p$ with $p\\equiv1\\pmod r$. Establish $d_i\\equiv1\\pmod r$ for every $1\\le i\\le k$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4481,7 +4481,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Syarat universal pada turunan",
-    "prompt": "Set $V=\\{f\\in C([0,1]):f\\text{ is differentiable on }(0,1),\\ f(0)=0,\\ f(1)=1\\}$. Find the real parameters $\\alpha$ for which each $f\\inV$ admits $\\xi\\in(0,1)$ with $$f(\\xi)+\\alpha=f'(\\xi).$$.",
+    "prompt": "Set $V=\\{f\\in C([0,1]):f\\text{ is differentiable on }(0,1),\\ f(0)=0,\\ f(1)=1\\}$. Find the real parameters $\\alpha$ for which each $f\\in V$ admits $\\xi\\in(0,1)$ with $$f(\\xi)+\\alpha=f'(\\xi).$$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -6713,7 +6713,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Lintasan kisi dan fungsi lantai",
-    "prompt": "Take positive real parameters $\\alpha,\\beta$. Emerald begins at the origin of the coordinate plane. At each minute she moves one unit upwards or rightwards, staying within $|x-y|<2025$. At each visited point $(x,y)$, she records $\\lfloor x\\alpha+y\\beta\\rfloor$. Classify the pairs $(\\alpha,\\beta)$ permitting a journey in which every nonnegative integer is recorded exactly once.",
+    "prompt": "Take positive real parameters $\\alpha,\\beta$. Emerald begins at the origin $(0,0)$ of the coordinate plane. At each minute she moves one unit upwards or rightwards, staying within $|x-y|<2025$. At each visited point $(x,y)$, she records $\\lfloor x\\alpha+y\\beta\\rfloor$. Classify the pairs $(\\alpha,\\beta)$ permitting a journey in which every nonnegative integer is recorded exactly once.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -6722,7 +6722,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "APMO 2025 — APMO, 2",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -6731,7 +6731,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Keterbagian polinomial pada barisan",
-    "prompt": "For $P\\in\\mathbb Z[x]$ of positive degree with $P(0)\\ne0$, prove that any integer sequence satisfying $P(i-j)\\mid a_i-a_j$ for all distinct $i,j\\ge1$ is constant.",
+    "prompt": "For $P\\in\\mathbb Z[x]$ of positive degree with $P(0)\\ne0$, prove that an infinite sequence $a_1,a_2,\\ldots$ of integers satisfying $P(i-j)\\mid a_i-a_j$ for all distinct $i,j\\ge1$ is constant: $a_n=c$ for every positive integer $n$.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -6740,7 +6740,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "APMO 2025 — APMO, 3",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -6749,7 +6749,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Barisan terbatas atau linear",
-    "prompt": "Suppose $(a_n)_{n\\ge1}$ is an infinite sequence of positive integers for which $$a_{n-m+1}a_{n+m}\\mid100!(a_m+a_{m+1}+\\cdots+a_n)\\qquad(1\\le m\\le n).$$ Prove that the sequence is bounded or linear. Bounded here means that a constant $N$ exists with $a_n<N$ at all positive indices, and linear means $a_n=na_1$ at every such index.",
+    "prompt": "Suppose $(a_n)_{n\\ge1}$ is an infinite sequence of positive integers for which $$100!(a_m+a_{m+1}+\\cdots+a_n)$$\n\nis a multiple of $a_{n-m+1}a_{n+m}$ for all positive integers $m,n$ with $m\\le n$. Prove that the sequence is bounded or linear. Observation: Bounded here means that a constant $N$ exists with $a_n<N$ at all positive indices, and linear means $a_n=na_1$ at every such index.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -6758,7 +6758,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "APMO 2025 — APMO, 5",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -6767,7 +6767,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Persamaan faktorial dan perpangkatan",
-    "prompt": "Classify positive integer quadruples $(a,p,m,o)$ with $o\\ge2$ satisfying $$a!+p!=m^o+26.$$",
+    "prompt": "Find all quadruples of positive integers $(a,p,m,o)$ with $o\\ge2$ such that\n\n$$a!+p!=m^o+26.$$",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -6776,7 +6776,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "APMO 2026 — APMO, 1",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: short original statement verified against official PDF."
     }
   },
   {
@@ -6785,7 +6785,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Jumlah irisan himpunan bagian siklik",
-    "prompt": "For $n\\ge2$, list the distinct subsets of an $n$-element set cyclically as $(A_j)_{j=1}^{2^n}$, setting $A_{2^n+1}=A_1$. Establish $$\\sum_{j=1}^{2^n}|A_j\\cap A_{j+1}|\\ge2^{n-2}.$$",
+    "prompt": "For $n\\ge2$, list the distinct subsets of an $n$-element set cyclically as $(A_j)_{j=1}^{2^n}$, setting $A_{2^n+1}=A_1$. Establish $$|A_1\\cap A_2|+|A_2\\cap A_3|+\\cdots+|A_{2^n-1}\\cap A_{2^n}|+|A_{2^n}\\cap A_1|\\ge2^{n-2}.$$",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -6794,7 +6794,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "APMO 2026 — APMO, 2",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -6803,7 +6803,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Fungsi yang mempertahankan urutan jarak",
-    "prompt": "Classify $f:\\mathbb R_{>0}\\to\\mathbb R$ for which $$|x-y|<|y-z|\\iff |f(x)-f(y)|<|f(y)-f(z)|$$ for every positive real triple $(x,y,z)$.",
+    "prompt": "Classify $f:\\mathbb R_+\\to\\mathbb R$ for which $$|x-y|<|y-z|\\quad\\text{if and only if}\\quad |f(x)-f(y)|<|f(y)-f(z)|$$ for every positive real triple $(x,y,z)$.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -6812,7 +6812,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "APMO 2026 — APMO, 3",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -8531,7 +8531,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Kolinearitas pada trapesium",
-    "prompt": "In an acute triangle $ABC$, choose $D\\in AB$ and $E\\in AC$ with $DE\\parallel BC$. An interior point $X$ of $BCED$ defines $P=DX\\cap BC$ and $Q=EX\\cap BC$ along the rays $DX,EX$, with $P,Q$ between $B,C$. If the circles through $B,Q,X$ and $C,P,X$ meet again at $Y$, establish collinearity of $A,X,Y$.",
+    "prompt": "In an acute triangle $ABC$, choose $D\\in AB$ and $E\\in AC$ with $DE\\parallel BC$. An interior point $X$ of $BCED$ defines $P=DX\\cap BC$ and $Q=EX\\cap BC$ along the rays $DX,EX$, with $P,Q$ between $B,C$. If the circles through $B,Q,X$ and $C,P,X$ meet again at $Y\\ne X$, establish collinearity of $A,X,Y$.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -8540,7 +8540,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "APMO 2024 — Nomor 1",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -8549,7 +8549,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Keterjangkauan langkah kuda",
-    "prompt": "A piece starts at $(1,1)$ on the integer grid $\\{1,\\ldots,100\\}^2$. Fix an integer $51\\le k\\le99$. Each legal move changes the two coordinates in absolute value by $1,k$, in either order, while remaining on the grid. Determine, as a function of $k$, the number $L(k)$ of cells reachable by a finite sequence of moves.",
+    "prompt": "A piece starts at $(1,1)$ on the integer grid $\\{1,\\ldots,100\\}^2$. Fix an integer $51\\le k\\le99$. A $k$-knight moves from $(a,b)$ to $(c,d)$ when $(|a-c|,|b-d|)$ equals $(1,k)$ or $(k,1)$. A sequence of moves is $(x_0,y_0)=(1,1),(x_1,y_1),\\ldots,(x_n,y_n)$, with all coordinates in $\\{1,\\ldots,100\\}$ and successive cells connected by legal moves. Determine, as a function of $k$, the number $L(k)$ of cells reachable by a finite sequence of moves.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -8558,7 +8558,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "APMO 2024 — Nomor 2",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -8567,7 +8567,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Permutasi koefisien binomial ganjil",
-    "prompt": "For each positive integer $t$, establish existence and uniqueness of a permutation $(a_0,\\ldots,a_{t-1})$ of $\\{0,\\ldots,t-1\\}$ for which, at every index $i$, $\\binom{t+i}{2a_i}$ is odd and $2a_i\\ne t+i$.",
+    "prompt": "For each positive integer $t$, establish existence and uniqueness of a permutation $(a_0,\\ldots,a_{t-1})$ of $\\{0,\\ldots,t-1\\}$ for which, for every $0\\le i\\le t-1$, $\\binom{t+i}{2a_i}$ is odd and $2a_i\\ne t+i$.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -8576,7 +8576,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "APMO 2024 — Nomor 4",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -8585,7 +8585,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Kolinearitas pada segiempat siklik",
-    "prompt": "A cyclic quadrilateral $ABCD$ has a transversal $\\ell$ meeting the interiors of $BC,AD$ at $R,S$ and the rays $DC,BA$ beyond $C,A$ at $Q,P$. Define $N\\ne Q$ by intersecting the circumcircles of $QCR,QDS$, and $M\\ne P$ by intersecting those of $PAS,PBR$. With $X=MP\\cap NQ$, $K=AB\\cap CD$, $L=BC\\cap AD$, show $X\\in KL$.",
+    "prompt": "A cyclic quadrilateral $ABCD$ has a transversal $\\ell$ meeting the interiors of $BC,AD$ at $R,S$ and the rays $DC,BA$ beyond $C,A$ at $Q,P$. Define $N\\ne Q$ by intersecting the circumcircles of $QCR,QDS$, and $M\\ne P$ by intersecting those of $PAS,PBR$. With $X=MP\\cap NQ$, $K=AB\\cap CD$, $L=BC\\cap AD$, show $X$ lies on line $KL$.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -8594,7 +8594,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "APMO 2024 — Nomor 5",
       "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -8612,7 +8612,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "APMO 2025 — Nomor 1",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -8621,7 +8621,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Dinamika ayam pada susunan melingkar",
-    "prompt": "Arrange $n\\ge3$ binary-labelled cells in a circle. A rooster repeatedly flips the bit of its current cell, then advances counterclockwise one cell if the old bit was $0$, or two cells if it was $1$.\n\nShow that eventually, from its current cell $C$, exactly three revolutions bring it back to $C$ with every label restored to the state at the beginning of those revolutions.",
+    "prompt": "Arrange $n\\ge3$ binary-labelled cells in a circle. A rooster repeatedly performs the following operation:\n\n• On a cell labelled $0$, change it to $1$ and advance one cell counterclockwise.\n\n• On a cell labelled $1$, change it to $0$ and advance two cells counterclockwise.\n\nShow that eventually, from its current cell $C$, exactly three revolutions bring it back to $C$ with every label restored to the state at the beginning of those revolutions.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -8630,7 +8630,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "APMO 2025 — Nomor 4",
       "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -8639,7 +8639,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Garis tegak lurus pada segiempat singgung",
-    "prompt": "Let $ABCD$ admit an incircle $\\omega$ with centre $I$. Write $E=AC\\cap BD$ and let $J$ be the incenter of $ABD$. Extend ray $EJ$ to meet $\\omega$ at $P$. Establish $PI\\perp BD$.",
+    "prompt": "Let $ABCD$ admit an incircle $\\omega$ with centre $I$. Write $E=AC\\cap BD$ and let $J$ be the incentre of $ABD$. Extend ray $EJ$ to meet $\\omega$ at $P$. Establish $PI\\perp BD$.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -8648,7 +8648,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "APMO 2026 — Nomor 4",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {
@@ -8657,7 +8657,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Pola penguncian pintu pada kisi",
-    "prompt": "For a positive integer $n$, arrange $n(n+1)$ rooms in $n+1$ rows and $n$ columns, with a door joining each pair of adjacent rooms. Count the subsets of doors that can be locked while preserving an unlocked-door path from some room $S$ of the first row to some room $G$ of the last row.",
+    "prompt": "For a positive integer $n$, arrange $n(n+1)$ rooms in a $(n+1)\\times n$ grid, with a door joining each pair of adjacent rooms. Count the subsets of doors that can be locked such that two rooms $S$ and $G$ satisfy:\n\n(i) $S$ is in the first row and $G$ is in the $(n+1)$-th row.\n\n(ii) There is a path from $S$ to $G$ using only unlocked doors.",
     "source": {
       "kind": "competition",
       "competition": "APMO",
@@ -8666,7 +8666,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "APMO 2026 — Nomor 5",
       "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; exact wording replacement pending."
     }
   },
   {

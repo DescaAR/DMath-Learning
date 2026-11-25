@@ -376,12 +376,19 @@
       }
     },
     "apmo-2024-03": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2024,
       "number": "Nomor 3",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Short statement restored to official wording."
+      }
     },
     "onmipa-2024-w-h1-i1": {
       "status": "pending_comparison",
@@ -389,7 +396,14 @@
       "competition": "ON-MIPA",
       "year": 2024,
       "number": "Hari 1, Isian 1",
-      "sourceUrl": "https://paggalih.github.io/olimpiade/onmipa-w-2024/"
+      "sourceUrl": "https://paggalih.github.io/olimpiade/onmipa-w-2024/",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://paggalih.github.io/olimpiade/onmipa-w-2024/",
+        "method": "Third-party HTML transcription",
+        "finding": "Paggalih transcript differs: conditional opening, colon in set definition and two blanks, rather than instruction to determine.",
+        "limitation": "Original contest document not verified; keep pending_comparison."
+      }
     },
     "onmipa-2024-w-h1-i3": {
       "status": "pending_comparison",
@@ -397,7 +411,14 @@
       "competition": "ON-MIPA",
       "year": 2024,
       "number": "Hari 1, Isian 3",
-      "sourceUrl": "https://paggalih.github.io/olimpiade/onmipa-w-2024/"
+      "sourceUrl": "https://paggalih.github.io/olimpiade/onmipa-w-2024/",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://paggalih.github.io/olimpiade/onmipa-w-2024/",
+        "method": "Third-party HTML transcription",
+        "finding": "Paggalih transcript uses given cyclic group, order and a fill-in blank.",
+        "limitation": "Original contest document not verified; keep pending_comparison."
+      }
     },
     "imc-2024-03": {
       "status": "wording_differs",
@@ -531,7 +552,14 @@
       "competition": "ON-MIPA",
       "year": 2025,
       "number": "Hari 1, Isian 1",
-      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/"
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
+        "method": "Third-party HTML transcription",
+        "finding": "Filzabuana transcript uses fill-in blank and term unsur.",
+        "limitation": "Original contest document not verified; keep pending_comparison."
+      }
     },
     "onmipa-2025-w-h1-i3": {
       "status": "pending_comparison",
@@ -539,7 +567,14 @@
       "competition": "ON-MIPA",
       "year": 2025,
       "number": "Hari 1, Isian 3",
-      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/"
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://onmipa.filzabuana.id/onmipa/2025-wilayah/",
+        "method": "Third-party HTML transcription",
+        "finding": "Filzabuana transcript uses expanded sum rather than sigma notation.",
+        "limitation": "Original contest document not verified; keep pending_comparison."
+      }
     },
     "onmipa-2026-w-h1-i1": {
       "status": "pending_comparison",
@@ -547,7 +582,14 @@
       "competition": "ON-MIPA",
       "year": 2026,
       "number": "Hari 1, Isian 1",
-      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/"
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
+        "method": "Third-party HTML transcription",
+        "finding": "Filzabuana transcript uses fill-in blank, not imperative.",
+        "limitation": "Original contest document not verified; keep pending_comparison."
+      }
     },
     "onmipa-2026-w-h1-i3": {
       "status": "pending_comparison",
@@ -555,7 +597,14 @@
       "competition": "ON-MIPA",
       "year": 2026,
       "number": "Hari 1, Isian 3",
-      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/"
+      "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
+      "secondaryComparison": {
+        "date": "2026-11-25",
+        "url": "https://onmipa.filzabuana.id/onmipa/2026-wilayah/",
+        "method": "Third-party HTML transcription",
+        "finding": "Filzabuana transcript gives a sequence of functions with a fill-in blank.",
+        "limitation": "Original contest document not verified; keep pending_comparison."
+      }
     },
     "ksnk-sd-2020-02": {
       "status": "pending_comparison",
@@ -3955,52 +4004,94 @@
       "sourceUrl": "https://www.simonmarais.org/uploads/8/2/3/5/82358688/smmc2025_paper_b.pdf"
     },
     "apmo-2025-apmo-2": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2025,
       "number": "Nomor 2",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Origin coordinates restored; narrative still differs."
+      }
     },
     "apmo-2025-apmo-3": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2025,
       "number": "Nomor 3",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Infinite sequence and constant definition restored; wording still differs."
+      }
     },
     "apmo-2025-apmo-5": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2025,
       "number": "Nomor 5",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Divisibility display and observation label restored; wording still differs."
+      }
     },
     "apmo-2026-apmo-1": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2026,
       "number": "Nomor 1",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Short statement restored to official wording."
+      }
     },
     "apmo-2026-apmo-2": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2026,
       "number": "Nomor 2",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Expanded cyclic sum restored; wording still differs."
+      }
     },
     "apmo-2026-apmo-3": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2026,
       "number": "Nomor 3",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Domain notation and iff typography restored; wording still differs."
+      }
     },
     "osnk-sma-2024-dasar-03": {
       "status": "pending_comparison",
@@ -4980,68 +5071,124 @@
       }
     },
     "apmo-2024-apmo-1": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2024,
       "number": "Nomor 1",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Explicit Y distinct from X was missing; restored."
+      }
     },
     "apmo-2024-apmo-2": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2024,
       "number": "Nomor 2",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Definition of k-knight and sequence of moves compressed; mathematical detail restored, prose still differs."
+      }
     },
     "apmo-2024-apmo-4": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2024,
       "number": "Nomor 4",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Explicit index bounds restored."
+      }
     },
     "apmo-2024-apmo-5": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2024,
       "number": "Nomor 5",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Line incidence notation differed."
+      }
     },
     "apmo-2025-apmo-1": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2025,
       "number": "Nomor 1",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Original projection construction and final question rephrased."
+      }
     },
     "apmo-2025-apmo-4": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2025,
       "number": "Nomor 4",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2025_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Two bullet rules restored structurally; wording still differs."
+      }
     },
     "apmo-2026-apmo-4": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2026,
       "number": "Nomor 4",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "British spelling restored; wording still differs."
+      }
     },
     "apmo-2026-apmo-5": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "APMO",
       "year": 2026,
       "number": "Nomor 5",
-      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf"
+      "sourceUrl": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.apmo-official.org/static/problems/apmo2026_prb.pdf",
+        "page": 1,
+        "method": "Official PDF text and screenshot compared",
+        "finding": "Grid notation and two numbered conditions restored; wording still differs."
+      }
     },
     "iymc-2019-qr-c": {
       "status": "pending_comparison",
@@ -7256,6 +7403,10 @@
     "IMO": {
       "source": "https://www.imo-official.org/problems/",
       "status": "Official public problem archive verified; permission for full online reproduction not established."
+    },
+    "APMO": {
+      "source": "https://www.apmo-official.org/",
+      "status": "Official PDFs allow public discussion after release; full reproduction permission not established."
     }
   }
 }
