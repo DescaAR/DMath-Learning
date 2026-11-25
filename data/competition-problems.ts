@@ -12,7 +12,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tiga kotak berisi seluruhnya 48 kelereng. Lima kelereng dipindahkan dari kotak pertama ke kotak kedua, kemudian tiga kelereng dipindahkan dari kotak kedua ke kotak ketiga. Setelah kedua pemindahan, ketiga kotak berisi sama banyak kelereng. Tentukan isi setiap kotak sebelum pemindahan.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -24,7 +25,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tersedia lima kartu bernomor 1, 2, 3, 4, dan 5. Tiga kartu berbeda dipilih dan disusun berjajar. Nomor kartu tengah harus lebih besar daripada kedua nomor di sampingnya, sedangkan jumlah kedua nomor di sampingnya harus genap. Berapa banyak susunan yang mungkin?",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -33,10 +35,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Keliling papan setelah enam ubin dilepas",
-    "prompt": "Papan persegi terdiri atas 36 ubin persegi berukuran $1\\text{ cm}\\times1\\text{ cm}$, tersusun dalam enam baris dan enam kolom. Empat ubin di sudut dilepas. Dua ubin lain, yaitu ubin pada baris pertama kolom ketiga dan baris keenam kolom keempat, juga dilepas. Tentukan luas dan keliling bangun yang tersisa.",
+    "prompt": "Suatu papan persegi tersusun atas $36$ ubin persegi bersisi $1$ cm dalam susunan enam baris dan enam kolom. Empat ubin di sudut dilepas, kemudian ubin pada baris pertama kolom ketiga dan baris keenam kolom keempat juga dilepas. Tentukan luas dan keliling bangun yang tersisa.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -45,10 +48,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Kode dua angka dengan dua pembagian",
-    "prompt": "Suatu kode merupakan bilangan dua angka. Jika dibagi 4, sisanya 1. Jika dibagi 5, sisanya 2. Jumlah kedua angkanya adalah 10. Tentukan kode tersebut.",
+    "prompt": "Suatu kode merupakan bilangan bulat positif dua digit. Jika dibagi $4$, sisanya $1$. Jika dibagi $5$, sisanya $2$. Jumlah kedua digitnya adalah $10$. Tentukan kode tersebut.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -57,10 +61,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Pembagi polinomial pada bilangan asli",
-    "prompt": "Tentukan semua bilangan asli $n$ sedemikian sehingga $n+1$ membagi $n^2+5n+12$. Buktikan bahwa daftar yang diperoleh lengkap.",
+    "prompt": "Tentukan semua bilangan bulat positif $n$ sedemikian sehingga $n+1$ membagi $n^2+5n+12$. Buktikan bahwa tidak ada solusi lain.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -72,7 +77,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tiga bilangan real positif $x,y,z$ memenuhi $x+y+z=9$, $xy+yz+zx=26$, dan $xyz=24$. Tanpa menebak ketiga bilangan, tentukan himpunan $\\{x,y,z\\}$ serta nilai $x^3+y^3+z^3$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -81,10 +87,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Pemilihan titik pada segi delapan",
-    "prompt": "Pada delapan titik sudut segi delapan beraturan, dipilih tepat tiga titik. Tidak ada dua titik terpilih yang bertetangga maupun saling berhadapan. Berapa banyak himpunan tiga titik yang memenuhi kedua syarat?",
+    "prompt": "Dari delapan titik sudut segi delapan beraturan, dipilih tepat tiga titik. Tidak ada dua titik terpilih yang merupakan ujung dari sisi yang sama atau yang saling berhadapan. Tentukan banyak himpunan tiga titik yang memenuhi kedua syarat.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -96,7 +103,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Persegi panjang $ABCD$ memiliki $AB=12$ dan $BC=8$. Titik $P,Q,R$ masing-masing terletak pada $AB,BC,CD$ dengan $AP=3$, $BQ=2$, dan $CR=4$. Tentukan luas segitiga $PQR$ dengan memanfaatkan luas bangun-bangun di luar segitiga tersebut.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -108,7 +116,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $a,b,c$ merupakan bilangan real positif dengan $a+b+c=1$. Tentukan supremum dari $$\\frac{(a-b)^2}{a+b}+\\frac{(b-c)^2}{b+c}+\\frac{(c-a)^2}{c+a}.$$ Selidiki apakah supremum tersebut dapat dicapai.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -120,7 +129,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Suatu lintasan dari $(0,0)$ ke $(5,5)$ menggunakan langkah $(1,0)$ atau $(0,1)$ dan tidak pernah berada di atas garis $y=x$. Berapa banyak lintasan yang melalui tepat satu titik pada garis $y=x$ selain titik awal dan titik akhir?",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -132,7 +142,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan semua bilangan bulat positif $n$ sehingga $2^n-1$ membagi $3\\cdot 2^{2n}+5\\cdot 2^n+7$. Buktikan kelengkapan jawaban tanpa memeriksa nilai $n$ satu per satu.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -144,7 +155,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Segitiga $ABC$ siku-siku di $A$, dengan $AB=10$ dan $AC=12$. Titik $P$ pada $AB$ dan titik $Q$ pada $AC$ memenuhi $BP+CQ=12$. Tentukan luas maksimum segitiga $APQ$ dan posisi kedua titik saat maksimum dicapai.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -153,10 +165,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Laju asimtotik barisan rasional rekursif",
-    "prompt": "Diketahui $a_1>0$ dan $a_{n+1}=\\frac{a_n}{1+a_n^2}$ untuk setiap $n\\in\\mathbb N$. Buktikan bahwa $\\lim_{n\\to\\infty}\\sqrt n\\,a_n=\\frac{1}{\\sqrt2}$, tanpa mengasumsikan terlebih dahulu laju konvergensi barisan $(a_n)$.",
+    "prompt": "Diketahui $a_1>0$ dan $a_{n+1}=\\frac{a_n}{1+a_n^2}$ untuk setiap bilangan bulat positif $n$. Buktikan bahwa $$\\lim_{n\\to\\infty}\\sqrt n\\,a_n=\\frac{1}{\\sqrt2}.$$",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -168,7 +181,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $A$ merupakan matriks real berordo $n$ yang memenuhi $A^2+A^{\\mathsf T}=I_n$. Buktikan bahwa $A$ simetris. Kemudian, tentukan seluruh kemungkinan nilai eigen $A$ dan karakterisasikan seluruh matriks yang memenuhi persamaan tersebut.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -180,7 +194,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $G$ merupakan grup berhingga berorde ganjil dan $a\\in G$. Buktikan bahwa pemetaan $T_a:G\\to G$ dengan $T_a(x)=xax$ merupakan bijeksi. Nyatakan $T_a^{-1}(y)$ secara eksplisit menggunakan $a,y$, dan $|G|$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -189,10 +204,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Kompleks",
     "difficulty": 5,
     "title": "Modulus konstan pada akar satuan",
-    "prompt": "Misalkan $n\\ge1$ dan $P\\in\\mathbb C[z]$ merupakan polinomial tak nol berderajat paling tinggi $n$. Diketahui bahwa $|P(z)|$ bernilai sama pada seluruh akar persamaan $z^{2n+1}=1$. Buktikan bahwa $P(z)=cz^k$ untuk suatu $c\\in\\mathbb C\\setminus\\{0\\}$ dan $0\\le k\\le n$.",
+    "prompt": "Misalkan $n\\ge1$ merupakan bilangan bulat dan $P\\in\\mathbb C[z]$ merupakan polinomial tak nol dengan $\\deg P\\le n$. Diketahui bahwa $|P(z)|$ bernilai sama pada seluruh akar persamaan $z^{2n+1}=1$. Buktikan bahwa $P(z)=cz^k$ untuk suatu $c\\in\\mathbb C\\setminus\\{0\\}$ dan $k\\in\\{0,1,\\ldots,n\\}$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -237,10 +253,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 3,
     "title": "Tiga bilangan dari putaran angka",
-    "prompt": "Tiga angka berbeda $a,b,c$ berada di antara 1 dan 9. Dibentuk tiga bilangan dua angka $\\overline{ab},\\overline{bc},\\overline{ca}$. Jumlah ketiganya 132. Bilangan $\\overline{ab}$ lebih besar 22 daripada $\\overline{bc}$, dan $a$ merupakan angka terbesar. Tentukan ketiga bilangan tersebut.",
+    "prompt": "Tiga digit berbeda $a,b,c$ dipilih dari $\\{1,2,\\ldots,9\\}$. Dibentuk tiga bilangan dua digit $\\overline{ab}$, $\\overline{bc}$, dan $\\overline{ca}$. Jumlah ketiganya adalah $132$, bilangan $\\overline{ab}$ lebih besar $22$ daripada $\\overline{bc}$, dan $a$ merupakan digit terbesar di antara $a,b,c$. Tentukan ketiga bilangan tersebut.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -249,10 +266,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Bendera dengan dua warna bersebelahan",
-    "prompt": "Empat posisi berjajar akan diisi dengan tepat dua bendera merah, satu bendera biru, dan satu bendera hijau. Bendera biru tidak boleh bersebelahan dengan bendera hijau, sedangkan kedua bendera merah harus bersebelahan. Berapa banyak susunan warna yang mungkin?",
+    "prompt": "Empat posisi berjajar diisi dengan tepat dua bendera merah, satu bendera biru, dan satu bendera hijau. Kedua bendera merah harus bersebelahan, sedangkan bendera biru dan hijau tidak boleh bersebelahan. Jika bendera dengan warna yang sama tidak dibedakan, tentukan banyak susunan warna yang mungkin.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -261,10 +279,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Persegi yang tidak memuat ubin hilang",
-    "prompt": "Sebuah papan $4\\times4$ tersusun dari 16 ubin persegi satuan. Ubin pada baris kedua kolom kedua dilepas. Berapa banyak persegi dengan sisi sejajar tepi papan yang masih dapat dibentuk seluruhnya dari ubin yang tersisa? Hitung persegi dari semua ukuran.",
+    "prompt": "Papan berukuran $4\\times4$ tersusun atas $16$ ubin persegi satuan. Ubin pada baris kedua kolom kedua dilepas. Tentukan banyak persegi dari semua ukuran yang merupakan gabungan utuh ubin yang tersisa.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -276,7 +295,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tiga lampu berkedip setiap 4, 6, dan 10 detik. Ketiganya berkedip bersamaan pada detik ke-0. Dari detik ke-1 sampai detik ke-60, berapa banyak detik ketika tepat satu lampu berkedip?",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -288,7 +308,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan semua pasangan terurut bilangan bulat positif $(x,y)$ yang memenuhi $xy=2x+2y+12$. Kemudian, tentukan pasangan yang meminimumkan $x^2+y^2$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -297,10 +318,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 3,
     "title": "Jabat tangan antara dua kelompok",
-    "prompt": "Delapan peserta terbagi ke dalam dua kelompok, masing-masing beranggotakan empat orang. Setiap peserta berjabat tangan dengan tepat tiga orang, dan tidak ada jabat tangan di dalam kelompok yang sama. Buktikan bahwa setiap peserta pada kelompok pertama memiliki tepat satu peserta pada kelompok kedua yang tidak berjabat tangan dengannya. Berapa banyak pola jabat tangan berbeda jika seluruh peserta dibedakan?",
+    "prompt": "Delapan peserta dibagi ke dalam dua kelompok yang telah ditentukan, masing-masing beranggotakan empat orang. Setiap peserta berjabat tangan dengan tepat tiga orang dari kelompok lain. Tidak ada jabat tangan di dalam kelompok yang sama, dan setiap pasangan berjabat tangan paling banyak sekali. (a) Buktikan bahwa setiap peserta pada kelompok pertama memiliki tepat satu peserta pada kelompok kedua yang tidak berjabat tangan dengannya. (b) Tentukan banyak pola jabat tangan berbeda jika seluruh peserta dibedakan.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -312,7 +334,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Persegi $ABCD$ memiliki panjang sisi 12. Titik $P$ pada $AB$ dan titik $Q$ pada $BC$ memenuhi $AP=BQ=x$, dengan $0<x<12$. Tentukan nilai $x$ jika luas segitiga $DPQ$ adalah 54 satuan luas. Buktikan bahwa tidak ada nilai lainnya.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -324,7 +347,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan semua bilangan bulat $n$ dengan $1\\le n\\le91$ sehingga $n^2+n+1$ habis dibagi 7 dan 13. Jelaskan mengapa tidak ada bilangan lain dalam rentang tersebut.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -336,7 +360,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan semua polinomial real $P$ yang memenuhi $P(0)=1$ dan $$P(x+1)-P(x)=3x^2+5x+4$$ untuk setiap $x\\in\\mathbb R$. Kemudian, tentukan apakah $P$ mempunyai tepat satu akar real.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -345,10 +370,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Subhimpunan dengan tepat satu pasangan berurutan",
-    "prompt": "Misalkan $n,k$ merupakan bilangan asli dengan $2\\le k\\le n$ dan $n\\ge2k-2$. Tentukan banyak himpunan bagian beranggota tepat $k$ dari $\\{1,2,\\ldots,n\\}$ yang memuat tepat satu pasangan bilangan berurutan. Dua pasangan seperti $(2,3)$ dan $(3,4)$ dihitung sebagai dua pasangan berbeda.",
+    "prompt": "Misalkan $n,k$ merupakan bilangan bulat positif dengan $2\\le k\\le n$ dan $n\\ge2k-2$. Tentukan banyak himpunan bagian $S$ dari $\\{1,2,\\ldots,n\\}$ dengan $|S|=k$ dan tepat satu indeks $i\\in\\{1,\\ldots,n-1\\}$ memenuhi $i,i+1\\in S$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -360,7 +386,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Tentukan semua pasangan bilangan bulat positif $(x,y)$ yang memenuhi $x^2-y^2=2x+4y+20$. Buktikan kelengkapan jawaban dengan faktorisasi bilangan bulat.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -372,7 +399,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Segitiga sama sisi $ABC$ mempunyai tinggi $h$. Untuk titik $P$ di dalam atau pada batas segitiga, misalkan $d_1,d_2,d_3$ berturut-turut jarak $P$ ke garis $AB,BC,CA$. Tentukan nilai minimum dan maksimum $d_1^2+d_2^2+d_3^2$ serta seluruh posisi $P$ yang mencapai kedua nilai tersebut.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -384,7 +412,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Untuk setiap $x\\in[0,1]$, diperhatikan deret fungsi $$\\sum_{n=0}^{\\infty}x^n(1-x)^2.$$ Tentukan fungsi jumlahnya pada seluruh $[0,1]$. Buktikan bahwa deret konvergen seragam, kemudian selidiki konvergensi seragam deret turunan dari fungsi-fungsi sukunya pada interval yang sama.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -393,10 +422,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Pasangan spektrum matriks antikomutatif",
-    "prompt": "Misalkan $A,B$ merupakan matriks real simetris berordo sama yang memenuhi $A^2+B^2=I$ dan $AB+BA=0$. Buktikan bahwa setiap nilai eigen $\\lambda$ dari $A$ dengan $-1<\\lambda<1$ memiliki multiplicitas yang sama dengan $-\\lambda$. Karakterisasikan peran $B$ pada ruang eigen terkait.",
+    "prompt": "Misalkan $A,B$ merupakan matriks real simetris berordo sama yang memenuhi $A^2+B^2=I$ dan $AB+BA=0$. Buktikan bahwa setiap nilai eigen $\\lambda$ dari $A$ dengan $-1<\\lambda<1$ memiliki multiplisitas yang sama dengan $-\\lambda$. Karakterisasikan pemetaan linear oleh $B$ antara kedua ruang eigen tersebut.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -405,10 +435,11 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 5,
     "title": "Serat pemetaan dari automorfisme involutif",
-    "prompt": "Misalkan $G$ merupakan grup berhingga dan $\\alpha:G\\to G$ merupakan automorfisme dengan $\\alpha^2=\\operatorname{id}_G$. Definisikan $F(x)=x^{-1}\\alpha(x)$ dan $H=\\{g\\in G\\mid\\alpha(g)=g\\}$. Buktikan bahwa setiap serat tak kosong dari $F$ merupakan koset kanan dari $H$, tentukan kardinalitas $F(G)$, dan buktikan bahwa $\\alpha(y)=y^{-1}$ untuk setiap $y\\in F(G)$.",
+    "prompt": "Misalkan $G$ merupakan grup berhingga dan $\\alpha:G\\to G$ merupakan automorfisme dengan $\\alpha^2=\\operatorname{id}_G$. Definisikan $F:G\\to G$ dan $H\\subseteq G$ melalui $$F(x)=x^{-1}\\alpha(x),\\qquad H=\\{g\\in G\\mid\\alpha(g)=g\\}.$$ (a) Buktikan bahwa $H$ merupakan subgrup dari $G$ dan setiap serat tak kosong dari $F$ berbentuk koset kanan $Hx$ untuk suatu $x\\in G$. (b) Tentukan kardinalitas $F(G)$. (c) Buktikan bahwa $\\alpha(y)=y^{-1}$ untuk setiap $y\\in F(G)$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -420,7 +451,8 @@ export const competitionProblems: CompetitionProblem[] = [
     "prompt": "Misalkan $G$ merupakan graf sederhana tak berarah dengan $n\\ge2$ titik. Untuk setiap dua titik berbeda $u,v$, terdapat tepat dua titik yang bertetangga dengan keduanya. Buktikan bahwa $G$ regular. Jika derajat setiap titik adalah $d$, buktikan pula bahwa $d(d-1)=2(n-1)$.",
     "source": {
       "kind": "original",
-      "label": "DMath Learning Proposed"
+      "label": "DMath Learning Proposed",
+      "note": "Soal orisinal DMath; hipotesis, keterdefinisian, dan keterpecahan diperiksa secara matematis. Tidak memerlukan pencocokan naskah kompetisi."
     }
   },
   {
@@ -726,7 +758,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 1",
       "url": "https://www.defantri.com/2026/03/soal-dan-pembahasan-osnk-2025-matematika-sd.html",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "note": "Isi matematis diperiksa terhadap salinan buku Kumpulan Soal OSN SD/MI 2025 terbitan Pusat Prestasi Nasional (hlm. 52), diunggah pada SlideShare; pilihan nomor 1 juga dicocokkan dengan cuplikan KawalTalenta. Redaksi mandiri."
     }
   },
   {
@@ -735,7 +767,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Kubus yang dicat",
-    "prompt": "Permukaan sebuah kubus dengan rusuk 4 cm dicat merah. Kubus tersebut dibagi menjadi kubus-kubus kecil dengan rusuk 1 cm. Berapa banyak kubus kecil yang mempunyai tepat dua sisi merah? Pilihan: A. 16; B. 24; C. 32; D. 48.",
+    "prompt": "Seluruh permukaan kubus berusuk $4$ cm dicat merah, kemudian kubus dipotong menjadi kubus-kubus kecil berusuk $1$ cm. Berapa banyak kubus kecil yang tepat dua sisinya berwarna merah? Pilihan: A. $16$; B. $24$; C. $32$; D. $48$",
     "source": {
       "kind": "competition",
       "label": "OSN-K SD 2025 — Nomor 3",
@@ -744,7 +776,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "OSN-K",
       "number": "Nomor 3",
       "url": "https://www.defantri.com/2026/03/soal-dan-pembahasan-osnk-2025-matematika-sd.html",
-      "note": "Redaksi Indonesia disusun ulang berdasarkan salinan publik pihak ketiga; belum dicocokkan dengan naskah asli."
+      "note": "Isi matematis diperiksa terhadap salinan buku Kumpulan Soal OSN SD/MI 2025 terbitan Pusat Prestasi Nasional (hlm. 53), diunggah pada SlideShare; pilihan nomor 1 juga dicocokkan dengan cuplikan KawalTalenta. Redaksi mandiri."
     }
   },
   {
@@ -1131,7 +1163,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 2,
     "title": "Operasi pecahan",
-    "prompt": "Evaluate $125\\%\\times\\frac25\\div0{,}25\\times1\\frac14\\div2{,}5$. Pilihan: A. $0{,}1$; B. $0{,}64$; C. $1$; D. $10$",
+    "prompt": "Hitung nilai $125\\%\\times\\frac25\\div0{,}25\\times1\\frac14\\div2{,}5$. Pilihan: A. $0{,}1$; B. $0{,}64$; C. $1$; D. $10$",
     "source": {
       "kind": "competition",
       "label": "OSN-K SD 2023 — Nomor 2",
