@@ -5876,7 +5876,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2013 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -5885,7 +5885,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Tiga digit terakhir kuadrat sempurna",
-    "prompt": "Determine all integers $x\\in[1,999]$ such that $x^2\\equiv111d\\pmod{1000}$ for some $d\\in\\{1,\\ldots,9\\}$.",
+    "prompt": "Find all $x$ with $1\\le x\\le999$ such that the last three digits of $x^2$ are all equal to the same nonzero digit.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5894,7 +5894,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2013 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -5912,7 +5912,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2013 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
     }
   },
   {
@@ -5930,7 +5930,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2015 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -5939,7 +5939,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 3,
     "title": "Panjang median segitiga",
-    "prompt": "In triangle $ABC$, $AC=13$, $AB=20$, and the altitude from $A$ to line $BC$ has length $12$. Let $M$ be the midpoint of $BC$. Determine every possible length of $AM$ and demonstrate that each is attainable.",
+    "prompt": "In triangle $ABC$, $AC=13$, $AB=20$, and the altitude from $A$ to $\\overleftrightarrow{BC}$ has length $12$. Let $M$ be the midpoint of $\\overline{BC}$. Determine every possible length of $AM$ and demonstrate that each is attainable.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5948,7 +5948,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2015 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -5957,7 +5957,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "FPB koefisien polinomial binomial",
-    "prompt": "Determine, with proof, every integer $n$ with $2\\le n\\le20$ for which the greatest common divisor of the coefficients of $(x+y)^n-x^n-y^n$ is exactly $3$.",
+    "prompt": "Find, with proof, all positive integers $n$ with $2\\le n\\le20$ such that the greatest common divisor of the coefficients of $(x+y)^n-x^n-y^n$ is equal to exactly $3$.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -5966,7 +5966,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2015 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 1; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -5984,7 +5984,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2015 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -5993,7 +5993,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Pencacahan matriks dengan hasil kali tetap",
-    "prompt": "Fill a $3\\times3$ grid with integers, allowing negative entries, so that the product along each row and each column equals $20$. One admissible grid is $$\\begin{pmatrix}1&-5&-4\\\\10&-2&-1\\\\2&2&5\\end{pmatrix}.$$ Count all admissible fillings.",
+    "prompt": "Fill a $3\\times3$ grid with integers, allowing negative entries, so that the product along each row and each column equals $20$. One admissible grid is $$\\begin{bmatrix}1&-5&-4\\\\10&-2&-1\\\\2&2&5\\end{bmatrix}.$$ Count all admissible fillings.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -6002,7 +6002,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2015 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -6020,7 +6020,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2015 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -8126,7 +8126,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2013 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -8135,7 +8135,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 4,
     "title": "Syarat garis bagi sudut segitiga",
-    "prompt": "Let $I$ and $X$ be distinct points of line $l_1$. Lines $l_2,l_3$ pass through $I$ with angles $\\alpha,\\beta$ indicated below. The segment $XY$ makes angle $\\gamma$ with $l_1$ and ends on $l_2$ at $Y$.\n\n[[FIGURE]]\n\nDetermine necessary and sufficient conditions on $\\alpha,\\beta,\\gamma$ for a triangle having side $XY$ and angle bisectors $l_1,l_2,l_3$.",
+    "prompt": "Let $I$ and $X$ be distinct points of line $l_1$. Lines $l_2,l_3$ pass through $I$ with angles $\\alpha,\\beta$ indicated below. The segment $XY$ makes angle $\\gamma$ with $l_1$ and ends on $l_2$ at $Y$.\n\nDetermine necessary and sufficient conditions on $\\alpha,\\beta,\\gamma$ for a triangle having side $XY$ and angle bisectors $l_1,l_2,l_3$.\n\n[[FIGURE]]",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8144,7 +8144,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2013 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
     }
   },
   {
@@ -8162,7 +8162,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2013 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
     }
   },
   {
@@ -8324,7 +8324,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "UMO 2014 — Nomor 1 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -8342,7 +8342,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "UMO 2014 — Nomor 2 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -8360,7 +8360,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "UMO 2014 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 1; wording differs; exact replacement pending."
     }
   },
   {
@@ -8369,7 +8369,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Iterasi daftar frekuensi bilangan",
-    "prompt": "Joel starts with an ordered list of nonnegative integers. Replace it by the frequencies of $0,1,2,\\ldots$ up to its largest entry, including zero frequencies. Repeat indefinitely. For example,\n\n$(0,0,0,2)\\longrightarrow(3,0,1)\\longrightarrow(1,1,0,1)\\longrightarrow(1,3)\\longrightarrow\\cdots$\n\nand\n\n$(0,0)\\longrightarrow(2)\\longrightarrow(0,0,1)\\longrightarrow(2,1)\\longrightarrow\\cdots.$\n\nDetermine every two-entry list $(m,n)$ that can recur infinitely often for some starting list.",
+    "prompt": "Joel starts with an ordered list of nonnegative integers. Replace it by the frequencies of $0,1,2,\\ldots$ up to its largest entry, including zero frequencies. Repeat indefinitely. For example,\n\n$$(0,0,0,2)\\longrightarrow(3,0,1)\\longrightarrow(1,1,0,1)\\longrightarrow(1,3)\\longrightarrow\\cdots$$\n\nand\n\n$$(0,0)\\longrightarrow(2)\\longrightarrow(0,0,1)\\longrightarrow(2,1)\\longrightarrow\\cdots.$$\n\nDetermine every two-entry list $(m,n)$ that can recur infinitely often for some starting list.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8378,7 +8378,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 4",
       "label": "UMO 2014 — Nomor 4 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
     }
   },
   {
@@ -8387,7 +8387,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Sistem persamaan bilangan real positif",
-    "prompt": "Determine all positive real triples $(x,y,z)$ satisfying $$xyz=1,\\qquad x^2+y^2+z^2=4x\\sqrt{yz}-2yz.$$",
+    "prompt": "Find all positive real numbers $x$, $y$, and $z$ that satisfy both of the following equations.\n\n$$xyz=1$$\n\n$$x^2+y^2+z^2=4x\\sqrt{yz}-2yz.$$",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8396,7 +8396,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "label": "UMO 2014 — Nomor 5 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: original statement verified against official PDF page 2; mathematical typesetting spacing normalized."
     }
   },
   {
@@ -8405,7 +8405,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Jumlah lintasan pada kisi segitiga",
-    "prompt": "Arrange $n$ rows of $2n$ equilateral triangles into a diamond, with southwest corner $A$ and northeast corner $B$. The drawing illustrates $n=3$, four permissible step directions, and one path.\n\n[[FIGURE]]\n\nA path goes from $A$ to $B$ by permitted adjacent steps, using no segment twice. Prove that the number of paths is an integer square for every positive integer $n$.",
+    "prompt": "Arrange $n$ rows of $2n$ equilateral triangles into a diamond, with southwest corner $A$ and northeast corner $B$. The drawing illustrates $n=3$, four permissible step directions, and one path.\n\nA path goes from $A$ to $B$ by permitted adjacent steps, using no segment twice. Prove that the number of paths is an integer square for every positive integer $n$.\n\n[[FIGURE]]",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8414,7 +8414,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 6",
       "label": "UMO 2014 — Nomor 6 · © UMO Committee",
       "url": "https://utahmath.org/doc/2014UtahMathOlympiad.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: compared against official PDF page 2; wording differs; exact replacement pending."
     }
   },
   {
