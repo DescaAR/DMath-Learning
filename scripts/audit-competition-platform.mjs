@@ -187,3 +187,7 @@ assert.equal(compactCompetitionMath("Diketahui\n\n$$\\begin{pmatrix}1&2\\\\3&4\\
 assert.equal(compactCompetitionMath("Hitung $x^2$. (a) Tentukan $y$."),"Hitung $x^2$. (a) Tentukan $y$.");
 assert.equal(compactCompetitionMath("Diketahui\n\n$$x=1$$\n\n."),"Diketahui $x=1$.");
 assert.match(workspace,/compactCompetitionMath\(value\)/);
+
+assert.equal(compactCompetitionMath("Tentukan nilai **minimal dan maksimal**."),"Tentukan nilai minimal dan maksimal.");
+assert.equal(compactCompetitionMath("**Petunjuk:** Tinjau $x**y$."),"Petunjuk: Tinjau $x**y$.");
+assert.equal(compactCompetitionMath("Suatu *catenary* terbalik."),"Suatu catenary terbalik.");
