@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-25",
+  "auditedRevision": "dac0a5f0496a52b315ec04c4e4191ee93c065dc4",
+  "scope": [
+    "data/competition-problems.ts",
+    "data/competition-source-audit.json"
+  ],
+  "counts": {
+    "total": 748,
+    "competition": 716,
+    "original": 32,
+    "byLevel": {
+      "SD": 42,
+      "SMP": 93,
+      "SMA": 414,
+      "Kuliah": 199
+    }
+  },
+  "checks": {
+    "duplicateIds": 0,
+    "duplicatePromptsAfterWhitespaceNormalization": 0,
+    "missingPromptTopicOrCompetitionNumber": 0,
+    "oddUnescapedDollarDelimiterCount": 0,
+    "unbalancedUnescapedBracesInMatchedMathSpans": 0,
+    "replacementOrUnexpectedControlCharacters": 0,
+    "competitionRecordsWithMismatchedCompetitionYearOrNumber": 0,
+    "orphanAuditRecords": 0,
+    "competitionSourceUrlsWithoutHttpScheme": 0
+  },
+  "sameCompetitionYearStageNumberAcrossDifferentLevels": [
+    [
+      "osnk-sd-2025-01",
+      "osnk-smp-2025-01"
+    ],
+    [
+      "osnk-sd-2026-05",
+      "osnk-sma-2026-05"
+    ],
+    [
+      "ksnk-sd-2020-02",
+      "ksnk-smp-2020-02"
+    ],
+    [
+      "osnk-sd-2023-01",
+      "osnk-smp-2023-01"
+    ]
+  ],
+  "limitations": [
+    "Structural checks only; delimiter and brace checks are not a full LaTeX parser or render test.",
+    "No new source-text or visual verification was performed; the prior supplied ZIP bytes could not be retrieved in this session.",
+    "No changes to competition prompts or strict source-audit statuses.",
+    "Live GitHub Pages rendering could not be independently confirmed."
+  ]
+}
