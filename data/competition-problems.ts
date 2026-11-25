@@ -235,15 +235,15 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Kompleks",
     "difficulty": 4,
     "title": "Bilangan kompleks pada lingkaran satuan",
-    "prompt": "Determine the complex pairs $(a,b)$ satisfying $$|a|=|b|=1,\\qquad a+b+a\\overline b\\in\\mathbb R.$$",
+    "prompt": "Determine all pairs $(a,b)\\in\\mathbb C\\times\\mathbb C$ satisfying\n\n$$|a|=|b|=1\\quad\\text{and}\\quad a+b+a\\overline b\\in\\mathbb R.$$",
     "source": {
       "kind": "competition",
       "label": "IMC 2024 — Hari 1, Nomor 1",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "note": "2026-11-25: short original statement verified against official PDF.",
       "stage": "IMC"
     }
   },
@@ -684,8 +684,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending.",
       "stage": "IMC"
     }
   },
@@ -702,8 +702,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription.",
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending.",
       "stage": "IMC"
     }
   },
@@ -1549,8 +1549,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2020,
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2020",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -1559,7 +1559,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Rank komutator dan trace",
-    "prompt": "Take real $n\\times n$ matrices $A,B$ satisfying $\\operatorname{rank}(AB-BA+I_n)=1$, with $I_n$ the identity matrix. Establish $$\\operatorname{tr}(ABAB)-\\operatorname{tr}(A^2B^2)=\\frac12n(n-1).$$ Here rank means the dimension of the column space and trace is the sum of diagonal entries.",
+    "prompt": "Take real $n\\times n$ matrices $A,B$ satisfying $\\operatorname{rk}(AB-BA+I)=1$, with $I$ the identity matrix. Establish $$\\operatorname{trace}(ABAB)-\\operatorname{trace}(A^2B^2)=\\frac12n(n-1).$$ Here rank means the dimension of the column space and trace is the sum of diagonal entries.",
     "source": {
       "kind": "competition",
       "label": "IMC 2020 — Hari 1, Nomor 2",
@@ -1567,8 +1567,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2020,
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2020",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -1585,8 +1585,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2020,
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2020",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -1721,7 +1721,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Ketaksamaan integral",
-    "prompt": "Suppose $f:[0,1]\\to(0,\\infty)$ is integrable and $f(x)f(1-x)=1$ for every $x\\in[0,1]$. Establish $$\\int_0^1 f(x)\\,dx\\ge1.$$",
+    "prompt": "Let $f:[0,1]\\to(0,\\infty)$ be an integrable function such that $f(x)\\cdot f(1-x)=1$ for all $x\\in[0,1]$. Prove that\n\n$$\\int_0^1 f(x)\\,dx\\ge1.$$",
     "source": {
       "kind": "competition",
       "label": "IMC 2022 — Hari 1, Nomor 1",
@@ -1730,7 +1730,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: short original statement verified against official PDF."
     }
   },
   {
@@ -1739,7 +1739,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Persamaan matriks dan transpos",
-    "prompt": "For a positive integer $n$, classify the real $n\\times n$ matrices $A$ whose eigenvalues are all real and for which $$A+A^k=A^{\\mathsf T}$$ for at least one integer $k\\ge n$. Here $A^{\\mathsf T}$ is the transpose of $A$.",
+    "prompt": "For a positive integer $n$, classify the real $n\\times n$ matrices $A$ whose eigenvalues are all real and for which $$A+A^k=A^T$$ for at least one integer $k\\ge n$. Here $A^T$ is the transpose of $A$.",
     "source": {
       "kind": "competition",
       "label": "IMC 2022 — Hari 1, Nomor 2",
@@ -1748,7 +1748,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -3887,7 +3887,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Cakupan garis singgung",
-    "prompt": "Let $P\\in\\mathbb R[x]$ have degree at least $2$. For each $x\\in\\mathbb R$, denote the tangent line at $(x,P(x))$ by $\\ell_x\\subseteq\\mathbb R^2$. (a) When $\\deg P$ is odd, establish $$\\bigcup_{x\\in\\mathbb R}\\ell_x=\\mathbb R^2.$$ (b) Decide whether some even-degree polynomial also has this property.",
+    "prompt": "Let $P\\in\\mathbb R[x]$ have degree at least $2$. For each $x\\in\\mathbb R$, denote the tangent line at $(x,P(x))$ by $\\ell_x\\subseteq\\mathbb R^2$.\n\n(a) When $\\deg P$ is odd, establish $$\\bigcup_{x\\in\\mathbb R}\\ell_x=\\mathbb R^2.$$\n\n(b) Decide whether some even-degree polynomial also has this property.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -3895,8 +3895,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2025 — Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -3905,7 +3905,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Batas tajam integral",
-    "prompt": "If $f\\in C^2(\\mathbb R)$, $f(-1)=f(1)=1$, and $\\int_{-1}^1 f(x)\\,dx=0$, establish $$\\int_{-1}^1 |f''(x)|^2\\,dx\\ge15$$ and characterize equality.",
+    "prompt": "If $f\\in C^2(\\mathbb R)$, $\\int_{-1}^1 f(x)\\,dx=0$ and $f(1)=f(-1)=1$, establish $$\\int_{-1}^1 (f''(x))^2\\,dx\\ge15$$ and characterize equality.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -3913,8 +3913,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2025 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -3931,8 +3931,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2025 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -3949,8 +3949,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2025 — Hari 1, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -3959,7 +3959,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 2,
     "title": "Identitas turunan pada titik antara",
-    "prompt": "Suppose $f\\in C^1((0,\\infty))$ and $0<a<b$ satisfy $f(a)=f(b)=k$. Establish the existence of $\\xi\\in(a,b)$ with $f(\\xi)-\\xi f'(\\xi)=k$.",
+    "prompt": "Suppose $f\\in C^1((0,\\infty))$ and $b>a>0$ satisfy $f(a)=f(b)=k$. Establish the existence of $\\xi\\in(a,b)$ with $$f(\\xi)-\\xi f'(\\xi)=k.$$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -3967,8 +3967,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2025 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -3977,7 +3977,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Himpunan bilangan bulat positif yang tertutup terhadap operasi",
-    "prompt": "Determine the nonempty subsets $M$ of the positive integers satisfying these two closure conditions: (a) $x\\in M\\implies 2x\\in M$; (b) $x,y\\in M$ and $x+y$ even imply $\\frac{x+y}{2}\\in M$.",
+    "prompt": "Determine the nonempty subsets $M$ of the positive integers satisfying these two closure conditions:\n\n(a) $x\\in M\\implies 2x\\in M$;\n\n(b) $x,y\\in M$ and $x+y$ even imply $\\frac{x+y}{2}\\in M$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -3985,8 +3985,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2025 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -3995,7 +3995,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 4,
     "title": "Nilai eigen matriks dengan simetri rotasi seperempat putaran",
-    "prompt": "For a real square matrix $A$, use $A^R$ for its counterclockwise rotation by $90^\\circ$. For example, $$\\begin{pmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{pmatrix}^{R}=\\begin{pmatrix}3&6&9\\\\2&5&8\\\\1&4&7\\end{pmatrix}.$$ Assuming $A=A^R$, establish that every complex eigenvalue $\\lambda$ of $A$ satisfies $\\operatorname{Re}\\lambda=0$ or $\\operatorname{Im}\\lambda=0$.",
+    "prompt": "For a real square matrix $A$, use $A^{\\mathsf R}$ for its counterclockwise rotation by $90^\\circ$. For example, $$\\begin{bmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{bmatrix}^{R}=\\begin{bmatrix}3&6&9\\\\2&5&8\\\\1&4&7\\end{bmatrix}.$$ Assuming $A=A^{\\mathsf R}$, establish that every complex eigenvalue $\\lambda$ of $A$ satisfies $\\operatorname{Re}\\lambda=0$ or $\\operatorname{Im}\\lambda=0$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4003,8 +4003,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2025 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4013,7 +4013,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Peluang",
     "difficulty": 5,
     "title": "Maksimum sampel acak tanpa pengembalian",
-    "prompt": "Starting with $\\mathbb Z_{>0}$, select and delete its $i$th smallest remaining member with probability $2^{-i}$ at each step. If $Y_n$ is the greatest of the first $n$ selected integers, prove $$\\mathbb E Y_n=\\sum_{i=1}^n\\frac{2^i}{2^i-1}.$$",
+    "prompt": "Starting with $\\mathbb Z_{>0}$, select and delete its $i$th smallest remaining member with probability $2^{-i}$ at each step. If $Y_n$ is the greatest of the first $n$ selected integers, prove $$\\mathbb E[Y_n]=\\sum_{i=1}^n\\frac{2^i}{2^i-1}.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4021,8 +4021,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2025 — Hari 2, Nomor 9",
-      "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4031,7 +4031,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Pencacahan asimtotik hasil kali kuadrat sempurna",
-    "prompt": "Set $$S_N=|\\{(a,b)\\in\\{1,\\ldots,N\\}^2:a(a+1)b(b+1)\\text{ is a square}\\}|.$$ Prove convergence of $S_N/N$ and determine its limit.",
+    "prompt": "Set $$S_N=|\\{(a,b)\\in\\{1,\\ldots,N\\}^2:(a^2+a)(b^2+b)\\text{ is a square}\\}|.$$ Prove convergence of $$\\lim_{N\\to\\infty}\\frac{S_N}{N}$$ and determine its limit.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4039,8 +4039,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2025 — Hari 2, Nomor 10",
-      "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4229,7 +4229,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Identitas fungsi lantai dengan akar berderajat genap",
-    "prompt": "Fix a positive even integer $a$. Determine all real $x$ for which $$\\left\\lfloor\\sqrt[a]{b^a+x}\\,b^{a-1}\\right\\rfloor=b^a+\\left\\lfloor\\frac xa\\right\\rfloor$$ holds for every positive integer $b$, where $\\lfloor t\\rfloor$ is the greatest integer not exceeding $t$.",
+    "prompt": "Fix a positive even integer $a$. Determine all real $x$ for which $$\\left\\lfloor\\sqrt[a]{b^a+x}\\cdot b^{a-1}\\right\\rfloor=b^a+\\left\\lfloorx/a\\right\\rfloor\\tag{1}$$ holds for every positive integer $b$, where $\\lfloor t\\rfloor$ is the greatest integer not exceeding $t$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4237,8 +4237,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2025 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2025",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4255,8 +4255,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2024 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4273,8 +4273,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2024 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4291,8 +4291,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2024 — Hari 1, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4301,7 +4301,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 4,
     "title": "Determinan pada identitas matriks",
-    "prompt": "For fixed $n\\ge1$, determine the set of possible $\\det(AB)$ with $A,B\\in GL_n(\\mathbb C)$ subject to $$A+B=I_n,\\qquad (A^2+B^2)(A^4+B^4)=A^5+B^5.$$",
+    "prompt": "For fixed $n\\ge1$, determine the set of possible $\\det(AB)$ with $A,B\\in GL_n(\\mathbb C)$ subject to $$A+B=I,\\qquad (A^2+B^2)(A^4+B^4)=A^5+B^5.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4309,8 +4309,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2024 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4319,7 +4319,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Batas limit barisan rekursif nonlinear",
-    "prompt": "Starting from $x_1=2,\\ x_2=4$, iterate $$x_{n+2}=3x_{n+1}-2x_n+\\frac{2^n}{x_n}\\quad(n\\ge1).$$ Establish existence of $L=\\lim_{n\\to\\infty}2^{-n}x_n$ and the bounds $(1+\\sqrt3)/2\\le L\\le3/2$.",
+    "prompt": "Starting from $x_1=2,\\ x_2=4$, iterate $$x_{n+2}=3x_{n+1}-2x_n+\\frac{2^n}{x_n}\\quad(n\\ge1).$$ Establish existence of $\\lim_{n\\to\\infty}\\frac{x_n}{2^n}$ and the bounds $$\\frac{1+\\sqrt3}{2}\\le\\lim_{n\\to\\infty}\\frac{x_n}{2^n}\\le\\frac32.$$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4327,8 +4327,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2024 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4337,7 +4337,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Paritas pencacahan matriks bilangan bulat",
-    "prompt": "Call an integer matrix $A=(a_{ij})$ nice when all four conditions hold: (a) its set of entries is $\\{1,\\ldots,2t\\}$ for some positive integer $t$; (b) its rows and columns are nondecreasing; (c) if $a_{ij}=a_{k\\ell}$, then $i=k$ or $j=\\ell$; (d) for each $s=1,\\ldots,2t-1$, some positions $(i,j),(k,\\ell)$ with $i\\ne k$ and $j\\ne\\ell$ have entries $s,s+1$, respectively. The two nice matrices of size $2\\times3$ are $$\\begin{pmatrix}1&1&1\\\\2&2&2\\end{pmatrix},\\qquad\\begin{pmatrix}1&1&3\\\\2&4&4\\end{pmatrix}.$$ Prove that, for all positive integers $m,n$, the number of nice $m\\times n$ matrices is even.",
+    "prompt": "Call an integer matrix $A=(a_{ij})$ nice when all four conditions hold: (i) its set of entries is $\\{1,\\ldots,2t\\}$ for some positive integer $t$; (ii) its rows and columns are nondecreasing: $a_{i,j}\\le a_{i,j+1}$ and $a_{i,j}\\le a_{i+1,j}$; (iii) if $a_{ij}=a_{k\\ell}$, then $i=k$ or $j=\\ell$; (iv) for each $s=1,\\ldots,2t-1$, some positions $(i,j),(k,\\ell)$ with $i\\ne k$ and $j\\ne\\ell$ have entries $s,s+1$, respectively. The two nice matrices of size $2\\times3$ are $$\\begin{pmatrix}1&1&1\\\\2&2&2\\end{pmatrix},\\qquad\\begin{pmatrix}1&1&3\\\\2&4&4\\end{pmatrix}.$$ Prove that, for all positive integers $m,n$, the number of nice $m\\times n$ matrices is even.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4345,8 +4345,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2024 — Hari 2, Nomor 9",
-      "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4355,7 +4355,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Kongruensi pembagi bilangan bebas kuadrat",
-    "prompt": "Call a positive integer $n$ almost prime if it is square-free and its positive divisors $1=d_1<\\cdots<d_k=n$ satisfy $$n\\mid\\left(\\sum_{i=1}^k x^{d_i}-kx\\right)\\qquad(x\\in\\mathbb Z).$$ Square-free means that no square $d^2$ with integer $d>1$ divides $n$. Suppose $r=2^{2^m}+1$ is a Fermat prime, where $m\\ge0$ is an integer, and an almost prime integer $n$ has a prime divisor $p$ with $p\\equiv1\\pmod r$. Establish $d_i\\equiv1\\pmod r$ for every $1\\le i\\le k$.",
+    "prompt": "Call a positive integer $n$ almost prime if it is square-free and its positive divisors $1=d_1<\\cdots<d_k=n$ satisfy $$n\\midx^{d_1}+x^{d_2}+\\cdots+x^{d_k}-kx\\qquad(x\\in\\mathbb Z).$$ Square-free means that no square $d^2$ with integer $d>1$ divides $n$. Suppose $r=2^{2^m}+1$ is a Fermat prime, where $m\\ge0$ is an integer, and an almost prime integer $n$ has a prime divisor $p$ with $p\\equiv1\\pmod r$. Establish $d_i\\equiv1\\pmod r$ for every $1\\le i\\le k$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4363,8 +4363,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2024 — Hari 2, Nomor 10",
-      "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2024",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4381,8 +4381,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2023 — Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4391,7 +4391,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 2,
     "title": "Perpangkatan matriks dengan identitas terkait",
-    "prompt": "Given $A,B,C\\in M_n(\\mathbb C)$ satisfying $A^2=B^2=C^2$ and $B^3-ABC=2I_n$, establish $A^6=I_n$.",
+    "prompt": "Given $A,B,C\\in M_n(\\mathbb C)$ satisfying $$A^2=B^2=C^2\\quad\\text{and}\\quad B^3=ABC+2I.$$ establish $A^6=I$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4399,8 +4399,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2023 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4409,7 +4409,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Polinomial multiplikatif dalam dua variabel real",
-    "prompt": "Classify $P\\in\\mathbb R[X,Y]$ for which $$P(x,y)P(z,t)=P(xz-yt,xt+yz)$$ identically.",
+    "prompt": "Find all polynomials $P$ in two variables with real coefficients satisfying the identity\n\n$$P(x,y)P(z,t)=P(xz-yt,xt+yz).$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4417,8 +4417,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2023 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "note": "2026-11-25: short original statement verified against official PDF."
     }
   },
   {
@@ -4435,8 +4435,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2023 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4453,8 +4453,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2023 — Hari 1, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4471,8 +4471,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2023 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4481,7 +4481,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Syarat universal pada turunan",
-    "prompt": "Set $\\mathcal V=\\{f\\in C([0,1]):f\\text{ is differentiable on }(0,1),\\ f(0)=0,\\ f(1)=1\\}$. Find the real parameters $\\alpha$ for which each $f\\in\\mathcal V$ admits $\\xi\\in(0,1)$ with $f'(\\xi)-f(\\xi)=\\alpha$.",
+    "prompt": "Set $V=\\{f\\in C([0,1]):f\\text{ is differentiable on }(0,1),\\ f(0)=0,\\ f(1)=1\\}$. Find the real parameters $\\alpha$ for which each $f\\inV$ admits $\\xi\\in(0,1)$ with $$f(\\xi)+\\alpha=f'(\\xi).$$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4489,8 +4489,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2023 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4499,7 +4499,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 4,
     "title": "Indeks Wiener dan Harary pada pohon",
-    "prompt": "Let $T$ be a tree (a connected simple graph without cycles) on $n$ vertices. For vertices $u,v$, let $d(u,v)$ count the edges on a shortest path connecting them. Define $$W(T)=\\sum_{\\substack{\\{u,v\\}\\subseteq V(T)\\\\u\\ne v}}d(u,v),\\qquad H(T)=\\sum_{\\substack{\\{u,v\\}\\subseteq V(T)\\\\u\\ne v}}\\frac1{d(u,v)}.$$ Establish $$W(T)H(T)\\ge\\frac{(n-1)^3(n+2)}4.$$",
+    "prompt": "Let $T$ be a tree (a connected simple graph without cycles) on $n$ vertices. For vertices $u,v$, let $d(u,v)$ count the edges on a shortest path connecting them. Define $$W(T)=\\sum_{\\substack{\\{u,v\\}\\subseteq V(T)\\\\u\\ne v}}d(u,v),\\qquad H(T)=\\sum_{\\substack{\\{u,v\\}\\subseteq V(T)\\\\u\\ne v}}\\frac1{d(u,v)}.$$ Establish $$W(T)\\cdot H(T)\\ge\\frac{(n-1)^3(n+2)}4.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4507,8 +4507,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2023 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4525,8 +4525,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2023 — Hari 2, Nomor 9",
-      "url": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4535,7 +4535,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Penyebut jumlah parsial deret eksponensial",
-    "prompt": "Write $\\sum_{j=0}^{n}1/j!=f_n/g_n$ in lowest terms with $g_n>0$. Decide whether $g_n>n^{0.999n}$ holds for at least one integer $n\\ge1$.",
+    "prompt": "Write $$1+\\frac1{1!}+\\frac1{2!}+\\cdots+\\frac1{n!}=\\frac{f(n)}{g(n)}$$ in lowest terms with $g(n)>0$. Decide whether $g(n)>n^{0.999n}$ holds for at least one integer $n\\ge1$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4543,8 +4543,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2023 — Hari 2, Nomor 10",
-      "url": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2023",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4553,7 +4553,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 2,
     "title": "Persamaan matriks linear dengan koefisien nilpoten",
-    "prompt": "Suppose $A\\in M_n(\\mathbb R)$ satisfies $A^3=0$. (a) Establish existence and uniqueness of a real $n\\times n$ matrix $X$ satisfying $$X+AX+XA^2=A.$$ (b) Give a formula for $X$ in terms of $A$.",
+    "prompt": "Let $A$ be a real $n\\times n$ matrix such that $A^3=0$.\n\n(a) Prove that there is a unique real $n\\times n$ matrix $X$ that satisfies the equation\n\n$$X+AX+XA^2=A.$$\n\n(b) Express $X$ in terms of $A$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4561,8 +4561,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2021 — Hari 1, Nomor 1",
-      "url": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2021",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+      "note": "2026-11-25: short original statement verified against official PDF."
     }
   },
   {
@@ -4571,7 +4571,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Peluang",
     "difficulty": 3,
     "title": "Invariansi peluang pengurutan",
-    "prompt": "Fix positive integers $n,k$ and take any nonnegative integer $a$. Choose a $k$-element subset $X$ of $\\{1,\\ldots,k+a\\}$ uniformly at random. Independently choose an $n$-element subset $Y$ of $\\{1,\\ldots,k+n+a\\}$ uniformly at random. Show that $\\mathbb P(\\min Y>\\max X)$ is independent of $a$.",
+    "prompt": "Fix positive integers $n,k$ and take any nonnegative integer $a$. Choose a $k$-element subset $X$ of $\\{1,\\ldots,k+a\\}$ uniformly at random. Independently choose an $n$-element subset $Y$ of $\\{1,\\ldots,k+n+a\\}$ uniformly at random. Show that $$\\mathbb P\\left(\\min(Y)>\\max(X)\\right)$$ is independent of $a$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4579,8 +4579,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2021 — Hari 1, Nomor 2",
-      "url": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2021",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4597,8 +4597,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2021 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2021",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4615,8 +4615,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2021 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2021",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4625,7 +4625,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Batas determinan dari solusi matriks simetris",
-    "prompt": "For $A\\in M_n(\\mathbb R)$, suppose every $m\\ge1$ admits a symmetric real matrix $B$ with $A^m=2021B-B^2$. Establish $|\\det A|\\le1$.",
+    "prompt": "For $A\\in M_n(\\mathbb R)$, suppose every $m\\ge1$ admits a symmetric real matrix $B$ with $$2021B=A^m+B^2.$$. Establish $|\\det A|\\le1$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4633,8 +4633,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 5",
       "label": "IMC 2021 — Hari 2, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2021",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4643,7 +4643,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Struktur Aljabar",
     "difficulty": 4,
     "title": "Ketakberadaan representasi permutasi setia",
-    "prompt": "For prime $p$, establish that $\\operatorname{GL}_2(\\mathbb F_p)$ does not embed as a subgroup of the symmetric group $S_p$.",
+    "prompt": "For prime $p$, establish that $\\operatorname{GL}_2(\\mathbb Z/p\\mathbb Z)$ does not embed as a subgroup of the symmetric group $S_p$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4651,8 +4651,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2021 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2021",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4669,8 +4669,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2021 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2021",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4687,8 +4687,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2021 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2021",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4705,8 +4705,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2022 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4715,7 +4715,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Bilangan kromatik graf pergeseran pada tripel",
-    "prompt": "Fix an integer $n>3$ and let $\\Omega$ consist of the three-element subsets of $\\{1,\\ldots,n\\}$. Let $m$ be the smallest number of colors needed to color $\\Omega$ so that $\\{a,b,c\\}$ and $\\{b,c,d\\}$ receive different colors whenever $1\\le a<b<c<d\\le n$. Establish $$\\frac{\\log\\log n}{100}\\le m\\le100\\log\\log n.$$",
+    "prompt": "Fix an integer $n>3$ and let $\\Omega$ consist of the three-element subsets of $\\{1,\\ldots,n\\}$. Let $m$ be the smallest number of colors needed to color $\\Omega$ so that $\\{a,b,c\\}$ and $\\{b,c,d\\}$ receive different colors whenever $1\\le a<b<c<d\\le n$. Establish $$\\frac1{100}\\log\\log n\\le m\\le100\\log\\log n.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4723,8 +4723,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2022 — Hari 1, Nomor 4",
-      "url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4741,8 +4741,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 5",
       "label": "IMC 2022 — Hari 2, Nomor 5",
-      "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4751,7 +4751,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Permutasi dengan jumlah hasil kali bersebelahan tertentu",
-    "prompt": "For each odd prime $p$, establish the existence of a permutation $(x_1,\\ldots,x_{p-1})$ of the nonzero residues modulo $p$ satisfying $$\\sum_{i=1}^{p-2}x_ix_{i+1}\\equiv2\\pmod p.$$",
+    "prompt": "For each odd prime $p$, establish the existence of a permutation $(x_1,\\ldots,x_{p-1})$ of the nonzero residues modulo $p$ satisfying $$x_1x_2+x_2x_3+\\cdots+x_{p-2}x_{p-1}\\equiv2\\pmod p.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4759,8 +4759,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2022 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4769,7 +4769,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 4,
     "title": "Batas rank matriks idempoten antikomutatif",
-    "prompt": "Suppose $A_1,\\ldots,A_k\\in M_n(\\mathbb C)$ with $A_i^2=A_i$ for each $i$ and $A_iA_j+A_jA_i=0$ for $i\\ne j$. Establish $$\\min_{1\\le i\\le k}\\operatorname{rank}(A_i)\\le\\frac nk.$$",
+    "prompt": "Suppose $A_1,\\ldots,A_k\\in M_n(\\mathbb C)$ with $A_i^2=A_i$ for each $i$ and $A_iA_j=-A_jA_i$ for $i\\ne j$. Establish $$\\min_{1\\le i\\le k}\\operatorname{rank}(A_i)\\le\\frac nk.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4777,8 +4777,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2022 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -4795,8 +4795,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2022 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -6065,7 +6065,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Aproksimasi politop konveks simetris",
-    "prompt": "Fix an integer $d\\ge2$. Prove that there is a constant $C(d)$ such that every origin-symmetric convex polytope $K\\subset\\mathbb R^d$ and every $0<\\varepsilon<1$ admit a convex polytope $L$ having at most $C(d)\\varepsilon^{1-d}$ vertices and satisfying $$(1-\\varepsilon)K\\subseteq L\\subseteq K.$$ Here a convex polytope with at most $m$ vertices is a convex hull of at most $m$ points with nonempty interior, $\\lambda K=\\{\\lambda x\\mid x\\in K\\}$, and origin symmetry means $-K=K$.",
+    "prompt": "Fix an integer $d\\ge2$. Prove that there is a constant $C(d)$ such that every origin-symmetric convex polytope $K\\subset\\mathbb R^d$ and every $0<\\varepsilon<1$ admit a convex polytope $L$ having at most $C(d)\\varepsilon^{1-d}$ vertices and satisfying $$(1-\\varepsilon)K\\subseteq L\\subseteq K.$$ Here a convex polytope with at most $m$ vertices is a convex hull of at most $m$ points with nonempty interior, $\\lambda K=\\{\\lambda x\\mid x\\in K\\}$, and origin symmetry means $(-1)K=K$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -6073,8 +6073,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2020 — Hari 1, Nomor 3",
-      "url": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2020",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -6083,7 +6083,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Karakterisasi fungsi positif melalui turunan",
-    "prompt": "Characterize the positive real-valued functions in $C^2(\\mathbb R)$ subject to the pointwise inequality $ff''-2(f')^2\\ge0$.",
+    "prompt": "Find all twice continuously differentiable functions $f:\\mathbb R\\to(0,+\\infty)$ satisfying\n\n$$f''(x)f(x)\\ge2(f'(x))^2$$\n\nfor all $x\\in\\mathbb R$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -6091,8 +6091,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 5",
       "label": "IMC 2020 — Hari 2, Nomor 5",
-      "url": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2020",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+      "note": "2026-11-25: short original statement verified against official PDF."
     }
   },
   {
@@ -6109,8 +6109,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2020 — Hari 2, Nomor 6",
-      "url": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2020",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -6127,8 +6127,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2020 — Hari 2, Nomor 7",
-      "url": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2020",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -6137,7 +6137,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 5,
     "title": "Limit jumlah binomial logaritmik",
-    "prompt": "Using natural logarithms, determine the asymptotic ratio $$\\lim_{n\\to\\infty}\\frac{\\sum_{k=1}^n(-1)^k\\binom nk\\ln k}{\\ln\\ln n}.$$",
+    "prompt": "Using natural logarithms, determine the asymptotic ratio $$\\lim_{n\\to\\infty}\\frac1{\\log\\log n}\\sum_{k=1}^n(-1)^k\\binom nk\\log k.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -6145,8 +6145,8 @@ export const competitionProblems: CompetitionProblem[] = [
       "stage": "IMC",
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2020 — Hari 2, Nomor 8",
-      "url": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2020",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -10943,7 +10943,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 2,
     "title": "Hasil kali tak hingga",
-    "prompt": "Calculate $$\\prod_{n=3}^{\\infty}\\frac{(n^3+3n)^2}{n^6-64}.$$",
+    "prompt": "Evaluate the product\n\n$$\\prod_{n=3}^{\\infty}\\frac{(n^3+3n)^2}{n^6-64}.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -10952,7 +10952,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 1",
       "label": "IMC 2019 — Hari 1, Nomor 1",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: short original statement verified against official PDF."
     }
   },
   {
@@ -10961,7 +10961,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 3,
     "title": "Sistem persamaan linear dengan digit tahun",
-    "prompt": "A four-digit integer $YEAR$ is very good when the following linear system in $x,y,z,w$ admits two or more solutions:\n\n$\\begin{aligned}Yx+Ey+Az+Rw&=Y,\\\\Rx+Yy+Ez+Aw&=E,\\\\Ax+Ry+Yz+Ew&=A,\\\\Ex+Ay+Rz+Yw&=R.\\end{aligned}$\n\nDetermine all very good years from 2001 through 2100, inclusive (the 21st century).",
+    "prompt": "A four-digit integer $YEAR$ is very good when the following linear system in $x,y,z,w$ admits two or more solutions:\n\n$$\\begin{aligned}Yx+Ey+Az+Rw&=Y,\\\\Rx+Yy+Ez+Aw&=E,\\\\Ax+Ry+Yz+Ew&=A,\\\\Ex+Ay+Rz+Yw&=R.\\end{aligned}$$\n\nDetermine all very good years from 2001 through 2100, inclusive (the 21st century).",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -10970,7 +10970,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 2",
       "label": "IMC 2019 — Hari 1, Nomor 2",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -10979,7 +10979,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Ketaksamaan integral",
-    "prompt": "Suppose $f:(-1,1)\\to\\mathbb R$ is twice differentiable and $2f'(x)+xf''(x)\\ge1$ throughout $(-1,1)$. Establish $$\\int_{-1}^{1}xf(x)\\,dx\\ge\\frac13.$$",
+    "prompt": "Suppose $f:(-1,1)\\to\\mathbb R$ is twice differentiable with\n\n$$2f'(x)+xf''(x)\\ge1\\quad\\text{for }x\\in(-1,1).$$\n\n Establish $$\\int_{-1}^{1}xf(x)\\,dx\\ge\\frac13.$$",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -10988,7 +10988,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 3",
       "label": "IMC 2019 — Hari 1, Nomor 3",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -10997,7 +10997,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Integrality barisan rekursif",
-    "prompt": "Construct $a_0,a_1,\\ldots$ using $a_0=1$, $a_1=2$, and $(n+3)a_{n+2}=(6n+9)a_{n+1}-na_n$ for $n\\ge0$. Prove integrality of every term.",
+    "prompt": "Construct $a_0,a_1,\\ldots$ using\n\n$$a_0=1,\\quad a_1=2,\\quad (n+3)a_{n+2}=(6n+9)a_{n+1}-na_n\\quad\\text{for }n\\ge0.$$ Prove integrality of every term.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -11006,7 +11006,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 4",
       "label": "IMC 2019 — Hari 1, Nomor 4",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -11024,7 +11024,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 1, Nomor 5",
       "label": "IMC 2019 — Hari 1, Nomor 5",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -11042,7 +11042,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 6",
       "label": "IMC 2019 — Hari 2, Nomor 6",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -11060,7 +11060,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 7",
       "label": "IMC 2019 — Hari 2, Nomor 7",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -11078,7 +11078,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 8",
       "label": "IMC 2019 — Hari 2, Nomor 8",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   },
   {
@@ -11087,7 +11087,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar Linear",
     "difficulty": 5,
     "title": "Persamaan matriks invertibel",
-    "prompt": "Classify positive integers $n$ admitting invertible real $n\\times n$ matrices $A,B$ with $AB-BA=B^2A$.",
+    "prompt": "Determine all positive integers $n$ for which there exist $n\\times n$ real invertible matrices $A$ and $B$ that satisfy $AB-BA=B^2A$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -11096,7 +11096,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 9",
       "label": "IMC 2019 — Hari 2, Nomor 9",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: short original statement verified against official PDF."
     }
   },
   {
@@ -11114,7 +11114,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Hari 2, Nomor 10",
       "label": "IMC 2019 — Hari 2, Nomor 10",
       "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "2026-11-25: official PDF compared; full wording replacement pending."
     }
   }
 ];

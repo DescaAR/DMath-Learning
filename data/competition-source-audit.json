@@ -147,12 +147,19 @@
       }
     },
     "imc-2024-1": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "unclear",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Short original wording and mathematical notation restored."
+      }
     },
     "sd-005": {
       "status": "original",
@@ -393,20 +400,34 @@
       "sourceUrl": "https://paggalih.github.io/olimpiade/onmipa-w-2024/"
     },
     "imc-2024-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2024-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "putnam-2024-a1": {
       "status": "pending_comparison",
@@ -819,28 +840,49 @@
       }
     },
     "imc-2020-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "unclear",
       "competition": "IMC",
       "year": 2020,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2020"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2020-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "unclear",
       "competition": "IMC",
       "year": 2020,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2020"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2020-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "unclear",
       "competition": "IMC",
       "year": 2020,
       "number": "Hari 1, Nomor 4",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2020"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "knmipa-2021-w-h1-i3": {
       "status": "pending_comparison",
@@ -899,20 +941,34 @@
       "sourceUrl": "https://onmipa.filzabuana.id/onmipa/2022-wilayah/"
     },
     "imc-2022-01": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "unclear",
       "competition": "IMC",
       "year": 2022,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Short original wording and mathematical notation restored."
+      }
     },
     "imc-2022-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "unclear",
       "competition": "IMC",
       "year": 2022,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "onmipa-2023-w-h1-i3": {
       "status": "pending_comparison",
@@ -2174,76 +2230,139 @@
       }
     },
     "imc-2025-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2025-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2025-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2025-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 1, Nomor 5",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2025-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2025-07": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 2, Nomor 7",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2025-08": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 2, Nomor 8",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2025-09": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 2, Nomor 9",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2025-10": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 2, Nomor 10",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2026-01": {
       "status": "exact_verified",
@@ -2396,260 +2515,484 @@
       }
     },
     "imc-2025-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2025,
       "number": "Hari 1, Nomor 4",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2025"
+      "sourceUrl": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2024-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2024-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 1, Nomor 4",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2024-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 1, Nomor 5",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2024-07": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 2, Nomor 7",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2024-08": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 2, Nomor 8",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2024-09": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 2, Nomor 9",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2024-10": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2024,
       "number": "Hari 2, Nomor 10",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2024"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2023-01": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2023-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2023-03": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Short original wording and mathematical notation restored."
+      }
     },
     "imc-2023-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 1, Nomor 4",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2023-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 1, Nomor 5",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2023-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2023-07": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 2, Nomor 7",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2023-08": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 2, Nomor 8",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2023-09": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 2, Nomor 9",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob9q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2023-10": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2023,
       "number": "Hari 2, Nomor 10",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob10q&section=problems&year=2023"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2023/IMC_2023_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2021-01": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2021,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob1q&section=problems&year=2021"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Short original wording and mathematical notation restored."
+      }
     },
     "imc-2021-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2021,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob2q&section=problems&year=2021"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2021-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2021,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2021"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2021-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2021,
       "number": "Hari 1, Nomor 4",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob4q&section=problems&year=2021"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2021-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2021,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2021"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2021-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2021,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2021"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2021-07": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2021,
       "number": "Hari 2, Nomor 7",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2021"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2021-08": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2021,
       "number": "Hari 2, Nomor 8",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2021"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2021/IMC_2021_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2022-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2022,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2022-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2022,
       "number": "Hari 1, Nomor 4",
-      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2022-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2022,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2022-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2022,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2022-07": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2022,
       "number": "Hari 2, Nomor 7",
-      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2022-08": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2022,
       "number": "Hari 2, Nomor 8",
-      "sourceUrl": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2022/IMC_2022_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "iymc-2019-qr-a": {
       "status": "pending_comparison",
@@ -3289,44 +3632,79 @@
       }
     },
     "imc-2020-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2020,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob3q&section=problems&year=2020"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2020-05": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2020,
       "number": "Hari 2, Nomor 5",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob5q&section=problems&year=2020"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Short original wording and mathematical notation restored."
+      }
     },
     "imc-2020-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2020,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob6q&section=problems&year=2020"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2020-07": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2020,
       "number": "Hari 2, Nomor 7",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob7q&section=problems&year=2020"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2020-08": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2020,
       "number": "Hari 2, Nomor 8",
-      "sourceUrl": "https://www.imc-math.org.uk/?item=prob8q&section=problems&year=2020"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2020/IMC_2020_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "cemc-waterloo-2025-gauss-grade-7-1": {
       "status": "pending_comparison",
@@ -6514,84 +6892,154 @@
       }
     },
     "imc-2019-01": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 1, Nomor 1",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Short original wording and mathematical notation restored."
+      }
     },
     "imc-2019-02": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 1, Nomor 2",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2019-03": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 1, Nomor 3",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2019-04": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 1, Nomor 4",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Source math notation/layout corrected; full wording still differs."
+      }
     },
     "imc-2019-05": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 1, Nomor 5",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_1_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2019-06": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 2, Nomor 6",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2019-07": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 2, Nomor 7",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2019-08": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 2, Nomor 8",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     },
     "imc-2019-09": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 2, Nomor 9",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Short original wording and mathematical notation restored."
+      }
     },
     "imc-2019-10": {
-      "status": "pending_comparison",
+      "status": "wording_differs",
       "previousMetadata": "restatement_recorded",
       "competition": "IMC",
       "year": 2019,
       "number": "Hari 2, Nomor 10",
-      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf"
+      "sourceUrl": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+      "comparison": {
+        "date": "2026-11-25",
+        "url": "https://www.imc-math.org.uk/archive/problems/2019/IMC_2019_Day_2_Questions.pdf",
+        "page": 1,
+        "method": "Official question PDF screenshot compared",
+        "finding": "Statement wording condensed or rephrased; exact replacement pending."
+      }
     }
   },
   "figureRecords": {
