@@ -43,6 +43,7 @@ const competitionFullNames: Readonly<Record<string, string>> = {
   "IMC UKMT": "Intermediate Mathematical Challenge",
   "SMC UKMT": "Senior Mathematical Challenge",
   "UMC UNDIP": "UNDIP's Mathematics Competition",
+  "UMO": "Utah Mathematical Olympiad",
   "OLMAT UNSOED": "Olimpiade Matematika Universitas Jenderal Soedirman",
   "OMITS": "Olimpiade Matematika ITS",
   "PEMNAS UB": "Pekan Matematika Nasional Universitas Brawijaya",
