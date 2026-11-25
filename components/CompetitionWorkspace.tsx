@@ -11,6 +11,19 @@ const link=(p:CompetitionProblem)=>"/problem-solving/"+p.id+"/";
 const difficulty=(p:CompetitionProblem)=>difficultyLabels[p.difficulty]||"—";
 const shortSource=(p:CompetitionProblem)=>p.source.label;
 const categoryOf=(p:CompetitionProblem)=>p.source.competition||"DMath Learning Proposed";
+const competitionFullNames: Readonly<Record<string, string>> = {
+  "APMO": "Asian Pacific Mathematical Olympiad",
+  "HMMT": "Harvard–MIT Mathematics Tournament",
+  "IMO": "International Mathematical Olympiad",
+  "IMC": "International Mathematics Competition for University Students",
+  "IMSO": "International Mathematics and Science Olympiad",
+  "KMNR": "Kompetisi Matematika Nalaria Realistik",
+  "LMNas UGM": "Lomba Matematika Nasional Universitas Gadjah Mada",
+  "OSN": "Olimpiade Sains Nasional",
+  "ON-MIPA": "Olimpiade Nasional Matematika dan Ilmu Pengetahuan Alam",
+  "Putnam": "William Lowell Putnam Mathematical Competition"
+};
+const competitionHeading = (name: string) => competitionFullNames[name] ? `${name} (${competitionFullNames[name]})` : name;
 const categoryOrder=(a:string,b:string)=>a==="DMath Learning Proposed"?1:b==="DMath Learning Proposed"?-1:a.localeCompare(b,"id");
 const levelHref=(l:Level)=>"/olimpiade-"+l.toLowerCase()+"/";
 const levelTitle=(l:Level)=>l==="Kuliah"?"Olimpiade Kuliah":levelMeta[l].title;
@@ -93,7 +106,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
    <div className="cmp-results">
 
     <div className="cmp-result-head"><h2>{level==="Semua"?"Semua soal":levelMeta[level as Level].title}</h2><span role="status">{filtered.length} soal ditemukan</span></div>
-    {groups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3>{g.name}</h3><span>{g.items.length} soal</span></div><div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
+    {groups.map(g=><section className="cmp-contest-group" key={g.name}><div className="cmp-contest-heading"><h3 style={{minWidth:0,overflowWrap:"break-word"}}>{competitionHeading(g.name)}</h3><span style={{flexShrink:0,whiteSpace:"nowrap"}}>{g.items.length} soal</span></div><div className="cmp-problem-list">{g.items.map(p=><ProblemCard p={p} key={p.id}/>)}</div></section>)}
     {!filtered.length&&<div className="cmp-empty"><h2>Belum ada soal sesuai filter</h2><p>Coba ubah jenjang, sumber, atau kata kunci.</p><button type="button" className="cmp-button cmp-secondary" onClick={reset}>Atur ulang filter</button></div>}
    </div>
   </div>
