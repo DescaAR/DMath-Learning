@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "activePackage": "osnp-sd-2024",
+  "packages": {
+    "osnp-sd-2024": {
+      "competition": "OSN",
+      "level": "SD",
+      "year": 2024,
+      "stage": "OSN-P",
+      "date": "2026-11-26",
+      "expectedCount": 20,
+      "expectedNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "format": "short_answer",
+      "durationMinutes": 60,
+      "officialFormatSource": "https://pusatprestasinasional.kemdikbud.go.id/uploads/lampiran_pengumuman/Informasi%20Peserta%20dan%20Pelaksanaan%20OSNP%20SD%20SMP.pdf",
+      "candidateSource": {
+        "indexUrl": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
+        "pdfUrl": "https://drive.google.com/file/d/1rfyNu66aFTJNWtU9d8maeWVC2UCb7gk3/view?usp=sharing",
+        "title": "Soal OSN SD Bidang Matematika Tingkat Propinsi (2024).pdf",
+        "status": "third_party_copy_text_read",
+        "observedNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "visualComparison": "pending",
+        "reproductionPermission": "not_confirmed",
+        "potentialFigureQuestions": [
+          5,
+          6,
+          7,
+          10,
+          13,
+          15
+        ]
+      },
+      "existing": [
+        {
+          "id": "osnp-sd-2024-01",
+          "number": 1
+        },
+        {
+          "id": "osnp-sd-2024-04",
+          "number": 4
+        },
+        {
+          "id": "osnp-sd-2024-18",
+          "number": 18
+        }
+      ],
+      "missingNumbers": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20
+      ],
+      "redactionComparison": {
+        "status": "differences_found_in_third_party_copy",
+        "numbers": [
+          1,
+          4,
+          18
+        ],
+        "officialOriginal": "pending"
+      },
+      "status": "incomplete_blocked_pending_original_and_reproduction_basis",
+      "nextStep": "Find organizer original or user-provided authorized copy; inspect diagrams and compare wording before one complete import. Do not mark verified or switch package.",
+      "publishedNewQuestions": 0
+    }
+  }
+}
