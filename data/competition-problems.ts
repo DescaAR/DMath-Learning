@@ -420,6 +420,278 @@ export const competitionProblems: CompetitionProblem[] = [
       "kind": "original",
       "label": "DMath Learning Proposed"
     }
+  },
+  {
+    "id": "osnk-sd-2024-01",
+    "level": "SD",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Penjumlahan kelipatan",
+    "prompt": "Susi menyusun kelipatan positif 2 dari yang terkecil, sedangkan Wati menyusun kelipatan positif 3 dengan cara yang sama. Tentukan jumlah suku ke-25 pada daftar Susi dan suku ke-20 pada daftar Wati. Pilihan: A. 100; B. 110; C. 115; D. 125.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SD 2024 — Nomor 1",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Kabupaten/Kota, 1",
+      "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-tahun-2024.html?m=0",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+    }
+  },
+  {
+    "id": "osnp-sd-2024-01",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Faktor bilangan berpangkat",
+    "prompt": "Tentukan bilangan bulat terbesar $n$ sehingga $3^n$ merupakan faktor dari $18^{10}$.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-P SD 2024 — Nomor 1",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Provinsi, 1",
+      "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+    }
+  },
+  {
+    "id": "osnp-sd-2024-04",
+    "level": "SD",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Keterbagian bilangan lima angka",
+    "prompt": "Bilangan lima angka memiliki bentuk $\\overline{a679b}$. Tentukan bilangan tersebut jika habis dibagi 72.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-P SD 2024 — Nomor 4",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Provinsi, 4",
+      "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+    }
+  },
+  {
+    "id": "osnp-sd-2024-18",
+    "level": "SD",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Pemilihan jenis roti",
+    "prompt": "Sebuah toko menyediakan delapan jenis roti. Anita hendak membeli lima roti yang jenisnya berbeda-beda. Dua jenis telah ia tentukan. Berapa banyak pilihan pembelian yang masih mungkin?",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-P SD 2024 — Nomor 18",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Provinsi, 18",
+      "url": "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+    }
+  },
+  {
+    "id": "osnk-smp-2024-09",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Jumlah empat bilangan berurutan",
+    "prompt": "Bilangan bulat positif $n$ disebut JUMPAT jika $1+2+\\cdots+n$ dapat dinyatakan sebagai jumlah empat bilangan bulat positif berurutan. Tentukan banyak bilangan JUMPAT yang lebih kecil dari 2024. Pilihan: A. 252; B. 253; C. 504; D. 505.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMP 2024 — Nomor 9",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Kabupaten/Kota, 9",
+      "url": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+    }
+  },
+  {
+    "id": "osnk-smp-2024-08",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Rasio hasil kali",
+    "prompt": "Misalkan $p,q,r,s$ merupakan bilangan real positif dengan $$p^2+q^2=r^2+s^2,\\qquad p^2+s^2-ps=q^2+r^2+qr.$$ Tentukan nilai $\\frac{pq+rs}{ps+qr}$. Pilihan: A. $\\frac23$; B. $\\frac22$; C. $\\frac33$; D. $\\frac32$.",
+    "source": {
+      "kind": "competition",
+      "label": "OSN-K SMP 2024 — Nomor 8",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Kabupaten/Kota, 8",
+      "url": "https://www.konsep-matematika.com/2025/11/solusi-osk-mat-smp-tahun-2024-nomor-1-10.html",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa. Pilihan B dan C sama nilainya pada salinan sumber."
+    }
+  },
+  {
+    "id": "osn-sma-2024-h1-01",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Sistem persamaan bentuk akar",
+    "prompt": "Tentukan semua pasangan bilangan real positif $(a,b)$ yang memenuhi $$\\begin{cases}\\sqrt a+\\sqrt b=6,\\\\ \\sqrt{a-5}+\\sqrt{b-5}=4.\\end{cases}$$",
+    "source": {
+      "kind": "competition",
+      "label": "OSN SMA 2024 — Hari 1, Nomor 1",
+      "competition": "OSN",
+      "year": 2024,
+      "number": "Nasional, Hari 1, 1",
+      "url": "https://www.aiairyn.com/2024/08/salinan-soal-osn-sma-2024-bidang.html",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+    }
+  },
+  {
+    "id": "imo-2024-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Keterbagian jumlah fungsi lantai",
+    "prompt": "Tentukan semua $\\alpha\\in\\mathbb R$ dengan sifat bahwa untuk setiap bilangan bulat positif $n$, berlaku $$n\\mid\\sum_{k=1}^{n}\\lfloor k\\alpha\\rfloor.$$ Notasi $\\lfloor x\\rfloor$ menyatakan bilangan bulat terbesar yang tidak melebihi $x$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2024 — Nomor 1",
+      "competition": "IMO",
+      "year": 2024,
+      "number": "1",
+      "url": "https://www.imo-official.org/problems/2024/",
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+    }
+  },
+  {
+    "id": "imo-2024-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "FPB perpangkatan",
+    "prompt": "Carilah pasangan bilangan bulat positif $(a,b)$ yang membuat barisan $\\bigl(\\gcd(a^n+b,b^n+a)\\bigr)_{n\\ge1}$ bernilai konstan mulai suatu indeks tertentu.",
+    "source": {
+      "kind": "competition",
+      "label": "IMO 2024 — Nomor 2",
+      "competition": "IMO",
+      "year": 2024,
+      "number": "2",
+      "url": "https://www.imo-official.org/problems/2024/",
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+    }
+  },
+  {
+    "id": "apmo-2024-03",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Ketaksamaan produk dan jumlah",
+    "prompt": "Untuk setiap bilangan bulat positif $n$ dan setiap pilihan $a_1,\\ldots,a_n>0$, buktikan bahwa $$\\sum_{i=1}^{n}\\frac{1}{2^i}\\left(\\frac{2}{1+a_i}\\right)^{2^i}\\ge\\frac{2}{1+a_1a_2\\cdots a_n}-\\frac{1}{2^n}.$$",
+    "source": {
+      "kind": "competition",
+      "label": "APMO 2024 — Nomor 3",
+      "competition": "APMO",
+      "year": 2024,
+      "number": "3",
+      "url": "https://www.apmo-official.org/static/problems/apmo2024_prb.pdf",
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+    }
+  },
+  {
+    "id": "onmipa-2024-w-h1-i1",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Gabungan dan irisan interval",
+    "prompt": "Untuk $n\\in\\mathbb N$ dengan $n\\ge1$, misalkan $I_n=\\left(1,1+\\frac1n\\right)$. Tentukan $\\bigcup_{n=1}^{\\infty}I_n$ dan $\\bigcap_{n=1}^{\\infty}I_n$.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA 2024 — Wilayah, Hari 1, Isian 1",
+      "competition": "ON-MIPA",
+      "year": 2024,
+      "number": "Wilayah, Hari 1, Isian 1",
+      "url": "https://onmipa.filzabuana.id/onmipa/2024-wilayah/",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+    }
+  },
+  {
+    "id": "onmipa-2024-w-h1-i3",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 3,
+    "title": "Elemen grup berorde ganjil",
+    "prompt": "Misalkan $G$ merupakan grup siklis berorde 2024. Tentukan banyak elemen $G$ yang memiliki orde ganjil.",
+    "source": {
+      "kind": "competition",
+      "label": "ON-MIPA 2024 — Wilayah, Hari 1, Isian 3",
+      "competition": "ON-MIPA",
+      "year": 2024,
+      "number": "Wilayah, Hari 1, Isian 3",
+      "url": "https://onmipa.filzabuana.id/onmipa/2024-wilayah/",
+      "note": "Redaksi Indonesia disusun ulang dari arsip publik pihak ketiga; naskah asli lengkap belum diperiksa."
+    }
+  },
+  {
+    "id": "imc-2024-03",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Kuadrat matriks biner",
+    "prompt": "Tentukan semua $n\\in\\mathbb Z_{>0}$ sehingga terdapat $A\\in\\{0,1\\}^{n\\times n}$ dengan $A^2=J_n$, dengan $J_n$ menyatakan matriks berordo $n$ yang seluruh entrinya 1.",
+    "source": {
+      "kind": "competition",
+      "label": "IMC 2024 — Hari 1, Nomor 3",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 1, 3",
+      "url": "https://imc-math.org.uk/archive/problems/2024/IMC_2024_Day_1_Questions.pdf",
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+    }
+  },
+  {
+    "id": "imc-2024-06",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "Puncak fungsi bernilai bulat",
+    "prompt": "Misalkan $f:\\mathbb Q\\to\\mathbb Z$ merupakan fungsi sebarang. Buktikan bahwa terdapat $a,b,c\\in\\mathbb Q$ dengan $a<b<c$ dan $f(b)\\ge\\max\\{f(a),f(c)\\}$.",
+    "source": {
+      "kind": "competition",
+      "label": "IMC 2024 — Hari 2, Nomor 6",
+      "competition": "IMC",
+      "year": 2024,
+      "number": "Hari 2, 6",
+      "url": "https://imc-math.org.uk/archive/problems/2024/IMC_2024_Day_2_Questions.pdf",
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+    }
+  },
+  {
+    "id": "putnam-2024-a1",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Persamaan Diophantine berpangkat",
+    "prompt": "Karakterisasikan semua bilangan bulat positif $n$ yang memungkinkan persamaan $$2a^n+3b^n=4c^n$$ mempunyai solusi $(a,b,c)\\in\\mathbb Z_{>0}^3$.",
+    "source": {
+      "kind": "competition",
+      "label": "Putnam 2024 — A1",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "A1",
+      "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf",
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+    }
+  },
+  {
+    "id": "putnam-2024-a2",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 5,
+    "title": "Komposisi polinomial",
+    "prompt": "Tentukan semua $p\\in\\mathbb R[x]$ sehingga terdapat $q\\in\\mathbb R[x]$ dengan identitas $$p(p(x))-x=(p(x)-x)^2q(x).$$",
+    "source": {
+      "kind": "competition",
+      "label": "Putnam 2024 — A2",
+      "competition": "Putnam",
+      "year": 2024,
+      "number": "A2",
+      "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Problems.pdf",
+      "note": "Redaksi Indonesia; naskah resmi tersedia melalui tautan sumber."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
