@@ -23,12 +23,38 @@ export function LevelCards(){
  </Link>)}</div>;
 }
 
+// Render legacy multiple-choice prompts without altering their mathematical source.
+function splitCompetitionPrompt(prompt: string) {
+ const marker = /\s+Pilihan\s*:\s*(?=A\.\s)/i.exec(prompt);
+ if (!marker) return null;
+ const entries = prompt.slice(marker.index + marker[0].length).split(/;\s*(?=[B-E]\.\s)/);
+ if (entries.length < 2 || !entries.every((entry, index) => entry.startsWith(String.fromCharCode(65 + index) + ". ") && entry.slice(3).trim())) return null;
+ return {
+  question: prompt.slice(0, marker.index).trim(),
+  options: entries.map((entry, index) => {
+   const value = entry.slice(3).trim();
+   return index === entries.length - 1 ? value.replace(/\.$/, "") : value;
+  }),
+ };
+}
+
+function CompetitionPrompt({ prompt }: { prompt: string }) {
+ const parsed = splitCompetitionPrompt(prompt);
+ if (!parsed) return <RichMath>{prompt}</RichMath>;
+ return <div>
+  <div><RichMath>{parsed.question}</RichMath></div>
+  <ol type="A" aria-label="Pilihan jawaban" style={{listStyleType:"upper-alpha",listStylePosition:"outside",paddingInlineStart:"1.65em",margin:"0.75em 0 0"}}>
+   {parsed.options.map((option, index) => <li key={index} style={{display:"list-item",paddingInlineStart:"0.3em",marginBlock:"0.3em",minWidth:0,overflowWrap:"anywhere"}}><RichMath>{option}</RichMath></li>)}
+  </ol>
+ </div>;
+}
+
 function ProblemCard({p,kind="list"}:{p:CompetitionProblem;kind?:"list"|"daily"|"related"}){
  return <article className={"cmp-problem-card cmp-problem-"+kind}>
   <div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div>
   <div className="cmp-problem-main">
    <div className="cmp-problem-heading"><h3><Link href={link(p)}>{p.title}</Link></h3>{kind==="daily"&&<span className="cmp-level-tag">{levelTitle(p.level)}</span>}</div>
-   <div className="cmp-question-preview"><RichMath>{p.prompt}</RichMath></div>
+   <div className="cmp-question-preview"><CompetitionPrompt prompt={p.prompt}/></div>
    <div className="cmp-problem-foot"><span>{kind!=="daily"&&<>{p.level}<span className="cmp-meta-dot">·</span></>}{shortSource(p)}</span><Link className="cmp-link-text" href={link(p)}>Lihat soal <span aria-hidden="true">→</span></Link></div>
   </div>
  </article>;
@@ -80,7 +106,7 @@ export function CompetitionProblemDetail({problem:p}:{problem:CompetitionProblem
   <nav className="cmp-breadcrumb" aria-label="Jejak navigasi"><Link href="/problem-solving/">Kumpulan Soal</Link><span>/</span><Link href={levelHref(p.level)}>{p.level}</Link><span>/</span><span>{p.id.toUpperCase()}</span></nav>
   <article className="cmp-detail">
    <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{levelTitle(p.level)}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1>{p.title}</h1></header>
-   <div className="cmp-main-prompt"><h2>Soal</h2><div><RichMath>{p.prompt}</RichMath></div></div>
+   <div className="cmp-main-prompt"><h2>Soal</h2><div><CompetitionPrompt prompt={p.prompt}/></div></div>
    <section className="cmp-source-panel" id="source"><h2>Sumber soal</h2><p>{p.source.label}</p>{p.source.url&&<a href={p.source.url} target="_blank" rel="noopener noreferrer" className="cmp-link-text">Lihat sumber ↗</a>}</section>
   </article>
   <div className="cmp-back"><Link href={levelHref(p.level)} className="cmp-button cmp-secondary">← Kembali ke kumpulan soal</Link></div>
