@@ -245,13 +245,13 @@ body{background:var(--cmp-background)}
 .cmp-subquestion-label{font-weight:500;white-space:nowrap}
 .cmp-answer-options{list-style:upper-alpha outside;padding-inline-start:1.8em;margin:.7em 0 0}
 .cmp-answer-options>li{display:list-item;margin:.25em 0;padding-inline-start:.25em;min-width:0}
-.cmp-question .math-block{display:block;margin:.6em 0;padding:.35em 0;max-width:100%;overflow-x:auto;overflow-y:hidden;border:0;border-radius:0;background:transparent;font-size:1em;white-space:normal}
-.cmp-question .math-block .katex-display{overflow:visible;margin:.25em 0;padding:0}
+.cmp-question .math-block{display:block;margin:.35em 0;padding:.1em 0;max-width:100%;overflow-x:auto;overflow-y:hidden;border:0;border-radius:0;background:transparent;font-size:1em;white-space:normal}
+.cmp-question .math-block .katex-display{overflow:visible;margin:.1em 0;padding:0}
 .cmp-question .math-inline,.cmp-question .math-inline .katex{white-space:normal}
 .cmp-question .katex .base{white-space:nowrap;overflow-wrap:normal}
 .cmp-question .katex{font-size:1.02em}
 .cmp-question-preview,.cmp-main-prompt{overflow-wrap:anywhere;min-width:0}
-@media(max-width:500px){.cmp-question .math-block{margin:.5em 0;padding:.25em 0}.cmp-subquestions>li{grid-template-columns:1.5em minmax(0,1fr)}}
+@media(max-width:500px){.cmp-question .math-block{margin:.3em 0;padding:.1em 0}.cmp-subquestions>li{grid-template-columns:1.5em minmax(0,1fr)}}
 
 /* Material chips replace descriptive problem titles; all statements remain unboxed. */
 .cmp-problem-heading{flex-direction:row;align-items:center;flex-wrap:wrap;gap:8px}

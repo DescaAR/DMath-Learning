@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { competitionProblems, levels, levelMeta, type CompetitionProblem, type Level } from "@/data/competition-problems";
 import { dailySchedule, dailyDates } from "@/data/competition-daily";
 import { RichMath } from "@/components/RichMath";
-import { splitCompetitionPrompt, splitSubquestions } from "@/lib/competition-prompt";
+import { splitCompetitionPrompt, splitSubquestions, compactCompetitionMath } from "@/lib/competition-prompt";
 import { materialOf } from "@/lib/competition-material";
 
 const difficultyLabels=["","Dasar","Menengah","Lanjutan","Sulit","Sangat Sulit"];
@@ -70,10 +70,10 @@ export function LevelCards(){
 
 function QuestionProse({value,problemId,compact=false}:{value:string;problemId?:string;compact?:boolean}){
  const chunks=value.split("[[FIGURE]]");
- if(chunks.length===1)return <RichMath className="cmp-question-prose">{value}</RichMath>;
+ if(chunks.length===1)return <RichMath className="cmp-question-prose">{compactCompetitionMath(value)}</RichMath>;
  return <>{chunks.map((chunk,i)=><div key={i}>
   {i>0&&problemId&&<GeometryFigure id={problemId} compact={compact}/>}
-  {chunk.trim()&&<RichMath className="cmp-question-prose">{chunk.trim()}</RichMath>}
+  {chunk.trim()&&<RichMath className="cmp-question-prose">{compactCompetitionMath(chunk.trim())}</RichMath>}
  </div>)}</>;
 }
 function QuestionBody({prompt,problemId,compact=false}:{prompt:string;problemId?:string;compact?:boolean}){
@@ -96,7 +96,7 @@ export function CompetitionPrompt({ prompt, problemId, compact=false }: { prompt
   {problemId&&!prompt.includes("[[FIGURE]]")&&<GeometryFigure id={problemId} compact={compact}/>}
   {problemId==="ksn-smp-2021-07"&&<div style={{maxWidth:"100%",overflowX:"auto",margin:"1em 0"}}><table aria-label="Tabel tiga baris dan delapan kolom" style={{borderCollapse:"collapse",margin:"0 auto",minWidth:"min(320px,100%)"}}><tbody>{[0,1,2].map(r=><tr key={r}>{Array.from({length:8},(_,i)=><td key={i} style={{border:"1px solid currentColor",textAlign:"center",width:"2em",height:"2em",padding:"0.2em"}}>{r===0?i+1:" "}</td>)}</tr>)}</tbody></table></div>}
   {parsed&&<ol type="A" className="cmp-answer-options" aria-label="Pilihan jawaban">
-   {parsed.options.map((option,index)=><li key={index}><RichMath className="cmp-question-prose">{option}</RichMath></li>)}
+   {parsed.options.map((option,index)=><li key={index}><RichMath className="cmp-question-prose">{compactCompetitionMath(option)}</RichMath></li>)}
   </ol>}
  </div>;
 }

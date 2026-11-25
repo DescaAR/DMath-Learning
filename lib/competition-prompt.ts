@@ -24,3 +24,21 @@ export function splitSubquestions(prompt: string) {
  if(parts.some(p=>!p.text))return null;
  return {intro:prompt.slice(0,markers[0].index).trim(),parts};
 }
+
+// Presentation only: retain the archived question and all TeX tokens unchanged.
+// A short, single-line formula flows with the sentence; long or stacked math
+// remains a display block. Blank lines around display math are redundant.
+export function compactCompetitionMath(prompt: string): string {
+ const display = /([ \t\r\n]*)(?:\$\$([\s\S]+?)\$\$|\\\[([\s\S]+?)\\\])([ \t\r\n]*)/g;
+ return prompt.replace(display, (match, before: string, dollarTex: string | undefined, bracketTex: string | undefined, after: string, offset: number) => {
+  const tex = (dollarTex ?? bracketTex ?? "").trim();
+  const stacked = /\\(?:begin|end|substack|atop|over|cases|displaystyle)\b|\\\\/.test(tex) || /[\r\n]/.test(tex);
+  const approximateWidth = tex.replace(/\\(?:left|right|,|;|!|:)/g, "").replace(/\\[a-zA-Z]+/g, "X").replace(/[{}^_\s]/g, "").length;
+  const short = !stacked && approximateWidth <= 44 && tex.length <= 120 && !tex.includes("$");
+  if (!short) return "$$" + tex + "$$";
+  const left = before && offset > 0 ? " " : "";
+  const next = prompt[offset + match.length] ?? "";
+  const right = after && next && !/^[,.;:!?)]$/.test(next) ? " " : "";
+  return left + "$" + tex + "$" + right;
+ });
+}

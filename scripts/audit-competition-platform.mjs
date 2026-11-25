@@ -90,7 +90,7 @@ console.log("Competition platform audit passed:",competitionProblems.length,"pro
 
 const parserMod={exports:{}};
 new Function("exports","module",ts.transpileModule(read("lib/competition-prompt.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(parserMod.exports,parserMod);
-const {splitCompetitionPrompt,splitSubquestions}=parserMod.exports;
+const {splitCompetitionPrompt,splitSubquestions,compactCompetitionMath}=parserMod.exports;
 let choices=0,subparts=0;
 for(const p of competitionProblems){
  const parsed=splitCompetitionPrompt(p.prompt);
@@ -180,3 +180,10 @@ for(const year of [2019,2026]){
 const fidelity=JSON.parse(read("data/competition-source-audit.json"));
 assert.deepEqual(Object.keys(fidelity.records).sort(),competitionProblems.map(p=>p.id).sort(),"Every problem needs a source audit record");
 for(const p of competitionProblems){const r=fidelity.records[p.id];assert.equal(r.sourceUrl,p.source.url??null,p.id+" source URL changed; update audit record");assert.ok(["original","exact_verified","wording_differs","pending_comparison"].includes(r.status));assert.equal(r.status==="original",p.source.kind==="original");if(r.status==="exact_verified"||r.status==="wording_differs"){assert.ok(r.comparison?.url&&r.comparison?.page&&r.comparison?.date,p.id+" missing direct comparison evidence");}}
+
+const compactExample="Jika $P$ adalah himpunan semua titik yang terletak pada parabola\n\n$$x=y^2-2y+4,$$\n\ntentukan nilai minimal dari fungsi\n\n$$f(x,y)=x^2+y^2-2x-2y+2$$\n\npada $P$.";
+assert.equal(compactCompetitionMath(compactExample),"Jika $P$ adalah himpunan semua titik yang terletak pada parabola $x=y^2-2y+4,$ tentukan nilai minimal dari fungsi $f(x,y)=x^2+y^2-2x-2y+2$ pada $P$.");
+assert.equal(compactCompetitionMath("Diketahui\n\n$$\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$$\n\ndengan"),"Diketahui$$\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$$dengan");
+assert.equal(compactCompetitionMath("Hitung $x^2$. (a) Tentukan $y$."),"Hitung $x^2$. (a) Tentukan $y$.");
+assert.equal(compactCompetitionMath("Diketahui\n\n$$x=1$$\n\n."),"Diketahui $x=1$.");
+assert.match(workspace,/compactCompetitionMath\(value\)/);
