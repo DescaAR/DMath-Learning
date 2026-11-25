@@ -90,7 +90,7 @@ console.log("Competition platform audit passed:",competitionProblems.length,"pro
 
 const parserMod={exports:{}};
 new Function("exports","module",ts.transpileModule(read("lib/competition-prompt.ts"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(parserMod.exports,parserMod);
-const {splitCompetitionPrompt,splitSubquestions,compactCompetitionMath,smoothMNPair}=parserMod.exports;
+const {splitCompetitionPrompt,splitSubquestions,compactCompetitionMath,smoothMNPair,hideUnusedEquationTags}=parserMod.exports;
 let choices=0,subparts=0;
 for(const p of competitionProblems){
  const parsed=splitCompetitionPrompt(p.prompt);
@@ -210,8 +210,9 @@ new Function("exports","module",ts.transpileModule(read("lib/math-tokenizer.ts")
 const {tokenizeMath}=mathTokenizerModule.exports;
 let renderedFormulaCount=0;
 for(const p of competitionProblems){
- const parsed=splitCompetitionPrompt(p.prompt);
- const body=parsed?.question??p.prompt;
+ const visiblePrompt=hideUnusedEquationTags(p.prompt);
+ const parsed=splitCompetitionPrompt(visiblePrompt);
+ const body=parsed?.question??visiblePrompt;
  const sub=splitSubquestions(body);
  const chunks=[...(sub?[sub.intro,...sub.parts.map(x=>x.text)]:[body]),...(parsed?.options??[])].flatMap(x=>x.split("[[FIGURE]]"));
  for(const chunk of chunks){
@@ -252,3 +253,16 @@ const adjacentMath=compactCompetitionMath("Given $x\\in\\mathbb R$\n\n$$\\begin{
 assert.ok(adjacentMath.includes("$\n$$"),"Adjacent inline and display math need a separator");
 assert.deepEqual(tokenizeMath(adjacentMath).filter(t=>t.kind!=="text").map(t=>t.kind),["inline","display"]);
 console.log("Consecutive equation layout regression checks passed.");
+
+ 
+// Broad subject belongs beside the code; the material badge is specific.
+assert.match(workspace, /className="cmp-id">\{p\.id\.toUpperCase\(\)\}<\/span><span>\{p\.topic\}<\/span>/);
+assert.equal(materialOf(competitionProblems.find(p=>p.id==="imc-2025-04")),"Fungsi Lantai");
+assert.equal(materialOf(competitionProblems.find(p=>p.id==="imc-2025-05")),"Permutasi dan Pemetaan");
+const imcFloor=competitionProblems.find(p=>p.id==="imc-2025-04").prompt;
+assert.match(imcFloor,/\\tag\{1\}/);
+assert.doesNotMatch(hideUnusedEquationTags(imcFloor),/\\tag\{1\}/);
+const umc=competitionProblems.find(p=>p.id==="umc-undip-2022-final-02").prompt;
+assert.equal(hideUnusedEquationTags(umc),umc,"Referenced equation labels must be preserved");
+assert.match(workspace,/prompt=hideUnusedEquationTags\(prompt\)/);
+console.log("Subject and material hierarchy and equation-label checks passed.");
