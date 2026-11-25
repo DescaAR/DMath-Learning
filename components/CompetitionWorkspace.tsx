@@ -1325,6 +1325,11 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number}>> = {
  "sd-003":{alt:"Papan 6 kali 6 dengan ubin yang dilepas sesuai posisi dalam soal.",width:240},
  "sd-007":{alt:"Papan 4 kali 4 dengan ubin yang dilepas sesuai posisi dalam soal.",width:240},
  "ksnk-sd-2020-02":{alt:"Ilustrasi pola satu, dua, dan tiga meja segienam yang disambung, dengan kursi pada setiap sisi luar.",width:400},
+ "osn-sd-2006-i2":{alt:"Segitiga ABC dengan D pada AB; sudut ACD 43 derajat, DCB 29 derajat, ABC 48 derajat.",width:310},
+ "osn-sd-2006-i4":{alt:"Trapesium siku-siku ABCD dengan AB 16 cm, DC 10 cm, dan sudut A 45 derajat.",width:310},
+ "cemc-waterloo-2025-gauss-grade-7-11":{alt:"Coordinate plane with point R at (2, 6).",width:290},
+ "cemc-waterloo-2026-pascal-grade-9-12":{alt:"Coordinate plane with point P at (2, 3).",width:290},
+ "cemc-waterloo-2026-pascal-grade-9-16":{alt:"Four distinct collinear points in order P, Q, R, S; schematic, not to scale.",width:320},
 };
 function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
  const figure=geometryFigures[id];

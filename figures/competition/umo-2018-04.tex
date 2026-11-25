@@ -1,16 +1,16 @@
 \documentclass[tikz,border=4pt]{standalone}
 \begin{document}
 \begin{tikzpicture}[x=0.025cm,y=-0.025cm]
-\path[use as bounding box] (0,0) rectangle (280,210);
-\path[fill=none,draw=black,line width=0.78pt] (20,180) -- (70,30) -- (245,105) -- cycle;
-\path[fill=none,draw=black,line width=0.78pt] (60,60) rectangle (140,140);
-\draw[fill=none,draw=black,line width=0.78pt] (20,180) -- (60,140);
-\node[font=\fontsize{9.1}{11.2}\selectfont,inner sep=0pt] at (11,190) {X};
-\node[font=\fontsize{9.1}{11.2}\selectfont,inner sep=0pt] at (70,18) {Y};
-\node[font=\fontsize{9.1}{11.2}\selectfont,inner sep=0pt] at (259,105) {Z};
-\node[font=\fontsize{9.1}{11.2}\selectfont,inner sep=0pt] at (72,128) {A};
-\node[font=\fontsize{9.1}{11.2}\selectfont,inner sep=0pt] at (72,72) {B};
-\node[font=\fontsize{9.1}{11.2}\selectfont,inner sep=0pt] at (128,72) {C};
-\node[font=\fontsize{9.1}{11.2}\selectfont,inner sep=0pt] at (128,128) {D};
+\path[use as bounding box] (0,0) rectangle (310,215);
+\draw[black,line width=0.8pt,line join=round] (50,190) -- (100,40) -- (275,115) -- cycle;
+\draw[black,line width=0.8pt,line join=round] (90,150) -- (90,70) -- (170,70) -- (170,150) -- cycle;
+\draw[black,line width=0.8pt,line join=round] (50,190) -- (90,150);
+\node[font=\small,inner sep=0pt] at (40,199) {$X$};
+\node[font=\small,inner sep=0pt] at (100,26) {$Y$};
+\node[font=\small,inner sep=0pt] at (290,115) {$Z$};
+\node[font=\small,inner sep=0pt] at (101,139) {$A$};
+\node[font=\small,inner sep=0pt] at (102,81) {$B$};
+\node[font=\small,inner sep=0pt] at (158,81) {$C$};
+\node[font=\small,inner sep=0pt] at (158,139) {$D$};
 \end{tikzpicture}
 \end{document}

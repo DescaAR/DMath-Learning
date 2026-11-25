@@ -1,0 +1,19 @@
+\documentclass[tikz,border=4pt]{standalone}
+\begin{document}
+\begin{tikzpicture}[x=0.025cm,y=-0.025cm]
+\path[use as bounding box] (0,0) rectangle (340,95);
+\draw[black,line width=0.8pt,line join=round] (26,55) -- (315,55);
+\fill (35,55) circle[radius=2pt];
+\node[font=\small,inner sep=0pt] at (35,71) {$P$};
+\fill (99,55) circle[radius=2pt];
+\node[font=\small,inner sep=0pt] at (99,71) {$Q$};
+\fill (172,55) circle[radius=2pt];
+\node[font=\small,inner sep=0pt] at (172,71) {$R$};
+\fill (310,55) circle[radius=2pt];
+\node[font=\small,inner sep=0pt] at (310,71) {$S$};
+\draw[black,line width=0.4pt,line join=round] (35,48) -- (35,18) -- (172,18) -- (172,48);
+\node[font=\small,inner sep=0pt] at (103.5,9) {$8$};
+\draw[black,line width=0.4pt,line join=round] (99,62) -- (99,84) -- (310,84) -- (310,62);
+\node[font=\small,inner sep=0pt] at (204.5,92) {$15$};
+\end{tikzpicture}
+\end{document}
