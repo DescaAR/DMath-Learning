@@ -1,0 +1,16 @@
+\documentclass[tikz,border=4pt]{standalone}
+\begin{document}
+\begin{tikzpicture}[x=.025cm,y=-.025cm]
+\path[use as bounding box] (0,0) rectangle (180,180);
+\path[draw=black,fill=white,line width=0.7150000000000001pt] (15,15) -- (65,15) -- (65,65) -- (15,65) -- cycle;
+\path[draw=black,fill=gray,line width=0.7150000000000001pt] (65,15) -- (115,15) -- (115,65) -- (65,65) -- cycle;
+\path[draw=black,fill=white,line width=0.7150000000000001pt] (115,15) -- (165,15) -- (165,65) -- (115,65) -- cycle;
+\path[draw=black,fill=gray,line width=0.7150000000000001pt] (15,65) -- (65,65) -- (65,115) -- (15,115) -- cycle;
+\path[draw=black,fill=white,line width=0.7150000000000001pt] (65,65) -- (115,65) -- (115,115) -- (65,115) -- cycle;
+\path[draw=black,fill=white,line width=0.7150000000000001pt] (115,65) -- (165,65) -- (165,115) -- (115,115) -- cycle;
+\path[draw=black,fill=gray,line width=0.7150000000000001pt] (15,115) -- (65,115) -- (65,165) -- (15,165) -- cycle;
+\path[draw=black,fill=gray,line width=0.7150000000000001pt] (65,115) -- (115,115) -- (115,165) -- (65,165) -- cycle;
+\path[draw=black,fill=white,line width=0.7150000000000001pt] (115,115) -- (165,115) -- (165,165) -- (115,165) -- cycle;
+\path[draw=black,fill=none,line width=1.1pt] (15,15) -- (165,15) -- (165,165) -- (15,165) -- cycle;
+\end{tikzpicture}
+\end{document}

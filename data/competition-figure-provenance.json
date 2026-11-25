@@ -76,6 +76,61 @@
     "umo-2023-01": {
       "url": "https://utahmath.org/doc/2023UtahMathOlympiad.pdf",
       "basis": "source PDF diagram confirmed"
+    },
+    "umo-2013-01": {
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 1
+    },
+    "umo-2013-04": {
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 2
+    },
+    "umo-2013-06": {
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 2
+    },
+    "umo-2019-04": {
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 1
+    },
+    "umo-2020-01": {
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 1
+    },
+    "umo-2020-03": {
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 1
+    },
+    "umo-2020-05": {
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 2
+    },
+    "umo-2020-06": {
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 2
+    },
+    "umo-2026-02": {
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 1
+    },
+    "umo-2026-03": {
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 1
+    },
+    "umo-2026-05": {
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "basis": "original diagram visually inspected on official question PDF; vector reconstruction",
+      "page": 2
     }
   },
   "table": {

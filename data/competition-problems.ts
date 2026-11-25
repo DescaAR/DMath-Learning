@@ -3851,7 +3851,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Permainan pengejaran pada kisi",
-    "prompt": "James tries to catch his dog Brutus on an $N\\times N$ grid of lattice points. James begins at the top-left corner; Brutus starts at a randomly chosen different point. In each round Brutus moves first to a horizontal or vertical neighbor, and James then moves to a horizontal, vertical or diagonal neighbor. Both stay on the grid. Capture occurs at any instant when the two occupy the same point. Find the expected number of moves James needs for capture, assuming James minimizes and Brutus maximizes the capture time.",
+    "prompt": "James tries to catch his dog Brutus on an $N\\times N$ grid of lattice points. James begins at the top-left corner; Brutus starts at a randomly chosen different point. In each round Brutus moves first to a horizontal or vertical neighbor, and James then moves to a horizontal, vertical or diagonal neighbor. Both stay on the grid.\n\n[[FIGURE]]\n\nCapture occurs at any instant when the two occupy the same point. Find the expected number of moves James needs for capture, assuming James minimizes and Brutus maximizes the capture time.",
     "source": {
       "kind": "competition",
       "competition": "UMO",
@@ -8109,6 +8109,204 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "UMO 2025 — Nomor 3 · © UMO Committee",
       "url": "https://utahmath.org/doc/2025UtahMathOlympiad.pdf",
       "note": "Mathematical statement independently formulated from the official question paper, including visual PDF inspection. Educational noncommercial reuse with attribution permitted: https://utahmath.org/problems/. Rechecked against the available paper; original examples and conditions retained. Not a full verbatim transcription."
+    }
+  },
+  {
+    "id": "umo-2013-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Penelusuran diagram",
+    "prompt": "Consider the diagram.\n\n[[FIGURE]]\n\n(a) Demonstrate a way to trace every line without lifting the pencil, using precisely nine straight segments; overlap is permitted.\n\n(b) Prove that eight or fewer such segments cannot suffice.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2013,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2013 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2013-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 4,
+    "title": "Syarat garis bagi sudut segitiga",
+    "prompt": "Let $I$ and $X$ be distinct points of line $l_1$. Lines $l_2,l_3$ pass through $I$ with angles $\\alpha,\\beta$ indicated below. The segment $XY$ makes angle $\\gamma$ with $l_1$ and ends on $l_2$ at $Y$.\n\n[[FIGURE]]\n\nDetermine necessary and sufficient conditions on $\\alpha,\\beta,\\gamma$ for a triangle having side $XY$ and angle bisectors $l_1,l_2,l_3$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2013,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2013 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2013-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Penutupan batas kisi heksagonal",
+    "prompt": "Count the tilings of the boundary of a triangular array of hexagons of side length $n$, using only single hexagons and pairs of adjoining hexagons. Express the count through a familiar sequence and prove the formula for every integer $n\\ge3$. The diagrams give the cases $n=3,4,5,6$.\n\n[[FIGURE]]",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2013,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2013 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2019-04",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Strategi permainan pengkhianat",
+    "prompt": "A leader starts with a ball and passes it to one of ten players, one of whom is secretly a traitor. Each player receiving the ball must pass it to another player, never to themselves or the leader.\n\nBefore play, the leader assigns each player an infinite list of recipients, possibly different for each player. On their kth reception of the ball, a player passes to recipient k on their list. No list contains its owner's name. The traitor alone may disregard the instructions. An example of the lists is shown below.\n\n[[FIGURE]]\n\nThe leader wins if every player, including the traitor, receives the ball at least once. The traitor wins if they receive it twice or if play continues indefinitely.\n\nProve that instructions guaranteeing the leader's victory exist, regardless of the traitor's identity and actions, or prove that no such instructions exist.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2019,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2019 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2019UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2020-01",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Lintasan sempurna pada kisi",
+    "prompt": "An $n\\times n$ grid consists of islands joined by bridges between neighboring islands, as illustrated for $n=3$.\n\n[[FIGURE]]\n\nThis example contains nine islands and twelve bridges. A path begins and ends at any islands and travels along bridges; for example, traversing the top row from left to right uses two bridges. A perfect path visits each island exactly twice, crosses every bridge at least once, and never immediately reverses across the same bridge.\n\n(a) Construct a perfect path for $n=3$, or prove none exists.\n\n(b) Do the same for $n=4$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2020,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2020 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2020-03",
+    "level": "SMA",
+    "topic": "Peluang",
+    "difficulty": 3,
+    "title": "Ekspektasi banyak daerah arsiran",
+    "prompt": "Choose and shade four cells uniformly at random in a $3\\times3$ square grid. A region is a connected group of shaded cells, using only horizontal and vertical adjacency. The example has two regions, of sizes three and one.\n\n[[FIGURE]]\n\nFind the expected number of regions.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2020,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2020 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2020-05",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Segitiga primitif khusus",
+    "prompt": "A triangle with integer side lengths is primitive when their greatest common divisor is one, and special when an angle equals $120^\\circ$. The triangle with sides $3,5,7$ illustrates both properties.\n\n[[FIGURE]]\n\nProve that infinitely many primitive special triangles exist.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2020,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2020 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2020-06",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Strategi pemungutan suara melingkar",
+    "prompt": "The integers 1 through 10 sit clockwise around a circular table. Starting at 1, each votes for a president among the ten integers. Most votes wins, with ties settled in favor of the larger integer.\n\n[[FIGURE]]\n\nEach voter prefers itself, then successive integers clockwise; for instance, 8 prefers 8,9,10,1,2, and so forth. All are perfectly rational and know that the others are too. Prove who wins.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2020,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2020 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2026-03",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Susunan kubus dari tiga proyeksi",
+    "prompt": "Orange unit cubes occupy cells of a $3\\times3\\times3$ cubic grid. Their front, top, and left projections are the three oriented pictures shown.\n\n[[FIGURE]]\n\nGravity imposes no constraint; cubes may float. Count the possible configurations.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2026,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2026 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2026-05",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Urutan panjang batang kayu optimal",
+    "prompt": "Fiona stands on a tree stump in a swamp with $2n$ straight logs of distinct lengths. Starting in any direction, she repeats the following four actions $n$ times:\n\n1. Face directly away from the stump's center.\n2. Lay a log forward from her feet and walk to its far end.\n3. Turn $90^\\circ$ left.\n4. Lay another log forward and walk to its far end.\n\nFind every ordering that maximizes her final distance from the stump. For lengths $x_1<x_2<\\cdots<x_{2n}$, increasing order means $(x_1,x_2,\\ldots,x_{2n})$. A sample path for $n=2$ is shown.\n\n[[FIGURE]]",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2026,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2026 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2026-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Garis pusat dan titik kuasa lingkaran",
+    "prompt": "Four distinct circles $\\omega_1,\\omega_2,\\omega_3,\\omega_4$ are pairwise tangent, with centers $O_i$. For each $i$, there is a unique point $P_i\\ne O_i$ exterior to the other three circles whose powers relative to those three circles agree.\n\nPartition the sixteen lines $\\overleftrightarrow{O_iP_j}$ into four sets $S_1,S_2,S_3,S_4$, and prove that the partition can satisfy both conditions for each $k$:\n\n(a) The lines of $S_k$ are all concurrent or all parallel.\n\n(b) Their union contains all eight points $O_1,\\ldots,O_4,P_1,\\ldots,P_4$.\n\nThe power of an exterior point $Z$ relative to a circle is the product $ZA\\cdot ZB$, where a secant through $Z$ meets the circle at $A,B$; this product is independent of the secant.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2026,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2026 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2026UtahMathOlympiad.pdf",
+      "note": "Independently phrased from the official paper, including inspection of the original page and diagram where present; not a verbatim transcription. Noncommercial educational reuse with attribution: https://utahmath.org/problems/."
     }
   }
 ];

@@ -67,14 +67,22 @@ export function LevelCards(){
  </Link>)}</div>;
 }
 
-function QuestionBody({prompt}:{prompt:string}){
+function QuestionProse({value,problemId,compact=false}:{value:string;problemId?:string;compact?:boolean}){
+ const chunks=value.split("[[FIGURE]]");
+ if(chunks.length===1)return <RichMath className="cmp-question-prose">{value}</RichMath>;
+ return <>{chunks.map((chunk,i)=><div key={i}>
+  {i>0&&problemId&&<GeometryFigure id={problemId} compact={compact}/>}
+  {chunk.trim()&&<RichMath className="cmp-question-prose">{chunk.trim()}</RichMath>}
+ </div>)}</>;
+}
+function QuestionBody({prompt,problemId,compact=false}:{prompt:string;problemId?:string;compact?:boolean}){
  const parsed=splitSubquestions(prompt);
- if(!parsed)return <RichMath className="cmp-question-prose">{prompt}</RichMath>;
+ if(!parsed)return <QuestionProse value={prompt} problemId={problemId} compact={compact}/>;
  return <div className="cmp-question-body">
-  {parsed.intro&&<div className="cmp-question-intro"><RichMath className="cmp-question-prose">{parsed.intro}</RichMath></div>}
+  {parsed.intro&&<div className="cmp-question-intro"><QuestionProse value={parsed.intro} problemId={problemId} compact={compact}/></div>}
   <ol className="cmp-subquestions" aria-label="Subbagian soal">
    {parsed.parts.map(part=><li key={part.label}>
-    <span className="cmp-subquestion-label" aria-hidden="true">({part.label})</span><div className="cmp-subquestion-content"><RichMath className="cmp-question-prose">{part.text}</RichMath></div>
+    <span className="cmp-subquestion-label" aria-hidden="true">({part.label})</span><div className="cmp-subquestion-content"><QuestionProse value={part.text} problemId={problemId} compact={compact}/></div>
    </li>)}
   </ol>
  </div>;
@@ -83,8 +91,8 @@ function QuestionBody({prompt}:{prompt:string}){
 export function CompetitionPrompt({ prompt, problemId, compact=false }: { prompt: string; problemId?: string; compact?: boolean }) {
  const parsed=splitCompetitionPrompt(prompt);
  return <div className="cmp-question">
-  <QuestionBody prompt={parsed?.question??prompt}/>
-  {problemId&&<GeometryFigure id={problemId} compact={compact}/>}
+  <QuestionBody prompt={parsed?.question??prompt} problemId={problemId} compact={compact}/>
+  {problemId&&!prompt.includes("[[FIGURE]]")&&<GeometryFigure id={problemId} compact={compact}/>}
   {problemId==="ksn-smp-2021-07"&&<div style={{maxWidth:"100%",overflowX:"auto",margin:"1em 0"}}><table aria-label="Tabel tiga baris dan delapan kolom" style={{borderCollapse:"collapse",margin:"0 auto",minWidth:"min(320px,100%)"}}><tbody>{[0,1,2].map(r=><tr key={r}>{Array.from({length:8},(_,i)=><td key={i} style={{border:"1px solid currentColor",textAlign:"center",width:"2em",height:"2em",padding:"0.2em"}}>{r===0?i+1:" "}</td>)}</tr>)}</tbody></table></div>}
   {parsed&&<ol type="A" className="cmp-answer-options" aria-label="Pilihan jawaban">
    {parsed.options.map((option,index)=><li key={index}><RichMath className="cmp-question-prose">{option}</RichMath></li>)}
@@ -1333,6 +1341,17 @@ const geometryFigures: Readonly<Record<string, {alt:string; width:number; captio
  "umo-2019-01":{alt:"Three different tilings of a four by four square, as illustrated in the contest paper.",width:390,caption:"Three distinct examples of tilings."},
  "umo-2022-01":{alt:"Four overlapping squares, each shifted by one sixth of its side length to the upper right.",width:245},
  "umo-2023-01":{alt:"Diamond-shaped board with 25 unit cells in seven centered rows.",width:260},
+ "umo-2013-01":{alt:"Six unit squares in a three-step staircase rising to the right.",width:190},
+ "umo-2013-04":{alt:"Lines l1, l2, l3 meet at I; X lies on l1, Y lies on l2; the angles alpha, beta, gamma are marked as in the paper.",width:265},
+ "umo-2013-06":{alt:"Boundary hexagons of triangular arrays with side lengths 3, 4, 5, 6; separate single and double hexagon tiles.",width:160},
+ "umo-2019-04":{alt:"Example instruction cards for players 1 to 10; the first three recipients on each list are reproduced.",width:230},
+ "umo-2020-01":{alt:"Nine islands connected by twelve horizontal and vertical bridges.",width:170},
+ "umo-2020-03":{alt:"Three by three grid shaded at row 1 column 2, row 2 column 1, row 3 columns 1 and 2.",width:180},
+ "umo-2020-05":{alt:"Triangle with side lengths 3, 5, and 7, as in the source.",width:135},
+ "umo-2020-06":{alt:"Circular seating order from 1 through 10 clockwise, with 1 near the upper right.",width:250},
+ "umo-2026-02":{alt:"Possible lattice moves: four green cardinal directions for Brutus and eight red directions for James.",width:140},
+ "umo-2026-03":{alt:"Cube viewing directions and three identical stair-shaped projections; face labels specify the orientation of each view.",width:220},
+ "umo-2026-05":{alt:"Sample path with two pairs of perpendicular logs, the second radial direction indicated by a dashed line.",width:285},
 };
 function GeometryFigure({id,compact=false}:{id:string;compact?:boolean}){
  const figure=geometryFigures[id];
