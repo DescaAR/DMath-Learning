@@ -1108,7 +1108,7 @@ const contestSources: ContestSource[] = [
     "kind": "Koleksi soal"
   }
 ];
-contestSources.push(...[
+const additionalContestSources: ContestSource[] = [
   {
     "competition": "LMNas UGM",
     "level": "SMP",
@@ -1242,7 +1242,8 @@ contestSources.push(...[
     "url": "https://www.k12mathcontests.com/contest/seamo",
     "kind": "Koleksi soal"
   }
-]);
+];
+contestSources.push(...additionalContestSources);
 yearPapers.push(...[
   {
     "competition": "SEEMOUS",
