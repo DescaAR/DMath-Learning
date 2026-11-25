@@ -7106,6 +7106,834 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://www.egmo.org/egmos/egmo15/paper-day1-English.pdf",
       "note": "Independent mathematical formulation based on official paper; not verbatim."
     }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-02",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 1,
+    "title": "Persamaan linear sederhana",
+    "prompt": "Solve $x-3=5$ in integers. Pilihan: A. $6$; B. $8$; C. $10$; D. $9$; E. $7$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 2",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-03",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Jarak maksimum dari nol",
+    "prompt": "Which listed integer has greatest absolute value? Pilihan: A. $-10$; B. $-8$; C. $3$; D. $8$; E. $9$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 3",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-05",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Digit ribuan",
+    "prompt": "Identify the thousands digit of $12635$. Pilihan: A. $1$; B. $2$; C. $6$; D. $3$; E. $5$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 5",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 5 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-07",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 1,
+    "title": "Keliling persegi dengan sisi bulat",
+    "prompt": "Select a possible perimeter (cm) of a square with integer side length (cm). Pilihan: A. $26$; B. $22$; C. $31$; D. $34$; E. $32$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 7",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-08",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Jumlah waktu berjalan",
+    "prompt": "Find the five-day total walking time (minutes) when the daily duration starts at $11$ and increases by $3$ each day. Pilihan: A. $85$; B. $73$; C. $106$; D. $65$; E. $74$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 8",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 8 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-10",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Banyak suku barisan aritmetika",
+    "prompt": "Count the terms of $(43,41,39,\\ldots,1)$. Pilihan: A. $19$; B. $20$; C. $21$; D. $22$; E. $23$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 10",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 10 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-11",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 1,
+    "title": "Rata-rata hasil lompat jauh",
+    "prompt": "Compute the arithmetic mean of $1.60,1.65,1.85,1.90$ metres. Pilihan: A. $1.70$; B. $1.85$; C. $1.80$; D. $1.65$; E. $1.75$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 11",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 11 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-12",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Selisih dan jumlah usia",
+    "prompt": "Two ages sum to $27$ years and differ by $3$ years. Find the smaller age. Pilihan: A. $10$; B. $11$; C. $12$; D. $13$; E. $14$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 12",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 12 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-14",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 2,
+    "title": "Permutasi digit dengan pengulangan",
+    "prompt": "Count distinct integers exceeding $2000$ formed from precisely the digits $2,0,2,6$. Pilihan: A. $6$; B. $8$; C. $10$; D. $7$; E. $9$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 14",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 14 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-17",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Panjang potongan pita",
+    "prompt": "A $36$ m ribbon is divided into at least two equal pieces of integral metre length. Count the possible piece lengths. Pilihan: A. $10$; B. $7$; C. $6$; D. $5$; E. $8$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 17",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 17 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-18",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Pembulatan bilangan desimal",
+    "prompt": "For decimal $0.ABC$, rounding to tenths increases its value by $0.024$. Find $B+C$. Pilihan: A. $14$; B. $12$; C. $13$; D. $9$; E. $11$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 18",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 18 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-19",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Kelipatan dengan jumlah digit tertentu",
+    "prompt": "Count multiples of $4$ in $[100,199]$ having digit sum at least $5$. Pilihan: A. $20$; B. $19$; C. $22$; D. $23$; E. $21$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 19",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 19 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-20",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 3,
+    "title": "Irisan dua kelompok",
+    "prompt": "Among $85$ items every item contains chocolate or vanilla; fractions $\\frac{11}{17}$ and $\\frac{10}{17}$ contain these respectively. Count items containing both. Pilihan: A. $15$; B. $4$; C. $25$; D. $17$; E. $20$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 20",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 20 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-22",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Jumlah bilangan ganjil",
+    "prompt": "Compute $\\sum_{j=1}^{5}(2j-1)$. Pilihan: A. $36$; B. $81$; C. $16$; D. $9$; E. $25$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 22",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 22 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-23",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Minimum jumlah berdasarkan dua rasio",
+    "prompt": "Find $\\min(3u+2v)$ over positive integers $u,v$ satisfying $7u+5v=89$. Pilihan: A. $36$; B. $38$; C. $35$; D. $37$; E. $34$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 23",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 23 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-gauss-grade-7-24",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Selisih ekstrem bilangan lima digit",
+    "prompt": "Consider five-digit integers $\\overline{abcde}$ using distinct nonzero digits with $5\\mid\\overline{abc}$, $3\\mid\\overline{bcd}$ and $11\\mid\\overline{cde}$. Find the difference between the largest and smallest. Pilihan: A. $84978$; B. $83989$; C. $85015$; D. $84038$; E. $85968$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Gauss Grade 7",
+      "number": "Nomor 24",
+      "label": "CEMC Waterloo 2026 — Gauss Grade 7, Nomor 24 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Gauss7Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-02",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Pembagian merata",
+    "prompt": "Distribute $36$ pieces equally among four recipients. How many does each receive? Pilihan: A. $12$; B. $6$; C. $3$; D. $9$; E. $10$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 2",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 2 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-03",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Tanggal pada interval dua minggu",
+    "prompt": "What date is fourteen days after May 12? Pilihan: A. May 19; B. May 20; C. May 25; D. May 26; E. May 27",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 3",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 3 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-04",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Waktu berakhir film",
+    "prompt": "A film starts at 8:45 a.m. and lasts 2 hours 45 minutes. Find its finishing time. Pilihan: A. 10:30 a.m.; B. 11:15 a.m.; C. 11:30 a.m.; D. 10:50 a.m.; E. 10:45 a.m.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 4",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 4 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-05",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 1,
+    "title": "Persamaan linear satu variabel",
+    "prompt": "Solve $7x-3=60$. Pilihan: A. $9$; B. $7$; C. $10$; D. $6$; E. $8$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 5",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 5 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-06",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 1,
+    "title": "Pencacahan pewarnaan dua bangun",
+    "prompt": "Choose one of two colours for a triangle and one of three other colours for a square. Count the choices. Pilihan: A. $5$; B. $3$; C. $9$; D. $6$; E. $2$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 6",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 6 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-07",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 1,
+    "title": "Pencerminan terhadap sumbu horizontal",
+    "prompt": "Find the reflection of $(5,7)$ in the $x$-axis. Pilihan: A. $(5,-7)$; B. $(-5,-7)$; C. $(5,7)$; D. $(7,5)$; E. $(-7,-5)$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 7",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 7 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-09",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Penghapusan satu digit",
+    "prompt": "Delete one element of $(5,2,8,7,9)$ so the remaining sum is divisible by $4$. Which is deleted? Pilihan: A. $5$; B. $2$; C. $8$; D. $7$; E. $9$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 9",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 9 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-10",
+    "level": "SMP",
+    "topic": "Peluang",
+    "difficulty": 2,
+    "title": "Peluang terpilih kuadrat sempurna",
+    "prompt": "Find the probability that a uniform integer from $\\{3,\\ldots,20\\}$ is a square. Pilihan: A. $\\frac3{20}$; B. $\\frac19$; C. $\\frac16$; D. $\\frac1{10}$; E. $\\frac29$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 10",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 10 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-12",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Jarak pada laju tetap",
+    "prompt": "At $1.5$ km per $20$ minutes, find the distance (km) travelled in four hours. Pilihan: A. $18$; B. $30$; C. $22.5$; D. $15$; E. $4.5$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 12",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 12 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-13",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 2,
+    "title": "Median data berfrekuensi",
+    "prompt": "Find the median when each integer $k=1,\\ldots,6$ occurs exactly $k$ times. Pilihan: A. $2$; B. $3$; C. $4$; D. $5$; E. $6$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 13",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 13 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-15",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 2,
+    "title": "Perubahan rata-rata usia",
+    "prompt": "Three ages average $13$; adding a fourth gives mean $14$. Find the fourth age. Pilihan: A. $15$; B. $18$; C. $16$; D. $14$; E. $17$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 15",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 15 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-16",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Perbandingan jumlah wadah",
+    "prompt": "Solve $d+\\frac d2+\\frac d3=77$ for $d>0$. Pilihan: A. $35$; B. $77$; C. $42$; D. $11$; E. $24$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 16",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 16 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-18",
+    "level": "SMP",
+    "topic": "Peluang",
+    "difficulty": 2,
+    "title": "Hasil kali dadu paling mungkin",
+    "prompt": "Select the most probable product of two independent fair six-sided dice. Pilihan: A. $4$; B. $6$; C. $9$; D. $15$; E. $8$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 18",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 18 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-19",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Banyak pasangan faktor kuadrat",
+    "prompt": "Count positive integer pairs $(m,n)$ with $m^2n=2025$. Pilihan: A. $3$; B. $7$; C. $4$; D. $5$; E. $6$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 19",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 19 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2025-gauss-grade-8-23",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Kelipatan dengan empat digit akhir tetap",
+    "prompt": "Find the digit sum of the least positive $n$ satisfying $2013n\\equiv2025\\pmod{10000}$. Pilihan: A. $17$; B. $13$; C. $15$; D. $14$; E. $16$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2025,
+      "stage": "Gauss Grade 8",
+      "number": "Nomor 23",
+      "label": "CEMC Waterloo 2025 — Gauss Grade 8, Nomor 23 · © 2025 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2025Gauss8Contest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-01",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Jumlah berselang-seling",
+    "prompt": "Evaluate $8-7+6-5+4-3+2-1$. Pilihan: A. $4$; B. $6$; C. $5$; D. $8$; E. $3$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 1",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 1 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-02",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 1,
+    "title": "Bilangan terdekat dengan akar kuadrat",
+    "prompt": "Which listed value minimizes the distance to $\\sqrt{37}$? Pilihan: A. $5$; B. $6$; C. $7$; D. $18$; E. $74$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 2",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-03",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 1,
+    "title": "Eksponen bilangan dua",
+    "prompt": "Solve $2+2+2+2=2^x$. Pilihan: A. $6$; B. $4$; C. $3$; D. $5$; E. $2$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 3",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-04",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 2,
+    "title": "Median pecahan dan desimal",
+    "prompt": "Find the median of $2\\frac34,2.3,2\\frac14,2.45,2\\frac9{10}$. Pilihan: A. $2\\frac34$; B. $2.45$; C. $2\\frac14$; D. $2.3$; E. $2\\frac9{10}$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 4",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 4 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-07",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 1,
+    "title": "Banyak gerbong kereta",
+    "prompt": "An engine of length $20$ m and $n$ cars of length $15$ m have combined length $140$ m. Find $n$. Pilihan: A. $5$; B. $8$; C. $7$; D. $6$; E. $9$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 7",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-08",
+    "level": "SMP",
+    "topic": "Teori Bilangan",
+    "difficulty": 2,
+    "title": "Kesamaan sisa pembagian",
+    "prompt": "Choose an integer whose remainders modulo $3$ and $4$ coincide. Pilihan: A. $9$; B. $11$; C. $10$; D. $13$; E. $8$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 8",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 8 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-12",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 2,
+    "title": "Komposisi refleksi dan translasi",
+    "prompt": "Reflect $(2,3)$ across the $x$-axis, then translate three units left. Find the image. Pilihan: A. $(-1,-3)$; B. $(-5,3)$; C. $(1,3)$; D. $(5,-3)$; E. $(2,-6)$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 12",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 12 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-13",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Jumlah awal buku",
+    "prompt": "Solve $b-\\frac b3-5=7$. Pilihan: A. $18$; B. $15$; C. $27$; D. $21$; E. $24$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 13",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 13 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-15",
+    "level": "SMP",
+    "topic": "Aritmetika",
+    "difficulty": 2,
+    "title": "Selisih biaya bahan bakar",
+    "prompt": "Two cars consume $10.2$ and $6.6$ L per $100$ km. Find the cost difference for $200$ km at $1.40$ dollars/L. Pilihan: A. $3.96$; B. $5.32$; C. $7.36$; D. $8.63$; E. $10.08$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 15",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 15 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-16",
+    "level": "SMP",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Panjang minimum ruas garis",
+    "prompt": "Four distinct collinear points occur in order $P,Q,R,S$, with $PR=8$ and $QS=15$. Find the least possible integer length $PS$. Pilihan: A. $22$; B. $21$; C. $18$; D. $16$; E. $23$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 16",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 16 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-18",
+    "level": "SMP",
+    "topic": "Aljabar",
+    "difficulty": 2,
+    "title": "Pergeseran jumlah barisan",
+    "prompt": "Given $\\sum_{k=17}^{352}k=61992$, compute $\\sum_{k=20}^{355}k$. Pilihan: A. $61995$; B. $63003$; C. $62040$; D. $62997$; E. $63000$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 18",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 18 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-20",
+    "level": "SMP",
+    "topic": "Peluang",
+    "difficulty": 3,
+    "title": "Peluang jumlah nilai dua koin",
+    "prompt": "Uniformly choose two coins without replacement from two each of denominations $25,10,5$ cents. Find the probability of a total at least $30$ cents. Pilihan: A. $\\frac8{15}$; B. $\\frac35$; C. $\\frac59$; D. $\\frac13$; E. $\\frac45$",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 20",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 20 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-21",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Pencacahan kode tiga digit",
+    "prompt": "Count triples of digits $1\\le a<b<c\\le9$ satisfying $c=a+b$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 21",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 21 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-22",
+    "level": "SMP",
+    "topic": "Statistika",
+    "difficulty": 3,
+    "title": "Kesamaan median dan rata-rata",
+    "prompt": "For five distinct integers $16,x,8,17,11$, the median equals the mean. Find the sum of all admissible $x$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 22",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 22 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
+  },
+  {
+    "id": "cemc-waterloo-2026-pascal-grade-9-24",
+    "level": "SMP",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Jumlah digit pada pola berulang",
+    "prompt": "Concatenate the blocks $1234$ followed by $k$ copies of $5$, for $k=1,2,\\ldots$. Let $S$ be the sum of the first $2026$ digits. Find the decimal digit sum of $S$.",
+    "source": {
+      "kind": "competition",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "stage": "Pascal Grade 9",
+      "number": "Nomor 24",
+      "label": "CEMC Waterloo 2026 — Pascal Grade 9, Nomor 24 · © 2026 University of Waterloo · CC BY-NC 4.0",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026PascalContest.html",
+      "note": "Adapted mathematical formulation in English. Noncommercial license: https://creativecommons.org/licenses/by-nc/4.0/ ; source rights: https://cemc.uwaterloo.ca/copyright."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
