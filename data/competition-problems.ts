@@ -699,7 +699,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 5,
     "title": "Keterbagian polinomial pada komposisi",
-    "prompt": "Find $p\\in\\mathbb R[x]$ for which $(p(x)-x)^2$ divides $p(p(x))-x$ in $\\mathbb R[x]$.",
+    "prompt": "Characterize the real polynomials $p$ for which some $q\\in\\mathbb R[x]$ satisfies $$p(p(x))-x=(p(x)-x)^2q(x)$$ at every real $x$.",
     "source": {
       "kind": "competition",
       "label": "Putnam 2024 — A2",
@@ -4197,7 +4197,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Identitas fungsi lantai dengan akar berderajat genap",
-    "prompt": "For a fixed even integer $a\\ge2$, characterize the real parameters $x$ for which the identity $$\\left\\lfloor b^{a-1}(b^a+x)^{1/a}\\right\\rfloor=b^a+\\left\\lfloor\\frac{x}{a}\\right\\rfloor$$ is defined and valid at every $b\\in\\mathbb Z_{>0}$.",
+    "prompt": "Fix a positive even integer $a$. Determine all real $x$ for which $$\\left\\lfloor\\sqrt[a]{b^a+x}\\,b^{a-1}\\right\\rfloor=b^a+\\left\\lfloor\\frac xa\\right\\rfloor$$ holds for every positive integer $b$, where $\\lfloor t\\rfloor$ is the greatest integer not exceeding $t$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -4863,7 +4863,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Nilai eksak ekspresi bersarang",
-    "prompt": "Evaluate the expression exactly: $$\\sqrt{\\sin\\left(\\frac{\\pi+\\log_2\\sqrt{2^\\pi\\cdot2^\\pi}}{2^5-2^4-2^3}\\right)\\sqrt[3]{\\frac{2^{4-1}}{2^{3/2}}}+\\log_2\\left(\\log_3(9^{15})+\\pi^{1+(-1)^{17}}+1\\right)+\\frac{(-1)^5+(-1)^{27}}{(-1)^{766}}}.$$",
+    "prompt": "Evaluate the following expression without a calculator: $$\\sqrt{\\sin\\left(\\frac{\\pi+\\log_2\\sqrt{2^\\pi\\cdot2^\\pi}}{2^5-2^4-2^3}\\right)\\sqrt[3]{\\frac{2^{4-1}}{2^{3/2}}}+\\log_2\\left(\\log_3(9^{15})+\\pi^{1+(-1)^{17}}+1\\right)+\\frac{(-1)^5+(-1)^{27}}{(-1)^{766}}}.$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -4935,7 +4935,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Penjumlahan dan perkalian",
-    "prompt": "Compute, by exact algebra rather than numerical approximation, $$\\left(\\frac{\\log_{10}(1000^{100})}{100}+\\sum_{n=1}^{100}\\frac{\\sin(\\pi n)+1}{(-1)^n}\\right)\\sqrt{\\prod_{m=1}^{1000}\\frac{1}{\\cos^2(\\pi m)}}.$$",
+    "prompt": "Evaluate the following expression without a calculator: $$\\left(\\frac{\\log_{10}(1000^{100})}{100}+\\sum_{n=1}^{100}\\frac{\\sin(\\pi n)+1}{(-1)^n}\\right)\\sqrt{\\prod_{m=1}^{1000}\\frac{1}{\\cos^2(\\pi m)}}.$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5007,7 +5007,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Nilai eksak ekspresi logaritmik",
-    "prompt": "Simplify the following to a numerical value using exact identities: $$\\log\\left[\\log(3)\\log(2)\\left(\\frac{\\sqrt3-2\\sin(\\pi/3)}{\\pi^3+1}+1\\right)-\\log(2)\\log(3)+(-1)^{100}\\right].$$",
+    "prompt": "Evaluate the following expression without a calculator: $$\\log\\left[\\log(3)\\log(2)\\left(\\frac{\\sqrt3-2\\sin(\\pi/3)}{\\pi^3+1}+1\\right)-\\log(2)\\log(3)+(-1)^{100}\\right].$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5079,7 +5079,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Jumlah berhingga dalam logaritma",
-    "prompt": "Calculate exactly $$\\log_3\\left(\\frac{\\sin(2\\pi)}{\\tan(\\pi/3)}+\\sum_{n=0}^{10}\\left(\\frac{1+\\sqrt{1+\\sqrt1}}{1+(1^{-1}+1^{1-1})\\cos(\\pi/4)}-\\frac{2^4-2^3}{(1+\\sqrt1)^2}\\right)^n\\right).$$",
+    "prompt": "Evaluate the following expression without a calculator: $$\\log_3\\left(\\frac{\\sin(2\\pi)}{\\tan(\\pi/3)}+\\sum_{n=0}^{10}\\left(\\frac{1+\\sqrt{1+\\sqrt1}}{1+(1^{-1}+1^{1-1})\\cos(\\pi/4)}-\\frac{2^4-2^3}{(1+\\sqrt1)^2}\\right)^n\\right).$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5169,7 +5169,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Nilai hasil kali dua faktor",
-    "prompt": "Compute the exact value of $$\\left(\\sqrt2+(3^2)^{1/4}+\\sum_{m=1}^3\\left(\\frac1{m!}-\\sqrt m\\right)\\right)\\left(2^{\\log_2(8)}+\\frac1{2^3}-\\prod_{k=1}^8\\left(1+\\frac1k\\right)\\right).$$",
+    "prompt": "Evaluate the following expression without a calculator: $$\\left(\\sqrt2+(3^2)^{1/4}+\\sum_{m=1}^3\\left(\\frac1{m!}-\\sqrt m\\right)\\right)\\left(2^{\\log_2(8)}+\\frac1{2^3}-\\prod_{k=1}^8\\left(1+\\frac1k\\right)\\right).$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5241,7 +5241,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Selisih jumlah dan hasil kali trigonometri",
-    "prompt": "Evaluate exactly $$\\sum_{k=1}^{3}\\frac{\\sin(\\frac{k\\pi}{12})+\\sin(\\frac{(6-k)\\pi}{12})}{\\cos(\\frac{k\\pi}{12})+\\cos(\\frac{(6-k)\\pi}{12})}-\\prod_{m=1}^{2}\\frac{\\tan(\\frac{\\pi}{4}+\\frac{m\\pi}{12})-\\tan(\\frac{\\pi}{4}-\\frac{m\\pi}{12})}{1+\\tan(\\frac{\\pi}{4}+\\frac{m\\pi}{12})\\tan(\\frac{\\pi}{4}-\\frac{m\\pi}{12})}.$$",
+    "prompt": "Evaluate the following expression without a calculator: $$\\sum_{k=1}^{3}\\frac{\\sin(\\frac{k\\pi}{12})+\\sin(\\frac{(6-k)\\pi}{12})}{\\cos(\\frac{k\\pi}{12})+\\cos(\\frac{(6-k)\\pi}{12})}-\\prod_{m=1}^{2}\\frac{\\tan(\\frac{\\pi}{4}+\\frac{m\\pi}{12})-\\tan(\\frac{\\pi}{4}-\\frac{m\\pi}{12})}{1+\\tan(\\frac{\\pi}{4}+\\frac{m\\pi}{12})\\tan(\\frac{\\pi}{4}-\\frac{m\\pi}{12})}.$$",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5277,7 +5277,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 2,
     "title": "Diagonal persegi panjang",
-    "prompt": "A diagonal divides a rectangle of dimensions $a\\times b$ into two triangles. Determine the perimeter and area of each triangle.",
+    "prompt": "A rectangle has side lengths $a$ and $b$. Its diagonal divides it into two triangles, as illustrated. Determine the perimeter and area of the two resulting triangles.",
     "source": {
       "kind": "competition",
       "competition": "IYMC",
@@ -5295,7 +5295,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 3,
     "title": "Koprimalitas pada barisan rekursif pecahan sederhana",
-    "prompt": "Start with distinct $m_0,n_0\\in\\mathbb Z_{>0}$. Define $(m_k,n_k)$ by reducing the fraction $\\frac{2m_{k-1}+1}{2n_{k-1}+1}$ to lowest terms. Establish that $\\gcd(2m_k+1,2n_k+1)=1$ for all sufficiently large $k$.",
+    "prompt": "Take distinct positive integers $m_0,n_0$. For every integer $k\\ge1$, let $m_k,n_k$ be positive coprime integers defined by $$\\frac{m_k}{n_k}=\\frac{2m_{k-1}+1}{2n_{k-1}+1}.$$ Prove that $\\gcd(2m_k+1,2n_k+1)=1$ for all sufficiently large $k$.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5313,7 +5313,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 3,
     "title": "Batas kuadratik tajam fungsi sinus",
-    "prompt": "Compute the infimum and supremum of $\\frac{\\sin x}{x(\\pi-x)}$ over $0<x<\\pi$.",
+    "prompt": "Determine the greatest admissible real constant $a$ and the least admissible real constant $b$ in the inequality $$ax(\\pi-x)\\le\\sin x\\le bx(\\pi-x),\\qquad x\\in[0,\\pi].$$",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5439,7 +5439,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Real",
     "difficulty": 4,
     "title": "Jarak antara akar persamaan tangen",
-    "prompt": "Enumerate the positive roots of $\\tan x-x$ in increasing order as $r_1,r_2,\\ldots$. Establish $$\\pi<r_{n+1}-r_n<\\pi+\\frac1{\\pi n(n+1)}\\qquad(n\\ge1).$$",
+    "prompt": "Write $r_n$ for the $n$th positive root of $\\tan x=x$ in increasing order, with $x$ measured in radians. Establish $$0<r_{n+1}-r_n-\\pi<\\frac{1}{(n^2+n)\\pi}$$ for every $n\\ge1$.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -5763,7 +5763,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Analisis Kompleks",
     "difficulty": 4,
     "title": "Batas bawah tajam rata-rata modulus akar",
-    "prompt": "For $P(z)=\\sum_{k=0}^{2019}b_kz^k$ with $1\\le b_0<b_1<\\cdots<b_{2019}\\le2019$, enumerate its complex roots $z_j$ with multiplicity. Determine the infimum of $\\frac1{2019}\\sum_{j=1}^{2019}|z_j|$ over these polynomials.",
+    "prompt": "Consider a degree-$2019$ polynomial $P(z)=\\sum_{k=0}^{2019}b_kz^k$ with real coefficients subject to $1\\le b_0<b_1<\\cdots<b_{2019}\\le2019$. Let $z_1,\\ldots,z_{2019}$ list its complex roots with multiplicities and set $$\\mu=\\frac{|z_1|+\\cdots+|z_{2019}|}{2019}.$$ Determine the greatest real lower bound $M$ for $\\mu$ over all such choices of coefficients.",
     "source": {
       "kind": "competition",
       "competition": "Putnam",
@@ -6033,7 +6033,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Aproksimasi politop konveks simetris",
-    "prompt": "Fix an integer $d\\ge2$. Establish a uniform bound $C_d\\varepsilon^{-(d-1)}$ for the number of vertices needed in an inner polytope approximation $L$ of any origin-symmetric convex polytope $K$ in $\\mathbb R^d$, with $(1-\\varepsilon)K\\subseteq L\\subseteq K$ and $0<\\varepsilon<1$. Here $C_d$ may depend only on $d$.",
+    "prompt": "Fix an integer $d\\ge2$. Prove that there is a constant $C(d)$ such that every origin-symmetric convex polytope $K\\subset\\mathbb R^d$ and every $0<\\varepsilon<1$ admit a convex polytope $L$ having at most $C(d)\\varepsilon^{1-d}$ vertices and satisfying $$(1-\\varepsilon)K\\subseteq L\\subseteq K.$$ Here a convex polytope with at most $m$ vertices is a convex hull of at most $m$ points with nonempty interior, $\\lambda K=\\{\\lambda x\\mid x\\in K\\}$, and origin symmetry means $-K=K$.",
     "source": {
       "kind": "competition",
       "competition": "IMC",
@@ -6159,7 +6159,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Statistika",
     "difficulty": 2,
     "title": "Modus tunggal",
-    "prompt": "The multiset $\\{3,15,8,8,9,9,n\\}$ has $8$ as its unique mode. Find $n$. Pilihan: A. $15$; B. $9$; C. $3$; D. $8$; E. $10$",
+    "prompt": "A list contains the seven numbers $3,15,8,8,9,9,n$. Its only mode is $8$. Determine $n$. Pilihan: A. $15$; B. $9$; C. $3$; D. $8$; E. $10$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6429,7 +6429,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Persamaan rasional dan bentuk akar",
-    "prompt": "(a) Solve $\\frac{2t}{3}+\\frac{3t}{2}=26$ for $t\\in\\mathbb Z$. (b) Solve $\\frac{3+x}{4}=\\frac{6+x}{8}$ for $x\\in\\mathbb Z$. (c) Determine $y>0$ satisfying $\\sqrt{3^2+4^2+12^2}=\\sqrt{3^2+4^2}+\\sqrt{y^2}$.",
+    "prompt": "(a) Determine the integer $t$ satisfying $\\dfrac{2t}{3}+\\dfrac{3t}{2}=26$. (b) Determine the integer $x$ satisfying $\\dfrac{3+x}{4}=\\dfrac{6+x}{8}$. (c) Given $y>0$ and $$\\sqrt{3^2+4^2+12^2}=\\sqrt{3^2+4^2}+\\sqrt{y^2},$$ find $y$.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6447,7 +6447,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Digit bilangan dan sistem persamaan",
-    "prompt": "(a) Determine the least integer greater than $2026$ with decimal digit sum $10$. (b) Count the three-digit positive integers with digit product $9$. (c) Solve $x+3x+4y=48$ and $(x+y)/2=3x$ for $(x,y)$.",
+    "prompt": "(a) The digits of $2026$ sum to $2+0+2+6=10$. Find the least integer $n>2026$ having the same digit sum. (b) The digits of $313$ have product $3\\cdot1\\cdot3=9$. Count integers from $100$ through $999$ whose digit product is $9$. (c) The sum of $x$, $3x$ and $4y$ is $48$, while the mean of $x$ and $y$ is $3x$. Find $(x,y)$.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6483,7 +6483,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Proporsi dan iterasi logaritma",
-    "prompt": "(a) All flowers in a garden are roses or carnations and are yellow or white. Half the yellow flowers are roses, one quarter of the roses are yellow, and one quarter of the entire garden consists of white carnations. Find the proportion of yellow roses. (b) Define $$f(x)=\\begin{cases}0&0<x\\le1,\\\\1+f(\\log_2 x)&x>1.\\end{cases}$$ Count positive integers $n$ such that $f(n)=4$.",
+    "prompt": "(a) A garden contains only roses and carnations, each either yellow or white. Of the yellow flowers, half are roses; of the roses, a quarter are yellow; of all flowers, a quarter are white carnations. Find the fraction of all flowers that are yellow roses. (b) For every $x>0$, define $$f(x)=\\begin{cases}0,&0<x\\le1,\\\\1+f(\\log_2 x),&x>1.\\end{cases}$$ Count positive integers $n$ satisfying $f(n)=4$.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6519,7 +6519,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Permutasi dengan tepat satu puncak internal",
-    "prompt": "For a permutation $(a_1,\\ldots,a_n)$ of $\\{1,\\ldots,n\\}$, call $t$ an internal peak if $2\\le t<n$ and $a_{t-1}<a_t>a_{t+1}$. (a) Count the permutations of five elements with sole internal peak at $t=3$. (b) For $n\\ge5$, give a closed-form count for sole internal peak at $t=2$. (c) Give a closed-form count for sole internal peak at $t=3$, for $n\\ge5$.",
+    "prompt": "For $n\\ge5$, a permutation $(a_1,\\ldots,a_n)$ of $1,\\ldots,n$ has an internal peak at $t$ if $2\\le t<n$ and $a_{t-1}<a_t>a_{t+1}$. For instance, $(2,3,7,1,5,4,6,8)$ has internal peaks only at positions $3$ and $5$. (a) Count permutations of $1,2,3,4,5$ having their only internal peak at position $3$. (b) For $n\\ge5$, find a closed-form count of permutations with sole internal peak at position $2$. (c) For $n\\ge5$, find a closed-form count of permutations with sole internal peak at position $3$. $$\\sum_{k=0}^{r}k2^k=(r-1)2^{r+1}+2\\qquad(r\\in\\mathbb Z_{>0}).$$ The identity may be useful. The right-hand expression is a closed form, while an unevaluated sum is not.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7077,7 +7077,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 5,
     "title": "Barisan operasi pembulatan ke kelipatan",
-    "prompt": "For $n\\ge1$, let $S_n$ be the smallest subset of positive integers containing $1$ and closed under $v\\mapsto j\\lfloor v/j+1/2\\rfloor$ for $1\\le j\\le n$, allowing zero if reached. (a) Establish boundedness of the reachable values. (b) With $f(n)$ their maximum, establish $2026\\mid f(n)$ for all sufficiently large $n$.",
+    "prompt": "Fix a positive integer $n$. Begin with $V=1$ and repeatedly choose an integer $j$ from $1$ through $n$ and replace $V$ by $jR(V/j)$, where $R(x)$ rounds to the nearest integer, with ties rounded upward. For instance, $R(1.3)=1$ and $R(1.5)=R(1.8)=2$. (a) Establish an upper bound on all values obtainable for each fixed $n$. (b) Let $f(n)$ be the maximum value obtainable by finitely many replacements. Prove that $2026$ divides $f(n)$ for every sufficiently large $n$.",
     "source": {
       "kind": "competition",
       "competition": "EGMO",
@@ -7347,7 +7347,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Jumlah bilangan ganjil",
-    "prompt": "Compute $\\sum_{j=1}^{5}(2j-1)$. Pilihan: A. $36$; B. $81$; C. $16$; D. $9$; E. $25$",
+    "prompt": "A sequence starts with $s=0$ and $a=1$, recording $s$ as its first term. Repeat the following steps: add $a$ to $s$ and record the new $s$; stop if $a=9$, otherwise increase $a$ by $2$ and repeat. Find the final recorded term. Pilihan: A. $36$; B. $81$; C. $16$; D. $9$; E. $25$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7365,7 +7365,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Teori Bilangan",
     "difficulty": 4,
     "title": "Minimum jumlah berdasarkan dua rasio",
-    "prompt": "Find $\\min(3u+2v)$ over positive integers $u,v$ satisfying $7u+5v=89$. Pilihan: A. $36$; B. $38$; C. $35$; D. $37$; E. $34$",
+    "prompt": "Two bowls contain blueberries and raspberries, in ratios $3:7$ and $2:5$, respectively. Both types are present in each bowl. There are $89$ raspberries altogether. Find the minimum total number of blueberries. Pilihan: A. $36$; B. $38$; C. $35$; D. $37$; E. $34$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7581,7 +7581,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Statistika",
     "difficulty": 2,
     "title": "Perubahan rata-rata usia",
-    "prompt": "Three ages average $13$; adding a fourth gives mean $14$. Find the fourth age. Pilihan: A. $15$; B. $18$; C. $16$; D. $14$; E. $17$",
+    "prompt": "Three students have consecutive integer ages with mean $13$. After a fourth student joins, the mean age is $14$. Find the fourth student's age. Pilihan: A. $15$; B. $18$; C. $16$; D. $14$; E. $17$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7599,7 +7599,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Perbandingan jumlah wadah",
-    "prompt": "Solve $d+\\frac d2+\\frac d3=77$ for $d>0$. Pilihan: A. $35$; B. $77$; C. $42$; D. $11$; E. $24$",
+    "prompt": "At a dog daycare, there is one food bowl per dog, one water bowl per two dogs and one treat bowl per three dogs. Every dog receives food, water and treats. There are $77$ bowls altogether. How many dogs are there? Pilihan: A. $35$; B. $77$; C. $42$; D. $11$; E. $24$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -7797,7 +7797,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Jumlah awal buku",
-    "prompt": "Solve $b-\\frac b3-5=7$. Pilihan: A. $18$; B. $15$; C. $27$; D. $21$; E. $24$",
+    "prompt": "Max receives $b$ books. He reads one third in March and five more in April, without rereading any book. Seven books remain unread. Find $b$. Pilihan: A. $18$; B. $15$; C. $27$; D. $21$; E. $24$",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
