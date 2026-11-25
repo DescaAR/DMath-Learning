@@ -14455,6 +14455,448 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 5",
       "note": "User-supplied ZIP: MATHLICIOUS/SMA /FINAL MATHLICIOUS IAIN KUDUS 2022.pdf, PDF page 1. Photographed question sheet; identification based on supplied filename."
     }
+  },
+  {
+    "id": "magd-2018-i-pg-02",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Misalkan $2n$ bilangan asli. Hasil pencerminan titik $(3,0)$ yang dicerminkan secara berturutan oleh garis $x=1$, $x=2$, $\\ldots$, $x=2n$ adalah ...\n\n(a) $(3,n)$\n\n(b) $(3+2n,0)$\n\n(c) $(3+3n,0)$\n\n(d) $(3+4n,0)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 2",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\int_0^{\\ln 2}\\frac{1}{e^{-x}+1}\\,dx=\\ldots$$\n\n(a) $\\ln3-\\ln2$\n\n(b) $\\ln3+\\ln2$\n\n(c) $\\ln3-2\\ln2$\n\n(d) $\\ln3+2\\ln2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 3",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-04",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Jika $z=1+i$, maka $|z^{10}|=\\ldots$\n\n(a) 10\n\n(b) 32\n\n(c) 100\n\n(d) 1024",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 4",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 4",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-05",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Misalkan $g$ kontinu di $\\mathbb R$ dan $3x^5-96=\\int_c^x g(t)dt$ untuk setiap $x\\in\\mathbb R$. Maka nilai $c$ adalah ...\n\n(a) $-96$\n\n(b) $-2$\n\n(c) 2\n\n(d) 96",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 5",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 5",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-06",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Fungsi bernilai vektor yang merepresentasikan kurva hasil perpotongan permukaan $z=\\sqrt{x^2+y^2}$ dengan bidang $z=y+1$ adalah ...\n\n(a) $f(t)=\\left(t,\\frac{t^2-1}{2},\\frac{t^2+1}{2}\\right)$\n\n(b) $f(t)=(t\\cos t,t\\sin t,1+t\\sin t)$\n\n(c) $f(t)=(\\sqrt{2t-1},t-1,t)$\n\n(d) $f(t)=(\\sqrt{2t+1},t,t+1)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 6",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 6",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-07",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Misalkan $f:\\mathbb R\\to\\mathbb R$ dan $B\\subset\\mathbb R$. Maka ...\n\n(a) $f\\left(f^{-1}(B)\\right)\\subset B$\n\n(b) $f\\left(f^{-1}(B)\\right)=B$\n\n(c) $f^{-1}(f(B))\\subset B$\n\n(d) $f^{-1}(f(B))=B$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 7",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 7",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-08",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Hasil pencerminan titik $(2,1)$ secara berurutan oleh sumbu $X$, garis $y=x+4$, dan $y=4-x$ adalah ...\n\n(a) $(2,9)$\n\n(b) $(9,2)$\n\n(c) $(-2,9)$\n\n(d) $(-2,-9)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 8",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 8",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-09",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Fungsi $f(x)$ yang memenuhi persamaan $f(x)+\\int_0^x f(t)\\,dt=x^2$ adalah ...\n\n(a) $x^2-2x+2-2e^{-x}$\n\n(b) $x^2-2x+2+2e^{-x}$\n\n(c) $2x-2-2e^{-x}$\n\n(d) $2x-2+2e^{-x}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 9",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 9",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-10",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Bagian imajiner dari $\\pi^i$ adalah ...\n\n(a) $\\sin(\\ln\\pi)$\n\n(b) $\\cos(\\ln\\pi)$\n\n(c) $\\ln\\pi$\n\n(d) 1",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 10",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 10",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 1. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-11",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Bilangan positif $c$ sehingga persamaan $\\ln x=cx^4$ memiliki tepat satu solusi real adalah ...\n\n(a) $\\frac1{4e}$\n\n(b) $\\frac1{4e^4}$\n\n(c) $\\frac{e^4}{4}$\n\n(d) $4e^{\\frac14}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 11",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 11",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 2. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-12",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Di antara polinom-polinom kompleks di bawah ini:\n\n$$\\begin{aligned}P_1(x,y)&=x^2-y^2+2ixy;\\\\P_2(x,y)&=x^2+y^2-2ixy;\\\\P_3(x,y)&=2xy+i(y^2-x^2);\\\\P_4(x,y)&=x^2+iy^2,\\end{aligned}$$\n\nyang merupakan polinom analitik adalah ...\n\n(a) $P_1$ dan $P_2$\n\n(b) $P_1$ dan $P_3$\n\n(c) $P_2$ dan $P_4$\n\n(d) $P_3$ dan $P_4$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 12",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 12",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 2. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-13",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika $f:[0,1]\\to\\mathbb R$ dengan\n\n$$f(x)=\\begin{cases}1+x,&\\text{jika }x\\notin\\mathbb Q\\cap[0,1]\\\\0,&\\text{jika }x\\in\\mathbb Q\\cap[0,1]\\end{cases},$$\n\nmaka ...\n\n(a) $f$ tidak terintegralkan Riemann pada $[0,1]$\n\n(b) $\\int_0^1 f(x)\\,dx=0$\n\n(c) $\\int_0^1 f(x)\\,dx=\\frac32$\n\n(d) $\\int_0^1 f(x)\\,dx=\\frac e2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 13",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 13",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 2. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-14",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Diketahui titik $A\\ (0,0)$ dan $B\\ (6,0)$. Misalkan pula $R_{X,\\alpha}$ menyatakan rotasi dengan pusat $X$ dan sudut $\\alpha$ (berlawanan jarum jam). Transformasi\n\n$$R_{A,90^\\circ}\\circ R_{B,90^\\circ}$$\n\ndapat diganti oleh $R_{C,\\beta}$ dengan ...\n\n(a) $C\\ (3,3)$ dan $\\beta=90^\\circ$\n\n(b) $C\\ (3,3)$ dan $\\beta=180^\\circ$\n\n(c) $C\\ (3,-3)$ dan $\\beta=90^\\circ$\n\n(d) $C\\ (3,-3)$ dan $\\beta=180^\\circ$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 14",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 14",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 2. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-15",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Persamaan bidang singgung dari permukaan\n\n$$f(x,y)=\\sqrt{20-x^2-7y^2}$$\n\ndi titik $(2,1,3)$ adalah ...\n\n(a) $z-3=0$\n\n(b) $2x+7y+3z-20=0$\n\n(c) $2x+7y-3z-2=0$\n\n(d) $2x-7y+3z-6=0$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 15",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 15",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 2. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-16",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Peta daerah $\\{z\\in\\mathbb C:|z|>1\\}$ oleh pemetaan $w=f(z)=\\frac{1+iz}{z}$ adalah ...\n\n(a) $\\{w\\in\\mathbb C:|w-i|>1\\}$\n\n(b) $\\{w\\in\\mathbb C:|w-i|<1\\}$\n\n(c) $\\{w\\in\\mathbb C:|w|>1\\}$\n\n(d) $\\{w\\in\\mathbb C:|w|<1\\}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 16",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 16",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 2. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-17",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $\\boldsymbol F(x,y)=(-2y,x^2)$ medan vektor di $\\mathbb R^2$, maka kerja $\\oint_C\\boldsymbol F\\cdot d\\boldsymbol r$ sepanjang lintasan tutup $C:x^2+y^2=9$ berorientasi positif adalah ...\n\n(a) 0\n\n(b) $6\\pi$\n\n(c) $12\\pi$\n\n(d) $18\\pi$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 17",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 17",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 2. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-18",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Himpunan titik kekonvergenan deret\n\n$$\\sum_{n=1}^{\\infty}\\frac{(-1)^n(x-1)^n}{ne^n}$$\n\nadalah ...\n\n(a) $\\{x\\in\\mathbb R|1-e<x<1+e\\}$\n\n(b) $\\{x\\in\\mathbb R|1-e\\le x<1+e\\}$\n\n(c) $\\{x\\in\\mathbb R|1-e<x\\le1+e\\}$\n\n(d) $\\{x\\in\\mathbb R|1-e\\le x\\le1+e\\}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 18",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 18",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 2. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-19",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Diketahui $\\gamma:\\mathbb R\\longrightarrow\\mathbb R^3$ didefinisikan oleh:\n\n$$\\gamma(t):=(e^t,e^{-t},\\sqrt2t).$$\n\nFungsi $\\varphi:\\mathbb R\\longrightarrow\\mathbb R$ sehingga $\\nu(t)=\\gamma(\\varphi(t))$ memenuhi $\\|\\nu'\\|=1$ adalah ...\n\n(a) $\\varphi(t)=2\\sinh^{-1}\\left(\\frac12\\sqrt t\\right)$\n\n(b) $\\varphi(t)=2\\cosh^{-1}\\left(\\frac12\\sqrt t\\right)$\n\n(c) $\\varphi(t)=\\sqrt2\\sinh^{-1}(\\sqrt t)$\n\n(d) $\\varphi(t)=\\sqrt2\\cosh^{-1}(\\sqrt t)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 19",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 19",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 3. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-21",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Diberikan fungsi dua variabel\n\n$$f(x,y)=-(x^2-1)^2-(x^2y-x-1)^2.$$\n\nPernyataan yang benar adalah ...\n\n(a) $f$ memiliki dua titik maksimum lokal dan satu titik minimum lokal\n\n(b) $f$ memiliki dua titik minimum lokal dan satu titik maksimum lokal\n\n(c) $f$ memiliki satu titik maksimum lokal dan satu titik minimum lokal\n\n(d) $f$ memiliki dua titik maksimum lokal",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 21",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 21",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 3. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-22",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Diberikan $f:(0,\\infty)\\to\\mathbb R$ mempunyai turunan dan $\\lim_{x\\to\\infty}f'(x)=1$. Jika $g(x)=f(x+1)-f(x)$, maka $\\lim_{x\\to\\infty}g(x)=\\ldots$\n\n(a) 0\n\n(b) 1\n\n(c) 2\n\n(d) $\\infty$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 22",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 22",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 3. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-23",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Misalkan $S\\subset\\mathbb R$ himpunan tak kosong dan terbatas. Jika $a+bS:=\\{a+bx:x\\in S\\}$ dengan $a,b<0$, maka ...\n\n(a) $\\inf(a+bS)=a+b\\inf S$\n\n(b) $\\inf(a+bS)=-a+b\\sup S$\n\n(c) $\\sup(a+bS)=-a-b\\sup S$\n\n(d) $\\sup(a+bS)=a+b\\inf S$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 23",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 23",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 3. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-24",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Diketahui sistem persamaan tak linear:\n\n$$\\begin{cases}x^2+xu-v^2-yv=0\\\\xuv+xyv=2\\end{cases}$$\n\nmemiliki solusi $u(x,y)$ dan $v(x,y)$ di sekitar titik $(1,1,1,1)$. Pernyataan yang **salah** adalah ...\n\n(a) $\\frac{\\partial u}{\\partial x}=-\\frac{12}{5}$\n\n(b) $\\frac{\\partial u}{\\partial y}=-\\frac15$\n\n(c) $\\frac{\\partial v}{\\partial x}=-\\frac{12}{5}$\n\n(d) $\\frac{\\partial v}{\\partial y}=-\\frac25$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 24",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 24",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 3. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-pg-25",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Untuk menentukan secara tunggal transformasi afin $T:\\mathbb R^2\\to\\mathbb R^2$ dengan bentuk\n\n$$T(x)=Ax+b$$\n\ndengan $A$ matriks $2\\times2$, dan $x,b$ matriks $2\\times1$ diperlukan peta dari ...\n\n(a) tepat dua vektor yang bebas linear\n\n(b) tepat tiga titik sebarang\n\n(c) tepat tiga titik yang tidak segaris\n\n(d) tepat empat titik yang tidak segaris",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Pilihan Ganda, Nomor 25",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 25",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 3. Number assigned by original row order (unprinted)."
+    }
+  },
+  {
+    "id": "magd-2018-i-uraian-01",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Tentukan semua bilangan kompleks $z$ yang memenuhi persamaan $\\sinh z=i$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Uraian, Nomor 1",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Uraian, Nomor 1",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 4. "
+    }
+  },
+  {
+    "id": "magd-2018-i-uraian-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Tentukan bilangan $c$ yang meminimumkan nilai integral\n\n$$\\int_0^1|x^2-c|dx.$$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Uraian, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Uraian, Nomor 2",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 5. "
+    }
+  },
+  {
+    "id": "magd-2018-i-uraian-03",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Diketahui $f:[a,b]\\to\\mathbb R$ kontinu pada $[a,b]$ dan terdiferensialkan pada $(a,b)$. Misalkan $f(a)=0$ dan $\\int_a^b f(x)\\,dx=0$.\n\nBuktikan terdapat $c\\in(a,b)$ sehingga $f'(c)=0$.",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2018 — Tahap I, Uraian, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2018,
+      "stage": "Tahap I",
+      "number": "Uraian, Nomor 3",
+      "note": "User-supplied ZIP: University Challange/MaGD/soal tahap i magd 2018.pdf, PDF page 6. "
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
