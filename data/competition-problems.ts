@@ -237,7 +237,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aritmetika",
     "difficulty": 3,
     "title": "Tiga bilangan dari putaran angka",
-    "prompt": "Tiga angka berbeda $a,b,c$ berada di antara 1 dan 9. Dibentuk tiga bilangan dua angka $\\overline{ab},\\overline{bc},\\overline{ca}$. Jumlah ketiganya 132. Bilangan $\\overline{ab}$ lebih besar 18 daripada $\\overline{bc}$, dan $a$ merupakan angka terbesar. Tentukan ketiga bilangan tersebut.",
+    "prompt": "Tiga angka berbeda $a,b,c$ berada di antara 1 dan 9. Dibentuk tiga bilangan dua angka $\\overline{ab},\\overline{bc},\\overline{ca}$. Jumlah ketiganya 132. Bilangan $\\overline{ab}$ lebih besar 22 daripada $\\overline{bc}$, dan $a$ merupakan angka terbesar. Tentukan ketiga bilangan tersebut.",
     "source": {
       "kind": "original",
       "label": "DMath Learning Proposed"
