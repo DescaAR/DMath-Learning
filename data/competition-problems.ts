@@ -3046,7 +3046,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2013,
       "stage": "EGMO",
       "number": "Nomor 1",
-      "label": "EGMO 2013 — Nomor 1 · MathNet",
+      "label": "EGMO 2013 — Nomor 1",
       "url": "https://imomath.com/srb/zadaci/2013_egmo_resenja_e.pdf",
       "collection": "MathNet",
       "collectionUrl": "https://huggingface.co/datasets/ShadenA/MathNet",
@@ -3066,7 +3066,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2016,
       "stage": "Shortlist",
       "number": "G1",
-      "label": "Balkan MO 2016 — Shortlist G1 · MathNet",
+      "label": "Balkan MO 2016 — Shortlist G1",
       "url": "https://huggingface.co/datasets/AI-MO/olympiads/blob/main/Balkan_Shortlist/md/en-2016_bmo_shortlist.md",
       "collection": "MathNet",
       "collectionUrl": "https://huggingface.co/datasets/ShadenA/MathNet",
@@ -3086,7 +3086,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "year": 2024,
       "stage": "AIME I",
       "number": "Nomor 1",
-      "label": "AIME I 2024 — Nomor 1 · AoPS",
+      "label": "AIME I 2024 — Nomor 1",
       "url": "https://artofproblemsolving.com/school/mathjams-transcripts?id=682",
       "collection": "AoPS",
       "collectionUrl": "https://artofproblemsolving.com/school/mathjams-transcripts?id=682",
@@ -4333,6 +4333,330 @@ export const competitionProblems: CompetitionProblem[] = [
       "label": "IMC 2024 — Hari 2, Nomor 10",
       "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2024",
       "note": "Independent English mathematical formulation checked against the official contest statement."
+    }
+  },
+  {
+    "id": "imc-2023-01",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 2,
+    "title": "Dilation identity for twice differentiable functions",
+    "prompt": "Determine the solution set in $C^2(\\mathbb R)$ of $f(7x+1)=49f(x)$, with the identity required on $\\mathbb R$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMC 2023 — Hari 1, Nomor 1",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-02",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 2,
+    "title": "Matrix powers under coupled identities",
+    "prompt": "Given $A,B,C\\in M_n(\\mathbb C)$ satisfying $A^2=B^2=C^2$ and $B^3-ABC=2I_n$, establish $A^6=I_n$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMC 2023 — Hari 1, Nomor 2",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-03",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Multiplicative polynomials in two real variables",
+    "prompt": "Classify $P\\in\\mathbb R[X,Y]$ for which $$P(x,y)P(z,t)=P(xz-yt,xt+yz)$$ identically.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMC 2023 — Hari 1, Nomor 3",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-04",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Permutation polynomials modulo a prime",
+    "prompt": "For prime $p$ and integer $k\\ge1$, assume $i\\mapsto i^k+i$ permutes $\\mathbb F_p$. Determine the possible values of $2^k+2$ in $\\mathbb F_p$ (allowing all admissible $p,k$, with the answer specified for each $p$).",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 4",
+      "label": "IMC 2023 — Hari 1, Nomor 4",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-05",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 5,
+    "title": "Lower bound on a family of permutations",
+    "prompt": "Take $2\\le k\\le n$ and a nonempty family $\\mathcal F\\subseteq S_n$. For each $\\pi\\in\\mathcal F$, suppose there exist $i_1<\\cdots<i_k$ such that $\\pi\\circ(i_j\\ i_{j+1})\\in\\mathcal F$ for every $1\\le j<k$. Establish $|\\mathcal F|\\ge k!$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 5",
+      "label": "IMC 2023 — Hari 1, Nomor 5",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-06",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Reachability by row and column operations",
+    "prompt": "Start with $\\begin{pmatrix}2&3\\\\2&4\\end{pmatrix}$. Allowed moves replace either row by its componentwise product or quotient with the other row; the analogous moves on columns are also allowed. Decide whether $\\begin{pmatrix}2&4\\\\2&3\\end{pmatrix}$ is reachable.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMC 2023 — Hari 2, Nomor 6",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-07",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 4,
+    "title": "A universal derivative condition",
+    "prompt": "Set $\\mathcal V=\\{f\\in C([0,1]):f\\text{ is differentiable on }(0,1),\\ f(0)=0,\\ f(1)=1\\}$. Find the real parameters $\\alpha$ for which each $f\\in\\mathcal V$ admits $\\xi\\in(0,1)$ with $f'(\\xi)-f(\\xi)=\\alpha$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 7",
+      "label": "IMC 2023 — Hari 2, Nomor 7",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-08",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Wiener and Harary indices of trees",
+    "prompt": "For a tree $T$ of order $n$, use the graph distance $d_T$. Define $W=\\sum_{\\{u,v\\}\\in\\binom{V(T)}2}d_T(u,v)$ and $H=\\sum_{\\{u,v\\}\\in\\binom{V(T)}2}d_T(u,v)^{-1}$. Establish $$WH\\ge\\frac{(n-1)^3(n+2)}4.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 8",
+      "label": "IMC 2023 — Hari 2, Nomor 8",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-09",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Convex bodies with disjoint projections",
+    "prompt": "Consider closed convex sets $X,Y\\subseteq[0,1]^3$ of equal volume $v$, whose orthogonal projections onto each coordinate plane are disjoint. Determine the supremum of the achievable values of $v$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 9",
+      "label": "IMC 2023 — Hari 2, Nomor 9",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2023-10",
+    "level": "Kuliah",
+    "topic": "Teori Bilangan",
+    "difficulty": 5,
+    "title": "Denominators of partial exponential sums",
+    "prompt": "Write $\\sum_{j=0}^{n}1/j!=f_n/g_n$ in lowest terms with $g_n>0$. Decide whether $g_n>n^{0.999n}$ holds for at least one integer $n\\ge1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2023,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 10",
+      "label": "IMC 2023 — Hari 2, Nomor 10",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2023",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2021-01",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 2,
+    "title": "Linear matrix equation with a nilpotent coefficient",
+    "prompt": "Given $A\\in M_n(\\mathbb R)$ with $A^3=0$, establish that $X+AX+XA^2=A$ has exactly one solution $X\\in M_n(\\mathbb R)$, and express that solution using $A$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2021,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 1",
+      "label": "IMC 2021 — Hari 1, Nomor 1",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2021",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2021-02",
+    "level": "Kuliah",
+    "topic": "Peluang",
+    "difficulty": 3,
+    "title": "An invariant ordering probability",
+    "prompt": "For positive integers $k,n$ and integer $a\\ge0$, independently sample uniform subsets $X\\in\\binom{\\{1,\\ldots,k+a\\}}k$ and $Y\\in\\binom{\\{1,\\ldots,k+n+a\\}}n$. Show that $\\mathbb P(\\max X<\\min Y)$ is independent of $a$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2021,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 2",
+      "label": "IMC 2021 — Hari 1, Nomor 2",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2021",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2021-03",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 5,
+    "title": "Optimal successive subdivisions of an interval",
+    "prompt": "Find the supremum of $d>0$ such that there is a sequence $(a_j)_{j\\ge1}$ in $(0,d)$ for which the longest component interval of $[0,d]\\setminus\\{a_1,\\ldots,a_n\\}$ has length at most $1/n$ at every $n\\ge1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2021,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 3",
+      "label": "IMC 2021 — Hari 1, Nomor 3",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2021",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2021-04",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 5,
+    "title": "A sufficient condition for Baire class one",
+    "prompt": "Suppose $f:\\mathbb R\\to\\mathbb R$ has the property that for each $\\varepsilon>0$ some $g:\\mathbb R\\to(0,\\infty)$ satisfies $$|x-y|<\\min(g(x),g(y))\\implies |f(x)-f(y)|<\\varepsilon.$$ Establish that $f$ is a pointwise limit of continuous real functions.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2021,
+      "stage": "IMC",
+      "number": "Hari 1, Nomor 4",
+      "label": "IMC 2021 — Hari 1, Nomor 4",
+      "url": "https://www.imc-math.org.uk/?item=day1&section=problems&year=2021",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2021-05",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "A determinant constraint from symmetric solutions",
+    "prompt": "For $A\\in M_n(\\mathbb R)$, suppose every $m\\ge1$ admits a symmetric real matrix $B$ with $A^m=2021B-B^2$. Establish $|\\det A|\\le1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2021,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 5",
+      "label": "IMC 2021 — Hari 2, Nomor 5",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2021-06",
+    "level": "Kuliah",
+    "topic": "Struktur Aljabar",
+    "difficulty": 4,
+    "title": "Nonexistence of a faithful permutation representation",
+    "prompt": "For prime $p$, establish that $\\operatorname{GL}_2(\\mathbb F_p)$ does not embed as a subgroup of the symmetric group $S_p$.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2021,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 6",
+      "label": "IMC 2021 — Hari 2, Nomor 6",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2021-07",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 4,
+    "title": "A bound on a holomorphic function multiplied by a monic polynomial",
+    "prompt": "Take $f$ holomorphic on an open neighborhood of $\\{z\\in\\mathbb C:|z|\\le1\\}$ and a monic polynomial $p$. Establish $$|f(0)|\\le\\max_{|z|=1}|f(z)p(z)|.$$",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2021,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 7",
+      "label": "IMC 2021 — Hari 2, Nomor 7",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
+    }
+  },
+  {
+    "id": "imc-2021-08",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 5,
+    "title": "Unit vectors with an orthogonality restriction",
+    "prompt": "Determine the maximum cardinality of $S\\subseteq\\{v\\in\\mathbb R^n:\\|v\\|=1\\}$ subject to every three-element subset of $S$ containing an orthogonal pair.",
+    "source": {
+      "kind": "competition",
+      "competition": "IMC",
+      "year": 2021,
+      "stage": "IMC",
+      "number": "Hari 2, Nomor 8",
+      "label": "IMC 2021 — Hari 2, Nomor 8",
+      "url": "https://www.imc-math.org.uk/?item=day2&section=problems&year=2021",
+      "note": "Independent English mathematical formulation; official IMC problem archive."
     }
   }
 ];
