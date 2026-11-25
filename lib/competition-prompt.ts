@@ -52,7 +52,7 @@ export function compactCompetitionMath(prompt: string): string {
    const end = offset + match.length - after.length;
    const left = before && /[$\])]/.test(prompt[offset - 1] ?? "") ? "\n" : "";
    const right = after && /^(?:\$|\\\[|\\\()/.test(prompt.slice(end + after.length)) ? "\n" : "";
-   return left + "$" + tex + "$" + right;
+   return left + "$$" + tex + "$$" + right;
   }
   const left = before && offset > 0 ? " " : "";
   const next = prompt[offset + match.length] ?? "";
