@@ -16784,6 +16784,414 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Pilihan Ganda, Nomor 25",
       "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2014.pdf, PDF page 3. Number assigned by original row order."
     }
+  },
+  {
+    "id": "magd-2013-i-pg-02",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Pada sebuah bak terdapat dua saluran pengisian yang lajunya konstan. Saluran I dapat mengisi bak dari keadaan kosong sampai penuh dalam 2 jam dan saluran II dapat melakukannya dalam 3 jam. Jika kedua saluran dibuka bersamaan, maka bak ini penuh dalam waktu $T$ menit, dengan $T=$\n\n(a) 60\n\n(b) 64\n\n(c) 72\n\n(d) 80\n\n(e) 90",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 2",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika konstanta $a$ dan $b$ memenuhi $\\lim_{x\\to1}\\frac{x-1}{\\sqrt{x+a}+b}=4$, maka $a+b=$\n\n(a) 2\n\n(b) 1\n\n(c) 0\n\n(d) −1\n\n(e) −2",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 3",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-04",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Untuk fungsi $f,g:\\mathbb R\\to\\mathbb R$ yang memenuhi $g(x)=f(2ax)\\ \\forall x\\in\\mathbb R$ dan $a>0$, jika $\\lim_{x\\to0}f(x)=\\ell$, maka $\\lim_{x\\to0}g(x)=$\n\n(a) 0\n\n(b) $a\\ell$\n\n(c) $2a\\ell$\n\n(d) $\\ell$\n\n(e) $2\\ell$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 4",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 4",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-05",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\lim_{x\\to\\infty}\\left(1+\\frac1{2x}\\right)^x=$$\n\n(a) $e$\n\n(b) $2e$\n\n(c) $e^2$\n\n(d) $\\frac1{\\sqrt e}$\n\n(e) $\\sqrt e$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 5",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 5",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-06",
+    "level": "Kuliah",
+    "topic": "Aljabar",
+    "difficulty": 3,
+    "title": "Aljabar",
+    "prompt": "Jika bilangan real $a,b,c$ dengan $a\\ne b\\ne c$ memenuhi $|a-b|-|b-c|=|a-c|$, maka suatu urutan yang mungkin dari titik $a,b$, dan $c$ pada garis bilangan adalah\n\n(a) $c<a<b$\n\n(b) $c<b<a$\n\n(c) $b<c<a$\n\n(d) $b<a<c$\n\n(e) $a<b<c$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 6",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 6",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-07",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika kurva $f(x)=ax^3+bx^2+cx$ melalui titik $(1,4)$, $f'(1)=2$, dan $f''(1)=0$, maka $f(2)=$\n\n(a) 2\n\n(b) 4\n\n(c) 6\n\n(d) 8\n\n(e) 12",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 7",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 7",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-08",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Fungsi $f(x)=x^{1/3}\\sin x$, $x\\in\\mathbb R$ bersifat\n\n(a) $f'$ kontinu di setiap $x\\in\\mathbb R$\n\n(b) $f$ kontinu di setiap $x\\in\\mathbb R$ kecuali di 0\n\n(c) $f$ kontinu di 0 tetapi $f'(0)$ tidak ada\n\n(d) $f'$ kontinu di setiap $x\\in\\mathbb R$ kecuali di 0\n\n(e) $f$ dan $f'$ tidak kontinu di 0",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 8",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 8",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-09",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $y=\\sqrt{1+x^2}-x$, $x\\in\\mathbb R$, maka $\\forall x\\in\\mathbb R$ berlaku sifat\n\n(a) $y'<0$ dan $y''<0$\n\n(b) $y'>0$ dan $y''<0$\n\n(c) $y'<0$ dan $y''>0$\n\n(d) $y'>0$ dan $y''>0$\n\n(e) $y>0$ dan $y''<0$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 9",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 9",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-10",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Sifat fungsi $f(x)=\\sqrt{x+2|x|}$, $x\\in\\mathbb R$ di 0 adalah\n\n(a) punya limit tetapi tidak kontinu\n\n(b) punya turunan dan kurvanya punya garis singgung\n\n(c) punya turunan tetapi kurvanya tidak punya garis singgung\n\n(d) tidak punya turunan tetapi kurvanya punya garis singgung\n\n(e) tidak punya turunan dan juga kurvanya tidak punya garis singgung",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 10",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 10",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-11",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika fungsi $f$ kontinu pada selang $[0,\\infty)$ dan memenuhi $\\int_0^{x^2}f(t)\\,dt=x^3$, maka aturan fungsi $f$ pada $[0,\\infty)$ adalah $f(x)=$\n\n(a) $\\sqrt{\\frac32x}$\n\n(b) $\\frac32\\sqrt x$\n\n(c) $\\frac32x$\n\n(d) $\\frac12\\sqrt{3x}$\n\n(e) $\\frac23\\sqrt x$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 11",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 11",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-12",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\int_0^1\\frac{x\\,dx}{1+x}=$$\n\n(a) $1-\\ln2$\n\n(b) $-1+2\\ln2$\n\n(c) $2(1-\\ln2)$\n\n(d) $1+\\ln2$\n\n(e) $\\ln2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 12",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 12",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-13",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Jika $P_n$ adalah partisi regular yang membagi selang $[0,1]$ atas $n$ bagian yang sama panjang, maka limit jumlah atas (*upper sum*) dari $\\int_0^1\\frac{x\\,dx}{1+x^2}$ adalah\n\n(a) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{n^2}{n^2+k^2}$\n\n(b) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{kn}{n^2+k^2}$\n\n(c) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac n{n^2+k^2}$\n\n(d) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac{k^2}{n^2+k^2}$\n\n(e) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^n\\frac k{n^2+k^2}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 13",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 13",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 3, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-14",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika cakram lingkaran $D=\\{(x,y)\\mid x^2+y^2\\le4\\}$ diputar terhadap garis $x+y=4$, maka volum benda putar yang terjadi adalah $v$ satuan volum, dengan $v=$\n\n(a) $16\\pi$\n\n(b) $32\\pi^2$\n\n(c) $16\\sqrt2\\pi^2$\n\n(d) $8\\sqrt2\\pi^2$\n\n(e) $16\\sqrt2\\pi$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 14",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 14",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-15",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Untuk barisan $\\{x_n\\}$, jika $S=\\{x_n\\mid x_n=1-\\frac{(-1)^n}{n},n\\text{ bilangan asli}\\}$, maka $\\sup S+\\inf S=$\n\n(a) 1\n\n(b) $1\\frac12$\n\n(c) 2\n\n(d) $2\\frac12$\n\n(e) $3\\frac12$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 15",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 15",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-16",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Barisan bilangan real $u_n=\\sqrt[n]{1+\\left(\\frac32\\right)^n}$, $n=1,2,\\cdots$ bersifat\n\n(a) konvergen ke $\\frac32$\n\n(b) konvergen ke 1\n\n(c) konvergen ke $\\frac23$\n\n(d) divergen ke $\\infty$\n\n(e) divergen oskilasi",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 16",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 16",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-17",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Selang kekonvergenan dari deret $\\displaystyle\\sum_{n=0}^\\infty\\frac{(-1)^nx^{n+1}}{n+1}=x-\\frac12x^2+\\frac13x^3-\\frac14x^4+\\cdots$ adalah himpunan semua $x$ yang memenuhi\n\n(a) $-1<x<1$\n\n(b) $-1\\le x<1$\n\n(c) $-1<x\\le1$\n\n(d) $-1\\le x\\le1$\n\n(e) $0\\le x\\le1$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 17",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 17",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-18",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika vektor kecepatan gerakan partikel setiap saat $t$ adalah $\\mathbf v(t)=\\cos t\\,\\mathbf i-\\sin t\\,\\mathbf j+\\sin t\\,\\mathbf k$ dan saat $t=0$ posisi partikel di titik $(1,2,1)$, maka posisi partikel saat $t=3\\pi$ adalah\n\n(a) $(0,1,1)$\n\n(b) $(1,0,3)$\n\n(c) $(0,1,-1)$\n\n(d) $(1,2,1)$\n\n(e) $(-1,-2,-1)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 18",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 18",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-19",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Sebutir peluru ditembakkan dengan ujung senjata di titik $(2,1,2)$ pada permukaan $S:z=x^2-2y^2$ ke bidang $xoy$. Jika arah peluru tegak lurus permukaan $S$ dan lintasannya berbentuk garis lurus, maka koordinat titik tembus peluru dengan bidang $xoy$ adalah\n\n(a) $(14,-5,0)$\n\n(b) $(10,7,0)$\n\n(c) $(9,-5,0)$\n\n(d) $(10,5,0)$\n\n(e) $(10,-7,0)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 19",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 19",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-20",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Untuk fungsi $z=f(x,y)$ yang terdiferensialkan pada $\\mathbb R^2$, jika $x=u+v$ dan $y=u-v$, maka $\\frac{\\partial z}{\\partial u}+\\frac{\\partial z}{\\partial v}=$\n\n(a) 0\n\n(b) $\\frac{\\partial z}{\\partial y}$\n\n(c) $\\frac{\\partial z}{\\partial x}$\n\n(d) $2\\frac{\\partial z}{\\partial x}$\n\n(e) $2\\frac{\\partial z}{\\partial y}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 20",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 20",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-21",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Dengan mengubah urutan integralnya ke $dy\\,dx$, $\\displaystyle\\int_0^4\\int_{\\sqrt y}^2\\frac{dx\\,dy}{1+x^3}=$\n\n(a) $\\frac13\\ln3$\n\n(b) $\\frac23\\ln3$\n\n(c) $\\ln3$\n\n(d) $1\\frac13$\n\n(e) $1\\frac23$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 21",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 21",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-22",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $D=\\{(x,y)\\mid x^2+y^2\\le2x,x^2+y^2\\ge1,y\\ge0\\}$, maka dengan transformasi ke koordinat polar, $\\displaystyle\\iint_D\\frac{dA}{\\sqrt{x^2+y^2}}=$\n\n(a) $\\sqrt3-\\frac\\pi3$\n\n(b) $2-\\frac\\pi3$\n\n(c) $1-\\frac\\pi6$\n\n(d) $\\sqrt3-\\frac\\pi6$\n\n(e) $2\\sqrt3-\\frac\\pi2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 22",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 22",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-23",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Untuk medan vektor konservatif $\\mathbf F(x,y,z)=(y+z)\\mathbf i+(z+x)\\mathbf j+(x+y)\\mathbf k$, suatu fungsi potensial $u=\\phi(x,y,z)$ yang memenuhi $\\nabla\\phi(x,y,z)=\\mathbf F(x,y,z)$ adalah $\\phi(x,y,z)=$\n\n(a) $xy+yz+xz$\n\n(b) $xy+yz+xyz$\n\n(c) $\\frac12(x^2+y^2+z^2)$\n\n(d) $\\frac12(xy+yz+xz)$\n\n(e) $x+y+z$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 23",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 23",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-24",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Fungsi kompleks $w=\\frac{-i}{z+i}$ memetakan himpunan titik di bidang $xoy$ ke bidang $uov$. Peta dari himpunan $\\{(x,y)\\mid y\\ge0\\}$ oleh $w=\\frac{-i}{z+i}$ adalah himpunan\n\n(a) $\\{(u,v)\\mid u^2+v^2\\le v\\}$\n\n(b) $\\{(u,v)\\mid u^2+v^2\\le u\\}$\n\n(c) $\\{(u,v)\\mid u^2+v^2\\le-u\\}$\n\n(d) $\\{(u,v)\\mid u^2+v^2\\le-v\\}$\n\n(e) $\\{(u,v)\\mid u^2+v^2\\ge u\\}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 24",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 24",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2013-i-pg-25",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Jika $C:|z|=1$ adalah lintasan tutup sederhana berorientasi positif di bidang kompleks, maka dengan rumus integral Cauchy diperoleh\n\n$$\\oint_C\\frac{1-\\cos z}{z^3}\\,dz=$$\n\n(a) 0\n\n(b) $2\\pi i$\n\n(c) $-2\\pi i$\n\n(d) $-\\pi i$\n\n(e) $\\pi i$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2013 — Tahap I, Pilihan Ganda, Nomor 25",
+      "competition": "MaG-D ITB",
+      "year": 2013,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 25",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
