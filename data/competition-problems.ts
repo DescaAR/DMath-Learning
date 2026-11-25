@@ -15169,6 +15169,414 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Esei Singkat, Nomor 3",
       "note": "User-supplied ZIP: University Challange/MaGD/Soal Babak I MagD 2017.pdf, PDF page 7. Esei number assigned by row order; blank answer workspace omitted."
     }
+  },
+  {
+    "id": "magd-2016-i-pg-02",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Luas daerah $D=\\{(x,y)\\mid 2y\\le x^2+y^2\\le 2x\\}$ adalah $L$ satuan luas, dengan $L=$\n\n(a) $\\pi-1$\n\n(b) $\\pi-\\frac12$\n\n(c) $\\frac12\\pi+1$\n\n(d) $\\frac34\\pi+\\frac12$\n\n(e) $\\frac43\\pi+\\frac12\\sqrt2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 2",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 2",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-03",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "$$\\lim_{u\\to2}\\frac{u^2+ux-2u-2x}{u^2-3u+2}=$$\n\n(a) 0\n\n(b) $x-2$\n\n(c) $x+2$\n\n(d) $-x+2$\n\n(e) $-x-2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 3",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 3",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-04",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Untuk fungsi $f(x)=3x^2+4x\\sqrt x-12x$ yang daerah asalnya selang $[0,\\infty)$, himpunan semua bilangan real $x$ sehingga fungsi $f$ monoton naik adalah selang\n\n(a) $(0,\\infty)$\n\n(b) $(1,\\infty)$\n\n(c) $(1,4)$\n\n(d) $(0,1)$\n\n(e) $(0,4)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 4",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 4",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-05",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika fungsi $f$ kontinu pada $[0,\\infty)$ dan memenuhi $\\int_0^{x^2+x}f(t)\\,dt=x^3+3x^2$, maka $f(2)=$\n\n(a) 0\n\n(b) 1\n\n(c) 2\n\n(d) 3\n\n(e) 4",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 5",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 5",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-06",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Alas benda padat $B$ di ruang adalah $D=\\{(x,y)\\mid 0\\le x\\le4,0\\le y\\le2\\sqrt{4-x}\\}$. Jika irisan sejajar antara benda $B$ dengan bidang yang tegak lurus sumbu-$x$ selalu berbentuk setengah lingkaran, maka volum $B$ adalah\n\n(a) $4\\pi^2$\n\n(b) $2\\pi^2$\n\n(c) $8\\pi$\n\n(d) $6\\pi$\n\n(e) $4\\pi$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 6",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 6",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-07",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Pusat daerah separuh cakram lingkaran $D=\\{(x,y)\\mid -3\\le x\\le3,0\\le y\\le\\sqrt{9-x^2}\\}$ adalah titik $(0,\\overline y)$, dengan $\\overline y=$\n\n(a) $\\frac3\\pi$\n\n(b) $\\frac{10}{3\\pi}$\n\n(c) $\\frac4\\pi$\n\n(d) $\\frac43$\n\n(e) $\\frac32$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 7",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 7",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-08",
+    "level": "Kuliah",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Geometri",
+    "prompt": "Bidang $\\alpha$ melalui titik $(0,0,0)$, $(2,0,4)$, dan $(0,2,4)$. Jika garis $g$ tegak lurus bidang $\\alpha$ dan melalui titik $(1,1,2)$, maka titik tembus garis $g$ dengan bidang $xoy$ adalah titik\n\n(a) $(5,5,0)$\n\n(b) $(4,5,0)$\n\n(c) $(4,4,0)$\n\n(d) $(5,4,0)$\n\n(e) $(5,6,0)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 8",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 8",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-09",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Persamaan bidang singgung pada permukaan ruang $S:xy^2+yz^2+xz=3$ di titik $A(1,1,1)$ adalah\n\n(a) $3x+3y+2z=8$\n\n(b) $2x+3y+3z=8$\n\n(c) $3x+2y+3z=8$\n\n(d) $2x+3y+4z=9$\n\n(e) $4x+3y+2z=9$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 9",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 9",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-10",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $F(x,y,z)=2(x+y)z$ dan $\\mathbf r(t)=\\cos t\\,\\mathbf i+\\sin t\\,\\mathbf j+\\cos t\\,\\mathbf k$, $0\\le t\\le2\\pi$, maka $F(\\mathbf r(t))$ adalah fungsi dari $t$, sebutlah $w=F(t)=F(\\mathbf r(t))$. Nilai maksimum dari turunan pertama $\\frac{dw}{dt}$ adalah\n\n(a) 2\n\n(b) 4\n\n(c) $\\sqrt2$\n\n(d) $2\\sqrt2$\n\n(e) $2\\sqrt3$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 10",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 10",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-11",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Turunan berarah dari fungsi $F(x,y,z)=x^2yz^2$ sepanjang kurva $\\mathbf r(t)=t\\mathbf i+t^2\\mathbf j+(2t^3-4t)\\mathbf k$ di titik $(1,1,-2)$ adalah\n\n(a) 8\n\n(b) 6\n\n(c) $5\\frac13$\n\n(d) $4\\frac12$\n\n(e) $2\\frac23$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 11",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 11",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-12",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Ekstrim minimum relatif dari fungsi $f(x,y)=x^3+y^3-12x-3y$ untuk $(x,y)\\in\\mathbb R^2$ tercapai di titik\n\n(a) $(0,0)$\n\n(b) $(2,1)$\n\n(c) $(2,-1)$\n\n(d) $(-2,1)$\n\n(e) $(-2,-1)$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 12",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 12",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-13",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Fungsi $(u,v)=\\mathbf F(x,y)=(x+y)\\mathbf i+\\frac{y}{x+y}\\mathbf j$ mempunyai invers untuk $x>0$ dan $y>0$. Invers dari fungsi $\\mathbf F$ adalah $(x,y)=\\mathbf F^{-1}(u,v)=$\n\n(a) $u(1-v)\\mathbf i+uv\\mathbf j$\n\n(b) $uv\\mathbf i+v(1-u)\\mathbf j$\n\n(c) $v(1-u)\\mathbf i+uv\\mathbf j$\n\n(d) $u(1+v)\\mathbf i-uv\\mathbf j$\n\n(e) $uv\\mathbf i+u(1-v)\\mathbf j$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 13",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 13",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 2. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-14",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Luas daerah $D=\\{(x,y)\\mid x\\ge0,y\\ge0,2x\\le x^2+y^2\\le2y\\}$ dalam koordinat kutub dapat dinyatakan sebagai integral lipat dua\n\n(a) $\\int_0^{\\pi/4}\\int_{2\\sin\\theta}^{2\\cos\\theta}r\\,dr\\,d\\theta$\n\n(b) $\\int_0^{\\pi/4}\\int_{2\\sin\\theta}^{2\\cos\\theta}dr\\,d\\theta$\n\n(c) $\\int_{\\pi/4}^{\\pi/2}\\int_{2\\cos\\theta}^{2\\sin\\theta}r\\,dr\\,d\\theta$\n\n(d) $\\int_{\\pi/4}^{\\pi/2}\\int_{2\\sin\\theta}^{2\\cos\\theta}dr\\,d\\theta$\n\n(e) $\\int_0^{\\pi/2}\\int_{2\\cos\\theta}^{2\\sin\\theta}r\\,dr\\,d\\theta$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 14",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 14",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-15",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $C=C_1+C_2$ ($C\\equiv$ lintasan $C_1$ dilanjutkan $C_2$) dengan $C_1:y=x^2$ dari $(0,0)$ ke $(4,2)$ dan $C_2:y=2x$ dari $(4,2)$ ke $(0,0)$, maka dengan teorema Green, $\\oint_C(e^xy^2-xy)dx+2ye^xdy=$\n\n(a) 1\n\n(b) $1\\frac13$\n\n(c) 2\n\n(d) $2\\frac23$\n\n(e) 3",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 15",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 15",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-16",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika $B=\\{(x,y,z)\\mid x^2+y^2+z^2\\le a^2\\}$ dan $S$ adalah permukaan bola $x^2+y^2+z^2=a^2$ dengan vektor normal satuan $\\mathbf n$ ke arah luar, maka untuk $\\mathbf F(x,y,z)=2xy\\mathbf i-y^2\\mathbf j+3z\\mathbf k$ diperoleh $\\iint_S\\mathbf F\\cdot\\mathbf n\\,dS=$\n\n(a) $12\\pi a^2$\n\n(b) $\\frac43\\pi a^3$\n\n(c) $\\frac83\\pi a^3$\n\n(d) $4\\pi a^3$\n\n(e) $4\\pi a^2$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 16",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 16",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-17",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Argumen utama dari bilangan kompleks $z=(\\sqrt3-i)^8$ adalah $\\operatorname{Arg}z=$\n\n(a) $-\\frac23\\pi$\n\n(b) $-\\frac56\\pi$\n\n(c) $\\frac56\\pi$\n\n(d) $\\frac34\\pi$\n\n(e) $\\frac23\\pi$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 17",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 17",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-18",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Peta dari kuadran pertama $K\\text{-}1=\\{z\\in\\mathbb C\\mid\\operatorname{Re}z\\ge0,\\operatorname{Im}z\\ge0\\}$ oleh fungsi kompleks $w=f(z)=-iz^2$ adalah himpunan semua titik di bidang $uov$ yang memenuhi\n\n(a) $\\operatorname{Re}w\\ge0$ dan $\\operatorname{Im}w\\ge0$\n\n(b) $\\operatorname{Re}w\\le0$\n\n(c) $\\operatorname{Re}w\\ge0$\n\n(d) $\\operatorname{Re}w\\le\\operatorname{Im}w$\n\n(e) $\\operatorname{Im}w\\ge0$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 18",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 18",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-19",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Untuk bilangan kompleks $z=x+yi$, himpunan semua titik di bidang $xoy$ sehingga fungsi kompleks $f(z)=(x^2+y^2)+2xyi$ terdiferensialkan adalah\n\n(a) $\\{(x,y)\\mid y=0\\}$\n\n(b) $\\{(x,y)\\mid x=0\\}$\n\n(c) $\\{(x,y)\\mid y=x\\}$\n\n(d) $\\{(x,y)\\mid y>0\\}$\n\n(e) $\\{(x,y)\\mid x>0\\}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 19",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 19",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-20",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Deret Maclaurin dari fungsi kompleks $f(z)=\\begin{cases}\\frac{1-\\cos z}{z^2},&z\\ne0\\\\\\frac12,&z=0\\end{cases}$ yang analitik pada $\\mathbb C$ adalah\n\n(a) $\\displaystyle\\sum_{n=0}^\\infty\\frac{i^{2n+2}z^{2n}}{(2n+2)!}$\n\n(b) $\\displaystyle\\sum_{n=0}^\\infty\\frac{i^{2n}z^{2n}}{(2n+2)!}$\n\n(c) $\\displaystyle\\sum_{n=1}^\\infty\\frac{i^{2n+2}z^{2n}}{(2n)!}$\n\n(d) $\\displaystyle\\sum_{n=0}^\\infty\\frac{i^{2n}z^{2n}}{(2n)!}$\n\n(e) $\\displaystyle\\sum_{n=1}^\\infty\\frac{i^{2n}z^{2n-2}}{(2n)!}$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 20",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 20",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-21",
+    "level": "Kuliah",
+    "topic": "Analisis Real",
+    "difficulty": 3,
+    "title": "Analisis Real",
+    "prompt": "Untuk himpunan terbatas $S=\\left\\{x\\in\\mathbb R\\mid x=1-\\frac{(-1)^n}{n},n\\in\\mathbb N\\right\\}$, $\\sup S+\\inf S=$\n\n(a) 2\n\n(b) 3\n\n(c) $2\\frac13$\n\n(d) $2\\frac12$\n\n(e) $3\\frac13$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 21",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 21",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-22",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Jika suku ke-$n$ suatu barisan adalah $u_n=\\sum_{k=1}^n\\frac{(-1)^k}{k}$, maka barisan $\\{u_n\\}$ konvergen ke\n\n(a) 2\n\n(b) 1\n\n(c) $\\frac12$\n\n(d) $\\ln2$\n\n(e) $\\ln\\frac12$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 22",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 22",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-23",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Barisan bilangan real $\\{u_n\\}$ dengan $u_1=\\sqrt{1+a^2},u_2=\\sqrt[3]{1+a^3},\\cdots,u_{n-1}=\\sqrt[n]{1+a^n},\\cdots\\ (a>1)$ konvergen ke\n\n(a) 1\n\n(b) $a^2$\n\n(c) $2a$\n\n(d) $a+1$\n\n(e) $a$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 23",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 23",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-24",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika fungsi $y=f(x)$ terdiferensialkan pada selang buka $I$ yang memuat $C$, maka $\\lim_{h\\to0}\\frac{f(c+h)-f(c-h)}h=$\n\n(a) $f'(c)$\n\n(b) $f'(2c)$\n\n(c) $2f'(c)$\n\n(d) $f''(c)$\n\n(e) 0",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 24",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 24",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
+  },
+  {
+    "id": "magd-2016-i-pg-25",
+    "level": "Kuliah",
+    "topic": "Kalkulus",
+    "difficulty": 3,
+    "title": "Kalkulus",
+    "prompt": "Jika fungsi $f$ kontinu dan monoton naik pada $[0,4]$, maka $\\int_1^4f(x)dx+\\int_{f(1)}^{f(4)}f^{-1}(y)dy=$\n\n(a) $4f(4)-f(1)$\n\n(b) $4(f(4)-f(1))$\n\n(c) $4f(4)$\n\n(d) $3f(4)-f(1)$\n\n(e) $3(f(4)-f(1))$",
+    "source": {
+      "kind": "competition",
+      "label": "MaG-D ITB 2016 — Tahap I, Pilihan Ganda, Nomor 25",
+      "competition": "MaG-D ITB",
+      "year": 2016,
+      "stage": "Tahap I",
+      "number": "Pilihan Ganda, Nomor 25",
+      "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2016.pdf, PDF page 3. Number assigned by original row order."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
