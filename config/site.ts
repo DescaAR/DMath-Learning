@@ -17,7 +17,9 @@ export const siteConfig = {
   },
   keywords: ["DMath Learning","olimpiade matematika","problem solving","OSN","ON-MIPA","IMO","IMC","SEAMO","problem of the day"],
   nav: [
-    { label: "Problem Solving", href: "/problem-solving" },
-    { label: "Problem of the Day", href: "/problem-of-the-day" },
+    { label: "Olimpiade SD", href: "/olimpiade-sd" },
+    { label: "Olimpiade SMP", href: "/olimpiade-smp" },
+    { label: "Olimpiade SMA", href: "/olimpiade-sma" },
+    { label: "Olimpiade Kuliah", href: "/olimpiade-kuliah" },
   ],
 } as const;

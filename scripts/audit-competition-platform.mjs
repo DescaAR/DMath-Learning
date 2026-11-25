@@ -26,15 +26,17 @@ for(const p of competitionProblems){
  }
 }
 const home=read("app/page.tsx"),workspace=read("components/CompetitionWorkspace.tsx"),config=read("config/site.ts"),css=read("app/competition.css"),layout=read("app/layout.tsx");
-for(const [route,name] of [["problem-solving","Problem Solving"],["problem-of-the-day","Problem of the Day"]]){
+for(const [route,name] of [["olimpiade-sd","Olimpiade SD"],["olimpiade-smp","Olimpiade SMP"],["olimpiade-sma","Olimpiade SMA"],["olimpiade-kuliah","Olimpiade Kuliah"]]){
  assert.ok(fs.existsSync("app/"+route+"/page.tsx"),route+" route missing");
+ assert.ok(fs.existsSync("app/"+route+"/potd/page.tsx"),route+" daily route missing");
  assert.ok(config.includes('href: "/'+route+'"'),route+" missing in main nav");
- assert.ok(home.includes(name),name+" missing from landing page");
 }
+assert.doesNotMatch(config,/label: "Problem Solving"|label: "Problem of the Day"/);
+assert.match(home,/LevelCards/);assert.match(home,/ProblemOfDay/);
 assert.doesNotMatch(home,/HomeMathShowcase|\/materi|Interactive Lab|Math Tools|Find the Mistake/);
 assert.ok(read("app/arsip/page.tsx").includes('"/materi"'),"Legacy material archive is missing");
 assert.doesNotMatch(workspace,/Ruang kerja|Catatan penyelesaian|Periksa argumen|Progressive Hints|Tandai selesai|setNotes|localStorage|p\.proof\.prompt|p\.evolution\.prompt/);
-assert.match(workspace,/Asia\/Jakarta/);assert.match(workspace,/dayIndex\(date\)/);assert.doesNotMatch(workspace,/p\.solutions|id="solution"|dan solusi|beserta pembahasan/);assert.match(workspace,/p\.prompt/);assert.match(workspace,/id="source"/);assert.doesNotMatch(config,/Proof Academy|Problem Evolution/);
+assert.match(workspace,/Asia\/Jakarta/);assert.match(workspace,/dailySchedule\[date\]/);assert.doesNotMatch(workspace,/%group\.length|dayIndex\(date\)/);assert.doesNotMatch(workspace,/p\.solutions|id="solution"|dan solusi|beserta pembahasan/);assert.match(workspace,/p\.prompt/);assert.match(workspace,/id="source"/);assert.doesNotMatch(config,/Proof Academy|Problem Evolution/);
 assert.match(read("app/problem-solving/[id]/page.tsx"),/generateStaticParams/);
 assert.ok(fs.existsSync("archive/competition-problems-with-solutions.ts"),"Previous solutions must be preserved in the repository");
 assert.doesNotMatch(workspace,/archive\/competition-problems-with-solutions/);
@@ -46,4 +48,21 @@ assert.match(home,/cmp-hero-index/,"Home must prioritize a functional collection
 assert.doesNotMatch(home,/cmp-collection-panel/,"Avoid decorative stats panel");
 assert.match(workspace,/cmp-catalog-layout/);assert.match(workspace,/cmp-problem-list/);assert.match(workspace,/cmp-daily-grid/);
 assert.match(css,/\.cmp-hero\{background:var\(--cmp-paper\)/,"Light editorial hero required");
-console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and two navigation routes. Public records contain questions and attribution only.");
+const dailyRaw=read("data/competition-daily.ts");
+const dailyModule={exports:{}};
+new Function("exports","module",ts.transpileModule(dailyRaw,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText)(dailyModule.exports,dailyModule);
+const {dailySchedule,dailyDates}=dailyModule.exports;
+const scheduledIds=new Set();
+for(const date of dailyDates){
+ assert.match(date,/^\d{4}-\d{2}-\d{2}$/);
+ assert.equal(new Date(date+"T00:00:00Z").toISOString().slice(0,10),date);
+ assert.deepEqual(Object.keys(dailySchedule[date]).sort(),[...levels].sort());
+ for(const l of levels){
+  const id=dailySchedule[date][l];
+  assert.ok(competitionProblems.some(p=>p.id===id&&p.level===l),date+" invalid question for "+l);
+  assert.ok(!scheduledIds.has(id),"Duplicate daily question: "+id);
+  scheduledIds.add(id);
+ }
+}
+console.log("POTD audit passed:",dailyDates.length,"dates,",scheduledIds.size,"unique questions.");
+console.log("Competition platform audit passed:",competitionProblems.length,"problems,",formulaCount,"KaTeX expressions, all four levels and dedicated daily routes. Public records contain questions and attribution only.");

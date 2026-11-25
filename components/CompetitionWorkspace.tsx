@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { competitionProblems, levels, levelMeta, officialResources, type CompetitionProblem, type Level } from "@/data/competition-problems";
+import { dailySchedule, dailyDates } from "@/data/competition-daily";
 import { RichMath } from "@/components/RichMath";
 
 const difficultyLabels=["","Foundation","Intermediate","Advanced","Expert","Master"];
@@ -9,9 +10,11 @@ const isLevel=(v:string):v is Level=>levels.some(x=>x===v);
 const link=(p:CompetitionProblem)=>"/problem-solving/"+p.id+"/";
 const difficulty=(p:CompetitionProblem)=>difficultyLabels[p.difficulty]||"—";
 const shortSource=(p:CompetitionProblem)=>p.source.label;
+const levelHref=(l:Level)=>"/olimpiade-"+l.toLowerCase()+"/";
+const levelTitle=(l:Level)=>l==="Kuliah"?"Olimpiade Kuliah":levelMeta[l].title;
 
 export function LevelCards(){
- return <div className="cmp-levels">{levels.map((level)=><Link className="cmp-level-card" key={level} href={"/problem-solving/?level="+encodeURIComponent(level)}>
+ return <div className="cmp-levels">{levels.map((level)=><Link className="cmp-level-card" key={level} href={levelHref(level)}>
   <span className="cmp-level-code">{level==="Kuliah"?"PT":level}</span>
   <span className="cmp-level-title"><strong>{levelMeta[level].title}</strong><small>{levelMeta[level].targets}</small></span>
   <span className="cmp-level-count">{competitionProblems.filter(p=>p.level===level).length}<small>soal</small></span><span aria-hidden="true" className="cmp-level-arrow">›</span>
@@ -29,21 +32,22 @@ function ProblemCard({p,kind="list"}:{p:CompetitionProblem;kind?:"list"|"daily"|
  </article>;
 }
 
-export function CompetitionCatalog(){
- const [level,setLevel]=useState("Semua"),[query,setQuery]=useState(""),[topic,setTopic]=useState("Semua"),[diff,setDiff]=useState("Semua"),[source,setSource]=useState("Semua");
- useEffect(()=>{const params=new URLSearchParams(window.location.search);const l=params.get("level"),q=params.get("q"),s=params.get("source");if(l&&isLevel(l))setLevel(l);if(q)setQuery(q);if(s==="competition"||s==="original")setSource(s);},[]);
+export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
+ const [level,setLevel]=useState<string>(fixedLevel||"Semua"),[query,setQuery]=useState(""),[topic,setTopic]=useState("Semua"),[diff,setDiff]=useState("Semua"),[source,setSource]=useState("Semua");
+ useEffect(()=>{const params=new URLSearchParams(window.location.search);const l=params.get("level"),q=params.get("q"),s=params.get("source");if(!fixedLevel&&l&&isLevel(l))setLevel(l);if(q)setQuery(q);if(s==="competition"||s==="original")setSource(s);},[fixedLevel]);
  const pool=useMemo(()=>competitionProblems.filter(p=>level==="Semua"||p.level===level),[level]);
  const topics=Array.from(new Set(pool.map(p=>p.topic))).sort((a,b)=>a.localeCompare(b,"id"));
  const filtered=pool.filter(p=>(topic==="Semua"||p.topic===topic)&&(diff==="Semua"||String(p.difficulty)===diff)&&(source==="Semua"||p.source.kind===source)&&[p.title,p.prompt,p.topic,p.source.label,p.level,p.id].join(" ").toLowerCase().includes(query.toLowerCase().trim()));
- const reset=()=>{setQuery("");setLevel("Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");};
+ const reset=()=>{setQuery("");setLevel(fixedLevel||"Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");};
  return <div className="cmp-page container cmp-catalog">
-  <header className="cmp-page-head"><div><span className="cmp-kicker">DMATH / COLLECTION</span><h1>Problem Solving</h1><p>Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa.</p></div><div className="cmp-page-count"><strong>{competitionProblems.length}</strong><span>soal tersedia</span></div></header>
+  <header className="cmp-page-head"><div><span className="cmp-kicker">DMATH / COLLECTION</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length}</strong><span>soal tersedia</span></div></header>
+  {fixedLevel&&<nav className="cmp-level-section-nav" aria-label="Menu jenjang"><span aria-current="page">Kumpulan Soal</span><Link href={levelHref(fixedLevel)+"potd/"}>Problem of the Day →</Link></nav>}
   <div className="cmp-catalog-layout">
    <aside className="cmp-filter" aria-label="Filter soal">
     <div className="cmp-filter-title"><h2>Filter soal</h2><button className="cmp-text-button" type="button" onClick={reset}>Reset</button></div>
     <label className="cmp-search-label">Pencarian<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Judul, topik, kompetisi…"/></label>
-    <div className="cmp-filter-label">Jenjang</div>
-    <div className="cmp-level-tabs" role="group" aria-label="Jenjang">{["Semua",...levels].map(l=><button type="button" key={l} aria-pressed={l===level} onClick={()=>{setLevel(l);setTopic("Semua");}}><span>{l==="Semua"?"Semua jenjang":l==="Kuliah"?"Mahasiswa":l}</span><small>{l==="Semua"?competitionProblems.length:competitionProblems.filter(p=>p.level===l).length}</small></button>)}</div>
+    {!fixedLevel&&<><div className="cmp-filter-label">Jenjang</div>
+    <div className="cmp-level-tabs" role="group" aria-label="Jenjang">{["Semua",...levels].map(l=><button type="button" key={l} aria-pressed={l===level} onClick={()=>{setLevel(l);setTopic("Semua");}}><span>{l==="Semua"?"Semua jenjang":l==="Kuliah"?"Mahasiswa":l}</span><small>{l==="Semua"?competitionProblems.length:competitionProblems.filter(p=>p.level===l).length}</small></button>)}</div></>}
     <div className="cmp-filter-grid">
      <label>Topik<select value={topic} onChange={e=>setTopic(e.target.value)}><option>Semua</option>{topics.map(t=><option key={t}>{t}</option>)}</select></label>
      <label>Kesulitan<select value={diff} onChange={e=>setDiff(e.target.value)}><option>Semua</option>{difficultyLabels.slice(1).map((d,i)=><option value={i+1} key={d}>{d}</option>)}</select></label>
@@ -63,7 +67,7 @@ export function CompetitionCatalog(){
 export function CompetitionProblemDetail({problem:p}:{problem:CompetitionProblem}){
  const related=competitionProblems.filter(x=>x.id!==p.id&&x.level===p.level).sort((a,b)=>Number(b.topic===p.topic)-Number(a.topic===p.topic)).slice(0,3);
  return <div className="cmp-page container"><div className="cmp-simple-reading">
-  <nav className="cmp-breadcrumb" aria-label="Breadcrumb"><Link href="/problem-solving/">Problem Solving</Link><span>/</span><Link href={"/problem-solving/?level="+encodeURIComponent(p.level)}>{p.level}</Link><span>/</span><span>{p.id.toUpperCase()}</span></nav>
+  <nav className="cmp-breadcrumb" aria-label="Breadcrumb"><Link href="/problem-solving/">Problem Solving</Link><span>/</span><Link href={levelHref(p.level)}>{p.level}</Link><span>/</span><span>{p.id.toUpperCase()}</span></nav>
   <article className="cmp-detail">
    <header className="cmp-detail-head"><div className="cmp-problem-meta"><span className="cmp-id">{p.id.toUpperCase()}</span><span>{levelMeta[p.level].title}</span><span>{p.topic}</span><span className="cmp-difficulty">{difficulty(p)}</span></div><h1>{p.title}</h1></header>
    <div className="cmp-main-prompt"><h2>Soal</h2><div><RichMath>{p.prompt}</RichMath></div></div>
@@ -75,16 +79,19 @@ export function CompetitionProblemDetail({problem:p}:{problem:CompetitionProblem
 }
 
 function dateParts(){const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Jakarta",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());const part=(t:string)=>parts.find(x=>x.type===t)?.value||"";return part("year")+"-"+part("month")+"-"+part("day");}
-function dayIndex(date:string){return Math.floor(Date.parse(date+"T00:00:00Z")/86400000);}
-function previousDate(date:string,delta:number){return new Date((dayIndex(date)+delta)*86400000).toISOString().slice(0,10);}
-export function ProblemOfDay({compact=false}:{compact?:boolean}){
+export function ProblemOfDay({compact=false,fixedLevel}:{compact?:boolean;fixedLevel?:Level}={}){
  const [selectedDate,setDate]=useState(""),[today,setToday]=useState("");const date=selectedDate||today;
  useEffect(()=>{const update=()=>setToday(dateParts());update();const timer=window.setInterval(update,60000);return()=>window.clearInterval(timer);},[]);
- const daily=date?levels.map((l,i)=>{const group=competitionProblems.filter(p=>p.level===l);const n=dayIndex(date)+i;return group[((n%group.length)+group.length)%group.length];}):[];
+ const dates=dailyDates.filter(d=>d<=today);
+ const visibleLevels=fixedLevel?[fixedLevel]:levels;
+ const record=dailySchedule[date];
+ const daily=date&&date<=today&&record?visibleLevels.flatMap(l=>{const p=competitionProblems.find(x=>x.id===record[l]&&x.level===l);return p?[p]:[];}):[];
  const displayDate=date?new Intl.DateTimeFormat("id-ID",{dateStyle:"full",timeZone:"UTC"}).format(new Date(date+"T00:00:00Z")):"";
+ const previous=dates.filter(d=>d<date).at(-1);
+ const next=dates.find(d=>d>date);
  return <section className={compact?"cmp-potd-compact":"cmp-page container cmp-potd"}>
-  <header className={compact?"cmp-section-heading":"cmp-page-head"}><div><span className="cmp-kicker">DAILY PROBLEMS</span>{compact?<h2>Problem of the Day</h2>:<h1>Problem of the Day</h1>}<p>Empat soal pilihan setiap hari, satu untuk setiap jenjang.</p></div>{compact&&<Link className="cmp-link-text" href="/problem-of-the-day/">Lihat arsip harian →</Link>}</header>
-  {date?<><div className="cmp-date-bar"><div className="cmp-potd-date"><span className="cmp-date-mark" aria-hidden="true"/><span>{displayDate}</span><small>WIB</small></div>{!compact&&<div className="cmp-date-controls"><button type="button" className="cmp-button cmp-secondary" aria-label="Hari sebelumnya" onClick={()=>setDate(previousDate(date,-1))}>←</button><input aria-label="Tanggal soal" type="date" value={date} max={today} onChange={e=>{if(e.target.value&&e.target.value<=today&&Number.isFinite(dayIndex(e.target.value)))setDate(e.target.value);}}/><button type="button" className="cmp-button cmp-secondary" aria-label="Hari berikutnya" disabled={date>=today} onClick={()=>setDate(previousDate(date,1))}>→</button><button type="button" className="cmp-text-button" onClick={()=>setDate("")}>Hari ini</button></div>}</div><div className="cmp-daily-grid">{daily.map(p=><ProblemCard key={p.id} p={p} kind="daily"/>)}</div></>:<div className="cmp-empty" role="status">Memuat pilihan soal harian…</div>}
-  <p className="cmp-muted">Pilihan harian mengikuti rotasi koleksi soal yang tersedia.</p>
+  <header className={compact?"cmp-section-heading":"cmp-page-head"}><div><span className="cmp-kicker">{fixedLevel?levelTitle(fixedLevel):"DAILY PROBLEMS"}</span>{compact?<h2>Problem of the Day</h2>:<h1>Problem of the Day</h1>}<p>{fixedLevel?"Soal harian "+levelTitle(fixedLevel)+".":"Satu soal per jenjang pada setiap tanggal yang terjadwal."}</p></div>{compact&&<Link className="cmp-link-text" href="/problem-of-the-day/">Lihat arsip harian →</Link>}</header>
+  {fixedLevel&&<nav className="cmp-level-section-nav" aria-label="Menu jenjang"><Link href={levelHref(fixedLevel)}>Kumpulan Soal</Link><span aria-current="page">Problem of the Day</span></nav>}
+  {date?<><div className="cmp-date-bar"><div className="cmp-potd-date"><span className="cmp-date-mark" aria-hidden="true"/><span>{displayDate}</span><small>WIB</small></div>{!compact&&<div className="cmp-date-controls"><button type="button" className="cmp-button cmp-secondary" aria-label="Hari sebelumnya" disabled={!previous} onClick={()=>{if(previous)setDate(previous);}}>←</button><select aria-label="Tanggal soal" value={date} onChange={e=>setDate(e.target.value)}>{!dates.includes(date)&&<option value={date}>{date} — belum tersedia</option>}{dates.slice().reverse().map(d=><option key={d} value={d}>{d}</option>)}</select><button type="button" className="cmp-button cmp-secondary" aria-label="Hari berikutnya" disabled={!next} onClick={()=>{if(next)setDate(next);}}>→</button><button type="button" className="cmp-text-button" onClick={()=>setDate("")}>Hari ini</button></div>}</div>{daily.length?<div className={"cmp-daily-grid"+(fixedLevel?" cmp-daily-single":"")}>{daily.map(p=><ProblemCard key={p.id} p={p} kind="daily"/>)}</div>:<div className="cmp-empty"><h2>Belum ada soal untuk tanggal ini</h2><p>Soal baru belum dijadwalkan. Soal sebelumnya tetap tersedia di arsip.</p>{compact&&<Link className="cmp-link-text" href="/problem-of-the-day/">Buka arsip →</Link>}</div>}</>:<div className="cmp-empty" role="status">Memuat pilihan soal harian…</div>}
  </section>;
 }
