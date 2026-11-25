@@ -17192,6 +17192,227 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Pilihan Ganda, Nomor 25",
       "note": "User-supplied University Challange ZIP: MaGD/Soal-MagDay-2013A.pdf, PDF page 5, first MCQ variant. Number assigned by original row order."
     }
+  },
+  {
+    "id": "smartmc-2022-pg-01",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan A dan B adalah matriks dalam $\\mathbb R^{2022}$ yang memenuhi persamaan-persamaan\n\n$$A^{-1}=(A+B)^{-1}-B^{-1}$$\n\ndan $\\det(A^{-1})=2022$. Tentukan det (B)!\n\nA. $\\frac1{2020}$\n\nB. 2020\n\nC. 2022\n\nD. $\\frac1{2022}$\n\nE. 1",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 1",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 1",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 1. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-02",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Koordinat $x^2$ terhadap basis $\\{x^2-1,x^2-2x,-x+1\\}$ di $P_2$ adalah…\n\nA. $\\begin{bmatrix}\\frac12\\\\-1\\\\\\frac12\\end{bmatrix}$\n\nB. $\\begin{bmatrix}2\\\\-1\\\\2\\end{bmatrix}$\n\nC. $\\begin{bmatrix}-\\frac12\\\\1\\\\-\\frac12\\end{bmatrix}$\n\nD. $\\begin{bmatrix}-2\\\\1\\\\-2\\end{bmatrix}$\n\nE. $\\begin{bmatrix}1\\\\1\\\\1\\end{bmatrix}$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 2",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 2",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 1. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-03",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan A $=\\begin{bmatrix}0&1\\\\0&-1\\end{bmatrix}$. Misalkan T operator linear pada $\\mathbb R^2$ dengan aturan $T(x)=AX-XA$, $\\forall x\\in\\mathbb R^2$. Maka rank(T) adalah….\n\nA. -1\n\nB. 0\n\nC. 1\n\nD. -2\n\nE. 2",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 3",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 3",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 1. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-04",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "If $A=\\begin{bmatrix}1&0&4\\\\-1&a&5\\\\0&1&b\\end{bmatrix}$ has a rank equal to 2. The value of $a^2b^2$ is…\n\nA. 100\n\nB. 121\n\nC. 144\n\nD. 169\n\nE. 196",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 4",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 4",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 1. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-05",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "Misalkan $A$ dan $B$ adalah matriks $\\mathbb R^{n\\times n}$ yang memenuhi persamaan\n\n$$AB^2-2BAB+B^2A=0$$\n\nNilai eigen terbesar dari matriks $AB-BA$ adalah…\n\nA. 8\n\nB. 2\n\nC. 0\n\nD. 1\n\nE. 4",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 5",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 5",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 1. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-06",
+    "level": "Kuliah",
+    "topic": "Aljabar Linear",
+    "difficulty": 3,
+    "title": "Aljabar Linear",
+    "prompt": "It is known that matrix $A$ is :\n\n$$A=\\begin{bmatrix}2&2&6\\\\10&4&12\\\\-4&-2&-6\\end{bmatrix}$$\n\nThe value of $A^{222}+I^{223}+2022A^{2022}+2023I^{2023}$ is ...\n\nA. $2022A+2023I$\n\nB. $2023I$\n\nC. $2023A+2024I$\n\nD. $2024I$\n\nE. $2042A+2025I$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 6",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 6",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 1–2. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-07",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Berapa banyak kata sandi yang dapat dibuat jika diperlukan kata sandi yang panjangnya 4-7 karakter. Setiap karakter hanya boleh berupa angka genap dan huruf, serta huruf kecil dan huruf besar dianggap sama.\n\nA. 2.419.111.000\n\nB. 2.941.110.000\n\nC. 2.149.110.000\n\nD. 2.194.111.000\n\nE. 2.914.110.000",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 7",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 7",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 2. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-08",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Didefinisikan notasi $\\lfloor x\\rfloor$ yaitu bilangan bulat terbesar yang kurang dari atau sama dengan $x$ (sebagai contoh, nilai dari $\\lfloor2.2\\rfloor$ adalah 2). Misalkan\n\n$$\\begin{aligned}S_n={}&\\left\\lfloor\\frac{2^1}{3}\\right\\rfloor\\binom{2n}{1}+\\left\\lfloor\\frac{2^2}{3}\\right\\rfloor\\binom{2n}{2}+\\cdots\\\\&+\\left\\lfloor\\frac{2^{2n-1}}{3}\\right\\rfloor\\binom{2n}{2n-1}+\\frac13\\left[\\sum_{k=1}^n\\binom{2n}{2k-1}-\\sum_{k=1}^{2n}2^k\\binom{2n}{k}\\right]\\end{aligned}$$\n\nuntuk setiap $n\\in\\mathbb N$. Nilai dari $(4-6S_{2022})$ adalah ….\n\nA. $2_{2022}$\n\nB. $2_{2023}$\n\nC. $4_{2021}$\n\nD. $4_{2022}$\n\nE. $4_{2023}$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 8",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 8",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 2. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-09",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Banyaknya permutasi dari 0,1,2,⋯,9 yang diawali dengan digit 789 atau memuat digit 54 pada posisi ke-5 dan 6 atau diakhiri dengan digit 321 adalah …\n\nA. 50134\n\nB. 50138\n\nC. 50186\n\nD. 50614\n\nE. 50662",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 9",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 9",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 2. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-10",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Defined a recursive function, $\\forall n\\in Z$ obtain $f(1)=1$, $f(2)=5$, dan $f(n+1)=f(n)+2f(n-1)$, $\\forall n>2$. The value of $f(n)$ is…\n\nA. $2^n+1$\n\nB. $2^{2n}+1$\n\nC. $2^{2n}+(-1)^n$\n\nD. $2^n+(-1)^n$\n\nE. $2^n$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 10",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 10",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 2–3. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-11",
+    "level": "Kuliah",
+    "topic": "Barisan dan Deret",
+    "difficulty": 3,
+    "title": "Barisan dan Deret",
+    "prompt": "Solusi dari relasi rekuren\n\n$$x_n=4x_{n-1}-3x_{n-2}+2^n,\\ (n\\ge3)$$\n\ndengan syarat $x_1=1,x_2=11$ untuk setiap $n\\in\\mathbb N$ adalah…\n\nA. $x_n=3_{n-1}-2_{n-2}$\n\nB. $x_n=3_{n-1}+2_{n-2}$\n\nC. $x_n=3_{n+1}-2_{n+2}$\n\nD. $x_n=2_{n+1}-3_{n+2}$\n\nE. $x_n=2_{n-1}+3_{n-2}$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 11",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 11",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 3. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-12",
+    "level": "Kuliah",
+    "topic": "Kombinatorika",
+    "difficulty": 3,
+    "title": "Kombinatorika",
+    "prompt": "Untuk setiap bilangan asli $n\\in\\mathbb N$ dengan $n\\ge2$, nilai dari\n\n$$\\frac1n\\binom n1+\\frac2n\\binom n2+\\cdots+\\frac{n-1}{n}\\binom n{n-1}$$\n\nadalah…\n\nA. $2^{\\frac1n-1}-1$\n\nB. $2^{\\frac1n-1}+1$\n\nC. $2^{\\frac1n+1}+1$\n\nD. $2_{n-1}-1$\n\nE. $2_{n+1}+1$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 12",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 12",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 3. Original apparent subscript and wording errors retained."
+    }
+  },
+  {
+    "id": "smartmc-2022-pg-13",
+    "level": "Kuliah",
+    "topic": "Analisis Kompleks",
+    "difficulty": 3,
+    "title": "Analisis Kompleks",
+    "prompt": "Let $u(x,y)=y^3-3x^2y$, find the harmonics / conjugates of functions $v(x,y)$.\n\nA. $v(x,y)=x^2-3xy^2$\n\nB. $v(x,y)=x^2-3xy^3$\n\nC. $v(x,y)=x^3-3xy^2$\n\nD. $v(x,y)=x^3-3xy^3$\n\nE. $v(x,y)=x^3-3x^2y$",
+    "source": {
+      "kind": "competition",
+      "label": "SMART-MC UNS 2022 — Penyisihan, Pilihan Ganda, Nomor 13",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "stage": "Penyisihan",
+      "number": "Pilihan Ganda, Nomor 13",
+      "note": "User-supplied ZIP: PENYISIHAN SMARTMC MAHASISWA 2022.pdf, PDF page 3. Original apparent subscript and wording errors retained."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;

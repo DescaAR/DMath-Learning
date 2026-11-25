@@ -17050,6 +17050,227 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "smartmc-2022-pg-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "1–2",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "2–3",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 11",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "3",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 12",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "3",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "smartmc-2022-pg-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "SMART-MC UNS",
+      "year": 2022,
+      "number": "Pilihan Ganda, Nomor 13",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-25",
+        "page": "3",
+        "localSource": "PENYISIHAN SMARTMC MAHASISWA 2022.pdf",
+        "method": "Visual inspection of PDF pages 1–3; text extraction cross-check",
+        "finding": "Question body and five options transcribed in source order. Apparent source errors, including subscripts in questions 8, 11, 12, retained. Independent recheck and browser render pending.",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {
