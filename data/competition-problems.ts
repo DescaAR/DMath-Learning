@@ -5828,6 +5828,204 @@ export const competitionProblems: CompetitionProblem[] = [
       "url": "https://kskedlaya.org/putnam-archive/2019.pdf",
       "note": "Independent English mathematical formulation; source paper copyright MAA. Not a verbatim transcription."
     }
+  },
+  {
+    "id": "umo-2013-02",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Permainan pemotongan kertas",
+    "prompt": "Two players alternate cutting a convex sheet along a straight line, discarding the piece of smaller area and handing the remaining piece to the opponent. In a tie either piece may be retained. A player loses upon receiving a piece of area less than $1\\,\\mathrm{cm}^2$. Characterize the initial square sheets for which the first player can force a win.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2013,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2013 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2013-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Tiga digit terakhir kuadrat sempurna",
+    "prompt": "Determine all integers $x\\in[1,999]$ such that $x^2\\equiv111d\\pmod{1000}$ for some $d\\in\\{1,\\ldots,9\\}$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2013,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2013 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2013-05",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Permainan penentuan koefisien polinomial",
+    "prompt": "Starting with $P(x)=x^3+ax^2+bx+c$, two players alternately assign a real value to one as-yet-unassigned coefficient. The first player wins if the resulting cubic has a nonreal root; otherwise the second player wins. Determine and justify a winning strategy.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2013,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2013 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2013UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2015-01",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 3,
+    "title": "Jumlah minimum dengan FPB berbeda",
+    "prompt": "Minimize $a+b+c$ over positive integers $a,b,c$ for which $\\gcd(a,b),\\gcd(b,c),\\gcd(c,a)$ are pairwise distinct and greater than $1$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2015,
+      "stage": "UMO",
+      "number": "Nomor 1",
+      "label": "UMO 2015 — Nomor 1 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2015-02",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 3,
+    "title": "Panjang median segitiga",
+    "prompt": "A triangle has $AB=20$, $AC=13$, and $\\operatorname{dist}(A,\\overleftrightarrow{BC})=12$. Determine all attainable values of $AM$, where $M$ is the midpoint of $BC$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2015,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2015 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2015-03",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "FPB koefisien polinomial binomial",
+    "prompt": "Classify $n\\in\\{2,\\ldots,20\\}$ such that $\\gcd\\{\\binom nk\\mid 1\\le k<n\\}=3$. Prove the classification.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2015,
+      "stage": "UMO",
+      "number": "Nomor 3",
+      "label": "UMO 2015 — Nomor 3 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2015-04",
+    "level": "SMA",
+    "topic": "Aljabar",
+    "difficulty": 4,
+    "title": "Optimasi waktu perjalanan dengan satu sepeda",
+    "prompt": "Two travelers must cover $100$ km. Their walking speeds are respectively $5$ and $4$ km/h, and either can ride their one shared bicycle at $10$ km/h. They may reverse direction or leave the bicycle at any location for the other to retrieve. Minimize the time by which both arrive.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2015,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2015 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2015-05",
+    "level": "SMA",
+    "topic": "Kombinatorika",
+    "difficulty": 4,
+    "title": "Pencacahan matriks dengan hasil kali tetap",
+    "prompt": "Count the matrices $(a_{ij})\\in M_3(\\mathbb Z)$ satisfying $\\prod_{j=1}^3a_{ij}=20$ for every row $i$ and $\\prod_{i=1}^3a_{ij}=20$ for every column $j$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2015,
+      "stage": "UMO",
+      "number": "Nomor 5",
+      "label": "UMO 2015 — Nomor 5 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2015-06",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Tinggi minimum limas segitiga",
+    "prompt": "Among triangular pyramids with base perimeter $84$ that contain a right circular cylinder of radius $4$ and height $10$ having one base in the plane of the pyramid's base, determine the least possible pyramid altitude and prove attainability.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2015,
+      "stage": "UMO",
+      "number": "Nomor 6",
+      "label": "UMO 2015 — Nomor 6 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2015UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2020-02",
+    "level": "SMA",
+    "topic": "Teori Bilangan",
+    "difficulty": 4,
+    "title": "Rasionalitas selisih perpangkatan",
+    "prompt": "Let $a,b\\in\\mathbb R$. Suppose $a^n-b^n\\in\\mathbb Q$ for every integer $n\\ge2$. Prove that $a=b$ or $(a,b)\\in\\mathbb Q^2$.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2020,
+      "stage": "UMO",
+      "number": "Nomor 2",
+      "label": "UMO 2020 — Nomor 2 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
+  },
+  {
+    "id": "umo-2020-04",
+    "level": "SMA",
+    "topic": "Geometri",
+    "difficulty": 5,
+    "title": "Lingkaran yang berpotongan secara ortogonal",
+    "prompt": "Let $\\Gamma$ be a circle disjoint from a line $\\ell$. Denote by $A,B$ the nearest and farthest points of $\\Gamma$ from $\\ell$ and set $X=AB\\cap\\ell$. Choose $K$ on the circle centered at $B$ through $X$, with $KA=KX$. Let $H\\in AB$ be the point with $XH=XK$. Prove that every circle centered at $P\\in\\ell$ through $H$ intersects $\\Gamma$ orthogonally.",
+    "source": {
+      "kind": "competition",
+      "competition": "UMO",
+      "year": 2020,
+      "stage": "UMO",
+      "number": "Nomor 4",
+      "label": "UMO 2020 — Nomor 4 · © UMO Committee",
+      "url": "https://utahmath.org/doc/2020UtahMathOlympiad.pdf",
+      "note": "Independent English mathematical formulation. Educational reuse permitted with attribution; noncommercial only, https://utahmath.org/problems/."
+    }
   }
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
