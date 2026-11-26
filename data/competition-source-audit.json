@@ -21604,6 +21604,726 @@
         "page": 4,
         "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
       }
+    },
+    "mission-its-2024-penyisihan-pg-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "3",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "3",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "3",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "3–4",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "4",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "4",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "4",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "4–5",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "5",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "5",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-11": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 11",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "5",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-12": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 12",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "5",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-13": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 13",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "5–6",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-14": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 14",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "6",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-15": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 15",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "6",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-16": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 16",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "6",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-17": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 17",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "6–7",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-18": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 18",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "7",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-19": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 19",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "7",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-20": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 20",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "7–8",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-21": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 21",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "8",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-22": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 22",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "8",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-23": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 23",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "8–9",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-24": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 24",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "9",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-25": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 25",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "9–10",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-26": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 26",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "10",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-27": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 27",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "10–11",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-28": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 28",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "11",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-29": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 29",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "11",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-pg-30": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Pilihan Ganda 30",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "11",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-01": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 1",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "12",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-02": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 2",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "12",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-03": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 3",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "12",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-04": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 4",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "12",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-05": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 5",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "12",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-06": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 6",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "12",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-07": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 7",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "13",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-08": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 8",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "13",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-09": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 9",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "13",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
+    },
+    "mission-its-2024-penyisihan-is-10": {
+      "status": "pending_comparison",
+      "previousMetadata": "user_supplied_transcription",
+      "competition": "MISSION ITS",
+      "year": 2024,
+      "number": "Isian Singkat 10",
+      "sourceUrl": null,
+      "comparison": {
+        "date": "2026-11-26",
+        "page": "13",
+        "localSource": "Penyisihan MISSION (1).pdf",
+        "method": "Transcription from user-supplied booklet pages 3–13, with extracted text and page images; typography, math markup and answer choice markers normalized.",
+        "finding": "Question and all five choices when applicable transcribed; strict word-by-word second pass and browser rendering remain pending.",
+        "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+        "textStatus": "transcribed",
+        "renderStatus": "pending"
+      }
     }
   },
   "figureRecords": {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "activePackage": "cemc-waterloo-2026-euclid",
+  "activePackage": "mission-its-2024-penyisihan",
   "packages": {
     "osnp-sd-2024": {
       "competition": "OSN",
@@ -187,7 +187,25 @@
       "corrected": 6,
       "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
       "license": "CC BY-NC 4.0",
-      "status": "complete_text_and_figures_workflow_pending",
+      "status": "complete_deployed_browser_review_pending",
+      "date": "2026-11-26"
+    },
+    "mission-its-2024-penyisihan": {
+      "competition": "MISSION ITS",
+      "level": "Kuliah",
+      "year": 2024,
+      "stage": "Penyisihan",
+      "expectedCount": 40,
+      "existingCount": 40,
+      "added": 40,
+      "format": {
+        "multipleChoice": 30,
+        "shortAnswer": 10
+      },
+      "source": "Penyisihan MISSION (1).pdf",
+      "sourcePages": "3–13",
+      "yearEvidence": "https://www.its.ac.id/news/omits-17th-lebarkan-sayap-jangkau-lebih-banyak-potensi/",
+      "status": "complete_transcription_workflow_pending",
       "date": "2026-11-26"
     }
   }
