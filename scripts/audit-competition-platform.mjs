@@ -103,7 +103,7 @@ for(const p of competitionProblems){
  const body=parsed?.question??p.prompt;
  const parts=splitSubquestions(body);
  if(parts){
-  const reconstructed=[parts.intro,...parts.parts.map(x=>"("+x.label+") "+x.text)].filter(Boolean).join(" ");
+  const reconstructed=[parts.intro,...parts.parts.map(x=>x.marker+" "+x.text)].filter(Boolean).join(" ");
   assert.equal(reconstructed.replace(/\s+/g," ").trim(),body.replace(/\s+/g," ").trim(),p.id+" subquestion text lost");
   subparts++;
  }
@@ -133,7 +133,7 @@ for(const id of visualPolicy.excluded)assert.ok(!displayedFigureIds.includes(id)
 assert.equal(figureCount,displayedFigureIds.length);
 assert.ok(competitionProblems.some(p=>p.id==="ksn-smp-2021-07"));
 assert.match(workspace,/aria-label="Tabel tiga baris dan delapan kolom"/);
-console.log("Question display audit:",choices,"multiple-choice records,",subparts,"lettered lists,",figureCount,"registered figures.");
+console.log("Question display audit:",choices,"multiple-choice records,",subparts,"enumerated lists,",figureCount,"registered figures.");
 
 for(const year of Array.from({length:14},(_,i)=>2013+i)){
  const nums=competitionProblems.filter(p=>p.source.competition==="UMO"&&p.source.year===year).map(p=>p.source.number).sort();
@@ -266,3 +266,24 @@ const umc=competitionProblems.find(p=>p.id==="umc-undip-2022-final-02").prompt;
 assert.equal(hideUnusedEquationTags(umc),umc,"Referenced equation labels must be preserved");
 assert.match(workspace,/prompt=hideUnusedEquationTags\(prompt\)/);
 console.log("Subject and material hierarchy and equation-label checks passed.");
+
+
+// Regression: numeric, roman and line-start letter/number lists in every view.
+for(const [id,markers] of [
+ ["magd-2017-i-uraian-02",["(1)","(2)"]],
+ ["imc-2024-09",["(i)","(ii)","(iii)","(iv)"]],
+ ["imc-2019-05",["1.","2.","3."]],
+ ["osn-smp-2018-01",["a).","b).","c)."]],
+ ["osn-smp-2019-02",["(i).","(ii).","(iii)."]],
+ ["osnk-sd-2024-13",["1)","2)","3)","4)","5)"]]
+]){
+ const p=competitionProblems.find(p=>p.id===id);
+ assert.ok(p,id+" missing");
+ const body=splitCompetitionPrompt(p.prompt)?.question??p.prompt;
+ assert.deepEqual(splitSubquestions(body)?.parts.map(x=>x.marker),markers,id+" enumeration not separated");
+}
+assert.equal(splitSubquestions(competitionProblems.find(p=>p.id==="umc-undip-2022-final-02").prompt),null,"Equation references must remain prose");
+assert.equal(splitSubquestions("Use equation (1) and equation (2)."),null);
+assert.equal(splitSubquestions("Let $f(1)+f(2)=0$."),null);
+assert.match(workspace,/\{part\.marker\}/);
+console.log("Numeric, roman and alphabetic enumeration regression checks passed.");

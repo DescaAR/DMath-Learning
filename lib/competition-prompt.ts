@@ -16,13 +16,37 @@ export function splitCompetitionPrompt(prompt: string) {
  return {question:prompt.slice(0,marker.index).trim(),options};
 }
 
-// Detect a complete, consecutive sequence of lettered subparts outside math.
+// Detect consecutive enumerations in prose, never inside TeX. Keep the
+// original marker (e.g. (1), (ii), a).) rather than renumbering the source.
 export function splitSubquestions(prompt: string) {
- const markers=Array.from(proseMask(prompt).matchAll(/(?:^|\s)\(([a-z])\)(?=\s)/g));
- if(markers.length<2 || markers.some((m,i)=>m[1]!==String.fromCharCode(97+i)))return null;
- const parts=markers.map((m,i)=>({label:m[1],text:prompt.slice(m.index!+m[0].length,markers[i+1]?.index??prompt.length).trim()}));
- if(parts.some(p=>!p.text))return null;
- return {intro:prompt.slice(0,markers[0].index).trim(),parts};
+ const masked=proseMask(prompt);
+ const roman=["i","ii","iii","iv","v","vi","vii","viii","ix","x","xi","xii"];
+ const patterns=[
+  {re:/(?:^|\s)(\(([a-z]+)\)\.?)(?=\s)/g,labels:"abcdefghijklmnopqrstuvwxyz".split(""),lineOnly:false},
+  {re:/(?:^|\s)(\(([ivx]+)\)\.?)(?=\s)/g,labels:roman,lineOnly:false},
+  {re:/(?:^|\s)(\((\d+)\)\.?)(?=\s)/g,labels:Array.from({length:30},(_,i)=>String(i+1)),lineOnly:false},
+  {re:/(?:^|\n)[ \t]*((\d+)[.)])(?=\s)/g,labels:Array.from({length:30},(_,i)=>String(i+1)),lineOnly:true},
+  {re:/(?:^|\n)[ \t]*(([a-z]+)\)\.?|([a-z])\.)(?=\s)/g,labels:"abcdefghijklmnopqrstuvwxyz".split(""),lineOnly:true},
+ ];
+ const lists=patterns.flatMap(({re,labels,lineOnly})=>{
+  const markers=Array.from(masked.matchAll(re)).flatMap(m=>{
+   const marker=m[1],label=m[2]??m[3],offset=m.index!+m[0].length-marker.length;
+   const before=masked.slice(0,offset);
+   // Inline enumeration starts at a sentence/condition boundary. In
+   // particular, "barisan (1)" and "equation (2)" are references, not items.
+   const lineStart=/(?:^|\n)[ \t]*$/.test(before);
+   const boundary=lineStart||/[.:;!?]\s*$/.test(before)||/~\s*$/.test(before);
+   if(!labels.includes(label)||(!lineOnly&&!boundary))return [];
+   return [{marker,label,offset,end:offset+marker.length}];
+  });
+  if(markers.length<2||markers.some((m,i)=>m.label!==labels[i]))return [];
+  const parts=markers.map((m,i)=>({label:m.label,marker:m.marker,text:prompt.slice(m.end,markers[i+1]?.offset??prompt.length).trim()}));
+  if(parts.some(p=>!p.text))return [];
+  return [{intro:prompt.slice(0,markers[0].offset).trim(),parts,offset:markers[0].offset}];
+ });
+ if(!lists.length)return null;
+ const {intro,parts}=lists.sort((a,b)=>a.offset-b.offset||b.parts.length-a.parts.length)[0];
+ return {intro,parts};
 }
 
 // Presentation only: retain the archived question and all TeX tokens unchanged.

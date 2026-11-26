@@ -83,7 +83,7 @@ function QuestionBody({prompt,problemId,compact=false}:{prompt:string;problemId?
   {parsed.intro&&<div className="cmp-question-intro"><QuestionProse value={parsed.intro} problemId={problemId} compact={compact}/></div>}
   <ol className="cmp-subquestions" aria-label="Subbagian soal">
    {parsed.parts.map(part=><li key={part.label}>
-    <span className="cmp-subquestion-label" aria-hidden="true">({part.label})</span><div className="cmp-subquestion-content"><QuestionProse value={part.text} problemId={problemId} compact={compact}/></div>
+    <span className="cmp-subquestion-label" aria-hidden="true">{part.marker}</span><div className="cmp-subquestion-content"><QuestionProse value={part.text} problemId={problemId} compact={compact}/></div>
    </li>)}
   </ol>
  </div>;
