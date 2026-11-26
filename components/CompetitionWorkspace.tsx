@@ -1324,6 +1324,10 @@ function IMCFullIndex({items}:{items:typeof imcAll}){
 
 // Source-only visual registry: a figure may be displayed only if it appears in the source question. Never add explanatory or solution figures.
 const geometryFigures: Readonly<Record<string, {alt:string; width:number; caption?:string}>> = {
+ "cemc-waterloo-2026-euclid-4":{"alt":"A horizontal segment MH followed by an upward sloping segment HG.","width":260},
+ "cemc-waterloo-2026-euclid-5":{"alt":"Coordinate axes with an upward parabola and square ABCD, A and B on the x-axis, D and C on the parabola.","width":260},
+ "cemc-waterloo-2026-euclid-6":{"alt":"Quadrilateral ABCD with B above and left of A, C above and right of D, and AD horizontal.","width":265},
+ "cemc-waterloo-2026-euclid-8":{"alt":"Circle centred at O with vertical diameter AB, diagonal diameter VU, tangent AC, secant BUC and segment VC.","width":240},
  "calculus-cup-xv-2024-final-01":{alt:"Dua busur lingkaran merah dan biru membatasi D, dengan label C serta sumbu x dan y, x = −4 dan y = 2.",width:320},
  "calculus-cup-xv-2024-final-02":{alt:"Juring lingkaran biru dengan D₁ dan D₂, titik potong sumbu x di −√3 dan √3, dan titik bawah y = −1.",width:320},
  "calculus-cup-xv-2024-final-03":{alt:"Dua busur lingkaran merah dan biru membatasi D di sebelah kanan sumbu y, dengan tanda x = 2, y = 2 dan y = −2.",width:320},

@@ -6089,87 +6089,147 @@
       }
     },
     "cemc-waterloo-2026-euclid-1": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "CEMC Waterloo",
       "year": 2026,
       "number": "Nomor 1",
       "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 2,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
       "strictReview": {
         "version": 2,
-        "textStatus": "pending_reverification",
+        "textStatus": "verified_against_official_pdf",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 2,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
       }
     },
     "cemc-waterloo-2026-euclid-2": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "CEMC Waterloo",
       "year": 2026,
       "number": "Nomor 2",
       "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 2,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
       "strictReview": {
         "version": 2,
-        "textStatus": "pending_reverification",
+        "textStatus": "verified_against_official_pdf",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 2,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
       }
     },
     "cemc-waterloo-2026-euclid-3": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "CEMC Waterloo",
       "year": 2026,
       "number": "Nomor 3",
       "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 2,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
       "strictReview": {
         "version": 2,
-        "textStatus": "pending_reverification",
+        "textStatus": "verified_against_official_pdf",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 2,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
       }
     },
     "cemc-waterloo-2026-euclid-7": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "CEMC Waterloo",
       "year": 2026,
       "number": "Nomor 7",
       "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 4,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
       "strictReview": {
         "version": 2,
-        "textStatus": "pending_reverification",
+        "textStatus": "verified_against_official_pdf",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 4,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
       }
     },
     "cemc-waterloo-2026-euclid-9": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "CEMC Waterloo",
       "year": 2026,
       "number": "Nomor 9",
       "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 4,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
       "strictReview": {
         "version": 2,
-        "textStatus": "pending_reverification",
+        "textStatus": "verified_against_official_pdf",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 4,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
       }
     },
     "cemc-waterloo-2026-euclid-10": {
-      "status": "pending_comparison",
+      "status": "exact_verified",
       "previousMetadata": "restatement_recorded",
       "competition": "CEMC Waterloo",
       "year": 2026,
       "number": "Nomor 10",
       "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 5,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
       "strictReview": {
         "version": 2,
-        "textStatus": "pending_reverification",
+        "textStatus": "verified_against_official_pdf",
         "renderStatus": "pending_visual_verification",
-        "overallStatus": "not_passed"
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 5,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
       }
     },
     "smmc-2025-paper-a-a1": {
@@ -21448,6 +21508,102 @@
         "independentCheck": "Pembuktian deduktif; kasus batas dan asumsi diperiksa.",
         "renderStatus": "pending_build_and_browser_check"
       }
+    },
+    "cemc-waterloo-2026-euclid-4": {
+      "status": "exact_verified",
+      "previousMetadata": "new_official_source",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 4",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 3,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
+      "strictReview": {
+        "version": 2,
+        "textStatus": "verified_against_official_pdf",
+        "renderStatus": "pending_visual_verification",
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 3,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
+      }
+    },
+    "cemc-waterloo-2026-euclid-5": {
+      "status": "exact_verified",
+      "previousMetadata": "new_official_source",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 5",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 3,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
+      "strictReview": {
+        "version": 2,
+        "textStatus": "verified_against_official_pdf",
+        "renderStatus": "pending_visual_verification",
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 3,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
+      }
+    },
+    "cemc-waterloo-2026-euclid-6": {
+      "status": "exact_verified",
+      "previousMetadata": "new_official_source",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 6",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 3,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
+      "strictReview": {
+        "version": 2,
+        "textStatus": "verified_against_official_pdf",
+        "renderStatus": "pending_visual_verification",
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 3,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
+      }
+    },
+    "cemc-waterloo-2026-euclid-8": {
+      "status": "exact_verified",
+      "previousMetadata": "new_official_source",
+      "competition": "CEMC Waterloo",
+      "year": 2026,
+      "number": "Nomor 8",
+      "sourceUrl": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
+      "comparison": {
+        "date": "2026-11-26",
+        "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 4,
+        "method": "Compared official HTML question text against visual inspection of official PDF page; preserved words, mathematical expressions and subparts.",
+        "finding": "Question body transcribed from official CEMC source; typesetting and line breaks normalized, exam answer-mode icons excluded."
+      },
+      "strictReview": {
+        "version": 2,
+        "textStatus": "verified_against_official_pdf",
+        "renderStatus": "pending_visual_verification",
+        "overallStatus": "not_passed",
+        "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+        "page": 4,
+        "note": "Browser and workflow verification pending; diagrams redrawn from official PDF where present."
+      }
     }
   },
   "figureRecords": {
@@ -21811,6 +21967,42 @@
         "status": "pending_reverification",
         "note": "Previous structural comparison is history; visual match and rendered result require evidence."
       }
+    },
+    "cemc-waterloo-2026-euclid-4": {
+      "status": "source_visual_compared_render_pending",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "page": 3,
+      "strictReview": {
+        "status": "pending_visual_verification",
+        "note": "Redrawn from visually inspected original PDF; rendered website still pending."
+      }
+    },
+    "cemc-waterloo-2026-euclid-5": {
+      "status": "source_visual_compared_render_pending",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "page": 3,
+      "strictReview": {
+        "status": "pending_visual_verification",
+        "note": "Redrawn from visually inspected original PDF; rendered website still pending."
+      }
+    },
+    "cemc-waterloo-2026-euclid-6": {
+      "status": "source_visual_compared_render_pending",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "page": 3,
+      "strictReview": {
+        "status": "pending_visual_verification",
+        "note": "Redrawn from visually inspected original PDF; rendered website still pending."
+      }
+    },
+    "cemc-waterloo-2026-euclid-8": {
+      "status": "source_visual_compared_render_pending",
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "page": 4,
+      "strictReview": {
+        "status": "pending_visual_verification",
+        "note": "Redrawn from visually inspected original PDF; rendered website still pending."
+      }
     }
   },
   "permissions": {
@@ -21830,6 +22022,11 @@
     "APMO": {
       "source": "https://www.apmo-official.org/",
       "status": "Official PDFs allow public discussion after release; full reproduction permission not established."
+    },
+    "CEMC Waterloo": {
+      "source": "https://cemc.uwaterloo.ca/copyright",
+      "status": "CC BY-NC 4.0 for CEMC materials owned by University of Waterloo",
+      "condition": "Noncommercial, attribution, license link, indicate adaptations."
     }
   },
   "strictProtocol": {

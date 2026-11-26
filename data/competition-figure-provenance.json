@@ -189,6 +189,26 @@
       "page": 1,
       "basis": "SVG reconstruction from visually inspected user PDF diagram; original labels, axis markings, solid/dashed lines and colors reproduced; browser rendering pending.",
       "format": "native-svg"
+    },
+    "cemc-waterloo-2026-euclid-4": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "basis": "Redrawn from official PDF page 3, question 4; source labels and lines retained; schematic not to scale; CC BY-NC 4.0.",
+      "page": 3
+    },
+    "cemc-waterloo-2026-euclid-5": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "basis": "Redrawn from official PDF page 3, question 5; source labels and lines retained; schematic not to scale; CC BY-NC 4.0.",
+      "page": 3
+    },
+    "cemc-waterloo-2026-euclid-6": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "basis": "Redrawn from official PDF page 3, question 6; source labels and lines retained; schematic not to scale; CC BY-NC 4.0.",
+      "page": 3
+    },
+    "cemc-waterloo-2026-euclid-8": {
+      "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "basis": "Redrawn from official PDF page 4, question 8; source labels and lines retained; schematic not to scale; CC BY-NC 4.0.",
+      "page": 4
     }
   },
   "table": {

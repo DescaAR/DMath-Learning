@@ -6460,7 +6460,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Persamaan rasional dan bentuk akar",
-    "prompt": "(a) Determine the integer $t$ satisfying $\\dfrac{2t}{3}+\\dfrac{3t}{2}=26$. (b) Determine the integer $x$ satisfying $\\dfrac{3+x}{4}=\\dfrac{6+x}{8}$. (c) Given $y>0$ and $$\\sqrt{3^2+4^2+12^2}=\\sqrt{3^2+4^2}+\\sqrt{y^2},$$ find $y$.",
+    "prompt": "(a) What is the integer $t$ for which $\\dfrac{2t}{3}+\\dfrac{3t}{2}=26$?\n(b) What is the integer $x$ for which $\\dfrac{3+x}{4}=\\dfrac{6+x}{8}$?\n(c) Suppose that $y>0$ and $\\sqrt{3^2+4^2+12^2}=\\sqrt{3^2+4^2}+\\sqrt{y^2}$. Determine the value of $y$.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6469,7 +6469,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 1",
       "label": "CEMC Waterloo 2026 — Euclid, 1 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."
     }
   },
   {
@@ -6478,7 +6478,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 2,
     "title": "Digit bilangan dan sistem persamaan",
-    "prompt": "(a) The digits of $2026$ sum to $2+0+2+6=10$. Find the least integer $n>2026$ having the same digit sum. (b) The digits of $313$ have product $3\\cdot1\\cdot3=9$. Count integers from $100$ through $999$ whose digit product is $9$. (c) The sum of $x$, $3x$ and $4y$ is $48$, while the mean of $x$ and $y$ is $3x$. Find $(x,y)$.",
+    "prompt": "(a) The sum of the digits of the positive integer $2026$ is $2+0+2+6=10$. What is the smallest integer $n>2026$ whose digits also have a sum of 10?\n(b) The product of the digits of the integer $313$ is $3\\cdot1\\cdot3=9$. How many integers between 100 and 999, including 313, have the property that the product of their digits is 9?\n(c) The sum of $x$, $3x$ and $4y$ is equal to 48. The average of $x$ and $y$ is equal to $3x$. Determine the ordered pair $(x,y)$.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6487,7 +6487,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 2",
       "label": "CEMC Waterloo 2026 — Euclid, 2 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."
     }
   },
   {
@@ -6496,7 +6496,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 3,
     "title": "Kubik sempurna, eksponen, dan parabola",
-    "prompt": "(a) Minimize the positive integer $n$ for which $\\frac{9\\cdot8\\cdot7\\cdot6\\cdot5\\cdot4\\cdot3}{n}$ is an integer cube. (b) Find $(a,b)$ satisfying $3^{a+b}=27$ and $a-b=-5$. (c) A parabola $y=-x^2+7x+c$ has x-intercepts $P=(10,0)$ and $Q$ and y-intercept $R$. Compute the area of $\\triangle PQR$.",
+    "prompt": "(a) What is the smallest positive integer $n$ for which $\\dfrac{9\\cdot8\\cdot7\\cdot6\\cdot5\\cdot4\\cdot3}{n}$ is equal to $k^3$ for some integer $k$?\n(b) What is the ordered pair $(a,b)$ that satisfies both of the equations $3^{a+b}=27$ and $a-b=-5$?\n(c) For some real number $c$, the parabola with equation $y=-x^2+7x+c$ intersects the $x$-axis at points $P(10,0)$ and $Q$. If the parabola intersects the $y$-axis at $R$, determine the area of $\\triangle PQR$.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6505,7 +6505,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 3",
       "label": "CEMC Waterloo 2026 — Euclid, 3 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."
     }
   },
   {
@@ -6514,7 +6514,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Aljabar",
     "difficulty": 4,
     "title": "Proporsi dan iterasi logaritma",
-    "prompt": "(a) A garden contains only roses and carnations, each either yellow or white. Of the yellow flowers, half are roses; of the roses, a quarter are yellow; of all flowers, a quarter are white carnations. Find the fraction of all flowers that are yellow roses. (b) For every $x>0$, define $$f(x)=\\begin{cases}0,&0<x\\le1,\\\\1+f(\\log_2 x),&x>1.\\end{cases}$$ Count positive integers $n$ satisfying $f(n)=4$.",
+    "prompt": "(a) In a garden, there are roses and carnations, and no other kind of flower. Each flower is either yellow or white. Half of the yellow flowers are roses, $\\dfrac{1}{4}$ of the roses are yellow, and $\\dfrac{1}{4}$ of all of the flowers are white carnations. What fraction of all of the flowers are yellow roses?\n(b) The function $f$ is defined for every real number $x>0$ in the following way:\n$$f(x)=\\begin{cases}0&\\text{if }0<x\\leq1\\\\1+f(\\log_2 x)&\\text{if }x>1\\end{cases}$$\nDetermine the number of positive integers $n$ for which $f(n)=4$.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6523,7 +6523,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 7",
       "label": "CEMC Waterloo 2026 — Euclid, 7 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."
     }
   },
   {
@@ -6532,7 +6532,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Geometri",
     "difficulty": 5,
     "title": "Segitiga sama kaki dengan luas dan keliling tetap",
-    "prompt": "(a) For an isosceles triangle $XY=XZ$, base $YZ=b$, area $40$, and perimeter $32$, construct a cubic integer-coefficient polynomial having $b$ as a root. (b) Establish that for prescribed positive area $A$ and perimeter $P$, at most two pairwise noncongruent isosceles triangles have those measurements. (c) Find positive integers $A,P$ admitting two such noncongruent triangles, all of whose side lengths are positive integers below $300$, exactly one of the two bases being divisible by $7$.",
+    "prompt": "(a) Suppose that $\\triangle XYZ$ has $XY=XZ$ and $YZ=b$. If the area of $\\triangle XYZ$ is 40 and the perimeter of $\\triangle XYZ$ is 32, determine a cubic polynomial $f$ with integer coefficients and with the property that $f(b)=0$.\n(b) Consider positive real numbers $A$ and $P$. If there exists an isosceles triangle with area $A$ and perimeter $P$, prove that there exist at most two non-congruent isosceles triangles with area $A$ and perimeter $P$.\n(c) Determine positive integers $A$ and $P$ for which there exist two non-congruent isosceles triangles $XYZ$ with $XY=XZ$, integer side lengths less than 300, area $A$, and perimeter $P$, and with the property that the length of $YZ$ in exactly one of the two triangles is a multiple of 7.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6541,7 +6541,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 9",
       "label": "CEMC Waterloo 2026 — Euclid, 9 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."
     }
   },
   {
@@ -6550,7 +6550,7 @@ export const competitionProblems: CompetitionProblem[] = [
     "topic": "Kombinatorika",
     "difficulty": 5,
     "title": "Permutasi dengan tepat satu puncak internal",
-    "prompt": "For $n\\ge5$, a permutation $(a_1,\\ldots,a_n)$ of $1,\\ldots,n$ has an internal peak at $t$ if $2\\le t<n$ and $a_{t-1}<a_t>a_{t+1}$. For instance, $(2,3,7,1,5,4,6,8)$ has internal peaks only at positions $3$ and $5$. (a) Count permutations of $1,2,3,4,5$ having their only internal peak at position $3$. (b) For $n\\ge5$, find a closed-form count of permutations with sole internal peak at position $2$. (c) For $n\\ge5$, find a closed-form count of permutations with sole internal peak at position $3$. $$\\sum_{k=0}^{r}k2^k=(r-1)2^{r+1}+2\\qquad(r\\in\\mathbb Z_{>0}).$$ The identity may be useful. The right-hand expression is a closed form, while an unevaluated sum is not.",
+    "prompt": "Suppose that $n$ is a positive integer with $n\\geq5$. An arrangement $a_1,a_2,\\ldots,a_{n-1},a_n$ of the $n$ positive integers $1,2,\\ldots,n-1,n$ is said to have an internal peak at position $t$ (with $2\\leq t\\leq n-1$) if $a_{t-1}<a_t$ and $a_t>a_{t+1}$. For example, the arrangement $2,3,7,1,5,4,6,8$ of the integers $1,2,3,4,5,6,7,8$ has an internal peak at position 3, an internal peak at position 5, and no other internal peaks.\n(a) Determine the number of arrangements of $1,2,3,4,5$ that have an internal peak at position 3 and no other internal peaks.\n(b) Suppose that $n\\geq5$. Determine, in terms of $n$, an expression in closed form for the number of arrangements of $1,2,\\ldots,n-1,n$ that have an internal peak at position 2 and no other internal peaks.\n(c) Suppose that $n\\geq5$. Determine, in terms of $n$, an expression in closed form for the number of arrangements of $1,2,\\ldots,n-1,n$ that have an internal peak at position 3 and no other internal peaks.\n\nNote 1: Depending on your approach, the following formula might be useful.\n\nFor every positive integer $r$,\n$$\\sum_{k=0}^r k2^k=0\\cdot2^0+1\\cdot2^1+2\\cdot2^2+\\cdots+r2^r=(r-1)2^{r+1}+2$$\n\nNote 2: If you are unsure what is meant by “closed form” in parts (b) and (c), consider the three equal expressions in Note 1 as an example:\n\n• The expression $\\displaystyle\\sum_{k=0}^r k2^k$ is not a closed form.\n• The expression $0\\cdot2^0+1\\cdot2^1+2\\cdot2^2+\\cdots+r2^r$ is not a closed form.\n• The expression $(r-1)2^{r+1}+2$ is a closed form.",
     "source": {
       "kind": "competition",
       "competition": "CEMC Waterloo",
@@ -6559,7 +6559,7 @@ export const competitionProblems: CompetitionProblem[] = [
       "number": "Nomor 10",
       "label": "CEMC Waterloo 2026 — Euclid, 10 · © 2026 University of Waterloo · CC BY-NC 4.0",
       "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html",
-      "note": "Original wording not independently verified in current audit. Earlier metadata is not proof of exact transcription."
+      "note": "Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."
     }
   },
   {
@@ -21496,7 +21496,11 @@ export const competitionProblems: CompetitionProblem[] = [
   {"id":"sd-009","level":"SD","topic":"Kombinatorika","difficulty":5,"title":"Pemilihan kartu bebas kelipatan","prompt":"Tersedia 20 kartu yang masing-masing bertuliskan bilangan 1 sampai 20. Beberapa kartu dipilih sedemikian sehingga tidak ada bilangan pada suatu kartu terpilih yang merupakan kelipatan bilangan pada kartu terpilih lainnya.\n\n(a) Tentukan banyak kartu maksimum yang dapat dipilih.\n(b) Tentukan banyak cara memilih kartu sehingga diperoleh banyak kartu maksimum tersebut.\n(c) Di antara seluruh cara pemilihan pada bagian (b), tentukan jumlah terkecil dari bilangan-bilangan pada kartu terpilih.","source":{"kind":"original","label":"DMath Learning Proposed","note":"Soal orisinal DMath; solusi dan kelengkapan diperiksa secara matematis."}},
   {"id":"smp-009","level":"SMP","topic":"Teori Bilangan","difficulty":5,"title":"Persamaan Diofantin kuadrat dan penurunan solusi","prompt":"Tentukan semua pasangan terurut bilangan bulat positif $(x,y)$ yang memenuhi $$x^2+y^2+11=4xy$$ dengan $x,y\\leq1000$.","source":{"kind":"original","label":"DMath Learning Proposed","note":"Soal orisinal DMath; solusi dan kelengkapan diperiksa secara matematis."}},
   {"id":"sma-009","level":"SMA","topic":"Aljabar","difficulty":5,"title":"Kuadrat sempurna pada nilai polinomial","prompt":"Misalkan $P(x)$ merupakan polinomial monik berkoefisien bilangan bulat dengan derajat genap positif. Diketahui terdapat tak berhingga banyak bilangan bulat positif $n$ sedemikian sehingga $P(n)$ merupakan kuadrat sempurna. Buktikan bahwa terdapat polinomial $Q(x)$ berkoefisien bilangan bulat yang memenuhi $$P(x)=\\bigl(Q(x)\\bigr)^2.$$","source":{"kind":"original","label":"DMath Learning Proposed","note":"Soal orisinal DMath; solusi dan kelengkapan diperiksa secara matematis."}},
-  {"id":"univ-009","level":"Kuliah","topic":"Aljabar Linear","difficulty":5,"title":"Komutator matriks dan indeks kenilpotenan","prompt":"Misalkan $n$ merupakan bilangan bulat positif dan $A,B\\in M_n(\\mathbb R)$ memenuhi $$AB-BA=A.$$ Dimisalkan $\\sigma(B)$ merupakan himpunan seluruh nilai eigen kompleks dari $B$ dan $r=|\\sigma(B)|$.\n\n(a) Buktikan bahwa $A^r=O$.\n(b) Buktikan bahwa matriks $A\\in M_n(\\mathbb R)$ bersifat nilpoten apabila dan hanya apabila terdapat matriks $B\\in M_n(\\mathbb R)$ yang memenuhi $AB-BA=A$.\n(c) Apabila $A$ merupakan matriks nilpoten dengan indeks $k$, tentukan $\\min\\left\\{|\\sigma(B)|\\ \\middle|\\ B\\in M_n(\\mathbb R),\\ AB-BA=A\\right\\}$ dalam $k$.","source":{"kind":"original","label":"DMath Learning Proposed","note":"Soal orisinal DMath; solusi dan kelengkapan diperiksa secara matematis."}}
+  {"id":"univ-009","level":"Kuliah","topic":"Aljabar Linear","difficulty":5,"title":"Komutator matriks dan indeks kenilpotenan","prompt":"Misalkan $n$ merupakan bilangan bulat positif dan $A,B\\in M_n(\\mathbb R)$ memenuhi $$AB-BA=A.$$ Dimisalkan $\\sigma(B)$ merupakan himpunan seluruh nilai eigen kompleks dari $B$ dan $r=|\\sigma(B)|$.\n\n(a) Buktikan bahwa $A^r=O$.\n(b) Buktikan bahwa matriks $A\\in M_n(\\mathbb R)$ bersifat nilpoten apabila dan hanya apabila terdapat matriks $B\\in M_n(\\mathbb R)$ yang memenuhi $AB-BA=A$.\n(c) Apabila $A$ merupakan matriks nilpoten dengan indeks $k$, tentukan $\\min\\left\\{|\\sigma(B)|\\ \\middle|\\ B\\in M_n(\\mathbb R),\\ AB-BA=A\\right\\}$ dalam $k$.","source":{"kind":"original","label":"DMath Learning Proposed","note":"Soal orisinal DMath; solusi dan kelengkapan diperiksa secara matematis."}},
+  {"id":"cemc-waterloo-2026-euclid-4","level":"SMA","topic":"Aritmetika","difficulty":3,"title":"Rata-rata suhu dan kecepatan perjalanan","prompt":"(a) In January, Rebecca measured the temperature in Yellowknife every day at 11:00 a.m. The average of these 31 temperatures was $-20^\\circ\\mathrm{C}$. The average of the temperatures from the first 21 days was $-15^\\circ\\mathrm{C}$. What was the average of the temperatures from the last 10 days?\n(b) McKayla runs to her grandmother’s house and then runs home along the same straight road. The route from McKayla’s house, $M$, to her grandmother’s house, $G$, is on flat ground from $M$ to $H$, and then uphill from $H$ to $G$, as shown in the cross-section below. The distance from $M$ to $H$ to $G$ is 10 km. (That is, $MH+HG=10$ km.)\n[[FIGURE]]\nMcKayla runs on flat ground at 12 km/h, uphill at 10 km/h, and downhill at 15 km/h. It takes 54 minutes for her to run from $M$ to $H$ to $G$. Determine the number of minutes that it takes for her to run from $G$ to $H$ to $M$.","source":{"kind":"competition","competition":"CEMC Waterloo","year":2026,"stage":"Euclid","number":"Nomor 4","label":"CEMC Waterloo 2026 — Euclid, 4 · © 2026 University of Waterloo · CC BY-NC 4.0","url":"https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html","note":"Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."}},
+  {"id":"cemc-waterloo-2026-euclid-5","level":"SMA","topic":"Geometri","difficulty":3,"title":"Peluang dadu dan persegi pada parabola","prompt":"(a) Two fair dice, called $D_1$ and $D_2$, each have six faces. $D_1$ has the numbers 1, 2, 3, 4, 5, 6 on its faces. $D_2$ has a 1 on some of its faces and a 2 on its remaining faces. When $D_1$ and $D_2$ are rolled, the probability that the sum of the numbers on the top faces is a prime number is $\\dfrac{23}{36}$. How many faces on $D_2$ have the number 1 on them?\n(b) In the diagram, square $ABCD$ has $A$ and $B$ on the $x$-axis and $C$ and $D$ below the $x$-axis on the parabola with equation $y=x^2-4$. Determine the area of $ABCD$, writing your answer in the form $r-\\sqrt{t}$ for some positive integers $r$ and $t$.\n[[FIGURE]]","source":{"kind":"competition","competition":"CEMC Waterloo","year":2026,"stage":"Euclid","number":"Nomor 5","label":"CEMC Waterloo 2026 — Euclid, 5 · © 2026 University of Waterloo · CC BY-NC 4.0","url":"https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html","note":"Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."}},
+  {"id":"cemc-waterloo-2026-euclid-6","level":"SMA","topic":"Geometri","difficulty":4,"title":"Persentase dan segi empat","prompt":"(a) Xander, Yasmin and Zhe each have a rope. Xander’s rope is 10 m long. Yasmin’s rope is $n\\%$ longer than Xander’s rope. Zhe’s rope is $(2n)\\%$ longer than Yasmin’s rope. Zhe’s rope is $(3.14n)\\%$ longer than Xander’s rope. If $n>0$, what is the value of $n$?\n(b) In the diagram, quadrilateral $ABCD$ has $AB=AD=4$. Also, $\\angle ABC=45^\\circ$ and $\\angle CDA=135^\\circ$. Determine the exact value of $BC-CD$.\n[[FIGURE]]","source":{"kind":"competition","competition":"CEMC Waterloo","year":2026,"stage":"Euclid","number":"Nomor 6","label":"CEMC Waterloo 2026 — Euclid, 6 · © 2026 University of Waterloo · CC BY-NC 4.0","url":"https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html","note":"Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."}},
+  {"id":"cemc-waterloo-2026-euclid-8","level":"SMA","topic":"Geometri","difficulty":5,"title":"Lingkaran dan pencacahan segitiga tumpul","prompt":"(a) In the diagram, the circle has centre $O$ and radius 2. Points $A$, $B$, $U$, and $V$ are on the circle so that $AB$ and $UV$ are diameters. Point $C$ is outside the circle so that $AC$ is tangent to the circle at $A$ and so that $BC$ intersects the circle at $U$. If $BU=2UC$, determine the area of $\\triangle CUV$.\n[[FIGURE]]\n(b) Determine all positive integers $k$ for which there are exactly 100 non-congruent triangles that have positive integer side lengths, one side length equal to $k$, perimeter equal to $3k$, and one angle with measure greater than $90^\\circ$.","source":{"kind":"competition","competition":"CEMC Waterloo","year":2026,"stage":"Euclid","number":"Nomor 8","label":"CEMC Waterloo 2026 — Euclid, 8 · © 2026 University of Waterloo · CC BY-NC 4.0","url":"https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026EuclidContest.html","note":"Official CEMC source, © 2026 University of Waterloo, CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Mathematical typesetting adapted for web; diagrams redrawn where present."}}
 ];
 export const levelMeta = {SD:{title:"Olimpiade SD",description:"Aritmetika, pola, logika dan geometri.",targets:"OSN · SEAMO · SASMO"},SMP:{title:"Olimpiade SMP",description:"Strategi nonrutin dan dasar pembuktian.",targets:"OSN · SEAMO · SASMO"},SMA:{title:"Olimpiade SMA",description:"Aljabar, teori bilangan, geometri dan kombinatorika.",targets:"OSN · IMO · APMO"},Kuliah:{title:"Olimpiade Mahasiswa",description:"Pembuktian dan pemecahan masalah tingkat perguruan tinggi.",targets:"ON-MIPA · IMC · Putnam"}} as const;
 export const officialResources = [{name:"IMO",level:"SMA",description:"Arsip soal resmi International Mathematical Olympiad.",url:"https://www.imo-official.org/problems/"},{name:"IMC",level:"Kuliah",description:"Arsip soal resmi kompetisi mahasiswa.",url:"https://www.imc-math.org.uk/?section=problems&year=2024"},{name:"SEAMO",level:"SD · SMP · SMA",description:"Silabus dan contoh soal yang tersedia dari penyelenggara.",url:"https://www.seamo-official.org/resources"},{name:"OSN",level:"SD · SMP · SMA",description:"Portal ajang talenta nasional dan informasi penyelenggara.",url:"https://sma.pusatprestasinasional.kemdikbud.go.id/osn/login"},{name:"ON-MIPA",level:"Kuliah",description:"Informasi penyelenggara Pusat Prestasi Nasional; soal resmi ditambahkan setelah diverifikasi.",url:"https://pusatprestasinasional.kemdikbud.go.id/"}];

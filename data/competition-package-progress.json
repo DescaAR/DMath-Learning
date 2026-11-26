@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "activePackage": "osnp-sd-2024",
+  "activePackage": "cemc-waterloo-2026-euclid",
   "packages": {
     "osnp-sd-2024": {
       "competition": "OSN",
@@ -116,7 +116,7 @@
         ],
         "officialOriginal": "pending"
       },
-      "status": "incomplete_blocked_pending_original_and_reproduction_basis",
+      "status": "deferred_pending_original_and_complete_figures",
       "nextStep": "Obtain organizer original or authorized supplied file, visually inspect all pages and figures/tables (5,6,7,10,13,14,15,16), compare wording of existing entries, import complete package only when provenance and reproduction basis established.",
       "publishedNewQuestions": 0,
       "additionalSource": {
@@ -175,6 +175,20 @@
         "userFileSearch": "Project/library title search did not return an OSN-P SD 2024 question paper.",
         "publicationDecision": "No new problems or wording corrections published: the package still lacks a confirmed original and complete visual data."
       }
+    },
+    "cemc-waterloo-2026-euclid": {
+      "competition": "CEMC Waterloo",
+      "level": "SMA",
+      "year": 2026,
+      "stage": "Euclid",
+      "expectedCount": 10,
+      "existingCount": 10,
+      "added": 4,
+      "corrected": 6,
+      "source": "https://cemc.uwaterloo.ca/sites/default/files/documents/2026/2026Euclid%28E%29FINAL.pdf",
+      "license": "CC BY-NC 4.0",
+      "status": "complete_text_and_figures_workflow_pending",
+      "date": "2026-11-26"
     }
   }
 }
