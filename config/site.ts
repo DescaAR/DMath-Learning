@@ -21,6 +21,7 @@ export const siteConfig = {
     { label: "Olimpiade SMP", href: "/olimpiade-smp" },
     { label: "Olimpiade SMA", href: "/olimpiade-sma" },
     { label: "Olimpiade Kuliah", href: "/olimpiade-kuliah" },
+    { label: "Info Lomba", href: "/info-lomba" },
     { label: "Sumber Lain", href: "/sumber-lain" },
   ],
 } as const;
