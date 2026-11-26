@@ -323,7 +323,7 @@ a.cmp-material-tag:focus-visible{outline:2px solid var(--cmp-accent);outline-off
 .cmp-contest-section-head h2{display:flex;align-items:center;gap:8px;font-size:1.25rem}
 .cmp-contest-section-head h2 span{font-size:.75rem;color:var(--cmp-muted);font-weight:600;letter-spacing:0}
 .cmp-contest-section-head p{font-size:.8rem;margin-top:4px}
-.cmp-contest-page .cmp-contest-list{gap:14px;align-items:start}
+.cmp-contest-page .cmp-contest-list{gap:14px;align-items:stretch}
 .cmp-contest-page .cmp-contest-card{padding:18px;gap:10px;border-radius:14px;transition:border-color .15s ease,box-shadow .15s ease;box-shadow:0 2px 8px rgba(6,27,62,.025)}
 .cmp-contest-page .cmp-contest-card:hover{border-color:var(--cmp-accent);box-shadow:var(--cmp-shadow)}
 .cmp-contest-page .cmp-contest-meta{font-size:.7rem;line-height:1.4;gap:8px}
@@ -343,7 +343,7 @@ a.cmp-material-tag:focus-visible{outline:2px solid var(--cmp-accent);outline-off
 .cmp-contest-facts dt svg{width:13px;height:13px}
 .cmp-contest-page .cmp-contest-facts dd{margin-top:4px;font-size:.8rem;line-height:1.45;font-weight:650;color:var(--cmp-ink)}
 .cmp-contest-page .cmp-contest-note{font-size:.74rem;line-height:1.55;padding-left:9px;border-left:2px solid var(--cmp-line)}
-.cmp-contest-page .cmp-contest-links{display:flex;justify-content:flex-start;align-items:stretch;gap:8px;flex-wrap:wrap;margin-top:2px;padding-top:0;border:0}
+.cmp-contest-page .cmp-contest-links{display:flex;justify-content:flex-start;align-items:stretch;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:2px;border:0}
 .cmp-contest-page .cmp-contest-links a{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:8px 11px;border-radius:7px;border:1px solid var(--cmp-line);font-size:.77rem;line-height:1.35;text-decoration:none;font-weight:650;min-height:35px}
 .cmp-contest-page .cmp-contest-links .cmp-contest-primary{background:#1565D8;border-color:#1565D8;color:#fff}
 .cmp-contest-page .cmp-contest-links .cmp-contest-primary:hover{background:#0B2D6B;border-color:#0B2D6B}
@@ -356,3 +356,6 @@ a.cmp-material-tag:focus-visible{outline:2px solid var(--cmp-accent);outline-off
 @media(max-width:800px){.cmp-contest-page .cmp-contest-list{grid-template-columns:1fr}}
 @media(max-width:500px){.cmp-contest-page .cmp-contest-hero{padding:20px;display:grid;gap:14px}.cmp-contest-total{border-left:0;border-top:1px solid var(--cmp-line);padding:12px 0 0;display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}.cmp-contest-total strong{font-size:1.4rem}.cmp-contest-total small{width:100%}.cmp-contest-page .cmp-contest-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.cmp-contest-page .cmp-contest-card{padding:15px}.cmp-contest-page .cmp-contest-tabs button{padding:7px 8px}.cmp-contest-tabs .cmp-contest-reset{margin-left:0}}
 @media(prefers-reduced-motion:reduce){.cmp-contest-page .cmp-contest-card{transition:none}}
+
+/* Equal-height cards in each desktop row; preserve natural content height on mobile. */
+.cmp-contest-page .cmp-contest-list>.cmp-contest-card{align-self:stretch;min-height:0;box-sizing:border-box}
