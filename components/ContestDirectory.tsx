@@ -25,7 +25,7 @@ function registrationLabel(c:ContestInfo){
  if(c.deadlineText)return c.deadlineText;
  if(c.start&&c.deadline)return dateLabel(c.start)+" – "+dateLabel(c.deadline);
  if(c.deadline)return "Hingga "+dateLabel(c.deadline);
- if(c.start)return "Mulai "+dateLabel(c.start);
+ if(c.start)return dateLabel(c.start)+" – Belum terkonfirmasi";
  return "Belum terkonfirmasi";
 }
 function Icon({name}:{name:"search"|"calendar"|"external"|"book"|"clock"|"users"}){
