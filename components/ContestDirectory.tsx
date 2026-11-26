@@ -40,7 +40,6 @@ function ContestCard({contest:c,state,level}:{contest:ContestInfo;state:Status;l
  <div className="cmp-contest-meta"><span>{categories[c.category]} <span aria-hidden="true">·</span> {c.scope}</span><span className={"cmp-contest-status status-"+state}>{statusLabels[state]}</span></div>
  <div className="cmp-contest-title"><h3>{c.name}</h3><p>{c.organizer}</p></div>
  <div className="cmp-contest-levels" aria-label="Jenjang peserta">{c.levels.map(l=><span key={l}>{l}</span>)}</div>
- <p className="cmp-contest-description">{c.description}</p>
  <dl className="cmp-contest-facts">
  <div><dt><Icon name="clock"/>Pendaftaran</dt><dd>{registrationLabel(c)}</dd></div>
  <div><dt><Icon name="calendar"/>Pelaksanaan</dt><dd>{c.event||"Belum terkonfirmasi"}</dd></div>
