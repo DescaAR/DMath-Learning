@@ -45,7 +45,6 @@ function ContestCard({contest:c,state,level}:{contest:ContestInfo;state:Status;l
  <div><dt><Icon name="calendar"/>Pelaksanaan</dt><dd>{c.event||"Belum terkonfirmasi"}</dd></div>
  <div><dt><Icon name="users"/>Format peserta</dt><dd>{c.format||"Belum terkonfirmasi"}</dd></div>
  <div><dt>Biaya</dt><dd>{c.fee??"Belum terkonfirmasi"}</dd></div>
- {c.eligibility&&<div style={{gridColumn:"1 / -1"}}><dt>Kelayakan peserta</dt><dd>{c.eligibility}</dd></div>}
  </dl>
  <div className="cmp-contest-links">
  <a className="cmp-contest-primary" href={c.source} target="_blank" rel="noopener noreferrer">{c.sourceKind==="institutional"?"Sumber informasi":"Sumber resmi"} <Icon name="external"/></a>
