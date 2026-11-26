@@ -1391,7 +1391,7 @@ function ProblemCard({p,kind="list"}:{p:CompetitionProblem;kind?:"list"|"daily"|
 
 export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  const [level,setLevel]=useState<string>(fixedLevel||"Semua"),[query,setQuery]=useState(""),[topic,setTopic]=useState("Semua"),[diff,setDiff]=useState("Semua"),[source,setSource]=useState("Semua"),[year,setYear]=useState("Semua"),[contest,setContest]=useState("Semua"),[stage,setStage]=useState("Semua");
- useEffect(()=>{const params=new URLSearchParams(window.location.search);const l=params.get("level"),q=params.get("q"),s=params.get("source");if(!fixedLevel&&l&&isLevel(l))setLevel(l);if(q)setQuery(q);if(s==="competition"||s==="original")setSource(s);},[fixedLevel]);
+ useEffect(()=>{const params=new URLSearchParams(window.location.search);const l=params.get("level"),q=params.get("q"),s=params.get("source"),c=params.get("contest");const requestedLevel=fixedLevel||(l&&isLevel(l)?l:"Semua");if(!fixedLevel&&l&&isLevel(l))setLevel(l);if(q)setQuery(q);if(s==="competition"||s==="original")setSource(s);if(c&&competitionProblems.some(p=>categoryOf(p)===c&&(requestedLevel==="Semua"||p.level===requestedLevel)))setContest(c);},[fixedLevel]);
  const pool=useMemo(()=>competitionProblems.filter(p=>level==="Semua"||p.level===level),[level]);
  const contests=Array.from(new Set(pool.map(categoryOf))).sort(categoryOrder);
  const contestPool=pool.filter(p=>contest==="Semua"||categoryOf(p)===contest);
@@ -1402,7 +1402,7 @@ export function CompetitionCatalog({fixedLevel}:{fixedLevel?:Level}={}){
  const groups=contests.map(c=>({name:c,items:filtered.filter(p=>categoryOf(p)===c).sort((a,b)=>(b.source.year||0)-(a.source.year||0)||(a.source.stage||"").localeCompare(b.source.stage||"","id")||(a.source.number||a.id).localeCompare(b.source.number||b.id,"id",{numeric:true}))})).filter(g=>g.items.length>0);
  const reset=()=>{setQuery("");setLevel(fixedLevel||"Semua");setTopic("Semua");setDiff("Semua");setSource("Semua");setYear("Semua");setContest("Semua");setStage("Semua");};
  return <div className="cmp-page container cmp-catalog">
-  <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{pool.length}</strong><span>soal tersedia</span></div></header>
+  <header className="cmp-page-head"><div><span className="cmp-kicker">KOLEKSI SOAL</span><h1>{fixedLevel?levelTitle(fixedLevel):"Kumpulan Soal"}</h1><p>{fixedLevel?levelMeta[fixedLevel].description:"Kumpulan soal olimpiade matematika untuk SD, SMP, SMA, dan mahasiswa."}</p></div><div className="cmp-page-count"><strong>{filtered.length}</strong><span>soal sesuai filter</span></div></header>
   {fixedLevel&&<nav className="cmp-level-section-nav" aria-label="Menu jenjang"><span aria-current="page">Kumpulan Soal</span><Link href={levelHref(fixedLevel)+"potd/"}>Soal Harian →</Link></nav>}
   <div className="cmp-catalog-layout">
    <aside className="cmp-filter" aria-label="Filter soal">
