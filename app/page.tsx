@@ -22,6 +22,6 @@ export default function Home(){
     </div>
    </div>
   </section>
-  <div className="container cmp-home-content"><ProblemOfDay compact/><section className="cmp-contest-home"><div><h2>Info Lomba Matematika</h2><p>Temukan agenda olimpiade, penelitian, dan kompetisi pemodelan.</p></div><Link href="/info-lomba">Lihat info lomba →</Link></section></div>
+  <div className="container cmp-home-content"><ProblemOfDay compact/><section className="cmp-contest-home"><div><h2>Info Lomba Matematika</h2><p>Temukan agenda olimpiade matematika, riset matematika, dan pemodelan matematis.</p></div><Link href="/info-lomba">Lihat info lomba →</Link></section></div>
  </div>;
 }
