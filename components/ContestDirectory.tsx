@@ -43,7 +43,7 @@ function ContestCard({contest:c,state,level}:{contest:ContestInfo;state:Status;l
  <dl className="cmp-contest-facts">
  <div><dt><Icon name="clock"/>Pendaftaran</dt><dd>{registrationLabel(c)}</dd></div>
  <div><dt><Icon name="calendar"/>Pelaksanaan</dt><dd>{c.event||"Belum terkonfirmasi"}</dd></div>
- <div><dt><Icon name="users"/>Format</dt><dd>{c.format||"Belum terkonfirmasi"}</dd></div>
+ <div><dt><Icon name="users"/>Format peserta</dt><dd>{c.format||"Belum terkonfirmasi"}</dd></div>
  <div><dt>Biaya</dt><dd>{c.fee??"Belum terkonfirmasi"}</dd></div>
  </dl>
  {c.note&&<p className="cmp-contest-note">{c.note}</p>}
