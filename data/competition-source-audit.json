@@ -21388,6 +21388,66 @@
         "textStatus": "transcribed",
         "renderStatus": "pending"
       }
+    },
+    "sd-009": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null,
+      "mathematicalReview": {
+        "date": "2026-11-26",
+        "status": "proof_checked",
+        "solution": "Partisi bilangan 1 sampai 20 menjadi sepuluh rantai menurut bagian ganjil: (1,2,4,8,16), (3,6,12), (5,10,20), (7,14), (9,18), dan singleton 11,13,15,17,19. Maksimum satu per rantai; 11 sampai 20 mencapai 10. Pemilihan maksimum wajib memuat lima singleton, sehingga 1,3,5 tidak mungkin (membagi 15); 2 juga tidak mungkin karena rantai 3 harus menyumbang 6 atau 12. Pilihan dari lima rantai pertama berturut-turut {4,8,16},{6,12},{10,20},{7,14},{9,18}. Satu-satunya konflik antar-rantai ialah 4 dengan 12 atau 20, serta 6 dengan 18. Jika 4 dipilih: B=6,C=10,E=9,D bebas, 2 cara. Jika 8 atau 16 dipilih: (B,E) ada 3 pilihan; C dan D masing-masing 2, sehingga 2*3*2*2=24 cara. Total 26. Jumlah minimal ialah 11+13+15+17+19+4+6+10+7+9=111, tercapai oleh himpunan {4,6,7,9,10,11,13,15,17,19}.",
+        "independentCheck": "Enumerasi semua himpunan 10 elemen dari 1 sampai 20: 26, minimum 111.",
+        "renderStatus": "pending_build_and_browser_check"
+      }
+    },
+    "smp-009": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null,
+      "mathematicalReview": {
+        "date": "2026-11-26",
+        "status": "proof_checked",
+        "solution": "Untuk solusi x<=y, penggantian y oleh y'=4x-y=(x^2+11)/y menghasilkan solusi bulat positif. Untuk x>=3, polinomial t^2-4xt+x^2+11 bernilai 11-2x^2<0 di t=x, sehingga y'<x<y. Penurunan berhingga mencapai x=1 atau x=2. Untuk x=1 tidak ada solusi (diskriminan -32); untuk x=2, y=3 atau 5. Operasi balik (x,y)->(y,4y-x) menghasilkan semua pasangan tak menurun karena akar lainnya unik. Dua rantai hingga batas 1000: (2,3),(3,10),(10,37),(37,138),(138,515) dan (2,5),(5,18),(18,67),(67,250),(250,933). Suku berikutnya 1922 dan 3482. Semua pasangan terurut adalah pasangan tersebut dan kebalikannya; 20 pasangan.",
+        "independentCheck": "Enumerasi eksak 1<=x<=y<=1000: 10 pasangan.",
+        "renderStatus": "pending_build_and_browser_check"
+      }
+    },
+    "sma-009": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null,
+      "mathematicalReview": {
+        "date": "2026-11-26",
+        "status": "proof_checked",
+        "solution": "Tulis deg P=2d. Tentukan secara rekursif polinomial monik Q rasional berderajat d dengan menyamakan koefisien derajat 2d hingga d pada P dan Q^2; pada tiap langkah koefisien yang baru dikalikan 2. Maka R=P-Q^2 berderajat <=d-1. Untuk n cukup besar, Q(n)>0 dan P(n)>0; sqrt(P(n))-Q(n)=R(n)/(sqrt(P(n))+Q(n))=O(1/n). Ambil D bilangan bulat positif dengan DQ berkoefisien bulat. Jika sqrt(P(n)) bulat, selisihnya dengan Q(n) adalah kelipatan 1/D, sehingga untuk n cukup besar harus nol. Ada tak berhingga n demikian; R memiliki tak berhingga akar, maka R=0. Pilih D minimal. Jika p prima membagi D, sedikitnya satu koefisien DQ tidak habis dibagi p (jika tidak, D/p juga memenuhi). Tetapi (DQ)^2=D^2P adalah polinomial nol modulo p; ini mustahil karena F_p[x] daerah integral. Jadi D=1 dan Q berkoefisien bulat.",
+        "independentCheck": "Pembuktian deduktif; kasus batas dan asumsi diperiksa.",
+        "renderStatus": "pending_build_and_browser_check"
+      }
+    },
+    "univ-009": {
+      "status": "original",
+      "previousMetadata": "original",
+      "competition": "DMath Learning Proposed",
+      "year": null,
+      "number": null,
+      "sourceUrl": null,
+      "mathematicalReview": {
+        "date": "2026-11-26",
+        "status": "proof_checked",
+        "solution": "Kompleksifikasikan ruang. BA=A(B-I), sehingga (B-(lambda-1)I)A=A(B-lambda I), dan dengan perpangkatan A membawa ruang eigen tergeneralisasi E_lambda(B) ke E_(lambda-1)(B), dengan E_mu={0} bila mu bukan nilai eigen. Apabila A^r v tidak nol untuk v di E_lambda, maka A^j v tidak nol untuk j=0,...,r; lambda,lambda-1,...,lambda-r semuanya nilai eigen B, bertentangan dengan r. Dekomposisi ruang eigen tergeneralisasi memberi A^r=0. Sebaliknya untuk A nilpoten ambil bentuk Jordan nilpoten real J=S^{-1}AS. Pada setiap blok berordo m dengan 1 pada superdiagonal, pilih D_m=diag(0,1,...,m-1); JD-DJ=J untuk D blok diagonal. Ambil B=SDS^{-1}. Bila indeks nilpoten k, blok terbesar berordo k, sehingga D memiliki tepat k nilai eigen berbeda; (a) memaksa r>=k. Minimum k, termasuk A=0 dengan k=1.",
+        "independentCheck": "Pembuktian deduktif; kasus batas dan asumsi diperiksa.",
+        "renderStatus": "pending_build_and_browser_check"
+      }
     }
   },
   "figureRecords": {
