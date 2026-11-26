@@ -136,6 +136,44 @@
         "reason": "KaTeX unsupported multicolumn in OSN-K SD 2023 question 19",
         "fix": "Replace spanning header with centered plain array cell; numerical entries unchanged",
         "verification": "Pending new GitHub Actions result"
+      },
+      "latestSourceReview": {
+        "date": "2026-11-26",
+        "officialNotice": {
+          "url": "https://pusatprestasinasional.kemdikbud.go.id/uploads/lampiran_pengumuman/Informasi%20Peserta%20dan%20Pelaksanaan%20OSNP%20SD%20SMP.pdf",
+          "page": 3,
+          "visualChecked": true,
+          "confirmedCount": 20,
+          "durationMinutes": 60
+        },
+        "additionalCandidates": [
+          {
+            "url": "https://id.scribd.com/document/855589853/Soal-OSN-SD-Bidang-Matematika-Tingkat-Propinsi-2024",
+            "status": "third_party_transcription_read",
+            "finding": "Contains numbering 1–20; images/table data not reliably extracted; no organizer-original provenance established."
+          },
+          {
+            "url": "https://www.medalis.id/filebase/file/2-soal-osn-matematika-sd-2024/",
+            "status": "member_access_required",
+            "finding": "Lists OSNP separately but file is not publicly accessible from the listing."
+          }
+        ],
+        "existingTextFindings": [
+          {
+            "number": 1,
+            "finding": "Existing text changes conditional sentence into direct instruction relative to third-party transcription."
+          },
+          {
+            "number": 4,
+            "finding": "Existing text changes wording and sentence order relative to third-party transcription."
+          },
+          {
+            "number": 18,
+            "finding": "Existing text changes verbs, numeral spelling and question format relative to third-party transcription."
+          }
+        ],
+        "userFileSearch": "Project/library title search did not return an OSN-P SD 2024 question paper.",
+        "publicationDecision": "No new problems or wording corrections published: the package still lacks a confirmed original and complete visual data."
       }
     }
   }
