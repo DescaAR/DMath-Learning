@@ -41,14 +41,14 @@ function ContestCard({contest:c,state,level}:{contest:ContestInfo;state:Status;l
  <div className="cmp-contest-title"><h3>{c.name}</h3><p>{c.organizer}</p></div>
  <div className="cmp-contest-levels" aria-label="Jenjang peserta">{c.levels.map(l=><span key={l}>{l}</span>)}</div>
  <dl className="cmp-contest-facts">
- <div><dt><Icon name="clock"/>Pendaftaran</dt><dd>{registrationLabel(c)}</dd></div>
+ <div><dt><Icon name="clock"/>{c.registrationDetail??"Pendaftaran"}</dt><dd>{registrationLabel(c)}</dd></div>
  <div><dt><Icon name="calendar"/>Pelaksanaan</dt><dd>{c.event||"Belum terkonfirmasi"}</dd></div>
  <div><dt><Icon name="users"/>Format peserta</dt><dd>{c.format||"Belum terkonfirmasi"}</dd></div>
  <div><dt>Biaya</dt><dd>{c.fee??"Belum terkonfirmasi"}</dd></div>
+ {c.eligibility&&<div style={{gridColumn:"1 / -1"}}><dt>Kelayakan peserta</dt><dd>{c.eligibility}</dd></div>}
  </dl>
- {c.note&&<p className="cmp-contest-note">{c.note}</p>}
  <div className="cmp-contest-links">
- <a className="cmp-contest-primary" href={c.source} target="_blank" rel="noopener noreferrer">Sumber resmi <Icon name="external"/></a>
+ <a className="cmp-contest-primary" href={c.source} target="_blank" rel="noopener noreferrer">{c.sourceKind==="institutional"?"Sumber informasi":"Sumber resmi"} <Icon name="external"/></a>
  {matches.length>0&&<Link className="cmp-contest-secondary" href={bankHref}><Icon name="book"/>Soal terkait <span>({matches.length})</span></Link>}
  </div>
  </article>;
