@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-27",
+  "inspectedHead": "0e2f175571484de8b2fbededc8614419dd31b4b2",
+  "bankBlob": "16cf1d591c19ea1d74f0cc649fa47974a172da38",
+  "readMethod": "fetch_file metadata then fetch_blob; parse array before levelMeta",
+  "inventory": {
+    "SD": 68,
+    "SMP": 113,
+    "SMA": 455,
+    "Kuliah": 603,
+    "total": 1239
+  },
+  "auditStatuses": {
+    "original": 36,
+    "wording_differs": 266,
+    "pending_comparison": 953,
+    "exact_verified": 20
+  },
+  "deferred": [
+    {
+      "package": "OSN-P SD 2024",
+      "present": [
+        1,
+        4,
+        18
+      ],
+      "missing": "All other numbers pending confirmation of original booklet length",
+      "sources": [
+        "https://www.folderosn.com/2025/01/soal-osn-matematika-sd-2024-tingkat-provinsi.html"
+      ],
+      "blocker": "Original complete booklet and figures not confirmed; source URL from existing entries, not newly inspected",
+      "next": "Revisit only with new source"
+    },
+    {
+      "package": "KTOM September 2018",
+      "missing": "A16 candidate; confirm booklet",
+      "blocker": "Original archive unavailable"
+    },
+    {
+      "package": "KTOM October 2018",
+      "missing": "B1 candidate; confirm booklet",
+      "blocker": "Original archive unavailable"
+    }
+  ],
+  "archives": [
+    {
+      "name": "KTOM-20261125T120601Z-1-001.zip",
+      "status": "Project raw-byte materialization denied",
+      "next": "Use newly accessible original archive; do not retry unchanged access"
+    },
+    {
+      "name": "University Challange-20261125T125059Z-1-001.zip",
+      "status": "Project raw-byte materialization denied",
+      "next": "Use newly accessible original archive; do not retry unchanged access"
+    },
+    {
+      "name": "drive-download-20261125T125531Z-1-001.zip",
+      "status": "Project raw-byte materialization denied",
+      "next": "Use newly accessible original archive; do not retry unchanged access"
+    }
+  ],
+  "existingPackages": {
+    "KTOM November 2018": 20,
+    "KTOM January 2024": 20,
+    "KTOM September 2018": 19,
+    "KTOM October 2018": 19,
+    "baseline KOALA and KTOM": 82
+  },
+  "next": "Select available original authorized source for Info Lomba; audit existing entries before importing; no strict pass inferred from counts.",
+  "deployment": {
+    "vercel": "success at inspected head",
+    "githubPages": "unconfirmed"
+  }
+}
