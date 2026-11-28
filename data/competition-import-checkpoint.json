@@ -70,5 +70,29 @@
   "deployment": {
     "vercel": "success at inspected head",
     "githubPages": "unconfirmed"
-  }
+  },
+  "sourceCandidates": [
+    {
+      "source": "https://github.com/KlinikAA/ONMIPA",
+      "scope": "ONMIPA regional/national",
+      "status": "candidate",
+      "blocker": "Original provenance and redistribution scope unconfirmed",
+      "next": "Inspect TeX/PDF booklets and compare bank."
+    },
+    {
+      "source": "https://wildan-wicaksono.github.io/portfolio/Contest-Collection/",
+      "scope": "Indonesian competition archive 2020–2026",
+      "status": "candidate",
+      "blocker": "Third-party archive; original booklet and reproduction basis unconfirmed",
+      "next": "Inspect missing packages."
+    },
+    {
+      "source": "https://www.imc-math.org.uk/?section=problems&year=2024",
+      "scope": "IMC 2024 two days",
+      "status": "candidate",
+      "blocker": "Official index found; reproduction basis unconfirmed",
+      "next": "Compare existing bank."
+    }
+  ],
+  "lastSourceDiscovery": "2026-11-28"
 }
